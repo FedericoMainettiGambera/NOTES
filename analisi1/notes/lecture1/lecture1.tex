@@ -1,0 +1,168 @@
+\section*{30/09/19 - LEZIONE}
+\subsection*{Formula di Newton [mancano primi 20 minuti]}
+
+\subsubsection*{es. trovare il coefficiente di $b^7$ nell espressione $(a^3b^2-b)^5$}
+\[
+    (a^3b^2-b)^5 = b^5(a^3b-1)^5
+\] 
+il coefficiente di $b^7$ e uguale a quello di $b^2$ in $(a^3b-1)^5$
+\[
+    (a^3b^2-b)^5 = \sum_{k=0}^5{\binom{5}{k}[a^3b]^k(-1)^5-k}
+\] 
+per ottenere il coefficiente di $b^2$ devo prendere $k=2$
+\[
+    \binom{5}{2}(a^3)^2b^2(-1)^{5-2}
+\] 
+\[
+    -\binom{5}{2}a^6b^2
+\] 
+il coefficiente cercato è $-\binom{5}{2} = -\frac{5!}{2!3!} = 10$.
+
+\subsubsection*{es. dimostrare che la seguente uguaglianza vale}
+\[
+    \sum_{k=0}^{n}\binom{n}{k}s^k = 3^n
+\] 
+é possibile dimostrare questa formula per induzione, ma in realtà è molto più semplice usare direttamente la formula di Newton $\sum_{k=0}^n\binom{n}{k}a^kb^{n-k}=(a+b)^n$. Infatti se poniamo $a=2$ e $b=1$ otteniamo esattamente l'equazione della consegna.
+
+\subsubsection*{es dimostrare che la seguente uguaglianza vale}
+\[
+    \sum_{k=0}^{2n}\binom{2n}{k}(-2)^k=1
+\] 
+
+\subsection*{Calcolo combinatorio}
+\textbf{dim.} dimostrazione combinatoria della formula di Newton
+\[
+    (a+b)^n = \sum_{k=0}^n\binom{n}{k}a^kb^{n-k}
+\]
+n.b. $\binom{n}{k} = P^{*}_{k,n-k}$ dove $P^*_{k,n-k}$ rappresenta il numero delle permutazioni con ripetizione di n oggetti k di un tipo e n-k dell'altro.\\
+$(a+b)^n = (a+b)_1(a+b)_2\dots(a+b)_n$. Nello svolgere questi prodotti avrò scelto $k$ volte $a$ e $n-k$ volte $b$ per ottenere $a^kb^n-k$. E' come avere n caselle di cui le prime $k$ occupate da $a$ e le restanti $n-k$ occupate da $b$:
+\[
+    [a_1]_1[a_2]_2\dots[a_k]_k[b_1]_{k+1}[b_2]_{k+2}\dots[b_{n-k}]_n
+\]
+Ma una configurazione così può presentarsi $P^*_{k,n-k}$ (cioè $\binom{n}{k}$) volte.
+\newline
+\newline
+\textbf{def.} dato un insieme $X$ di $n$ oggetti distinti, chiamo combinazioni semplici (senza ripetioni) di classe $K$ un qualsiasi sottoinsieme (il cui ordine non importa) di $k$ oggetti estratti da $X$.\newline
+$C_{n,k}$ è il simbolo che rappresenta il numero di combinazioni semplici di $k$ oggetti estratti senza ordine.
+\newline
+\newline
+\textbf{teor.} $C_{n,k} = \binom{n}{k}$
+\newline
+\textbf{dim.} Immaginiamo di dover inserire elementi in delle caselle per ottenere uno specifico allineamento. abbiamo k caselle e n elementi. Nella prima casella posso scegliere fra n elementi da inserire, nella seconda potrò scegliere fra n-1 elementi e così via. 
+\[
+    n(n-1)\dots(n-k+1)
+\] 
+Ma questo modo di ragionare rappresenta un allineamento con questo ordine, noi non vogliamo considerare l'ordine. Allora dividiamo il risultato trovato prima per le $k!$ permutazioni possibili.
+\[
+    \frac{n(n-1)\dots(n-k+1)}{k!} = \binom{n}{k} = \frac{n!}{k!(n-k)!}
+\] 
+n.b. $n(n-1)\dots(n-k+1) = \frac{n!}{(n-k)!}$
+
+\subsection*{Cardinalità di un insieme}
+E' lo studio del numero di oggetti appartenenti a un certo insieme.
+dato un insieme $X$ di $n$ oggetti, qual è la cardinalità dell'insieme delle parti di $X$?
+L'insieme delle parti è l'insime di tutti i sottoinsiemi ed è rappresentato dalla lettera $\mathcal{P}(X)$
+\newline
+\textbf{teor.} L'insieme delle parti $\mathcal{P}(X)$ di un insieme $X$ di cardinalità $n$ ha cardinalità $2^n$
+\newline
+\textbf{dim.} X ha certamente come sottoinsiemi quelli banali, cioè $\O$ e $X$ stesso.
+\newline
+Quanti sottoinsiemi di 1 elemento ha $X$? $n$ (riscrivibile come $C_{n,1}$)
+\newline
+Quanti sottoinsiemi di 2 elemento ha $X$? $C_{n,2}$
+\newline
+\dots
+\newline
+Quanti sottoinsiemi di n-1 elemento ha $X$? $C_{n,n-1}$
+\newline
+Dal teorema precedentemente visto sappiamo che $C_{n,x} = \binom{n}{x}$
+\[
+    1+C_{n,1}+C_{n,2+\dots+C_{n,n-1}+1}
+,\] 
+dove il primo $1$ rappresenta l'insieme vuoto e l'ultimo $1$ rappresetna $X$ stesso.
+\[
+    1+\binom{n}{1}+\binom{n}{2}+\dots++\binom{n}{n-1}+1
+\]
+\[
+    \sum_{k=0}^n\binom{n}{k} = (1+1)^n
+\]  
+(l'ultimo passaggio è stato ottenuto tramite l'utilizzo della formula di Newton)
+\newline
+\textbf{cons.} L'insieme delle parti di un insieme finito(!) ha cardinalità sempre maggiore dell insieme stesso.
+
+\subsection*{Teologia in $\mathbb{R}$}
+\textbf{def.} definizione fondamentale: Intorno di un ponto $x_0$
+\newline
+in $\mathbb{R}$: IMMAGINE
+\newline
+in $\mathbb{R}^2$: IMMAGINE
+\newline
+$B_r(x_0)$ è il simbolo che viene rappresenta l'intorno di raggio $r$ del punto $x_0$.
+$B_r(x_0)$ è l'insieme dei punti con distanza inferiore $(<)$ di $r$ dal centro $x_0$, i punti sul bordo/confine dell'intorno non appartengono all'intorno.
+\newline
+definizioni formali:
+\newline
+in $\mathbb{R}$:
+\[
+    B_r(x_0) = \{x\in\mathbb{R}:|x-x_0|<r\}
+\] 
+\newline
+in $\mathbb{R}^2$: 
+\[
+    B_r(p_0) = \{p\in\mathbb{R}^2:dist(p,p_0)<r\}
+\]
+dove $dist(p,p_0) = \sqrt{(x-x_0)^2+(y-y_0)^2}$
+\newline
+n.b. in $\mathbb{R}$ una qualunque semiretta è detta "intorno di $\pm\infty$". in $\mathbb{R}^2$, invece, non si parla di "intorno di $\pm\infty$".
+\newline
+\newline
+\textbf{def.} Dato un insieme $A\subset \mathbb{R}$ oppure $\mathbb{R}^2$, $x^*$ è un punto interno ad $A$ se (non solo se $\subset A$, ma anche se è circondato solo da punti di $A$):
+\[
+    \exists B_r(x^*):B_r(x^*)\subset A
+\] 
+ovviamente se $x^*$ è un punto interno allora $x^*\subset A$
+\newline
+n.b. questa definizione non si occupa di definire l'operatore "$\in$", ma definise il termine "interno".
+\newline
+\newline
+\textbf{def.} $x^*$ è un punto esterno ad $A$ (non solo se non è in $A$ ($\notin A$), ma anche se è circondato solo da punti di A):
+\[
+    \exists B_r(x^*):B_r(x^*)\subset A^c
+\] 
+ovviamente se $x^*$ è un punto esterno allora $x^*\in A^c$ ovvero $x^*\notin A$
+\newline
+\textbf{def.} $x^*$ è un punto di frorntiera (se non è né interno né esterno):
+\[
+    \forall B_r(x^*), B_r(x^*) \cap a\neq\O \land b_r(x^*) \cap A^c \neq \O
+\] 
+\textbf{es.}
+\[
+    a = \{(x,y)\in \mathbb{R}^2 : x^2+y^2 \leq 4 \land xy >0\}
+\] 
+\begin{figure}[ht]
+    \centering
+    \incfig{image1}
+\end{figure}
+\newline
+\textbf{def.} Dato un insieme $A$ (in $\mathbb{R}$ o in $\mathbb{R}^2$)
+\begin{itemize}
+    \item è aperto se è fatto solo da punti interni;
+    \item è chiuso se il suo complementare è aperto oppure se contiene tutti i suoi punti di frontiera.
+\end{itemize}
+\textbf{es.} l'insieme"aperto" in $\mathbb{R}$
+\[
+    A = (a,b)
+\] 
+IMMAGINE
+\newline
+I punti $a$ e $b$ sono di frontiera\dots
+\newline
+\textbf{es.} \dots se, però, cambiamo ambiente e andiamo in $\mathbb{R}^2$:
+\[
+    A = \{(x,y) \in \mathbb{R}^2 : a < x < b, y = 0\}
+\] 
+IMMAGINE
+\newline
+non è aperto, è costituito solo da punti di frontiera, ma non li contiene tutti, quindi non è neanche chiuso.
+
+\newpage

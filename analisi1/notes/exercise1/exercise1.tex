@@ -1,0 +1,477 @@
+\section*{01/10/19 - ESERCITAZIONE}
+\subsection*{Numeri complessi}
+\textbf{es.} risolvere
+\[
+    |z|^2 -2z = 0
+\] 
+Due soluzioni possibili. La prima:
+\[
+    z=x+iy\\
+\]
+\[
+    |z| =\sqrt{x^2+y^2}
+\] 
+\[
+    x^2 +y^2-2x-2iy = 0
+\] 
+\[
+    \begin{cases}
+        x^2+y^2 -2x = 0 \\
+        2y = 0 
+    \end{cases} 
+\]
+\[
+    \begin{cases}
+        x = 0 \lor x=2 \\
+        y=0
+    \end{cases} 
+\]
+La seconda:
+\[
+    z = \rho e*{i\theta}
+\] 
+\[
+    |z| = \rho^2
+\] 
+\[
+    \rho^2 -2\rho e ^{i\theta} = 0
+\] 
+raccogliamo $\rho$
+\[
+    \rho = 0 \Rightarrow z =0
+\] 
+\[
+    \rho -2 e^{i\theta} = 0  
+\]
+\[
+    \rho = 2e^{i\theta}
+\] 
+$\rho$ è il modulo
+\[
+    \rho e^{i\theta} = 2 e^{i\theta}
+\] 
+\[
+    \theta = 0 \land \rho = 2
+\] 
+\newline
+\textbf{es.} determina $z_1$ e $z_2$ tali che $|z_1| = |z_2| = \sqrt{5} \; \land \; Im(z_1) = Im(z_2) = 2 $
+\[
+    z = x+iy = Re(z) + iIm(z)
+\] 
+\[
+    \begin{cases}
+        \sqrt{x^2 + y^2} = \sqrt{5}\\
+        y=-2
+    \end{cases}
+\] 
+\[
+    \begin{cases}
+        x^2 + y^2 = 5\\
+        y=-2
+    \end{cases}
+\] 
+\[
+    \begin{cases}
+        x = \pm 1
+        y=-2
+    \end{cases}
+\] 
+\[
+    z_1 = -1-2i \;\;\; z_2 = +1-2i
+\] 
+ora verifica che $\bar{z_1} = z_2$
+\[
+    \bar{z_1}= -1+2i
+\]  
+\[
+    -z_2 = -1+2i
+\] 
+\newline
+\textbf{es.}
+\[
+    A =\{z \in \mathbb{C} \;:\; |z| < 3\}
+\] 
+\[
+    B = \{w \in \mathbb{C} \;:\; Re(w) +Im(w) +1 = 0\}
+\] 
+(IMMAGINE di $A$ e di $B$)
+\[
+    C=\{v \in \mathbb{C} \;:\; v = z-3+i , z \in A \cap B\}
+\] 
+il termine $v = z-3+i$ rappresenta un tranlazione di $(-3,1)$ da applicare all'insieme che è l'intersezione di $A$ e $B$:
+\[
+    z = x+iy
+\] 
+\[
+    z = -3+i = x +iy-3+i
+\] 
+\[
+    v = (x-3) +i (1+y)
+\] 
+\newline
+\textbf{es.} trovare le soluzioni di
+\[
+    z^2-z\bar{z}-\frac{2}{i}z = 0
+\] 
+Non si può applicare il teorema fondamnetale dell'algebra per via della presenza di $\bar{z}$.
+\newline
+Iniziamo togliendo $i$ dal denominatore
+\[
+    -\frac{2}{i}\frac{i}{i} = -\frac{2i}{1} = 2i
+\] 
+\[
+    z^2 -z \bar{z} + 2iz = 0
+\] 
+\[
+    z(z-\bar{z} + 2i) = 0
+\] 
+prima soluzione è $z=0$
+\newline
+Ora poniamo $z= x+iy$ e $\bar{z}=x-iy$
+\[
+    2iy +2i = 0
+\] 
+\[
+    2i(y+1) = 0
+\] 
+Da cui ricaviamo $y = -1$
+\newline
+Definire l'insieme B (A rappresenta le soluzioni del punto precedente):
+\[
+    B = \{w \in \mathbb(C) \;:\; w = z+3i, z \in A \}
+\] 
+Notiamo che $w = z+3i$ rappresenta una traslazione verso l'alto. Quindi il punto $(0,0)$ diventa $(0,3i)$, invece la retta $y = -1$, cioè $Im(z) = -1$, diventa la retta $Im(w) = 2$.
+\newline
+\newline
+\textbf{es.} 
+\[
+    i ^ {255} z^3 = \bar{z}
+\] 
+Per risolvere $i^{225}$ si può notare che gli esponenti di $i$ seguono un pattern: $i^0 = 1 \;\; i^1 = i \;\; i^2 = -1 \;\; i^3 = -i$. Inoltre da ricordarsi che $i$ ha modulo $1$ e argomento $\frac{\pi}{2}$
+\newline
+IMMAGINE
+\newline
+\[
+    i^{225} = i^{224+1} = i^{224} i^{1} = 1i = i
+\] 
+\[
+    iz^3 = \bar{z}    
+\] 
+Ora risolviamo questa equazione usando la forma esponenziale dei numeri complessi: $z=\rho e ^ {i\theta}$, $i=e^{i\frac{\pi}{2}}$, $\bar{z} = \rho e^{-i\theta}$
+\[
+    e ^{i\frac{\pi}{2}}\rho^3 e^{3i\theta} = \rho e^{-i\theta}
+\] 
+\[
+    \rho (\rho ^2 e^{i(3\theta + \frac{\pi}{2})} - e ^{-i\theta})
+\] 
+Che da origine a due soluzioni. La prima:
+\[
+    \rho = 0
+\] 
+Accettata perchè $\rho$ è un numero reale positivo. La seconda:
+\[
+    \rho ^ 2 e ^{i(3\theta + \frac{\pi}{2})}= e^{-i\theta}
+\] 
+Modulo:
+\[
+    \rho ^ 2 = 1
+\] 
+\[
+    \rho = \pm 1
+\] 
+Ma essendo $\rho$ un numero reale positivo rifiutiamo $-1$ come soluzione. Quindi $\rho = 1$.
+\newline
+Argomento:
+\[
+    3 \theta + \frac{\pi}{2} = -\theta + 2k\pi
+\] 
+\[
+    4\theta = -\frac{\pi}{2} + 2k\pi
+\] 
+\[
+    \theta = -\frac{\pi}{8} +k\frac{\pi}{2}    
+\] 
+per $k = 0,\dots \;,3$.
+\newline
+\textbf{es.} TDE
+\[
+    A =\{z \in \mathbb{C} \;:\; Re(z) = \sqrt{3|Im(z)|}\}
+\] 
+\[
+    B=\{w\in \mathbb{C} \;:\; i w^2 \in A\}
+\] 
+partendo dal fatto che $z=x+iy$
+\[
+    A = \{z\in \mathbb{C} \;:\; x = \sqrt{3}|y|\}
+\] 
+\[
+    \begin{cases}
+        y = \frac{\sqrt{3}}{3} x & \;  \;\; y \geq 0 \\
+        y = -\frac{\sqrt{3}}{3} x & \;  \;\; y < 0
+    \end{cases} 
+\] 
+\[
+    \begin{cases}
+        \rho_{z} e ^{i\frac{\pi}{6}} & \;  \;\; y \geq 0 \\
+        \rho_{z} e ^{-i\frac{\pi}{6}} & \;  \;\; y < 0
+    \end{cases} 
+\] 
+\[
+    w = \rho_{w} e ^{i\theta_{w}}
+\] 
+\[
+    iw^2 = z
+\] 
+moltiplico per $-i$
+\[
+    w^2 = -iz
+\] 
+Per $A^+$:
+\[
+    \rho_{w}^{2} e^{2i\theta_{w}} = (-i)(\rho_{z}e^{i\frac{\pi}{6}})
+\]
+\[
+    \rho_{w}^2e^{2i\theta_{w}}= \rho_{z}e^{-i\frac{\pi}{3}}
+\]
+\[
+    \rho_{w} =\sqrt{\rho_{z}}
+\] 
+\[
+    arg(w) = 2\theta_{w} = -\frac{\pi}{3}+2k\pi \theta_{w} = -\frac{\pi}{6}+2k\pi
+\]
+per $k=0,1$.
+\newline
+Per $A^-$:
+\[
+    \rho_{w}^2e^{2i\theta w} = (-i)(\rho_{z}e^{-i\frac{\pi}{6}}) = \rho_{z}e^{-i\frac{2}{3}\pi}
+\] 
+\[
+    \rho_{w} = \sqrt{\rho_{z}}
+\] 
+\[
+    \theta_{w} = -\frac{1}{3}\pi + k\pi
+\] 
+
+\subsection*{Permutazioni con e senza ripetizioni}
+Definiamo il fattoriale di un numero $n\in \mathbb{N}$
+\[
+    n! = \begin{cases}
+        1 & n=0 \\
+        n(n-1)\dots2\;1 &n\geq1 \\
+        n(n-1)! &n\geq1 \\
+    \end{cases} 
+\]
+Il fattoriale è tipicamente usato per calcolare il numero di possibili permutazioni. Per esempio il numero di possibili permutazioni (anagrammi) di una parola si ottiene con il fattoriale del numero di lettere.
+\newline
+\textbf{es.} ROMA $\rightarrow 4!$
+\newline
+\textbf{es.} FARFALLA $\rightarrow 8!$, ma se per esempio volessimo eliminare la possibilità di permutare lettere identiche, dovremmo togliere a $8!$ le possibili permutazioni delle F ($2!$), delle A ($3!$), e delle L ($2!$) e quindi otteremmo: 
+\[
+    \frac{8!}{2!2!3!}
+\]
+\newline
+\textbf{es.} In quante configurazioni diverse si possono porre 9 persone in fila indiana? $9!$
+\newline
+\textbf{es.} Se le 9 persone dell'esercizio fossero 5 maschi e 4 femmine e noi volessimo avere sempre per prima i tutti i maschi e poi tutte le femmine? $5!4!$
+
+\subsection*{Esercizi sui Fattoriali}
+\textbf{es.} TDE. 3 uomini e 3 donne devono sedersi alternati a un tavolo rotondo, quante sono le diverse possibili configurazioni?
+\newline
+Per risolvere questo esercizio ragioniamo a "coppie" di persone (uomo-donna)  che possiamo creare: $3!$.
+\newline
+Queste $3!$ coppie possibili possono essere disposte sul tavolo in $3!$ modi diversi.
+\newline
+Il numero fino ad ora ottenuto va moltiplicato per due perchè abbiamo solo lavorato con le coppie uomo-donna, ma possiamo rifare lo stesso ragionamento anche per le coppie donna-uomo.
+\newline
+Ultimo fattore da considerare è il fatto che il tavolo sia rotondo, infatti le permutazioni possibili di elementi su un tavolo rotondo non sono $n!$ ma $\frac{n!}{n} = (n-1)!$. Questo accade perchè se avessimo un fila indiana da riempire con gli elementi A,B e C otterremmo tre possibili configurazioni: ABC, CAB, BCA. Ma se disposte su un tavolo rotondo queste tre disposizioni sono esattamente la stessa disposizione.
+\newline
+Risposta:
+\[
+    \frac{3!2!2!}{6}
+\] 
+($6$ sono i posti a tavola)
+\newline
+\newline
+\textbf{es.} TDE
+\newline
+Possibili anagrammi di ESAME?
+\[
+    \frac{5!}{2!} = 5\;4\;3 = 60
+\] 
+\newline
+\newline
+\textbf{es.} TDE
+\newline
+Con 14 partite di una schedina di calcio con 3 pareggi e 2 vittorie in casa, quante possibilità di compilare la schedina ci sono?
+\newline
+\[
+    \frac{14!}{9!2!3!}
+\] 
+\newline
+\textbf{es.} TDE
+\newline
+Quante password di $6$ cifre e composte solo dai caratteri "0" "1" "2" esistono?
+\[
+    3^6
+\] 
+
+\subsection*{Coefficienti binomiali}
+\textbf{def.} Coefficiente binomiale con $n, k \in \mathbb{N}$ e $n \geq k$
+\[
+    \binom{n}{k} = \frac{n!}{k!(n-k)!}
+\] 
+Vediamo alcuni coefficienti binomiali notevoli:
+\newline
+caso $k = 0$ :
+\[
+    \binom{n}{0} = 1
+\] 
+\newline
+\newline
+casp $k=n$ :
+\[
+    \binom{n}{n} = 1
+\]
+\newline
+\newline
+caso k piccolo, comodo perchè risolve il binomiale trasformandolo in una frazione con k fattori sopra e sotto.
+\[
+    \binom{n}{k} = \frac{n(n-1)\dots(n-k+1)}{k!}  
+\]
+\newline
+\textbf{dim.}
+\[
+    \binom{n}{k} = \frac{n!}{k!(n-k)!} = \frac{n(n-1) = (n-k+1) (n-k)!}{k!(n-k!)}
+\]
+\newline
+\newline
+caso n e k sono numeri molto simili, comodo perchè riconduce il binomiale alla formula precedente
+\[
+    \binom{n}{k} = \binom{n}{n-k}
+\]
+\textbf{dim.} 
+\[
+    \binom{n}{n-k} = \frac{n!}{(n-k)!k!} = \binom{n}{k}
+\]
+\newline
+\textbf{def.} potenza del binomio di Newton
+\[
+    (a+b)^n = \sum_{k=0}^n \binom{n}{k} a^k b^{n-k}
+\]
+\newline
+\textbf{es.} ceofficiente di $x^7y^3$ nello sviluppo di $(2x-y)^{10}$
+\[
+    \sum_{k=0}^{10} \binom{10}{k} (2x)^k (-y)^{10-k} = \sum_{k=0}^{10}2^k(-1)^{10-k}x^ky^{10-k}
+\]
+per $x^7y^3$ devo prendere $k=7$:
+\[
+    \binom{10}{7}2^7(-1)^3 = \dots = -30 \; 2^9
+\]
+\newline
+\textbf{es.} TDE. Coefficiente di $a^5b^7$ nello sviluppo di $(2\sqrt{a}b+3ab)^7$
+\newline
+Si potrebbe applicare direttamente Newton, ma per semplificare i calcoli sarebbe meglio prima raccogliere $ab$
+\[
+    a^{\frac{7}{2}}b^7(2+3a^{\frac{1}{2}})^7 = a^{\frac{7}{2}}b^7 \left[ \sum_{k=0}^7\binom{7}{k}2^k(3a^{\frac{1}{2}})^{7-k} \right]
+\]
+l'intera sommatoria è moltiplicata per $b^7$ e $a^{\frac{7}{2}}a^{\frac{7}{2}-\frac{k}{2}}$, quindi per ottenere $b^7a^5$ devo prendere $k=4$.
+\[
+    k=4 \rightarrow \binom{7}{4}2^4(3)^3 = \dots
+\]
+\newline
+\textbf{es.} risolvere la seguente equazione
+\[
+    2 \binom{x-1}{1}+3 \binom{x+1}{3} = \binom{x}{2}
+\]
+per $x-1 \geq 1$, per $x+1\geq3$ e $x\geq 2$, quindi solo $x\geq2$
+\[
+    2 \frac{(x-1)!}{(x-2)!} +3 \frac{(x+1)!}{3!(x-2)!} - \frac{x!}{2!(x-2)!} = 0
+\]
+\[
+    2 (x-1) \frac{(x-2)!}{(x-2)!} + 3 \frac{x+1}{6}- \frac{x(x-1)}{2} = 0
+\]
+\[
+    (x-1)(2+\frac{1}{2}x^2 + \frac{x}{2} -\frac{x}{2}) = 0
+\]
+$x-1 = 0$ non si accetta.
+\newline
+$\frac{1}{2}x^2 +2 = 0$ è impossibile.
+\newline
+non ci sono soluzioni.
+
+\subsection*{Topologia in $\mathbb{R}$}
+\textbf{def.}
+\newline
+Preso un insieme $A\in \mathbb{R}$, k é \textbf{maggiorante} di $A$ se $k\geq x, \forall x \in A$.
+\newline
+Preso un insieme $A\in \mathbb{R}$, k é \textbf{minorante} di $A$ se $k\leq x, \forall x \in A$.
+\newline
+Un insieme è \textbf{limitato superiormente} se ne esiste almeno un maggiorante.
+\newline
+Un insieme è \textbf{limitato inferioremente} se ne esiste almeno un minorante.
+\newline
+L'\textbf{estremo inferiore} $inf(A)$ è il massimo dei minoranti (non deve per forza appartenere ad $A$).
+\newline
+L'\textbf{estremo superiore} $sup(A)$ è il minimo dei maggioranti (non deve per forza appartenere ad $A$).
+\newline
+Il \textbf{minimo} $min(A)$ è uguale all'$inf(A)$ se esso appartiene ad $A$. Notare che se esiste il $min(A)$ esso è anche l'$inf(A)$, ma non vale il viceversa.
+\newline
+\newline
+\textbf{es.} consideriamo l'insieme $A=(0,1]$.
+\newline
+$-1$ è un minorante, pure $-2$, etc. L'insieme dei minoranti di $A$ è: $(-\infty,0]$, il più grande è lo $0$, che quindi è l'$inf(A)$, ma non è il $min(A)$, perchè non appartiene ad $A$.
+\newline
+Se invece l'insieme fosse stato $A=[0,1]$, l'insime dei minoranti sarebbe ancora $(-\infty,0]$, l'$inf(A)$ sarebbe ancora $0$, ma in questo caso sarebbe anche il $min(A)$.
+\newline
+Linsieme dei maggioranti è invece $[1,+\infty]$, $sup(A)=1$, $max(A)=1$.
+\newline
+\newline
+\textbf{def.} Un punto è detto di \textbf{accumulazione} se:
+\begin{itemize}
+    \item qualunque intorno di quel punto contiene almeno un punto di $A$
+    \item ogni intorno di $x_0$ contiene un punto in A diverso da $x_0$
+\end{itemize}
+\textbf{def.} un punto è detto di \textbf{frontiera} se:
+\begin{itemize}
+    \item in ogni intorno cadono punti di $A$ e di $A^c$
+\end{itemize}
+\textbf{def.} un punto è detto \textbf{isolato} se:
+\begin{itemize}
+    \item per qualunque intorno non ci sono altri punti di $A$
+\end{itemize}
+\textbf{es.}
+\[
+    A = \{\{-2\}\cup(1,3]\}
+\]
+$-2$ è di frontiera e isolato, $1$ e $3$ sono di frontiera.
+\newline
+\newline
+\textbf{def.} un insieme è detto \textbf{interno} se:
+\begin{itemize}
+    \item esiste almeno un intorno con solo punti di $A$
+\end{itemize}
+\textbf{def.} un insieme è detto \textbf{aperto} se:
+\begin{itemize}
+    \item tutti i punti di $A$ sono punti interni
+\end{itemize}
+\textbf{def.} un insieme è detto \textbf{chiuso} se:
+\begin{itemize}
+    \item tutti i punti di $A$ sono punti di accumulazione
+\end{itemize}
+\textbf{es.}
+\[
+    B = \{x \in \mathbb{Q} \;:\; x^2 \in [1,5]\}
+\]
+che equivale all'insime
+\[
+    \{- \sqrt{5} \leq x \leq -1 \;\; \lor \;\; 1\leq x\leq\sqrt{5} \} \cap \mathbb{Q}
+\]
+maggioranti: $(\sqrt{5}, +\infty)$
+\newline
+$sup(B) = \sqrt{5}$, ma non esiste perchè siamo in $\mathbb{q}$
+\newline
+$inf(B) = \dots$
+\newline
+$max(B) =$ non esiste
+\newline
+$min(B) = \dots$
