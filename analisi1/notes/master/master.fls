@@ -1,17 +1,17 @@
-PWD c:/Users/Federico/Desktop/analisi 1/notes/master
+PWD c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master
 INPUT c:/texlive/2019/texmf.cnf
 INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.tex
-OUTPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.log
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.tex
+OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.log
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/report.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/report.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size12.clo
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size12.clo
 INPUT c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/../preamble/preamble.tex
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/../preamble/preamble.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../preamble/preamble.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../preamble/preamble.tex
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -80,9 +80,9 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/transparent.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/transparent.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.aux
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.aux
-OUTPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.aux
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux
+OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux
 INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -125,15 +125,15 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.pdf
+OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.toc
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.toc
-OUTPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.toc
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/../lecture1/lecture1.tex
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/../lecture1/lecture1.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.toc
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.toc
+OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.toc
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture1/lecture1.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture1/lecture1.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
@@ -155,16 +155,18 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/../images/image1.pdf_tex
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/../images/image1.pdf_tex
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/../images/image1.pdf
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../images/image1.pdf_tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../images/image1.pdf_tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../images/image1.pdf
 INPUT ../images/image1.pdf
 INPUT ../images/image1.pdf
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/../exercise1/exercise1.tex
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/../exercise1/exercise1.tex
-INPUT c:/Users/Federico/Desktop/analisi 1/notes/master/master.aux
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture2/lecture2.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture2/lecture2.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../exercise1/exercise1.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../exercise1/exercise1.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb

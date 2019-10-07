@@ -1,0 +1,341 @@
+\section*{07/10/19 - LEZIONE}
+\subsection*{Topologia in $\mathbb{R}$}
+Piccolo ripasso degli argomenti dell'ultima lezione.asdasdasdasdasdas
+\newline
+\textbf{def.} Un punto $x_0 \in A$ si dice \textbf{isolato} per $A$ se $\exists B_r(x_0) \;:\; B_r(x_0) \cap A = \{x_0\}$
+\newline
+img1
+\newline
+\textbf{es.} 
+\[
+    A = {x \in \mathbb{R} \;:\; x = n \in \mathbb{N}}
+\]
+img2
+\newline
+$A$ è fatto di punti isolati.
+\newline
+\textbf{def.} Un punto $x_0$ è un punto di \textbf{accumulazione} per $A$ (n.b. può $\in A$ oppure $\in A^c$), se esiste una successione di punti di $A$, c he raggiunge $x_0$
+\newline
+img3
+\newline
+il disegno mostra come ci sia un percorso che raggiunge $x_0$.
+\newline
+Se $\forall B_r(x_0) \exists x \in A \; e \; x \neq x_0$
+\newline
+\textbf{oss.} tutti i punti interni ad un insieme sono di accumulazione.
+\newline
+\textbf{oss.} i punti di frontiera sono di accumulazione purchè non siano isolati
+\newline
+\textbf{es.} 
+\[
+    A = \{x \in \mathbb{R}, x \;:\; -4 < x \leq e \;\lor\; x = \pi \;\lor\; x > 10\}
+\]
+\[
+    (-4,e] \cup {\pi} \cup (10, +\infty)
+\]
+I punti di frontiera sono $-4, e, \pi, 10$. Ma $\pi$ non è un punto di accumulazione.
+\newline
+\newline
+\newline
+Continuiamo con delle definizioni sugli insiemi.
+\newline
+\newline
+\textbf{def.} Un insieme $A$ è limitato se occupa una porzione con area finita dell'ambiente.
+\newline
+se $\exists y \in \mathbb{R}^2 \;e\; B_r(y)$ che contiene $A$. Spesso per $y$ si prende l'origine degli assi.
+\newline
+\textbf{es.} 
+\[
+    A = \{x \in \mathbb{R}, x \;:\; -4 < x \leq e \;\lor\; x = \pi \;\lor\; x > 10\}
+\]
+\[
+    (-4,e] \cup {\pi} \cup (10, +\infty)
+\]
+questo insime non è limitato per via di $(10, +\infty)$.
+\newline
+\textbf{def.} un insieme $A$ è \textbf{convesso} se ha queste forme
+\newline
+img4
+\newline
+cioè se $\forall x, y \in A$ il segmento di estremi $x$ e $y$ appartiene ad $A$
+\newline
+\textbf{def.} un insieme $A$ è \textbf{non convesso} se ha queste forme
+\newline
+img5
+\newline
+\newline
+\textbf{es.} in $\mathbb{R}$ gli insiemi "convessi" che insiemi sono?
+\newline $\mathbb{N}$ è convesso in $\mathbb{R}$? no.
+\newline $\mathbb{Q}$ è convesso in $\mathbb{R}$? no.
+\newline
+Gli insimei "convessi" in $\mathbb{R}$ sono gli insiemi:
+\begin{itemize}
+    \item singoletti;
+    \item intervalli;
+    \item semirette.
+\end{itemize}
+un insieme $A$ è \textbf{compatto} se è chiuso e limitato.
+\newline
+\textbf{es.} 
+\[
+    A =\{ (x,y) \in \mathbb{R}^2 \;:\; xy \leq1 \;e\; x^2+y^2 \leq 1 \}
+\]
+img6
+\newline
+l'insieme è chiuso e limitato, quindi compatto.
+\newline
+\newline
+\newline
+\subsection*{Funzioni}
+\textbf{def.} cos'è una \textbf{funzione}?
+\newline
+E' costituita da un insieme di partenza detto \textbf{dominio} $V$ e un insieme di arrivo detto \textbf{codominio} $W$. Un elemento del primo insieme lo simboleggiamo con la lettera $v$, del secondo con la lettera $w$.
+\newline
+\[
+    w = f(v)
+\]
+$f()$ è la legge che definsice la funzione.
+\newline
+\textbf{def.} si dice \textbf{dominio naturale} l'insieme $V'$ contenuto o uguale $V$ il più grande sottoinsieme del dominio dovela legge è ben definita
+\newline
+img7, ma sinceramente saltala...
+\newline
+Si dice che $w$ è l' \textbf{immagine} di $v$ attraverso $f$.
+\newline
+Si dice che $v$ è la \textbf{controimmagine} di $W$ attraverso $f$.
+\newline
+Si parla di \textbf{insieme immagine} come la totalità delle immagini e si indica come $im(f)$, spesso si dice anche "immagine della funzione".
+\[
+    im(f) = \{w \in W \;:\; \exists \; v \;e\; f(v) = w\}
+\]
+\textbf{def.} una funzione $f$ si dice \textbf{iniettiva} se preserva elementi distinti.
+\[
+    se \;\; \forall v_1 \neq v_2 \;\rightarrow\;\; f(v_1) \neq f(v_2)
+\]
+\textbf{def.} una funzione è \textbf{non iniettiva} se ci sono elementi diversi con la stessa immagine.
+\newline
+\textbf{def.} una funzione è \textbf{suriettiva} se "invade" tutto il codominio.
+\[
+    im(f) \;\; ugualecontrelineette \;\; W
+\] 
+\textbf{es.} 
+\[
+    \mathbb{R} \rightarrow \mathbb{R}
+\]
+\[
+    x \rightarrow y=sin(x)
+\]
+non è iniettiva e non è suriettiva.
+\newline
+\textbf{es.} 
+\[
+    [-\frac{\pi}{2}, \frac{\pi}{2} ] \rightarrow [-1,1]
+\]
+\[
+    x\rightarrow y=sin(x)
+\]
+img8
+\newline
+è iniettiva e suriettiva.
+\newline
+\textbf{def.} una funziona che è sia iniettiva sia suriettiva si dice \textbf{biiettia}.
+\newline
+\subsection*{Successioni}
+Sono funzioni particolari il cui dominio è $\mathbb{N}$
+\[
+    f:\;\; V = \mathbb{N} \rightarrow \mathbb{R}
+\]
+\[
+    n \rightarrow y= f(n)
+\]
+che spesso si scrive: $n \rightarrow y= f_n$, oppure $n \rightarrow y= a_n$.
+\newline
+$a_n$ è l'immagine dell'emento n-esimo
+\newline
+img9
+\newline
+\newline
+\textbf{def.} Una successione si dice \textbf{monotona} se hanno un andamento con un trend costante.
+\newline
+\textbf{def.} Una successione di dice monotona \textbf{crescente} se
+\[
+    \forall n_1 < n_2 \;\; \Rightarrow \;\; a_{n_{1}} \leq a_{n_{2}}
+\]
+\newline
+\textbf{def.} Una successione di dice monotona \textbf{strettamente crescente} se
+\[
+    \forall n_1 < n_2 \;\; \Rightarrow \;\; a_{n_{1}} < a_{n_{2}}
+\]
+\newline
+\textbf{def.} Una successione di dice monotona \textbf{decrescente} se
+\[
+    \forall n_1 < n_2 \;\; \Rightarrow \;\; a_{n_{1}} \geq a_{n_{2}}
+\]
+\newline
+\textbf{def.} Una successione di dice monotona \textbf{strettamente decrescente} se
+\[
+    \forall n_1 < n_2 \;\; \Rightarrow \;\; a_{n_{1}} > a_{n_{2}}
+\]
+\textbf{oss.} una successione costante è una successione monotona crescente e decrescente.
+\newline
+\textbf{def.} una successione è \textbf{limitata} se il suo insieme immagine $im(f)$ è un insieme limitato di $\mathbb{R}$
+\[
+    im(f) \;\;contenutoouguale\;\; B_r(x)
+\]
+\textbf{es.}
+\[
+    a_n = (-1)^n \frac{1}{n}
+\]
+Notiamo che $n$ non può essere $0$. La successione oscilla.
+\newline
+img10
+\newline
+Non è monotona, è limitata.
+\newline
+\textbf{es.} 
+\[
+    a_n= \left(1+\frac{1}{n}\right)^n
+\]
+img11
+\newline
+\[
+    a_1 = 2
+\]
+\[
+    a_2 = (1 + \frac{1}{2})^2 = \frac{9}{4} > a_1
+\]
+\[
+    a_3 = (1 + \frac{1}{3})^3 = \frac{64}{27} > a_2
+\]
+Questa successione converge a $e$, è limitata e monotona strettamente crescente.
+\newline
+\textbf{es.}
+\[
+    a = ln(n)
+\]
+Non è limitata, ma è limitata inferiormente, ma è monotona strettametne crescente.
+\newline
+\textbf{es.}
+\[
+    a_n = (-1)^n
+\]
+img13
+\newline
+è limitata e periodica con periodo $2$.
+\newline
+\textbf{es.}
+\[
+    a_n = sin(n)
+\]
+img14
+\newline
+è limitata, non è monotona, può sembrare periodica, ma non lo è perchè il periodo sarebbe $2\pi$.
+\newline
+\textbf{es.} successione potenza
+\[
+    a_n = n ^{\frac{1}{2}}
+\]
+img15
+\newline
+monotona strettamente crescente, limitata inferiormente.
+\newline
+\textbf{es.}
+\[
+    a_n=(-1)^nn^{(\frac{1}{2})}
+\]
+img16
+\newline
+\textbf{es.}
+\[
+    a_n=(-1)^nn^{2}
+\]
+img17
+\newline
+\newline
+\textbf{def. natura/comportamento} di una successione è l'andamento di lungo periodo (posizioni grandi).
+\newline
+\textbf{def.} Si dice che $\{a_n\}$ \textbf{converge} a $L$ e lo scrivo
+\[
+    a_n \; \rightarrow_{+ \infty} \; L
+\]
+\[
+    lim_{n\rightarrow + \infty} = L
+\]
+img18
+\newline
+definizione formale:
+\[
+    lim_{n\rightarrow + \infty} a_n = L \;\;se\;\; \forall B_r(L) \;\exists \; M \;\;\; \forall n>M \;\;\; a_n \in B_r(L)
+\]
+definizione a parole:
+\newline
+per ogni intorno $B_r$ del limite $L$ esiste una posizione $M$ al di là della quale la successione sta tutta nell'intorno del valore L.
+\newline
+img19
+\newline
+\newline
+\textbf{def.} $a_n$ è \textbf{positivamente divergente} o \textbf{divergente a $+\infty$} e lo scrivo
+\[
+    a_n \; \rightarrow_{+ \infty} \; + \infty
+\]
+\[
+    lim_{n\rightarrow +\infty} a_n = + \infty
+\]
+\newline
+definizione formale:
+\[
+    lim_{n\rightarrow + \infty} a_n = +\infty \;\;se\;\; \forall B_r(+\infty) \;\exists \; M \;\;\; \forall n>M \;\;\; a_n \in B_r(+\infty)
+\]
+definizione a parole:
+\newline
+per ogni intorno $B_r$ di $+\infty$ esiste una posizione $M$ al di là della quale la successione sta tutta nell'intorno di $+\infty$.
+\newline
+img20
+\newline
+\textbf{def.} una successione è \textbf{negativamente divergente} o \textbf{divergente a $-\infty$} e lo scrivo
+\[
+    a_n \; \rightarrow_{+ \infty} \; - \infty
+\]
+\[
+    lim_{n\rightarrow +\infty} a_n = - \infty
+\]
+\newline
+definizione formale:
+\[
+    lim_{n\rightarrow - \infty} a_n = -\infty \;\;se\;\; \forall B_r(-\infty) \;\exists \; M \;\;\; \forall n>M \;\;\; a_n \in B_r(-\infty)
+\]
+definizione a parole:
+\newline
+per ogni intorno $B_r$ di $+\infty$ esiste una posizione $M$ al di là della quale la successione sta tutta nell'intorno di $+\infty$.
+\newline
+img21
+\newline
+\newline
+\textbf{def.} Una successione ha una \textbf{proprietà definitiva} se la proprietà è valida per la successione da un certo valore in poi.
+\newline
+Le definizioni di convergenza e divergenza possono essere riscritte usando la definizione della proprietà definitiva.
+\newline
+\textbf{def.} Una successioen che non è né divergente né convergente è \textbf{irregolare}.
+\newline
+\textbf{es.}
+\[
+    a_n = (-1)^n
+\]
+questa successione è irregolare e limitata.
+\textbf{es.}
+\[
+    a_n = (-1)^nn^2
+\]
+questa successione è irregolare e illimitata.
+\newline
+\newline
+La natura di una successione è di tre tipi:
+\begin{itemize}
+    \item convergente
+    \item divergente (positivamente o negativamente)
+    \item irregolare
+\end{itemize}
+
+
+
+
