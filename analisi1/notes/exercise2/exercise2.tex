@@ -1,0 +1,268 @@
+\section*{01/10/19 - ESERCITAZIONE}
+\subsection*{prima ora...}
+[ho perso la prima ora]
+\newline
+\textbf{es.} TDE
+\[
+    A = \{z \in \mathbb{C} \;:\; |z-9| > |z-9i|\}
+\]
+\[
+    B=\{w \in \mathbb{C} \;:\; arg(w) = \frac{\pi}{4}\}
+\]
+ $A\cup B$ è:
+\begin{itemize}
+    \item chiuso
+    \item aperto
+    \item nè chiuso nè aperto
+    \item numerabile (cioè se può essere messo in corrispondenza biunivoca con l'insieme dei numeri naturali)
+\end{itemize}
+img 22
+\newline
+I punti che appartengono ad $A$ sono quelli al di sopra della bisettrice, bisettrice non inclusa. L'insieme $B$ è invece la bisettrice che parte dall'origine e taglia il I quadrante.
+\newline
+i punti della semiretta bisettrice che parte dall'origine e taglia il III quadrante è costituita da punti di accumulazione, quindi l'insieme $A\cup B$ non è chiuso (???).  
+\newline
+la risposta corretta è che l'insieme $A\cup B$ è nè chiuso nè aperto.
+\newline
+\newline
+\textbf{es.} TDE
+\[
+    A = \{z = x+iy \; \in \mathbb{C}\;:\; \frac{|z-2|}{|z|}<1 \}
+\]
+$A$ è:
+\begin{itemize}
+    \item senza punti di accumulazione
+    \item aperto
+    \item chiuso
+    \item limitato
+\end{itemize}
+\[
+    z-2 = x-2+iy
+\]
+\[
+    \frac{|z-2|}{|z|} = \frac{\sqrt{(x-2)^2+y^2}}{\sqrt{x^2+y^2}}<1
+\]
+\[
+    x^2 +4x +4 +y^2 < x^2+y^2
+\]
+\[
+    x>1
+\]
+Ha punti di accumulazione, per esempio quelli sull'asse delle ascisse, non è limitato, non è chiuso perchè non contiene tutti i suoi punti di accumulazione, per esempio quelli sull'asse delle ordinate. La risposta giusta è che è aperto.
+\newline
+\newline
+\textbf{es.} 
+\[
+    A = \{x \in \mathbb{R} \;:\; x = 5 -\frac{2}{n} \;,\; n \in \mathbb{N}-\{0\}\}
+\]
+per $n=1$ abbiamo $x_1 =3$, poi per $n=2$ abbiamo $x_2=4$, poi $x_3 = 5-\frac{2}{3}$ etc.
+\newline
+L'idea dell'insieme è che al crescere di $n$ ci avviciniamo sempre di più al valore $5$.
+\newline
+\[
+    f(x) = 5-\frac{2}{x}
+\] 
+img23
+\newline
+Con questa immagine si può rappresentare l'insieme che tende a $5$.
+\newline
+troviamo $inf$ e $sup$ di $A$:
+\[
+    inf(A)=3 = min(A)
+\]
+per verificare che $3$ sia l'$inf$ devo verificare che sia un minorante e sia il massimo dei minoranti.
+\newline
+verifichiamo che $3$ sia un minorante:
+\[
+    3 \leq x_n
+\]
+\[
+    3 \leq 5 - \frac{2}{n}    
+\]
+\[
+    \frac{2}{n} \leq 2
+\]
+\[
+    \frac{1}{n} \leq 1
+\]
+Ora verifichiamo che sia il massimo dei minoranti, cioè che se salgo sopra il $3$, non trovo più un minorante:
+\[
+    \forall \epsilon > 0 \;\exists\; x_n \;:\; x_n < 3+\epsilon
+\]
+\[
+    5-\frac{2}{n} < 3 +\epsilon    
+\]
+\[
+    \frac{2}{n} > 2 -\epsilon
+\]
+\[
+    n < \frac{2}{2-\epsilon}
+\]
+essendo $\frac{2}{2-\epsilon}$ maggiore di 1 mi basta prendere $n=1$.
+\newline
+Inoltre $3$ è anche minimo perchè appartiene all'insieme.
+\newline
+Verifichiamo ora che $5$ è il sup ma non il max di $A$.
+\newline
+Per essere il sup deve essere maggiorante e il minimo dei maggioranti.
+\[
+    sup(A)=5 \neq max(A)
+\]
+\[
+    5 \geq X_n \;  \forall n \in \mathbb{N}-\{0\}
+\]
+\[
+    5\geq 5 - \frac{2}{n} \;  \forall n \in \mathbb{N}-\{0\}
+\]
+\[
+    0\geq -\frac{2}{n}
+\]
+Ora voglio verificare che sia il minimo dei maggioranti, cioè:
+\[
+        \forall \epsilon>0 \;\exists\; x_n \;:\; x_n > 5-\epsilon
+\]
+\[
+    5-\frac{2}{n}> 5-\epsilon
+\]
+\[
+    -\frac{2}{n}> -\epsilon
+\]
+\[
+    \epsilon > \frac{2}{n}
+\]
+\[
+    n > \frac{2}{\epsilon}
+\]
+\[
+    n = \frac{2}{\epsilon} +3
+\]
+Ora dobbiamo dimostrare che non è il massimo, cioè che non appartiene all'insieme.
+\newline
+Tutti gli elementi dell'insieme hanno la forma 
+\[
+    5-\frac{2}{n}
+\]
+Ma siccome non esiste $n$ per cui $5-\frac{2}{n} = 5$, l'elemento non appartiene all'insieme.
+\newline
+L'insieme è limitato? sì.
+\newline
+Tutti i punti sono isolati? sì, dimostriamolo:
+\[
+    x_{\bar{n}} = 5 - \frac{2}{\bar{n}}
+\]
+\[
+    d = dist(x_{\bar{n}}, x_{\bar{n}+1}) = \frac{1}{\bar{n}(\bar{n}+1)}
+\]
+se quindi prendiamo l'intorno
+\[
+    B(x_{\bar{n}},\frac{1}{\bar{n}(\bar{n}+1))}
+\]
+abbiamo dimostrato che tutti i punti sono isolati.
+\newline
+troviamo ora il limite per $n \rightarrow \infty$
+\[
+    A = \{x \in \mathbb{R} \;:\; x_n = 5-\frac{2}{n} \;\;, n\in \mathbb{N} -{0}\}
+\]
+\[
+    lim_{n \rightarrow \infty} x_n = 5
+\]
+\[
+    \forall \epsilon > 0 \;\exists\; \bar{n} \;:\; \forall n > \bar{n} \;\;vale\;\; |x_n-5| < \epsilon 
+\]
+\[
+    |x_n-5| <\epsilon 
+\]
+\[
+    ||(3-\frac{2}{n}- 5)| < \epsilon
+\]
+\[
+    \frac{2}{n}< \epsilon
+\]
+\[
+    n> \frac{2}{\epsilon}
+\]
+\textbf{es.} dimsotrare che
+\[
+    lim_{n\rightarrow+\infty} \frac{3n^2 +n}{n^2-1} = 3
+\]
+\[
+    \forall \epsilon > 0 \;\exists\; \bar{n} \;:\; \forall n > \bar{n} \;\;vale\;\; |\frac{3n^2 +n}{n^2-1}| <\epsilon 
+\]
+\[
+    |\frac{n+3}{n^2-1}|<\epsilon
+\]
+\[
+    -\epsilon< \frac{n+3}{n^2-1}< \epsilon
+\]
+\[
+    \begin{cases}
+        \frac{n+3}{n^2-1}>-\epsilon \\
+        \frac{n+3}{n^2-1}< \epsilon \\
+    \end{cases}
+\]
+La prima disequazione è sempre verificata, per la seconda:
+\[
+    \epsilon n^2 - n -(\epsilon + 3) > 0
+\]
+\[
+    n_{1,2} = \frac{1 \pm \sqrt{1+4\epsilon(\epsilon+3)}}{2\epsilon}
+\]
+\[
+    n \leq \frac{\-\alpha ??}{2\epsilon} \lor \frac{1+\sqrt{1+4\epsilon(\epsilon+3)}}{2\epsilon}
+\]
+
+\textbf{es.} descrivere il carattere della seguente successione:
+\[
+    a_n = n-2 cos n \frac{\pi}{2} \;\rightarrow n\in \mathbb{N}- \{0\}
+\]
+notiamo un pattern:
+\[
+    cos(1+ \frac{\pi}{2}) = 0 \;\;,\;\;
+    cos(2+ \frac{\pi}{2}) = -1 \;\;,\;\;
+    cos(3+ \frac{\pi}{2}) = 0 \;\;,\;\;
+    cos(4+ \frac{\pi}{2}) = 1
+\]
+al crescere di n il pattern si ripete. La nostra successione quindi si muove così:z
+\[
+    a_1 = 1 \;\;,\;\;
+    a_2 = 4 \;\;,\;\;
+    a_3 = 3 \;\;,\;\;
+    a_4 = 2
+\]
+quindi $a_n$ è:
+\[
+    a_n = 
+    \begin{cases}
+        4k+1 \;\;\;&se \;n= 4k+1 \\
+        4k+4 \;\;\;&se \;n = 4k+2\\
+        4k+3 \;\;\;&se \;n= 4k+3\\
+        4k+2 \;\;\;&se \;n= 4k+4\\
+    \end{cases}
+\]
+con $k \in \mathbb{N}$
+\newline
+Il limite di $a_n$ per $n\rightarrow +\infty$ é $+\infty$.
+\newline
+dimostriamolo:
+\[
+    \forall k>0 \;\exists\; \bar{n} \;:\; \forall n \geq \bar{n} \;\;vale\;\; a_n> k
+\]
+qualunque $k$ fissato riesco a trovare un $\bar{n}$ per cui tutti i successivi elementi sono maggiori di $k$.
+\newline
+mi manca la dimostrazione effettiva... ??
+\newline
+\textbf{es.} 
+\[
+    a_n = (1-cos \frac{9}{10}\pi )^n
+\]
+E' simile alla successione geometrica ($a_n = q^n$).
+\newline
+Analiziamo la sua ragione:
+\[
+    -1 < cos \frac{9}{10} < 0
+\]
+quindi
+\[
+    1<q<2  
+\]
+diverge a $+\infty$

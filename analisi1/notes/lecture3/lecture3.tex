@@ -1,0 +1,381 @@
+\section*{LEZIONE 3}
+10/10/19
+\subsection*{[perso i primi 20 minuti]}
+Sta parlando di limiti\dots
+\newline
+\[
+    \forall B_s(l) \;\exists \; B_q(x_0) \;\;:\;\; \forall x\in A \cap B_q(x_0)-\{x_0\} \;\;,\;\;f(x) \in B_s(l)
+\]
+"per ogni intorno del valore limite $l$" definitivamente vicino a $x_0$ la funzione sta nell'intorno del valore limite.
+\subsection*{Algebra dei limiti}
+\textbf{def.} Vediamo una definizione non operativa di limite:
+\newline
+Per poter fare dei confronti rigorosi fra limiti, ovvero fra funzioni, ho bisogno di introdurre due simboli:
+\newline
+\begin{itemize}
+    \item asintotico: $\sim$
+    \item o-piccolo: $o$
+\end{itemize}
+\subsection*{o-piccolo}
+$f = o(g) \;\;per \;\; x \rightarrow x_0$ se $f$ è trascurabile rispetto $g$. Cioè se confrontiamo $f$ e $g$, $f$ perde.
+\newline
+vediamo la definizione formale:
+\[
+    se \;\; f(x) = g(x)h(x) \;\; e \;\; h(x) \longrightarrow_{x\rightarrow x_0} 0
+\]
+\textbf{oss.} conseguenza è che
+\[
+    \frac{f(x)}{g(x)}\longrightarrow_{x\rightarrow x_0} 0
+\]
+\textbf{es.} $x\longrightarrow 0$ 
+\[
+    x^2 = o(x) \rightarrow vera
+\]
+\[
+    x=o(x^2) \rightarrow falsa
+\]
+\textbf{es.} me lo sono perso cazzo per un pezzo
+\newline
+per $x\rightarrow \infty$
+\[
+    x^2 = o(x) falsa
+\]
+\[
+    x=o(x^2) vera
+\]
+\textbf{regola:} Nell'intorno dell'origine (tendendo a $0$) potenze alte della variabili sono trascurabili, cioè sono o-piccolo rispetto a potenze più basse.
+\newline
+\textbf{regola} allontanandosi dall'origine (tendendo a $\pm \infty$)  potenze basse sono trascurabili rispetto a potenze più alte, cioè sono o-piccolo rispetto a potenze più alte.
+\newline
+\subsubsection*{Proprietà di o-piccolo}
+\begin{itemize}
+    \item $o(k \; g) = o(g) = k \; o(g)$ con $k \in \mathbb{R}$ e costante.
+    \newline
+    \textbf{dim.} 
+    \[
+        f = o( k \; g) \rightarrow f = o(g)
+    \] 
+    \[
+        f= k \; g \; h
+    \]
+    ma $h\rightarrow0$, quindi $k \; h \rightarrow 0$
+    \[
+        f = o(g)
+    \]
+    \item $o(g) \pm o(g) = o(g)$
+    \newline
+    \textbf{dim.} conseguenza della proprietà precedente.
+    \newline
+    \textbf{oss.} errore tipico: $o(g) - o(g) = 0$. SBAGLIATISSIMO.
+    \newline
+    \textbf{es.} per $z\longrightarrow + \infty$
+    \[
+        f_1=x^3 -2x +4 = x^3 + o(x^3)
+    \]
+    \[
+        f_2 = x^3 + x^2 -7 = x^3 + o(x^3)
+    \]
+    \[
+        f_1 - f_2 = x^3 + o(x^3) -( x^3 + o(x^3)) = o(x^3) - o(x^3) =
+    \]
+    \[
+        = -2x +4 - x^2 + 7 
+    \]
+    \item $f \cdot o(g) = o(f \cdot g)$  con $f$ una funzione
+    \textbf{dim.} 
+    \[
+        F = o(g) = g \cdot h \;\; e \;\; h\rightarrow0
+    \] 
+    moltiplico entrambe le parti per $f$
+    \[
+        f \cdot F = f \cdot g \cdot h
+    \]
+    \item $[o(g)]^k = o(g^k)$ con $k \in \mathbb{R}^{+}$
+    \textbf{dim.}
+    \[
+        G = o(g)
+    \] 
+    \[
+        G = g \cdot h \;\; e \;\; h\rightarrow0
+    \]
+    elevo tutto alla $k$
+    \[
+        G^k = g^k \cdot h ^k \;\; H = h^k \rightarrow 0
+    \]
+\end{itemize}
+\subsection*{Asintotico}
+\[
+    f \sim g \;\;\; x \rightarrow x_0
+\]
+$f$ è asintotico a $g$ se tendono allo stesso valore e anzi ci tendono allo stesso modo.
+\newline
+formalemente:
+\[
+    f \sim g \;\;\; se \;\;\; f=g \cdot  h \;\; e \;\; h\rightarrow 1
+\]
+\textbf{oss.} conseguenza:
+\[
+    \frac{f}{g} \rightarrow 1
+\]
+\textbf{teor.} teorema fondamentale che lega $ \sim $ e $o()$  
+\newline
+per $x\rightarrow x_0$
+\[
+    f \sim g \Longleftrightarrow f = g + o(g)
+\]
+Due funzioni sono asintotiche se hanno lo stesso termine dominante.
+\newline
+\textbf{dim.} dimostrazione da sinistra a destra $(\Rightarrow)$:
+\newline
+ipotesi: $ f= g \cdot  h$ e $ h \rightarrow 1$. Sottraggo $g$ da entrambi i membri:
+\[
+    f-g = g \cdot h -g = g(h-1) \;\;\; H = h-1  \longrightarrow
+\]
+\[
+    f-g = o(g)
+\]
+\[
+    f=g+o(g)
+\]
+\textbf{dim.} dimostrazione da destra a sinistra $(\Leftarrow)$
+\newline
+ipotesi: $f-g = o(g)$
+\[
+    f-g = g \cdot h \;\;\;h \rightarrow 0
+\]
+\[
+    f = g + g \cdot h = g (1+h) \;\;\; H = h+1 \rightarrow 1
+\]
+\[
+    f \sim g
+\]
+\subsubsection*{Proprietà di asintotico}
+\begin{itemize}
+    \item $f \sim g$ allora $f^k \sim g^k$.
+    \newline
+    \textbf{dim.} 
+    \[
+        f = g \cdot  h \;\;\; dots
+    \] 
+    l'ho persa \dots
+    \item $f_1 \sim g_1$ e $f_2 \sim  g_2$ allora
+    \[
+        f_1 \cdot  f_2 \sim  g_1 \cdot  g_2    
+    \]
+    \[
+        \frac{f_1}{f_2} \sim \frac{g_1}{g_2}
+    \]
+    prodotti e rapporti di funzioni asintotiche sono asintotici fra loro.
+    \textbf{dim.}
+    \[
+        f_1 \sim  g_1
+    \] 
+    \[
+        f-1 = g_1 \cdot  h-1 \;\;\; e h_1 \rightarrow 1
+    \]
+    \[
+        f_2 \sim  g_2
+    \] 
+    \[
+        f-1 = g_1 \cdot  h-1 \;\;\; e h_1 \rightarrow 1
+    \]
+    cazzo l'ho persa anche questa \dots
+    \[
+        \frac{f_1}{f_2} = \frac{g_1}{g_2} \cdot H \;\;\; H = \frac{h_1}{h_2}\rightarrow 1
+    \]
+    \item notare che non c'è una proprietà per la somma di asintotici, che invece nell'o-piccolo c'è. 
+\end{itemize}
+\subsection*{Limiti notevoli}
+Sta facendo simulazioni con MATLAB, stiamo vedendo graficamente come il seno nell'intorno dell origine sia approssimabile con la bisettrice, il cosendo con la parabola, la funzione esponenziale traslata in giù di un unità con la bisettrice, il logaritmo traslato a sinistra di un unità è approssimato dalla bisettrice,etc.
+\newline
+vediamo ora in formule questi risultati:
+\begin{itemize}
+    \item 
+        per $x \rightarrow 0$
+        \[
+            sin (x) = x +o(x)
+        \]
+        questa uguaglianza si può riscrivere come $sin(x) - x = o(x)$, cioè o(x) è l'errore che sto facendo nell'approssimare $sin(x)$ come $x$.
+        \newline
+        img1
+        \[
+            sin(x) \sim x
+        \]
+        \[
+            \lim_{x\rightarrow0} \frac{sin(x)}{x} = 1
+        \]
+    \item 
+        per $x \rightarrow 0$
+        \[
+            cos (x) = 1- \frac{1}{2}x^2 +o(x^2)
+        \]
+        \[
+            cos(x) -1 = -\frac{1}{2}x^2 + o(x^2)
+        \]
+        img2
+        \[
+            cos(x) -1 \sim -\frac{1}{2}x^2
+        \]
+        \[
+            \lim_{x\rightarrow 0} \frac{cos(x) -1}{-\frac{1}{2}x^2} = 1
+        \]
+    \item 
+        per $x \rightarrow 0$
+        \[
+            e^x -1 = x+o(x)
+        \]
+        img3
+        \[
+            e^x -1 \sim x
+        \]
+        \[
+            \lim_{x\rightarrow 0} \frac{e^x-1}{x} = 1
+        \]
+    \item 
+        per $x \rightarrow 0$
+        \[
+            ln(1+x) = x +o(x) 
+        \]
+        img4
+        \[
+            ln(1+x) \sim x 
+        \]
+        \[
+            \lim_{x\rightarrow0}\frac{ln(1+x)}{x} = 1
+        \]
+\end{itemize}
+\textbf{es.} 
+\[
+    \lim_{x\rightarrow + \infty} \frac{\sqrt{3x^4-x}}{x^2-1}
+\]
+\[
+    f(x) = \frac{\sqrt{3x^4-x}}{x^2-1} \;\;\; x\rightarrow + \infty
+\]
+\[
+    3x^4-x = 3x^4 + o(3x^4) = 3x^4 + o(x^4)
+\]
+\[
+    3x^4-x  \sim  3 x^4
+\]
+\[
+    (3x^4-x)^{\frac{1}{2}}  \sim  (3 x^4)^{\frac{1}{2}}
+\]
+\[
+    \sqrt{3x^4-x} \sim  \sqrt{3 x^4}
+\]
+\[
+    \sqrt{3x^4-x} = \sqrt{3x^4} + o(x^2)
+\]
+\[
+    x^2-1 = x^2 +o(x^2)
+\]
+\[
+    x^2 -1 \sim x^2
+\]
+usiamo ora la proprietà dei rapporti di funzioni asintotiche
+\[
+    \frac{\sqrt{3x^4-x}}{x^2-1} \sim \frac{\sqrt{3x^4}}{x^2} = \sqrt{3}
+\]
+\[
+    \lim_{x\rightarrow+\infty} = \sqrt{3}
+\]
+\subsubsection*{Limite notevole della pontenza $\alpha$-esima con $0<\alpha<1$}
+\[
+    y = x^{\alpha} \;\;\; con \;0<\alpha<1
+\] 
+img5
+\newline
+\[
+    (1+x)^{\alpha} = 1+\alpha x + o(x)
+\]
+Questo limite notevole viene usato per risolvere le radici.
+\[
+    (1+x)^{\alpha} -1 = \alpha x +o(x) \;\;\; per \;\; x \rightarrow 0
+\]
+\[
+    (1+x)^{\alpha} -1 \sim \alpha x
+\]
+\[
+    \lim_{x \rightarrow 0} \dots perso
+\]
+\textbf{es.} 
+\[
+    \lim_{x\rightarrow 0} \frac{\sqrt{1+2x^2-x^3}-cos(x)}{sin(x)}
+\]
+Analiziamo l'andamento asintotico della seguente funzione:
+\[
+    f(x) = \frac{\sqrt{1+2x^2-x^3}-cos(x)}{sin(x)} \;\;\; per \;\; x \rightarrow 0
+\]
+Occupiamoci della radice con la proprietà appena vista:
+\[
+    (1+t)^{\alpha} -1 = \alpha t +o(t) \;\;\; per \;\; t \rightarrow 0
+\]
+Se prendo $t = 2x^2 -x^3$ e $\alpha = \frac{1}{2}$
+\[
+    (1+2x^2-x^3)^{\frac{1}{2}} = 1 + \frac{1}{2} (2x^2-x^3) + o(2x^2 - x^3)
+\]
+Analizzando $o(2x^2 - x^3)$, noto che $x^3$ è trascurabile rispetto a $2x^2$, Inoltre la costatne $2$ non conta nell'o-piccolo, quindi:
+\[
+    1 + \frac{1}{2} (2x^2-x^3) + o(x^2)
+\]
+Inoltre anche in $(2x^2-x^3)$ posso ignorare $x^3$, quindi:
+\[
+    (1+2x^2-x^3)^{\frac{1}{2}} = 1 + \frac{1}{2} (2x^2) + o(x^2) =
+\]
+\[
+    = 1 + x^2 + o(x^2)
+\]
+Quindi tornando alla funzione originale
+\newline
+Numeratore:
+\[
+    1 + x^2 + o(x^2) -[1-\frac{1}{2}x^2 +o(x^2)]= \frac{3}{2}x^2 +o(x^2)
+\]
+Denominatore:
+\[
+    x+o(x)
+\]
+
+\[
+    \frac{\sqrt{1+2x^2-x^3}-cos(x)}{sin(x)} = \frac{\frac{3}{2}x^2 +o(x^2)}{x+o(x)} \sim \frac{\frac{3}{2}x^2}{x} \sim \frac{3}{2}x
+\]
+Quindi la funzione tende a $0$ con la pendenza di $\frac{3}{2}x$
+\newline
+\newline
+\textbf{es.} 
+\[
+    \lim_{x\rightarrow + \infty} \frac{2\sqrt{x-1}-\sqrt[4]{16x^2-2}}{\sqrt{x+1}}
+\]
+\[
+    (1+t)^{\frac{1}{4}} = 1+\frac{1}{4}t +o(t) \;\;\; t \rightarrow 0
+\]
+ma noi nell'espressione della consegna abbiamo $x\rightarrow + \infty$
+\[
+    = \sqrt[4]{16x^2-2} = \sqrt[4]{16x^2(1-\frac{2}{16x^2})} = 2 \sqrt{|x|} (1- \frac{1}{8x^2})^{\frac{1}{4}} = 
+\]
+Ora usiamo il limite notevole con $t = -\frac{1}{8x^2}$, perchè ora $\frac{1}{x^2}$ tende a $0$ per $x\rightarrow + \infty$
+\[
+    = 2\sqrt{x}(1+\frac{1}{4} \cdot (-\frac{1}{8x^2})) + o(\frac{1}{x^2}) =
+\]
+\[
+    = 2 \sqrt{x} - \frac{1}{16} \frac{1}{x^{\frac{3}{2}}} + o(\frac{1}{x^{\frac{3}{2}}})
+\]
+Poi
+\[
+    \sqrt{x-1} = \sqrt{x(1-\frac{1}{x})} = \sqrt{x} (1-\frac{1}{x})^{\frac{1}{2}} =
+\]
+\[
+    =\sqrt{x}[ 1 + \frac{1}{2} (-\frac{1}{x}) + o(-\frac{1}{x}) ] = 
+\]
+essendo il $-$ dentro all'o-piccolo una costante lo posso togliere
+\[
+    =\sqrt{x}  - \frac{1}{2\sqrt{x}}  + o(\frac{1}{\sqrt{x}}) 
+\]
+Ora, quindi, ottengo:
+\[
+    -\frac{1}{\sqrt{x}} + \frac{1}{16} \cdot \frac{1}{x^{\frac{3}{2}}} + o(\frac{1}{x^{\frac{3}{2}}}) + o(\frac{1}{\sqrt{x}})
+\]
+Fra i due o-piccolo, $\frac{1}{x^{\frac{1}{2}}}$ è più grande di $\frac{1}{x^{\frac{3}{2}}}$
+\[
+    -\frac{1}{\sqrt{x}} + o(\frac{1}{\sqrt{x}})
+\]
