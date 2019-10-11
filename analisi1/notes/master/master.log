@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  11 OCT 2019 13:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  11 OCT 2019 18:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -698,20 +698,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--450
 
  []
 
-) [32] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux) ) 
+[32]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../exercise2/exercise2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 17--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--53
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 55--60
+
+ []
+
+[34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 178--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 209--213
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 247--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--255
+
+ []
+
+) [37] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux) ) 
 Here is how much of TeX's memory you used:
- 4766 strings out of 492609
- 65771 string characters out of 6132818
+ 4771 strings out of 492609
+ 66038 string characters out of 6132818
  154947 words of memory out of 5000000
  8552 multiletter control sequences out of 15000+600000
  13009 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,39p,883b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf (33 pages, 192010 bytes).
+Output written on c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf (38 pages, 202326 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 177 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

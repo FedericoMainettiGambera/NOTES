@@ -1,7 +1,5 @@
 \section*{01/10/19 - ESERCITAZIONE}
-\subsection*{prima ora...}
-[ho perso la prima ora]
-\newline
+\subsection*{[manca prima ora]}
 \textbf{es.} TDE
 \[
     A = \{z \in \mathbb{C} \;:\; |z-9| > |z-9i|\}
@@ -20,9 +18,9 @@ img 22
 \newline
 I punti che appartengono ad $A$ sono quelli al di sopra della bisettrice, bisettrice non inclusa. L'insieme $B$ è invece la bisettrice che parte dall'origine e taglia il I quadrante.
 \newline
-i punti della semiretta bisettrice che parte dall'origine e taglia il III quadrante è costituita da punti di accumulazione, quindi l'insieme $A\cup B$ non è chiuso (???).  
+I punti della semiretta bisettrice che parte dall'origine e taglia il III quadrante è costituita da punti di accumulazione.  
 \newline
-la risposta corretta è che l'insieme $A\cup B$ è nè chiuso nè aperto.
+La risposta corretta è che l'insieme $A\cup B$ non è nè chiuso nè aperto.
 \newline
 \newline
 \textbf{es.} TDE
@@ -64,15 +62,13 @@ L'idea dell'insieme è che al crescere di $n$ ci avviciniamo sempre di più al v
 \] 
 img23
 \newline
-Con questa immagine si può rappresentare l'insieme che tende a $5$.
-\newline
-troviamo $inf$ e $sup$ di $A$:
+Troviamo $inf$ e $sup$ di $A$:
 \[
     inf(A)=3 = min(A)
 \]
-per verificare che $3$ sia l'$inf$ devo verificare che sia un minorante e sia il massimo dei minoranti.
+Per verificare che $3$ sia l'$inf$ devo verificare che sia un minorante e sia il massimo dei minoranti.
 \newline
-verifichiamo che $3$ sia un minorante:
+Verifichiamo che $3$ sia un minorante:
 \[
     3 \leq x_n
 \]
@@ -103,11 +99,10 @@ essendo $\frac{2}{2-\epsilon}$ maggiore di 1 mi basta prendere $n=1$.
 Inoltre $3$ è anche minimo perchè appartiene all'insieme.
 \newline
 Verifichiamo ora che $5$ è il sup ma non il max di $A$.
-\newline
-Per essere il sup deve essere maggiorante e il minimo dei maggioranti.
 \[
     sup(A)=5 \neq max(A)
 \]
+Per essere il sup deve essere maggiorante e il minimo dei maggioranti.
 \[
     5 \geq X_n \;  \forall n \in \mathbb{N}-\{0\}
 \]
@@ -155,16 +150,16 @@ Tutti i punti sono isolati? sì, dimostriamolo:
 \]
 se quindi prendiamo l'intorno
 \[
-    B(x_{\bar{n}},\frac{1}{\bar{n}(\bar{n}+1))}
+    B(x_{\bar{n}},\frac{1}{\bar{n}(\bar{n}+1)}) \;\;\;(?)
 \]
 abbiamo dimostrato che tutti i punti sono isolati.
 \newline
-troviamo ora il limite per $n \rightarrow \infty$
+Troviamo ora il limite per $n \rightarrow \infty$ e dimostriamolo:
 \[
     A = \{x \in \mathbb{R} \;:\; x_n = 5-\frac{2}{n} \;\;, n\in \mathbb{N} -{0}\}
 \]
 \[
-    lim_{n \rightarrow \infty} x_n = 5
+    \lim_{n \rightarrow \infty} x_n = 5
 \]
 \[
     \forall \epsilon > 0 \;\exists\; \bar{n} \;:\; \forall n > \bar{n} \;\;vale\;\; |x_n-5| < \epsilon 
@@ -173,7 +168,7 @@ troviamo ora il limite per $n \rightarrow \infty$
     |x_n-5| <\epsilon 
 \]
 \[
-    ||(3-\frac{2}{n}- 5)| < \epsilon
+    |(3-\frac{2}{n}- 5)| < \epsilon
 \]
 \[
     \frac{2}{n}< \epsilon
@@ -181,7 +176,9 @@ troviamo ora il limite per $n \rightarrow \infty$
 \[
     n> \frac{2}{\epsilon}
 \]
-\textbf{es.} dimsotrare che
+\newline
+\newline
+\textbf{es.} dimsotrare
 \[
     lim_{n\rightarrow+\infty} \frac{3n^2 +n}{n^2-1} = 3
 \]
@@ -210,7 +207,8 @@ La prima disequazione è sempre verificata, per la seconda:
 \[
     n \leq \frac{\-\alpha ??}{2\epsilon} \lor \frac{1+\sqrt{1+4\epsilon(\epsilon+3)}}{2\epsilon}
 \]
-
+\newline
+\newline
 \textbf{es.} descrivere il carattere della seguente successione:
 \[
     a_n = n-2 cos n \frac{\pi}{2} \;\rightarrow n\in \mathbb{N}- \{0\}
@@ -249,7 +247,9 @@ dimostriamolo:
 \]
 qualunque $k$ fissato riesco a trovare un $\bar{n}$ per cui tutti i successivi elementi sono maggiori di $k$.
 \newline
-mi manca la dimostrazione effettiva... ??
+[manca dimostrazione] \dots
+\newline
+\newline
 \newline
 \textbf{es.} 
 \[
