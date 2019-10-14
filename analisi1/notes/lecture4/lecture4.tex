@@ -1,3 +1,356 @@
 \section*{4-LEZIONE}
 14/10/19
-\newpage
+\subsection*{Gerarchia degli infiniti}
+\textbf{def.} Si dice \textbf{infinito} una qualunque successione o funzione con limite infinito, cioè divergente.
+\newline
+\newline
+Vediamo alcune successioni particolari:
+\[
+    a_n = ln(n)
+\]
+\[
+    b_n = n
+\]
+\[
+    c_n = e^n
+\]
+\[
+    d_n = n!
+\]
+Tutte queste successioni divergono a $+ \infty$, ma non sono asintotiche fra loro, perchè non tendono a $+ \infty$ allo stesso modo.
+\newline
+\newline
+Osserviamo (tramite grafici su Matlab) che $a_n = ln(n)$ e $b_n = n$ tendono a infinito in maniera diversa, infatti possiamo dire che $ln(n) = o(n)$.
+\newline
+Lo stesso vale per $n$, $e^n$ e $n!$: $n = o(e^n)$ e $e^n = o(n!)$
+\[
+    \lim_{n\rightarrow +\infty} \frac{ln(n)}{n} = 0
+\] 
+\[
+    \lim_{n\rightarrow +\infty} \frac{n}{e^n} = 0
+\]
+\[
+    \lim_{n\rightarrow +\infty} \frac{e^n}{n!} = 0
+\]
+\newline
+Gerarchia degli infiniti:
+\[
+    ln(n) = o(n) \;\;\;\;\;\;\;\;\;\;\;\; n=o(e^n) \;\;\;\;\;\;\;\;\;\;\;\; e^n = o(n!)
+\]
+Questa gerarchia si mantiene anche con potenze positive diverse fra di loro.
+\newline
+\textbf{es.} $ln(n)^k = o(n^\frac{1}{k})$ con $k>0$.
+\newline
+\newline
+\subsection*{Gerarchia degli infinitesimi}
+\textbf{def.} Si dice \textbf{infinitesimo} una qualunque successione o funzione con limite zero, cioè convergente a $0$.
+\newline
+\newline
+\[
+    a_n = \frac{1}{ln(n)}
+\]
+\[
+    b_n = \frac{1}{n}
+\]
+\[
+    c_n = \frac{1}{e^n} = e ^{-n}
+\]
+\[
+    d_n = \frac{1}{n!}
+\]
+Tutte queste successioni convergono a $0$, ma non sono asintotiche fra loro, perchè non tendono a $0$ allo stesso modo.
+\newline
+\newline
+Osserviamo (tramite grafici su Matlab) che $a_n = \frac{1}{ln(n)}$ e $b_n = \frac{1}{n}$ tendono a $0$ in maniera diversa, infatti possiamo dire che $\frac{1}{n} = o(\frac{1}{ln(n)})$, ha un comportamento opposto agli infiniti.
+\newline
+Lo stesso vale per $\frac{1}{n}$, $e ^{-n}$ e $\frac{1}{n!}$: $e^{-n} = o(\frac{1}{n})$ e $\frac{1}{n!} = o(e^{-n})$.
+\newline
+\newline
+Gerarchia degli infinitesimi:
+\[
+    \frac{1}{n!} = o(e^{-n}) \;\;\;\;\;\;\;\;\;\;\;\; e^{-n} = o(\frac{1}{n}) \;\;\;\;\;\;\;\; \frac{1}{n} = o(\frac{1}{ln(n)})
+\]
+Questa gerarchia si mantiene anche con potenze positive diverse fra loro.
+\newline
+\newline
+\newline
+\newline
+\textbf{es.} Trova l'adamento asintotico del seguente limite:
+\[
+    \lim_{x\rightarrow -\infty} \frac{\sqrt{x^2+1}+x}{(x^{\frac{3}{5}}-x^{\frac{1}{7}})^{\frac{5}{7}}}
+\]
+\[
+    f(x)= \frac{\sqrt{x^2+1}+x}{(x^{\frac{3}{5}}-x^{\frac{1}{7}})^{\frac{5}{7}}}
+\]
+Analiziamo il numeratore:
+\[
+    N(x) = \sqrt{x^2+1}+x
+\]
+\[
+    N(x) = [\infty - \infty]
+\]
+è una forma di indeterminazione, quindi dobbiamo risolverla
+\[
+    x^2+1 = x^2+0(x^2)
+\]
+\[
+    \sqrt{x^2+1} \sim \sqrt{x^2} = |x|\;\; (= -x) =
+\]
+$-x$ per valori negativi e dato che $x \rightarrow - \infty$ possiamo scriverlo.
+\[
+    = |x| + o(|x|) = -x + o(x)
+\]
+\[
+    N(x) = \sqrt{x^2+1} +x = -x + o(x) + x = o(x)
+\]
+Questi passaggi non mi permettono di uscire dalla forma di indeterminazione.
+\newline
+Quindi potremmo provare a usare:
+\[
+    (1+t)^{\frac{1}{2}} = 1+ \frac{1}{2} t + o(t) \;\;\;\;per \;\; t \rightarrow 0
+\]
+\[
+    \sqrt{x^2+1} = \sqrt{x^2(1+\frac{1}{x^2})} = \sqrt{x^2} (1 +\frac{1}{x^2})^{\frac{1}{2}} = |x| \cdot [1+\frac{1}{2}\cdot \frac{1}{x^2}+o(\frac{1}{x^2})] =
+\]
+\[
+    = -x \cdot [1+\frac{1}{2}\cdot \frac{1}{x^2}+o(\frac{1}{x^2})] =
+\]
+\[
+    -x - \frac{1}{2x} + o(\frac{1}{x})
+\]
+\[
+    N(x) = \sqrt{x^2 +1} +x = -x -\frac{1}{2x} + o(\frac{1}{x}) +x = -\frac{1}{2x} + o(\frac{1}{x})
+\]
+Analiziamo il denominatore:
+\[
+    D(x) = (x^{\frac{3}{5}}-x^{\frac{1}{7}})^{\frac{5}{7}} 
+\]
+\[
+    x^{\frac{3}{5}} - x^{\frac{1}{7}} = 
+\]
+Essendo $\frac{3}{5} > \frac{1}{7}$ :
+\[
+    = x^{\frac{3}{5}} + o(x^{\frac{3}{5}}) \sim  x^{\frac{3}{5}}
+\]
+\[
+    (x^{\frac{3}{5}} - x^{\frac{1}{7}})^{\frac{5}{3}} \sim  (x^{\frac{3}{5}})^{\frac{5}{3}} = x^1
+\]
+\[
+    D(x) = x + o(x)
+\]
+Vediamo ora numeratore/denominatore:
+\[
+    \frac{N(x)}{D(x)} = \frac{-\frac{1}{2x} + o(\frac{1}{x})}{x-o(x)} \sim  - \frac{1}{2x^2} \xrightarrow[x \rightarrow - \infty] \; 0^{-} 
+\]
+Ricorda di fare sempre i conti con o-piccolo, e di toglierlo solo all'ultimo passaggio, quando hai fatto già tutti i conti necessari.
+\newline
+\newline
+\newline
+\newline
+\textbf{es.} TDE(parziale) determinare il carattere della seguente successione:
+\[
+    a_n = \frac{ln(|(e^{-\frac{1}{ln(n)}}-1)^2 - 1|)}{sin (\frac{1}{n} - \frac{\pi}{2})}
+\]
+Analiziamo il numeratore:
+\[
+    N(x) = ln(|(e^{-\frac{1}{ln(n)}}-1)^2 - 1|)
+\]
+\[
+    t = -\frac{1}{ln(n)} \xrightarrow[n \rightarrow  + \infty] \; 0^{-} 
+\]
+Ora usiamo questa formula:
+\[
+    e^{t} = 1+t+o(t)
+\]
+\[
+    e^{t} -1 = t+o(t) \;\;\;\;\; per \;\;\; \rightarrow  0
+\]
+\[
+    e ^{-\frac{1}{ln(n)}} -1 = -\frac{1}{ln(n)} + o(\frac{1}{ln(n)}) \sim -\frac{1}{ln(n)}
+\]
+potenze di  funzioni asintotiche sono ancora asintotiche fra loro
+\[
+    (e ^{-\frac{1}{ln(n)}} -1) ^2 \sim (-\frac{1}{ln(n)})^2 = \frac{1}{ln^2(n)}
+\]
+\[
+    (e ^{-\frac{1}{ln(n)}} -1) ^2 = \frac{ 1}{ln^2(n)} + o(\frac{ 1}{ln^2(n)} )
+\]
+\[
+    |(e ^{-\frac{1}{ln(n)}} -1) ^2 -1| = |-1 + \frac{1}{ln^2(n)} + o(\frac{1}{ln^2(n)})| =
+\]
+Il segno del valore assoluto è negativo ($|-1 + \frac{1}{ln^2(n)} + o(\frac{1}{ln^2(n)})|$), quindi posso toglierlo e cambiare il segno al suo intenro:
+\[
+    = 1 - \frac{1}{ln^2(n)} + o(\frac{1}{ln^2(n)})
+\]
+\[
+    ln(|(e^{-\frac{1}{ln(n)}}-1|) = ln(1- \frac{1}{ln^2(n)} + o(\frac{1}{ln^2(n)})
+\]
+\[
+    ln(1+t) = t + o(t)
+\]
+con $t = -\frac{1}{ln^2(n)}$
+\[
+    -\frac{1}{ln^2(n)} + o (\frac{1}{ln^2(n)}) + o(-\frac{1}{ln^2(n)} + o(\frac{1}{ln^2(n)}))=
+\]
+Questo $o(-\frac{1}{ln^2(n)} + o(\frac{1}{ln^2(n)}))$ si può eliminare:
+\[
+    = N(x) = -\frac{1}{ln^2(n)} + o (\frac{1}{ln^2(n)})
+\]
+Analiziamo il denominatore:
+\[
+    D(x) = sin (\frac{1}{n} - \frac{\pi}{2}) = cos(\frac{1}{n})
+\]
+Imponiamo $\frac{1}{n} = t$
+\[
+    -cos(t) = 1-\frac{t^2}{2} + o(t^2)
+\]
+\[
+    -cos(\frac{1}{n}) = 1- \frac{1}{2n^2} + o(\frac{1}{n^2})
+\]
+Vediamo numeratore/denominatore:
+\[
+    \frac{N(x)}{D(x)} = a_n = \frac{-\frac{1}{ln^2(n)} + o (\frac{1}{ln^2(n)})}{-(1- \frac{1}{2n^2} + o(\frac{1}{n^2}))} \sim -\frac{1}{ln^2(n)} \xrightarrow \; 0^+
+\]
+\newline
+\newline
+\newline
+\newline
+\textbf{Continuità (puntuale) di una funzione}
+\textbf{def.} Si dice che
+\[
+    f: A \subseteq \mathbb{R} \rightarrow \mathbb{R} \;\;\; x \rightarrow y=f(x)
+\] 
+è \textbf{continua} in $x_0 \in A$, se 
+\begin{itemize}
+    \item $x_0$ è un punto isolato di $A$
+    \item $x_0$ è un punto di accumulazione di $A$ e $\lim_{x\rightarrow x_0} f(x) = f(x_0)$
+\end{itemize}
+\textbf{oss.} le successioni sono continue in tutto il loro dominio (son ocostituite da soli punti isolati)
+\newline
+\newline
+\newline
+\textbf{Continuità di una funzione in un insieme}
+\textbf{def.} Si parla di \textbf{continuità in tutto l'insieme} $A$ se è continua in tutti i punti di $A$.
+\newline
+\newline
+\newline
+\textbf{teor.} le funzioni elementari sono funzioni continue in tutto il loro dominio naturale.
+\newline
+Vediamo alcuni esempi di funzioni elementari:
+\begin{itemize}
+    \item $y = sin(x)$
+    \item $y= x^2 + x$
+    \item $y = arctg(x)$
+    \item $y= e^x$
+    \item $y = a^x$
+    \item $y = ln(x)$
+    \item $y=\frac{1}{x}$
+    \item $y=tg(x)$
+\end{itemize}
+Se prendiamo la funzione $y=tg(x)$ notiamo che c'è un salto, ma essa non è definita in quel punto, quindi possiamo dire che sono continue nel loro dominio naturale.
+\newline
+\newline
+\newline
+\textbf{classificazione delle discontinuità}
+\textbf{es.} 
+\[
+    f(x) =
+    \begin{cases}
+        \frac{sin(x)}{x} & se \;\;\; x \neq 0 \\
+        0 & se x = 0
+    \end{cases}
+\]
+Analiziamola in $x_0 = 0$:
+\[
+    f(0) = 0 
+\]
+\[
+    \lim_{x\rightarrow 0} \frac{sin(x)}{x} = 1
+\]
+C'è un salto, questa discontinuità si dice del III tipo o eliminabile.
+\newline
+\newline
+\textbf{def.} \textbf{discontinuità del III tipo o eliminabile}
+\[
+    \lim_{x\rightarrow x_0^{-}} f(x) = \lim_{x\rightarrow x_0^{+}} f(x) \neq f(x_0) 
+\]
+\textbf{oss.} la funzione $y = \frac{sin(x)}{x}$ di dominio $\mathbb{R} - \{0\} = A$ è una funzione continua su $A$ può anche essere \textbf{estesa o prolungata per continuità} si tutto $\mathbb{R}$.
+\newline
+\newline
+\textbf{def.} \textbf{discontinuità del II tipo}
+Questa discontinuità non è eliminabile e appare se anche solo uno dei due limiti (o da destra o da sinistra o entrambi) sia infinito o non esista.
+\newline
+\textbf{es.} 
+\[
+    f(x) = \begin{cases}
+        e^{-\frac{1}{x}} & x \neq 0 \\
+        0 & x = 0
+    \end{cases}
+\]
+analiziamo la continuità in $x_0 = 0$:
+\[
+    f(0) = 0
+\]
+\[
+    \lim_{x\rightarrow 0^+} e^{-\frac{1}{x}} = \lim_{t=\frac{1}{x}\rightarrow + \infty} e^{-t} = 0^{+}
+\]
+$f$ risulta continua da destra nell'origine
+\[
+    \lim_{x\rightarrow 0^-} e^{-\frac{1}{x}} =\lim_{t=\frac{1}{x}\rightarrow -\infty} e^{-t} = + \infty
+\]
+$f$ tende a $+ \infty$ da sinistra nell'origine.
+\newline
+Siamo in presenza di una discontinuità di II specie.
+\newline
+\newline
+\textbf{def.} \textbf{discontinuità di I specie o a salto}
+\[
+    x_0 \in A \;\;\;\;\;\; \exists f(x_0)), \;\;\;\;\;\; \exists \lim_{x\rightarrow x_0^-} f(x), \;\;\;\;\;\; \exists \lim_{x\rightarrow x_0^+} f(x)
+\]
+ma i limiti destri e sinistri sono diversi.
+\newline
+Anche questa discontinuità non è eliminabile.
+\newline
+\newline
+\newline
+\textbf{es.} trovare i valori di a e b per avere continuità in questa funzione:
+\[
+    f(x) = \begin{cases}
+        -2 sin(x) & x\leq - \frac{\pi}{2} \\
+        a \cdot  sin (x) + b & -\frac{\pi}{2}<x< \frac{\pi}{2}\\
+        cos(x) & x \geq \frac{\pi}{2}
+    \end{cases}
+\]
+in $\mathbb{R}-\{-\frac{\pi}{2}, \frac{\pi}{2}\}$ la funzione $f$ è continua.
+Analiziamo ora i due punti $\{-\frac{\pi}{2}, \frac{\pi}{2}\}$, devo verificare queste due cose:
+\[
+    \lim_{x\rightarrow -(\frac{\pi}{2})^+} a \cdot sin(x) + b = -2 sin(-\frac{\pi}{2})
+\]
+\[
+    \lim_{x\rightarrow \frac{\pi}{2}} = ( a \cdot  sin (x) + b ) = cos(\frac{\pi}{2})
+\]
+Svolgiamo i limiti:
+\[
+    \lim_{x\rightarrow -\frac{\pi}{2}} a \cdot sin(x) + b = +2 = -a +b
+\]
+\[
+    \lim_{x\rightarrow -(\frac{\pi}{2})^-} a \cdot sin(x) + b = 0 = a+b
+\]
+Da cui 
+\[
+    b = 1
+\]
+\[
+    a = -1
+\]
+\newline
+\newline
+\textbf{es.} Vediamo un esempio di funzione discontinua in tutti i suoi punti:
+\[
+    f(x) 0 \begin{cases}
+        1 & se \; x \in \mathbb{Q} \\
+        -1 & se \; x \in \mathbb{R}-\{\mathbb{Q}\}
+    \end{cases}
+\]
+è costituito da solo discontinuità di seconda specie.
+\newpage 
