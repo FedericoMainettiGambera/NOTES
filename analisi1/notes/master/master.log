@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  11 OCT 2019 20:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  14 OCT 2019 15:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,8 +8,8 @@ entering extended mode
 LaTeX2e <2018-12-01>
 (c:/texlive/2019/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
-(c:/texlive/2019/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+(c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -184,7 +184,32 @@ File: pppdftex.def 2019/09/21 v0.5n Pdfpages driver for pdfTeX (AM)
 Package: transparent 2018/11/18 v1.3 Transparency via pdfTeX's color stack (HO)
  (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-))) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux)
+)) (c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+ (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count111
+\Gm@cntv=\count112
+\c@Gm@tempcnt=\count113
+\Gm@bindingoffset=\dimen119
+\Gm@wd@mp=\dimen120
+\Gm@odd@mp=\dimen121
+\Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
+\Gm@dimlist=\toks22
+))
+
+LaTeX Warning: Unused global option(s):
+    [9pt].
+
+(c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux)
 \openout1 = `master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -201,17 +226,17 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
  (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen119
+\scratchcounter=\count114
+\scratchdimen=\dimen127
 \scratchbox=\box31
-\nofMPsegments=\count112
-\nofMParguments=\count113
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen120
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks23
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen128
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks24
 ) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -259,11 +284,43 @@ Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
- (c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-))
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 423.94608pt, 73.97716pt)
+* v-part:(T,H,B)=(73.97716pt, 728.39056pt, 42.67912pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=423.94608pt
+* \textheight=728.39056pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-35.29283pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
- (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 4.
@@ -271,330 +328,16 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.toc)
-\tf@toc=\write3
-\openout3 = `master.toc'.
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 8.
+LaTeX Font Info:    No file OMScmss.fd. on input line 8.
 
- [1
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
- (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
- [2] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture0/lecture0.tex [3]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture1/lecture1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--14
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 8.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--36
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 60--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--68
-
- []
-
-[5]
-
-LaTeX Warning: Command \O invalid in math mode on input line 89.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--100
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 141--149
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--149
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--157
-
- []
-
-
-LaTeX Warning: Command \O invalid in math mode on input line 158.
-
-
-LaTeX Warning: Command \O invalid in math mode on input line 158.
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 159--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--163
-
- []
-
-[8]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture2/lecture2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 61--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--95
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--110
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 115--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--139
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--151
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 156--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--187
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--193
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 195--199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--216
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--230
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--243
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 245--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--259
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--268
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--277
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--284
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 309--319
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--319
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--339
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--339
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 349--370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--377
-
- []
-
-[16]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture3/lecture3.tex
+[1] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture3/lecture3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
@@ -609,7 +352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--48
 
  []
 
-[17] [18]
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 133--139
 
  []
@@ -619,12 +362,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--148
 
  []
 
-[19]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 188--193
 
  []
 
-[20] [21]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 280--285
 
  []
@@ -639,12 +382,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--327
 
  []
 
-[22]
+
 Underfull \hbox (badness 10000) in paragraph at lines 343--347
 
  []
 
-[23]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 383--389
 
  []
@@ -654,130 +397,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--389
 
  []
 
-[24] [25]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture4/lecture4.tex [26]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../exercise0/exercise0.tex) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../exercise1/exercise1.tex [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 142--147
+[6] [7]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture4/lecture4.tex [8]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux)
 
- []
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--154
-
- []
-
-[29] [30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 291--298
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--332
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--338
-
- []
-
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 345--349
-
- []
-
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 403--430
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 403--430
-
- []
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 445--450
-
- []
-
-[35]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../exercise2/exercise2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--70
-
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 83--93
-
- []
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 114--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--126
-
- []
-
-[38] [39]
-Underfull \hbox (badness 10000) in paragraph at lines 244--248
-
- []
-
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 275--279
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--321
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--321
-
- []
-
-[41]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../exercise3/exercise3.tex [42]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 4791 strings out of 492609
- 67092 string characters out of 6132818
- 154947 words of memory out of 5000000
- 8552 multiletter control sequences out of 15000+600000
- 13009 words of font info for 50 fonts, out of 8000000 for 9000
+ 5215 strings out of 492609
+ 71648 string characters out of 6132818
+ 171684 words of memory out of 5000000
+ 9004 multiletter control sequences out of 15000+600000
+ 12091 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,39p,883b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf (43 pages, 206423 bytes).
+ 41i,11n,39p,883b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf (9 pages, 137384 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
+ 86 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
