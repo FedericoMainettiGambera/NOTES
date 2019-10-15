@@ -1,23 +1,116 @@
 \section*{3-ESERCITAZIONE}
 15/10/19
-\subsubsection*{[manca prima ora]}
-\textbf{es.} Risolvere il seguente limite
+\subsubsection*{Limiti}
+Vediamo un piccolo riassunto dei concetti fondamentali sui limiti:
 \[
-    \lim_{x\rightarrow 0}\frac{2x+ \sqrt{x}}{x^2+\sqrt{x}}
+    \lim_{x\rightarrow c} f(x) = l \;\;\;se \;\;\; \;\forall\;B_r(l) \;\exists \; B_r(c) \;\;:\;\; \;\forall\;x \in B_r(c) \cup D_f , f(x) \in B_r(l)
 \]
-Se fosse stato per $x$ che tende a $\infty$:
 \[
-    \lim_{x\rightarrow \infty}\frac{2x+ \sqrt{x}}{x^2+\sqrt{x}} =  \frac{\infty}{\infty} = \lim_{x\rightarrow \infty}\frac{2x}{x^2} = 0
+    f \sim c \;\;\; per \;\;\; x \rightarrow c \;\;\; se \;\;\; \lim_{x\rightarrow c}\frac{f(x)}{g(x)} = 1
 \]
-Ma tornando al vero esercizio:
 \newline
-Dato che lavoriamo con infinitesimi, gli infinitesimi che pesano di più sono al numeratore $x^{\frac{1}{2}}$ e al denominatore $x^{\frac{1}{2}}$, quindi otteniamo:
 \[
-    \lim_{x\rightarrow 0}\frac{2x+ \sqrt{x}}{x^2+\sqrt{x}} = \lim_{x\rightarrow 0} \frac{\sqrt{x}}{\sqrt{x}} = 1
+    f(x) = o(g(x)) \;\;\; in \; B_r(c) \;\;\; se \;\;\; \lim_{x\rightarrow c} \frac{f(x)}{g(x)}= 0
 \]
-Il limite poteva essere risolto anche così:
+\newline
 \[
-    \lim_{x\rightarrow 0}\frac{2x+ \sqrt{x}}{x^2+\sqrt{x}} = \lim_{x\rightarrow 0} \frac{\sqrt{x}(x \sqrt{x} +1)}{\sqrt{x}(x^{\frac{3}{2}}+1)} = 1
+    f \sim  g \Longleftrightarrow f(x) = g(x) + o(g(x)) \;\;\;\; per \; x \rightarrow c
+\]
+\newline
+Vediamo alcuni degli asintotici notevoli più diffusi:
+\newline
+per tutti vale che $x \rightarrow 0$
+\[
+    sin(x) = x + o(x) \sim x
+\]
+\[
+    cos(x) = 1- \frac{x^2}{2} + o(x^2) \sim  1- \frac{x^2}{2}
+\]
+\[
+    ln(1+x) = x+o(x) \sim x
+\]
+\[
+    e^x=1+x+o(x) \sim 1+x
+\]
+\[
+    (1+x)^{\alpha} = 1 + \alpha \cdot x + o(x) \sim 1 + \alpha \cdot x 
+\]
+\[
+    tan(x) = x + o(x) \sim x
+\]
+\[
+    arcsin(x) = x + o(x) \sim x
+\]
+\[
+    arctan(x) = x + o(x) \sim x
+\]
+\newline
+Vediamo ora le proprietà di o-piccolo:
+\[
+    f(x) = o(g(x)) \;\; se \;\; \lim_{x\rightarrow c} \frac{f(x)}{g(x)} = 0
+\]
+\[
+    \lim_{x\rightarrow c} \frac{o(g(x))}{f(x)} = 0
+\]
+\[
+    c \cdot o(g(x)) = o (c \cdot g(x)) = o(g(x))
+\]
+\[
+    o(f(x)) + o(f(x)) = o(f(x))
+\]
+\[
+    g(x) \cdot o(f(x)) = o(g(x) \cdot  f(x))
+\]
+\[
+    o(g(x)) \cdot  o(f(x)) = o(g(x) \cdot f(x))
+\]
+\[
+    o(1) = \epsilon(x)
+\]
+\newline
+Vediamo la gerarchia degli infiniti:
+\newline
+Per $x \rightarrow  \infty$ e $0 < \alpha < \beta$ e $1 < a < b$:
+\[
+    (log_a(x))^\alpha \;\; << \;\; x^\alpha \;\; << \;\; x^\beta \;\;<<\;\;a ^ x \;\;<<\;\;b^x \;\;<<\;\; b^n \;\;<<\;\; n! \;\;<<\;\;n^n
+\]
+\newline
+\newline
+\textbf{es.} Risolvere il seguente limite:
+\[
+    \lim_{x\rightarrow 0} ln(cos(x)) = ln(1- \frac{x^2}{2!} + o(x^2))= - \frac{x^2}{2} + o(x^2) + o(-\frac{x^2}{2}+o(x^2)) \sim  - \frac{x^2}{2}
+\]
+Da notare che $o(-\frac{x^2}{2}+o(x^2)) = o(x^2)$
+\newline
+\newline
+\newline
+\textbf{es.} Risolvere il seguente limite:
+\[
+    \lim_{x\rightarrow + \infty}\frac{2^x+ln(x)+sin(x^2)}{x+x \cdot ln(x) + 4^{-x} } = \frac{\infty}{\infty} = \lim_{x\rightarrow + \infty}\frac{2^x}{x \cdot ln(x)} = + \infty
+\]
+\newline
+\newline
+\textbf{es.} Risolvere il seguente limite:
+\[
+    \lim_{x\rightarrow +\infty} \frac{2x+\sqrt{x}}{x^2+\sqrt{x}} = \frac{\infty}{\infty} = 
+\]
+tramite la gerarchia degli infiniti otteniamo:
+\[
+    = \lim_{x\rightarrow +\infty}\frac{1}{x^2} = 0
+\]
+\newline
+\newline
+\textbf{es.}  Risolvere il seguente limite:
+\[
+    \lim_{x\rightarrow 0} \frac{2x+\sqrt{x}}{x^2+\sqrt{x}} = \frac{0}{0}= 
+\]
+tramite la gerarchia degli infiniti otteniamo:
+\[
+    = \lim_{x\rightarrow 0} \frac{\sqrt{x}}{\sqrt{x}} = 1
+\]
+Un altro modo per risolvere l'esercizio:
+\[
+    \lim_{x\rightarrow 0} \frac{2x+\sqrt{x}}{x^2 + \sqrt{x}} = \lim_{x\rightarrow 0} \frac{\sqrt{x} \cdot (2 \sqrt{x} +1)}{\sqrt{x} \cdot (x^{\frac{3}{2}}+1)} = 1
 \]
 \newline
 \newline
