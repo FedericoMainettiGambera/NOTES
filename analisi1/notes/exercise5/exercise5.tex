@@ -1,0 +1,496 @@
+\section*{5 -ESERCITAZIONE}
+22/10/19
+\subsubsection*{Funzioni continue}
+\textbf{es.} verificare che $f(x) = 5x -4$ è continua in $x=2$ con la definizione
+\newline
+Devo verificare che $f(2) = 6$ sia lo stesso risultato di:
+\[
+    \lim_{x\rightarrow 2} 5x-4 = 6
+\]
+\[
+    \;\forall\; \epsilon > 0 \;\; \exists \;\; \delta \;\;:\;\; \;\forall\;x 0<|x-2|<\delta 
+\]
+\[
+    |f(x) -6| < \epsilon
+\]
+\[
+    |5x-4-6| < \epsilon
+\]
+\[
+    -\epsilon < 5x-10< \epsilon
+\]
+\[
+    10-\epsilon< 5x< 10 + \epsilon
+\]
+\[
+    2- \frac{\epsilon}{5} < x < 2 + \frac{\epsilon}{5}
+\]
+Quindi se fisso $\delta = \frac{\epsilon}{5}$ il risultato è verificato.
+\newline
+\newline
+\newline
+\textbf{es.} verificare se $f(x)$ è continua nel suo dominio:
+\[
+    f(x) = \begin{cases}
+        sen(x) \cdot e^{\frac{1}{x}} &\;\;\; per \;\;\; x\neq 0 \\
+        0 & \;\;\;per \;\;\; x=0
+    \end{cases}
+\]
+Il dominio è $\mathbb{R} - \{0\}$
+\[
+    \lim_{x\rightarrow 0 }f(x) = f(0)
+\]
+Verifichiamolo con la definizione:
+\[
+    \;\forall\; \epsilon> 0 \;\;\;\exists \;\; \delta \;\;:\;\; \;\forall\;x \;\; 0< |x|< \delta
+\]
+\[
+    |f(x)-f(0)|<\epsilon
+\]
+\[
+    |f(x)| < \epsilon
+\]
+Limite sinistro:
+\[
+    \lim_{x\rightarrow 0^-} f(x) = 0^-
+\]
+Quindi la funzione è continua da sinistra.
+\newline
+Limite destro:
+\[
+    \lim_{x\rightarrow 0^+} f(x) = \lim_{x\rightarrow 0^+}(x + o(x))\cdot  e ^{\frac{1}{x}} = \lim_{x\rightarrow 0^+} \frac{e^{\frac{1}{x}}}{\frac{1}{x}}
+\]
+La funzione non è continua da destra e quindi non è continua nel suo dominio.
+\newline
+\newline
+\newline
+\textbf{es.} per quali $ a \in \mathbb{R}$ la funzione
+\[
+    f(x) = \begin{cases}
+        x^2 +2ax +a \;\;\;& x \in (0,+\infty) \\
+        \sqrt{x+2}&x \in [-2,0]
+    \end{cases}
+\] 
+è continua?
+\newline
+Dominio: $\mathbb{D} : [-2,+ +\infty)$
+\newline
+Il punto su cui investigare la continuità della funzione è lo $0$.
+\[
+    \lim_{x\rightarrow 0} f(x) = f(0)
+\]
+Vediamo $f(0)$: $\sqrt{0+2} = \sqrt{2}$.
+\newline
+Limite destro:
+\[
+    \lim_{x\rightarrow 0^+} x^2 + 2ax +a = a = \sqrt{2}
+\]
+Se impongo $a= \sqrt{2}$ la funzione è continua, ma se $a \neq \sqrt{2}$ abbiamo una discontinuità di prima specie in $0^+$.
+\newline
+\newline
+\newline
+\textbf{es.} Esercizio a crocette
+\[
+    x^3 +2x -2 = 0
+\]
+\begin{itemize}
+    \item impossibile
+    \item ha necessariamente tre radici reali
+    \item verificata per almeno un $\alpha \in (0,1)$
+    \item nessuna delle precedenti
+\end{itemize}
+Usiamo il teorema degli zeri (Bolzano) che dice:
+\newline
+$f$ continua in $[a,b]$, $f(a) \cdot f(b) < 0 \Rightarrow  \;\;\exists$ almeno un $c \in(a,b) \;\;:\;\; f(c) = 0$. Inoltre se f è strettamente monotona, lo zero è minimo.
+\newline
+\newline
+$f(x)$ è continua su $\mathbb{R} \rightarrow  [a,b] \subset \mathbb{R}$ , $f(x)$ è continua in $[0,1]$.
+\newline
+$f(0) \cdot f(1) = -2 <0$, quindi per il teorema degli zeri $\;\;\exists\;\;$ almeno un $\alpha \in(0,1) \;\;:\;\; f(\alpha) = 0$.
+\newline
+Quindi la risposta è la c (terza, verificata per almeno un $\alpha \in (0,1)$).
+\newline
+\newline
+\newline
+\textbf{es.} Esercizio a crocette
+\[
+    f(x) = e^x +x
+\]
+\begin{itemize}
+    \item è positiva in $\mathbb{R}$
+    \item ha uno e un solo zero in $(-1,1)$
+    \item ha uno zero in $(-1,1)$, ma non è unico
+    \item nessuna delle precedenti
+\end{itemize}
+La prima è facilmente dimostrabile falsa: $f(-10) = e^{-10}-10 <0$.
+\newline
+Per la seconda: $f(x)$ è continua in $[-1,1]$, e per il teorema degli zeri: $f(-1) \cdot  f(1) = (e^{-1}-1)\cdot (e+1)<0$.
+\newline
+Per la terza:
+\[
+    e^x+x = 0
+\]
+\[
+    e^x = -x
+\]
+Facendo un confronto grafico vediamo che esiste un solo punto di incontro fra le fuznioni $e^x$ e $-x$. Inoltre sono entrambi strettamente crescenti, quindi la somma di due funzioni strettamente crescenti può avere uno e un solo zero.
+\newline
+\newline
+\newline
+\textbf{es.} Scrivere lo sviluppo asintotico della seguente funzione:
+\[
+    f(x)  = 3x +1 + \sqrt{x^2+6x-3}
+\]
+Dominio:
+\[
+    x^2 +6x-3 \geq 0
+\]
+\[
+    x_{1,2} = -3 \pm \sqrt{12}
+\]
+\[
+    \mathbb{D}: (-\infty, -3-\sqrt{12}) \cup [-3 + \sqrt{12},+ \infty)
+\]
+[COMMENTED LINE]
+%\[
+    %f(x) \leq 3x +1 + |x| \cdot \sqrt{1 + \frac{6}{x} - \frac{3}{x^2}
+%\]
+\newline
+Nell intorno di $+ \infty$:
+\[
+    f(x) = 3x +1+  x ( 1 + \frac{1}{2} ( \frac{6}{x} - \frac{3}{x^2}) + o(\frac{1}{x})) = 3x+1+x+3- \frac{3}{2x} +o(1) = 4x +4+o(1)
+\]
+per cui:
+\[
+    f(x) \sim 4x+4
+\]
+Nell intorno di $- \infty$:
+\[
+    f(x) = 3x+1+x-3+ \frac{3}{2x} + o(1) = 2x-2 + o(1)
+\]
+per cui:
+\[
+    f(x) \sim 2x-2
+\]
+\newline
+\newline
+\newline
+\textbf{es.} Verificare che $\;\;\exists\;\;$ almeno un punto $c \in[-e^2,-1] \;\;:\;\; g(  alpha) = 2$
+\[
+    g(x) = ln(|x|) -x
+\]
+Si può usare il terema dei valori medi:
+\newline
+se $f$ è continua su $(a,b)$ e f assume i valore $y_1 < y_2$, allora f assume tutti i valori $y \;\;:\;\; y_1 < y< y_2$.
+\newline
+\newline
+\[
+    g(-2) = ln(e^2) +e^2 = 2+e^2
+\]
+\[
+    g(-1)
+\]
+\subsubsection*{ASINTOTI}
+\textbf{def.}  definita un funzione $f \;\;:\;\; I \rightarrow \mathbb{R}$ e $x_0$ un punto di accumulazione per $I$ se
+\[
+    \lim_{x\rightarrow x_0^-} f(x) = \pm \infty
+\]
+diciamo che $x = x_0$ è un \textbf{asintoto verticale sinistro}.
+\newline
+Altrimenti se
+\[
+    \lim_{x\rightarrow x_0^+} f(x)  = \pm \infty
+\]
+diciamo che $x= x_0$ è un \textbf{asintoto verticale destro}.
+\newline
+\newline
+\newline
+Preso $I$ intonro di $\infty$, se
+\[
+    \lim_{x\rightarrow -\infty} f(x) = l
+\]
+con $l$ finito, diciamo che $y= l$ è un \textbf{asintoto orizzontale per $- \infty$}
+\newline
+Altrimenti se
+\[
+    \lim_{x\rightarrow +\infty} f(x) = l
+\]
+con $l$ finito, diciamo che $y= l$ è un \textbf{asintoto orizzontale per $+ \infty$}
+\newline
+\newline
+\newline
+Se, invece, abbiamo
+\[
+    \lim_{x\rightarrow \infty} f(x) = \infty
+\]
+non c'è un asintoto orizzontale, ma se :
+\[
+    \;\;\exists\;\;m,q \;\; finiti \;\; \;\;:\;\; \lim_{x\rightarrow \infty}(f(x)-(mx+q))=0
+\]
+diciamo che $y= mx + q$  è un \textbf{asintoto obliquo} per $f(x)$.
+\newline
+\textbf{oss.} Per trovare l'asintoto obliquo si usano queste formule:
+\[
+    \lim_{x\rightarrow \infty} \frac{f(x)}{x}= m \;\;\; finito \;\; e \; \neq 0
+\]
+\[
+    \lim_{x\rightarrow \infty}(f(x)-mx) = q \;\;\;finito
+\]
+\newline
+\newline
+\newline
+\newline
+\textbf{es.} Studiare la seguente funzione:
+\[
+    y= \frac{x^2 +1}{|x+1|}
+\]
+Dominio:
+\[
+    \mathbb{D}: \;\; |x+1| \neq 0 \rightarrow x \neq -1
+\]
+\[
+    \mathbb{D}: \;\; (-\infty,-1)\cup(-1,+\infty)
+\]
+Segno della funzione:
+\newline
+la funzione ha $y>0 \;\forall\; x \in \mathbb{D}$
+\newline
+Intersezione con gli assi:
+\[
+    x=0 \rightarrow  y=1
+\]
+\[
+    y=0 \rightarrow mai
+\]
+Asintoti:
+\[
+    \lim_{x\rightarrow -\infty} \frac{x^2 +1 }{|x+1|} = + \infty
+\]
+Non esiste asintoto orizontale, ma calcoliamo quello obliquo:
+\[
+    \lim_{x\rightarrow -\infty} \frac{x^2+1}{x \cdot |x+1|} = 
+\]
+per $x \rightarrow - \infty$ il modulo è negativo, quindi possiamo toglierlo e negare il contenuto
+\[
+    =\lim_{x\rightarrow - \infty} \frac{x^2+1}{-x^2 -x} = -1
+\]
+Quindi $m=-1$, calcoliamo ora la $q$:
+\[
+    \lim_{x\rightarrow -\infty} ( f(x) -mx) = \lim_{x\rightarrow -\infty} \frac{x^2 +1}{-x-1} +x = \lim_{x\rightarrow -\infty} \frac{x^2 +1 -x^2-x}{-x-1} = \frac{-1}{-1} = 1
+\]
+Quindi $q = -1$, e l'asintoto obliquo a $-\infty$ è $y= -x +1$.
+\newline
+Passiamo agli altri asintoti:
+\[
+    \lim_{x\rightarrow \pm 1^-} \frac{x^2+1}{|x+1|} = + \infty
+\]
+Quindi $ x= -1$ è asintoto verticale a sinistra e a destra per $-1$.
+\newline
+\[
+    \lim_{x\rightarrow +\infty} \frac{x^2+1}{|x+1|} = 
+\]
+posso togliere il modulo perchè stiamo guardando valori positivi ($x \rightarrow  + \infty$)
+\[
+    = \lim_{x\rightarrow + \infty} \frac{x^2 +1}{x+1} = + \infty
+\]
+per cui non c'è asintoto orizzontale, allora cerchiamo quello obliquo se esite:
+\[
+    \lim_{x\rightarrow + \infty} \frac{f(x)}{x} = \lim_{x\rightarrow + \infty} \frac{x^2+1}{x^2+x} = 1 = m
+\]
+\[
+    \lim_{x\rightarrow +\infty} (f(x) - mx) = \lim_{x\rightarrow + \infty} \frac{x^2+1}{x+1}+x = \lim_{x\rightarrow +\infty} \frac{x^2 +1-x^2 -x}{x+1} = -1
+\]
+Ora vogliamo capire come la funzione raggiunge gli asintoti obliqui, se da sopra o da sotto, quindi vediamo se si interseca con gli asintoti facendo un sistem:
+\[
+    \begin{cases}
+        y = \frac{x^2+1}{|x+1|} & \\
+        y= -x +1 &
+    \end{cases}
+\]
+$x< -1$
+\[
+    \frac{x^2 +1}{-x-1} = \frac{(-x+1)}{-x-1}\cdot (-x-1)
+\]
+\[
+    x^2 +1 = x^2 -1
+\]
+\[
+    1 = -1 \Rightarrow \; impossibile
+\]
+Quindi andando verso $-\infty$ la nostra funzione rimane sopra il suo asintoto obliquo.
+\newline
+Analiziamo ora verso $+ \infty$:
+\[
+    \begin{cases}
+        y = \frac{x^2 +1}{}
+    \end{cases}
+\]
+$x> -1$
+\[
+    \frac{x^2 +1}{x+1} = x-1 
+\]
+\dots
+\newline
+[manca]
+\newline
+Comunquen on interseca l'asintoto neanche verso $+ \infty$
+\newline
+IMMAGINE: grafico dell'esercizio
+\newline
+\newline
+\newline
+\textbf{es.} Studiare la seguente funzione:
+\[
+    y = 2 \sqrt{2} x - ln(x^2-1)
+\]
+Dominio:
+\[
+    \mathbb{D}: x^2-1 > 0 \Rightarrow (- \infty, -1) \cup (1, + \infty)
+\]
+Non ci sono simmetrie.
+\newline
+Vediamo dove si interseca con gli assi:
+\newline
+L'asse delle $y$ non è nel dominio, quindi non lo controlliamo neanche, vediamo l'asse delle $x$
+\[
+    2 \sqrt{2}x - ln(x^2-1) \geq 0
+\]
+trasformiamo $2 \sqrt{2}x$ in $ln(e^{2 \sqrt{2}x})$
+\[
+    ln(e^{2 \sqrt{2}x}) - ln(x^2-1) \geq 0 
+\]
+\[
+    ln (\frac{e^{2 \sqrt{2}x}}{x^2-1}) > 0
+\]
+\[
+    \frac{e^{2 \sqrt{2}x}}{x^2-1} > 1
+\]
+\[
+    e ^{2 \sqrt{2} x} > x^2-1
+\]
+Vedo graficamente che l'esponenziale $e ^{2 \sqrt{2} x}$ è maggiore della parabola $x^2-1$ per un certo $\alpha < -1$ (approssimazione per disegnare la fuznione).
+\newline
+Limiti:
+\[
+    \lim_{x\rightarrow - \infty} f(x) = - \infty
+\]
+Quindi non esiste asintoto orizzontale in $- \infty$, cerchiamo quello obliquo.
+\newline
+Cerchiamo la $m$ svolgendo questo limite e vedendo se il risultato è finito o meno:
+\[
+    \lim_{x\rightarrow -\infty} \frac{f(x)}{x} = \lim_{x\rightarrow -\infty} 2 \sqrt{2} - \frac{ln(x^2-1)}{x} = 2 \sqrt{2} = m
+\]
+Ora cerchiamo la $q$:
+\[
+    \lim_{x\rightarrow -\infty} f(x) - mx = \lim_{x\rightarrow -\infty} (2 \sqrt{2}x -ln (x^2-1) - 2 \sqrt{2}x) = -\infty
+\]
+Ma essendo $q = -\infty$, non esiste neanche quello obliquo.
+\newline
+Passiamo ora a studiare il punto $-1$
+\[
+    \lim_{x\rightarrow  + -1^-} f(x) = + \infty
+\]
+Per cui esiste un asintoto verticale a sinistra.
+\newline
+Passiamo a $1$:
+\[
+    \lim_{x\rightarrow 1^+}f(x) = + \infty
+\]
+Per cui esiste un asintoto verticale a destra.
+\newline
+Studiamo, infine, $+ \infty$:
+\[
+    \lim_{x\rightarrow +\infty} f(x) = [\infty- \infty] = \lim_{x\rightarrow + \infty} x (2 \sqrt{2} - \frac{ln(x^2-1)}{x})= + \infty
+\]
+Per la gerarchia degli infiniti $\frac{ln(x^2-1)}{x} \rightarrow 0$, quindi non esiste l'asintoto orizzontale.
+\newline
+Cerchiamo quindi quello obliquo:
+\[
+    \lim_{x\rightarrow + \infty} \frac{f(x)}{x} = 2 \sqrt{2} = m
+\]
+\[
+    \lim_{x\rightarrow + \infty} 2 \sqrt{2}x - ln(x^2-1) - 2 \sqrt{2}x = - \infty = q
+\]
+Poichè $q$ non è finita, non esiste asintoto obliquo.
+\newline
+IMMAGINE: grafico della funzione.
+\newline
+\newline
+\newline
+\textbf{es.} Verificare che $e^x-sin(x) = 0$ ammette almeno una soluzione nell'intervallo $[-\frac{7}{2}\pi, 1]$ e discutere il numero di soluzioni in quell'intervallo.
+\[
+    f(x) = e^x -sin(x)
+\]
+la fuznione è definita su tutto $\mathbb{R}$ perchè è somma di funzioni continue su $\mathbb{R}$. Quindi in particolare sarà continua su un intervallo di $\mathbb{R}$: $[-\frac{7}{2}\pi, 1]$.
+\newline
+Usiamo il teorema di Bolzano
+\[
+    -\frac{7}{2}\pi \cdot f(1) = (e^{-\frac{7}{2}\pi} -1) \cdot (e-sin(1))
+\]
+$(e^{-\frac{7}{2}\pi} -1)$ è negativo, $(e-sin(1))$ è positivo, quindi il prodotto è negativo, e secondo il terema degli Zeri esiste almeno una soluzione dell'equazione $f(x) = 0$.
+\[
+    e^x = sin(x) \rightarrow \begin{cases}
+        y=e^x &\\
+        y= sin(x) &
+    \end{cases}
+\]
+IMMAGINE: grafico dell'intersezione di $y=e ^x$ e $y=sin(x)$ nell'intervallo $[-\frac{7}{2}\pi, 1]$
+\newline
+Guardando questo grafico vediamo che ci sono tre intersezioni.
+\newline
+\newline
+\newline
+\textbf{es.} esercizio a crocette:
+\[
+    g(x) = \frac{x^2+x+|x|}{x}
+\]
+per $x \rightarrow  0$
+\begin{itemize}
+    \item $\rightarrow 1$
+    \item $\rightarrow 0$
+    \item non ammette limite
+    \item nessuna
+\end{itemize}
+\[
+    \lim_{x\rightarrow 0^+} \frac{x^2+x+|x|}{x} = \lim_{x\rightarrow 0^+} x+2 = 2
+\]
+\[
+    \lim_{x\rightarrow  0^-} \frac{x^2 +x -x}{x} = 0
+\]
+Quindi la funzione non è continua e la risposta giusta è la c (terza, non ammette limite)
+\newline
+\newline
+\newline
+\textbf{es.} esercizio a crocette:
+\[
+    f(x) = \frac{1}{ln(|x|)}
+\]
+\begin{itemize}
+    \item discontinua in $x = 0$ e definita su $\mathbb{R}$
+    \item discontinuità a salto in $x=0$ 
+    \item discontinuità eliminabile in $x=0$
+    \item nessuna delle precedenti
+\end{itemize}
+La prima risposta è evidentemente sbagliata: il dominio mi fa dire che $x \neq 0 \land x \neq \pm 1$.
+\newline
+La funzioen si vede essere pari:
+\[
+    Y(-x) = \frac{1}{ln (|-x|)} = \frac{1}{ln (|x)} = y(x)
+\]
+Calcoliamo ora:
+\[
+    \lim_{x\rightarrow 0^-} \frac{1}{ln(|x|)} = 0^-
+\]
+\[
+    \lim_{x\rightarrow 0^+} \frac{1}{ln(|x|)} = 0^-
+\]
+Quindi la risposta giusta è la c (terza, discontinuità eliminabile in $x=0$).
+\[
+    \lim_{n\rightarrow \infty} \frac
+    {tg(\sqrt[3]{log(cos(\sqrt{n^2+2}-n))})}
+    {(n-\sqrt{n-1})^{\alpha}[cos(log(sin(\frac{n\pi+2}{\pi+2n})))-1]}
+\]
+    lim (n -> ∞) (tg((log(cos((n^2+2)^(1/2)-n)))^(1/3)))/((n-(n-1)^(1/2))^(α)[cos(log(sin((nπ+2)/(π+2n))))-1])
+
+    y=(tg((log(cos((x^2+2)^(1/2)-x)))^(1/3)))/((x-(x-1)^(1/2))[cos(log(sin((xπ+2)/(π+2x))))-1])
+\newpage
