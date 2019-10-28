@@ -1,5 +1,204 @@
 \section*{6-LEZIONE}
 28/10/19
-\subsection*{}
-
+\subsection*{Modalità prova in itinere}
+\begin{itemize}
+    \item invece di 6, ci saranno 4 domande a risposta multipla, senza soglia, ma con penalità
+    \item 19 punti di esercizi, la soglia è di 9 punti
+    \item 10 punti di teoria
+    \item vengono amessi alla seconda prova tutti coloro che prendono 15 punti, non più 18
+\end{itemize}
+Il programma va fino a tutte le informazioni che possiamo trarre dalle funzioni, non chiede l'applicazione dello studio di funzioni (no studio del segno), chiede limiti, dominio, asintotici. Prima si fa la teoria, poi la pratica.
+\newline
+\newline
+\subsection*{Teoria}
+Oggi vediamo tutte le dimostrazioni che abbiamo lasciato indietro.
+\newline
+Per le definizioni e le dimostrazioni, sono necessarie formule formali supportate da del testo.
+\newline
+\newline
+\subsubsection*{Terorema di Regolarità delle successioni monotone}
+Quando le successioni sono \textbf{regolari}? Le successioni possono essere convergenti(1), divergenti(2) a $\pm \infty$ o irregolari(3). Solo le (1) e (2) sono successioni regolari, cioè che hanno un limite.
+\newline
+Vediamo i casi particolari:
+\begin{itemize}
+    \item una saccessione monotona e limitata \textbf{converge}
+    \item una successione monotona e non limitata \textbf{diverge}:
+    \begin{itemize}
+        \item se $a_n$ (illimitata) è crescente, allora diverge a $+ \infty$
+        \item se invece $a_n$ (illimitata) è descrescente, allora diverge a $-\infty$
+    \end{itemize}
+\end{itemize}
+Quindi le successioni monotone sono regolari, perchè o convergono o divergono, e ciò dipende dal fatto che siano limitate o illimitate.
+\newline
+\newline
+iniziamo dimostrando il primo caso:
+\newline
+\textbf{una saccessione monotona e limitata converge} 
+\newline
+$a_n$ è monotona crescente:
+\[
+    a_n \leq a_{n+1}
+\]
+$a_n$ è limitata:
+\[
+    a_n \in B_r(0) \;\;\;con \;\;\;r>0 \; fissato
+\]
+Se queste due ipotesi valgono:
+\[
+    \Rightarrow \lim_{n\rightarrow +\infty} a_n = L
+\]
+\textbf{dim.} 
+Se $a_n$ è limitata c'è un suo maggiorante (r) e dunque c'è il $sup$ (il più piccolo dei maggioranti). Dimostro che il limite $L = sup\{a_n\}$.
+\newline
+Chiamiamo $sup\{a_n\} = S$, $\;\forall\;\epsilon> 0 \;\;\; S-\epsilon $ non è più maggiorante, quindi esiste un $a_{n^{*}} \;\;:\;\; S-\epsilon < a_{n^*}\leq S$
+\newline
+$\;\forall\;n> n^*$, $S-\epsilon < a_{n^*} \leq S \;\;\;\;$ $a_n \in B_{\epsilon}(S)$
+\newline
+[imagine: mancante]
+\newline
+Per esercizio dimostrare il caso in cui la successione fosse monotona decrescente.
+\newline
+\newline
+\newline
+Dimostriamo ora il secondo caso:
+\newline
+\textbf{una successione monotona e non limitata diverge} 
+\begin{itemize}
+    \item se $a_n$ (illimitata) è crescente, allora diverge a $+ \infty$.
+    \newline
+    Abbiamo ancora due ipotesi: illimitata e crescente:
+    \[
+        a_n \leq a_{n+1} \;\;\; \;\forall\; n
+    \]
+    \[
+        \nexists \;\; B_r(0) subsetrigirato \{a_n\} \;\forall\;n
+    \]
+    $\;\forall\; B_r(0) \;\;\exists\;\; a_{n^*} $ che non sta in $B_r(0)$, $\;\;\; a_{n^*} \notin B_r(0) \;\; a_{n^*} \geq r $ e $\;\forall\; n> n^* a_{n^*} \leq a_n$ (sto dicendo che definitivamente, da $n^*$ in poi, $a_n \in B_r(+\infty)$).
+    \newline
+    Quindi per definizione di limite $\lim_{n\rightarrow +\infty} a_n = + \infty$
+    \newline
+    [immagine: mancante]
+    \item se invece $a_n$ (illimitata) è descrescente, allora diverge a $-\infty$.
+    \newline
+    Per esercizio dimostrare anche questo caso.
+\end{itemize}
+\subsubsection*{Carattere della successione che definisce il numero di Nepero}
+Applico l'ultimo teorema visto a $a_n = (1 \frac{1}{n})^n$.
+\newline
+Vogliamo dimostrare che $a_n$ è monotona crescetne e limitata, quindi (per il teorema fondamentale delle successioni monotone) converge.
+\newline
+\textbf{dim.} La dimostrazione si divide in due passi:
+\begin{itemize}
+    \item Verifica della monotonia crescente:\newline
+        $\;\forall\;n \;,\; a_n \leq a_{n+1} \;\;\;$ ovvero $ \;\;\; \frac{a_n}{a_{n-1}} \geq 1$
+        \[
+            \frac{a_n}{a_{n-1}} = \frac{(1 + \frac{1}{n})^n}{(1 + \frac{1}{n-1})^n-1} = \frac{(1+\frac{1}{n})^n}{(\frac{n-1+1}{n-1})^{n-1}} = (1+ \frac{1}{n})^n \cdot (\frac{n-1}{n})^{n-1} = 
+        \]       
+        \[
+            = (1+ \frac{1}{n})^n \cdot (1-\frac{1}{n})^n \cdot (1 - \frac{1}{n})^{-1} = (1- \frac{1}{n})^n \cdot (1 -\frac{1}{n})^-1
+        \]
+        Ora usiamo la disuguaglianza di Bernoulli:
+        \[
+            (1+n)^n \geq 1 + nx \;\;\; \;\forall\;n \in \mathbb{N}, \;\;\;\;\forall\;x > -1
+        \]
+        Se prendo $x = -\frac{1}{n^2}$ ottengo:
+        \[
+            (1- \frac{1}{n^2})^n \geq 1 + n(-\frac{1}{n^2})
+        \]
+        E tornando alla dimostrazione posso sostituire quest'ultimo risultato dove eravamo rimasti:
+        \[
+            (1- \frac{1}{n})^n \cdot (1 -\frac{1}{n})^-1 \geq(1-\frac{1}{n}) \cdot (1-\frac{1}{n})^{-1} = 1
+        \]
+        Per qui abbiamo dimostrato che è monotona crescente.
+    \item Verifica della limitatezza:\newline
+        la successione $a_n$ è inoltre limitata e per dimostrarlo introduciamo una successione ausiliaria:
+        \[
+            b_n = (1 + \frac{1}{n})^{n+1} = 
+        \]
+        Questa successione $b_n$ è decrescente:
+        \[
+            = (1 + \frac{1}{n})^{n} = (1 + \frac{1}{n}) = a_n \cdot (1 + \frac{1}{n})
+        \]
+        Dove $(1 + \frac{1}{n}) > 1$. \newline
+        Quindi $a_n < b_n \;\;\;\;\forall\; n$.
+        Dimostro che $b_n$ decresce, automaticamente segue la limitatezza di $a_n$.
+        \[
+            a_0\leq a_1 \leq a_2 \leq a_3 \leq \dots \leq a_n \leq \dots \;\; <  \;\; \dots \leq b_n \leq b_{n-1} \leq \dots \leq b_1
+        \]
+        Come si vede $a_n < b_1$, dove $b_1 = (1 + \frac{1}{1})^2 = 4$.\newline
+        Per dimostrare che $b_n$ decresce uso la stessa metodo di prima, cioè dimostrare che
+        \[
+            \frac{b_n}{b_{n-1}} \leq 1
+        \]
+        \[
+            \frac{b_n}{b_{n-1}} = \frac{(1+\frac{1}{n})^{n+1}}{(1+\frac{1}{n-1})^n} = \frac{(1+\frac{1}{n})^{n+1}}{(\frac{n-1+1}{n-1})^n} = (1+\frac{1}{n})^{n+1} \cdot  (\frac{n-1}{n})^n = 
+        \]
+        \[
+            =(1+\frac{1}{n})^{n+1} \cdot (1-\frac{1}{n})^n = (1-\frac{1}{n^2})^n \cdot (1+\frac{1}{n})^1 = 
+        \]
+        \[
+            = (\frac{n^2-1}{n^2})^n \cdot (1+\frac{1}{n})^1 = \frac{(1+\frac{1}{n})^1}{(\frac{n^2}{n^2-1})^n} = \frac{(1+\frac{1}{n})^1}{(\frac{n^2 -1+1}{n^2-1})^n} = \frac{(1+\frac{1}{n})^1}{(1 + \frac{1}{n^2-1})^n} 
+        \]
+        Ora usiamo la disuguaglianza di Bernoulli:
+        \[
+            (1+x)^n \geq 1 + nx \;\;\; \;\forall\;x > -1 \;\;\;\;\forall\;n
+        \]
+        Con $x = \frac{1}{n^x -1}$.\newline
+        \[
+             (1 + \frac{1}{n^2-1}) \geq 1 + n \cdot (\frac{1}{n^2-1}) > 1+ \frac{n}{n^2} = 1 + \frac{1}{n}
+        \]
+        Quindi grazie alla disuguaglianza di Bernoulli ho ottenuto che:
+        \[
+            (1 + \frac{1}{n^2-1})^n \geq 1 + \frac{1}{n} \;\;\;quindi \;\;\; (1 + \frac{1}{n^2-1})^{-n} \leq (1 + \frac{1}{n})^{-1}
+        \]
+        Quindi tornando alla dimsotrazione:
+        \[
+            \frac{(1+\frac{1}{n})^1}{(1 + \frac{1}{n^2-1})^n} \leq \frac{(1 + \frac{1}{n})^1}{(1 + \frac{1}{n})^1} = 1
+        \]
+\end{itemize}
+\subsubsection*{Teorema di unicità del limite (per successioni)}
+Se una succesione converge, il valore cui converge è unico.\newline
+\textbf{dim.} dimostriamo per assurdo: \newline
+Sia $\{a_n\}$ una successione ocnvergente e 
+\[
+    \lim a_n = L_1 \;\;\;\; \land \;\;\;\; \lim a_n = L_2
+\]
+con $L_1 \neq L_2$.\newline
+Formaliziamo:
+\[
+    \;\forall\;B_r(L_1) \;\;\exists\;\; M_1 \;\forall\;n> M_1 \;\;a_n \in B_r(L_1)
+\]
+\[
+    \;\forall\;B_r(L_2) \;\;\exists\;\; M_2 \;\forall\;n> M_2 \;\;a_n \in B_r(L_2)
+\]
+[immagine: mancante]\newline
+scelgo $r = \frac{dist(L_1, L_2)}{2} < \frac{|L_1-L_2|}{2}$, così $b_r(L_1)\cap B_r(L_2) = \O$ \newline
+$\;\forall\; n > max\{M_1, M_2\}$ la successione non può stare contemporaneamente nelle due strisce, perchè? per definizione di successione, si ha una sola immagine per ogni valore del dominio, quindi o è in una o nell'altra.
+\subsubsection*{teorema della permanenza del segno (per successioni)}
+Se $a_n$ è definitivamente positiva e convergente allora il suo limite sarà \textbf{non negativo}.
+\newline
+\textbf{dim.}\newline
+$\;\;\exists\;\; M \;\forall\; n > M \;\;\; a_n > 0$ e $ L = \lim_{n\rightarrow  + \infty} a_n$ e volgio dimostrare che $L \geq 0$.\newline
+Procedo per assurdo supponendo $L < 0$.\newline
+La definizione di limite dice che 
+\[
+    \;\forall\; B_r(L) \;\;\exists\;\; M^* \;\;\;\;\;\; \;\forall\; n> M^* \;\;\;\;\;\; a_n \in B_r(L)
+\]
+se $r< \frac{|L|}{2}$ sto dicendo che la successione è definitivamente negativa (da $M^*$ in poi), e questo è assurdo, perchè una successione non può essere contemporaneamente definitivamente positiva e definitivamente negativa.\newline
+[immagine:mancante]
+\subsubsection*{Teorema del confronto (per successioni)}
+Conosciuto anche come teorema dei carabinieri. \newline
+Siano $a_n$, $b_n$, $c_n$ tali che definitivamente $a_n \leq b_n \leq c_n$. Inoltre $a_n$ e $c_n$ convergono ad $L$. Allora $L= \lim_{n\rightarrow +\infty}b_n$.\newline
+\textbf{dim.} traduciamo formalmente queste tre ipotesi:
+\begin{itemize}
+    \item $a_n \leq b_n \leq c_n$: $\;\;\;\;\;\exists\;\;M_1 \;\forall\;n > M_1 \;\;\; a_n \leq b_n \leq c_n$
+    \item $a_n \rightarrow L$: $ \;\;\;\;\forall\;B_r(L) \;\;\exists\;\; M_2 \;\forall\;n >M_2 \;\;\; a_n \in B_r(L)$, questa può essere riscritta come: $L-r < a_n < L+r$
+    \item $c_n \rightarrow L$: $ \;\;\;\;\forall\;B_r(L) \;\;\exists\;\; M_3 \;\forall\;n >M_3 \;\;\; c_n \in B_r(L)$, questa può essere riscritta come: $L-r < c_n < L+r$
+\end{itemize}
+chiamo $M^* = max\{M_1, M_2, M_3\}$, cioè il punto oltre il quale valgono tutte e tre le ipotesi iniziali. \newline
+Possiamo quindi unire tutte tre le ipotesi e dire:
+\[
+    L-r < a_n \leq b_n \leq c_n < L +r \;\;\;\; \;\forall\;n > M^*
+\]
+perciò $b_n \in B_r(L)$ definitivamente, quindi $\lim_{n\rightarrow + \infty} b_n = L$
 \newpage
