@@ -1,0 +1,283 @@
+\section*{6-ESERCITAZIONE}
+29/10/19
+\subsection*{Studi di funzione (non completi)}
+\textbf{es.}
+\[
+    f(x) = x \cdot  e ^{\frac{1}{ln(x)}}
+\]
+Dominio:
+\begin{itemize}
+    \item logaritmo: $x>0$
+    \item denominatore: $ln(x)\neq 0 \rightarrow x \neq 1$
+\end{itemize}
+Zeri della funzione: \newline
+\[
+    f\neq 0 \;\forall\;x \in \mathbb{D}
+\]
+Limiti:
+\[
+    \lim_{x\rightarrow 0^+} x \cdot  e ^{\frac{1}{ln(x)}} = 0^+ \;\;\;\;\;\;\;\;\; x \rightarrow 0, f(x) \sim x
+\]
+Quindi la funzione nell'intorno dell'origine si comporta come la bisettrice $y=x$.
+\[
+    \lim_{x\rightarrow 1^-} x \cdot  e ^{\frac{1}{ln(x)}} = 0^+
+\]
+Confrontiamo questo limite con l'infinitesimo campione (l'infinitesimo campione per $ x \rightarrow  0$ è $x^a$, invece per $x \rightarrow 1$ è $(x-1)^a$ o $(1-x)^a$). Se ora faccio il rapporto della nostra funzione e l'inititesimo campione posso ricavare l'ordine di infinitesimo della funzione (cioè $a$):
+\[
+    \lim_{x\rightarrow 1^-} \frac{x \cdot  e ^{\frac{1}{ln(x)}}}{(1-x)^a}=
+\]
+Con $a> 0$. \newline
+Cerchiamo di risolvere il logaritmo ponendo $t = 1-x$, quindi $x = 1-t$ e per $x \rightarrow 1^-$ ottengo $t \rightarrow 0^+$.\newline
+Inoltre la $x$ al numeratore tende a 1, quindi la ignoro.\newline
+Il risultato è:
+\[
+    = \lim_{t\rightarrow 0} \frac{e^{\frac{1}{ln(1-t)}}}{t^a} = \lim_{t\rightarrow 0} \frac{e^{-\frac{1}{t}}}{t^a} = 0 \;\;\;\;\;\;\;\; \;\forall\;a >0
+\]
+Siccome la formula è valida per ogni $a > 0$, capisco che la funzione $f(x)$ per $x \rightarrow  1^-$ è un infinitesimo superiore di qualunque ordine di $x^a$. Quindi la funzione per $x \rightarrow  1^-$ la funzione $f(x)$ è convessa.
+\[
+    \lim_{x\rightarrow 1^+} x \cdot  e ^{\frac{1}{ln(x)}} = + \infty
+\]
+Quindi in $x=1$ abbiamo un asintoto verticale per $x \rightarrow  1^+$
+\[
+    \lim_{x\rightarrow +\infty} x \cdot  e ^{\frac{1}{ln(x)}} = + \infty
+\]
+Cerchiamo quindi se esiste un asintoto obliquo:
+\[
+    \lim_{x\rightarrow + \infty} \frac{f(x)}{x} = e^{\frac{1}{ln(x)}} = 1 = m
+\]
+\[
+    \lim_{x\rightarrow +\infty} x \cdot  e ^{\frac{1}{ln(x)}} -x = \lim_{x\rightarrow +\infty} x(e ^{\frac{1}{ln(x)}} -1) = \lim_{x\rightarrow +\infty} x(1+ \frac{1}{ln(x)} + o(\frac{1}{ln(x)} -1)) = + \infty
+\]
+Quindi non esiste asintoto obliquo. \newline
+[immagine: mancante]\newline
+\newline
+\newline
+\newline
+\textbf{es.} 
+\[
+    y= 1+x-2 \cdot ln(|e^x -1|) - 6 e ^{-x}
+\]
+Dominio: $\mathbb{D}: \;\;\; e^x -1 \neq 0 \Rightarrow x\neq 0$ che equivale a $(-\infty,0) \cup (0,+\infty)$\newline
+Limiti:
+\[
+    \lim_{x\rightarrow -\infty} 1+x-2 \cdot ln(|e^x -1|) - 6 e ^{-x} = -\infty
+\]
+E posso dedurre che per $x \rightarrow  -\infty$ la nostra funzione $f(x) \sim  -6e^{-x}$, quindi la funzione per $x \rightarrow  -\infty$ è concava.
+\[
+    \lim_{x\rightarrow 0^- } 1+x-2 \cdot ln(|e^x -1|) - 6 e ^{-x} = +\infty
+\]
+\[
+    \lim_{x\rightarrow 0^+ } 1+x-2 \cdot ln(|e^x -1|) - 6 e ^{-x} = +\infty    
+\]
+Quindi $x=0$ è asintoto verticale nell'intorno dell'origine. Ora confrontiamo la funzione con l'infinito campione $(\frac{1}{x})^a$ nell'intorno dell'origine, con $a>0$:
+\[
+    \lim_{x\rightarrow 0} \frac{1+x-2 \cdot ln(|e^x -1|) - 6 e ^{-x} }{(\frac{1}{x})^a} = \lim_{x \rightarrow 0 } -2x^a ln(|e^x-1|) = 0 \;\;\;\;\;\;\;\;\;\forall\;a > 0 
+\]
+Quindi questa funzione tende a $+\infty$ più lentamente di qualunque funzione $(\frac{1}{x})^a$ [non sono sicuro].
+\[
+    \lim_{x\rightarrow +\infty} 1+x-2 \cdot ln(|e^x -1|) - 6 e ^{-x} = 1+x-2(x + ln(1-\frac{1}{e^x})) -6 e^{-x} =
+\]
+abbiamo tolto il modulo perchè l'argomento del logaritmo è sicuramente positivo
+\[
+    =\lim_{x\rightarrow + \infty} 1 +x -2x -2(-\frac{1}{e^x} + o(\frac{1}{e^x})) - 6 e^{-x} = -\infty
+\]
+Quindi non ci sono asintoti orizzontali, cerchiamo se c'è asintoto obliquo:
+\[
+    \lim_{x\rightarrow +\infty} \frac{f(x)}{x} = \lim_{x\rightarrow +\infty} \frac{-x}{x} = -1 = m
+\]
+(ricavato coi conti del limite precedente)
+\[
+    \lim_{x\rightarrow +\infty} 1+x-2 \cdot ln(e^x -1) - 6 e ^{-x} +x = 1+2x-2(x + ln(1- \frac{1}{e^x})) - 6 e ^{-x} =
+\]
+\[
+    =1+2x-2x + 2ln(1- \frac{1}{e^x})) - 6 e ^{-x} = 1
+\]
+Asintoto obliquo trovato.
+[immagine: mancante]\newline
+\newline
+\newline
+\newline
+\textbf{es.} 
+\[
+    f(x) = \frac{\sqrt[3]{x^6-6x^5}}{x}
+\]
+Dominio: La radice cubica non ha restrizioni, devo solo guardare il denominatore, quindi $x\neq 0$: $(-\infty,0) \cup (0, +\infty)$.\newline
+Ora che sappiamo che $x\neq0$ posso riscrivere la funzione così:
+\[
+    f(x) = \frac{x \sqrt[3]{x^3-6x^2}}{x} = \sqrt[3]{x^3-6x^2} 
+\]
+Se $x \rightarrow 0$
+\[
+    f(x) = x^{\frac{2}{3}}(x-6)^{\frac{1}{3}}
+\]
+perciò $f(x) \sim  -\sqrt[3]{6} \; x^{\frac{2}{3}}$ che rappresenta una cuspide rivolta verso l'alta in con punta (bucata) in $x=0$\newline
+\[
+    \lim_{x\rightarrow -\infty} x^{\frac{2}{3}}(x-6)^{\frac{1}{3}} = -\infty.
+\]
+Quindi non esiste asintoto orizzonatle, cerchiamo quell oobliquo:
+\[
+    \lim_{x\rightarrow -\infty} \frac{x(1- \frac{6}{x})^{\frac{1}{3}}}{x} =  (1- \frac{6}{x})^{\frac{1}{3}}  = 1 = m
+\]
+\[
+    \lim_{x\rightarrow -\infty} f(x)-x =  x(1- \frac{6}{x})^{\frac{1}{3}} -x = \lim_{x\rightarrow -\infty} x( 1 - \frac{2}{x} + o(\frac{1}{x}) -1) = -2.
+\]
+$x=6$ è zero della funzione, quindi studiamone il comportamento asintotico:
+\[
+    x \rightarrow  6 \;\;\;\;\;\;\;\; f(x) \sim  6^{\frac{2}{3}}(x-6)^{\frac{1}{3}}
+\]
+Cioè graficamente si ha un flesso a tangente verticale in $x=6$\newline
+[immagine: mancante]\newline
+\newline
+\newline
+\newline
+\textbf{es.} grafico nell'intorno di $0$ di 
+\[
+    y = \frac{sin(x^2)ln(1-x^3)}{1-cos(2x)}
+\]
+Per $x \rightarrow  0$, $f(x) \sim \frac{x^2 \cdot (-x^3)}{\frac{4x^2}{2}} = - \frac{x^3}{2}$
+Quindi c'è un flesso a tangente orizzontale.\newline
+\newline
+\newline
+\newline
+\textbf{es.} In un intorno di $1$ disegnare il grafico della funzione:
+\[
+    f(x) = \sqrt[3]{(x^3-1)^2} = \sqrt[3]{((x-1)^2(x^2+x+1)^2)}= \sqrt[3]{9} \cdot (x-1)^{\frac{2}{3}}
+\]
+Quindi abbiamo una cuspide con punta verso il basso.\newline
+\newline
+\newline
+\newline
+\textbf{es.} Studiare la funzione localmente nei punti che si ritengono significativi
+\[
+    y= \frac{ln(x)}{\sqrt[3]{x-1}}
+\]
+Dominio: $(0,1) \cup (1,+\infty)$
+\begin{itemize}
+    \item logaritmo: $x>0$
+    \item radice cubica non da restrizione sul Dominio
+    \item denominatore: $x\neq1$
+\end{itemize}
+\[
+    \lim_{x\rightarrow 0^+} y = + \infty
+\]
+Quindi $x= 0$ è asintoto verticale a destra e $f(x)$ è convessa per $x \rightarrow 0^+$, $y \sim -ln(x)$
+\[
+    \lim_{x\rightarrow 1^-} \frac{ln(x)}{\sqrt[3]{x-1}} =
+\]
+Poniamo $t = x-1$ e quindi $x= 1+t$, che per $x \rightarrow  1^- \Rightarrow t \rightarrow 0^-$
+\[
+    = \lim_{t\rightarrow 0^-} \frac{ln(1+t)}{t^{\frac{1}{3}}} = \lim_{t \rightarrow 0^-} t^{\frac{2}{3}}
+\]
+L'esercizio era risolvibile anche aggiungendo all'argomento del logaritmo "$+1-1$".\newline
+Comunque $f(x) \sim (x-1)^{\frac{2}{3}}$, che è una cuspide verso il basso con punta bucata in $1$.\newline
+\newline
+In $B(+\infty)$ possiamo dire che $f(x) \sim  \frac{ln(x)}{x^{\frac{1}{3}}}$, quindi:
+\[
+    \lim_{x\rightarrow  +\infty} f(x) = 0^+
+\]
+\newline
+\newline
+\newline
+\textbf{es.}
+\[
+    f(x) = 2x \cdot e ^{- \frac{1}{x}}
+\] 
+Dominio: $x\neq 0$
+\[
+    \lim_{x\rightarrow -\infty} f(x) = - \infty
+\]
+e la funzione per $x \rightarrow  -\infty$ è $f(x) \sim  2x$. quindi la funzione si approssima all'asintoto $m= 2x$, ma dobbiamo capire se ci si avvicina da sopra o da sotto.\newline
+[C'è stato un errore del prof, sono confuso su questa parte] \newline
+Ci sono due metodi per scoprirlo:
+\begin{itemize}
+    \item fare il limite della differenza e vedere se ci esce positivo o negativo.
+    \item cercare di capire l'andamento generale della funzione analizzando le intersezioni con la retta $m = 2x$
+\end{itemize}
+Usiamo il primo metodo:
+\[
+    \lim_{x\rightarrow -\infty} 2xe^{-\frac{1}{x}}-2x = \lim_{x\rightarrow -\infty} 2x(e^{-\frac{1}{x}}-1) = \lim_{x\rightarrow -\infty} 2x(1-\frac{1}{x} + o(\frac{1}{x}) -1) = -2 = q
+\]
+Essendo il risultato negativo, vuol dire che l'asintoto è più grande e quindi la nostra funzione ci si avvicina da sotto. Se avessimo avuto un risultato positivo la funzione si sarebbe avvicinata dall'alto.\newline
+[fine della parte con l'errore del prof]
+\[
+    \lim_{x\rightarrow  0^-} 2x e ^{-\frac{1}{x}} = \lim_{x\rightarrow 0^-} \frac{2x}{e^{\frac{1}{x}}} = -\infty
+\]
+Un altro modo per vedere quest'ultimo limite:
+\[
+    \lim_{x\rightarrow  0^-} 2x e ^{-\frac{1}{x}} = \lim_{x\rightarrow 0^-} \frac{e^{-\frac{1}{x}}}{\frac{1}{2x}} = -\infty
+\]
+\[
+    \lim_{x\rightarrow 0^+} f(x) = 0^+
+\]
+Se ora si facesse lo studio col campione otterremmo: $\lim_{x\rightarrow 0^+} \frac{2xe^{-\frac{1}{x}}}{x^a} = \lim_{x\rightarrow 0^+} \frac{2x^{1-a}}{e^{\frac{1}{x}}} = 0$, $\;\forall\;a>0$. Questo significa che la funzione è un infinitesimo di ordine superiore a qualuqnue ordine. Perciò in $0^+$ la funzione è come un esponenziale.
+\[
+    \lim_{x\rightarrow +\infty} 2^x e ^{-\frac{1}{x}} = + \infty =
+\]
+Approssimiamola meglio:
+\[
+    = \lim_{x\rightarrow +\infty}  2x(1- \frac{1}{x} +o(\frac{1}{x})) = \lim_{x\rightarrow +\infty} 2x-2+o(1)
+\]
+\newline
+\newline
+\newline
+\textbf{es.} 
+\[
+    f(x) = \frac{x^2-3x}{\sqrt{x^2+1}}
+\]
+Dominio: $\mathbb{R}$\newline
+Zeri: $f(x) = 0$ per $x^2-3x=0 \Rightarrow x=0$ oppure $x=3$.\newline
+\[
+    f(x) = \frac{x(x-3)}{\sqrt{x^2+1}}
+\]
+Per $x \rightarrow 0$: $f(x) \sim -3x$, quindi nell'origine la funzione è approssimabile con la retta $-3x$.\newline
+Per $x \rightarrow 3$: $f(x) \sim  \frac{3}{\sqrt{10}}(x-3)$, quindi in $x=3$ la funzione si comporta come la retta $\frac{3}{\sqrt{10}}(x-3)$.
+\[
+    \lim_{x\rightarrow -\infty} \frac{x^2-3x}{\sqrt{x^2-1}} = +\infty
+\]
+Cerchiamo l'asintoto obliquo:
+\[
+    \lim_{x\rightarrow -\infty} \frac{f(x)}{x} =  \frac{x^2-3x}{x \cdot \sqrt{x^2-1}} = \lim_{x\rightarrow -\infty} \frac{x^2(1-\frac{3}{x})}{-x^2 \sqrt{1+\frac{1}{x^2}}} = -1 = m
+\]
+\[
+    \lim_{x\rightarrow -\infty} \frac{x^2-3x}{\sqrt{x^2+1}}+x = \lim_{x\rightarrow -\infty} \frac{x^2-3x +x(|x| \cdot  \sqrt{1+ \frac{1}{x^2}})}{\sqrt{x^2+1}} =
+\]
+\[
+    = \lim_{x\rightarrow -\infty} \frac{x^2 -3x -x^2 ( 1 + \frac{1}{2x^2} + o(\frac{1}{x^2}) )}{\sqrt{x^2+1}} = \lim_{x\rightarrow -\infty} \frac{-3x - \frac{1}{2} + o(1)}{-x(1+ \frac{1}{x^2})^{\frac{1}{2}}} = +3
+\]
+L'asintoto obliquo per $-\infty$ è $y=-x+3$.
+\[
+    \lim_{x\rightarrow +\infty} \frac{x^2 -3x -x^2(1+ \frac{1}{2x^2} + o(\frac{1}{x^2}))}{x(1+\frac{1}{x^2})^{\frac{1}{2}}} = \lim_{x\rightarrow +\infty} \frac{-3x -\frac{1}{2} + o(1)}{x(1+\frac{1}{x^2})^{\frac{1}{2}}} = -3
+\]
+Quindi asintoto obliquo per $+ \infty$ è $y=x-3$\newline
+\newline
+\newline
+\newline
+\textbf{es.} 
+\[
+    f(x) = \frac{(x^2-4)^2}{(x+1)^3}
+\]
+Dominio: $x\neq -1$\newline
+Zeri: $x= \pm 2$\newline
+Riscriviamo la funzione:
+\[
+    f(x) = \frac{(x-2)^2 (x+2)^2}{(x+1)^3}
+\]
+Per $x \rightarrow  -2$, $f(x) \sim -16(x+2)^2$, quindi la funzione è come una parabola rivolta verso il basso che tocca $x=-2$) e $x=-2$ è un punto di massimo locale.\newline
+Per $x \rightarrow +2$, $f(x) \sim \frac{16}{27} (x-2)^2 $, quindi anche qui una parabola rivolta verso l'alto, e $x=2$ è un punto di minimo locale.
+\[
+    \lim_{x\rightarrow -1^{\mp}} f(x) = \mp\infty
+\]
+Quindi $x= -1$ è un asintoto verticale a sinistra e a destra .
+\[
+    \lim_{x\rightarrow -\infty} f(x) = -\infty
+\]
+Cerchiamo l'asintoto obliquo:
+\[
+    \lim_{x\rightarrow -\infty} \frac{f(x)}{x} = 1
+\]
+\[
+    \lim_{x\rightarrow -\infty} \frac{(x^2-4)^2}{(x+1)^3} - x = \lim_{x\rightarrow -\infty} \frac{x^4-8x^2+16 - x^4-3x^3-3x^2-x}{(x+1)^3}= -3
+\]
+Quindi $y=x-3$ è asintoto obliquo per $x \rightarrow -\infty$. Ora ci sarebbe da scoprire se sta sopra o sotto l'asintoto obliquo.\newline
+[da finire a casa]
+\newpage

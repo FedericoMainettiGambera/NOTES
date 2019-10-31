@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  28 OCT 2019 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  29 OCT 2019 13:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,67 +337,154 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 8.
 
-[1] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../lecture6/lecture6.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--13
+[1] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/../exercise6/exercise6.tex
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--13
+Underfull \hbox (badness 10000) in paragraph at lines 50--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--19
+Underfull \hbox (badness 10000) in paragraph at lines 50--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--19
+Underfull \hbox (badness 10000) in paragraph at lines 50--57
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 94--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--39
+Underfull \hbox (badness 10000) in paragraph at lines 94--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
+Underfull \hbox (badness 10000) in paragraph at lines 94--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--66
-
- []
-
-[2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 175.
+Underfull \hbox (badness 10000) in paragraph at lines 127--134
 
-[4] [5]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--134
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--134
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--182
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 219--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--229
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--256
+
+ []
+
+[5] [6]) (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5210 strings out of 492609
- 71381 string characters out of 6132818
- 173684 words of memory out of 5000000
- 9004 multiletter control sequences out of 15000+600000
+ 5209 strings out of 492609
+ 71380 string characters out of 6132818
+ 172684 words of memory out of 5000000
+ 9003 multiletter control sequences out of 15000+600000
  12091 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,39p,883b,196s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf (6 pages, 140955 bytes).
+ 41i,7n,39p,883b,196s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf (7 pages, 150848 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
