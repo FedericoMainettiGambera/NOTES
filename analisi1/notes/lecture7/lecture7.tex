@@ -1,0 +1,87 @@
+\section*{7-LEZIONE}
+31/10/19
+\subsection*{[manca primi 20 minuti]}
+\subsubsection*{Teorema di Bolzano [manca]}
+\subsubsection*{Teorema di Weierstrass: no dimostrazione}
+\subsubsection*{Teorema di Darboux o teorema dei valori intermedi}
+E' una conseguenza del teorema di Bolzano e Weierstrass.\newline
+Enunciato:
+\[
+    f:A \subseteq \mathbb{R} \longrightarrow \mathbb{R} 
+\]
+\[
+    x \longrightarrow y=f(x)
+\]
+ipotesi:
+\begin{itemize}
+    \item $A=[a,b]$ intervallo compatto (?)
+    \item f è continua su $A$
+\end{itemize}
+Tesi:\newline
+$\;\forall\;\lambda \;\;:\;\; m < \lambda< M \;\;\exists\;\; x_\lambda \in A \;\;:\;\; f(x_\lambda) = \lambda$.\newline
+\textbf{dim.} Valendo Weierstrass, so che esistono $M$ e $m$ e almeno un valore di massimo $x_M$ e uno di minimo $x_m$.
+\[
+    f(x_m) = m \leq f(x) \leq M = f(x_M)
+\]
+Introduco ora una funzione ausiliaria $g(x) = f(x) - \lambda$ che è la funzione $f$ traslata "in giù" di $\lambda$ (se $\lambda > 0$). \newline
+Nota: $g$ ha la stessa regolarità di $f$ (è continua).\newline
+Inoltre $g$, studiata nell'intervallo $[x_m,x_M]$ soddisfa le ipotesi del teorema di Bolzano, quindi le valutazioni di $g$ agli estremi dell'intervallo ha hanno segno opposto.
+\[
+    g(x_m) = f(x_m) - \lambda = m-\lambda < 0
+\]
+\[
+    g(x_M) = f(x_M) - \lambda = M-\lambda > 0
+\]
+Per il teorema di Bolzano, quindi, $\;\;\exists\;\; x^* \;\;:\;\; g(x^*) = 0 = f(x^*)-\lambda = 0$.\newline
+\newline
+\newline
+\subsubsection*{Cardinalità degli insiemi infiniti}
+\textbf{def.} due insiemi infiniti hanno lo stesso numero di elementi (la \textbf{stessa cardinalità}) se e solo se riesco a costruire una \textbf{corrispondenza biunivoca} tra i due insiemi.\newline
+\newline
+\textbf{def.} un'insieme $X$ è \textbf{numerabile} se posso scrivere i suoi elementi in una successione (ovvero se può essere messo in corrispondenza biunivoca con $\mathbb{N}$).\newline
+\begin{itemize}
+    \item $\mathbb{N}$ è numerabile? sì
+    \item $\mathbb{Z}$ è numerabile? è chiaro che $\mathbb{N} \subset \mathbb{Z}$, ma si può costruire una successione ordinata che copra tutti gli elementi di $\mathbb{Z}$? sì, per esempio: $ \;0, \;1, -1, \;2, -2, \;3, -3, \;\;\dots$, quindi $\mathbb{Z}$ è numerabile.
+    \textbf{oss.} Da notare è che un insieme infinito può essere messo in corrispondenza biunivoco con una sua parte.
+    \item $\mathbb{Q}$ è numerabile? è chiaro, anche qui, che $\mathbb{N} \subset \mathbb{Q}$, ma può essere messo in corrispondenza biunivoca con $\mathbb{N}$? \newline
+    Vediamo come si può scrivere una successione che elenca tutti i razionali:
+    \[
+        \begin{bmatrix}
+            0& 1& 2& 3& 4&\\
+            0& -1& -2& -3& -4&\\
+            0& \frac{1}{2}& \frac{2}{2}& \frac{3}{2}& \frac{4}{2}&\\
+            0& -\frac{1}{2}& -\frac{2}{2}& -\frac{3}{2}& -\frac{4}{2}&\\
+            0& \frac{1}{3}& \frac{2}{3}& \frac{3}{3}& \frac{4}{3}&\\
+            0& -\frac{1}{3}& -\frac{2}{3}& -\frac{3}{3}& -\frac{4}{3}&\\
+        \end{bmatrix}
+    \]
+    Ora per dare un ordine a questa tabella, che copre tutti i razionali, ci basta percorrerla in diagonali che vanno verso il basso a sinistra.\newline
+    La prima diagonale contiene solo l'elemento $0$, la seconda contiene gli elementi $1$ e $0$, poi abbiamo $2, -1, 0$\dots e così via.\newline
+    Quindi sì, $\mathbb{Q}$ è numerabile.
+\end{itemize}
+$\mathbb{R}$ è numerabile? il problema è che $\mathbb{R}$ è continua e di conseguenza non  numerabile.\newline
+\textbf{def.} si dice che $\mathbb{R}$ ha cardinalità superiore a quella numerabile, detta \textbf{cardinalià del continuo}.\newline
+\textbf{dim.} dimostriamo che non è possibile numerare tutti gli elementi di $\mathbb{R}$.\newline
+Per semplicità dimostriamo che non posso numerare nemmeno una parte di $\mathbb{R}$, per esempio nell'intervallo $[0,1]$.\newline
+Dimostrazione per assurdo:\newline
+Se l'intervallo $[0,1]$ fosse numerabile, potrei scrivere i suoi elementi in una succesione, per esempio:\newline
+$x_0$: 0.1327401101279 \dots\newline
+$x_1$: 0.00010104 \dots\newline
+$x_2$: 0.1110140510000 \dots\newline
+$x_3$: 0.31313131 \dots\newline
+$x_4$: 0.00500010 \dots\newline
+$x_5$: \dots \newline
+Ma per quanto grande sia la lista, sarà sempre incompleta. Trovo in fretta un numero reale compreso fra $0$ e $1$ che in questa successione non appare, costruiamolo:\newline
+Prendiamo la prima cifra da $x_0$, che è un uno, poi prendiamo la seconda cifra dell'elemento $x_1$, poi il terzo dell'elemtno $x_2$ e così via ottengo:\newline
+$0.101104 \dots$\newline
+Ora sommiamo uno a ogni cifra ottenuta $1$:\newline
+$0.212215 \dots$\newline
+E così ottengo sicuramente un elemento che non appartiene alla lista, perchè ogni elemento ha almeno una cifra diversa da quella del numero appena costurito.
+\newline
+\newline
+\newline
+Anche i numeri \textbf{irrazionali} ($\mathbb{I}$) hanno la cardinalità del \textbf{continuo}.\newline
+\newline
+\newline
+Presa una retta, essa ha cardinalità del continuo, come $\mathbb{R}$, ma un piano? che cardinalità ha? Si riesce a costruire una corrispondenza biunivoca fra $\mathbb{R}$ e $\mathbb{R}^2$? [Riflettere a casa.]
+\newpage
