@@ -92,14 +92,14 @@ Vogliamo dimostrare che $a_n$ è monotona crescetne e limitata, quindi (per il t
     \item Verifica della monotonia crescente:\newline
         $\;\forall\;n \;,\; a_n \leq a_{n+1} \;\;\;$ ovvero $ \;\;\; \frac{a_n}{a_{n-1}} \geq 1$
         \[
-            \frac{a_n}{a_{n-1}} = \frac{(1 + \frac{1}{n})^n}{(1 + \frac{1}{n-1})^n-1} = \frac{(1+\frac{1}{n})^n}{(\frac{n-1+1}{n-1})^{n-1}} = (1+ \frac{1}{n})^n \cdot (\frac{n-1}{n})^{n-1} = 
+            \frac{a_n}{a_{n-1}} = \frac{(1 + \frac{1}{n})^n}{(1 + \frac{1}{n-1})^{n-1}} = \frac{(1+\frac{1}{n})^n}{(\frac{n-1+1}{n-1})^{n-1}} = (1+ \frac{1}{n})^n \cdot (\frac{n-1}{n})^{n-1} = 
         \]       
         \[
-            = (1+ \frac{1}{n})^n \cdot (1-\frac{1}{n})^n \cdot (1 - \frac{1}{n})^{-1} = (1- \frac{1}{n})^n \cdot (1 -\frac{1}{n})^-1
+            = (1+ \frac{1}{n})^n \cdot (1-\frac{1}{n})^n \cdot (1 - \frac{1}{n})^{-1} = (1- \frac{1}{n^2})^n \cdot (1 -\frac{1}{n})^{-1}
         \]
         Ora usiamo la disuguaglianza di Bernoulli:
         \[
-            (1+n)^n \geq 1 + nx \;\;\; \;\forall\;n \in \mathbb{N}, \;\;\;\;\forall\;x > -1
+            (1+x)^n \geq 1 + nx \;\;\; \;\forall\;n \in \mathbb{N}, \;\;\;\;\forall\;x > -1
         \]
         Se prendo $x = -\frac{1}{n^2}$ ottengo:
         \[
@@ -107,7 +107,7 @@ Vogliamo dimostrare che $a_n$ è monotona crescetne e limitata, quindi (per il t
         \]
         E tornando alla dimostrazione posso sostituire quest'ultimo risultato dove eravamo rimasti:
         \[
-            (1- \frac{1}{n})^n \cdot (1 -\frac{1}{n})^-1 \geq(1-\frac{1}{n}) \cdot (1-\frac{1}{n})^{-1} = 1
+            (1- \frac{1}{n^2})^n \cdot (1 -\frac{1}{n})^-1 \geq(1-\frac{1}{n}) \cdot (1-\frac{1}{n})^{-1} = 1
         \]
         Per qui abbiamo dimostrato che è monotona crescente.
     \item Verifica della limitatezza:\newline
@@ -117,7 +117,7 @@ Vogliamo dimostrare che $a_n$ è monotona crescetne e limitata, quindi (per il t
         \]
         Questa successione $b_n$ è decrescente:
         \[
-            = (1 + \frac{1}{n})^{n} = (1 + \frac{1}{n}) = a_n \cdot (1 + \frac{1}{n})
+            = (1 + \frac{1}{n})^{n} \cdot  (1 + \frac{1}{n}) = a_n \cdot (1 + \frac{1}{n})
         \]
         Dove $(1 + \frac{1}{n}) > 1$. \newline
         Quindi $a_n < b_n \;\;\;\;\forall\; n$.
@@ -159,7 +159,7 @@ Vogliamo dimostrare che $a_n$ è monotona crescetne e limitata, quindi (per il t
 \subsubsection*{Teorema di unicità del limite (per successioni)}
 Se una succesione converge, il valore cui converge è unico.\newline
 \textbf{dim.} dimostriamo per assurdo: \newline
-Sia $\{a_n\}$ una successione ocnvergente e 
+Sia $\{a_n\}$ una successione convergente e 
 \[
     \lim a_n = L_1 \;\;\;\; \land \;\;\;\; \lim a_n = L_2
 \]
@@ -172,13 +172,13 @@ Formaliziamo:
     \;\forall\;B_r(L_2) \;\;\exists\;\; M_2 \;\forall\;n> M_2 \;\;a_n \in B_r(L_2)
 \]
 [immagine: mancante]\newline
-scelgo $r = \frac{dist(L_1, L_2)}{2} < \frac{|L_1-L_2|}{2}$, così $b_r(L_1)\cap B_r(L_2) = \O$ \newline
+scelgo $r = \frac{dist(L_1, L_2)}{2} < \frac{|L_1-L_2|}{2}$, così $b_r(L_1)\cap B_r(L_2) = \emptyset$ \newline
 $\;\forall\; n > max\{M_1, M_2\}$ la successione non può stare contemporaneamente nelle due strisce, perchè? per definizione di successione, si ha una sola immagine per ogni valore del dominio, quindi o è in una o nell'altra.
 \subsubsection*{teorema della permanenza del segno (per successioni)}
 Se $a_n$ è definitivamente positiva e convergente allora il suo limite sarà \textbf{non negativo}.
 \newline
 \textbf{dim.}\newline
-$\;\;\exists\;\; M \;\forall\; n > M \;\;\; a_n > 0$ e $ L = \lim_{n\rightarrow  + \infty} a_n$ e volgio dimostrare che $L \geq 0$.\newline
+$\;\;\exists\;\; M \;\forall\; n > M \;\;\; a_n > 0$ e $ L = \lim_{n\rightarrow  + \infty} a_n$ e voglio dimostrare che $L \geq 0$.\newline
 Procedo per assurdo supponendo $L < 0$.\newline
 La definizione di limite dice che 
 \[

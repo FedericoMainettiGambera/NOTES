@@ -1,0 +1,154 @@
+\section*{8-LEZIONE}
+11/11/19
+\subsection*{Ottimizzazione di funzioni in una variabile}
+Presa una funzione $f: A \subseteq \mathbb{R} \rightarrow  \mathbb{R}$, $x \rightarrow  y = f(x)$, si operano scelte "ottime", ovvero cerco i valori (e i punti) di ottimo locale (massimi e minimi in un intorno). \newline
+\newline
+\textbf{def.} \textbf{Valore di massimo locale} è $M$, tale che $M = f(x_0) \geq f(x) \;\;\;\;\;\forall\; x \in B_r(x_0)$. Invece $x_0$ è il \textbf{punto di massimo locale}.\newline
+\newline
+\textbf{def.}  \textbf{Valore di minimo locale} è $m$, tale che $m = f(x_0) \leq f(x) \;\;\;\;\;\forall\; x \in B_r(x_0)$. Invece $x_0$ è il \textbf{punto di minimo locale}.\newline
+\newline
+\textbf{def.} \textbf{Valore di massimo globale} è $M$, tale che $M = f(x_0) \geq f(x) \;\;\;\;\;\forall\; x \in A$. Invece $x_0$ è il \textbf{punto di massimo globale}.\newline
+\newline
+\textbf{def.}  \textbf{Valore di minimo globale} è $m$, tale che $m = f(x_0) \leq f(x) \;\;\;\;\;\forall\; x \in A$. Invece $x_0$ è il \textbf{punto di minimo globale}.\newline
+\newline
+In tutta questa parte del corso di analisi I si fa sempre un' \textbf{ipotesi generale: funzioni derivabili nel loro dominio (lisce)}.\newline
+\newline
+\textbf{def.} Tutti gli ottimi locali hanno \textbf{tangente orizzontale}, ma non tutti i punti a tangente orizzontale sono punti di ottimo locale.\newline
+\newline
+\textbf{def.} $x_0$ è un \textbf{punto stazionario} se $f'(x_0) = 0$ (cioè se ha tangente orizzontale).\newline
+\newline
+\textbf{teor. Teorema di Fermat sui punti stazionari.}\newline
+$f: A \subseteq \mathbb{R} \rightarrow  \mathbb{R}$\newline
+$x \rightarrow  y = f(x)$.\newline
+Ipotesi:
+\begin{itemize}
+    \item $A = (a,b)$ è un intervallo aperto e $x_0 \in A$.
+    \item $f$ è derivabile in $A$.
+    \item $x_0$ è un punto di ottimo.
+\end{itemize} 
+Tesi:\newline
+$f'(x_0) = 0$, cioè il punto $x_0$ è stazionario.\newline
+\textbf{dim.} \newline
+\textbf{$A$}: "$x_0$ è un punto di ottimo"\newline
+\textbf{$B$}: "$x_0$ p stazionario"\newline
+Graficamente diremmo che $B$ contiene $A$.\newline
+Dimostriamo per $x_0$ punto di massimo locale. Scriviamo il rapporto incrementale dividendolo in due casi:\newline
+\begin{itemize}
+    \item  se $h>0$, siccome il numeratore è sicuramente negativo e il denominatore positivo:
+        \[
+            \frac{f(x_0+h)-f(x_0)}{h} \leq 0
+        \]
+    Se ora passiamo al limite:
+        \[
+            \lim_{x\rightarrow 0^+} \frac{f(x_0+h)-f(x_0)}{h} \leq 0
+        \]
+    \item se $h<0$, siccome sia numeratore, sia denominatore son negativi otteniamo:
+        \[
+            \frac{f(x_0+h)- f(x_0)}{h} \geq 0
+        \]
+    Se ora passiamo al limite:
+        \[
+            \lim_{x\rightarrow 0^-} \frac{f(x_0+h)-f(x_0)}{h} \geq 0
+        \]
+\end{itemize}
+Sappiamo che per forza il limite esiste per le ipotesi, e siccome il rapporto incrementale da destra e da sinistra danno lo stesso valore, il limite è $0$.\newline
+\newline
+\newline
+\textbf{teor. di Rolle} \newline
+$f: A \subseteq \mathbb{R} \rightarrow  \mathbb{R}$\newline
+$x \rightarrow  y = f(x)$.\newline
+Ipotesi:
+\begin{itemize}
+    \item $A = [a,b]$ è chiuso
+    \item $f$ continue su $A$ e derivabile su $(a,b)$
+    \item $f(a) = f(b)$
+\end{itemize}
+$\Longrightarrow \;\; \exists \;\; x_0 \in(a,b) $ tale che $f'(x_0) = 0$ (sia un punto stazionario).\newline
+\textbf{dim.} Se la funzione è costante, la sua derivata è nulla, quindi dimostrato. Se la funzione non è costante, secondo Weierstrass, la funzione massimo $M$ e minimo $m$ nell'intervallo $(a,b)$. I punti di massimo e minimo sono non coincidenti, dunque ci sono varie configurazioni: massimo (o minimo) agli estremi e minimo (o massimo) in mezzo all'insieme, o sia minimo sia massimo in mezzo all'insieme, dunque per Fermat è dimostrata.\newline
+[dimostrazione ufficiale nelle foto di Wp della ludo]\newline
+\newline
+\newline
+\textbf{teor. di Lagrange} \newline
+$f: A \subseteq \mathbb{R} \rightarrow  \mathbb{R}$\newline
+$x \rightarrow  y = f(x)$.\newline
+Ipotesi:
+\begin{itemize}
+    \item A=[a,b]
+    \item f è continua in $A$ e derivabile in $(a,b)$
+\end{itemize}
+La pendenza del segmento che collega gli estremi $f(a)$ e $f(b)$ è $m = \frac{f(b)-f(a)}{b-a}$, allora $\;\; \exists \;\; x_0$ tale che $f'(x_0) = m = $\newline
+\textbf{dim.} \newline
+Chiamiamo i punti $r = (a,f(a))$ e $s = (b,f(b))$ e la retta passante per i punti $r$ e $s$ detta $t = f(a)+\frac{f(b)-f(a)}{b-a}(x-a)$ e introduco una funzione ausiliaria $g(x)$:
+\[
+    g(x) = f(x) - [f(a)+\frac{f(b)-f(a)}{b-a}(x-a)]
+\]
+Da notare che $g(x)$ ha la regolarità di $f(x)$ (cioè è continua in $A$ e derivabile in $a,b$).\newline
+Inoltre $g(a) = 0 = g(b)$.\newline
+Quindi per il teorema di Rolle applicato a $g(x)$ su $A$, esiste un punto stazionario interno all'intervallo per $g$.
+\[
+    g'(x) = f'(x) - \frac{f(b)-f(a)}{b-a}
+\]
+$\;\;\exists\;\; x_0$ tale che $0 = g'(x) = f'(x_0) -\frac{f(b)-f(a)}{b-a} \Longrightarrow f'(x_0) = \frac{f(b)-f(a)}{b-a} $, dimostrato.\newline
+\newline
+\newline
+\subsubsection*{Test di Monotonia di f su un intervallo aperto}
+(questo test mostra quanto sia importante il teorema di Lagrange)\newline
+Il test di Monotonia vale per funzioni:\newline
+$f: A \subseteq \mathbb{R} \rightarrow  \mathbb{R}$\newline
+$x \rightarrow  y = f(x)$.\newline
+Ipotesi:
+\begin{itemize}
+    \item $A = (a,b)$
+    \item $f$ è derivabile su $A$ e quindi anche continua su $A$.
+\end{itemize}
+$\Longrightarrow$ allora:
+\begin{itemize}
+    \item $f'(x) > 0 \;\;\; \;\forall\;x \in A \Longrightarrow f$ è monotona strettamente crescente su $A$.  \newline
+    \textbf{dim.} \newline
+    Riscriviamo la tesi del teorema di Lagrange: $\;\;\exists\;\; x_0 \in (a,b)$ tale che $f(b)-f(a) = f'(x_0)\cdot (b-a)$.\newline
+    Siano $x_1, x_2 $ tali che $a < x_1 < x_2 < b $, cioè seleziono un sottointervallo $[x_1, x_2]$ chiuso di $A$, su cui posso applicare Lagrange a $f$, quindi $\;\;\exists\;\; x_0 \in(x_1, x_2) $ tale che $f(x-2) - f(x_1) = f'(x_0) \cdot (x_2 - x_1)$, inoltre so che $f'(x) > 0$ per la prima ipotesi, quindi $f(x_1) < f(x_2) \;\forall\; x_1<x_2$.
+    \item $f'(x) < 0 \;\;\; \;\forall\;x \in A \Longrightarrow f$ è monotona strettamente decrescente su $A$. \newline
+    \textbf{dim.}\newline
+    [da fare a casa]. 
+\end{itemize}
+\subsubsection*{Esercizi}
+\textbf{es.} primo esempio di studio di funzione \newline
+\[
+    f(x) = |x^2-3|e^x
+\]
+\textbf{passo 1]} Tutto ciò che posso dire direttamente a partire da $f(x)$ (dominio, limiti agli estremi del dominio analizzando anche il comportamento asintotico, studio del segno, studio del comportamento asintotico negli zeri della funzione, regolarità di $f(x)$).\newline
+\textbf{passo 2]} Tutto ciò che posso dire direttamente a partire da $f'(x)$ (punti stazionari, massimi e minimi locali, punti con tangenti verticali o orizonatali, cerco tutti gli intervalli aperti dove posso applicare il test di monotonia)\newline
+\textbf{passo 3]} Tutto ciò che posso dire direttamente dalla $f''(x)$ (studio del segno della derivata seconda che ci fornisce informazioni sulla concavità della funzione).\newline
+\newline
+\textbf{Passo 1}: \newline
+Dominio e regolarità di $f(x)$: $f \in C^0 (\mathbb{R})$ ($C^0$ è uno spazio vettoriale). Noto che $f(x) \geq 0 \;\forall\; x \in \mathbb{R}$. Gli zeri di $f$ sono gli zeri di $|x^2-3|$, cioè $f=0$ in $x_1 = - \sqrt{3}$, $x_2 = \sqrt{3}$.\newline
+Vediamo i limiti:
+\[
+    \lim_{x\rightarrow -\infty}|x^2-3|e^x \sim \lim_{x\rightarrow -\infty}x^2e^x = \infty
+\]
+\[
+    \lim_{x\rightarrow +\infty}|x^2-3|e^x \sim \lim_{x\rightarrow +\infty}x^2 \cdot e^x = [t = -x] = \lim_{t\rightarrow \infty} t^2 \cdot e^{-t} =  \lim_{t\rightarrow \infty} \frac{t^2}{e^t} = 0
+\]
+\[
+    \lim_{x\rightarrow -\sqrt{3}}|x^2-3|e^x = \lim_{x\rightarrow -\sqrt{3}} |x - \sqrt{3} | \cdot |x + \sqrt{3}| \cdot e^x \sim \lim_{x\rightarrow -\sqrt{3}} 2 \sqrt{3} e ^{-2\sqrt{3}} |x+ \sqrt{3}| 
+\]
+\[
+    \lim_{x\rightarrow \sqrt{3}}|x^2-3|e^x = \lim_{x\rightarrow \sqrt{3}} |x - \sqrt{3} | \cdot |x + \sqrt{3}| \cdot e^x = |x-\sqrt{3}|2 \sqrt{3} e ^{\sqrt{3}}
+\]
+\textbf{Passo 2}: \newline
+Derivata prima, ricorda che $y = |x|$ ha derivata $y' = sign(x)$, cioè la funzione che vale $1$ per le x positive, $-1$ per le x negative, e non è definita per $x=0$:
+\[
+    f'(x) = e^x \cdot sign(x^2 - 3)\cdot (2x) + |x^2-3| \cdot e^x
+\]
+Che ha dominio naturale pari a $\mathbb{R} - \{+\sqrt{3}, -\sqrt{3}\}$.\newline
+Studiamo il segno della derivata prima:\newline
+Trasformiamo $|x^2-3|$ in $sing(x^2-3) \cdot (x^2-3)$
+\[
+    f'(x) = e^x \cdot sign(x^2 - 3)\cdot (2x) + sing(x^2-3) \cdot (x^2-3) \cdot e^x = sing(x^2-3) e^x \cdot [x^2+2x -3]
+\]
+$sing(x^2-3)$ ha sengno positivo per $x< - \sqrt{3}$ e $x> +\sqrt{3}$, invece $[x^2+2x -3]$ ha segno positivo per $x < -3$ e $x > 1$.\newline
+Quindi il segno di $ f'(x)$ è positivo per $x< -3$ e o
+$-\sqrt{3} < x \leq 1$ e $x > +\sqrt{3}$.\newline
+Applicando il test di monotonia notiamo che la funzione è crescente in $x< -3$, in $x =-3$ è un punto stazionario, nell'intervallo $-3< x < -\sqrt{3}$ la funzione è decrescente, in $(-\sqrt{3, 1})$ la funzione è crescente, poi da $(1,3)$ la funzione decresce, in $x=1$ c'è un punto stazionario, e infine in $(\sqrt{3}, \infty)$ la funzione è crescente.
+[da finire a casa per esercizio]
+\newpage

@@ -1,8 +1,18 @@
 \section*{7-LEZIONE}
 31/10/19
 \subsection*{[manca primi 20 minuti]}
-\subsubsection*{Teorema di Bolzano [manca]}
-\subsubsection*{Teorema di Weierstrass: no dimostrazione}
+\subsubsection*{Teorema di Bolzano o teorema degli zeri [dimostrazione iterativa, manca]}
+presa una funzione $f \;\;:\;\; A \subseteq \mathbb{R} \longrightarrow \mathbb{R}$:\newline
+ipotesi:
+\begin{itemize}
+    \item $A=[a,b]$ è un intervallo compatto
+    \item $f$ è continua su $A$
+    \item $f(a) \cdot  f(b) < 0$ 
+\end{itemize}
+\textbf{teor.} $\;\;\exists\;\; x^* \in (a,b) \;\;:\;\; f(x^*)=0$\newline
+\newline
+\textbf{dim.} Per fissare le idee posiamo $f(a)>0$ e $f(b)<0$\newline
+Procediamo per bisezione: si prende... 
 \subsubsection*{Teorema di Darboux o teorema dei valori intermedi}
 E' una conseguenza del teorema di Bolzano e Weierstrass.\newline
 Enunciato:
@@ -14,18 +24,19 @@ Enunciato:
 \]
 ipotesi:
 \begin{itemize}
-    \item $A=[a,b]$ intervallo compatto (?)
+    \item $A=[a,b]$ intervallo compatto
     \item f è continua su $A$
 \end{itemize}
 Tesi:\newline
-$\;\forall\;\lambda \;\;:\;\; m < \lambda< M \;\;\exists\;\; x_\lambda \in A \;\;:\;\; f(x_\lambda) = \lambda$.\newline
+Con $m$ minimo e $M$ massimo valori di massimo della funzione in $A$, possiamo dire che $\;\forall\;\lambda $ con $ m < \lambda< M \;\;\exists\;\; x_\lambda \in A \;\;:\;\; f(x_\lambda) = \lambda$.\newline
+\newline
 \textbf{dim.} Valendo Weierstrass, so che esistono $M$ e $m$ e almeno un valore di massimo $x_M$ e uno di minimo $x_m$.
 \[
     f(x_m) = m \leq f(x) \leq M = f(x_M)
 \]
 Introduco ora una funzione ausiliaria $g(x) = f(x) - \lambda$ che è la funzione $f$ traslata "in giù" di $\lambda$ (se $\lambda > 0$). \newline
 Nota: $g$ ha la stessa regolarità di $f$ (è continua).\newline
-Inoltre $g$, studiata nell'intervallo $[x_m,x_M]$ soddisfa le ipotesi del teorema di Bolzano, quindi le valutazioni di $g$ agli estremi dell'intervallo ha hanno segno opposto.
+Inoltre $g$, studiata nell'intervallo $[x_m,x_M]$ soddisfa le ipotesi del teorema di Bolzano, quindi le valutazioni di $g$ agli estremi dell'intervallo hanno segno opposto.
 \[
     g(x_m) = f(x_m) - \lambda = m-\lambda < 0
 \]

@@ -1,0 +1,343 @@
+\section*{6-ESERCITAZIONE}
+12/11/19
+\subsection*{Derivate}
+\textbf{es.} 
+\[
+    y = x^2 +x^4
+\]
+Analizzare la retta tangente nel punto $(1,2)$, con la definizione di derivata.
+\[
+    m = f'(1) = \lim_{h\rightarrow 0} \frac{f(1+h)-f(1)}{h} = \lim_{h\rightarrow 0} \frac{(1+h)^2 + (1+h)^4 -2}{h} =
+\]
+\[
+    = \lim_{h\rightarrow 0} \frac{1 + 2h+ h^2 + 1 + 4h^2 +h^4 +4h +2h^2 + 4h^3 +-2}{h} = 6
+\]
+Quindi avremo $y-y_0 = f'(x_0)(x-x_0)$, che diventa $y-2 = 6(x-1)$, $y = 6x-4$.\newline
+\newline
+\newline
+\textbf{es.} Con la definizione di derivata calcolare la derivata di:
+\[
+    f(x) = a^{2x+1}
+\]
+con $a > 0$ e $a\neq 1$.
+\[
+    \lim_{h\rightarrow 0} \frac{a^{2(x+h)+1}-a^{2x+1}}{h} = \lim_{h\rightarrow 0} \frac{a^{2x+1}(a^{2h}-1)}{h}= 
+\]
+\[
+    = a^{2x+1} \cdot  \lim_{h\rightarrow 0} \frac{e^{2 \cdot h \cdot ln(a) }-1}{h} = 2 \cdot ln(a) \cdot  a^{2x+1}
+\]
+\newline
+\newline
+\newline
+\textbf{es.} Studiare la continuità, la derivabilità di $f(x)$ e la continuità di $f'(x)$
+\[
+    f(x)= \begin{cases}
+        e^{\frac{1}{x}} & x<0 \\
+        2 \sqrt{x} \cdot  sen(x) & x\geq 0
+    \end{cases}
+\]
+La funzione è continua perchè composta di funzioni elementari continue nel loro dominio. Analiziamo l'unico punto problematico, cioè $x=0$.
+\[
+    \lim_{x\rightarrow 0^-} e ^{\frac{1}{x}} = 0 
+\]
+\[
+    f(0) = 0
+\]
+Perciò la funzione è continua.\newline
+Analiziamo quindi la derivabilità: se esistono finiti $\lim_{x\rightarrow x_0^-} f'(x) = \lim_{x\rightarrow x_0^+} f'(x) = L$, allora la funzione è derivabile.
+\[
+    f'(x) = \begin{cases}
+        - \frac{1}{x^2} e ^{\frac{1}{x}} & x<0\\
+        \frac{2}{2 \sqrt{x}} \cdot  sen(x) + 2 \sqrt{x} \cdot cos(x)& x \geq 0
+    \end{cases}
+\]
+\[
+    \lim_{x\rightarrow 0^-} - \frac{ e ^{\frac{1}{x}}}{x^2} = 0
+\]
+\[
+    \lim_{x\rightarrow 0^+}\frac{1}{\sqrt{x}} \cdot  sen(x) + 2 \sqrt{x} \cdot cos(x) = 0
+\]
+Quindi il limite destro e sinistro della derivata esistono, coincidono e sono finiti. Concludo che $\;\;\exists\;\; f'(0) = 0$ e la derivata è continua.\newline
+\newline
+\newline
+\textbf{es.} Sia data $y=f(x)$ tale che $f(1) = 1$ e $f'(1) = 3$, calcolare $[f(x^2)]'_{x=1}$.
+\[
+    [f(x^2)]'_{x=1} = [f'(x^2)\cdot 2x]_{x=1} = 3 \cdot 2 = 6
+\]
+Calcolare $[x^2 + f(x)]'_x=1$
+\[
+    [x^2 + f(x)]'_x=1 = [2x +f'(x)]_x=1 = 2+3 = 5
+\]
+Calcolare $[\frac{x^2}{f(x)}]'_{x=1}$
+\[
+    [\frac{x^2}{f(x)}]'_{x=1} = [\frac{2x \cdot f(x) -x^2 \cdot f'(x)}{f^2(x)}]_{x=1} = \frac{2 \cdot 1 -1^2 \cdot 3}{1} = -1 
+\]\newline
+\newline
+\newline
+\textbf{es.} Studio di funzione
+\[
+    f(x) = \sqrt{\frac{x^2}{x+1}}
+\]
+Dominio: $\frac{x^2}{x+1} \geq 0$, numeratore: $x\geq 0$, denominatore: $x> -1$, quindi $x<-1 \cup x \geq 0$. \newline
+Segno della funzione: $f\geq 0 \;\; \;\forall\; x \in \mathbb{D}$\newline
+Zeri della funzione: $f(x) = 0 \Leftrightarrow  x = 0$, quindi $x=0$ è minimo globale.\newline
+Analiziamo il comportamento asintotico della funzione in $0$: $ x \rightarrow  0 \;\;\;\; f(x) \sim  x^{\frac{3}{2}}$ \newline
+Calcoliamo ora i limiti:
+\[
+    \lim_{x\rightarrow -\infty} f(x) = +\infty.
+\]
+Cerchiamo se esiste un asintoto obliquo:
+\[
+    \lim_{x\rightarrow -\infty} \frac{f(x)}{x} = \lim_{x\rightarrow -\infty} \frac{1}{x} \cdot |x|\sqrt{\frac{x}{x+1}} = -1 = m.
+\]
+\[
+    \lim_{x\rightarrow -\infty} f(x) - mx = -x \cdot \sqrt{\frac{x}{x+1}} +x = \lim_{x\rightarrow -\infty} -x\left(\sqrt{1-\frac{1}{x+1}}-1\right)=
+\]
+\[
+    = \lim_{x\rightarrow -\infty} -x( 1 - \frac{1}{2} \cdot  \frac{1}{x+1} -1) = +\frac{1}{2} = q.
+\]
+Quindi esiste asintoto obliquo $y=-x + \frac{1}{2}$, (per capire se la funzione converge a questo asintoto da sopra o da sotto, useremo la derivata seconda). Continuiamo con il prossimo limite:
+\[
+    \lim_{x\rightarrow -1^-} f(x) = +\infty
+\]
+Quindi la retta $y=-1$ è un asintoto verticale. Continuiamo con il prossimo limite:
+\[
+    \lim_{x\rightarrow \infty} f(x) = +\infty
+\]
+Cerchiamo se esiste un asintoto obliquo. Modificando leggermente i calcoli già fatti per $x \rightarrow  -\infty$ otteniamo che $\lim_{x\rightarrow +\infty} \frac{f(x)}{x} = -1 = m$, per la q, invece, otteniamo $q = - \frac{1}{2}$. Perciò l'asintoto obliquo per $x \rightarrow  + \infty$ è $y = x-\frac{1}{2}$.\newline
+Derivate:
+\[
+    f'(x) = \frac{1}{2 \sqrt{\frac{x^3}{x+1}}} \cdot \frac{3x^2 (x+1) -x ^3}{(x+1)^2} = \frac{1}{2}\sqrt{\frac{x+1}{x^3}} \cdot \frac{(2x+3)x^2}{(x+1)^2}
+\]
+Segno della derivata: Per come è fatta $f'(x)$, la derivata è positiva quando $2x+3$ è positiva. Quinid $ 2x+3 \geq 0$ per $x \geq -\frac{3}{2}$, quindi $f(-\frac{3}{2}) = \sqrt{\frac{27}{4}}$ è un minimo locale della funzione. L'asintoto in $-\frac{3}{2}$ vale $2$. Siccome $\sqrt{\frac{27}{4}} > 2$, la funzione è sopra all'asintoto.\newline
+Vediamo Se la funziona interseca gli asintoti, analiziamo per $x<-1$
+\[
+    \sqrt{\frac{x^3}{x+1}} = -x +\frac{1}{2}
+\]
+\[
+    \frac{x^3}{x+1} = x^2 + \frac{1}{4} - x
+\]
+\[
+    x^3 = x^3 + \frac{1}{4}x -x^2 + x^2 +\frac{1}{4} -x
+\]
+\[
+    x=\frac{1}{3}
+\]
+Ma siccome siamo in $x<-1$, il risultato $x= \frac{1}{3}$ non è accettato e quindi la funzione non interseca l'asintoto. Vediamo ora per $x > \frac{1}{2}$
+\[
+    \sqrt{\frac{x^3}{x+1}} = x - \frac{1}{2}
+\]
+\[
+    x = \frac{1}{3}
+\]
+Ma per lo stesso motivo il risultato $x = \frac{1}{3}$ non è accettato, quindi la funzione non interseca l'asintoto. \newline
+Saltiamo la derivata seconda perchè è troppo complicata.\newline 
+[immagine: grafico della funzione]\newline
+\newline
+\newline
+\textbf{es.}  Risolvere la seguente disequazione
+\[
+    x^2-ln(x) > 0
+\]
+Per risolvere questa disequazione facciamo uno studio di funzione chiamando $f(x) = x^2 -ln(x)$.\newline
+Dominio: $(0, +\infty)$\newline
+Limiti:
+\[
+    \lim_{x\rightarrow 0^+} f(x) = +\infty
+\]
+\[
+    \lim_{x\rightarrow + \infty} f(x) = + \infty
+\]
+Derivata:
+\[
+    f'(x) = 2x - \frac{1}{x} = \frac{2x^2 -1 }{x} \geq 0
+\]
+Quindi $x \geq \frac{\sqrt{2}}{2}$. Notiamo che $x = \frac{\sqrt{2}}{2}$ è un minimo globale.\newline
+\[
+    f(\frac{\sqrt{2}}{2}) = \frac{1}{2} - ln (\frac{\sqrt{2}}{2}) > 0
+\]
+[immagine: grafico della funzione]\newline
+Quindi la disequaione ha valore $\;\forall\;x >0$.\newline
+\newline
+\newline
+\textbf{es.} [esercizio preso male] Studiare la funzione
+\[
+    f(x) = x^3 \cdot (ln(|x|) - \frac{1}{3})
+\]
+Dominio: $x\neq 0$\newline
+Cosideriamo le simmetrie: $f(-x) = -x^3(ln(|-x|-\frac{1}{3})) = -(fx)$, quindi la funzione è dispari e c'è una simmetria rispetto allorigine.\newline
+Quindi studio $f_1(x) = x^3 ( ln(x) -\frac{1}{3})$ nel dominio $(0, + \infty)$, da cui poi ricavo $f(x)$ per simmetria.
+\[
+    f_1(x) \geq 0 
+\]
+\[
+    ln(x) \geq \frac{1}{3}
+\]
+\[
+    x \geq e^{\frac{1}{3}}
+\]
+\[
+    t= x-e^{\frac{1}{3}}
+\]
+\[
+    f_1(t) = (t+e^{\frac{1}{3}})^3 \cdot  (ln(t+e^{\frac{1}{3}})-\frac{1}{3})  = 
+\]
+$ln(e^{\frac{1}{3}}(1+\frac{t}{e^{\frac{1}{3}}})) = \frac{1}{3} + ln(1+\frac{t}{e^{\frac{1}{3}}})$
+\[
+    = (t+e^{\frac{1}{3}})^3 \cdot  (ln( 1 + \frac{t}{e^{\frac{1}{3}}})) \sim (per \;\; t \rightarrow 0): (e^{\frac{1}{3}})^3 \cdot  \frac{t}{e^{\frac{1}{3}}} =e^{\frac{2}{3}} \cdot t
+\]
+Da qui ricaviamo che
+\[
+    per \;\;\; x \rightarrow  e ^{\frac{1}{3}} \;\;\;\;\;\;\; f_1(x) \sim e^{\frac{2}{3}}(x- e ^{\frac{1}{3}})
+\]
+Poi vediamo i limiti:
+\[
+    \lim_{x\rightarrow 0^+} f_1(x) = 0^-
+\]
+\[
+    \lim_{x\rightarrow +\infty} f_1(x) = + \infty
+\]
+\[
+    f'_1(x) = 3x^2(ln(x) -\frac{1}{3}) + x^2 = x^2 (3 ln(x) ) \geq 0
+\]
+Da cui $x \geq 1$. \newline
+$x = 1$ è un minimo globale di $f_1$, $f_1(1) =-\frac{1}{3}$.\newline
+Analiziamo la derivata seconda:
+\[
+    [x^2 \cdot  3 \cdot  ln(x)]' = f_1''(x) = 6 x \cdot  ln (x) + 3x = 3x(2 ln(x) +1)
+\]
+\[
+    3x(2 ln(x) +1) \geq 0
+\]
+in $ln(x) \geq - \frac{1}{2}$, $x > e^{-\frac{1}{2}} = \frac{1}{\sqrt{e}}$, quindi c'è un flesso qui.\newline
+A questo punto basta fare la simmetria rispetto allìorigine e lo studio di funzione è finito.\newline
+[immagine: grafico della funzione]\newline
+\newline
+\newline
+\textbf{es.} trovare tutto gli ottimi globali e locali nell'intervallo $[-1,1]$ della funzione:
+\[
+    f(x) = x+ x^{\frac{2}{3}}
+\]
+Cerchiamo i minimi e massimi nei punti tali che $f'(x) = 0$, nei punti in cui la funzione non è derivabile e negli estremi del dominio.\newline
+Estremi del dominio:
+\[
+    f(-1) = 0
+\]
+\[
+    f(1) = 2
+\]
+Vediamo ora la derivata
+\[
+    f'(x) = 1 + \frac{2}{3 \sqrt[3]{x}} = \frac{3 \sqrt[3]{x} +2}{3 \sqrt[3]{x}}
+\]
+Il dominio della derivata è $[-1,1] -\{0\}$.
+\[
+    \lim_{x\rightarrow 0^{\pm}} f'(x) = \mp \infty
+\]
+Quindi $f(0) = 0$ è punto di minimo relativo.
+\[
+    f(x) \geq 0
+\]
+\[
+    x^{\frac{2}{3}}(x^{\frac{1}{3}}+1) \geq 0
+\]
+\[
+    x^{\frac{1}{3}} \geq -1
+\]
+\[
+    x \geq -1
+\]
+Quindi $f(x)= 0 \Leftrightarrow x= 0 \lor x= -1$.
+\[
+    f'(x) \geq 0
+\]
+denominatore $>0 $ quando $x>0$\newline
+numeratore $ \geq 0$ quando $\sqrt[3]{x} \geq - \frac{2}{3}$\newline
+Quindi la funzione è crescente per $ x < - \frac{8}{27}$, decrescente per $- \frac{8}{27}< x < 0$ e crescente per $0<x<1$.\newline
+Quindi calcoliamo $f(-\frac{8}{27}) = -\frac{8}{27} + \frac{4}{9} = \frac{4}{27}$.\newline
+Qindi:
+\begin{itemize}
+    \item $x=-1 $ e $x=0$ sono minimi assoluti
+    \item $x = - \frac{8}{27}$ è punto di massimo relativo
+    \item $x = 1$ è punto di massim0 assoluto.
+\end{itemize} 
+Questo esercizio mostra come non bisogna analizzare solamente la derivata prima per trovare i massimi e i minimi. \newline
+\newline
+\newline
+\textbf{es.} Trovare gli asintoti (1), gli intervalli di monotonia(2) e dimostrare che la funzione ammette un solo zero e che sia in $(0,1)$
+\[
+    f(x) = \frac{x^2}{x-1} + arctan(\frac{1}{x})
+\]
+\[
+    f(x) = x+1 + \frac{1}{x-1} + arctan(\frac{1}{x})
+\]
+Dominio: $(-\infty, 0) \cup (0,1) \cup (1, +\infty)$.\newline
+Limiti:
+\[
+    \lim_{x\rightarrow 0^+} f(x) = \frac{\pi}{2}
+\]
+\[
+    \lim_{x\rightarrow 0^-} f(x) = -\frac{\pi}{2}
+\]
+Quindi $x=0$ è un punto di discontinuità a salto.
+\[
+    \lim_{x\rightarrow 1^{\mp}} f(x) = \mp \infty 
+\]
+Quindi $x=1$ è asintoto verticale.
+\[
+    \lim_{x\rightarrow -\infty} f(x) = -\infty
+\]
+cerchiamo un asintoto obliquo
+\[
+    \lim_{x\rightarrow -\infty} \frac{f(x)}{x} = \lim_{x\rightarrow -\infty} \frac{x^2}{x^2-x} + \frac{1}{x} arctan(\frac{1}{x}) = 1 = m
+\]
+\[
+    \lim_{x\rightarrow -\infty} f(x) -mx = \lim_{x\rightarrow -\infty} x+1 + \frac{1}{x-1} + arctan(\frac{1}{x}) -x = (1+\frac{1}{x-1} + arctan(\frac{1}{x})) = 1 = q
+\]
+Quindi $y = x+1$ è asintoto obliquo della funzione per $x \rightarrow - \infty$.\newline
+Con praticamente gli stessi conti riusciamo a calcolare i limiti a $+\infty$:
+\[
+    \lim_{x\rightarrow +\infty} f(x) = + \infty
+\]
+\[
+    \lim_{x\rightarrow +\infty} \frac{f(x)}{x} = 1 = m
+\]
+\[
+    \lim_{x\rightarrow  +\infty} f(x) - mx = 1 = 1
+\]
+Quindi $y=x+1$ è asintoto obliquo anche per $x \rightarrow +\infty$.
+\[
+    x \rightarrow + \infty \;\;\;\;\; f(x) -(x+1) \sim \frac{1}{x} > 0
+\]
+Quindi la funzione sta sopra l'asintoto.\newline
+Invece, con un calcolo estremamente simile, capiamo che per $x \rightarrow  -\infty$ la funzione sta sotto l'asintoto.\newline
+Ora studiamo la monotonia della funzione, quindi analiziamo il segno della derivata:
+\[
+    f'(x) = \frac{2x(x-1)-x^2}{(x-1)^2} + \frac{-\frac{1}{x^2}}{1+(\frac{1}{x})^2} = \frac{x^2-2x}{(x-1)^2}- \frac{1}{x^2+1} =
+\]
+\[
+    = \frac{x(x-2)(x^2+1)-(x-1)^2}{(x-1)^2(x^2+1)} = \frac{x^4-2x^3+x^2-2x-x^2+2x-1}{(x-1)^2(x^2+1)} =
+\]
+\[
+    = \frac{x^3(x-2)-1}{(x-1)^2(x^2+1)}
+\]
+Ora ne studiamo il segno:
+\[
+    \frac{x^3(x-2)-1}{(x-1)^2(x^2+1)} \geq 0
+\]
+\[
+    x^3(x-2) \geq 1
+\]
+per $x > 2$
+\[
+    x^3 \geq \frac{1}{x-2}
+\]
+per $x < 2$
+\[
+    x^3 \leq \frac{1}{x-2}
+\]
+per $x=2$ l'equazione non è una soluzione, quindi posso anche ignorarlo. Le due equazioni viste sopra si possono risolvere graficamente disegnano $x^3$ e $\frac{1}{x-2}$ (iperbole traslata), da cui noto che le due funzioni si intersecano due volte. Quindi la soluzione della disequazione iniziale è valida per una certa $x< \alpha$ e $x>\beta$, con $\alpha<0<1<2<\beta$. $\alpha$ sarà un massimo, mentre $\beta$ un minimo.\newline
+[immagine: grafico della funzione]\newline
+\newpage
+a
+\newpage
