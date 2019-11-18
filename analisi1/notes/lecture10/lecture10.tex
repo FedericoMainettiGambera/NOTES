@@ -1,3 +1,250 @@
 \section*{10-LEZIONE}
 18/11/19
-\subsection*{}
+\subsection*{Sviluppi di MacLaurin delle funzioni elementari}
+Riprendiamo dall'ultima lezione sul polinomio di Taylor:
+\[
+    T_n(x) = \sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!} \cdot  (x-x_0)^k
+\]
+Il polinomio di Taylor viene chiamato polinomio di \textbf{MacLaurin} se si prende $x_0 = 0$:
+\[
+    T_n(x) = \sum_{k=0}^{n} \frac{f^{k}(0)}{k!} x^k
+\]
+\newline
+\newline
+\textbf{es.} scrivere il polinomio di MacLaurin di grado 9 di $sin(x)$
+\[
+    f(x) = sin(x) \rightarrow x=0 \rightarrow 0
+\]
+\[
+    f'(x) = cos(x) \rightarrow x=0 \rightarrow 1
+\]
+\[
+    f''(x)= -sin(x) \rightarrow x=0 \rightarrow 0
+\]
+\[
+    f'''(x)= -cos(x) \rightarrow x=0 \rightarrow-1
+\]
+\[
+    f^{iv}(x) = sin(x) = f(x) \rightarrow x=0 \rightarrow 0
+\]
+e ciclo di derivate riinizia. Quindi $T_9(x) = f(0) +f'(0) x + \frac{f''(0)x^2}{2!} + \frac{f'''(0)}{3!}x^3 + \dots + \frac{f^{ix}(0)}{9!}x^9 =$ tutti i termini pari si annullano  $=$
+\[
+    = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \frac{1}{7!}x^7 + \frac{1}{9!}x^9
+\]
+Notiamo che più si calcola un polinomio di grado maggiore e più troviamo una funziona che approssima meglio la funzione seno. Per esempio $T_1$ approssima il seno solo vicino all'origine, $T_3$, invece, approssima molto meglio di $T_1$ (graficamente notiamo che $T_3$ ha già le prime curvature del seno), etc.\newline
+[immagine:mancante (rappresentazione di vari gradi del polinomio di MacLaurin)]
+\newline
+\newline
+\textbf{es.} scrivere il polinomio di MacLaurin di grado 9 di $cos(x)$.\newline
+Questo esercizio è estremamente simile a quello precedente, qua invece di annullarsi i termini pari, si annullano quelli dispari. [Fare a casa].\newline
+[immagine:mancante (rappresentazione di vari gradi del polinomio di MacLaurin)]
+\newline
+\newline
+\textbf{es.} scrivere il polinomio di MacLauri di grado 9 dell'esponenziale.\newline
+\[
+    f(x) = e^x
+\]
+\[
+    f^{(k)} = e^k \rightarrow x=0 \rightarrow 1
+\]
+\[
+    T_n(x) = \sum_{k=0}^{n} \frac{1}{k!} \cdot x^k
+\]
+Quindi per $n=9$ avremo:
+\[
+    T_9(x) = 1+x+\frac{x^2}{2} + \frac{x^3}{3!} + \frac{x^4}{4!} + \dots + \frac{x^9}{9!}.
+\]
+[immagine: mancante (rappresentazione di vari gradi del polinomio di MacLaurin)]\newline
+\newline
+\newline
+\subsection*{Teorema del resto secondo Peano}
+descrive l'errore nell'approssimazione di $f(x)$ con $T_n(x)$. Dove $x$, che è il punto in cui sto facendo l'approssimazione, è nell'intorno di $x_0$ (ma $x\neq x_0$).\newline
+\textbf{teor.}  Se $f: A \rightarrow \mathbb{R}$, $x \longrightarrow  y = f(x)$ e ipotesi:
+\begin{itemize}
+    \item $A=(a,b)$, $x_0 \in A$
+    \item $f \in C^n(A) = \{$continua con tutte le derivate continue fino a $f^{(n)}$ in ogni punto di $A\}$
+\end{itemize}
+allora
+\[
+    f(x) = T_n(x) + o( \; (x-x_0)^n \; ) \;\;\;\;\; x \rightarrow x_0
+\]
+Questa formula è conosciuta anche in questa forma: $f(x) -T_n(x) = o( \; (x-x_0)^n \; )$ per $x \rightarrow x_0$.\newline
+\newline
+\textbf{Corollario 1} del teorema di Lagrange(che enuncia:$\;\exists\;\; \theta \in (a,b) \;\;:\;\; (b-a) f'(\theta) ) f(b) - f(a)$). \textbf{Teorema di Cauchy}:\newline
+Date $f, g: A \rightarrow \mathbb{R}$, $x \rightarrow y=f(x)$ e $y=g(x)$, e ipotesi:
+\begin{itemize}
+    \item $A = [a,b]$
+    \item $f,g $ continue in $A$ e derivabili in $(a,b)$
+\end{itemize}
+Allora per il teorema di Lagrange sappiamo che
+\[
+    \begin{cases}
+        \;\;\exists\;\; \theta_1 \in (a,b) \;\;:\;\; f'(\theta_1)(b-a) = f(b) - f(a) &\\
+        \;\;\exists\;\; \theta_2 \in (a,b) \;\;:\;\; g'(\theta_2)(b-a) = g(b) - g(a) &\\
+    \end{cases}
+\]
+Allora 
+\[
+    \;\;\exists\;\; x^* \in (a,b) \;\;:\;\; \frac{f'(x^*)}{g'(x^*)} = \frac{f(b) - f(a)}{g(b) - g(a)}
+\]
+\textbf{dim.} Uso un funzione ausiliaria $h(x) = [f(b) - f(a)] \cdot  g(x) - [g(b) - g(a)] \cdot  f(x)$, che ho ricavato portando tutto a primo termine da : $\frac{f'(x^*)}{g'(x^*)} = \frac{f(b) - f(a)}{g(b) - g(a)}$ e togliendo le "derivate".\newline
+$h$ ha la regolarità di $f$ e di $g$ perchè è una combinazione lineare di queste due funzione. Applico ora il teorema di Rolle:
+\[
+    h(x) = [f(b) - f(a)] \cdot  g(x) - [g(b) - g(a)] \cdot  f(x)
+\]
+Valutiamo gli estremi: in $a$
+\[
+    h(a) = f(b)g(a) - g(b)f(a)
+\]
+in $b$
+\[
+    h(b) = - f(a)g(b) + g(a)f(b) = h(a)
+\]
+Quindi per Rolle sappiamo che $h$ ha un punto stazionario. Calcoliamo ora la derivata di $h$
+\[
+    h'(x) = [f(b) - f(a)] \cdot  g'(x) - [g(b) - g(a) ]\cdot  f'(x)
+\]
+Ma sappiam oche esiste un $x^*$ per cui la derivata è nulla:
+\[
+    h'(x^*) = [f(b) - f(a)] \cdot  g'(x^*) - [g(b) - g(a) ]\cdot  f'(x^*) = 0
+\]
+\newline
+\newline
+\textbf{Corollario 2} del teorema di Lagrange(che enuncia:$\;\exists\;\; \theta \in (a,b) \;\;:\;\; (b-a) f'(\theta) ) f(b) - f(a)$). \textbf{Teorema di de l'Hopital (di Voldemort, da non usare secondo il prof.)}:\newline
+Date $f, g: A \rightarrow \mathbb{R}$, $x \rightarrow y=f(x)$ e $y=g(x)$, e ipotesi:
+\begin{itemize}
+    \item $A = [a,b]$
+    \item $f,g $ continue in $A$ e derivabili in $(a,b)$
+    \item entrambe le fuznioni sono infinitesime in $x_0 \in (a,b)$
+\end{itemize}
+Allora se $l = \lim_{x\rightarrow x_0} \frac{ f'(x)}{g'(x)}$, allora $l = \lim_{x\rightarrow x_0} \frac{f(x)}{g(x)}$\newline
+\newline
+\textbf{dim.} diretta dal corollario 1 (cauchy), $\;\;\exists\;\; \theta \in (a,b) \;\;:\;\;$
+\[
+    \frac{f(x)}{g(x)} = \frac{f(x)-f(x_0)}{g(x)-g(x_0)} = \frac{f'(\theta)}{g'(\theta)}
+\]
+\[
+    \lim_{x\rightarrow x_0} \frac{f(x)}{g(x)} = \lim_{x\rightarrow x_0} \frac{f'(\theta)}{g'(\theta)} = l
+\]
+\newline
+\newline
+\newline
+\subsection*{Dimostrazione del teorema del resto secondo Peano}
+se $ f \in C^n (A)$ e $A= (a,b)$ e $x_0 \in A$, allora $f(x) - T_n^{f} (x) = o( \; (x- x_0)^n \;)$\newline
+\textbf{dim.} per induzione su $n$
+\begin{itemize}
+    \item verifico per $n = 1$:\newline
+        \[
+            f \in C^1 \;\;, \;\; f(x) - [f(x_=) + f'(x_0) (x-x_0)]  \; =? \; o (x-x_0)
+        \] 
+        per $x \rightarrow x_0$
+        \[
+            \frac{f(x) - [f(x_0) + f'(x_0) (x-x_0)]}{x-x_0} = \frac{f(x) -f(x_0)}{x-x_0} - f'(x_0)
+        \]
+        Verificata.
+    \item Supponendo che valga per $n-1$ verifico per $n$.\newline
+    Scriviamo la validità per $n-1$ con una funzione $g$: $\;\forall\; g \in C^{n-1}(A)$ allora so che vale
+    \[
+        g(x) -T_{n-1}^g (x) = o( \; (x-x_0)^n-1\;)
+    \]
+     Ora dobbiamo verificare che presa $f \in C^n(A)$ allora vale che 
+     \[
+        f(x) - T_n^f(x) = o(\; (x-x_0)^n \;)
+     \] 
+     e per farlo ci basta dimostrare che 
+     \[
+        \frac{f(x) - T_n^f(x)}{(x-x_0)^n}
+     \]
+     tenda a $0$ per $x \rightarrow x_0$. Per calcolare questo limite usiamo il corollario 2: 
+    \[
+        \lim_{x \rightarrow x_0} \frac{[f(x) - T_n^f(x)]'}{[(x-x_0)^n]'}
+    \]
+    Analiziamo prima:
+    \[
+        [T_n^f(x)]' = [f(x_0) + f'(x_0)(x-x_0) + \frac{f''(x_0)}{2!}(x-x_0)2 + \dots + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n] =
+    \]
+    \[
+        = f'(x_0) + f''(x_0)(x-x_0) + \dots + \frac{f^{(n)}(x_0)}{(n-1)!}(x-x_0)^{n-1} = T_{n-1}^{f'}(x)
+    \]
+    Quindi: $[T_n^f(x)]' = T_{n-1}^{f'}(x)$.\newline
+    Ora possiamo tornare al limite:
+    \[
+        \lim_{x \rightarrow x_0} \frac{[f(x) - T_n^f(x)]'}{[(x-x_0)^n]'} = \lim_{x \rightarrow x_0} \frac{f'(x) - T_{n-1}^{f'}(x)}{n \cdot  (x-x_0)^{n-1}} =
+    \]
+    che per ipotesi di induzione (quella con la funzione $g$) è
+    \[
+        = 0
+    \]
+\end{itemize}
+Fine dimostrazione.\newline
+\newline
+\newline
+\subsection*{Teorema del resto secondo Lagrange}
+Questo teorema, rispetto a quello del resto secondo Peano, presenta ipotesi più restrittive, che consentono di scrivere il resto in modo pi dettagliato.\newline
+$f \in C^{n+1}(A)$, $A=(a,b)$, $x_0 \in A$, Allora $\;\;\exists\;\; \theta \in (x_0, x) \;\;:\;\; $
+\[
+    f(x) -T_n(x) = \frac{f^{n+1}(\theta)}{(n+1)!}(x-x_0^{(n+1)})
+\]
+Notiamo che $\frac{f^{n+1}(\theta)}{(n+1)!}(x-x_0^{(n+1)})$ è $o( \; (x-x_0)^n \;)$, quindi la forma di Lagrange è più dettagliata di Peano.\newline
+\newline
+\textbf{dim.} Considero due funzioni ausiliarie:
+\[
+    g(x) = f(x) - T_n(x)
+\]
+\[
+    w(x) = (x-x_0)^{n+1}
+\]
+$w(x)$ ha regolarità $ \in C^\infty ( \mathbb{R})$ e $g(x)$ ha regolarità $in C^{n+1}(A)$.\newline
+Calcoliamo $g(x_0)$, $g'(x_0)$, \dots, $g^{n+1}(x_0)$ e $w(x_0)$, $w'(x_0)$, \dots, $w^{n+1}(x_0)$.\newline
+Dato che $f$ e $T_n$ hanno un contatto di ordine $n$ in $x_0$:
+\[
+    g(x_0) = g'(x_0) = \dots = g^{n}(x_0) = 0
+\]
+Ci rimane quindi da calcolare solo $g^{n+1}(x)$.\newline
+Anche per $w$ notiamo che in $x_0$ le derivate sono nulle:
+\[
+    w(x_0) = w'(x_0) = \dots = w^{n}(x_0) = 0
+\]
+Anche qui quindi ci rimane da calcolare solo $w^{n+1}(x)$.
+\[
+    g^{n+1}(x) = f^{n+1}(x)
+\]
+\[
+    w^{n+1}(x) = (n+1)!
+\]
+A questo punto vogliamo dimostrare che
+\[
+    f(x) = T_n(x) + \frac{f^{n+1}(\theta)}{(n+1)!} \cdot (x-x_0)^{n+1}
+\] 
+Per farlo portiamo $T_n(x)$ a primo menbro otteniamo:
+\[
+    f(x) - T_n(x) = \frac{f^{n+1}(\theta)}{(n+1)!} \cdot (x-x_0)^{n+1}
+\]
+Ora dividiamo per $(x-x_0)^{n+1}$
+\[
+    \frac{f(x) - T_n(x)}{(x-x_0)^{n+1}} = \frac{f^{n+1}(\theta)}{(n+1)!}
+\]
+Dimostreremo il teorema in questa forma.\newline
+\newline
+Riprendiamo le due funzioni ausiliarie
+\[
+    \frac{g(x)}{w(x)} = \frac{ g(x) - g(x_0)}{ w(x) - w(x_0)} = 
+\]
+dove $g(x_0) = w(x_0) = 0$ e col Corollario 1 ( Cauchy ), otteniamo che $\exists\;\; x_1 \in(x_0, x)$:
+\[
+    = \frac{g'(x_1)}{w'(x_1)} = \frac{g'(x_1) -g'(x_0)}{w'(x_1)- w'(x_0)} =
+\]
+riapplicando ora nuovamente il Corollario 1 ( Cauchy ), otteniamo che $\exists\;\; x_2 \in(x_0, x_1)$:
+\[
+    = \frac{g''(x_2)}{w''(x_2=} = \frac{ g''(x_2) - g''(x_0)}{w''(x_2)- w''(x_0)} =
+\]
+riapplichiamo per la terza volta il Corollario 1 ( Cauchy ) restringendo sempre di più l'intervallo, quindi otteniamo $\exists\;\; x_3 \in (x_0, x_2)$:
+\[
+    = \frac{g'''(x_3)}{w'''(x_3)} = \dots
+\]
+iterando $n$ volte otteniamo:\newline
+$\;\;\exists\;\; \theta \in (x_0, X_n)$:
+\[
+    \dots = \frac{g^{n+1}(\theta)}{w^{n+1}(\theta)} = \frac{f^{n+1} ( \theta)}{(n+1)!}
+\]
+\newpage
