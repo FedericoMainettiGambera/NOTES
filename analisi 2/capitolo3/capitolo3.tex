@@ -372,3 +372,67 @@ Teorema di convessità e matrice Hessiana. Sia $f \in C^2(\Omega)$, con $\Omega$
 Nelle funzioni convesse (concave) i punti stazionari, se esistono, rappresentano minimi (massimi) globali. Inoltre se la funzione è strettamente convessa (concava), il punto critico è di minimo (massimo) globale forte, quindi, in particolare, è unico.
 \subsection*{Funzioni definite implicitamente}
 \subsubsection*{Funzione implicita di una variabile}
+Teorema di Dini della funzione implicita. Sia $A$ un aperto in $\mathbb{R}^2$ e $f \;\;:\;\; A \rightarrow \mathbb{R}$ una funzione $C^1(A)$. Supponiamo che in un punto $(x_0,y_0) \in A$ sia:
+\[
+    f(x_0,y_0)= 0 \;\;\;\; e \;\;\;\; f_y(x_0,y_0) \neq 0.
+\] 
+Allora esiste un intorno $I$ di $x_0$ in $\mathbb{R}$ e un'unica funzione $g \;\;:\;\; I \rightarrow \mathbb{R}$, tale che $y_0=g(x_0)$ e
+\[
+    f(x,g(x)) = 0 \;\;\;\; \;\forall\;x \in I.
+\]
+Inoltre, $g \in C^1(I)$ e 
+\[
+    g'(x) = - \frac{f_x(x,g_x)}{f_y(x,g_x)} \;\;\;\; \;\forall\;x \in I.
+\]
+Notiamo che se $f(x_0,y_0) = 0$ e $f_y(x_0, y_0) = 0$, ma $f_x(x_0, y_0) \neq 0$, il teorema è ancora applicabile scambiando gli ruoli di $x$ e $y$.\newline
+In sostanza i punti in cui il teorema di Dini non è applicabile sono quelli in cui il gradiente di $f$ si annulla, ossia i punti critici.
+\subsection*{Complementi}
+\subsubsection*{Topologia e funzioni continue}
+Teorema di Bolzano-Weierstrass in $\mathbb{R}^n$. Sia $\{x_k\}_{k=1}^\infty$ una successione limitata. Allora essa ammette una sottosuccessione convergente.\newline
+
+Successione di Cauchy in $\mathbb{R}^n$. Sia $\{x_k\}_{k=1}^\infty$ una successione in $\mathbb{R}^n$. Si dice che la successione soddisfa la condizione di Cauchy se
+\[
+    \;\forall\;\epsilon > 0 \;\;\exists\;\; n_0 \;\;:\;\;\;\forall\;h,k \geq n_0 \;\;\; si \;\;\; ha \;\;\;|x_h -x_k|<\epsilon.
+\]
+\newline
+
+Teorema di completezza di $\mathbb{R}^n$. Se $\{x_k\}_{k=1}^\infty$ è una successione di Cauchy in $\mathbb{R}^n$, allora converge.\newline
+
+Teorema dell'uniforme continuità. Si dice che $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ è uniformemente continua in $\Omega \subseteq \mathbb{R}^n$ se:
+\[
+    \;\forall\;\epsilon>0,\;\;\exists\;\;\delta>0 \;\;:\;\; \;\forall\;x_1,x_2 \in\Omega,\;\;se \;\; |x_1- x-2| <\delta \;\;allora \;\;|f(x_1) -f(x_2)|<\epsilon
+\]
+\newline
+
+Teorema di Cantor-Heine. Sia $K\subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; K \rightarrow \mathbb{R}$ una funzione continua. Allora $f$ è uniformemente continua in $K$.\newline
+
+Sia $\Omega \subset \mathbb{R}$ un aperto e sia $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ uniformemente continua in $\Omega$. Allora $f$ è prolungabile con continuità fino alla frontiera di $\Omega$, ossia esiste una funzione $\bar{f} \;\;:\;\; \bar{\Omega} \rightarrow \mathbb{R}$ continua in $\bar{\Omega}$ e tale che in $\Omega$ coincide con $f$.
+\subsubsection*{Funzioni omogenee}
+Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ (eventualmente definita solo per $x\neq 0$), non identicamente nulla, si dice positivamente omogenea di grado $\alpha \in \mathbb{R}$ se
+\[
+    f(\lambda x) = \lambda^\alpha f(x) \;\;\;\;\; \;\forall\;x \in \mathbb{R}^n, x\neq 0, \lambda>0.
+\]
+La funzione $f$ si dice omogenea di grado $\alpha$ se la formula di prima vale anche per $\lambda<0$.\newline
+Se $f$ è positivamente omogenea vale
+\[
+    f(x) = f( |x| \cdot \frac{x}{|x|}) = |x|^\alpha f(\frac{x}{|x|}).
+\]
+In particolare se $f$ è omogenea (o positivamente omogenea) di grado zero, significa che è costante su ogni retta (o semiretta) uscente dall'origine. Infatti, indicata con
+\[
+    r(t)=tv
+\]
+con $v$ versore fissato, sarà
+\[
+    f(r(t))=f(tv)=t^0f(v)=f(v)=costante.
+\]
+Più in generale, per una funzione in due variabili positivamente omogenea di grado $\alpha$ vale la seguente rappresentazione in coordinate polari:
+\[
+    f(\rho, \theta)=\rho^\alpha g(1,\theta)
+\]
+per qualche $\alpha in \mathbb{R}$ e qualche funzione $g \;\;:\;\; [0, 2\pi) \rightarrow \mathbb{R}$.\newline
+
+Sia $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ una funzioen positivamente omogenea di grado $\alpha$, definita e continua per $x\neq 0$. Allora:
+\begin{itemize}
+    \item $f$ è continua anche nell'origine se $\alpha>0$; in questo caso $f(0) = 0$; $f$ è discontinua nell'origine se $\alpha<0$; è discontinua anche se $\alpha=0$, tranne il caso banale in cui $f$ è costante.
+    \item $f$ è differenziabile nell'origine se $\alpha>1$; non è differenziabile nell'origine se $alfa <1$, tranne il caso banale in cui $\alpha=0$ e $f$ è costante; se $\alpha=1$, $f$ è differenziabile se e solo se è una funzione lineare, (ossia $f8x) = a \cdot x$ per qualche vettore costante $a \in \mathbb{R}^n$).
+\end{itemize}
