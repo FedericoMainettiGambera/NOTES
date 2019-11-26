@@ -290,3 +290,85 @@ Tornando allo studio del segno della forma quadratica con la sua matrice $M$:
 \end{itemize}
 Da notare è che per una forma quadratica l'origine è sempre un punto stazionario.
 \subsubsection*{Studio della natura dei punti critici}
+Per estrarre informazioni su un punto critico $x_0$ occorre studiare e classificare la forma quadratica 
+\[
+    q(h) = \sum_{i,j=1}^{n}f_{x_ix_j}(x_0)h_ih_j = h^TH_f(x_0)h
+\]
+dove $H_f(x_0)$ è la matrice Hessiana di $f$ in $x_0$.\newline
+\begin{itemize}
+    \item se la forma quadratica è definitivamente positiva (negativa), allora $x_0$ è un punto di minimo (massimo) locale forte;
+    \item se la forma quadratica è indefinita, allora $x_0$ è un punto di sella;
+    \item se la forma quadratica è in $x_0$ semidefinita positiva (negativa) e non nulla, allora $x_0$ è di minimo (massimo) debole oppure di colle; la situazione cambia se la forma quadratica è semidefinita positiva (negativa) non solo in $x_0$, ma anche per ogni $x$ in un intorno di $x_0$, f è convessa (concava), dunque un punto di minimo (massimo) debole;
+    \item se la forma quadratica è nulla, allora non possiamo estrarne informazioni significanti.
+\end{itemize}
+Vediamo una strategia da seguire:
+\begin{enumerate}
+    \item si isolano i punti di $f$ che non sono regolari (es. non derivabili una o due volte). Questi punti dovranno essere analizzati separatamente;
+    \item trovare i punti critici risolvendo:
+        \[
+            \begin{cases}
+                &f_{x_1}(x_1,x_2,\dots,x_n) = 0\\
+                &f_{x_2}(x_1,x_2,\dots,x_n) = 0\\
+                &\dots\\
+                &f_{x_n}(x_1,x_2,\dots,x_n) = 0\\
+            \end{cases}
+        \]
+    \item si studia il segno della forma quadratica per ogni punto critico, se è definita o indefinita si giunge a una conclusione con le regole dette precedentemente, se è nulla o semidefinita si ricorre a uno studio diretto di $\nabla f(x_0)$ in un intorno di $x_0$.
+\end{enumerate}
+Più precisamente, nel caso bidimensionale, per ogni punto critico:
+\begin{enumerate}
+    \item si calcola l'Hessiana:
+        \[
+            H_f(x_0, y_0) = \begin{matrix}
+                f_{xx}(x_0,y_0) \;\;\; & f_{xy}(x_0,y_0)\\
+                f_yx(x_0,y_0) \;\;\; & f_{yy}(x_0,y_0)\\
+            \end{matrix}
+        \]
+    \item se $det(H_f(x_0, y_0)) > 0$ e
+        \begin{itemize}
+            \item $f_{xx}(x_0,y_0)>0$ allora $(x_0, y_0)$ è di minimo locale forte;
+            \item $f_{xx}(x_0,y_0)<0$ allora $(x_0, y_0)$ è di massimo locale forte;
+        \end{itemize}
+        (si noti che in questo caso $f_{xx}(x_0,y_0)$ e $f_{yy}(x_0,y_0)$ hanno lo stesso segno).
+    \item se $det(H_f(x_0, y_0)) < 0$ allora $(x_0, y_0)$ è punto di sella;
+    \item se $det(H_f(x_0, y_0)) = 0$ occore un analisi ulteriore. 
+\end{enumerate}
+\subsection*{Funzioni convesse di n variabili}
+\subsubsection*{Generalità sulle funzioni convesse}
+Un insieme $\Omega \subseteq \mathbb{R}^n$ si dice convesso se per ogni coppia di punti $x_1, x_2 \in \Omega$ si ha che $[x_1,x_2]\subseteq \Omega$ (dove col simbolo $[x_1,x_2]$ si denota il segmento con estremi $x_1,x_2$); si dice strettamente convesso se per ogni coppia di punti $x_1,x_2 \in \Omega$ il segmento $(x_1,x_2)$ privato degli estremi è strettamente contenuto in $\Omega$.\newline
+
+Si dice epigrafico di una funzione $f \;\;:\;\; \Omega \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}$ l'insieme
+\[
+    epi(f)=\{(x,z) \in \mathbb{R}^{n+1} \;\;:\;\; z\geq f(x), x \in\Omega\}
+\]
+\newline
+
+Si dice che una funzione è convessa se $epi(f)$ è un sottoinsieme convesso, si dice che una funzione è concava se $-f$ è convessa.\newline
+Formalmente si dice che una funzione è convessa se e solo se per ogni $x_1,x_2$, $t \in [0,1]$ vale la condizione
+\[
+    f(tx_2 + (1-t)x_1) \leq tf(x_2) + (1-t)f(x_1).
+\]
+Si noti che $tx_2 + (1-t)x_1$ percorre il segmento $[x_1,x_2]$ al variare di $t \in[0,1]$\newline
+
+Se $f$ è convessa allora:
+\begin{itemize}
+    \item $f$ è continua;
+    \item $f$ ha derivate parziali destre e sinistre in ogni punto;
+    \item nei punti in cui è derivabile, $f$ è anche divverenziabile.
+\end{itemize}
+
+Teorema di convessità e piano tangente. Sia $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ differenziabile in $\Omega$. Allora $f$ è convessa in $\Omega$ se e solo se per ogni coppia di punti $x_0, x \in \Omega$ si ha:
+\[
+    f(x) \geq f(x_0) + \nabla f(x_0) \cdot (x-x_0).
+\]
+In due dimensioni:
+\[
+    f(x,y) \geq f(x_0,y_0) + \frac{\delta f}{\delta x}(x_0,y_0)(x-x_0)+\frac{\delta f}{\delta y}(x_0, y_0)(y-y_0).
+\]
+che geometricamente signifca che il paino tangente in $x-0, y_0$ sta sotto $f$.\newline
+
+Teorema di convessità e matrice Hessiana. Sia $f \in C^2(\Omega)$, con $\Omega$ aperto convesso in $\mathbb{R}^n$. Se per ogni $x_0$ in $\Omega$ la forma quadratica $d^2f(x_0)$ è semidefinita positiva, allora $f$ è convessa in $\Omega$.
+\subsubsection*{Ottimizzazione di funzioni convesse e concave}
+Nelle funzioni convesse (concave) i punti stazionari, se esistono, rappresentano minimi (massimi) globali. Inoltre se la funzione è strettamente convessa (concava), il punto critico è di minimo (massimo) globale forte, quindi, in particolare, è unico.
+\subsection*{Funzioni definite implicitamente}
+\subsubsection*{Funzione implicita di una variabile}
