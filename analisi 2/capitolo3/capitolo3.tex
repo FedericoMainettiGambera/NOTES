@@ -24,7 +24,28 @@ Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, 
 \subsubsection*{Note sugli esercizi}
 \begin{itemize}
     \item Se il limite non presenta una forma di indeterminazione allora il valore cercato si ricava sostituendo direttamente il punto nella funzione.
-    \item 
+    \item Tecniche standard della maggiorazione: 
+        \begin{itemize}
+            \item disuguaglianza triangolare:
+                \[
+                    |a+b| \leq |a| + |b|
+                \]
+            \item maggiorazione di frazioni, con $a,b,c \geq 0$:
+                \[
+                    \frac{a}{b+c} \leq \frac{a}{b}
+                \]
+            \item maggiorazione di funzioni trigonometriche:
+                \[
+                    |cos(\theta)| \leq 1 \;\;,\;\;|sin(\theta)|\leq 1
+                \]
+        \end{itemize}
+    \item Il criterio che ci permette di trovare il limite richiede di trovare una funzione maggiorante di $|f|$ che sia radiale (dipenda solo da $\rho$, non $\theta$) e infinitesima. Da notare è che è anche possibile semplificare la funzione anche senza passare subito in coordinate polari.
+    \item Solitamente si suddivide la funzione in una serie di somme di funzioni e si studiano quest'ultime separatamente.
+    \item Spesso la formula
+        \[
+            cos^2(\theta) + sin^2(\theta) = 1
+        \]
+        risulta molto utile.
 \end{itemize}
 
 
