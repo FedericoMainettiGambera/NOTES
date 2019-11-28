@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1574689629 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf" "master" 1574689632
+["pdflatex"] 1574923398 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf" "master" 1574923403
   "../lecture12/lecture12.tex" 1574689534 0 d41d8cd98f00b204e9800998ecf8427e ""
   "../preamble/preamble.tex" 1570894187 483 16362a825726d3bbf9be851175ad5f63 ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux" 1574689630 108 cfbb92b024ac1000ea30bced8de47f1d ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.tex" 1574689627 1429 7fafb8ac1ddf9eb7243d91cb5e0ec0ff ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.aux" 1574923401 108 cfbb92b024ac1000ea30bced8de47f1d ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.tex" 1574923398 1513 ae63642dbcc9ea4240f415da26e65dfb ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570201114 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570199013 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1570199013 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -87,11 +87,11 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1570205488 4694128 59e2d353f4dc7ded0243f5180e559ac1 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570205581 4261151 6e9769eabb4d92bbc917c56b8660c752 ""
   "c:/texlive/2019/texmf.cnf" 1570205462 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1574689630 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
-  "master.tex" 1574689627 1429 7fafb8ac1ddf9eb7243d91cb5e0ec0ff ""
+  "master.aux" 1574923401 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
+  "master.tex" 1574923398 1513 ae63642dbcc9ea4240f415da26e65dfb ""
   (generated)
-  "master.pdf"
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf"
   "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.log"
-  "master.log"
+  "master.pdf"
   "master.aux"
+  "master.log"
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/notes/master/master.pdf"
