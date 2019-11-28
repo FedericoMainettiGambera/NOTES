@@ -1,11 +1,14 @@
-pa\section*{Calcolo differenziale per funzioni reali di più variabili}
+\section*{Calcolo differenziale per funzioni reali di più variabili}
+\rule{\textwidth}{2pt}
 \subsection*{Continuità di una funzione in più variabili:}
 Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow  \mathbb{R}$ è continua in un punto $x_0$ se 
 \[
     \lim_{x\rightarrow x_0} f(x) = f(x_0)
 \]
-La continuità di una funzione è anche deducibile dal fatto che sia costituita (somma/prodotto/quoziente/certe volte anche composizione) da funzioni elementari continue.\newline
+La continuità di una funzione è anche deducibile dal fatto che sia costituita (somma/ prodotto/ quoziente/ certe volte anche composizione) da funzioni elementari continue.\newline
+\rule{\textwidth}{2pt}
 \subsection*{Calcolo di limiti in più variabili}
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Non esistenza del limite}
 Per mostrare che un certa funzione in più varibili non ammette limite in un determinato punto, è sufficiente determinare duee curve passasnti per il punto lungo le quali la funzione assume limiti diversi.
 \textbf{es.} 
@@ -18,9 +21,11 @@ Analiziamo la funzione lungo due curve:
     \item con $y=-x$ ottengo $f(x,-x) = - \frac{1}{2}$
 \end{itemize}
 non ammette limite.\newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Uso di maggiorazioni con funzioni radiali per provare l'esistenza del limite}
 Per dimostrare l'esistenza di un limite per $(x,y) \rightarrow (0,0)$, si impone $x=\rho \cdot  cos(\theta)$ e $y= \rho \cdot sin(\theta)$, successivamente si l'intera funzione sotto modulo e procede con semplificazioni e maggiorazioni (per eliminare i seni e i coseni). E' essenziale che la funzione non dipenda da $\theta$.\newline
-Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, y_0)$ si pongono $x=x_0 +\rho \cdot  cos(\theta)$ e $y= y_0 + \rho \cdot sin(\theta)$
+Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, y_0)$ si pongono $x=x_0 +\rho \cdot  cos(\theta)$ e $y= y_0 + \rho \cdot sin(\theta)$ \newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Note sugli esercizi}
 \begin{itemize}
     \item Se il limite non presenta una forma di indeterminazione allora il valore cercato si ricava sostituendo direttamente il punto nella funzione.
@@ -47,14 +52,7 @@ Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, 
         \]
         risulta molto utile.
 \end{itemize}
-
-
-
-
-
-
-
-
+\rule{\textwidth}{2pt}
 \subsection*{Topologia in $\mathbb{R}^n$ e proprità delle funzioni continua}
 Sia $E$ un sottoinsieme di $\mathbb{R}^n$, un punto $x_0$ si dice:
 \begin{itemize}
@@ -92,7 +90,9 @@ Proprietà topologiche delle funzioni continue:
     \item \textbf{teor.} Teorema di Weierstrass. Sia $E \subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua, allora $f$ ammette massimo e minimo in $E$, cioè esistono $x_m$ e $x_M$ tali che $f(x_m) \leq f(x) \leq f(x_M)$ per ogni $x in E$.
     \item \textbf{teor.} Teorema degli zeri. Sia $E$ un insieme connesso di $\mathbb{R}^n$ e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua. Se $x$, $y$ sono due punti di $E$ tali che $ f(x) < 0$ e $f(y) > 0$, allora esiste un terzo punto $z \in E$ in cui $f$ si annulla. In particolare, lungo ogni arco di curva continua contenuto in $E$ che congiunge $x$ e $y$, c'è almeno un punto in cui $f$ si annulla.
 \end{itemize}
+\rule{\textwidth}{2pt}
 \subsection*{Derivate parziali, piano tangente, differenziale}
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Derivata parziale}
 Calcolo di una derivata parziale tramite la definizione di rapporto incrementale in un punto $(x_0, y_0)$. \newline
 Per prima fissiamo $y=y_0$ e deriviamo rispetto alla $x$:
@@ -104,7 +104,8 @@ Successivamente facciamo l'opposto, cioè fissiamo $x=x_0$ e deriviamo rispetto 
     \frac{\delta f}{\delta y} (x_0,y_0) = \lim_{k\rightarrow 0}\frac{f(x_0, y_0+k)- f(x_0,y_0)}{k}
 \]
 Una funzione $f: A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}$ si dice derivabile in un punto del suo dominio se in quel punto esistono tutte le sue derivate parziali; si dice derivabile in $A$ se è derivabile in ogni punto di $A$.\newline
-Se $f$ è derivabile in un punto, chiameremo gradiente ( $\nabla f(x)$ ) il vettore delle sue derivate parziali.
+Se $f$ è derivabile in un punto, chiameremo gradiente ( $\nabla f(x)$ ) il vettore delle sue derivate parziali.\newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Piano tangente}
 Costruire il piano tangente a una funzione in due variabili in un punto $(x_0, y_0)$:
 \begin{enumerate}
@@ -127,7 +128,8 @@ Costruire il piano tangente a una funzione in due variabili in un punto $(x_0, y
         z = f(x_0, y_0) + \frac{\delta f}{\delta x}(x_0, y_0) \cdot (x-x_0) + \frac{\delta f}{\delta x}(x_0, y_0) \cdot (y-y_0)
     \]
 \end{enumerate}
-Il procedimento appena mostrato individua il piano tangente nell'ipotesi che esso esista, potrebbe però non esserci.
+Il procedimento appena mostrato individua il piano tangente nell'ipotesi che esso esista, potrebbe però non esserci.\newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Differenziabilità e approssimazione lineare}
 In due o più variabili la sola derivabilità non implica nè continuità nè l'esistenza del piano tangente.\newline
 Concetto di differenziabilità in più variabili: l'incremento di $f$ è uguale all'incremento calcolato lungo il piano tangente, più un infinitesimo di ordine superiore rispetto alla lunghezza dell'incremento $(h,k)$ delle variabili indipendenti. In formule:
@@ -146,8 +148,8 @@ Se $f$ è differenziabile in $x_0$, si dice differenziale di $f$ calcolato in $x
 \] 
 Nel caso in due varibiali, il numero $\nabla f(x_0) \cdot h$ rappresenta l'incremento della funzione nel passare da $x_0$ a $x_0+h$, calcolato lungo il piano tangente al grafico di $f$ in $x_0$.\newline
 
-L'approssimazione dell'incremento di $f$ con il suo differenziale prende il nome di linearizzazione.
-
+L'approssimazione dell'incremento di $f$ con il suo differenziale prende il nome di linearizzazione.\newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Verifica della differenziabilità}
 Per dimostrare la differenziabilità in un punto $(x_0,y_0)$ bisogna provare che:
 \[
@@ -159,7 +161,8 @@ Ma per certi casi perticolari esistono criteri molto comodi e più semplici.\new
 
 Teorema di condizione sufficiente di differenziabilità: se le derivate parziali di $f$ esistono in un intorno di $x_0$ e sono continue in $x_0$, allora $f$ è differenziabile in $x_0$.\newline
 In particolare se le derivate parziali esistono e sono continue in tutto $A$, allora $f$ è differenziabile in tutto $A$.\newline
-Una funzione le cui derivate parziali esistono e sono continue in tutto $A$ si dice di classe $C^1(A)$, dunque: $f \in C^1(A) \rightarrow$ f differenziabile in $A$.
+Una funzione le cui derivate parziali esistono e sono continue in tutto $A$ si dice di classe $C^1(A)$, dunque: $f \in C^1(A) \rightarrow$ f differenziabile in $A$. \newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Derivate direzionali}
 Si dice derivata direzionale della funzione $f$ rispetto al versore $v$, nel punto $x_0$, il limite
 \[
@@ -170,13 +173,15 @@ Detto in maniera diversa signifca considerare la restrizione della funzione $f$ 
 
 Formula del gradiente: $D_vf(x_0) = \nabla f(x_0) \cdot v =  \sum_{i=1}^{n} \frac{\delta f}{\delta x_i}(x_0) \cdot  v_i$. Cioè la derivata direzionale è il prodotto scalare del gradiente con il versore nella direzione in cui si deriva, quindi tutte le derivate direzionali sono combinazioni lineari delle derivate parziali. Nel caso in due variabili la formula si riduce a $D_vf(x_0) = \nabla f(x_0,y_0) \cdot v = \frac{\delta f}{\delta x} (x_0,y_0)cos(\theta) + \frac{\delta f}{\delta y}(x_0, y_0) sin(\theta)$.\newline
 
-Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$, ossia la direzione di massima derivata direzionale, invece $-\nabla f(x_0)$ rappresenta la direzione di minima derivata direzionale, infine nelle direzioni ortogonali al gradiente le derivate direzionali sono nulle.
+Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$, ossia la direzione di massima derivata direzionale, invece $-\nabla f(x_0)$ rappresenta la direzione di minima derivata direzionale, infine nelle direzioni ortogonali al gradiente le derivate direzionali sono nulle. \newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Riepilogo}
 \begin{itemize}
     \item $f \in C^1(A) \Rightarrow f$ differenziabile in $A$ (cioè $f$ ha iperpiano tangente) $\Rightarrow f$ è continua, derivabile, ha derivate direzionali, vale la formula del gradiente.
     \item $f$ continua, derivabile, dotata di tutte le derivate direzionali $\nRightarrow f$ differenziabile
     \item $f$ derivabile, dotata di tutte le derivate direzionali $\nRightarrow f$ continua 
 \end{itemize}
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Calcolo delle derivate}
 \[
     \delta(\alpha \cdot f + \beta \cdot g) = \alpha \delta(f) + \beta \delta (g)
@@ -190,6 +195,7 @@ Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$,
 \[
     h(x) = f(g(x)) = g \circ f \Rightarrow h'(x) = f'(g(x)) g'(x)
 \]
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Gradiente di una funzione radiale}
 Si chiama funzione radiale una funzione $h$ che dipende solo dalla distanza di dall'origine, ossia
 \[
@@ -205,8 +211,10 @@ ponendo $\rho = |x| = \sqrt{\sum_{j=1}^{n}x_j^2}$ si ha:
 \[
     |\nabla h(x)| = |g'(|x|)|
 \]
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Ortogonalità del gradiente con le curve di livello}
-Il gradiente è ortogolane il ogni punto alle linee di livello
+Il gradiente è ortogolane il ogni punto alle linee di livello. \newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Equazione del trasporto}
 Si definisce equazione del trasporto la seguente:
 \[
@@ -221,12 +229,15 @@ In particolare:
 \[
     |f(x_1) - f(x_0)| \leq |\nabla f(x^*)| \cdot |(x_1 + x_0)|.
 \]
+\rule{\textwidth}{2pt}
 \subsection*{Derivate di ordine superiore e approssimazioni successive}
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Derivate di ordine superiore}
 Teorema di Schwartz. Sia $f \;\;:\;\; A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$ con $A$ aperto. Supponiamo che (per certi indici $i,j \in \{1,2,\dots,n\}$) le derivate seconde miste $f_{x_i, x_j}$ e $f_{x_j, x_i}$ esistano in un certo $x_0$ e siano continue in $x_0$; allora esse coincidono in $x_0$.\newline
 
 Una funzione che ha tutte le derivate parziali seconde continue in un aperto $A$ si dice di classe $C^2(A)$.\newline
 Se $f \in C^2(A)$, allora $f \in C^1(A)$ (in particolare $f$ è differenziabile), le derivate parziali prima sono differenziabili, le derivate parziali seconde sono continue, le derivate seconde miste sono uguali.
+\rule{\textwidth}{2pt}
 \subsection*{Differenziale secondo, matrice hessiana, formula di Taylor al secondo ordine}
 Se $f \in C^2(A)$ e $x_0 \in A$, si dice differenziale secondo di $f$ in $x_0$ la funzione
 \[
@@ -259,17 +270,20 @@ Formula di Taylor (resto secondo Peano). Sia $f \in C^2(a)$. Per ogni $x_0 \in A
 \[
     f(x_0 + h) = f(x_0) +\sum_{i=1}^{n}\frac{\delta f}{\delta x_i}(x_0)h_i + \frac{1}{2}\sum_{i,j=1}^{n}\frac{\delta^2f}{\delta x_i \delta x_j}(x_0) h_i h_j +o(|h|^2).
 \]
-
+\rule{\textwidth}{2pt}
 \subsection*{Ottimizzaione, estremi liberi}
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Generalità sui problemi di ottimizzazione}
 \begin{itemize}
     \item $x_0$ è detto punto di massimo (minimo) globale se per ogni $x$ si ha $f(x) \leq f(x_0)$ ($f(x) \geq f(x_0)$);
     \item $x_0$ è detto punto di massimo (minimo) locale se esiste un intorno di $x_0$ detto $U$ tale per cui per ogni $x \in U$ si ha $f(x) \leq f(x_0)$ ($f(x) \geq f(x_0)$).
 \end{itemize}
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Estremi liberi, condizioni necessarie del prim'ordine}
 Teorema di Fermat. Sia $f \;\;:\;\; A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$, con $A$ aperto e $x_0 \in A$ un punto di massimo o minimo locale per $f$. Se $f$ è derivabile in $x_0$, allora $\nabla f(x_0) = 0$.\newline
 
-I punti in cui il gradiente di una funzione si annulla si dicono punti critici o stazionari di $f$. Una volta individuati tutti i punti stazionari, si può iniziare un'analisi su di essi per verificare se sono o meno punti di massimo o minimo. Se non lo sono essi prendono il nome di punti di sella o colle. Da notare particolarmente è che una funzione può assumere valori di massimo o minimo anche in punti in cui non è derivabile, dunque questi punti vanno analizzati separatamente.
+I punti in cui il gradiente di una funzione si annulla si dicono punti critici o stazionari di $f$. Una volta individuati tutti i punti stazionari, si può iniziare un'analisi su di essi per verificare se sono o meno punti di massimo o minimo. Se non lo sono essi prendono il nome di punti di sella o colle. Da notare particolarmente è che una funzione può assumere valori di massimo o minimo anche in punti in cui non è derivabile, dunque questi punti vanno analizzati separatamente. \newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Forme quadratiche, classificazione}
 Un modo per determinare la natura di un punto stazionario è quello di analizzare il segno dell'incremento $\nabla f(x_0) = f(x_0 + h ) - f(x_0)$. Se infatti si riesce a stabilire che $\nabla f(x_0)$ si mantiene di segno positivo o negativo, per ogni $h$ di modulo abbastanza piccolo, possiamo dedurre che $x_0$ è punto di minimo o massimo locale. Se invece al variare di $h$, $\nabla f(x_0)$ cambia segno, siamo in presenza di un punto si sella.\newline
 Lo studio del segno di $\nabla f(x_0)$ riconduce all'analisi del segno del polinomio omogeneo di secondo grado nelle componenti di $h$ (che prende il nome di forma quadratica) dato da
@@ -286,7 +300,8 @@ Il segno della forma quadratica è quindi studiabile analizzando la sua matrice 
     \item indefinita se $det(M)<0$;
     \item semidefinita positiva (negativa) se e solo se $det(M)=0$ e $a>0$ ($a<0$).
 \end{itemize}
-Se $a = 0$ e $c\neq 0$, nelle affermazioni precedenti occore sostituire $a$ con $c$.
+Se $a = 0$ e $c\neq 0$, nelle affermazioni precedenti occore sostituire $a$ con $c$. \newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Forme quadratiche, test degli autovalori}
 Un importante test per determinare il segno di una funzione quadratica in $\mathbb{R}^n$ è basato sul segno degli autovalori della matrice $M$.\newline
 Ricordiamo che un numero complesso $\lambda$ e un vettore non nullo $v \in \mathbb{C}^n$ si dicono, rispettivamente, autovalore e autovettore (di $\lambda$) di una matrice $M$ di ordine $n$, se soddisfano la relazione:
@@ -322,7 +337,8 @@ Tornando allo studio del segno della forma quadratica con la sua matrice $M$:
     \item semidefinita positiva (negativa) se e solo se tutti gli autovalori di $M$ sono $\geq 0$ ($\leq 0$) e almeno uno di essi è nullo;
     \item indefinita se $M$ ha almeno un autovalore positivo e uno negativo.
 \end{itemize}
-Da notare è che per una forma quadratica l'origine è sempre un punto stazionario.
+Da notare è che per una forma quadratica l'origine è sempre un punto stazionario. \newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Studio della natura dei punti critici}
 Per estrarre informazioni su un punto critico $x_0$ occorre studiare e classificare la forma quadratica 
 \[
@@ -367,7 +383,9 @@ Più precisamente, nel caso bidimensionale, per ogni punto critico:
     \item se $det(H_f(x_0, y_0)) < 0$ allora $(x_0, y_0)$ è punto di sella;
     \item se $det(H_f(x_0, y_0)) = 0$ occore un analisi ulteriore. 
 \end{enumerate}
+\rule{\textwidth}{2pt}
 \subsection*{Funzioni convesse di n variabili}
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Generalità sulle funzioni convesse}
 Un insieme $\Omega \subseteq \mathbb{R}^n$ si dice convesso se per ogni coppia di punti $x_1, x_2 \in \Omega$ si ha che $[x_1,x_2]\subseteq \Omega$ (dove col simbolo $[x_1,x_2]$ si denota il segmento con estremi $x_1,x_2$); si dice strettamente convesso se per ogni coppia di punti $x_1,x_2 \in \Omega$ il segmento $(x_1,x_2)$ privato degli estremi è strettamente contenuto in $\Omega$.\newline
 
@@ -401,10 +419,13 @@ In due dimensioni:
 \]
 che geometricamente signifca che il paino tangente in $x-0, y_0$ sta sotto $f$.\newline
 
-Teorema di convessità e matrice Hessiana. Sia $f \in C^2(\Omega)$, con $\Omega$ aperto convesso in $\mathbb{R}^n$. Se per ogni $x_0$ in $\Omega$ la forma quadratica $d^2f(x_0)$ è semidefinita positiva, allora $f$ è convessa in $\Omega$.
+Teorema di convessità e matrice Hessiana. Sia $f \in C^2(\Omega)$, con $\Omega$ aperto convesso in $\mathbb{R}^n$. Se per ogni $x_0$ in $\Omega$ la forma quadratica $d^2f(x_0)$ è semidefinita positiva, allora $f$ è convessa in $\Omega$. \newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Ottimizzazione di funzioni convesse e concave}
-Nelle funzioni convesse (concave) i punti stazionari, se esistono, rappresentano minimi (massimi) globali. Inoltre se la funzione è strettamente convessa (concava), il punto critico è di minimo (massimo) globale forte, quindi, in particolare, è unico.
+Nelle funzioni convesse (concave) i punti stazionari, se esistono, rappresentano minimi (massimi) globali. Inoltre se la funzione è strettamente convessa (concava), il punto critico è di minimo (massimo) globale forte, quindi, in particolare, è unico. \newline
+\rule{\textwidth}{2pt}
 \subsection*{Funzioni definite implicitamente}
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Funzione implicita di una variabile}
 Teorema di Dini della funzione implicita. Sia $A$ un aperto in $\mathbb{R}^2$ e $f \;\;:\;\; A \rightarrow \mathbb{R}$ una funzione $C^1(A)$. Supponiamo che in un punto $(x_0,y_0) \in A$ sia:
 \[
@@ -419,8 +440,10 @@ Inoltre, $g \in C^1(I)$ e
     g'(x) = - \frac{f_x(x,g_x)}{f_y(x,g_x)} \;\;\;\; \;\forall\;x \in I.
 \]
 Notiamo che se $f(x_0,y_0) = 0$ e $f_y(x_0, y_0) = 0$, ma $f_x(x_0, y_0) \neq 0$, il teorema è ancora applicabile scambiando gli ruoli di $x$ e $y$.\newline
-In sostanza i punti in cui il teorema di Dini non è applicabile sono quelli in cui il gradiente di $f$ si annulla, ossia i punti critici.
+In sostanza i punti in cui il teorema di Dini non è applicabile sono quelli in cui il gradiente di $f$ si annulla, ossia i punti critici. \newline
+\rule{\textwidth}{2pt}
 \subsection*{Complementi}
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Topologia e funzioni continue}
 Teorema di Bolzano-Weierstrass in $\mathbb{R}^n$. Sia $\{x_k\}_{k=1}^\infty$ una successione limitata. Allora essa ammette una sottosuccessione convergente.\newline
 
@@ -440,7 +463,8 @@ Teorema dell'uniforme continuità. Si dice che $f \;\;:\;\; \Omega \rightarrow \
 
 Teorema di Cantor-Heine. Sia $K\subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; K \rightarrow \mathbb{R}$ una funzione continua. Allora $f$ è uniformemente continua in $K$.\newline
 
-Sia $\Omega \subset \mathbb{R}$ un aperto e sia $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ uniformemente continua in $\Omega$. Allora $f$ è prolungabile con continuità fino alla frontiera di $\Omega$, ossia esiste una funzione $\bar{f} \;\;:\;\; \bar{\Omega} \rightarrow \mathbb{R}$ continua in $\bar{\Omega}$ e tale che in $\Omega$ coincide con $f$.
+Sia $\Omega \subset \mathbb{R}$ un aperto e sia $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ uniformemente continua in $\Omega$. Allora $f$ è prolungabile con continuità fino alla frontiera di $\Omega$, ossia esiste una funzione $\bar{f} \;\;:\;\; \bar{\Omega} \rightarrow \mathbb{R}$ continua in $\bar{\Omega}$ e tale che in $\Omega$ coincide con $f$.\newline
+\rule{\textwidth}{0.4pt}
 \subsubsection*{Funzioni omogenee}
 Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ (eventualmente definita solo per $x\neq 0$), non identicamente nulla, si dice positivamente omogenea di grado $\alpha \in \mathbb{R}$ se
 \[
@@ -470,3 +494,4 @@ Sia $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ una funzione positivamente
     \item $f$ è continua anche nell'origine se $\alpha>0$; in questo caso $f(0) = 0$; $f$ è discontinua nell'origine se $\alpha<0$; è discontinua anche se $\alpha=0$, tranne il caso banale in cui $f$ è costante.
     \item $f$ è differenziabile nell'origine se $\alpha>1$; non è differenziabile nell'origine se $alfa <1$, tranne il caso banale in cui $\alpha=0$ e $f$ è costante; se $\alpha=1$, $f$ è differenziabile se e solo se è una funzione lineare, (ossia $f8x) = a \cdot x$ per qualche vettore costante $a \in \mathbb{R}^n$).
 \end{itemize}
+\rule{\textwidth}{0.4pt}
