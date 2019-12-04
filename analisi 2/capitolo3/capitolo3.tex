@@ -157,7 +157,8 @@ Per dimostrare la differenziabilità in un punto $(x_0,y_0)$ bisogna provare che
         f(x_0,y_0)+ \frac{\delta f}{\delta x}(x_0,y_0) h + \frac{\delta f}{\delta y}(x_0,y_0)k
         \}}{\sqrt{h^2+k^2}} =0.
 \]
-Ma per certi casi perticolari esistono criteri molto comodi e più semplici.\newline
+dove $h = x-x_0$ e $k = y-y_0$.\newline
+Ma per certi casi peticolari esistono criteri molto comodi e più semplici.\newline
 
 Teorema di condizione sufficiente di differenziabilità: se le derivate parziali di $f$ esistono in un intorno di $x_0$ e sono continue in $x_0$, allora $f$ è differenziabile in $x_0$.\newline
 In particolare se le derivate parziali esistono e sono continue in tutto $A$, allora $f$ è differenziabile in tutto $A$.\newline
@@ -195,6 +196,8 @@ Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$,
 \[
     h(x) = f(g(x)) = g \circ f \Rightarrow h'(x) = f'(g(x)) g'(x)
 \]
+
+Per calcolare il valore di una derivata parziale in punto $(x_0, y_0)$ seguire questo procedimento. Se si richiede di calcolare il valore della derivata parziale di $x$ ( cioè $\frac{\delta f}{\delta x}(x_0,y_0)$), si parte dalla funzione $f(x,y)$ e si sostituisce $y= y_0$, ottenendo quindi $f(x,y_0)$, successivamente si calcola la derivata parziale, ottenendo dunque $\frac{\delta f}{\delta x} (x,y_0)$. Come ultima cosa si sostituisce $x = x_0$ e si arriva a un risultato numerico. Per la trovare il valore della derivata parziale di $y$ in un preciso punto seguire lo stesso procedimento opposto.\newline
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Gradiente di una funzione radiale}
 Si chiama funzione radiale una funzione $h$ che dipende solo dalla distanza di dall'origine, ossia
@@ -229,8 +232,6 @@ In particolare:
 \[
     |f(x_1) - f(x_0)| \leq |\nabla f(x^*)| \cdot |(x_1 + x_0)|.
 \]
-\rule{\textwidth}{0.4pt}
-\subsubsection*{Note sugli esercizi}
 \rule{\textwidth}{2pt}
 
 \subsection*{Derivate di ordine superiore e approssimazioni successive}
@@ -495,7 +496,7 @@ per qualche $\alpha \in \mathbb{R}$ e qualche funzione $g \;\;:\;\; [0, 2\pi) \r
 Sia $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ una funzione positivamente omogenea di grado $\alpha$, definita e continua per $x\neq 0$. Allora:
 \begin{itemize}
     \item $f$ è continua anche nell'origine se $\alpha>0$; in questo caso $f(0) = 0$; $f$ è discontinua nell'origine se $\alpha<0$; è discontinua anche se $\alpha=0$, tranne il caso banale in cui $f$ è costante.
-    \item $f$ è differenziabile nell'origine se $\alpha>1$; non è differenziabile nell'origine se $alfa <1$, tranne il caso banale in cui $\alpha=0$ e $f$ è costante; se $\alpha=1$, $f$ è differenziabile se e solo se è una funzione lineare, (ossia $f8x) = a \cdot x$ per qualche vettore costante $a \in \mathbb{R}^n$).
+    \item $f$ è differenziabile nell'origine se $\alpha>1$; non è differenziabile nell'origine se $\alpha <1$, tranne il caso banale in cui $\alpha=0$ e $f$ è costante; se $\alpha=1$, $f$ è differenziabile se e solo se è una funzione lineare, (ossia $f(x) = a \cdot x$ per qualche vettore costante $a \in \mathbb{R}^n$).
 \end{itemize}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Criterio di cotninuità e differenziabilità per funzioni radiali}
