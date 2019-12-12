@@ -163,6 +163,17 @@ Ma per certi casi peticolari esistono criteri molto comodi e più semplici.\newl
 Teorema di condizione sufficiente di differenziabilità: se le derivate parziali di $f$ esistono in un intorno di $x_0$ e sono continue in $x_0$, allora $f$ è differenziabile in $x_0$.\newline
 In particolare se le derivate parziali esistono e sono continue in tutto $A$, allora $f$ è differenziabile in tutto $A$.\newline
 Una funzione le cui derivate parziali esistono e sono continue in tutto $A$ si dice di classe $C^1(A)$, dunque: $f \in C^1(A) \rightarrow$ f differenziabile in $A$. \newline
+
+Negli esercizi spesso si usa anche l'omogeneità di una funzione per sapere se essa è differenziabile o continua, oppure le proprietà delle funzioni radiali.\newline
+
+Negli esercizi seguire quest'ordine:
+\begin{itemize}
+    \item E' continua nel punto richiesto? se non lo è, può essere allungata?
+    \item Funzione radiale? (vedi più avanti)
+    \item Funzione omogenea? (vedi più avanti)
+    \item Calcolo delle derivate parziali nel punto. Sono continue in quel punto?
+    \item Verifica della differenziabilità tramite la definizione.
+\end{itemize}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Derivate direzionali}
 Si dice derivata direzionale della funzione $f$ rispetto al versore $v$, nel punto $x_0$, il limite
@@ -172,7 +183,12 @@ Si dice derivata direzionale della funzione $f$ rispetto al versore $v$, nel pun
 purchè esista finito.\newline
 Detto in maniera diversa signifca considerare la restrizione della funzione $f$ alla direzione della retta passante per $x_0$ con direzione $v$, cioè $g(t)= f(x_0+tv)$, e calcolarne la derivata, cioè $D_vf(x_0)= g'(0)$.\newline
 
+Calcolo di una derivata direzionale per un generico vettore $(cos(\theta), sin(\theta))$ nell'origine di una funzione $f$: Per prima cosa si ottiene la funzione $g(t) = f(t \cdot cos(\theta), t \cdot sin(\theta))$ e la si semplifica per $t \rightarrow 0$ (anche usando asintotici). In seguito si studia la derivata $g'(0) = \frac{\delta f}{\delta t}(t \cdot cos(\theta), t \cdot sin(\theta))$.\newline
+Se è richiesto il calcolo in un punto generico, e non nell'origine, è sufficiente usare $t \cdot cos(\theta) + x_0$ e $t \cdot sin(\theta) + y_0$.\newline
+
 Formula del gradiente: $D_vf(x_0) = \nabla f(x_0) \cdot v =  \sum_{i=1}^{n} \frac{\delta f}{\delta x_i}(x_0) \cdot  v_i$. Cioè la derivata direzionale è il prodotto scalare del gradiente con il versore nella direzione in cui si deriva, quindi tutte le derivate direzionali sono combinazioni lineari delle derivate parziali. Nel caso in due variabili la formula si riduce a $D_vf(x_0) = \nabla f(x_0,y_0) \cdot v = \frac{\delta f}{\delta x} (x_0,y_0)cos(\theta) + \frac{\delta f}{\delta y}(x_0, y_0) sin(\theta)$.\newline
+Se la formula del gradiente non vale in un punto, allora la funzione non è differenziabile in quel punto.\newline
+Inoltre la formula del gradiente non vale se la generica derivata direzionale non è combinazione lineare di $cos(\theta), sin(\theta)$.\newline
 
 Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$, ossia la direzione di massima derivata direzionale, invece $-\nabla f(x_0)$ rappresenta la direzione di minima derivata direzionale, infine nelle direzioni ortogonali al gradiente le derivate direzionali sono nulle. \newline
 \rule{\textwidth}{0.4pt}
@@ -198,6 +214,9 @@ Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$,
 \]
 
 Per calcolare il valore di una derivata parziale in punto $(x_0, y_0)$ seguire questo procedimento. Se si richiede di calcolare il valore della derivata parziale di $x$ ( cioè $\frac{\delta f}{\delta x}(x_0,y_0)$), si parte dalla funzione $f(x,y)$ e si sostituisce $y= y_0$, ottenendo quindi $f(x,y_0)$, successivamente si calcola la derivata parziale, ottenendo dunque $\frac{\delta f}{\delta x} (x,y_0)$. Come ultima cosa si sostituisce $x = x_0$ e si arriva a un risultato numerico. Per la trovare il valore della derivata parziale di $y$ in un preciso punto seguire lo stesso procedimento opposto.\newline
+
+Per stabilire dove la funzione sia derivabile bisogna calcolare le derivate parziali e osservarne il dominio.\newline
+(n.b. tipicamente negli esercizi le funzioni sono descritte da un sistema che contiene una funzione prolungata nell'origine, in questo caso bisogna calcolare le derivate parziali al di fuori dell'origine e studiarne il dominio, in seguito bisogna calcolare il valore della derivata parziale nel punto $(0,0)$ col metodo descritto precedentemente).\newline
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Gradiente di una funzione radiale}
 Si chiama funzione radiale una funzione $h$ che dipende solo dalla distanza di dall'origine, ossia
@@ -214,6 +233,45 @@ ponendo $\rho = |x| = \sqrt{\sum_{j=1}^{n}x_j^2}$ si ha:
 \[
     |\nabla h(x)| = |g'(|x|)|
 \]
+Le funzioni radiali sono spesso utilizzate negli esercizi in cui le incognite compaiono solo all'interno del termine $\sqrt{\sum_{j=1}^{n}x_j^2}$, in tal caso si ottiene $g(\rho)$ sostituendo ogni $\sqrt{\sum_{j=1}^{n}x_j^2}$ con $ \rho$, successivamente si può procedere sfruttando le proprietà di continuità e differenziabilità delle funzioni radiali.\newline
+\rule{\textwidth}{0.4pt}
+\subsubsection*{Criterio di continuità e differenziabilità per funzioni radiali}
+Sia $f \;\;:\;\; \mathbb{R}^n-\{0\} \rightarrow  \mathbb{R}$ una funzione radiale, cioè $f(x) = g(|x|)$ con $g \;\;:\;\;(0, +\infty) \rightarrow \mathbb{R}$ e sia $f$ continua fuori dall'origine. Allora:
+\begin{itemize}
+    \item $f$ è continua in $0$, se e solo se esiste finito $\lim_{\rho\rightarrow 0^+}g(\rho)$;
+    \item $f$ è differenziabile in $0$ se e solo se esiste $g'(0)=0$.
+\end{itemize}
+Negli esercizi spesso si controlla prima la continuità nell'origine, se non lo è si allunga la funzione e successivamente si calcola la differenziabilità nell'origine.\newline
+\rule{\textwidth}{0.4pt}
+\subsubsection*{Funzioni omogenee}
+Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ (eventualmente definita solo per $x\neq 0$), non identicamente nulla, si dice positivamente omogenea di grado $\alpha \in \mathbb{R}$ se
+\[
+    f(\lambda x) = \lambda^\alpha f(x) \;\;\;\;\; \;\forall\;x \in \mathbb{R}^n, x\neq 0, \lambda>0.
+\]
+La funzione $f$ si dice omogenea di grado $\alpha$ se la formula di prima vale anche per $\lambda<0$.\newline
+Se $f$ è positivamente omogenea vale
+\[
+    f(x) = f( |x| \cdot \frac{x}{|x|}) = |x|^\alpha f(\frac{x}{|x|}).
+\]
+In particolare se $f$ è omogenea (o positivamente omogenea) di grado zero, significa che è costante su ogni retta (o semiretta) uscente dall'origine. Infatti, indicata con
+\[
+    r(t)=tv
+\]
+con $v$ versore fissato, sarà
+\[
+    f(r(t))=f(tv)=t^0f(v)=f(v)=costante.
+\]
+Più in generale, per una funzione in due variabili positivamente omogenea di grado $\alpha$ vale la seguente rappresentazione in coordinate polari:
+\[
+    f(\rho, \theta)=\rho^\alpha g(1,\theta)
+\]
+per qualche $\alpha \in \mathbb{R}$ e qualche funzione $g \;\;:\;\; [0, 2\pi) \rightarrow \mathbb{R}$.\newline
+
+Sia $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ una funzione positivamente omogenea di grado $\alpha$, definita e continua per $x\neq 0$. Allora:
+\begin{itemize}
+    \item $f$ è continua anche nell'origine se $\alpha>0$; in questo caso $f(0) = 0$; $f$ è discontinua nell'origine se $\alpha<0$; è discontinua anche se $\alpha=0$, tranne il caso banale in cui $f$ è costante.
+    \item $f$ è differenziabile nell'origine se $\alpha>1$; non è differenziabile nell'origine se $\alpha <1$, tranne il caso banale in cui $\alpha=0$ e $f$ è costante; se $\alpha=1$, $f$ è differenziabile se e solo se è una funzione lineare, (ossia $f(x) = a \cdot x$ per qualche vettore costante $a \in \mathbb{R}^n$).
+\end{itemize}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Ortogonalità del gradiente con le curve di livello}
 Il gradiente è ortogolane il ogni punto alle linee di livello. \newline
@@ -468,41 +526,4 @@ Teorema dell'uniforme continuità. Si dice che $f \;\;:\;\; \Omega \rightarrow \
 Teorema di Cantor-Heine. Sia $K\subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; K \rightarrow \mathbb{R}$ una funzione continua. Allora $f$ è uniformemente continua in $K$.\newline
 
 Sia $\Omega \subset \mathbb{R}$ un aperto e sia $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ uniformemente continua in $\Omega$. Allora $f$ è prolungabile con continuità fino alla frontiera di $\Omega$, ossia esiste una funzione $\bar{f} \;\;:\;\; \bar{\Omega} \rightarrow \mathbb{R}$ continua in $\bar{\Omega}$ e tale che in $\Omega$ coincide con $f$.\newline
-\rule{\textwidth}{0.4pt}
-\subsubsection*{Funzioni omogenee}
-Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ (eventualmente definita solo per $x\neq 0$), non identicamente nulla, si dice positivamente omogenea di grado $\alpha \in \mathbb{R}$ se
-\[
-    f(\lambda x) = \lambda^\alpha f(x) \;\;\;\;\; \;\forall\;x \in \mathbb{R}^n, x\neq 0, \lambda>0.
-\]
-La funzione $f$ si dice omogenea di grado $\alpha$ se la formula di prima vale anche per $\lambda<0$.\newline
-Se $f$ è positivamente omogenea vale
-\[
-    f(x) = f( |x| \cdot \frac{x}{|x|}) = |x|^\alpha f(\frac{x}{|x|}).
-\]
-In particolare se $f$ è omogenea (o positivamente omogenea) di grado zero, significa che è costante su ogni retta (o semiretta) uscente dall'origine. Infatti, indicata con
-\[
-    r(t)=tv
-\]
-con $v$ versore fissato, sarà
-\[
-    f(r(t))=f(tv)=t^0f(v)=f(v)=costante.
-\]
-Più in generale, per una funzione in due variabili positivamente omogenea di grado $\alpha$ vale la seguente rappresentazione in coordinate polari:
-\[
-    f(\rho, \theta)=\rho^\alpha g(1,\theta)
-\]
-per qualche $\alpha \in \mathbb{R}$ e qualche funzione $g \;\;:\;\; [0, 2\pi) \rightarrow \mathbb{R}$.\newline
-
-Sia $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ una funzione positivamente omogenea di grado $\alpha$, definita e continua per $x\neq 0$. Allora:
-\begin{itemize}
-    \item $f$ è continua anche nell'origine se $\alpha>0$; in questo caso $f(0) = 0$; $f$ è discontinua nell'origine se $\alpha<0$; è discontinua anche se $\alpha=0$, tranne il caso banale in cui $f$ è costante.
-    \item $f$ è differenziabile nell'origine se $\alpha>1$; non è differenziabile nell'origine se $\alpha <1$, tranne il caso banale in cui $\alpha=0$ e $f$ è costante; se $\alpha=1$, $f$ è differenziabile se e solo se è una funzione lineare, (ossia $f(x) = a \cdot x$ per qualche vettore costante $a \in \mathbb{R}^n$).
-\end{itemize}
-\rule{\textwidth}{0.4pt}
-\subsubsection*{Criterio di cotninuità e differenziabilità per funzioni radiali}
-Sia $f \;\;:\;\; \mathbb{R}^n\\\{0\} \rightarrow  \mathbb{R}$ una funzione radiale, cioè $f(x) = g(|x|)$ con $g \;\;:\;\;(0, +\infty) \rightarrow \mathbb{R}$ e sia $f$ continua fuori dall'origine. Allora:
-\begin{itemize}
-    \item $f$ è continua in $0$, se e solo se esiste finito $\lim_{\rho\rightarrow 0^+}g(\rho)$;
-    \item $f$ è differenziabile in $0$ se e solo se esiste $g'(0)=0$.
-\end{itemize}
 \rule{\textwidth}{0.4pt}
