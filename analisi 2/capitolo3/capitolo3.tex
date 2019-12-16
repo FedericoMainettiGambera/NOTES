@@ -204,7 +204,7 @@ Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$,
     \delta(\alpha \cdot f + \beta \cdot g) = \alpha \delta(f) + \beta \delta (g)
 \]
 \[
-    \delta(f \cdot  g) = g \cdot \delta(f) + f \delta(g)
+    \delta(f \cdot  g) = g \cdot \delta(f) + f  \cdot \delta(g)
 \]
 \[
     \delta(\frac{f}{g}) = \frac{ g \cdot \delta(f) - f \delta(g)}{g^2}
@@ -212,12 +212,15 @@ Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$,
 \[
     h(x) = f(g(x)) = g \circ f \Rightarrow h'(x) = f'(g(x)) g'(x)
 \]
+\[
+    \frac{\delta}{\delta x} [|x|] = \frac{|x|}{x} 
+\]
 
 Per calcolare il valore di una derivata parziale in punto $(x_0, y_0)$ secondo la definizione seguire questo procedimento. Se si richiede di calcolare il valore della derivata parziale di $x$ ( cioè $\frac{\delta f}{\delta x}(x_0,y_0)$), si parte dalla funzione $f(x,y)$ e si sostituisce $y= y_0$, ottenendo quindi $f(x,y_0)$, successivamente si calcola la derivata parziale, ottenendo dunque $\frac{\delta f}{\delta x} (x,y_0)$. Come ultima cosa si sostituisce $x = x_0$ e si arriva a un risultato numerico. Per la trovare il valore della derivata parziale di $y$ in un preciso punto seguire lo stesso procedimento opposto.\newline
 
 In alcuni esercizi è richiesto di calcolare le derivate parziali in tutti i punti in cui esistono. Il procedimento tipico consiste nel calcolare per prima cosa le derivate parziali generiche. Una volta calcolare sapremo che sicuramente esistono dove queste sono definite (dominio), ma non siamo sicuri dei punti in cui non lo sono (al di fuori del dominio). Quindi dobbiamo analizzare singolarmente tutti i punti al di fuori del dominio e per farlo sfruttiamo il procedimento visto sopra, calcolando esplicitamente le derivate nei punti richiesti. Finchè si tratta per esempio di calcolarle per un punto preciso non ci sono problemi, il calcolo è facile, ma ci sono alcuni casi difficili, per esempio:
 \begin{itemize}
-    \item Calcolare le derivate parziali secondo la definizione lungo una retta. Per esempio in $y=0$, per calcolare la $\frac{\delta f}{\delta x}(x_0, 0)$ non ci sono problemi, si procede come al solito. Ma per la $\frac{\delta f}{\delta y} (x_0, 0)$ ci sono difficoltà, siccome non possiamo sostituire le $y$ con $0$ e poi derivare per la $y$, dobbiamo ragionare così: la derivata non esiste a meno che non ci sia un valore che le $x$ possono assumere che annullino la funzione (per gli es che ho fatto fino ad ora sono solo al numeratore). 
+    \item Calcolare le derivate parziali secondo la definizione lungo una retta. Per esempio in $y=0$, per calcolare la $\frac{\delta f}{\delta x}(x_0, 0)$ non ci sono problemi, si procede come al solito. Ma per la $\frac{\delta f}{\delta y} (x_0, 0)$ ci sono difficoltà, siccome non possiamo sostituire le $y$ con $0$ e poi derivare per la $y$, dobbiamo ragionare così: la derivata non esiste a meno che non ci sia un valore che le $x$ possono assumere che annullino la funzione (per gli es che ho fatto fino ad ora sono solo al numeratore). Il concetto generale è che se non si trovano valori per $x_0$ tali che annullino la funzione e quindi ci permettano di calcolare la derivata parziale, si finisce per tornare a guardare la derivata parziale generica e quindi a non trovarla per quella retta. [spiegato davvero male, ma è un concetto strano].
 \end{itemize}
 
 Per stabilire dove la funzione sia derivabile bisogna calcolare le derivate parziali e osservarne il dominio.\newline
