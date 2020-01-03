@@ -113,4 +113,11 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/integrali/master/master.pdf
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/integrali/master/master.aux
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
