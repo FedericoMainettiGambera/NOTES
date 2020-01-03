@@ -281,7 +281,7 @@ Sia $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ una funzione positivamente
     \item $f$ è differenziabile nell'origine se $\alpha>1$; non è differenziabile nell'origine se $\alpha <1$, tranne il caso banale in cui $\alpha=0$ e $f$ è costante; se $\alpha=1$, $f$ è differenziabile se e solo se è una funzione lineare, (ossia $f(x) = a \cdot x$ per qualche vettore costante $a \in \mathbb{R}^n$).
 \end{itemize}
 
-Si ricordi che ogni ogni derivata parziale prima di una funzione posivamente omogenea di grado $\alpha$, se esiste, è una funzione positivamente omogenea di grado $\alpha -1$
+Si ricordi che ogni ogni derivata parziale prima di una funzione posivamente omogenea di grado $\alpha$, se esiste, è una funzione positivamente omogenea di grado $\alpha -1$. \newline
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Ortogonalità del gradiente con le curve di livello}
 Il gradiente è ortogolane il ogni punto alle linee di livello. \newline
@@ -513,6 +513,12 @@ Inoltre, $g \in C^1(I)$ e
 \]
 Notiamo che se $f(x_0,y_0) = 0$ e $f_y(x_0, y_0) = 0$, ma $f_x(x_0, y_0) \neq 0$, il teorema è ancora applicabile scambiando gli ruoli di $x$ e $y$.\newline
 In sostanza i punti in cui il teorema di Dini non è applicabile sono quelli in cui il gradiente di $f$ si annulla, ossia i punti critici. \newline
+\rule{\textwidth}{0.4pt}
+\subsubsection*{Note sugli esercizi}
+Tipicamente negli esercizi la richiesta è di calcolare la funzione $g'(x)$ in un punto. Si inizia calcolando i punti per cui $f(x,y) = 0$ (solitamente vengono forniti). Una volta trovati questi punti si deve verificare che $\frac{\delta f}{\delta y} f(x,y)$ (oppure $\frac{\delta f}{\delta x} f(x,y)$) sia $\neq 0$. Se queste condizioni si verificano, allora il Teorema di Dini è applicabile e si può procedere a calcolare $g'(x) = - \frac{\frac{\delta f}{\delta x}(x,y)}{\frac{\delta f}{\delta y} (x,y)}$ e a trovarne il valore in un punto.\newline
+
+Se in un esercizio viene chiesto di calcolare, oltre a $g'(x)$, anche $g''(x)$, allora si può usare un altro procedimento: si può derivare rispetto a $x$ l'equazione $f(x, g(x)) = 0$ e quindi ricavare $g'(x)$. Succesivamente si può derivare ancora l'equazione e ricavare $g''(x)$. Spesso per risolvere queste equazioni è più semplice derivarle e poi sostituire $x = x_0$ con l'$x_0$ richiesto dall'esercizio.
+
 \rule{\textwidth}{2pt}
 \subsection*{Complementi}
 \rule{\textwidth}{0.4pt}
