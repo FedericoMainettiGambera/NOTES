@@ -3,6 +3,117 @@
 \begin{document}
 
 \subsection*{INTEGRALI}
-\subsubsection*{Integrali immediati:}
+\subsubsection*{Proprietà degli integrali:}
+\[
+    \int k \cdot f(x) dx = k \cdot \int f(x) dx
+\]
+\[
+    \int [f_1(x) + f_2(x) ] dx= \int f_1(x) dx + \int f_2(x) dx
+\]
+\subsubsection*{Integrali fondamentali:}
+\[
+    \int f'(x) dx = f(x) +c
+\]
+\[
+    \int a \; dx = ax +c
+\]
+\[
+    \int x^n dx = \frac{x^{n+1}}{n+1} +c
+\]
+\[
+    \int \frac{1}{x}dx = ln(|x|) +c
+\]
+\[
+    \int sin(x) dx = -cos(x) +c
+\]
+\[
+    \int cos(x) dx = sin(x)+c
+\]
+\[
+    \int (1+tg^2(x))dx = \int \frac{1}{cos^2(x)} dx = tg(x) +c
+\]
+\[
+    \int (1+ctg^2(x))dx = \int \frac{1}{sin^2(x)} dx = -ctg(x) +c
+\]
+\[
+    \int Sh(x) dx = Ch(x) +c
+\]
+\[
+    \int Ch(x) dx = Sh(x) +c
+\]
+\[
+    \int e^x dx = e^x+c
+\]
+\[
+    \int e^{kx} dx = \frac{e^{kx}}{k} +c
+\]
+\[
+    \int a^x dx = \frac{a^x}{ln(a)}+c
+\]
+\subsubsection*{Integrali notevoli:}
+\[
+    \int \frac{1}{1+x^2} dx = arctg(x) +c
+\]
+\[
+    \int \frac{1}{1-x^2} dx = \frac{1}{2}log\left|\frac{1+x}{1-x}\right|+c
+\]
+\[
+    \int \frac{1}{\sqrt{x^2-1}} dx = log|x+ \sqrt{x^2-1}| +c
+\]
+\[
+    \int \frac{1}{\sqrt{1+x^2}} dx = arcSh(x) +c = log(x + \sqrt{1+x^2}) +c
+\]
+\[
+    \int \frac{1}{\sqrt{x^2 \pm a^2}} dx = log|x + \sqrt{x^2 \pm a^2}|+c
+\]
+\[
+    \int \sqrt{x^2 \pm a^2} dx = \frac{x}{2} \sqrt{x^2 \pm a^2} \pm \frac{a^2}{2} log(x + \sqrt{x^2 \pm a^2}) +c
+\]
+\[
+    \int \sqrt{a^2 - x^2}dx = \frac{1}{2}(a^2arcsin(\frac{x}{a}) + x \sqrt{a^2 - x^2} )+c
+\]
+\[
+    \int sin^2(x) dx = \frac{1}{2}(x-sin(x)cos(x)) +c
+\]
+\[
+    \int cos^2(x) dx = \frac{1}{2}(x+sin(x)cos(x)) +c
+\]
+\[
+    \int \frac{1}{Ch^2(x)} dx = \int (1-Tgh^2(x)dx= Tgh(x)+c
+\]
+\subsubsection*{Integrali riconducibili:}
+\[
+    \int f^n(x) \cdot f'(x) dx = \frac{f^{n+1}(x)}{n+1} +c
+\]
+\[
+    \int \frac{f'(x)}{f(x)} dx = log|f(x)|+c
+\]
+\[
+    \int f'(x) \cdot cos(f(x)) dx =  sin(f(x))+c
+\]
+\[
+    \int f'(x) \cdot sin(f(x)) dx = -cos(f(x)) +c
+\]
+\[
+    \int e^{(f(x)} \cdot f'(x) dx = e^{f(x)}+c
+\]
+\[
+    \int a^{f(x)} \cdot f'(x) dx = \frac{a^{f(x)}}{ln(a)} +c
+\]
+\[
+    \int \frac{f'(x)}{1+f^2(x)} dx = arctg(f(x))+c
+\]
+\subsubsection*{Integrazione per sostituzione:}
+Sostituire alla variabile $x$ una funzione di un'altra variabile $t$, purchè tale funzione sia derivabile e invertibile.\newline
+Ponendo $x = g(t)$ da cui deriva $dx = g'(t) dt$ si ha che:
+\[
+    \int f(x) dx = \int f[g(t)] \cdot g'(t) dt
+\]
+\subsubsection*{Integrazione per parti:}
+\[
+    \int f'(x) \cdot  g(x) dx = f(x) \cdot g(x) - \int f(x) \cdot g'(x)dx
+\]
+Si integrano per parti funzioni del tipo:\newline
+$P(x) \cdot e^x$, $P(x) \cdot sin(x)$, $P(x) \cdot cos(x)$, $e^{\alpha x} \cdot  sin (\beta x)$
 
 \end{document}
