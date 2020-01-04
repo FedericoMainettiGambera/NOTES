@@ -1,6 +1,10 @@
 \documentclass[a4paper, 9pt]{report}
 \input{../preamble/preamble.tex}
 \begin{document}
+\subsection*{TRIGONOMETRIA}
+\[
+    sin(x) cos(x) = \frac{1}{2}sin(2x)
+\]
 \subsection*{STUDI DI FUNZIONE}
 \subsection*{ASINTOTICI}
 \subsection*{DERIVATE}
@@ -44,6 +48,12 @@
 \]
 \[
     \int tan(x) dx = -log|cos(x)| +c
+\]
+\[
+    \int log(x) dx \;\; = xlog(x) - \int x \cdot  \frac{1}{x} dx - \int 1 dx = x log(x) -x + c
+\]
+\[
+    \int arctg (x) dx \;\; = x arctg(x) -\int \frac{x}{1+x^2}dx = x arctg(x) -\frac{1}{2}log(1+x^2) + c 
 \]
 \[
     \int cotg(x) dx = log|sin(x)| +c
@@ -222,8 +232,48 @@ La formula deriva dalla formula di derivazione della moltiplicazioni di due funz
 \[
     fg' = (fg)' - f'g
 \]
-
-Si integrano per parti funzioni del tipo:\newline
-$P(x) \cdot e^x$, $P(x) \cdot sin(x)$, $P(x) \cdot cos(x)$, $e^{\alpha x} \cdot  sin (\beta x)$
-
+Si integrano per parti funzioni del tipo:
+\begin{itemize}
+    \item dovendo calcolare integrali della forma
+    \[
+        \int x^n \cdot f(x) dx
+    \]
+    con $f(x) = cos(x), sin(x), e^x, Sh(x), Ch(x)$, si integra per parti derivando $x^n$ e integrando $f(x)$. Per $n=1$ l'integrale si riduce a uno immediato, per $n>1$ si itera il procedimento fino al caso $n=1$. Si possono svolgere allo stesso modo anche integrali del tipo:
+    \[
+        \int P_n(x) f(x) dx
+    \]
+    \item dovendo calcolare integrali della forma
+    \[
+        \int f(x) g(x) dx \;\;\;\; \begin{cases}
+            f(x) = e^{\alpha x}, Sh(\alpha x), Ch( \alpha x) \\
+            g(x) = cos( \beta x), sin(\beta x)
+        \end{cases}
+    \]
+    si eseguono due integrazioni per parti consecutive, nella prima la scelta della funzione da integrare o derivare è indifferente, nella seconda però la scelte deve essere coerente alla prima. Chiamando $I$ l'integrale di partenza si ottiene una funzione della forma
+    \[
+        I = h(x) - \frac{\beta}{\alpha}^2 I
+    \]
+    da cui si ricava $I$.\newline
+    Se entrambe le funzioni $f(x)$ e $g(x)$ sono del tipo $cos(x)$ o $sin(x)$ si usano le formule di duplicazione o prostaferesi (vedi più avanti).
+    \item L'integrale del logaritmo, ponendo $f= log(x)$ e $g' =1$
+    \[
+        \int log(x) dx \;\; = xlog(x) - \int x \cdot  \frac{1}{x} dx - \int 1 dx = x log(x) -x + c
+    \]
+    Più in generale, dovendo calcolare integrali della forma
+    \[
+        \int x^m log^n(x) dx
+    \]
+    e ponendo $g' = x^m$ e $f = log^n(x)$ ed eseguendo iterativamente $n$ integrazioni per parti si riesce a calcolare l'integrale del logaritmo. Ancora più in generale si possono risolvere integrali della forma:
+    \[
+        \int P_m(x) \cdot Q_n(log(x)) dx 
+    \]
+    \item l'integrale dell'arcotangente, ponendo $f= arctg(x)$ e $g' =1$
+    \[
+        \int arctg (x) dx \;\; = x arctg(x) -\int \frac{x}{1+x^2}dx = x arctg(x) -\frac{1}{2}log(1+x^2) + c 
+    \]
+    Più in generale
+    \[
+        \int x^n arctg(x) dx  = \frac{x^{n+1}}{n+1}arctg(x) - \int\frac{x^{n+1}}{n+1} \frac{dx}{1+x^2}
+    \]
+\end{itemize}
 \end{document}
