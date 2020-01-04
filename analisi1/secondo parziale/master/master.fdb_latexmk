@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1578077026 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" "master" 1578077030
+["pdflatex"] 1578155793 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" "master" 1578155796
   "../preamble/preamble.tex" 1578071089 483 16362a825726d3bbf9be851175ad5f63 ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux" 1578077028 108 cfbb92b024ac1000ea30bced8de47f1d ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" 1578077020 2815 42ccd3cb90f64708073a847c6f19cadd ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux" 1578155795 108 cfbb92b024ac1000ea30bced8de47f1d ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" 1578155793 8197 ac5922c8142fc5e80f6a38fe60c8ac1a ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570201114 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570199013 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1570199014 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -18,6 +18,7 @@
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1570199014 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1570199014 36281 c355509802a035cadc5f15869451dcee ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1570199014 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1570199014 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1570199014 32762 7fee39e011c23b3589931effd97b9702 ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1570199014 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1570199014 28902 2f5c04fd2884d1878057baa5aad22765 ""
@@ -81,11 +82,11 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1570205488 4694128 59e2d353f4dc7ded0243f5180e559ac1 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570205581 4261151 6e9769eabb4d92bbc917c56b8660c752 ""
   "c:/texlive/2019/texmf.cnf" 1570205462 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1578077028 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
-  "master.tex" 1578077020 2815 42ccd3cb90f64708073a847c6f19cadd ""
+  "master.aux" 1578155795 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
+  "master.tex" 1578155793 8197 ac5922c8142fc5e80f6a38fe60c8ac1a ""
   (generated)
-  "master.pdf"
   "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf"
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.log"
-  "master.aux"
   "master.log"
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.log"
+  "master.pdf"
+  "master.aux"

@@ -1,9 +1,22 @@
 \documentclass[a4paper, 9pt]{report}
 \input{../preamble/preamble.tex}
 \begin{document}
-
+\subsection*{STUDI DI FUNZIONE}
+\subsection*{ASINTOTICI}
+\subsection*{DERIVATE}
+\subsection*{SVILUPPI}
 \subsection*{INTEGRALI}
+\subsubsection*{Teorema fondamentale del calcolo integrale:}
+\[
+    \int_{a}^{b} f(x) dx = G(b) - G(a)
+\]
 \subsubsection*{Proprietà degli integrali:}
+\[
+    \int_{a}^{b} f(x)dx = \int_{a}^{r} f(x) dx + \int_{r}^{b} f(x) dx
+\]
+\[
+    \left| \int_{a}^{b} f(x) dx \right| \leq \int_{a}^{b} |f(x)| dx
+\]
 \[
     \int k \cdot f(x) dx = k \cdot \int f(x) dx
 \]
@@ -30,16 +43,28 @@
     \int cos(x) dx = sin(x)+c
 \]
 \[
+    \int tan(x) dx = -log|cos(x)| +c
+\]
+\[
+    \int cotg(x) dx = log|sin(x)| +c
+\]
+\[
     \int (1+tg^2(x))dx = \int \frac{1}{cos^2(x)} dx = tg(x) +c
 \]
 \[
-    \int (1+ctg^2(x))dx = \int \frac{1}{sin^2(x)} dx = -ctg(x) +c
+    \int (1+ctg^2(x))dx = \int \frac{1}{sin^2(x)} dx = -cotg(x) +c
 \]
 \[
     \int Sh(x) dx = Ch(x) +c
 \]
 \[
     \int Ch(x) dx = Sh(x) +c
+\]
+\[
+    \int Th(x) dx = log(Ch(x))+c
+\]
+\[
+    \int Coth(x) dx = log|Sh(x)| +c
 \]
 \[
     \int e^x dx = e^x+c
@@ -58,13 +83,16 @@
     \int \frac{1}{1-x^2} dx = \frac{1}{2}log\left|\frac{1+x}{1-x}\right|+c
 \]
 \[
-    \int \frac{1}{\sqrt{x^2-1}} dx = log|x+ \sqrt{x^2-1}| +c
-\]
-\[
     \int \frac{1}{\sqrt{1+x^2}} dx = arcSh(x) +c = log(x + \sqrt{1+x^2}) +c
 \]
 \[
-    \int \frac{1}{\sqrt{x^2 \pm a^2}} dx = log|x + \sqrt{x^2 \pm a^2}|+c
+    \int \frac{1}{\sqrt{1-x^2}} dx = arcsin(x) +c
+\]
+\[
+    \int \frac{1}{\sqrt{-1 + x^2}} dx = log|x+ \sqrt{x^2-1}| +c
+\]
+\[
+    \int \frac{1}{\sqrt{\pm a^2 + x^2}} dx = log|x + \sqrt{x^2 \pm a^2}|+c
 \]
 \[
     \int \sqrt{x^2 \pm a^2} dx = \frac{x}{2} \sqrt{x^2 \pm a^2} \pm \frac{a^2}{2} log(x + \sqrt{x^2 \pm a^2}) +c
@@ -79,7 +107,10 @@
     \int cos^2(x) dx = \frac{1}{2}(x+sin(x)cos(x)) +c
 \]
 \[
-    \int \frac{1}{Ch^2(x)} dx = \int (1-Tgh^2(x)dx= Tgh(x)+c
+    \int \frac{1}{Ch^2(x)} dx = \int (1-Th^2(x))dx= Th(x)+c
+\]
+\[
+    \int \frac{1}{Sh^2(x)} = -Coth(x) +c
 \]
 \subsubsection*{Integrali riconducibili:}
 \[
@@ -103,16 +134,95 @@
 \[
     \int \frac{f'(x)}{1+f^2(x)} dx = arctg(f(x))+c
 \]
+\subsubsection*{Simmetrie:}
+\begin{itemize}
+    \item se $f(x)$ è pari:
+    \[
+        \int_{-k}^{k}f(x)dx = 2 \int_{0}^{k} f(x) dx
+    \]
+    \item se $f(x)$ è dispari:
+    \[
+        \int_{-k}^{k}f(x)dx = 0
+    \]
+\end{itemize}
 \subsubsection*{Integrazione per sostituzione:}
 Sostituire alla variabile $x$ una funzione di un'altra variabile $t$, purchè tale funzione sia derivabile e invertibile.\newline
 Ponendo $x = g(t)$ da cui deriva $dx = g'(t) dt$ si ha che:
 \[
     \int f(x) dx = \int f[g(t)] \cdot g'(t) dt
 \]
+Da ricordare è che se si è in presenza di un integrale definito bisogna aggiornare anche gli estremi di integrazione. Se non si volesse cambiare l'intervall odi integrazione si può risostituire il vecchio valore di $t$.
+\subsubsection*{Integrazione delle funzioni razionali:}
+\[
+    \int \frac{P_n(x)}{Q_m(x)} dx
+\]
+Per prima cosa se il grado del numeratore è $\geq$ del grado del denominatore, si esegue la divisione di polinomi:
+\begin{itemize}
+    \item Si dispongono i polinomi dal termine di grado maggiore a quello minore nella seguente maniera:
+    \[
+        P(x) \;\; | \;\; Q(x)    
+    \]
+    badando al fatto che se nel polinomio $P(x)$ mancasse qualche termine bisognerebbe scrivere $0$ nella sua posizione.
+    \item Si dividono il termine di grado massimo di $P(x)$ con quello di grado massimo di $Q(x)$, riportando il risultato al di sotto di $Q(x)$.
+    \item Moltiplichiamo il termine appena scritto per ogni termine di $Q(x)$, ne invertiamo il segno e lo trascriviamo al di sotto dei termini con lo stesso grado di $P(x)$
+    \item Sommiamo termine per termine $P(x)$ con i valore appena scritti e li riportiamo sotto.
+    \item Ripetiamo questo procedimento finchè il grado più alto fra i termini dell'ultima riga scritta a sinistra è minore (non minore uguale) del termine di grado massimo di $Q(x)$
+    \item Il polinomio a destra è il risultato della divisione $S(x)$, mentre ciò che rimane sulla sinistra è il resto $R(x)$. Possiamo ora riscrivere il numeratore:
+    \[
+        P(x) = S(x) \cdot Q(x) + R(x)
+    \]
+\end{itemize}
+Vediamo ora i vari casi possibili:
+\begin{itemize}
+    \item \textbf{denominatore di primo grado:} integrale immediato tramite il logaritmo
+    \item \textbf{denominatore di secondo grado:} si calcola il segno del discriminante:
+    \begin{itemize}
+        \item \textbf{due radici distinte:} si scompone in fratti semplici
+        \[
+            \frac{N(x)}{D_1(x) \cdot D_2(x)} = \frac{a}{D_1(x)} + \frac{b}{D_2(x)}
+        \]
+        \[
+            \frac{a \cdot D_2(x) + b \cdot D_1(x)}{D_1(x) \cdot  D_2(x)} = \frac{N(x)}{D_1(x) \cdot D_2(x)}
+        \]
+        \[
+            a \cdot D_2(x) + b \cdot D_1(x)= N(x)
+        \]
+        Una volta determinate $a$ e $b$ si riscrive l'integrale come $\frac{a}{D_1(x)} + \frac{b}{D_2(x)}$ e si integra come somma di logaritmi
+        \item \textbf{denominatore quadrato perfetto:} (due soluzioni coincidenti), si procede per sostituzione:
+        \[
+            \int \frac{N(x)}{D(x)^2} dx = [D(x) = t, \; \dots] = \; \dots
+        \] 
+        L'utilità della sostituzione è quella di spezzare la frazione in una somma di frazion ida integrare una ad una.
+        \item \textbf{denominatore non si annulla mai:}\newline
+        Casi semplici:
+        \[
+            \int \frac{1}{1 + x^2}dx = arctg (x) +c
+        \]
+        \[
+            \int \frac{1}{x^2 + a^2}dx = \frac{1}{a} arctg \frac{x}{a} +c
+        \]
+        \[
+            \int \frac{1}{a^2 + (x+b)^2}dx = \frac{1}{a} arctg \frac{x+b}{a} +c
+        \]
+        Caso generico: Si cerca di dividere l'integrale in una somma di integrali, il primo deve contenere al numeratore la derivata del denominatore, il secondo non deve contenere la $x$ al numeratore, cioè deve essere una costante e quindi riconducibile ai casi semplici sopra riportati. Il denominatore non cambia. Ci si arriva a logica. 
+    \end{itemize}
+    \item \textbf{denominatore di grado maggiore di due:} è sempre possibile scomporlo in prodotti di fattori di primo grado o di secondo grado irriducibili, per farlo si usa Ruffini (o altrimenti si va a tentoni ricordando che PROBABILMENTE una radice della funzione è un dividendo (positivi e negativi) del numero che si ricava moltiplicando il coefficiente del termine massimo e il termine noto).\newline
+    Fatto questo si scompone la frazione in fratti semplici con la stessa logica del caso di due radici distinte, ricordando che il numeratore deve essere un espressione di un grado minore del denominatore, per esempio se il denominatore è di grado $2$, allora si userà $ax+b$ che è di grado $1$.
+\end{itemize}
+\subsubsection*{Funzioni razionali di $e^x$}
+Si pone $e^x = t$, $x= log(t)$, $dx = \frac{dt}{t}$ e ci si riconduce a una funzione razionale classica.
 \subsubsection*{Integrazione per parti:}
 \[
     \int f'(x) \cdot  g(x) dx = f(x) \cdot g(x) - \int f(x) \cdot g'(x)dx
 \]
+La formula deriva dalla formula di derivazione della moltiplicazioni di due funzioni:
+\[
+    (fg)' = f'g + fg'
+\]
+\[
+    fg' = (fg)' - f'g
+\]
+
 Si integrano per parti funzioni del tipo:\newline
 $P(x) \cdot e^x$, $P(x) \cdot sin(x)$, $P(x) \cdot cos(x)$, $e^{\alpha x} \cdot  sin (\beta x)$
 
