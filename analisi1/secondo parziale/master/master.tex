@@ -66,6 +66,16 @@
 \[
     sin(a)sin(b)=-\frac{1}{2}cos(a+b)- cos(a-b)
 \]
+\[
+    Sh(SettCh(a))= \sqrt{a^2-1}
+\]
+\[
+    Ch(SettSh(a))=\sqrt{a^2+1}
+\]
+\[
+    Ch^2(x) - Sh^2(x) = 1
+\]
+\subsection*{DISEQUAZIONI}
 \subsection*{STUDI DI FUNZIONE}
 \subsection*{ASINTOTICI}
 \subsection*{DERIVATE}
@@ -381,21 +391,33 @@ L'integrazione per parti si usa:
     \[
         \int_{0}^{n \frac{\pi}{2}}cos^2(kx) dx = \int_{0}^{n \frac{\pi}{2}}sin^2(kx) dx = n \frac{\pi}{4}
     \]
+    \item per calcolare integrali razionali con $Sh(x)$ e $Ch(x)$ o si trovano scorciatoie con trasformazioni oppure si usa la sostituzione $e^x = t, x= log(t), dx = \frac{dt}{t}$
 \end{itemize}
-\subsection*{Integrazione delle funzioni razzionali}
+\subsection*{Integrazione delle funzioni irrazzionali}
 \begin{itemize}
-    \item se l'integranda è una funzione razionale del tipo
+    \item se l'integranda è una funzione razionale di $x$ moltiplicata per solo una delle seguenti
     \[
-        \sqrt{a^2-x^2}
+        \int \sqrt{a^2-x^2} dx = [x=a \cdot  sin(t), dx =a \cdot  cos(t)dt] = \int \sqrt{a^2(1-sin^2(t))}dx = \int|a \cdot  cos(t)|dx
     \]
     \[
-        \sqrt{a^2 + x^2}
+        \int \sqrt{a^2 + x^2} = [x=a \cdot  Sh(t), dx =a \cdot  Ch(t)dt] = \int \sqrt{a^2(1-Sh^2(t))}dx = \int a \cdot  Ch(t)dx
     \]
     \[
-        \sqrt{x^2 -a^2}
+        \int \sqrt{x^2 -a^2} = [x=a \cdot  Ch(t), dx =a \cdot Sh(t)dt] = \int \sqrt{a^2(Ch^2(t)-1)}dx = \int|a \cdot Sh(t)|dx
     \]
+    Negli ultimi due casi per tornare alla variabile x occorre usare le funzioni iperobliche inverse:
     \[
-        \sqrt[n]{x}
+        \begin{cases}
+            x = a \cdot  Ch(t) \Rightarrow t = SettCh(\frac{x}{a}) = log\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}-1}\right)\\
+            x= a \cdot Sh(t) \Rightarrow t = SettSh\left(\frac{x}{a}\right) = log\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}+1}\right)
+        \end{cases}
+    \]
+    è utile anche ricordare che $Sh(SettCh(a))= \sqrt{a^2-1}$ e $Ch(SettSh(a))=\sqrt{a^2+1}$
+    \item integrale di una funzione razionale di $x, x^{\frac{n_1}{m_1}}, x^{\frac{n_2}{m_2}}$, etc. \newline
+    Si pone $x = t^n$ con $n=$ minimo comune multiplo di $m_1$, $m_2$, etc. Si ha quindi $dx = n \cdot  t^{n-1} dt$ e si ottiene una funzione razionale di $t$.
+    \item Se l'integranda è una funzione del tipo $R(x^{2n+1}, \sqrt{x^2 \pm a^2})$
+    \[
+        \int x^{2n+1}R(\sqrt{x^2 \pm a^2})dx = [\sqrt{x^2 \pm a^2} = t, xdx= tdt, x^{2n+1} \cdot dx = (t^2 \mp a^2)^n t \cdot  dt]
     \]
 \end{itemize}
 \end{document}
