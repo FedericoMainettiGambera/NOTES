@@ -5,6 +5,67 @@
 \[
     sin(x) cos(x) = \frac{1}{2}sin(2x)
 \]
+\[
+    sin^2(x) + cos^2(x) = 1
+\]
+\[
+    sin^2(x) = 1- cos^2(x)
+\]
+\[
+    cos^2(x) = 1- sin^2(x)
+\]
+\[
+    sin^2(x) = \frac{1}{2} (1-cos(2x))
+\]
+\[
+    cos^2(x) = \frac{1}{2}(1+cos(2x))
+\]
+\[
+    sin(2x) = 2sin (x)cos(x)
+\]
+\[
+    cos(2x) = \begin{cases}
+        cos^2(x) -sin^2(x)\\
+        1-2sin^2(x)\\
+        2cos^2(x)-1
+    \end{cases}
+\]
+\[
+    sin(a+b) =sin(a)cos(b) + sin(b) cos(a)
+\]
+\[
+    sin(a-b) = sin(a)cos(b) - sin(b)cos(a)
+\]
+\[
+    cos(a+b) = cos(a)cos(b) - sin(a)sin(b)
+\]
+\[
+    cos(a-b)=cos(a)cos(b) + sin(a)sin(b)
+\]
+\[
+    sin(\alpha) + sin(\beta) = 2 sin\left(\frac{\alpha + \beta}{2}\right) cos \left(\frac{\alpha - \beta}{2}\right)
+\]
+\[
+    sin(\alpha) - sin(\beta) = 2 cos\left(\frac{\alpha + \beta}{2}\right) sin\left(\frac{\alpha - \beta}{2}\right)
+\]
+\[
+    cos(\alpha) + cos(\beta) = 2 cos\left(\frac{\alpha + \beta}{2}\right) cos\left(\frac{\alpha - \beta}{2}\right)
+\]
+\[
+    cos(\alpha) - cos(\beta) = -2sin\left(\frac{\alpha + \beta}{2}\right) sin\left(\frac{\alpha - \beta}{2}\right)
+\]
+\[
+    sin(a)cos(b)=\frac{1}{2}sin(a+b)+sin(a-b)
+\]
+\[
+    cos(a)sin(b)=\frac{1}{2}sin(a+b)-sin(a-b)
+\]
+\[
+    cos(a)cos(b)=\frac{1}{2}cos(a+b)+cos(a-b)
+\]
+\[
+    sin(a)sin(b)=-\frac{1}{2}cos(a+b)- cos(a-b)
+\]
 \subsection*{STUDI DI FUNZIONE}
 \subsection*{ASINTOTICI}
 \subsection*{DERIVATE}
@@ -232,20 +293,30 @@ La formula deriva dalla formula di derivazione della moltiplicazioni di due funz
 \[
     fg' = (fg)' - f'g
 \]
-Si integrano per parti funzioni del tipo:
+Si può vedere la formula di integrazione per parti più facilmente così:
+\[
+    \int integranda \cdot derivanda \; dx = primitiva \cdot derivanda - \int primitiva \cdot derivata \; dx
+\]
+L'integrazione per parti si usa:
 \begin{itemize}
     \item dovendo calcolare integrali della forma
     \[
-        \int x^n \cdot f(x) dx
+        \int x^n \cdot f(x) dx \;\;\; f(x) = \begin{cases}
+            cos(x)\\ 
+            sin(x)\\ 
+            e^x\\ 
+            Sh(x)\\ 
+            Ch(x)        
+        \end{cases}
     \]
-    con $f(x) = cos(x), sin(x), e^x, Sh(x), Ch(x)$, si integra per parti derivando $x^n$ e integrando $f(x)$. Per $n=1$ l'integrale si riduce a uno immediato, per $n>1$ si itera il procedimento fino al caso $n=1$. Si possono svolgere allo stesso modo anche integrali del tipo:
+    si integra per parti derivando $x^n$ e integrando $f(x)$. Per $n=1$ l'integrale si riduce a uno immediato, per $n>1$ si itera il procedimento fino al caso $n=1$. Si possono svolgere allo stesso modo anche integrali del tipo:
     \[
         \int P_n(x) f(x) dx
     \]
     \item dovendo calcolare integrali della forma
     \[
         \int f(x) g(x) dx \;\;\;\; \begin{cases}
-            f(x) = e^{\alpha x}, Sh(\alpha x), Ch( \alpha x) \\
+            f(x) = e^{\alpha x}, Sh(\alpha x), Ch( \alpha x), a^{bx} \\
             g(x) = cos( \beta x), sin(\beta x)
         \end{cases}
     \]
@@ -255,7 +326,7 @@ Si integrano per parti funzioni del tipo:
     \]
     da cui si ricava $I$.\newline
     Se entrambe le funzioni $f(x)$ e $g(x)$ sono del tipo $cos(x)$ o $sin(x)$ si usano le formule di duplicazione o prostaferesi (vedi più avanti).
-    \item L'integrale del logaritmo, ponendo $f= log(x)$ e $g' =1$
+    \item L'integrale del logaritmo, derivando $log(x)$ e integrando $1$
     \[
         \int log(x) dx \;\; = xlog(x) - \int x \cdot  \frac{1}{x} dx - \int 1 dx = x log(x) -x + c
     \]
@@ -267,13 +338,64 @@ Si integrano per parti funzioni del tipo:
     \[
         \int P_m(x) \cdot Q_n(log(x)) dx 
     \]
-    \item l'integrale dell'arcotangente, ponendo $f= arctg(x)$ e $g' =1$
+    \item l'integrale dell'arcotangente, derivando $arctg(x)$ e integrando $1$
     \[
         \int arctg (x) dx \;\; = x arctg(x) -\int \frac{x}{1+x^2}dx = x arctg(x) -\frac{1}{2}log(1+x^2) + c 
     \]
     Più in generale
     \[
         \int x^n arctg(x) dx  = \frac{x^{n+1}}{n+1}arctg(x) - \int\frac{x^{n+1}}{n+1} \frac{dx}{1+x^2}
+    \]
+\end{itemize}
+\subsubsection*{integrazione delle funzioni trigonometriche}
+\begin{itemize}
+    \item dovendo calcolare
+    \[
+        \int f(sin(x)) \cdot  cos(x) dx \;\;\; \Rightarrow  \;\;\; sin(x) = t, cos(x) dx =dt
+    \]
+    \[
+        \int f(cos(x)) \cdot  sin(x) dx\;\;\; \Rightarrow  \;\;\; cos(x) ) t, -sin(x) dx = dt
+    \]
+    In particolare per calcolare 
+    \[
+        \int sin^n(x) cos^m(x)
+    \]
+    se almeno uno degli esponenti è dispari si riesce a riscrivere l'integrale in una delle forme viste sopra utilizzando: $sin^2(x) + cos^2(x) = 1$. Se entrambi gli esponenti sono pari si usano le formule trigonometriche per abbassarne il grado: $cos^2(x) = \frac{1}{2}(1+cos(2x))$ e $sin^2(x) = \frac{1}{2} (1-cos(2x))$
+    \item per integrali del tipo
+    \[
+        \int cos(\alpha x) sin(\beta x) dx, \;\;\;\int cos(\alpha x) cos(\beta x) dx, \;\;\;\int sin(\alpha x) sin(\beta x) dx,
+    \]
+    si usano le regole di prostaferesi che riconducono a somme di integrali immediati
+    \item integrali di funzioni razionali di $sin(x)$ e $cos(x)$ possono sempre essere ricondotti a integrali di funzioni razionali generiche tramite la sostituzione:
+    \[
+        t = tg\left(\frac{x}{2}\right), \;\;\; x= 2 arctg(t), \;\;\;dx = \frac{2}{1+t^2}dt
+    \]
+    ne derivano le seguenti identità trigonometriche:
+    \[
+        \begin{cases}
+            cos(x) = \frac{1-t^2}{1+t^2}\\
+            sin(x) = \frac{2t}{1+t^2}
+        \end{cases}
+    \]
+    \item integrali definiti notevoli:
+    \[
+        \int_{0}^{n \frac{\pi}{2}}cos^2(kx) dx = \int_{0}^{n \frac{\pi}{2}}sin^2(kx) dx = n \frac{\pi}{4}
+    \]
+\end{itemize}
+\subsection*{Integrazione delle funzioni razzionali}
+\begin{itemize}
+    \item se l'integranda è una funzione razionale del tipo
+    \[
+        \sqrt{a^2-x^2}
+    \]
+    \[
+        \sqrt{a^2 + x^2}
+    \]
+    \[
+        \sqrt{x^2 -a^2}
+    \]
+    \[
+        \sqrt[n]{x}
     \]
 \end{itemize}
 \end{document}
