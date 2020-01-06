@@ -3,16 +3,23 @@
 \begin{document}
 \subsection*{TRIGONOMETRIA}
 \[
-    sin(x) cos(x) = \frac{1}{2}sin(2x)
-\]
-\[
     sin^2(x) + cos^2(x) = 1
 \]
 \[
-    sin^2(x) = 1- cos^2(x)
+    Ch^2(x) - Sh^2(x) = 1
 \]
 \[
-    cos^2(x) = 1- sin^2(x)
+    sin(2x) = 2sin (x)cos(x)
+\]
+\[
+    sin(x) cos(x) = \frac{1}{2}sin(2x)
+\]
+\[
+    cos(2x) = \begin{cases}
+        cos^2(x) -sin^2(x)\\
+        1-2sin^2(x)\\
+        2cos^2(x)-1
+    \end{cases}
 \]
 \[
     sin^2(x) = \frac{1}{2} (1-cos(2x))
@@ -21,14 +28,22 @@
     cos^2(x) = \frac{1}{2}(1+cos(2x))
 \]
 \[
-    sin(2x) = 2sin (x)cos(x)
+    Sh(SettCh(a))= \sqrt{a^2-1} \;\;\;\; ottenuta \; da \; [Ch^2(x) -Sh^2(x) = 1] \rightarrow [Sh(x) = \sqrt{Ch^2(x) -1}] \rightarrow [x = SettCh(a)]
 \]
 \[
-    cos(2x) = \begin{cases}
-        cos^2(x) -sin^2(x)\\
-        1-2sin^2(x)\\
-        2cos^2(x)-1
-    \end{cases}
+    Ch(SettSh(a))=\sqrt{a^2+1} \;\;\;\; ottenuta \; da \; [Ch^2(x) -Sh^2(x) = 1] \rightarrow [Ch(x) = \sqrt{1 + Sh^2(x)}] \rightarrow [x = SettSh(a)]
+\]
+\[
+    sin(a)cos(b)=\frac{1}{2}sin(a+b)+sin(a-b)
+\]
+\[
+    cos(a)sin(b)=\frac{1}{2}sin(a+b)-sin(a-b)
+\]
+\[
+    cos(a)cos(b)=\frac{1}{2}cos(a+b)+cos(a-b)
+\]
+\[
+    sin(a)sin(b)=-\frac{1}{2}cos(a+b)- cos(a-b)
 \]
 \[
     sin(a+b) =sin(a)cos(b) + sin(b) cos(a)
@@ -54,38 +69,17 @@
 \[
     cos(\alpha) - cos(\beta) = -2sin\left(\frac{\alpha + \beta}{2}\right) sin\left(\frac{\alpha - \beta}{2}\right)
 \]
-\[
-    sin(a)cos(b)=\frac{1}{2}sin(a+b)+sin(a-b)
-\]
-\[
-    cos(a)sin(b)=\frac{1}{2}sin(a+b)-sin(a-b)
-\]
-\[
-    cos(a)cos(b)=\frac{1}{2}cos(a+b)+cos(a-b)
-\]
-\[
-    sin(a)sin(b)=-\frac{1}{2}cos(a+b)- cos(a-b)
-\]
-\[
-    Sh(SettCh(a))= \sqrt{a^2-1}
-\]
-\[
-    Ch(SettSh(a))=\sqrt{a^2+1}
-\]
-\[
-    Ch^2(x) - Sh^2(x) = 1
-\]
 \subsection*{DISEQUAZIONI}
 \subsection*{STUDI DI FUNZIONE}
 \subsection*{ASINTOTICI}
 \subsection*{DERIVATE}
 \subsection*{SVILUPPI}
 \subsection*{INTEGRALI}
-\subsubsection*{Teorema fondamentale del calcolo integrale:}
+\subsection*{Teorema fondamentale del calcolo integrale:}
 \[
     \int_{a}^{b} f(x) dx = G(b) - G(a)
 \]
-\subsubsection*{Proprietà degli integrali:}
+\subsection*{Proprietà degli integrali:}
 \[
     \int_{a}^{b} f(x)dx = \int_{a}^{r} f(x) dx + \int_{r}^{b} f(x) dx
 \]
@@ -98,7 +92,7 @@
 \[
     \int [f_1(x) + f_2(x) ] dx= \int f_1(x) dx + \int f_2(x) dx
 \]
-\subsubsection*{Integrali fondamentali:}
+\subsection*{Integrali fondamentali:}
 \[
     \int f'(x) dx = f(x) +c
 \]
@@ -156,7 +150,19 @@
 \[
     \int a^x dx = \frac{a^x}{ln(a)}+c
 \]
-\subsubsection*{Integrali notevoli:}
+\subsection*{Integrali notevoli:}
+\[
+    \int sin^2(x) dx = [per \; parti \; e \; sostituzione \; con \; cos^2(x)+ sin^2(x) = 1] = \frac{1}{2}(x-sin(x)cos(x)) +c
+\]
+\[
+    \int cos^2(x) dx = [per \; parti \; e \; sostituzione \; con \; cos^2(x)+ sin^2(x) = 1] = \frac{1}{2}(x+sin(x)cos(x)) +c
+\]
+\[
+    \int Sh^2(x) dx = [per \; parti \; e \; sostituzione \; con \; Ch^2(x) - Sh^2(x) = 1] = \frac{1}{4}(Sh(2x)-2x) +c
+\]
+\[
+    \int Ch^2(x) dx = [per \; parti \; e \; sostituzione \; con \; Ch^2(x) - Sh^2(x) = 1] = \frac{1}{2}(x + Sh(x)Ch(x)) +c
+\]
 \[
     \int \frac{1}{1+x^2} dx = arctg(x) +c
 \]
@@ -182,18 +188,12 @@
     \int \sqrt{a^2 - x^2}dx = \frac{1}{2}(a^2arcsin(\frac{x}{a}) + x \sqrt{a^2 - x^2} )+c
 \]
 \[
-    \int sin^2(x) dx = \frac{1}{2}(x-sin(x)cos(x)) +c
-\]
-\[
-    \int cos^2(x) dx = \frac{1}{2}(x+sin(x)cos(x)) +c
-\]
-\[
     \int \frac{1}{Ch^2(x)} dx = \int (1-Th^2(x))dx= Th(x)+c
 \]
 \[
     \int \frac{1}{Sh^2(x)} = -Coth(x) +c
 \]
-\subsubsection*{Integrali riconducibili:}
+\subsection*{Integrali riconducibili:}
 \[
     \int f^n(x) \cdot f'(x) dx = \frac{f^{n+1}(x)}{n+1} +c
 \]
@@ -215,25 +215,14 @@
 \[
     \int \frac{f'(x)}{1+f^2(x)} dx = arctg(f(x))+c
 \]
-\subsubsection*{Simmetrie:}
-\begin{itemize}
-    \item se $f(x)$ è pari:
-    \[
-        \int_{-k}^{k}f(x)dx = 2 \int_{0}^{k} f(x) dx
-    \]
-    \item se $f(x)$ è dispari:
-    \[
-        \int_{-k}^{k}f(x)dx = 0
-    \]
-\end{itemize}
-\subsubsection*{Integrazione per sostituzione:}
+\subsection*{Integrazione per sostituzione:}
 Sostituire alla variabile $x$ una funzione di un'altra variabile $t$, purchè tale funzione sia derivabile e invertibile.\newline
 Ponendo $x = g(t)$ da cui deriva $dx = g'(t) dt$ si ha che:
 \[
     \int f(x) dx = \int f[g(t)] \cdot g'(t) dt
 \]
 Da ricordare è che se si è in presenza di un integrale definito bisogna aggiornare anche gli estremi di integrazione. Se non si volesse cambiare l'intervall odi integrazione si può risostituire il vecchio valore di $t$.
-\subsubsection*{Integrazione delle funzioni razionali:}
+\subsection*{Integrazione delle funzioni razionali:}
 \[
     \int \frac{P_n(x)}{Q_m(x)} dx
 \]
@@ -290,9 +279,9 @@ Vediamo ora i vari casi possibili:
     \item \textbf{denominatore di grado maggiore di due:} è sempre possibile scomporlo in prodotti di fattori di primo grado o di secondo grado irriducibili, per farlo si usa Ruffini (o altrimenti si va a tentoni ricordando che PROBABILMENTE una radice della funzione è un dividendo (positivi e negativi) del numero che si ricava moltiplicando il coefficiente del termine massimo e il termine noto).\newline
     Fatto questo si scompone la frazione in fratti semplici con la stessa logica del caso di due radici distinte, ricordando che il numeratore deve essere un espressione di un grado minore del denominatore, per esempio se il denominatore è di grado $2$, allora si userà $ax+b$ che è di grado $1$.
 \end{itemize}
-\subsubsection*{Funzioni razionali di $e^x$}
+\subsection*{Funzioni razionali di $e^x$}
 Si pone $e^x = t$, $x= log(t)$, $dx = \frac{dt}{t}$ e ci si riconduce a una funzione razionale classica.
-\subsubsection*{Integrazione per parti:}
+\subsection*{Integrazione per parti:}
 \[
     \int f'(x) \cdot  g(x) dx = f(x) \cdot g(x) - \int f(x) \cdot g'(x)dx
 \]
@@ -357,7 +346,7 @@ L'integrazione per parti si usa:
         \int x^n arctg(x) dx  = \frac{x^{n+1}}{n+1}arctg(x) - \int\frac{x^{n+1}}{n+1} \frac{dx}{1+x^2}
     \]
 \end{itemize}
-\subsubsection*{integrazione delle funzioni trigonometriche}
+\subsection*{integrazione delle funzioni trigonometriche}
 \begin{itemize}
     \item dovendo calcolare
     \[
@@ -397,13 +386,13 @@ L'integrazione per parti si usa:
 \begin{itemize}
     \item se l'integranda è una funzione razionale di $x$ moltiplicata per solo una delle seguenti
     \[
-        \int \sqrt{a^2-x^2} dx = [x=a \cdot  sin(t), dx =a \cdot  cos(t)dt] = \int \sqrt{a^2(1-sin^2(t))}dx = \int|a \cdot  cos(t)|dx
+        \int R(x) \sqrt{a^2-x^2} dx = [x=a \cdot  sin(t), dx =a \cdot  cos(t)dt] = \int \sqrt{a^2(1-sin^2(t))}dx = \int|a \cdot  cos(t)|dx
     \]
     \[
-        \int \sqrt{a^2 + x^2} = [x=a \cdot  Sh(t), dx =a \cdot  Ch(t)dt] = \int \sqrt{a^2(1-Sh^2(t))}dx = \int a \cdot  Ch(t)dx
+        \int R(x) \sqrt{a^2 + x^2} = [x=a \cdot  Sh(t), dx =a \cdot  Ch(t)dt] = \int \sqrt{a^2(1-Sh^2(t))}dx = \int a \cdot  Ch(t)dx
     \]
     \[
-        \int \sqrt{x^2 -a^2} = [x=a \cdot  Ch(t), dx =a \cdot Sh(t)dt] = \int \sqrt{a^2(Ch^2(t)-1)}dx = \int|a \cdot Sh(t)|dx
+        \int R(x) \sqrt{x^2 -a^2} = [x=a \cdot  Ch(t), dx =a \cdot Sh(t)dt] = \int \sqrt{a^2(Ch^2(t)-1)}dx = \int|a \cdot Sh(t)|dx
     \]
     Negli ultimi due casi per tornare alla variabile x occorre usare le funzioni iperobliche inverse:
     \[
@@ -420,4 +409,16 @@ L'integrazione per parti si usa:
         \int x^{2n+1}R(\sqrt{x^2 \pm a^2})dx = [\sqrt{x^2 \pm a^2} = t, xdx= tdt, x^{2n+1} \cdot dx = (t^2 \mp a^2)^n t \cdot  dt]
     \]
 \end{itemize}
+\subsection*{Simmetrie e valori assoluti nel calcolo di integrali definiti}
+\begin{itemize}
+    \item se $f(x)$ è \textbf{pari}:
+    \[
+        \int_{-k}^{k}f(x)dx = 2 \int_{0}^{k} f(x) dx
+    \]
+    \item se $f(x)$ è \textbf{dispari}:
+    \[
+        \int_{-k}^{k}f(x)dx = 0
+    \]
+\end{itemize}
+
 \end{document}
