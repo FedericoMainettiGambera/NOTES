@@ -6,9 +6,6 @@
     sin^2(x) + cos^2(x) = 1
 \]
 \[
-    Ch^2(x) - Sh^2(x) = 1
-\]
-\[
     sin(2x) = 2sin (x)cos(x)
 \]
 \[
@@ -26,6 +23,27 @@
 \]
 \[
     cos^2(x) = \frac{1}{2}(1+cos(2x))
+\]
+\[
+    sin(arccos(x)) = ?
+\]
+\[
+    cos(arcsin(x)) = ?  
+\]
+\[
+    Ch^2(x) - Sh^2(x) = 1
+\]
+\[
+    Sh(2x) = ?
+\]
+\[
+    Ch(2x) = ?
+\]
+\[
+    SettSh(x) = log(?)
+\]
+\[
+    SettCh(x) = log(?)
 \]
 \[
     Sh(SettCh(a))= \sqrt{a^2-1} \;\;\;\; ottenuta \; da \; [Ch^2(x) -Sh^2(x) = 1] \rightarrow [Sh(x) = \sqrt{Ch^2(x) -1}] \rightarrow [x = SettCh(a)]
@@ -152,16 +170,28 @@
 \]
 \subsection*{Integrali notevoli:}
 \[
-    \int sin^2(x) dx = [per \; parti \; e \; sostituzione \; con \; cos^2(x)+ sin^2(x) = 1] = \frac{1}{2}(x-sin(x)cos(x)) +c
+    \int sin^2(x) dx = [integrato \; una \; volta \; per \; parti \; e \; sostituzione \; con \; cos^2(x)+ sin^2(x) = 1] = \frac{1}{2}(x-sin(x)cos(x)) +c
 \]
 \[
-    \int cos^2(x) dx = [per \; parti \; e \; sostituzione \; con \; cos^2(x)+ sin^2(x) = 1] = \frac{1}{2}(x+sin(x)cos(x)) +c
+    \int cos^2(x) dx = [integrato \; una \; volta \; per \; parti \; e \; sostituzione \; con \; cos^2(x)+ sin^2(x) = 1] = \frac{1}{2}(x+sin(x)cos(x)) +c
 \]
 \[
-    \int Sh^2(x) dx = [per \; parti \; e \; sostituzione \; con \; Ch^2(x) - Sh^2(x) = 1] = \frac{1}{4}(Sh(2x)-2x) +c
+    \int Sh^2(x) dx = [integrato \; una \; volta \; per \; parti \; e \; sostituzione \; con \; Ch^2(x) - Sh^2(x) = 1] = \frac{1}{4}(Sh(2x)-2x) +c
 \]
 \[
-    \int Ch^2(x) dx = [per \; parti \; e \; sostituzione \; con \; Ch^2(x) - Sh^2(x) = 1] = \frac{1}{2}(x + Sh(x)Ch(x)) +c
+    \int Ch^2(x) dx = [integrato \; una \; volta \; per \; parti \; e \; sostituzione \; con \; Ch^2(x) - Sh^2(x) = 1] = \frac{1}{2}(x + Sh(x)Ch(x)) +c
+\]
+\[
+    \int \frac{1}{sin^2(x)} dx = [1 = cos^2(x) +sin^2(x)] = \int 1 + tan^2(x) dx = 
+\]
+\[
+    \int \frac{1}{cos^2(x)} dx = [1 = cos^2(x) +sin^2(x)] = \int 1 + cotan^2(x) dx = 
+\]
+\[
+    \int \frac{1}{Ch^2(x)} dx = \int (1-Th^2(x))dx= Th(x)+c
+\]
+\[
+    \int \frac{1}{Sh^2(x)} = -Coth(x) +c
 \]
 \[
     \int \frac{1}{1+x^2} dx = arctg(x) +c
@@ -186,12 +216,6 @@
 \]
 \[
     \int \sqrt{a^2 - x^2}dx = \frac{1}{2}(a^2arcsin(\frac{x}{a}) + x \sqrt{a^2 - x^2} )+c
-\]
-\[
-    \int \frac{1}{Ch^2(x)} dx = \int (1-Th^2(x))dx= Th(x)+c
-\]
-\[
-    \int \frac{1}{Sh^2(x)} = -Coth(x) +c
 \]
 \subsection*{Integrali riconducibili:}
 \[
