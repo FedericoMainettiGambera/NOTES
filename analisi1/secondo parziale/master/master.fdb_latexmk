@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1578348949 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" "master" 1578348953
+["pdflatex"] 1578361922 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" "master" 1578361934
   "../preamble/preamble.tex" 1578071089 483 16362a825726d3bbf9be851175ad5f63 ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux" 1578348951 108 cfbb92b024ac1000ea30bced8de47f1d ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" 1578348949 16860 63a71c5742cba1eb602ccc43d2cd180a ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux" 1578361928 108 cfbb92b024ac1000ea30bced8de47f1d ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" 1578361921 17353 bcee42aa41dd092a06b5dd9a00218a99 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570201114 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570199013 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1570199013 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -96,11 +96,11 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1570205488 4694128 59e2d353f4dc7ded0243f5180e559ac1 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570205581 4261151 6e9769eabb4d92bbc917c56b8660c752 ""
   "c:/texlive/2019/texmf.cnf" 1570205462 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1578348951 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
-  "master.tex" 1578348949 16860 63a71c5742cba1eb602ccc43d2cd180a ""
+  "master.aux" 1578361928 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
+  "master.tex" 1578361921 17353 bcee42aa41dd092a06b5dd9a00218a99 ""
   (generated)
-  "master.log"
   "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.log"
   "master.aux"
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf"
   "master.pdf"
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf"
+  "master.log"
