@@ -468,5 +468,72 @@ L'integrazione per parti si usa:
         \int_{-k}^{k}f(x)dx = 0
     \]
 \end{itemize}
-
+\subsection*{INTEGRALI GENERALIZZATI}
+\subsection*{Integrazione di funzioni non limitate}
+Metodo generale di risoluzione:
+\[
+    \lim_{x\rightarrow b^-} f(x) = \pm \infty \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\lim_{x\rightarrow a^+}f(x) = \pm \infty
+\]
+\[
+    \int_{a}^{b}f(x)dx = \lim_{\epsilon\rightarrow 0^+}\int_{a}^{b-\epsilon}f(x)dx \;\;\;\;\;\;\;\;\;\;\;\;\; \int_{a}^{b}f(x)dx = \lim_{\epsilon\rightarrow 0^+}\int_{a+\epsilon}^{b}f(x)dx 
+\]
+Caso particolare:
+\[
+    \int_{a}^{b}\frac{dx}{(b-x)^\alpha} = \begin{cases}
+        \rightarrow +\infty &\alpha\geq 1\\
+        \rightarrow = \frac{(b-a)^{1-\alpha}}{1-\alpha} &a<1
+    \end{cases}
+\]
+\subsection*{Criteri di integrabilità al finito}
+Siano $\lim_{x\rightarrow b^-}f(x) = \lim_{x\rightarrow b^-}g(x) = + \infty$:
+\begin{itemize}
+    \item confronto: se $0\leq f(x) \leq g(x)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
+    \item confronto asintotico: se $f>0$ e $g>0$ e $f \sim g$ per $x \rightarrow b^-$, allora $f$ integrabile $\Leftrightarrow g$ integrabile.
+    \item \textbf{teor.} 
+    \[
+        \int_{a}^{b}|f(x)|dx \;\; convergente \;\;\Rightarrow \int_{a}^{b}f(x)dx \;\;convergente
+    \]
+\end{itemize}
+\subsection*{Integrazione su intervalli illimitati}
+Metodo generale di risoluzione:
+\[
+    \int_{a}^{+\infty}f(x) dx = \lim_{\omega\rightarrow +\infty}\int_{a}^{\omega}f(x)dx
+\]
+\[
+    \int_{- \infty}^{b}f(x) dx = \lim_{\omega\rightarrow -\infty}\int_{\omega}^{b}f(x)dx
+\]
+Se questo limite esiste finito allora $f$ si dice integrabile.
+\[
+    \int_{-\infty}^{+\infty}f(x) dx = \int_{-\infty}^{c} f(x) dx + \int_{c}^{+\infty}f(x) dx
+\]
+Caso particolare:
+\[
+    \int_{1}^{+\infty}\frac{1}{x^\alpha}dx = \begin{cases}
+        divergente \;\; +\infty \;\;\; &\alpha\leq 1\\
+        \frac{1}{\alpha-1} & \alpha > 1
+    \end{cases}
+\]
+\subsection*{Criteri di integrabilità all'infinito}
+\begin{itemize}
+    \item confronto: se $0\leq f(x) \leq g(x)$ in $[a,+\infty)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
+    \item confronto asintotico: se $f>0$, $g>0$ e $f \sim g$ per $x \rightarrow + \infty$, allora $f$ integrabile $\Leftrightarrow g$ integrabile
+    \item \textbf{teor.} 
+    \[
+        \int_{a}^{+\infty}|f(x)| dx \;\; convergente \;\; \Rightarrow \int_{a}^{+\infty} f(x) dx \;\;convergente
+    \]
+\end{itemize}
+\subsection*{FUNZIONI INTEGRALI}
+\textbf{teor.} Secondo teorema fondamentale del calcolo integrale \newline
+Sia $f: [a,b] \rightarrow \mathbb{R}$ una funzione integrabile e sia $x_0 \in [a,b]$ e sia 
+\[
+    F(x) = \int_{x_0}^{x} f(t) dt
+\]
+Allora:
+\begin{itemize}
+    \item La funzione $F$ è continua in $[a,b]$
+    \item Se inoltre $f$ è continua in $[a,b]$, allora $F$ è derivabile in $[a,b]$ e vale
+    \[
+        F'(x) = f(x) \;\; per \; ogni \; x \in[a,b]
+    \]
+\end{itemize}
 \end{document}
