@@ -468,6 +468,8 @@ L'integrazione per parti si usa:
         \int_{-k}^{k}f(x)dx = 0
     \]
 \end{itemize}
+\subsection*{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}
+Non è corretto affermare l'annullarsi di un integrale dispari per motivi di simmetria in un intervallo simmetrico senza prima verificare la convergenza dell'integrale stesso.
 \subsection*{INTEGRALI GENERALIZZATI}
 \subsection*{Integrazione di funzioni non limitate}
 Metodo generale di risoluzione:
@@ -481,7 +483,7 @@ Caso particolare:
 \[
     \int_{a}^{b}\frac{dx}{(b-x)^\alpha} = \begin{cases}
         \rightarrow +\infty &\alpha\geq 1\\
-        \rightarrow = \frac{(b-a)^{1-\alpha}}{1-\alpha} &a<1
+        \rightarrow = \frac{(b-a)^{1-\alpha}}{1-\alpha} &\alpha<1
     \end{cases}
 \]
 \subsection*{Criteri di integrabilità al finito}
@@ -489,7 +491,7 @@ Siano $\lim_{x\rightarrow b^-}f(x) = \lim_{x\rightarrow b^-}g(x) = + \infty$:
 \begin{itemize}
     \item confronto: se $0\leq f(x) \leq g(x)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
     \item confronto asintotico: se $f>0$ e $g>0$ e $f \sim g$ per $x \rightarrow b^-$, allora $f$ integrabile $\Leftrightarrow g$ integrabile.
-    \item \textbf{teor.} 
+    \item \textbf{teor.} (da usare per studiare per esempio funzioni seno e coseno per $x \rightarrow \infty$)
     \[
         \int_{a}^{b}|f(x)|dx \;\; convergente \;\;\Rightarrow \int_{a}^{b}f(x)dx \;\;convergente
     \]
@@ -502,7 +504,6 @@ Metodo generale di risoluzione:
 \[
     \int_{- \infty}^{b}f(x) dx = \lim_{\omega\rightarrow -\infty}\int_{\omega}^{b}f(x)dx
 \]
-Se questo limite esiste finito allora $f$ si dice integrabile.
 \[
     \int_{-\infty}^{+\infty}f(x) dx = \int_{-\infty}^{c} f(x) dx + \int_{c}^{+\infty}f(x) dx
 \]
@@ -513,15 +514,25 @@ Caso particolare:
         \frac{1}{\alpha-1} & \alpha > 1
     \end{cases}
 \]
+\textbf{def.} Se il limite dell'integrale di $f$ esiste finito allora $f$ si dice integrabile oppure che l'integrale è convergente. \newline
+\textbf{def.} Se il limite dell'integrale è $\pm \infty$, l'integrale si dice divergente.\newline
+\textbf{def.} Se il limite non esiste, l'integrale non esiste.\newline
+\textbf{per essere integrabile deve avere limite finito.}
 \subsection*{Criteri di integrabilità all'infinito}
 \begin{itemize}
     \item confronto: se $0\leq f(x) \leq g(x)$ in $[a,+\infty)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
     \item confronto asintotico: se $f>0$, $g>0$ e $f \sim g$ per $x \rightarrow + \infty$, allora $f$ integrabile $\Leftrightarrow g$ integrabile
-    \item \textbf{teor.} 
+    \item \textbf{teor.} (da usare per studiare per esempio funzioni seno e coseno per $x \rightarrow \infty$)
     \[
         \int_{a}^{+\infty}|f(x)| dx \;\; convergente \;\; \Rightarrow \int_{a}^{+\infty} f(x) dx \;\;convergente
     \]
 \end{itemize}
+\subsection*{Osservazione. Ordine di annullamento di una funzione derivabile.}
+Se $f$ è una funzione derivabile in un intervallo $I$, la formula di Taylor ci dice che se $f$ si annulla in un punto $\alpha \in I$, si annulla almeno del prim'ordine. Precisamente poichè
+\[
+    f(x) - f(\alpha) = f'(\alpha)(x-\alpha) + o(x-\alpha)
+\]
+se $f'(\alpha) \neq 0$ allora $f$ ha uno zero del prim'ordine in $\alpha$. Se $f'(\alpha) = 0$ ma, ad esempio, $f''(\alpha) \neq 0$, si può concludere che $f$ si annulla del $2^0$ ordine, e così via. In ogni caso non può annullarsi di un ordine inore di $1$.
 \subsection*{FUNZIONI INTEGRALI}
 \textbf{teor.} Secondo teorema fondamentale del calcolo integrale \newline
 Sia $f: [a,b] \rightarrow \mathbb{R}$ una funzione integrabile e sia $x_0 \in [a,b]$ e sia 
@@ -543,5 +554,9 @@ Conseguenze:
     \item se $f$ è continua, $F$ è derivabile con continuità
     \item se $f$ è continua e derivabile con continuità, anche $F'$ è derivabile con continuità, quindi $F$ è due volte derivabile con continuità. Iterando: la funzione integrale ha sempre un grado di regolarità in più rispetto alla funzione integranda
     \item ogni fuzione continua su $I$ ha una primitiva su $I$
+\end{itemize}
+Logica degli esercizi:
+\begin{itemize}
+    \item vedere dove la funzione è illimitata
 \end{itemize}
 \end{document}
