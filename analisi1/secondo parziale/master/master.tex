@@ -555,8 +555,51 @@ Conseguenze:
     \item se $f$ è continua e derivabile con continuità, anche $F'$ è derivabile con continuità, quindi $F$ è due volte derivabile con continuità. Iterando: la funzione integrale ha sempre un grado di regolarità in più rispetto alla funzione integranda
     \item ogni fuzione continua su $I$ ha una primitiva su $I$
 \end{itemize}
-Logica degli esercizi:
+Logica degli esercizi in cui bisogna trovare l'intervallo di definizione:
+\[
+    F(x) = \int_{x_0}^{x}f(x)dx
+\]
 \begin{itemize}
-    \item vedere dove la funzione è illimitata
+    \item lo scopo è determinare dove la funzione integranda è integrabile.
+    \item Vedere dove la funzione integranda è continua, una funzione continua è integrabile. Analizzare i punti di discontinuità:
+    \item Se una funzione ha un numero finito di discontinuità limitate in un intervallo, allora è integrabile in quell'intervallo. In poche parole se è una discontinuità a salto è integrabile.
+    \item Per gli altri punti di discontinuità la funzione integranda è illimitat, quindi bisogna studiarla (con i criteri del confronto, del confronto asintotico, col teorema del modulo, calcolando effettivamente la primitiva e il limite, o riducendosi al caso particolare delle funzioni non limitate con gli asintotici o gli sviluppi di Taylor).
+    \item Se la funzione itegranda non è integrabile nel punto $x_0$ (intendo quello di $\int_{x_0}^{x}$) allora l'insieme di definizione di $F$ è vuoto.
 \end{itemize}
+Logica degli esercizi sulla regolarità delle funzioni integrali:
+\[
+    F(x) = \int_{x_0}^{x} f(x)dx
+\]
+\begin{itemize}
+    \item si determina l'insieme di definizione. (vedi sopra)
+    \item per determinare i punti di non derivabilità di $F(x)$ studiamo la sua derivata $F'(x) = f(x)$. I punti di non derivabilità sono quelli quelli dove $f(x)$ non è definita, e in $F(x)$ corrispondono a:
+    \begin{itemize}
+        \item discontinuità a salto in $f$ è un punto angoloso in $F$
+        \item punti di asintoto verticale di $f$ sono cuspidi (verso l'alto o il basso) o flessi a tangente verticale (ascendente o discendente) di $F$
+    \end{itemize}
+    \item Notiamo che tangenti verticali o discontinuità a salto o buchi nella funzione di $F$ non possono essere presenti nel dominio di $F$, perchè essendo punti di discontinuità non sono derivabili e dunque non presenti nell'intervallo di integrazione di $f$.\newline
+    Dunque la funzione $F$ è (sempre) continua nel suo intervallo di definizione.
+\end{itemize}
+Logica degli esercizi sui grafici qualitativi della funzione integrale $F(x)$ a partire dalla funzione integranda $g(x)$
+\begin{itemize}
+    \item $F$ è crescente sugli intervalli in cui $g$ è positiva, $F$ è decrescente sugli intervalli in cui $g$ è negativa.
+    \item punti in cui $g$ incrocia l'asse delle $x$ sono punti di massimo o minimo
+    \item discontinuità a salto in $g$ sono punti angolosi
+    \item $F$ è concava verso l'alto (il basso) negli intervalli in cui $g$ è crescente (decrescente)
+    \item punti di cambio massimo e minimo in $g$ sono punti di cambio di concavità in $F$
+\end{itemize}
+Limite all'infinito di una funzione integrale:
+\[
+    \lim_{x\rightarrow +\infty}F(x) = \; integrale \;\;generalizzato \;\;= \int_{x_0}^{+\infty}f(t)dt
+\]
+se l'integrale generallizzato converge esiste limite finito (anche se non si riesce a calcolare), se non converge o è divergente o non esiste.\newline
+Caso particolare è quello in cui $f(t) \rightarrow m$, costante non nulla, per cui $F(x) \sim  mx$. Quindi $F(x)$ tende a infinito con crescita lineare e potrebbe avere asintoto obliquo calcolabile come 
+\[
+    \lim_{x\rightarrow \infty}[F(x)-mx] = \lim_{x\rightarrow \infty}\int_{x_0}^{x}[f(t)-m]dt + mx_0
+\]
+Ossia esiste asintoto obliquo se l'integrale generalizzato
+\[
+    \int_{x_0}^{\infty}[f(t)-m]dt
+\]
+converge.
 \end{document}

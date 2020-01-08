@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1578443009 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" "master" 1578443011
+["pdflatex"] 1578454091 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" "master" 1578454094
   "../preamble/preamble.tex" 1578071089 483 16362a825726d3bbf9be851175ad5f63 ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux" 1578443011 108 cfbb92b024ac1000ea30bced8de47f1d ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" 1578443007 22632 166def4eadc70b57e931b691d18139ae ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux" 1578454094 108 cfbb92b024ac1000ea30bced8de47f1d ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.tex" 1578454089 26007 2c36d48411a1dd2399828605a9f279e1 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570201114 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570199013 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1570199013 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -98,11 +98,11 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1570205488 4694128 59e2d353f4dc7ded0243f5180e559ac1 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570205581 4261151 6e9769eabb4d92bbc917c56b8660c752 ""
   "c:/texlive/2019/texmf.cnf" 1570205462 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1578443011 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
-  "master.tex" 1578443007 22632 166def4eadc70b57e931b691d18139ae ""
+  "master.aux" 1578454094 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
+  "master.tex" 1578454089 26007 2c36d48411a1dd2399828605a9f279e1 ""
   (generated)
   "master.aux"
   "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.log"
-  "master.pdf"
   "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf"
+  "master.pdf"
   "master.log"
