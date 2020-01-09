@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  9 JAN 2020 03:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  9 JAN 2020 03:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -420,245 +420,151 @@ Overfull \hbox (0.11873pt too wide) detected at line 564
 [] \OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[] = [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 ] = [] []\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] \OMS/cmss/m/n/10 j\OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OMS/cmss/m/n/10 j\OML/cmm/m/it/10 dx
  []
 
-[10] [11] [12] [13]
-<../dim/Rolle.PNG, id=59, 475.02469pt x 545.03625pt>
+[10] [11] [12] [13] [14]
+<../dim/Rolle.PNG, id=62, 475.02469pt x 545.03625pt>
 File: ../dim/Rolle.PNG Graphic file (type png)
 <use ../dim/Rolle.PNG>
-Package pdftex.def Info: ../dim/Rolle.PNG  used on input line 796.
+Package pdftex.def Info: ../dim/Rolle.PNG  used on input line 797.
 (pdftex.def)             Requested size: 423.94608pt x 486.45297pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/lagrange.PNG, id=61, 697.10437pt x 536.75531pt>
+ [15 <../dim/Rolle.PNG>]
+<../dim/lagrange.PNG, id=68, 697.10437pt x 536.75531pt>
 File: ../dim/lagrange.PNG Graphic file (type png)
 <use ../dim/lagrange.PNG>
-Package pdftex.def Info: ../dim/lagrange.PNG  used on input line 806.
+Package pdftex.def Info: ../dim/lagrange.PNG  used on input line 808.
 (pdftex.def)             Requested size: 423.94608pt x 326.42923pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/monotonia1.PNG, id=62, 804.75656pt x 114.4275pt>
+ [16 <../dim/Lagrange.PNG>]
+<../dim/monotonia1.PNG, id=73, 804.75656pt x 114.4275pt>
 File: ../dim/monotonia1.PNG Graphic file (type png)
 <use ../dim/monotonia1.PNG>
-Package pdftex.def Info: ../dim/monotonia1.PNG  used on input line 819.
+Package pdftex.def Info: ../dim/monotonia1.PNG  used on input line 822.
 (pdftex.def)             Requested size: 423.94608pt x 60.27962pt.
-<../dim/monotonia2.PNG, id=63, 817.55438pt x 362.85562pt>
+<../dim/monotonia2.PNG, id=74, 817.55438pt x 362.85562pt>
 File: ../dim/monotonia2.PNG Graphic file (type png)
 <use ../dim/monotonia2.PNG>
-Package pdftex.def Info: ../dim/monotonia2.PNG  used on input line 822.
+Package pdftex.def Info: ../dim/monotonia2.PNG  used on input line 825.
 (pdftex.def)             Requested size: 423.94608pt x 188.16002pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 816--825
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/cauchy.PNG, id=64, 453.19313pt x 635.37375pt>
+ [17 <../dim/monotonia1.PNG> <../dim/monotonia2.PNG>]
+<../dim/cauchy.PNG, id=80, 453.19313pt x 635.37375pt>
 File: ../dim/cauchy.PNG Graphic file (type png)
 <use ../dim/cauchy.PNG>
-Package pdftex.def Info: ../dim/cauchy.PNG  used on input line 827.
+Package pdftex.def Info: ../dim/cauchy.PNG  used on input line 830.
 (pdftex.def)             Requested size: 423.94608pt x 594.37198pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14] [15 <../dim/Rolle.PNG>] [16 <../dim/Lagrange.PNG> <../dim/monotonia1.PNG> <../dim/monotonia2.PNG>]
-<../dim/taylorpeano1.PNG, id=78, 339.51843pt x 712.16063pt>
+ [18 <../dim/cauchy.PNG>] [19]
+<../dim/taylorpeano1.PNG, id=89, 339.51843pt x 712.16063pt>
 File: ../dim/taylorpeano1.PNG Graphic file (type png)
 <use ../dim/taylorpeano1.PNG>
-Package pdftex.def Info: ../dim/taylorpeano1.PNG  used on input line 872.
-(pdftex.def)             Requested size: 423.94608pt x 889.29668pt.
-
-
-LaTeX Warning: Float too large for page by 160.90611pt on input line 873.
-
-[17 <../dim/cauchy.PNG>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/taylorpeano2.PNG, id=83, 335.75438pt x 697.8572pt>
+Package pdftex.def Info: ../dim/taylorpeano1.PNG  used on input line 877.
+(pdftex.def)             Requested size: 301.1261pt x 631.6585pt.
+ [20 <../dim/taylorpeano1.PNG>]
+<../dim/taylorpeano2.PNG, id=94, 335.75438pt x 697.8572pt>
 File: ../dim/taylorpeano2.PNG Graphic file (type png)
 <use ../dim/taylorpeano2.PNG>
-Package pdftex.def Info: ../dim/taylorpeano2.PNG  used on input line 875.
-(pdftex.def)             Requested size: 423.94608pt x 881.1682pt.
-
-LaTeX Warning: Float too large for page by 152.77763pt on input line 876.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/taylorpeano3.PNG, id=84, 323.70938pt x 439.6425pt>
+Package pdftex.def Info: ../dim/taylorpeano2.PNG  used on input line 881.
+(pdftex.def)             Requested size: 301.1261pt x 625.88274pt.
+ [21 <../dim/taylorpeano2.PNG>]
+<../dim/taylorpeano3.PNG, id=99, 323.70938pt x 439.6425pt>
 File: ../dim/taylorpeano3.PNG Graphic file (type png)
 <use ../dim/taylorpeano3.PNG>
-Package pdftex.def Info: ../dim/taylorpeano3.PNG  used on input line 878.
-(pdftex.def)             Requested size: 423.94608pt x 575.81514pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/taylorlagrange1.PNG, id=85, 621.07031pt x 173.89969pt>
+Package pdftex.def Info: ../dim/taylorpeano3.PNG  used on input line 885.
+(pdftex.def)             Requested size: 301.1261pt x 408.99747pt.
+ [22 <../dim/taylorpeano3.PNG>]
+<../dim/taylorlagrange1.PNG, id=104, 621.07031pt x 173.89969pt>
 File: ../dim/taylorlagrange1.PNG Graphic file (type png)
 <use ../dim/taylorlagrange1.PNG>
-Package pdftex.def Info: ../dim/taylorlagrange1.PNG  used on input line 883.
+Package pdftex.def Info: ../dim/taylorlagrange1.PNG  used on input line 891.
 (pdftex.def)             Requested size: 423.94608pt x 118.70395pt.
-<../dim/taylorlagrange2.PNG, id=86, 410.2828pt x 613.54219pt>
+<../dim/taylorlagrange2.PNG, id=105, 410.2828pt x 613.54219pt>
 File: ../dim/taylorlagrange2.PNG Graphic file (type png)
 <use ../dim/taylorlagrange2.PNG>
-Package pdftex.def Info: ../dim/taylorlagrange2.PNG  used on input line 887.
-(pdftex.def)             Requested size: 423.94608pt x 633.96832pt.
+Package pdftex.def Info: ../dim/taylorlagrange2.PNG  used on input line 895.
+(pdftex.def)             Requested size: 301.1261pt x 450.30681pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--890
+Underfull \hbox (badness 10000) in paragraph at lines 889--898
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/integrale1.PNG, id=87, 710.655pt x 129.48375pt>
+[23 <../dim/taylorlagrange1.PNG> <../dim/taylorlagrange2.PNG>]
+<../dim/integrale1.PNG, id=111, 710.655pt x 129.48375pt>
 File: ../dim/integrale1.PNG Graphic file (type png)
 <use ../dim/integrale1.PNG>
-Package pdftex.def Info: ../dim/integrale1.PNG  used on input line 892.
+Package pdftex.def Info: ../dim/integrale1.PNG  used on input line 901.
 (pdftex.def)             Requested size: 423.94608pt x 77.24629pt.
-<../dim/integrale2.PNG, id=88, 785.18344pt x 49.68562pt>
+<../dim/integrale2.PNG, id=112, 785.18344pt x 49.68562pt>
 File: ../dim/integrale2.PNG Graphic file (type png)
 <use ../dim/integrale2.PNG>
-Package pdftex.def Info: ../dim/integrale2.PNG  used on input line 896.
+Package pdftex.def Info: ../dim/integrale2.PNG  used on input line 905.
 (pdftex.def)             Requested size: 423.94608pt x 26.82756pt.
-<../dim/integrale3.PNG, id=89, 778.40813pt x 582.67688pt>
+<../dim/integrale3.PNG, id=113, 778.40813pt x 582.67688pt>
 File: ../dim/integrale3.PNG Graphic file (type png)
 <use ../dim/integrale3.PNG>
-Package pdftex.def Info: ../dim/integrale3.PNG  used on input line 899.
+Package pdftex.def Info: ../dim/integrale3.PNG  used on input line 908.
 (pdftex.def)             Requested size: 423.94608pt x 317.35255pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 891--902
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/convserie.PNG, id=90, 635.37375pt x 593.21625pt>
+ [24 <../dim/integrale1.PNG> <../dim/integrale2.PNG> <../dim/integrale3.PNG>]
+<../dim/convserie.PNG, id=120, 635.37375pt x 593.21625pt>
 File: ../dim/convserie.PNG Graphic file (type png)
 <use ../dim/convserie.PNG>
-Package pdftex.def Info: ../dim/convserie.PNG  used on input line 903.
+Package pdftex.def Info: ../dim/convserie.PNG  used on input line 912.
 (pdftex.def)             Requested size: 423.94608pt x 395.83257pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/rapporto1.PNG, id=91, 554.07pt x 121.95563pt>
+ [25 <../dim/convserie.PNG>]
+<../dim/rapporto1.PNG, id=126, 554.07pt x 121.95563pt>
 File: ../dim/rapporto1.PNG Graphic file (type png)
 <use ../dim/rapporto1.PNG>
-Package pdftex.def Info: ../dim/rapporto1.PNG  used on input line 907.
+Package pdftex.def Info: ../dim/rapporto1.PNG  used on input line 917.
 (pdftex.def)             Requested size: 423.94608pt x 93.31433pt.
-<../dim/rapporto2.PNG, id=92, 768.62157pt x 569.87906pt>
+<../dim/rapporto2.PNG, id=127, 768.62157pt x 569.87906pt>
 File: ../dim/rapporto2.PNG Graphic file (type png)
 <use ../dim/rapporto2.PNG>
-Package pdftex.def Info: ../dim/rapporto2.PNG  used on input line 911.
+Package pdftex.def Info: ../dim/rapporto2.PNG  used on input line 921.
 (pdftex.def)             Requested size: 423.94608pt x 314.3301pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 906--914
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/confronto1.PNG, id=93, 568.37344pt x 79.04532pt>
+ [26 <../dim/rapporto1.PNG> <../dim/rapporto2.PNG>]
+<../dim/confronto1.PNG, id=133, 568.37344pt x 79.04532pt>
 File: ../dim/confronto1.PNG Graphic file (type png)
 <use ../dim/confronto1.PNG>
-Package pdftex.def Info: ../dim/confronto1.PNG  used on input line 916.
+Package pdftex.def Info: ../dim/confronto1.PNG  used on input line 926.
 (pdftex.def)             Requested size: 423.94608pt x 58.96178pt.
-<../dim/confronto2.PNG, id=94, 596.98032pt x 118.94438pt>
+<../dim/confronto2.PNG, id=134, 596.98032pt x 118.94438pt>
 File: ../dim/confronto2.PNG Graphic file (type png)
 <use ../dim/confronto2.PNG>
-Package pdftex.def Info: ../dim/confronto2.PNG  used on input line 919.
+Package pdftex.def Info: ../dim/confronto2.PNG  used on input line 929.
 (pdftex.def)             Requested size: 423.94608pt x 84.46924pt.
-<../dim/confronto3.PNG, id=95, 772.38562pt x 325.215pt>
+<../dim/confronto3.PNG, id=135, 772.38562pt x 325.215pt>
 File: ../dim/confronto3.PNG Graphic file (type png)
 <use ../dim/confronto3.PNG>
-Package pdftex.def Info: ../dim/confronto3.PNG  used on input line 923.
+Package pdftex.def Info: ../dim/confronto3.PNG  used on input line 933.
 (pdftex.def)             Requested size: 423.94608pt x 178.50159pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 915--926
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/radice1.PNG, id=96, 553.31718pt x 116.68594pt>
+ [27 <../dim/confronto1.PNG> <../dim/confronto2.PNG> <../dim/confronto3.PNG>]
+<../dim/radice1.PNG, id=142, 553.31718pt x 116.68594pt>
 File: ../dim/radice1.PNG Graphic file (type png)
 <use ../dim/radice1.PNG>
-Package pdftex.def Info: ../dim/radice1.PNG  used on input line 928.
+Package pdftex.def Info: ../dim/radice1.PNG  used on input line 938.
 (pdftex.def)             Requested size: 423.94608pt x 89.4033pt.
-<../dim/radice2.PNG, id=97, 685.05937pt x 243.15843pt>
+<../dim/radice2.PNG, id=143, 685.05937pt x 243.15843pt>
 File: ../dim/radice2.PNG Graphic file (type png)
 <use ../dim/radice2.PNG>
-Package pdftex.def Info: ../dim/radice2.PNG  used on input line 932.
+Package pdftex.def Info: ../dim/radice2.PNG  used on input line 942.
 (pdftex.def)             Requested size: 423.94608pt x 150.4821pt.
-<../dim/radice3.PNG, id=98, 767.86874pt x 300.3722pt>
+<../dim/radice3.PNG, id=144, 767.86874pt x 300.3722pt>
 File: ../dim/radice3.PNG Graphic file (type png)
 <use ../dim/radice3.PNG>
-Package pdftex.def Info: ../dim/radice3.PNG  used on input line 936.
+Package pdftex.def Info: ../dim/radice3.PNG  used on input line 946.
 (pdftex.def)             Requested size: 423.94608pt x 165.84229pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 927--939
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../dim/eulero1.PNG, id=99, 383.18156pt x 51.94406pt>
+ [28 <../dim/radice1.PNG> <../dim/radice2.PNG> <../dim/radice3.PNG>]
+<../dim/eulero1.PNG, id=151, 383.18156pt x 51.94406pt>
 File: ../dim/eulero1.PNG Graphic file (type png)
 <use ../dim/eulero1.PNG>
-Package pdftex.def Info: ../dim/eulero1.PNG  used on input line 942.
+Package pdftex.def Info: ../dim/eulero1.PNG  used on input line 952.
 (pdftex.def)             Requested size: 423.94608pt x 57.4731pt.
-<../dim/eulero2.PNG, id=100, 1135.99406pt x 587.94656pt>
+<../dim/eulero2.PNG, id=152, 1135.99406pt x 587.94656pt>
 File: ../dim/eulero2.PNG Graphic file (type png)
 <use ../dim/eulero2.PNG>
-Package pdftex.def Info: ../dim/eulero2.PNG  used on input line 946.
+Package pdftex.def Info: ../dim/eulero2.PNG  used on input line 956.
 (pdftex.def)             Requested size: 423.94608pt x 219.42079pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 940--949
+Underfull \hbox (badness 10000) in paragraph at lines 950--959
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[18] [19 <../dim/taylorpeano1.PNG>] [20 <../dim/taylorpeano2.PNG>] [21 <../dim/taylorpeano3.PNG> <../dim/taylorlagrange1.PNG>] [22 <../dim/taylorlagrange2.PNG> <../dim/integrale1.PNG>] [23 <../dim/integrale2.PNG> <../dim/integrale3.PNG>] [24 <../dim/convserie.PNG> <../dim/rapporto1.PNG>] [25 <../dim/rapporto2.PNG> <../dim/confronto1.PNG> <../dim/confronto2.PNG> <../dim/confronto3.PNG>] [26 <../dim/radice1.PNG> <../dim/radice2.PNG> <../dim/radice3.PNG> <../dim/eulero1.PNG> <../dim/eulero2.PNG>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux)
+[29 <../dim/eulero1.PNG> <../dim/eulero2.PNG>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -672,10 +578,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  41i,13n,39p,896b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" (26 pages, 3133277 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" (29 pages, 3134479 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
+ 207 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
