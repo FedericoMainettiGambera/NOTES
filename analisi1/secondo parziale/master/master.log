@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  8 JAN 2020 04:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  9 JAN 2020 03:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,62 +339,343 @@ Overfull \hbox (53.64177pt too wide) detected at line 59
 [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (62.67398pt too wide) detected at line 180
-[] \OML/cmm/m/it/10 sin[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con cos[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 sin[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) + \OML/cmm/m/it/10 c
+Underfull \hbox (badness 10000) in paragraph at lines 162--170
+
  []
 
 
-Overfull \hbox (62.40129pt too wide) detected at line 183
+Underfull \hbox (badness 10000) in paragraph at lines 162--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--170
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 171.
+LaTeX Font Info:    No file OMScmss.fd. on input line 171.
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 171.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--213
+
+ []
+
+[3] [4]
+Overfull \hbox (62.67398pt too wide) detected at line 300
+[] \OML/cmm/m/it/10 sin[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con cos[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 sin[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 x \OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) + \OML/cmm/m/it/10 c
+ []
+
+
+Overfull \hbox (62.40129pt too wide) detected at line 303
 [] \OML/cmm/m/it/10 cos[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con cos[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 sin[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) + \OML/cmm/m/it/10 c
  []
 
 
-Overfull \hbox (40.08517pt too wide) detected at line 192
-[] \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 c
+Overfull \hbox (40.08517pt too wide) detected at line 312
+[] \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmss/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 c
  []
 
 
-Overfull \hbox (58.35646pt too wide) detected at line 195
-[] \OML/cmm/m/it/10 Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) + \OML/cmm/m/it/10 c
+Overfull \hbox (58.35646pt too wide) detected at line 315
+[] \OML/cmm/m/it/10 Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) + \OML/cmm/m/it/10 c
  []
 
-[3]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 279.
-LaTeX Font Info:    No file OMScmss.fd. on input line 279.
-
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 279.
-
-[4] [5] [6]
-Overfull \hbox (14.84547pt too wide) detected at line 438
+[5] [6] [7] [8]
+Overfull \hbox (14.84547pt too wide) detected at line 558
 [] \OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 ] = [] []\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] \OMS/cmss/m/n/10 j\OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OMS/cmss/m/n/10 j\OML/cmm/m/it/10 dx
  []
 
-
-Overfull \hbox (0.11873pt too wide) detected at line 444
+[9]
+Overfull \hbox (0.11873pt too wide) detected at line 564
 [] \OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[] = [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 ] = [] []\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] \OMS/cmss/m/n/10 j\OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OMS/cmss/m/n/10 j\OML/cmm/m/it/10 dx
  []
 
-[7] [8] [9] [10] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux)
+[10] [11] [12] [13]
+<../dim/Rolle.PNG, id=59, 475.02469pt x 545.03625pt>
+File: ../dim/Rolle.PNG Graphic file (type png)
+<use ../dim/Rolle.PNG>
+Package pdftex.def Info: ../dim/Rolle.PNG  used on input line 796.
+(pdftex.def)             Requested size: 423.94608pt x 486.45297pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/lagrange.PNG, id=61, 697.10437pt x 536.75531pt>
+File: ../dim/lagrange.PNG Graphic file (type png)
+<use ../dim/lagrange.PNG>
+Package pdftex.def Info: ../dim/lagrange.PNG  used on input line 806.
+(pdftex.def)             Requested size: 423.94608pt x 326.42923pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/monotonia1.PNG, id=62, 804.75656pt x 114.4275pt>
+File: ../dim/monotonia1.PNG Graphic file (type png)
+<use ../dim/monotonia1.PNG>
+Package pdftex.def Info: ../dim/monotonia1.PNG  used on input line 819.
+(pdftex.def)             Requested size: 423.94608pt x 60.27962pt.
+<../dim/monotonia2.PNG, id=63, 817.55438pt x 362.85562pt>
+File: ../dim/monotonia2.PNG Graphic file (type png)
+<use ../dim/monotonia2.PNG>
+Package pdftex.def Info: ../dim/monotonia2.PNG  used on input line 822.
+(pdftex.def)             Requested size: 423.94608pt x 188.16002pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--825
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/cauchy.PNG, id=64, 453.19313pt x 635.37375pt>
+File: ../dim/cauchy.PNG Graphic file (type png)
+<use ../dim/cauchy.PNG>
+Package pdftex.def Info: ../dim/cauchy.PNG  used on input line 827.
+(pdftex.def)             Requested size: 423.94608pt x 594.37198pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14] [15 <../dim/Rolle.PNG>] [16 <../dim/Lagrange.PNG> <../dim/monotonia1.PNG> <../dim/monotonia2.PNG>]
+<../dim/taylorpeano1.PNG, id=78, 339.51843pt x 712.16063pt>
+File: ../dim/taylorpeano1.PNG Graphic file (type png)
+<use ../dim/taylorpeano1.PNG>
+Package pdftex.def Info: ../dim/taylorpeano1.PNG  used on input line 872.
+(pdftex.def)             Requested size: 423.94608pt x 889.29668pt.
+
+
+LaTeX Warning: Float too large for page by 160.90611pt on input line 873.
+
+[17 <../dim/cauchy.PNG>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/taylorpeano2.PNG, id=83, 335.75438pt x 697.8572pt>
+File: ../dim/taylorpeano2.PNG Graphic file (type png)
+<use ../dim/taylorpeano2.PNG>
+Package pdftex.def Info: ../dim/taylorpeano2.PNG  used on input line 875.
+(pdftex.def)             Requested size: 423.94608pt x 881.1682pt.
+
+LaTeX Warning: Float too large for page by 152.77763pt on input line 876.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/taylorpeano3.PNG, id=84, 323.70938pt x 439.6425pt>
+File: ../dim/taylorpeano3.PNG Graphic file (type png)
+<use ../dim/taylorpeano3.PNG>
+Package pdftex.def Info: ../dim/taylorpeano3.PNG  used on input line 878.
+(pdftex.def)             Requested size: 423.94608pt x 575.81514pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/taylorlagrange1.PNG, id=85, 621.07031pt x 173.89969pt>
+File: ../dim/taylorlagrange1.PNG Graphic file (type png)
+<use ../dim/taylorlagrange1.PNG>
+Package pdftex.def Info: ../dim/taylorlagrange1.PNG  used on input line 883.
+(pdftex.def)             Requested size: 423.94608pt x 118.70395pt.
+<../dim/taylorlagrange2.PNG, id=86, 410.2828pt x 613.54219pt>
+File: ../dim/taylorlagrange2.PNG Graphic file (type png)
+<use ../dim/taylorlagrange2.PNG>
+Package pdftex.def Info: ../dim/taylorlagrange2.PNG  used on input line 887.
+(pdftex.def)             Requested size: 423.94608pt x 633.96832pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 881--890
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/integrale1.PNG, id=87, 710.655pt x 129.48375pt>
+File: ../dim/integrale1.PNG Graphic file (type png)
+<use ../dim/integrale1.PNG>
+Package pdftex.def Info: ../dim/integrale1.PNG  used on input line 892.
+(pdftex.def)             Requested size: 423.94608pt x 77.24629pt.
+<../dim/integrale2.PNG, id=88, 785.18344pt x 49.68562pt>
+File: ../dim/integrale2.PNG Graphic file (type png)
+<use ../dim/integrale2.PNG>
+Package pdftex.def Info: ../dim/integrale2.PNG  used on input line 896.
+(pdftex.def)             Requested size: 423.94608pt x 26.82756pt.
+<../dim/integrale3.PNG, id=89, 778.40813pt x 582.67688pt>
+File: ../dim/integrale3.PNG Graphic file (type png)
+<use ../dim/integrale3.PNG>
+Package pdftex.def Info: ../dim/integrale3.PNG  used on input line 899.
+(pdftex.def)             Requested size: 423.94608pt x 317.35255pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 891--902
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/convserie.PNG, id=90, 635.37375pt x 593.21625pt>
+File: ../dim/convserie.PNG Graphic file (type png)
+<use ../dim/convserie.PNG>
+Package pdftex.def Info: ../dim/convserie.PNG  used on input line 903.
+(pdftex.def)             Requested size: 423.94608pt x 395.83257pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/rapporto1.PNG, id=91, 554.07pt x 121.95563pt>
+File: ../dim/rapporto1.PNG Graphic file (type png)
+<use ../dim/rapporto1.PNG>
+Package pdftex.def Info: ../dim/rapporto1.PNG  used on input line 907.
+(pdftex.def)             Requested size: 423.94608pt x 93.31433pt.
+<../dim/rapporto2.PNG, id=92, 768.62157pt x 569.87906pt>
+File: ../dim/rapporto2.PNG Graphic file (type png)
+<use ../dim/rapporto2.PNG>
+Package pdftex.def Info: ../dim/rapporto2.PNG  used on input line 911.
+(pdftex.def)             Requested size: 423.94608pt x 314.3301pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 906--914
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/confronto1.PNG, id=93, 568.37344pt x 79.04532pt>
+File: ../dim/confronto1.PNG Graphic file (type png)
+<use ../dim/confronto1.PNG>
+Package pdftex.def Info: ../dim/confronto1.PNG  used on input line 916.
+(pdftex.def)             Requested size: 423.94608pt x 58.96178pt.
+<../dim/confronto2.PNG, id=94, 596.98032pt x 118.94438pt>
+File: ../dim/confronto2.PNG Graphic file (type png)
+<use ../dim/confronto2.PNG>
+Package pdftex.def Info: ../dim/confronto2.PNG  used on input line 919.
+(pdftex.def)             Requested size: 423.94608pt x 84.46924pt.
+<../dim/confronto3.PNG, id=95, 772.38562pt x 325.215pt>
+File: ../dim/confronto3.PNG Graphic file (type png)
+<use ../dim/confronto3.PNG>
+Package pdftex.def Info: ../dim/confronto3.PNG  used on input line 923.
+(pdftex.def)             Requested size: 423.94608pt x 178.50159pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 915--926
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/radice1.PNG, id=96, 553.31718pt x 116.68594pt>
+File: ../dim/radice1.PNG Graphic file (type png)
+<use ../dim/radice1.PNG>
+Package pdftex.def Info: ../dim/radice1.PNG  used on input line 928.
+(pdftex.def)             Requested size: 423.94608pt x 89.4033pt.
+<../dim/radice2.PNG, id=97, 685.05937pt x 243.15843pt>
+File: ../dim/radice2.PNG Graphic file (type png)
+<use ../dim/radice2.PNG>
+Package pdftex.def Info: ../dim/radice2.PNG  used on input line 932.
+(pdftex.def)             Requested size: 423.94608pt x 150.4821pt.
+<../dim/radice3.PNG, id=98, 767.86874pt x 300.3722pt>
+File: ../dim/radice3.PNG Graphic file (type png)
+<use ../dim/radice3.PNG>
+Package pdftex.def Info: ../dim/radice3.PNG  used on input line 936.
+(pdftex.def)             Requested size: 423.94608pt x 165.84229pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 927--939
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../dim/eulero1.PNG, id=99, 383.18156pt x 51.94406pt>
+File: ../dim/eulero1.PNG Graphic file (type png)
+<use ../dim/eulero1.PNG>
+Package pdftex.def Info: ../dim/eulero1.PNG  used on input line 942.
+(pdftex.def)             Requested size: 423.94608pt x 57.4731pt.
+<../dim/eulero2.PNG, id=100, 1135.99406pt x 587.94656pt>
+File: ../dim/eulero2.PNG Graphic file (type png)
+<use ../dim/eulero2.PNG>
+Package pdftex.def Info: ../dim/eulero2.PNG  used on input line 946.
+(pdftex.def)             Requested size: 423.94608pt x 219.42079pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 940--949
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18] [19 <../dim/taylorpeano1.PNG>] [20 <../dim/taylorpeano2.PNG>] [21 <../dim/taylorpeano3.PNG> <../dim/taylorlagrange1.PNG>] [22 <../dim/taylorlagrange2.PNG> <../dim/integrale1.PNG>] [23 <../dim/integrale2.PNG> <../dim/integrale3.PNG>] [24 <../dim/convserie.PNG> <../dim/rapporto1.PNG>] [25 <../dim/rapporto2.PNG> <../dim/confronto1.PNG> <../dim/confronto2.PNG> <../dim/confronto3.PNG>] [26 <../dim/radice1.PNG> <../dim/radice2.PNG> <../dim/radice3.PNG> <../dim/eulero1.PNG> <../dim/eulero2.PNG>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5197 strings out of 492609
- 71152 string characters out of 6132818
+ 5320 strings out of 492609
+ 73914 string characters out of 6132818
  171684 words of memory out of 5000000
- 8997 multiletter control sequences out of 15000+600000
+ 9094 multiletter control sequences out of 15000+600000
  11184 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,39p,896b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,39p,896b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" (10 pages, 170322 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" (26 pages, 3133277 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 198 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
