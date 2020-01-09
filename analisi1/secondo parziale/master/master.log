@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  9 JAN 2020 03:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  9 JAN 2020 03:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -327,261 +327,295 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 5.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (54.79594pt too wide) detected at line 56
+Overfull \hbox (54.79594pt too wide) detected at line 50
 \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 SettCh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )) = []    \OML/cmm/m/it/10 ottenuta da \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = []] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 SettCh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )]
  []
 
 
-Overfull \hbox (53.64177pt too wide) detected at line 59
+Overfull \hbox (53.64177pt too wide) detected at line 53
 \OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 SettSh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )) = []    \OML/cmm/m/it/10 ottenuta da \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = []] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 SettSh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )]
  []
 
+<../dim/trigonometria.PNG, id=1, 510.40688pt x 484.05844pt>
+File: ../dim/trigonometria.PNG Graphic file (type png)
+<use ../dim/trigonometria.PNG>
+Package pdftex.def Info: ../dim/trigonometria.PNG  used on input line 91.
+(pdftex.def)             Requested size: 301.1261pt x 285.592pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 162--170
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<../dim/asintotici.PNG, id=17, 809.27344pt x 296.60812pt>
+File: ../dim/asintotici.PNG Graphic file (type png)
+<use ../dim/asintotici.PNG>
+Package pdftex.def Info: ../dim/asintotici.PNG  used on input line 96.
+(pdftex.def)             Requested size: 423.94608pt x 155.38214pt.
+ [2 <../dim/trigonometria.PNG> <../dim/asintotici.PNG>]
+<../dim/derivate1.PNG, id=23, 533.74406pt x 697.10437pt>
+File: ../dim/derivate1.PNG Graphic file (type png)
+<use ../dim/derivate1.PNG>
+Package pdftex.def Info: ../dim/derivate1.PNG  used on input line 101.
+(pdftex.def)             Requested size: 423.94608pt x 553.71667pt.
+ [3 <../dim/derivate1.PNG>]
+<../dim/derivate2.PNG, id=28, 531.48563pt x 360.59718pt>
+File: ../dim/derivate2.PNG Graphic file (type png)
+<use ../dim/derivate2.PNG>
+Package pdftex.def Info: ../dim/derivate2.PNG  used on input line 105.
+(pdftex.def)             Requested size: 423.94608pt x 287.64178pt.
+ [4 <../dim/derivate2.PNG>]
+<../dim/mclaurin.PNG, id=33, 499.8675pt x 648.92438pt>
+File: ../dim/mclaurin.PNG Graphic file (type png)
+<use ../dim/mclaurin.PNG>
+Package pdftex.def Info: ../dim/mclaurin.PNG  used on input line 110.
+(pdftex.def)             Requested size: 423.94608pt x 550.38031pt.
+ [5 <../dim/mclaurin.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 173--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--170
+Underfull \hbox (badness 10000) in paragraph at lines 173--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--170
+Underfull \hbox (badness 10000) in paragraph at lines 173--181
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 171.
-LaTeX Font Info:    No file OMScmss.fd. on input line 171.
+[6]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 182.
+LaTeX Font Info:    No file OMScmss.fd. on input line 182.
+
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 171.
+(Font)              for symbol `textbullet' on input line 182.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--199
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--213
+Underfull \hbox (badness 10000) in paragraph at lines 206--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--213
+Underfull \hbox (badness 10000) in paragraph at lines 212--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--213
+Underfull \hbox (badness 10000) in paragraph at lines 212--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--213
+Underfull \hbox (badness 10000) in paragraph at lines 212--224
 
  []
 
-[3] [4]
-Overfull \hbox (62.67398pt too wide) detected at line 300
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--224
+
+ []
+
+[7] [8]
+Overfull \hbox (62.67398pt too wide) detected at line 311
 [] \OML/cmm/m/it/10 sin[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con cos[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 sin[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 x \OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) + \OML/cmm/m/it/10 c
  []
 
 
-Overfull \hbox (62.40129pt too wide) detected at line 303
+Overfull \hbox (62.40129pt too wide) detected at line 314
 [] \OML/cmm/m/it/10 cos[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con cos[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 sin[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) + \OML/cmm/m/it/10 c
  []
 
 
-Overfull \hbox (40.08517pt too wide) detected at line 312
+Overfull \hbox (40.08517pt too wide) detected at line 323
 [] \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmss/m/n/10 ^^@ \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 c
  []
 
 
-Overfull \hbox (58.35646pt too wide) detected at line 315
+Overfull \hbox (58.35646pt too wide) detected at line 326
 [] \OML/cmm/m/it/10 Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 integrato una volta per parti e sostituzione con Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] = [](\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )) + \OML/cmm/m/it/10 c
  []
 
-[5] [6] [7] [8]
-Overfull \hbox (14.84547pt too wide) detected at line 558
+[9] [10] [11] [12]
+Overfull \hbox (14.84547pt too wide) detected at line 569
 [] \OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 ] = [] []\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] \OMS/cmss/m/n/10 j\OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OMS/cmss/m/n/10 j\OML/cmm/m/it/10 dx
  []
 
-[9]
-Overfull \hbox (0.11873pt too wide) detected at line 564
+
+Overfull \hbox (0.11873pt too wide) detected at line 575
 [] \OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[] = [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 ] = [] []\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] \OMS/cmss/m/n/10 j\OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OMS/cmss/m/n/10 j\OML/cmm/m/it/10 dx
  []
 
-[10] [11] [12] [13] [14]
-<../dim/Rolle.PNG, id=62, 475.02469pt x 545.03625pt>
+[13] [14] [15] [16] [17]
+<../dim/Rolle.PNG, id=82, 475.02469pt x 545.03625pt>
 File: ../dim/Rolle.PNG Graphic file (type png)
 <use ../dim/Rolle.PNG>
-Package pdftex.def Info: ../dim/Rolle.PNG  used on input line 797.
+Package pdftex.def Info: ../dim/Rolle.PNG  used on input line 808.
 (pdftex.def)             Requested size: 423.94608pt x 486.45297pt.
- [15 <../dim/Rolle.PNG>]
-<../dim/lagrange.PNG, id=68, 697.10437pt x 536.75531pt>
+ [18 <../dim/Rolle.PNG>]
+<../dim/lagrange.PNG, id=87, 697.10437pt x 536.75531pt>
 File: ../dim/lagrange.PNG Graphic file (type png)
 <use ../dim/lagrange.PNG>
-Package pdftex.def Info: ../dim/lagrange.PNG  used on input line 808.
+Package pdftex.def Info: ../dim/lagrange.PNG  used on input line 819.
 (pdftex.def)             Requested size: 423.94608pt x 326.42923pt.
- [16 <../dim/Lagrange.PNG>]
-<../dim/monotonia1.PNG, id=73, 804.75656pt x 114.4275pt>
+ [19 <../dim/Lagrange.PNG>]
+<../dim/monotonia1.PNG, id=93, 804.75656pt x 114.4275pt>
 File: ../dim/monotonia1.PNG Graphic file (type png)
 <use ../dim/monotonia1.PNG>
-Package pdftex.def Info: ../dim/monotonia1.PNG  used on input line 822.
+Package pdftex.def Info: ../dim/monotonia1.PNG  used on input line 833.
 (pdftex.def)             Requested size: 423.94608pt x 60.27962pt.
-<../dim/monotonia2.PNG, id=74, 817.55438pt x 362.85562pt>
+<../dim/monotonia2.PNG, id=94, 817.55438pt x 362.85562pt>
 File: ../dim/monotonia2.PNG Graphic file (type png)
 <use ../dim/monotonia2.PNG>
-Package pdftex.def Info: ../dim/monotonia2.PNG  used on input line 825.
+Package pdftex.def Info: ../dim/monotonia2.PNG  used on input line 836.
 (pdftex.def)             Requested size: 423.94608pt x 188.16002pt.
- [17 <../dim/monotonia1.PNG> <../dim/monotonia2.PNG>]
-<../dim/cauchy.PNG, id=80, 453.19313pt x 635.37375pt>
+ [20 <../dim/monotonia1.PNG> <../dim/monotonia2.PNG>]
+<../dim/cauchy.PNG, id=100, 453.19313pt x 635.37375pt>
 File: ../dim/cauchy.PNG Graphic file (type png)
 <use ../dim/cauchy.PNG>
-Package pdftex.def Info: ../dim/cauchy.PNG  used on input line 830.
+Package pdftex.def Info: ../dim/cauchy.PNG  used on input line 841.
 (pdftex.def)             Requested size: 423.94608pt x 594.37198pt.
- [18 <../dim/cauchy.PNG>] [19]
-<../dim/taylorpeano1.PNG, id=89, 339.51843pt x 712.16063pt>
+ [21 <../dim/cauchy.PNG>] [22]
+<../dim/taylorpeano1.PNG, id=108, 339.51843pt x 712.16063pt>
 File: ../dim/taylorpeano1.PNG Graphic file (type png)
 <use ../dim/taylorpeano1.PNG>
-Package pdftex.def Info: ../dim/taylorpeano1.PNG  used on input line 877.
+Package pdftex.def Info: ../dim/taylorpeano1.PNG  used on input line 888.
 (pdftex.def)             Requested size: 301.1261pt x 631.6585pt.
- [20 <../dim/taylorpeano1.PNG>]
-<../dim/taylorpeano2.PNG, id=94, 335.75438pt x 697.8572pt>
+ [23 <../dim/taylorpeano1.PNG>]
+<../dim/taylorpeano2.PNG, id=113, 335.75438pt x 697.8572pt>
 File: ../dim/taylorpeano2.PNG Graphic file (type png)
 <use ../dim/taylorpeano2.PNG>
-Package pdftex.def Info: ../dim/taylorpeano2.PNG  used on input line 881.
+Package pdftex.def Info: ../dim/taylorpeano2.PNG  used on input line 892.
 (pdftex.def)             Requested size: 301.1261pt x 625.88274pt.
- [21 <../dim/taylorpeano2.PNG>]
-<../dim/taylorpeano3.PNG, id=99, 323.70938pt x 439.6425pt>
+ [24 <../dim/taylorpeano2.PNG>]
+<../dim/taylorpeano3.PNG, id=118, 323.70938pt x 439.6425pt>
 File: ../dim/taylorpeano3.PNG Graphic file (type png)
 <use ../dim/taylorpeano3.PNG>
-Package pdftex.def Info: ../dim/taylorpeano3.PNG  used on input line 885.
+Package pdftex.def Info: ../dim/taylorpeano3.PNG  used on input line 896.
 (pdftex.def)             Requested size: 301.1261pt x 408.99747pt.
- [22 <../dim/taylorpeano3.PNG>]
-<../dim/taylorlagrange1.PNG, id=104, 621.07031pt x 173.89969pt>
+ [25 <../dim/taylorpeano3.PNG>]
+<../dim/taylorlagrange1.PNG, id=124, 621.07031pt x 173.89969pt>
 File: ../dim/taylorlagrange1.PNG Graphic file (type png)
 <use ../dim/taylorlagrange1.PNG>
-Package pdftex.def Info: ../dim/taylorlagrange1.PNG  used on input line 891.
+Package pdftex.def Info: ../dim/taylorlagrange1.PNG  used on input line 902.
 (pdftex.def)             Requested size: 423.94608pt x 118.70395pt.
-<../dim/taylorlagrange2.PNG, id=105, 410.2828pt x 613.54219pt>
+<../dim/taylorlagrange2.PNG, id=125, 410.2828pt x 613.54219pt>
 File: ../dim/taylorlagrange2.PNG Graphic file (type png)
 <use ../dim/taylorlagrange2.PNG>
-Package pdftex.def Info: ../dim/taylorlagrange2.PNG  used on input line 895.
+Package pdftex.def Info: ../dim/taylorlagrange2.PNG  used on input line 906.
 (pdftex.def)             Requested size: 301.1261pt x 450.30681pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 889--898
+Underfull \hbox (badness 10000) in paragraph at lines 900--909
 
  []
 
-[23 <../dim/taylorlagrange1.PNG> <../dim/taylorlagrange2.PNG>]
-<../dim/integrale1.PNG, id=111, 710.655pt x 129.48375pt>
+[26 <../dim/taylorlagrange1.PNG> <../dim/taylorlagrange2.PNG>]
+<../dim/integrale1.PNG, id=131, 710.655pt x 129.48375pt>
 File: ../dim/integrale1.PNG Graphic file (type png)
 <use ../dim/integrale1.PNG>
-Package pdftex.def Info: ../dim/integrale1.PNG  used on input line 901.
+Package pdftex.def Info: ../dim/integrale1.PNG  used on input line 912.
 (pdftex.def)             Requested size: 423.94608pt x 77.24629pt.
-<../dim/integrale2.PNG, id=112, 785.18344pt x 49.68562pt>
+<../dim/integrale2.PNG, id=132, 785.18344pt x 49.68562pt>
 File: ../dim/integrale2.PNG Graphic file (type png)
 <use ../dim/integrale2.PNG>
-Package pdftex.def Info: ../dim/integrale2.PNG  used on input line 905.
+Package pdftex.def Info: ../dim/integrale2.PNG  used on input line 916.
 (pdftex.def)             Requested size: 423.94608pt x 26.82756pt.
-<../dim/integrale3.PNG, id=113, 778.40813pt x 582.67688pt>
+<../dim/integrale3.PNG, id=133, 778.40813pt x 582.67688pt>
 File: ../dim/integrale3.PNG Graphic file (type png)
 <use ../dim/integrale3.PNG>
-Package pdftex.def Info: ../dim/integrale3.PNG  used on input line 908.
+Package pdftex.def Info: ../dim/integrale3.PNG  used on input line 919.
 (pdftex.def)             Requested size: 423.94608pt x 317.35255pt.
- [24 <../dim/integrale1.PNG> <../dim/integrale2.PNG> <../dim/integrale3.PNG>]
-<../dim/convserie.PNG, id=120, 635.37375pt x 593.21625pt>
+ [27 <../dim/integrale1.PNG> <../dim/integrale2.PNG> <../dim/integrale3.PNG>]
+<../dim/convserie.PNG, id=140, 635.37375pt x 593.21625pt>
 File: ../dim/convserie.PNG Graphic file (type png)
 <use ../dim/convserie.PNG>
-Package pdftex.def Info: ../dim/convserie.PNG  used on input line 912.
+Package pdftex.def Info: ../dim/convserie.PNG  used on input line 923.
 (pdftex.def)             Requested size: 423.94608pt x 395.83257pt.
- [25 <../dim/convserie.PNG>]
-<../dim/rapporto1.PNG, id=126, 554.07pt x 121.95563pt>
+ [28 <../dim/convserie.PNG>]
+<../dim/rapporto1.PNG, id=145, 554.07pt x 121.95563pt>
 File: ../dim/rapporto1.PNG Graphic file (type png)
 <use ../dim/rapporto1.PNG>
-Package pdftex.def Info: ../dim/rapporto1.PNG  used on input line 917.
+Package pdftex.def Info: ../dim/rapporto1.PNG  used on input line 928.
 (pdftex.def)             Requested size: 423.94608pt x 93.31433pt.
-<../dim/rapporto2.PNG, id=127, 768.62157pt x 569.87906pt>
+<../dim/rapporto2.PNG, id=146, 768.62157pt x 569.87906pt>
 File: ../dim/rapporto2.PNG Graphic file (type png)
 <use ../dim/rapporto2.PNG>
-Package pdftex.def Info: ../dim/rapporto2.PNG  used on input line 921.
+Package pdftex.def Info: ../dim/rapporto2.PNG  used on input line 932.
 (pdftex.def)             Requested size: 423.94608pt x 314.3301pt.
- [26 <../dim/rapporto1.PNG> <../dim/rapporto2.PNG>]
-<../dim/confronto1.PNG, id=133, 568.37344pt x 79.04532pt>
+ [29 <../dim/rapporto1.PNG> <../dim/rapporto2.PNG>]
+<../dim/confronto1.PNG, id=152, 568.37344pt x 79.04532pt>
 File: ../dim/confronto1.PNG Graphic file (type png)
 <use ../dim/confronto1.PNG>
-Package pdftex.def Info: ../dim/confronto1.PNG  used on input line 926.
+Package pdftex.def Info: ../dim/confronto1.PNG  used on input line 937.
 (pdftex.def)             Requested size: 423.94608pt x 58.96178pt.
-<../dim/confronto2.PNG, id=134, 596.98032pt x 118.94438pt>
+<../dim/confronto2.PNG, id=153, 596.98032pt x 118.94438pt>
 File: ../dim/confronto2.PNG Graphic file (type png)
 <use ../dim/confronto2.PNG>
-Package pdftex.def Info: ../dim/confronto2.PNG  used on input line 929.
+Package pdftex.def Info: ../dim/confronto2.PNG  used on input line 940.
 (pdftex.def)             Requested size: 423.94608pt x 84.46924pt.
-<../dim/confronto3.PNG, id=135, 772.38562pt x 325.215pt>
+<../dim/confronto3.PNG, id=154, 772.38562pt x 325.215pt>
 File: ../dim/confronto3.PNG Graphic file (type png)
 <use ../dim/confronto3.PNG>
-Package pdftex.def Info: ../dim/confronto3.PNG  used on input line 933.
+Package pdftex.def Info: ../dim/confronto3.PNG  used on input line 944.
 (pdftex.def)             Requested size: 423.94608pt x 178.50159pt.
- [27 <../dim/confronto1.PNG> <../dim/confronto2.PNG> <../dim/confronto3.PNG>]
-<../dim/radice1.PNG, id=142, 553.31718pt x 116.68594pt>
+ [30 <../dim/confronto1.PNG> <../dim/confronto2.PNG> <../dim/confronto3.PNG>]
+<../dim/radice1.PNG, id=161, 553.31718pt x 116.68594pt>
 File: ../dim/radice1.PNG Graphic file (type png)
 <use ../dim/radice1.PNG>
-Package pdftex.def Info: ../dim/radice1.PNG  used on input line 938.
+Package pdftex.def Info: ../dim/radice1.PNG  used on input line 949.
 (pdftex.def)             Requested size: 423.94608pt x 89.4033pt.
-<../dim/radice2.PNG, id=143, 685.05937pt x 243.15843pt>
+<../dim/radice2.PNG, id=162, 685.05937pt x 243.15843pt>
 File: ../dim/radice2.PNG Graphic file (type png)
 <use ../dim/radice2.PNG>
-Package pdftex.def Info: ../dim/radice2.PNG  used on input line 942.
+Package pdftex.def Info: ../dim/radice2.PNG  used on input line 953.
 (pdftex.def)             Requested size: 423.94608pt x 150.4821pt.
-<../dim/radice3.PNG, id=144, 767.86874pt x 300.3722pt>
+<../dim/radice3.PNG, id=163, 767.86874pt x 300.3722pt>
 File: ../dim/radice3.PNG Graphic file (type png)
 <use ../dim/radice3.PNG>
-Package pdftex.def Info: ../dim/radice3.PNG  used on input line 946.
+Package pdftex.def Info: ../dim/radice3.PNG  used on input line 957.
 (pdftex.def)             Requested size: 423.94608pt x 165.84229pt.
- [28 <../dim/radice1.PNG> <../dim/radice2.PNG> <../dim/radice3.PNG>]
-<../dim/eulero1.PNG, id=151, 383.18156pt x 51.94406pt>
+ [31 <../dim/radice1.PNG> <../dim/radice2.PNG> <../dim/radice3.PNG>]
+<../dim/eulero1.PNG, id=171, 383.18156pt x 51.94406pt>
 File: ../dim/eulero1.PNG Graphic file (type png)
 <use ../dim/eulero1.PNG>
-Package pdftex.def Info: ../dim/eulero1.PNG  used on input line 952.
+Package pdftex.def Info: ../dim/eulero1.PNG  used on input line 963.
 (pdftex.def)             Requested size: 423.94608pt x 57.4731pt.
-<../dim/eulero2.PNG, id=152, 1135.99406pt x 587.94656pt>
+<../dim/eulero2.PNG, id=172, 1135.99406pt x 587.94656pt>
 File: ../dim/eulero2.PNG Graphic file (type png)
 <use ../dim/eulero2.PNG>
-Package pdftex.def Info: ../dim/eulero2.PNG  used on input line 956.
+Package pdftex.def Info: ../dim/eulero2.PNG  used on input line 967.
 (pdftex.def)             Requested size: 423.94608pt x 219.42079pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 950--959
+Underfull \hbox (badness 10000) in paragraph at lines 961--970
 
  []
 
-[29 <../dim/eulero1.PNG> <../dim/eulero2.PNG>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux)
+[32 <../dim/eulero1.PNG> <../dim/eulero2.PNG>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5320 strings out of 492609
- 73914 string characters out of 6132818
+ 5345 strings out of 492609
+ 74494 string characters out of 6132818
  171684 words of memory out of 5000000
- 9094 multiletter control sequences out of 15000+600000
+ 9114 multiletter control sequences out of 15000+600000
  11184 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,39p,896b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,39p,896b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" (29 pages, 3134479 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" (32 pages, 3429349 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
+ 227 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

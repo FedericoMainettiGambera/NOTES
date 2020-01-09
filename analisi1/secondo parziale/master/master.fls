@@ -127,8 +127,23 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/trigonometria.PNG
+INPUT ../dim/trigonometria.PNG
 OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf
+INPUT ../dim/trigonometria.PNG
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/asintotici.PNG
+INPUT ../dim/asintotici.PNG
+INPUT ../dim/asintotici.PNG
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/derivate1.PNG
+INPUT ../dim/derivate1.PNG
+INPUT ../dim/derivate1.PNG
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/derivate2.PNG
+INPUT ../dim/derivate2.PNG
+INPUT ../dim/derivate2.PNG
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/mclaurin.PNG
+INPUT ../dim/mclaurin.PNG
+INPUT ../dim/mclaurin.PNG
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
