@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  9 JAN 2020 03:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  10 JAN 2020 03:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,151 +454,151 @@ Overfull \hbox (0.11873pt too wide) detected at line 575
 [] \OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[] = [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 ] = [] []\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] \OMS/cmss/m/n/10 j\OML/cmm/m/it/10 a \OMS/cmss/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OMS/cmss/m/n/10 j\OML/cmm/m/it/10 dx
  []
 
-[13] [14] [15] [16] [17]
-<../dim/Rolle.PNG, id=82, 475.02469pt x 545.03625pt>
+[13] [14] [15] [16] [17] [18] [19]
+<../dim/Rolle.PNG, id=89, 475.02469pt x 545.03625pt>
 File: ../dim/Rolle.PNG Graphic file (type png)
 <use ../dim/Rolle.PNG>
-Package pdftex.def Info: ../dim/Rolle.PNG  used on input line 808.
+Package pdftex.def Info: ../dim/Rolle.PNG  used on input line 812.
 (pdftex.def)             Requested size: 423.94608pt x 486.45297pt.
- [18 <../dim/Rolle.PNG>]
-<../dim/lagrange.PNG, id=87, 697.10437pt x 536.75531pt>
+ [20 <../dim/Rolle.PNG>]
+<../dim/lagrange.PNG, id=94, 697.10437pt x 536.75531pt>
 File: ../dim/lagrange.PNG Graphic file (type png)
 <use ../dim/lagrange.PNG>
-Package pdftex.def Info: ../dim/lagrange.PNG  used on input line 819.
+Package pdftex.def Info: ../dim/lagrange.PNG  used on input line 823.
 (pdftex.def)             Requested size: 423.94608pt x 326.42923pt.
- [19 <../dim/Lagrange.PNG>]
-<../dim/monotonia1.PNG, id=93, 804.75656pt x 114.4275pt>
+ [21 <../dim/Lagrange.PNG>]
+<../dim/monotonia1.PNG, id=99, 804.75656pt x 114.4275pt>
 File: ../dim/monotonia1.PNG Graphic file (type png)
 <use ../dim/monotonia1.PNG>
-Package pdftex.def Info: ../dim/monotonia1.PNG  used on input line 833.
+Package pdftex.def Info: ../dim/monotonia1.PNG  used on input line 837.
 (pdftex.def)             Requested size: 423.94608pt x 60.27962pt.
-<../dim/monotonia2.PNG, id=94, 817.55438pt x 362.85562pt>
+<../dim/monotonia2.PNG, id=100, 817.55438pt x 362.85562pt>
 File: ../dim/monotonia2.PNG Graphic file (type png)
 <use ../dim/monotonia2.PNG>
-Package pdftex.def Info: ../dim/monotonia2.PNG  used on input line 836.
+Package pdftex.def Info: ../dim/monotonia2.PNG  used on input line 840.
 (pdftex.def)             Requested size: 423.94608pt x 188.16002pt.
- [20 <../dim/monotonia1.PNG> <../dim/monotonia2.PNG>]
-<../dim/cauchy.PNG, id=100, 453.19313pt x 635.37375pt>
+ [22 <../dim/monotonia1.PNG> <../dim/monotonia2.PNG>]
+<../dim/cauchy.PNG, id=106, 453.19313pt x 635.37375pt>
 File: ../dim/cauchy.PNG Graphic file (type png)
 <use ../dim/cauchy.PNG>
-Package pdftex.def Info: ../dim/cauchy.PNG  used on input line 841.
+Package pdftex.def Info: ../dim/cauchy.PNG  used on input line 845.
 (pdftex.def)             Requested size: 423.94608pt x 594.37198pt.
- [21 <../dim/cauchy.PNG>] [22]
-<../dim/taylorpeano1.PNG, id=108, 339.51843pt x 712.16063pt>
+ [23 <../dim/cauchy.PNG>] [24]
+<../dim/taylorpeano1.PNG, id=114, 339.51843pt x 712.16063pt>
 File: ../dim/taylorpeano1.PNG Graphic file (type png)
 <use ../dim/taylorpeano1.PNG>
-Package pdftex.def Info: ../dim/taylorpeano1.PNG  used on input line 888.
+Package pdftex.def Info: ../dim/taylorpeano1.PNG  used on input line 892.
 (pdftex.def)             Requested size: 301.1261pt x 631.6585pt.
- [23 <../dim/taylorpeano1.PNG>]
-<../dim/taylorpeano2.PNG, id=113, 335.75438pt x 697.8572pt>
+ [25 <../dim/taylorpeano1.PNG>]
+<../dim/taylorpeano2.PNG, id=120, 335.75438pt x 697.8572pt>
 File: ../dim/taylorpeano2.PNG Graphic file (type png)
 <use ../dim/taylorpeano2.PNG>
-Package pdftex.def Info: ../dim/taylorpeano2.PNG  used on input line 892.
+Package pdftex.def Info: ../dim/taylorpeano2.PNG  used on input line 896.
 (pdftex.def)             Requested size: 301.1261pt x 625.88274pt.
- [24 <../dim/taylorpeano2.PNG>]
-<../dim/taylorpeano3.PNG, id=118, 323.70938pt x 439.6425pt>
+ [26 <../dim/taylorpeano2.PNG>]
+<../dim/taylorpeano3.PNG, id=125, 323.70938pt x 439.6425pt>
 File: ../dim/taylorpeano3.PNG Graphic file (type png)
 <use ../dim/taylorpeano3.PNG>
-Package pdftex.def Info: ../dim/taylorpeano3.PNG  used on input line 896.
+Package pdftex.def Info: ../dim/taylorpeano3.PNG  used on input line 900.
 (pdftex.def)             Requested size: 301.1261pt x 408.99747pt.
- [25 <../dim/taylorpeano3.PNG>]
-<../dim/taylorlagrange1.PNG, id=124, 621.07031pt x 173.89969pt>
+ [27 <../dim/taylorpeano3.PNG>]
+<../dim/taylorlagrange1.PNG, id=130, 621.07031pt x 173.89969pt>
 File: ../dim/taylorlagrange1.PNG Graphic file (type png)
 <use ../dim/taylorlagrange1.PNG>
-Package pdftex.def Info: ../dim/taylorlagrange1.PNG  used on input line 902.
+Package pdftex.def Info: ../dim/taylorlagrange1.PNG  used on input line 906.
 (pdftex.def)             Requested size: 423.94608pt x 118.70395pt.
-<../dim/taylorlagrange2.PNG, id=125, 410.2828pt x 613.54219pt>
+<../dim/taylorlagrange2.PNG, id=131, 410.2828pt x 613.54219pt>
 File: ../dim/taylorlagrange2.PNG Graphic file (type png)
 <use ../dim/taylorlagrange2.PNG>
-Package pdftex.def Info: ../dim/taylorlagrange2.PNG  used on input line 906.
+Package pdftex.def Info: ../dim/taylorlagrange2.PNG  used on input line 910.
 (pdftex.def)             Requested size: 301.1261pt x 450.30681pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 900--909
+Underfull \hbox (badness 10000) in paragraph at lines 904--913
 
  []
 
-[26 <../dim/taylorlagrange1.PNG> <../dim/taylorlagrange2.PNG>]
-<../dim/integrale1.PNG, id=131, 710.655pt x 129.48375pt>
+[28 <../dim/taylorlagrange1.PNG> <../dim/taylorlagrange2.PNG>]
+<../dim/integrale1.PNG, id=137, 710.655pt x 129.48375pt>
 File: ../dim/integrale1.PNG Graphic file (type png)
 <use ../dim/integrale1.PNG>
-Package pdftex.def Info: ../dim/integrale1.PNG  used on input line 912.
+Package pdftex.def Info: ../dim/integrale1.PNG  used on input line 916.
 (pdftex.def)             Requested size: 423.94608pt x 77.24629pt.
-<../dim/integrale2.PNG, id=132, 785.18344pt x 49.68562pt>
+<../dim/integrale2.PNG, id=138, 785.18344pt x 49.68562pt>
 File: ../dim/integrale2.PNG Graphic file (type png)
 <use ../dim/integrale2.PNG>
-Package pdftex.def Info: ../dim/integrale2.PNG  used on input line 916.
+Package pdftex.def Info: ../dim/integrale2.PNG  used on input line 920.
 (pdftex.def)             Requested size: 423.94608pt x 26.82756pt.
-<../dim/integrale3.PNG, id=133, 778.40813pt x 582.67688pt>
+<../dim/integrale3.PNG, id=139, 778.40813pt x 582.67688pt>
 File: ../dim/integrale3.PNG Graphic file (type png)
 <use ../dim/integrale3.PNG>
-Package pdftex.def Info: ../dim/integrale3.PNG  used on input line 919.
+Package pdftex.def Info: ../dim/integrale3.PNG  used on input line 923.
 (pdftex.def)             Requested size: 423.94608pt x 317.35255pt.
- [27 <../dim/integrale1.PNG> <../dim/integrale2.PNG> <../dim/integrale3.PNG>]
-<../dim/convserie.PNG, id=140, 635.37375pt x 593.21625pt>
+ [29 <../dim/integrale1.PNG> <../dim/integrale2.PNG> <../dim/integrale3.PNG>]
+<../dim/convserie.PNG, id=146, 635.37375pt x 593.21625pt>
 File: ../dim/convserie.PNG Graphic file (type png)
 <use ../dim/convserie.PNG>
-Package pdftex.def Info: ../dim/convserie.PNG  used on input line 923.
+Package pdftex.def Info: ../dim/convserie.PNG  used on input line 927.
 (pdftex.def)             Requested size: 423.94608pt x 395.83257pt.
- [28 <../dim/convserie.PNG>]
-<../dim/rapporto1.PNG, id=145, 554.07pt x 121.95563pt>
+ [30 <../dim/convserie.PNG>]
+<../dim/rapporto1.PNG, id=151, 554.07pt x 121.95563pt>
 File: ../dim/rapporto1.PNG Graphic file (type png)
 <use ../dim/rapporto1.PNG>
-Package pdftex.def Info: ../dim/rapporto1.PNG  used on input line 928.
+Package pdftex.def Info: ../dim/rapporto1.PNG  used on input line 932.
 (pdftex.def)             Requested size: 423.94608pt x 93.31433pt.
-<../dim/rapporto2.PNG, id=146, 768.62157pt x 569.87906pt>
+<../dim/rapporto2.PNG, id=152, 768.62157pt x 569.87906pt>
 File: ../dim/rapporto2.PNG Graphic file (type png)
 <use ../dim/rapporto2.PNG>
-Package pdftex.def Info: ../dim/rapporto2.PNG  used on input line 932.
+Package pdftex.def Info: ../dim/rapporto2.PNG  used on input line 936.
 (pdftex.def)             Requested size: 423.94608pt x 314.3301pt.
- [29 <../dim/rapporto1.PNG> <../dim/rapporto2.PNG>]
-<../dim/confronto1.PNG, id=152, 568.37344pt x 79.04532pt>
+ [31 <../dim/rapporto1.PNG> <../dim/rapporto2.PNG>]
+<../dim/confronto1.PNG, id=159, 568.37344pt x 79.04532pt>
 File: ../dim/confronto1.PNG Graphic file (type png)
 <use ../dim/confronto1.PNG>
-Package pdftex.def Info: ../dim/confronto1.PNG  used on input line 937.
+Package pdftex.def Info: ../dim/confronto1.PNG  used on input line 941.
 (pdftex.def)             Requested size: 423.94608pt x 58.96178pt.
-<../dim/confronto2.PNG, id=153, 596.98032pt x 118.94438pt>
+<../dim/confronto2.PNG, id=160, 596.98032pt x 118.94438pt>
 File: ../dim/confronto2.PNG Graphic file (type png)
 <use ../dim/confronto2.PNG>
-Package pdftex.def Info: ../dim/confronto2.PNG  used on input line 940.
+Package pdftex.def Info: ../dim/confronto2.PNG  used on input line 944.
 (pdftex.def)             Requested size: 423.94608pt x 84.46924pt.
-<../dim/confronto3.PNG, id=154, 772.38562pt x 325.215pt>
+<../dim/confronto3.PNG, id=161, 772.38562pt x 325.215pt>
 File: ../dim/confronto3.PNG Graphic file (type png)
 <use ../dim/confronto3.PNG>
-Package pdftex.def Info: ../dim/confronto3.PNG  used on input line 944.
+Package pdftex.def Info: ../dim/confronto3.PNG  used on input line 948.
 (pdftex.def)             Requested size: 423.94608pt x 178.50159pt.
- [30 <../dim/confronto1.PNG> <../dim/confronto2.PNG> <../dim/confronto3.PNG>]
-<../dim/radice1.PNG, id=161, 553.31718pt x 116.68594pt>
+ [32 <../dim/confronto1.PNG> <../dim/confronto2.PNG> <../dim/confronto3.PNG>]
+<../dim/radice1.PNG, id=168, 553.31718pt x 116.68594pt>
 File: ../dim/radice1.PNG Graphic file (type png)
 <use ../dim/radice1.PNG>
-Package pdftex.def Info: ../dim/radice1.PNG  used on input line 949.
+Package pdftex.def Info: ../dim/radice1.PNG  used on input line 953.
 (pdftex.def)             Requested size: 423.94608pt x 89.4033pt.
-<../dim/radice2.PNG, id=162, 685.05937pt x 243.15843pt>
+<../dim/radice2.PNG, id=169, 685.05937pt x 243.15843pt>
 File: ../dim/radice2.PNG Graphic file (type png)
 <use ../dim/radice2.PNG>
-Package pdftex.def Info: ../dim/radice2.PNG  used on input line 953.
+Package pdftex.def Info: ../dim/radice2.PNG  used on input line 957.
 (pdftex.def)             Requested size: 423.94608pt x 150.4821pt.
-<../dim/radice3.PNG, id=163, 767.86874pt x 300.3722pt>
+<../dim/radice3.PNG, id=170, 767.86874pt x 300.3722pt>
 File: ../dim/radice3.PNG Graphic file (type png)
 <use ../dim/radice3.PNG>
-Package pdftex.def Info: ../dim/radice3.PNG  used on input line 957.
+Package pdftex.def Info: ../dim/radice3.PNG  used on input line 961.
 (pdftex.def)             Requested size: 423.94608pt x 165.84229pt.
- [31 <../dim/radice1.PNG> <../dim/radice2.PNG> <../dim/radice3.PNG>]
-<../dim/eulero1.PNG, id=171, 383.18156pt x 51.94406pt>
+ [33 <../dim/radice1.PNG> <../dim/radice2.PNG> <../dim/radice3.PNG>]
+<../dim/eulero1.PNG, id=177, 383.18156pt x 51.94406pt>
 File: ../dim/eulero1.PNG Graphic file (type png)
 <use ../dim/eulero1.PNG>
-Package pdftex.def Info: ../dim/eulero1.PNG  used on input line 963.
+Package pdftex.def Info: ../dim/eulero1.PNG  used on input line 967.
 (pdftex.def)             Requested size: 423.94608pt x 57.4731pt.
-<../dim/eulero2.PNG, id=172, 1135.99406pt x 587.94656pt>
+<../dim/eulero2.PNG, id=178, 1135.99406pt x 587.94656pt>
 File: ../dim/eulero2.PNG Graphic file (type png)
 <use ../dim/eulero2.PNG>
-Package pdftex.def Info: ../dim/eulero2.PNG  used on input line 967.
+Package pdftex.def Info: ../dim/eulero2.PNG  used on input line 971.
 (pdftex.def)             Requested size: 423.94608pt x 219.42079pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 961--970
+Underfull \hbox (badness 10000) in paragraph at lines 965--974
 
  []
 
-[32 <../dim/eulero1.PNG> <../dim/eulero2.PNG>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux)
+[34 <../dim/eulero1.PNG> <../dim/eulero2.PNG>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -612,10 +612,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  41i,13n,39p,896b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" (32 pages, 3429349 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.pdf" (34 pages, 3430016 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 233 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
