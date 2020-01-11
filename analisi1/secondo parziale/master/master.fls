@@ -78,6 +78,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/transparent.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/transparent.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
@@ -163,78 +165,6 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/Rolle.PNG
-INPUT ../dim/Rolle.PNG
-INPUT ../dim/Rolle.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/lagrange.PNG
-INPUT ../dim/Lagrange.PNG
-INPUT ../dim/Lagrange.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/monotonia1.PNG
-INPUT ../dim/monotonia1.PNG
-INPUT ../dim/monotonia1.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/monotonia2.PNG
-INPUT ../dim/monotonia2.PNG
-INPUT ../dim/monotonia2.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/cauchy.PNG
-INPUT ../dim/cauchy.PNG
-INPUT ../dim/cauchy.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/taylorpeano1.PNG
-INPUT ../dim/taylorpeano1.PNG
-INPUT ../dim/taylorpeano1.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/taylorpeano2.PNG
-INPUT ../dim/taylorpeano2.PNG
-INPUT ../dim/taylorpeano2.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/taylorpeano3.PNG
-INPUT ../dim/taylorpeano3.PNG
-INPUT ../dim/taylorpeano3.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/taylorlagrange1.PNG
-INPUT ../dim/taylorlagrange1.PNG
-INPUT ../dim/taylorlagrange1.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/taylorlagrange2.PNG
-INPUT ../dim/taylorlagrange2.PNG
-INPUT ../dim/taylorlagrange2.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/integrale1.PNG
-INPUT ../dim/integrale1.PNG
-INPUT ../dim/integrale1.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/integrale2.PNG
-INPUT ../dim/integrale2.PNG
-INPUT ../dim/integrale2.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/integrale3.PNG
-INPUT ../dim/integrale3.PNG
-INPUT ../dim/integrale3.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/convserie.PNG
-INPUT ../dim/convserie.PNG
-INPUT ../dim/convserie.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/rapporto1.PNG
-INPUT ../dim/rapporto1.PNG
-INPUT ../dim/rapporto1.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/rapporto2.PNG
-INPUT ../dim/rapporto2.PNG
-INPUT ../dim/rapporto2.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/confronto1.PNG
-INPUT ../dim/confronto1.PNG
-INPUT ../dim/confronto1.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/confronto2.PNG
-INPUT ../dim/confronto2.PNG
-INPUT ../dim/confronto2.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/confronto3.PNG
-INPUT ../dim/confronto3.PNG
-INPUT ../dim/confronto3.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/radice1.PNG
-INPUT ../dim/radice1.PNG
-INPUT ../dim/radice1.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/radice2.PNG
-INPUT ../dim/radice2.PNG
-INPUT ../dim/radice2.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/radice3.PNG
-INPUT ../dim/radice3.PNG
-INPUT ../dim/radice3.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/eulero1.PNG
-INPUT ../dim/eulero1.PNG
-INPUT ../dim/eulero1.PNG
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/../dim/eulero2.PNG
-INPUT ../dim/eulero2.PNG
-INPUT ../dim/eulero2.PNG
 INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi1/secondo parziale/master/master.aux
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
