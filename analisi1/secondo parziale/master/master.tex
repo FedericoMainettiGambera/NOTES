@@ -1339,18 +1339,19 @@ e il teorema è dimostrato.
 
 
 \newpage
-\subsection*{Condizione necessaria per la convergenza delle serie}\textbf{enunciato}\newline
-\textbf{dimostrazione}\newline
+\subsection*{Condizione necessaria per la convergenza delle serie}\textbf{enunciato (LIBRO)}\newline
+Condizione necessaria affichè una serie $\sum_{n=0}^{\infty} a_n$ converga è che il termine $a_n \rightarrow 0$\newline
+\newline
+\textbf{dimostrazione (APPUNTI)}\newline
+Per la definizione di successione convergente abbiamo che 
+\[
+    S_n = \sum_{k=...}^{N}a_n \Rightarrow \lim_{N\rightarrow +\infty}S_n = A
+\]
+e abbiamo che anche per la successione $S_{n+1}, \lim_{N\rightarrow +\infty} S_{n+1} = A$. Quindi
+\[
+    \lim_{N\rightarrow +\infty}[S_{N+1} - S_N] = \lim_{n\rightarrow +\infty} a_{n+1} = 0
+\] 
 
-
-
-
-
-
-\newpage
-\subsection*{Criterio del rapporto per la convergenza delle serie a termini positivi}
-\textbf{enunciato}\newline
-\textbf{dimostrazione}\newline
 
 
 
@@ -1358,8 +1359,25 @@ e il teorema è dimostrato.
 
 \newpage
 \subsection*{Criterio del confronto per la convergenza di una serie a termini positivi}
-\textbf{enunciato}\newline
-\textbf{dimostrazione}\newline
+\textbf{enunciato (LIBRO)}\newline
+Siano $\sum a_n$ e $\sum b_n$ due serie a termini non negativi e tali che
+\[
+    a_n\leq b_n
+\]
+definitivamente.\newline
+Allora valgono le seguenti implicazioni:
+\begin{itemize}
+    \item $\sum b_n$ convergente $\Rightarrow \sum a_n$ convergente
+    \item $\sum a_n$ divergente $\Rightarrow  \sum b_n$ divergente
+\end{itemize}
+\textbf{dimostrazione (LIBRO)}\newline
+Sia
+\[
+    s_n = \sum_{k=1}^{n}a_k \;\;\;\;\;\;\;\;\;\;s_n^* = \sum_{k=1}^{n}b_k
+\]
+Poichè $0 \leq a_k \leq b_k$ per ogni $k$, sommando membro a membro le disuguaglianze per $k$ da $1$ a $n$, si ottiene $0\leq s_n\leq s_n^*$. Sappiamo già che una serie a termini positivi è regolare, ossia o converge o diverge (non può oscillare). Perciò i due punti dell'enunciato sono logicamente equivalenti e ci basta dimostrarne uno. Dimostriamo la seconda affermazione che è immediata perché: dire che $\sum_{n=1}^{\infty} a_n$ diverge significa, per definizione di serie divergente, che $s_n \rightarrow +\infty$.\newline
+D'altro canto è $s_n \leq s_n^*$ perciò, per il criterio del confronto per le successioni, anche $s_n^* \rightarrow  \infty$, ossia $\sum_{n=1}^{\infty}b_n$ diverge.
+
 
 
 
@@ -1368,8 +1386,84 @@ e il teorema è dimostrato.
 
 \newpage
 \subsection*{Criterio della radice per la convergenza della serie a termini positivi}
-\textbf{enunciato}\newline
-\textbf{dimostrazione}\newline
+\textbf{enunciato (LIBRO)}\newline
+Sia $\sum a_n$ una serie a termini non negativi. Se esite il limite
+\[
+    \lim_{n\rightarrow +\infty} \sqrt[n]{a_n} = l
+\]
+e se
+\begin{itemize}
+    \item $l>1 \Rightarrow $ la serie diverge,
+    \item $l<1 \Rightarrow $ la serie converge,
+    \item $l=1 \Rightarrow $ nulla si può concludere
+\end{itemize}
+\textbf{dimostrazione (LIBRO)}\newline
+Supponiamo prima che sia:
+\[
+    \lim_{n\rightarrow +\infty} \sqrt[n]{a_n} = l < 1
+\]
+Poichè $\sqrt[n]{a_n} \rightarrow l$, allora fissato comunque un $\epsilon >0$, definitivamente $\sqrt[n]{a_n} \leq l + \frac{\epsilon}{2}$.\newline
+D'altro canto $l<1$, perciò è ance $l<1-\epsilon$ per un $\epsilon > 0$ opportuno.\newline
+Per quanto $\epsilon$ si ha dunque che, deifnitivamene
+\[
+    \sqrt[n]{a_n} \leq l + \frac{\epsilon}{2} < (1-\epsilon)+ \frac{\epsilon}{2} = 1 - \frac{\epsilon}{2}
+\]
+e quindi
+\[
+    a_n <\left(1-\epsilon\right)^n
+\]
+Per confronto con la serie geometrica convergente $\sum_{n=1}^{\infty}\left(1 - \frac{\epsilon}{}\right)^n$, la serie di partenza converge.\newline
+Se ora, invece, è
+\[
+    \lim_{n\rightarrow +\infty}\sqrt[n]{a_n} = l > 1
+\]
+Con un ragionamento simile si deduce che 
+\[
+    a_n > \left(1 + \frac{\epsilon}{2}\right)^n
+\]
+definitivamente per un certo $\epsilon > 0$. Dunque $a_n \rightarrow +\infty$, e la serie diverge.
+
+
+
+
+
+\newpage
+\subsection*{Criterio del rapporto per la convergenza delle serie a termini positivi}
+\textbf{enunciato (LIBRO)}\newline
+Sia $\sum a_n$ una serie a termini positivi. Se esiste il limite
+\[
+    \lim_{n\rightarrow +\infty}  \frac{a_{n+1}}{a_n} = l
+\]
+e se 
+\begin{itemize}
+    \item $l>1 \Rightarrow $ la serie diverge,
+    \item $l<1 \Rightarrow $ la serie converge,
+    \item $l=1 \Rightarrow $ nulla si può concludere
+\end{itemize}
+\textbf{dimostrazione (LIBRO)}\newline
+Simile alla precedente. Supponiamo prima che sia:
+\[
+    \lim_{n\rightarrow +\infty} \frac{a_{n+1}}{a_n} = l < 1
+\]
+Ragionando come nella dimostrazione precedente, si ha che
+\[
+    \frac{a_{n+1}}{a_n} < \left(1-\frac{\epsilon}{2}\right)
+\]
+definitivamente, per qualche $\epsilon>0$. Ciò implica, ragionando iterativamente, che:
+\[
+    a_{n+1} < \left(1-\frac{\epsilon}{2}\right)a_n< \left(1-\frac{\epsilon}{2}\right) \cdot  \left(1-\frac{\epsilon}{2}\right) a_n-1 < \dots < \left(1-\frac{\epsilon}{2}\right)^n  a_1
+\]
+Per confronto con la serie geometrica convergente $\sum_{n=1}^{\infty}\left(1-\frac{\epsilon}{2}\right)^n a_1$, la serie di partenza converge.\newline
+Se ora, invece, è
+\[
+    \lim_{n\rightarrow +\infty} \frac{a_{n+1}}{a_n} = l > 1
+\]
+Con un ragionamento dimile si deduce che 
+\[
+    a_{n+1} > \left(1+\frac{\epsilon}{2}\right)^n a_1
+\]
+definitivamente, per un certo $\epsilon>0$. Dunque $a_n \rightarrow +\infty $, e la serie diverge.
+
 
 
 
@@ -1377,7 +1471,7 @@ e il teorema è dimostrato.
 
 
 \newpage
-\subsection*{Giustificazione della formula di  con l’esponenziale complesso}
+\subsection*{Giustificazione della formula di e con l’esponenziale complesso}
 \textbf{enunciato}\newline
 \textbf{dimostrazione}\newline
 
