@@ -786,7 +786,36 @@ converge.
 \subsection*{TEORIA}
 \subsection*{Derivabilità implica continuità}
 \textbf{enunciato}\newline
+Sia
+\[
+    f: A \in \mathbb{R} \rightarrow  \mathbb{R}
+\]
+definita come $x \longrightarrow y = f(x)$, allora in un punto $x_0 \in A$ derivabilità $\Rightarrow $ continuità. \newline
 \textbf{dimostrazione}\newline
+Per definizione di derivabilità in $x_0$ sappiamo che esiste finito il limite
+\[
+    \lim_{h\rightarrow 0}\frac{f(x_0 +h)- f(x_0)}{h} = f'(x_0) = m
+\]
+allora possiamo dire che
+\[
+    \lim_{h\rightarrow 0} \frac{f(x_0 + h) - f(x_0)}{h \cdot m} = 1
+\]
+Che rispecchia la definizione di asintotico, quindi per $h \rightarrow  0$
+\[
+    f(x_0+h) - f(x_0) \sim m \cdot h
+\]
+\[
+    f(x_0 + h ) - f(x_0) = m \cdot h  + o(m \cdot h)
+\]
+\[
+    f(x_0 + h) = f(x_0) + m \cdot h + o(m \cdot h)
+\]
+
+\[
+    \lim_{x\rightarrow x_0} f(x) = \lim_{h\rightarrow 0} f(x_0 +h) = \lim_{h \rightarrow 0}[f(x_0) + m \cdot h + o(m \cdot h)] = f(x_0)
+\]
+Dunque il limite per $x \rightarrow x_0$ di $f(x)$ vale $f(x_0)$ che soddisfa la definizione di continuità di $f(x)$ in $x_0$.
+
 
 
 
@@ -796,7 +825,7 @@ converge.
 \newpage
 \subsection*{Teorema di Fermat}
 \textbf{enunciato}:\newline
-Sia $f:[a,b]\rightarrow \mathbb{R}$, derivabile in $x_0 \in(a,b)$. Se $x_0$ è punto di estremo locale allora
+Sia $f:[a,b]\rightarrow \mathbb{R}$. Se $f$ è derivabile in $x_0 \in(a,b)$ e $x_0$ è punto stazionario allora
 \[
     f'(x_0) = 0
 \]
@@ -854,7 +883,7 @@ Cioè
 \newpage
 \subsection*{Teorema di Rolle}
 \textbf{enunciato}\newline
-Sia $f:[a,b] \rightarrow  \mathbb{R}$. Se $f$ è continua in $[a,b]$, derivabile in $(a,b)$ e se vale $f(a) = f(b)$, allora esiste un punto $c \in(a,b)$ tale che $f'(c) = 0$.\newline
+Sia $f:[a,b] \in \mathbb{R} \rightarrow  \mathbb{R}$. Se $f$ è continua in $[a,b]$, derivabile in $(a,b)$ e se vale $f(a) = f(b)$, allora esiste un punto $c \in(a,b)$ tale che $f'(c) = 0$.\newline
 \newline
 \textbf{dimostrazione}\newline
 Poiché $f$ è continua, in virtù del teorema di Weierstrass la funzione sull'intervallo $[a,b]$ ammette massimo e minimo assoluti (che indichiamo rispettivamente con $M$ e $m$). Si danno due casi: o il massimo e il minimo sono entrambi raggiunti negli estremi dell'intervallo $[a,b]$, oppure almeno uno dei due è raggiunto in un punto appartenente all'intervallo $(a,b)$.\newline
@@ -872,7 +901,7 @@ Poiché $f$ è continua, in virtù del teorema di Weierstrass la funzione sull'i
 \newpage
 \subsection*{Teorema di Lagrange o del valor medio}
 \textbf{enunciato}\newline
-Sia $f$ derivabile in $(a,b)$ e continua in $[a,b]$. Allora esiste almeno un punto $c \in (a,b)$ tale che 
+Sia $f$ derivabile in $(a,b) in \mathbb{R}$ e continua in $[a,b] \in \mathbb{R}$. Allora esiste almeno un punto $c \in (a,b)$ tale che 
 \[
     f'(c) = \frac{f(b)-f(a)}{b-a}
 \]
@@ -889,13 +918,16 @@ Sia ora $h$ la differenza tra le due funzioni $f$ e $g$:
 \]
 Si verifica immediatamente che
 \[
-    h(a) = f(a) - g(a) = 0 \qquad \qquad h(b) = f(b) - g(b) = 0
+    h(a) = f(a) - g(a) = f(a) - f(a) - \frac{f(b) - f(a)}{b-a}(a-a)= 0
 \]
-La funzione $h$ è continua perché somma di funzioni continue (una per ipotesi e una perché è un polinomio di primo grado); inoltre è derivabile perché somma di funzioni derivabili (la prima per ipotesi, la seconda in quanto polinomio di primo grado).\newline
-Per il teorema di Rolle, se una funzione è continua in un intervallo $[a,b]$, derivabile in $]a,b[$ e assume valori uguali agli estremi dell'intervallo, esiste almeno un punto $c\in ]a,b[$ in cui la sua derivata sia $0$.\newline
+\[
+    h(b) = f(b) - g(b) = f(b) - f(a) - \frac{f(b) - f(a)}{b-a}(b-a) = 0
+\]
+La funzione $h$ è continua perché somma di funzioni continue ($f$ per ipotesi e $g$ perché è un polinomio di primo grado); inoltre è derivabile perché somma di funzioni derivabili ($f$ per ipotesi e $g$ in quanto polinomio di primo grado).\newline
+Per il teorema di Rolle, se una funzione è continua in un intervallo $[a,b]$, derivabile in $(a,b)$ e assume valori uguali agli estremi dell'intervallo, esiste almeno un punto $c\in (a,b)$ in cui la sua derivata sia $0$.\newline
 Applichiamo quindi il teorema di Rolle alla funzione $h$, dal momento che ne soddisfa tutte le ipotesi:
 \[
-    \exists \ c\in ]a,b[\;\;tale \;\; che \;\; h'(c)=0.
+    \exists \;\; c\in (a,b) \;\;\;\;tale \;\; che \;\;\;\; h'(c)=0.
 \]
 Segue che
 \[
@@ -918,7 +950,7 @@ e il teorema è così dimostrato.
 \newpage
 \subsection*{Test di monotonia su un intervallo}
 \textbf{enunciato}\newline
-Sia $f:(a,b) \rightarrow \mathbb{R}$, derivabile. Allora
+Sia $f:(a,b) \in \mathbb{R} \rightarrow \mathbb{R}$, derivabile. Allora
 \[
     f \;\; crescente \Longleftrightarrow f'(x)\geq 0
 \]
@@ -928,26 +960,32 @@ Sia $f:(a,b) \rightarrow \mathbb{R}$, derivabile. Allora
 $\;\forall\; x \in (a,b)$\newline 
 \newline
 \textbf{dimostrazione}\newline 
-Consideriamo $f: (a,b) \rightarrow \mathbb{R}$ e due punti qualunque $x,z \in (a,b)$. Allora
+Consideriamo $f: (a,b) \rightarrow \mathbb{R}$ e due punti qualunque $x,z \in (a,b)$. Allora se
 \[
     f \;\; crescente \;\;\; \Longleftrightarrow \frac{f(z) - f(x)}{z-x} \geq 0
 \]
 \[
     f \;\; decrescente \Longleftrightarrow \frac{f(z) - f(x)}{z-x} \leq 0
 \]
-Passando al limite per $z \rightarrow x$, per il teorema della permanenza del segno, dalle due precedenti relazioni si ottiene 
+Passando al limite per $z \rightarrow x$, per il teorema della permanenza del segno, dalle due precedenti relazioni si ottiene
+\[
+    f \;\; crescente \;\;\; \Longleftrightarrow \lim_{z\rightarrow x}\frac{f(z) - f(x)}{z-x} \geq 0
+\]
+\[
+    f \;\; decrescente \Longleftrightarrow \lim_{z\rightarrow x}\frac{f(z) - f(x)}{z-x} \leq 0
+\] 
+E quindi $\;\forall\; x \in (a,b)$
 \[
     f \;\; crescente \;\;\; \Rightarrow f'(x) \geq 0
 \]
 \[
     f \;\; decrescente \Rightarrow  f'(x) \leq 0
 \]
-$\;\forall\; x \in (a,b)$.\newline
-Viceversa , sia, ad esempio, $f'(x) \geq 0$ (si procede in modo analogo per $f'(x) \leq 0$) per ogni $x \in (a,b)$, e proviamo che allora $f$ è crescente in $(a,b)$. Prendiamo dunque due punti qualsiasi $x_1, x_2 \in (a,b)$, $x_1 < x_2$, e mostriamo che $f(x_1) < f(x_2)$. Infatti, applicando il teorema di Lagrange ad $f$ sull'intervallo $[x_1, x_2]$ abbiamo che esiste un $c \in (x_1, x_2)$ tale che
+Viceversa , sia, ad esempio, $f'(x) \geq 0$ (si procede in modo analogo per $f'(x) \leq 0$) per ogni $x \in (a,b)$, e proviamo che allora $f$ è crescente in $(a,b)$. Prendiamo dunque due punti $x_1, x_2 \in (a,b)$ tali che $x_1 < x_2$, mostriamo che $f(x_1) < f(x_2)$. Infatti, applicando il teorema di Lagrange ad $f$ sull'intervallo $[x_1, x_2]$ abbiamo che esiste un $c \in (x_1, x_2)$ tale che
 \[
     f'(c) = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
 \]
-Poichè $f'(c) \geq 0$ e $x_2 - x_1 > 0$, ne segue che anche $f(x_2) - f(x_1) \geq 0$, cioè la tesi.\newline
+Poichè per ipotesi $f'(c) \geq 0$ e $x_2 - x_1 > 0$, ne segue che anche $f(x_2) - f(x_1) \geq 0$, cioè la tesi.\newline
 
 
 
@@ -958,15 +996,14 @@ Poichè $f'(c) \geq 0$ e $x_2 - x_1 > 0$, ne segue che anche $f(x_2) - f(x_1) \g
 \textbf{enunciato}\newline
 Siano $f,g : [a,b] \rightarrow \mathbb{R}$ due funzioni continue su $[a,b]$ e derivabili in $(a,b)$. Allora esiste almeno un punto $x_0$ interno ad $(a,b)$, tale che 
 \[
-    [f(b) -f(a)] g'(x_0) = f'(x_0) [g(b) -g(a)]
+    [f(b) -f(a)] g'(x_0) = [g(b) -g(a)] f'(x_0)
 \]
 \textbf{dimostrazione}\newline
 Consideriamo la funzione ausiliaria $h$
 \[
     h(x) = [f(b) -f(a)]g(x) - [g(b) - g(a)]f(x)
 \]
-e teniamo presente che $[f(b) - f(a)]$ e $[g(b) - g(a)]$ sono valori costanti.\newline
-$h(x)$ è continua su $[a,b]$ e derivabile su $(a,b)$, poichè differenza di due funzioni continue.\newline
+e teniamo presente che $[f(b) - f(a)]$ e $[g(b) - g(a)]$ sono valori costanti e che $h(x)$ è continua su $[a,b]$ e derivabile su $(a,b)$, poichè differenza di due funzioni continue.\newline
 Valutiamo $h(x)$  sugli estremi dell'intervallo $[a,b]$:
 \[
     h(a) = [f(b)- f(a)]g(a) - [g(b)- g(a)] f(a) = f(b)g(a) - g(b)f(a) 
@@ -974,13 +1011,17 @@ Valutiamo $h(x)$  sugli estremi dell'intervallo $[a,b]$:
 \[
     h(b) = [f(b) - f(a)]g(b)- [g(b)- g(a)]f(b) = -f(a) g(b) + g(a)f(b)
 \]
-Si vede ora che $h(x)$ soddisfa le ipotesi del teorema di Rolle, applichiamolo: esiste almeno un punto $x_0 \in (a,b)$ tale che 
+Dunque
+\[
+    h(a) = h(b)
+\]
+Si vede ora che $h(x)$ ha la stessa valutazione agli estremi e quindi soddisfa le ipotesi del teorema di Rolle, applichiamolo: esiste almeno un punto $x_0 \in (a,b)$ tale che 
 \[
     h'(x_0) = 0
 \]
 Calcoliamone ora la derivata di $h(x)$
 \[
-    h'(x) = [f(b) - f(a)]g'(x) - [g(b) - g(a)]f'(x)
+    [f(b) - f(a)]g'(x) - [g(b) - g(a)]f'(x) = 0
 \]
 e valutandola nel punto $x_0$ fornitoci dal teorema di Rolle risulta che
 \[
@@ -993,84 +1034,38 @@ e valutandola nel punto $x_0$ fornitoci dal teorema di Rolle risulta che
 
 
 \newpage
-\subsection*{Teorema di l'Hospital}
-\textbf{enunciato (YOU MATH)} \newline
-Siano $f(x)$ e $f(g)$ due funzioni continue definite in un intorno di $c$ (con la possibile eccezione del punto $c$), con $c \in \mathbb{R}$ oppure $c = \pm \infty$. Supponiamo che
+\subsection*{Teorema derivata l'Hospital}
+\textbf{enunciato (LIBRO)}\newline
+Siano $f, g$ funzioni derivabili in un intervallo $(a,b)$ con $g, g' \neq 0$ in $(a,b)$. Se
 \[
-    \lim_{x\rightarrow c}f(x) = \lim_{x\rightarrow c} g(x) = L
+    \lim_{x\rightarrow a^+} f(x) = \lim_{x\rightarrow a^-} g(x) = 0 \;\; oppure \;\; \pm \infty
 \]
-con $L = 0 \lor L = \pm \infty$.\newline
-Se:
-\begin{itemize}
-    \item $f$ e $g$ sono due funzioni derivabili nell'intorno del punto $c$ (con la possibile eccezione del punto $c$).
-    \item $g'(x) \neq 0$ in tale intorno
-    \item esiste finito o infinito
-    \[
-        \lim_{x\rightarrow c} \frac{f'(x)}{g'(x)}
-    \]
-\end{itemize}
-Allora esiste anche il limite del rapporto delle funzioni
+e
 \[
-    \lim_{x\rightarrow c} \frac{f(x)}{g(x)}
+    \lim_{x\rightarrow a^+} \frac{f'(x)}{g'(x)} = L \in \mathbb{R}^*
 \]
-ed è uguale a quello delle derivate.\newline
+Allora
+\[
+    \lim_{x\rightarrow a^+} \frac{f(x)}{g(x)} =L
+\]
+Il teorema continua a valere se $a = -\infty$ oppure se si considera il limite per $x \rightarrow b^-$ (anziché per $x \rightarrow a^+$),con $b\leq+\infty$\newline
 \newline
-\textbf{dimostrazione(YOU MATH)}\newline
-Dimostriamo per $c = x_0^+  \in \mathbb{R}$ e $L = 0$.\newline
-Stiamo cioè dimostrando il caso in cui $f(x)$ e $g(x)$ siano due funzioni continue definite in un intorno destro $I_+(x_0)$ di $c = x_0 \in \mathbb{R}$ con la possibile eccezione del punto $x_0$ e 
-\[
-    \lim_{x\rightarrow x_0^+} [f(x)] = \lim_{x\rightarrow x_0^+} [g(x)] = 0
-\]
-Sapendo quindi che
-\begin{itemize}
-    \item $f$ e $g$ sono due funzioni derivabili nell'intorno destro $I_+(x_0)$ del punto $c= x_0$ (con la possibile eccezione del punto $c$)
-    \item $g'(x) \neq 0$ in tale intorno
-    \item esiste, finito o infinito
-        \[
-            \lim_{x\rightarrow x_0^+}\frac{f'(x)}{g'(x)}
-        \]
-\end{itemize}
-dobbiamo dimostrare che esiste anche il limite del rapporto delle funzioni
-\[
-    \lim_{x\rightarrow x_0^+} \frac{f(x)}{g(x)}
-\]
-ed è uguale a quello delle derivate.\newline
-Innanzitutto osserviamo che se $f$ e $g$ non dovessero essere definite nel punto $x_0$, possiamo ridefinire le due funzioni ponendo:
-\[
-    f(x_0) = g(x_0) = 0
-\]
-In tal modo, visto che stiamo supponendo:
-\[
-    \lim_{x\rightarrow x_0^+} [f(x)] = \lim_{x\rightarrow x_0^+}[g(x)] = 0
-\]
-le due funzioni risulteranno definite e continue (da destra) anche nel punto $x_0$.\newline
-Sia ora $x$ punto dell'intorno destro di $x_0$ ($x_0 \in I_+(x_0)$).\newline
-Nell'intervallo $[x_0, x]$ sono verificate le ipotesi del teorema di Cauchy, e quindi, per tale teorema esiste un punto $t= t(x)$ dipendente da $x$ e compreso tra $x_0$ e $x$ tale che 
-\[
-    \frac{f(x)}{g(x)} = \frac{f(x) - f(x_0)}{g(x) -g(x_0)} = f'(x) - g'(x).
-\]
-Quando $x \rightarrow x_0^+$, poiche il punto $t=t(x)$ è comrpeso tra questi, ovvero $x_0 < t(x) < x$, per il teorema del confrontoanche $t= t(x)$ tende a $x_0$ e quindi vale:
-\[
-    \lim_{x\rightarrow x_0^+} \frac{f(x)}{g(x)} = \lim_{x\rightarrow x_0^+}\frac{f'[t(x)]}{g'[t(x)]} = \lim_{t\rightarrow x_0^+} \frac{f'(t)}{g'(t)}
-\]
-Abbiamo così la tesi.\newline
-Si procede analogamente per $c=x_0^-$.\newline
 \textbf{dimostrazione (LIBRO)}\newline
-Sia $x_n$ una successione tendente ad $a^+$, prolunghiamo per continuità $f$ e $g$ in $a$ ponendo $f(a) = g(a) = 0$. Allora
+Caso $f(x), g(x) \rightarrow 0$. Sia $x_n$ una successione tendente ad $a^+$, prolunghiamo per continuità $f$ e $g$ in $a$ ponendo $f(a) = g(a) = 0$. Allora
 \[
-    \frac{f(x_n??)}{g(x_n)} = \frac{f(x_n) -f(a)}{g(x_n)-g(a)}
+    \frac{f(x_n)}{g(x_n)} = \frac{f(x_n) -f(a)}{g(x_n)-g(a)}
 \]
 Se applichiamo a $f,g$ separatemente il teorema di lagrange sull'intervallo $[a, x_n]$, otteniamo che l'ultimo quoziente scritto è uguale a:
 \[
     \frac{f'(t_n)(x_n -a)}{g'(t_n^*)(x_n-a)} = \frac{f'(t_n)}{g'(t_n^*)}
 \]
-dove $t_n, t_n^*$ sono fue punti opportuni che cadono nell'intervallo $(a,x_n)$. Poichè quando $x_n \rightarrow 0$ anche $t_n$ e $t_n^*\rightarrow 0$, sembra "ragionevole" che il limite del quoziente $\frac{f'}{g'}$ sia uguale al limite del quoziente $\frac{f}{g}$. Tuttavia questo non si può affermare rigorosamente, perchè le successioni $t_n, t_n^*$ sono a priori diverse tra loro. Per aggirare il problema occorre modificare leggermente l'argomentazione seguita. Riprendiamo dunque la dimostrazione della $\frac{f(x-n??)}{g(x_n)} = \frac{f(x_n) -f(a)}{g(x_n)-g(a)}$, e definiamo
+dove $t_n, t_n^*$ sono due punti opportuni che cadono nell'intervallo $(a,x_n)$. Poichè quando $x_n \rightarrow 0$ anche $t_n$ e $t_n^*\rightarrow 0$, sembra "ragionevole" che il limite del quoziente $f'/g'$ sia uguale al limite del quoziente $f/g$. Tuttavia questo non si può affermare rigorosamente, perchè le successioni $t_n, t_n^*$ sono a priori diverse tra loro. Per aggirare il problema occorre modificare leggermente l'argomentazione seguita. Riprendiamo dunque la dimostrazione della $\frac{f(x_n)}{g(x_n)} = \frac{f(x_n) -f(a)}{g(x_n)-g(a)}$, e definiamo
 \[
     h(x) = f(x_n) g(x) - g(x_n) f(x)
 \]
-Notiamo che $h(a) = h(x_n)??? = 0$. La funzione $h$ soddisfa le ipotesi del teorema di lagrange sull'intervallo $[a,x_n]$, dunque esiste $t_n \in(a,x_n)$ tale che 
+Notiamo che $h(a) = h(x_n) = 0$. La funzione $h$ soddisfa le ipotesi del teorema di lagrange sull'intervallo $[a,x_n]$, dunque esiste $t_n \in(a,x_n)$ tale che 
 \[
-    h'(t_n) = \frac{f(x_n) - h(a)}{x_n-a} = 0  \;\;\;???
+    h'(t_n) = \frac{f(x_n) - h(a)}{x_n-a} = 0
 \]
 ovvero, calcolando
 \[
@@ -1089,9 +1084,50 @@ Per $n \rightarrow  \infty$, $t_n \rightarrow a^+$, perciò $\frac{f'(t_n)}{g'(t
 
 \newpage
 \subsection*{Formula di Taylor con resto secondo Peano}
-\textbf{enunciato}\newline
-\textbf{dimostrazione}\newline
-
+\textbf{enunciato (LIBRO)}\newline
+Sia $f: (a,b) \in \mathbb{R} \rightarrow  \mathbb{R}$ derivabile $n$ volte in $x_0 \in (a,b)$. Allora
+\[
+    f(x) = T_{n,x_0}(x) + o((x-x_0)^n) \;\;\;\; per x \rightarrow x_0
+\]
+dove
+\[
+    T_{n,x_0}(x) = \sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^n
+\]
+\textbf{dimostrazione (APPUNTI)}\newline
+Dimostriamo per induzione su $n$. \newline
+Per $n=1$. Se $f \in C^1((a,b))$, allora
+\[
+    f(x) = f(x_0) + f'(x_0)(x-x_0) + o (x-x_0)
+\]
+\[
+    f(x) - f(x_0) - f'(x_0)(x-x_0) = 0(x-x_0)
+\]
+Che è vero se il rapporto incrementale tende a $0$, quindi verifichiamo:
+\[
+    \frac{f(x)-f(x_0)-f'(x_0)(x-x_0)}{x-x_0} = \frac{f(x)- f(x_0)}{x-x_0} - f'(x) \rightarrow 0
+\]
+Verificato.\newline
+Assunto vero per $n-1$ verifichiamo per $n$. \newline
+Essendo vera per $n-1$, abbiamo che per ogni funzione $g \in C^{n-1}((a,b))$, $\frac{g(x) - T_{n-1}^g(x)}{(x-x_0)^{n-1}} \rightarrow 0$. Per verificare per $n$ devo verificare se $f \in C^n((a,b))$, $\frac{f(x)-T_n^f(x)}{(x-x_0)^n} \rightarrow_? 0$. Per farlo ci avvaliamo del teorema di De l'Hopital:
+\[
+    \frac{[f(x) - T_n^f(x)]'}{[(x-x_0)^n]'} = \frac{f'(x)- [t_n^f(x)]'}{n(x-x_0)^{n-1}} = \frac{f'(x)-T_{n-1}^f(x)}{(x-x_0)^{n-1}} \cdot \frac{1}{n} \rightarrow 0
+\]
+Dove il termine 
+\[
+    \frac{f'(x)-T_{n-1}^f(x)}{(x-x_0)^{n-1}} \rightarrow 0
+\]
+per ipotesi di induzione.\newline
+Torniam ora alla derivata
+\[
+    [t_n^f(x)]' = \left[f(x_0) + f'(x_0)(x-x_0) + \frac{f''(x_0)}{2!}(x-x_0)^2 + \dots + \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n\right]'=
+\]
+\[
+    =f'(x_0) + f''(x_0) + \dots + \frac{f^{(n)}(x_0)}{(n-1)!}(x-x_0)^{n-1} = T_{n-1}^{f'} \;\;\;\;\;\;f' \in C^{n-1}((a,b))
+\]
+Quindi anche 
+\[
+    \frac{f(x)-T_n^f(x)}{(x-x_0)^n} \rightarrow 0
+\]
 
 
 
@@ -1100,9 +1136,69 @@ Per $n \rightarrow  \infty$, $t_n \rightarrow a^+$, perciò $\frac{f'(t_n)}{g'(t
 
 \newpage
 \subsection*{Formula di Taylor con resto secondo Lagrange}
-\textbf{enunciato}\newline
-\textbf{dimostrazione}\newline
-
+\textbf{enunciato (LIBRO)}\newline
+Sia $f:[a,b] \rightarrow \mathbb{R}$ derivabile $n+1$ volte in $[a,b]$, e sia $x_0 \in [a,b]$. Allora esiste un punto $c$ compreso tra $x_0$ e $x$ tale che
+\[
+    f(x) = T_{n,x_0}(x) + \frac{f^{(n+1)(c)}}{(n+1)!}(x-x_0)^{n+1}
+\]
+dove
+\[
+    T_{n,x_0}(x) = \sum_{k=0}^{n}\frac{f^{(k)}(x_0)}{k!}(x-x_0)^n
+\]
+\textbf{dimostrazione (LIBRO)}\newline
+Proviamo il teorema per $n=1$. Ponendo per comodità $x_0 = a, x =b$ l'enunciato diventa: se $f : [a,b] \rightarrow \mathbb{R}$ è derivabile $2$ volte in $[a,b]$, allora esiste un punto $c \in [a,b]$ tale che
+\[
+    f(b)=f(a) +f'(a)(b-a) + \frac{1}{2}f''(c)(b-a)^2
+\]
+Poniamo $f(b)- \{f(a) + f'(a)(b.-a)\} = k(b-a)^2$ e cerchiamo di determinare la forma di $k$.\newline
+Consideriamo la funzione
+\[
+    g(x) = f(b) - f(x) -f'(x)(b-x) - k(b-x)^2
+\]
+e applichiamo ad essa il teorema del valor medio. Poichèé $g(b) = g(a) = 0$ (la seconda uguaglianza segue dalla definizione di $k$) si trova che esiste $c \in (a,b)$ tale che
+\[
+    0 = \frac{g(b) - g(a)}{b-a} = g'(c)
+\]
+Ma $g'(x) = - f'(x) - f''(x)(b-x) + f'(x) + 2k(b-x) = (b-x)[2k-f''(x)]$ e quindi $g'(x) = 0$ implica, essendo $c \neq b$:
+\[
+    k = \frac{1}{2}f''(c)
+\]
+Con lo stesso metodo possiamo ampliare al caso $n$ qualsiasi.\newline
+Definiamo
+\[
+    g(x) = f(b) - \sum_{j=0}^{n}\frac{f^{(j)}(x)(b-x)^j}{j!}(b-x)^{n+1}
+\]
+con $k$ definito implicatamente dall'identità
+\[
+    f(b)-T_{n,a}(b) = k (b-a)^{n+1}.
+\]
+Ora si procede così:
+\begin{enumerate}
+    \item Si verifica che $g(b) = g(a) = 0$:
+    \[
+        g(b) = f(b) - f(b) = 0 \quad \quad \quad g(a) = f(b) - T_{n,a}(b) - k(b-a)^{n+1} = 0 \;\;\;\;\; per \;\; definizione \;\; di \;\; k.
+    \]
+    \item Si applica il teorema di lagrange a $g$ in $[a,b]$, e si mostra che l'affermazione "esiste $c \in (a,b)$ tale che $g'(c) = 0$" è esattamente la tesi. Cominciamo a calcolare $g'$:
+    \[
+        g'(x)= \sum_{j=0}^{n}\frac{f^{(j+1)}(x)(b-x)^j}{j!} + \sum_{j=1}^{n}\frac{f^{(j)}(x)(b-x)^{(j-1)}}{(j-1)!} + k(n+1)(b-x)^n =
+    \]
+    \[
+        = - \sum_{j=0}^{n} \frac{f^{(j+1)}(x)(b-x)^j}{j!}+ \sum_{j=0}^{n-1} \frac{f^{(j+1)}(x)(b-x)^{j}}{j!} + k(n+1)(b-x)^n =
+    \]
+    \[
+        - \frac{f^{(n+1)}(x)(b-x)^n}{n!}+ k(n+1)(b-x)^n
+    \]
+    dove nel secondo passaggio abbiamo eseguito una traslazione di indici nella sommatoria).\newline
+\end{enumerate}
+Allora $g'(c) = 0$ significa:
+\[
+    -\frac{f^{(n+1)(c)(b-c)^n}}{n!}+ k(n+1)(b-c)^n = 0
+\]
+ossia
+\[
+    k = \frac{f^{(n+1)(c)}}{(n+1)!}
+\]
+che combinata col risultato precedente ($f(b)-T_{n,a}(b) = k (b-a)^{n+1}$) dimostra la tesi
 
 
 
@@ -1110,9 +1206,35 @@ Per $n \rightarrow  \infty$, $t_n \rightarrow a^+$, perciò $\frac{f'(t_n)}{g'(t
 
 \newpage
 \subsection*{Primo teorema fondamentale del calcolo integrale}
-\textbf{enunciato}\newline
-\textbf{dimostrazione}\newline
-
+\textbf{enunciato (APPUNTI)}\newline
+Sia $f : [a,b] \in \mathbb{R} \rightarrow \mathbb{R}$. Se $f$ è Riemann-integrabile su $[a,b]$ e sia $G$ una primitiva di $f$ su $[a,b]$, allora
+\[
+    \int_{a}^{b}f(x) dx = G(b)-G(a)
+\]
+\textbf{dimostrazione (LIBRO = APPUNTI)}\newline
+Siano $x_0 (=a), x_1, \dots, x_n (=b)$ punti che suddividono l'intervallo $[a,b]$ in modo equilibrato, allora aggiungendo e togliendo $G(x_j)$ per $j = 1,2,\dots,n-1$ si ha:
+\[
+    G(b) - G(a) = G(x_n) - G(x_0) =
+\]
+\[
+    = [G(x_n) - G(x_{n-1})] + [G(x_{n-1}) - G(x_{n-2})] + \dots + [G(x_2) - G(x_1)] + [G(x_1) - G(x_0)] =
+\]
+\[
+    = \sum_{j=1}^{n} [G(x_j) - G(x_{j-1})]
+\]
+Applichiamo ora il teorema di Lagrange alla funzione $G(x)$ su ciascuno degli intervalli $[x_{j-1}, x_j]$. Esiste allora $c_j \in (x_{j-1}, x_j)$ tale che
+\[
+    G(x_j) - G(x_{j-1}) =(x_j - x_{j-1})G'(c_j) = (x_j - x_{j-1})f(c_j)
+\]
+Perchè per ipotesi $G$ è una primitiva di $f$ e perciò $G'(c_j) = f(c_j)$. Ne segue che 
+\[
+    G(b)-G(a) = \sum_{j=1}^{n}(x_j - x_{j-1})f(c_j) = S_n
+\]
+dove $S_n$ è una somma $n$-esima di Cauchy-Riemman di $f$. L'identità scritta vale per ogni $n$, possiamo allora far tendere $n$ a $+\infty$, trovando 
+\[
+    G(b) - G(a) = \int_{a}^{b}f(x)dx
+\]
+Si osservi che questa dimostrazione mostra che una certa (non tutte quelle possibili!) somme di Cachy-Riemann di $f$ tende a $G(b) - G(a)$. Poichè però sappiamo già che $f$ è integrabile, in quanto continua, questo è sufficiente a concludere che ogni altra successione di Cauchy-Riemann converge allo stesso limite, e quindi vale la formula enunciata.
 
 
 
@@ -1120,8 +1242,17 @@ Per $n \rightarrow  \infty$, $t_n \rightarrow a^+$, perciò $\frac{f'(t_n)}{g'(t
 
 \newpage
 \subsection*{Teorema del valor medio integrale}
-\textbf{enunciato}\newline
-\textbf{dimostrazione}\newline
+\textbf{enunciato (LIBRO)}\newline
+Sia $f:[a,b] \rightarrow  \mathbb{R}$ continua. Allora esiste $c \in [a,b]$ tale che
+\[
+    \frac{1}{b-a}\int_{a}^{b}f(x) dx =f(c)
+\]
+\textbf{dimostrazione (LIBRO)}\newline
+Essendo $f$ continua in $[a,b]$, per Weierstrass, essa è dotata di massimo($=M$) e minimo ($=m$). Dalla proprietà di monotonia dell'integrale si ha
+\[
+    m = \frac{1}{b-a} \int_{a}^{b} m dx \leq \frac{1}{b-a} \int_{a}^{b}f(x)dx \leq \frac{1}{b-a} \int_{a}^{b}M dx = M
+\]
+Essendo quindi il valore $\frac{1}{b-a} \int_{a}^{b}f(x)dx$ è compreso fra il minimo e il massimo, per il teorema di Darboux, tale valore è uguale a $f(c)$ per qualche $c \in[a,b]$.
 
 
 
@@ -1131,8 +1262,76 @@ Per $n \rightarrow  \infty$, $t_n \rightarrow a^+$, perciò $\frac{f'(t_n)}{g'(t
 
 \newpage
 \subsection*{Secondo teorema fondamentale del calcolo integrale}
-\textbf{enunciato}\newline
-\textbf{dimostrazione}\newline
+\textbf{enunciato (LIBRO)}
+Sia $f : [a,b] \in \mathbb{R} \rightarrow \mathbb{R}$ una funzione integrabile (in senso proprio o generalizzato), sia $x_0 \in [a,b]$ e sia
+\[
+    F(x) = \int_{x_0}^{x} f(t) dt
+\]
+Allora
+\begin{itemize}
+    \item La funzione $F$ è continua in $[a,b]$
+    \item Se inoltre $f$ è continua in $[a,b]$, allora $F$ è derivabile in $[a,b]$, e vale \[
+        F'(x) = f(x)
+    \]
+    per ogni $x \in [a,b]$
+\end{itemize}
+\textbf{dimostrazione (LIBRO)}\newline
+Proviamo il primo punto prima nell'ipotesi in cui $f$ è integrabile in senso proprio, e quindi, in particolare, è limitata. Perciò esiste $k>0$ per cui è
+\[
+    |f(t)| \leq k \;\;\;\;\forall\;t \in[a,b]
+\]
+Per provare che $F$ è continua in un generico punto $\bar{x} \in[a,b]$, consideriamo ora:
+\[
+    |F(\bar{x}+h) - F(\bar{x})| =
+\]
+\[
+    = \left|\int_{x_0}^{x_0+h}f(t)dt - \int_{x_0}^{\bar{x}}f(t)dt\right| =
+\]
+
+\[
+    = \left| \int_{\bar{x}}^{\bar{x}+h}f(t)dt \right|  \leq \left| \int_{\bar{x}}^{\bar{x}+h}|f(t)|dt \right| \leq
+\]
+\[
+    \leq \left|\int_{\bar{x}}^{\bar{x}+h}kdt\right| = k|h|.
+\]
+(procedimenti ottenuti con l'additività dell'integrale e la disuguaglianza del valore assoluto). Perciò per $h \rightarrow 0$ si ha $F(\bar{x}+h) \rightarrow  F(\bar{x})$, e $F$ è continua in $\bar{x}$\newline
+Supponiamo ora che $f$ sia integrabile solo in senso generalizzato, e che $\bar{x}$ sia proprio un punto in cui $f$ è illimitata. Abbiamo ancora che:
+\[
+    F(\bar{x}+h) -F(\bar{x}) = \int_{\bar{x}}^{\bar{x}+h}f(t) dt
+\]
+Scriviamo ora:
+\[
+    \int_{\bar{x}}^{b}f(t) dt = \int_{\bar{x}}^{\bar{x}+h}f(t) dt + \int_{\bar{x}+h}^{b}f(t) dt
+\]
+Poichè per ipotesi $f$ è integrabile in senso generalizzato, si ha, per definizione:
+\[
+    \int_{\bar{x}+h}^{b} f(t)dt \rightarrow \int_{\bar{x}}^{b}f(t) dt
+\]
+per $h \rightarrow 0^+$.\newline
+E quindi per differenza 
+\[
+    \int_{\bar{x}}^{\bar{x}+h} f(t) dt \rightarrow 0
+\]
+per $h \rightarrow 0^+$. \newline
+Ossia $F(\bar{x}+h) \rightarrow  f(\bar{x})$ per $h \rightarrow 0^+$. (Si ragiona in modo analogo per $0^-$)\newline
+\newline
+Proviamo ora il secondo punto, partendo dall'uguaglianza, già ottenuta, 
+\[
+    F(\bar{x}+h) \rightarrow F(\bar{x}) = \int_{\bar{x}}^{\bar{x}+h}f(t)dt
+\]
+Poichè ora per ipotesi $f$ è continua, per il teorema della media si ha 
+\[
+    \int_{\bar{x}}^{\bar{x}+h}f(t) dt = hf(x_h)
+\]
+per qualche $x_h \in[\bar{x},\bar{x}+h]$ (supponendo, per fissare le idee, $h>0$). Ne segue 
+\[
+    \frac{F(\bar{x}+h)- F(\bar{x})}{h} = f(x_h)
+\]
+Per $h \rightarrow 0$ si avrà $x_h \rightarrow \bar{x}$ e quindi, ancora per la continuità di $f$, $f(x_h) \rightarrow f(\bar{x})$. Pertanto esiste 
+\[
+    \lim_{h\rightarrow 0} \frac{F(\bar{x}+h) - F(\bar{x})}{h}= f(\bar{x})
+\]
+e il teorema è dimostrato.
 
 
 
