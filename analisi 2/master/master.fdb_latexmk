@@ -1,9 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1576780883 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" "master" 1576780886
+["pdflatex"] 1578935938 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" "master" 1578935939
+  "../capitolo1/capitolo1.tex" 1578935936 121 f89ac9a3d95bdbf7f7c20cfa4a9ce5bb ""
   "../capitolo3/capitolo3.tex" 1576780881 38047 b50e8ebdf7a579c044a51701daf2aff6 ""
   "../preamble/preamble.tex" 1574618059 484 11bb575ff4c8eada8cada77e444ffd4c ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.aux" 1576780885 108 cfbb92b024ac1000ea30bced8de47f1d ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.tex" 1575572953 180 e70822315378f6f5a38b58102bb96633 ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.aux" 1578935939 108 cfbb92b024ac1000ea30bced8de47f1d ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.tex" 1578935833 228 3c5550608b44e8e39e83305d775d8ea3 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570201114 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570199013 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1570199013 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -100,11 +101,11 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1570205488 4694128 59e2d353f4dc7ded0243f5180e559ac1 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570205581 4261151 6e9769eabb4d92bbc917c56b8660c752 ""
   "c:/texlive/2019/texmf.cnf" 1570205462 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1576780885 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
-  "master.tex" 1575572953 180 e70822315378f6f5a38b58102bb96633 ""
+  "master.aux" 1578935939 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
+  "master.tex" 1578935833 228 3c5550608b44e8e39e83305d775d8ea3 ""
   (generated)
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf"
   "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.log"
-  "master.log"
   "master.pdf"
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf"
   "master.aux"
+  "master.log"
