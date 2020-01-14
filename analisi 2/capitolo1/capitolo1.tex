@@ -1,4 +1,125 @@
 \section*{Equazioni differenziali}
 \rule{\textwidth}{2pt}
 \subsection*{Modelli differenziali}
-\rule{\textwidth}{0.4pt}
+Si dice equazione differenziale di ordine $n$ un equazione del tipo:
+\[
+    F(t, y, y', y'', \dots, y^{(n)}) = 0
+\]
+dove $y(t)$ è la funzione incognita.\newline
+Si dirà soluzione, o (curva) integrale, di un equazione differenziale, nell'intervallo $I \subset \mathbb{R}$, una funzione $\phi(t)$, definita almeno in $I$ e a valori reali per cui risulti
+\[
+    F(t, \phi(t), \phi'(t), \phi''(t), \dots, \phi^{(n)}(t))= 0 \;\;\;\;\;\;\;\; \;\forall\;t \in I
+\]
+Infine si dirà integrale generale di un equazione differenziale una formula che rappresenti la famiglia di tutte le soluzioni.\newline
+\rule{\textwidth}{2pt}
+\subsection*{Equazioni del primo ordine}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Generalità}
+L'insieme delle soluzioni di un'equazione differenziale del prim'ordine prende il nome di integrale generale dell'equazione.\newline
+Un equazione differenziale si dice in forma normale se è nella forma
+\[
+    y'(t) = f(t,y(t))
+\]
+e ha infinite soluzioni del tipo
+\[
+    y(t) = \int f(t, y(t)) dt + c .
+\]
+La condizione supplementare
+\[
+    y(t_0) = y_0
+\]
+permette di selezionare una soluzione particolare.\newline
+Il problema di risolvere queste equazioni prende il nome di problema di Cauchy, e si intende sempre che bisogna trovare come soluzione una funzione:
+\begin{itemize}
+    \item definita su un intervallo $I$, contenente il punto $t_0$;
+    \item derivabile in tutto $I$ e che soddisfa l'equazione in tutto $I$.
+\end{itemize}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Equazioni a variabili separabili}
+Le equazioni a variabili separabili sono equazioni del tipo
+\[
+    y' =a(t) b(y)
+\]
+con $a$ continua in $I \subset \mathbb{R}$ e b continua in $J \subset \mathbb{R}$.\newline
+Per risolverle notiamo che per tutte le $\bar{y}_0$ per cui $b(\bar{y}_0) = 0$, primo e secondo membro si annullano.\newline
+Prendendo in considerazione, invece, tutte le $\bar{y}_1$ per cui $b(\bar{y}_1) \neq 0$, otteniamo:
+\[
+    \int \frac{dy}{b(y)} = \int a(t) dt +c 
+\]
+Quindi se $B(y)$ è una primitiva di $\frac{1}{b(y)}$ e $A(t)$ è una primitiva di $a(t)$, otteniamo:
+\[
+    B(y) = A(t) + c
+\]
+e se si può ottenere la funzione inversa di $B$ possiamo scrivere:
+\[
+    y = B^{-1}(A(t) + c)
+\]
+\[
+    y = F(t,c)
+\]
+\textbf{teor.} Problema di Cauchy per un'equazione a variabili separabili.\newline
+Si Consideri il problema di Cauchy:
+\[
+    \begin{cases}
+        y' = a(t) b(y)&\\
+        y(t_0) = y_0&
+    \end{cases}
+\]
+Dove $a$ è continua in un intorno $I$ di $t_0$ e $b$ è continua in un intonro $J$ di $t_0$. Allora essite un intorno $t_0$ $I' \subset I$ e una funzione $y \in C^1(I')$ soluzione del problema.\newline
+Se inoltre $b in C^1(J)$, allora tale soluzione è unica.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Equazioni lineari del prim'ordine}
+Sono equazioni la cui forma normale è
+\[
+    y'(t) + a(t)y(t) = f(t)
+\]
+e viene chiama equazione completa.\newline
+Se $f = 0$ l'equazione si dice omogenea.
+\[
+    z'(t) + a(t)z(t) = 0
+\]
+\textbf{teor.} L'integrale generale dell'equazione completa si ottiene aggiungengo all'integrale generale dell'omogenea una soluzione particolare della completa.\newline
+\textbf{Soluzione dell'equazione omogenea}
+\[
+    z(t) = c e^{-\int a(t) dt}
+\]
+\textbf{Ricerca di una soluzione particolare dell'equazione completa}\newline
+Se una soluzione particolare non si riesce a trovare facilmente, si può usare il seguente metodo, detto di variazione della costante
+\[
+    \bar{y}(t) = c(t)e^{-A(t)}
+\]
+Dove per $A(t)$ si intende una primitiva di $a(t)$.\newline
+Sostituendo $\bar{y}$ nella forma completa otteniamo l'integrale generale della forma completa:
+\[
+    y(t) = ce^{-A(t)} + e^{-A(t)}\int f(t)e^{A(t)}dt
+\]
+\textbf{oss.} Nella primitiva $A(t)$ e nell'integrale $\int f(t)e^{A(t)}dt$ non c'è bisogno di aggiungere la solita costante di integrazione arbitraria.\newline
+\textbf{Soluzione del problema di Cauchy}\newline
+La soluzione 
+\[
+    y(t) = ce^{-A(t)} + e^{-A(t)}\int f(t)e^{A(t)}dt
+\]
+sarà determinata da una condizione iniziale
+\[
+    y(t_0) = y_0
+\]
+scegliendo la primitiva $A(t)$ tale che $A(t_0) = 0$ (cioè $A(t) = \int_{t_0}^{t}a(s)ds$), sarà
+\[
+    y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
+\]
+\textbf{teor.} Problema di Cauchy per un equazione lineare del prim'ordine.\newline
+Siano $a, f$ funzioni continue in un intervallo $I$ contenente $t_0$. Allora, per ogni $y_0 \in \mathbb{R}$ il problema di Cauchy
+\[
+    \begin{cases}
+        y'(t) + a(t)y(t)= f(t)\\
+        y(t_0) = y_0
+    \end{cases}
+\]
+ha una e una sola soluzione $y \in C^1(I)$ e tale soluzione è
+\[
+    y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Equazioni lineari del secondo ordine}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Spazi di funzioni}

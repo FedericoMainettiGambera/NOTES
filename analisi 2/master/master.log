@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  13 JAN 2020 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  14 JAN 2020 02:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -328,21 +328,16 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo1/capitolo1.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
-
- []
-
-[1] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 20.
-LaTeX Font Info:    No file OMScmss.fd. on input line 20.
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo1/capitolo1.tex
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 34.
+LaTeX Font Info:    No file OMScmss.fd. on input line 34.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 20.
+(Font)              for symbol `textbullet' on input line 34.
 
-[2] [3]
+[1] [2]) [3] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex [4] [5]
 Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
@@ -357,7 +352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
  []
 
-[4]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 159--162
 
  []
@@ -387,17 +382,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
-[5]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-[6]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 275--277
 
  []
 
-[7]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
@@ -407,7 +402,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--335
 
  []
 
-[8]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
@@ -417,12 +412,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
-[9]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 418--420
 
  []
 
-[10]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
@@ -437,7 +432,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 474--476
 
  []
 
-[11]
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 491--493
 
  []
@@ -452,7 +447,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 522--523
 [][] 
  []
 
-[12]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 526--527
 
  []
@@ -482,7 +477,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 544--9
 
  []
 
-[13] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.aux)
+[15] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -495,11 +490,11 @@ Here is how much of TeX's memory you used:
  12091 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,39p,978b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" (14 pages, 190299 bytes).
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" (16 pages, 205161 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 120 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
