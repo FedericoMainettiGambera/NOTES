@@ -58,7 +58,7 @@ e se si può ottenere la funzione inversa di $B$ possiamo scrivere:
     y = F(t,c)
 \]
 \textbf{teor.} Problema di Cauchy per un'equazione a variabili separabili.\newline
-Si Consideri il problema di Cauchy:
+Si consideri il problema di Cauchy:
 \[
     \begin{cases}
         y' = a(t) b(y)&\\
@@ -66,7 +66,7 @@ Si Consideri il problema di Cauchy:
     \end{cases}
 \]
 Dove $a$ è continua in un intorno $I$ di $t_0$ e $b$ è continua in un intonro $J$ di $t_0$. Allora essite un intorno $t_0$ $I' \subset I$ e una funzione $y \in C^1(I')$ soluzione del problema.\newline
-Se inoltre $b in C^1(J)$, allora tale soluzione è unica.\newline
+Se inoltre $b \in C^1(J)$, allora tale soluzione è unica.\newline
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Equazioni lineari del prim'ordine}
 Sono equazioni la cui forma normale è
@@ -88,7 +88,7 @@ Se una soluzione particolare non si riesce a trovare facilmente, si può usare i
 \[
     \bar{y}(t) = c(t)e^{-A(t)}
 \]
-Dove per $A(t)$ si intende una primitiva di $a(t)$.\newline
+Dove per $A(t)$ si intende una primitiva di $a(t)$ (essendo una primitiva qualunque, si può omettere la $c$).\newline
 Sostituendo $\bar{y}$ nella forma completa otteniamo l'integrale generale della forma completa:
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)}\int f(t)e^{A(t)}dt
@@ -119,6 +119,9 @@ ha una e una sola soluzione $y \in C^1(I)$ e tale soluzione è
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
 \]
+\rule{\textwidth}{0,4pt}\newline
+\subsubsection*{Note sugli esercizi}
+Per trovare il massimo intervallo della soluzione bisogna prendere un intervallo contenente il punto $y_0$, per cui la soluzione sia continua e definita (in caso si può prolungare per continuità) e per cui anche la funzione di partenza sia definita.\newline
 \rule{\textwidth}{2pt}
 \subsection*{Equazioni lineari del secondo ordine}
 \rule{\textwidth}{0,4pt}
