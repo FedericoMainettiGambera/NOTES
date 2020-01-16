@@ -37,15 +37,19 @@ Il problema di risolvere queste equazioni prende il nome di problema di Cauchy, 
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Equazioni a variabili separabili}
 Le equazioni a variabili separabili sono equazioni del tipo
+\begin{tcolorbox}
 \[
     y' =a(t) b(y)
 \]
+\end{tcolorbox}
 con $a$ continua in $I \subset \mathbb{R}$ e b continua in $J \subset \mathbb{R}$.\newline
 Per risolverle notiamo che per tutte le $\bar{y}_0$ per cui $b(\bar{y}_0) = 0$, primo e secondo membro si annullano.\newline
 Prendendo in considerazione, invece, tutte le $\bar{y}_1$ per cui $b(\bar{y}_1) \neq 0$, otteniamo:
+\begin{tcolorbox}
 \[
     \int \frac{dy}{b(y)} = \int a(t) dt +c 
 \]
+\end{tcolorbox}
 Quindi se $B(y)$ è una primitiva di $\frac{1}{b(y)}$ e $A(t)$ è una primitiva di $a(t)$, otteniamo:
 \[
     B(y) = A(t) + c
@@ -57,6 +61,7 @@ e se si può ottenere la funzione inversa di $B$ possiamo scrivere:
 \[
     y = F(t,c)
 \]
+\begin{tcolorbox}
 \textbf{teor.} Problema di Cauchy per un'equazione a variabili separabili.\newline
 Si consideri il problema di Cauchy:
 \[
@@ -67,12 +72,15 @@ Si consideri il problema di Cauchy:
 \]
 Dove $a$ è continua in un intorno $I$ di $t_0$ e $b$ è continua in un intonro $J$ di $t_0$. Allora essite un intorno $t_0$ $I' \subset I$ e una funzione $y \in C^1(I')$ soluzione del problema.\newline
 Se inoltre $b \in C^1(J)$, allora tale soluzione è unica.\newline
+\end{tcolorbox}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Equazioni lineari del prim'ordine}
 Sono equazioni la cui forma normale è
+\begin{tcolorbox}
 \[
     y'(t) + a(t)y(t) = f(t)
 \]
+\end{tcolorbox}
 e viene chiama equazione completa.\newline
 Se $f = 0$ l'equazione si dice omogenea.
 \[
@@ -94,11 +102,14 @@ Sostituendo $\bar{y}$ nella forma completa otteniamo l'integrale generale della 
     y(t) = ce^{-A(t)} + e^{-A(t)}\int f(t)e^{A(t)}dt
 \]
 \textbf{oss.} Nella primitiva $A(t)$ e nell'integrale $\int f(t)e^{A(t)}dt$ non c'è bisogno di aggiungere la solita costante di integrazione arbitraria.\newline
+\newline
 \textbf{Soluzione del problema di Cauchy}\newline
-La soluzione 
+La soluzione
+\begin{tcolorbox} 
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)}\int f(t)e^{A(t)}dt
 \]
+\end{tcolorbox}
 sarà determinata da una condizione iniziale
 \[
     y(t_0) = y_0
@@ -107,6 +118,7 @@ scegliendo la primitiva $A(t)$ tale che $A(t_0) = 0$ (cioè $A(t) = \int_{t_0}^{
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
 \]
+\begin{tcolorbox}
 \textbf{teor.} Problema di Cauchy per un equazione lineare del prim'ordine.\newline
 Siano $a, f$ funzioni continue in un intervallo $I$ contenente $t_0$. Allora, per ogni $y_0 \in \mathbb{R}$ il problema di Cauchy
 \[
@@ -119,10 +131,15 @@ ha una e una sola soluzione $y \in C^1(I)$ e tale soluzione è
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
 \]
+\end{tcolorbox}
 \rule{\textwidth}{0,4pt}\newline
-\subsubsection*{Note sugli esercizi}
-Per trovare il massimo intervallo della soluzione bisogna prendere un intervallo contenente il punto $y_0$, per cui la soluzione sia continua e definita (in caso si può prolungare per continuità) e per cui anche la funzione di partenza sia definita.\newline
+\begin{tcolorbox}
+    \subsubsection*{Note sugli esercizi}
+    Per trovare il massimo intervallo della soluzione bisogna prendere un intervallo contenente il punto $t_0$, per cui la soluzione e la funzione di partenza siano continue e definite (si può anche prolungare per continuità).\newline
+\end{tcolorbox}
 \rule{\textwidth}{2pt}
 \subsection*{Equazioni lineari del secondo ordine}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Spazi di funzioni}
+\textbf{def.} definiamo $C^n(I)$ lo spazio delle funzioni dotate di derivata $n$-essima continua.\newline
+\subsubsection*{Generalità sulle equazioni lineari. Problema di Cauchy}
