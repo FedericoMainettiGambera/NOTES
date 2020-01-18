@@ -1,4 +1,4 @@
-\section*{Equazioni differenziali}
+\section*{1-Equazioni differenziali}
 \rule{\textwidth}{2pt}
 \subsection*{Modelli differenziali}
 Si dice equazione differenziale di ordine $n$ un equazione del tipo:
@@ -171,6 +171,7 @@ Nella soluzione si avranno sempre due coefficienti $c_1$ e $c_2$, per selezionar
 \]
 che insieme all'equazione iniziale prenderà il nome di problema di Cauchy.\newline
 \newline
+\begin{tcolorbox}
 \textbf{teor.} (per funzioni del secondo ordine in forma normale)\newline
 Se $a, b, f$ sono funzioni continue in un intervallo $I$ contenente il punto $t_0$, per ogni $y_0, y_1 \in \mathbb{R}$ il problema di Cauchy
 \[
@@ -182,6 +183,7 @@ Se $a, b, f$ sono funzioni continue in un intervallo $I$ contenente il punto $t_
 \]
 ha una e una sola soluzione $y \in C^2(I)$.\newline
 Tale soluzione è individuata imponendo le condizioni iniziali nell'espressione che assegna l'integrale generale dell'equazione.\newline
+\end{tcolorbox}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{La struttura dell'integrale generale}
 \textbf{teor.} Struttura dell'integrale generale dell'equazione lineare completa \newline
@@ -189,7 +191,7 @@ a. $\;\;\;$ L'insieme delle soluzioni dell'equazione omogenea $Lz = 0 $ con $L:C
 b. $\;\;\;$ L'integrale generale dell'equazione completa di ottiene sommando l'integrale generale dell'equazione omogenea e una soluzione particolare dell'equazione completa.\newline
 \newline
 \textbf{teor.} Proprietà di un equazione omogenea del secondo ordine.\newline
-Lo spazio vettoriale delle soluzioni di un'equazione lineare omogenea del secondo ordine ha dimensione $2$.\newline
+Lo spazio vettoriale delle soluzioni di un'equazione lineare omogenea del secondo ordine ha dimensione due.\newline
 Significa che esistono $2$ soluzioni ($z_1, z_2$) tali che:\newline
 1. $\;\;\;$ sono linearmente indipendenti \newline
 2. $\;\;\;$ ogni altra soluzione è combinazione lineare di queste due soluzioni. \newline
@@ -206,8 +208,8 @@ Siano $z_1$ e $z_2$ due funzioni $C^2(I)$, soluzioni di un equazione lineare omo
         z_1'(t) \;\; & z_2'(t)
     \end{matrix}
 \]
-detta matrice Wronskiana, ha determinante diverso da $0$ per ongi $t \in I$. Inoltre, affinché questo accada, è sufficiente che il determinante si adiverso da $0$ in un punto $t_0 \in I$ (il determinante o si annulla in tutti i punti o è diverso da $0$ in tutti i punti, se è diverso da zero in tutti i punti $z_1, z_2$ sono indipendenti).\newline
-\newline
+detta matrice Wronskiana, ha determinante diverso da $0$ per ongi $t \in I$. Inoltre, affinché questo accada, è sufficiente che il determinante si adiverso da $0$ in un punto $t_0 \in I$ (il determinante o si annulla in tutti i punti o è diverso da $0$ in tutti i punti, se è diverso da zero in tutti i punti $z_1, z_2$ sono indipendenti).
+\begin{tcolorbox}
 Per determinare l'integrale generale di un'equazione differenziale completa del secondo ordine si riconduce ai due passi seguenti:\newline
 1) $\;\;\;$ determinare l'integrale generale dell'equazione omogenea corrispondente, cioè due soluzioni $z_1(t), z_2(t)$ linearmente indipendenti.\newline
 2) $\;\;\;$ determinare una soluzione particolare $\bar{y}(t)$ dell'equazione completa.\newline
@@ -215,11 +217,14 @@ L'integrale generale avrà dunque la forma:
 \[
     \bar{y}(t) + c_1 z_1(t) + c_2 z_2(t)
 \]
+\end{tcolorbox}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Equazioni omogenee a coefficienti costanti}
+\begin{tcolorbox}
 \[
     z''(t) + a z'(t) + bz(t) = 0
 \]
+\end{tcolorbox}
 Sostituendo $z(t) = e^{rt}$
 \[
     e^{rt}(r^2 + a r + b) = 0
@@ -227,9 +232,11 @@ Sostituendo $z(t) = e^{rt}$
 Calcoliamo il $\Delta$ di $r^2 + a r + b$, detta equazione caratteristica:
 \begin{itemize}
     \item $\Delta>0$, due radici reali distinte $r_1$ e $r_2$, soluzione:
+    \begin{tcolorbox}
     \[
         z(t) = c_1e^{r_1t} + c_2e^{r_2t}
     \]
+    \end{tcolorbox}
     \item $\Delta <0$, due radici complesse $r_1 =\alpha + i \beta$, $r_2 = \alpha - i \beta$, soluzione:
     \[
         z_1(t) = e^{(\alpha + i \beta)t} =e^{\alpha t} (cos(\beta t) + i sin(\beta t)) = e^{\alpha t} cos(\beta t)
@@ -238,17 +245,21 @@ Calcoliamo il $\Delta$ di $r^2 + a r + b$, detta equazione caratteristica:
         z_2(t) = e^{(\alpha-i \beta)t} = e^{\alpha t}(cos(\beta t) + i sin(\beta t)) = e^{\alpha t} sin (\beta t)
     \]
     da cui
+    \begin{tcolorbox}
     \[
         z(t) = e^{\alpha t}(c_1 cos(\beta t) + c_2 sin (\beta t))
     \]
+    \end{tcolorbox}
     quest'ultima espressione può essere riscritta anche come $z(t) = e^{\alpha t} A cos(\beta t + \phi)$, con $A$ e $\phi$ costanti reali arbitrarie.
     \item $\Delta = 0$, unica radice $r=\frac{-a}{2}$, soluzioni:
     \[
         e^{rt} \quad \quad \quad te^{rt}
     \] 
+    \begin{tcolorbox}
     \[
         z(t) = e^{rt}(c_1 + c_2 t)
     \]
+    \end{tcolorbox}
 \end{itemize}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Equazioni completa a coefficienti costanti}
@@ -319,7 +330,9 @@ Si analizza il termine noto $f(t)$:
     \newline
 \end{itemize}
 \subsubsection*{Metodo di sovrapposizione}
-se il termine noto $f(t) =$ polinomio $+$ una funzione trigonometrica, si può trovare una soluzione per $f(t) =$ polinomio, e una per $f(t) =$ funzione trigonometrica e sommando le soluzioni si trova una soluzione dell'equazione di partenza.
+\begin{tcolorbox}
+se, per esempio, il termine noto $f(t) =$ polinomio $+$ una funzione trigonometrica, si può trovare una soluzione per $f(t) =$ polinomio, e una per $f(t) =$ funzione trigonometrica e sommando le soluzioni si trova una soluzione dell'equazione di partenza.
+\end{tcolorbox}
 \subsubsection*{Metodo di variazione delle costanti}
 Illustriamo ora un metodo generale che consente di determinare una soluzione particolare qualunque sia la forma del termine noto.\newline
 Il metodo è applicabile purchè si conoscando già due soluzioni $z_1, z_2$ indipendenti dell'equazione omogenea associata.\newline
@@ -327,7 +340,7 @@ Dovremo quindi trovare le due funzioni $c_1$ e $c_2$ tali che
 \[
     \begin{cases}
         c_1'z_1 + c_2'z_2 = 0 \\
-        c_1'z_1' + c_2' z-2' = f
+        c_1'z_1' + c_2' z_2' = f
     \end{cases}
 \]
 cioè
@@ -355,36 +368,46 @@ con $k_i$ costanti arbitrarie di integrazione.\newline
 \]
 \subsubsection*{Equazione di Eulero}
 Per risolvere:
+\begin{tcolorbox}
 \[
     ax^2y''+bxy'+cy= 0
 \]
+\end{tcolorbox}
 si risolve l'equazione di secondo grado:
 \[
     ar(r-a)+br+c = 0
 \]
 \begin{itemize}
     \item $\Delta >0$, soluzioni $r_1, r_2$
+    \begin{tcolorbox}
     \[
         y(x) =c_1x^{r_1}+c_2x^{r_2}
     \]
+    \end{tcolorbox}
     per $x>0$
     \item $\Delta <0$, soluzioni $r_{1,2} = \alpha \pm i \beta$
+    \begin{tcolorbox}
     \[
         y(x) = x^{\alpha}(c_1 cos(\beta log(x)) + c_2 sin(\beta log(x)))
     \]
+    \end{tcolorbox}
     per $x>0$
     \item $\Delta = 0$, soluzioni coincidenti $r$
+    \begin{tcolorbox}
     \[
         y(x) = x^r(c_1 + c_2log(x))
     \]
+    \end{tcolorbox}
     per $x>0$
 \end{itemize}
-Per $x<0$, si studia ancora la stessa equazione di secondo grado e si hanno soluzioni analoghe, ma con $x$ sostituita da $-x$.
+Per $x<0$, si studia ancora la stessa equazione di secondo grado e si hanno soluzioni analoghe, ma con $x$ sostituita da $-x$.\newline
 \rule{\textwidth}{0,4pt}\newline
+\begin{tcolorbox}
 \begin{center}
-    \includegraphics[height=300px]{../img/eqdiff2.PNG}
+    \includegraphics[height=250px]{../img/eqdiff2.PNG}
 \end{center}
 \begin{center}
-    \includegraphics[height=300px]{../img/eqdiff2(1).PNG}
+    \includegraphics[height=250px]{../img/eqdiff2(1).PNG}
 \end{center}
+\end{tcolorbox}
 \rule{\textwidth}{0,4pt}
