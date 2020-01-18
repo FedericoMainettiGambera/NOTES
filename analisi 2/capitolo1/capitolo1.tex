@@ -170,12 +170,15 @@ Nella soluzione si avranno sempre due coefficienti $c_1$ e $c_2$, per selezionar
     \end{cases}
 \]
 che insieme all'equazione iniziale prenderà il nome di problema di Cauchy.\newline
+\newline
 \textbf{teor.} (per funzioni del secondo ordine in forma normale)\newline
 Se $a, b, f$ sono funzioni continue in un intervallo $I$ contenente il punto $t_0$, per ogni $y_0, y_1 \in \mathbb{R}$ il problema di Cauchy
 \[
-    y'' + a(t) y' + b(t) y = f(t)\\
-    y(t_0) = y_0\\
-    y'(t_0) = y_1
+    \begin{cases}
+        y'' + a(t) y' + b(t) y = f(t)\\
+        y(t_0) = y_0\\
+        y'(t_0) = y_1
+    \end{cases}
 \]
 ha una e una sola soluzione $y \in C^2(I)$.\newline
 Tale soluzione è individuata imponendo le condizioni iniziali nell'espressione che assegna l'integrale generale dell'equazione.\newline
@@ -291,7 +294,7 @@ Si analizza il termine noto $f(t)$:
         \item se $\lambda^2 + a \lambda + b = 0$, ma $2 \lambda + a = 0$
         \[
             \gamma''= A
-        \]
+        \]z
         \[
             \gamma(t) = \frac{A}{2}t^2
         \]
@@ -309,8 +312,9 @@ Si analizza il termine noto $f(t)$:
     \]
     Quindi se si è in presenza di un $sin(\omega t)$ come termine noto, si può studiare l'equazione che ha come termine noto $cos(\omega t) + i \cdot sin(\omega t)$ e poi prenderne la parte immaginaria.\newline
     Viceversa se si è in presenza di una $cos(\omega t)$ come termine noto, si può studiare l'equazione che ha come termine noto $cos(\omega t) + i \cdot sin(\omega t)$ e poi prenderne la parte reale.\newline
-    In ogni caso, per facilitare la derivazione, si trasforma $cos(\omega t) + i \cdot sin(\omega t)$ in $e^{i\omega t}$ e si procede nello studio di un termine noto della forma $f(t) = Ae^{\lambda t}$.\newline
-    \newline
+    \begin{tcolorbox}
+        In ogni caso, per facilitare la derivazione, si trasforma $cos(\omega t) + i \cdot sin(\omega t)$ in $e^{i\omega t}$ e si procede nello studio di un termine noto della forma $f(t) = Ae^{\lambda t}$.
+    \end{tcolorbox}
     Fa eccezione a questa tipologia il caso in cui manchi il termine in $y'$.\newline
     \newline
 \end{itemize}
@@ -349,3 +353,38 @@ con $k_i$ costanti arbitrarie di integrazione.\newline
 \[
     \int e^{(a+ib)x} dx = \frac{1}{a+ib}e^{(a+ib)x} = \frac{e^{ax}}{a^2+b^2} (a-ib)(cos(bx) + i sin(bx))
 \]
+\subsubsection*{Equazione di Eulero}
+Per risolvere:
+\[
+    ax^2y''+bxy'+cy= 0
+\]
+si risolve l'equazione di secondo grado:
+\[
+    ar(r-a)+br+c = 0
+\]
+\begin{itemize}
+    \item $\Delta >0$, soluzioni $r_1, r_2$
+    \[
+        y(x) =c_1x^{r_1}+c_2x^{r_2}
+    \]
+    per $x>0$
+    \item $\Delta <0$, soluzioni $r_{1,2} = \alpha \pm i \beta$
+    \[
+        y(x) = x^{\alpha}(c_1 cos(\beta log(x)) + c_2 sin(\beta log(x)))
+    \]
+    per $x>0$
+    \item $\Delta = 0$, soluzioni coincidenti $r$
+    \[
+        y(x) = x^r(c_1 + c_2log(x))
+    \]
+    per $x>0$
+\end{itemize}
+Per $x<0$, si studia ancora la stessa equazione di secondo grado e si hanno soluzioni analoghe, ma con $x$ sostituita da $-x$.
+\rule{\textwidth}{0,4pt}\newline
+\begin{center}
+    \includegraphics[height=300px]{../img/eqdiff2.PNG}
+\end{center}
+\begin{center}
+    \includegraphics[height=300px]{../img/eqdiff2(1).PNG}
+\end{center}
+\rule{\textwidth}{0,4pt}
