@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  18 JAN 2020 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  18 JAN 2020 19:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -620,7 +620,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--7
 
  []
 
-[8 <../img/eqdiff2.png> <../img/eqdiff2(1).png>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex) [9] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex [10] [11]
+[8 <../img/eqdiff2.png> <../img/eqdiff2(1).png>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex
+c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex:42: Missing $ inserted.
+<inserted text> 
+                $
+l.42 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex:42: Display math should end with $$.
+<to be read again> 
+                   \par 
+l.42 
+     
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex:43: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \]
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex:43: Missing $ inserted.
+<inserted text> 
+                $
+l.43 \]
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex:43: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.43 \]
+       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+) [9] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex [10] [11]
 Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
@@ -766,15 +815,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 14274 strings out of 492609
- 271139 string characters out of 6132818
+ 14277 strings out of 492609
+ 271172 string characters out of 6132818
  342646 words of memory out of 5000000
- 17865 multiletter control sequences out of 15000+600000
- 12091 words of font info for 47 fonts, out of 8000000 for 9000
+ 17867 multiletter control sequences out of 15000+600000
+ 12691 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,10n,73p,978b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" (22 pages, 846377 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" (22 pages, 848774 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
