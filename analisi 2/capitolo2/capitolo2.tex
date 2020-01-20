@@ -23,11 +23,12 @@ Prodotto scalare fra vettori: ha come risultato un numero reale ottenuto dalla f
 \[
     \vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| cos(\theta)
 \]
-dove $\theta$ rappresenta l'angolo tra i due vettori. Di conseguenza $\vec{u} \cdot  \vec{v}$ solo se i due vettori sono ortogonali.\newline
-dal prodotto scalare si può ricavare l'angolo fra due vettori
+dove $\theta$ rappresenta l'angolo tra i due vettori. Di conseguenza $\vec{u} \cdot  \vec{v} = 0$ solo se i due vettori sono ortogonali.\newline
+Dal prodotto scalare si può ricavare l'angolo fra due vettori
 \[
     cos(\theta) = \frac{\vec{u} \cdot  \vec{v} }{|\vec{u}| |\vec{v}|}
 \]
+Inoltre $\vec{v} \cdot  \vec{v} = |\vec{v}|^2$.\newline
 Prodotto vettoriale:
 \[
     \vec{u}\text{x}\vec{v} = \left|\begin{matrix}
@@ -37,7 +38,25 @@ Prodotto vettoriale:
     \end{matrix}\right|
 \]
 Il prodotto vettoriale si annulla solo se i vettori sono paralleli.\newline
+Inoltre $\vec{v} \text{x} \vec{v} = 0$.\newline
 Prodotto misto:
 \[
-    
+    \vec{u} \cdot (\vec{v} \text{x} \vec{w}) = \left|\begin{matrix}
+        u_1 \;\;& u_2 \;\;& u_3\\
+        v_1 &v_2 & v_3\\
+        w_1 &w_2 & w_3
+    \end{matrix}\right|
 \]
+Il prodotto misto si annulla solo se i tre vettori sono linearmente indipendenti.\newline
+\rule{\textwidth}{2pt}
+\subsection*{Funzioni a valori vettoriali, limiti e continuità}
+Si dice funzione a valori vettoriali una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ con $n > 1$. Le funzioni $\vec{f} : \mathbb{R} \rightarrow \mathbb{R}^2$ o $\mathbb{R}^3$.\newline
+Il limite della funzione a valori vettoriali si calcola componente per componente:
+\[
+    \lim_{t\rightarrow t_0}(r_1(t), r_2(t), \dots, r_n(t)) = \left(\lim_{t\rightarrow t_0}r_1(t), \lim_{t\rightarrow t_0}r_2(t), \dots, \lim_{t\rightarrow t_0}r_n(t)\right)
+\]
+Valgono allo stesso modo delle funzioni unidimensionali il teorema di unicità del limite e la definizione di continuità (una funzione a valori vettoriali è continua in un punto se lo sono tutte le sue componenti).\newline
+\rule{\textwidth}{2pt}
+\subsection*{Curve regolari e calcolo differenziale vettoriale}
+Nel caso $n = 2$ o $3$, una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ rappresentano curve nel piano o nello spazio tridimensionale.\newline
+Sia $I$ un intervallo in $\mathbb{R}$. Si dice arco di curva continua, o cammino, in $\mathbb{R}^n$ una funzione $\vec{r}: I \rightarrow \mathbb{R}^n$ continua.\newline
