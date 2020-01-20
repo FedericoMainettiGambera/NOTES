@@ -134,7 +134,7 @@ L'equazione
 \[
     \rho = f(\theta) \;\;\;\text{per } \; \theta \in [\theta_1, \theta_2]
 \]
-è una forma abbreviata che rappresenta:
+è una forma abbreviata che, tramite la sostituzione $x= \rho cos(\theta)$ e $y= \rho sin(\theta)$, può essere riscritta:
 \[
     \begin{cases}
         x = f(\theta) cos(\theta)\\
@@ -171,3 +171,139 @@ Equazione della circonferenza:
 \subsection*{Lunghezza di un arco di curva}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Curve rettificabili e lunghezza}
+Sia $\vec{r}:[a,b] \rightarrow \mathbb{R}^n$ la parametrizzazione di un arco di curva $\gamma$ regolare. Allora $\gamma$ è rettificabile e 
+\[
+    l(\gamma) = \int_{a}^{b}|\vec{r}'(t)| dt
+\]
+\textbf{Lunghezza di un grafico}\newline
+Sia $\gamma$ una curva piana regolare che sia grafico di una funzione, ossia:
+\[
+    \gamma : \begin{cases}
+        x =t \\
+        y= f(t)
+    \end{cases} \;\; \text{per} \;t \in[a,b]
+\]
+allora
+\[
+    l(\gamma) = \int_{a}^{b}\sqrt{1+f'(t)^2}dt
+\]
+Nello spazio tridimensionale la formula diventa:
+\[
+    l(\gamma)= \int_{a}^{b}\sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2}dt
+\]
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Cambiamenti di parametrizzazione, curve equivalenti}
+Passando da $\vec{r} = \vec{r} (t)$ a $\vec{r} = \vec{r} (f(u))$ diremo che abbiamo riparametrizzato la curva, con $f(u)$ monotona (crescente o decrescente).\newline
+Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane la stessa, anche se il verso o la velocità di percorrenza cambiano.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Parametro arco o ascissa curvilinea}
+La lunghezza del arco di curva $\vec{r}(\tau)$ per $\tau$ da $t_0$ a $t$ è una funzione di $t$:
+\[
+    s(t) = \int_{t_0}^{t}|\vec{r}'(\tau)|d\tau
+\]
+Se si è in grado di calcolare esplicitamente tale funzione e poi di invertirla, esprimendo $t$ come funzione di $s$, è possibile riparametrizzare la curva in funzione del parametro $s$, detto parametro arco o ascissa curvilinea.\newline
+Se $\vec{r} = \vec{r}(s)$ è un curva parametrizzata mediante il parametro arco, il vettore derivato $\vec{r}'(s)$ coincide col versore tangente $\vec{T}$\newline
+\newline
+Se $\vec{r}(t)$ è una curva parametrizzata rispetto a un parametro $t$ qualunque (non necessariamente il parametro arco), si ha:
+\[
+    \frac{ds}{dt} =|\vec{r}'(t)| = v(t)
+\]
+che si riscrive anche nella forma
+\[
+    ds =|\vec{r}'(t)|dt =v(t) dt
+\]
+dove il simbolo $ds$ prende il nome di lunghezza d'arco elementare.\newline
+\rule{\textwidth}{2pt}
+\subsection*{Inegrali di linea (di prima specie)}
+Sia $\vec{r}: [a,b] \rightarrow \mathbb{R}$ un arco di curva regolare di sostegno $\gamma$ e sia $f$ una funzione a valori reali, definita in un sottoinsieme $A$ di $\mathbb{R}^n$ contenente $\gamma$, cioè $f:A\subset \mathbb{R}^n \rightarrow \mathbb{R}$ con $\gamma \subset A$. si dice integrale di linea (di prima specie) di $f$ lungo $\gamma$ l'integrale
+\[
+    \int_{\gamma} f ds = \int_{a}^{b}f(\vec{r}(t))|\vec{r}'(t)|dt
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Elementi di geometria differenziale delle curve}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Curvatura e normale principale per una curva in $\mathbb{R}^n$}
+Il versore tangente è definito come:
+\[
+    \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}\text{,} \quad \text{mentre} \;\vec{T}(s) =\vec{r}'(s)
+\]
+in quanto $|\vec{r}'(s)| = 1$, se $s$ è il parametro arco.\newline
+Sia $\vec{u}: I \rightarrow \mathbb{R}^n$, una funzione vettoriale di modulo costante, ossia $|\vec{u}(t)| = c$ per ogni $t$. Allora $\vec{u} \cdot \vec{u}' = 0$, cioè $\vec{u}$ è ortogonale a $\vec{u}'$ in ogni istante.\newline
+\newline
+\textbf{Normale principale e curvatura, rispetto al parametro arco}\newline
+Chiamiamo versone normale principale della curva $\vec{r}(s)$ (parametrizzata rispetto al parametro arco), il versore
+\[
+    \vec{N}(s) =\frac{\vec{T}'(s)}{|\vec{T}'(s)|}
+\]
+definito nei punti in cui $\vec{T}'(s) \neq 0$.\newline
+Chiamiamo curvatura della curva la funzione scalare
+\[
+    k(s) = |\vec{T}'(s)|
+\]
+da cui ricaviamo che $\vec{T}'(s) = k(s) \vec{N}(s)$. \newline
+La normale principale ci dice la direzione verso cui sta curvando la nostra curva, mentre la curvatura è uno scalare e rappresenta l'intensità con cui curva.\newline
+Definiamo invece come raggio di curvatura
+\[
+    \rho(s) = \frac{1}{k(s)}
+\]
+nei punti in cui $k(s) \neq 0$, nei punti in cui invece $k(s) = 0$ si dice che il raggio di curvatura è infinito.\newline
+\newline
+\newline
+\textbf{Normale principale e curvatura, rispetto a un parametro qualsiasi}\newline
+Versone normale principale:
+\[
+    \vec{N}(t) =\frac{\vec{T}'(t)}{|\vec{T}'(t)}
+\]
+e definendo $\frac{ds}{dt} = |\vec{r}'(t)| = v(t)$ da cui ricaviamo che la curvatura è:
+\[
+    k(t) = \frac{|\vec{T}'(t)|}{v(t)}
+\]
+da cui $\vec{T}'(t) = k(t)v(t)\vec{N}(t)$.\newline
+Raggio di curvatura:
+\[
+    \rho(t)= \frac{1}{k(t)}
+\]
+\newline
+Vale la seguente formula:
+\[
+    \vec{a}(t) = v'(t)\vec{T}(t) + v^2(t) k(t) \vec{N}(t)
+\]
+dove $\vec{a}(t) = \vec{r}''(t)$\newline
+\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Calcolo della curvatura per curve nello spazio $\mathbb{R}^3$ o nel piano}
+\[
+    k(t) = \frac{|\vec{r}'(t) \text{x} \vec{r}''(t)|}{v^3(t)}
+\]
+\[
+    k(s) = |\vec{r}'(s) \text{x} \vec{r}''(s)|
+\]
+\newline
+\textbf{caso di curve piane}\newline
+Sia $\vec{r}(t) =(x(t), y(t))$ per $t \in[a,b]$, possiamo vederla come curva in $\mathbb{R}^3$ così: $\vec{r}(t) = (x(t), y(t), 0)$ per $t \in[a,b]$.\newline
+Perciò,
+\[
+    \vec{r}' \text{x} \vec{r}'' =\left|\begin{matrix}
+        i \;\;& j \;\;& k \\
+        x'(t) & y'(t) & 0\\
+        x''(t) & y''(t) & 0
+    \end{matrix} \right|
+\]
+da cui derivano:
+\[
+    k(t) = \frac{|x'(t)y''(t) - x''(t) y'(t)|}{(x'(t)^2 + y'(t)^2)^{\frac{3}{3}}}
+\]
+\[
+    k(s) = |x'(s) y''(s) - x''(s) y'(s)|
+\]
+\newline
+\newline
+Si dicono vertici di una curva i punti in cui $k'(t) = 0$.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Torsione(manca) e terna intrinseca per curve nello spazio $\mathbb{R}^3$}
+Data una curva $\vec{r} : I \rightarrow \mathbb{R}^3$, regolare di classe $C^3(I)$, definiamo il versore binormale della curva come
+\[
+    \vec{B} = \vec{T} \text{x} \vec{N}
+\]
+La terna intrinseca $\vec{B}, \vec{T}, \vec{N}$ costituisce un sistema di riferimento ortonormale.\newline
+\rule{\textwidth}{2pt}
