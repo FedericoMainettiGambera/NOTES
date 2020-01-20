@@ -19,7 +19,11 @@ $\vec{x}, \vec{y}$ sono paralleli se
 \]
 Somma di vettori: si sommano le componenti simili.\newline
 Prodotto fra un vettore e uno scalare: si moltiplica ogni componente per lo scalare.\newline
-Prodotto scalare fra vettori: ha come risultato un numero reale ottenuto dalla formula $\vec{u} \cdot \vec{v} = (u_1 v_1 + u_2 v_2 + \dots + u_n v_n)$. Il prodotto scalare può essere espresso anche come
+Prodotto scalare fra vettori: ha come risultato un numero reale ottenuto dalla formula
+\[
+    \vec{u} \cdot \vec{v} = (u_1 v_1 + u_2 v_2 + \dots + u_n v_n)
+\]
+Il prodotto scalare può essere espresso anche come
 \[
     \vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| cos(\theta)
 \]
@@ -38,6 +42,7 @@ Prodotto vettoriale:
     \end{matrix}\right|
 \]
 Il prodotto vettoriale si annulla solo se i vettori sono paralleli.\newline
+Regola della mano destra: il primo fattore va sul pollice, il secondo sull indice, il risultato è nel medio.\newline
 Inoltre $\vec{v} \text{x} \vec{v} = 0$.\newline
 Prodotto misto:
 \[
@@ -101,6 +106,13 @@ Alcune proprietà del calcolo differenziale vettoriale:
 \[
     (\vec{u} \text{x} \vec{v})' = \vec{u}' \text{x} \vec{v} + \vec{u} \text{x} \vec{v}' \;\;\; in \;\mathbb{R}^3
 \]
+Dato un vettore $\vec{r}(t)$ si dice
+\begin{itemize}
+    \item velocità: $\vec{r}'(t)$
+    \item velocità scalare: $|\vec{r}'(t)|$
+    \item accellerazione: $\vec{r}''(t)$
+    \item accellerazione scalare: $|\vec{r}''(t)|$
+\end{itemize}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Integrale di una funzione vettoriale}
 \[
@@ -195,6 +207,7 @@ Nello spazio tridimensionale la formula diventa:
 \subsubsection*{Cambiamenti di parametrizzazione, curve equivalenti}
 Passando da $\vec{r} = \vec{r} (t)$ a $\vec{r} = \vec{r} (f(u))$ diremo che abbiamo riparametrizzato la curva, con $f(u)$ monotona (crescente o decrescente).\newline
 Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane la stessa, anche se il verso o la velocità di percorrenza cambiano.\newline
+Per invertire il senso di percorrenza si può sostituire $t$ con $-t$.\newline
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Parametro arco o ascissa curvilinea}
 La lunghezza del arco di curva $\vec{r}(\tau)$ per $\tau$ da $t_0$ a $t$ è una funzione di $t$:
