@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  20 JAN 2020 01:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  20 JAN 2020 03:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -620,12 +620,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 413--7
 
  []
 
-[8 <../img/eqdiff2.png> <../img/eqdiff2(1).png>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 61--9
+[8 <../img/eqdiff2.png> <../img/eqdiff2(1).png>] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex [9]
+Underfull \hbox (badness 10000) in paragraph at lines 82--86
 
  []
 
-[9] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex [10] [11]
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
+
+ []
+
+[10]) [11] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex [12] [13]
 Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
@@ -640,7 +645,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
  []
 
-[12]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 159--162
 
  []
@@ -670,17 +675,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--192
 
  []
 
-[13]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-[14]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 275--277
 
  []
 
-[15]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
@@ -690,7 +695,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--335
 
  []
 
-[16]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
@@ -700,12 +705,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
-[17]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 418--420
 
  []
 
-[18]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
@@ -720,7 +725,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 474--476
 
  []
 
-[19]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 491--493
 
  []
@@ -735,7 +740,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 522--523
 [][] 
  []
 
-[20]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 526--527
 
  []
@@ -765,7 +770,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 544--11
 
  []
 
-[21] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.aux)
+[23] (c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -779,10 +784,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  56i,10n,73p,978b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" (22 pages, 850501 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" (24 pages, 856949 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
+ 151 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

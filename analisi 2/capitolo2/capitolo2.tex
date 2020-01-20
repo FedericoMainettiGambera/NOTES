@@ -60,3 +60,114 @@ Valgono allo stesso modo delle funzioni unidimensionali il teorema di unicità d
 \subsection*{Curve regolari e calcolo differenziale vettoriale}
 Nel caso $n = 2$ o $3$, una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ rappresentano curve nel piano o nello spazio tridimensionale.\newline
 Sia $I$ un intervallo in $\mathbb{R}$. Si dice arco di curva continua, o cammino, in $\mathbb{R}^n$ una funzione $\vec{r}: I \rightarrow \mathbb{R}^n$ continua.\newline
+La curva si dice chiusa se $\vec{r}(a) = \vec{r}(b)$ con $I=[a,b]$.\newline
+La curva si dice semplice se non ripassa mai nello stesso punto.\newline
+Il sostegno della curva è l'immagine della funzione, cioè l'insieme dei punti di $\mathbb{R}^n$ percorsi dal punto mobile.\newline
+Una curva si dice piana se esiste un piano che contiene il suo sostegno.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Derivata di una funzione vettoriale. Arco di curva regolare}
+\textbf{def.} Sia $\vec{r}: I \rightarrow \mathbb{R}^n$ e $t_0 \in I$, si dice che $\vec{r}$ è derivabile in $t_0$ se esiste finito
+\[
+    \vec{r}'(t_0) = \lim_{h\rightarrow 0}\frac{\vec{r}(t_0 +h) - \vec{r}(t_0)}{h}
+\]
+Se $\vec{r}$ è derivabile in tutti $I$ e inoltre $\vec{r}'$ è continuo in $I$, si dice che $\vec{r}$ è di classe $C^1(I)$ ($\vec{r}\in C^1(I)$).\newline
+Notiamo che il vettore derivato è il vettore delle derivate delle componeneti:
+\[
+    \vec{r'}(t_0) = (r'_1(t_0), r'_2(t_0), \dots, r'_n(t_0))
+\]
+\textbf{def.} Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice araco di curva regolare un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$.\newline
+Di conseguenza per le curve regolari è ben definito il versore tangente:
+\[
+    \vec{T} = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}
+\]
+\textbf{def.} Si dice arco di curva regolare a tratti un arco di curva $\vec{r} : I \rightarrow \mathbb{R}^n$ tale che: $\vec{r}$ è continua e l'intervallo $I$ può essere suddiviso in un numero finito di sottointervalli, su ciascuno dei quali $\vec{r}$ è un arco di curva regolare.\newline
+\newline
+Alcune proprietà del calcolo differenziale vettoriale:
+\[
+    (\vec{u} + \vec{v})' = \vec{u}' + \vec{v}'
+\]
+\[
+    (c \vec{u})' = c \vec{u}' \;\;\; \text{con c costante}
+\]
+\[
+    (f \vec{u})' = f' \vec{u} + \vec{u}' f \;\;\;\text{con} \; f \; \text{funzione}
+\]
+\[
+    [\vec{u}(f(t))]' = \vec{u}'(f(t))f'(t)
+\]
+\[
+    (\vec{u} \cdot \vec{v})' = \vec{u}' \cdot  \vec{v} + \vec{u} \cdot  \vec{v}'
+\]
+\[
+    (\vec{u} \text{x} \vec{v})' = \vec{u}' \text{x} \vec{v} + \vec{u} \text{x} \vec{v}' \;\;\; in \;\mathbb{R}^3
+\]
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Integrale di una funzione vettoriale}
+\[
+    \int_{a}^{b} \vec{r}(t) dt =\left( \int_{a}^{b}\vec{r_1}(t) dt,\int_{a}^{b}\vec{r_2}(t) dt, \dots, \int_{a}^{b}\vec{r_n}(t) dt,\right)
+\]
+Diremo che $\vec{r}$ è integrabile in $[a,b]$ se lo sono tutte le sue componenti.\newline
+\[
+    \int_{a}^{b} \vec{r}'(t) dt = \vec{r}(b) - \vec{r}(a)
+\]
+Può essere utile utilizzare il modulo vettoriale:
+\[
+    \left| \int_{a}^{b}\vec{r}(t)dt \right| \leq \int_{a}^{b}|\vec{r}(t)|dt
+\]
+Se $\vec{r}(t)$ è una curva regolare e chiusa in $[a,b]$, allora $\int_{a}^{b}\vec{r}'(t) dt =0$.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Classi di curve piane}
+\textbf{curve piane, grafico di funzioni}\newline
+Curve ottenute da grafici di funzioni in una variabile:
+\[
+    y = f(x) \quad\text{per x in} \;[a,b]
+\]
+Forma parametrica:
+\[
+    \begin{cases}
+        x=t \\
+        y=f(t)
+    \end{cases} \;\;\;\; \text{per t} \;\in[a,b]
+\]
+\textbf{curve piane, forma polare}\newline
+L'equazione
+\[
+    \rho = f(\theta) \;\;\;\text{per } \; \theta \in [\theta_1, \theta_2]
+\]
+è una forma abbreviata che rappresenta:
+\[
+    \begin{cases}
+        x = f(\theta) cos(\theta)\\
+        y = f(\theta) sin(\theta)
+    \end{cases} \;\;\; \text{per } \; \theta \in [\theta_1, \theta_2]
+\]
+Osserviamo che 
+\[
+    \vec{r}'(\theta) = (f'(\theta) cos(\theta)- f(\theta)sin(\theta), f'(\theta) sin(\theta) - f(\theta)cos(\theta))
+\]
+\[
+    |\vec{r}'(\theta)| = \sqrt{f'(\theta)^2 + f(\theta)^2}
+\]
+\textbf{coniche in forma polare}\newline
+Equazione polare della conica:
+\[
+        \rho = \frac{\epsilon p}{1- \epsilon cos(\theta)}
+\]
+con $\epsilon > 0$ fissato.\newline
+Questa equazione rappresenta:
+\[
+    \begin{cases}
+        \text{un'ellissi} \;\; &\text{se} \; \epsilon< 1\\
+        \text{una parabola} \;\; &\text{se} \; \epsilon= 1\\
+        \text{un'iperbole} \;\; &\text{se} \; \epsilon> 1
+    \end{cases}
+\]
+Notiamo che il segmo $-$ davanti al coseno non è importante, infatti se cambiamo $\theta = t + \pi$ l'equazione si trasforma in $\rho = \frac{\epsilon p}{1 + \epsilon cos(t)}$.\newline
+Equazione della circonferenza:
+\[
+        \rho = R
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Lunghezza di un arco di curva}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Curve rettificabili e lunghezza}
