@@ -80,7 +80,7 @@ Notiamo che il vettore derivato è il vettore delle derivate delle componeneti:
 \[
     \vec{r'}(t_0) = (r'_1(t_0), r'_2(t_0), \dots, r'_n(t_0))
 \]
-\textbf{def.} Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice araco di curva regolare un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$.\newline
+\textbf{def.} Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice arco di curva regolare un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$.\newline
 Di conseguenza per le curve regolari è ben definito il versore tangente:
 \[
     \vec{T} = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}
@@ -153,19 +153,22 @@ L'equazione
         y = f(\theta) sin(\theta)
     \end{cases} \;\;\; \text{per } \; \theta \in [\theta_1, \theta_2]
 \]
+Ricordiamo che $\rho = \sqrt{x^2 + y^2}$
 Osserviamo che 
 \[
     \vec{r}'(\theta) = (f'(\theta) cos(\theta)- f(\theta)sin(\theta), f'(\theta) sin(\theta) - f(\theta)cos(\theta))
 \]
 \[
-    |\vec{r}'(\theta)| = \sqrt{f'(\theta)^2 + f(\theta)^2}
+    |\vec{r}'(\theta)| = \sqrt{\rho(\theta)^2 + \rho'(\theta)^2} = \sqrt{f'(\theta)^2 + f(\theta)^2}
 \]
+Geometricamente la forma polare $\rho = f(\theta)$ può essere visualizzata come la curva tracciata da una penna posta su un braccio che ruota attorno all'origine a velocità costante (in modo che il tempo $t$ combaci con l'angolo $\theta$). Mentre il braccio ruota la penna si sposta lungo il braccio in modo da essere a distanza $f(\theta)$ dall'origine all'istante $\theta$.\newline
+\newline
 \textbf{coniche in forma polare}\newline
 Equazione polare della conica:
 \[
         \rho = \frac{\epsilon p}{1- \epsilon cos(\theta)}
 \]
-con $\epsilon > 0$ fissato.\newline
+con $\epsilon > 0$ e $p> 0$ e $\theta$ varia nell'intervallo in cui il secondo membro è definito e positivo.\newline
 Questa equazione rappresenta:
 \[
     \begin{cases}
@@ -319,4 +322,15 @@ Data una curva $\vec{r} : I \rightarrow \mathbb{R}^3$, regolare di classe $C^3(I
     \vec{B} = \vec{T} \text{x} \vec{N}
 \]
 La terna intrinseca $\vec{B}, \vec{T}, \vec{N}$ costituisce un sistema di riferimento ortonormale.\newline
+\rule{\textwidth}{2pt}
+\subsection*{Note sugli esercizi}
+Curve:
+\begin{itemize}
+    \item continua: se le componenti sono continue.
+    \item chiusa: se agli estremi dell'intervallo in cui son definite la curva ha lo stesso valore (se fosse definita su tutto $\mathbb{R}$ si controllano i limiti all'infinito).
+    \item asintoti: se i limiti all'infinito hanno un valore finito per una delle due componenti.
+    \item semplice: se la curva non passa mai due volte per lo stesso punto. Si verifica per logica, spesso è utile notare se almeno una delle due componenti è strettamente monotona (crescente o decrescente).
+    \item regolare: Si calcola la derivata della curva (derivata delle componenti) e in seguito il modulo della derivata (radice della somma delle componenti alla seconda). Se la funzione è $C^1$ e la derivata non si annulla mai allora la funzione è regolare. I punti in cui la derivata si annulla si dicono singolari. (Ci sono metodi particolari per calcolare il modulo della derivata per funzioni in forma polare: $\rho = f(\theta) \; \Rightarrow \; |\vec{r}'(\theta)| = \sqrt{f'(\theta)^2 + f(\theta)^2}$; ma, inoltre, non bisogna scordarsi di calcolare la derivata delle componenti per controllare che sia $C^1$).
+\end{itemize}
+Ripassa la scrittura dell un'equazione si una retta passante per due punti.\newline
 \rule{\textwidth}{2pt}
