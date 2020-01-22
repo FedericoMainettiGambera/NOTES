@@ -118,11 +118,11 @@ Dato un vettore $\vec{r}(t)$ si dice
 \[
     \int_{a}^{b} \vec{r}(t) dt =\left( \int_{a}^{b}\vec{r_1}(t) dt,\int_{a}^{b}\vec{r_2}(t) dt, \dots, \int_{a}^{b}\vec{r_n}(t) dt,\right)
 \]
-Diremo che $\vec{r}$ è integrabile in $[a,b]$ se lo sono tutte le sue componenti.\newline
+Diremo che $\vec{r}$ è integrabile in $[a,b]$ se lo è ognuna delle sue componenti.\newline
 \[
     \int_{a}^{b} \vec{r}'(t) dt = \vec{r}(b) - \vec{r}(a)
 \]
-Può essere utile utilizzare il modulo vettoriale:
+Può essere utile utilizzare il seguente lemma:
 \[
     \left| \int_{a}^{b}\vec{r}(t)dt \right| \leq \int_{a}^{b}|\vec{r}(t)|dt
 \]
@@ -141,6 +141,14 @@ Forma parametrica:
         y=f(t)
     \end{cases} \;\;\;\; \text{per t} \;\in[a,b]
 \]
+Proprietà:
+\begin{itemize}
+    \item è continua se e solo se $f$ è continua
+    \item è regolare se e solo se $f$ è derivabile con continuità (le condizioni di non annullamento della derivata prima sono automaticamente verificate perchè $x'(t) = 1$)
+    \item è regolare a tratti se e solo se $f$ è continua e a tratti derivabile con continuità
+    \item non è mai chiusa
+    \item è sempre semplice
+\end{itemize}
 \textbf{curve piane, forma polare}\newline
 L'equazione
 \[
@@ -163,6 +171,12 @@ Osserviamo che
 \]
 Geometricamente la forma polare $\rho = f(\theta)$ può essere visualizzata come la curva tracciata da una penna posta su un braccio che ruota attorno all'origine a velocità costante (in modo che il tempo $t$ combaci con l'angolo $\theta$). Mentre il braccio ruota la penna si sposta lungo il braccio in modo da essere a distanza $f(\theta)$ dall'origine all'istante $\theta$.\newline
 \newline
+Proprietà:
+\begin{itemize}
+    \item è continua se e solo se $f$ è continua
+    \item è regolare se e solo se $f$ è derivabile con continuità, inoltra $f$ e $f'$ non si annullano mai contemporaneamente
+    \item è chiusa se e solo se $f(\theta_1) = f(\theta_2)$ e $\theta_2 - \theta_1 = 2n\pi$ per qualche intero $n$.
+\end{itemize}
 \textbf{coniche in forma polare}\newline
 Equazione polare della conica:
 \[
@@ -186,10 +200,19 @@ Equazione della circonferenza:
 \subsection*{Lunghezza di un arco di curva}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Curve rettificabili e lunghezza}
-Sia $\vec{r}:[a,b] \rightarrow \mathbb{R}^n$ la parametrizzazione di un arco di curva $\gamma$ regolare. Allora $\gamma$ è rettificabile e 
+\textbf{def.} Si dice che $\gamma$ è rettificabile se 
+\[
+    sub_\mathcal{P} l(\mathcal{P}) = l(\gamma) < + \infty
+\]
+Dove l'estremo superiore è calcolato al variare di tutte le possibili partizioni $\mathcal{P}$ di $[a,b]$.\newline
+In tal caso $l(\gamma)$ assegna per definizione, la lunghezza di $\gamma$.\newline
+\newline
+\textbf{teor.} Sia $\vec{r}:[a,b] \rightarrow \mathbb{R}^n$ la parametrizzazione di un arco di curva $\gamma$ regolare. Allora $\gamma$ è rettificabile e 
+\begin{tcolorbox}
 \[
     l(\gamma) = \int_{a}^{b}|\vec{r}'(t)| dt
 \]
+\end{tcolorbox}
 \textbf{Lunghezza di un grafico}\newline
 Sia $\gamma$ una curva piana regolare che sia grafico di una funzione, ossia:
 \[
@@ -202,6 +225,10 @@ allora
 \[
     l(\gamma) = \int_{a}^{b}\sqrt{1+f'(t)^2}dt
 \]
+Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabile, la stess aproprietà si estende a un numero finito qualsiasi di curve rettificabili. \newline
+\newline
+Se una curva $\gamma$ è regolare a tratti, allora è rettificabile.\newline
+\newline
 Nello spazio tridimensionale la formula diventa:
 \[
     l(\gamma)= \int_{a}^{b}\sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2}dt
@@ -213,7 +240,7 @@ Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane 
 Per invertire il senso di percorrenza si può sostituire $t$ con $-t$.\newline
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Parametro arco o ascissa curvilinea}
-La lunghezza del arco di curva $\vec{r}(\tau)$ per $\tau$ da $t_0$ a $t$ è una funzione di $t$:
+La lunghezza del arco di curva $\vec{r}(\tau)$ per $\tau$ da $t_0$ (inizio dell'intervallo della curva) a $t$ (variabile) è una funzione di $t$:
 \[
     s(t) = \int_{t_0}^{t}|\vec{r}'(\tau)|d\tau
 \]
@@ -235,6 +262,35 @@ Sia $\vec{r}: [a,b] \rightarrow \mathbb{R}$ un arco di curva regolare di sostegn
 \[
     \int_{\gamma} f ds = \int_{a}^{b}f(\vec{r}(t))|\vec{r}'(t)|dt
 \]
+Lintegrale di $f$ di prima specie lungo $\gamma$ è invariante per parametrizzazioni equivalenti e anche per cambiamento di orientazione.\newline
+\newline
+\textbf{applicazioni fisiche}
+\begin{itemize}
+    \item Il baricentro di $\gamma$ è il punto $B = (\bar{x},\bar{y},\bar{z})$ con:
+    \[
+        \begin{cases}
+            \bar{x} = \frac{1}{m}\int_\gamma x\rho ds = \frac{1}{m}\int_{a}^{b}x(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt
+            \bar{y} = \frac{1}{m}\int_\gamma y\rho ds = \frac{1}{m}\int_{a}^{b}y(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt
+            \bar{z} = \frac{1}{m}\int_\gamma z\rho ds = \frac{1}{m}\int_{a}^{b}z(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt
+        \end{cases}
+    \]
+    Se il corpo è omogeneo ($\rho =$ costante), il baricentro di dice centroide e ha coordinate:
+    \[
+        \begin{cases}
+            \bar{x} = \frac{\rho}{m}\int_\gamma x ds = \frac{1}{l(\gamma)}\int_{a}^{b}x(t)|\vec{r}'(t)|dt = \frac{\int_{a}^{b}x(t)|\vec{r}'(t)|dt}{\int_{a}^{b}|\vec{r}'(t)|dt}
+            \bar{y} = \;\text{stesso di sopra}
+            \bar{z} = b\;\text{stesso di sopra}
+        \end{cases}
+    \]
+    \item momento di inerzia di $\gamma$ rispetto a un asse fissato. Se $\delta(x,y,z)$ indica la distanza del punto $(x,y,z)$ da quest'asse fissato, si ha:
+    \[
+        I = \int_\gamma \delta^2 \rho ds = \int_{a}^{b}\delta^2(\vec{r}(t))\rho(\vec{r}(t))|\vec{r}'(t)|dt
+    \]
+    Se il corpo è omogeneo:
+    \[
+        I = \frac{m}{l(\gamma)}\int_\gamma \delta^2ds = m \frac{\int_{a}^{b}\delta^2(\vec{r}(t))|\vec{r}'(t)|dt}{\int_{a}^{b}|\vec{r}'(t)|dt}
+    \]
+\end{itemize}
 \rule{\textwidth}{2pt}
 \subsection*{Elementi di geometria differenziale delle curve}
 \rule{\textwidth}{0,4pt}
@@ -330,7 +386,8 @@ Curve:
     \item chiusa: se agli estremi dell'intervallo in cui son definite la curva ha lo stesso valore (se fosse definita su tutto $\mathbb{R}$ si controllano i limiti all'infinito).
     \item asintoti: se i limiti all'infinito hanno un valore finito per una delle due componenti.
     \item semplice: se la curva non passa mai due volte per lo stesso punto. Si verifica per logica, spesso è utile notare se almeno una delle due componenti è strettamente monotona (crescente o decrescente).
-    \item regolare: Si calcola la derivata della curva (derivata delle componenti) e in seguito il modulo della derivata (radice della somma delle componenti alla seconda). Se la funzione è $C^1$ e la derivata non si annulla mai allora la funzione è regolare. I punti in cui la derivata si annulla si dicono singolari. (Ci sono metodi particolari per calcolare il modulo della derivata per funzioni in forma polare: $\rho = f(\theta) \; \Rightarrow \; |\vec{r}'(\theta)| = \sqrt{f'(\theta)^2 + f(\theta)^2}$; ma, inoltre, non bisogna scordarsi di calcolare la derivata delle componenti per controllare che sia $C^1$).
+    \item regolare: Si calcola la derivata della curva (derivata delle componenti) e in seguito il modulo della derivata (radice della somma delle componenti alla seconda). Se la funzione è $C^1$ e la derivata non si annulla mai allora la funzione è regolare. (Ci sono metodi particolari per calcolare il modulo della derivata per funzioni in forma polare: $\rho = f(\theta) \; \Rightarrow \; |\vec{r}'(\theta)| = \sqrt{f'(\theta)^2 + f(\theta)^2}$; ma, inoltre, non bisogna scordarsi di calcolare la derivata delle componenti per controllare che sia $C^1$).\newline
+    Infine per individuare i punti di singolarità si calcolano i punti in cui $\vec{r}(t) = (x,y,z)$ per cui $t$ annulla la derivata.
 \end{itemize}
 Ripassa la scrittura dell un'equazione si una retta passante per due punti.\newline
 \rule{\textwidth}{2pt}
