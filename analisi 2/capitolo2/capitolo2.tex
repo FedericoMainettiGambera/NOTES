@@ -75,12 +75,16 @@ Una curva si dice piana se esiste un piano che contiene il suo sostegno.\newline
 \[
     \vec{r}'(t_0) = \lim_{h\rightarrow 0}\frac{\vec{r}(t_0 +h) - \vec{r}(t_0)}{h}
 \]
-Se $\vec{r}$ è derivabile in tutti $I$ e inoltre $\vec{r}'$ è continuo in $I$, si dice che $\vec{r}$ è di classe $C^1(I)$ ($\vec{r}\in C^1(I)$).\newline
+\begin{tcolorbox}
+Se $\vec{r}$ è derivabile in tutto $I$ e inoltre $\vec{r}'$ è continuo in $I$, si dice che $\vec{r}$ è di classe $C^1(I)$ ($\vec{r}\in C^1(I)$).
+\end{tcolorbox}
 Notiamo che il vettore derivato è il vettore delle derivate delle componeneti:
 \[
     \vec{r'}(t_0) = (r'_1(t_0), r'_2(t_0), \dots, r'_n(t_0))
 \]
-\textbf{def.} Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice arco di curva regolare un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$.\newline
+\begin{tcolorbox}
+\textbf{def.} Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice arco di curva regolare un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$.
+\end{tcolorbox}
 Di conseguenza per le curve regolari è ben definito il versore tangente:
 \[
     \vec{T} = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}
@@ -217,6 +221,10 @@ In tal caso $l(\gamma)$ assegna per definizione, la lunghezza di $\gamma$.\newli
     l(\gamma) = \int_{a}^{b}|\vec{r}'(t)| dt
 \]
 \end{tcolorbox}
+Nello spazio tridimensionale la formula diventa:
+\[
+    l(\gamma)= \int_{a}^{b}\sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2}dt
+\]
 \textbf{Lunghezza di un grafico}\newline
 Sia $\gamma$ una curva piana regolare che sia grafico di una funzione, ossia:
 \[
@@ -231,14 +239,9 @@ allora
     l(\gamma) = \int_{a}^{b}\sqrt{1+f'(t)^2}dt
 \]
 \end{tcolorbox}
-Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabile, la stess aproprietà si estende a un numero finito qualsiasi di curve rettificabili. \newline
+Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabile, la stessa proprietà si estende a un numero finito qualsiasi di curve rettificabili. \newline
 \newline
 Se una curva $\gamma$ è regolare a tratti, allora è rettificabile.\newline
-\newline
-Nello spazio tridimensionale la formula diventa:
-\[
-    l(\gamma)= \int_{a}^{b}\sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2}dt
-\]
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Cambiamenti di parametrizzazione, curve equivalenti}
 Passando da $\vec{r} = \vec{r} (t)$ a $\vec{r} = \vec{r} (f(u))$ diremo che abbiamo riparametrizzato la curva, con $f(u)$ monotona (crescente o decrescente).\newline
@@ -406,7 +409,7 @@ Proprietà delle curve:
     Infine per individuare i punti di singolarità si calcolano i punti in cui $\vec{r}(t) = (x,y,z)$ per cui $t$ annulla la derivata.
 \end{itemize}
 \end{tcolorbox}
-Ripassa la scrittura dell un'equazione si una retta passante per due punti.\newline
+Ripassa la scrittura dell un'equazione di una retta passante per due punti.\newline
 \newline
 Negli esercizi sul calcolo delle lunghezze di archi di curve e di parametrizzazione secondo il parametro arco è risultato molto utile l'intergale:
 \[
