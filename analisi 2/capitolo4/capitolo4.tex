@@ -1,3 +1,157 @@
 \section*{4- Calcolo differenziale per funzioni di più variabili a valori vettoriali}
 \rule{\textwidth}{2pt}
 \subsection*{Funzioni di più variabili a valori vettoriali: generalità}
+\[
+    \vec{f}: A\subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^m
+\]
+Mostriamo alcuni esempi di oggetti rappresentabili tramite funzioni di più variabili a valori vettoriali.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Superfici in forma parametrica}
+Le superfici in forma parametrica, sono solo un caso particolare del concetto più asatratto e generale di varietà $k$-dimensionale in forma parametrica in $\mathbb{R}^m$. (Più avanti sarà discusso meglio).\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Trasformazioni di coordinate}
+\[
+    \vec{f}: A\subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^n
+\]
+\textbf{Coordinate polari nel piano.} Il punto $(x,y) \in \mathbb{R}^2$ può essere anche individuato in forma polare ed è molto comodo se si è in presenza di simmetrie rispetto all'origine. Ricordando che la distanza dall'origine è $\rho = \sqrt{x^2+ y^2}$ e $\theta$ è l'angolo formato tra il vettore $(x,y)$ e l'asse $x$, otteniamo:
+\[
+    \begin{cases}
+        x = \rho cos(\theta)\\
+        y = \rho sin(\theta)
+    \end{cases} \;\;\;\;\text{con} \; \rho \in[0,+\infty), \theta \in [0,2\pi) \;\text{o qualunque intervallo di ampiezza} \; 2\pi
+\]
+Questa trasformazione di coordinate si può vedere come una funzione $\vec{f}: \mathbb{R}^2 \rightarrow \mathbb{R}^2$, $(x,y) = f(\rho, \theta)$.\newline
+\newline
+\textbf{Coordinate cilindriche nello spazio.} Viene utilizzato per descrivere insiemi e funzioni che hanno simetrie rispetto all'asse delle $z$ in $\mathbb{R}^3$ e si ha:
+\[
+    \begin{cases}
+        x = \rho cos(\theta)\\
+        y = \rho sin(\theta)\\
+        z = t
+    \end{cases} \;\;\;\;\text{con}\; \rho \in [0, +\infty), \theta \in [0, 2\pi), t \in \mathbb{R}
+\]
+Questa trasformazione si può vedere come una funzione $f: \mathbb{R}^3 \rightarrow \mathbb{R}^3$.\newline
+\newline
+\textbf{Coordinate sferiche nello spazio.} Viene utilizzato per descrivere insiemi e funzioni che hanno simmetrie rispetto all'origine in $\mathbb{R}^3$ e si ha:
+\[
+    \begin{cases}
+        x = \rho sin(\phi)cos(\theta)\\
+        y =\rho sin(\phi)sin(\theta)\\
+        z = \rho cos(\phi)
+    \end{cases} \;\;\;\;\text{con}\; \rho > 0, \phi \in[0,\pi], \theta \in[0,2\pi)
+\]
+Queste trasformazioni si possono vedere come funzioni $f: \mathbb{R}^2 \rightarrow \mathbb{R}^3$. \newline
+Da notare che se si ha $\rho$ costante, il sistema rappresenta la superficie di una sfera di raggio $\rho$ in forma parametrica.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Campi vettoriali}
+Sono solo esempi ed esercizi.\newline
+\rule{\textwidth}{2pt}
+\subsection*{Limiti, continuità e differenziabilità per funzioni $\vec{f}:\mathbb{R}^n \rightarrow \mathbb{R}^m$}
+Se $\vec{f} : A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^m$, possiamo scrivere
+\[
+    \vec{f}(x) = (f_1(x), \dots,f_m(x))
+\]
+dove le $f_i$ sono componenti di $\vec{f}$ e sono funzioni reali di più variabili.\newline
+\newline
+Il limite si può calcolare componente per componente
+\[
+    \lim_{x\rightarrow x_0} \vec{f}(x) = (\lim_{x\rightarrow x_0}f_1(x), \dots,\lim_{x\rightarrow x_0}f_m(x))
+\]
+\newline
+Una funzione $\vec{f} : A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^m$ è continua se e solo se lo sono tutte le sue componenti.\newline
+\newline
+Diremo che $\vec{f} : A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^m$ è differenziabile in $x_0$ se tutte le sue componenti lo sono.\newline
+\newline
+\textbf{Matrice Jacobiana} di $\vec{f}$:
+\[
+    D \vec{f}(x_0) = \left(\begin{matrix}
+        \frac{\delta f_1}{\delta x_1} \;\; & \frac{\delta f_1}{\delta x_2} \;\; & \dots \;\; & \frac{\delta f_1}{\delta x_n}\\
+        \frac{\delta f_2}{\delta x_1} & \dots & \dots & \frac{\delta f_2}{\delta x_n}\\
+        \dots &\dots&\dots&\dots\\
+        \frac{\delta f_m}{\delta x_1} & \dots & \dots & \frac{\delta f_m}{\delta x_n}\\
+    \end{matrix}\right) (x_0)
+\]
+\textbf{teor.} Condizione sufficiente affinchè una funzione $\vec{f}: A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^m$, con $A$ aperto, risulti differenziabile in $A$ è che tutti gli elementi della sua matrice Jacobiana siano funzioni continue in $A$.\newline
+\newline
+Se $\vec{f}: A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^m$ è differenziabile, allora è derivabile e continua.\newline
+\newline
+\textbf{teor.} Siano $\vec{f}: A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^m$, $\vec{g}: B \subseteq \mathbb{R}^m \rightarrow \mathbb{R}^k$ e supponiamo che sia ben definita almeno in un intorno $C$ di $x_0 \in A$ la funzione composta $\vec{g} \circ \vec{f}: C \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^k$. Se $\vec{f}$ è differenziabile in $x_0$ e $\vec{g}$ è differenziabile in $y_0 = \vec{f}(x_0)$, anche $\vec{g} \circ \vec{f}$ è differenziabile in $x_0$ e la sua matrice jacobiana si ottiene come prodotto (matriciale) delle matrici Jacobiane di $\vec{f}$ e $\vec{g}$, calcolate nei punti $x_0$ e $\vec{f}(x_0)$.
+\[
+    D(\vec{g} \circ \vec{f})(x_0) = D \vec{g}(\vec{f}(x_0))D \vec{f}(x_0)
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Superfici regolari in forma parametrica}
+Una superficie in forma parametrica è una funzione del tipo:
+\[
+    \vec{r}:A \subseteq \mathbb{R}^2 \rightarrow \mathbb{R}^3
+\]
+con $\vec{r} = (x,y,z)$ e
+\[
+    \begin{cases}
+        x=x(u,v) \\
+        y=y(u,v)\\
+        z=z(u,v)
+    \end{cases} \;\;\;\;(u,v) \in A
+\] 
+Valutare se una superficie in forma parametrica è regolare:\newline
+\textbf{def.} Una superficie parametrizzata da $\vec{r} = \vec{r}(u,v)$, con $\vec{r}: A \subseteq \mathbb{R}^2 \rightarrow \mathbb{R}^3$ si dice regolare se $\vec{r}$ è differenziabile in $A$ e inoltre la matrice Jacobiana di $\vec{r}$ ha rango due in ogni punto di $A$. Se in qualche punto di $A$ le condizioni vengono violate, chiameremo punti singolari della superficie i punti corrispondenti.\newline
+Le condizioni possono essere verificate tramite l'esistenza e il non annullamento di:
+\[
+    \vec{r}_u(u_0, v_0) \;\text{x}\; \vec{r}_v(u_0, v_0) = det \left(\begin{matrix}
+        \vec{i} & \vec{j} & \vec{k}\\
+        \\
+        \frac{\delta x}{\delta u}(u_0,v_0) & \frac{\delta y}{\delta u}(u_0,v_0) & \frac{\delta z}{\delta u}(u_0,v_0)\\
+        \\
+        \frac{\delta x}{\delta v}(u_0,v_0) & \frac{\delta y}{\delta v}(u_0,v_0) & \frac{\delta z}{\delta v}(u_0,v_0)
+    \end{matrix}\right) \neq 0
+\]
+con
+\[
+    \vec{r}_u(u_0, v_0) = ( \frac{\delta x}{\delta u}(u_0,v_0) , \frac{\delta y}{\delta u}(u_0,v_0) , \frac{\delta z}{\delta u}(u_0,v_0) )
+\]
+\[
+    \vec{r}_v(u_0, v_0) = ( \frac{\delta x}{\delta v}(u_0,v_0) , \frac{\delta y}{\delta v}(u_0,v_0) , \frac{\delta z}{\delta v}(u_0,v_0) )
+\]
+Una proprietà di quest'ultimo prodotto vettoriale è che è normale alla superficie nel punto in cui è calcolato. Il versore nomrale è:
+\[
+    \vec{n} = \frac{\vec{r}_u \;\text{x}\; \vec{r}_v}{|\vec{r}_u \;\text{x}\; \vec{r}_v|}
+\]
+[Equazione del piano tangente (manca).]
+\subsubsection*{Superfici cartesiane (grafico di funzioni di due variabili)}
+Il grafico di $z = f(x,y)$ è una superficie che si può riscrivere nella forma:
+\[
+    \begin{cases}
+        x= u\\
+        y=v\\
+        z = f(u,v)
+    \end{cases}
+\]
+Vettore normale:
+\[
+    det\left( \begin{matrix}
+        \vec{i} & \vec{j} & \vec{k} \\
+        1 & 0 & f_u(u_0,v_0) \\
+        0 & 1 & f_v(u_0,v_0) 
+    \end{matrix} \right)= -\vec{i}f_u -\vec{j} f_v + \vec{k}
+\]
+\[
+    \vec{n} =\frac{-\vec{i}f_u -\vec{j} f_u + \vec{k}}{\sqrt{1 + |\nabla f|^2}}
+\]
+Se $f$ è differenziabile in $A$, allora il suo grafico è sempre una superficie regolare.
+\subsubsection*{Superfici di rotazione}
+Superfici ottenute facendo ruotare una curva $\gamma$ detta generatrice attorno a un asse.\newline
+In un riferimento $(x,y,a)$ sia $z$ l'asse a cui vogliamo far ruotare una curva $\gamma$, inizialmente assegnata al piano $x, z$ in forma parametrica:
+\[
+    \begin{cases}
+        x = x(t)\\
+        z=z(t)
+    \end{cases} \quad t \in I
+\]
+La superficie che si ottiene per rotazione è
+\[
+    \begin{cases}
+        x= x(t) cos(\theta)\\
+        y = y(t) sin(\theta)\\
+        z= z(t)
+    \end{cases} \quad t \in I, \theta \in[0,2\pi]
+\]
