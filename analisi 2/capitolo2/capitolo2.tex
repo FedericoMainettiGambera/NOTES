@@ -150,6 +150,7 @@ Proprietà:
     \item è sempre semplice
 \end{itemize}
 \textbf{curve piane, forma polare}\newline
+\begin{tcolorbox}
 L'equazione
 \[
     \rho = f(\theta) \;\;\;\text{per } \; \theta \in [\theta_1, \theta_2]
@@ -161,14 +162,17 @@ L'equazione
         y = f(\theta) sin(\theta)
     \end{cases} \;\;\; \text{per } \; \theta \in [\theta_1, \theta_2]
 \]
+\end{tcolorbox}
 Ricordiamo che $\rho = \sqrt{x^2 + y^2}$
 Osserviamo che 
 \[
     \vec{r}'(\theta) = (f'(\theta) cos(\theta)- f(\theta)sin(\theta), f'(\theta) sin(\theta) - f(\theta)cos(\theta))
 \]
+\begin{tcolorbox}
 \[
     |\vec{r}'(\theta)| = \sqrt{\rho(\theta)^2 + \rho'(\theta)^2} = \sqrt{f'(\theta)^2 + f(\theta)^2}
 \]
+\end{tcolorbox}
 Geometricamente la forma polare $\rho = f(\theta)$ può essere visualizzata come la curva tracciata da una penna posta su un braccio che ruota attorno all'origine a velocità costante (in modo che il tempo $t$ combaci con l'angolo $\theta$). Mentre il braccio ruota la penna si sposta lungo il braccio in modo da essere a distanza $f(\theta)$ dall'origine all'istante $\theta$.\newline
 \newline
 Proprietà:
@@ -222,9 +226,11 @@ Sia $\gamma$ una curva piana regolare che sia grafico di una funzione, ossia:
     \end{cases} \;\; \text{per} \;t \in[a,b]
 \]
 allora
+\begin{tcolorbox}
 \[
     l(\gamma) = \int_{a}^{b}\sqrt{1+f'(t)^2}dt
 \]
+\end{tcolorbox}
 Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabile, la stess aproprietà si estende a un numero finito qualsiasi di curve rettificabili. \newline
 \newline
 Se una curva $\gamma$ è regolare a tratti, allora è rettificabile.\newline
@@ -240,11 +246,15 @@ Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane 
 Per invertire il senso di percorrenza si può sostituire $t$ con $-t$.\newline
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Parametro arco o ascissa curvilinea}
-La lunghezza del arco di curva $\vec{r}(\tau)$ per $\tau$ da $t_0$ (inizio dell'intervallo della curva) a $t$ (variabile) è una funzione di $t$:
+La lunghezza del arco di curva $\vec{r}(\tau)$ per $\tau$ da $t_0$ (negli esercizi parte sempre da $0$... ???) a $t$ (variabile) è una funzione di $t$:
+\begin{tcolorbox}
 \[
     s(t) = \int_{t_0}^{t}|\vec{r}'(\tau)|d\tau
 \]
-Se si è in grado di calcolare esplicitamente tale funzione e poi di invertirla, esprimendo $t$ come funzione di $s$, è possibile riparametrizzare la curva in funzione del parametro $s$, detto parametro arco o ascissa curvilinea.\newline
+Se si è in grado di calcolare esplicitamente tale funzione e poi di invertirla, esprimendo $t$ come funzione di $s$, è possibile riparametrizzare la curva in funzione del parametro $s$, detto parametro arco o ascissa curvilinea (ricordarsi di ricalcolare anche gli estremi dell'intervallo secondo il nuovo parametro).\newline
+\end{tcolorbox}
+Notiamo che se $|\vec{r}'(t)| = 1$, $t$ coincide con il parametro arco, quindi la curva sarebbe già parametrizzata secondo  il parametro arco.\newline
+\newline
 Se $\vec{r} = \vec{r}(s)$ è un curva parametrizzata mediante il parametro arco, il vettore derivato $\vec{r}'(s)$ coincide col versore tangente $\vec{T}$\newline
 \newline
 Se $\vec{r}(t)$ è una curva parametrizzata rispetto a un parametro $t$ qualunque (non necessariamente il parametro arco), si ha:
@@ -252,9 +262,11 @@ Se $\vec{r}(t)$ è una curva parametrizzata rispetto a un parametro $t$ qualunqu
     \frac{ds}{dt} =|\vec{r}'(t)| = v(t)
 \]
 che si riscrive anche nella forma
+\begin{tcolorbox}
 \[
     ds =|\vec{r}'(t)|dt =v(t) dt
 \]
+\end{tcolorbox} 
 dove il simbolo $ds$ prende il nome di lunghezza d'arco elementare.\newline
 \rule{\textwidth}{2pt}
 \subsection*{Inegrali di linea (di prima specie)}
@@ -265,21 +277,22 @@ Sia $\vec{r}: [a,b] \rightarrow \mathbb{R}$ un arco di curva regolare di sostegn
 Lintegrale di $f$ di prima specie lungo $\gamma$ è invariante per parametrizzazioni equivalenti e anche per cambiamento di orientazione.\newline
 \newline
 \textbf{applicazioni fisiche}
+\begin{tcolorbox}
 \begin{itemize}
     \item Il baricentro di $\gamma$ è il punto $B = (\bar{x},\bar{y},\bar{z})$ con:
     \[
         \begin{cases}
-            \bar{x} = \frac{1}{m}\int_\gamma x\rho ds = \frac{1}{m}\int_{a}^{b}x(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt
-            \bar{y} = \frac{1}{m}\int_\gamma y\rho ds = \frac{1}{m}\int_{a}^{b}y(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt
+            \bar{x} = \frac{1}{m}\int_\gamma x\rho ds = \frac{1}{m}\int_{a}^{b}x(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt\\
+            \bar{y} = \frac{1}{m}\int_\gamma y\rho ds = \frac{1}{m}\int_{a}^{b}y(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt\\
             \bar{z} = \frac{1}{m}\int_\gamma z\rho ds = \frac{1}{m}\int_{a}^{b}z(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt
         \end{cases}
     \]
-    Se il corpo è omogeneo ($\rho =$ costante), il baricentro di dice centroide e ha coordinate:
+    Se il corpo è omogeneo ($\rho =$ costante), il baricentro si dice centroide e ha coordinate:
     \[
         \begin{cases}
-            \bar{x} = \frac{\rho}{m}\int_\gamma x ds = \frac{1}{l(\gamma)}\int_{a}^{b}x(t)|\vec{r}'(t)|dt = \frac{\int_{a}^{b}x(t)|\vec{r}'(t)|dt}{\int_{a}^{b}|\vec{r}'(t)|dt}
-            \bar{y} = \;\text{stesso di sopra}
-            \bar{z} = b\;\text{stesso di sopra}
+            \bar{x} = \frac{\rho}{m}\int_\gamma x ds = \frac{1}{l(\gamma)}\int_{a}^{b}x(t)|\vec{r}'(t)|dt = \frac{\int_{a}^{b}x(t)|\vec{r}'(t)|dt}{\int_{a}^{b}|\vec{r}'(t)|dt}\\
+            \bar{y} = \;\text{stesso di sopra}\\   
+            \bar{z} = \;\text{stesso di sopra}
         \end{cases}
     \]
     \item momento di inerzia di $\gamma$ rispetto a un asse fissato. Se $\delta(x,y,z)$ indica la distanza del punto $(x,y,z)$ da quest'asse fissato, si ha:
@@ -290,7 +303,9 @@ Lintegrale di $f$ di prima specie lungo $\gamma$ è invariante per parametrizzaz
     \[
         I = \frac{m}{l(\gamma)}\int_\gamma \delta^2ds = m \frac{\int_{a}^{b}\delta^2(\vec{r}(t))|\vec{r}'(t)|dt}{\int_{a}^{b}|\vec{r}'(t)|dt}
     \]
+    Può essere molto utile cercare di ridefinire la curva spostandola in modo tale che l'asse di riferimento sia uno degli assi cartesiani, in questo modo esprimere la distanza $\delta$ di ogni punto dall'asse può essere più facile.
 \end{itemize}
+\end{tcolorbox}
 \rule{\textwidth}{2pt}
 \subsection*{Elementi di geometria differenziale delle curve}
 \rule{\textwidth}{0,4pt}
@@ -380,14 +395,24 @@ Data una curva $\vec{r} : I \rightarrow \mathbb{R}^3$, regolare di classe $C^3(I
 La terna intrinseca $\vec{B}, \vec{T}, \vec{N}$ costituisce un sistema di riferimento ortonormale.\newline
 \rule{\textwidth}{2pt}
 \subsection*{Note sugli esercizi}
-Curve:
+\begin{tcolorbox}
+Proprietà delle curve:
 \begin{itemize}
     \item continua: se le componenti sono continue.
     \item chiusa: se agli estremi dell'intervallo in cui son definite la curva ha lo stesso valore (se fosse definita su tutto $\mathbb{R}$ si controllano i limiti all'infinito).
     \item asintoti: se i limiti all'infinito hanno un valore finito per una delle due componenti.
-    \item semplice: se la curva non passa mai due volte per lo stesso punto. Si verifica per logica, spesso è utile notare se almeno una delle due componenti è strettamente monotona (crescente o decrescente).
+    \item semplice: se la curva non passa mai due volte per lo stesso punto. Si verifica per logica, spesso è utile notare se almeno una delle due componenti è strettamente monotona (crescente o decrescente). Spesso per funzioni trigonometriche si cerca di ragionare sulla loro periodicità.
     \item regolare: Si calcola la derivata della curva (derivata delle componenti) e in seguito il modulo della derivata (radice della somma delle componenti alla seconda). Se la funzione è $C^1$ e la derivata non si annulla mai allora la funzione è regolare. (Ci sono metodi particolari per calcolare il modulo della derivata per funzioni in forma polare: $\rho = f(\theta) \; \Rightarrow \; |\vec{r}'(\theta)| = \sqrt{f'(\theta)^2 + f(\theta)^2}$; ma, inoltre, non bisogna scordarsi di calcolare la derivata delle componenti per controllare che sia $C^1$).\newline
     Infine per individuare i punti di singolarità si calcolano i punti in cui $\vec{r}(t) = (x,y,z)$ per cui $t$ annulla la derivata.
 \end{itemize}
+\end{tcolorbox}
 Ripassa la scrittura dell un'equazione si una retta passante per due punti.\newline
+\newline
+Negli esercizi sul calcolo delle lunghezze di archi di curve e di parametrizzazione secondo il parametro arco è risultato molto utile l'intergale:
+\[
+    \int_{0}^{2\pi} \sqrt{1 + cos(t)}dt = \left[\text{moltiplicando per} \; \frac{\sqrt{1-cos(t)}}{\sqrt{1-cos(t)}}\right] = \int_{0}^{2\pi}\frac{|sin(t)|}{\sqrt{1-cos(t)}}dt =
+\]
+\[
+    = [2 \sqrt{cos(t) +1}\cdot  tan(\frac{t}{2}) ]_0^{2\pi} = 4 \sqrt{2}
+\]
 \rule{\textwidth}{2pt}
