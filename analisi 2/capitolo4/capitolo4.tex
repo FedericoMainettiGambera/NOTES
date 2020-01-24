@@ -38,7 +38,7 @@ Questa trasformazione si può vedere come una funzione $f: \mathbb{R}^3 \rightar
         x = \rho sin(\phi)cos(\theta)\\
         y =\rho sin(\phi)sin(\theta)\\
         z = \rho cos(\phi)
-    \end{cases} \;\;\;\;\text{con}\; \rho > 0, \phi \in[0,\pi], \theta \in[0,2\pi)
+    \end{cases} \;\;\;\;\text{con}\; \rho > 0, \ \in[0,\pi], \theta \in[0,2\pi)
 \]
 Queste trasformazioni si possono vedere come funzioni $f: \mathbb{R}^2 \rightarrow \mathbb{R}^3$. \newline
 Da notare che se si ha $\rho$ costante, il sistema rappresenta la superficie di una sfera di raggio $\rho$ in forma parametrica.\newline
@@ -154,4 +154,238 @@ La superficie che si ottiene per rotazione è
         y = y(t) sin(\theta)\\
         z= z(t)
     \end{cases} \quad t \in I, \theta \in[0,2\pi]
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Varietà k-dimenzionali in $\mathbb{R}^n$ e funzioni definite implicitamente}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Varietà k-dimensionali in $\mathbb{R}^n$ in forma parametrica}
+\textbf{def.} Si dice varietà regolare k-dimensionale in forma parametrica, immersa in $\mathbb{R}^n$ (con $1 \leq k \leq n-1$), una funzione $\vec{r} : \Omega \rightarrow \mathbb{R}^n$, con $\Omega$ aperto in $\mathbb{R}^k$, tale che $\vec{r} \in C^1(\Omega)$ e la matriche Jacobiana di $\vec{r}$ ha rango $k$ in ogni punto di $\Omega$.\newline
+Nel caso particolare in cui $k = n-1$ (e $n > 3$) la varietà si dice ipersuperficie in $\mathbb{R}^n$.\newline
+Dal punto di visa dell'intuizione geometrica, la varietà k-dimensionale è l'immagine della funzione $\vec{r}$ in $\mathbb{R}^n$\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Funzioni implicite definite da sistemi di equazioni}
+Avendo un sistema di $m$ equazioni in $n+m$ incognite, il teorema di Rouchè-Capelli ci dice che se la matrice del sistema ha rango massimo (cioè $m$) si riescono a esplicitare $m$ variabili in funzione di altre $n$. \newline
+Nel caso non lineare ci si limita a verificare il teorema di Rouchè-Capelli localmente: nell'intorno di un punto in cui si sa che il sistema è soddisfatto, il rango massimo della matrice del sistema lineare diventa il rango massimo della matrice del sistema linearizzato, cioè della matrice Jacobiana del sistema non lineare.\newline
+\newline
+\textbf{notazioni:}\newline
+Scriviamo un sistema di $m$ equazioni in $n+m$ variabili nella seguente forma vettoriale
+\[
+    \vec{f}(x, y) = 0
+\]
+dove $\vec{f}: A \subset \mathbb{R}^{n+m} \rightarrow \mathbb{R}^m$, $\vec{x} \in \mathbb{R}^n$, $\vec{y} \in \mathbb{R}^m$.\newline
+Denotiamo con $D_y \vec{f}(x_0, y_0)$ la matrice Jacobiana della funzione $y \rightarrow \vec{f}(x_0, y)$, calcolata nel punto $y_0$, ossia la matrice di $m \; \text{x}\; m$ elementi $\frac{\delta f_i}{\delta y_j}(x_0, y_0)$, con $(i,j = 1, 2, \dots, m)$ (con $D_x \vec{f(x_0, y_0)}$ denotiamo l'analogo per le $x$).\newline
+\newline
+\textbf{teor.} Teorema di Dini, della funzione implicita: caso generale. \newline
+Sia $A$ un aperto di $\mathbb{R}^{n+m}$, $\vec{f}: A \rightarrow \mathbb{R}^m$, $\vec{f} \in C^1(A)$, e supponiamo che nel punto $(x_0, y_0) \in A$ sia
+\[
+    \vec{f}(x_0, y_0) = 0 ; \;\;\;\;\;\;\;\;det(D_y \vec{f}(x_0, y_0)) \neq 0
+\]
+Allora esiste un intorno $U \subset \mathbb{R}^n$ di $x_0$ e un unica funzione $\vec{g} : U \rightarrow \mathbb{R}^m$, $g \in C^1(U)$, tale che, per ogni $x \in U$,
+\[
+    \vec{f} (x,\vec{g}(x)) = 0
+\]
+\[
+    Dg(x) =-D_y \vec{f}(x,\vec{g}(x))^{-1}D_x \vec{f} (x, \vec{g}(x))
+\]
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Varietà k-dimensionali in $\mathbb{R}^n$ in forma implicita}
+\textbf{def.} Si dice varietà k-dimensionale in forma implicita, immersa in $\mathbb{R}^n$, un sottoinieme (non vuoto) di $\mathbb{R}^n$ del tipo:
+\[
+    M = \{x \in \Omega : \vec{f}(x) = 0\}
+\]
+dove $\Omega$ è un aperto di $\mathbb{R}^n$, $\vec{f}: \Omega \rightarrow \mathbb{R}^{n-k}$, $\vec{f} \in C^1(\Omega)$ e il rango di $D \vec{f}$ è uguale a $n-k$ in ogni punto di $\Omega$. La varietà si dirà di classe $C^m$ (per qualche intero $m \geq 1$) se, inoltre, $\vec{f} \in C^m (\Omega)$; si dirà di classe $C^{\infty}$ se è di classe $C^m$ per ogni intero $m$.\newline
+\newline
+Si noti che se $k = n-1$ la funzione $f$ ha valori reali; in questo caso $M$ è definita da un'unica equazione in $n$ variabili, si chiamerà ipersuperficie in forma cartesiana implicita. Nel caso $n=3$ si ha semplicemente una superficie in forma cartesiana implicita (es. la sfera: $x^2 + y^2 + z^2 - R^2= 0$).\newline
+\newline
+Se $n=3$, $k=1$, abbiamo due equazioni in tre variabili, cioè una curva in forma cartesiana implicità (vista come intersezione di due superfici).\newline
+\rule{\textwidth}{2pt}
+\subsection*{Trasformazioni di coordinate e loro inversione}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Il teorema della funzione inversa}
+Una funzione lineare $\vec{f}: \mathbb{R}^n \rightarrow \mathbb{R}^n$ nella forma
+\[
+    \vec{f}(\vec{x}) =A \vec{x}
+\]
+per una certa matrice $A$, $n \text{x} n$, risulta invertibile se e solo se $det(A)\neq 0$ (teorema di Cramer).\newline
+\newline
+Per una funzione non lineare $\vec{f}: A \rightarrow \mathbb{R}^n$, tale che $\vec{f}\in C^1(A)$, per qualche aperto $A \subseteq \mathbb{R}^n$ non possiamo usare lo stesso risultato, ma possiamo dire che è invertibile in un intorno di $x_0$, quando la matrice Jacobiana (approssimazione lineare della funzione non lineare) calcolata in $x_0$ è invertibile, $\vec{f}$ risulta invertibile almeno in un intorno di $x_0$.\newline
+\newline
+\textbf{def.} Una funzione $\vec{f}: A \rightarrow B$ ($A,B$ aperti in $\mathbb{R}^n$) si dice invertibile in $A$ se è iniettiva, ossia se per ogni $x_1, x_2 \in A$
+\[
+    f(x_1) = f(x_2) \Rightarrow x_1 = x_2
+\]
+$f$ si dice suriettiva su $B$ se per ogni $y \in B$ esiste $x \in A$ tale che $\vec{f} (x) = y$.\newline
+$f$ si dice biiettiva se è iniettiva e suriettiva.\newline
+\newline
+\textbf{teor.} Teorema di inversione locale. Sia $f: A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^n$ con $A$ aperto, tale che $\vec{f} \in C^1(A)$. Supponiamo che per un dato punto $x_0 \in A$ sia
+\[
+    det(Df(x_0)) \neq 0
+\]
+Allora esistono un intorno $U$ di $x_0$ e un intorno $V$ di $\vec{f}(x_0)$ tra i quali  la funzione $\vec{f}$ è biunivoca; inoltre, detta $g: V \rightarrow U$ la corrispondenza inversa, si ha che $\vec{g}\in C^1(V)$ e 
+\[
+    D \vec{g}(\vec{f}(x)) = D \vec{f}(x)^{-1} \;\;\; \text{per ogni} \;x \in U
+\]
+Bisogna far attenzione al fatto che si sta parlando di invertibilità locale e non globale, tutto ciò che si può dire è che c'è un intorno in cui la funzione è invertibile.\newline
+\newline
+\textbf{Coordinate polari nel piano}\newline
+La trasformazione
+\[
+    \begin{cases}
+        x = \rho cos(\theta)\\
+        y = \rho sin(\theta)
+    \end{cases}
+\]
+ha matrice Jacobiana
+\[
+    \left(\begin{matrix}
+        cos(\theta) \;\; & -\rho sin(\theta)\\
+        sin(\theta) & \rho cos(\theta) 
+    \end{matrix}\right)
+\]
+con determinante $\rho$. La trasformazione è regolare ad eccezione di $\rho = 0$ (origine del piano).\newline
+\newline
+\textbf{Coordinate cilindriche nello spazio} \newline
+La trasformazione
+\[
+    \begin{cases}
+        x= \rho cos(\theta)\\
+        y =\rho sin(\theta)\\
+        z = t
+    \end{cases}
+\]
+ha matrice Jacobiana
+\[
+    \left(\begin{matrix}
+        cos(\theta) \;\; & -\rho sin(\theta) \;\; & 0\\
+        sin(\theta) & \rho cos(\theta) & 0\\
+        0 & 0 &1
+    \end{matrix}\right)
+\]
+con determinante $\rho$. La trasformazione è regolare ad eccezione di $\rho = 0$ (l'asse $z$).\newline
+\newline
+\textbf{Coordinate sferiche nello spazio}\newline
+La trasformazione
+\[
+    \begin{cases}
+        x= \rho sin(\phi) cos(\theta)\\
+        y= \rho sin(\phi) cos(\theta)\\
+        z = \rho cos(\phi)
+    \end{cases}
+\]
+ha matrice Jacobiana
+\[
+    \left(\begin{matrix}
+        sin(phi) cos(\theta) \;\; & \rho cos(phi) cos(\theta) \;\; & -\rho sin(\phi)sin(\theta)\\
+        sin(\phi) sin(\theta) & \rho cos(\phi) sin(\theta) & \rho sin(\phi) cos(\theta)\\
+        cos(\phi) & -\rho sin(\phi) & 0
+    \end{matrix}\right)
+\]
+con determinante $\rho^2 sin(\phi)$. La trasformazione è regolare tranne che per $\rho = 0$ (origine dello spazio) e $\phi = 0, \pi$ (i due semiassi $z$ nello spazio). In conclusione sono singolari tutti i punti dell'asse $z$. \newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Trasformazione di operatori differenziali}
+Sia 
+\[
+    \begin{cases}
+        x = g(u,v)\\
+        y=h(u,v)
+    \end{cases}
+\]
+una trasformazione regolare di coordinate nel piano e sia $f(x,y)$ una funzione differenziabile. Si può scrivere:
+\[
+    \frac{\delta f}{\delta u} = \frac{\delta f}{\delta x} \frac{\delta g}{\delta u} + \frac{\delta f}{\delta y} \frac{\delta h}{\delta u}
+\]
+\[
+    \frac{\delta f}{\delta v} = \frac{\delta f}{\delta x} \frac{\delta g}{\delta v} + \frac{\delta f}{\delta y} \frac{\delta h}{\delta v}
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Ottimizzazione. Estremi vincolanti}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}
+\textbf{Problema:} Date due funzioni $f= f(x,y)$ e $g = g(x,y)$, dotate di derivate parziali continue in $\mathbb{R}^2$. Si vogliono determinare gli estremi di $f$ sotto la condizione di vincolo $g(x,y) = b$, $b \in \mathbb{R}^2$.\newline
+A seconda che sia un caso di massimo o di minimo vincolato scriveremo:
+\[
+    \begin{cases}
+        max \; f\\
+        sub\\
+        g(x,y) = b
+    \end{cases}\quad \quad \begin{cases}
+        min \; f \\
+        sub\\
+        g(x,y) = b
+    \end{cases}
+\]
+Il problema consiste nel massimizzare (minimizzare) la restrizion di $f$ al vincolo specificato.\newline
+\begin{itemize}
+    \item vincolo esplicitabile: caso in cui il vincolo $g(x,y) = b$ definisce esplicitamente $y=y(x)$ o $x = x(y)$ oppure, più in generale, definisce le equazioni parametriche ($x= x(t), y = y(t)$) di una curva $\gamma$. Il problema allora è ricondotto alla ricerca degli estremi di una funzione reale di variabili reali
+    \[
+        \phi(t) = f(x(t), y(t))
+    \]
+    \item metodo dei moltiplicatori di Lagrange: utilizzato quando il vincolo è rappresentato da una curva regolare assegnata in qualsiasi forma (parametrica, cartesiana o implicita).\newline
+    \textbf{teor.} Teorema dei moltiplicatori di lagrange. Siano $f,g \in C^1(\mathbb{R}^2)$ e $(x^*, y^*)$ punto di estremo vincolato per $f$ sotto il vincolo:
+    \[
+        g(x,y) = b
+    \]
+    Se $(x^*, y^*)$ è regolare per il vincolo, cioè $\nabla g(x^*, y^*) \neq (0,0)$, allora esiste $\lambda^* \in \mathbb{R}$ (detto moltiplicatore di Lagrange) tale che:
+    \[
+        \nabla f(x^*, y^*) = \lambda \nabla g(x^*, y^*)
+    \]
+    Questa formula esprime il fatto che se $(x^*, y^*)$, verifica le ipotesi del teorema, allora la derivata di $f$ lungo la tangente al vincolo si deve annullare e in tal caso diciamo che $(x^*, y^*)$ è punto critico vincolato.\newline
+    \textbf{oss.} Introducendo la funzione $L = L (x, y , \lambda)$, detta Lagrangiana, definita da
+    \[
+        L(x,y,\lambda) = f(x,y) - \lambda[g(x,y) - b]
+    \] 
+    il teorema afferma che se $(x^*, y^*)$ è punto di estremo vincolato, allora esiste $\lambda^*$ tale che il punto $(x^*, y^*, \lambda^*)$ sia punto critico libero per $L$. Infatti i punti critici in $L$ sono soluzioni del sistema:
+    \[
+        \begin{cases}
+            L_x = f_x - \lambda g_x  = 0\\
+            L_y = f_y - \lambda g_y = 0\\
+            L_\lambda = b-g = 0
+        \end{cases}
+    \]
+    Metodo dei moltiplicatori di Lagrange:
+    \begin{itemize}
+        \item Si isolano gli eventuali punti non regolari dell'insieme $g(x,y) = b$, che vanno esaminati a parte.
+        \item si cercano i punti critici liberi della Lagrangiana e cioè soluzioni del sistema visto nell'osservazione.
+        \item si determina la natura dei punti critici. A questo proposito risulta spesso utile il teorema di Weierstrass.
+    \end{itemize}
+\end{itemize}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Moltiplicatore di Lagrange. Il caso generale}
+Consideriamo ora problemi di ottimizzazione vincolata, per funzioni di $n$ variabili ($n \geq 2$) con un numero $m$ di vincoli di uguaglianza.\newline
+Siano $m+1$ funzioni reali di $n$ variabili $f,g_1,g_2,\dots,g_m : \mathbb{R}^n \rightarrow \mathbb{R}$ tutte $C^1(\mathbb{R}^n)$. Si vogliono determinare gli estremi di $f$ quando le variabili sono soggette alle $m$ condizioni di vincolo:
+\[
+    \begin{cases}
+        g_1(x_1,\dots,x_n) = b_1\\
+        \dots\\
+        g_m(x_1,\dots,x_n) = b_m
+    \end{cases}
+\]
+\textbf{teor.} Teorema dei moltiplicatori di Lagrange, caso generale.\newline
+Sia $f, g_1, \dots, g_m \in C^1(\mathbb{R}^n)$, $\vec{g} = (g_1, g_2, \dots, g_m)$ e sia $\vec{x}^*$ punto di estremo vincolato per $f$ rispetto al vincolo
+\[
+    \vec{g}(\vec{x}) = \vec{b}
+\] 
+Se $\vec{x}^*$ è un punto regolare per $\vec{g}$, cioè se il rango di $D \vec{g}(\vec{x}^*)$ è $m$, allora esistono $m$ numeri reali $\lambda_1^*, \dots, \lambda_m^*$, detti moltiplicatori di Lagrange, tali che
+\[
+    \nabla f(\vec{x}^*) = \sum_{j=1}^{m}\lambda_j^* \nabla g_j (\vec{x}^*)
+\]
+\newline
+Introduciamo la funzione Lagrangiana
+\[
+    L(x_1, \dots,x_n, \lambda_1, \dots \lambda_m) =f(x_1, \dots, x_n) - \sum_{j=1}^{m} \lambda_j[g_j(x_1,\dots,x_n) - b_j]
+\]
+dipendente da $n+m$ variabili. Se $\vec{x}^*$ è un punto regolare, allora esiste un vettore di moltiplicatori
+\[
+    \vec{\lambda}^* =(\lambda_1^*, \dots, \lambda_m^*) 
+\]
+tale che $(\vec{x}^*, \vec{\lambda}^*)$ è un punto critico libero per la Lagrangiana. Infatti i punti critici liberi per la Lagrangiana si trovano risolvendo il seguente sistema di $n+m$ equazioni in $n+m$ incognite:
+\[
+    \begin{cases}
+        D_{x_1} L = D_{x_1}f - \sum_{j=1}^{m} \lambda_j D_{x_1}g_j = 0\\
+        \dots\\
+        D_{x_n} L = D_{x_n}f - \sum_{j=1}^{m} \lambda_j D_{x_n} g_j = 0\\
+        D_{\lambda_1}L = b_1 - g_1 = 0\\
+        \dots\\
+        D_{\lambda_m}L = b_m - g_m= 0
+    \end{cases}
 \]

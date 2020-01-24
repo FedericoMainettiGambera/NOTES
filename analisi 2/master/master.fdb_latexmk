@@ -1,15 +1,15 @@
 # Fdb version 3
-["pdflatex"] 1579813811 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" "master" 1579813818
+["pdflatex"] 1579840727 "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.tex" "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf" "master" 1579840733
   "../capitolo1/capitolo1.tex" 1579318027 17031 40ec7fe0a2731af02699014791e8ba5d ""
   "../capitolo2/capitolo2.tex" 1579793043 20530 73c43471c02ecb2f8e83b55d94aecf07 ""
   "../capitolo3/capitolo3.tex" 1579316960 38049 21a79897408d5e2017b7c61c942a315e ""
-  "../capitolo4/capitolo4.tex" 1579813810 8415 e6aec46ddc01ca0ff4a0ed258d5bb00e ""
+  "../capitolo4/capitolo4.tex" 1579840727 21853 2eb85b1b92afdf019f970b6a0871fd42 ""
   "../img/eqdiff2(1).PNG" 1579282705 338207 baa06ca27852220832d359b977f3ef1c ""
   "../img/eqdiff2(1).png" 1579282705 338207 baa06ca27852220832d359b977f3ef1c ""
   "../img/eqdiff2.PNG" 1579282654 300959 9e520b0f43eb5104df2c0d17c5a82ab6 ""
   "../img/eqdiff2.png" 1579282654 300959 9e520b0f43eb5104df2c0d17c5a82ab6 ""
   "../preamble/preamble.tex" 1579147587 563 b3af3df011c05605fce0e2b60baf66f4 ""
-  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.aux" 1579813816 108 cfbb92b024ac1000ea30bced8de47f1d ""
+  "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.aux" 1579840730 108 cfbb92b024ac1000ea30bced8de47f1d ""
   "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.tex" 1579793075 336 861a7e40a36271b8abcf8569d9c2a4e2 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570201114 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570199013 1004 54797486969f23fa377b128694d548df ""
@@ -171,11 +171,11 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1570205488 4694128 59e2d353f4dc7ded0243f5180e559ac1 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570205581 4261151 6e9769eabb4d92bbc917c56b8660c752 ""
   "c:/texlive/2019/texmf.cnf" 1570205462 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1579813816 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
+  "master.aux" 1579840730 108 cfbb92b024ac1000ea30bced8de47f1d "pdflatex"
   "master.tex" 1579793075 336 861a7e40a36271b8abcf8569d9c2a4e2 ""
   (generated)
-  "master.aux"
+  "master.log"
   "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.log"
   "c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf"
+  "master.aux"
   "master.pdf"
-  "master.log"
