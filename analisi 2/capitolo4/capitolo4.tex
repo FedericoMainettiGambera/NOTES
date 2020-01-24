@@ -62,6 +62,7 @@ Una funzione $\vec{f} : A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^m$ è c
 \newline
 Diremo che $\vec{f} : A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^m$ è differenziabile in $x_0$ se tutte le sue componenti lo sono.\newline
 \newline
+\begin{tcolorbox}
 \textbf{Matrice Jacobiana} di $\vec{f}$:
 \[
     D \vec{f}(x_0) = \left(\begin{matrix}
@@ -71,6 +72,8 @@ Diremo che $\vec{f} : A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^m$ è dif
         \frac{\delta f_m}{\delta x_1} & \dots & \dots & \frac{\delta f_m}{\delta x_n}\\
     \end{matrix}\right) (x_0)
 \]
+Da notare è che la colonna i-esima rappresenta il vettore delle derivate di tutte le funzioni di $\vec{f}$ derivate rispetto al i-esimo parametro. Indicheremo questo vettore come $\vec{f}_{x_i}$ 
+\end{tcolorbox}
 \textbf{teor.} Condizione sufficiente affinchè una funzione $\vec{f}: A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^m$, con $A$ aperto, risulti differenziabile in $A$ è che tutti gli elementi della sua matrice Jacobiana siano funzioni continue in $A$.\newline
 \newline
 Se $\vec{f}: A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^m$ è differenziabile, allora è derivabile e continua.\newline
@@ -112,12 +115,16 @@ con
 \[
     \vec{r}_v(u_0, v_0) = ( \frac{\delta x}{\delta v}(u_0,v_0) , \frac{\delta y}{\delta v}(u_0,v_0) , \frac{\delta z}{\delta v}(u_0,v_0) )
 \]
-Una proprietà di quest'ultimo prodotto vettoriale è che è normale alla superficie nel punto in cui è calcolato. Il versore nomrale è:
-\[
-    \vec{n} = \frac{\vec{r}_u \;\text{x}\; \vec{r}_v}{|\vec{r}_u \;\text{x}\; \vec{r}_v|}
-\]
+Una proprietà di quest'ultimo prodotto vettoriale è che è normale alla superficie nel punto in cui è calcolato. 
+\begin{tcolorbox}
+    Il versore normale è:
+    \[
+        \vec{n} = \frac{\vec{r}_u \;\text{x}\; \vec{r}_v}{|\vec{r}_u \;\text{x}\; \vec{r}_v|}
+    \]
+\end{tcolorbox}
 [Equazione del piano tangente (manca).]
 \subsubsection*{Superfici cartesiane (grafico di funzioni di due variabili)}
+\begin{tcolorbox}
 Il grafico di $z = f(x,y)$ è una superficie che si può riscrivere nella forma:
 \[
     \begin{cases}
@@ -126,7 +133,13 @@ Il grafico di $z = f(x,y)$ è una superficie che si può riscrivere nella forma:
         z = f(u,v)
     \end{cases}
 \]
-Vettore normale:
+Matrice Jacobiana per superfici cartesiane:
+\[
+    \left( \begin{matrix}
+        1 & 0 & f_u(u_0,v_0) \\
+        0 & 1 & f_v(u_0,v_0) 
+    \end{matrix} \right)
+\]
 \[
     det\left( \begin{matrix}
         \vec{i} & \vec{j} & \vec{k} \\
@@ -134,27 +147,52 @@ Vettore normale:
         0 & 1 & f_v(u_0,v_0) 
     \end{matrix} \right)= -\vec{i}f_u -\vec{j} f_v + \vec{k}
 \]
+Versore normale per superfici cartesiane:
 \[
     \vec{n} =\frac{-\vec{i}f_u -\vec{j} f_u + \vec{k}}{\sqrt{1 + |\nabla f|^2}}
 \]
-Se $f$ è differenziabile in $A$, allora il suo grafico è sempre una superficie regolare.
+Se $f$ è differenziabile in $A$, allora il suo grafico è sempre una superficie regolare.\newline
+\newline
+Elemento d'area:
+\[
+    dS = \sqrt{1 + |\nabla f|^2} du dv
+\]
+\end{tcolorbox}
 \subsubsection*{Superfici di rotazione}
+\begin{tcolorbox}
 Superfici ottenute facendo ruotare una curva $\gamma$ detta generatrice attorno a un asse.\newline
-In un riferimento $(x,y,a)$ sia $z$ l'asse a cui vogliamo far ruotare una curva $\gamma$, inizialmente assegnata al piano $x, z$ in forma parametrica:
+In un riferimento $(x,y,a)$ sia $y$ l'asse a cui vogliamo far ruotare una curva $\gamma$, inizialmente assegnata al piano $x, z$ in forma parametrica:
 \[
     \begin{cases}
-        x = x(t)\\
-        z=z(t)
+        x = a(t)\\
+        y = b(t)
     \end{cases} \quad t \in I
 \]
 La superficie che si ottiene per rotazione è
 \[
     \begin{cases}
-        x= x(t) cos(\theta)\\
-        y = y(t) sin(\theta)\\
-        z= z(t)
+        x= a(t) cos(\theta)\\
+        y = b(t)\\
+        z= b(t) sin(\theta)
     \end{cases} \quad t \in I, \theta \in[0,2\pi]
 \]
+(questo sistema va adattato di caso in caso, badando principalmente a due fatti: che la curva da far ruotare deve essere tutta da una parte (a destra o a sinistra) dell'asse su cui si ruota e che l'asse su cui si ruota la funzione determina come viene scritto il sistema, per esempio, sopra, siccome volevamo far ruoate attorno a $y$, allora non abbiamo aggiunto seni o coseni alla coordinata $y$).\newline
+Matrice Jacobiana di superfici di rotazione:
+\[
+    \begin{matrix}
+        a'(t)cos(\theta) & b'(t) & a'(t)sin(\theta)\\
+        -a(t)sin(\theta) & 0 & a(t) cos(\theta) 
+    \end{matrix}
+\]
+Elemento d'area di superfici di rotazione:
+\[
+    dS = |a(t)|\sqrt{a'(t)^2 + b'(t)^2} dt d \theta
+\]
+Versore normale di superfici di rotazione:
+\[
+    \vec{n} = \frac{ (b'(t)cos(\theta), -a'(t), b'(t)sin(\theta))}{\sqrt{a'(t)^2 + b'(t)^2}}
+\]
+\end{tcolorbox}
 \rule{\textwidth}{2pt}
 \subsection*{Varietà k-dimenzionali in $\mathbb{R}^n$ e funzioni definite implicitamente}
 \rule{\textwidth}{0,4pt}
@@ -389,3 +427,13 @@ tale che $(\vec{x}^*, \vec{\lambda}^*)$ è un punto critico libero per la Lagran
         D_{\lambda_m}L = b_m - g_m= 0
     \end{cases}
 \]
+\rule{\textwidth}{2pt}
+\subsection*{Note sugli esercizi}
+\begin{tcolorbox}
+\textbf{elemento d'area}
+\[
+    dS = |\vec{r}_t \; \text{x}\; \vec{r}_u| dt du
+\]
+è una scrittura comoda e sintetica che mette in luce la regolarità o meno della superficie (dove $|\vec{r}_t \; \text{x}\; \vec{r}_u|$ si annulla abbiamo punti singolari).
+\end{tcolorbox}
+Ricordiamo che per $\vec{r}_t$ si intende il vettore delle derivate di tutte le funzioni che compongono $\vec{r}$ derivate rispetto al parametro $t$.\newline
