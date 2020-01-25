@@ -96,6 +96,7 @@ con $\vec{r} = (x,y,z)$ e
         z=z(u,v)
     \end{cases} \;\;\;\;(u,v) \in A
 \] 
+\begin{tcolorbox}
 Valutare se una superficie in forma parametrica è regolare:\newline
 \textbf{def.} Una superficie parametrizzata da $\vec{r} = \vec{r}(u,v)$, con $\vec{r}: A \subseteq \mathbb{R}^2 \rightarrow \mathbb{R}^3$ si dice regolare se $\vec{r}$ è differenziabile in $A$ e inoltre la matrice Jacobiana di $\vec{r}$ ha rango due in ogni punto di $A$. Se in qualche punto di $A$ le condizioni vengono violate, chiameremo punti singolari della superficie i punti corrispondenti.\newline
 Le condizioni possono essere verificate tramite l'esistenza e il non annullamento di:
@@ -115,6 +116,7 @@ con
 \[
     \vec{r}_v(u_0, v_0) = ( \frac{\delta x}{\delta v}(u_0,v_0) , \frac{\delta y}{\delta v}(u_0,v_0) , \frac{\delta z}{\delta v}(u_0,v_0) )
 \]
+\end{tcolorbox}
 Una proprietà di quest'ultimo prodotto vettoriale è che è normale alla superficie nel punto in cui è calcolato. 
 \begin{tcolorbox}
     Il versore normale è:
@@ -321,6 +323,31 @@ ha matrice Jacobiana
 con determinante $\rho^2 sin(\phi)$. La trasformazione è regolare tranne che per $\rho = 0$ (origine dello spazio) e $\phi = 0, \pi$ (i due semiassi $z$ nello spazio). In conclusione sono singolari tutti i punti dell'asse $z$. \newline
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Trasformazione di operatori differenziali}
+\begin{tcolorbox}
+Sia
+\[
+    \vec{T}(x,y) = (a(x,y), b(x,y))
+\]
+una trasformazione regolare $\vec{T}: \mathbb{R}^2 \rightarrow \mathbb{R}^2$.\newline
+Sia ora $f(u,v) : \mathbb{R}^2 \rightarrow \mathbb{R}$ una funzione differenziabile. Posto $(u,v) = \vec{T}(x,y)$ definiamo 
+\[
+    g(x,y) = f(\vec{T}(x,y))
+\] 
+Sfruttando il teorema della differenziabilità della funzione composta, possiamo scrivere mediante le derivate di $f$ 
+\[
+    \frac{\delta g}{\delta x} (x,y) = \frac{\delta f}{\delta x}(\vec{T}(x,y)) \cdot \frac{\delta T_1}{\delta x}(x,y) + \frac{\delta f}{\delta y} (\vec{T}(x,y)) \cdot \frac{\delta T_2}{\delta x}(x,y)
+\]
+dove $T_1$ e $T_2$ rappresentano la prima ($a(x,y)$) e la seconda ($b(x,y)$) componente di $\vec{T}$. Negli esercizi le derivate parziali rimangono indicate come in formula senza essere esplcitate ($f$ non viene definita nelle consegne), mentre le derivate con $T_1$ e $T_2$ si possono risolvere. Dunque la formula effettivamente diventa:
+\[
+    \frac{\delta g}{\delta x} (x,y) = \frac{\delta f}{\delta x}(a(x,y), b(x,y)) \cdot \frac{\delta a(x,y)}{\delta x} + \frac{\delta f}{\delta y} (a(x,y), b(x,y)) \cdot \frac{\delta b(x,y)}{\delta x}
+\]
+Analogamente l'altra derivata di $g$ è:
+\[
+    \frac{\delta g}{\delta y}(x,y)= = \frac{\delta f}{\delta x}(\vec{T}(x,y)) \cdot \frac{\delta T_1}{\delta y}(x,y) + \frac{\delta f}{\delta y} (\vec{T}(x,y)) \cdot \frac{\delta T_2}{\delta y}(x,y)
+\]
+Negli esercizi sul libro si fanno anche derivate di secondo grado, ma sinceramente non c'ho capito molto, quindi buona fortuna... chiedi appunti sull'argomento a qualcuno.
+\end{tcolorbox}
+Lascio scritte anche le informazioni trovate sul libro di teoria, anche se non sono molto chiare...\newline
 Sia 
 \[
     \begin{cases}
@@ -328,7 +355,7 @@ Sia
         y=h(u,v)
     \end{cases}
 \]
-una trasformazione regolare di coordinate nel piano e sia $f(x,y)$ una funzione differenziabile. Si può scrivere:
+una trasformazione regolare di coordinate nel piano e sia $f(x,y)$ una funzione differenziabile. Sotto l'azione della trasformazione di coordinate, $f$ diventerà funzione di $u$ e $v$ e per il teorema sul differenziale di una funzione composta, si può scrivere:
 \[
     \frac{\delta f}{\delta u} = \frac{\delta f}{\delta x} \frac{\delta g}{\delta u} + \frac{\delta f}{\delta y} \frac{\delta h}{\delta u}
 \]
@@ -337,6 +364,9 @@ una trasformazione regolare di coordinate nel piano e sia $f(x,y)$ una funzione 
 \]
 \rule{\textwidth}{2pt}
 \subsection*{Ottimizzazione. Estremi vincolanti}
+\begin{tcolorbox}
+    PRESENTE NEL PROGRAMMA DEL CORSO, NON HO TROVATO ESERCIZI SUL LIBRO.
+\end{tcolorbox}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}
 \textbf{Problema:} Date due funzioni $f= f(x,y)$ e $g = g(x,y)$, dotate di derivate parziali continue in $\mathbb{R}^2$. Si vogliono determinare gli estremi di $f$ sotto la condizione di vincolo $g(x,y) = b$, $b \in \mathbb{R}^2$.\newline
@@ -430,10 +460,12 @@ tale che $(\vec{x}^*, \vec{\lambda}^*)$ è un punto critico libero per la Lagran
 \rule{\textwidth}{2pt}
 \subsection*{Note sugli esercizi}
 \begin{tcolorbox}
-\textbf{elemento d'area}
+\textbf{elemento d'area e regolarità}
 \[
     dS = |\vec{r}_t \; \text{x}\; \vec{r}_u| dt du
 \]
-è una scrittura comoda e sintetica che mette in luce la regolarità o meno della superficie (dove $|\vec{r}_t \; \text{x}\; \vec{r}_u|$ si annulla abbiamo punti singolari).
+è una scrittura comoda e sintetica che mette in luce la regolarità o meno della superficie (dove $|\vec{r}_t \; \text{x}\; \vec{r}_u|$ si annulla abbiamo punti singolari (vedi superfici regolari in forma parametrica per saperne di più).\newline
+\newline
+L'elemento d'area per \textbf{trasformazioni} in $\mathbb{R}^2$ o $\mathbb{R}^3$ è calcolato come il modulo del determinante della matrice Jacobiana (che sarà 2x2 o 3x3).
 \end{tcolorbox}
 Ricordiamo che per $\vec{r}_t$ si intende il vettore delle derivate di tutte le funzioni che compongono $\vec{r}$ derivate rispetto al parametro $t$.\newline
