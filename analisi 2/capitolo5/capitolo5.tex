@@ -1,2 +1,220 @@
 \section*{5-CALCOLO INTEGRALE PER FUNZIONI DI PIU' VARIABILI}
 \rule{\textwidth}{2pt}
+\subsection*{Integrali doppi}
+L'integrale doppio derve per il calcolo di volumi.\newline
+\[
+    \int_{\Omega} f(x,y) dxdy
+\]
+Proprietà:
+\begin{itemize}
+    \item se $f(x,y)\geq g(x,y) \Rightarrow \int_\Omega f(x,y) dxdy \geq \int_{\Omega} g(x,y)dxdy$
+    \item $|\int_{\Omega}f(x,y) dxdy| \leq \int_{\Omega}|f(x,y)|dxdy$
+    \item linearità:
+    \[
+        \int_{\Omega}[\alpha \cdot f(x,y) + \beta \cdot g(x,y)]dxdy = \alpha \int_{\Omega} f(x,y) dxdy + \beta \int_{\Omega} g(x,y) dxdy
+    \]
+    \item addittività: Se $\Omega_1, \Omega_2$ sono aperti tali che $\Omega_1 \cap \Omega_2 = \O$, allora
+    \[
+        \int_{\Omega_1 \cap \Omega_2}f(x,y)dxdy = \int_{\Omega_1} f(x,y) dxdy + \int_{\Omega_2} f(x,y) dxdy
+    \]
+    \item valor medio: se $f \in C^0(\Omega)$ con $\Omega$ chiuso e limitato, allora esiste $(x_0, y_0) \in\Omega$ tale che 
+    \[
+        f(x_0, y_0) = \frac{1}{|\Omega|}\int_{\Omega}f(x,y)dxdy
+    \]
+\end{itemize}
+\rule{\textwidth}{0,4pt}\newline
+\textbf{Regione y-semplice:} Se l'intersezione di una qualunque retta verticale con la $\Omega$ è un segmento o vuota.\newline
+\textbf{Regione x-semplice:} Se l'intersezione di una qualunque retta orizzontale con la $\Omega$ è un segmento o vuota.\newline
+\newline
+Una regione piana $\Omega$ si dice \textbf{regolare} se può essere scomposta in un numero finito di regioni semplici.
+\subsubsection*{Integrale su una regione semplice}
+Consideriamo il caso in cui $\Omega$ è un rettangolo con vertici $a, b, c, d$.\newline
+Prendendo una sezione verticale rispetto a $x$ nel punto $x_0$, notiamo che l'area è rappresentata da $A = \int_{c}^{d}f(x_0, y)dy$. Variando per tutte le $x_0$ che appartengono all'intervallo $[a,b]$ otteniamo
+\[
+    \int_{a}^{b} \left(\int_{c}^{d}f(x,y) dy \right)dx
+\]
+Questo concetto è applicabile anche a tutte le $\Omega$ semplici, l'area della sezione rispetto a $x$ è $A = \int_{g(x)}^{h(x)}f(x,y)dy$, e quindi il volume:
+\[
+    \int_{a}^{b}\left(\int_{g(x)}^{h(x)}f(x,y) dy \right)dx
+\]
+Dunque:\newline
+\begin{tcolorbox}
+\textbf{teor.} Formula di riduzione per integrali doppi.\newline
+Se $\Omega$ è \textbf{y-semplice}, cioè se $\Omega = \{(x,y) \in \mathbb{R}^2, a< x<b, g(x)<y<h(x)\}$
+\[
+    \int_{\Omega}f(x,y)dxdy = \int_{a}^{b}\left(\int_{g(x)}^{h(x)}f(x,y)dy\right)dx
+\]
+Dove $g(x)$ rappresenta il limite inferiore di $\Omega$, e $h(x)$ il limite superiore.\newline
+Se $\Omega$ è \textbf{x-semplice}, cioè se $\Omega = \{(x,y) \in \mathbb{R}^2, a< y<b, g(x)<x<h(x)\}$
+\[
+    \int_{\Omega}f(x,y)dxdy = \int_{a}^{b}\left(\int_{g(y)}^{h(y)}f(x,y)dx\right)dy
+\]
+Dove $g(x)$ rappresenta il limite inferiore di $\Omega$, e $h(x)$ il limite superiore.\newline
+\end{tcolorbox}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Baricentro e momento d'inerzia con gli integrali doppi}
+Gli integrali doppi possono essere usati per calcolare il baricentro di una lamina piana e del momento d'inerzia della lamina rispetto ad un asse perpendicolare al piano della lamina.\newline
+Sia $\Omega$ la forma della lamina e $d(x,y)$ la densità di massa nel punto $(x,y)$. La massa sarà $M = \int_{\Omega}d(x,y) dxdy$.
+\begin{itemize}
+    \item \textbf{Baricentro:} $B(x_b, y_b)$
+    \[
+        x_b = \frac{1}{M}\int_\Omega x d(x,y) dx dy \quad \quad y_b =\frac{1}{M}\int_\Omega y d(x,y) dxdy 
+    \]
+    Se la densità fosse costante avremmo $d(x,y) = d$, $M = d |\Omega|$ e
+    \[
+        x_b = \frac{1}{|\Omega|}\int_\Omega x dx dy \quad \quad y_b =\frac{1}{|\Omega|}\int_\Omega y dxdy
+    \]
+    \item \textbf{Momento d'inerzia:}\newline
+    Detta $\delta(x,y)$ la distanza di ogni punto $(x,y) \in \Omega$ dall'asse $r$ perpendicolare al piano:
+    \[
+        I = \int_\Omega \delta^2(x,y) \cdot  d(x,y) dxdy
+    \]
+\end{itemize}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Cambi di variabili negli integrali doppi}
+Il problema è quello di trasformare un insieme $\Omega \subset \mathbb{R}^2$ in un altro insieme $T \subset \mathbb{R}^2$ più semplice geometricamente.
+\[
+    (u,v) = \Phi(x,y)   
+\] 
+La trasformazione $\Phi$ deve essere biunivoca, cioè all'interno dell'intervallo la derivata prima di $\Phi$ non deve annullarsi.\newline
+Stiamo quindi cercando di creare una trasformazione $\Phi: \Omega \rightarrow T$ che sia invertibile
+\[
+    \Phi : \begin{cases}
+        u = u(x,y)\\
+        v = v(x,y)
+    \end{cases}
+\]
+\[
+    \Phi^-1 : \begin{cases}
+        x = x(u,v)\\
+        y = y(u,v)
+    \end{cases}
+\]
+Cerchiamo ora una condizione sulle derivate di $\Phi$ in modo che sia sicuramente invertibile.\newline
+\newline
+\textbf{Matrice Jacobiana:}
+\[
+    \frac{\delta(x,y)}{\delta(u,v)} = \left(\begin{matrix}
+        \frac{\delta x}{ \delta u} & \frac{\delta x}{ \delta v}\\
+        \frac{\delta y}{\delta u} & \frac{\delta x}{ \delta v}
+    \end{matrix}\right) = \left(\begin{matrix}
+        x_u & x_v\\
+        y_u & y_v
+    \end{matrix}\right) \quad \text{della trasformazione}\;\Phi
+\]
+Se risulta $det(\frac{\delta(x,y)}{\delta(u,v)}) \neq 0 \;\; \;\forall\;(u,v) \in T$(senza la frontiera), allora $\Phi$ sarà localmente invertibile. \newline
+\newline
+Questa condizione equivale a imporre che
+\[
+    \text{Jacobiano}\; = \left|det(\frac{\delta(x,y)}{\delta(u,v)})\right| = |x_u y_v - x_v y_u| > 0
+\]
+\newline
+\textbf{teor.} Date le premesse fin'ora mostrate, allora:
+\[
+    \int_\Omega f(x,y) dx dy = \int_T f(x(u,v), y(u,v)) \cdot \left|det(\frac{\delta(x,y)}{\delta(u,v)})\right| du dv
+\]
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Cambio di variabili in coordinate polari}
+Sia $\Omega \in \mathbb{R}^2$, i punti $(x,y)$ vengono trasformati in punti $(\rho, \theta) \in T$ tali che
+\[
+    \Phi : \begin{cases}
+        x = \rho cos(\theta)\\
+        y =\rho sin(\theta)
+    \end{cases}
+\]
+\[
+    \rho = \sqrt{x^2 +y^2} \geq 0 \quad \quad \theta \in[0, 2\pi)
+\]
+La trasformazione $\Phi$ trasforma il piano $\mathbb{R}^2$ in una striscia di piano, la cui altezza massima è $\theta = 2\pi$ (non compresa) e la lunghezza è determinata da $\rho$.\newline
+Un caso delicato è $\rho = 0$, in cui $\theta$ non è definito.\newline
+\[
+    \text{Jacobiano}\;= \rho
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Integrali impropri}
+Se $\Omega \subset \mathbb{R}^n$ è un aperto illimitato e $f \in C^0(\bar{\Omega})$ soddisfa $f \geq 0$ (o $f\leq 0$) si costruiscono dei domini invadenti $\Omega_r = \Omega \cap B_r$. Se poi esiste finito il limite 
+\[
+    \lim_{x\rightarrow \infty} \int_{\Omega_r} f(x) dx
+\]
+diremo che $f$ è integrabile in senso generalizzato e
+\[
+    \int_\Omega f = \lim_{x\rightarrow \infty} \int_{\Omega_r} f(x) dx
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Integrali tripli}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Integrazione per fili}
+Se l'insieme $\Omega$ è semplice rispetto all'asse $z$ o \textbf{z-semplice}, cioè esistono $D \subset \mathbb{R}^2$ e $g,h \in C^0(\bar{D})$ tali che $g<h$ in $D$ e
+\[
+    \Omega = \{(x,y,z) \in \mathbb{R}^3, (x,y)\in D, g(x,y)<z<h(x,y)\}
+\]
+cioè se l'intersezione di una retta parallela all'asse $z$ e $\Omega$ è un segmeno o vuota, allora data $f \in C^0(\Omega)$ si ha
+\[
+    \int_\Omega f(x,y,z) dxdydz = \int_D\left(\int_{g(x,y)}^{h(x,y)}f(x,y,z) dz\right)dxdy
+\] 
+Allo stesso modo si procede nel caso di $\Omega$ x-semplice o y-semplice.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Integrazione per strati}
+Se $\Omega$ è semplice rispetto alla coppia $(x,y)$ e cioè esistono $a<b$ tali che
+\[
+    \Omega = \{(x,y,z) \in \mathbb{R}^3, a<z<b, (x,y) \in D_z \;\forall\;z \in(a,b)\}
+\]
+dove $D_z$ è un insieme regolare $\;\forall\;z \in(a,b)$, cioè se l'intersezione fra un piano parallelo al piano $z=0$ e $\Omega$ è un insieme regolare oppure è vuota, allora data $f \in C^0(\bar{\Omega})$ si ha 
+\[
+    \int_\Omega f(x,y,z) dxdydz = \int_{a}^{b}\left(\int_{D_z}f(x,y,z)dxdy\right)dz
+\]
+Allo stesso modo si procede nel caso di $\Omega$ semplice rispetto alle coppie $(x,z)$ o $(y,z)$\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Cambi di variabili negli integrali tripli}
+\subsubsection*{Coordinate cilindriche}
+\[
+    \;\forall\; \begin{cases}
+        \rho \in [o,\infty)\\
+        \theta \in [0,2\pi)\\
+        z \in \mathbb{R}
+    \end{cases} \;\; \Longrightarrow \begin{cases}
+        x = \rho cos(\theta)\\
+        y = \rho sin(\theta)\\
+        z = z
+    \end{cases}
+\]
+Matrice Jacobiana:
+\[
+    \frac{\delta(x,y,z)}{\delta(\rho,\theta,z)} = \left(
+    \begin{matrix}
+        cos(\theta) & -\rho sin(\theta) & 0\\ 
+        sin(\theta) & \rho cos(\theta) & 0 \\ 
+        0 & 0 & 1
+    \end{matrix}\right)
+\]
+\[
+    det(\frac{\delta(x,y)}{\delta(u,v)}) = \rho = \left|det(\frac{\delta(x,y)}{\delta(u,v)})\right|
+\]
+\subsubsection*{Coordinate sferiche}
+\[
+    \;\forall\; \begin{cases}
+        \rho \in [o,\infty)\\
+        \phi \in [0,\pi]\\
+        \theta \in [0,2\pi)
+    \end{cases} \;\; \Longrightarrow \begin{cases}
+        x = \rho sin(\phi) cos(\theta)\\
+        y = \rho sin(\phi) sin(\theta)\\
+        z = \rho cos(\theta)
+    \end{cases}
+\]
+\[
+    \rho^2 = x^2 +y^2+z^2 \;\; \text{e rappresenta la distanza fra il punto $(x,y,z)$ e l'origine}\;
+\]
+Matrice Jacobiana:
+\[
+    \frac{\delta(x,y,z)}{\delta(\rho,\theta,z)} = \left(
+        \begin{matrix}
+            sin(\phi) cos(\theta) & \rho cos(\phi) cos(\theta) & -\rho sin(\phi) sin(\theta)\\ 
+            sin(\phi) sin(\theta) & \rho cos(\phi) sin(\theta) & \rho sin(\phi) cos(\theta) \\ 
+            cos(\phi) & -\rho sin(\phi) & 0
+        \end{matrix}\right)
+\]
+\[
+    det(\frac{\delta(x,y)}{\delta(u,v)}) = \rho^2 sin(\phi)
+\]
+che si annulla in tutti i punti dell'asse $z$ che sono punti della frontiera e dunque non interessano.\newline
