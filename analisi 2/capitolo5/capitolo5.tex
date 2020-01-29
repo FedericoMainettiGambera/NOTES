@@ -168,9 +168,13 @@ Allo stesso modo si procede nel caso di $\Omega$ semplice rispetto alle coppie $
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Cambi di variabili negli integrali tripli}
 \subsubsection*{Coordinate cilindriche}
+Presa una sezione verticale (cioè di un piano che passa per l'asse $z$) si definiscono:\newline
+$\rho$ rappresenta la distanza tra l'origine degli assi e la proiezione del punto P sul piano $xy$ (in poche parole la distanza fra il punto e l'asse $z$).\newline
+$z$ rappresenta la quota del punto $P$ dal piano $xy$.\newline
+$\theta$ di quando deve ruotare il piano per rappresentare il volume di partenza.
 \[
     \;\forall\; \begin{cases}
-        \rho \in [o,\infty)\\
+        \rho \in [0,\infty)\\
         \theta \in [0,2\pi)\\
         z \in \mathbb{R}
     \end{cases} \;\; \Longrightarrow \begin{cases}
@@ -194,13 +198,21 @@ Matrice Jacobiana:
 \subsubsection*{Coordinate sferiche}
 \[
     \;\forall\; \begin{cases}
-        \rho \in [o,\infty)\\
+        \rho \in [0,\infty)\\
         \phi \in [0,\pi]\\
         \theta \in [0,2\pi)
     \end{cases} \;\; \Longrightarrow \begin{cases}
         x = \rho sin(\phi) cos(\theta)\\
         y = \rho sin(\phi) sin(\theta)\\
-        z = \rho cos(\theta)
+        z = \rho cos(\phi)
+    \end{cases}
+\]
+oppure se si prende $\phi \in [-\pi /2, + \pi/2]$ si ottengono le coordinate:
+\[
+    \begin{cases}
+        x = \rho cos(\phi) cos(\theta)\\
+        y = \rho cos(\phi) sin(\theta)\\
+        z = \rho sin(\phi)
     \end{cases}
 \]
 \[
@@ -246,3 +258,41 @@ Quindi
     \item Se la funzione $f$ è disparti rispetto a $x$ e la superficie di integrazione è simmetrica rispetto a $y$, allora l'integrale è nullo.
     \item Se la funzione $f$ è pari rispetto a $y$ e la superficie di intergrazione è simmetrica rispetto a $x$, allora l'integrale si può calcolare solo sul metà superficie e moltiplicando per due il risultato finale    \item Se la funzione $f$ è pari rispetto a $x$ e la superficie di intergrazione è simmetrica rispetto a $y$, allora l'integrale si può calcolare solo sul metà superficie e moltiplicando per due il risultato finale
 \end{itemize}
+\rule{\textwidth}{0,4pt}\newline
+Dato un dominio $T$ (superficie) del piano e una funzione $f(x,y) \geq 0$ definita su $T$, l'integrale doppio esteso a $T$ di $f$ rappresenta, il volume del solido compreso tra il piano $xy$ e la superficie definita dalla funzione $f$, che si proietta in $T$; sempre in analogia con quanto accade in una variabile, se la funzione cambia segno in $T$, il volume del solido va calcolato integrando su $T$ il valore assoluto di $f$: $|f|$. Inoltre, ponendo $f = 1$ su $T$, l'integrale doppio della funzione costante uguale a $1$ sappresenta l'area di $T$.\newline
+\rule{\textwidth}{0,4pt}\newline
+Passando nel piano da coordinate cartesiane a coordinate polari abbiamo visto che l'elemento d'area $dx \; dy$ diventa $rho d \rho d \theta$, allo stesso modo nello spazio l'elemento di volume $dx \; dy \; dz$ diventa in coordinate cilindriche $\rho d \rho d \theta dz$ e in coordinate sferiche $R^2 sin(\phi) dR d \phi d \theta$ (se però adottiamo le coordiante sferiche con $-\frac{\pi}{2} \leq \phi \leq \frac{\pi}{2}$ l'elemento di volume diventa $R^2 cos(\phi) dR d \phi d \theta$).\newline
+\rule{\textwidth}{0,4pt}\newline
+Data una regione piana $T$, e detta $\delta (x,y)$ non negativa su $T$ densità superficiale di massa relativa alla lamina rappresentata dalla regione $T$, l'integrale doppio esteso su $T$ della funzione $\delta$ rappresenta la masssa $M$ della lamina $T$:
+\[
+    M = \int \int_{T} \delta(x,y) dx dy
+\]
+Valgono inoltre le seguenti formule per il calcolo delle coordinate ($x_b$, $x_a$) del baricentro della lamina e per il calcolo del momento d'inerzia $M_{(x_0, y_0)}$ della lamina rispetto all'asse perpendicolare al piano passante per il punto $(,x_0, y_0)$:
+\[
+    x_b = \frac{1}{M}\int \int_{T} x \delta(x,y)dxdy
+\]
+\[
+    y_b= \frac{1}{M} \int \int_{T} y \delta(x,y)dxdy
+\]
+\[
+    M_{(x_0, y_0)} = \int \int_{T}((x-x_0)^2 + (y-y_0)^2) \delta(x,y) dxdy
+\]
+\rule{\textwidth}{0,4pt}\newline
+Domini in $\mathbb{R}^3$: vi sono 6 differenti oridini con i quali esprimere i domini, tra questi meritano particolare attenzione i seguenti:
+\begin{itemize}
+    \item quello per cui $z$ è la variabile più esterna e, fissata $z$, si procede a fissare le restanti due coordinate ($x,y$ per coordinate cartesiante, $\rho, \theta$ per coordinate cilindriche) sui domini piani che corrispondono alle varie quote di $z$, la cosiddetta espressione per strati;
+    \item quell per cui $z$ è la variabile più interna : si fissano le due coordinate piane ($x,y$ per coordinate polari, $\rho, \theta$ per coordiante cilindriche) in modo generale, dopodichè per ogni coppia $x,y$ o $\rho, \theta$, si fissa la corrispondente $z$, la cosiddetta espressione per fili.
+\end{itemize}
+\rule{\textwidth}{0,4pt}\newline
+Retta per due punti $(x_1, y_1)$ e $(x_2, y_2)$:
+\[
+    \frac{x - x_1}{x_2 - x_1} = \frac{y-y_1}{y_2 - y_1}
+\]
+Piano per tre punti $(x_a, y_a, z_a)$ $(x_b, y_b, z_b)$ e $(x_c, y_c, z_c)$ è il determinante della matrice 
+\[
+    det\left(\begin{matrix}
+        x-x_a & y-y_a & z-z_a\\
+        x_b-x_a & y_b-y_a & z_b-z_a\\
+        x_c-x_a & y_c - y_a & z_c -z_a 
+    \end{matrix}\right) = 0
+\]
