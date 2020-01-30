@@ -1,0 +1,198 @@
+\section*{Funzioni di più variabili a valori vettoriali}
+\rule{\textwidth}{2pt}
+\subsection*{Campi vettoriali}
+Un campo vettoriale $F: \mathbb{R}^n \rightarrow  \mathbb{R}^m$ è una funzione che ad ogni  punto dello spazio $\mathbb{R}^n$ associa un vettore di $\mathbb{R}^m$.
+\[
+    F(\vec{x}) = \left(F_1(\vec{x}), \dots, f_m(\vec{x})\right) = \sum_{h=1}^{m} F_h(\vec{x})e_h
+\]
+dove le componenti $F_h$ sono funzioni scalari e gli $e_h$ rappresentano i vettori della base canonica di $\mathbb{R}^m$. Se tutte le componenti $F_h$ sono di classe $C^1$, diremo che $F \in C^1(\mathbb{R}^n, \mathbb{R}^m)$\newline
+\newline
+\textbf{oss.} $n=m=1$ funzione reale di variabile reale; $n=1, m \geq 2$ curva; $n \geq 2, m = 1$ funzione scalare di più variabili.\newline
+\newline
+Sia $\Omega \in \mathbb{R}^3$ un aperto, dato un campo $F \in C^1(\Omega, \mathbb{R}^3)$, chiameremo \textbf{linea di campo} di $F$ una curva regolare che in ongi punto del suo sostegno sia tangente a $F$.\newline
+Con questa definizione si caratterizza una linea di campo di $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$ con una curva regolare $r = r(t)$ tale che $r'(t)$ sia proporzionale a $F(r(t))$. Dato che il coefficiente di proporzionalità è variabile possiamo scrivere:
+\[
+    r'(t) = p(t) F(r(t))
+\]
+dove $p(t)$ rappresenta la proporzionalità. Notiamo che $p(t) \neq 0$ per ogni $t$, quindi o $p(t) > 0$ (verso di percorrenza e flusso coincidono) o $p(t) < 0$ (verso di percorrenza opposto al flusso).
+\[
+    \left(\begin{matrix}
+        x'(t)\\
+        y'(t)\\
+        z'(t)
+    \end{matrix}\right) = p(t) \left(\begin{matrix}
+        F_1(x(t),y(t),z(t))\\
+        F_2(x(t),y(t),z(t))\\
+        F_3(x(t),y(t),z(t))
+    \end{matrix}\right)
+\]
+\[
+    \frac{x'(t)}{F_1(x(t),y(t),z(t))} = 
+    \frac{y'(t)}{F_2(x(t),y(t),z(t))} = 
+    \frac{z'(t)}{F_3(x(t),y(t),z(t))}
+\]
+\[
+    \frac{dx}{F_1(x,y,z)} = 
+    \frac{dy}{F_2(x,y,z)} = 
+    \frac{dz}{F_3(x,y,z)}
+\]
+e le linee di campo si ottengono integrando:
+\[
+    \int \frac{dx}{F_1(x,y,z)} = 
+    \int \frac{dy}{F_2(x,y,z)} = 
+    \int \frac{dz}{F_3(x,y,z)}
+\]
+\newline
+Chiamiamo \textbf{rotore} di un campo $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$ il vettore
+\[
+    rot(F) = \nabla \land F = \left|\begin{matrix}
+        \vec{i} & \vec{j} & \vec{k} \\
+        \frac{\delta }{\delta x} & \frac{\delta }{\delta y} & \frac{\delta }{\delta z}\\
+        F_1 & F_2 & F_3
+    \end{matrix} \right|
+\]
+Un campo a rotore nullo viene chiamato \textbf{irrotazionale}.\newline
+Per calcolare il rotore di una funzione $F \in C^1(\mathbb{R}^2, \mathbb{R}^2)$, è sufficiente immergerlo in $\mathbb{R}^3$, ponendo $F(x,Y) = (F_1(x,y), F_2(x,y)) \rightarrow  F(x,y,z) = (F_1(x,y), F_2(x,y), 0)$ e si trova:
+\[
+    rot(F) = \nabla\land F = \left(\frac{\delta F_2}{\delta x} - \frac{\delta F_1}{\delta y}\right)\vec{k}
+\]
+Quindi il rotore è perpendicolare al piano del campo.\newline
+Anche in tre dimensioni il rotore individue una direzione che è perpendicolare al piano che localmente tende a contenere le linee di campo.\newline
+Il modulo del rotore misura la tendenza a ruotare attorno all'asse della sua direzione. Se le linee di campo tendono ad accolgersi attorno all'asse, il rotore abrà il verso della vite che ruota nel verso delle linee di campo. Se il rotore è nullo, non c'è effetto rotatorio.\newline
+\newline
+Chiamiamo \textbf{divergenza} di un campo $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$ lo scalare
+\[
+    div(F) = \nabla \cdot F = \frac{\delta F_1}{\delta x} +\frac{\delta F_2}{\delta y} +\frac{\delta F_3}{\delta z}
+\]
+Un campo a divergenza nulla viene chiamato solenoidale.\newline
+La divergenza in $n=1$ coincide con la derivata di una funzione scalare.\newline
+\newline
+\[
+    \nabla \land (\nabla u) = rot(\nabla u) = 0 \quad \quad \;\forall\;u \in C^2(\Omega, \mathbb{R}),
+\]
+cioè un gradiente è irrotazionale;
+\[
+    \nabla \cdot  (\nabla \land F) = div(rot(F)) = 0 \quad \quad \;\forall\; F \in C^2(\Omega, \mathbb{R}^3),
+\]
+cioè un rotore è solenoidale;
+\[
+    \nabla \cdot (\nabla u) = div(\nabla u) = \nabla u \quad \quad \;\forall\;u \in C^2(\Omega, \mathbb{R}).
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Lavoro di un campo vettoriale}
+\textbf{def.} SIa $\gamma$ il sostegno orientato di una curva regolare a tratti $r: I \rightarrow \mathbb{R}^n$ e sia $F \in C ^0(\mathbb{R}^n, \mathbb{R}^n)$. Si chiama \textbf{lavoro} di $F$ lungo $\gamma$ l'integrale di linea
+\[
+    L_\gamma (F) = \int_{\gamma} F \cdot dr = \int_{I} F(r(t))\cdot r'(t) dt
+\]
+Sia $I = [a,b]$, da un punto di vista fisico, $L_\gamma(F)$ rappresenta il lavoro che compie la forza $F$ per spostare il suo punto di applicazione lungo $\gamma$ da $r(a)$ a $r(b)$.\newline
+Rispetto al classico integrale di linea che non cambia se riparametriziamo la curva con verso opposto, l'integrale che calcola il lavoro cambia segno se la curva cambia verso.\newline
+\newline
+Diremo che $F \in C^1(\Omega, \mathbb{R}^n)$ è \textbf{conservativo} se esite una funzione reale $U \in C^2(\Omega, \mathbb{R})$, che chiameremo \textbf{potenziale} di $F$, tale che $\nabla U = F$.\newline
+\newline
+\[
+    F \; \text{conservativo}\; \Longrightarrow F \; \text{irrotazionale}\;
+\]
+da cui ricaviamo che se $F$ non è irrotazionale, allora non è conservativo.\newline
+\newline
+Il lavoro di $F$ lungo un qualunque sostegno $\gamma$ si esprime come
+\[
+    L_\gamma(F) = \int_{a}^{b}\nabla U(r(t)) \cdot r'(t) dt = U(r(b)) - U(r(a))
+\]
+Questa espressione ci dice che il lavoro di un campo conservativo si calcola come differenza di potenziale e che il lavoro di un campo conservativo non dipende dalla curva di percorrenza, ma solo dai suoi estremi. Inoltre il lavoro di $F$ lungo il sostegno di una qualunque linea chiusa è nullo.\newline
+\newline
+\textbf{def.} Un insieme $\Omega \subset \mathbb{R}^n$ si dice \textbf{semplicemente connesso} se ogni linea chiusa $\gamma \subset \Omega$ è contraiile in $\Omega$ a un punto di $\Omega$. In altre parole, partengo da una linea chiusa $\gamma \subset \Omega$ deve essere possibile contrarla, fino a ridursi a un punto e questo deve avvenire sempre rimanendo in $\Omega$.\newline
+In parole povere, in $\mathbb{R}^2$ basta un buco riducibile a un punto per far perdere questa proprietà, in $\mathbb{R}^3$ basta un buco simile a un segmento.\newline
+\newline
+\textbf{teor.} sia $\Omega$ un insieme semplicemente connesso, e sia $F$, allora
+\[
+    F \; \text{conservativo}\; \Longleftrightarrow F \; \text{irrotazionale}\;
+\]
+Da notare è il fatto che sia una condizione sufficiente, non necessaria.\newline
+Notiamo anche che un campo irrotazionale è sempre localmente conservativo.\newline
+\newline
+Per sapere se un campo è conservativo:
+\begin{itemize}
+    \item si controlla se è irrotazionale:
+    \begin{itemize}
+        \item se non lo è, il campo non è conservativo, e per calcolarne il lavoro dobbiamo per forza usare la definizione:
+        \[
+            L_\gamma (F) = \int_{\gamma} F \cdot dr = \int_{I} F(r(t))\cdot r'(t) dt
+        \]
+        \item se lo è, dobbiamo vedere se il dominio dove è definito è semplicemente connesso:
+        \begin{itemize}
+            \item se lo è, il campo è conservativo.
+            \item se non lo è, non possiamo concludere nulla a priori e quindi siamo costretti a provare a costruire un potenziale.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+Come trovare un potenziale di un campo conservativo:\newline
+Dato un campo $F(x,y,z) = (F_1(x,y,z), F_2(x,y,z), F_3(x,y,z))$, $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$, cerchiamo una funzione $U \in C^2(\mathbb{R}^3, \mathbb{R})$ tale che
+\[
+    U_x(x,y,z) = F_1(x,y,z)
+\]
+\[
+    U_y(x,y,z) = F_2(x,y,z)
+\]
+\[
+    U_z(x,y,z) = F_3(x,y,z)
+\]
+Analiziamo il procedimento per la prima di queste: integriamo rispetta a $x$, ma trattandosi di un integrale indefinito abbiamo una costante indefinita che potrebbe dipendere da $y$ e $z$:
+\[
+    U(x,y,z) = \int F_1(x,y,z)dx + \phi(y,z)
+\]
+Dunque
+\[
+    U(x,y,z) = \int F_2(x,y,z)dy + \phi(x,z)
+\]
+\[
+    U(x,y,z) = \int F_3(x,y,z)dz + \phi(x,y)
+\]
+Se riusciamo a trovare un'espressione che si possa esprimere contemporaneamente in queste tre forme, quella sarebbe un potenziale.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Forme differenziali lineari}
+Nel calcolo del lavoro di un campo $F \in C^1 (\mathbb{R}^n, \mathbb{R}^n)$, ci imbattiamo in integrande del tipo
+\[
+    F \cdot  dr = F_1 dx + f_2 dy + F_3 dz
+\]
+nel caso $n=3$ e con solo i primi due addenti nel caso $n=2$. UN'espressione di questo tipo prende il nome di \textbf{forma differenziale lineare}. Il lavoro si esprime quindi come integrale di linea di una forma differenziale lineare:
+\[
+    \int_\gamma F \cdot dr = \int\left(\begin{matrix}
+        F_1(x,y,z)\\
+        F_2(x,y,z)\\
+        F_3(x,y,z)
+    \end{matrix}\right) \cdot \left(\begin{matrix}
+        dx\\dy\\dz
+    \end{matrix}\right) = \int_\gamma (F_1 dx + F_2 dy + F_3 dz)
+\] 
+\newline
+Se $F$ è conservativo, esiste un potenziale $U \in C^2(\mathbb{R}^n, \mathbb{R})$ tale che $\nabla U = F$ e cioè
+\[
+    dU = U_x dx + U_y dy + U_z dz = F_1 dx F_2 dy + F_3 dz
+\]
+In questo caso, la forma differenziale coincide con il differenziale di $U$ e viene chiamata forma differenziale \textbf{esatta}.\newline
+\newline
+Se 
+\[
+    \begin{cases}
+        (F_1)_y =(F_2)_x\\
+        (F_1)_z =(F_3)_x\\
+        (F_2)_z =(F_3)_y
+    \end{cases}
+\]
+allora la funzione $F$ è irrotazionale e la forma differenziale lineare corrispondente viene chiamata forma differenziale \textbf{chiusa}.\newline
+\newline
+Ogni forma differenziale esatta è anche chiusa, mentre il viceversa non è vero.\newline
+\rule{\textwidth}{2pt}
+\subsection*{Teorema della divergenza}
+Consideriamo $F \in C^1(\Omega, \mathbb{R}^n)$ con $\Omega \subset \mathbb{R}^n$ e limitato, inoltre sia $\vec{n}$ un versore definito su un punto del bordo di $\Omega$ (detto $\delta\Omega$ ) e perpendicolare al piano tangente in $\delta \Omega$ e orientato verso l'esterno.\newline
+Il prodotto scalare $F \cdot \vec{n}$ rappresenta il flusso uscente (se $> 0$, entrante se $<0$)  da $\delta\Omega$.\newline
+\newline
+\textbf{teor.} della divergenza.\newline
+Sia $\Omega \subset \mathbb{R}^n$ un aperto limitato, semplice rispetto a tutti gli assi cartesiani con versore nomrale uscente $\vec{n}$ in ogni punto di $\delta\Omega$. Sia $F \in C^1(\bar{\Omega}, \mathbb{R}^n)$ un campo vettoriale. Allora
+\[
+    \int_\Omega \nabla \cdot  F(x) dx = \int_{\delta\Omega} F \cdot  \vec{n} \; dS
+\]
+Questo teorema afferma che l'integrale su un dominio della divergenza di un campo è pari al flusso del campo che attraversa la sua frontiera.\newline
+Con questo teorema spiagamo anche il significato dell'operatore divergenza: misura il grado di comprimibilità di un fluido e, più in generale, quella di un campo vettoriale.\newline
+\rule{\textwidth}{2pt}
+\subsection*{Note sugli esercizi}
