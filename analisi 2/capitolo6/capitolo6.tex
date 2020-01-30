@@ -42,7 +42,7 @@ e le linee di campo si ottengono integrando:
     \int \frac{dy}{F_2(x,y,z)} = 
     \int \frac{dz}{F_3(x,y,z)}
 \]
-\newline
+\rule{\textwidth}{0,4pt}\newline
 Chiamiamo \textbf{rotore} di un campo $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$ il vettore
 \[
     rot(F) = \nabla \land F = \left|\begin{matrix}
@@ -59,14 +59,17 @@ Per calcolare il rotore di una funzione $F \in C^1(\mathbb{R}^2, \mathbb{R}^2)$,
 Quindi il rotore è perpendicolare al piano del campo.\newline
 Anche in tre dimensioni il rotore individue una direzione che è perpendicolare al piano che localmente tende a contenere le linee di campo.\newline
 Il modulo del rotore misura la tendenza a ruotare attorno all'asse della sua direzione. Se le linee di campo tendono ad accolgersi attorno all'asse, il rotore abrà il verso della vite che ruota nel verso delle linee di campo. Se il rotore è nullo, non c'è effetto rotatorio.\newline
-\newline
+\rule{\textwidth}{0,4pt}\newline
 Chiamiamo \textbf{divergenza} di un campo $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$ lo scalare
 \[
     div(F) = \nabla \cdot F = \frac{\delta F_1}{\delta x} +\frac{\delta F_2}{\delta y} +\frac{\delta F_3}{\delta z}
 \]
 Un campo a divergenza nulla viene chiamato solenoidale.\newline
 La divergenza in $n=1$ coincide con la derivata di una funzione scalare.\newline
+\rule{\textwidth}{0,4pt}
 \newline
+\newline
+\textbf{oss.} 
 \[
     \nabla \land (\nabla u) = rot(\nabla u) = 0 \quad \quad \;\forall\;u \in C^2(\Omega, \mathbb{R}),
 \]
@@ -100,7 +103,7 @@ Il lavoro di $F$ lungo un qualunque sostegno $\gamma$ si esprime come
 \]
 Questa espressione ci dice che il lavoro di un campo conservativo si calcola come differenza di potenziale e che il lavoro di un campo conservativo non dipende dalla curva di percorrenza, ma solo dai suoi estremi. Inoltre il lavoro di $F$ lungo il sostegno di una qualunque linea chiusa è nullo.\newline
 \newline
-\textbf{def.} Un insieme $\Omega \subset \mathbb{R}^n$ si dice \textbf{semplicemente connesso} se ogni linea chiusa $\gamma \subset \Omega$ è contraiile in $\Omega$ a un punto di $\Omega$. In altre parole, partengo da una linea chiusa $\gamma \subset \Omega$ deve essere possibile contrarla, fino a ridursi a un punto e questo deve avvenire sempre rimanendo in $\Omega$.\newline
+\textbf{def.} Un insieme $\Omega \subset \mathbb{R}^n$ si dice \textbf{semplicemente connesso} se ogni linea chiusa $\gamma \subset \Omega$ è contraibile in $\Omega$ a un punto di $\Omega$. In altre parole, partendo da una linea chiusa $\gamma \subset \Omega$ deve essere possibile contrarla con continuità, fino a ridurla a un punto e questo deve avvenire sempre rimanendo in $\Omega$.\newline
 In parole povere, in $\mathbb{R}^2$ basta un buco riducibile a un punto per far perdere questa proprietà, in $\mathbb{R}^3$ basta un buco simile a un segmento.\newline
 \newline
 \textbf{teor.} sia $\Omega$ un insieme semplicemente connesso, e sia $F$, allora
@@ -125,29 +128,48 @@ Per sapere se un campo è conservativo:
         \end{itemize}
     \end{itemize}
 \end{itemize}
-Come trovare un potenziale di un campo conservativo:\newline
-Dato un campo $F(x,y,z) = (F_1(x,y,z), F_2(x,y,z), F_3(x,y,z))$, $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$, cerchiamo una funzione $U \in C^2(\mathbb{R}^3, \mathbb{R})$ tale che
-\[
-    U_x(x,y,z) = F_1(x,y,z)
-\]
-\[
-    U_y(x,y,z) = F_2(x,y,z)
-\]
-\[
-    U_z(x,y,z) = F_3(x,y,z)
-\]
-Analiziamo il procedimento per la prima di queste: integriamo rispetta a $x$, ma trattandosi di un integrale indefinito abbiamo una costante indefinita che potrebbe dipendere da $y$ e $z$:
-\[
-    U(x,y,z) = \int F_1(x,y,z)dx + \phi(y,z)
-\]
-Dunque
-\[
-    U(x,y,z) = \int F_2(x,y,z)dy + \phi(x,z)
-\]
-\[
-    U(x,y,z) = \int F_3(x,y,z)dz + \phi(x,y)
-\]
-Se riusciamo a trovare un'espressione che si possa esprimere contemporaneamente in queste tre forme, quella sarebbe un potenziale.\newline
+Come trovare un potenziale di un campo conservativo:
+\begin{itemize}
+    \item \textbf{Metodo 1:}Dato un campo $F(x,y,z) = (F_1(x,y,z), F_2(x,y,z), F_3(x,y,z))$, $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$, cerchiamo una funzione $U \in C^2(\mathbb{R}^3, \mathbb{R})$ tale che
+    \[
+        U_x(x,y,z) = F_1(x,y,z)
+    \]
+    \[
+        U_y(x,y,z) = F_2(x,y,z)
+    \]
+    \[
+        U_z(x,y,z) = F_3(x,y,z)
+    \]
+    Analiziamo il procedimento per la prima di queste: integriamo rispetta a $x$, ma trattandosi di un integrale indefinito abbiamo una costante indefinita che potrebbe dipendere da $y$ e $z$:
+    \[
+        U(x,y,z) = \int F_1(x,y,z)dx + \phi(y,z)
+    \]
+    Dunque
+    \[
+        U(x,y,z) = \int F_2(x,y,z)dy + \phi(x,z)
+    \]
+    \[
+        U(x,y,z) = \int F_3(x,y,z)dz + \phi(x,y)
+    \]
+    Se riusciamo a trovare un'espressione che si possa esprimere contemporaneamente in queste tre forme, quella sarebbe un potenziale. A livello pratico $U(x,y,z)$ è uguale a tutti i termini che compaiono nelle tre equazioni viste sopra, senza ripetere gli elementi (per esempio se nella prima equazione esce $U = x + \phi(...)$ e nella seconda $U = x + y + \phi(...)$ e nella terza $U = z + \phi(...)$, il potenziale sarà $U = x +y +z$, cioè senza ripetere i termini uguali).
+    \item \textbf{Metodo 2:} Sia $F(x,y,z) = X(x,y,z)\vec{i} + Y(x,y,z)\vec{j} + Z(x,y,z)\vec{k}$ conservativo, esiste $U(x,y,z)$ tale che
+    \[
+        \frac{\delta U}{\delta x} = X(x,y,z) \quad \quad \frac{\delta U}{\delta y} = Y(x,y,z) \quad \quad \frac{\delta U}{\delta z} = Z(x,y,z)
+    \]
+    Ora si considera la più semplice di queste euqazioni, immaginiamo sia la prima.\newline
+    Per determinare $U$ prendiamo una primitiva di $U_x$ in cui $y$ e $z$ figurano come costanti:
+    \[
+        f(x,y,z) = \int X(x,y,z)dx + H(y,z)
+    \]
+    Se adesso deriviamo rispetto a $y$, il risultato deve corrispondere a $Y$:
+    \[
+        \frac{\delta f}{\delta y}(x,y,z) = Y (x,y,z)
+    \]
+    Questa relazione ci permette di determinare la "porzione" di $H(y,z)$ che dipende da $y$, quindi sostituendo questa in $f(x,y,z)$ e quindi trasformando $H(y,z)$ in solo $H(z)$ e riderivando rispetto a $z$ e uguagliando il risultato a $Z(x,y,z)$, troveremo l'espressione definitava di $U$, a meno di una costante arbitraria. 
+\end{itemize}
+Osserviamo inoltre che se $U$ è un potenziale di $F$, cioè $grad(U) = F$, anche $grad(U+C) = F$, e quindi anche $U+C$ è un potenziale per $F$, pertando, se $F$ è conservativo esistono infiniti potenziali di $F$, che differiscono per una costante.\newline
+\newline
+\textbf{oss.} è sempre possibile  verificare l'esattezza dei propri conti nella ricerca di un potenziale: $grad(U) = F$, dunque calcolando le derivate parziali di $U$ dovremmo trovare le componenti di $F$.
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Forme differenziali lineari}
 Nel calcolo del lavoro di un campo $F \in C^1 (\mathbb{R}^n, \mathbb{R}^n)$, ci imbattiamo in integrande del tipo
