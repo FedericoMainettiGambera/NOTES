@@ -207,6 +207,9 @@ Matrice Jacobiana:
         z = \rho cos(\phi)
     \end{cases}
 \]
+\[
+    \rho^2 = x^2 +y^2+z^2 \;\; \text{e rappresenta la distanza fra il punto $(x,y,z)$ e l'origine}\;
+\]
 oppure se si prende $\phi \in [-\pi /2, + \pi/2]$ si ottengono le coordinate:
 \[
     \begin{cases}
@@ -214,9 +217,6 @@ oppure se si prende $\phi \in [-\pi /2, + \pi/2]$ si ottengono le coordinate:
         y = \rho cos(\phi) sin(\theta)\\
         z = \rho sin(\phi)
     \end{cases}
-\]
-\[
-    \rho^2 = x^2 +y^2+z^2 \;\; \text{e rappresenta la distanza fra il punto $(x,y,z)$ e l'origine}\;
 \]
 Matrice Jacobiana:
 \[
@@ -261,7 +261,12 @@ Quindi
 \rule{\textwidth}{0,4pt}\newline
 Dato un dominio $T$ (superficie) del piano e una funzione $f(x,y) \geq 0$ definita su $T$, l'integrale doppio esteso a $T$ di $f$ rappresenta, il volume del solido compreso tra il piano $xy$ e la superficie definita dalla funzione $f$, che si proietta in $T$; sempre in analogia con quanto accade in una variabile, se la funzione cambia segno in $T$, il volume del solido va calcolato integrando su $T$ il valore assoluto di $f$: $|f|$. Inoltre, ponendo $f = 1$ su $T$, l'integrale doppio della funzione costante uguale a $1$ sappresenta l'area di $T$.\newline
 \rule{\textwidth}{0,4pt}\newline
-Passando nel piano da coordinate cartesiane a coordinate polari abbiamo visto che l'elemento d'area $dx \; dy$ diventa $rho d \rho d \theta$, allo stesso modo nello spazio l'elemento di volume $dx \; dy \; dz$ diventa in coordinate cilindriche $\rho d \rho d \theta dz$ e in coordinate sferiche $R^2 sin(\phi) dR d \phi d \theta$ (se però adottiamo le coordiante sferiche con $-\frac{\pi}{2} \leq \phi \leq \frac{\pi}{2}$ l'elemento di volume diventa $R^2 cos(\phi) dR d \phi d \theta$).\newline
+Dato un dominio $T$ di $\mathbb{R}^3$, il volume di $T$ può essere espresso  tramite il calcolo dell'integrale triplo della funzione costante $f(x,y,z) = 1$
+\[
+    \text{Volume(T)}\; = \int \int \int_{T} dx dy dz
+\]
+\rule{\textwidth}{0,4pt}\newline
+Passando nel piano da coordinate cartesiane a coordinate polari abbiamo visto che l'elemento d'area $dx \; dy$ diventa $\rho \; d \rho \;d \theta$, allo stesso modo nello spazio l'elemento di volume $dx \; dy \; dz$ diventa in coordinate cilindriche $\rho\; d \rho d \;\theta dz$ e in coordinate sferiche $R^2 sin(\phi)\; dR \;d \phi \;d \theta$ (se però adottiamo le coordiante sferiche con $-\frac{\pi}{2} \leq \phi \leq \frac{\pi}{2}$ l'elemento di volume diventa $R^2 cos(\phi) \;dR \;d \phi \;d \theta$).\newline
 \rule{\textwidth}{0,4pt}\newline
 Data una regione piana $T$, e detta $\delta (x,y)$ non negativa su $T$ densità superficiale di massa relativa alla lamina rappresentata dalla regione $T$, l'integrale doppio esteso su $T$ della funzione $\delta$ rappresenta la masssa $M$ della lamina $T$:
 \[
@@ -277,6 +282,26 @@ Valgono inoltre le seguenti formule per il calcolo delle coordinate ($x_b$, $x_a
 \[
     M_{(x_0, y_0)} = \int \int_{T}((x-x_0)^2 + (y-y_0)^2) \delta(x,y) dxdy
 \]
+\rule{\textwidth}{0,4pt}\newline
+Data una regione $T$ di $\mathbb{R}^3$, e data una funzione $\delta(x,y,z)$ non negativa su $T$, interpretando $\delta$ come densità di massa, relativa al solido rappresentato dalla regione $T$, l'integrale triplo esteso a $T$ della funzione $\delta$ rappresenta la massa $M$ del solido $T$:
+\[
+    M = \int \int \int_{T \delta(X,y,z)dx dy dz
+\]
+Valgono inoltre le seguenti formule, per il calcolo delle coordinate $(x_b, y_b, z_b)$ del baricentro del solido:
+\[
+    x_b = \frac{1}{M} \int \int \int_{T} x \; \delta(x,y,z) dx dy dz
+\]
+\[
+    y_b = \frac{1}{M} \int \int \int_{T} y \; \delta(x,y,z)dx dy dz
+\]
+\[
+    z_b = \frac{1}{M} \int \int \int_{T} z \; \delta(x,y,z)dx dy dz
+\]
+Momento d'inerzia di un solido $T$ rispetto all'asse $z$:
+\[
+    M_z = \int \int \int_{T} (x^2+y^2) \; \delta(x,y,z) dx \; dy \; dz
+\]
+\newline
 \rule{\textwidth}{0,4pt}\newline
 Domini in $\mathbb{R}^3$: vi sono 6 differenti oridini con i quali esprimere i domini, tra questi meritano particolare attenzione i seguenti:
 \begin{itemize}
