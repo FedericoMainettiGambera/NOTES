@@ -121,15 +121,25 @@ Per sapere se un campo è conservativo:
         \[
             L_\gamma (F) = \int_{\gamma} F \cdot dr = \int_{I} F(r(t))\cdot r'(t) dt
         \]
-        Per calcolarlo usiamo:\newline
+        Per calcolarlo usiamo il seguente metodo:\newline
         Dati un campo vettoriale e una linea orientata
         \[
             F(x,y) = X(x,y,z) \vec{i} + Y(x,y,z)\vec{j},
         \]
         \[
-            L: r(t) = [x(t)]\vec{i} + [y(t)]\vec{j}, \;\;\; \;\forall\;t \in[a,b]
+            l: r(t) = [x(t)]\vec{i} + [y(t)]\vec{j}, \;\;\; \;\forall\;t \in[a,b]
         \]
-        
+        il lavoro da $r(a)$ a $r(b)$ è dato dall'integrale di linea:
+        \[
+            L_{AB}= \int_{l} F \cdot  dr = \int_{l}[X(x,y)dx + Y(x,y)dy]
+        \]
+        Questo integrale si può trasformare in un integrale nella variabile $t$ ponendo al posto di $x$ e $y$ i valori $x(t)$ e $y(t)$, e ponendo $dx = x'(t) dt$ e $dy = y'(t) dt$, ossia:
+        \[
+            L_{AB} = \int_{a}^{b} \left[X(x(t), y(t)) \; x'(t) + Y(x(t),y(t)) \;y'(t)\right]dt
+        \]
+        Con $a$ e $b$ estremi tali che se $t=a$ e $t=b$ la funzione della curva $r(t)$ valga i suoi estremi.\newline
+        \newline
+        Se la linea $l$ è chiusa, allora il lavoro compiuto da $F$ per compiere un giro (in senso antiorario) lungo $l$ prende il nome di \textbf{circuitazione}.
         \item se lo è, dobbiamo vedere se il dominio dove è definito è semplicemente connesso:
         \begin{itemize}
             \item se lo è, il campo è conservativo (vedi metodi sotto).
@@ -175,6 +185,7 @@ Come trovare un potenziale di un campo conservativo:
         \frac{\delta f}{\delta y}(x,y,z) = Y (x,y,z)
     \]
     Questa relazione ci permette di determinare la "porzione" di $H(y,z)$ che dipende da $y$, quindi sostituendo questa in $f(x,y,z)$ e quindi trasformando $H(y,z)$ in solo $H(z)$ e riderivando rispetto a $z$ e uguagliando il risultato a $Z(x,y,z)$, troveremo l'espressione definitava di $U$, a meno di una costante arbitraria. 
+    \item \textbf{Metodo 3}:
 \end{itemize}
 \textbf{oss.} se $U$ è un potenziale di $F$, cioè $grad(U) = F$, anche $grad(U+C) = F$, e quindi anche $U+C$ è un potenziale per $F$, pertando, se $F$ è conservativo esistono infiniti potenziali di $F$, che differiscono per una costante.\newline
 \newline
