@@ -121,9 +121,18 @@ Per sapere se un campo è conservativo:
         \[
             L_\gamma (F) = \int_{\gamma} F \cdot dr = \int_{I} F(r(t))\cdot r'(t) dt
         \]
+        Per calcolarlo usiamo:\newline
+        Dati un campo vettoriale e una linea orientata
+        \[
+            F(x,y) = X(x,y,z) \vec{i} + Y(x,y,z)\vec{j},
+        \]
+        \[
+            L: r(t) = [x(t)]\vec{i} + [y(t)]\vec{j}, \;\;\; \;\forall\;t \in[a,b]
+        \]
+        
         \item se lo è, dobbiamo vedere se il dominio dove è definito è semplicemente connesso:
         \begin{itemize}
-            \item se lo è, il campo è conservativo.
+            \item se lo è, il campo è conservativo (vedi metodi sotto).
             \item se non lo è, non possiamo concludere nulla a priori e quindi siamo costretti a provare a costruire un potenziale.
         \end{itemize}
     \end{itemize}
@@ -167,9 +176,11 @@ Come trovare un potenziale di un campo conservativo:
     \]
     Questa relazione ci permette di determinare la "porzione" di $H(y,z)$ che dipende da $y$, quindi sostituendo questa in $f(x,y,z)$ e quindi trasformando $H(y,z)$ in solo $H(z)$ e riderivando rispetto a $z$ e uguagliando il risultato a $Z(x,y,z)$, troveremo l'espressione definitava di $U$, a meno di una costante arbitraria. 
 \end{itemize}
-Osserviamo inoltre che se $U$ è un potenziale di $F$, cioè $grad(U) = F$, anche $grad(U+C) = F$, e quindi anche $U+C$ è un potenziale per $F$, pertando, se $F$ è conservativo esistono infiniti potenziali di $F$, che differiscono per una costante.\newline
+\textbf{oss.} se $U$ è un potenziale di $F$, cioè $grad(U) = F$, anche $grad(U+C) = F$, e quindi anche $U+C$ è un potenziale per $F$, pertando, se $F$ è conservativo esistono infiniti potenziali di $F$, che differiscono per una costante.\newline
 \newline
-\textbf{oss.} è sempre possibile  verificare l'esattezza dei propri conti nella ricerca di un potenziale: $grad(U) = F$, dunque calcolando le derivate parziali di $U$ dovremmo trovare le componenti di $F$.
+\textbf{oss.} è sempre possibile  verificare l'esattezza dei propri conti nella ricerca di un potenziale: $grad(U) = F$, dunque calcolando le derivate parziali di $U$ dovremmo trovare le componenti di $F$.\newline
+\newline
+\textbf{oss.} Bisogna sempre verificare che il dominio sia un insieme semplicemente connesso, se non lo fosse bisogna suddividere il dominio in tanti intervalli semplicemente connessi e specificare che il potenziale vale per ognuno di questi separatamente.\newline
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Forme differenziali lineari}
 Nel calcolo del lavoro di un campo $F \in C^1 (\mathbb{R}^n, \mathbb{R}^n)$, ci imbattiamo in integrande del tipo
