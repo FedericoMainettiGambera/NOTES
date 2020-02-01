@@ -104,7 +104,7 @@ Il lavoro di $F$ lungo un qualunque sostegno $\gamma$ si esprime come
 Questa espressione ci dice che il lavoro di un campo conservativo si calcola come differenza di potenziale e che il lavoro di un campo conservativo non dipende dalla curva di percorrenza, ma solo dai suoi estremi. Inoltre il lavoro di $F$ lungo il sostegno di una qualunque linea chiusa è nullo.\newline
 \newline
 \textbf{def.} Un insieme $\Omega \subset \mathbb{R}^n$ si dice \textbf{semplicemente connesso} se ogni linea chiusa $\gamma \subset \Omega$ è contraibile in $\Omega$ a un punto di $\Omega$. In altre parole, partendo da una linea chiusa $\gamma \subset \Omega$ deve essere possibile contrarla con continuità, fino a ridurla a un punto e questo deve avvenire sempre rimanendo in $\Omega$.\newline
-In parole povere, in $\mathbb{R}^2$ basta un buco riducibile a un punto per far perdere questa proprietà, in $\mathbb{R}^3$ basta un buco simile a un segmento.\newline
+In parole povere, in $\mathbb{R}^2$ un insieme si dice semplicemente connsesso se è fatto da un "pezzo unico" e non ha buchi (anche di un solo punto), in $\mathbb{R}^3$ un buco puntuale non è sufficiente a far perdere questa proprietà, ma deve esserci un buco della forma simile a quella di un segmento perchè l'insieme non sia semplicemente connesso.\newline
 \newline
 \textbf{teor.} sia $\Omega$ un insieme semplicemente connesso, e sia $F$, allora
 \[
@@ -117,33 +117,11 @@ Per sapere se un campo è conservativo:
 \begin{itemize}
     \item si controlla se è irrotazionale:
     \begin{itemize}
-        \item se non lo è, il campo non è conservativo, e per calcolarne il lavoro dobbiamo per forza usare la definizione:
-        \[
-            L_\gamma (F) = \int_{\gamma} F \cdot dr = \int_{I} F(r(t))\cdot r'(t) dt
-        \]
-        Per calcolarlo usiamo il seguente metodo:\newline
-        Dati un campo vettoriale e una linea orientata
-        \[
-            F(x,y) = X(x,y,z) \vec{i} + Y(x,y,z)\vec{j},
-        \]
-        \[
-            l: r(t) = [x(t)]\vec{i} + [y(t)]\vec{j}, \;\;\; \;\forall\;t \in[a,b]
-        \]
-        il lavoro da $r(a)$ a $r(b)$ è dato dall'integrale di linea:
-        \[
-            L_{AB}= \int_{l} F \cdot  dr = \int_{l}[X(x,y)dx + Y(x,y)dy]
-        \]
-        Questo integrale si può trasformare in un integrale nella variabile $t$ ponendo al posto di $x$ e $y$ i valori $x(t)$ e $y(t)$, e ponendo $dx = x'(t) dt$ e $dy = y'(t) dt$, ossia:
-        \[
-            L_{AB} = \int_{a}^{b} \left[X(x(t), y(t)) \; x'(t) + Y(x(t),y(t)) \;y'(t)\right]dt
-        \]
-        Con $a$ e $b$ estremi tali che se $t=a$ e $t=b$ la funzione della curva $r(t)$ valga i suoi estremi.\newline
-        \newline
-        Se la linea $l$ è chiusa, allora il lavoro compiuto da $F$ per compiere un giro (in senso antiorario) lungo $l$ prende il nome di \textbf{circuitazione}.
+        \item se non lo è, il campo non è conservativo, e per calcolarne il lavoro dobbiamo per forza usare la definizione (vedi metodi sotto).
         \item se lo è, dobbiamo vedere se il dominio dove è definito è semplicemente connesso:
         \begin{itemize}
-            \item se lo è, il campo è conservativo (vedi metodi sotto).
-            \item se non lo è, non possiamo concludere nulla a priori e quindi siamo costretti a provare a costruire un potenziale.
+            \item se lo è, il campo è conservativo (vedi metodi sotto per il calcolo del lavoro).
+            \item se non lo è, non possiamo concludere nulla a priori e quindi siamo costretti a provare a costruire un potenziale, che se è differenziabile in tutto il dominio, $F$ è conservativo.
         \end{itemize}
     \end{itemize}
 \end{itemize}
@@ -184,8 +162,30 @@ Come trovare un potenziale di un campo conservativo:
     \[
         \frac{\delta f}{\delta y}(x,y,z) = Y (x,y,z)
     \]
-    Questa relazione ci permette di determinare la "porzione" di $H(y,z)$ che dipende da $y$, quindi sostituendo questa in $f(x,y,z)$ e quindi trasformando $H(y,z)$ in solo $H(z)$ e riderivando rispetto a $z$ e uguagliando il risultato a $Z(x,y,z)$, troveremo l'espressione definitava di $U$, a meno di una costante arbitraria. 
-    \item \textbf{Metodo 3}:
+    Questa relazione ci permette di determinare la "porzione" di $H(y,z)$ che dipende da $y$, quindi sostituendo questa in $f(x,y,z)$ e quindi trasformando $H(y,z)$ in solo $H(z)$ e riderivando rispetto a $z$ e uguagliando il risultato a $Z(x,y,z)$, troveremo l'espressione definitava di $U$, a meno di una costante arbitraria.
+    \item \textbf{Metodo 3}: calcolo del lavoro con la definizione:
+    \[
+        L_\gamma (F) = \int_{\gamma} F \cdot dr = \int_{I} F(r(t))\cdot r'(t) dt
+    \]
+    Per calcolarlo usiamo il seguente metodo:\newline
+    Dati un campo vettoriale e una linea orientata
+    \[
+        F(x,y) = X(x,y,z) \vec{i} + Y(x,y,z)\vec{j},
+    \]
+    \[
+        l: r(t) = [x(t)]\vec{i} + [y(t)]\vec{j}, \;\;\; \;\forall\;t \in[a,b]
+    \]
+    il lavoro da $r(a)$ a $r(b)$ è dato dall'integrale di linea:
+    \[
+        L_{AB}= \int_{l} F \cdot  dr = \int_{l}[X(x,y)dx + Y(x,y)dy]
+    \]
+    Questo integrale si può trasformare in un integrale nella variabile $t$ ponendo al posto di $x$ e $y$ i valori $x(t)$ e $y(t)$, e ponendo $dx = x'(t) dt$ e $dy = y'(t) dt$, ossia:
+    \[
+        L_{AB} = \int_{a}^{b} \left[X(x(t), y(t)) \; x'(t) + Y(x(t),y(t)) \;y'(t)\right]dt
+    \]
+    Con $a$ e $b$ estremi tali che se $t=a$ e $t=b$ la funzione della curva $r(t)$ valga i suoi estremi.\newline
+    \newline
+    Se la linea $l$ è chiusa, allora il lavoro compiuto da $F$ per compiere un giro (in senso antiorario) lungo $l$ prende il nome di \textbf{circuitazione}.
 \end{itemize}
 \textbf{oss.} se $U$ è un potenziale di $F$, cioè $grad(U) = F$, anche $grad(U+C) = F$, e quindi anche $U+C$ è un potenziale per $F$, pertando, se $F$ è conservativo esistono infiniti potenziali di $F$, che differiscono per una costante.\newline
 \newline
@@ -238,5 +238,11 @@ Sia $\Omega \subset \mathbb{R}^n$ un aperto limitato, semplice rispetto a tutti 
 \]
 Questo teorema afferma che l'integrale su un dominio della divergenza di un campo è pari al flusso del campo che attraversa la sua frontiera.\newline
 Con questo teorema spiagamo anche il significato dell'operatore divergenza: misura il grado di comprimibilità di un fluido e, più in generale, quella di un campo vettoriale.\newline
-\rule{\textwidth}{2pt}
-\subsection*{Note sugli esercizi}
+\newline
+In parole più semplici il teorema della divergenza ci permette di dire che:\newline
+Se la superficie $l$ è la frontiera di un solido $V$, allora il flusso del campo vettoriale $F$ uscente da $l$ è uguale all'integrale triplo su $V$ della divergenza di $F$:
+\[
+    Flusso = \int \int_{l}F \cdot n \; dS = \int \int \int_{V} div(F) dx dy dz
+\]
+\textbf{oss.} se $l$ rappresentasse una superficie $D$, possiamo comunque calcolare il flusso del campo vettoriale attraverso $l$ come l'integrale doppio su $D$.\newline
+\textbf{oss.} Si può combinare il calcolo di flussi in superfici e volumi diversi, per alla fine sommarli o sottrarli ed ottenere flussi di figure complesse.
