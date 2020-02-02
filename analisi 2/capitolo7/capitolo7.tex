@@ -3,3 +3,105 @@
 \subsection*{Serie di potenze}
 \rule{\textwidth}{0,4pt}
 \subsubsection*{Nel campo complesso}
+\textbf{def.} Sia $\{a_n\}$ una successione di numeri complessi e sia $z_0 \in \mathbb{C}$.\newline
+La serie
+\[
+    \sum_{n=0}^{\infty} a_n (z-z_0)^n
+\]
+si chiama \textbf{serie di potenza centrata} in $z_0$.\newline
+\newline
+Con la semplice traslazione $z-z_0 \rightarrow z$ possiamo ricondurci al caso $z_0 = 0$:
+\[
+    \sum_{n=0}^{\infty}a_n z^n
+\]
+\newline
+\textbf{Criterio del rapporto:} Se esiste
+\[
+    R = \lim_{n\rightarrow \infty}\left| \frac{a_n}{a_{n+1}}\right|
+\]
+allora la serie $\sum_{n=0}^{\infty}a_n z^n$ converge se $|z|< R$ e non converge se $|z|> R$.\newline
+\newline
+\textbf{Criterio della radice:} Se esiste
+\[
+    R = \lim_{n\rightarrow \infty} \frac{1}{\sqrt[n]{|a_n|}}
+\]
+allora la serie $\sum_{n=0}^{\infty}a_n z^n$ converge se $|z| < R$ e non converge se $|z|> R$.\newline
+\newline
+L'insieme di convergenza di una serie di potenze in $\mathbb{C}$ è un disco.\newline
+Se $R = +\infty$ il disco è tutto $\mathbb{C}$, se $R = 0$ il disco è vuoto. Il numero $R \in [0, + \infty]$ si chiama \textbf{raggio di convergenza} della serie di potenza.\newline
+\newline
+Questi due criteri non dicono nulla sul comportamento della serie nei punti sul bordo del disco, cioè $|z| = R$.\newline
+\textbf{teor.} Sia $\{a_n\}$ una successione di numeri complessi tale che la serie di potenze
+\[
+    f(z) = \sum_{n=0}^{\infty} a_n z^n
+\]
+converga per $|z|<R$ (con $R> 0$). Allora le serie ottenute derivando e integrando termine a termine, e cioè
+\[
+    \sum_{n=1}^{\infty} n a_n z^{n-1} \quad \quad \quad \sum_{n=0}^{\infty} \frac{a_n}{n+1} z^{n+1}
+\]
+sono rispettivamente la derivata e una primitiva della funzione $f$; inoltre, il loro raggio di convergenza è ancora $R$.\newline
+\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Nel campo reale}
+Diremo che una serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge puntualmente} per ogni $x \in I$ se la serie numerica $\sum_{n}f_n(x)$ converge per ogni $x \in I$.
+\[
+    f(x) = \sum_{n=0}^{\infty} f_n(x) = \lim_{k\rightarrow \infty} \sum_{n=0}^{\infty} f_n(x) \quad \;\forall\;x \in I
+\]
+\newline
+Diremo che la serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge uniformemente} a $f(x)$ su $I$ se
+\[
+    \lim_{k\rightarrow \infty} sup_{x \in I}\left| f(x) - \sum_{n=0}^{k}f_n(x) \right| = 0
+\]
+\newline
+Diremo che la serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge totalmente} su $I$ se
+\[
+    \sum_{n=0}^{\infty} sup_{x \in I}\left| f_n(x) \right| < + \infty
+\]
+\newline
+\[
+    \text{convergenza totale}\; \Longrightarrow \text{convergenza uniforme}\; \Longrightarrow \text{convergenza puntuale}
+\]
+\newline
+Serie di potenza nel campo reale:
+\[
+    \sum_{n=0}^{\infty} a_n(x-x_0)^n
+\]
+che possiamo traslare nell'origine:
+\[
+    f(x) = \sum_{n=0}^{\infty} a_n x^n
+\]
+\newline
+\textbf{Criteri del rapporto e della radice:} Si possono ancora usare i criteri della radice e del rapporto specificati nel campo complesso, $R$ rappresenta ancora il raggio del disco di convergenza nel piano complesso, ma essendo interezzati all'asse reale si considera il solo intervallo $(-R, R)$.\newline
+La serie di potenza nel campo reale converge \textbf{puntualmente} per ogni $x \in (-R, R)$, dove $R$ è dato dal criterio del rapporto o dal criterio della radice, e non converge se $|x| > R$.\newline
+Come nel caso complesso, non possiamo dire nulle sulla convergenza in $x = \pm R$.\newline
+Per quanto riguarda la convergenza \textbf{uniforme}, la serie di potenza nel campo reale converge uniformemente in $[-R+\epsilon, R- \epsilon]$ per ogni $\epsilon \in (0,R)$.\newline
+\newline
+\textbf{Criterio di Abel:} Se la serie di potenza $\sum_{n=0}^{\infty} a_n x^n$ converge per $x = R$, allora converge uniformemente in $[-R + \epsilon, R]$ per ogni $\epsilon \in (0,R)$; analogo risultato se la serie converge per $x = -R$. Se la serie converge per $x = \pm R$ allora converge uniformemente su tutto $[-R, R]$.\newline
+\newline
+\textbf{teor. (Integrazione per seri)}\newline
+Se la serie di potenza $\sum_{n=0}^{\infty} a_n x^n$ converge uniformemente a $f$ su $[c,d]$ allora
+\[
+    \int_{c}^{d}f(x) dx = \int_{c}^{d}\left(\sum_{n=0}^{\infty}a_n x^n\right)dx = \sum_{n=0}^{\infty}a_n \int_{c}^{d}x^n dx = \sum_{n=0}^{\infty} a_n \frac{d^{n+1}- c^{n+1}}{n+1}
+\]
+\newline
+\textbf{Serie di Taylor}\newline
+Introduciamo una vasta classe di funzioni elementari delle quali sappiamo scrivere esplicitamente le serie di potenza che le rappresentano.\newline
+Data una funzione $f$ di classe $C^\infty$ in un punto $x_0$, possiamo scrivere formalmente
+\[
+    f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)(x_0)}}{n!}(x-x_0)^n
+\]
+che, se poniamo $a_n = f^{(n)}(x_0)/n!$, coincide con una serie di potenza nel campo reale. Se $R > 0$ e la serie converge a $f$, allora la scrittura non e solo formale ma vale per ongi $x \in (x_0 - R, x_0 + R)$. In tale intervallo di ha convergenza putnuale, mentre la convergenza uniforma è garantita negli intervalli $[x_0 - R + \epsilon, x_0 + R -\epsilon]$ per ogni $\epsilon \in (0,R)$.
+\[
+    e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} \;\;\;\; (R= \infty)
+\]
+\[
+    log(1-x) = \sum_{n=0}^{\infty} \frac{(-1)^{n+1}}{n} x^n\;\;\;\; (R=1)
+\]
+\[
+    sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1}\;\;\;\; (R= \infty)
+\]
+\[
+    cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!}x^{2n}\;\;\;\; (R= \infty)
+\]
+\rule{\textwidth}{2pt}
+\subsection*{Serie di Fourier}
