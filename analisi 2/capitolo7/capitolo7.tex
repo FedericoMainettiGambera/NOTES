@@ -234,4 +234,54 @@ Se una funzione $f$ è regolare a tratti allora la sua serie di Fourier converge
 \[
     \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n cos(nx_0) + b_n sin(nx_0) \right) = \frac{f(x_0^+) + f(x_0^-)}{2}
 \]
-con la convenzione che $f(0^\pm) = f(2\pi^\pm)$. In particolare, se $f$ è continua in $x_0$, allora la serie converge a $f(x_0)$.
+con la convenzione che $f(0^\pm) = f(2\pi^\pm)$. In particolare, se $f$ è continua in $x_0$, allora la serie converge a $f(x_0)$.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Funzioni pari e dispari, periodi diversi da $2\pi$}
+I coefficienti di Fourier di funzioni $2\pi$-periodiche si possono calcolare integrando su un qualunque intervallo di ampiezza $2\pi$. Tipicamente si sceglie l'intervallo $[-\pi, \pi]$ perchè permette di sfruttare eventuali simmetrie della funzione $f$.\newline
+Infatti, se la funzione $f$ è \textbf{pari} allora risulta pari anche $f(x)cos(nx)$ mentre risulta dispari $f(x)sin(nx)$, dunque:
+\[
+    f \; \text{pari}\; \Rightarrow a_n = \frac{2}{\pi} \int_{0}^{\pi}f(x) cos(nx) dx , \;\;\;\;\;b_n = 0
+\]
+Invece, se la funzione $f$ è \textbf{dispari} allora risulta dispari anche la funzioen $f(x)cos(nx)$ mentre risulta pari $f(x) sin(nx)$, dunque:
+\[
+    f \; \text{dispari}\; \Rightarrow a_n = 0, \;\;\;\;\;b_n = \frac{2}{\pi} \int_{0}^{\pi} f(x) sin(nx)dx
+\]
+\newline
+\rule{\textwidth}{0,4pt}\newline
+Come ci si comporta in presenza di funzioni con periodo $T \neq 2\pi$?\newline
+L'unica differenza sta nel calcolo dei coefficienti di Fouriere:
+\[
+    a_n = \frac{2}{T}\int_{0}^{T}f(x) cos\left( \frac{2\pi n}{T}x \right) dx, \;\;\;\;\; \;\;\;\;\; b_n = \frac{2}{T} \int_{0}^{T}f(x) sin\left( \frac{2\pi n}{T}x \right)
+\]
+La funzione $f$ si scrive allora:
+\[
+    f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n cos\left( \frac{2\pi n}{T}x \right) + b_n sin \left( \frac{2\pi n}{2}x \right) \right)
+\]
+Tutti i teoremi valgono allo stesso modo, l'unico da "sistemare" è l'identità di Parseval, che, per fuznioni $T$-periodiche $f$ soddisfacenti $\int_{0}^{T} f^2 < \infty$, diventa:
+\[
+    \frac{2}{T} \int_{0}^{T}f(x)^2 dx = \frac{a_0^2}{2} + \sum_{n=1}^{\infty} (a_n^2 + b_n^2)
+\]
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Forma esponenziale complessa}
+La formula di Eulero, $e^{i \theta} = cos(\theta) + i sin(\theta)$, suggerisce di scrivere una serie di Fourier utilizzando gli esponenziali.
+\[
+    f_n =\frac{a_n-ib_n}{2} = \frac{1}{2\pi} \int_{0}^{2\pi}f(x)(cos(nx) - i sin(nx))dx = \frac{1}{2\pi} \int_{0}^{2\pi}f(x) e^{-inx}
+\]
+\[
+    f_{-n} =\frac{a_n + ib_n}{2} = \frac{1}{2\pi} \int_{0}^{2\pi}f(x)(cos(nx) + i sin(nx))dx = \frac{1}{2\pi} \int_{0}^{2\pi}f(x) e^{inx}
+\]
+da cui
+\[
+    a_n = f_n + f_{-n}
+\]
+\[
+    b_n = i (f_n)
+\]
+\[
+    f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n cos(nx) + b_n sin(nx) \right) = \sum_{n=-\infty}^{\infty} f_n e^{inx}
+\]
+\newline
+Identità di Parseval:
+\[
+    \frac{1}{2\pi}\int_{0}^{2\pi}f(x)^2dx = \sum_{n=-\infty}^{\infty}|f_n|^2
+\]
