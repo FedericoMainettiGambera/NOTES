@@ -287,3 +287,35 @@ Identità di Parseval:
 \]
 \rule{\textwidth}{2pt}
 \subsection*{Note sugli esercizi}
+\subsubsection*{Serie di potenze nel campo reale}
+Una volta calcolato il raggio di convergenza $R$, ci sono tre casi possibili:
+\begin{itemize}
+    \item $R = 0$, la serie converge se e solo se $x = x_0$;
+    \item $R = +\infty$, la serie converge puntualmente per ogni $x \in \mathbb{R}$;
+    \item $0 < R < \infty$, \begin{itemize}
+        \item la serie converge puntualmente se $|x-x_0| < R$, ossia nell'intervalo $(x_0-R, x_0 + R)$
+        \item la serie non converge se $|x-x_0| > R$
+        \item nulla si può dire riguardo al comportamento della serie nei punti $x = x_0 - R$ e $x= x_0+R$
+    \end{itemize}
+\end{itemize}
+Per calcolare il raggio di convergenza $R$ si usano due formule:
+\[
+    R = \lim_{n\rightarrow +\infty} \frac{|a_n|}{|a_{n+1}}
+\]
+\[
+    R = \lim_{n\rightarrow +\infty} \frac{1}{\sqrt[n]{|a_n|}}
+\]
+\rule{\textwidth}{2pt}
+\subsubsection*{Riassunto dei criteri per la convergenza della serie di Fourier $\sum F$}
+Condizione di partenza:
+\[
+    \int_{0}^{2\pi}f^2 < \infty \Leftrightarrow \text{possiamo calcolare}\;\{a_n, b_n\}
+\]
+\begin{itemize}
+    \item se $\sum_{n=1}^{\infty}(|a_n| + |b_n|) < \infty$ (converge) $\Rightarrow \sum F \rightarrow f$ totalmente $\Rightarrow \sum F \rightarrow  f$ uniformemente.\newline
+    Proprietà: una successione/serie di funzioni continue che converge uniformemente ha limite continuo.
+    \item se $f$ non è continua, la serie di Fourier $\sum F$ non può convergere uniformemente.
+    \item $\int_{0}^{2\pi}f^2 < \infty $ e cioè $\sum_{n=0}^{\infty}(a_n^2 + b_n^2)< \infty \;\;\Longleftrightarrow \;\;\sum F \rightarrow f$ in media quadratica.
+    \item Criterio di Dirichlet: se $a_n, b_n \downarrow 0 \Rightarrow  \sum F \rightarrow f$ puntualmente su $(0,2\pi)$.
+    \item $f$ regolare a tratti $\Rightarrow \sum F(x) \rightarrow  \frac{f(x)^+ + f(x)^-}{2}$ puntualmente su $[0,2\pi]$
+\end{itemize}
