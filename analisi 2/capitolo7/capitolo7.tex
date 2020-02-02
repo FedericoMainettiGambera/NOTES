@@ -15,6 +15,8 @@ Con la semplice traslazione $z-z_0 \rightarrow z$ possiamo ricondurci al caso $z
     \sum_{n=0}^{\infty}a_n z^n
 \]
 \newline
+Una serie di potenze ammette un $R \in [0, +\infty]$ tale che converge se $|z| < R$, non converge se $|z| > R$ e nulla si può dire se $|z| = R$.\newline
+\newline
 \textbf{Criterio del rapporto:} Se esiste
 \[
     R = \lim_{n\rightarrow \infty}\left| \frac{a_n}{a_{n+1}}\right|
@@ -31,6 +33,7 @@ L'insieme di convergenza di una serie di potenze in $\mathbb{C}$ è un disco.\ne
 Se $R = +\infty$ il disco è tutto $\mathbb{C}$, se $R = 0$ il disco è vuoto. Il numero $R \in [0, + \infty]$ si chiama \textbf{raggio di convergenza} della serie di potenza.\newline
 \newline
 Questi due criteri non dicono nulla sul comportamento della serie nei punti sul bordo del disco, cioè $|z| = R$.\newline
+\newline
 \textbf{teor.} Sia $\{a_n\}$ una successione di numeri complessi tale che la serie di potenze
 \[
     f(z) = \sum_{n=0}^{\infty} a_n z^n
@@ -47,10 +50,18 @@ Diremo che una serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge puntualmente}
 \[
     f(x) = \sum_{n=0}^{\infty} f_n(x) = \lim_{k\rightarrow \infty} \sum_{n=0}^{\infty} f_n(x) \quad \;\forall\;x \in I
 \]
+cioè
+\[
+    f_n(x) \rightarrow f(x) \; \text{puntualmente se}\; \lim_{n\rightarrow \infty} f_n(x) = f(x) 
+\]
 \newline
 Diremo che la serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge uniformemente} a $f(x)$ su $I$ se
 \[
     \lim_{k\rightarrow \infty} sup_{x \in I}\left| f(x) - \sum_{n=0}^{k}f_n(x) \right| = 0
+\]
+cioè
+\[
+    f_n(x) \rightarrow f(x) \; \text{uniformemente se}\; \lim_{n\rightarrow \infty} sup_{x \in I}\left| f_n(x) - f(x) \right| = 0
 \]
 \newline
 Diremo che la serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge totalmente} su $I$ se
@@ -78,7 +89,7 @@ Per quanto riguarda la convergenza \textbf{uniforme}, la serie di potenza nel ca
 \newline
 \textbf{Criterio di Abel:} Se la serie di potenza $\sum_{n=0}^{\infty} a_n x^n$ converge per $x = R$, allora converge uniformemente in $[-R + \epsilon, R]$ per ogni $\epsilon \in (0,R)$; analogo risultato se la serie converge per $x = -R$. Se la serie converge per $x = \pm R$ allora converge uniformemente su tutto $[-R, R]$.\newline
 \newline
-\textbf{teor. (Integrazione per seri)}\newline
+\textbf{teor. (Integrazione per serie)}\newline
 Se la serie di potenza $\sum_{n=0}^{\infty} a_n x^n$ converge uniformemente a $f$ su $[c,d]$ allora
 \[
     \int_{c}^{d}f(x) dx = \int_{c}^{d}\left(\sum_{n=0}^{\infty}a_n x^n\right)dx = \sum_{n=0}^{\infty}a_n \int_{c}^{d}x^n dx = \sum_{n=0}^{\infty} a_n \frac{d^{n+1}- c^{n+1}}{n+1}
@@ -103,5 +114,124 @@ che, se poniamo $a_n = f^{(n)}(x_0)/n!$, coincide con una serie di potenza nel c
 \[
     cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!}x^{2n}\;\;\;\; (R= \infty)
 \]
+\[
+    \frac{1}{1-x} = \sum_{n=0}^{\infty} x^n\;\;\;\; (R= 1)
+\]
+\[
+    log(1+x) = \sum_{n=0}^{\infty} (-1)^{n+1} \frac{x^n}{n}\;\;\;\; (R= 1)\;\;\;\;\;\;\;\;\;\;\begin{cases}
+        \text{se $x=1: $}\; \sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n} \;\;\text{(converge per Leibniz)}\;\\
+        \text{se $x=-1$}\; \sum_{n=1}^{\infty}\frac{-1}{n} \;\;\text{diverge, serie armonica}\;
+    \end{cases}
+\]
+\[
+    \frac{1}{1+x^2} = \sum_{n=0}^{\infty} -1^n \cdot x^{2n} \;\;\;\;(R=1)
+\]
+\[
+    arctanx(x) = \sum_{n=0}^{\infty}(-1)^n \frac{x^{2n+1}}{2n+1} \;\;\;\;(R=1)
+\]
 \rule{\textwidth}{2pt}
 \subsection*{Serie di Fourier}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Forma trigonometrica}
+Nello studio delle serie di potenza $\sum_{n}a_n z^n$ abbiamo visto che i problemi principali riguardano lo studio di $|z| = R$ con $R$ raggio di convergenza. Per tali possiamo scrivere $z = R(cos(\theta) + sin(\theta))$ e ottenere:
+\[
+    \sum_{n=0}^{\infty} a_n R^n(cos(n \theta) + isin(n \theta))
+\]
+Se $\{a_n\} \subset \mathbb{R}$, siamo quindi portati a studiare la convergenza di serie trigonometriche del tipo
+\[
+    \sum_{n=0}^{\infty} \alpha_n cos(n \theta) \;\;\;\;\; \;\;\;\;\; \sum_{n=1}^{\infty} \beta_n sin(n \theta)
+\]
+Per ogni scelta di $\alpha_n, \beta_n \in \mathbb{R}$ le funzioni
+\[
+    a_0 + \sum_{n=1}^{\infty} (\alpha_n cos(nx) + \beta_n sin(n x))
+\]
+si chiamano \textbf{polinomi trigonometrici} di grado $k$; che sono funzioni periodiche di periodo $2\pi$ che hanno valor medio $\alpha_0$ su $[0, 2\pi]$.\newline
+Diremo che una serie in fomra trigonometrica converge se converge una successione di polinomi trogonometrici.\newline
+\textbf{oss.} 
+\[
+    \sum_{n=1}^{\infty} (|\alpha_n| + |\beta_n|) < \infty \Rightarrow \text{converge totalmente su } [0,2\pi] \Rightarrow \text{converge uniformemente} \Rightarrow \text{converge puntualmente}
+\]
+\textbf{oss.} La serie trigonometrica può perdere la convergenza dopo una derivazione.\newline
+\newline
+\textbf{Criterio di Dirichlet}
+\[
+    \alpha_n, \beta_n \downarrow 0 \Rightarrow \text{polinomio trigonometrico converge puntualmente su} (0,2\pi)
+\]
+dove con il simbolo $\downarrow 0$ indichiamo che le successioni descrescono monotonamente a $0$ e che sono positive.\newline
+\newline
+\textbf{Lemma.} Per ogni $m,n = 1,2,\dots$ risulta 
+\[
+    \int_{0}^{2\pi} sin(nx) dx = \int_{0}^{2\pi} cos(nx) = 0
+\]
+\[
+    \int_{0}^{2\pi} sin(mx) cos(nx) dx = 0
+\]
+\[
+    \int_{0}^{2\pi} sin^2(nx) dx = \int_{0}^{2\pi} cos^2(nx) dx = \pi
+\]
+\[
+    \int_{0}^{2\pi} sin(mx) sin(nx) dx = \int_{0}^{2\pi} cos(mx) sin(nx) dx = 0 \;\;\;\; \text{se} \; m\neq n
+\]
+Si trovano gli stessi valori integrando su qualunque intervallo di ampiezza $2\pi$.\newline
+\newline
+\textbf{teor.} Se una funzione $f$ è $2\pi$-periodica e si può scrivere nella forma trigonometrica
+\[
+    f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n cos(nx) + b_n sin(nx))
+\]
+allora
+\[
+    a_n = \frac{1}{\pi} \int_{0}^{2\pi} f(x) cos(nx) dx \;\;\;\; \;\forall\;n\geq0
+\]
+\[
+    b_n = \frac{1}{\pi} \int_{0}^{2\pi} f(x) sin(nx) dx \;\;\;\;\;\forall\;n\geq 1
+\]
+Gli $a_n$ e $b_n$ vengono chiamati \textbf{coefficienti di Fourier} di $f$, mentre la serie $f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n cos(nx) + b_n sin(nx))$ viene chiamata \textbf{serie di Fourier} associata a $f$.\newline
+\newline
+\textbf{oss.} Gli integrali del teorema si possono calcolare se risulta $\int_{0}^{2\pi}|f| < \infty$ e cioè se l'integrale improprio di $|f|$ è convergente.\newline
+\newline
+Diremo che la serie 
+\[
+    f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n cos(nx) + b_n sin(nx))
+\]
+\textbf{converge in media quadratica} alla $f$ se
+\[
+    \lim_{k\rightarrow \infty} \int_{0}^{2\pi} \left| f(x) - \frac{a_0}{2} - \sum_{n=1}^{k}\left( a_n cos(nx) + b_n sin(nx) \right) \right|^2 dx = 0
+\]
+\newline
+\textbf{teor.} Sia $f$ una funzione $2\pi$-periodica tale che $\int_{0}^{2\pi}f^2 < \infty$. Allora la sua serie di Fourier converge a $f$ in media quadratica.\newline
+\newline
+Definiamo lo spazio $X$ delle funzioni $f$ tali che $\int_{0}^{2\pi}f^2 < \infty$ e introduciamo il "prodotto scalare" definito come
+\[
+    (x,g)_{X} = \frac{1}{\pi}\int_{0}^{2\pi} f(x) g(x) dx \;\;\;\;\; \;\forall\;f,g \in X
+\]
+per cui troviamo che 
+\[
+    B = \left\{ \frac{1}{\sqrt{2}}, cos(nx), sin(nx) \right\}_{n=1} ^\infty
+\]
+è ortonormale in $X$.\newline
+\newline
+\textbf{teor. Identità di Parseval}\newline
+Sia $f \in X$ e sia $f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n cos(nx) + b_n sin(nx))$ la sua serie di Fourier. Allora
+\[
+    \frac{1}{\pi} \int_{0}^{2\pi} f(x)^2 dx = \frac{a_0^2}{2} + \sum_{n=1}^{\infty}(a_n^2 + b_n^2)
+\]
+Per il teorema di Riemann-Lebesgue sappiamo che $a_n, b_n \rightarrow  0$ per $n \rightarrow  \infty$.\newline
+\newline
+\[
+\text{convergenza uniforme}\; \Rightarrow \text{convergenza in media quadratica}\; \Rightarrow 
+\]
+\[
+    \Rightarrow  \text{convergenza puntuale su sottosuccession in quasi ogni punto}\;
+\]
+\newline
+\textbf{def.} Diciamo che $f : [0,2\pi] \rightarrow \mathbb{R}$ è \textbf{regolare a tratti} se è limitata in $[0,2\pi]$ e se l'intervallo $[0,2\pi]$ si può scomporre in un numero finito di sottointervalli su ciascuno dei quali $f$ è continua e derivabile; inoltre, agli estremi di ogni sottointervallo, esistno finiti i limiti sia di $f$ che di $f'$.\newline
+\newline
+\textbf{oss.} se $f \in C^1[0,2\pi]$ allora $f$ è regolare a tratti. Ma anche se ci sono punti angolosi o punti di discontinuità a salto, purchè $f$ e $f'$ abbiano limiti finiti in prossimità dei salti, allora $f$ è regolare a tratti. Non devono esserti asintoti verticali o punti a tangenza verticale.\newline
+\newline
+Se una funzione $f$ è regolare a tratti allora la sua serie di Fourier converge a $f$ in media quadratica. Dunque a meno di pochi possibili punti, la conergenza sarà anche puntuale.\newline
+\newline
+\textbf{teor.} Sia $f: [0,2\pi] \rightarrow \mathbb{R}$ regolare a tratti. Allora la sua serie di Fourier converge in ogni punto $x_0 \in [0,2\pi]$ alla media dei due limiti $f(x_0^{\pm})$:
+\[
+    \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n cos(nx_0) + b_n sin(nx_0) \right) = \frac{f(x_0^+) + f(x_0^-)}{2}
+\]
+con la convenzione che $f(0^\pm) = f(2\pi^\pm)$. In particolare, se $f$ è continua in $x_0$, allora la serie converge a $f(x_0)$.
