@@ -216,6 +216,11 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.toc
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.toc
+OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.toc
 INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo1/capitolo1.tex
 INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo1/capitolo1.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
