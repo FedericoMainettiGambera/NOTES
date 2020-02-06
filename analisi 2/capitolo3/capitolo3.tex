@@ -3,14 +3,19 @@
 \subsection*{Continuità di una funzione in più variabili:}
 Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow  \mathbb{R}$ è continua in un punto $x_0$ se 
 \[
-    \lim_{x\rightarrow x_0} f(x) = f(x_0)
+    \lim_{(x,y)\rightarrow (x_0,y_0)} f(x,y) = f(x_0,y_0)
 \]
-La continuità di una funzione è anche deducibile dal fatto che sia costituita (somma/ prodotto/ quoziente/ certe volte anche composizione) da funzioni elementari continue.\newline
+La continuità di una funzione è anche deducibile dal fatto che sia costituita (somma/ prodotto/ quoziente/ certe volte anche composizione) da funzioni elementari continue.
+\begin{tcolorbox}
+    Per verificare la continuità di una funzione si usa spesso il concetto di differenziabilità (vedi sotto, "verifica della differenziabilità").
+\end{tcolorbox}
 \rule{\textwidth}{2pt}
 \subsection*{Calcolo di limiti in più variabili}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Non esistenza del limite}
-Per mostrare che un certa funzione in più varibili non ammette limite in un determinato punto, è sufficiente determinare duee curve passasnti per il punto lungo le quali la funzione assume limiti diversi.
+\begin{tcolorbox}
+Per mostrare che un certa funzione in più varibili non ammette limite in un determinato punto, è sufficiente determinare due curve passasnti per il punto lungo le quali la funzione assume limiti diversi.
+\end{tcolorbox}
 \textbf{es.} 
 \[
     \lim_{(x,y)\rightarrow (0,0)} \frac{xy}{x^2+y^2}
@@ -23,12 +28,17 @@ Analiziamo la funzione lungo due curve:
 non ammette limite.\newline
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Uso di maggiorazioni con funzioni radiali per provare l'esistenza del limite}
-Per dimostrare l'esistenza di un limite per $(x,y) \rightarrow (0,0)$, si impone $x=\rho \cdot  cos(\theta)$ e $y= \rho \cdot sin(\theta)$, successivamente si l'intera funzione sotto modulo e procede con semplificazioni e maggiorazioni (per eliminare i seni e i coseni). E' essenziale che la funzione non dipenda da $\theta$.\newline
-Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, y_0)$ si pongono $x=x_0 +\rho \cdot  cos(\theta)$ e $y= y_0 + \rho \cdot sin(\theta)$ \newline
+\begin{tcolorbox}
+Per dimostrare l'esistenza di un limite per $(x,y) \rightarrow (0,0)$, si impone $x=\rho \cdot  cos(\theta)$ e $y= \rho \cdot sin(\theta)$, successivamente si pone l'intera funzione sotto modulo e si procede con semplificazioni e maggiorazioni (per eliminare i seni e i coseni). E' essenziale che la funzione non dipenda da $\theta$.\newline
+Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, y_0)$ si pongono $x=x_0 +\rho \cdot  cos(\theta)$ e $y= y_0 + \rho \cdot sin(\theta)$
+\end{tcolorbox}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Note sugli esercizi}
 \begin{itemize}
+    \begin{tcolorbox}
     \item Se il limite non presenta una forma di indeterminazione allora il valore cercato si ricava sostituendo direttamente il punto nella funzione.
+    \end{tcolorbox}
+    \begin{tcolorbox}
     \item Tecniche standard della maggiorazione: 
         \begin{itemize}
             \item disuguaglianza triangolare:
@@ -44,13 +54,13 @@ Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, 
                     |cos(\theta)| \leq 1 \;\;,\;\;|sin(\theta)|\leq 1
                 \]
         \end{itemize}
-    \item Il criterio che ci permette di trovare il limite richiede di trovare una funzione maggiorante di $|f|$ che sia radiale (dipenda solo da $\rho$, non $\theta$) e infinitesima. Da notare è che è anche possibile semplificare la funzione anche senza passare subito in coordinate polari.
+    \end{tcolorbox}
+    \begin{tcolorbox}
+    \item Il criterio che ci permette di trovare il limite richiede di trovare una funzione maggiorante di $|f|$ che sia radiale (dipenda solo da $\rho$, non $\theta$) e infinitesima. Da notare è che è possibile semplificare la funzione anche senza passare subito in coordinate polari.
+    \end{tcolorbox}
+    \begin{tcolorbox}
     \item Solitamente si suddivide la funzione in una serie di somme di funzioni e si studiano quest'ultime separatamente.
-    \item Spesso la formula
-        \[
-            cos^2(\theta) + sin^2(\theta) = 1
-        \]
-        risulta molto utile.
+    \end{tcolorbox}
 \end{itemize}
 \rule{\textwidth}{2pt}
 \subsection*{Topologia in $\mathbb{R}^n$ e proprietà delle funzioni continue}
@@ -89,13 +99,14 @@ Proprietà topologiche delle funzioni continue:
 \begin{itemize}
     \item \textbf{teor.} Teorema di Weierstrass. Sia $E \subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua, allora $f$ ammette massimo e minimo in $E$, cioè esistono $x_m$ e $x_M$ tali che $f(x_m) \leq f(x) \leq f(x_M)$ per ogni $x in E$.
     \item \textbf{teor.} Teorema degli zeri. Sia $E$ un insieme connesso di $\mathbb{R}^n$ e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua. Se $x$, $y$ sono due punti di $E$ tali che $ f(x) < 0$ e $f(y) > 0$, allora esiste un terzo punto $z \in E$ in cui $f$ si annulla. In particolare, lungo ogni arco di curva continua contenuto in $E$ che congiunge $x$ e $y$, c'è almeno un punto in cui $f$ si annulla.
+    \item \textbf{teor.} Permanenza del segno. Se $f$ è continua in $(x_0, y_0) \in \mathbb{R}^2$ e $f(x_0, y_0) > 0$, allora esiste $\delta>0$ tale che $fx,y) > 0$ per ogni $(x,y) \in B_\delta(x_0,y_0)$.
 \end{itemize}
 \rule{\textwidth}{2pt}
 \subsection*{Derivate parziali, piano tangente, differenziale}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Derivata parziale}
 Calcolo di una derivata parziale tramite la definizione di rapporto incrementale in un punto $(x_0, y_0)$. \newline
-Per prima fissiamo $y=y_0$ e deriviamo rispetto alla $x$:
+Per prima cosa fissiamo $y=y_0$ e deriviamo rispetto alla $x$:
 \[
     \frac{\delta f}{\delta x} (x_0,y_0) = \lim_{h\rightarrow 0}\frac{f(x_0+h, y_0)- f(x_0,y_0)}{h}.
 \]
@@ -103,8 +114,53 @@ Successivamente facciamo l'opposto, cioè fissiamo $x=x_0$ e deriviamo rispetto 
 \[
     \frac{\delta f}{\delta y} (x_0,y_0) = \lim_{k\rightarrow 0}\frac{f(x_0, y_0+k)- f(x_0,y_0)}{k}
 \]
-Una funzione $f: A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}$ si dice derivabile in un punto del suo dominio se in quel punto esistono tutte le sue derivate parziali; si dice derivabile in $A$ se è derivabile in ogni punto di $A$.\newline
-Se $f$ è derivabile in un punto, chiameremo gradiente ( $\nabla f(x)$ ) il vettore delle sue derivate parziali.\newline
+\begin{tcolorbox}
+Molto spesso, per calcolare una derivata parziale si può evitare di usare la definizione: per derivare rispetto a $x$ basta considerare $y$ come una costante e derivare la funzione come se fosse della sola variabile $x$.
+\end{tcolorbox}
+Geometricamente, le derivate parziali rappresentano le pendenze che si hanno sul fianco della montagna quando si prendono le direzioni degli assi orientati.\newline
+\begin{tcolorbox}
+Una funzione $f: A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}$ si dice derivabile in un punto del suo dominio se in quel punto esistono tutte le sue derivate parziali; si dice derivabile in $A$ se è derivabile in ogni punto di $A$.
+\end{tcolorbox}
+\begin{tcolorbox}
+Se $f$ è derivabile in un punto, chiameremo \textbf{gradiente} ( $\nabla f(x)$ ) il vettore delle sue derivate parziali.
+\end{tcolorbox}
+\begin{tcolorbox}
+    \textbf{Derivabilità non implica continuità}
+\end{tcolorbox}
+\rule{\textwidth}{0.4pt}
+\subsubsection*{Calcolo delle derivate}
+\[
+    \delta(\alpha \cdot f + \beta \cdot g) = \alpha \delta(f) + \beta \delta (g)
+\]
+\[
+    \delta(f \cdot  g) = g \cdot \delta(f) + f  \cdot \delta(g)
+\]
+\[
+    \delta(\frac{f}{g}) = \frac{ g \cdot \delta(f) - f \delta(g)}{g^2}
+\]
+\[
+    h(x) = f(g(x)) = g \circ f \Rightarrow h'(x) = f'(g(x)) g'(x)
+\]
+\[
+    \frac{\delta}{\delta x} [|x|] = \frac{|x|}{x} 
+\]
+
+\begin{tcolorbox}
+    Per calcolare il valore di una \textbf{derivata parziale in punto $(x_0, y_0)$ secondo la definizione}, seguire questo procedimento:\newline
+    Se si richiede di calcolare il valore della derivata parziale di $x$ ( cioè $\frac{\delta f}{\delta x}(x_0,y_0)$), si parte dalla funzione $f(x,y)$ e si sostituisce $y= y_0$, ottenendo quindi $f(x,y_0)$, successivamente si calcola la derivata parziale, ottenendo dunque $\frac{\delta f}{\delta x} (x,y_0)$. Come ultima cosa si sostituisce $x = x_0$ e si arriva a un risultato numerico. Per la trovare il valore della derivata parziale di $y$ in un preciso punto seguire lo stesso procedimento opposto.
+\end{tcolorbox}
+\begin{tcolorbox}
+In alcuni esercizi è richiesto di \textbf{calcolare le derivate parziali in tutti i punti in cui esistono}. Il procedimento tipico consiste nel calcolare per prima cosa le derivate parziali generiche. Una volta calcolate sapremo che sicuramente esistono dove queste sono definite (dominio), ma non siamo sicuri dei punti in cui non lo sono (al di fuori del dominio). Quindi dobbiamo analizzare singolarmente tutti i punti al di fuori del dominio e per farlo sfruttiamo il procedimento visto sopra ("derivata parziale in un punto secondo la definizione"), calcolando esplicitamente le derivate nei punti richiesti.
+Finchè si tratta per esempio di calcolarle per un punto preciso non ci sono problemi, il calcolo è facile, ma ci sono alcuni casi difficili, per esempio:
+\begin{itemize}
+    \item Calcolare le derivate parziali secondo la definizione lungo una retta. Per esempio in $y=0$, per calcolare la $\frac{\delta f}{\delta x}(x_0, 0)$ non ci sono problemi, si procede come al solito. Ma per la $\frac{\delta f}{\delta y} (x_0, 0)$ ci sono difficoltà, siccome non possiamo sostituire le $y$ con $0$ e poi derivare per la $y$, dobbiamo ragionare così: la derivata non esiste a meno che non ci sia un valore che le $x$ possono assumere che annullino la funzione (per gli es che ho fatto fino ad ora sono solo al numeratore). Il concetto generale è che se non si trovano valori per $x_0$ tali che annullino la funzione e quindi ci permettano di calcolare la derivata parziale, si finisce per tornare a guardare la derivata parziale generica e quindi a non trovarla per quella retta. [spiegato davvero male, ma è un concetto strano].
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Per \textbf{stabilire dove la funzione sia derivabile} bisogna calcolare le derivate parziali e osservarne il dominio.\newline
+(n.b. tipicamente negli esercizi le funzioni sono descritte da un sistema che contiene una funzione prolungata nell'origine, in questo caso bisogna calcolare le derivate parziali al di fuori dell'origine e studiarne il dominio, in seguito bisogna calcolare il valore della derivata parziale nel punto $(0,0)$ col metodo descritto precedentemente).
+\end{tcolorbox}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Piano tangente}
 Costruire il piano tangente a una funzione in due variabili in un punto $(x_0, y_0)$:
@@ -124,14 +180,18 @@ Costruire il piano tangente a una funzione in due variabili in un punto $(x_0, y
         \end{cases}
     \]
     \item costruiamo il piano che contiene entrambe le rette:
+    \begin{tcolorbox}
     \[
         z = f(x_0, y_0) + \frac{\delta f}{\delta x}(x_0, y_0) \cdot (x-x_0) + \frac{\delta f}{\delta x}(x_0, y_0) \cdot (y-y_0)
     \]
+    \end{tcolorbox}
 \end{enumerate}
 Il procedimento appena mostrato individua il piano tangente nell'ipotesi che esso esista, potrebbe però non esserci.\newline
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Differenziabilità e approssimazione lineare}
-In due o più variabili la sola derivabilità non implica nè continuità nè l'esistenza del piano tangente.\newline
+\begin{tcolorbox}
+In due o più variabili la sola derivabilità non implica nè continuità nè l'esistenza del piano tangente.
+\end{tcolorbox}
 Concetto di differenziabilità in più variabili: l'incremento di $f$ è uguale all'incremento calcolato lungo il piano tangente, più un infinitesimo di ordine superiore rispetto alla lunghezza dell'incremento $(h,k)$ delle variabili indipendenti. In formule:
 \[
     f(x_0 + h, y_0 + k) - f(x_0, y_0) = \frac{\delta f}{\delta x} (x_0,y_0) \cdot (x-x_0) + \frac{\delta f}{\delta y}(x_0, y_0) \cdot (y-y_0) + o(\sqrt{h^2 + k^2})
@@ -140,6 +200,19 @@ per $(h,k) \rightarrow  (0,0)$.\newline
 Tutto ciò che è prima dell'uguale (primo membro) rappresenta l'incremento della funzione, i primi due addendi del secondo membro rappresentano l'incremento calacolato lungo il pinao tangente. Ricordiamo che l'ultimo addendo rappresenta una funzione tale che $\lim_{(h,k)\rightarrow (0,0)}\frac{o(\sqrt{h^2 + k^2})}{\sqrt{h^2 + k^2}} = 0$.\newline
 Se l'equazione di prima è soddisfatta, diremo che la funzione è differenziabile in $(x_0, y_0)$.\newline
 
+\begin{tcolorbox}
+    Una funzione $f: \mathbb{R}^2 \rightarrow  \mathbb{R}$ si dice \textbf{differenziabile} in $(x_0, y_0)$ se è derivabile e se
+    \[
+        \lim_{(h,k)\rightarrow (0,0)} \frac{f(x_0 + h, y_0+k)-f(x_0,y_0) - h f_x(x_0, y_0) - k f_y(x_0,y_0)}{\sqrt{h^2 + k^2}} = 0
+    \]
+\end{tcolorbox}
+Questa scrittura dice che "il grafico della superficie si allontana dal piano tangente con un ordine di infinitesimo superiore a quello della distanza dal punto".
+\newline
+\begin{tcolorbox}
+\[
+    f \;\text{differenziabile in $(x_0, y_0)$}\; \Rightarrow f \; \text{continua in $(x_0,y_0)$}\;
+\]
+\end{tcolorbox}
 Da notare che la differenziabilità implica la derivabilità, cioè se una funzione è differenziabile in un punto, allora è anche derivabile nello stesso.\newline
 
 Se $f$ è differenziabile in $x_0$, si dice differenziale di $f$ calcolato in $x_0$ la funzione lineare $df(x_0) \;:\; \mathbb{R}^n \rightarrow  \mathbb{R}$ definita da:
@@ -147,8 +220,9 @@ Se $f$ è differenziabile in $x_0$, si dice differenziale di $f$ calcolato in $x
     df(x_0) \;\;:\;\;h \rightarrow  \nabla f(x_0) \cdot h.
 \] 
 Nel caso in due varibiali, il numero $\nabla f(x_0) \cdot h$ rappresenta l'incremento della funzione nel passare da $x_0$ a $x_0+h$, calcolato lungo il piano tangente al grafico di $f$ in $x_0$.\newline
-
-L'approssimazione dell'incremento di $f$ con il suo differenziale prende il nome di linearizzazione.\newline
+\begin{tcolorbox}
+L'approssimazione dell'incremento di $f$ con il suo differenziale prende il nome di linearizzazione.
+\end{tcolorbox}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Verifica della differenziabilità}
 Per dimostrare la differenziabilità in un punto $(x_0,y_0)$ bisogna provare che:
@@ -158,15 +232,18 @@ Per dimostrare la differenziabilità in un punto $(x_0,y_0)$ bisogna provare che
         \}}{\sqrt{h^2+k^2}} =0.
 \]
 dove $h = x-x_0$ e $k = y-y_0$.\newline
-Ma per certi casi peticolari esistono criteri molto comodi e più semplici.\newline
+Ma per certi casi particolari esistono criteri molto più comodi e semplici.
 
+\begin{tcolorbox}
 Teorema di condizione sufficiente di differenziabilità: se le derivate parziali di $f$ esistono in un intorno di $x_0$ e sono continue in $x_0$, allora $f$ è differenziabile in $x_0$.\newline
 In particolare se le derivate parziali esistono e sono continue in tutto $A$, allora $f$ è differenziabile in tutto $A$.\newline
-Una funzione le cui derivate parziali esistono e sono continue in tutto $A$ si dice di classe $C^1(A)$, dunque: $f \in C^1(A) \rightarrow$ f differenziabile in $A$. \newline
+Una funzione le cui derivate parziali esistono e sono continue in tutto $A$ si dice di classe $C^1(A)$, dunque: $f \in C^1(A) \rightarrow$ f differenziabile in $A$.
+\end{tcolorbox}
 
 Negli esercizi spesso si usa anche l'omogeneità di una funzione per sapere se essa è differenziabile o continua, oppure le proprietà delle funzioni radiali.\newline
 
 Negli esercizi seguire quest'ordine:
+\begin{tcolorbox}
 \begin{itemize}
     \item E' continua nel punto richiesto? se non lo è, può essere allungata?
     \item Funzione radiale? (vedi più avanti)
@@ -174,23 +251,38 @@ Negli esercizi seguire quest'ordine:
     \item Calcolo delle derivate parziali nel punto. Sono continue in quel punto?
     \item Verifica della differenziabilità tramite la definizione.
 \end{itemize}
+\end{tcolorbox}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Derivate direzionali}
+\begin{tcolorbox}
 Si dice derivata direzionale della funzione $f$ rispetto al versore $v$, nel punto $x_0$, il limite
 \[
     D_vf(x_0) = \lim_{t\rightarrow 0}\frac{f(x_0 + tv) - f(x_0)}{t}
 \]
-purchè esista finito.\newline
+purchè esista finito.
+\end{tcolorbox}
 Detto in maniera diversa signifca considerare la restrizione della funzione $f$ alla direzione della retta passante per $x_0$ con direzione $v$, cioè $g(t)= f(x_0+tv)$, e calcolarne la derivata, cioè $D_vf(x_0)= g'(0)$.\newline
-
+\begin{tcolorbox}
 Calcolo di una derivata direzionale per un generico vettore $(cos(\theta), sin(\theta))$ nell'origine di una funzione $f$: Per prima cosa si ottiene la funzione $g(t) = f(t \cdot cos(\theta), t \cdot sin(\theta))$ e la si semplifica per $t \rightarrow 0$ (anche usando asintotici). In seguito si studia la derivata $g'(0) = \frac{\delta f}{\delta t}(t \cdot cos(\theta), t \cdot sin(\theta))$.\newline
-Se è richiesto il calcolo in un punto generico, e non nell'origine, è sufficiente usare $t \cdot cos(\theta) + x_0$ e $t \cdot sin(\theta) + y_0$.\newline
-
-Formula del gradiente: $D_vf(x_0) = \nabla f(x_0) \cdot v =  \sum_{i=1}^{n} \frac{\delta f}{\delta x_i}(x_0) \cdot  v_i$. Cioè la derivata direzionale è il prodotto scalare del gradiente con il versore nella direzione in cui si deriva, quindi tutte le derivate direzionali sono combinazioni lineari delle derivate parziali. Nel caso in due variabili la formula si riduce a $D_vf(x_0) = \nabla f(x_0,y_0) \cdot v = \frac{\delta f}{\delta x} (x_0,y_0)cos(\theta) + \frac{\delta f}{\delta y}(x_0, y_0) sin(\theta)$.\newline
+Se è richiesto il calcolo in un punto generico, e non nell'origine, è sufficiente usare $t \cdot cos(\theta) + x_0$ e $t \cdot sin(\theta) + y_0$.
+\end{tcolorbox}
+Se la funzione è differenziabile, allora le derivate parziali consentono di calcolare tutte le altre derivate direzionali.
+\begin{tcolorbox}
+\textbf{Formula del gradiente}: 
+\[
+    D_vf(x_0) = \nabla f(x_0) \cdot v =  \sum_{i=1}^{n} \frac{\delta f}{\delta x_i}(x_0) \cdot  v_i
+\]
+Cioè la derivata direzionale è il prodotto scalare del gradiente con il versore nella direzione in cui si deriva, quindi tutte le derivate direzionali sono combinazioni lineari delle derivate parziali. Nel caso in due variabili la formula si riduce a $D_vf(x_0) = \nabla f(x_0,y_0) \cdot v = \frac{\delta f}{\delta x} (x_0,y_0)cos(\theta) + \frac{\delta f}{\delta y}(x_0, y_0) sin(\theta)$.\newline
 Se la formula del gradiente non vale in un punto, allora la funzione non è differenziabile in quel punto.\newline
-Inoltre la formula del gradiente non vale se la generica derivata direzionale non è combinazione lineare di $cos(\theta), sin(\theta)$.\newline
+Inoltre la formula del gradiente non vale se la generica derivata direzionale non è combinazione lineare di $cos(\theta), sin(\theta)$.
+\end{tcolorbox}
 
-Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$, ossia la direzione di massima derivata direzionale, invece $-\nabla f(x_0)$ rappresenta la direzione di minima derivata direzionale, infine nelle direzioni ortogonali al gradiente le derivate direzionali sono nulle. \newline
+\begin{tcolorbox}
+Da notare è che $\nabla f(x_0)$ indica la \textbf{direzione di massima crescita} di $f$, ossia la direzione di massima derivata direzionale, invece $-\nabla f(x_0)$ rappresenta la direzione di minima derivata direzionale, infine nelle direzioni ortogonali al gradiente le derivate direzionali sono nulle, quindi di \textbf{pendenza nulla}.
+\end{tcolorbox}
+\begin{tcolorbox}
+Il gradiente è ortogolane il ogni punto alle linee di livello.
+\end{tcolorbox}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Riepilogo}
 \begin{itemize}
@@ -198,33 +290,6 @@ Da notare è che $\nabla f(x_0)$ indica la direzione di massima crescita di $f$,
     \item $f$ continua, derivabile, dotata di tutte le derivate direzionali $\nRightarrow f$ differenziabile
     \item $f$ derivabile, dotata di tutte le derivate direzionali $\nRightarrow f$ continua 
 \end{itemize}
-\rule{\textwidth}{0.4pt}
-\subsubsection*{Calcolo delle derivate}
-\[
-    \delta(\alpha \cdot f + \beta \cdot g) = \alpha \delta(f) + \beta \delta (g)
-\]
-\[
-    \delta(f \cdot  g) = g \cdot \delta(f) + f  \cdot \delta(g)
-\]
-\[
-    \delta(\frac{f}{g}) = \frac{ g \cdot \delta(f) - f \delta(g)}{g^2}
-\]
-\[
-    h(x) = f(g(x)) = g \circ f \Rightarrow h'(x) = f'(g(x)) g'(x)
-\]
-\[
-    \frac{\delta}{\delta x} [|x|] = \frac{|x|}{x} 
-\]
-
-Per calcolare il valore di una derivata parziale in punto $(x_0, y_0)$ secondo la definizione, seguire questo procedimento. Se si richiede di calcolare il valore della derivata parziale di $x$ ( cioè $\frac{\delta f}{\delta x}(x_0,y_0)$), si parte dalla funzione $f(x,y)$ e si sostituisce $y= y_0$, ottenendo quindi $f(x,y_0)$, successivamente si calcola la derivata parziale, ottenendo dunque $\frac{\delta f}{\delta x} (x,y_0)$. Come ultima cosa si sostituisce $x = x_0$ e si arriva a un risultato numerico. Per la trovare il valore della derivata parziale di $y$ in un preciso punto seguire lo stesso procedimento opposto.\newline
-
-In alcuni esercizi è richiesto di calcolare le derivate parziali in tutti i punti in cui esistono. Il procedimento tipico consiste nel calcolare per prima cosa le derivate parziali generiche. Una volta calcolare sapremo che sicuramente esistono dove queste sono definite (dominio), ma non siamo sicuri dei punti in cui non lo sono (al di fuori del dominio). Quindi dobbiamo analizzare singolarmente tutti i punti al di fuori del dominio e per farlo sfruttiamo il procedimento visto sopra, calcolando esplicitamente le derivate nei punti richiesti. Finchè si tratta per esempio di calcolarle per un punto preciso non ci sono problemi, il calcolo è facile, ma ci sono alcuni casi difficili, per esempio:
-\begin{itemize}
-    \item Calcolare le derivate parziali secondo la definizione lungo una retta. Per esempio in $y=0$, per calcolare la $\frac{\delta f}{\delta x}(x_0, 0)$ non ci sono problemi, si procede come al solito. Ma per la $\frac{\delta f}{\delta y} (x_0, 0)$ ci sono difficoltà, siccome non possiamo sostituire le $y$ con $0$ e poi derivare per la $y$, dobbiamo ragionare così: la derivata non esiste a meno che non ci sia un valore che le $x$ possono assumere che annullino la funzione (per gli es che ho fatto fino ad ora sono solo al numeratore). Il concetto generale è che se non si trovano valori per $x_0$ tali che annullino la funzione e quindi ci permettano di calcolare la derivata parziale, si finisce per tornare a guardare la derivata parziale generica e quindi a non trovarla per quella retta. [spiegato davvero male, ma è un concetto strano].
-\end{itemize}
-
-Per stabilire dove la funzione sia derivabile bisogna calcolare le derivate parziali e osservarne il dominio.\newline
-(n.b. tipicamente negli esercizi le funzioni sono descritte da un sistema che contiene una funzione prolungata nell'origine, in questo caso bisogna calcolare le derivate parziali al di fuori dell'origine e studiarne il dominio, in seguito bisogna calcolare il valore della derivata parziale nel punto $(0,0)$ col metodo descritto precedentemente).\newline
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Gradiente di una funzione radiale}
 Si chiama funzione radiale una funzione $h$ che dipende solo dalla distanza di dall'origine, ossia
@@ -283,9 +348,6 @@ Sia $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ una funzione positivamente
 
 Si ricordi che ogni ogni derivata parziale prima di una funzione posivamente omogenea di grado $\alpha$, se esiste, è una funzione positivamente omogenea di grado $\alpha -1$. \newline
 \rule{\textwidth}{0.4pt}
-\subsubsection*{Ortogonalità del gradiente con le curve di livello}
-Il gradiente è ortogolane il ogni punto alle linee di livello. \newline
-\rule{\textwidth}{0.4pt}
 \subsubsection*{Equazione del trasporto}
 Si definisce equazione del trasporto la seguente:
 \[
@@ -305,10 +367,11 @@ In particolare:
 \subsection*{Derivate di ordine superiore e approssimazioni successive}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Derivate di ordine superiore}
-Teorema di Schwartz. Sia $f \;\;:\;\; A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$ con $A$ aperto. Supponiamo che (per certi indici $i,j \in \{1,2,\dots,n\}$) le derivate seconde miste $f_{x_i, x_j}$ e $f_{x_j, x_i}$ esistano in un certo $x_0$ e siano continue in $x_0$; allora esse coincidono in $x_0$.\newline
-
+\begin{tcolorbox}
+\textbf{Teor. di Schwartz}. Sia $f \;\;:\;\; A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$ con $A$ aperto. Supponiamo che (per certi indici $i,j \in \{1,2,\dots,n\}$) le derivate seconde miste $f_{x_i, x_j}$ e $f_{x_j, x_i}$ esistano in un certo $x_0$ e siano continue in $x_0$; allora esse coincidono in $x_0$.\newline
+\end{tcolorbox}
 Una funzione che ha tutte le derivate parziali seconde continue in un aperto $A$ si dice di classe $C^2(A)$.\newline
-Se $f \in C^2(A)$, allora $f \in C^1(A)$ (in particolare $f$ è differenziabile), le derivate parziali prima sono differenziabili, le derivate parziali seconde sono continue, le derivate seconde miste sono uguali.
+Se $f \in C^2(A)$, allora $f \in C^1(A)$ (in particolare $f$ è differenziabile), le derivate parziali prime sono differenziabili, le derivate parziali seconde sono continue, le derivate seconde miste sono uguali.
 \rule{\textwidth}{2pt}
 \subsection*{Differenziale secondo, matrice hessiana, formula di Taylor al secondo ordine}
 Se $f \in C^2(A)$ e $x_0 \in A$, si dice differenziale secondo di $f$ in $x_0$ la funzione
@@ -317,22 +380,23 @@ Se $f \in C^2(A)$ e $x_0 \in A$, si dice differenziale secondo di $f$ in $x_0$ l
 \]
 I vari coefficienti $\frac{\delta^2(f)}{\delta(x_i) \delta(x_j)}(x_0)$ possono essere ordinati in una matrice detta Hessiana:
 \[
-    H_f(x_0) =\begin{matrix}
+    H_f(x_0) =\left(\begin{matrix}
         f_{x_1x_1}(x_0) \;\; &f_{x_1x_2}(x_0) \;\; &\dots \;\; &f_{x_1x_n}(x_0)\\
         f_{x_2x_1}(x_0) \;\; &f_{x_2x_2}(x_0) \;\; &\dots \;\; &f_{x_2x_n}(x_0)\\
         \dots \;\; &\dots \;\; &\dots \;\; &\dots\\
         f_{x_nx_1}(x_0) \;\; &f_{x_nx_2}(x_0) \;\; &\dots \;\; &f_{x_nx_n}(x_0)
-    \end{matrix}
+    \end{matrix}\right)
 \]  
+\begin{tcolorbox}
 In particolare, per due variabili:
 \[
-    H_f(x_0, y_0) = \begin{matrix}
+    H_f(x_0, y_0) = \left(\begin{matrix}
         f_{xx}(x_0, y_0) \;\; f_{xy}(x_0, y_0)\\
         f_{yx}(x_0, y_0) \;\; f_{yy}(x_0, y_0)
-    \end{matrix}
+    \end{matrix}\right)
 \]
-Se $f$ è di classe $C^2$, la matrice Hessiana è simmetrica.\newline
-
+Se $f$ è di classe $C^2$, la matrice Hessiana è simmetrica.
+\end{tcolorbox}
 Formula di Taylor (resto secondo Lagrange). Sia $f \in c^2(A)$; per ogni $x_0 \in A$ e $h \in \mathbb{R}^n$, tale che $x_0 + h \in A$, esiste un numero reale $\delta \in (0,1)$, dipendente da $x_0$ e $h$, tale che:
 \[
     f(x_0 + h) = f(x_0) +\sum_{i=1}^{n}\frac{\delta f}{\delta x_i}(x_0)h_i + \frac{1}{2}\sum_{i,j=1}^{n}\frac{\delta^2f}{\delta x_i \delta x_j}(x_0 + \delta h) h_i h_j.
@@ -342,8 +406,33 @@ Formula di Taylor (resto secondo Peano). Sia $f \in C^2(a)$. Per ogni $x_0 \in A
 \[
     f(x_0 + h) = f(x_0) +\sum_{i=1}^{n}\frac{\delta f}{\delta x_i}(x_0)h_i + \frac{1}{2}\sum_{i,j=1}^{n}\frac{\delta^2f}{\delta x_i \delta x_j}(x_0) h_i h_j +o(|h|^2).
 \]
+\begin{tcolorbox}
+    \textbf{Formula di Taylor al secondo ordine}:\newline
+    Sia $f$ di classe $C^2$ in $(x_0,y_0) \in \mathbb{R}^2$. Allora, per $(x,y) \rightarrow  (x_0, y_0)$ si ha 
+    \[
+        f(x,y) = f(x_0,y_0) + \nabla f(x_0,y_0) \cdot \binom{x-x_0}{y-y_0} + 
+    \]
+    \[
+        +\frac{1}{2} H_f(x_0,y_0) \binom{x-x_0}{y-y_0} \cdot \binom{x-x_0}{y-y_0} + o[(x-x_0)^2 + (y-y_0)^2]
+    \]
+    dove l'operazione indicata con $\cdot $ è un prodotto scalare, mentre l'operazione $H_f(x_0,y_0) \binom{x-x_0}{y-y_0}$ è un prodotto matriciale righe per colonne.
+\end{tcolorbox}
+\begin{tcolorbox}
+    Formula di Taylor scritta per esteso:
+    \[
+        f(x,y) = f(x_0, y_0) + f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0) +
+    \]
+    \[
+        + \frac{1}{2}\left( f_{xx}(x_0,y_0)(x-x_0)^2 + 2f_{xy}(x_0,y_0)(x-x_0)(y-y_0) + f_{yy}(x_0,y_0)(y-y_0)^2 \right) +
+    \]
+    \[
+        + o[(x-x_0)^2 + y(y-y_0)^2]
+    \]
+    per $(x,y) \rightarrow (x_0,y_0)$.
+\end{tcolorbox}
+
 \rule{\textwidth}{2pt}
-\subsection*{Ottimizzaione, estremi liberi}
+\subsection*{Ottimizzazione, estremi liberi}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Generalità sui problemi di ottimizzazione}
 \begin{itemize}
@@ -352,27 +441,32 @@ Formula di Taylor (resto secondo Peano). Sia $f \in C^2(a)$. Per ogni $x_0 \in A
 \end{itemize}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Estremi liberi, condizioni necessarie del prim'ordine}
-Teorema di Fermat. Sia $f \;\;:\;\; A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$, con $A$ aperto e $x_0 \in A$ un punto di massimo o minimo locale per $f$. Se $f$ è derivabile in $x_0$, allora $\nabla f(x_0) = 0$.\newline
-
-I punti in cui il gradiente di una funzione si annulla si dicono punti critici o stazionari di $f$. Una volta individuati tutti i punti stazionari, si può iniziare un'analisi su di essi per verificare se sono o meno punti di massimo o minimo. Se non lo sono essi prendono il nome di punti di sella o colle. Da notare particolarmente è che una funzione può assumere valori di massimo o minimo anche in punti in cui non è derivabile, dunque questi punti vanno analizzati separatamente. \newline
+\textbf{Teor. di Fermat}. Sia $f \;\;:\;\; A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}$, con $A$ aperto e $x_0 \in A$ un punto di massimo o minimo locale per $f$. Se $f$ è derivabile in $x_0$, allora $\nabla f(x_0) = 0$.\newline
+\begin{tcolorbox}
+    I punti in cui il gradiente di una funzione si annulla si dicono punti \textbf{critici} o \textbf{stazionari} di $f$. Una volta individuati tutti i punti stazionari, si può iniziare un'analisi su di essi per verificare se sono o meno punti di massimo o minimo. Se non lo sono essi prendono il nome di punti di \textbf{sella} o \textbf{colle}. Da notare particolarmente è che una funzione può assumere valori di massimo o minimo anche in punti in cui non è derivabile, dunque questi punti vanno analizzati separatamente.
+\end{tcolorbox}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Forme quadratiche, classificazione}
-Un modo per determinare la natura di un punto stazionario è quello di analizzare il segno dell'incremento $\nabla f(x_0) = f(x_0 + h ) - f(x_0)$. Se infatti si riesce a stabilire che $\nabla f(x_0)$ si mantiene di segno positivo o negativo, per ogni $h$ di modulo abbastanza piccolo, possiamo dedurre che $x_0$ è punto di minimo o massimo locale. Se invece al variare di $h$, $\nabla f(x_0)$ cambia segno, siamo in presenza di un punto si sella.\newline
+Un modo per determinare la natura di un punto stazionario è quello di analizzare il segno dell'incremento $\nabla f(x_0) = f(x_0 + h ) - f(x_0)$. \textbf{Se infatti si riesce a stabilire che $\nabla f(x_0)$ si mantiene di segno positivo o negativo, per ogni $h$ di modulo abbastanza piccolo, possiamo dedurre che $x_0$ è punto di minimo o massimo locale}. Se invece al variare di $h$, $\nabla f(x_0)$ cambia segno, siamo in presenza di un punto si sella.\newline
+\begin{tcolorbox}
 Lo studio del segno di $\nabla f(x_0)$ riconduce all'analisi del segno del polinomio omogeneo di secondo grado nelle componenti di $h$ (che prende il nome di forma quadratica) dato da
 \[
     \sum_{i,j=1}^{n}f_{x_ix_j}(x_0)h_ih_j.
 \]
-Ogni forma quadratica risulta associata a una matrice simmetrica $M$. Nel caso del differenziale la matrice $M$ coincide con la matrice Hessiana.\newline
-Il segno della forma quadratica è quindi studiabile analizzando la sua matrice $M = \begin{matrix}
+Ogni forma quadratica risulta associata a una matrice simmetrica $M$. Nel caso del differenziale la matrice $M$ coincide con la matrice Hessiana.
+\end{tcolorbox}
+\begin{tcolorbox}
+Il segno della forma quadratica è quindi studiabile analizzando la sua matrice $M = \left(\begin{matrix}
     a \;\;\; b\\
     b \;\;\; c\\
-\end{matrix}$ con $a\neq 0$ nel seguente modo:
+\end{matrix} \right)$ con $a\neq 0$ nel seguente modo:
 \begin{itemize}
     \item è definitivamente positiva (negativa) se e solo se $det(M)>0$ e $a >0$ ($a<0$);
     \item indefinita se $det(M)<0$;
     \item semidefinita positiva (negativa) se e solo se $det(M)=0$ e $a>0$ ($a<0$).
 \end{itemize}
-Se $a = 0$ e $c\neq 0$, nelle affermazioni precedenti occore sostituire $a$ con $c$. \newline
+Se $a = 0$ e $c\neq 0$, nelle affermazioni precedenti occore sostituire $a$ con $c$.
+\end{tcolorbox}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Forme quadratiche, test degli autovalori}
 Un importante test per determinare il segno di una funzione quadratica in $\mathbb{R}^n$ è basato sul segno degli autovalori della matrice $M$.\newline
@@ -499,7 +593,7 @@ Nelle funzioni convesse (concave) i punti stazionari, se esistono, rappresentano
 \subsection*{Funzioni definite implicitamente}
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Funzione implicita di una variabile}
-Teorema di Dini della funzione implicita. Sia $A$ un aperto in $\mathbb{R}^2$ e $f \;\;:\;\; A \rightarrow \mathbb{R}$ una funzione $C^1(A)$. Supponiamo che in un punto $(x_0,y_0) \in A$ sia:
+\textbf{Teor. di Dini della funzione implicita}. Sia $A$ un aperto in $\mathbb{R}^2$ e $f \;\;:\;\; A \rightarrow \mathbb{R}$ una funzione $C^1(A)$. Supponiamo che in un punto $(x_0,y_0) \in A$ sia:
 \[
     f(x_0,y_0)= 0 \;\;\;\; e \;\;\;\; f_y(x_0,y_0) \neq 0.
 \] 
@@ -517,29 +611,5 @@ In sostanza i punti in cui il teorema di Dini non è applicabile sono quelli in 
 \subsubsection*{Note sugli esercizi}
 Tipicamente negli esercizi la richiesta è di calcolare la funzione $g'(x)$ in un punto. Si inizia calcolando i punti per cui $f(x,y) = 0$ (solitamente vengono forniti). Una volta trovati questi punti si deve verificare che $\frac{\delta f}{\delta y} f(x,y)$ (oppure $\frac{\delta f}{\delta x} f(x,y)$) sia $\neq 0$. Se queste condizioni si verificano, allora il Teorema di Dini è applicabile e si può procedere a calcolare $g'(x) = - \frac{\frac{\delta f}{\delta x}(x,y)}{\frac{\delta f}{\delta y} (x,y)}$ e a trovarne il valore in un punto.\newline
 
-Se in un esercizio viene chiesto di calcolare, oltre a $g'(x)$, anche $g''(x)$, allora si può usare un altro procedimento: si può derivare rispetto a $x$ l'equazione $f(x, g(x)) = 0$ e quindi ricavare $g'(x)$. Succesivamente si può derivare ancora l'equazione e ricavare $g''(x)$. Spesso per risolvere queste equazioni è più semplice derivarle e poi sostituire $x = x_0$ con l'$x_0$ richiesto dall'esercizio.
-
+Se in un esercizio viene chiesto di calcolare, oltre a $g'(x)$, anche $g''(x)$, allora si può usare un altro procedimento: si può derivare rispetto a $x$ l'equazione $f(x, g(x)) = 0$ e quindi ricavare $g'(x)$. Succesivamente si può derivare ancora l'equazione e ricavare $g''(x)$. Spesso per risolvere queste equazioni è più semplice derivarle e poi sostituire $x = x_0$ con l'$x_0$ richiesto dall'esercizio.\newline
 \rule{\textwidth}{2pt}
-\subsection*{Complementi}
-\rule{\textwidth}{0.4pt}
-\subsubsection*{Topologia e funzioni continue}
-Teorema di Bolzano-Weierstrass in $\mathbb{R}^n$. Sia $\{x_k\}_{k=1}^\infty$ una successione limitata. Allora essa ammette una sottosuccessione convergente.\newline
-
-Successione di Cauchy in $\mathbb{R}^n$. Sia $\{x_k\}_{k=1}^\infty$ una successione in $\mathbb{R}^n$. Si dice che la successione soddisfa la condizione di Cauchy se
-\[
-    \;\forall\;\epsilon > 0 \;\;\exists\;\; n_0 \;\;:\;\;\;\forall\;h,k \geq n_0 \;\;\; si \;\;\; ha \;\;\;|x_h -x_k|<\epsilon.
-\]
-\newline
-
-Teorema di completezza di $\mathbb{R}^n$. Se $\{x_k\}_{k=1}^\infty$ è una successione di Cauchy in $\mathbb{R}^n$, allora converge.\newline
-
-Teorema dell'uniforme continuità. Si dice che $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ è uniformemente continua in $\Omega \subseteq \mathbb{R}^n$ se:
-\[
-    \;\forall\;\epsilon>0,\;\;\exists\;\;\delta>0 \;\;:\;\; \;\forall\;x_1,x_2 \in\Omega,\;\;se \;\; |x_1- x-2| <\delta \;\;allora \;\;|f(x_1) -f(x_2)|<\epsilon
-\]
-\newline
-
-Teorema di Cantor-Heine. Sia $K\subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; K \rightarrow \mathbb{R}$ una funzione continua. Allora $f$ è uniformemente continua in $K$.\newline
-
-Sia $\Omega \subset \mathbb{R}$ un aperto e sia $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ uniformemente continua in $\Omega$. Allora $f$ è prolungabile con continuità fino alla frontiera di $\Omega$, ossia esiste una funzione $\bar{f} \;\;:\;\; \bar{\Omega} \rightarrow \mathbb{R}$ continua in $\bar{\Omega}$ e tale che in $\Omega$ coincide con $f$.\newline
-\rule{\textwidth}{0.4pt}

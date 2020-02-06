@@ -127,9 +127,9 @@ allora valgono le seguenti tesi:
 Introduciamo una vasta classe di funzioni elementari delle quali sappiamo scrivere esplicitamente le serie di potenza che le rappresentano.\newline
 Data una funzione $f$ di classe $C^\infty$ in un punto $x_0$, possiamo scrivere formalmente
 \[
-    f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)(x_0)}}{n!}(x-x_0)^n
+    f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
 \]
-che, se poniamo $a_n = f^{(n)}(x_0)/n!$, coincide con una serie di potenza nel campo reale. Se $R > 0$ e la serie converge a $f$, allora la scrittura non e solo formale ma vale per ongi $x \in (x_0 - R, x_0 + R)$. In tale intervallo di ha convergenza putnuale, mentre la convergenza uniforma è garantita negli intervalli $[x_0 - R + \epsilon, x_0 + R -\epsilon]$ per ogni $\epsilon \in (0,R)$.
+che, se poniamo $a_n = f^{(n)}(x_0)/n!$, coincide con una serie di potenza nel campo reale. Se $R > 0$ e la serie converge a $f$, allora la scrittura non è solo formale ma vale per ongi $x \in (x_0 - R, x_0 + R)$. In tale intervallo si ha convergenza puntuale, mentre la convergenza uniforme è garantita negli intervalli $[x_0 - R + \epsilon, x_0 + R -\epsilon]$ per ogni $\epsilon \in (0,R)$.
 \[
     e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} \;\;\;\; (R= \infty)
 \]
