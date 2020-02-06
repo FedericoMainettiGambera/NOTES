@@ -216,13 +216,8 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.pdf
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.toc
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.toc
-OUTPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.toc
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo1/capitolo1.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo1/capitolo1.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/capitolo0c.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/capitolo0c.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
@@ -234,27 +229,48 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/trigonometria.PNG
+INPUT ../capitolo0/trigonometria.PNG
+INPUT ../capitolo0/trigonometria.PNG
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/asintotici.PNG
+INPUT ../capitolo0/asintotici.PNG
+INPUT ../capitolo0/asintotici.PNG
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/derivate1.PNG
+INPUT ../capitolo0/derivate1.PNG
+INPUT ../capitolo0/derivate1.PNG
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/derivate2.PNG
+INPUT ../capitolo0/derivate2.PNG
+INPUT ../capitolo0/derivate2.PNG
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/mclaurin.PNG
+INPUT ../capitolo0/mclaurin.PNG
+INPUT ../capitolo0/mclaurin.PNG
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/capitolo0a.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/capitolo0a.tex
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/capitolo0b.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo0/capitolo0b.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo5/capitolo5.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo5/capitolo5.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo6/capitolo6.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo6/capitolo6.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo7/capitolo7.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo7/capitolo7.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo1/capitolo1.tex
+INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo1/capitolo1.tex
 INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../img/eqdiff2.PNG
 INPUT ../img/eqdiff2.png
 INPUT ../img/eqdiff2.png
 INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../img/eqdiff2(1).PNG
 INPUT ../img/eqdiff2(1).png
 INPUT ../img/eqdiff2(1).png
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo2/capitolo2.tex
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo3/capitolo3.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo5/capitolo5.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo5/capitolo5.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo6/capitolo6.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo6/capitolo6.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo7/capitolo7.tex
-INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/../capitolo7/capitolo7.tex
 INPUT c:/Users/Federico/Desktop/NOTES/NOTES/analisi 2/master/master.aux
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb

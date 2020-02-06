@@ -1,0 +1,548 @@
+\section*{Integrali}
+\subsection*{Teorema fondamentale del calcolo integrale:}
+\[
+    \int_{a}^{b} f(x) dx = G(b) - G(a)
+\]
+\subsection*{Proprietà degli integrali:}
+\[
+    \int_{a}^{b} f(x)dx = \int_{a}^{r} f(x) dx + \int_{r}^{b} f(x) dx
+\]
+\[
+    \left| \int_{a}^{b} f(x) dx \right| \leq \int_{a}^{b} |f(x)| dx
+\]
+\[
+    \int k \cdot f(x) dx = k \cdot \int f(x) dx
+\]
+\[
+    \int [f_1(x) + f_2(x) ] dx= \int f_1(x) dx + \int f_2(x) dx
+\]
+\subsection*{Integrali fondamentali:}
+\[
+    \int f'(x) dx = f(x) +c
+\]
+\[
+    \int a \; dx = ax +c
+\]
+\[
+    \int x^n dx = \frac{x^{n+1}}{n+1} +c
+\]
+\[
+    \int \frac{1}{x}dx = ln(|x|) +c
+\]
+\[
+    \int sin(x) dx = -cos(x) +c
+\]
+\[
+    \int cos(x) dx = sin(x)+c
+\]
+\[
+    \int tan(x) dx = -log|cos(x)| +c
+\]
+\[
+    \int log(x) dx \;\; = xlog(x) - \int x \cdot  \frac{1}{x} dx - \int 1 dx = x log(x) -x + c
+\]
+\[
+    \int arctg (x) dx \;\; = x arctg(x) -\int \frac{x}{1+x^2}dx = x arctg(x) -\frac{1}{2}log(1+x^2) + c 
+\]
+\[
+    \int cotg(x) dx = log|sin(x)| +c
+\]
+\[
+    \int (1+tg^2(x))dx = \int \frac{1}{cos^2(x)} dx = tg(x) +c
+\]
+\[
+    \int (1+ctg^2(x))dx = \int \frac{1}{sin^2(x)} dx = -cotg(x) +c
+\]
+\[
+    \int Sh(x) dx = Ch(x) +c
+\]
+\[
+    \int Ch(x) dx = Sh(x) +c
+\]
+\[
+    \int Th(x) dx = log(Ch(x))+c
+\]
+\[
+    \int Coth(x) dx = log|Sh(x)| +c
+\]
+\[
+    \int e^x dx = e^x+c
+\]
+\[
+    \int e^{kx} dx = \frac{e^{kx}}{k} +c
+\]
+\[
+    \int a^x dx = \frac{a^x}{ln(a)}+c
+\]
+\subsection*{Integrali notevoli:}
+\[
+    \int sin^2(x) dx = [integrato \; una \; volta \; per \; parti \; e \; sostituzione \; con \; cos^2(x)+ sin^2(x) = 1] = \frac{1}{2}(x-sin(x)cos(x)) +c
+\]
+\[
+    \int cos^2(x) dx = [integrato \; una \; volta \; per \; parti \; e \; sostituzione \; con \; cos^2(x)+ sin^2(x) = 1] = \frac{1}{2}(x+sin(x)cos(x)) +c
+\]
+\[
+    \int tan^2(x) dx = tan(x) -x +c
+\]
+\[
+    \int cotan^2(x) dx = -x -cot(x) +c 
+\]
+\[
+    \int Sh^2(x) dx = [integrato \; una \; volta \; per \; parti \; e \; sostituzione \; con \; Ch^2(x) - Sh^2(x) = 1] = \frac{1}{4}(Sh(2x)-2x) +c
+\]
+\[
+    \int Ch^2(x) dx = [integrato \; una \; volta \; per \; parti \; e \; sostituzione \; con \; Ch^2(x) - Sh^2(x) = 1] = \frac{1}{2}(x + Sh(x)Ch(x)) +c
+\]
+\[
+    \int Th^2(x) dx = x - Th(x) +c 
+\]
+\[
+    \int Coth^2(x) dx = x - Coth(x) +c 
+\]
+\[
+    \int \frac{1}{sin^2(x)} dx = [1 = cos^2(x) +sin^2(x)] = \int 1 + tan^2(x) dx = -cotan(x) + c
+\]
+\[
+    \int \frac{1}{cos^2(x)} dx = [1 = cos^2(x) +sin^2(x)] = \int 1 + cotan^2(x) dx = tan(x) + c
+\]
+\[
+    \int \frac{1}{tan^2 (x)} dx = \int cotan^2(x) dx 
+\]
+\[
+    \int \frac{1}{cotan^2(x) }dx = \int tan^2(x) dx 
+\]
+\[
+    \int \frac{1}{Ch^2(x)} dx = \int (1-Th^2(x))dx= Th(x)+c
+\]
+\[
+    \int \frac{1}{Sh^2(x)} = \int (-1 Coth^2(x)) dx = -Coth(x) +c
+\]
+\[
+    \int \frac{1}{1+x^2} dx = arctg(x) +c
+\]
+\[
+    \int \frac{1}{1-x^2} dx = \frac{1}{2}log\left|\frac{1+x}{1-x}\right|+c
+\]
+\[
+    \int \frac{1}{\sqrt{1+x^2}} dx = arcSh(x) +c = log(x + \sqrt{1+x^2}) +c
+\]
+\[
+    \int \frac{1}{\sqrt{1-x^2}} dx = arcsin(x) +c
+\]
+\[
+    \int \frac{1}{\sqrt{-1 + x^2}} dx = log|x+ \sqrt{x^2-1}| +c
+\]
+\[
+    \int \frac{1}{\sqrt{\pm a^2 + x^2}} dx = log|x + \sqrt{x^2 \pm a^2}|+c
+\]
+\[
+    \int \sqrt{x^2 \pm a^2} dx = \frac{x}{2} \sqrt{x^2 \pm a^2} \pm \frac{a^2}{2} log(x + \sqrt{x^2 \pm a^2}) +c
+\]
+\[
+    \int \sqrt{a^2 - x^2}dx = \frac{1}{2}(a^2arcsin(\frac{x}{a}) + x \sqrt{a^2 - x^2} )+c
+\]
+\subsection*{Integrali riconducibili:}
+\[
+    \int f^n(x) \cdot f'(x) dx = \frac{f^{n+1}(x)}{n+1} +c
+\]
+\[
+    \int \frac{f'(x)}{f(x)} dx = log|f(x)|+c
+\]
+\[
+    \int f'(x) \cdot cos(f(x)) dx =  sin(f(x))+c
+\]
+\[
+    \int f'(x) \cdot sin(f(x)) dx = -cos(f(x)) +c
+\]
+\[
+    \int e^{(f(x)} \cdot f'(x) dx = e^{f(x)}+c
+\]
+\[
+    \int a^{f(x)} \cdot f'(x) dx = \frac{a^{f(x)}}{ln(a)} +c
+\]
+\[
+    \int \frac{f'(x)}{1+f^2(x)} dx = arctg(f(x))+c
+\]
+\subsection*{Integrazione per sostituzione:}
+Sostituire alla variabile $x$ una funzione di un'altra variabile $t$, purchè tale funzione sia derivabile e invertibile.\newline
+Ponendo $x = g(t)$ da cui deriva $dx = g'(t) dt$ si ha che:
+\[
+    \int f(x) dx = \int f[g(t)] \cdot g'(t) dt
+\]
+Da ricordare è che se si è in presenza di un integrale definito bisogna aggiornare anche gli estremi di integrazione. Se non si volesse cambiare l'intervall odi integrazione si può risostituire il vecchio valore di $t$.
+\subsection*{Integrazione delle funzioni razionali:}
+\[
+    \int \frac{P_n(x)}{Q_m(x)} dx
+\]
+Per prima cosa se il grado del numeratore è $\geq$ del grado del denominatore, si esegue la divisione di polinomi:
+\begin{itemize}
+    \item Si dispongono i polinomi dal termine di grado maggiore a quello minore nella seguente maniera:
+    \[
+        P(x) \;\; | \;\; Q(x)    
+    \]
+    badando al fatto che se nel polinomio $P(x)$ mancasse qualche termine bisognerebbe scrivere $0$ nella sua posizione.
+    \item Si dividono il termine di grado massimo di $P(x)$ con quello di grado massimo di $Q(x)$, riportando il risultato al di sotto di $Q(x)$.
+    \item Moltiplichiamo il termine appena scritto per ogni termine di $Q(x)$, ne invertiamo il segno e lo trascriviamo al di sotto dei termini con lo stesso grado di $P(x)$
+    \item Sommiamo termine per termine $P(x)$ con i valore appena scritti e li riportiamo sotto.
+    \item Ripetiamo questo procedimento finchè il grado più alto fra i termini dell'ultima riga scritta a sinistra è minore (non minore uguale) del termine di grado massimo di $Q(x)$
+    \item Il polinomio a destra è il risultato della divisione $S(x)$, mentre ciò che rimane sulla sinistra è il resto $R(x)$. Possiamo ora riscrivere il numeratore:
+    \[
+        P(x) = S(x) \cdot Q(x) + R(x)
+    \]
+\end{itemize}
+Vediamo ora i vari casi possibili:
+\begin{itemize}
+    \item \textbf{denominatore di primo grado:} integrale immediato tramite il logaritmo
+    \item \textbf{denominatore di secondo grado:} si calcola il segno del discriminante:
+    \begin{itemize}
+        \item \textbf{due radici distinte:} si scompone in fratti semplici
+        \[
+            \frac{N(x)}{D_1(x) \cdot D_2(x)} = \frac{a}{D_1(x)} + \frac{b}{D_2(x)}
+        \]
+        \[
+            \frac{a \cdot D_2(x) + b \cdot D_1(x)}{D_1(x) \cdot  D_2(x)} = \frac{N(x)}{D_1(x) \cdot D_2(x)}
+        \]
+        \[
+            a \cdot D_2(x) + b \cdot D_1(x)= N(x)
+        \]
+        Una volta determinate $a$ e $b$ si riscrive l'integrale come $\frac{a}{D_1(x)} + \frac{b}{D_2(x)}$ e si integra come somma di logaritmi
+        \item \textbf{denominatore quadrato perfetto:} (due soluzioni coincidenti), si procede per sostituzione:
+        \[
+            \int \frac{N(x)}{D(x)^2} dx = [D(x) = t, \; \dots] = \; \dots
+        \] 
+        L'utilità della sostituzione è quella di spezzare la frazione in una somma di frazion ida integrare una ad una.
+        \item \textbf{denominatore non si annulla mai:}\newline
+        Casi semplici:
+        \[
+            \int \frac{1}{1 + x^2}dx = arctg (x) +c
+        \]
+        \[
+            \int \frac{1}{x^2 + a^2}dx = \frac{1}{a} arctg \frac{x}{a} +c
+        \]
+        \[
+            \int \frac{1}{a^2 + (x+b)^2}dx = \frac{1}{a} arctg \frac{x+b}{a} +c
+        \]
+        Caso generico: Si cerca di dividere l'integrale in una somma di integrali, il primo deve contenere al numeratore la derivata del denominatore, il secondo non deve contenere la $x$ al numeratore, cioè deve essere una costante e quindi riconducibile ai casi semplici sopra riportati. Il denominatore non cambia. Ci si arriva a logica. 
+    \end{itemize}
+    \item \textbf{denominatore di grado maggiore di due:} è sempre possibile scomporlo in prodotti di fattori di primo grado o di secondo grado irriducibili, per farlo si usa Ruffini (o altrimenti si va a tentoni ricordando che PROBABILMENTE una radice della funzione è un dividendo (positivi e negativi) del numero che si ricava moltiplicando il coefficiente del termine massimo e il termine noto).\newline
+    Fatto questo si scompone la frazione in fratti semplici con la stessa logica del caso di due radici distinte, ricordando che il numeratore deve essere un espressione di un grado minore del denominatore, per esempio se il denominatore è di grado $2$, allora si userà $ax+b$ che è di grado $1$.
+\end{itemize}
+\subsection*{Funzioni razionali di $e^x$}
+Si pone $e^x = t$, $x= log(t)$, $dx = \frac{dt}{t}$ e ci si riconduce a una funzione razionale classica.
+\subsection*{Integrazione per parti:}
+\[
+    \int f'(x) \cdot  g(x) dx = f(x) \cdot g(x) - \int f(x) \cdot g'(x)dx
+\]
+La formula deriva dalla formula di derivazione della moltiplicazioni di due funzioni:
+\[
+    (fg)' = f'g + fg'
+\]
+\[
+    fg' = (fg)' - f'g
+\]
+Si può vedere la formula di integrazione per parti più facilmente così:
+\[
+    \int integranda \cdot derivanda \; dx = primitiva \cdot derivanda - \int primitiva \cdot derivata \; dx
+\]
+L'integrazione per parti si usa:
+\begin{itemize}
+    \item dovendo calcolare integrali della forma
+    \[
+        \int x^n \cdot f(x) dx \;\;\; f(x) = \begin{cases}
+            cos(x)\\ 
+            sin(x)\\ 
+            e^x\\ 
+            Sh(x)\\ 
+            Ch(x)        
+        \end{cases}
+    \]
+    si integra per parti derivando $x^n$ e integrando $f(x)$. Per $n=1$ l'integrale si riduce a uno immediato, per $n>1$ si itera il procedimento fino al caso $n=1$. Si possono svolgere allo stesso modo anche integrali del tipo:
+    \[
+        \int P_n(x) f(x) dx
+    \]
+    \item dovendo calcolare integrali della forma
+    \[
+        \int f(x) g(x) dx \;\;\;\; \begin{cases}
+            f(x) = e^{\alpha x}, Sh(\alpha x), Ch( \alpha x), a^{bx} \\
+            g(x) = cos( \beta x), sin(\beta x)
+        \end{cases}
+    \]
+    si eseguono due integrazioni per parti consecutive, nella prima la scelta della funzione da integrare o derivare è indifferente, nella seconda però la scelte deve essere coerente alla prima. Chiamando $I$ l'integrale di partenza si ottiene una funzione della forma
+    \[
+        I = h(x) - \frac{\beta}{\alpha}^2 I
+    \]
+    da cui si ricava $I$.\newline
+    Se entrambe le funzioni $f(x)$ e $g(x)$ sono del tipo $cos(x)$ o $sin(x)$ si usano le formule di duplicazione o prostaferesi (vedi più avanti).
+    \item L'integrale del logaritmo, derivando $log(x)$ e integrando $1$
+    \[
+        \int log(x) dx \;\; = xlog(x) - \int x \cdot  \frac{1}{x} dx - \int 1 dx = x log(x) -x + c
+    \]
+    Più in generale, dovendo calcolare integrali della forma
+    \[
+        \int x^m log^n(x) dx
+    \]
+    e ponendo $g' = x^m$ e $f = log^n(x)$ ed eseguendo iterativamente $n$ integrazioni per parti si riesce a calcolare l'integrale del logaritmo. Ancora più in generale si possono risolvere integrali della forma:
+    \[
+        \int P_m(x) \cdot Q_n(log(x)) dx 
+    \]
+    \item l'integrale dell'arcotangente, derivando $arctg(x)$ e integrando $1$
+    \[
+        \int arctg (x) dx \;\; = x arctg(x) -\int \frac{x}{1+x^2}dx = x arctg(x) -\frac{1}{2}log(1+x^2) + c 
+    \]
+    Più in generale
+    \[
+        \int x^n arctg(x) dx  = \frac{x^{n+1}}{n+1}arctg(x) - \int\frac{x^{n+1}}{n+1} \frac{dx}{1+x^2}
+    \]
+\end{itemize}
+\subsection*{integrazione delle funzioni trigonometriche}
+\begin{itemize}
+    \item dovendo calcolare
+    \[
+        \int f(sin(x)) \cdot  cos(x) dx \;\;\; \Rightarrow  \;\;\; sin(x) = t, cos(x) dx =dt
+    \]
+    \[
+        \int f(cos(x)) \cdot  sin(x) dx\;\;\; \Rightarrow  \;\;\; cos(x) ) t, -sin(x) dx = dt
+    \]
+    In particolare per calcolare 
+    \[
+        \int sin^n(x) cos^m(x)
+    \]
+    se almeno uno degli esponenti è dispari si riesce a riscrivere l'integrale in una delle forme viste sopra utilizzando: $sin^2(x) + cos^2(x) = 1$. Se entrambi gli esponenti sono pari si usano le formule trigonometriche per abbassarne il grado: $cos^2(x) = \frac{1}{2}(1+cos(2x))$ e $sin^2(x) = \frac{1}{2} (1-cos(2x))$
+    \item per integrali del tipo
+    \[
+        \int cos(\alpha x) sin(\beta x) dx, \;\;\;\int cos(\alpha x) cos(\beta x) dx, \;\;\;\int sin(\alpha x) sin(\beta x) dx,
+    \]
+    si usano le regole di prostaferesi che riconducono a somme di integrali immediati
+    \item integrali di funzioni razionali di $sin(x)$ e $cos(x)$ possono sempre essere ricondotti a integrali di funzioni razionali generiche tramite la sostituzione:
+    \[
+        t = tg\left(\frac{x}{2}\right), \;\;\; x= 2 arctg(t), \;\;\;dx = \frac{2}{1+t^2}dt
+    \]
+    ne derivano le seguenti identità trigonometriche:
+    \[
+        \begin{cases}
+            cos(x) = \frac{1-t^2}{1+t^2}\\
+            sin(x) = \frac{2t}{1+t^2}
+        \end{cases}
+    \]
+    \item integrali definiti notevoli:
+    \[
+        \int_{0}^{n \frac{\pi}{2}}cos^2(kx) dx = \int_{0}^{n \frac{\pi}{2}}sin^2(kx) dx = n \frac{\pi}{4}
+    \]
+    \item per calcolare integrali razionali con $Sh(x)$ e $Ch(x)$ o si trovano scorciatoie con trasformazioni oppure si usa la sostituzione $e^x = t, x= log(t), dx = \frac{dt}{t}$
+\end{itemize}
+\subsection*{Integrazione delle funzioni irrazzionali}
+\begin{itemize}
+    \item se l'integranda è una funzione razionale di $x$ moltiplicata per solo una delle seguenti
+    \[
+        \int R(x) \sqrt{a^2-x^2} dx = [x=a \cdot  sin(t), dx =a \cdot  cos(t)dt] = \int \sqrt{a^2(1-sin^2(t))}dx = \int|a \cdot  cos(t)|dx
+    \]
+    \[
+        \int R(x) \sqrt{a^2 + x^2} = [x=a \cdot  Sh(t), dx =a \cdot  Ch(t)dt] = \int \sqrt{a^2(1-Sh^2(t))}dx = \int a \cdot  Ch(t)dx
+    \]
+    \[
+        \int R(x) \sqrt{x^2 -a^2} = [x=a \cdot  Ch(t), dx =a \cdot Sh(t)dt] = \int \sqrt{a^2(Ch^2(t)-1)}dx = \int|a \cdot Sh(t)|dx
+    \]
+    Negli ultimi due casi per tornare alla variabile x occorre usare le funzioni iperobliche inverse:
+    \[
+        \begin{cases}
+            x = a \cdot  Ch(t) \Rightarrow t = SettCh(\frac{x}{a}) = log\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}-1}\right)\\
+            x= a \cdot Sh(t) \Rightarrow t = SettSh\left(\frac{x}{a}\right) = log\left(\frac{x}{a}+\sqrt{\frac{x^2}{a^2}+1}\right)
+        \end{cases}
+    \]
+    è utile anche ricordare che $Sh(SettCh(a))= \sqrt{a^2-1}$ e $Ch(SettSh(a))=\sqrt{a^2+1}$
+    \item integrale di una funzione razionale di $x, x^{\frac{n_1}{m_1}}, x^{\frac{n_2}{m_2}}$, etc. \newline
+    Si pone $x = t^n$ con $n=$ minimo comune multiplo di $m_1$, $m_2$, etc. Si ha quindi $dx = n \cdot  t^{n-1} dt$ e si ottiene una funzione razionale di $t$.
+    \item Se l'integranda è una funzione del tipo $R(x^{2n+1}, \sqrt{x^2 \pm a^2})$
+    \[
+        \int x^{2n+1}R(\sqrt{x^2 \pm a^2})dx = [\sqrt{x^2 \pm a^2} = t, xdx= tdt, x^{2n+1} \cdot dx = (t^2 \mp a^2)^n t \cdot  dt]
+    \]
+\end{itemize}
+\subsection*{Simmetrie e valori assoluti nel calcolo di integrali definiti}
+\begin{itemize}
+    \item se $f(x)$ è \textbf{pari}:
+    \[
+        \int_{-k}^{k}f(x)dx = 2 \int_{0}^{k} f(x) dx
+    \]
+    \item se $f(x)$ è \textbf{dispari}:
+    \[
+        \int_{-k}^{k}f(x)dx = 0
+    \]
+\end{itemize}
+\subsection*{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}
+Non è corretto affermare l'annullarsi di un integrale dispari per motivi di simmetria in un intervallo simmetrico senza prima verificare la convergenza dell'integrale stesso.
+\subsection*{INTEGRALI GENERALIZZATI}
+\subsection*{Integrazione di funzioni non limitate}
+Metodo generale di risoluzione:
+\[
+    \lim_{x\rightarrow b^-} f(x) = \pm \infty \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\lim_{x\rightarrow a^+}f(x) = \pm \infty
+\]
+\[
+    \int_{a}^{b}f(x)dx = \lim_{\epsilon\rightarrow 0^+}\int_{a}^{b-\epsilon}f(x)dx \;\;\;\;\;\;\;\;\;\;\;\;\; \int_{a}^{b}f(x)dx = \lim_{\epsilon\rightarrow 0^+}\int_{a+\epsilon}^{b}f(x)dx 
+\]
+\subsection*{Criteri di integrabilità al finito}
+Siano $\lim_{x\rightarrow b^-}f(x) = \lim_{x\rightarrow b^-}g(x) = + \infty$:
+\begin{itemize}
+    \item confronto: se $0\leq f(x) \leq g(x)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
+    \item confronto asintotico: se $f>0$ e $g>0$ e $f \sim g$ per $x \rightarrow b^-$, allora $f$ integrabile $\Leftrightarrow g$ integrabile.
+    \item \textbf{teor.} (da usare per studiare per esempio funzioni seno e coseno per $x \rightarrow \infty$)
+    \[
+        \int_{a}^{b}|f(x)|dx \;\; convergente \;\;\Rightarrow \int_{a}^{b}f(x)dx \;\;convergente
+    \]
+\end{itemize}
+\subsection*{Integrazione su intervalli illimitati}
+Metodo generale di risoluzione:
+\[
+    \int_{a}^{+\infty}f(x) dx = \lim_{\omega\rightarrow +\infty}\int_{a}^{\omega}f(x)dx
+\]
+\[
+    \int_{- \infty}^{b}f(x) dx = \lim_{\omega\rightarrow -\infty}\int_{\omega}^{b}f(x)dx
+\]
+\[
+    \int_{-\infty}^{+\infty}f(x) dx = \int_{-\infty}^{c} f(x) dx + \int_{c}^{+\infty}f(x) dx
+\]
+\textbf{def.} Se il limite dell'integrale di $f$ esiste finito allora $f$ si dice integrabile oppure che l'integrale è convergente. \newline
+\textbf{def.} Se il limite dell'integrale è $\pm \infty$, l'integrale si dice divergente.\newline
+\textbf{def.} Se il limite non esiste, l'integrale non esiste.\newline
+\textbf{per essere integrabile deve avere limite finito.}
+\subsection*{Criteri di integrabilità all'infinito}
+\begin{itemize}
+    \item confronto: se $0\leq f(x) \leq g(x)$ in $[a,+\infty)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
+    \item confronto asintotico: se $f>0$, $g>0$ e $f \sim g$ per $x \rightarrow + \infty$, allora $f$ integrabile $\Leftrightarrow g$ integrabile
+    \item \textbf{teor.} (da usare per studiare per esempio funzioni seno e coseno per $x \rightarrow \infty$)
+    \[
+        \int_{a}^{+\infty}|f(x)| dx \;\; convergente \;\; \Rightarrow \int_{a}^{+\infty} f(x) dx \;\;convergente
+    \]
+\end{itemize}
+\subsection*{Osservazione. Ordine di annullamento di una funzione derivabile.}
+Se $f$ è una funzione derivabile in un intervallo $I$, la formula di Taylor ci dice che se $f$ si annulla in un punto $\alpha \in I$, si annulla almeno del prim'ordine. Precisamente poichè
+\[
+    f(x) - f(\alpha) = f'(\alpha)(x-\alpha) + o(x-\alpha)
+\]
+se $f'(\alpha) \neq 0$ allora $f$ ha uno zero del prim'ordine in $\alpha$. Se $f'(\alpha) = 0$ ma, ad esempio, $f''(\alpha) \neq 0$, si può concludere che $f$ si annulla del $2^0$ ordine, e così via. In ogni caso non può annullarsi di un ordine inore di $1$.
+\subsection*{Integrali generalizzati notevoli}
+Caso 1:
+\[
+    \int_{a}^{b}\frac{1}{(x-a)^p}dx \rightarrow \begin{cases}
+        converge \;\;&se \;\;p<1\\
+        diverge \;\;&se \;\; p\geq 1
+    \end{cases}
+\]
+\[
+    \int_{a}^{b}\frac{dx}{(b-x)^p} \rightarrow  \begin{cases}
+        converge \;\;&se \;\;p<1\\
+        diverge \;\;&se \;\; p\geq 1
+    \end{cases}
+\]
+Caso 2:
+\[
+    \int_{a}^{+\infty}\frac{1}{x^p}dx \rightarrow \begin{cases}
+        converge \;\; & se \;\; p > 1\\
+        diverge \;\; &  se \;\; p \leq 1
+    \end{cases}
+\]
+Caso 3: con $0< \alpha < 1$
+\[
+    \int_{0}^{\alpha} \frac{1}{x^a \cdot  |ln(x)|^b} \rightarrow \begin{cases}
+        converge \;\; se \;\; & \begin{cases}
+            a < 1 \;\; e \;\; b \in \mathbb{R}\\
+            oppure \\
+            a=1 \;\; e \;\; b > 1
+        \end{cases}\\
+        diverge \;\; se \;\; & \begin{cases}
+            a>1 \;\; e \;\; b \in \mathbb{R}\\
+            oppure\\
+            a=1 \;\; e \;\; b \leq 1
+        \end{cases}
+    \end{cases}
+\]
+Caso 4: con $\alpha > 1$
+\[
+    \int_{\alpha}^{+\infty} \frac{1}{x^\alpha \cdot ln^b(x)}dx \rightarrow \begin{cases}
+        converge \;\; se \;\; & \begin{cases}
+            a > 1 \;\; e \;\; b \in \mathbb{R}\\
+            oppure \\
+            a=1 \;\; e \;\; b > 1
+        \end{cases}\\
+        diverge \;\; se \;\; & \begin{cases}
+            a<1 \;\; e \;\; b \in \mathbb{R}\\
+            oppure\\
+            a=1 \;\; e \;\; b \leq 1
+        \end{cases}
+    \end{cases}
+\]
+Caso 5: con $\alpha> 1$
+\[
+    \int_{1}^{\alpha}\frac{1}{ln^p(x)} dx \rightarrow \begin{cases}
+        converge \;\; se \;\; &p<1\\
+        diverge \;\; se \;\; &p\geq 1
+    \end{cases}
+\]
+\subsection*{FUNZIONI INTEGRALI}
+\textbf{teor.} Secondo teorema fondamentale del calcolo integrale \newline
+Sia $f: [a,b] \rightarrow \mathbb{R}$ una funzione integrabile e sia $x_0 \in [a,b]$ e sia 
+\[
+    F(x) = \int_{x_0}^{x} f(t) dt
+\]
+Allora:
+\begin{itemize}
+    \item La funzione $F$ è continua in $[a,b]$
+    \item Se inoltre $f$ è continua in $[a,b]$, allora $F$ è derivabile in $[a,b]$ e vale
+    \[
+        F'(x) = f(x) \;\; per \; ogni \; x \in[a,b]
+    \]
+    (Se $f(t)$ non è continua su tutto $I$, ma è integrabile in senso generalizzato, in tutti i punti in cui $f(t)$ è continua, $F(x)$ è derivabile e $F'(x) = f(x)$)\newline
+    $F$ ha punti di non derivabilità dove $f$ è discontinua.
+\end{itemize}
+Conseguenze:
+\begin{itemize}
+    \item se $f$ è continua, $F$ è derivabile con continuità
+    \item se $f$ è continua e derivabile con continuità, anche $F'$ è derivabile con continuità, quindi $F$ è due volte derivabile con continuità. Iterando: la funzione integrale ha sempre un grado di regolarità in più rispetto alla funzione integranda
+    \item ogni fuzione continua su $I$ ha una primitiva su $I$
+\end{itemize}
+Logica degli esercizi in cui bisogna trovare l'intervallo di definizione:
+\[
+    F(x) = \int_{x_0}^{x}f(x)dx
+\]
+\begin{itemize}
+    \item lo scopo è determinare dove la funzione integranda è integrabile.
+    \item Vedere dove la funzione integranda è continua, una funzione continua è integrabile. Analizzare i punti di discontinuità:
+    \item Se una funzione ha un numero finito di discontinuità limitate in un intervallo, allora è integrabile in quell'intervallo. In poche parole se è una discontinuità a salto è integrabile.
+    \item Per gli altri punti di discontinuità la funzione integranda è illimitat, quindi bisogna studiarla (con i criteri del confronto, del confronto asintotico, col teorema del modulo, calcolando effettivamente la primitiva e il limite, o riducendosi al caso particolare delle funzioni non limitate con gli asintotici o gli sviluppi di Taylor).
+    \item Se la funzione itegranda non è integrabile nel punto $x_0$ allora l'insieme di definizione di $F$ è vuoto. Ma se $x_0$ fosse un punto di accumulazione bisogna studiare l'integrale della funione per $t \rightarrow x_0$ e vedere se è effettivamente integrabile o meno.
+\end{itemize}
+Logica degli esercizi sulla regolarità delle funzioni integrali:
+\[
+    F(x) = \int_{x_0}^{x} f(x)dx
+\]
+\begin{itemize}
+    \item si determina l'insieme di definizione. (vedi sopra)
+    \item per determinare i punti di non derivabilità di $F(x)$ studiamo la sua derivata $F'(x) = f(x)$. I punti di non derivabilità sono quelli quelli dove $f(x)$ non è definita, e in $F(x)$ corrispondono a:
+    \begin{itemize}
+        \item discontinuità a salto in $f$ è un punto angoloso in $F$
+        \item punti di asintoto verticale di $f$ sono cuspidi (verso l'alto o il basso) o flessi a tangente verticale (ascendente o discendente) di $F$
+    \end{itemize}
+    \item Notiamo che tangenti verticali o discontinuità a salto o buchi nella funzione di $F$ non possono essere presenti nel dominio di $F$, perchè essendo punti di discontinuità non sono derivabili e dunque non presenti nell'intervallo di integrazione di $f$.\newline
+    Dunque la funzione $F$ è (sempre) continua nel suo intervallo di definizione.
+\end{itemize}
+Logica degli esercizi sui grafici qualitativi della funzione integrale $F(x)$ a partire dalla funzione integranda $g(x)$
+\begin{itemize}
+    \item $F$ è crescente sugli intervalli in cui $g$ è positiva, $F$ è decrescente sugli intervalli in cui $g$ è negativa.
+    \item punti in cui $g$ incrocia l'asse delle $x$ sono punti di massimo o minimo
+    \item discontinuità a salto in $g$ sono punti angolosi
+    \item $F$ è concava verso l'alto (il basso) negli intervalli in cui $g$ è crescente (decrescente)
+    \item punti di cambio massimo e minimo in $g$ sono punti di cambio di concavità in $F$
+\end{itemize}
+Limite all'infinito di una funzione integrale:
+\[
+    \lim_{x\rightarrow +\infty}F(x) = \; integrale \;\;generalizzato \;\;= \int_{x_0}^{+\infty}f(t)dt
+\]
+se l'integrale generallizzato converge esiste limite finito (anche se non si riesce a calcolare), se non converge o è divergente o non esiste.\newline
+Caso particolare è quello in cui $f(t) \rightarrow m$, costante non nulla, per cui $F(x) \sim  mx$. Quindi $F(x)$ tende a infinito con crescita lineare e potrebbe avere asintoto obliquo calcolabile come 
+\[
+    \lim_{x\rightarrow \infty}[F(x)-mx] = \lim_{x\rightarrow \infty}\int_{x_0}^{x}[f(t)-m]dt + mx_0
+\]
+Ossia esiste asintoto obliquo se l'integrale generalizzato
+\[
+    \int_{x_0}^{\infty}[f(t)-m]dt
+\]
+converge.
