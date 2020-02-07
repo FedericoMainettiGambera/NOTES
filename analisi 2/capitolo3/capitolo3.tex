@@ -449,7 +449,7 @@ Formula di Taylor (resto secondo Peano). Sia $f \in C^2(a)$. Per ogni $x_0 \in A
 \subsubsection*{Forme quadratiche, classificazione}
 Un modo per determinare la natura di un punto stazionario è quello di analizzare il segno dell'incremento $\nabla f(x_0) = f(x_0 + h ) - f(x_0)$. \textbf{Se infatti si riesce a stabilire che $\nabla f(x_0)$ si mantiene di segno positivo o negativo, per ogni $h$ di modulo abbastanza piccolo, possiamo dedurre che $x_0$ è punto di minimo o massimo locale}. Se invece al variare di $h$, $\nabla f(x_0)$ cambia segno, siamo in presenza di un punto si sella.\newline
 \begin{tcolorbox}
-Lo studio del segno di $\nabla f(x_0)$ riconduce all'analisi del segno del polinomio omogeneo di secondo grado nelle componenti di $h$ (che prende il nome di forma quadratica) dato da
+Lo studio del segno di $\nabla f(x_0)$ riconduce all'analisi del segno del polinomio omogeneo di secondo grado nelle componenti di $h$ (che prende il nome di \textbf{forma quadratica}) dato da
 \[
     \sum_{i,j=1}^{n}f_{x_ix_j}(x_0)h_ih_j.
 \]
@@ -470,7 +470,7 @@ Se $a = 0$ e $c\neq 0$, nelle affermazioni precedenti occore sostituire $a$ con 
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Forme quadratiche, test degli autovalori}
 Un importante test per determinare il segno di una funzione quadratica in $\mathbb{R}^n$ è basato sul segno degli autovalori della matrice $M$.\newline
-Ricordiamo che un numero complesso $\lambda$ e un vettore non nullo $v \in \mathbb{C}^n$ si dicono, rispettivamente, autovalore e autovettore (di $\lambda$) di una matrice $M$ di ordine $n$, se soddisfano la relazione:
+Ricordiamo che un numero complesso $\lambda$ e un vettore non nullo $v \in \mathbb{C}^n$. Si dicono, rispettivamente, \textbf{autovalore e autovettore} (di $\lambda$) di una matrice $M$ di ordine $n$, se soddisfano la relazione:
 \[
     Mv = \lambda v
 \]
@@ -497,12 +497,14 @@ Le matrici $M$ simmetriche hanno prorpietà importanti:
         \end{matrix}
     \]
 \end{itemize}
+\begin{tcolorbox}
 Tornando allo studio del segno della forma quadratica con la sua matrice $M$:
 \begin{itemize}
     \item definitivamente positiva (negativa) se e solo se tutti gli autovalori di $M$ sono positivi (negativi);
     \item semidefinita positiva (negativa) se e solo se tutti gli autovalori di $M$ sono $\geq 0$ ($\leq 0$) e almeno uno di essi è nullo;
     \item indefinita se $M$ ha almeno un autovalore positivo e uno negativo.
 \end{itemize}
+\end{tcolorbox}
 Da notare è che per una forma quadratica l'origine è sempre un punto stazionario. \newline
 \rule{\textwidth}{0.4pt}
 \subsubsection*{Studio della natura dei punti critici}
@@ -511,12 +513,15 @@ Per estrarre informazioni su un punto critico $x_0$ occorre studiare e classific
     q(h) = \sum_{i,j=1}^{n}f_{x_ix_j}(x_0)h_ih_j = h^TH_f(x_0)h
 \]
 dove $H_f(x_0)$ è la matrice Hessiana di $f$ in $x_0$.\newline
+\begin{tcolorbox}
 \begin{itemize}
     \item se la forma quadratica è definitivamente positiva (negativa), allora $x_0$ è un punto di minimo (massimo) locale forte;
     \item se la forma quadratica è indefinita, allora $x_0$ è un punto di sella;
     \item se la forma quadratica è in $x_0$ semidefinita positiva (negativa) e non nulla, allora $x_0$ è di minimo (massimo) debole oppure di colle; la situazione cambia se la forma quadratica è semidefinita positiva (negativa) non solo in $x_0$, ma anche per ogni $x$ in un intorno di $x_0$, f è convessa (concava), dunque un punto di minimo (massimo) debole;
     \item se la forma quadratica è nulla, allora non possiamo estrarne informazioni significanti.
 \end{itemize}
+\end{tcolorbox}
+\begin{tcolorbox}
 Vediamo una strategia da seguire:
 \begin{enumerate}
     \item si isolano i punti di $f$ che non sono regolari (es. non derivabili una o due volte). Questi punti dovranno essere analizzati separatamente;
@@ -547,8 +552,122 @@ Più precisamente, nel caso bidimensionale, per ogni punto critico:
         \end{itemize}
         (si noti che in questo caso $f_{xx}(x_0,y_0)$ e $f_{yy}(x_0,y_0)$ hanno lo stesso segno).
     \item se $det(H_f(x_0, y_0)) < 0$ allora $(x_0, y_0)$ è punto di sella;
-    \item se $det(H_f(x_0, y_0)) = 0$ occore un analisi ulteriore. 
+    \item se $det(H_f(x_0, y_0)) = 0$ occore un analisi ulteriore. Si possono percorrere due vie: 1.si studiano le derivate successive (terza e quarta) [sconsigliato]; 2. si affronta il problema direttamente analizzando il segno di $f(x,y) - f(x_0, y_0)$
 \end{enumerate}
+\end{tcolorbox}
+\rule{\textwidth}{2pt}
+\subsection*{Ottimizzazione. Estremi vincolanti}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}
+\textbf{Problema:} Date due funzioni $f= f(x,y)$ e $g = g(x,y)$, dotate di derivate parziali continue in $\mathbb{R}^2$. Si vogliono determinare gli estremi di $f$ sotto la condizione di vincolo $g(x,y) = b$, $b \in \mathbb{R}^2$.\newline
+Il problema consiste nel massimizzare (minimizzare) la restrizion di $f$ al vincolo specificato.
+\begin{tcolorbox}
+\begin{itemize}
+    \item \textbf{vincolo esplicitabile}: caso in cui il vincolo $g(x,y) = b$ definisce esplicitamente $y=y(x)$ o $x = x(y)$ oppure, più in generale, definisce le equazioni parametriche ($x= x(t), y = y(t)$) di una curva $\gamma$. Il problema allora è ricondotto alla ricerca degli estremi di una funzione reale di variabili reali
+    \[
+        \phi(t) = f(x(t), y(t))
+    \]
+    \item \textbf{metodo dei moltiplicatori di Lagrange}: utilizzato quando il vincolo è rappresentato da una curva regolare assegnata in qualsiasi forma (parametrica, cartesiana o implicita).\newline
+    \textbf{teor.} Teorema dei moltiplicatori di lagrange. Siano $f,g \in C^1(\mathbb{R}^2)$ e $(x^*, y^*)$ punto di estremo vincolato per $f$ sotto il vincolo:
+    \[
+        g(x,y) = b
+    \]
+    Se $(x^*, y^*)$ è regolare per il vincolo, cioè $\nabla g(x^*, y^*) \neq (0,0)$, allora esiste $\lambda^* \in \mathbb{R}$ (detto moltiplicatore di Lagrange) tale che:
+    \[
+        \nabla f(x^*, y^*) = \lambda \nabla g(x^*, y^*)
+    \]
+    Questa formula esprime il fatto che se $(x^*, y^*)$, verifica le ipotesi del teorema, allora la derivata di $f$ lungo la tangente al vincolo si deve annullare e in tal caso diciamo che $(x^*, y^*)$ è punto critico vincolato.\newline
+    \textbf{oss.} Introducendo la funzione $L = L (x, y , \lambda)$, detta Lagrangiana, definita da
+    \[
+        L(x,y,\lambda) = f(x,y) - \lambda[g(x,y) - b]
+    \] 
+    il teorema afferma che se $(x^*, y^*)$ è punto di estremo vincolato, allora esiste $\lambda^*$ tale che il punto $(x^*, y^*, \lambda^*)$ sia punto critico libero per $L$. Infatti i punti critici in $L$ sono soluzioni del sistema:
+    \[
+        \begin{cases}
+            L_x = f_x - \lambda g_x  = 0\\
+            L_y = f_y - \lambda g_y = 0\\
+            L_\lambda = b-g = 0
+        \end{cases}
+    \]
+    Metodo dei moltiplicatori di Lagrange:
+    \begin{itemize}
+        \item Si isolano gli eventuali punti non regolari dell'insieme $g(x,y) = b$, che vanno esaminati a parte.
+        \item si cercano i punti critici liberi della Lagrangiana e cioè soluzioni del sistema visto nell'osservazione.
+        \item si determina la natura dei punti critici. A questo proposito risulta spesso utile il teorema di Weierstrass.
+    \end{itemize}
+\end{itemize}
+\end{tcolorbox}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Moltiplicatore di Lagrange. Il caso generale}
+Consideriamo ora problemi di ottimizzazione vincolata, per funzioni di $n$ variabili ($n \geq 2$) con un numero $m$ di vincoli di uguaglianza.\newline
+Siano $m+1$ funzioni reali di $n$ variabili $f,g_1,g_2,\dots,g_m : \mathbb{R}^n \rightarrow \mathbb{R}$ tutte $C^1(\mathbb{R}^n)$. Si vogliono determinare gli estremi di $f$ quando le variabili sono soggette alle $m$ condizioni di vincolo:
+\[
+    \begin{cases}
+        g_1(x_1,\dots,x_n) = b_1\\
+        \dots\\
+        g_m(x_1,\dots,x_n) = b_m
+    \end{cases}
+\]
+\textbf{teor.} Teorema dei moltiplicatori di Lagrange, caso generale.\newline
+Sia $f, g_1, \dots, g_m \in C^1(\mathbb{R}^n)$, $\vec{g} = (g_1, g_2, \dots, g_m)$ e sia $\vec{x}^*$ punto di estremo vincolato per $f$ rispetto al vincolo
+\[
+    \vec{g}(\vec{x}) = \vec{b}
+\] 
+Se $\vec{x}^*$ è un punto regolare per $\vec{g}$, cioè se il rango di $D \vec{g}(\vec{x}^*)$ è $m$, allora esistono $m$ numeri reali $\lambda_1^*, \dots, \lambda_m^*$, detti moltiplicatori di Lagrange, tali che
+\[
+    \nabla f(\vec{x}^*) = \sum_{j=1}^{m}\lambda_j^* \nabla g_j (\vec{x}^*)
+\]
+\newline
+Introduciamo la funzione Lagrangiana
+\[
+    L(x_1, \dots,x_n, \lambda_1, \dots \lambda_m) =f(x_1, \dots, x_n) - \sum_{j=1}^{m} \lambda_j[g_j(x_1,\dots,x_n) - b_j]
+\]
+dipendente da $n+m$ variabili. Se $\vec{x}^*$ è un punto regolare, allora esiste un vettore di moltiplicatori
+\[
+    \vec{\lambda}^* =(\lambda_1^*, \dots, \lambda_m^*) 
+\]
+tale che $(\vec{x}^*, \vec{\lambda}^*)$ è un punto critico libero per la Lagrangiana. Infatti i punti critici liberi per la Lagrangiana si trovano risolvendo il seguente sistema di $n+m$ equazioni in $n+m$ incognite:
+\[
+    \begin{cases}
+        D_{x_1} L = D_{x_1}f - \sum_{j=1}^{m} \lambda_j D_{x_1}g_j = 0\\
+        \dots\\
+        D_{x_n} L = D_{x_n}f - \sum_{j=1}^{m} \lambda_j D_{x_n} g_j = 0\\
+        D_{\lambda_1}L = b_1 - g_1 = 0\\
+        \dots\\
+        D_{\lambda_m}L = b_m - g_m= 0
+    \end{cases}
+\]
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Metodo dei moltiplicatori di Lagrange (dal libro di Gazzola)}
+\begin{tcolorbox}
+Siano $f,g \in C^1$ e supponiamo di volere ottimizzare (massimizzare o minimizzare) la funzione $z = f(x,y)$ sotto il vincolo $g(x,y) = 0$ (se fosse $g(x,y) = b$ possiamo trasformarla in $g(x,y) - b = 0$). Introduciamo la funzione $L : \mathbb{R}^3 \rightarrow \mathbb{R}$ definita da
+\[
+    L(x,y,\lambda) = f(x,y) - \lambda g(x,y)
+\]
+e che si chiama \textbf{Lagrangiana}. Se cerchiamo i punti stazionari (in $\mathbb{R}^3$!) della funzione $L$ siamo portati a risolvere il sistema $\nabla L = 0$ e cioè
+\[
+    \begin{cases}
+        f_x(x,y) = \lambda g_x(x,y) \\  
+        f_y (x,y) = \lambda g_y(x,y)\\
+        g(x,y) = 0
+    \end{cases}
+\]
+Chiaramente da queste equazioni non distinguiamo gli eventuali massimi dai minimi e non è nemmeno detto che una soluzione sia un estremo relativo, tuttavia 
+\textbf{Gli eventuali punti di ottimo di $f$ soggetti al vincolo $g = 0$ vanno cercati tra le soluzioni di queste equazioni}.\newline
+Per capire quali dei punti che sono soluzione del sistema sono estremi, è sufficiente calcolare i valori della funzione in tali punti e valutare se sono massimi o minimi.
+\end{tcolorbox}
+\begin{tcolorbox}
+Il teorema di Weierstrass può essere di aiuto per garantire l'esistenza dei massimi e dei minimi: Sia $[a,b]\subset \mathbb {R}$ un intervallo chiuso e limitato non vuoto e sia $f\colon [a,b]\to \mathbb {R}$ una funzione continua. Allora $f(x)$ ammette (almeno) un punto di massimo assoluto e un punto di minimo assoluto nell'intervallo $[a,b]$.
+\end{tcolorbox}
+\begin{tcolorbox}
+Notiamo che il valore esatto del moltiplicatore $\lambda$ non è essenziale: permette di trovare i punti candidati, ma non serve per calcolare il livello delal funzione.
+\end{tcolorbox}
+\begin{tcolorbox}
+Un punto più delicato diguarda i punti in cui i vettori delle derivate parziali di $f$ e di $g$ ($\nabla f \;\;e \;\; \nabla g$) si annullano. Se si annulla $\nabla f$ troveremo un moltiplicatore nullo e saremo in presenza di un punto critico libero di $f$ che posiamo tranquillamente inserire tra i candidati e valutarlo insieme agli altri punti. Se invece di annulla $\nabla g$ il metodo di Lagrange non funziona dato che non si riesce a determinare il moltiplicatore.
+\end{tcolorbox}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Il metodo delle restrizioni}
+
 \rule{\textwidth}{2pt}
 \subsection*{Funzioni convesse di n variabili}
 \rule{\textwidth}{0.4pt}
@@ -572,7 +691,7 @@ Se $f$ è convessa allora:
 \begin{itemize}
     \item $f$ è continua;
     \item $f$ ha derivate parziali destre e sinistre in ogni punto;
-    \item nei punti in cui è derivabile, $f$ è anche divverenziabile.
+    \item nei punti in cui è derivabile, $f$ è anche dierenziabile.
 \end{itemize}
 
 Teorema di convessità e piano tangente. Sia $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ differenziabile in $\Omega$. Allora $f$ è convessa in $\Omega$ se e solo se per ogni coppia di punti $x_0, x \in \Omega$ si ha:
