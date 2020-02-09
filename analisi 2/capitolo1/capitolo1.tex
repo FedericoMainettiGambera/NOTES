@@ -137,6 +137,36 @@ ha una e una sola soluzione $y \in C^1(I)$ e tale soluzione è
     \subsubsection*{Note sugli esercizi}
     Per trovare il massimo intervallo della soluzione bisogna prendere un intervallo contenente il punto $t_0$, per cui la soluzione e la funzione di partenza siano continue e definite (si può anche prolungare per continuità).\newline
 \end{tcolorbox}
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Equazione di Bernoulli}
+Un equazion differenziale si dice di \textbf{Bernoulli} se si può scrivere nella forma
+\[
+    y' = a(t)y + b(t) y^\alpha
+\]
+osserviamo subito che se $\alpha=0$ o $\alpha = 1$ l'equazione è lineare. Se poi $\alpha$ fosse irrazionale o razionale con denominatore pari, non avrebbe senso definire $y^\alpha$ per $y < 0$. Infine, se $\alpha < 0$ non ha senso $y^\alpha$ per $y=0$.\newline
+\newline
+Per evitare complicazioni ci occuperemo solo di soluzioni non negativa ($y \geq 0$).\newline
+\newline
+\textbf{teor.} Siano $t_0 \in \mathbb{R}$, $y_0 \geq 0$ e siano $a,b \in C^0$ in un intorno di $t_0$. Allora il problema di Cauchy $y(t_0) = y_0$ per un equazione di Bernoulli ammette una e una sola soluzione nei seguenti casi:
+\[
+    \alpha> 1 \;\;\;\;\; y_0 \geq 0
+\]
+\[
+    0< \alpha< 1 \;\;\;\;\;y_0 > 0
+\]
+\[
+    \alpha<0 \;\;\;\;\;y_0 > 0
+\]
+Se $\alpha > 0$ l'equazione di bernoulli ammette anche la soluzione nulla $y=0$, pertanto se  $\alpha > 1$ e $y_0 = 0$, il problema di Cauchy ammette solo la soluzione nulla.\newline
+Nel caso $y_0 = 0$ e $0<\alpha < 1$, è garantita l'esistenza di una soluzione per il problema di Cauchy $y(t_0) = 0$ ma non ne è assicurata l'unicità (potrebbe crearsi un pannello di Peano).\newline
+Se $y_0 > 0$ la soluzione rimarrà strettamente positiva per $\alpha > 1$, potrenne agganciarsi alla soluzione $y= 0$ con un pannello di peano se $0< \alpha<1$, potrebbe tendere a $0$ con tangente verticale se $\alpha<0$ (in quest'ultimo caso, bisogna verificare il comportamento della funzione $b(t)$ che, annullandosi, potrebbe verificare l'infinito di $y^\alpha$).\newline
+\newline
+Risolvere un equazione di Bernoulli:\newline
+Si divide l'equazione per $y^\alpha$ e si ottiene $y^{-\alpha} y' = a(t) y^{1-\alpha} + b(t)$.\newline
+Si pone $z(t) = y(t)^{1-\alpha}$ e si ottiene $z' = (1-\alpha)a(t)z + (1-\alpha) b(t)$, che è un'equazione lineare e quindi possiamo risolvere con i soliti metodi. Una volta trovata la soluzione $z(t)$ (che sarà $\geq 0$ o $>0$ a seconda dei valori di $\alpha$), si determina $y(t) = z(t)^{\frac{1}{1-\alpha}}$\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection*{Prolungamento delle soluzioni}
+
 \rule{\textwidth}{2pt}
 \subsection*{Equazioni lineari del secondo ordine}
 \rule{\textwidth}{0,4pt}
