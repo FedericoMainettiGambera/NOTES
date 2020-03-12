@@ -1,0 +1,376 @@
+{
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Date" : {
+		"prefix" : "today",
+		"body" : "$CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR_SHORT",
+		"description" : "today's date dd/mm/yy"
+	},
+	"environment" : {
+		"prefix" : "beg",
+		"body" : [
+			"\\begin{${1:name}}",
+			"    $0",
+			"\\end{${1:name}}"
+		],
+		"description" : "begin / end expression"
+	},
+	"inlineMath" : {
+		"prefix" : "im",
+		"body" : "$$0$",
+		"description" : "inline math expression"
+	},
+	"displayMath" : {
+		"prefix" : "dm",
+		"body" : [
+			"\\[",
+			"    $0",
+			"\\]"
+		],
+		"description" : "display math expression"
+	},
+	"superScript" : {
+		"prefix" : "a",
+		"body" : "^{$1}$0",
+		"description" : "apice"
+	},
+	"underScript" : {
+		"prefix" : "p",
+		"body" : "_{$1}$0",
+		"description" : "pedice"
+	},
+	"bold" : {
+		"prefix" : "bold",
+		"body" : "\\textbf{$1}$0"
+	},
+	"newLine" : {
+		"prefix" : "nl",
+		"body" : [
+			"\\newline$0"
+		],
+	},
+	"real" : {
+		"prefix" : "real",
+		"body" : "\\mathbb{R}$0"
+	},
+	"natural" : {
+		"prefix" : "natural",
+		"body" : "\\mathbb{N}$0"
+	},
+	"binom" : {
+		"prefix" : "bi",
+		"body" : "\\binom{$1}{$2}$0"
+	},
+	"fraction" : {
+		"prefix" : "fra",
+		"body" : "\\frac{$1}{$2}$0"
+	},
+	"image" : {
+		"prefix" : "img",
+		"body": [
+			"\\begin{center}",
+			"    \\includegraphics[height=3cm]{../images/$1}",
+			"\\end{center}",
+			"$0"
+		]
+	},
+	"esercizio/esempio" : {
+		"prefix" : "es",
+		"body" : "\\textbf{es.} $0"
+	},
+	"definition" : {
+		"prefix" : "def",
+		"body" : "\\textbf{def.} $0"
+	},
+	"teorema" : {
+		"prefix" : "teor",
+		"body" : "\\textbf{teor.} $0"
+	},
+	"osservazione" : {
+		"prefix" : "oss",
+		"body" : "\\textbf{oss.} $0"
+	},
+	"dimostrazione" : {
+		"prefix" : "dim",
+		"body" : "\\textbf{dim.} $0"
+	},
+	"itemize" : {
+		"prefix" : "itemize",
+		"body": [
+			"\\begin{itemize}",
+			"    \\item $0",
+			"\\end{itemize}"
+		]
+	},
+	"insieme delle parti" : {
+		"prefix": "parti",
+		"body": "\\mathcal{P}"
+	},
+	"vuoto" : {
+		"prefix": "vuoto",
+		"body": "\\O"
+	},
+	"empty" :{
+		"prefix": "empty",
+		"body": "\\O"
+	},
+	"sp" :{
+		"prefix": "sp",
+		"body": "\\;"
+	},
+	"spp" :{
+		"prefix": "spp",
+		"body": "\\;\\;"
+	},
+	"sppp" :{
+		"prefix": "sppp",
+		"body": "\\;\\;\\;"
+	},
+	"spppp" :{
+		"prefix": "spppp",
+		"body": "\\;\\;\\;\\;"
+	},
+	"sppppp" :{
+		"prefix": "sppppp",
+		"body": "\\;\\;\\;\\;\\;"
+	},
+	"in" :{
+		"prefix": "in",
+		"body": "\\in"
+	},
+	"tc" :{
+		"prefix": "tc",
+		"body": "\\;\\;:\\;\\;"
+	},
+	"sommatoria":{
+		"prefix": "sum",
+		"body": "\\sum_{$1=$2}^{$3}$0"
+	},
+	"produttoria":{
+		"prefix": "prod",
+		"body": "\\prod_{$1}^{$2}$0"
+	},
+	"integrale":{
+		"prefix": "int",
+		"body": "\\int_{$1}^{$2}$0"
+	},
+	"integrale_indefinito":{
+		"prefix": "inti",
+		"body": "\\int"
+	},
+	"limite":{
+		"prefix": "lim",
+		"body": "\\lim_{$1\\rightarrow $2}$0"
+	},
+	"esiste":{
+		"prefix": "ex",
+		"body": "\\;\\;\\exists\\;\\;"
+	},
+	"per ogni":{
+		"prefix": "perogni",
+		"body": "\\;\\forall\\;"
+	},
+	"forall":{
+		"prefix": "for",
+		"body": "\\;\\forall\\;"
+	},
+	"asintotico":{
+		"prefix": "sim",
+		"body": "\\sim "
+	},
+	"infinito":{
+		"prefix": "inf",
+		"body": "\\infty"
+	},
+	"moltiplicazione":{
+		"prefix": "mult",
+		"body": "\\cdot "
+	},
+	"moltiplicazione2":{
+		"prefix": "dot",
+		"body": "\\cdot "
+	},
+	"SSE":{
+		"prefix": "sse",
+		"body": "\\Longleftrightarrow "
+	},
+	"Llra":{
+		"prefix": "Llra",
+		"body": "\\Longleftrightarrow "
+	},
+	"llra":{
+		"prefix": "llra",
+		"body": "\\longleftrightarrow "
+	},
+	"lra":{
+		"prefix": "lra",
+		"body": "\\leftrightarrow "
+	},
+	"Lra":{
+		"prefix": "Lra",
+		"body": "\\Leftrightarrow "
+	},
+	"ra":{
+		"prefix": "ra",
+		"body": "\\rightarrow "
+	},
+	"Ra":{
+		"prefix": "Ra",
+		"body": "\\Rightarrow "
+	},
+	"lla":{
+		"prefix": "lla",
+		"body": "\\longleftarrow "
+	},
+	"Lla":{
+		"prefix": "Lla",
+		"body": "\\Longleftarrow "
+	},
+	"la":{
+		"prefix": "la",
+		"body": "\\leftarrow "
+	},
+	"La":{
+		"prefix": "La",
+		"body": "\\Leftarrow "
+	},
+	"->":{
+		"prefix": "->",
+		"body": "\\rightarrow "
+	},
+	"<-":{
+		"prefix": "->",
+		"body": "\\leftarrow "
+	},
+	"sq":{
+		"prefix": "sq",
+		"body": "\\sqrt{$1}$0"
+	},
+	"sqr":{
+		"prefix": "sqr",
+		"body": "\\sqrt[$1]{$2}$0"
+	},
+	"contains":{
+		"prefix": "contains",
+		"body": "\\subset"
+	},
+	"epsilon1":{
+		"prefix": "eps",
+		"body": "\\epsilon"
+	},	
+	"epsilon2":{
+		"prefix": "epsilon",
+		"body": "\\epsilon"
+	},
+	"exists":{
+		"prefix": "exists",
+		"body": "\\;\\; \\exists \\;\\;"
+	},
+	"derivata parziale":{
+		"prefix": "dp",
+		"body": "\\frac{\\delta f}{\\delta $0}"
+	},	
+	"delta":{
+		"prefix": "delta",
+		"body": "\\delta"
+	},	
+	"theta1":{
+		"prefix": "teta",
+		"body": "\\theta"
+	},
+	"theta2":{
+		"prefix": "theta",
+		"body": "\\theta"
+	},	
+	"alfa1":{
+		"prefix": "alfa",
+		"body": "\\alpha"
+	},	
+	"alfa2":{
+		"prefix": "alpha",
+		"body": "\\alpha"
+	},
+	"beta":{
+		"prefix": "beta",
+		"body": "\\beta"
+	},	
+	"lambda":{
+		"prefix": "lambda",
+		"body": "\\lambda"
+	},
+	"rule":{
+		"prefix": "rule",
+		"body": "\\rule{\\textwidth}{$1pt}$0"
+	},
+	"finerule":{
+		"prefix": "finerule",
+		"body": "\\rule{\\textwidth}{0,4pt}$0"
+	},
+	"largerule":{
+		"prefix": "largerule",
+		"body": "\\rule{\\textwidth}{2pt}$0"
+	},
+	"vec":{
+		"prefix": "vec",
+		"body": "\\vec{$1}$0"
+	},
+	"text":{
+		"prefix": "text",
+		"body": "\\text{$1}\\;$0"
+	},
+	"sin":{
+		"prefix": "sin",
+		"body": "sin($0)"
+	},
+	"cos":{
+		"prefix": "cos",
+		"body": "cos($0)"
+	},
+	"tan":{
+		"prefix": "tan",
+		"body": "tan($0)"
+	},
+	"sh":{
+		"prefix": "sh",
+		"body": "Sh($0)"
+	},
+	"Sh":{
+		"prefix": "Sh",
+		"body": "Sh($0)"
+	},
+	"ch":{
+		"prefix": "ch",
+		"body": "Ch($0)"
+	},
+	"Ch":{
+		"prefix": "Ch",
+		"body": "Ch($0)"
+	},
+	"th":{
+		"prefix": "th",
+		"body": "Th($0)"
+	},
+	"Th":{
+		"prefix": "Th",
+		"body": "Th($0)"
+	},
+	"rho":{
+		"prefix": "rho",
+		"body": "\\rho"
+	},
+	"phi":{
+		"prefix": "phi",
+		"body": "\\phi"
+	},
+	"gamma":{
+		"prefix": "gamma",
+		"body": "\\gamma"
+	},
+}
