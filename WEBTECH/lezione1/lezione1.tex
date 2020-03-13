@@ -1,13 +1,15 @@
 \section{LEZIONE 1 11/03/20}
+\textbf{link}
 https://web.microsoftstream.com/video/58568b1d-5fc5-41c0-88f6-608e4b8f9f7a
 \subsection{Calendario delle lezioni}
-https://docs.google.com/spreadsheets/d/14ShTdkFCZ63MlyKP0LCSLPsPAeiu8D2sYVXSrkw9B6k/edit#gid=0
+https://docs.google.com/spreadsheets/d/14ShTdkFCZ63MlyKP0LCSLPsPAeiu8D2sYVXSrkw9B6k/edit\#gid=0
 \subsection{Introduzione al corso}
 Non ci saranno prove in itinere per questo corso.\newline
 E' opportuno guardare i video relativi agli argomenti indicati prima di partecipare alla lezione.\newline
 Queste lezioni hanno lo scopo di aggiungere informazioni, chiarire dubbi e aiutarci a capire quali siano gli argomenti più importanti e i punti chiave.\newline
-I materiali video coprono interamente gli argomenti del corso.\newline
-\subsection{HTTP}
+I materiali video coprono interamente gli argomenti del corso.
+\subsection{Lezione}
+\subsubsection{Architetture e HTML}
 Il web è una piattaforma per sviluppo di applicazioni con un architettura molto particolare. Per architettura si intende l'insieme delle risorse (hardware, connettività, software di base, software applicativo).\newline
 Le applicazioni web hanno una particolare conformazione della loro architettura che prevede tre livelli: Client, Middle-tier, Data-tier.\newline 
 Le architetture sono  cambiate molto negli anni. Se ne individuano tre grandi famiglie: Mainframe, Client-Server, Multi-tier (per esempio le applicazioni web). \newline
@@ -23,4 +25,9 @@ Come si identifica una risorsa? con URL (Uniform Resourse Locator) che è una st
 HTTP request: è una banale stringa che contiene una request-line, degli header e un allegato (per gli upload) facoltativi. la request-line è strutturata così: il metodo (funzione) della richiesta, l'URL, la versione del protocollo usata. I metodi di richiesta sono principalmente due, GET e POST; questi metodo possono essere visti come chiamate di funzione.\newline
 HTTP response: anche questa è una banale stringa, che, ancora più semplicemente contiene un codice di stato (es. 404 file not found), degli header facoltativi, e un allegato.\newline
 La conseguenza di un protocollo così semplice è che con un solo client si può interagire con tutti i back end. La complessità si sposta però nell'application server.\newline
-Gli header sono informazioni opzionali a cura del browser, trasmesse come fossero parametri che aggiungono informazioni alla request o alla response.\newline
+Gli header sono informazioni opzionali a cura del browser, trasmesse come fossero parametri che aggiungono informazioni alla request o alla response.
+\subsubsection{CGI, Common Gateway Interface}
+Tecnologia ormai morta e superata.\newline
+CGI è una convenzione che standardiza un certo numero di variabili d'ambiente (condivisibili fra più processi) grazie alle quali il web server può smontare una richiesta HTTP e le salva in una zona di memoria alla quale un processo di un applicazione esterna può accedere.\newline
+Per invocare un applicazione tramite CGI l'URL della richiesta HTTP presenta un path che porta a un applicazione eseguibile. Una volta ricevuta una richiesta HTTP che rimanda a un eseguibile, il web server smonta la richeista, ne preleva le informazioni e le salva nelle variabili d'ambiente. Il web application preleva le informazioni dalle variabili d'ambiente e costruisce un file HTML che poi verrà mandato come risposta al client.\newline
+CGI ha due grandi difetti, il primo riguarda la sicurezza, in quanto i metodi erano direttamente accessibili, il secondo è che siccome i processi dell'application server muoiono a dopo ogni esecuzione non c'è modo di creare un sistema che mantiene una sessione attiva. Un altro problema aggiuntivo è di tipo prestazionale, per esempio riguardo la persistenza della connessione ai database, siccome i processi muoiono continuamente, c'è un continuo bisogno di stabilire connessioni coi database, che è un operazione onerosa.\newline
