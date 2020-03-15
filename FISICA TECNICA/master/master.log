@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  15 MAR 2020 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  15 MAR 2020 19:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -483,20 +483,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--10
 
  []
 
-[2] [3]) (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.aux) ) 
+) [2] [3] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/../lezione3/lezione3.tex) [4] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.aux) ) 
 Here is how much of TeX's memory you used:
- 14448 strings out of 480994
- 273036 string characters out of 5916032
+ 14454 strings out of 480994
+ 273295 string characters out of 5916032
  516276 words of memory out of 5000000
- 29659 multiletter control sequences out of 15000+600000
+ 29660 multiletter control sequences out of 15000+600000
  540789 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,77p,889b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,77p,925b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.pdf" (4 pages, 75188 bytes).
+Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.pdf" (5 pages, 75803 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
