@@ -1,36 +1,46 @@
 \section{LEZIONE 4 12/03/2020}
 \textbf{link} https://web.microsoftstream.com/video/96007b98-89e3-4685-9c96-ed78e886c7a9
-\subsection{Slide: }
-[1]
-\newline[2]
-\newline[3]
-\newline[4]
-\newline[5]
-\newline[6]
-\newline[7]
-\newline[8]
-\newline[9]
-\newline[10]
-\newline[11]
-\newline[12]
-\newline[13]
-\newline[14]
-\newline[15]
-\newline[16]
-\newline[17]
+\subsection{Slide: L03}
+[13] Nella lezione di oggi vedremo come calcolare il calore, successivamente ci spostiamo nell'argomento delle trasformazione, in particolare quelle dei gas ideali, dette politropiche. Abbiamo visto che la variazione di energia interna è uguale al calore entrante meno il lavoro uscente. Dobbiamo vedere come calcolare questo calore entrante. Con l'esperimento di Joule si è riuscito a misurare la variazione di calore ($\delta Q^\leftarrow $) e poi tramite un termometro si poteva calcolare la variazione di temperatura ($dT$), così si è potuto calcolare la capacità termica ($C_x = \left(\frac{\delta Q^\leftarrow }{dt}\right)_x$). Si è visto poi che la capacità termicanon era legata solamente alla sostanza, ma anche alla qantità (per esempio se si esegue l'esperimento di Joule con 1kg d'acqua o con 2kg d'acqua la capacità termica cambiava, esattamente del doppio), quindi nasce la grandezza "calore specifico" ($c_x$).
+\newline[14] In ulteriori esperimenti si è visto che il calore specifico poteva dipendere dalla trasformazione eseguita sul sistema, in particolare a pressione costante e a volume costante. Questi due calori specifici sono i più rilevanti e i più usati. In queste due formule (le seconde) appare il termine $q^\leftarrow $ che è il calore scambiato specifico e ora cercheremo di esprimere $c_V$ e $c_P$ in funzione di grandezze di stato.
+\newline[15] Dimostrazione. In questa slide cerchiamo di capire il legame fra calore speicifico e volume costante. La prima formula è il primo principio della termodinamica in forma differenziale. $Pdv = \delta l^\rightarrow $. Quindi partendo da questo principio e considerando che l'energia interna $u$ può essere scritta come funzione di due variabili termodinamiche ($u = u(T,v)$), possiamo esprimere $du$ come somma delle derivate parziali a volume costante e a temperatura costante. Siccome studiamo il caso di volume costante, si possono semplificare i termini in cui appare $dv (=0)$.
+\newline[16] Per $c_P$ che è il  calore scambiato a pressione costante, dobbiamo definire l'entalpia, che è una funzione di stato.
+\newline[17] Con un processo simile a quello precedente e ponendo l'entalpia $h = h(T,P)$, dimostriamo anche il calore specifico a pressione costante $c_P$.
 \newline[18]
-\newline[19]
-\newline[20]
+\newline[19] I gas ideali hanno proprietà che facilitano molto gli esercizi. Vediamo un altro esperimento di Joule: due recipienti separati da una valvola, il primo ha un certa massa, pressione e temperatura di un gas (detto rarefatto, cioè a una pressione bassa), il secondo vuoto. Quando si rimuove la valvola, il gas presente nel recipiente si espande molto velocemente (irreversibile). La massa rimane invariata. Per bagno termostatico si intende che le pareti sono adiabatiche. 
+\newline[20] Tra istante iniziale e finale notiamo che c'è una variazione di pressione e di volume, ma la temperatura non varia. Il sistema è isolato, quindi $\Delta U = 0$, ed essendo $u = u(T,P)$, ma $T = costante$, implica che $u = u(T)$. Quindi un gas ideale ha questa proprietà: per un gas ideale l'energia interna è solo funzione della temperatura. Se si ripete il medesimo esperimento, ma invece di avere un gas rarefatto abbiamo un gas in pressione, al rimuovere il vincolo la variazione di energia interna è ancora nulla, ma la temperatura nello stato finale cambia. 
 \newline[21]
-\newline[22]
-\newline[23]
-\newline[24]
-\newline[25]
-\newline[26]
-\newline[27]
-\newline[28]
-\newline[29]
-\newline[30]
-\newline[31]
-\newline[32]
-\newline[33]
+\newline[22] Dimostrazione del perchè i calori specifici a volume o pressione costante dipendono solo dalla temperatura per i gas ideali. La prima: siccome l'energia interna è solo funzione della temperatura, la derivata parziale si trasforma in derivata esatta. La seconda: siccome $Pv = R^* T$, l'entalpia è funzione soltanto della temperatura (continua)
+\newline[23] (continuo della dim), anche qua ka derivata parziale diventa uuna derivata esatta.
+\newline[24] Abbiamo parlato di diversi tipi di gas (ideale, reale), ma quali sono i "range" di $c_P$ e $c_V$ per cui si dice che un gas è ideale? In questa slide parliamo dell'azoto ($N_2$) e tutto quello che rientra nella zona rossa tratteggiata è la zona in cui si comporta come gas ideale. Notiamo che nell'immagine di sinistra, all'estremo sinistro della zona rossa c'è un plateau, questa zona è quella dove il gas si dice perfetto
+\newline[25] Per temperature moderate i calori specifici dei gas ideali si possono considerare costanti e prendono il nome di gas perfetti. Un gas ideale dipende dalla temperatura; il gas perfetto è come un gas ideale, solo che $c_P$ e $c_V$ sono costanti. 
+\newline[26] Per i gas perfetti si possono calcolare con una costante molecolare ($R^*$). N.B. notare che $c_P = c_V + R^*$. Queste formule le avremo sotto mano all'esame, ciò che dovremo cercare di ricordare è se un gas e atomico ($He$, $Ar$), biatomico ($N_2$, $O_2$), poliatomico lineare ($CO_2$) o poliatomico non lineare ($CH_4$).
+\newline[27] I liquidi incomprimibili ideali non hanno variazioni di pressione e volume. Le considerazioni fatte su queste slide valgono anche per i solidi incomprimibili.
+\newline[28] Cosa significa politropica? è una trasformazione quasi statica (molto lenta), internamente reversibile (vedremo a fine lezione), in cui tutti gli stati sono ben definiti. Una trasformazione politropica è una trasformazione solo di un gas ideale (no solidi o liquidi). Nella slide le prime due formule in centro sono il primo principio della termodinamica (il primo espresso secondo l'energia interna, il secondo secondo l'entalpia) e partendo dalla definizione di calori specifici possiamo ricavare le seconde due equazioni, e manipolandole fra di solo possiamo ottenere l'ultima equazione a destra. Stiamo cercando di trovare l'espressione matematica per una generica trasformazione utilizzando i calori specifici.  
+\newline[29] Introduciamo ulteriori grandezze: indice della politropica. Continuiamo il ragionamento della slide precedente: sostituendo il valore $n$ e spostando le variabili otteniamo la formula in basso a sinistra. Integrandola otteniamo quella centrale e facendone l'esponenziale quella a destra. Dunque l'equazione della politropica è $Pv^n = costante$. Notiamo che l'ipotesi $c_x = costante$ è molto importante per poter integrare.
+\newline[30] Disegno delle politropiche in un piano termodinamico PV (evidenziate le 4 fondamentali, isobara isovolumica adiabatica isoterma)
+\newline[31] $Pv^n = costante$ si può riscrivere come $P = \frac{costante}{v^n}$, e cioè delle iperboli (in alcuni casi l'iperbole si semplifica: iobara iocora/isovolumica).
+\newline[32] Quella in basso a destra è molto importante per l'analisi delle compressioni ed espressioni.
+\newline[33] Riassunto generale.
+\newline[34] Partendo dall'equazione della politropica possiamo integrare il lavoro. E questo integrale ha due espressioni: la prima se $n \neq 1$ e si divide in due: in funzione dei volumi specifici o in funzione delle pressioni;
+\newline[35] la seconda è per $n = 1$.
+\newline[36] Per ora abbiamo sempre tracciato grafici su un piano termodinamico Pressione-Volume. Usiamo ora un nuovo piano termodinamico, detto diagramma T-S (temperatura-entropia). Una politropica su questo diagramma che è una trasformazione internamente revesibile e quindi può essere disegnata, se fosse irreversibile non potremmo disegnarla. Nel diagramma PV l'area sottesa alla curva era il lavoro scambiato, qui è il calore scambiato.
+\newline[37] Trasformazioni cicliche nei due diagrammi.
+\newline[38]  
+\newline[39] Le politropiche nel piano PV sono iperboli, qui sono esponenziali.
+\newline[40] Riassunto dei due diagrammi. 
+\newline[41] Riassunto dell varie formule. $\Delta S = ?$ perchè ci rimane ancora da capire come calcolare la variazione di entropia.
+\newline[42] Vediamo ora per il calcolo di $\Delta S$ dobbiamo considerare una trasformazione e per facilitare la derivazione usiamo una trasformazione reversibile. L'entropia è una funzione di stato e quindi mi basta sapere stato iniziale e finale, il percorso non ci importa, cioè è indipendente dalla trasformazione. 
+\newline[43]  
+\newline[44] Alla fine abbiamo tre espressioni (equivalenti) che verrano usate in base alla situazione in cui si è per facilitare i calcoli. Notiamo che queste formule valgono per qualunque trasformazione perchè l'entropia è un equazione di stato e non dipende dalla trasformazione.
+\newline[45] Queste due equazioni sono sempre valide per qualunque trasformazione di un liquido incomprimibile perfetto (solito motivo: equazioni di stato indipendenti dalla trasformazione). Le medesime formule sono usabili per un solido incomprimibile perfetto 
+\newline[46] Terminologia.
+\newline[47] Attrito dissipa energia, per espansione libera si intende un espansione veloce, una miscela di due gas è facile da fare (aprire una valvola) ma serve molta energia per riseparare i due gas, ...
+\newline[48] Possono capitare esercizi in cui si considera questo concetto.
+\subsection{Slide: P04}
+[1]
+\newline[2] Nel nostro centro di calcolo abbiamo diversi fluidi di lavoro, in particolare nel server avremo aria e nel sistema di raffreddamento del refrigerante.
+\newline[3]
+\newline[4] La questione sul refrigerante la rimandiamo. Vediamo per l'aria. Se nell'aria non c'è acqua, principalmente ci sono azoto, ossigeno e argon. essendo questa composizione circa costante, possiamo semplificare l'aria come un gas biatomico. $Mm = massa molare$.
+\newline[5] la temperatura varia fra i 5 e gli 85 gradi (max dei componenti elettronici), quindi essendo temperature moderate, le ipotesi di gas perfetto sono valide, $c_P$ e $c_V$ costanti. Fondamentale per la fisica tecnica è la congruenza delle unità di misura.
+\newline[6] Un altro dettaglio è che nel centro di calcolo non avremo aria secca ma aria umida, cosa che non fa parte degli argomenti d'esame quindi balza.
