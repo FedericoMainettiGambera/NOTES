@@ -1,0 +1,59 @@
+\section{LEZIONE 2 12/03/2020}
+\textbf{link} \url{https://web.microsoftstream.com/video/7f38ca42-5bcf-4a08-b9cf-d42ca1289062}
+\subsection{Cinematica di un corpo}
+\subsubsection{Definizioni}
+\begin{itemize}
+    \item Corpo: Un corpo è un insieme continuo di infiniti punti che assume dimensioni finite.
+    \item Posizione del corpo: è l'insieme di tutti i vettori posizione relativi a ciascun punto appartenente al corpo.
+    \item Spostamento, velocità, accellerazione: definiziamo spostamento, velocità, accellerazione, l'insieme di tutti i vettori spostamento, velocità, accellerazione relativi a ciascun punto appartenente al corpo.
+    \item Moto piano: in questo corso faremo sempre riferimento a un moto piano, che rappresenta il caso in cui tutti i vettori posizione, velocità e accellerazione di tutti i punti appartenenti al corpo sono paralleli a un piano, detto piano direttore.
+    \item Spostamento infinitesimo: lo spostamento infinitesimo è una condizione di moto per cui ogni punto che appartiene al corpo subirà uno spostamento di dimensione infinitesima.
+    \item Atto di moto: l'atto di moto è l'insieme delle velocità di tutti i punti che appartengono al corpo nell'istante di tempo geneico considerato. L'atto di moto rappresenta una "fotografia istantanea" del suo campo di velocità. Possiamo definire un'analogia fra lo spostamento infinitesimo e l'atto di moto: siccome la velocità di un generico punto $P$ è $\vec{v_P} = \frac{d \vec{P}}{dt}$, l'atto di moto può essere visto come lo spostamento infinitesimo di $P$ fratto l'intervallo di tempo infinitesimo $dt$ in cui esso avviene. Perciò tutte le regole cinematiche che definiremo per l'atto di moto varranno anche per lo spostamento infinitesimo.
+\end{itemize}
+Tutte le definizione appena viste valgono per un qualsiasi corpo, ma noi nel corso vedremo solo corpi rigidi.\newline
+Per un corpo deformabile ci servono $\infty^2$ gradi di libertà (caso piano) per descrivere ciascuno degli infiniti punti che lo rappresentano.\newline
+Nel caso di un corpo rigido saranno sufficienti $3$ gradi di libertà per definire la posizione del corpo nel piano.
+\subsubsection{Corpo rigido}
+Un corpo si definisce rigido se esso può definire solamente spostamenti rigidi. Uno spostamento si può definire rigido se a fronte di esso il corpo non subisce alcuna variazione nè di forma nè di dimensioni.\newline
+[immagine dagli appunti del prof]\newline
+Più analiticamente diciamo che uno spostamento è rigido se a seguito dello spostamento esiste un nuovo sistema di riferimento per cui la posizione del corpo rigido risulta la stessa di partenza.\newline
+Se per esempio il corpo subisce un rimpicciolimento o una deformazione a seguito dello spostamento, non siamo in presenza di uno spostamento rigido.\newline
+Ne conseguono due proprietà:
+\begin{itemize}
+    \item La distanza fra due punti qualsiasi di un corpo rigido si mantiene immutata.
+    \item L'angolo formato dalle rette passanti fra due coppie di punti appartenenti al corpo rimane immutato.
+\end{itemize}
+Il principale vantaggio di studiare corpi rigidi è che dobbiamo usare solo 3 coordinate (3 gradi di libertà) per descrivere pienamente degli spostamenti.\newline
+[immagine del professore]\newline
+Per capire quali tre coordinate scegliere si seleziona un punto qualsiasi $A$ all'interno del corpo:
+\begin{itemize}
+    \item la prima è l'ascissa del punto $A$ (come per il punto), $x_A(t)$;
+    \item la seconda è l'ordinata del punto $A$ (come per il punto), $y_A(t)$.
+    \item La terza è la coordinata angolare $\phi$ di un segmento qualsiasi che collega il punto $A$ con un altro generico punto $B$ interno al corpo. Ogni punto $B$ mantiene invariata la sua distanza dal punto $A$ a seguito di un qualsiasi spostamento e, studiando come varia l'orientamento di questo segmento $AB$, sono in grado di ricostruire la posizione di ciascuno dei punti all'interno del corpo rigido. La rotazione $\phi$ avviene attorno ad un asse $z$ che esce dal piano del corpo rigido. Qualsiasi segmeno all'interno del corpo subirà la stessa variazione angolare (stessa rotazione): la rotazione $\phi$ è una proprietà dell'intero corpo rigido.
+\end{itemize}
+\subsubsection{Moto in grande}
+\begin{itemize}
+    \item \textbf{Traslazione}: é un moto nel quale un corpo non varia il proprio orientamento, ovvero in cui la coordinata angolare rimane costante. Tutti i punti del corpo subiranno lo stesso esatto spostamento, dunque $\vec{v_A} = \vec{v_B} = \dots$, $\vec{a_A} = \vec{a_B} = \dots$ e le traiettorie di ciascun punto saranno le stesse.
+    \newline[immagine dagli appunti del prof]
+    \item \textbf{Rotazione}: è un moto nel quale un punto (anche esterno al corpo), detto centro di rotazione, che mantiene la sua posizione fissa durante lo spostamento. Tutti gli altri punti invece subiranno una rotazione $\phi$. La traiettoria di ogni punto seguirà un moto circolare. Possiamo definire un vettore detto $\vec{\phi} = \phi \vec{k}$ ovvero con direzione uscente dal piano.
+    \newline[immagine dagli appunti del prof]
+    \item \textbf{Rototraslazione}: il corpo rigido andrà a modificare la propria posizione senza però che sia possibile individuare un punto che rimane fermo. Per studiare il moto rototraslatorio si può lavorare considerando due spostamenti successivi, prima una traslazione e poi una rotazione.
+    \newline[immagine dagli appunti del prof]
+\end{itemize}
+\subsubsection{Atto di moto (moto in piccolo)}
+Per atto di moto si intende un moto in cui gl ispostamenti e le rotazioni sono di dimensione infinitesima. L'atto di moto rappresenta una "fotografia istantanea" del campo di velocità del corpo.\newline
+Andando ad osservare movimenti in piccolo quindi ci ritroviamo difronte a moti o rotatori o traslatori, non rototraslatori. Se la velocità di tutti i punti è uguale in modulo direzione e verso, l'atto di moto è di tipo traslatorio. Viceversa, se esiste un punto, detto centro di istantanea rotazione, in cui la velocità è nulla, siamo in presenza di un moto di tipo rotatorio.\newline
+\textbf{es.} Esempio di rotazione:\newline
+[immagine dagli appunti del prof]\newline
+Presi i punti $A$ e $B$ interni al corpo e le rispettive velocità $\vec{v_A}$ e $\vec{v_B}$, essendo il corpo rigido, le proiezioni delle velocità sulla retta $r_{AB}$ devono essere di medesima lunghezza (nell'immagine evidenziate in giallo).\newline
+Consideriamo ora le rette $r_A$ passante per $A$ e perpendicolare a $\vec{v_A}$ e la retta $r_B$ passante per $B$ e perpendicolare a $\vec{v_B}$; tutti i punti che si trovano sulla retta $r_A$ devono avere velocità perpendicolare alla retta stessa (analogo per la retta $r_B$), perchè altrimenti il corpo subirebbe una deformazione, quindi tutti i punti su $r_A$ (o $r_B$) devono avere velocità perpendicolare a $\vec{v_A}$ (o $\vec{v_B}$). Il punto $C$ di intersezione di queste due rette dovrebbe avere velocità perpendicolare sia a $\vec{v_A}$ sia a $\vec{v_B}$, ma questo è possibile solo se $\vec{v_C} = 0$, dunque il punto $C$ è il centro di istantanea rotazione del corpo rigido e siamo dunque in presenza di una rotazione.\newline
+Il centro di istantanea rotazione differisce dal centro di rotazione (dei moti in grande), il primo ha velocità nulla solo nell'istante che stiamo considerando, mentre il secondo è fermo per tutto l'arco della rotazione. In poche parole il centro di istantanea rotazione ha velocità nulla, ma la sua accellarazione può non esserlo.\newline
+\textbf{es.} Esempio di traslazione:\newline
+[immagine dagli appunti del prof]\newline
+In questo caso le rette $r_A$ e $r_B$ sono parallele e non si incontrano mai, il centro di istantanea rotazione non è definibile e dunque il moto e traslatorio.\newline
+\textbf{es.} Esempio di moto di un corpo non rigido:\newline
+[immagine dagli appunti del prof]\newline
+Se i due punti $A$ e $B$ hanno $\vec{v_A}$ e $\vec{v_B}$ di modulo diverso, le proiezioni di queste due velocità sulla retta $r_{AB}$ non sono identiche e dunque il corpo si sta deformando.\newline
+\textbf{es.} Un altro esempio di rotazione:\newline
+[immagine dagli appunti del prof]\newline
+Se i due punti $A$ e $B$ hanno $\vec{v_A}$ e $\vec{v_B}$ di direzione opposta, la congiungete fra le due velocità (disegnata in rosso) ci mostra che la velocità di tutti i punti lungo il segmeno $AB$ deve diminuire man mano che ci avviciniamo al punto $C$, che quindi ha velocità nulla e rappresenta il centro di istantanea rotazione.
