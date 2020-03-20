@@ -373,4 +373,16 @@
 		"prefix": "gamma",
 		"body": "\\gamma"
 	},
+	"Omega":{
+		"prefix": "Omega",
+		"body": "\\Omega"
+	},
+	"omega":{
+		"prefix": "omega",
+		"body": "\\omega"
+	},
+	"sdot":{
+		"prefix": "sdot",
+		"body": "\\dot{$1}$0"
+	},
 }
