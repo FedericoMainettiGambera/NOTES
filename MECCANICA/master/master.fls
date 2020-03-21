@@ -195,6 +195,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/cancel/cancel.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/cancel/cancel.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT c:/Users/enric/Desktop/NOTES/MECCANICA/master/master.aux
@@ -206,6 +208,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/grfext/grfext.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/grfext/grfext.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT c:/texlive/2019/texmf-dist/tex/latex/pdflscape/pdflscape.sty
@@ -295,4 +299,5 @@ INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb

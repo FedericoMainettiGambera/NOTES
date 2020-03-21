@@ -1,2 +1,87 @@
 \section{LEZIONE 3 17/03/2020}
 \textbf{link} \url{https://web.microsoftstream.com/video/b53b704d-3613-4728-9d95-917284509b0f}
+\subsection{Analisi cinematica mediante osservatori in moto relativo}
+\subsubsection{Moti relativi}
+Fino ad ora abbiamo considerato sistemi di riferimento fissi, in questa lezione analiziamo sistemi di riferimento mobili rispetto a quello assoluto.\newline
+\newline
+\textbf{es.} [immagine dagli appunti del prof]\newline
+Carrello su cui è incernierata una barra $AP$. Se andiamo a considerare un unico sistema di riferimento assoluto (in rosso), il moto del punto $P$ è un moto rototraslatorio, ma, se noi andassimo a inserire un sistema di riverimento mobile (in verde) che trasla insieme al punto $A$, il moto del punto $P$ diventa un moto di rotazione. Abbiamo dunque scomposto il moto rototraslatorio del punto $P$ nel moto traslatorio del nuovo sistema di riferimento mobile e nel moto rotatorio del punto $P$ in questo nuovo sistema di riferimento.\newline
+\newline
+\textbf{es.} [immagine dagli appunti del prof]\newline
+Un asta $AB$ incernierata al pavimento che può ruotare, sull'asta può scivolare una seconda asta $CP$. Anche in questo caso il moto del punto $P$ rispetto a un unico sistema di riferimento assoluto (in rosso) sarebbe un moto rototraslatorio. Se però introduciamo un sistema di riferimento mobile (in verde) che abbia assi $Y_1$ e $X_1$ che ruotano insieme all'asse $AB$, il moto del punto $P$ diventa un moto traslatorio.\newline
+\newline
+[immagine dagli appunti del prof]\newline
+Vogliamo descrivere il moto di un generico punto $P$ (velocità, posizione, accellerazione) andando a introdurre un nuovo sistema di riferimento mobile ($O_1, X_1, Y_1$) rispetto a un sistema di riferimento fisso ($O, X, Y$).\newline
+Il sistema di riferimento mobile introdotto è in moto rototraslatorio noto rispetto al sistema di riferimento assoluto.\newline
+Indichiamo con $\theta$ la rotazione del sistema di riferimento mobile rispetto al sistema di riferimento assoluto.
+\subsubsection{Posizione}
+Il punto generico $P$ ha coordinate $x_P, y_P$ rispetto al sistema assoluto, $x_{P,1}, y_{P,1}$ rispetto al sistema mobile. \newline
+La posizione può essere vista come somma vettoriale (come abbiamo visto per i corpi rigidi): $(P-O) = (O_1 - O) + (P-O_1)$, dove $(P-O) = x_P \vec{i} + y_P \vec{j}$ e $(O_1 - O) = x_{O_1} \vec{i} + y_{O_1} \vec{j}$ e $(P-O_1) = x_{P,1} \vec{i_1} + y_{P,1} \vec{j_1}$. Se il moto del sistema di riferimento mobile è noto, conoscendo la posizione di $P$ rispetto al sistema assoluto, posso ricavare la posizione rispetto al sistema mobile, viceversa, conoscendo la posizione di $P$ rispetto al sistema mobile, posso ricavare la posizione rispetto al sistema assoluto.
+\[
+    (P-O) = x_{O_1}\vec{i} + y_{O_1}\vec{j} + x_{P,1} \vec{i_1} + y_{P,1} \vec{j_1}
+\]
+\subsubsection{Velocità}
+$\vec{v_P} = \frac{d}{dt} (P-O) = \frac{d}{dt} (O_1 - O) + \frac{d}{dt} (P-O_1)$, sviluppando queste derivate, otteniamo: 
+\[
+    \vec{v_P} = 
+        \dot{x}_{O_1}\vec{i} + 
+        \dot{y}_{O_1} \vec{j} + 
+        \dot{x}_{P,1} \vec{i_1} + 
+        \dot{y}_{P,1} \vec{j_1} + 
+        x_{P,1} \frac{d}{dt}\vec{i_1} + 
+        y_{P,1} \frac{d}{dt} \vec{j_1}
+\]
+In teoria per i primi due termini se $\vec{i}$ e $\vec{j}$ variassero il loro orientamento rispetto al tempo dovrei derivare pure loro, ma siccome il sistema di riferimento assoluto fisso, la loro derivata è nulla. Per i secondi due termini invece i versori variano il proprio orientamento nel tempo perchè fanno riferimento a un sistema mobile, dunque non posso trascurare la loro derivata e per questo ci sono gli ultimi due addendi.\newline
+La prima coppia di termini $\dot{y}_{O_1} \vec{j} + \dot{x}_{P,1} \vec{i_1}$ rappresenta la velocità $\vec{v}_{O_1}$ del punto $O_1$ rispetto al sistema di riferimento assoluto, anche detta velocità assoluta di $O_1$.\newline
+La seconda coppia di termini $\dot{y}_{P,1} \vec{j_1} + x_{P,1} \frac{d}{dt}\vec{i_1}$ rappresenta la velocità $\vec{v}_{rel, P}$ relativa di $P$, cioè la velocità di $P$ rispetto al sistema di riferimento mobile.\newline
+La terza e ultima coppia $x_{P,1} \frac{d}{dt}\vec{i_1} + y_{P,1} \frac{d}{dt} \vec{j_1}$ è più complicata da analizzare e dobbiamo prima capire cosa sono le derivate dei versori $\vec{i_1}$ e $\vec{j_1}$.\newline
+[immagine dagli appunti del prof]\newline
+Consideriamo i due sistemi di riferimento, mobile e assoluto, e poniamo due punti $A_1$ e $A_2$ sugli assi del sistema di riferimento mobbile a distanza unitaria dall'origine $O_1$. Questi due punti rappresentano i nostri versori $\vec{j_1}$ e $\vec{i_1}$.
+\[
+    (A_1 - O) = (O_1-O) + (A_1 - O_1) \;\text{, dove il termine $(A_1-O_1)$ è il versore $\vec{i_1}$}\;
+\]
+\[
+    (A_2 - O) = (O_1-O) + (A_2 - O_1) \;\text{, dove il termine $(A_2-O_1)$ è il versore $\vec{j_1}$}\;
+\]
+Andiamo a derivare queste due equazioni per determinare la velocità dei punti $A_1$ e $A_2$. Facciamo i calcoli solo per $A_1$, per $A_2$ i procedimenti sono del tutto analoghi.
+\[
+    \frac{d}{dt}(A_1-O) = \frac{d}{dt}(O_1 - O) + \frac{d}{dt}(A_1 -O_1)
+\]
+Il termine $\frac{d}{dt}(A_1-O)$ rappresenta la velocità assoluta $\vec{v}_{A_1}$ di $A_1$, il secondo termine $\frac{d}{dt}(O_1 - O)$ è la velocità assoluta $\vec{v}_{O_1}$ di $O_1$, l'ultimo termine $\frac{d}{dt}(A_1 -O_1)$ è la derivata $\frac{d}{dt}\vec{i_1}$ rispetto al tempo del versore $\vec{i_1}$. Abbiamo quindi determinato la velocità assoluta del punto $A_1$.\newline
+Potevamo ottenere il medesimo risultato usando il terorema di Rivals per un corpo rigido (il sistema di riferimento mobile), infatti la velocità di un punto qualsiasi di un corpo rigido è dato dalla somma di due componenti: una componente di traslazione di un punto generico del corpo (per esempio l'orgine $O_1$) e una componente di rotazione del corpo attorno al punto $O_1$. Se andiamo a definire il vettore velocità angolare $\vec{\omega} = \dot{\theta} \vec{k} = \omega \vec{k} = \omega \vec{k_1}$ del sistema mobile.
+\[
+    \vec{v}_{A_1} = \vec{v}_{O_1} + \vec{\omega} \land (A_1 - O_1) =\;\text{[dove $(A_1 - O_1) = \vec{i_1}$]}\; = \vec{v}_{O_1} + \vec{\omega}\land \vec{i_1}
+\]
+\newline
+Riprendendo entrambi i metodi visti otteniamo:
+\[
+    \vec{v}_{A_1} = \cancel{\vec{v}_{O_1}} + \frac{d}{dt}\vec{i_1} = \cancel{\vec{v}_{O_1}} + \vec{\omega} \land \vec{i_1} \Longrightarrow \frac{d}{dt}\vec{i_1} = \vec{\omega}\land \vec{i_1}
+\]
+Procedendo in maniera analoga anche per il punto $A_2$, otteniamo le \textbf{formule di Poisson}
+\[
+    \begin{cases}
+        \frac{d}{dt}\vec{i_1} = \vec{\omega}\land \vec{i_1}\\
+        \\
+        \frac{d}{dt}\vec{j_1} = \vec{\omega}\land \vec{j_1}
+    \end{cases}
+\]
+Possiammo ora andare a sostituire all'interno della formula della velocità scritta in precedenza ($
+    \vec{v_P} = 
+        \dot{x}_{O_1}\vec{i} + 
+        \dot{y}_{O_1} \vec{j} + 
+        \dot{x}_{P,1} \vec{i_1} + 
+        \dot{y}_{P,1} \vec{j_1} + 
+        x_{P,1} \frac{d}{dt}\vec{i_1} + 
+        y_{P,1} \frac{d}{dt} \vec{j_1}
+$):
+\[
+    \vec{v_P} = 
+        \vec{v}_{O_1} + \vec{v}_{rel, P} +
+        x_{P,1} \vec{\omega}\land \vec{i_1} + 
+        y_{P,1} \vec{\omega}\land \vec{j_1}
+\]
+dove i termini $x_{P,1} \vec{\omega}\land \vec{i_1} + y_{P,1} \vec{\omega}\land \vec{j_1}$ possono essere riscritti come $\vec{\omega}(x_{P,1} \vec{i_1} + y_{P,1} \vec{j_1})$, dove ciò fra parentesi è il vettore $(P-O_1)$.
+\[
+    \vec{v_P} = 
+        \vec{v}_{O_1} + \vec{v}_{rel, P} + \vec{\omega} \land (P-O_1)
+\]
