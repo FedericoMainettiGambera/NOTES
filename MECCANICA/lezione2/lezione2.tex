@@ -48,12 +48,60 @@ Andando ad osservare movimenti in piccolo quindi ci ritroviamo difronte a moti o
 Presi i punti $A$ e $B$ interni al corpo e le rispettive velocità $\vec{v_A}$ e $\vec{v_B}$, essendo il corpo rigido, le proiezioni delle velocità sulla retta $r_{AB}$ devono essere di medesima lunghezza (nell'immagine evidenziate in giallo).\newline
 Consideriamo ora le rette $r_A$ passante per $A$ e perpendicolare a $\vec{v_A}$ e la retta $r_B$ passante per $B$ e perpendicolare a $\vec{v_B}$; tutti i punti che si trovano sulla retta $r_A$ devono avere velocità perpendicolare alla retta stessa (analogo per la retta $r_B$), perchè altrimenti il corpo subirebbe una deformazione, quindi tutti i punti su $r_A$ (o $r_B$) devono avere velocità perpendicolare a $\vec{v_A}$ (o $\vec{v_B}$). Il punto $C$ di intersezione di queste due rette dovrebbe avere velocità perpendicolare sia a $\vec{v_A}$ sia a $\vec{v_B}$, ma questo è possibile solo se $\vec{v_C} = 0$, dunque il punto $C$ è il centro di istantanea rotazione del corpo rigido e siamo dunque in presenza di una rotazione.\newline
 Il centro di istantanea rotazione differisce dal centro di rotazione (dei moti in grande), il primo ha velocità nulla solo nell'istante che stiamo considerando, mentre il secondo è fermo per tutto l'arco della rotazione. In poche parole il centro di istantanea rotazione ha velocità nulla, ma la sua accellarazione può non esserlo.\newline
+\newline
 \textbf{es.} Esempio di traslazione:\newline
 [immagine dagli appunti del prof]\newline
 In questo caso le rette $r_A$ e $r_B$ sono parallele e non si incontrano mai, il centro di istantanea rotazione non è definibile e dunque il moto e traslatorio.\newline
+\newline
 \textbf{es.} Esempio di moto di un corpo non rigido:\newline
 [immagine dagli appunti del prof]\newline
-Se i due punti $A$ e $B$ hanno $\vec{v_A}$ e $\vec{v_B}$ di modulo diverso, le proiezioni di queste due velocità sulla retta $r_{AB}$ non sono identiche e dunque il corpo si sta deformando.\newline
+Se i due punti $A$ e $B$ hanno $\vec{v_A}$ e $\vec{v_B}$ di modulo diverso, le proiezioni (in giallo) di queste due velocità sulla retta $r_{AB}$ non sono identiche e dunque il corpo si sta deformando. In tutti i casi in cui le proiezioni delle velocità sulla retta sono diverse sicuramente rappresentano deformazioni del corpo, e quindi moti non rigidi.\newline
+\newline
 \textbf{es.} Un altro esempio di rotazione:\newline
 [immagine dagli appunti del prof]\newline
-Se i due punti $A$ e $B$ hanno $\vec{v_A}$ e $\vec{v_B}$ di direzione opposta, la congiungete fra le due velocità (disegnata in rosso) ci mostra che la velocità di tutti i punti lungo il segmeno $AB$ deve diminuire man mano che ci avviciniamo al punto $C$, che quindi ha velocità nulla e rappresenta il centro di istantanea rotazione.
+Se i due punti $A$ e $B$ hanno $\vec{v_A}$ e $\vec{v_B}$ di direzione opposta, la congiungete fra le due velocità (disegnata in rosso) ci mostra che la velocità di tutti i punti lungo il segmeno $AB$ deve diminuire man mano che ci avviciniamo al punto $C$, che quindi ha velocità nulla e rappresenta il centro di istantanea rotazione.\newline
+\newline
+\textbf{es.} Un altro esempio di rotazione:\newline
+[immagine dagli appunti del prof]\newline
+Se i due punti $A$ e $B$ hanno $\vec{v_A}$ e $\vec{v_B}$ direzione e verso uguali (sono parallele) ma modulo diverso, ancora una volta, la congiungete fra le due velocità (disegnata in rosso) ci mostra che la velocità di tutti i punti lungo il segmeno $AB$ deve diminuire man mano che ci avviciniamo al punto $C$, che quindi ha velocità nulla e rappresenta il centro di istantanea rotazione.
+\subsubsection{Cinematica del corpo rigido}
+[immagine dagli appunti del prof]\newline
+Sia in un piano un corpo rigido, siano due punti qualsiasi $A$ e $B$ appartenenti a questo e sia $\beta$ l'angolo fra il segmento $AB$ e l'asse orizzontale delle ascisse.\newline
+Ci servono tre coordinate idipendenti (tre gradi di libertà) per definire l'evoluzione temporale della traslazione di un punto generico del punto $A = (x_A(t), y_A(t), \beta(t))$. Se queste tre coordiante indipendenti sono note, allora si può studiare l'evoluzione temporale anche dell'intero corpo rigido.\newline
+Supposte note queste tre coordiante $x_A(t), y_A(t), \beta(t)$, vogliamo definire velocità, posizione e accellerazione del corpo.\newline
+Da notare è che, se invece di $B$ prendessimo un altro generico punto $P$ appartenente al corpo, l'angolo $\alpha$ formato fra il segmento $AP$ e l'asse orizzontale delle ascisse differisce dall'angolo $\beta$ a meno di una costante $\gamma$ a fronte di qualsiasi spostamento.\newline
+\begin{itemize}
+    \item \textbf{Posizone}. Per definire la posizione di un punto generico di un corpo, per esempio il punto $B$, posso scrivere una realazione vettoriale che lega tre vettori:
+    \begin{itemize}
+        \item il vettore $AO$;
+        \item il vettore $AB$;
+        \item il vettore $OB$.
+    \end{itemize}
+    Questi tre vettori sono legati dall'equazione: $(B-O) = (A-O) + (B-A)$. Il vettore $A-O$ è dato da $x_A \vec{i} + y_A \vec{j}$; il vettore $B-A$ è dato dal vettore $AB$ (dal suo modulo) moltiplicato per $e^{i \beta}$, quindi $AB \cdot e^{i \beta}$. Essendo tutti questi termini noti posso definire la generica posizione del punto $B$.
+    \item \textbf{Velocità}. La velocità del punto $B$ è $\vec{v_B} = \frac{d}{dt}(B-O) = \frac{d}{dt}(A-O) + \frac{d}{dt}(B-A)$. Dunque andiamo ad eseguire queste derivate: $\vec{v_B} = \vec{v_A} + \frac{d}{dt} (AB \cdot e^{i \beta})$, dove il primo termine è la semplice velocità del punto $A$, il secondo memebro è la derivata di ciò che abbiamo detto anche al punto precedente. Dunque $\vec{v_B} = \vec{v_A} + i \dot{\beta} \cdot AB \cdot e^{i \beta} = \vec{v_A} + \dot{\beta} \cdot AB \cdot e^{i(\beta + pi/2)}$. Da notare è che $\dot{\beta} = \frac{d \beta}{d t}$ e che, siccome avevamo visto che per un qualunque altro punto ($P$) si ha un angolo ($\alpha$) che differisce da $\beta$ per una costante ($\gamma$), quindi, $\dot{\beta} = \dot{\alpha} = \dots = \omega$, che è la velocità angolare del corpo rigido. Possiamo anche definire un vettore velocità angolare $\vec{\omega} = \omega \vec{k} = \dot{\beta} \vec{k}$.\newline
+    A partire dal vettore $\vec{\omega}$ possiamo definire il senso di rotazione del corpo rigido con la regola della mano destra (pollice nella direzione del vettore $\rightarrow $ rotazione nel senso delle dita che si avvolgono).\newline
+    Tutti i punti del corpo ruotano con la stessa velocità angolare.\newline
+    La velocità del punto $B$, $\vec{v_B} = \vec{v_A} + \omega \cdot AB \cdot e^{i(\beta + \pi/2)}$, può essere vista come somma di due componenti:
+    \begin{itemize}
+        \item $\vec{v_A}$: la velocità con cui trasla il punto $A$.
+        \item $\omega \cdot AB \cdot e^{i(\beta + \pi/2)}$: velocità di un punto che si muove di moto rotatorio, in particolare è la velocità con cui si muove il punto $B$ di moto circolare attorno al punto $A$. Questa componente è anche detta $\vec{v_{BA}}$, ovvero la velocità di $B$ rispetto al punto $A$.
+    \end{itemize}
+    Riassumendo: \newline
+    \textbf{teor.} Teorema di Rivals per le velocità
+    \[
+        \vec{v_B} = \vec{v_A} + \omega \cdot AB \cdot e^{i(\beta + \pi/2)} = \vec{v_A} + \vec{v_{BA}}
+    \]
+    oppure in forma abbreviata
+    \[
+        \vec{v_B} = \vec{v_A} + \vec{\omega}\land(B-A)
+    \]
+    dove $\land$ rappresenta un prodotto vettoriale.
+    \item \textbf{Accellerazione}. Partendo dalla formula $\vec{v_B} = \vec{v_A} + \dot{\beta} \cdot AB \cdot e^{i(\beta + pi/2)}$, l'accellerazione si ottiene derivando queste due componenti rispetto al tempo.\newline
+    Quindi $\vec{a_B} = \vec{a_A} + \ddot{\beta} \cdot AB \cdot e^{i(\beta+\pi/2)}-AB \cdot \dot{\beta}^2 e^{i \beta}$.\newline
+    Il primo termine è l'accellerazione del punto $A$. Il secondo e terzo termine rappresentano l'accellerazione tangenziale $\vec{a_{BA}}^{(t)}$ e normale $\vec{a_{BA}}^{(n)}$ del punto $B$ mentre si muove di moto circolare attorno al punto $A$, che sommati rappresentano $\vec{a_{BA}}$. In questo moto ciroclare il $B$ ha velocità angolare $\omega = \dot{\beta}$ e accellerazione angolare $\dot{\omega} = \ddot{\beta}$. Possiamo anche qui andare a definire il vettore $\vec{\dot{\omega}} = \ddot{\beta}\vec{k}$.\newline
+    Partendo invece da $\vec{v_B} = \vec{v_A} + \vec{\omega}\land(B-A)$ e derivando otteniamo $\vec{a_B} = \vec{a_A} + \dot{\vec{\omega}}\land (B-A) + \vec{\omega} \land \frac{d}{dt}(B-A)$, dove $\frac{d}{dt}(B-A)$ è esattamente la quantità scritta prima. Possiamo quindi scrivere l'accelerazione come $\vec{a_B}= \vec{a_A} + \dot{\vec{\omega}} \land (B-A) + \vec{\omega} \land \vec{\omega} \land (B-A)$, dove il secondo e terzo termine rappresentano l'accellerazione tangenziale $\vec{a_{BA}}^{(t)}$ e normale $\vec{a_{BA}}^{(n)}$ del punto $B$ mentre si muove di moto circolare attorno al punto $A$.\newline
+    \textbf{teor.} Teorema di Rivals per le accellerazioni
+    \[
+        \vec{a_B}= \vec{a_A} + \dot{\vec{\omega}} \land (B-A) + \vec{\omega} \land [\vec{\omega} \land (B-A)]
+    \]
+\end{itemize}
