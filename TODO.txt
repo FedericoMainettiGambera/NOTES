@@ -1,11 +1,10 @@
-=====================================================================================================
-ANALISI 2
-
-
-
-
-
-
+Lunedì: Fondamenti di automatica
+Martedì: Economia e organizzazione aziendale
+Mercoledì: TODOs / recuper materie più indietro / riposo
+Giovedì: TODOs / recupero materie più indietro / riposo
+Venerdì: Fisica tecnica
+Sabato: Meccanica
+Domenica: Tecnologie informatiche per il web
 
 
 =====================================================================================================
@@ -43,6 +42,7 @@ FONDAMENTI DI AUTOMATICA
     -lezioni da vedere: 6 (forse 7 se martedì 17 ha fatto lezione)
 -----------------------------------------------------------------------------------------------------
 TODO:
+    -RECUPERARE
 
 
 
