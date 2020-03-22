@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  22 MAR 2020 04:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  22 MAR 2020 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -596,28 +596,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-[3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8.
+[3] [4] (c:/Users/enric/Desktop/NOTES/WEBTECH/master/../lezione3/lezione3.tex
+
+Package hyperref Warning: Suppressing link with empty target on input line 2.
+
+) [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 10.
  (c:/Users/enric/Desktop/NOTES/WEBTECH/master/master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 10.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: DDF5F6DCB45D2FF9895CE25A6F6B9DA2;307.
+(rerunfilecheck)             Checksum: 6F5EF4F81BF8E4541DBA760458A0C4FB;342.
  ) 
 Here is how much of TeX's memory you used:
- 18078 strings out of 480994
- 330061 string characters out of 5916032
- 603789 words of memory out of 5000000
- 33192 multiletter control sequences out of 15000+600000
+ 18087 strings out of 480994
+ 330323 string characters out of 5916032
+ 603790 words of memory out of 5000000
+ 33194 multiletter control sequences out of 15000+600000
  540663 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,77p,1484b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on c:/Users/enric/Desktop/NOTES/WEBTECH/master/master.pdf (4 pages, 73462 bytes).
+Output written on c:/Users/enric/Desktop/NOTES/WEBTECH/master/master.pdf (5 pages, 73978 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
