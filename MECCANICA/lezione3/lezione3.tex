@@ -1,7 +1,6 @@
-\section{LEZIONE 3 17/03/2020}
-\textbf{link} \url{https://web.microsoftstream.com/video/b53b704d-3613-4728-9d95-917284509b0f}
-\subsection{Analisi cinematica mediante osservatori in moto relativo}
-\subsubsection{Moti relativi}
+\title{LEZIONE 3 17/03/2020}\newline
+\textbf{link} \href{https://web.microsoftstream.com/video/b53b704d-3613-4728-9d95-917284509b0f}{clicca qui}
+\section{Analisi cinematica mediante osservatori in moto relativo}
 Fino ad ora abbiamo considerato sistemi di riferimento fissi, in questa lezione analiziamo sistemi di riferimento mobili rispetto a quello assoluto.\newline
 \newline
 \textbf{es.} [immagine dagli appunti del prof]\newline
@@ -14,13 +13,13 @@ Un asta $AB$ incernierata al pavimento che può ruotare, sull'asta può scivolar
 Vogliamo descrivere il moto di un generico punto $P$ (velocità, posizione, accellerazione) andando a introdurre un nuovo sistema di riferimento mobile ($O_1, X_1, Y_1$) rispetto a un sistema di riferimento fisso ($O, X, Y$).\newline
 Il sistema di riferimento mobile introdotto è in moto rototraslatorio noto rispetto al sistema di riferimento assoluto.\newline
 Indichiamo con $\theta$ la rotazione del sistema di riferimento mobile rispetto al sistema di riferimento assoluto.
-\subsubsection{Posizione}
+\subsection{Posizione}
 Il punto generico $P$ ha coordinate $x_P, y_P$ rispetto al sistema assoluto, $x_{P,1}, y_{P,1}$ rispetto al sistema mobile. \newline
 La posizione può essere vista come somma vettoriale (come abbiamo visto per i corpi rigidi): $(P-O) = (O_1 - O) + (P-O_1)$, dove $(P-O) = x_P \vec{i} + y_P \vec{j}$ e $(O_1 - O) = x_{O_1} \vec{i} + y_{O_1} \vec{j}$ e $(P-O_1) = x_{P,1} \vec{i_1} + y_{P,1} \vec{j_1}$. Se il moto del sistema di riferimento mobile è noto, conoscendo la posizione di $P$ rispetto al sistema assoluto, posso ricavare la posizione rispetto al sistema mobile, viceversa, conoscendo la posizione di $P$ rispetto al sistema mobile, posso ricavare la posizione rispetto al sistema assoluto.
 \[
     (P-O) = x_{O_1}\vec{i} + y_{O_1}\vec{j} + x_{P,1} \vec{i_1} + y_{P,1} \vec{j_1}
 \]
-\subsubsection{Velocità}
+\subsection{Velocità}
 $\vec{v_P} = \frac{d}{dt} (P-O) = \frac{d}{dt} (O_1 - O) + \frac{d}{dt} (P-O_1)$, sviluppando queste derivate, otteniamo: 
 \[
     \vec{v_P} = 
@@ -91,5 +90,28 @@ dove i termini $x_{P,1} \vec{\omega}\land \vec{i_1} + y_{P,1} \vec{\omega}\land 
 dove la somma di $\vec{v}_{O_1} + \vec{\omega} \land (P-O_1)$ prende il nome di velocità di trascinamento $\vec{v}_{tr,P}$ del punto $P$, che è la velocità che il punto $P$ avrebbe se fosse rigidamente collegato al sistema di riferimento mobile.\newline
 Questo teorema esprime la relazione fra la velocità assoluta di un punto $P$ e la velocità relativa a un sistema di riferimento in moto relativo rispetto a quello assoluto. La velocità assoluta è quindi la somma di due componenti, la velocità di trascinamento e la velocità relativa rispetto al sistema mobile.\newline
 Quindi una volta noto il moto di trascinamento del sistema mobile è possibile passare dalla velocità assoluta a quella relativa e viceversa.
-\subsubsection{Accellerazione}
+\subsection{Accellerazione}
 Anche per l'accellerazione vogliamo cercare una relazione fra l'accellerazione del punto $P$ rispetto al sistema di riferimento assoluto e l'accellerazione del punto $P$ rispetto al sistema di riferimento mobile.\newline
+\newline
+Deriviamo dunque rispetto al tempo l'equazione $\vec{v_P} = \vec{v}_{O_1} + \vec{v}_{rel, P} + \vec{\omega} \land (P-O_1)$:
+\[
+    \vec{a}_P = \frac{d}{dt} \vec{v}_P = \frac{d}{dt} \vec{v}_{O_1} + \frac{d}{dt}(\vec{\omega}\land (P-O_1)) + \frac{d}{dt}\vec{v}_{rel,P}
+\]
+Deriviamo questi ultimi tre addendi singolarmente:
+\begin{itemize}
+    \item Il primo termine $\frac{d}{dt} \vec{v}_{O_1}$ è l'accellerazione $\vec{a}_{O_1}$ assoluta del punto $O_1$.
+    \item Il secondo termine, cioè la derivata rispetto al tempo $\frac{d}{dt}(\vec{\omega}\land (P-O_1))$, si ottiene derivando prima il vettore omega rispetto al tempo e moltiplicandola per il vettore $P-O_1$ e successivamente moltiplicando omega per la derivata rispetto al tempo del vettore $(P-O_1)$. Quindi otteniamo $\frac{d}{dt}(\vec{\omega}\land (P-O_1)) = \dot{\vec{\omega}} \land (P-O_1) + \vec{\omega} \frac{d}{dt}(P-O_1)$, dove $\dot{\vec{\omega}} = \ddot{\theta} \vec{k}$. Possiamo quindi riscrivere questo secondo termine come $\dot{\vec{\omega}} \land (P-O_1) + \vec{\omega}\land \vec{v}_{rel,P} + \vec{\omega} + \vec{\omega}\land[\vec{\omega \land (P-O_1)}]$.
+    \item Sapendo che $\vec{v}_{rel,P} = \dot{x}_{P,1} \vec{i_1} + \dot{y}_{P,1} \vec{j_1}$, possiamo derivare il terzo termine, ovvero la derivata $\frac{d}{dt}\vec{v}_{rel,P}$, derivando sia $\dot{x}_{P,1}$ e $\dot{y}_{P,1}$, sia i versori $\vec{i_1}$ e $\vec{j_1}$ perchè sono versori di un sistema diriferimento in movimento. Quindi otteniamo $\frac{d}{dt}\vec{v}_{rel,P} = \ddot{x}_{P,1} \vec{i_1} + \ddot{y}_{P,1} \vec{j_1} + \dot{x}_{P,1} \frac{d}{dt} \vec{i_1} + \dot{y}_{P,1} \frac{d}{dt}\vec{j_1}$, dove i primi due addendi sono l'accellerazione $\vec{a}_{rel,P}$ relativa del punto $P$ e gli ultimi due addendi possono essere riscritti grazie alle formule di Poisson nel seguente modo: $\dot{x}_{P,1} \frac{d}{dt} \vec{i_1} + \dot{y}_{P,1} \frac{d}{dt}\vec{j_1} = \dot{x}_{P,1} \vec{\omega}\land \vec{i_1} + \dot{y}_{P,1} \vec{\omega}\land \vec{j_1} = \vec{\omega} \land (\dot{x}_{P,1} \vec{i_1} + \dot{y}_{P,1} \vec{j_1})$, inoltre il termine fra parentesi è la velocità $\vec{v}_{rel,P}$ relativa del punto $P$.
+\end{itemize}
+\textbf{teor.} Teorema dei moti relativi per le accellerazioni o teorema di Coriolis:
+\[
+    \vec{a}_P = \vec{a}_{O_1} + \dot{\vec{\omega}} \land (P-O_1) + \vec{\omega} \land [\vec{\omega}\land (P-O_1)] + 2 \cdot \vec{\omega}\land \vec{v}_{rel,P} + \vec{a}_{rel,P}
+\]
+Nei primi tre termini ($\vec{a}_{O_1} + \dot{\vec{\omega}} \land (P-O_1) + \vec{\omega} \land [\vec{\omega}\land (P-O_1)]$) si riconosce il teorema di Rivals per le accellerazioni relative a un punto $P$ che si muove solidalmente con la terna mobile. $\vec{a}_{O_1}$ è l'accellerazione con cui la terna si sposta; $\vec{a}_{tg,P} = \dot{\vec{\omega}} \land (P-O_1)$ e $\vec{a}_{n,P} = \vec{\omega} \land [\vec{\omega}\land (P-O_1)]$ sono l'accellerazione legata al moto rotatorio di $P$ attorno ad $O_1$, in particolare il primo è la componente tangenziale, e il secondo la componente normale. I tre termini assieme sono l'accellerazione di trascinamento $\vec{a}_{tr,P}$ del punto $P$, cioè l'accellerazione che avrebbe il punto $P$ se fosse rigidamente legato al sistema di riferimento mobile.\newline
+A questo termine di accellerazione di trascinamento vengono aggiunte un'accellerazione relativa $\vec{a}_{rel,P}$ (come accade anche per la velocità) e il termine $\vec{a}_{co} = 2 \cdot \vec{\omega}\land \vec{v}_{rel,P}$ detto accellerazione complementare o di Coriolis (di cui non c'è il rispettivo per la velocità).
+\[
+    \vec{a}_P = \vec{a}_{tr,P} + \vec{a}_{co} + \vec{a}_{rel,P}
+\]
+Notiamo che l'accellerazione di Coriolis $\vec{a}_{co}$ si annulla per tre casi: $\vec{\omega} \parallel \vec{v}_{rel,P}$ (impossibile nel piano); $\vec{\omega} = 0$ (il sistema mobile si muove di moto traslatorio); $\vec{v}_{rel,P} = 0$.\newline
+Notiamo anche che se $\vec{v}_{rel,P} = \vec{a}_{rel,P} = 0$ il teorema di Coriolis coincide con il teorema di Rivals.
+\section{Sistemi meccanici}
