@@ -4,8 +4,8 @@ INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.tex
 OUTPUT c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.log
-INPUT c:/texlive/2019/texmf-dist/tex/latex/base/report.cls
-INPUT c:/texlive/2019/texmf-dist/tex/latex/base/report.cls
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 INPUT c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../preamble/preamble.tex
@@ -254,5 +254,6 @@ INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.aux
 INPUT c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.out
 INPUT c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.out
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
