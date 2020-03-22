@@ -1,11 +1,11 @@
 # NOTES
-Class notes from Ingegneria Informatica - Politecnico di Milano
+Notes from Ingegneria Informatica - Politecnico di Milano
 # contains:
 - analisi I 2019/2020
 - analisi II 2019/2020
-- fisica tecnica
-- tecnologie informatiche per il web
-- meccanica
-- fondamenti di automatica
-- economia e organizzazione aziendale
+- fisica tecnica 2019/2020
+- tecnologie informatiche per il web 2019/2020
+- meccanica 2019/2020
+- fondamenti di automatica 2019/2020
+- economia e organizzazione aziendale 2019/2020
 Federico Mainetti Gambera
