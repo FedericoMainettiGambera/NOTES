@@ -113,5 +113,32 @@ A questo termine di accellerazione di trascinamento vengono aggiunte un'acceller
     \vec{a}_P = \vec{a}_{tr,P} + \vec{a}_{co} + \vec{a}_{rel,P}
 \]
 Notiamo che l'accellerazione di Coriolis $\vec{a}_{co}$ si annulla per tre casi: $\vec{\omega} \parallel \vec{v}_{rel,P}$ (impossibile nel piano); $\vec{\omega} = 0$ (il sistema mobile si muove di moto traslatorio); $\vec{v}_{rel,P} = 0$.\newline
-Notiamo anche che se $\vec{v}_{rel,P} = \vec{a}_{rel,P} = 0$ il teorema di Coriolis coincide con il teorema di Rivals.
+Notiamo anche che se $\vec{v}_{rel,P} = \vec{a}_{rel,P} = 0$ il teorema di Coriolis coincide con il teorema di Rivals.\newline
 \section{Sistemi meccanici}
+In prima approssimazione possiamo vedere una macchina come un insieme di corpi rigidi legati fra loro attraverso opportuni vincoli. I vincoli sono decondizioni essenziali per lo studio di una macchina e devono sempre rispettati.\newline
+Esistono vincoli interni, cioè legati ai corpi rigidi del sistema, o esterni, cioè legati alla struttura che contiene questi corpi rigidi, chiamata telaio.
+\subsection{Vincoli elementari}
+In questo corso andremo ad analizzare solo i vincoli elementari, che sono dei vincoli che realizzano la diretta soppresione di uno o più gradi di libertà di un corpo, cioè vanno ad inibire una delle possibilità di moto del corpo rigido. Ricordiamo che il corpo rigido nel piano ha tre gradi di libertà, le traslazioni degli assi $X$ e $Y$ e la rotazione.\newline
+Un vincolo che impedisce $n$ gradi di libertà, viene espresso algebricamente come $n$ equazioni vincolanti.
+\subsubsection{Vincoli tripli}
+E' un vincolo che sopprime tutte le possibilità di moto di un corpo rigido.
+\begin{itemize}
+    \item Incastro: [immagine dagli appunti del prof]\newline
+    Vediamo una trave $AB$ incastrata nel punto $A$ che non ha più possibilità di movimento. 
+\end{itemize}
+\subsubsection{Vincoli doppi}
+Sono vincoli che sopprimo due possibilità di moto di un corpo rigido, che avrà quindi ancora una possibilità di moto disponibile.
+\begin{itemize}
+    \item Cerniera: [immagine dagli appunti del prof]\newline
+    Vediamo una trave $AB$ con una cerniera nel punto $A$. La cerniera impedisce ogni traslazione possibile, tuttavia la trave può ancora ruotare.
+    \item Pattino: [immagine dagli appunti del prof]\newline
+    Vediamo una trave $AB$ con un pattino nel punto $A$. Il pattino impedisce il distacco dalla linea piana e impedisce anche ogni rotazione, tuttavia la trave può ancora scivolare sulla guida che si sta considerando.
+    \item Manicotto: [immagine dagli appunti del prof]\newline
+    Vediamo una trave $AB$ a cui è imposto un vincolo manicotto. Il manicotto impedisce rotazioni e movimenti perpendicolari, tuttavia la trave può ancora scivolare in direzione parallela.
+\end{itemize}
+\subsubsection{Vincoli singoli}
+Sono vincoli che sopprimo una sola possibilità di moto di un corpo rigido.
+\begin{itemize}
+    \item Carrello più cerniera o carrello: [immagine dagli appunti del prof]\newline
+    Vediamo una trave $AB$ con un carrello più cerniera nel punto $A$. Il carrello più cerniera impedisce unicamente movimenti perpendicolari alla guida, ma consente spostamenti paralleli alla guida o rotazioni.
+\end{itemize}
