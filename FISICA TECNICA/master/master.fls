@@ -218,14 +218,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.out
-INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.out
-INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.out
-INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.out
-OUTPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.pdf
-INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.out
-INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.out
 OUTPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.out
+OUTPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.pdf
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm

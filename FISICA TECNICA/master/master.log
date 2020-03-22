@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  17 MAR 2020 03:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  22 MAR 2020 04:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -569,7 +569,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
- (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.out) (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.out)
 \@outlinefile=\write6
 \openout6 = `master.out'.
 
@@ -582,7 +581,20 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/../lezione1/lezione1.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/../lezione1/lezione1.tex)
+Runaway argument?
+{[1-2-3] Il tema del progetto è quello di dimensionare da un punto d\ETC.
+c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.tex:5: File ended while scanning use of \textbf .
+<inserted text> 
+                \par 
+l.5     \input{../lezione1/lezione1.tex}
+                                        
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.6     \newpage
@@ -597,22 +609,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 12.
  (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 12.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 12.
-Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: EE989ECAB8DDD479A695778A3DB245DD;797.
+
+
+Package rerunfilecheck Warning: File `master.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `master.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18129 strings out of 480994
- 331264 string characters out of 5916032
- 610186 words of memory out of 5000000
- 33215 multiletter control sequences out of 15000+600000
+ 18111 strings out of 480994
+ 330755 string characters out of 5916032
+ 610082 words of memory out of 5000000
+ 33201 multiletter control sequences out of 15000+600000
  541557 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,77p,1365b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,77p,1384b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.pdf" (10 pages, 180647 bytes).
+Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.pdf" (10 pages, 180922 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 152 compressed objects within 2 object streams
+ 141 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  28 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
