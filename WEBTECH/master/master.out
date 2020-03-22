@@ -5,3 +5,5 @@
 \BOOKMARK [1][-]{section.5}{CGI, Common Gateway Interface}{}% 5
 \BOOKMARK [1][-]{section.6}{Servlet - base}{}% 6
 \BOOKMARK [1][-]{section.7}{Servlet - esempi}{}% 7
+\BOOKMARK [2][-]{subsection.7.1}{Esempio: contatore condiviso fra i client}{section.7}% 8
+\BOOKMARK [2][-]{subsection.7.2}{Esempio: contatore per ogni client}{section.7}% 9

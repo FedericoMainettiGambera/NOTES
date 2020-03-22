@@ -3,8 +3,33 @@
 \section*{Prerequisiti}
 Fondamenti Servlet - esempi
 \section*{Informazioni}
-Su Beep nella sezione Documents and media > Esercizi > Servlet - jsp - jdbc > esercizio server side messaggi, si trova un esempio (progetto eclipse completo .zip) commentato con video e power point. E' importante, dice il prof, perchè presenta tutto ciò che può esserci in esame.\newline
-Sempre su Beep, ma nella sezione Documents and media > Esercizi > CSS c'è un esercizio, che però è integralmente spiegato nella cartella delle video lezioni riguardanti Css.\newline
+Su Beep nella sezione Documents and media $>$ Esercizi $>$ Servlet - jsp - jdbc $>$ esercizio server side messaggi, si trova un esempio (progetto eclipse completo .zip) commentato con video e power point. E' importante, dice il prof, perchè presenta tutto ciò che può esserci in esame.\newline
+\newline
+Sempre su Beep, ma nella sezione Documents and media $>$ Esercizi $>$ CSS c'è un esercizio, che però è integralmente spiegato nella cartella delle video lezioni riguardanti Css.\newline
+\newline
 Useremo i giorni di sospensione (8-9 aprile) pe le prove in itinere per fare degli esercizi autonomi.\newline
-Verranno pubblicati anche altri progetti, man mano più complessi.
+\newline
+Verranno pubblicati anche altri progetti, man mano più complessi.\newline
+\newline
+Sono molto importanti la documentazione sul package javax.servlet.http e il package javax.servlet.
 \section{Servlet - esempi}
+Una programmazione in servlet è una programmazione che ci chiede di rispettare alcune regole per trarne dei benefici. I benefici principali sono la scalabilità, la gestione automatica dei cicli di vita, la mascheratura degli aspetti tecnici di HTTP. Java servlet ci permette di interagire com HTTP attraverso degli oggetti. Uno dei primo esempio di oggetto che si incontra è l'oggetto request.
+\subsection{Esempio: contatore condiviso fra i client}
+Il file web.xml ci permette di controllare le impostazioni con cui vogliamo lavorare, inoltre ci permette di definire parametri a livello di applicazione (globali) o parametri a livello di servlet.\newline
+I parametri possono poi essere reperiti con chiamate di metodi di oggetti di sistema in maniera molto semplice.\newline
+Con questo esempio, oltre a mostrare l'utilizzo di questi parametri, viene mostrata l'utilità dei dati membro all'interno della servlet (gli attributi dell'oggetto servlet). Esistendo una sola istanza di servlet per tutte le request, ci aspettiamo che i dati membro vengano usati in maniera concorrente per tutti i client.\newline
+Nell'esempio particolare del contatore possiamo vedere che tutti i client possono incrementare il valore del contatore, perchè condividono il dato membro della servlet.\newline
+Quindi con questo esempio si imparano due cose importanti: come si configura una servlet per farla partire e il particolare modello di gestione della concorrenza e delle variabili.
+\subsection{Esempio: contatore per ogni client}
+Con questo esempio andiamo ad analizzare il meccanismo di una sessione. Per sessione si intende un gruppo di richieste che possono essere fatte risalire a un unico cliente. HTTP ha solo il metodo GET e POST, e quindi sembra che non sia lui ad occuparsi della gestione della sessione, infatti la gestione della sessione non era nativamente intesa all'interno del protocollo HTTP, ma si è sviluppata successivamente grazie all'utilizzo degli header, in particolare esistono due tecnica: o l'uso degli header cookie, oppure grazie all'url rewriting.\newline
+Da un punto di vista programmativo queste due tecniche sono trasparenti per noi programmatori, noi otterremo un oggetto che maschererà i meccanismi che stanno dietro alla gestione delle sessioni.\newline
+\newline
+Il protocollo HTTP nella sua versione più base (senza i metadati aggiuntivi) serve richieste anonime.\newline
+[tema molto importante per il professore, spesso usato all'orale:] Analiziamo la terminologia e i concetti base che stanno dietro alla sicurezza della gestione delle sessioni (con forme di identificazione del client via via più stringenti):
+\begin{itemize}
+    \item Pseudo identificazione: l'atto con cui il server associa un'etichetta arbitraria alle richeiste del client allo scopo di identificare quelle che provengono dallo stesso client. Come esempio si per vedere in atto la pseudo identificazione si può usare il "SessionCounter", aprire due browser (uno in incognito e uno no) e vedere come i due contatori non sono condivisi. La pseudo identificazione non ha bisogno che l'utente si logghi.
+    \item Identificazione: è il processo con cui il cliente dichiara un'identità. Non ci stiamo più riferendo a un client, ma a un user, un account, una persona.
+    \item Autenticazione: è il processo in cui il server verifica l'identificazione del client. Il client e il server condividono un "segreto" (password). La differenza fra pseudo identificazione e identificazione-autenticazione è che nel primo il server inventa un label da dare a un client, che comunque rimane anonimo in quanto l'identità è fornita dal server, e nel sencondo il client si dichiara un user che poi viene verificato dal server, quindi in questo caso l'identità proviene dal client.
+    \item Autorizzazione: è il processo in cui il server garantisce l'accesso a risorse e processi a un utente identificato e autenticato. L'autorizzazione è una proprietà dell'identità verificata. E' in poche parole il permesso di vedere o fare cose particolari a fronte di un'identità verificata.
+    \item RBAC (Role based access control): è uno schema di autorizzazione che garantisce diritti non solo sulla base della tua identità, ma anche grazie al tuo ruolo.
+\end{itemize}
