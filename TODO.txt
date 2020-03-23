@@ -43,6 +43,7 @@ FONDAMENTI DI AUTOMATICA
 -----------------------------------------------------------------------------------------------------
 TODO:
     -RECUPERARE
+    -aggiungere immagini dagli appunti del prof
 
 
 
