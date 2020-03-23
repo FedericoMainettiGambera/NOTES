@@ -1,13 +1,70 @@
 \title{LEZIONE 1 9/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/6164a9b1-4d0a-4f37-a279-2e0ec1e8ca25?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
-\section{Introduzione al corso}
-[Slide introduttive]
+\section{SLIDE: Introduzione al corso}
 \subsection{Informazioni generale}
+\textbf{[0-10]}\;\newline
 Prof. Alberto Leva \newline
-\newline
 Il materiale didattico è distribuito su Beep e sulla \href{http://home.deib.polimi.it/leva/}{pagina del corso}.\newline
-\newline
-Le slide e il materiale del corso non è sufficiente per il corso, bisogna prendere appunti e studiare dai testi (visita la pagina del corso).\newline
-\newline
+Le slide e il materiale del corso non è sufficiente, bisogna prendere appunti e studiare dai testi.\newline
 Non ci sono prove in itinere.
-\subsection{}
+\subsection{Concetti preliminari}
+\textbf{[11]}\;
+\newline\textbf{[12]}\;
+\newline\textbf{[13]}\;
+\newline\textbf{[14]}\;
+\newline\textbf{[15]}\;
+\newline\textbf{[16]}\;
+\newline\textbf{[17]}\;
+\newline\textbf{[18]}\; Laboratorio: due transistor (marroni) non in contatto diretto, ma legati da una barretta di rame (azzurra), ci sono tre sensori di temperatura (blu), due sui transistor e uno sulla barretta (non si vede), c'è anche una ventola che può essere azionata o meno. Lo scopo è controllare la temperatura della barretta agendo su uno dei due transistor, mentre l'altro ha lo scopo di rappresentare un disturbo.
+\newline\textbf{[19]}\;
+\newline\textbf{[20]}\;
+\newline\textbf{[21]}\;
+\newline\textbf{[22]}\;
+\subsection{Prerequisiti, motivazione e collocamento del corso}
+\textbf{[23]}\;
+\newline\textbf{[24]}\;
+\newline\textbf{[25]}\;
+\newline\textbf{[26]}\;
+\newline\textbf{[27]}\; Struttura del corso. Nozioni base da sapere: derivate, integrali, invertire un matrice, autovalori e autovettori. 
+\subsection{Relazione fra automatica e informatica}
+\textbf{[28]}\;
+\newline\textbf{[29]}\;
+\newline\textbf{[30]}\;
+\newline\textbf{[31]}\;
+\newline\textbf{[32]}\;
+\newline\textbf{[33]}\;
+\newline\textbf{[34]}\;
+\newline\textbf{[35]}
+\section{Il problema del controllo}
+[appunti del prof disponibili su Beep]\newline
+\subsection{Concetti fondamentali}
+[immagine dagli appunti del prof]\newline
+$S$: sistema da controllare. \newline
+$U$: variabili di controllo o in generale variabili di ingresso. Da notare è che per esempio anche una pompa che possiamo comandare e che tira fuori acqua dal nostro sistema è una variabile di ingresso perchè la controlliamo, nonostante la massa fisica dell'acqua esca.
+$y$: variabili d'uscita.\newline
+$w$: andamento desiderato di $y$ o segnale di riferimento o set point.\newline
+$d$: disturbi.\newline
+L'obbiettivo è che $y$ sia il più possibile uguale a $w$ nonostante $d$ e nonostante una conoscenza potenzialmente imperfetta di $S$.
+\subsection{Strategie di controllo}
+\subsubsection{Controllo in anello aperto (AA)}
+[immagine dagli appunti del prof]\newline
+$C$: controllore.\newline
+Il controllore decide l'andamento di $U$ sulla base di $w$. Il controllore non sa cosa succede in $y$ e non conosce $d$.\newline
+Questo approccio funziona se il legame $U \rightarrow y$ è esattamente noto e non ci sono disturbi $d$.\newline
+\subsubsection{Controllo in anello aperto (AA) con compensazione del disturbo misurabile}
+[immagine dagli appunti del prof]\newline
+$M_d$: misuratore del disturbo.\newline
+$d_m$: misura di $d$.\newline
+Il controllore in questo caso non vede $y$, ma vede $d$, o meglio $d_m$.\newline
+Questo approccio funziona s il legame $(U,d) \rightarrow y$ è esattamente noto e se $d_m = d$, cioè se la misura del disturbo è corretta.
+\subsubsection{Controllo in anello chiuso (AC) o in retroazione o Feedback}
+[immagine dagli appunti del prof]\newline
+$M_y$: misuratore di $y$.\newline
+$y_m$: misura di $y$.\newline
+Questo sistema può contrastare i disturbi ed errori di modello anche senza conoscerli, il controllore ne vede gli effetti tramite $y_m$.\newline
+Naturalmente occorre sempre che $y_m = y$, se la misurazione è sbagliata non si può fare nulla. Non laavoriamo con le grandezze vere e proprie, ma con le loro misurazioni.
+\subsubsection{Controllo in anello chiuso (AC) con compensazione del disturbo}
+[immagine dagli appunti del prof]\newline
+Questo approccio è come il caso precedente ma più pronto nel reagire a $d$. Nel caso precedente in seguito a un disturbo si reagisce alle sue conseguenze, in questo caso si reagisce in maniera preventiva ai disturbi.\newline
+N.B. la precisione di $M_d$ conta meno di quella di $M_y$.\newline
+\newline

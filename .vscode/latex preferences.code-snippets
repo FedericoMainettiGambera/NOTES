@@ -385,4 +385,8 @@
 		"prefix": "sdot",
 		"body": "\\dot{$1}$0"
 	},
+	"immagineDagliAppuntiDelProf":{
+		"prefix": "iprof",
+		"body": "[immagine dagli appunti del prof]\\newline"
+	},
 }
