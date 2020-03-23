@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  23 MAR 2020 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  23 MAR 2020 15:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -579,7 +579,22 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione1/lezione1.tex) [1
+) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione1/lezione1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
+
+ []
+
+) [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione2/lezione2.tex
 
@@ -600,21 +615,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 13.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 13.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: E41E9EC76E06A704C6361735357EF817;140.
+(rerunfilecheck)             Checksum: 3755A8D4EA148E54EDC31F9EAF7AC77A;280.
  ) 
 Here is how much of TeX's memory you used:
- 18070 strings out of 480994
- 330876 string characters out of 5916032
- 592780 words of memory out of 5000000
- 33178 multiletter control sequences out of 15000+600000
- 538796 words of font info for 48 fonts, out of 8000000 for 9000
+ 18076 strings out of 480994
+ 330960 string characters out of 5916032
+ 593780 words of memory out of 5000000
+ 33182 multiletter control sequences out of 15000+600000
+ 539090 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,77p,886b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (4 pages, 38482 bytes).
+Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (4 pages, 44185 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
