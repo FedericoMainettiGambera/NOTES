@@ -36,7 +36,7 @@ Non ci sono prove in itinere.
 \newline\textbf{[34]}\;
 \newline\textbf{[35]}
 \section{Il problema del controllo}
-[appunti del prof disponibili su Beep]\newline
+[appunti del prof disponibili su Beep]
 \subsection{Concetti fondamentali}
 [immagine dagli appunti del prof]\newline
 $S$: sistema da controllare. \newline
@@ -66,5 +66,40 @@ Naturalmente occorre sempre che $y_m = y$, se la misurazione è sbagliata non si
 \subsubsection{Controllo in anello chiuso (AC) con compensazione del disturbo}
 [immagine dagli appunti del prof]\newline
 Questo approccio è come il caso precedente ma più pronto nel reagire a $d$. Nel caso precedente in seguito a un disturbo si reagisce alle sue conseguenze, in questo caso si reagisce in maniera preventiva ai disturbi.\newline
-N.B. la precisione di $M_d$ conta meno di quella di $M_y$.\newline
+N.B. la precisione di $M_d$ conta meno di quella di $M_y$.
+\subsubsection{Esempio}
+[immagine dagli appunti del prof]\newline
+Abbiamo una guida su cui scorre una massa $M$ attaccata con una molla di costante elastica $k$. La massa viene spinta da una forza $F = U$ (è l'ingresso, lo imponiamo al sistema). La $y$ (uscita) del sistema è la posizione della massa sulla guida.\newline
+$F_{molla} = -ky$\newline
+$F_{attrito} = - h \frac{d}{dt}y = -h \dot{y}$
+\subsubsection*{Modello statico}
+Per prima cosa vediamo un \textbf{modello statico (all'equilibrio)} di questo sistema:\newline
+In un modello statico la velocità è nulla, e quindi la $F_{attrito} = 0$ e $F + F_{molla} = 0$, che diventa $F-k \bar{y} = 0$, dove peri $\bar{y}$ si intende il valore di $y$ in stato di equilibrio, e dunque $\bar{y} = \frac{F}{k}$.\newline
+Quindi se voglio $y = y^o$, dove per $y^o$ si intende un $y$ desiderato, dovrò applicare una forza $F = k y^o$.\newline
 \newline
+Analiziamo ora il sistema con un controllo in \textbf{AA}, supponendo che la costante elastica della molla sia $k = k_n + \Delta k$, dove $k_n$ è detto $k$ nominale.\newline
+Applicando quindi $F = k_n y^o$, otterrò $y = \frac{F}{k_n + \Delta k} = \frac{k_n}{kn + \Delta k} y^o$. Quindi si può avere un errore di modello dovuto a quel $\Delta k$, che provoca un errore di controllo, cioè che $y \neq y^o$.\newline
+\[
+    \text{Errore nel modello ($\Delta k$) $\Longrightarrow$ errore nel controllo ($y \neq y^o$)}\;
+\]
+\newline
+Analiziamo ora il sistema con un controllo in \textbf{AC}.\newline
+Posso decidere di applicare una forza $F = \alpha (y^o -y)$, con $\alpha>0$. Il termine $(y^o - y)$ rappresenta l'errore, (quello che voglio - quello che ho). $F$ è la variabile di controllo ed è proporzionale ($\alpha$) all'errore.\newline
+Questo è un esempio di applicazione di controllo ad anello chiuso.\newline
+Con questo approccio ottengo $y = \frac{F}{k_n + \Delta k} = \frac{\alpha (y^o - y)}{k_n + \Delta k}$ e continuando i conti si arriva a $\frac{y - y^o}{y^o} = \frac{k}{k+\alpha}$, dove il termine $\frac{y-y^o}{y^o}$ prende il nome di errore normalizzato. Se $k = k_n$ non ho errore, però con $\alpha$ abbastanza grande posso rendere l'errore piccolo a piacere (con possibili problemi di stabilità di cui parleremo più avanti).\newline
+\newline
+Quindi:
+\begin{itemize}
+    \item  il controllo in AA è basato sul modello (usa $k_n$); l'errore è nullo se il modello è esatto, se no non si può contrastare l'incertezza.
+    \item il controllo in AC è basato su misure (usa $y^o-y$); l'errore può essere nullo anche con modello esatto, ma può rendere l'errore piccolo a piacere.
+\end{itemize}
+\subsubsection*{Modello dinamico}
+Vediamo ora il \textbf{modello dinamico}:
+Partiamo dalla famosa formula "$\text{massa}\; \cdot \text{accellerazione}\; = \sum \text{forze}\;$".\newline
+Quindi $m \cdot \ddot{y} = F - ky - h \dot{y}$, cioè $m \ddot{y}(t) + h \dot{y}(t) + k y(t) = F(t)$.\newline
+\newline
+Nel caso di un sistema con controllo in \textbf{AA}, $F(t)$ non dipende da $y(t)$ e quindi l'integrale generale non cambia qualunque sia $F(t)$.\newline
+\newline
+Nel caso di un sistema con controllo in \textbf{AC}, se, per esempio, $F(t) = \alpha(y^o(t) -y(t)) + \beta \dot{y}(t)$, ovvero se faccio dipendere la forza istante per istante, devo scrivere che $m \ddot{y}(t) + h \dot{y}(t) + k y(t) = \alpha(y^o(t) - y(t) ) + \beta \dot{y}(t)$, cioè $m \ddot{y}(t) + (h - \beta) \dot{y}(t) + (k + \alpha)y(t) = \alpha y^o(t)$. Agendo con $alfa$ e $\beta$ sto cambiando il polinomio caratteristico dell'equazione differenziale e quindi sto cambiando l'integrale generale. L'integrale generale dipende dai parametri di controllo $\alpha$ e $\beta$.\newline
+\newline
+[immagine dagli appunti del prof]: schema a blocchi (verrà spiegato meglio più avanti) dell'esempio appena fatto.

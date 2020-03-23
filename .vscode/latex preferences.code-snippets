@@ -389,4 +389,8 @@
 		"prefix": "iprof",
 		"body": "[immagine dagli appunti del prof]\\newline"
 	},
+	"bar":{
+		"prefix": "bar",
+		"body": "\\bar{$1}$0"
+	},
 }
