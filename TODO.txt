@@ -11,7 +11,7 @@ Domenica: Tecnologie informatiche per il web
 ECONOMIA E ORGANIZZAZIONE AZIENDALE
 -----------------------------------------------------------------------------------------------------
     -lezioni viste:     5
-    -lezioni da vedere: 3
+    -lezioni da vedere: 5
 -----------------------------------------------------------------------------------------------------
 TODO:
 
@@ -39,7 +39,7 @@ TODO:
 FONDAMENTI DI AUTOMATICA
 -----------------------------------------------------------------------------------------------------
     -lezioni viste:     0
-    -lezioni da vedere: 6 (forse 7 se martedì 17 ha fatto lezione)
+    -lezioni da vedere: 7 (forse 8 se martedì 17 ha fatto lezione)
 -----------------------------------------------------------------------------------------------------
 TODO:
     -RECUPERARE
