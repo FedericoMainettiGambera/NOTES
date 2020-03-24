@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  23 MAR 2020 20:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  23 MAR 2020 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -619,11 +619,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--6
 
  []
 
-[3] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione2/lezione2.tex
-
-Package hyperref Warning: Suppressing link with empty target on input line 2.
-
-) [4] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione3/lezione3.tex
+[3] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione2/lezione2.tex) [4] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione3/lezione3.tex
 
 Package hyperref Warning: Suppressing link with empty target on input line 2.
 
@@ -649,10 +645,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  62i,7n,77p,886b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (6 pages, 128708 bytes).
+Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (6 pages, 128804 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
+ 165 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
