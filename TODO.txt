@@ -6,6 +6,9 @@ Venerdì: Fisica tecnica
 Sabato: Meccanica
 Domenica: Tecnologie informatiche per il web
 
+EXTRA TODO:
+    -aggiornare tutti i preamble con quello nel template.
+
 
 =====================================================================================================
 ECONOMIA E ORGANIZZAZIONE AZIENDALE
