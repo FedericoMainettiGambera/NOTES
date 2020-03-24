@@ -393,4 +393,24 @@
 		"prefix": "bar",
 		"body": "\\bar{$1}$0"
 	},
+	"tau":{
+		"prefix": "tau",
+		"body": "\\tau"
+	},
+	"cases":{
+		"prefix": "cases",
+		"body": [
+			"\\begin{cases}",
+			"    $0",
+			"\\end{cases}"
+		]
+	},
+	"bcases":{
+		"prefix": "bcases",
+		"body": [
+			"\\begin{rcases}",
+			"    $0",
+			"\\end{rcases}"
+		]
+	},
 }

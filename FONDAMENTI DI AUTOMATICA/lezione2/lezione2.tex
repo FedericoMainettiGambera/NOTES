@@ -1,17 +1,109 @@
 \title{LEZIONE 2 11/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/c3fbadab-4a18-4fbd-bd5c-3a50914235b4?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
-\section{Sistemi dinamici} 
+\section{Sistemi dinamici (SD)} 
+\subsection{Introduzione}
 [immagine dagli appunti del prof]\newline
-Premettendo che per questa trattazione la presenza del disturbo non è influente, ci poniamo la seguente domanda: se conosco $U(t)$ sull'intervallo $[t_0, t]$, questo mi basta per conoscere $y[t_0,t]$, cioè l'andamento del segnale di $y$ nell'intervallo $[t_0,t]$?\newline
+Premettendo che per questa trattazione la presenza del disturbo non è influente, ci poniamo la seguente domanda: se conosco $u(t)$ sull'intervallo $[t_0, t]$, questo mi basta per conoscere $y[t_0,t]$, cioè l'andamento del segnale di $y$ nell'intervallo $[t_0,t]$?\newline
 Se la risposta a questa domanda è sì, significa che siamo in presenza di un sistema dinamico, se la risposta è no, il sistema non è dinamico.\newline
 \newline
-Un sistema dinamico è un sistema in cui la conoscenza degli ingressi su un intervallo di tempo non è sufficiente per determinare l'andamento delle uscite sullo stesso intervallo di tempo.\newline
-\newline
-\textbf{es.} \newline
+Un sistema dinamico è un sistema in cui la conoscenza degli ingressi su un intervallo di tempo non è sufficiente per determinare l'andamento delle uscite sullo stesso intervallo di tempo.
+\subsection{Esempi}
+\textbf{es.} sistema non dinamico:\newline
 [immagine dagli appunti del prof]\newline
-La tensione $U(t)$ è l'ingresso, la corrente sulla resistenza $R$ è l'uscita $y(t)$. La legge che governa questo circuito è $y(t) = \frac{1}{R}u(t)$, quindi noto $U(t)$ conosco $y(t)$. Siamo in presenza di un sistema non dinamico.\newline
+La tensione $u(t)$ è l'ingresso, la corrente sulla resistenza $R$ è l'uscita $y(t)$. La legge che governa questo circuito è $y(t) = \frac{1}{R}u(t)$, quindi noto $U(t)$ conosco $y(t)$. Siamo in presenza di un sistema non dinamico.\newline
 \newline
-\textbf{es.} \newline
+\textbf{es.} sistema dinamico:\newline
 [immagine dagli appunti del prof]\newline
-La tensione $U(t)$ è l'ingresso, la corrente sulla capacità $C$ è l'uscita $y(t)$. Per conoscere $y[t_0,t]$ mi occorrono $u[t_0,t]$ e $y(t_0)$. Siamo in presenza di un sistema dinamico.\newline
+La tensione $u(t)$ è l'ingresso, la corrente sulla capacità $C$ è l'uscita $y(t)$. Per conoscere $y[t_0,t]$ mi occorrono $u[t_0,t]$ e $y(t_0)$, notiamo che ci serve un solo numero (l'equazione differenziale che governa questo sistema è del primo ordine, quindi necessità di una sola costante arbitraria). Siamo in presenza di un sistema dinamico.\newline
 \newline
+\textbf{es.} sistema dinamico:\newline
+[immagine dagli appunti del prof]\newline
+E' lo stesso esempio visto alla lezione precedente. Per conoscere $y[t_0,t]$ mi occorrono $u[t_0,t]$ e la posizione e la velocità iniziali, notiamo che ci servono due numeri (l'equazione differenziale che governa questo sistema è del secondo ordine, quindi necessità di due costanti arbitrarie). Siamo in presenza di un sistema dinamico.\newline
+\newline
+\textbf{es.} sistema dinamico:\newline
+Prendiamo come esempio un tram che fa delle fermate numerate da $0, \dots, N$. Abbiamo un indice $k$ che indica la fermata corrente, definiamo con $u(k)$ la differenza fra il numero di passeggeri saliti e il numero di passeggeri scesi alla fermata $k$ e con $y(k)$ il numero di passeggeri a bordo quando il tram lascia la fermata $k$. Siamo in presenza di un sistema dinamico, perchè per conoscere $y[k_0,k]$ mi occorrono $u[k_0,k]$ e $y(k_0)$, notiamo che ci serve un solo numero.\newline
+\newline
+\textbf{es.} sistema dinamico:\newline
+[immagine dagli appunti del prof]\newline
+Supponiamo di avere un nastro trasportatore, sopra la quale c'è una tamoggia che fa cadere del granulato. Definiamo come $u(t)$ la portata in ingresso in $[kg/s]$. Il granulato viene trasportato dal nastro finchè non cade e definiamo come $y(t)$ questa portata in uscita. Diciamo che il tempo di transito sul nastro trasportatore $\tau$ è costante.\newline
+Per conoscere $y[t_0,t]$ mi occorerrà analizzare la portata $u[t_0-\tau,t-\tau]$ (notare i $\tau$) e\dots, in questo caso notiamo che ci servono informazioni su un intervallo di tempo diverso da quello desiderato ($[t_0,t]$). Per proseguire nell'esempio in maniera più semplice non utiliziamo $u[t_0-\tau,t-\tau]$, ma utiliziamo un approccio del tutto analogo: per conoscere $y[t_0,t]$ mi occorrono $u[t_0,t]$ e $y[t_0-\tau,t_0]$, che rappresenta cosa c'era sul nastro. Comunque notiamo che, senza fissarci in maniera troppo pignola su questo esempio, diversamente dagli esempi precedenti, la condizione iniziale del sistema sono infiniti numeri, che è ciò che succede quando un sistema è ritardato.\newline
+Siamo in presenza di un sistema dinamico.\newline
+\newline
+Quindi un sistema dinamico per conoscere l'andamento dell'uscita ha bisogno di conoscere l'andamento dell'ingresso e il valore iniziale di qualcos'altro, che solitamente è un numero finito di numeri, ma può anche essere un numero infinito se si è in presenza di un ritardo.\newline
+\newline
+\textbf{es.} caso particolare:\newline
+Il sistema è costituito da un pulsante e una lampadina e il suo funzionamento segue il seguente meccanismo: quando si rilascia il pulsante la lampada cambia stato (si accende se era spenta e viceversa).\newline
+Per conoscere l'andamento dell'accensione $y$ nell'intervallo $[t_0,t]$ occorre conoscere l'ingresso (istanti di rilascio entro $[t_0,t]$) e lo stato iniziale della lampada, che non rappresenta un numero, ma una variabile booleana. Non sarebbe sbagliato dire che lo stato iniziale della lampada è un numero, ma lo indichiamo come variabile booleana, per mostrare in maniera marcata che non è una variabile di cui si può fare una derivata temporale, l'intero sistema non è governato da un equazione differenziale.\newline
+\textbf{oss.} Se mi interessa soltanto lo stato della lampada all'isante $t$, l'informazione che mi occorre è lo stato della lampada a $t_0$ e se il numero di volte in cui il pulsante è stato rilasciato è pari o dispari.\newline
+\newline
+Tutti questi esempi mostrano i vari sistemi che esistono, noi ci specializzeremo a due classi di sistemi dinamici, ma l'idea è molto più generale.
+\subsection{Sistema dinamico (SD) a tempo continuo (TC)}
+Le quantità di cui occorre il valore iniziale per conoscere l'uscita, noto l'ingresso, si dicono \textbf{variabili di stato} e si indicano tipicamente con $x$.
+\[
+    \begin{rcases}
+        x(t_0)\\
+        u[t_0,t]
+    \end{rcases} \rightarrow x(t), y(t) \;\text{su}\; [t_0,t] \;\;\;t \in \mathbb{R}
+\]
+In questo corso consideriamo (quasi) sempre SD con solo un ingresso e solo un'uscita, i quali si dicono \textbf{SISO} (Single Input, Single Output), quindi non lavoriamo con vettori, ma con numeri scalari.\newline
+Nel caso a TC abbiamo
+\begin{itemize}
+    \item $t \in \mathbb{R}$ (scalare)
+    \item $u,y \in \mathbb{R}$ (scalari)
+    \item $x \in \mathbb{R}^n$ (non per forza uno scalare, può essere un vettore) (come esempio di caso vettoriale si può usare il terzo visto nella sezione precedente, che aveva bisogno di due variabili di stato: posizione e velocità)
+\end{itemize} 
+dove con $n$ si intende il numero di variabili di stato, (quasi) sempre finito, che prende il nome di \textbf{ordine}.\newline
+\textbf{oss.} Un SD è definito su un campo, per noi in $\mathbb{R}$.
+\subsection{Espressione del sistema}
+Il volore assunto dalla prima variabile di stato $x_1(t)$ all'istante $t$ è una funzione $\phi_1(x_1(t),x_2(t), \dots, x_n(t), u[t_0,t], t)$, quindi dipende da sè stessa e da tutte le altre variabili di stato, da  $u[t_0,t]$ e dal tempo $t$ se il sistema è tempo variante. E così pure per le altre variabili di stato:
+\[
+    \begin{rcases}
+        x_1(t) &= \phi_1(x_1(t_0),x_2(t_0), \dots, x_n(t_0), u[t_0,t], t)\\
+        \dots \;\;\;&= \;\;\;\dots\\
+        x_n(t) &= \phi_n(x_1(t_0),x_2(t_0), \dots, x_n(t_0), u[t_0,t], t)
+    \end{rcases} \rightarrow \text{funzione di transizione dello stato}\;
+\]
+Queste espressioni prendono il nome di \textbf{funzione di transizione dello stato}.
+\[
+    \begin{rcases}
+        \\
+        \;\;\;\; y(t) = \gamma(x_1(t),x_2(t), \dots, x_n(t), u(t), t)\\
+        \\
+    \end{rcases} \rightarrow \text{equazione o trasformazione d'uscita}\;
+\]
+Questa espressione prende il nome di \textbf{equazione o trasformazione d'uscita}.\newline
+\newline
+La differenza fra $\phi$ e $\gamma$ è che $\gamma$ è una semplice funzione a cui noi diamo dei parametri e ci viene restituita la $y$, mentre le $\phi$ sembrano "qualcosa di strano" che ci richiede la "storia" del sistema come parametri.\newline
+\newline
+Tutte queste espressioni possono sostanziarsi matematicamente in diversi modi. Vediamo quello principale e il solo di nostro interesse.\newline
+\newline
+Negli SD a TC: $x(t)$ è la soluzione di un equazione differenziale.
+\[
+    \begin{rcases}
+        \dot{x}_1(t) &= f_1(x_1(t),x_2(t), \dots, x_n(t), u(t), t)\\
+        \dots \;\;\;&= \;\;\;\dots\\
+        \dot{x}_n(t) &= f_n(x_1(t),x_2(t), \dots, x_n(t), u(t), t)
+    \end{rcases} \rightarrow \text{equazione (differenziale) di stato}\;
+\]
+Queste espressioni prendono il nome di \textbf{equazione (differenziale) di stato}.
+\[
+    \begin{rcases}
+        \\
+        \;\;\;\; y(t) = g(x_1(t),x_2(t), \dots, x_n(t), u(t), t)\\
+        \\
+    \end{rcases} \rightarrow \text{equazione o trasformazione d'uscita}\;
+\]
+Quello che è cambiato rispetto a prima è che siamo in presenza di un equazione differenziale e quindi, quando noi integriamo questa equazione differenziale, il valore della funzione dipende da tutta la storia del termine noto.\newline
+Con espressione vettoriale:
+\[
+    x(t) = \left[\begin{matrix}
+        x_1(t)\\
+        \dots\\
+        x_n(t)
+    \end{matrix}\right] \Rightarrow  \begin{cases}
+        \dot{x}(t) = f(x(t), u(t),t)\\
+        y(t) = g(x(t),u(t),t)
+    \end{cases} \;\;\;\;u,y \in \mathbb{R}, \;\;\;x \in \mathbb{R}^n
+\]
+\subsection{Definizioni}
+Time stamp: [1:37:31]

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  22 MAR 2020 04:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  24 MAR 2020 02:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -22,7 +22,7 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) (c:/Users/enric/Desktop/NOTES/template/master/../preamble/preamble.tex (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (c:\Users\enric\Desktop\NOTES\template\master/../preamble/preamble.tex (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
 
@@ -463,7 +463,7 @@ File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 LaTeX Warning: Unused global option(s):
     [9pt].
 
-(c:/Users/enric/Desktop/NOTES/template/master/master.aux)
+(c:\Users\enric\Desktop\NOTES\template\master/master.aux)
 \openout1 = `master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -568,7 +568,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
- (c:/Users/enric/Desktop/NOTES/template/master/master.out) (c:/Users/enric/Desktop/NOTES/template/master/master.out)
+ (c:\Users\enric\Desktop\NOTES\template\master/master.out) (c:\Users\enric\Desktop\NOTES\template\master/master.out)
 \@outlinefile=\write6
 \openout6 = `master.out'.
 
@@ -584,22 +584,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 5.
- (c:/Users/enric/Desktop/NOTES/template/master/master.aux)
+ (c:\Users\enric\Desktop\NOTES\template\master/master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5.
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18029 strings out of 480994
- 329238 string characters out of 5916032
- 592767 words of memory out of 5000000
- 33166 multiletter control sequences out of 15000+600000
+ 18032 strings out of 480994
+ 329298 string characters out of 5916032
+ 592795 words of memory out of 5000000
+ 33168 multiletter control sequences out of 15000+600000
  537901 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,77p,868b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb>
-Output written on c:/Users/enric/Desktop/NOTES/template/master/master.pdf (1 page, 25894 bytes).
+Output written on c:\Users\enric\Desktop\NOTES\template\master/master.pdf (1 page, 25998 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
