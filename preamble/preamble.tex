@@ -1,5 +1,5 @@
   
-\title{ECONOMIA E ORGANIZZAZIONE AZIENDALE}
+\title{NOME MATERIA}
 \author{Federico Mainetti Gambera}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -10,13 +10,16 @@
 \usepackage{pdfpages}
 \usepackage{transparent}
 \usepackage{xcolor}
+\usepackage{cancel}
 \usepackage[a4paper,left=35mm,top=26mm,right=26mm,bottom=15mm]{geometry}
 \usepackage{color}
 \usepackage{tcolorbox}
 \usepackage{hyperref}
 \definecolor{lightgray}{gray}{0.75}
 \renewcommand{\familydefault}{\sfdefault}
-
+\newenvironment{rcases}
+  {\left.\begin{aligned}}
+  {\end{aligned}\right\rbrace}
 \newcommand{\incfig}[1]{%
     \def\svgwidth{\columnwidth}
     \import{../images/}{#1.pdf_tex}

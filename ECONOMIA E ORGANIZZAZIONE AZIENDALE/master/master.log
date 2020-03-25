@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  25 MAR 2020 03:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  25 MAR 2020 03:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -22,7 +22,7 @@ File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) (c:\Users\enric\Desktop\NOTES\ECONOMIA E ORGANIZZAZIONE AZIENDALE\master/../preamble/preamble.tex (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (c:\Users\enric\Desktop\NOTES\ECONOMIA E ORGANIZZAZIONE AZIENDALE\master/../../preamble/preamble.tex (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
 
@@ -621,15 +621,15 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: ED848309BC1FA9A261822A8AC9351B39;503.
  ) 
 Here is how much of TeX's memory you used:
- 18063 strings out of 480994
- 330096 string characters out of 5916032
- 597790 words of memory out of 5000000
- 33187 multiletter control sequences out of 15000+600000
+ 18065 strings out of 480994
+ 330126 string characters out of 5916032
+ 597804 words of memory out of 5000000
+ 33189 multiletter control sequences out of 15000+600000
  540663 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,77p,897b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,6n,77p,900b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:\Users\enric\Desktop\NOTES\ECONOMIA E ORGANIZZAZIONE AZIENDALE\master/master.pdf" (1 page, 56370 bytes).
+Output written on "c:\Users\enric\Desktop\NOTES\ECONOMIA E ORGANIZZAZIONE AZIENDALE\master/master.pdf" (1 page, 55926 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

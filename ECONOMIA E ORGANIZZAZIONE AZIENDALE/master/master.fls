@@ -8,8 +8,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
-INPUT c:\Users\enric\Desktop\NOTES\ECONOMIA E ORGANIZZAZIONE AZIENDALE\master/../preamble/preamble.tex
-INPUT c:\Users\enric\Desktop\NOTES\ECONOMIA E ORGANIZZAZIONE AZIENDALE\master/../preamble/preamble.tex
+INPUT c:\Users\enric\Desktop\NOTES\ECONOMIA E ORGANIZZAZIONE AZIENDALE\master/../../preamble/preamble.tex
+INPUT c:\Users\enric\Desktop\NOTES\ECONOMIA E ORGANIZZAZIONE AZIENDALE\master/../../preamble/preamble.tex
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty

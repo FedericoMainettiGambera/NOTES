@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  24 MAR 2020 02:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  25 MAR 2020 03:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -186,7 +186,9 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
  (c:/texlive/2019/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)) (c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+)) (c:/texlive/2019/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -591,15 +593,15 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18032 strings out of 480994
- 329298 string characters out of 5916032
- 592795 words of memory out of 5000000
- 33168 multiletter control sequences out of 15000+600000
+ 18062 strings out of 480994
+ 329723 string characters out of 5916032
+ 593645 words of memory out of 5000000
+ 33194 multiletter control sequences out of 15000+600000
  537901 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,77p,868b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb>
-Output written on c:\Users\enric\Desktop\NOTES\template\master/master.pdf (1 page, 25998 bytes).
+Output written on c:\Users\enric\Desktop\NOTES\template\master/master.pdf (1 page, 26028 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
