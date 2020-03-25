@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  25 MAR 2020 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  25 MAR 2020 17:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,22 +468,22 @@ LaTeX Warning: Unused global option(s):
 (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux)
 \openout1 = `master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
  (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count294
@@ -503,8 +503,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \it@ocap on input line 3.
-LaTeX Info: Redefining \it@ccap on input line 3.
+LaTeX Info: Redefining \it@ocap on input line 4.
+LaTeX Info: Redefining \it@ccap on input line 4.
 
 
 File italian.ldf warning: 
@@ -512,7 +512,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 3.
+italian.ldf    on input line 4.
 
 \AtBeginShipoutBox=\box66
 (c:/texlive/2019/texmf-dist/tex/latex/pdflscape/pdflscape.sty
@@ -557,7 +557,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 3.
+Package hyperref Info: Link coloring OFF on input line 4.
  (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (c:/texlive/2019/texmf-dist/tex/latex/refcount/refcount.sty
@@ -567,18 +567,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count300
 )
-LaTeX Info: Redefining \ref on input line 3.
-LaTeX Info: Redefining \pageref on input line 3.
-LaTeX Info: Redefining \nameref on input line 3.
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
  (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.out) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.out)
 \@outlinefile=\write6
 \openout6 = `master.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione1/lezione1.tex [1
@@ -607,17 +607,17 @@ LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 9
 (c:/texlive/2019/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 97--6
+Underfull \hbox (badness 10000) in paragraph at lines 97--7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--6
+Underfull \hbox (badness 10000) in paragraph at lines 97--7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--6
+Underfull \hbox (badness 10000) in paragraph at lines 97--7
 
  []
 
@@ -737,7 +737,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--208
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 210--8
+Underfull \hbox (badness 10000) in paragraph at lines 210--9
 
  []
 
@@ -787,7 +787,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--81
  []
 
 [9])
-Underfull \hbox (badness 10000) in paragraph at lines 103--10
+Underfull \hbox (badness 10000) in paragraph at lines 103--11
 
  []
 
@@ -796,24 +796,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--10
 Package hyperref Warning: Suppressing link with empty target on input line 2.
 
 ) [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 13.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 14.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 14.
  (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 13.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 14.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 14.
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: 7AD2AFCB9A0FD3873E390028C623B252;2151.
  ) 
 Here is how much of TeX's memory you used:
  18196 strings out of 480994
  332996 string characters out of 5916032
- 605655 words of memory out of 5000000
+ 605667 words of memory out of 5000000
  33261 multiletter control sequences out of 15000+600000
  541730 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,77p,889b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (11 pages, 177680 bytes).
+Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (11 pages, 177965 bytes).
 PDF statistics:
  249 PDF objects out of 1000 (max. 8388607)
  217 compressed objects within 3 object streams
