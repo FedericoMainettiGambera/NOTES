@@ -413,4 +413,12 @@
 			"\\end{rcases}"
 		]
 	},
+	"matrix":{
+		"prefix": "matrix",
+		"body": [
+			"\\left[\\begin{matrix}",
+			"    $0",
+			"\\end{matrix}\\right]"
+		]
+	},
 }

@@ -1,3 +1,120 @@
-\title{LEZIONE //2020}\newline
-\textbf{link} \href{}{clicca qui}
-\section{}
+\title{LEZIONE 3 12/03/2020}\newline
+\textbf{link} \href{https://web.microsoftstream.com/video/0f5f35c0-ba36-4f9c-a496-057ebab138ec?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
+\subsection{Sistemi dinamici (SD) lineari tempo invarianti (LTI)}
+I sistemi dinamici lineari tempo invarianti sono sistemi in cui $f$ e $g$ sono lineari in $x$ e in $u$, e per cui non c'è dipendenza esplicita da $t$ (TC) o da $k$ (TD).\newline
+Li vedremo solo SISO (single input, single output).\newline
+\newline
+Cominciamo per il caso a \textbf{tempo continuo} (TC). L'unico modo per fare un sistme DC TC LTI è il seguente:
+\[
+    \begin{cases}
+        \dot{x}_1(t) &= a_{11}x_1(t) + \dots+ a_{1n}x_{n}(t) + b_1 u(t)\\
+        \dots &= \;\;\; \dots\\
+        \dot{x}_n(t) &= a_{n1}x_1(t) +\dots+ a_{nn}x_n(t) + b_nu(t)\\
+        y(t) &= c_1x_1(t) + \dots + c_n x_n(t) + d u(t)
+    \end{cases}
+\]
+In forma vettoriale:
+\[
+    x = \left[\begin{matrix}
+        x_1\\
+        \dots\\
+        x_n
+    \end{matrix}\right], \;\;\; A = \left[\begin{matrix}
+        a_{11} & \dots & a_{1n}\\
+        \dots & \dots & \dots\\
+        a_{n1} & \dots & a_{nn}
+    \end{matrix}\right], \;\;\; b = \left[\begin{matrix}
+        b_1\\
+        \dots\\
+        b_n
+    \end{matrix}\right], \;\;\; c = [c_1 \;\; \dots \;\; c_n]
+\]
+\[
+    \begin{cases}
+        \dot{x} = Ax+bu\\
+        y = cx +du
+    \end{cases}
+\]
+I termini $A, b, c, d$ prendono il nome di \textbf{descrizione di stato}.\newline
+\newline
+Il caso a \textbf{tempo discreto} (TD) è analogo.
+\[
+    \begin{cases}
+        x(k) = Ax(k-1) + bu(k-1)\\
+        y(k) = cx(k) +d u(k)
+    \end{cases}
+\] 
+\textbf{oss.} Nei libri di testo si può trovare scritto così: $\begin{cases}
+    x(k+1) = Ax(k) + bu(k)\\
+    y(k+1) = cx(k+1) +d u(k+1)
+\end{cases}$, comunque la cosa importatne è che nella prima equazione del sistema ci siano due valori successivi di $k$ e nella seconda ci sia un solo valore di $k$.
+\subsubsection{Equilibrio}
+Poniamoci una domanda: con $u(t)$ (o $u(k)$) $=\bar{u}$ costante, esiste un qualche valore $\bar{x}$ costante tale che 
+\[
+    \begin{rcases}
+        x(0) &= \bar{x}\\
+        u(t) \;\text{(o $u(k)$)}\; &= \bar{u} \;\;\text{per $t$ (o $k$) $\geq 0$}\;
+    \end{rcases} \rightarrow x(t) \;\text{(o $x(k)$)}\; = \bar{x} \;\;\;\;\text{per $t$ (o $k$) maggiore di 0}\;
+\]
+, cioè, con un ingresso costante deciso, esiste un qualche stato costante tale che, prendendo proprio questo stato come stato iniziale e applicando l'ingresso costante deciso, lo stato non cabia?\newline
+\newline
+\textbf{oss.} Il concetto di equilibrio è che se io metto un sistema in uno stato di equilibrio, lui rimane lì. Da notare è che la stabilità è un altra cosa (se muovo dallo stato d'equilibrio, il sistema ritorna lì).\newline
+\newline
+Per rispondere a questa domanda dobbiamo distinguere i casi a tempo continuo e a tempo discreto:\newline
+\newline
+Vediamo il caso a \textbf{tempo continuo} (TC). Se $x$ deve rimanere costante, significa che $\dot{x} = 0$ la derivata deve essere nulla. Quindi in generale con $\dot{x} = f(x,u)$, noto il valore $\bar{u}$ segnato che applico, gli eventuali $\bar{x}$ sono le soluzioni di $f(\bar{x}, \bar{u}) = 0$.\newline
+\newline
+Vediamo il caso a \textbf{tempo discreto} (TD). Se $x$ deve rimanere costante, significa che $x(k+1) = x(k)$ per ogni $k$, cioè che $x(k+1)$ deve rimanere costante. Quindi in tal caso dovrò risolvere per $\bar{x}$ l'equazione $f(\bar{x}, \bar{u}) = \bar{x}$.\newline
+\newline
+Specializiamoci ora sul caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $0 = A \bar{x} + b \bar{u}$. Se $A$ non è singolare, allora esiste uno e uno solo $\bar{x} = -A^{-1} b u$, altrimento o non esiste $\bar{x}$ o esistono infiniti $\bar{x}$.\newline
+\newline
+Se esiste un $\bar{x}$ (cioè se un sistema ammette un certo stato di equilibrio) per certo $u = \bar{u}$, in generale esiste un \textbf{uscita di equilibrio} $\bar{y} = g(\bar{x}, \bar{u})$.\newline
+\textbf{oss.} Nel caso non lineare $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$\newline
+\newline
+\textbf{es.} Esempio della massa-molla visto la lezione scorsa:\newline
+L'equazione che governa il sistema è $m \ddot{y} = F - ky - h \dot{y}$, con $u = F$, ed eravamo arrivati a dire che $\begin{cases}
+    \dot{x}_1 = x_2\\
+    \dot{x}_2 = - \frac{k}{m}x_1 - \frac{h}{m}x_2 + \frac{1}{m}u\\
+    y = x_1
+\end{cases}$, con $x_1$ posizione e $x_2$ velocità.\newline
+Riscriviamo il tutto in forma matriciale:
+\[
+    \begin{cases}
+        \left[\begin{matrix}
+            \dot{x}_1\\
+            \dot{x}_2
+        \end{matrix}\right] = \left[\begin{matrix}
+            0 \;\; &1\\
+            - \frac{k}{m} \;\;& - \frac{h}{m}
+        \end{matrix}\right] \left[\begin{matrix}
+            x_1\\
+            x_2
+        \end{matrix}\right] + \left[\begin{matrix}
+            0 \\
+            \frac{1}{m}
+        \end{matrix}\right] u\\
+        y = \left[\begin{matrix}
+            1 \;\;0
+        \end{matrix}\right] \left[\begin{matrix}
+            x_1\\
+            x_2
+        \end{matrix}\right]
+    \end{cases}
+\]
+Ponendo $u = \bar{u}$ esiste un equilibrio $\bar{x}$?\newline
+Pongo $\dot{x}_1 = 0$ $\Longrightarrow$ $\bar{x}_2 = 0$, ovvio perchè la velocità è nulla all'equilibrio.\newline
+Pongo $\dot{x}_2 = 0$, quindi $- \frac{k}{m} \bar{x}_1 - \cancel{ \frac{h}{m}\bar{x}_2} + \frac{1}{m}\bar{u} = 0$ $\Longrightarrow$ $\bar{x}_1 = \frac{\bar{u}}{k}$.\newline
+\newline
+\textbf{es.} Esempio del pendolo visto la lezione scorsa:\newline
+[immagine dagli appunti del prof]\newline
+Avevamo posto $x_1 = \theta$ e $x_2 = \dot{\theta}$. Andando a rivedere le equazioni che governano questo sistema che abbiamo scritto la volta scorsa si arriva ad avere $\begin{cases}
+    \dot{x}_1 = x_2\\
+    \dot{x}_2 = - \frac{g}{l} sin(x_1) - \frac{h}{ml^2} x_2 + \frac{1}{ml^2}u
+\end{cases}$
+Ponendo $u = \bar{u}$ esiste un equilibrio $\bar{x}$?\newline
+Pongo $\dot{x}_1= 0$ $\Longrightarrow$ $x_2 = 0$, ovvio perchè la velocità angolare è nulla all'equilibrio.\newline
+Pongo $\dot{x}_2$ $\Longrightarrow$ $0 = - \frac{g}{l}sin(\bar{x}_1) + \frac{1}{ml^2} \bar{u}$.\newline
+Il risultato è che $\begin{cases}
+    \bar{x}_1 = arcsin(\frac{\bar{u}}{mgl})\\
+    \bar{x}_2 = 0
+\end{cases}$
