@@ -78,6 +78,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/transparent/transparent.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/transparent/transparent.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/auxhook/auxhook.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/cancel/cancel.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/cancel/cancel.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -285,6 +287,7 @@ INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
