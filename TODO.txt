@@ -6,15 +6,15 @@ Venerdì: Fisica tecnica
 Sabato: Meccanica
 Domenica: Tecnologie informatiche per il web
 
-EXTRA TODO:
+TODO generici:
     -aggiornare tutti i preamble con quello nel template.
 
 
 =====================================================================================================
 ECONOMIA E ORGANIZZAZIONE AZIENDALE
 -----------------------------------------------------------------------------------------------------
-    -lezioni viste:     5
-    -lezioni da vedere: 5
+    -lezioni viste:     6
+    -lezioni da vedere: 2 (non ancora online)
 -----------------------------------------------------------------------------------------------------
 TODO:
 
