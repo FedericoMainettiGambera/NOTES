@@ -7,7 +7,6 @@ Sabato: Meccanica
 Domenica: Tecnologie informatiche per il web
 
 TODO generici:
-    -aggiornare tutti i preamble con quello nel template.
 
 
 =====================================================================================================
