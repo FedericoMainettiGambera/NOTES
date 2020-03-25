@@ -66,7 +66,9 @@ Vediamo il caso a \textbf{tempo continuo} (TC). Se $x$ deve rimanere costante, s
 \newline
 Vediamo il caso a \textbf{tempo discreto} (TD). Se $x$ deve rimanere costante, significa che $x(k+1) = x(k)$ per ogni $k$, cioè che $x(k+1)$ deve rimanere costante. Quindi in tal caso dovrò risolvere per $\bar{x}$ l'equazione $f(\bar{x}, \bar{u}) = \bar{x}$.\newline
 \newline
-Specializiamoci ora sul caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $0 = A \bar{x} + b \bar{u}$. Se $A$ non è singolare, allora esiste uno e uno solo $\bar{x} = -A^{-1} b u$, altrimento o non esiste $\bar{x}$ o esistono infiniti $\bar{x}$.\newline
+Vediamo ora il caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $0 = A \bar{x} + b \bar{u}$. Se $A$ non è singolare, allora esiste uno e uno solo $\bar{x} = -A^{-1} b u$, altrimento o non esiste $\bar{x}$ o esistono infiniti $\bar{x}$.\newline
+\newline
+Vediamo ora il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $\bar{x} = A \bar{x} + b \bar{u}$. Questa equazione si scrive anche $(I-A)\bar{x} = b \bar{u}$ e se $I-A$ non è singolare, cioè se $A$ non ha autovalori in 1, allora esiste uno e uno solo $\bar{x} = (I-A)^{-1} b \bar{u}$, altrimento o non esiste $\bar{x}$ o esistono infiniti valori $\bar{x}$.\newline
 \newline
 Se esiste un $\bar{x}$ (cioè se un sistema ammette un certo stato di equilibrio) per certo $u = \bar{u}$, in generale esiste un \textbf{uscita di equilibrio} $\bar{y} = g(\bar{x}, \bar{u})$.\newline
 \textbf{oss.} Nel caso non lineare $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$\newline
@@ -117,4 +119,47 @@ Pongo $\dot{x}_2$ $\Longrightarrow$ $0 = - \frac{g}{l}sin(\bar{x}_1) + \frac{1}{
 Il risultato è che $\begin{cases}
     \bar{x}_1 = arcsin(\frac{\bar{u}}{mgl})\\
     \bar{x}_2 = 0
-\end{cases}$
+\end{cases}$ e quindi:
+\begin{itemize}
+    \item  se $|\bar{u}| > mgl$, non esiste equilibrio $\bar{x}$, e il pendolo continua a girare.
+    \item  se $\bar{u} = 0$, allora abbiamo due soluzioni: $\bar{x}_1 = 0$ o $\bar{x}_1 = \pi$ (sono due equilibri).
+\end{itemize}
+\subsubsection{Movimento}
+Dato uno stato iniziale $x(0)$ e dato un ingresso $u(t)$ o $u(k)$, per $t$ o $k > 0$:
+\[
+    \begin{rcases}
+        \text{dato uno stato iniziale}\; &x(0)\\
+        \text{dato un ingresso}\; &u(t) \;\text{(o $u(k)$)} \;\;\text{per $t$ (o $k$) $\geq 0$}\;
+    \end{rcases} \rightarrow \text{si produce un}\; x(t) \;\text{(o $x(k)$)}\; \text{e un }\;y(t) \;\text{(o $y(k)$)}\; 
+\]
+Questi $x(t) \;\text{(o $x(k)$)} \;\text{e un }\;y(t) \;\text{(o $y(k)$)}$ prendono il nome di \textbf{movimenti di stato e uscita}.\newline
+\newline
+Vediamo il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). Questo sistema, come sappiamo, è fatto così:
+\[
+    \begin{cases}
+        x(k) = A x(k-1) + b u(k-1)\\
+        y(k) = cx(k) + dx(k)
+    \end{cases}
+\]
+Vediamo cosa succede se imponiamo un $x(0)$ e un $u(k)$ con $k\geq 0$.\newline
+\newline
+Calcoliamo il movimento dello stato $x$:\newline
+$x(0)$ è il dato di partenza, \newline
+$x(1) = Ax(0) + bu(0)$, \newline
+$x(2) ) A x(1) + bu(1) = A^2 x(0) + Abu(0) + bu(1)$,\newline
+$\dots$,\newline
+quinidi per il generico $k$ posso scrivere
+\[
+    x(k) = A^kx(0) + \sum_{l=0}^{k-1}A^{k-l-1}bu(l)
+\]
+che prende il nome di \textbf{formula di Lagrange a tempo discreto per lo stato}, dove il termine $A^k x(0)$ è il \textbf{movimento libero (ML) dello stato} e il termine $\sum_{l=0}^{k-1}A^{k-l-1}bu(l)$ è il \textbf{movimento forzato (MF) dello stato}.\newline
+\textbf{oss.}  ML dipende linearmente solo dallo stato iniziale $x(0)$ e non dall'ingresso $u(k)$, MF dipende linearmente solo dall'ingresso $u(k)$ e non dallo stato iniziale $x(0)$.\newline
+\textbf{oss.}  ML e MF sommati danno il movimento totale, vale quindi il principio di sovrapposizione degli effetti (PSE).\newline
+\textbf{oss.} Se il sistema non è lineare, in genere non si riesce a separare il movimento in ML e MF. \newline
+\newline
+Calcoliamo il movimento dell'uscita $u$:\newline
+Analogamente si giunge alla \textbf{formula di Lagrange a tempo discreto per l'uscita}:
+\[
+    y(k) = cx(k) + du(k) = c A^k x(0) + c \sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)
+\]
+dove il termine $c A^k x(0)$ è il \textbf{movimento libero (ML) dell'uscita} e il termine $c \sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)$ è il \textbf{movimento forzato (MF) dell'uscita}.\newline

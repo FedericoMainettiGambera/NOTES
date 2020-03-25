@@ -2,9 +2,9 @@ Lunedì: Fondamenti di automatica
 Martedì: Economia e organizzazione aziendale
 Mercoledì: TODOs / recuper materie più indietro / riposo
 Giovedì: TODOs / recupero materie più indietro / riposo
-Venerdì: Fisica tecnica
+Venerdì: Tecnologie informatiche per il web
 Sabato: Meccanica
-Domenica: Tecnologie informatiche per il web
+Domenica: Fisica tecnica
 
 TODO generici:
 
