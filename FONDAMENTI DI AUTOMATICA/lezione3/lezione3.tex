@@ -71,8 +71,8 @@ Vediamo ora il caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariant
 Vediamo ora il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $\bar{x} = A \bar{x} + b \bar{u}$. Questa equazione si scrive anche $(I-A)\bar{x} = b \bar{u}$ e se $I-A$ non è singolare, cioè se $A$ non ha autovalori in 1, allora esiste uno e uno solo $\bar{x} = (I-A)^{-1} b \bar{u}$, altrimento o non esiste $\bar{x}$ o esistono infiniti valori $\bar{x}$.\newline
 \newline
 Se esiste un $\bar{x}$ (cioè se un sistema ammette un certo stato di equilibrio) per certo $u = \bar{u}$, in generale esiste un \textbf{uscita di equilibrio} $\bar{y} = g(\bar{x}, \bar{u})$.\newline
-\textbf{oss.} Nel caso non lineare $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$\newline
-\newline
+\textbf{oss.} Nel caso non lineare $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$
+\subsubsection*{Esempi}
 \textbf{es.} Esempio della massa-molla visto la lezione scorsa:\newline
 L'equazione che governa il sistema è $m \ddot{y} = F - ky - h \dot{y}$, con $u = F$, ed eravamo arrivati a dire che $\begin{cases}
     \dot{x}_1 = x_2\\
@@ -132,8 +132,8 @@ Dato uno stato iniziale $x(0)$ e dato un ingresso $u(t)$ o $u(k)$, per $t$ o $k 
         \text{dato un ingresso}\; &u(t) \;\text{(o $u(k)$)} \;\;\text{per $t$ (o $k$) $\geq 0$}\;
     \end{rcases} \rightarrow \text{si produce un}\; x(t) \;\text{(o $x(k)$)}\; \text{e un }\;y(t) \;\text{(o $y(k)$)}\; 
 \]
-Questi $x(t) \;\text{(o $x(k)$)} \;\text{e un }\;y(t) \;\text{(o $y(k)$)}$ prendono il nome di \textbf{movimenti di stato e uscita}.\newline
-\newline
+Questi $x(t) \;\text{(o $x(k)$)} \;\text{e un }\;y(t) \;\text{(o $y(k)$)}$ prendono il nome di \textbf{movimenti di stato e uscita}.
+\subsubsection*{Formule di Lagrange}
 Vediamo il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). Questo sistema, come sappiamo, è fatto così:
 \[
     \begin{cases}
@@ -163,3 +163,78 @@ Analogamente si giunge alla \textbf{formula di Lagrange a tempo discreto per l'u
     y(k) = cx(k) + du(k) = c A^k x(0) + c \sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)
 \]
 dove il termine $c A^k x(0)$ è il \textbf{movimento libero (ML) dell'uscita} e il termine $c \sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)$ è il \textbf{movimento forzato (MF) dell'uscita}.\newline
+\newline
+Vediamo il caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI).\newline
+\textbf{Formula di Lagrange a tempo continuo per lo stato}
+\[
+    x(t) = e^{At}x(0) + \int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau
+\]
+con $e^{At}x(0)$ \textbf{movimento libero (ML) dello stato} e $\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau$ \textbf{movimento forzato (MF) dello stato}.\newline
+\textbf{Formula di Lagrange a tempo continuo per l'uscita}
+\[
+    y(t) = c e^{At}x(0) + c\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)
+\]
+con $ce^{At}x(0)$ \textbf{movimento libero (ML) dell'uscita} e $\;\; c\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)$ \textbf{movimento forzato (MF) dell'uscita}.
+\subsubsection*{Esponenziale di matrice}
+Per sistemi di ordine maggiore di $1$ occorre calcolare l'esponenziale di matrice $e^{At}$, vediamo come fare per il caso in cui $A$ sia diagonalizzabile (altrimenti si usa un altro metodo, ma la incontreremo più avanti):\newline
+Definizioni e concetti importanti:
+\begin{itemize}
+    \item Data una matrice $M$, scriviamo $e^M = I + M + \frac{M^2}{2!} + \frac{M^3}{3!}+\dots$.
+    \item Se $M$ è diagonalizzabile, allora esiste una matrice $T^{-1}$ (non singolare) tale che $T^{-1} M T = D$ è una matrice diagonale tale che i suoi elementi sulla diagonale sono gli autovalori $\lambda_i$ di $M$. Di conseguenza $M = T D T^{-1}$.
+\end{itemize}
+Quindi unendo questi due concetti posso scrivere
+\[
+    e^M = I + M + \frac{M^2}{2!} + \frac{M^3}{3!}+\dots=
+\]
+\[
+    = TT^{-1} + T D T^{-1} + \frac{TD\cancel{T^{-1} T}DT^{-1}}{2!} + \frac{TD \cancel{T^{-1} T}D \cancel{T^{-1} T}DT^{-1}}{3!} + \dots =
+\]
+\[
+    = TT^{-1} + T D T^{-1} + \frac{TD^2T^{-1}}{2!} + \frac{TD^3T^{-1}}{3!} + \dots=
+\]
+[dove $TT^{-1} = I$. Ora raccogliendo ottengo]
+\[
+    = T(I + D + \frac{D^2}{2!} + \frac{D^3}{3!} + \dots)T^{-1} = T e^{D}T^{-1}
+\]
+ma siccome $D = \left[\begin{matrix}
+    \lambda_1 \;\; &0 \;\; &0\\
+    0 & \dots &0\\
+    0 &0 & \lambda_n
+\end{matrix}\right]$, allora elevando $D$ a un generico indice $k$, otteniamo $D^k= \left[\begin{matrix}
+    \lambda_1^k \;\; &0 \;\; &0\\
+    0 & \dots &0\\
+    0 &0 & \lambda_n^k
+\end{matrix}\right]$.\newline
+Di conseguenza $T e^{D}T^{-1} = T \left[\begin{matrix}
+    e^{\lambda_1} \;\; &0 \;\; &0\\
+    0 & \dots &0\\
+    0 &0 & e^{\lambda_n}
+\end{matrix}\right] T^{-1}$.\newline
+Tornando alla nostra matrice $A$ (diagonalizzabile), 
+\[
+    e^{At}= e^{TD_AT^{-1}t} =
+\] 
+[con $D_A = T^{-1} A T$ diagonale (cioè la matrice $A$ diagonalizzata). Porre molta \textbf{attenzione} alla posizione dei $T$ e $T^{-1}$, è un errore molto gettonato all'esame.]
+\[
+    = T(It + D_A t + \frac{(D_at)^2}{2!} + \dots)T^{-1} =  T \left[\begin{matrix}
+        e^{\lambda_1t} \;\; &0 \;\; &0\\
+        0 & \dots &0\\
+        0 &0 & e^{\lambda_nt}
+    \end{matrix}\right]T^{-1}
+\] con $\lambda_i$ autovalore i-esimo di $A$, gli autovalori di $e^{\lambda_it}$ prendono il nome di \textbf{modi del sistema}.
+\subsubsection*{Esempi}
+\textbf{es.} Movimento a TC:\newline
+siano\newline
+$\dot{x} = -2x$ (solo ML dello stato) e $x(0) = 4$\newline
+Che cosa è $x(t)$ per $t\geq 0$?\newline
+Applicando la formula otteniamo: $x(t) = e^{At}x(0) = e^{-2t}4$\newline
+\newline
+\textbf{es.} Da risolvere a casa!\newline
+Siano $\dot{x} = Ax$, con $A = \left[\begin{matrix}
+    1&1\\
+    2&1
+\end{matrix}\right]$ e $x(0) = \left[\begin{matrix}
+    3\\
+    4
+\end{matrix}\right]$, allora come è $x(t)$ per $t\geq 0$?\newline
+[il professore lo risolve con Maxima]
