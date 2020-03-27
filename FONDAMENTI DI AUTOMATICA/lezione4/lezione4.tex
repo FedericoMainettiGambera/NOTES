@@ -1,3 +1,102 @@
 \title{LEZIONE 4 16/03/2020}\newline
 \textbf{link} \href{}{N/A}
-\section*{MANCA REGISTRAZIONE DELLA LEZIONE}
+\subsection*{Manca registrazione della lezione}
+[APPUNTI PRESI DALLE SOLE SLIDE DEL PROF]
+\section{Linearizzazione di sistemi dinamico non lineari (SD, NL, SISO, TC) nell'intorno di un equilibrio}
+Consideriamo un sistema dinamico non lineare (TI):
+\[
+    S: \begin{cases}
+        \dot{x} = f(x,u)\\
+        y = h(x,u)
+    \end{cases}
+\]
+e un suo equilibrio $(\bar{u}, \bar{x}, \bar{y})$.\newline
+\newline
+Volgiamo determinare un sistema dinamico lineare tempo invariante che approssimi il comportamento di $S$ nell'intorno dell'equilibrio, cioè finchè $u(t)$, $x(t)$ e $y(t)$ non si discostano "troppo" dai valori $\bar{u}$, $\bar{x}$ e $\bar{y}$ di equilibrio.
+\subsection{Per l'equazione di stato}
+Consideriamo \textbf{l'equazione di stato} e sviluppiamola in serie fermandoci al primo ordine:
+\[
+    d(\bar{x} + \delta x, \bar{u} + \delta u) = \cancel{ f(\bar{x} \bar{u})} + f_x|_{\bar{x}, \bar{u}}\delta x + f_0|_{\bar{x}, \bar{u}} \delta u (+ \dots)
+\]
+dove
+\begin{itemize}
+    \item $\delta x$ e $\delta u$ rappresentano gli scostamenti di $x$ e di $u$ rispetto all'equilibrio;
+    \item $f(\bar{x}, \bar{u})$ vale $0$ perchè $\bar{x}$ è stato di equilibrio per $u = \bar{u}$:
+    \item $f_x$ è la derivata parziale rispetto a $x$ della funzionei $f$: $\frac{\delta f}{\delta x}$;
+    \item $(+ ...)$ indica i termini di ordine superiore dello sviluppo.
+\end{itemize}
+\[
+    \frac{d}{dt} (\bar{x} + \delta x) = \frac{d}{dt} (\delta x) = \delta \dot{x} = \; \text{derivata temporale dello scostamento di $x$ rispetto all'equilibrio}\;
+\]
+\[
+    \dot{x} = f(x,u) \;\;\;\;\;\;\;\; x = \bar{x} + dx \;\;\;\;\;\;\;\; \dot{x} = \delta \dot{x} \;\;\;\;\;\;\;\; 0 = \tau + \delta u
+\]
+\[
+    \delta \dot{x} = f_x|_{\bar{x}, \bar{u}} \delta x + f_u |_{\bar{x}, \bar{u}} \delta u
+\]
+Equazione di stato lineare, alle variazioni $\Longrightarrow$ Equazione di stato del sistema linearizzato.
+\subsection{Per l'equazione d'uscita}
+Consideriamo ora \textbf{l'equazione d'uscita} $y = g(x,u)$ e come prima sviluppiamola in serie fermandoci al primo ordine:
+\[
+    g(\bar{x} + \delta x , \bar{u} + \delta u) = g(\bar{x}, \bar{u}) + g_x|_{\bar{x}, \bar{u}} \delta x + g_u |_{\bar{x}, \bar{u}} \delta u (+ ...)
+\]
+dove
+\begin{itemize}
+    \item $g(\bar{x} + \delta x , \bar{u} + \delta u)$ è $g(x,u)$, cioè $y$;
+    \item $g(\bar{x}, \bar{u})$ è $y$;
+    \item $(+ ...)$ indica i termini di ordine superiore dello sviluppo.
+\end{itemize}
+\[
+    y - \bar{y} = g_x|_{\bar{x}, \bar{u}} \delta x + g_u |_{\bar{x}, \bar{u}} \delta u \Longrightarrow \delta y = g_x|_{\bar{x}, \bar{u}} \delta x + g_u |_{\bar{x}, \bar{u}} 
+\]
+\subsection{Sistema linearizzato nell'intorno dell'equilibrio $\bar{u}, \bar{x}, \bar{y}$}
+\[
+    \mathcal{L}^S : \begin{cases}
+        \delta \dot{x} = f_x |_{\bar{x},\bar{u}} \delta x + f_0|_{\bar{x},\bar{u}} \delta u\\
+        \delta y = g_x|_{\bar{x},\bar{u}} \delta x + g_u |_{\bar{x},\bar{u}} \delta u
+    \end{cases}
+\]
+con $ \delta u = u - \bar{u}$, $\delta x = x -\bar{x}$, $ \delta y = y - \bar{y}$.
+\subsection{Interpretazione}
+[immagine dagli appunti del prof]\newline
+\section{Stabilità}
+Il concetto di stabilità si applica solitamente agli equilibri, ma a volta anche a movimenti, e qualche volta ai sistemi.\newline
+\newline
+\textbf{Equilibrio stabile}:\newline
+Sia $\bar{x}$ uno stato di equilibrio del SD generico $\dot{x} = f(x,u)$ per $u = \bar{u}$ costante, si dice equilibrio stabile se
+\[
+    \;\forall\; \epsilon > 0 \;\; \exists \; \delta > 0 \;\;:\;\; |x(0) - \bar{x}| < \delta \Rightarrow  |x(t) - \bar{x}| < \epsilon \;\;\;\forall\;t \geq 0
+\]
+Interpretazione con $x$ scalare:\newline
+[immagine dagli appunti del prof]\newline
+\newline
+\textbf{Equilibrio asintoticamente stabile (AS)}:\newline
+L'equilibrio deve essere stabile e inoltre deve valere
+\[
+    |x(t) - \bar{x}| \rightarrow 0  \;per \; t \rightarrow \infty
+\]
+\newline
+\textbf{Equilibrio instabile}:\newline
+In tutti gli altri casi.
+\subsection{STABILITA' NEI SD LTI a TC}
+$\dot{x} = Ax + bu$\newline
+Sia $\bar{x}$ uno stato di eq. per $u = \bar{u}$\newline
+Allora
+\[
+    \begin{rcases}
+        x(0) &= \bar{x}\\
+        u(t) &= \bar{u} \;\;\; t\geq 0
+    \end{rcases} \rightarrow  x(t) = \bar{x} \;\;\;t \geq 0
+\]
+Quindi
+\[
+    x(t) = e^{At} \bar{x} + \int_{0}^{t}e^{A(t-\tau)} b \bar{u} d \tau = \bar{x}
+\]
+Consideriamo ora il movimento perturbato 
+\[
+    x_{\Delta}(t) = è^{At}(\bar{x} + \Delta \bar{x}) + \int_{0}^{t}e^{A(t- \tau)}b \bar{u} d \tau
+\]
+Quindi 
+\[
+    x_\Delta (t) - \bar{x} = e^{At} \Delta \bar{x}
+\]
