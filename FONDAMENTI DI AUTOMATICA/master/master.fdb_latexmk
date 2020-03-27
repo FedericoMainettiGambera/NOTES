@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1585187186 "c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" "master" 1585187189
+["pdflatex"] 1585322760 "c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" "master" 1585322762
   "../../preamble/preamble.tex" 1585154278 673 ac2003e2dd8ba6dadaec83f0b2e6d5a5 ""
   "../lezione1/lezione1.tex" 1584992014 8191 fbf454896656b633f42fd8ff48565854 ""
   "../lezione2/lezione2.tex" 1585187182 18273 f430b36fdbe6a4e366281847b127137f ""
   "../lezione3/lezione3.tex" 1585186880 13260 e13fc0837901fe69a14254ba5c012ea9 ""
-  "../lezione4/lezione4.tex" 1584972190 77 1f5a46331a4fb778663a6666be07890c ""
+  "../lezione4/lezione4.tex" 1585322758 110 50e9374e07a7c29f870915262af2d707 ""
   "c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.tex" 1585154436 366 e6103f1ee46876d00efc603d0ce3b50f ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1584031988 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1584034901 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -182,14 +182,14 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1584044951 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1584045442 8274593 951864db8bcab083c09dd09dcef78fa9 ""
   "c:/texlive/2019/texmf.cnf" 1584044806 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux" 1585187188 4593 a91c1cbe12061fe0254d3c9eeceedf2e ""
-  "master.aux" 1585187188 4593 a91c1cbe12061fe0254d3c9eeceedf2e "pdflatex"
-  "master.out" 1585187188 2220 0bde1caa73cab2b80dbca9386405519a "pdflatex"
+  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux" 1585322762 4495 eb688f6598786d07f18030c2a302410f ""
+  "master.aux" 1585322762 4495 eb688f6598786d07f18030c2a302410f "pdflatex"
+  "master.out" 1585322762 2184 976656053d41abe2b11cc13c69163471 "pdflatex"
   "master.tex" 1585154436 366 e6103f1ee46876d00efc603d0ce3b50f ""
   (generated)
   "master.out"
   "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf"
-  "master.pdf"
-  "master.aux"
-  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.log"
   "master.log"
+  "master.aux"
+  "master.pdf"
+  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.log"
