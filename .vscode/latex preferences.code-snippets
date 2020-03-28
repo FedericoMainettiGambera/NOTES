@@ -421,4 +421,8 @@
 			"\\end{matrix}\\right]"
 		]
 	},
+	"per":{
+		"prefix": "per",
+		"body": "\\text{x}"
+	},
 }
