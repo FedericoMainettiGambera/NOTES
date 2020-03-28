@@ -197,6 +197,9 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
+OUTPUT c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.idx
 INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.aux

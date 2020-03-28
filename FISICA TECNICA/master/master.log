@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  25 MAR 2020 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  28 MAR 2020 04:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -456,7 +456,15 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip55
-)) (c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+) (c:/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write6
+\openout6 = `master.idx'.
+
+
+Writing index file master.idx
+) (c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count293
 \l__pdf_internal_box=\box64
@@ -571,8 +579,8 @@ LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
  (c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.out) (c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.out)
-\@outlinefile=\write6
-\openout6 = `master.out'.
+\@outlinefile=\write7
+\openout7 = `master.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -598,15 +606,15 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18137 strings out of 480994
- 331395 string characters out of 5916032
- 610657 words of memory out of 5000000
- 33218 multiletter control sequences out of 15000+600000
+ 18148 strings out of 480994
+ 331589 string characters out of 5916032
+ 610717 words of memory out of 5000000
+ 33225 multiletter control sequences out of 15000+600000
  541557 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,77p,1384b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf" (9 pages, 181121 bytes).
+Output written on "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf" (9 pages, 181154 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  110 compressed objects within 2 object streams

@@ -1,0 +1,35 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Informazioni sul corso}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Modalità d'esame}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Libro di testo}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Argomenti del corso}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Cinematica di un punto}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Gradi di libertà}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Moto}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Velocità}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Accellerazione}{4}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Cinematica di un corpo}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Definizioni}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Corpo rigido}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Moto in grande}{6}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Traslazione}{6}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Rotazione}{6}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Rototraslazione}{6}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}Atto di moto (moto in piccolo)}{6}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Cinematica del corpo rigido}{7}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Posizone}{7}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Velocità}{7}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Accellerazione}{8}{subsubsection.3.5.3}%
+\contentsline {section}{\numberline {4}Analisi cinematica mediante osservatori in moto relativo}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Posizione}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Velocità}{9}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Accellerazione}{10}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Sistemi meccanici}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Vincoli elementari}{11}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Vincoli tripli}{11}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Vincoli doppi}{12}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Vincoli singoli}{12}{subsubsection.5.1.3}%
+\contentsline {section}{\numberline {6}}{13}{section.6}%
+\contentsline {section}{\numberline {7}}{14}{section.7}%
+\contentsline {section}{\numberline {8}}{15}{section.8}%

@@ -1,0 +1,14 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Calendario delle lezioni}{2}{section.1}%
+\contentsline {section}{\numberline {2}Introduzione al corso}{2}{section.2}%
+\contentsline {section}{\numberline {3}Architetture}{2}{section.3}%
+\contentsline {section}{\numberline {4}HTTP}{3}{section.4}%
+\contentsline {section}{\numberline {5}CGI, Common Gateway Interface}{3}{section.5}%
+\contentsline {section}{\numberline {6}Servlet - base}{4}{section.6}%
+\contentsline {section}{\numberline {7}Servlet - esempi}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Esempio: contatore condiviso fra i client}{6}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Esempio: contatore per ogni client}{6}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Forme di identificazione}{6}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Tracciemento della sessione}{7}{subsection.7.4}%
+\contentsline {section}{\numberline {8}JDBC}{9}{section.8}%
