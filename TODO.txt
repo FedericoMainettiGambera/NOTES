@@ -61,10 +61,11 @@ TODO:
 MECCANICA
 -----------------------------------------------------------------------------------------------------
     -lezioni viste:     3
-    -lezioni da vedere: 3
+    -lezioni da vedere: 6
 -----------------------------------------------------------------------------------------------------
 TODO:
     -aggiungere immagini dagli appunti del prof
+    -trovare registrazione di back up per lezione 4
 
 
 
