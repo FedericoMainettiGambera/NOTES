@@ -49,6 +49,7 @@ FONDAMENTI DI AUTOMATICA
 TODO:
     -RECUPERARE
     -aggiungere immagini dagli appunti del prof
+    -Sistemare lezione 4 con la registrazione di back up
 
 
 
