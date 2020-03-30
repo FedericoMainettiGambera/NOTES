@@ -1,16 +1,16 @@
 # Fdb version 3
-["makeindex master.idx"] 1585531858 "master.idx" "master.ind" "master" 1585537878
-  "master.idx" 1585537877 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1585531858 "master.idx" "master.ind" "master" 1585585055
+  "master.idx" 1585585054 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ilg"
   "master.ind"
-["pdflatex"] 1585537875 "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf" "master" 1585537878
+["pdflatex"] 1585585053 "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf" "master" 1585585055
   "../../preamble/preamble.tex" 1585369086 707 ea9409653390c911ff58e23c44f6605e ""
   "../lezione1/lezione1.tex" 1585369908 3659 2c6ce9686e7625e156b89558480e4741 ""
   "../lezione2/lezione2.tex" 1584850758 5381 8b48ff910bd8165724d4c836d1088010 ""
   "../lezione3/lezione3.tex" 1584850672 13524 0e44c940bd36ac128ddfd456c3d2a281 ""
   "../lezione4/lezione4.tex" 1584850581 10454 070b2250e30be054f52bf08b0d2d1da6 ""
-  "../lezione5/lezione5.tex" 1585537874 326 402410832893725cb41f5efd9dd29f8b ""
+  "../lezione5/lezione5.tex" 1585585051 297 2db03870fb78bca6fc8c7d6bed9d7f38 ""
   "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.tex" 1585531797 394 757977d696b57dcf6238828efebd8a29 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1584038501 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1584033702 1004 54797486969f23fa377b128694d548df ""
@@ -185,16 +185,16 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1584048551 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1584049042 8274593 951864db8bcab083c09dd09dcef78fa9 ""
   "c:/texlive/2019/texmf.cnf" 1584048406 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.aux" 1585537877 772 4a5e49f865ee49d6b783d33691c7e99b ""
-  "master.aux" 1585537877 772 4a5e49f865ee49d6b783d33691c7e99b "pdflatex"
+  "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.aux" 1585585055 772 4a5e49f865ee49d6b783d33691c7e99b ""
+  "master.aux" 1585585055 772 4a5e49f865ee49d6b783d33691c7e99b "pdflatex"
   "master.ind" 1585531858 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1585537877 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "master.out" 1585585054 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "master.tex" 1585531797 394 757977d696b57dcf6238828efebd8a29 ""
   (generated)
-  "master.out"
+  "master.log"
+  "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.log"
   "master.pdf"
   "master.idx"
-  "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.log"
-  "master.aux"
-  "master.log"
+  "master.out"
   "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf"
+  "master.aux"
