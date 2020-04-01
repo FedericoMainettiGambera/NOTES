@@ -2,4 +2,57 @@
 \textbf{link} \href{https://web.microsoftstream.com/video/2534f028-dc3d-4987-9905-66f2994ce127}{clicca qui}
 \section*{Prerequisiti}
 Templating con JSP
-\section{}
+\section{JSP}
+JSP (Java Server Pages) serve per la costruzione di interfaccie utente tramite template.\newline
+\newline
+In tutti gli esempi che abbiamo visto le interfaccie utente sono estremamente basichem mentre nelle applicazioni reali sono uno dei fattori più imortanti.\newline
+\newline
+L'approccio che abbiamo usato fino ad ora mescola diverse funzionalità: l'aspetto di richiesta dei dati (Data Base), la formattazione dell'interfaccia utente (HTML), la logica applicativa. Facendo così i programmi diventavano complessi e inleggibili. C'è bisogno di separare i diversi aspetti di un'applicazione.\newline
+Il flusso di lavoro al quale si vuole giungere è:
+\begin{itemize}
+    \item Il progettista grafico crea un esempio di come le pagine dovranno apparire usando contenuti fittizzi;
+    \item Il programmatore sostituisce i contenuti statici con contenuti dinamici, computato dinamicamente a run-time;
+    \item Nel ciclo di manutenzione il grafico può lavorare sugli aspetti estetici in maniera indipendente dal programma che ci sta sotto, può lavorare in un ambiente "grafic-friendly".
+\end{itemize}
+L'approccio che si usa è un cambio di prospettiva. Prima le Servlet stampavano il contenuto grafico, la nuova prospettiva prevede che il contenuto grafico contiene del codice.\newline
+\newline
+\textbf{Prima fase} (Servlet): Servlet stampano contenuto HTML.\newline
+\newline
+\textbf{Seconda fase} (JSP): Cambio di prospettiva, file HTML contengono tag speciali che permettono l'utilizzo di codice Java. In questa fase si ha un cambio di prospettiva, ma layout e calcolo sono ancora molto legati.\newline
+\newline
+\textbf{Terva fase} (JSTL): file HTML non contiene più codice Java, ma contiene dei tag in formato HTML che permette di ottenere lo stesso risultato della seconda fase, ma mantenendo il file in formato più grafico. Questi speciali tag utilizzati non sono tag nativi di HTML e quindi il server li processa per trasformarli in puro HTML. Queste marche si chiamano active tag o run-at-server tag, che un browser non sa interpretare. Questo metodo ci da l'illusione di lavorare con HTML.\newline
+\newline
+\textbf{Quarta fase} (Thymeleaf): Contiene solo tag HTML, che però hanno attributi speciali. Questi tag sono in ogni caso interpretabili da un browser. Con questo approccio, il grafico e il programmatore possono lavorare sullo stesso template. Il prezzo da pagare è che Thymeleaf viene eseguito da un proprio ambiente (che non fa parte di Java EE), quindi serve una configurazione.\newline
+\newline
+Oggi parliamo di JSP.\newline
+\newline
+Quando una richiesta da parte di un client è indirizzata a un file .jsp, il server lo riocnosce, richiama la pagina .jsp e la converte in una Servlet (se non è già stato fatto)- La Servlet viene compilata (anche qui se non è già stato fatto) ed eseguita, da qui la risposta viene generata e inoltrata.\newline
+JSP è quindi modo per scrivere Servlet in maniera più comoda, tutto ciò che sappiam sulle Servlet vale anche per JSP.\newline
+I template JSP non si mappano, perchè funzionano come i file HTML, più avanti nella lezione vedremo un modo con il quale possiamo però evitare l'accesso diretto a un file .jps obbligando il passaggio per una Servlet.\newline
+\newline
+Domanda trabocchetto: chi esegue i template? nessuno. I template non vengono eseguiti, ma convertiti in Servlet che verranno compilate ed eseguite.\newline
+\newline
+Nasce una domanda spontanea: Il grafico crea un template, il programmatore sostituisce il contenuto statico con contenuto dinamico, ma da dove viene questo contenuto dinamico? Se devo usare delle istruzioni programmative per andare a recuperare questi contenuti, allora sto vanificando il senso stesso di usare i template. La soluzione che JSP propone è molto rozza ed è rappresentata dall'utilizzo di oggetti predefiniti (request, response, out, application, config, \dots).\newline
+Con JSP si risolve il da dove prendere i contenuti, ma rimane ancora il problema di avere pezzi di codice Java (es. iterare sui contenuti degli oggetti predefiniti) all'interno del template.\newline
+\newline
+Un altro problema a cui JSP cerca di dare una soluzione è sulla gestione di oggetti di utilità.\newline
+Vediamo un esempio: i dati di una form inseriti da un utente devono essere messi in una richiesta, che viene inviata al server. Questi dati devono essere immagazzinati in un oggetto o una struttura dati che deve essere mantenuta per esempio tutta la durata di una sessione.\newline
+Il problema di gestire degli oggetti di utilità all'interno dei template senza programmare è risolto tramite l'utilizzo di active tag (useBean, setProperty, getProperty,\dots), cioè tag che vengono eseguiti assieme al template che provocano la creazione di oggetti (di struttura standard) che vengono depositati in opportuni contenitori.\newline
+\newline
+L'azione useBean crea un oggetto, l'azione setProperty imposta una proprietà di un oggetto, l'azione getProperty preleva una proprietà da un oggetto. Gli oggetti "bean" creati hanno una struttura standard e vengono messi in dei contenitori (scope), gli oggetti bean hanno due attributi: ID che li caratterizza e lo scope, che regola la visibiltà dell'oggetto, per esempio quale web component può accederci (page, request, session, application).\newline
+\newline
+Adesso abbiamo due strumenti nelle nostre mani: le Servlet e i template. Ma chi fa che cosa? Le template potrebbero fare direttamente le richieste ai database per esempio, ma è meglio dividere i compiti: l'interfaccia utente consuma i contenuti e li presenta, la parte programmativa procura i contenuti. Ciò che collega la produzione e il consumo dei contenuti sono degli oggetti (bean) formattati in maniera standard: JavaBean.\newline
+I JavaBean sono classi standard con attributi e getter e setter. Grazie all'utilizzo di questi standard, le istruzioni Java possono essere tradotte e semplificate all'interno dell'html, in modo tale da non dover programmare lì.\newline
+\newline
+Farwarding: Una servlet può chiedere a una request un dispatcher, dare al dispatcher una destinazione (Servlet o template) e fare farward, cioè di passare la request a chiunque sia stato detto al dispatcher. Forward è il metodo parallelo rispetto al redirect per la separazione dei compiti.\newline
+Domanda classica da esame: Che differenza c'è fra redirect e farward? Redirect spezza il compito in due request, farward spezza il compito in una sola request, cioè i due componenti condivideranno la stessa request.\newline
+Un tipico esempio di suddivisioni dei compiti: una request viene gestita inizialmente da una Servlet che fa la query alla base di dati, poi trasforma il risultato in una serie di Bean, mette i bean nell'oggetto di scope requeste e poi fa il farwarding al template. \newline
+\newline
+Come si organizzano (usanto anche i template) i vari componenti di una applicazione web?\newline
+L'applicazione web viene gestita su due livelli: uno strato che dipende dal web (web tier) e uno strato che non dipende dal web (Logica applicativa e accesso ai dati o Business and data tier). \newline
+Questa struttura è molto comoda, perchè per esempio lo strato non legato al web può essere riciclato con un nuovo strato legato al web (per esempio se si vuole rinnovare l'interfaccia utente si può ancora lavorare con la stessa logica applicativa).\newline
+I due strati sono legati dagli oggetti di modello (JavaBean), che sono prodotti dallo strato logico e consumato dallo strato web.\newline
+Analiziamo il business and data tien: la proposta del prof è quella di mediare l'accesso al database con una serie di oggetti che nascondono l'SQL, che chiameremo DAO (Data Access Object). Così lo strato web è completamente indipendente dalla base di dati. Nel momento in cui si vuole cambiare sistema DB, è sufficiente modificare il DAO. Gli oggetti DAO ritornano dei Bean. Abbiamo disaccoppiato l'accesso ai dati da chi li consuma.\newline
+Il Web Tier separa gli aspetti di controllo (gestione di eventi come l'arrivo di request) da chi stampa l'effettiva interfaccia utente (HTML). Gli aspetti di controllo sono gestiti dalle Servlet (controller) e l'interfaccia utente è gestita dai template (view) e i meccanismi di redirect e farward servono alle sevlet per passare il controllo alle view. Le view ottengono i dati dai JavaBean forniti dai DAO o dal controller se i dati vengono dal'utente stesso.\newline
+\newline
+Nell'esempio della bacheca messaggi su beep viene utilizzata questa struttura e d'ora in poi useremo sempre questo approccio.

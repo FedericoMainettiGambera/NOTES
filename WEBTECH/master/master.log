@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  31 MAR 2020 03:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  1 APR 2020 18:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -719,28 +719,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--15
 
  []
 
-[9] [10] (c:\Users\enric\Desktop\NOTES\WEBTECH\master/../lezione5/lezione5.tex) [11]
+[9] [10] (c:\Users\enric\Desktop\NOTES\WEBTECH\master/../lezione5/lezione5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--12
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+[11] [12] [13]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 17.
  (c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 17.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 17.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 00FF7993E5EF2D0B9F0E0BE587D83510;765.
+(rerunfilecheck)             Checksum: D641A5FE77DE599D0318E1482FCAA32B;768.
  ) 
 Here is how much of TeX's memory you used:
- 18194 strings out of 480994
- 332489 string characters out of 5916032
- 605737 words of memory out of 5000000
- 33255 multiletter control sequences out of 15000+600000
+ 18197 strings out of 480994
+ 332519 string characters out of 5916032
+ 607738 words of memory out of 5000000
+ 33256 multiletter control sequences out of 15000+600000
  541298 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,77p,1484b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.pdf (11 pages, 104381 bytes).
+Output written on c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.pdf (13 pages, 111379 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
  117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
