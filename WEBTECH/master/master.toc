@@ -12,3 +12,4 @@
 \contentsline {section}{\numberline {6}JDBC}{9}{section.6}%
 \contentsline {section}{\numberline {7}JSP}{11}{section.7}%
 \contentsline {section}{\numberline {8}JSTL}{14}{section.8}%
+\contentsline {section}{\numberline {9}Thymeleaf}{16}{section.9}%
