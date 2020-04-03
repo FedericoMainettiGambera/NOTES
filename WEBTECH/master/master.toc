@@ -13,3 +13,6 @@
 \contentsline {section}{\numberline {7}JSP}{11}{section.7}%
 \contentsline {section}{\numberline {8}JSTL}{14}{section.8}%
 \contentsline {section}{\numberline {9}Thymeleaf}{16}{section.9}%
+\contentsline {section}{\numberline {10}Esercitazione}{18}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Esercizio bacheca messaggi}{18}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Esercizio post management}{19}{subsection.10.2}%

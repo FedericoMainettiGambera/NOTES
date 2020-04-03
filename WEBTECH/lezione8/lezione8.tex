@@ -1,5 +1,48 @@
 \title{LEZIONE 8 02/04/20}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/75f95083-fbf8-4126-8c4d-c65d89f7c6b3}{clicca qui}
-\section*{Prerequisiti}
-
-\section{}
+\section{Esercitazione}
+\subsection{Esercizio bacheca messaggi}
+[Su beep troviamo le slide .pptx e i video che commentano la soluzione di questo esercizio e pure il progetto eclipse. In questi appunti non prenderò note in dettaglio sulla soluzione dell'esercizio in quanto su Beep è possibile reperire tutto il materiale necessario. Mi concentrerò di più sugli aspetti chiave e sui concetti fondamentali da usare per risolvere un generico esercizio].\newline
+\newline
+Per tutti gli esercizi si parte dalla lettura di un testo che rappresenta i requisiti.\newline
+\newline
+La prima operazione da fare è domandarsi quali sono i dati necessari per il supporto delle funzioni applicative. Per modellare i dati usiamo i concetti che dovrebbero già essere stati appresi durante il corso di basi di dati.\newline
+Per l'analisi dei dati si legge il testo e si cercano quelli che possono essere oggetti (entity), attributi degli oggetti (attributes) e proprietà che legano più di un oggetto (relationship).\newline
+L'analisi dei dati è un punto critico che spesso gli studenti tralasciano o fanno male e che può portare a sanzioni pesanti. E' bene esercitarsi su questa tecnica.\newline
+\newline
+Dall'analisi dei dati segue la stesura dello schema concettuale, ovvero il Database design con lo schema entità relazione (da ripassare). Riguardo allo schema entità relazione ricordiamo: le entità sono dei quadrati, hanno degli attributi scritti a fianco e sono legate fra di loro con delle relationship, che sono dei rombi. E' importante segnare sempre le cardinalità (minima:massima)! Usiamo sempre la notazione di Peter Chan (?).\newline
+\newline
+Ora si usano le regole di Stefano Ceri per la traduzione di uno schema concettuale in uno schema logico in linguaggio ddl (data definition language) SQL. Dobbiamo sempre mostrare le primary keys e le foreign keys. Per le chiavi si cerca sempre di usare un ID numerico con autoincremento (auto fornito dalla base di dati per default), ormai questo è lo standard dei database moderni, non cerchiamo di usare titoli o stringhe articolate come chiavi.\newline
+Un errore che spesso accade in esame è che gli studenti si scordano di mostrare lo schema logico (quello in codice).\newline
+\newline
+Application requirements analysis: l'obbiettivo dell'analisi funzionale delle specifiche per un applicazione web è il cercare i componenti che poi andranno a costituire la nostra applicazione.\newline
+Grazie allo schema strutturale diviso in web tier e business and data tier, sappiamo già quali sono i componenti che dobbiamo andare a ricercare.\newline
+Utiliziamo un percorso graduale per cercare questi componenti.\newline
+Cominciamo a vedere quali sono le interfacce utente (le pagine che abbiamo) e gli eventi che l'utente può scatenare e le azioni che ne corrispondono.\newline
+Si cercano le pagine, poi i vari componenti di ciascuna pagina (form, tabelle, etc).\newline
+Come terza cosa si cercano gli eventi. L'evento più tipico sono le azioni che si possono fare per interagire con le pagine, esistono anche altri tipi di eventi, come le notifiche, ma solitamente in questi esercizi non ce ne sono. C'è sempre un evento nascosto implicito (non espresso nella specifica) in tutti gli esercizi che è l'accedere all'applicazione.\newline
+Come quarta cosa si cercano le azioni, cioè le risposte che l'applicazione ha allo scaturirsi di un evento. Per brevità ignoriamo le azioni di estrazioni di dati dal DB e che sono implicitamente previste dai contenuti dinamici. Focaliziamoci sulle azioni più esplicite come il compilare un form.\newline
+\newline
+Una volta eseguita l'application requirement analysis, si fa uno schema, un disegno che lo rappresenti. Questo disegno possiamo farlo come ci pare, se ci piace usiamo IFML. L'importante è che si vedano le seguenti cose:
+\begin{itemize}
+    \item le viste (in IFML sono dei rettangoli);
+    \item i componenti delle viste (in IFML sono rettangoli smussati all'interno delle viste);
+    \item gli eventi (in IFML sono dei pallini bianchi e con una freccia che mostra cosa succede);
+    \item azioni (in IFML sono sono dei rettangoli allungati in cui il lato corto è tipo curvo... non so come spiegarlo, vedi le slide)
+\end{itemize}
+IFML non è obbligatorio, si può usare qualunque cosa, se volete potete usare IFMLEdit.org per creare dei grafici IFML.\newline
+\newline
+Fino ad ora abbiamo analizzato il cosa tratterà la nostra applicazione, ora ci occuperemo del come avverrà.\newline
+\newline
+Per tradurre il nostro schema IFML in qualcosa che mi esprima il come le varie cose verranno fatte, passiamo per l'architettura web-tier e Business and data tier. Il processo è molto facile e dobbiamo solo occuparci di definire gli oggetti di modello (beans), i DAO (data access object, avremo tipicamente un DAO per ogni entità, in più dovremmo analizzare i metodi che ogni DAO deve avere), i controllori (servlet, sono gli eventi) e le viste (template, sono le pagine dell'applicazione).\newline
+\newline
+Per quanto riguarda il codice effettivo da scrivere su carta all'esame, il professore richiede solo tre cose: per primo tutti i metodi dei DAO, cioè il professore vuole vedere tutto ciò che è legato all'SQL nella nostra applicazione, in più viene solitamente richiesta la stesura di un controllore e di una vista.\newline
+\newline
+Gli eventi vengono spesso facilmente analizzati con diagrammi di sequenza. Ogni evento a il suo diagramma di sequenza.\newline
+E' buona abitudine chiamare eventi che riguardano la restituzione di una vista con il nome "/GoToNomeDellaPagina" (non è un obbligo\dots).\newline
+Questi diagrammi non trattano la gestione degli errori. Solitamente si fanno più diagrammi, quelli per scenari regolari e quelli per i casi di errore.
+\subsection{Esercizio post management}
+Lo scopo di questo secondo esercizio è quello di mostrare un'esercizio i cui requirements sono meno chiari e la cui implementazione è scritta "meno bene" di quella prima.\newline
+\newline
+Anche per questo esercizio è possibile reperire tutto il materiale necessario su Beep.\newline
+\newline
