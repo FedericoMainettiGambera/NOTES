@@ -75,7 +75,6 @@ TECNOLOGIE INFORMATICHE PER IL WEB
     -lezioni viste:     7
 -----------------------------------------------------------------------------------------------------
 TODO:
-    -guardare video su servlet JDBC
 
 
 
