@@ -3,3 +3,36 @@
 \section*{Prerequisiti}
 Templating con Thymeleaf
 \section{Thymeleaf}
+Perchè è nato Thymeleaf? Fin'ora abbiamo visto metodi di templating che o utilizzano codice Java o utilizzano tag attivi, in entrambi i casi il file html non è interpretabile da un web browser o da un editor di html, e perciò un grafico non può fare una preview di uno di questi file. Thymeleaf cerca di risolvere questo problema eliminando completamente tutto ciò che non è html e che quindi complica il coordinamento fra un grafico e un programmatore.\newline
+Vengono eliminati quindi i tag custom e introdotto il concetto di presentazione duale, cioè che il grafico possa aprire il file (offline) e abbia una resa visiva reale dell'interfaccia utente con contenuti statici e, allo stesso tempo, il programmatore possa aprire il file nell'application server e abbia anche lui una resa reale ma con contenuto dinamico.\newline
+\newline
+Thymeleaf è una soluzione pratica e intelligente che permette al grafico e al programmatore di lavorare separatamente ma in maniera coordianta.\newline
+\newline
+Thymeleaf ha solo un difetto, cioè che non è perfettamente integrato all'interno del ciclo di vita delle Servlet, come vedremo thymeleaf è un sistema esterno (come i DB) che rappresenta un processore di tempalte.\newline
+\newline
+Thymeleaf può raggiungere elevate prestazione tramite il parsed tempalte caching (da notare è che il caching è molto forto e può capitare che, a seguito di una modifica di un template, l'interfaccia non venga aggiornata, in questo caso c'è da fare una pulizia manuale della cache su Eclipse e un riavvio di Tomcat).\newline
+\newline
+Thymeleaf si basa su un principio: non inventare custom tag, ma aggiungiamo custom attribute ai tag html che già esistono. Facendo così i browser e gli editor html ingorano questi attributi (gli interpreti di html sono programmati per ignorare tutti quegli attributi che non sono standard) e lavorano solo sul contenuto html.\newline
+Nel template possiamo inserire i tag html, definire tutti gli aspetti della presentazione e poi aggiugnere degli attributi thymeleaf che non hanno alcuna influenza sulla presentazione. Così grafico e programmatore possono lavorare sullo stesso template senza intralciarsi. Il contenuto dinamico dei template è confinato negli attributi dei tag html.\newline
+\newline
+Un template thymeleaf è una pura pagina html, con la diciarazione di un insieme di attributi specifici "th".\newline
+\newline
+Il concetto più importante di thymeleaf è la sua dualità (nello stesso template c'è sia contenuto statico sia contenuto dinamico) che permette il coordinamento fra grafico e programmatore.\newline
+\newline
+Uno svantaggio di thymeleaf è che, essendo un sistema esterno, deve essere avviato e poi essere utilizzato.\newline
+Per avviarlo usiamo una metodologia molto simile a quella che usiamo per l'altro sistema esterno, i DataBase. Notiamo che il metodo che presentiamo non è il più ottimale, ma è semplice (non affrontiamo il metodo migliore per una questione di crediti del corso). Nella funzione init() della servlet ci sono istruzioni che creano un oggetto tecnico "new TemplateEngine()", che è l'ingresso che la nostra applicazione ha con il processore di template thymeleaf. Una volta creato e salvato nella servlet (come facciamo pure per le connessioni ai data base), si customiza il TemplateEngine chiamando certi metodi con certi parametri.\newline
+Ora che abbiamo avviato il TemplateEngine, per usarlo non possiamo usare il metodo forward (perchè è un metodo che fa parte del ciclo di vita delle Servlet, mentre thymeleaf è un processo esterno), come per JSP. L'istruzione forward è sostituita da tre righe di codice (vedi slide) che rappresentano la creazione di un contesto per thymeleaf, ci mettiamo i contenuti dei modelli, e invece di forward usiamo il metodo process.\newline
+\newline
+Thymeleaf ha tre famiglie di espressioni:
+\begin{itemize}
+    \item message expression: stampa le etichette, cioè le stringhe "fisse", che però in thymeleaf non sono mai fisse, perchè sono internazionalizzate per default (anche se si ha una lingua sola). Quindi tutte le stringhe base non sono mai scritte sul file html, vanno etichettate e sarà thymeleaf a inserircele.
+    \item variable expression: per accedere agli oggetti del model o agli oggetti predefiniti
+    \item link url expression: per costruire gli url
+\end{itemize}
+Le espressioni usano gli operatori standard.\newline
+\newline
+Thymeleaf fornisce prefabbricati, ugetti di utilità di ogni tipo e strumenti molto comodi detti convertitori (ci lascia questo argomento da esplorare autonomamente).\newline
+\newline
+Gli attributi più usati su thymeleaf (vedi slide): th:text=; th:href=; th:class=; th:remove. \newline
+\newline
+Si possono mescolare attributi thymeleaf che cambiano il contenuto di un tag (es. th:text) o attributi thymeleaf che cambiano il valore di un altro attributo (es. th:href o th:class) con espressioni condizionali, looping e altro ancora. Si ha un potere di espressione massimo in una soluzione estremamente concisa.

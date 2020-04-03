@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex master.idx"] 1585831970 "master.idx" "master.ind" "master" 1585873653
-  "master.idx" 1585873652 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1585879305 "master.idx" "master.ind" "master" 1585879527
+  "master.idx" 1585879526 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "master.ilg"
   "master.ind"
-["pdflatex"] 1585873651 "c:/Users/enric/Desktop/NOTES/WEBTECH/master/master.tex" "c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.pdf" "master" 1585873653
+  "master.ilg"
+["pdflatex"] 1585879524 "c:/Users/enric/Desktop/NOTES/WEBTECH/master/master.tex" "c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.pdf" "master" 1585879527
   "../../preamble/preamble.tex" 1585369086 707 ea9409653390c911ff58e23c44f6605e ""
   "../lezione1/lezione1.tex" 1585826282 6049 b18d5b40d85c0a95ba4785e1ac119fd7 ""
   "../lezione2/lezione2.tex" 1584905689 5831 5664b762e4f7053639bf1959f8723422 ""
@@ -12,7 +12,7 @@
   "../lezione4/lezione4.tex" 1585282529 7090 1e6cd2b95bdcbcb57b9cf8aada3cf037 ""
   "../lezione5/lezione5.tex" 1585831994 9068 f8a53a8cc9b7c43fd1e98557558c44fd ""
   "../lezione6/lezione6.tex" 1585855222 4115 f1b82b785979f70f3fdd76de00207cfa ""
-  "../lezione7/lezione7.tex" 1585873649 141 8ffa3ab54499336875d04434f5c2d1d1 ""
+  "../lezione7/lezione7.tex" 1585879522 5208 2066dba566a687c68df95c085b804900 ""
   "c:/Users/enric/Desktop/NOTES/WEBTECH/master/master.tex" 1585873628 556 9fc902db24ba5561a2e2fc2c331396a7 ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1584035588 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1584038501 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -181,18 +181,18 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1584048551 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1584049042 8274593 951864db8bcab083c09dd09dcef78fa9 ""
   "c:/texlive/2019/texmf.cnf" 1584048406 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.aux" 1585873653 2297 e0f229b278772ad1e6ef1b116afc7e71 ""
-  "master.aux" 1585873653 2297 e0f229b278772ad1e6ef1b116afc7e71 "pdflatex"
-  "master.ind" 1585831971 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1585873653 736 eefd331eb385e232a64d65771ff61f3e "pdflatex"
+  "c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.aux" 1585879526 2297 e0f229b278772ad1e6ef1b116afc7e71 ""
+  "master.aux" 1585879526 2297 e0f229b278772ad1e6ef1b116afc7e71 "pdflatex"
+  "master.ind" 1585879306 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
+  "master.out" 1585879526 736 eefd331eb385e232a64d65771ff61f3e "pdflatex"
   "master.tex" 1585873628 556 9fc902db24ba5561a2e2fc2c331396a7 ""
-  "master.toc" 1585873653 1038 c2dd10411c5cb4f2491a95a5fa1e7856 "pdflatex"
+  "master.toc" 1585879526 1038 c2dd10411c5cb4f2491a95a5fa1e7856 "pdflatex"
   (generated)
-  "master.idx"
   "master.log"
+  "master.pdf"
+  "master.idx"
   "c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.pdf"
+  "master.out"
+  "c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.log"
   "master.aux"
   "master.toc"
-  "master.pdf"
-  "c:\Users\enric\Desktop\NOTES\WEBTECH\master/master.log"
-  "master.out"
