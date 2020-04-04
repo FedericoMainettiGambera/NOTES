@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  4 APR 2020 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  5 APR 2020 00:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -649,46 +649,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--17
 
  []
 
-
-Overfull \hbox (14.8003pt too wide) in paragraph at lines 19--17
-\OT1/cmss/bx/n/10 link []$\OT1/cmtt/m/n/10 https : / / polimi365-[]my . sharepoint . com/ : v : /r / personal / 10304796 _ polimi _ it / Documents /
- []
-
-
-Overfull \hbox (12.80013pt too wide) in paragraph at lines 19--17
-\OT1/cmtt/m/n/10 FisicaTecnica2019-[]2020 _ INF / Video % 20Esercitazioni / E01-[]01 % 20FISICA % 20TECNICA . mp4 ? csf =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--17
-
- []
-
-
-Overfull \hbox (14.8003pt too wide) in paragraph at lines 19--17
-\OT1/cmss/bx/n/10 link []$\OT1/cmtt/m/n/10 https : / / polimi365-[]my . sharepoint . com/ : v : /r / personal / 10304796 _ polimi _ it / Documents /
- []
-
-
-Overfull \hbox (12.80013pt too wide) in paragraph at lines 19--17
-\OT1/cmtt/m/n/10 FisicaTecnica2019-[]2020 _ INF / Video % 20Esercitazioni / E01-[]07 % 20FISICA % 20TECNICA . flv ? csf =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--17
-
- []
-
 [11] (c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/../lezione7/lezione7.tex
 Overfull \hbox (16.3003pt too wide) in paragraph at lines 2--8
 \OT1/cmss/bx/n/10 link []$\OT1/cmtt/m/n/10 https : / / web . microsoftstream . com / video / 6f329227-[]8dc1-[]435c-[]92d7-[]6395a6a4a586 ? list =
@@ -715,57 +675,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--8
  []
 
 ) [12] (c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/../lezione8/lezione8.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--8
-
+Overfull \hbox (14.8003pt too wide) in paragraph at lines 2--3
+\OT1/cmss/bx/n/10 link []$\OT1/cmtt/m/n/10 https : / / polimi365-[]my . sharepoint . com/ : v : /r / personal / 10304796 _ polimi _ it / Documents /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--14
-
+Overfull \hbox (12.80013pt too wide) in paragraph at lines 2--3
+\OT1/cmtt/m/n/10 FisicaTecnica2019-[]2020 _ INF / Video % 20Esercitazioni / E02 % 20-[] % 20GUEDON % 20GAEL % 20RAYMOND %
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
-
- []
-
-
-Overfull \hbox (14.8003pt too wide) in paragraph at lines 19--21
-\OT1/cmss/bx/n/10 link []$\OT1/cmtt/m/n/10 https : / / polimi365-[]my . sharepoint . com/ : v : /r / personal / 10304796 _ polimi _ it / Documents /
- []
-
-
-Overfull \hbox (12.80013pt too wide) in paragraph at lines 19--21
-\OT1/cmtt/m/n/10 FisicaTecnica2019-[]2020 _ INF / Video % 20Esercitazioni / E01-[]01 % 20FISICA % 20TECNICA . mp4 ? csf =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
-
- []
-
-
-Overfull \hbox (14.8003pt too wide) in paragraph at lines 19--21
-\OT1/cmss/bx/n/10 link []$\OT1/cmtt/m/n/10 https : / / polimi365-[]my . sharepoint . com/ : v : /r / personal / 10304796 _ polimi _ it / Documents /
- []
-
-
-Overfull \hbox (12.80013pt too wide) in paragraph at lines 19--21
-\OT1/cmtt/m/n/10 FisicaTecnica2019-[]2020 _ INF / Video % 20Esercitazioni / E01-[]07 % 20FISICA % 20TECNICA . flv ? csf =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+Underfull \hbox (badness 10000) in paragraph at lines 4--21
 
  []
 
@@ -779,18 +699,18 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18204 strings out of 480994
- 333331 string characters out of 5916032
- 610718 words of memory out of 5000000
+ 18203 strings out of 480994
+ 333320 string characters out of 5916032
+ 610717 words of memory out of 5000000
  33244 multiletter control sequences out of 15000+600000
  541898 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,77p,1384b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf" (13 pages, 197505 bytes).
+Output written on "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf" (13 pages, 195796 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
