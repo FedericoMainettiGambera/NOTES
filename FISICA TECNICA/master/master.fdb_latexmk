@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex master.idx"] 1586014153 "master.idx" "master.ind" "master" 1586041148
+["makeindex master.idx"] 1586014153 "master.idx" "master.ind" "master" 1586041334
   "master.idx" 1586041147 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "master.ilg"
   "master.ind"
-["pdflatex"] 1586041146 "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf" "master" 1586041148
+  "master.ilg"
+["pdflatex"] 1586041146 "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf" "master" 1586041334
   "../../preamble/preamble.tex" 1585369086 707 ea9409653390c911ff58e23c44f6605e ""
   "../lezione1/lezione1.tex" 1585369908 3659 2c6ce9686e7625e156b89558480e4741 ""
   "../lezione2/lezione2.tex" 1584850758 5381 8b48ff910bd8165724d4c836d1088010 ""
@@ -198,10 +198,10 @@
   "master.out" 1586041148 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "master.tex" 1586013202 550 d86b35f0aa54223b8ab925a9c5e2cbaf ""
   (generated)
-  "master.pdf"
+  "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf"
+  "master.out"
   "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.log"
   "master.aux"
-  "master.out"
-  "c:\Users\enric\Desktop\NOTES\FISICA TECNICA\master/master.pdf"
-  "master.log"
   "master.idx"
+  "master.log"
+  "master.pdf"
