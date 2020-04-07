@@ -36,9 +36,15 @@
 \BOOKMARK [3][-]{subsubsection.5.2.1}{Tabella di Routh}{subsection.5.2}% 36
 \BOOKMARK [3][-]{subsubsection.5.2.2}{Criterio di Routh}{subsection.5.2}% 37
 \BOOKMARK [3][-]{subsubsection.5.2.3}{Esempi}{subsection.5.2}% 38
-\BOOKMARK [1][-]{section.6}{}{}% 39
-\BOOKMARK [1][-]{section.7}{}{}% 40
-\BOOKMARK [1][-]{section.8}{}{}% 41
-\BOOKMARK [1][-]{section.9}{}{}% 42
-\BOOKMARK [1][-]{section.10}{}{}% 43
-\BOOKMARK [1][-]{section.11}{}{}% 44
+\BOOKMARK [1][-]{section.6}{Segnali e trasformate}{}% 39
+\BOOKMARK [2][-]{subsection.6.1}{Serie di Fourier}{section.6}% 40
+\BOOKMARK [2][-]{subsection.6.2}{Trasformata di Fourier}{section.6}% 41
+\BOOKMARK [2][-]{subsection.6.3}{Trasformata di Laplace}{section.6}% 42
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Esempi}{subsection.6.3}% 43
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Propriet\340 della trasformata di Laplace}{subsection.6.3}% 44
+\BOOKMARK [1][-]{section.7}{}{}% 45
+\BOOKMARK [1][-]{section.8}{}{}% 46
+\BOOKMARK [1][-]{section.9}{}{}% 47
+\BOOKMARK [1][-]{section.10}{}{}% 48
+\BOOKMARK [1][-]{section.11}{}{}% 49
+\BOOKMARK [1][-]{section.12}{}{}% 50

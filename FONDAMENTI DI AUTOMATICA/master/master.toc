@@ -38,9 +38,15 @@
 \contentsline {subsubsection}{\numberline {5.2.1}Tabella di Routh}{19}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}Criterio di Routh}{20}{subsubsection.5.2.2}%
 \contentsline {subsubsection}{\numberline {5.2.3}Esempi}{20}{subsubsection.5.2.3}%
-\contentsline {section}{\numberline {6}}{21}{section.6}%
-\contentsline {section}{\numberline {7}}{22}{section.7}%
-\contentsline {section}{\numberline {8}}{23}{section.8}%
-\contentsline {section}{\numberline {9}}{24}{section.9}%
-\contentsline {section}{\numberline {10}}{25}{section.10}%
-\contentsline {section}{\numberline {11}}{26}{section.11}%
+\contentsline {section}{\numberline {6}Segnali e trasformate}{21}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Serie di Fourier}{21}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Trasformata di Fourier}{21}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Trasformata di Laplace}{21}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Esempi}{22}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Proprietà della trasformata di Laplace}{22}{subsubsection.6.3.2}%
+\contentsline {section}{\numberline {7}}{23}{section.7}%
+\contentsline {section}{\numberline {8}}{24}{section.8}%
+\contentsline {section}{\numberline {9}}{25}{section.9}%
+\contentsline {section}{\numberline {10}}{26}{section.10}%
+\contentsline {section}{\numberline {11}}{27}{section.11}%
+\contentsline {section}{\numberline {12}}{28}{section.12}%

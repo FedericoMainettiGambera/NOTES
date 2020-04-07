@@ -116,3 +116,76 @@ Disequazioni per imporre che i termini della prima colonna siano concordi:
         k>2h
     \end{cases} \text{ricordando che} \; k>0 \;\text{e}\;h>0
 \]
+\newpage
+\section{Segnali e trasformate}
+Consideriamo un sistema $S$ dinamico LTI a TC (SISO), con un ingresso $u$ e un'uscita $y$.\newline
+\newline
+[immagine dagli appunti del prof]\newline
+\newline
+\textbf{Dominio del tempo}: fra il segnale $u(t)$ (la causa) e il segnale $y(t)$ (effetto) per noi c'è un legame differenziale ($u(t) \rightarrow y(t)$). Ciò che attribuisce a un sistema il carattere dinamico è la presenza di equazioni differenziali. Nel dominio del tempo abbiamo $t,u,y \in \mathbb{R}$\newline
+\newline
+\textbf{Dominio delle trasformate}: Supponiamo di poter associare a $u(t)$ del dominio del tempo, con un operazione che chiamiamo "trasformazione", un'altra funzione $U(s)$ del dominio delle trasformate ($u(t) \rightarrow U(s)$), dove $U$ è una funzione e $s$ è una variabile complessa. Facciamo la medesima cosa, ma con verso opposto, con $Y(s)\rightarrow y(t)$, dove questa operazione prende il nome di "antitrasformazione". Nel dominio delle trasformate abbiamo $s, U ,Y \in \mathbb{C}$.\newline
+Date queste premesse, il legame fra $U(s)$ e $Y(s)$, il cui corrispondente nel dominio del tempo è differenziale , nel dominio delle trasformate è di tipo algebrico ($U(s) \rightarrow  Y(s)$).
+\subsection{Serie di Fourier}
+Dato un segnale $v(t)$ periodico di periodo $T$, posso esprimerlo come 
+\[
+    v(t)= v_0 + \sum_{k=1}^{\infty} v_k sin(k \omega_0 t + \phi_k)
+\]
+dove $\omega_0 = \frac{2\pi}{T}$. Questo significa che posso esprimere un segnale periodico come somma di infinite (infinito numerabile) sinusoidi di frequenze multiple di una fondamentale ($\omega_0$, di periodo $T$).
+\subsection{Trasformata di Fourier}
+Dato un segnale $v(t)$ definito su tutto $\mathbb{R}$ (non necessariamente periodico), chiamiamo la sua trasformata di Fourier come 
+\[
+    V(j \omega) = \mathcal{F}[v(t)] = \int_{-\infty}^{+\infty} v(t) e^{-j \omega t} dt \;\;\;\;\;\text{(se esiste)}\;
+\]
+L'antitrasformata di Fourier, invece, è
+\[
+    v(t) = \mathcal{F}^{-1}[V(j \omega)] = \frac{1}{2\pi j} \int_{-\infty}^{+\infty} V(j \omega) e^{j \omega t} d \omega
+\]
+\textbf{oss.} una trasformata è definita dal suo nucleo, che è $e^{-j \omega t}$.\newline
+\textbf{oss.} l'antitrasformata è un integrale sulla variabile $\omega$. L'integrale è stato introdotto ad analisi con le somme integrali (per calcolare l'area sottesa a una funzione, si fanno i rettangolini e si sommano, poi si fa tendere la dimensione dei rettangolini a zero, etc). Immaginiamo, con la metafora dei rettangolini, di fare tanti rettangolini dell'asse della nostra variabile $\omega$, prendiamo uno di questi rettangolini e il suo contributo a $v(t)$ nell'antitrasformata è $e^{j \omega t}$ moltiplicata per un numero complesso $V(j \omega )$. Il termine $e^{j \omega t}$, il nostro nucleo, può avere due aspetti, se $\omega= 0$ è una costante, altrimenti è una sinusoide (ricordando che è un numero complesso e può essere espresso come somma di seni e coseni). Ora prendiamo il caso in cui il nucleo è una sinusoide, moltiplicarla per un numero complesso $V(j \omega)$ significa attenuarla o amplificarla (modulo) e sfasarla (argomento). Quindi noi per ricostruire $v(t)$ con l'antitrasformata devo sommare infinite sinusoidi, ognuna delle quali caratterizzate da una propria ampiezza e una propria fase indicata dal valore di $V(j \omega)$, \textbf{cioè $V(j \omega)$ ci dice quanto pesa ogni frequenza in $v(t)$}. In questo caso $v(t)$ è somma di infinte (infinito del continuo) sinusoidi.
+\subsection{Trasformata di Laplace}
+Dato un segnale $v(t)$ definito per $t\geq 0$ (o equivalentemente nullo per $t < 0$), definiamo trasformata di Laplace come
+\[
+    V(s) = \mathcal{L}[v(t)] = \int_{0}^{\infty} v(t) e^{-st}dt
+\]
+con $s,V \in \mathbb{C}$.\newline
+L'antitrasformata di Laplace, invece, è
+\[
+    v(t) = \mathcal{L}[V(s)] = \frac{1}{2\pi j} \int_{\alpha + j \infty}^{\alpha - j \infty} V(s) e^{st}ds
+\]
+dove gli estremi dell'integrale rappresentano il fatto che quanto integriamo rispetto a una variabile complessa ($s$) dobbiamo specificare su quale linea si muove la variabile (spiegato molto "alla buona", non dare peso a questo fatto): la variabile di integrazione $s$ si muove su una retta parallela all'asse immaginario di parte reale (ascissa) $\alpha$, andando con la sua parte immaginaria (ordinata) da $- \infty$ a $+ \infty$.\newline
+\textbf{oss.} Abbiamo che il nucleo è $e^{st} = e^{()\alpha + j \omega) t} = e^{\alpha t} (cos(\omega t) + j sin(\omega t))$. I segnali con questa forma sono, non solo le costanti e le sinusoidi (come nel caso del nucleo di Fourier), ma anche le sinusoidi che si smorzano, le sinusoidi che divergono, i segnali che esponenzialmente divergono, i segnali che esponenzialmente convergono. I segnali che si lasciano trasformare secondo Fourier, sono i segnali che si lasciano ricostruire per mezzo di una somma infinita di segnali che partono dal nucleo $e^{j \omega t}$, cioè costanti e sinusoidi, moltiplicato per un numero complesso $V(j \omega)$, cioè amplificate o attenuate e sfasate; i segnali che si lasciano trasformare secondo Laplace, sono molti di più, perchè il nucleo di partenza $e^{st}$ rappresenta un insieme di segnali molto più grande. Tutti i segnali trasformabili secondo Fourier sono trasformabili anche secondo Laplace, ma non vale il viceversa.
+\subsubsection{Esempi}
+Vediamo tre trasformate di Laplace notevoli (da imparare a memoria, perchè saranno molto frequenti).\newline
+\newline
+\textbf{es.} $v(t) = sca(t) := \begin{cases}
+    1 \;\;\;\; &t\geq\\ 0 &t<0 
+\end{cases}$, la trasformata di Laplace è
+\[
+    \mathcal{L}[sca(t)] = \int_{0}^{\infty} sca(t)e^{-st} dt = \int_{0}^{\infty} 1 \cdot e^{-st}dt = \left[\frac{e^{-st}}{-s}\right]_0^\infty = 0 - \frac{1}{-s} = \frac{1}{s}
+\]
+\textbf{es.} $v(t) = imp(t) := \begin{cases}
+    imp(t)=0 \;\;\;&\forall\;t \neq 0\\
+    \int_{-\infty}^{\infty}imp(t) dt =1
+\end{cases}$\newline
+[immagine dagli appunti del prof]\newline
+La trasformata di Laplace è
+\[
+    \mathcal{L}[imp(t)] = \lim_{\epsilon\rightarrow 0} \mathcal{L}[f_\epsilon(t)] = \lim_{\epsilon\rightarrow 0}\int_{0}^{\infty}f_\epsilon (t) e^{-st} dt = \lim_{\epsilon\rightarrow 0}\int_{0}^{\epsilon}\frac{1}{\epsilon}e^{-st}dt =
+\]
+\[
+    = \lim_{\epsilon\rightarrow 0}\left[\frac{e^{-st}}{-s\epsilon}\right]_0^\epsilon = \lim_{\epsilon\rightarrow 0}\left( \frac{e^{-s\epsilon}}{-s\epsilon}- \frac{1}{-s\epsilon} \right) = \lim_{\epsilon\rightarrow 0} \frac{1- e^{-s \epsilon}}{s\epsilon} = [F.I., Hopital] = \lim_{\epsilon\rightarrow 0}\frac{\cancel{s}e^{-s\epsilon}}{\cancel{s}} = 1
+\]
+\textbf{es.} $v(t) = e^{at}$ per $t\geq 0$ o equivalentemente $v(t) = e^{at} sca(t)$, la trasformata di laplace è
+\[
+    \mathcal{L}[e^{at} sca(t)] = \int_{0}^{\infty}e^{at}e^{-st}dt = \int_{0}^{\infty}e^{(a-s)t}dt = \left[\frac{e^{(a-s)t}}{a-s}\right]_0^\infty = \frac{1}{s-a} \;\;\;\text{se $Re(a-s)<0$, cioè $Re(s)>a$}\;
+\]
+\rule{\textwidth}{0,4pt}\newline
+\textbf{Riassunto dei concetti chiave introdotti}:
+\begin{itemize}
+    \item Le trasformate sono strumenti che legano biunivocamente sengali nel tempo a funzioni complesse di variabile complessa.
+    \item Le trasformate di Fourier interpretano un segnale come somma di infinite sinusoidi, invece le trasformate di Laplace non considera sinusoidi, ma delle esponenziali complesse (categoria nella quale rientrano anche le sinusoidi).
+\end{itemize}
+\rule{\textwidth}{0,4pt}\newline
+\subsubsection{Proprietà della trasformata di Laplace}
+\textbf{Time stamp: 2:14:16} sono stanco sorry fede del futuro
