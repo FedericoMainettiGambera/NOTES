@@ -3,7 +3,36 @@
 \subsection{Teorema del valore iniziale}
 \[
     V(s) = \mathcal{L}[v(t)] \Longrightarrow v(0) = \lim_{s\rightarrow \infty}s V(s)
-\] dove possiamo usare $v(0^+)$ se $v$ è discontinua in $0$.\newline
+\] 
+dove possiamo usare $v(0^+)$ se $v$ è discontinua in $0$.\newline
 \newline
-\textbf{es.} dato $v(t) = sca(t)$, la sua trsformata è $V(s) = \frac{1}{s}$ e $v(0^+) = 1$ perchè $\lim_{s\rightarrow \infty}s \cdot \frac{1}{s} = 1$.\newline
+\textbf{es.} dato $v(t) = sca(t)$, la sua trsformata è $V(s) = \frac{1}{s}$ e $v(0^+) = 1$ perchè $\lim_{s\rightarrow \infty}s \cdot \frac{1}{s} = 1$.
+\subsection{Teorema del valore finale}
+\[
+    V(s) = \mathcal{L}[v(t)] \Longrightarrow \text{se esiste}\; \lim_{t\rightarrow \infty} v(t) \text{, allora}\;\lim_{t\rightarrow \infty} v(t) = \lim_{s\rightarrow 0}sV(s)
+\]
+\subsection{Trasformate di Laplace notevoli}
+\renewcommand{\arraystretch}{2}
+\begin{center}
+    \begin{tabular}{ |c|c| } 
+     \hline
+     \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$v(t)$ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;& \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$V(s)$ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\\ 
+     \hline
+     $imp(t)$ & $1$ \\ 
+     $sca(t)$ & $\frac{1}{s}$  \\ 
+     $ram(t) = t \cdot  sca(t)$ & $\frac{1}{s^2}$ \\
+     $e^{at}sca(t)$ & $\frac{1}{s-a}$ \\ 
+     $t^{n}\cdot e^{at}sca(t)$ & $\frac{n!}{(s-a)^{n+1}}$\\ 
+     \hline
+    \end{tabular}
+\end{center}
+Da notare è che la rampa è l'integrale dello scalino, che a sua volta è l'integrale dell'impulso.\newline
+Queste prime tre trasformate prendono il nome di segnali canonici, e sono tutte quelle trasformate di Laplace che valgono $\frac{1}{s^n}$.\newline
+Notiamo che segnali come trigonometrici sono rappresentabili come esponenziali complessi, come $sin(\omega t) = \frac{e^{j \omega t}- e^{-j \omega t}}{2j} \dots$ e così possiamo ricavare le trasformate di Laplace di tutte le funzioni trigonometriche.
+\subsection{Antitrasformazione $\mathcal{L^{-1}}$ secondo Heaviside}
+Questo metodo vale per trasformate di Laplace razionali fratte, cioè trasformate che possono essere scritte come
+\[
+    V(s) = \frac{N(s)}{D(s)}
+\] dove $N, D$ sono polinomi in $s$, inoltre il grado di $N$ e sempre minore o uguale del grado di $D$.\newline
 \newline
+Il meccanismo di antitrasformazione di Heaviside consiste nella scomposizione di $V(s)$.

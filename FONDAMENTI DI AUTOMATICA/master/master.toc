@@ -45,6 +45,9 @@
 \contentsline {subsubsection}{\numberline {6.3.1}Esempi}{22}{subsubsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.2}Proprietà della trasformata di Laplace}{23}{subsubsection.6.3.2}%
 \contentsline {subsection}{\numberline {6.4}Teorema del valore iniziale}{24}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Teorema del valore finale}{24}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Trasformate di Laplace notevoli}{24}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Antitrasformazione $\mathcal {L^{-1}}$ secondo Heaviside}{24}{subsection.6.7}%
 \contentsline {section}{\numberline {7}}{25}{section.7}%
 \contentsline {section}{\numberline {8}}{26}{section.8}%
 \contentsline {section}{\numberline {9}}{27}{section.9}%
