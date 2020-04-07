@@ -268,8 +268,8 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-OUTPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.toc
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.toc
 INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione1/lezione1.tex
 INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione1/lezione1.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm

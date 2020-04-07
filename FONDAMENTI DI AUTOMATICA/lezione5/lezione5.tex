@@ -1,4 +1,118 @@
 \title{LEZIONE 5 17/03/2020}\newline
-\textbf{link} \href{https://web.microsoftstream.com/video/72b5f396-c34b-4ff6-8d6e-44bf6832dd2e?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
+\textbf{link} \href{https://web.microsoftstream.com/video/72b5f396-c34b-4ff6-8d6e-44bf6832dd2e?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}\newline
+\newline
 (continuo della lezione scorsa)
-\subsection{}
+\subsection{Esempi}
+\textbf{es.} Prendiamo un polinomio caratteristico $\Pi(s) = 5 s^2 +s$: questo è chiaramente non asintoticamente stabile (c'è una radice nulla).\newline
+\newline
+\textbf{es.} $\Pi(s) = s^3 -s^2 +s +4$: anche questo non è asintoticamente stabile (c'è un coefficiente discorde)\newline
+\newline
+\textbf{es.} $\Pi(s) = s^5 +4 s^3 +3s^2 +s + 5$: anche questo non è asintoticamene stabile (manca il termine $s^4$ che quindi ha coefficiente nullo).\newline
+\newline
+\textbf{es.} $\Pi(s) = s^4 +2s^3+4s^2+s+5$: in questo esempio le condizioni necessarie sono soddisfatte, ma non sappiamo dire se è o meno asintoticamente stabile. Ci serve ora un criterio per stabilire se è asintoticamente stabile.
+\subsection{Routh}
+il criterio di Routh è una condizione necessaria e succificiente per la stabilità asintotica di un SD LTI a TC (l'analogo a TD è il criterio di Jury, ma noi non lo tratteremo).\newline
+\newline
+Il criterio di Routh si basa sulla tabella di Routh che si costruisce a partire dal polinomio caratteristico $\Pi(s)$.
+\subsubsection{Tabella di Routh}
+Definiamo il polinomio caratteristico come
+\[
+    \Pi(s) = a_0s^n + a_1 s^{n-1} + \dots + a_{n-1}s + a_n
+\]
+\textbf{oss.} il polinomio deve avere tutti i termini, altrimenti violiamo una delle condizioni necessarie che abbiamo visto alla lezione scorsa.\newline
+\newline
+La tabella di Routh si costruisce nel seguente modo:
+\begin{itemize}
+    \item Si compilano le prime due righe a "zig-zag" (come mostrato con dalle frecce) con i coefficienti del polinomio.
+    \[
+        \begin{matrix}
+            a_0 & \;\;\;\;\;\; a_2 & \;\;\;\;\;\;\dots\\
+            \;\;\downarrow & \nearrow \;\; \downarrow & \nearrow \;\; \downarrow\\
+            a_1 & \;\;\;\;\;\; a_3 & \;\;\;\;\;\;\dots 
+        \end{matrix}
+    \]
+    \item l'ultima colonna può terminare in due modi:
+    \[
+        \begin{matrix}
+            \dots & a_{n-1}\\
+            \;\\
+            \dots & a_n
+        \end{matrix}\;\;\;\;\;\; \text{oppure}\;\;\;\;\;\; \begin{matrix}
+            \dots &a_n\\
+            \;\\
+            \dots & 0 
+        \end{matrix}
+    \]
+    \item Le righe successive si costruiscono a partire dalle prime due.\newline
+    In totale, considerando anche le prime due righe, ci sono $n+1$ righe.\newline
+    Ogni riga dalla terza in poi dipende dalle due precedenti seguendo una regola:
+    \[
+        \begin{matrix}
+            h_1 & h_2 & h_3 &\dots\\
+            \;\\
+            q_1 & q_2 & q_3 & \dots\\
+            \;\\
+            w_1 & w_2 & w_3 & \dots
+        \end{matrix}
+    \]
+    prese due generiche righe ($h_i$ e $q_i$), la riga successiva ($w_i$) si genera come $w_i = - \frac{1}{q_1} det\left[\begin{matrix}
+        h_1 & h_{i+1} \\
+        q_1 & q_{i+1}
+    \end{matrix}\right]$.\newline
+    Gli elementi mancanti al termine delle righe soprastanti si assumono nulli.
+    \item Se troviamo un elemento nullo in prima colonna, ci si ferma, sicuramente il sistema non è asintoticamente stabile, e siamo in presenza di un caso particolare che non ci permette di calcolare la tabella di Routh.
+\end{itemize}
+\subsubsection{Criterio di Routh}
+Un SD con polinomio caratteristico $\Pi(s)$ è asintoticamente stabile se e solo tutti gli elementi della prima colonna della tabella di Routh sono concordi (e non nulli).\newline
+\newline
+\textbf{Corollario}\newline
+Se non vi sono elementi nulli in prima colonna, allora il numero di inversioni di segno sulla prima colonna è uguale al numero di radici di $\Pi(s)0$ con $Re>0$. [non lo useremo mai questo corollario].
+\subsubsection{Esempi}
+\textbf{es.} $\Pi(s) = s^4 + 2s^3 + 4s^2 + s + 5$: soddisfa le condizioni necessarie, quindi faciamo la tabella di Routh. Siccome $n=4$ la tabella avrà $n+1 = 5$ righe:
+\[
+    \begin{matrix}
+        1 & 4 & 5 \\
+        2 & 1 & 0 \\
+        \alpha & \beta\\
+        \gamma\\
+        \delta
+    \end{matrix} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\alpha = - \frac{1}{2}det\left[\begin{matrix}
+        1&4\\2&1
+    \end{matrix}\right] = \frac{7}{2}
+\]
+\[
+     \beta = - \frac{1}{2}det\left[\begin{matrix}
+        1&5\\2&0
+    \end{matrix}\right]=5 \;\;\;\;\; \gamma= -\frac{1}{\alpha} det \left[\begin{matrix}
+        2&1\\\alpha&\beta
+    \end{matrix}\right] = - \frac{13}{7} \;\;\;\;\; \delta = - \frac{1}{\gamma} det \left[\begin{matrix}
+        \alpha & \beta \\ \gamma &0
+    \end{matrix}\right]
+\]
+Siccome $\gamma$ è discorde, sappiamo che non è asintoticamente stabile.\newline
+Inoltre fra $\alpha$ e $\gamma$ c'è un'inversione di segno e fra $\gamma$ e $\delta$ c'è un'altra inversione di segno. Avendo due inversioni di segno, so che ci sono due radici con $Re > 0$. Da notare che, anche se abbiamo un solo elemento discorde, ci sono due inversioni di segno.\newline
+\newline
+\textbf{es.} Dato il SD LTI a TC con polinomio caratteristico $\Pi(s) = s^3 + 2s^2 + hs +k$, dire per quali valori di $(h,k)$ esso è asintoticamente stabile.\newline
+Deduciamo che dovremo avere $h>0$ e $k>0$ (altrimenti violo una delle condizioni necessarie viste la lezione scorsa). Usiamo ora Rout, l'unico caso in cui si può evitare di usare Routh è se il polinomio caratteristico è di secondo grado.
+\[
+    \begin{matrix}
+        1&h\\
+        2&k\\
+        \alpha\\
+        \beta
+    \end{matrix} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\alpha = - \frac{1}{2}det \left[\begin{matrix}
+        1&h\\2&k
+    \end{matrix}\right] = \frac{2h-k}{2} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \beta = - \frac{1}{\alpha} det \left[\begin{matrix}
+        2 & k \\ \alpha & 0
+    \end{matrix}\right] = k
+\]
+Disequazioni per imporre che i termini della prima colonna siano concordi:
+\[
+    \begin{cases}
+        h - \frac{k}{2}>0\\
+        k>0
+    \end{cases} \Rightarrow \begin{cases}
+        k>0\\
+        k>2h
+    \end{cases} \text{ricordando che} \; k>0 \;\text{e}\;h>0
+\]
