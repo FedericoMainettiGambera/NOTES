@@ -1,7 +1,8 @@
 \title{LEZIONE 4 16/03/2020}\newline
-\textbf{link} \href{https://onedrive.live.com/?authkey=%21AATVJK3srNwxGzs&id=EE092FF4FF7B5B0E%212158&cid=EE092FF4FF7B5B0E}{Link a una registrazione di back up}
 \subsection*{Manca registrazione della lezione}
-[RICOPIO APPUNTI PRESI DALLE SOLE SLIDE DEL PROF]
+[RICOPIO APPUNTI PRESI DALLE SLIDE DEL PROF] \newline
+Trovata registrazione di backup! \newline
+\textbf{link} \href{https://onedrive.live.com/?authkey=%21AATVJK3srNwxGzs&id=EE092FF4FF7B5B0E%212158&cid=EE092FF4FF7B5B0E}{Link a una registrazione di back up}
 \section{Linearizzazione di sistemi dinamico non lineari (SD, NL, SISO, TC) nell'intorno di un equilibrio}
 Consideriamo un sistema dinamico non lineare (TI):
 \[
@@ -180,10 +181,9 @@ $\begin{cases}
 \subsection*{Criteri di stabilità (asintotica) per SD LTI a TC}
 Domanda: data la matrice $A$, posso dire se tutti i suoi autovalori hanno o meno $Re <0$ senza calcolarli?\newline
 \newline
-S', vi sono criteri per dirlo basati sull'ispezione di $A$ o del suo polinomio caratteristico (PC) $\Pi(s) = det (sI-A)$:
+Sì, vi sono criteri per dirlo basati sull'ispezione di $A$ o del suo polinomio caratteristico (PC) $\Pi(s) = det (sI-A)$:
 \begin{itemize}
     \item $det(A) = \Pi_{i=1}^{n}S_i$, dove con $S_i$ si intendono gli autovalori $\Longrightarrow$ se $det(A) = 0$ esiste $S_i = 0$ $\Longrightarrow$ sistema non AS.
     \item $tr(A) = \sum_{i=1}^{n}S_i$ $\Longrightarrow$ se $tr(A) >0$ esiste $S_i$ tale che $Re(S_i) > 0$ $\Longrightarrow$ sistema I.
-    \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è AS), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli.
-    \item \dots
+    \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è AS), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli (n.b. il viceversa vale solo per polinomi del secondo ordine).
 \end{itemize}
