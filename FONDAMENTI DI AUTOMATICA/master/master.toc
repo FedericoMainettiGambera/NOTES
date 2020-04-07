@@ -44,9 +44,9 @@
 \contentsline {subsection}{\numberline {6.3}Trasformata di Laplace}{21}{subsection.6.3}%
 \contentsline {subsubsection}{\numberline {6.3.1}Esempi}{22}{subsubsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.2}Proprietà della trasformata di Laplace}{23}{subsubsection.6.3.2}%
-\contentsline {section}{\numberline {7}}{24}{section.7}%
-\contentsline {section}{\numberline {8}}{25}{section.8}%
-\contentsline {section}{\numberline {9}}{26}{section.9}%
-\contentsline {section}{\numberline {10}}{27}{section.10}%
-\contentsline {section}{\numberline {11}}{28}{section.11}%
-\contentsline {section}{\numberline {12}}{29}{section.12}%
+\contentsline {subsection}{\numberline {6.4}Teorema del valore iniziale}{24}{subsection.6.4}%
+\contentsline {section}{\numberline {7}}{25}{section.7}%
+\contentsline {section}{\numberline {8}}{26}{section.8}%
+\contentsline {section}{\numberline {9}}{27}{section.9}%
+\contentsline {section}{\numberline {10}}{28}{section.10}%
+\contentsline {section}{\numberline {11}}{29}{section.11}%
