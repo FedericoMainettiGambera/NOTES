@@ -425,4 +425,8 @@
 		"prefix": "per",
 		"body": "\\text{x}"
 	},
+	"laplace":{
+		"prefix": "laplace",
+		"body": "\\mathcal{L}[$1]$0"
+	},
 }

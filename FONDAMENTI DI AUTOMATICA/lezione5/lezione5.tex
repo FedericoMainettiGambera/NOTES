@@ -188,4 +188,29 @@ La trasformata di Laplace è
 \end{itemize}
 \rule{\textwidth}{0,4pt}\newline
 \subsubsection{Proprietà della trasformata di Laplace}
-\textbf{Time stamp: 2:14:16} sono stanco sorry fede del futuro, mancano solo 15 minutiiiii\dots
+\begin{itemize}
+    \item La trasformata di Laplace è un operatore lineare:
+    \[
+        \mathcal{L}[\alpha v_1(t) + \beta v_2(t)] = \alpha \mathcal{L}[v_1(t)] + \beta \mathcal{L}[v_2(t)]
+    \]
+    \item Trasformata di Laplace della derivata: 
+    \[
+        \mathcal{L}[\frac{dv(t)}{dt}] = s \mathcal{L}[v(t)]-v(0)
+    \] dove se $v$ è discontinua in $0$ di può usare $0^-$.\newline
+    Questa proprietà fa si che legami differenziali diventino legami algebrici. L'operazione che nel dominio del tempo è la derivata, corrisponde nel dominio delle trasformate a una moltiplicazione per $s$ più un termine $v(0)$.\newline
+    \textbf{es.} $\mathcal{L}[\frac{d}{dt}sca(t)] = s \mathcal{L}[sca(t)] - sca(0^-) = s \frac{1}{s}-0 = 1$.
+    \item Trasformata di laplace dell'intergrale:
+    \[
+        \mathcal{L}[\int_{0}^{t}v(\tau)d \tau] = \frac{1}{s} \mathcal{L}[v(t)]
+    \]
+    L'intergale nel dominio del tempo corrisponde a una divisione per $s$ nel dominio delle trasformate.
+    \item Trasforamta di Laplace di un segnale ritardato:
+    \[
+        \mathcal{L}[v(t-\tau)] = e^{-s \tau} \mathcal{L}[v(t)]
+    \] con $\tau > 0$ detto ritardo.\newline
+    \textbf{dim.} $\mathcal{L}[v(t-\tau)] = \int_{0}^{\infty}v(t-\tau) e^{-st}dt$. Se avessimo scritto $e^{-s(t-\tau)}$ non avremmo applicato correttamente la definizione di trasformata: il termine $e^{-st}dt$ nell'integrale è sempre fatto così, non va modificato mai (errore molto frequente), dobbiamo vedere la trasformata di Laplace come un modulo da compilare fatto così: $\mathcal{L}[\_\_] = \int_{0}^{\infty}\_\_ \; e^{-st}dt$. Continuiamo la dimostrazione con un cambio di variabile $x = t-\tau \Rightarrow \begin{cases}
+        t = x + \tau\\ dt = dx
+    \end{cases} \;\;\;\begin{cases}
+        t=0 \rightarrow x = - \tau\\ t= \infty \rightarrow  x= \infty
+    \end{cases}$, quindi $\int_{0}^{\infty}v(t-\tau) e^{-st}dt = \int_{-\tau}^{\infty} v(x) e^{-s(x+ \tau)}dx = \int_{0}^{\infty}v(x) e^{-sx}e^{-s \tau}dx = e^{-sx}\int_{0}^{\infty}v(x)e^{-sx}dx = e^{-s \tau} \mathcal{L}[v(t)]$.
+\end{itemize}
