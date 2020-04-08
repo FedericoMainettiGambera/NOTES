@@ -60,7 +60,7 @@ Dato il SD LTI SISO a TC
 \[
     \begin{cases}
         \dot{x} = \left[\begin{matrix}
-            -11 & -9 \\ -12 & 10 
+            -11 & 9 \\ -12 & 10 
         \end{matrix}\right]x + \left[\begin{matrix}
             -3\\-3
         \end{matrix}\right] u \\
@@ -82,8 +82,40 @@ determinare
 Autovalori di $A$:
 \[
     det \left[\begin{matrix}
-        s +11 & 9 \\ 12 & s-10
-    \end{matrix}\right] = 0 \;\;\;\;\;\rightarrow \;\;\;\;\; s^2 + s -110 -108 = 0
+        s +11 & -9 \\ 12 & s-10
+    \end{matrix}\right] = 0 \;\;\;\;\;\rightarrow \;\;\;\;\; s^2 + s -110 +108 = 0 \;\;\;\;\; \rightarrow  \;\;\;\;\; s^2 + s -2 = 0
 \]
 Abbiamo una variazione di segno e un autovalore con parte reale positiva, quindi il sistema è instabile.\newline
-\newline
+La risposta a questa domanda termina qua, senza dover calcolare gli autovalori, ma noi proseguiamo coi conti, perchè tanto ci servono per i punti successivi.\newline
+\[
+    s_{1,2} = - \frac{1}{2} \mp \sqrt{\frac{1}{4} + 2} = - \frac{1}{2} \mp \sqrt{\frac{9}{4}} = \begin{cases}
+        -2\\ 1
+    \end{cases}
+\]
+\textbf{Funzione di trasferimento}:
+\[
+    G(s) = c(sI-A)^{-1} b +d = \left[\begin{matrix}
+        2 &1
+    \end{matrix}\right] \left[\begin{matrix}
+        s+11 & -9 \\ 12 & s-10
+    \end{matrix}\right]^{-1} \left[\begin{matrix}
+        -3\\-3
+    \end{matrix}\right] =
+\]
+[per il calcolo della trasposta di una matrice 2x2 basta cambiare di posizione i termini della diagonale principale e invertire i segni dei termini della diagonale opposta]
+\[
+    = \frac{1}{s(+2)(s-1)} \left[\begin{matrix}
+        2 &1
+    \end{matrix}\right] \left[\begin{matrix}
+        s-10 & 9 \\ -12 & s+11
+    \end{matrix}\right] \left[\begin{matrix}
+        -3\\-3
+    \end{matrix}\right] = \frac{1}{s(+2)(s-1)} \left[\begin{matrix}
+        2 & 1
+    \end{matrix}\right] \left[\begin{matrix}
+        -3s+3\\-3s + 3
+    \end{matrix}\right] =
+\]
+\[
+    = \frac{1}{s(+2)(s-1)} (-6s + 6 -3s +3) = \frac{-9s +9}{(s+1)(s-1)} = \frac{-9 \cancel{(s-1)}}{(s+2)\cancel{(s-1)}} = \frac{-9}{s+2}
+\]
