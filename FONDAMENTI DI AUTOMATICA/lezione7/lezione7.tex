@@ -1,3 +1,39 @@
+\newpage
 \title{LEZIONE 7 19/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/2feefb06-11cb-4de4-ac19-dcc5fe175a98?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
-\section{}
+\section{Esercizi di ricapitolazione degli argomenti fino ad ora trattati}
+\subsection{Es. Equilibri e stabilità in un sistema non lineare} Dato il SD NL a TC:
+\[
+    \begin{cases}
+        \dot{x_1} = x_1^3 + x_2 + u\\
+        \dot{x_2} = x_1 e^{x_2}\\
+        y = x_1 (x_2 - u) + u^2
+    \end{cases}
+\]
+Domande:
+\begin{itemize}
+    \item Trovare gli stati e le uscite di equilibrio per $u(t) = \bar{u} = -1$;
+    \item Trovare le stabilità degli equilibri eventualmente trovati al punto precedente.
+\end{itemize}
+\ \newline
+\textbf{Equilibri}:\newline
+essendo a TC, la caratteristica degli equilibri è che le derivate dello stato sono nulle (devono essere ferme)
+\[
+    \bar{x}_1^3 + \bar{x}_2 + \bar{u} = 0
+\]
+\[
+    \bar{x}_1 e^{\bar{x}_2} = 0
+\]
+Con la seconda equazione ricaviamo immediatamente che $\bar{x}_1 = 0$ e con la prima equazione invece ricaviamo che $\bar{x}_2 = - \bar{u}$.\newline
+Quindi per $\bar{u} = -1$ esiste il solo equilibrio 
+$\bar{x} = \left[\begin{matrix}
+    0 \\ 
+    1
+\end{matrix}\right]$.\newline
+\newline
+\textbf{Sistema linearizzato e stabilità degli equilibri}:
+\begin{itemize}
+    \item Sistema linearizzato è asintoticamente stabile, ($\Rightarrow$) allora abbiamo un equilibrio asintoticamente stabile.
+    \item Matrice $A$ del sistema linearizzato con almento un autovalore con parte reale positiva, ($\Rightarrow $) allora equilibrio instabile.\newline
+    \textbf{oss.} un sistema lineare (o linearizzato) può essere instabile anche senza avere autovalore con parte positiva (ricontrolla la teoria per saperne di più).
+\end{itemize}
