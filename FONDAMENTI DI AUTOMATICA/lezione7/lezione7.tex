@@ -2,7 +2,7 @@
 \title{LEZIONE 7 19/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/2feefb06-11cb-4de4-ac19-dcc5fe175a98?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
 \section{Esercizi di ricapitolazione degli argomenti fino ad ora trattati}
-\subsection{Es. Equilibri e stabilità in un sistema non lineare} Dato il SD NL a TC:
+\subsection{Es. Equilibri e stabilità in un sistema non lineare, TDE 06/05/2014 E1} Dato il SD NL a TC:
 \[
     \begin{cases}
         \dot{x_1} = x_1^3 + x_2 + u\\
@@ -30,10 +30,60 @@ $\bar{x} = \left[\begin{matrix}
     0 \\ 
     1
 \end{matrix}\right]$.\newline
+Stato dell'uscita d'equilibrio:
+\[
+    \bar{y} = \bar{x} (\bar{x}_2 - \bar{u}) + \bar{u}^2 = 1
+\]
 \newline
-\textbf{Sistema linearizzato e stabilità degli equilibri}:
+\textbf{Sistema linearizzato e stabilità degli equilibri}:\newline
+Ripasso dei criteri:
 \begin{itemize}
     \item Sistema linearizzato è asintoticamente stabile, ($\Rightarrow$) allora abbiamo un equilibrio asintoticamente stabile.
     \item Matrice $A$ del sistema linearizzato con almento un autovalore con parte reale positiva, ($\Rightarrow $) allora equilibrio instabile.\newline
     \textbf{oss.} un sistema lineare (o linearizzato) può essere instabile anche senza avere autovalore con parte positiva (ricontrolla la teoria per saperne di più).
+    \item Altrimenti non si può dire nulla, può essere qualunque cosa.
 \end{itemize}
+Applichiamo questi criteri:\newline
+Calcoliamo $f_x = \left[\begin{matrix}
+    3x_1^2 & 1 \\
+    e^{x_2} & x_1 e^{x_2}
+\end{matrix}\right]$. \newline
+Nell'equilibrio $f_x |_{\bar{x}, \bar{u}}=  [\bar{x}_1 = 0, \bar{x}_2 = 1, \bar{u} = -1] = \left[\begin{matrix}
+    0 & 1 \\ e & 0
+\end{matrix}\right]$.\newline
+Autovalori: $\;\;\;\;\;det \left[\begin{matrix}
+    s & -1 \\ -e & s
+\end{matrix}\right] = 0 \;\;\;\;\; \rightarrow  \;\;\;\;\; s^2 - e = 0 \;\;\;\;\;$, quindi abbiamo un autovalore con parte reale positiva e quindi siamo in presenza di un equilibrio instabile.\newline
+\rule{\textwidth}{0,4pt}
+\subsection{Es. , TDE 04/05/2015 E1}
+Dato il SD LTI SISO a TC 
+\[
+    \begin{cases}
+        \dot{x} = \left[\begin{matrix}
+            -11 & -9 \\ -12 & 10 
+        \end{matrix}\right]x + \left[\begin{matrix}
+            -3\\-3
+        \end{matrix}\right] u \\
+        \\
+        y = \left[\begin{matrix}
+            2 &1
+        \end{matrix}\right] x
+    \end{cases}
+\]
+determinare
+\begin{itemize}
+    \item Se è asintoticamente stabile, stabile o instabile;
+    \item la funzione di trasfermineto $G(s)$;
+    \item $y(t)$ prodotto da $x(0) = \left[\begin{matrix}
+        0\\0
+    \end{matrix}\right]$ (cioè solo movimento forzato) e $u(t) = 2 sca(t)$. 
+\end{itemize}
+\textbf{Stabilità}:\newline
+Autovalori di $A$:
+\[
+    det \left[\begin{matrix}
+        s +11 & 9 \\ 12 & s-10
+    \end{matrix}\right] = 0 \;\;\;\;\;\rightarrow \;\;\;\;\; s^2 + s -110 -108 = 0
+\]
+Abbiamo una variazione di segno e un autovalore con parte reale positiva, quindi il sistema è instabile.\newline
+\newline

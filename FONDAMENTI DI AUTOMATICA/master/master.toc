@@ -63,8 +63,9 @@
 \contentsline {subsection}{\numberline {7.2}Calcolo e aspetto di una funzione di trasferimento}{25}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Esempi}{26}{subsection.7.3}%
 \contentsline {section}{\numberline {8}Esercizi di ricapitolazione degli argomenti fino ad ora trattati}{27}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Es. Equilibri e stabilità in un sistema non lineare}{27}{subsection.8.1}%
-\contentsline {section}{\numberline {9}}{28}{section.9}%
-\contentsline {section}{\numberline {10}}{28}{section.10}%
-\contentsline {section}{\numberline {11}}{28}{section.11}%
-\contentsline {section}{\numberline {12}}{28}{section.12}%
+\contentsline {subsection}{\numberline {8.1}Es. Equilibri e stabilità in un sistema non lineare, TDE 06/05/2014 E1}{27}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Es. , TDE 04/05/2015 E1}{27}{subsection.8.2}%
+\contentsline {section}{\numberline {9}}{29}{section.9}%
+\contentsline {section}{\numberline {10}}{29}{section.10}%
+\contentsline {section}{\numberline {11}}{29}{section.11}%
+\contentsline {section}{\numberline {12}}{29}{section.12}%
