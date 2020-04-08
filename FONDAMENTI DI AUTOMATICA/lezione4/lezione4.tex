@@ -1,9 +1,9 @@
+\newpage
 \title{LEZIONE 4 16/03/2020}\newline
-\subsection*{Manca registrazione della lezione}
-[RICOPIO APPUNTI PRESI DALLE SLIDE DEL PROF] \newline
-Trovata registrazione di backup! \newline
+[RICOPIO APPUNTI PRESI DALLE SLIDE DEL PROF, registrazione persa] \newline
+\textbf{Update:} Trovata registrazione di backup! \newline
 \textbf{link} \href{https://onedrive.live.com/?authkey=%21AATVJK3srNwxGzs&id=EE092FF4FF7B5B0E%212158&cid=EE092FF4FF7B5B0E}{Link a una registrazione di back up}
-\section{Linearizzazione di sistemi dinamico non lineari (SD, NL, SISO, TC) nell'intorno di un equilibrio}
+\section{Linearizzazione di sistemi dinamici non lineari (SD, NL, SISO, TC) nell'intorno di un equilibrio}
 Consideriamo un sistema dinamico non lineare (TI):
 \[
     S: \begin{cases}
@@ -62,6 +62,7 @@ con $ \delta u = u - \bar{u}$, $\delta x = x -\bar{x}$, $ \delta y = y - \bar{y}
 [immagine dagli appunti del prof]
 \newpage
 \section{Stabilità}
+\subsection{Equilibrio}
 Il concetto di stabilità si applica solitamente agli equilibri, ma a volta anche a movimenti, e qualche volta ai sistemi.\newline
 \newline
 \textbf{Equilibrio stabile}:\newline
@@ -80,7 +81,7 @@ L'equilibrio deve essere stabile e inoltre deve valere
 \newline
 \textbf{Equilibrio instabile}:\newline
 In tutti gli altri casi.
-\subsection*{Stabilità nei SD LTI a TC}
+\subsection{Stabilità nei SD LTI a TC}
 $\dot{x} = Ax + bu$\newline
 Sia $\bar{x}$ uno stato di eq. per $u = \bar{u}$\newline
 Allora
@@ -117,6 +118,7 @@ $x(t) = e^{at} \Delta \bar{x}$ $\Rightarrow $ $\begin{cases}
     a > 0 \;\;\;\; & x(t) \;\text{diverse}\;\;\;\text{eq- I}\;
 \end{cases}$\newline
 \newline
+\rule{\textwidth}{0,4pt}\newline
 \textbf{Riassunto:}\newline
 Quindi 
 \begin{itemize}
@@ -124,7 +126,8 @@ Quindi
     \item $e^{At}$ diverge per $t \rightarrow  \infty$ $\Longrightarrow$ sistema I (ML di $x$ diverge salvo eccezzioni);
     \item $e^{At}$ non $\rightarrow  0$ e non diverge per $t \rightarrow  \infty$ $\Longrightarrow$ sistema S.
 \end{itemize}
-\subsection*{Proprietà dei SD LTI a TC AS}
+\rule{\textwidth}{0,4pt}
+\subsection{Proprietà dei SD LTI a TC AS}
 \begin{itemize}
     \item i ML di $x$ e di $y$ tendono a $0$ per $t \rightarrow  \infty$, quindi tali SD "dimenticnao lo stato iniziale";
     \item Se 
@@ -136,7 +139,7 @@ Quindi
     \]
     allora per $t \geq \bar{t}$ c'è solo ML e quindi $x,y \rightarrow 0$ per $t \rightarrow \infty$.
 \end{itemize}
-\subsection*{Stabilità di un SD LTI a TC e matrice A}
+\subsection{Stabilità di un SD LTI a TC e matrice A}
 Cosa in cui $A$ è diagonalizzabile (se no vedi più avanti):
 $x_L (t) = e^{At} x(0) = e^{T diag\{\lambda_i\}T^{-1} t}x(0) = T diag\{e^{\lambda_i t}\}T^{-1}x(0)$, dove $x_L(t)$ è ML di $x$, T è la matrice che diagonalizza $A$ e $e^{\lambda_it}$ prende il nome di modi del sistema.\newline
 \newline
@@ -160,13 +163,13 @@ ML $\rightarrow  0$ per ogni $x(0)$ vuol dire che tutti i modi devono tendere a 
         \end{cases}
     \]
 \end{itemize}
-\subsection*{Stabilità e autovalori di $A$}
-TUtti gli autovalori di $A$ hanno $Re <0$ $\Longleftrightarrow$ Sistema AS.\newline
+\subsection{Stabilità e autovalori di $A$}
+Tutti gli autovalori di $A$ hanno $Re <0$ $\Longleftrightarrow$ Sistema AS.\newline
 \newline
 Almeno un autovalore di $A$ ha $Re > 0$ $\Longrightarrow$ Sistema I.\newline
 \newline
 Tutti gli autovalori di $A$ hanno $Re \leq 0$ e ne esiste almeno uno con $Re = 0$ $\Longrightarrow$ Sistema S, ma non AS; oppure sistema I.
-\subsection*{Caso a TD (A diagonalizzabile)}
+\subsection{Caso a TD (A diagonalizzabile)}
 $x_L(k) = A^k x(0)$\newline
 $A^k = (T diag\{\lambda_i\} T^{-1})^k = T diag\{\lambda_i\}\cancel{T^{-1}T} diag\{\lambda_i\} T^{-1} \dots$ (k volte) $= T diag\{\lambda_i^k\}T^{-1}$, dove $\lambda_i^{k}$ sono i modi del sistema.\newline
 \newline
@@ -179,7 +182,7 @@ $\begin{cases}
     |\lambda_i| \leq 1 \;\;\forall\; i\\
     \;\;\exists\;\;i \;\;:\;\;|\lambda_i| = 1 
 \end{cases}$ $\Longrightarrow$ Sistema S, ma non AS; oppure sistema I.
-\subsection*{Criteri di stabilità (asintotica) per SD LTI a TC}
+\subsection{Criteri di stabilità (asintotica) per SD LTI a TC}
 Domanda: data la matrice $A$, posso dire se tutti i suoi autovalori hanno o meno $Re <0$ senza calcolarli?\newline
 \newline
 Sì, vi sono criteri per dirlo basati sull'ispezione di $A$ o del suo polinomio caratteristico (PC) $\Pi(s) = det (sI-A)$:
@@ -188,4 +191,4 @@ Sì, vi sono criteri per dirlo basati sull'ispezione di $A$ o del suo polinomio 
     \item $tr(A) = \sum_{i=1}^{n}S_i$ $\Longrightarrow$ se $tr(A) >0$ esiste $S_i$ tale che $Re(S_i) > 0$ $\Longrightarrow$ sistema I.
     \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è AS), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli (n.b. il viceversa vale solo per polinomi del secondo ordine).
 \end{itemize}
-(continua prossima lezione)
+\ \newline

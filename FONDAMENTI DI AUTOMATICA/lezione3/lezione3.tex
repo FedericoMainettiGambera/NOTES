@@ -72,7 +72,7 @@ Vediamo ora il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariant
 \newline
 Se esiste un $\bar{x}$ (cioè se un sistema ammette un certo stato di equilibrio) per certo $u = \bar{u}$, in generale esiste un \textbf{uscita di equilibrio} $\bar{y} = g(\bar{x}, \bar{u})$.\newline
 \textbf{oss.} Nel caso non lineare $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$
-\subsubsection*{Esempi}
+\subsubsection{Esempi}
 \textbf{es.} Esempio della massa-molla visto la lezione scorsa:\newline
 L'equazione che governa il sistema è $m \ddot{y} = F - ky - h \dot{y}$, con $u = F$, ed eravamo arrivati a dire che $\begin{cases}
     \dot{x}_1 = x_2\\
@@ -175,7 +175,7 @@ con $e^{At}x(0)$ \textbf{movimento libero (ML) dello stato} e $\int_{0}^{t}e^{A(
     y(t) = c e^{At}x(0) + c\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)
 \]
 con $ce^{At}x(0)$ \textbf{movimento libero (ML) dell'uscita} e $\;\; c\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)$ \textbf{movimento forzato (MF) dell'uscita}.
-\subsubsection*{Esponenziale di matrice}
+\subsubsection{Esponenziale di matrice}
 Per sistemi di ordine maggiore di $1$ occorre calcolare l'esponenziale di matrice $e^{At}$, vediamo come fare per il caso in cui $A$ sia diagonalizzabile (altrimenti si usa un altro metodo, ma la incontreremo più avanti):\newline
 Definizioni e concetti importanti:
 \begin{itemize}
@@ -222,7 +222,7 @@ Tornando alla nostra matrice $A$ (diagonalizzabile),
         0 &0 & e^{\lambda_nt}
     \end{matrix}\right]T^{-1}
 \] con $\lambda_i$ autovalore i-esimo di $A$, gli autovalori di $e^{\lambda_it}$ prendono il nome di \textbf{modi del sistema}.
-\subsubsection*{Esempi}
+\subsubsection{Esempi}
 \textbf{es.} Movimento a TC:\newline
 siano\newline
 $\dot{x} = -2x$ (solo ML dello stato) e $x(0) = 4$\newline

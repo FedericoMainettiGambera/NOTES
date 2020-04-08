@@ -24,34 +24,44 @@
 \BOOKMARK [3][-]{subsubsection.3.4.3}{Esempi}{subsection.3.4}% 24
 \BOOKMARK [2][-]{subsection.3.5}{Sistemi dinamici \(SD\) lineari tempo invarianti \(LTI\)}{section.3}% 25
 \BOOKMARK [3][-]{subsubsection.3.5.1}{Equilibrio}{subsection.3.5}% 26
-\BOOKMARK [3][-]{subsubsection.3.5.2}{Movimento}{subsection.3.5}% 27
-\BOOKMARK [1][-]{section.4}{Linearizzazione di sistemi dinamico non lineari \(SD, NL, SISO, TC\) nell'intorno di un equilibrio}{}% 28
-\BOOKMARK [2][-]{subsection.4.1}{Per l'equazione di stato}{section.4}% 29
-\BOOKMARK [2][-]{subsection.4.2}{Per l'equazione d'uscita}{section.4}% 30
-\BOOKMARK [2][-]{subsection.4.3}{Sistema linearizzato nell'intorno dell'equilibrio , , }{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.4}{Interpretazione}{section.4}% 32
-\BOOKMARK [1][-]{section.5}{Stabilit\340}{}% 33
-\BOOKMARK [2][-]{subsection.5.1}{Esempi}{section.5}% 34
-\BOOKMARK [2][-]{subsection.5.2}{Routh}{section.5}% 35
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Tabella di Routh}{subsection.5.2}% 36
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Criterio di Routh}{subsection.5.2}% 37
-\BOOKMARK [3][-]{subsubsection.5.2.3}{Esempi}{subsection.5.2}% 38
-\BOOKMARK [1][-]{section.6}{Segnali e trasformate}{}% 39
-\BOOKMARK [2][-]{subsection.6.1}{Serie di Fourier}{section.6}% 40
-\BOOKMARK [2][-]{subsection.6.2}{Trasformata di Fourier}{section.6}% 41
-\BOOKMARK [2][-]{subsection.6.3}{Trasformata di Laplace}{section.6}% 42
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Esempi}{subsection.6.3}% 43
-\BOOKMARK [3][-]{subsubsection.6.3.2}{Propriet\340 della trasformata di Laplace}{subsection.6.3}% 44
-\BOOKMARK [2][-]{subsection.6.4}{Teorema del valore iniziale}{section.6}% 45
-\BOOKMARK [2][-]{subsection.6.5}{Teorema del valore finale}{section.6}% 46
-\BOOKMARK [2][-]{subsection.6.6}{Trasformate di Laplace notevoli}{section.6}% 47
-\BOOKMARK [2][-]{subsection.6.7}{Antitrasformazione secondo Heaviside}{section.6}% 48
-\BOOKMARK [1][-]{section.7}{Funzione di trasferimento}{}% 49
-\BOOKMARK [2][-]{subsection.7.1}{Definizioni e nuovi concetti}{section.7}% 50
-\BOOKMARK [2][-]{subsection.7.2}{Calcolo e aspetto di una funzione di trasferimento}{section.7}% 51
-\BOOKMARK [2][-]{subsection.7.3}{Esempi}{section.7}% 52
-\BOOKMARK [1][-]{section.8}{}{}% 53
-\BOOKMARK [1][-]{section.9}{}{}% 54
-\BOOKMARK [1][-]{section.10}{}{}% 55
-\BOOKMARK [1][-]{section.11}{}{}% 56
-\BOOKMARK [1][-]{section.12}{}{}% 57
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Esempi}{subsection.3.5}% 27
+\BOOKMARK [3][-]{subsubsection.3.5.3}{Movimento}{subsection.3.5}% 28
+\BOOKMARK [3][-]{subsubsection.3.5.4}{Esponenziale di matrice}{subsection.3.5}% 29
+\BOOKMARK [3][-]{subsubsection.3.5.5}{Esempi}{subsection.3.5}% 30
+\BOOKMARK [1][-]{section.4}{Linearizzazione di sistemi dinamici non lineari \(SD, NL, SISO, TC\) nell'intorno di un equilibrio}{}% 31
+\BOOKMARK [2][-]{subsection.4.1}{Per l'equazione di stato}{section.4}% 32
+\BOOKMARK [2][-]{subsection.4.2}{Per l'equazione d'uscita}{section.4}% 33
+\BOOKMARK [2][-]{subsection.4.3}{Sistema linearizzato nell'intorno dell'equilibrio , , }{section.4}% 34
+\BOOKMARK [2][-]{subsection.4.4}{Interpretazione}{section.4}% 35
+\BOOKMARK [1][-]{section.5}{Stabilit\340}{}% 36
+\BOOKMARK [2][-]{subsection.5.1}{Equilibrio}{section.5}% 37
+\BOOKMARK [2][-]{subsection.5.2}{Stabilit\340 nei SD LTI a TC}{section.5}% 38
+\BOOKMARK [2][-]{subsection.5.3}{Propriet\340 dei SD LTI a TC AS}{section.5}% 39
+\BOOKMARK [2][-]{subsection.5.4}{Stabilit\340 di un SD LTI a TC e matrice A}{section.5}% 40
+\BOOKMARK [2][-]{subsection.5.5}{Stabilit\340 e autovalori di A}{section.5}% 41
+\BOOKMARK [2][-]{subsection.5.6}{Caso a TD \(A diagonalizzabile\)}{section.5}% 42
+\BOOKMARK [2][-]{subsection.5.7}{Criteri di stabilit\340 \(asintotica\) per SD LTI a TC}{section.5}% 43
+\BOOKMARK [2][-]{subsection.5.8}{Esempi}{section.5}% 44
+\BOOKMARK [2][-]{subsection.5.9}{Routh}{section.5}% 45
+\BOOKMARK [3][-]{subsubsection.5.9.1}{Tabella di Routh}{subsection.5.9}% 46
+\BOOKMARK [3][-]{subsubsection.5.9.2}{Criterio di Routh}{subsection.5.9}% 47
+\BOOKMARK [3][-]{subsubsection.5.9.3}{Esempi}{subsection.5.9}% 48
+\BOOKMARK [1][-]{section.6}{Segnali e trasformate}{}% 49
+\BOOKMARK [2][-]{subsection.6.1}{Serie di Fourier}{section.6}% 50
+\BOOKMARK [2][-]{subsection.6.2}{Trasformata di Fourier}{section.6}% 51
+\BOOKMARK [2][-]{subsection.6.3}{Trasformata di Laplace}{section.6}% 52
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Esempi}{subsection.6.3}% 53
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Propriet\340 della trasformata di Laplace}{subsection.6.3}% 54
+\BOOKMARK [2][-]{subsection.6.4}{Teorema del valore iniziale}{section.6}% 55
+\BOOKMARK [2][-]{subsection.6.5}{Teorema del valore finale}{section.6}% 56
+\BOOKMARK [2][-]{subsection.6.6}{Trasformate di Laplace notevoli}{section.6}% 57
+\BOOKMARK [2][-]{subsection.6.7}{Antitrasformazione secondo Heaviside}{section.6}% 58
+\BOOKMARK [1][-]{section.7}{Funzione di trasferimento}{}% 59
+\BOOKMARK [2][-]{subsection.7.1}{Definizioni e nuovi concetti}{section.7}% 60
+\BOOKMARK [2][-]{subsection.7.2}{Calcolo e aspetto di una funzione di trasferimento}{section.7}% 61
+\BOOKMARK [2][-]{subsection.7.3}{Esempi}{section.7}% 62
+\BOOKMARK [1][-]{section.8}{}{}% 63
+\BOOKMARK [1][-]{section.9}{}{}% 64
+\BOOKMARK [1][-]{section.10}{}{}% 65
+\BOOKMARK [1][-]{section.11}{}{}% 66
+\BOOKMARK [1][-]{section.12}{}{}% 67

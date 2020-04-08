@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  8 APR 2020 05:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  8 APR 2020 05:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -596,169 +596,174 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout8 = `master.toc'.
 
  [2] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione1/lezione1.tex [3]
-Underfull \hbox (badness 10000) in paragraph at lines 50--54
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--82
+Underfull \hbox (badness 10000) in paragraph at lines 77--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--82
+Underfull \hbox (badness 10000) in paragraph at lines 77--83
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 84--92
+Underfull \hbox (badness 10000) in paragraph at lines 85--93
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 93.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 94.
 (c:/texlive/2019/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-))
-Underfull \hbox (badness 10000) in paragraph at lines 97--9
+)) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione2/lezione2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 98--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--9
+Underfull \hbox (badness 10000) in paragraph at lines 98--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--9
+Underfull \hbox (badness 10000) in paragraph at lines 98--1
 
  []
 
-[5] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione2/lezione2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--40
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 6--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--40
+Underfull \hbox (badness 10000) in paragraph at lines 12--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--40
+Underfull \hbox (badness 10000) in paragraph at lines 12--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--40
+Underfull \hbox (badness 10000) in paragraph at lines 12--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--40
+Underfull \hbox (badness 10000) in paragraph at lines 12--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--40
+Underfull \hbox (badness 10000) in paragraph at lines 12--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--40
+Underfull \hbox (badness 10000) in paragraph at lines 12--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--41
 
  []
 
 [6]
-Overfull \hbox (46.95818pt too wide) in paragraph at lines 58--59
+Overfull \hbox (46.95818pt too wide) in paragraph at lines 59--60
 \OT1/cmss/m/n/10 Il vo-lo-re as-sun-to dal-la pri-ma va-ria-bi-le di sta-to $\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$ \OT1/cmss/m/n/10 al-l'i-stan-te $\OML/cmm/m/it/10 t$ \OT1/cmss/m/n/10 ^^Re una fun-zio-ne $\OML/cmm/m/it/10 ^^^[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; [] ; x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; u\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 t[]; t\OT1/cmr/m/n/10 ]\OML/cmm/m/it/10 ; t\OT1/cmr/m/n/10 )$\OT1/cmss/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--81
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--81
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--81
+Underfull \hbox (badness 10000) in paragraph at lines 74--82
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 115--119
+Underfull \hbox (badness 10000) in paragraph at lines 116--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--119
+Underfull \hbox (badness 10000) in paragraph at lines 116--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--134
+Underfull \hbox (badness 10000) in paragraph at lines 128--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--150
+Underfull \hbox (badness 10000) in paragraph at lines 141--151
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--184
+Underfull \hbox (badness 10000) in paragraph at lines 177--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--184
+Underfull \hbox (badness 10000) in paragraph at lines 177--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--184
+Underfull \hbox (badness 10000) in paragraph at lines 177--185
 
  []
 
 
-Overfull \hbox (6.3289pt too wide) detected at line 190
+Overfull \hbox (6.3289pt too wide) detected at line 191
 [] \OMS/cmsy/m/n/10 ! [] 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 202--208
+Underfull \hbox (badness 10000) in paragraph at lines 203--209
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 210--11
+) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione3/lezione3.tex
+Underfull \hbox (badness 10000) in paragraph at lines 211--3
 
  []
 
-[10] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione3/lezione3.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--3
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
@@ -823,17 +828,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--169
 
  []
 
-[13])
-Underfull \hbox (badness 10000) in paragraph at lines 226--13
+[13]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione4/lezione4.tex
+Underfull \hbox (badness 10000) in paragraph at lines 226--1
 
  []
 
-[14] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione4/lezione4.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
-
- []
-
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 13--17
 
  []
@@ -846,212 +846,215 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 53.
 
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 65--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--122
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--122
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--122
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 140--145
-
- []
-
-
-Overfull \hbox (47.0947pt too wide) in paragraph at lines 154--155
-[]$\OML/cmm/m/it/10 ^^U[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10  \OMS/cmsy/m/n/10 ^^F \OML/cmm/m/it/10 i^^L   [] $\OT1/cmss/m/n/10 , im-pli-ca che $\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e[][]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--169
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--169
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 183--186
-
- []
-
-[18]) [19] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione5/lezione5.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--5
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--13
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--25
-
- []
-
-
-Overfull \hbox (7.12466pt too wide) in paragraph at lines 57--63
-\OT1/cmss/m/n/10 prese due ge-ne-ri-che ri-ghe ($\OML/cmm/m/it/10 h[]$ \OT1/cmss/m/n/10 e $\OML/cmm/m/it/10 q[]$\OT1/cmss/m/n/10 ), la ri-ga suc-ces-si-va ($\OML/cmm/m/it/10 w[]$\OT1/cmss/m/n/10 ) si ge-ne-ra co-me $\OML/cmm/m/it/10 w[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@[]\OML/cmm/m/it/10 det []$\OT1/cmss/m/n/10 . 
- []
-
-[20]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 66--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--97
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 121--129
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--129
+Underfull \hbox (badness 10000) in paragraph at lines 105--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--129
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 159--164
+Underfull \hbox (badness 10000) in paragraph at lines 105--124
 
  []
 
 
-Overfull \hbox (24.75977pt too wide) detected at line 182
+Underfull \hbox (badness 10000) in paragraph at lines 105--124
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 143--148
+
+ []
+
+
+Overfull \hbox (47.0947pt too wide) in paragraph at lines 157--158
+[]$\OML/cmm/m/it/10 ^^U[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10  \OMS/cmsy/m/n/10 ^^F \OML/cmm/m/it/10 i^^L   [] $\OT1/cmss/m/n/10 , im-pli-ca che $\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e[][]$
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
+
+ []
+
+[17]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione5/lezione5.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
+
+ []
+
+
+Overfull \hbox (7.12466pt too wide) in paragraph at lines 55--61
+\OT1/cmss/m/n/10 prese due ge-ne-ri-che ri-ghe ($\OML/cmm/m/it/10 h[]$ \OT1/cmss/m/n/10 e $\OML/cmm/m/it/10 q[]$\OT1/cmss/m/n/10 ), la ri-ga suc-ces-si-va ($\OML/cmm/m/it/10 w[]$\OT1/cmss/m/n/10 ) si ge-ne-ra co-me $\OML/cmm/m/it/10 w[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@[]\OML/cmm/m/it/10 det []$\OT1/cmss/m/n/10 . 
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--95
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 119--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--127
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 157--162
+
+ []
+
+
+Overfull \hbox (24.75977pt too wide) detected at line 180
 \OMS/cmsy/m/n/10 L\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 e[]sca\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )] = [][] \OML/cmm/m/it/10 e[]e[]dt \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 e[]dt \OT1/cmr/m/n/10 = [][] = []   [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
-[23]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione6/lezione6.tex
+[21]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione6/lezione6.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
 
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 36--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--72
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 93--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--128
+
+ []
+
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 36--43
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--43
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--43
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 93--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--128
-
- []
-
-[26]
 Underfull \hbox (badness 10000) in paragraph at lines 160--165
 
  []
@@ -1076,7 +1079,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--195
 
  []
 
-[27]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 203--210
 
  []
@@ -1091,28 +1094,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--219
 
  []
 
-[28]) [29] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione7/lezione7.tex) [30] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione8/lezione8.tex) [31] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione9/lezione9.tex) [32] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione10/lezione10.tex) [33] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione11/lezione11.tex) [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
+[26]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione7/lezione7.tex) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione8/lezione8.tex) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione9/lezione9.tex) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione10/lezione10.tex) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione11/lezione11.tex) [27]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
  (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: F609678E4DA39DEA5D2855BB59FC0B35;4244.
+(rerunfilecheck)             Checksum: 53060E74611449050129324B5416FBC9;5036.
  ) 
 Here is how much of TeX's memory you used:
- 18350 strings out of 480994
- 336583 string characters out of 5916032
- 607727 words of memory out of 5000000
- 33308 multiletter control sequences out of 15000+600000
- 541730 words of font info for 60 fonts, out of 8000000 for 9000
+ 18355 strings out of 480994
+ 336780 string characters out of 5916032
+ 606727 words of memory out of 5000000
+ 33319 multiletter control sequences out of 15000+600000
+ 541898 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,77p,1450b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (34 pages, 285240 bytes).
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
+Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (27 pages, 296159 bytes).
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
- 509 compressed objects within 6 object streams
- 106 named destinations out of 1000 (max. 500000)
- 469 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 585 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 549 words of extra memory for PDF output out of 10000 (max. 10000000)
 
