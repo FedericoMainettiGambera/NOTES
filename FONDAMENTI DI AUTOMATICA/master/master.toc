@@ -71,3 +71,4 @@
 \contentsline {section}{\numberline {10}}{32}{section.10}%
 \contentsline {section}{\numberline {11}}{32}{section.11}%
 \contentsline {part}{II\hspace {1em}Esercitazioni}{33}{part.2}%
+\contentsline {section}{\numberline {12}Esercitazione 1}{33}{section.12}%
