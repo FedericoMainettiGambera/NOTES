@@ -147,4 +147,97 @@ che antitrasformata mi produce
     y(t) = - 9 sca(t) + 9 e^{-2t} sca(t)) = 9 sca(t) (-1 + e^{-2t})
 \]
 \rule{\textwidth}{0,4pt}
-\subsection{Es , TDE }
+\subsection{Es Applicazione reale}
+Consideriamo un corpo solido riscaldato e che scambia convettivamente con una temperatura fissa.\newline
+[immagine dagli appunti del prof]\newline
+La potenza termica $P$ e la temperatura fissa $Te$ rappresentano gli ingressi del sistema, la temperatura $T$ del corpo rappresenta lo stato del sistema, inoltre il corpo è caratterizzato da una cerca capacità terminca $C$, c'è anche uno scambio termico per convezione con la temperatura fissa e vale $G(T-Te)$, con $G$ una costante chiamata conduttanza termica.\newline
+Diciamo che la capacità termica $C=10J/K$, e che la conduttazza termica $G = 2 W/K$
+\newline
+\newline
+\textbf{Modello}:\newline
+Bilancio dinamico di energia:
+\[
+    \frac{d}{dt}E = \sum P
+\] con $E = CT$ e $P = P-G(t-Te)$. \newline
+Quindi
+\[
+    C \dot{T} = P - G(T-Te)
+\]
+\[
+    \dot{T} = \frac{1}{C}P - \frac{G}{C} T + \frac{G}{C}Te
+\]
+\[
+    \dot{T} = -\frac{G}{C}T + \frac{1}{C}P + \frac{G}{C}Te
+\]
+Che è proprio una equazione di stato in cui $\dot{x} = \dot{T}$, $a=-\frac{G}{C}$, $u=\frac{1}{C}P$, distrubo$=\frac{G}{C}Te $.\newline
+Trasformiamo secondo Lapalce e guardiamo soltato i movimenti forzati:
+\[
+    sT(s) = - \frac{G}{C}T(s) + \frac{1}{C}P(s) + \frac{G}{C}Te(s)
+\]
+\[
+    T(s) = \frac{1}{s+ \frac{G}{C}}( \frac{1}{C}P(s) + \frac{G}{C}Te(s)) = \frac{\frac{1}{c}}{s + \frac{G}{C}} P(s) + \frac{\frac{G}{C}}{1 + \frac{G}{C}} Te(s)
+\]
+Dove il termine $\frac{\frac{1}{c}}{s + \frac{G}{C}} P(s)$ è la funzione di trasferimento da $P$ a $T$, cioè l'effetto di $P$ su $T$, e il termine $\frac{\frac{G}{C}}{1 + \frac{G}{C}} Te(s)$ è la funzione di trasferimento da $Te$ a $T$, cioè l'effetto di $Te$ su $T$.\newline
+$T$ è quindi calcolabile con il principio di sovrapposizione degli effetti.\newline
+Scriveremo spesso la funzione di trasferimento da un generico $U$ a un generico $Y$ come $\frac{Y(s)}{U(s)}$, ovvero come nel nostro caso:
+\[
+    T(s) = \frac{T(s)}{P(s)}P(s) + \frac{T(s)}{Te(s)}Te(s)
+\]
+dove $\frac{T(s)}{p(s)}$ e $\frac{T(s)}{Te(s)}$ sono funzioni di trasferimento e, invece, $P(s)$ e $Te(s)$ sono trasformate di Lapalce degli ingressi/disturbi.\newline
+Si può essere tentati dal fatto di fare erroneamente la seguente semplificazione:
+\[
+    T(s) = \frac{T(s)}{\cancel{P(s)}}\cancel{P(s)} + \frac{T(s)}{\cancel{Te(s)}}\cancel{Te(s)}
+\]
+L'errore sta nel fatto che i termini $\frac{T(s)}{p(s)}$ e $\frac{T(s)}{Te(s)}$ sono entità uniche, sono funzioni di trasfrimento che vanno lette come $\frac{T_{\text{dovuta a P}}(s)}{p(s)}$ e $\frac{T_{\text{dovuta a Te}}(s)}{Te(s)}$ !\newline
+\newline
+Riscriviamo le funzioni di trasferimento in modo leggermento diverso:
+\[
+    \frac{T(s)}{P(s)} = G_{TP}(s)= \frac{\frac{1}{C}}{s + \frac{G}{C}} = \frac{\frac{1}{G}}{1 + \frac{C}{G}s}
+\]
+\[
+    \frac{T(s)}{Te(s)} = G_{TTe}(s) = \frac{\frac{G}{C}}{s+ \frac{G}{C}} = \frac{1}{1 + \frac{C}{G}s}
+\]
+Supponiamo di applicare uno scalino a $P$, quindi l'ingresso $P(s) = \frac{\bar{P}}{s}$, calcoliamo l'effetto su $T$:
+\[
+    T(s) = G_{TP}(s) \cdot P(s) = \frac{\frac{1}{G}}{1 + \frac{C}{G}s} \cdot  \frac{\bar{P}}{s} = 
+\]
+chiamiamo per semplicità $\mu = \frac{1}{G}$ e $\tau = \frac{C}{G}$ 
+\[
+    T(s) = \frac{\mu}{1 + s \tau} \frac{\bar{P}}{s}
+\]
+Usiamo ora Heaviside:
+\[
+    T(s) = \frac{\alpha}{s} + \frac{\beta}{1 + s \tau}
+\]
+Facendo denominatore comune ed uguagliando i numeratori:
+\[
+    \alpha(1 + s \tau) + \beta s ) = \mu \bar{P}
+\]
+Avendo radici $s= =$ e $ s= - \frac{1}{\tau}$ ottengo:
+\[
+    \alpha = \mu \bar{P} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\beta=-\mu \tau \bar{P}
+\]
+Quindi:
+\[
+    T(s) = \frac{\mu \bar{P}}{s} - \frac{\mu \tau \bar{P}}{1 + s \tau} = \frac{\mu \bar{P}}{s} - \frac{\mu \bar{P}}{s + \frac{1}{\tau}}
+\]
+Antitrasformiamo con le trasformate notevoli:
+\[
+    \mathcal{L}^{-1}[T(s)] = T(t) = \mu \bar{P} sca(t) - \mu \bar{P} e^{-\frac{t}{\tau}} sca(t) = \mu \bar{P} sca(t) (1- e^{- \frac{t}{\tau}})
+\]
+[c'è un errore di un $1$ al posto di una $s$ da qualche parte in uno dei passaggi precedenti\dots il prof dice che correggerà i suoi appunti più tardi, quindi per i conti precisi guardare quelli, tanto quel che conta è il ragionamento]\newline
+\newline
+\textbf{Aspetto della risposta}:\newline
+\newline
+$T(0) = 0$ (n.b. è l'effetto di $P$, cioè la variazione rispetto all'effetto di $Te$, cioè significa che non si scalda rispetto a $Te$, ma rimane a temperatura di regime $Te$).\newline
+\newline
+$T(\infty) = \mu \bar{P} = \frac{1}{G}\bar{P}$.\newline
+\newline
+$\frac{dT}{dt}|_{t=0}$, verifico e calcolo con teorema valore iniziale e teorema valore finale: $T(s) = \frac{\mu \bar{P}}{s(1+s \tau)}$, considerando $\tau> 0$.\newline
+1) $T(0^+) = \lim_{s\rightarrow \infty} s T(s) = \lim_{s\rightarrow \infty} \frac{\mu \bar{P}}{1+s \tau} = 0$, verifgicato.\newline
+2) $T(\infty) = \lim_{s\rightarrow 0}s T(s) = \lim_{s\rightarrow 0}\frac{\mu \bar{P}}{1 + s\tau} = \mu \bar{P}$, verificato.\newline
+$\mathcal{L}[\dot{T}] = s \mathcal{L}[T] - T(0) = \frac{\mu \bar{P}}{1 + s \tau}$\newline
+3) $\dot{T}(0) = \lim_{s\rightarrow \infty} s \mathcal{L}[\dot{T}] = \lim_{s\rightarrow \infty}\frac{\mu \bar{P} s}{1+ s \tau} = \frac{\mu \bar{P}}{\tau}$\newline
+\newline
+Adesso con le equazioni 1), 2) e 3) possiamo disegnare come è fatta:\newline
+[immagine dagli appunti del prof]\newline

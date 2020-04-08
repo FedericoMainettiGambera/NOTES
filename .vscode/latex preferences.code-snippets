@@ -433,4 +433,8 @@
 		"prefix": "inv",
 		"body": "^{-1}$0"
 	},
+	"mu":{
+		"prefix": "mu",
+		"body": "\\mu"
+	},
 }
