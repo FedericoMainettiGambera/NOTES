@@ -32,24 +32,28 @@
 \contentsline {subsection}{\numberline {4.2}Per l'equazione d'uscita}{15}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Sistema linearizzato nell'intorno dell'equilibrio $\bar {u}, \bar {x}, \bar {y}$}{16}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Interpretazione}{16}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Stabilità}{16}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Esempi}{19}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Routh}{19}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Tabella di Routh}{19}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Criterio di Routh}{20}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Esempi}{20}{subsubsection.5.2.3}%
-\contentsline {section}{\numberline {6}Segnali e trasformate}{21}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Serie di Fourier}{21}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Trasformata di Fourier}{21}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Trasformata di Laplace}{21}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Esempi}{22}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Proprietà della trasformata di Laplace}{23}{subsubsection.6.3.2}%
+\contentsline {section}{\numberline {5}Stabilità}{17}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Esempi}{20}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Routh}{20}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Tabella di Routh}{20}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Criterio di Routh}{21}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Esempi}{21}{subsubsection.5.2.3}%
+\contentsline {section}{\numberline {6}Segnali e trasformate}{22}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Serie di Fourier}{22}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Trasformata di Fourier}{22}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Trasformata di Laplace}{22}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Esempi}{23}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Proprietà della trasformata di Laplace}{24}{subsubsection.6.3.2}%
 \contentsline {subsection}{\numberline {6.4}Teorema del valore iniziale}{24}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Teorema del valore finale}{24}{subsection.6.5}%
 \contentsline {subsection}{\numberline {6.6}Trasformate di Laplace notevoli}{24}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Antitrasformazione $\mathcal {L^{-1}}$ secondo Heaviside}{24}{subsection.6.7}%
-\contentsline {section}{\numberline {7}}{25}{section.7}%
-\contentsline {section}{\numberline {8}}{26}{section.8}%
-\contentsline {section}{\numberline {9}}{27}{section.9}%
-\contentsline {section}{\numberline {10}}{28}{section.10}%
-\contentsline {section}{\numberline {11}}{29}{section.11}%
+\contentsline {subsection}{\numberline {6.7}Antitrasformazione secondo Heaviside}{25}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Funzione di trasferimento}{27}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Definizioni e nuovi concetti}{27}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Calcolo e aspetto di una funzione di trasferimento}{27}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Esempi}{28}{subsection.7.3}%
+\contentsline {section}{\numberline {8}}{30}{section.8}%
+\contentsline {section}{\numberline {9}}{31}{section.9}%
+\contentsline {section}{\numberline {10}}{32}{section.10}%
+\contentsline {section}{\numberline {11}}{33}{section.11}%
+\contentsline {section}{\numberline {12}}{34}{section.12}%

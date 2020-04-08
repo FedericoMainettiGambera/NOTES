@@ -429,4 +429,8 @@
 		"prefix": "laplace",
 		"body": "\\mathcal{L}[$1]$0"
 	},
+	"inv":{
+		"prefix": "inv",
+		"body": "^{-1}$0"
+	},
 }
