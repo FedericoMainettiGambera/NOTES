@@ -55,7 +55,7 @@ Autovalori: $\;\;\;\;\;det \left[\begin{matrix}
     s & -1 \\ -e & s
 \end{matrix}\right] = 0 \;\;\;\;\; \rightarrow  \;\;\;\;\; s^2 - e = 0 \;\;\;\;\;$, quindi abbiamo un autovalore con parte reale positiva e quindi siamo in presenza di un equilibrio instabile.\newline
 \rule{\textwidth}{0,4pt}
-\subsection{Es. , TDE 04/05/2015 E1}
+\subsection{Es. Stabilità, funzione di trasferimento e calcolo del movimento forzato con Heaviside, TDE 04/05/2015 E1}
 Dato il SD LTI SISO a TC 
 \[
     \begin{cases}
@@ -119,3 +119,32 @@ La risposta a questa domanda termina qua, senza dover calcolare gli autovalori, 
 \[
     = \frac{1}{s(+2)(s-1)} (-6s + 6 -3s +3) = \frac{-9s +9}{(s+1)(s-1)} = \frac{-9 \cancel{(s-1)}}{(s+2)\cancel{(s-1)}} = \frac{-9}{s+2}
 \]
+\newline
+\textbf{Movimento forzato prodotto da $u(t) = 2 sca(t)$}:\newline
+Nella consegna il fatto che si imponga $x(0) = \left[\begin{matrix}
+    0\\0
+\end{matrix}\right]$ significa che nel calcolo dell'uscita nel dominio delle trasformate, non c'è bisogno di calcolare il movimento libero, perchè è nullo, ma per calcolare l'uscita è sufficiente considerare il movimento forzato:
+\[
+    U(s) = \frac{2}{s} \;\; \Rightarrow  \;\; Y(s) = G(s) U(s) = - \frac{18}{s(s+2)}
+\]
+Uso Heaviside:
+\[
+    U(s) = \frac{\alpha}{s} + \frac{\beta}{s+2}
+\]
+Denominatore comune e uguaglio i numeratori:
+\[
+    \alpha(s+2) + \beta s = 18 \;\;\;\; \Rightarrow \;\;\;\; \begin{cases}
+        s= 0 \rightarrow \alpha = -9\\
+        s = -2 \rightarrow  \beta = 9
+    \end{cases}
+\]
+Quindi 
+\[
+    Y(s) = -\frac{9}{s} + \frac{9}{s+2}
+\]
+che antitrasformata mi produce
+\[
+    y(t) = - 9 sca(t) + 9 e^{-2t} sca(t)) = 9 sca(t) (-1 + e^{-2t})
+\]
+\rule{\textwidth}{0,4pt}
+\subsection{Es , TDE }
