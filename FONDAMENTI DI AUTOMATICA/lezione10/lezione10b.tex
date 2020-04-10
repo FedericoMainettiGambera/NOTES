@@ -237,8 +237,20 @@ Nel caso più estremo il numeratore ha al massimo grado $n-1$:
 \[
     G(s) = \frac{ b_1 s^{n-1} + b_2 s^{n-2} + \dots + b_n }{ s^n + a_1 s^{n-1} + \dots + a_n } = \frac{N(s)}{D(s)}
 \]
-In uno schema a blocchi possiamo quindi rappresentare il blocco della funzione di trasferimento $\frac{N(s)}{D(s)}$ come due blocchi in cascata $\frac{1}{D(s)}$ e $N(s)$:\newline
-[immagine dagli appunti del prof]\newline
+In uno schema a blocchi possiamo quindi rappresentare il blocco della funzione di trasferimento 
+\[
+    u \rightarrow \left[\frac{N(s)}{D(s)}\right] \rightarrow y
+\]
+come due blocchi in cascata $\frac{1}{D(s)}$ e $N(s)$
+\[
+    u \rightarrow \left[\frac{1}{D(s)}\right] \rightarrow \left[N(s)\right] \rightarrow  y
+\]
+Chiamiamo $X$ il segnale fra i due blocchi $\frac{1}{D(s)}$ e $N(s)$:
+\[
+    u \rightarrow \left[\frac{1}{D(s)}\right] \rightarrow^X \rightarrow  \left[N(s)\right] \rightarrow  y
+\]
+\ \newline
+Analizzando il primo blocco ($\frac{1}{D(s)}$), ricaviamo le seguenti informazioni sulla struttura della matrice $A$ e $b$:
 \[
     \frac{X(s)}{U(s)} = \frac{1}{D(s)} = \frac{1}{ s^n + a_1 s^{n-1} + \dots + a_n }
 \]
@@ -265,7 +277,7 @@ e quindi possiamo dire che
         \dot{x}_n = -a_1 x_n - a_2 x_{n-1} - \dots - a_n x_1 + u
     \end{cases}
 \]
-Quindi il sistema in fomra matriciale ha la forma:
+Quindi vediamo ora le matrici $A$ e $c$ del sistema:
 \[
     \left[\begin{matrix}
         \dot{x}_1\\
@@ -284,4 +296,40 @@ Quindi il sistema in fomra matriciale ha la forma:
         0\\\dots\\0\\1
     \end{matrix}\right] U
 \]
-dove la matrice $A$ è composta da una colonna di $0$ accostata a una matrice indentità di dimensione $n-1$ e l'ultima riga è la riga dei coefficienti della funzione di trasferimento; la matrice $b$ è invece composta da un vettore colonna con tutti $0$ tranne l'ultimo elemento che è un $1$.
+dove la matrice $A$ è composta da una colonna di $0$ accostata a una matrice indentità di dimensione $n-1$ e l'ultima riga è la riga dei coefficienti della funzione di trasferimento; la matrice $b$ è invece composta da un vettore colonna con tutti $0$ tranne l'ultimo elemento che è un $1$.\newline
+\newline
+Abbiamo quindi fino ad ora trovato $A,b$. Per calcolare $c$ usiamo il secondo blocco ($N(s)$) dello schema a blocchi:
+\[
+    u \rightarrow \left[\frac{1}{D(s)}\right] \rightarrow^X \rightarrow  \left[N(s)\right] \rightarrow  y
+\]
+Scriviamo
+\[
+    Y(s) = N(s) X(s) = (b_1 s^{n-1} + b_2 s^{n-2} + \dots + b_n) X(s)
+\]
+Dove il termine $b_1 s^{n-1} X(s)$, nel dominio del tempo, diventa $\rightarrow  b_1 \frac{d^{n-1}x(t)}{t^{n-1}} = b_1 x_n(t)$.\newline
+Allo stesso modo $b_2 s^{n-1}X(s) \rightarrow b_2 x_{n-1}(t)$.\newline
+\dots \newline
+E così fino al termine $b_n X(s) \rightarrow  b_n x_1(t)$.\newline
+Assemblando il tutto otteniamo la matrice $c$:
+\[
+    y(t) = \left[\begin{matrix}
+        b_n & b_{n-1} & \dots & b_1
+    \end{matrix}\right] x(t)
+\]
+\ \newline
+\newline
+Riassunto:\newline
+Presa una funzione di trasferimento, per ottenere una quaterna ($A,b,c,d$) di dimensione minima si procede così: se il grado del numeratore è uguale al grado del denominatore si fa la divisione e si ottiene $G(s) = d + \frac{N(s)}{D(s)}$, da cui si ricava il valore $d$. A questo punto riscriviamo la frazione $\frac{N(s)}{D(s)} = \frac{ b_1 s^{n-1} + b_2 s^{n-2} + \dots + b_n }{ s^n + a_1 s^{n-1} + \dots + a_n }$ e scriviamo le $A, b$ e $c$:
+\[
+    A=\left[\begin{matrix}
+        0 & 1 & 0 & \dots & 0 \\
+        0 & 0 & 1 & \dots & 0 \\
+        \dots & \dots &\dots&\dots&\dots\\
+        0 & 0 & 0 & \dots & 1\\
+        -a_n & -a_{n-1} & \dots & \dots & -a_1
+    \end{matrix}\right] \;\;\;\;\;\;\;\; b=\left[\begin{matrix}
+        0\\\dots\\0\\1
+    \end{matrix}\right] \;\;\;\;\;\;\;\; c=\left[\begin{matrix}
+        b_n & b_{n-1} & \dots & b_1
+    \end{matrix}\right]
+\]
