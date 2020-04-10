@@ -65,16 +65,18 @@
 \BOOKMARK [2][-]{subsection.8.1}{Es. Equilibri e stabilit\340 in un sistema non lineare, TDE 06/05/2014 E1}{section.8}% 65
 \BOOKMARK [2][-]{subsection.8.2}{Es. Stabilit\340, funzione di trasferimento e calcolo del movimento forzato con Heaviside, TDE 04/05/2015 E1}{section.8}% 66
 \BOOKMARK [2][-]{subsection.8.3}{Es Applicazione reale}{section.8}% 67
-\BOOKMARK [1][-]{section.9}{Raggiungibilit\340 \(SD LTI a TC SISO\)}{part.1}% 68
-\BOOKMARK [2][-]{subsection.9.1}{Definizioni}{section.9}% 69
-\BOOKMARK [2][-]{subsection.9.2}{Criterio di raggiungibilit\340}{section.9}% 70
-\BOOKMARK [2][-]{subsection.9.3}{Esempi}{section.9}% 71
-\BOOKMARK [1][-]{section.10}{Osservabilit\340 \(SD LTI a TC SISO\)}{part.1}% 72
-\BOOKMARK [2][-]{subsection.10.1}{Definizioni}{section.10}% 73
-\BOOKMARK [2][-]{subsection.10.2}{Criterio di osservabilit\340}{section.10}% 74
-\BOOKMARK [2][-]{subsection.10.3}{Esempi}{section.10}% 75
-\BOOKMARK [1][-]{section.11}{}{part.1}% 76
-\BOOKMARK [0][-]{part.2}{II Esercitazioni}{}% 77
-\BOOKMARK [1][-]{section.12}{Esercitazione 1}{part.2}% 78
-\BOOKMARK [1][-]{section.13}{Esercitazione 2}{part.2}% 79
-\BOOKMARK [1][-]{section.14}{Esercitazione 3}{part.2}% 80
+\BOOKMARK [1][-]{section.9}{Raggiungibilit\340 e osservabilit\340}{part.1}% 68
+\BOOKMARK [2][-]{subsection.9.1}{Raggiungibilit\340 \(SD LTI a TC SISO\)}{section.9}% 69
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Definizioni}{subsection.9.1}% 70
+\BOOKMARK [3][-]{subsubsection.9.1.2}{Criterio di raggiungibilit\340}{subsection.9.1}% 71
+\BOOKMARK [3][-]{subsubsection.9.1.3}{Esempi}{subsection.9.1}% 72
+\BOOKMARK [2][-]{subsection.9.2}{Osservabilit\340 \(SD LTI a TC SISO\)}{section.9}% 73
+\BOOKMARK [3][-]{subsubsection.9.2.1}{Definizioni}{subsection.9.2}% 74
+\BOOKMARK [3][-]{subsubsection.9.2.2}{Criterio di osservabilit\340}{subsection.9.2}% 75
+\BOOKMARK [3][-]{subsubsection.9.2.3}{Esempi}{subsection.9.2}% 76
+\BOOKMARK [2][-]{subsection.9.3}{Osservazioni}{section.9}% 77
+\BOOKMARK [1][-]{section.10}{}{part.1}% 78
+\BOOKMARK [0][-]{part.2}{II Esercitazioni}{}% 79
+\BOOKMARK [1][-]{section.11}{Esercitazione 1}{part.2}% 80
+\BOOKMARK [1][-]{section.12}{Esercitazione 2}{part.2}% 81
+\BOOKMARK [1][-]{section.13}{Esercitazione 3}{part.2}% 82

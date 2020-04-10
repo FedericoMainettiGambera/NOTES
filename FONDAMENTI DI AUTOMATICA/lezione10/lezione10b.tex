@@ -1,9 +1,10 @@
 \newpage
 \title{LEZIONE 10 25/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/562a82e0-19cc-4f81-9183-eee77c9c45a4?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui} \;\;\textbf{[0:26:39 - fine lezione]}
-\section{Raggiungibilità (SD LTI a TC SISO)}
+\section{Raggiungibilità e osservabilità}
+\subsection{Raggiungibilità (SD LTI a TC SISO)}
 Vogliamo capire sotto quali ipotesi la rappresentazione di stato ($A, b, c, d$) e la funzione di trasferimento ($G(s)$) sono rappresentazioni equivalenti di un sistema. Inoltre affronteremo il problema di studiare la stabilità di un sistema dalla fuznione di trasferimento, tenendo in mente che la funzione di trasferimento può avere delle "parti nascoste".
-\subsection{Definizioni}
+\subsubsection{Definizioni}
 Uno \textbf{stato} $\tilde{x}$ si dice \textbf{raggiungibile} (da zero) se esiste un ingresso $\tilde{u}(t)$ tale che 
 \[
     \begin{rcases}
@@ -14,7 +15,7 @@ Uno \textbf{stato} $\tilde{x}$ si dice \textbf{raggiungibile} (da zero) se esist
 Cioè uno stato ($\tilde{x}$) è raggiungibile se esiste un ingresso ($\tilde{u}(t)$) che partendo da zero porta il sistema in quel determinato stato in un tempo finito.\newline
 \newline
 Un \textbf{sistema} si dice (completamente) \textbf{raggiungibile} se ogni stato è raggiungibile.
-\subsection{Criterio di raggiungibilità}
+\subsubsection{Criterio di raggiungibilità}
 Come si determina se un sistema dinamico è o meno raggiungibile?\newline
 \newline
 Teorema di Cayley-Hamilton: Ogni matrice annulla il polinomio caratteristico.\newline
@@ -102,7 +103,7 @@ Supponiamo ora di voler portare lo stato (da zero) a $\tilde{x}$. Perchè questo
 Quindi dire che ciò è possibile, per ogni $\tilde{x}$, equivale a dire che $M_R$ non è singolare.\newline
 \newline
 \textbf{Sistema raggiungibile se e solo se ($\Leftrightarrow$) $M_R$ è non singolare}.
-\subsection{Esempi}
+\subsubsection{Esempi}
 \textbf{es.} 
 \[
     \begin{cases}
@@ -129,9 +130,8 @@ Quindi qualunque stato con $x_1 \neq x_2$ non è raggiungibile. Verifichiamo ora
 \]
 [immagine dagli appunti del prof]\newline
 Esprimiamo lo spazio di stato con un piano di assi $x_1, x_2$, notiamo che lo stato non può muoversi liberamente in tutto lo spazio, ma è vincolata alla retta $x_1 = x_2$ che è il suo sottospazio di raggiungibilità.
-\newpage
-\section{Osservabilità (SD LTI a TC SISO)}
-\subsection{Definizioni}
+\subsection{Osservabilità (SD LTI a TC SISO)}
+\subsubsection{Definizioni}
 Uno \textbf{stato} $\tilde{x}$ è \textbf{non osservabile} se 
 \[
     \begin{rcases}
@@ -142,7 +142,7 @@ Uno \textbf{stato} $\tilde{x}$ è \textbf{non osservabile} se
 Cioè uno stato è non osservabile se produce sull'uscita un movimento libero nullo.\newline
 \newline
 Un \textbf{sistema} è (completamente) \textbf{osservabile} se nessuno stato è non osservabile.
-\subsection{Criterio di osservabilità}
+\subsubsection{Criterio di osservabilità}
 Chiamiamo $M_O$ una matrice di osservabilità $n$x$n$ definita come:
 \[
     M_O = \left[\begin{matrix}
@@ -152,7 +152,7 @@ Chiamiamo $M_O$ una matrice di osservabilità $n$x$n$ definita come:
 Abbiamo ottenuto questa matrice con ragionamenti molto simili (che evitiamo di ripetere) a quelli fatti per la matrice di reggiungibilità.\newline
 \newline
 \textbf{Sistema osservabile se e solo se ($\Leftrightarrow$) $M_O$ è non singolare}.
-\subsection{Esempi}
+\subsubsection{Esempi}
 \textbf{es.} 
 \[
     \begin{cases}
@@ -181,5 +181,35 @@ Verifichiamo col criterio di osservabilità:\newline
         0 & 0 \\ 1 & 4
     \end{matrix}\right] \;\;\text{singolare}\;
 \]
+\subsection{Osservazioni}
+\begin{itemize}
+    \item Un sistema può avere parti non raggiungibili e/o non osservabili.\newline
+    \newline
+    \textbf{es.} Riprendiamo l'esempio fatto precedentemente per la raggiungibilità: \[\begin{cases}
+            \dot{x}_1 = -x_1 +u\\
+            \dot{x}_2 = -x_2 +u
+        \end{cases}
+        \] 
+        Questo sistema non è completamente raggiungibile, e come si vede a occhio il suo sottospazio di raggiungibilità è la sola retta $x_1 = x_2$. In questo caso per raggiungibilità si intendono regioni dello spazio di stato che non posso raggiungere. Stato "non raggiungibile" significa che, qualunque sia l'ingresso, non posso raggiungere quel determinato stato a partire da $0$.\newline
+        Facciamo un cambio variabili $q_1 = x_1 - x_2$ e $q_2 = x_1 + x_2$ e il sistema diventa: \[
+            \begin{cases}
+                \dot{q}_1 = \dot{x}_1 - \dot{x}_2 = - x_1 + \cancel{u} + x_2 - \cancel{u} = - q_1\\
+                \dot{q}_2 = \dot{x}_1 + \dot{x}_2 = - q_2 + 2 u
+            \end{cases} \longrightarrow \begin{cases}
+                \dot{q}_1 = -q_1\\
+                \dot{q}_2 = -q_2 + 2u
+            \end{cases}
+        \]
+        Con questa trasformazione il significato di "non raggiungibile" cambia: significa che $u$ non influenza una parte dello stato.
+        \item Le parti non raggiungibili e/o non osservabili non sono presenti nella funzione di trasferimento: la funzione di trasferimento rappresenta il legame ingresso/uscita e quindi la sola parte non raggiungibili e/o non osservabili del sistema.
+        \item Gli autovalori delle parti non raggiungibili e/o non osservabili del sistema nel calcolo delal funzione di trasferimento sono cancellati (per cancellazione intendiamo il fatto che nel calcolo della funzione di trasferimento alcuni poli e zeri si possno cancellare fra di loro, e questi rappresentano proprio le parti non raggiungibili e/o non osservabili).
+\end{itemize}
 \ \newline
-\textbf{es.} 
+\textbf{definizione}:  Una calcellazione è \textbf{critica} se avviene al di fuori della regione di asintotica stabilità (a tempo continuo significa che se l'autovalore è cancellato, non ha la parte reale negativa).
+\newline
+\newline
+Conseguenze:
+\begin{itemize}
+    \item La rappresentazione di stato ($A,b,c,d$) e la funzione di trasferimento ($G(s)$) sono rappresentazioni equivalenti di un sistema dinamico, a meno di una trasformazione di similarità (cioè una trasformazione che preserva gli autovalori), se nel calcolo di $G(s)$ non si hanno cancellazioni o equivalentemente se il sistema è raggiungibile e osservabile.
+    \item Poichè i poli di $G(s)$ sono gli autovalori della parte raggiungibile e osservabile del sistema, perchè si possa studiare la stabilità (asintotica) del sistema usando $G(s)$, non vi devono essere cancellazioni critiche.
+\end{itemize}

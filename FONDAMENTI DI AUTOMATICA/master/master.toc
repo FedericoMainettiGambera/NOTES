@@ -67,16 +67,18 @@
 \contentsline {subsection}{\numberline {8.1}Es. Equilibri e stabilità in un sistema non lineare, TDE 06/05/2014 E1}{28}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Es. Stabilità, funzione di trasferimento e calcolo del movimento forzato con Heaviside, TDE 04/05/2015 E1}{28}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}Es Applicazione reale}{30}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Raggiungibilità (SD LTI a TC SISO)}{32}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Definizioni}{32}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Criterio di raggiungibilità}{32}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Esempi}{33}{subsection.9.3}%
-\contentsline {section}{\numberline {10}Osservabilità (SD LTI a TC SISO)}{35}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Definizioni}{35}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Criterio di osservabilità}{35}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Esempi}{35}{subsection.10.3}%
-\contentsline {section}{\numberline {11}}{36}{section.11}%
+\contentsline {section}{\numberline {9}Raggiungibilità e osservabilità}{32}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Raggiungibilità (SD LTI a TC SISO)}{32}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Definizioni}{32}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Criterio di raggiungibilità}{32}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Esempi}{33}{subsubsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.2}Osservabilità (SD LTI a TC SISO)}{34}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Definizioni}{34}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Criterio di osservabilità}{34}{subsubsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.3}Esempi}{34}{subsubsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.3}Osservazioni}{34}{subsection.9.3}%
+\contentsline {section}{\numberline {10}}{36}{section.10}%
 \contentsline {part}{II\hspace {1em}Esercitazioni}{37}{part.2}%
-\contentsline {section}{\numberline {12}Esercitazione 1}{37}{section.12}%
-\contentsline {section}{\numberline {13}Esercitazione 2}{37}{section.13}%
-\contentsline {section}{\numberline {14}Esercitazione 3}{37}{section.14}%
+\contentsline {section}{\numberline {11}Esercitazione 1}{37}{section.11}%
+\contentsline {section}{\numberline {12}Esercitazione 2}{37}{section.12}%
+\contentsline {section}{\numberline {13}Esercitazione 3}{37}{section.13}%
