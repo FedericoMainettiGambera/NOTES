@@ -68,7 +68,7 @@
 \contentsline {subsection}{\numberline {8.2}Es. Stabilità, funzione di trasferimento e calcolo del movimento forzato con Heaviside, TDE 04/05/2015 E1}{28}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}Es Applicazione reale}{30}{subsection.8.3}%
 \contentsline {section}{\numberline {9}}{31}{section.9}%
-\contentsline {section}{\numberline {10}}{31}{section.10}%
 \contentsline {part}{II\hspace {1em}Esercitazioni}{32}{part.2}%
-\contentsline {section}{\numberline {11}Esercitazione 1}{32}{section.11}%
-\contentsline {section}{\numberline {12}Esercirtazione 2}{32}{section.12}%
+\contentsline {section}{\numberline {10}Esercitazione 1}{32}{section.10}%
+\contentsline {section}{\numberline {11}Esercirtazione 2}{32}{section.11}%
+\contentsline {section}{\numberline {12}Esercitazione 3}{32}{section.12}%
