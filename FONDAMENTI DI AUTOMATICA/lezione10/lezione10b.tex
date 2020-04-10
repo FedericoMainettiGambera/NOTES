@@ -2,5 +2,14 @@
 \title{LEZIONE 10 25/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/562a82e0-19cc-4f81-9183-eee77c9c45a4?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui} \;\;\textbf{[0:26:39 - fine lezione]}\newline
 \newline
-Vogliamo capire sotto quali ipotesi la rappresentazione di stato ($A, b, c, d$) e la funzione di trasferimento ($G(s)$) sono rappresentazioni equivalenti di un sistema e se è possibile studiare la stabilità di un sistema dalla fuznione di trasferimento tenendo in mente che la funzione di trasferimento può avere delle "parti nascoste".
+Vogliamo capire sotto quali ipotesi la rappresentazione di stato ($A, b, c, d$) e la funzione di trasferimento ($G(s)$) sono rappresentazioni equivalenti di un sistema. Inoltre affronteremo il problema di studiare la stabilità di un sistema dalla fuznione di trasferimento, tenendo in mente che la funzione di trasferimento può avere delle "parti nascoste".
 \section{Raggiungibilità (SD LTI a TC SISO)}
+Uno stato $\tilde{x}$ si dice \textbf{raggiungibile} (da zero) se esiste un ingresso $\tilde{u}(t)$ tale che 
+\[
+    \begin{rcases}
+        x(0) &= 0 \\
+        u(t) &= \tilde{u}(t) \;\; t \geq 0
+    \end{rcases} \longrightarrow x(\tilde{t}) = \tilde{x}  \;\;\;\; \tilde{t}< \infty
+\]
+Cioè uno stato ($\tilde{x}$) è raggiungibile se esiste un ingresso ($\tilde{u}(t)$) che partendo da zero porta il sistema in quel determinato stato in un tempo finito.\newline
+\newline

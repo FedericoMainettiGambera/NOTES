@@ -437,4 +437,8 @@
 		"prefix": "mu",
 		"body": "\\mu"
 	},
+	"tilde":{
+		"prefix": "tilde",
+		"body": "\\tilde{$1}$0"
+	},
 }
