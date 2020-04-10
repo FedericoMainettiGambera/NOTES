@@ -67,3 +67,39 @@ Il termine $\zeta_l(t)$ contiene
     \item i coefficienti del polinomio caratteristico di $A$;
     \item l'ingresso.
 \end{itemize}
+\ \newline
+Vediamo la scrittura matriciale:
+\[
+    x(t) = \left[\begin{matrix}
+        b & Ab & A^2 b & \dots & A^{n-1}b
+    \end{matrix}\right] \cdot  \left[\begin{matrix}
+        \zeta_0(t)\\
+        \zeta_1(t)\\
+        \dots\\
+        \zeta_{n-1}](t)
+    \end{matrix}\right]
+\]
+La prima matrice prende il nome di $M_R=$ matrice di raggiungibilità $=\left[\begin{matrix}
+    b & Ab & A^2 b & \dots & A^{n-1}b
+\end{matrix}\right] $, dove nel caso SISO ogni suo termine è una matrice colonna $n$x$1$, e quindi in totale è una matrice $n$x$n$.\newline
+Invece la seconda matrice (quella colonna) la indichiamo come $Z(t) = \left[\begin{matrix}
+    \zeta_0(t)\\
+    \zeta_1(t)\\
+    \dots\\
+    \zeta_{n-1}](t)
+\end{matrix}\right]$ ed è composta da scalari, quindi in totale è una matrice $n$x$1$. Notiamo che $Z(T)$, essendo composta da tutti i $\zeta_l(t)$ contiene al suo interno i coefficienti del polinomio caratteristico (che sono fissi e conosciamo) e l'ingresso (che è quello che veramente ci interessa nel concetto di raggiungibilità). Quello che è importante da capire è che $Z(t)$ è una riflessione dell'ingresso.\newline
+La moltiplicazione di queste due matrici risulta quindi in una matrice $n$x$1$.\newline
+Possiamo quindi scrivere 
+\[
+    x(t) = M_R \cdot Z(t)
+\]
+\ \newline
+Tornando al concetto di raggiungibilità:\newline
+Supponiamo ora di voler portare lo stato (da zero) a $\tilde{x}$. Perchè questo sia possibile, deve esistere una certa $\tilde{Z}(t)$ tale che 
+\[
+    M_R \tilde{Z}(t) = \tilde{x}
+\]
+Quindi dire che ciò è possibile, per ogni $\tilde{x}$, equivale a dire che $M_R$ non è singolare.\newline
+\newline
+\textbf{Sistema raggiungibile se e solo se ($\Leftrightarrow$) $M_R$ non è singolare}.\newline
+\newline
