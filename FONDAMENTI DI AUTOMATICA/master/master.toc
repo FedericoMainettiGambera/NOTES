@@ -77,8 +77,9 @@
 \contentsline {subsubsection}{\numberline {9.2.2}Criterio di osservabilità}{34}{subsubsection.9.2.2}%
 \contentsline {subsubsection}{\numberline {9.2.3}Esempi}{34}{subsubsection.9.2.3}%
 \contentsline {subsection}{\numberline {9.3}Osservazioni}{34}{subsection.9.3}%
-\contentsline {section}{\numberline {10}}{36}{section.10}%
-\contentsline {part}{II\hspace {1em}Esercitazioni}{37}{part.2}%
-\contentsline {section}{\numberline {11}Esercitazione 1}{37}{section.11}%
-\contentsline {section}{\numberline {12}Esercitazione 2}{37}{section.12}%
-\contentsline {section}{\numberline {13}Esercitazione 3}{37}{section.13}%
+\contentsline {section}{\numberline {10}Realizzazione}{36}{section.10}%
+\contentsline {section}{\numberline {11}}{38}{section.11}%
+\contentsline {part}{II\hspace {1em}Esercitazioni}{39}{part.2}%
+\contentsline {section}{\numberline {12}Esercitazione 1}{39}{section.12}%
+\contentsline {section}{\numberline {13}Esercitazione 2}{39}{section.13}%
+\contentsline {section}{\numberline {14}Esercitazione 3}{39}{section.14}%

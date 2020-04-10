@@ -213,3 +213,75 @@ Conseguenze:
     \item La rappresentazione di stato ($A,b,c,d$) e la funzione di trasferimento ($G(s)$) sono rappresentazioni equivalenti di un sistema dinamico, a meno di una trasformazione di similarità (cioè una trasformazione che preserva gli autovalori), se nel calcolo di $G(s)$ non si hanno cancellazioni o equivalentemente se il sistema è raggiungibile e osservabile.
     \item Poichè i poli di $G(s)$ sono gli autovalori della parte raggiungibile e osservabile del sistema, perchè si possa studiare la stabilità (asintotica) del sistema usando $G(s)$, non vi devono essere cancellazioni critiche.
 \end{itemize}
+\newpage
+\section{Realizzazione}
+Per realizzazione si intende partire dalla funzione di trasferimento $G(s)$ e trovare le infinite quaterne $(A,b,c,d)$ corrispondenti: 
+\[
+    G(s) \rightarrow \infty(A,b,c,d)
+\]
+Le quaterne $(A,b,c,d)$ costruibili a partire da $G(s)$ sono infinite perchè è sufficiente aggiungere una qualunque "parte nascosta" al nostro sistema per creare una nuova quaterna accettabile.\newline
+\newline
+Limitandosi al caso in cui la dimensione di $A$ coincide col grado del denominatore di $G(s)$ (cioè realizzando quaterne minime) esistono dei modi "comodi" per trovare una quaterna $(A,b,c,d)$ corrispondente a $G(s)$? Sì.\newline
+\newline
+Premessa: Se in $G(s)$ il grado del numeratore è uguale al grado del denominatore, allora possiamo esprime $G(s)$ nel seguente modo:
+\[
+    G(s) = d + \frac{N(s)}{D(s)}
+\]
+con $d$ costante e grado di $N(s) <$ grado di $D(s)$.\newline
+Con questa espressione della funzione di trasferimento, $d$ ce lo abbiamo già e le matrici $A,b,c$ le ricaviamo da $\frac{N(s)}{D(s)}$.\newline
+\newline
+Questa premessa ci mostra che è sufficiente imparare a trattare il caso in cui $\frac{N(s)}{D(s)}$ ha grado di $N(s) <$ grado di $D(s)$ (perchè avevamo già dimostrato precedentemente che sicurametne $N(s)$ non può avere grado $>$ del grado di $D(s)$, e nel caso in cui il grado di $N(s) = $ grado di $D(s)$ possiamo ricondurci al caso grado di $N(s) <$ grado di $D(s)$).\newline
+\newline
+Vediamo ora uno dei possibili modi di operare:\newline
+Nel caso più estremo il numeratore ha al massimo grado $n-1$:
+\[
+    G(s) = \frac{ b_1 s^{n-1} + b_2 s^{n-2} + \dots + b_n }{ s^n + a_1 s^{n-1} + \dots + a_n } = \frac{N(s)}{D(s)}
+\]
+In uno schema a blocchi possiamo quindi rappresentare il blocco della funzione di trasferimento $\frac{N(s)}{D(s)}$ come due blocchi in cascata $\frac{1}{D(s)}$ e $N(s)$:\newline
+[immagine dagli appunti del prof]\newline
+\[
+    \frac{X(s)}{U(s)} = \frac{1}{D(s)} = \frac{1}{ s^n + a_1 s^{n-1} + \dots + a_n }
+\]
+\[
+    X(s) D(s) = U(s)
+\]
+\[
+    s^n X_n + a_1 s^{n-1}X + \dots + a_n X = U
+\]
+Siccome stiamo operando con funzioni di trasferimento e quindi solo col moto forzato ($x(0) = 0$), allora posso scrivere che $S^n X \;\;\text{diventa}\;\; \frac{d^n x(t)}{dt}$ e quindi:
+\[
+    \frac{d^n x(t)}{dt^n} + a_1 \frac{d^{n-1} x(t)}{dt^{n-1}} + \dots + a_{n-1} \dot{x}(t) + a_n x(t) = u(t)
+\]
+Rinominiamo ora i termini nel seguente modo:
+\[
+    x_n = \frac{d^{n-1} x(t)}{dt^{n-1}}; \;\;\;\;\;\;\;\;\dots; \;\;\;\;\;\;\;\;x_2 = \dot{x}(t); \;\;\;\;\;\;\;\;x_1 = x(t);
+\]
+e quindi possiamo dire che 
+\[
+    \begin{cases}
+        \dot{x}_1 = x_2;\\
+        \dot{x}_2 = x_3;\\
+        \dots;\\
+        \dot{x}_n = -a_1 x_n - a_2 x_{n-1} - \dots - a_n x_1 + u
+    \end{cases}
+\]
+Quindi il sistema in fomra matriciale ha la forma:
+\[
+    \left[\begin{matrix}
+        \dot{x}_1\\
+        \dot{x}_2\\
+        \dots\\
+        \dot{x}_n
+    \end{matrix}\right] = \left[\begin{matrix}
+        0 & 1 & 0 & \dots & 0 \\
+        0 & 0 & 1 & \dots & 0 \\
+        \dots & \dots &\dots&\dots&\dots\\
+        0 & 0 & 0 & \dots & 1\\
+        -a_n & -a_{n-1} & \dots & \dots & -a_1
+    \end{matrix}\right] \left[\begin{matrix}
+        x_1\\x_2\\\dots\\x_n
+    \end{matrix}\right] + \left[\begin{matrix}
+        0\\\dots\\0\\1
+    \end{matrix}\right] U
+\]
+dove la matrice $A$ è composta da una colonna di $0$ accostata a una matrice indentità di dimensione $n-1$ e l'ultima riga è la riga dei coefficienti della funzione di trasferimento; la matrice $b$ è invece composta da un vettore colonna con tutti $0$ tranne l'ultimo elemento che è un $1$.
