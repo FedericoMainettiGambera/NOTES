@@ -13,3 +13,57 @@ Uno stato $\tilde{x}$ si dice \textbf{raggiungibile} (da zero) se esiste un ingr
 \]
 Cioè uno stato ($\tilde{x}$) è raggiungibile se esiste un ingresso ($\tilde{u}(t)$) che partendo da zero porta il sistema in quel determinato stato in un tempo finito.\newline
 \newline
+Un sistema si dice (completamente) \textbf{raggiungibile} se ogni stato è raggiungibile.\newline
+\newline
+Come si determina se un sistema dinamico è o meno raggiungibile?\newline
+\newline
+Teorema di Cayley-Hamilton: Ogni matrice annulla il polinomio caratteristico.\newline
+Capiamo meglio questo terema guardando il polinomio caratteristico di una matrice $A$ che è il determinante della matrice $sI-A$:
+\[
+    \Pi(s) = det(sI-A) = s^n + \beta_1 s^{n-1} + \dots + \beta_n
+\]
+quindi, se calcoliamo il polinomio caratteristico in $A$, vediamo questo si che si annulla:
+\[
+    \Pi(A) = det(AI-A) = det(0) = 0
+\]
+Ne segue che
+\[
+    A^n + \beta_1 A^{n-1} + \dots + \beta_n I = 0
+\]
+\[
+    A^n = -\beta_1 A^{n-1} - \beta_2 A^{n-1} - \dots - \beta_n I
+\]
+cioè la potenza ennesima della matrice $A$ può essere scritta come combinazione lineare di tutte le potenze inferiori, fino alla potenza $0$, cioè la matrice identità.\newline
+\newline
+Applichiamo questo concetto al calcolo del movimento.\newline
+Scriviamo la formula di Lagrange nel caso $x(0) = 0$ (cioè solamente movimento forzato):
+\[
+    x(t) = \int_{0}^{t}e^{A(t-\tau)} b u(\tau) d \tau
+\]
+dove la matrice $e^{A(t - \tau)}$ è
+\[
+    e^{A(t - \tau)} = I +A(t-\tau) + \frac{A^2(t-\tau)^2)}{2!} + \dots + \frac{A^{n-1} (t - \tau)^{n-1}}{(n-1)!} +\; \text{[combinazione lineare dei termini precedenti]}\;\dots 
+\]
+di conseguenza posso fare dei raccoglimenti di tutti itermini "combinazione lineare del termini precedenti" e scrivere questo termine grazie a una sommatoria:
+\[
+    e^{A(t - \tau)} = \sum_{l=0}^{n-1} \gamma_l(t-\tau) \cdot  A^l
+\]
+Ora quindi sostituiamo questo risultato nell'espressione del movimento forzato:
+\[
+    x(t) = \int_{0}^{t} \sum_{l=0}^{n-1} \gamma_l(t-\tau) \cdot  A^l b u(\tau)d \tau=
+\]
+dove $\gamma_l(t-\tau)$ sono termini che non mi interessa calcolare, ma mi basta sapere che ci sono e che rappresentano i termini "combinazione lineare dei termini precedenti",
+\[
+    = \sum_{l=0}^{n-1} A^l b \int_{0}^{t}\gamma_l (t-\tau) u(\tau)d \tau=
+\]
+chiamiamo ora l'integrale $\zeta_l (t) = \int_{0}^{t}\gamma_l (t-\tau) u(\tau)d \tau$, che dipende solo da $t$ perchè $\tau$ muore durante l'integrazione, inoltre, siccome $\gamma_l$ sono termini di cui non ci interessa la forma, non ci interessa calcolare $\zeta_l (t)$, ci basta sapere che è presente.\newline
+\newline
+Siamo quindi giunti a scrivere che
+\[
+    x(t) = \sum_{l=0}^{n-1} A^l b \zeta_l(t)
+\]
+Il termine $\zeta_l(t)$ contiene
+\begin{itemize}
+    \item i coefficienti del polinomio caratteristico di $A$;
+    \item l'ingresso.
+\end{itemize}
