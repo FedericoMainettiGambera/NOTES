@@ -1,10 +1,10 @@
 \newpage
 \title{LEZIONE 10 25/03/2020}\newline
-\textbf{link} \href{https://web.microsoftstream.com/video/562a82e0-19cc-4f81-9183-eee77c9c45a4?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui} \;\;\textbf{[0:26:39 - fine lezione]}\newline
-\newline
-Vogliamo capire sotto quali ipotesi la rappresentazione di stato ($A, b, c, d$) e la funzione di trasferimento ($G(s)$) sono rappresentazioni equivalenti di un sistema. Inoltre affronteremo il problema di studiare la stabilità di un sistema dalla fuznione di trasferimento, tenendo in mente che la funzione di trasferimento può avere delle "parti nascoste".
+\textbf{link} \href{https://web.microsoftstream.com/video/562a82e0-19cc-4f81-9183-eee77c9c45a4?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui} \;\;\textbf{[0:26:39 - fine lezione]}
 \section{Raggiungibilità (SD LTI a TC SISO)}
-Uno stato $\tilde{x}$ si dice \textbf{raggiungibile} (da zero) se esiste un ingresso $\tilde{u}(t)$ tale che 
+Vogliamo capire sotto quali ipotesi la rappresentazione di stato ($A, b, c, d$) e la funzione di trasferimento ($G(s)$) sono rappresentazioni equivalenti di un sistema. Inoltre affronteremo il problema di studiare la stabilità di un sistema dalla fuznione di trasferimento, tenendo in mente che la funzione di trasferimento può avere delle "parti nascoste".
+\subsection{Definizioni}
+Uno \textbf{stato} $\tilde{x}$ si dice \textbf{raggiungibile} (da zero) se esiste un ingresso $\tilde{u}(t)$ tale che 
 \[
     \begin{rcases}
         x(0) &= 0 \\
@@ -13,8 +13,8 @@ Uno stato $\tilde{x}$ si dice \textbf{raggiungibile} (da zero) se esiste un ingr
 \]
 Cioè uno stato ($\tilde{x}$) è raggiungibile se esiste un ingresso ($\tilde{u}(t)$) che partendo da zero porta il sistema in quel determinato stato in un tempo finito.\newline
 \newline
-Un sistema si dice (completamente) \textbf{raggiungibile} se ogni stato è raggiungibile.\newline
-\newline
+Un \textbf{sistema} si dice (completamente) \textbf{raggiungibile} se ogni stato è raggiungibile.
+\subsection{Criterio di raggiungibilità}
 Come si determina se un sistema dinamico è o meno raggiungibile?\newline
 \newline
 Teorema di Cayley-Hamilton: Ogni matrice annulla il polinomio caratteristico.\newline
@@ -101,5 +101,85 @@ Supponiamo ora di voler portare lo stato (da zero) a $\tilde{x}$. Perchè questo
 \]
 Quindi dire che ciò è possibile, per ogni $\tilde{x}$, equivale a dire che $M_R$ non è singolare.\newline
 \newline
-\textbf{Sistema raggiungibile se e solo se ($\Leftrightarrow$) $M_R$ non è singolare}.\newline
+\textbf{Sistema raggiungibile se e solo se ($\Leftrightarrow$) $M_R$ è non singolare}.
+\subsection{Esempi}
+\textbf{es.} 
+\[
+    \begin{cases}
+        \dot{x}_1 = -x_1 + u\\
+        \dot{x}_2 = -x_2 +u
+    \end{cases}
+\]
+Ovviamente se $x(0) = 0$, risulterà $x_1(t) = x_2(t)$ per ogni $u(t)$; nel senso che, data l'espressione di questi due stati, non potrò mai raggiungere lo stato $x = \left[\begin{matrix}
+    k\\j
+\end{matrix}\right]$ con $k\neq j$, ma posso solo raggiungere gli stati nella forma $\left[\begin{matrix}
+    k\\k
+\end{matrix}\right]$.\newline
+Quindi qualunque stato con $x_1 \neq x_2$ non è raggiungibile. Verifichiamo ora questa affermazione col criterio esposto prima:
+\[
+    A = \left[\begin{matrix}
+        -1 & 0 \\ 0 & -1
+    \end{matrix}\right] \;\;\;\;\;\;\;\; b = \left[\begin{matrix}
+        1\\1
+    \end{matrix}\right] \;\;\;\;\Longrightarrow \;\;\;\;M_R = \left[\begin{matrix}
+        b & Ab
+    \end{matrix}\right] = \left[\begin{matrix}
+        1 &-1 \\1 & -1
+    \end{matrix}\right] \;\;\text{singolare}\;
+\]
+[immagine dagli appunti del prof]\newline
+Esprimiamo lo spazio di stato con un piano di assi $x_1, x_2$, notiamo che lo stato non può muoversi liberamente in tutto lo spazio, ma è vincolata alla retta $x_1 = x_2$ che è il suo sottospazio di raggiungibilità.
+\newpage
+\section{Osservabilità (SD LTI a TC SISO)}
+\subsection{Definizioni}
+Uno \textbf{stato} $\tilde{x}$ è \textbf{non osservabile} se 
+\[
+    \begin{rcases}
+        x(0) &= \tilde{x}\\
+        u(t) &= 0 \;\;\;t \geq 0
+    \end{rcases} \longrightarrow y(t) = 0
+\]
+Cioè uno stato è non osservabile se produce sull'uscita un movimento libero nullo.\newline
 \newline
+Un \textbf{sistema} è (completamente) \textbf{osservabile} se nessuno stato è non osservabile.
+\subsection{Criterio di osservabilità}
+Chiamiamo $M_O$ una matrice di osservabilità $n$x$n$ definita come:
+\[
+    M_O = \left[\begin{matrix}
+        c'A'c' & \dots & (A^{n-1})' c'
+    \end{matrix}\right]
+\]
+Abbiamo ottenuto questa matrice con ragionamenti molto simili (che evitiamo di ripetere) a quelli fatti per la matrice di reggiungibilità.\newline
+\newline
+\textbf{Sistema osservabile se e solo se ($\Leftrightarrow$) $M_O$ è non singolare}.
+\subsection{Esempi}
+\textbf{es.} 
+\[
+    \begin{cases}
+        \dot{x}_1 = -x_1 + u \\
+        \dot{x}_2 = 4x_2 +u\\
+        y=x_2
+    \end{cases}
+\]
+La relazione tra $u$ e $y$ (cioè fra l'ingresso e l'uscita, la funzione di trasferimento) è tutta racchiusa nelle due ultime righe del sistema, cioè $\dot{x}_1$ non influenza $y$.\newline
+Verifichiamo col criterio di osservabilità:\newline
+\[
+    A= \left[\begin{matrix}
+        -1 & 0 \\ 0 & 4
+    \end{matrix}\right] = A' \;\;\;\;\;\;\;\; A'c' = \left[\begin{matrix}
+        -1 &0 \\ 0 & 4
+    \end{matrix}\right] \left[\begin{matrix}
+        0 \\ 4
+    \end{matrix}\right] = \left[\begin{matrix}
+        0 \\ 4
+    \end{matrix}\right]
+\]
+\[
+    M_O = \left[\begin{matrix}
+        c' & A' c'
+    \end{matrix}\right] = \left[\begin{matrix}
+        0 & 0 \\ 1 & 4
+    \end{matrix}\right] \;\;\text{singolare}\;
+\]
+\ \newline
+\textbf{es.} 
