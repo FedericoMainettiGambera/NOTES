@@ -230,8 +230,8 @@ Premessa: Se in $G(s)$ il grado del numeratore è uguale al grado del denominato
 con $d$ costante e grado di $N(s) <$ grado di $D(s)$.\newline
 Con questa espressione della funzione di trasferimento, $d$ ce lo abbiamo già e le matrici $A,b,c$ le ricaviamo da $\frac{N(s)}{D(s)}$.\newline
 \newline
-Questa premessa ci mostra che è sufficiente imparare a trattare il caso in cui $\frac{N(s)}{D(s)}$ ha grado di $N(s) <$ grado di $D(s)$ (perchè avevamo già dimostrato precedentemente che sicurametne $N(s)$ non può avere grado $>$ del grado di $D(s)$, e nel caso in cui il grado di $N(s) = $ grado di $D(s)$ possiamo ricondurci al caso grado di $N(s) <$ grado di $D(s)$).\newline
-\newline
+Questa premessa ci mostra che è sufficiente imparare a trattare il caso in cui $\frac{N(s)}{D(s)}$ ha grado di $N(s) <$ grado di $D(s)$ (perchè avevamo già dimostrato precedentemente che sicurametne $N(s)$ non può avere grado $>$ del grado di $D(s)$, e nel caso in cui il grado di $N(s) = $ grado di $D(s)$ possiamo ricondurci al caso grado di $N(s) <$ grado di $D(s)$).
+\subsection{Forma canonica di raggiungibilità}
 Vediamo ora uno dei possibili modi di operare:\newline
 Nel caso più estremo il numeratore ha al massimo grado $n-1$:
 \[
@@ -318,7 +318,7 @@ Assemblando il tutto otteniamo la matrice $c$:
 \]
 \ \newline
 \newline
-Riassunto:\newline
+\subsubsection{Riassunto}:\newline
 Presa una funzione di trasferimento, per ottenere una quaterna ($A,b,c,d$) di dimensione minima si procede così: se il grado del numeratore è uguale al grado del denominatore si fa la divisione e si ottiene $G(s) = d + \frac{N(s)}{D(s)}$, da cui si ricava il valore $d$. A questo punto riscriviamo la frazione $\frac{N(s)}{D(s)} = \frac{ b_1 s^{n-1} + b_2 s^{n-2} + \dots + b_n }{ s^n + a_1 s^{n-1} + \dots + a_n }$ e scriviamo le $A, b$ e $c$:
 \[
     A=\left[\begin{matrix}

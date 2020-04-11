@@ -1,3 +1,72 @@
+\newline
+\newline
 \title{LEZIONE 11 26/03/2020}\newline
-\textbf{link} \href{https://web.microsoftstream.com/video/55dca95e-fe7f-4bf2-82e6-d3024939e5c3?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
-\section{}
+\textbf{link} \href{https://web.microsoftstream.com/video/55dca95e-fe7f-4bf2-82e6-d3024939e5c3?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui} [registrazione solo audio, no video]\newline
+\newline
+Questa realizzazione è sempre raggiungibile, infatti usanto questi $(A,b,c,d)$, la matrice di raggiungibilità ha la seguetne forma:
+\[
+    M_R = \left[\begin{matrix}
+        0     & 0     & \dots & 0     & 1    \\
+        0     & \dots & 0     & 1     & *    \\
+        \dots & 0     & 1     & *     & \dots\\
+        0     & 1     & *     & \dots & *    \\
+        1     & *     & \dots & *     & *    \\
+    \end{matrix}\right]
+\]
+Questa matrice è ovviamente non singolare.\newline
+\newline
+Infatti questo metodo di realizzazione prende il nome di \textbf{forma canonica di ragigungibilità}.\newline
+\newline
+Esiste anche la \textbf{forma canonica di osservabilità}: vedi libro, studio autonomo.\newline
+\newline
+Concetti fondamentali:
+\begin{itemize}
+    \item Partendo dalle matrici ($A,b,c,d$), esiste sempre una e una sola funzione di trasferimento $G(s)$, una e una sola matrice di raggiungibilità $M_R$, una e una sola matrice di osservabilità $M_O$. Quindi siamo a conoscenza dell'intero sistema.
+    \item Se invece partiamo da una funzione di trasferimento senza cancellazioni, allora esistono infinite (a meno di una trasformazione di similarità) quaterne ($A,b,c,d$). Queste quaterne possono essere divise in due famiglie:
+    \begin{itemize}
+        \item Minime: in cui la dimensione di $A$ è uguale al grado della funzione di trasferimento $G(s)$; queste sono raggiungibili e osservabili, e non ci sono cancellazioni.
+        \item Non minime: in cui esistono cancellazioni e possono essere o non raggiungibili (ma osservabili) o non osservabili (ma raggiungibili) o non raggiungibili e non osservabili.
+    \end{itemize}
+\end{itemize}
+\subsection{Esempi}
+\textbf{es.} Esempio di funzione di trasferimento con calcellazione, cioè con parte nascosta:
+\[
+    G(s) = \frac{(s+1) (s+2)}{(s+1)(s+3)(s+4))}
+\]
+Ci sarebbe da fare una semplificazione fra $(s+1)$ al numeratore e $(s+1)$ al denominatore. Però vediamo cosa succede se non facciamo la cancellazione:
+\[
+    G(s) = \frac{s^2 + 3s + 2}{s^3+8s^2 +19 s + 12}
+\]
+Scriviamo ora la forma canonica di raggiungibilità:
+\[
+    A= \left[\begin{matrix}
+        0 & 1 & 0\\
+        0 & 0 & 1\\
+        -12 & -19 & -8
+    \end{matrix}\right]; \;\;\;\;\;b = \left[\begin{matrix}
+        0 \\0\\1
+    \end{matrix}\right]; \;\;\;\;\; c=\left[\begin{matrix}
+        2&3&1
+    \end{matrix}\right]; \;\;\;\;\;d=0.
+\]
+Premettiamo che la presenza di una cancellazione ci impone il fatto che la realizzazione ($A,b,c,d$) non può essere raggiungibile e osservabile contemporaneamente. Quindi siccome abbiamo eseguito la realizzazione con la forma canonica di raggiungibilità, sicuramente $(A,b,c,d)$ sarà raggiungibile e di conseguenza non osservabile (perchè esiste una cancellazione). Se avessimo usato la forma canonica di osservabilità saremmo giunti a una realizzazione osservabile, ma non raggiungibile.\newline
+\newline
+[verifica di questa affermazioni con maxima].\newline
+\newline
+Quindi dalla sola funzione di trasferimento (con una parte nascosta) non possiamo sapere se il sistema è raggiungibile e osservabile (contemporaneamente), lo possiamo sapere solo dalle matrici. Se partiamo dalla funzione di trasferimento, le cancellazioni possono essere provocate o da una non raggiungibilità o da una non osservabilità, ma non sappiamo quale, quindi dobbiamo decidere se realizzare il sistema con la forma canonica osservabile o raggiungibile.
+\newpage
+\section{Sistemi interconnessi (LTI a TC)}
+Rappresentiamo i sistemi interconnessi (LTI a TC) con schemi a blocchi.\newline
+\newline
+Logica fondamentale dei sistemi a blocchi:
+[immagine dagli appunti del prof]\newline
+\newline
+Poniamoci il seguente problema:\newline
+[immagine dagli appunti del prof]\newline
+Ipotesi: tutti i blocchi sono privi di parti nascoste, ovvero tutte le loro funzioni di trasferimento hanno numeratore e donominatore coprimi (non ci sono cancellazioni).\newline
+Domande:
+\begin{itemize}
+    \item Come calcolo la generica funzione di trasferimento da $Y_i(s)$ a $U_j(s)$?
+    \item Che relazione c'è tra la stabilità delle singole funzioni di trasferimento e quella del sistema complessivo?
+    \item Posto che i singoli blocchi non hanno parti nascoste, il sistema complessivo può averne?
+\end{itemize}
