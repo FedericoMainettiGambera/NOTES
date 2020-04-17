@@ -71,7 +71,7 @@ Domande:
     \item Posto che i singoli blocchi non hanno parti nascoste, il sistema complessivo può averne?
 \end{itemize}
 \subsection{Elaborazione degli schemi a blocchi}
-Andiamo a vedere tre mosse particolari che ci permettono di manipolare gli schemi a blocchi.
+Andiamo a vedere tre configurazioni particolari che ci permettono di studiare gli schemi a blocchi.
 \subsubsection{Blocchi in serie o cascata}
 [immagine dagli appunti del prof]\newline
 Quale è la funzione di trasferimento $\frac{Y(s)}{U(s)}$ per un blocco in serie?
@@ -87,10 +87,10 @@ Quindi gli autovalori del sistema complessivo sono $\{\text{poli di $G_1$}\} U \
 Di conseguenza:
 \begin{itemize}
     \item $G_1$ e $G_2$ asintoticamente stabili è condizione neccessaria e sufficiente ($\Leftrightarrow$) per avere un sistema complessivo asintoticamente stabile.
-    \item Il sistema complessivo può avere parti nascoste
+    \item possono esserci cancellazioni, cioè parti nascoste.
 \end{itemize} 
 \ \newline
-Vediamo ora la stesa cosa nello stazio di stato (realizzazione minime e quindi raggiungibili e osservabili).
+Vediamo ora la stesa cosa nello spazio di stato (realizzazione minime e quindi raggiungibili e osservabili).
 Le equazioni costitutive dei blocchi sono:
 \[
     G_1: \begin{cases}
@@ -113,7 +113,7 @@ Di conseguenza:
         y = c_2 x_2 + d_2 y_1 = c_2 x_2 + d_2 c_1 x_1 + d_2 d_1 u
     \end{cases}
 \]
-Che ci danno il sisetma matriciale nlla forma:
+Che ci danno il sisetma matriciale nella forma:
 \[
     \begin{cases}
         \left[\begin{matrix}
