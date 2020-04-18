@@ -1,5 +1,76 @@
+\newpage
+\title{LEZIONE 12 30/03/2020}\newline
+\textbf{link} \href{https://web.microsoftstream.com/video/05bd4cd5-c99f-4a6c-9334-733e9a60083a?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
+\section{Risposta esponenziale (SD LTI a TC, SISO)}
+\subsection{Domanda}
+Dato il sistema $\begin{cases}
+    \dot{x} = Ax +bu\\ y = cx +du
+\end{cases}$ sottoposto all'ingresso $u(t) = e^{\lambda t}$ con $t\geq 0$ (o equivalentemente $e^{\lambda t} sca(t)$), esiste uno stato iniziale $x(0)$ tale che $x(0)$ e $u(t)$ producono un'uscita $y(t)= Y e^{\lambda t}$, con $Y$ un numero qualunque (non la trasformata) e $t \geq 0$?\newline
 \newline
+In altri termini:\newline
+Sottoponiamo un sistema dinamico (di cui non sono note le proprietà sulla sua stabilità) a un ingresso esponenziale ($u(t) = e^{\lambda t}$, che può anche essere amplificato come $u(t) = U e^{\lambda t}$, ovviamente il ragionamento non cambia). Detto questo sappiamo che un ingresso $x(0)$ produce un movimento libero di $y$ fatto da modi, invece un uscita del tipo $u(t) = e^{\lambda t}$ produce un movimento forzato fatto da modi $+$ un termine $Ye^{\lambda t}$ (con $t \geq 0$ e con $Y$ un numero, non la trasformata). La domanda è se esiste uno $x(0)$ tale che questi modi si elidano e resti solo il termine $Ye^{\lambda t}$.
+\[
+    \begin{cases}
+        \dot{x} = Ax +bu\\ 
+        y = cx +du
+    \end{cases} \;\; \longrightarrow \;\; u(t) = e^{\lambda t} \;\; \longrightarrow \;\; \exists \;\;x(0) \;\;\text{tale che } \;\; \longrightarrow \;\; y(t) = Y e^{\lambda t} \;\;(t\geq 0) \;?
+\]
+\subsection{Risposta alla domanda (dimostrazione)}
+Rispondiamo a questa domanda:\newline
+\textbf{Primo passaggio}:\newline
+Se voglio che $y(t) = Y e^{\lambda t}$, allora anche $x(t)$ dovrà avere la forma $X e^{\lambda t}$ (con $X$ un numero, non la trasformata), perchè $y(t) = cx(t) + de^{\lambda t}$ e qualunque forma di $x(t)$ che non sia del tipo $e^{\lambda t}$ si "vedrebbe" su $y$.\newline
 \newline
-\title{LEZIONE 12 20/03/2020}\newline
-\textbf{link} \href{https://web.microsoftstream.com/video/05bd4cd5-c99f-4a6c-9334-733e9a60083a?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}\newline
+\textbf{Secondo passaggio}:\newline
+Quindi $x(t) = x(0) e ^{\lambda t}$ (di cui noi stiamo proprio cercando $x(0)$) e di conseguenza $\dot{x}(t) = \lambda x(0) e^{\lambda t}$.\newline
 \newline
+\textbf{Terzo passaggio}:\newline
+Sostituisco $x(t)$ e $\dot{x}(t)$ appena espressi nell'equazione di stato, che devono evidentemente soddisfare:
+\[
+    \lambda x(0) e^{\lambda t} = A x(0) e^{\lambda t} + b e^{\lambda t}
+\]
+considerando che $e^{\lambda t} \neq 0$
+\[
+    \lambda x(0) \cancel{e^{\lambda t}} = A x(0) \cancel{e^{\lambda t}} + b \cancel{e^{\lambda t}}
+\]
+\[
+    \lambda x(0)  = A x(0)  + b 
+\]
+per cui otteniamo che
+\[
+    (\lambda I - A) x(0) = b
+\]
+\subsection{Generalizzazione della risposta}
+Quindi \textbf{in generale} con $u(t) = U e^{\lambda t}$ (con $U$ un numero qualunque che semplicemente amplifica l'esponenziale), se $\lambda$ non è autovalore di $A$, allora esiste uno e uno solo 
+\[
+    x(0) = (\lambda I - A)^{-1}b U
+\] tale che 
+\[
+    \begin{cases}
+        x(t) = (\lambda I -A)^{-1} b U e^{\lambda t}\\
+        y(t) = cx(t) + du(t) =  [c(\lambda I -A)^{-1} b + d] U e^{\lambda t} = G(\lambda) u(t)
+    \end{cases}
+\]
+\subsection{Riassunto e proprietà}
+\begin{itemize}
+    \item Dato il sistema $\begin{cases}
+        \dot{x} = Ax +bu\\ 
+        y = cx +du
+    \end{cases}$ in cui $u(t) = Ue^{\lambda t}$ , dove $t\geq 0$ e $\lambda$ non è autovalore di $A$ $\Longrightarrow$ con $x(0) = (\lambda I -A)^{-1} b U$ si ottiene $y(t) = G(\lambda) u(t)$, con $t\geq 0$.
+    \item Proprietà bloccante degli zeri: se $G(\lambda) = 0 \; \Longrightarrow$ con lo stesso stato iniziale $x(0)$, l'uscita diventa $y(t) = 0$, con $t\geq 0$.
+    \item Se INOLTRE il sistema è asintoticamente stabile, allora qualunque sia lo stato iniziale $x(0)$, l'uscita tenderà a $y(t) \rightarrow G(\lambda) u(t)$ per $t \rightarrow  \infty$.
+\end{itemize}
+\newpage
+\section{Risposta sinusoidale (SD LTI a TC, SISO)}
+Dato il sistema $\begin{cases}
+    \dot{x} = Ax +bu\\ 
+    y = cx +du
+\end{cases}$ e l'ingresso $u(t) = U sin(\omega t)$ per $t\geq 0$ (o equivalentemente $u(t) = U sin(\omega t) sca(t)$), esiste un qualche stato iniziale $x(0)$ tale che $y(t) = Y sin(\omega t + \phi)$ per $t \geq 0$?\newline
+\newline
+In altri termini:\newline
+[La domanda è molto simile a quella data per la risposta esponenziale] Applicato un ingresso sinusoidale, esiste uno stato di iniziale che faccia elidere fra loro i modi del moto libero e i modi del moto forzato in modo che io veda in uscita solo una sinusoide?\newline
+\newline
+Per rispondere ci basta ricordare che 
+\[
+    sin(\omega t) = \frac{e^{j \omega t} - e^{-j \omega t}}{2 j}
+\]
+e che, data la linearità del sistema, vale il principi odi sovrapposizione degli effetti. Quindi applichiamo due volte il risultato ottenuto per la risposta esponenziale e combiniamo i risultati.\newline
