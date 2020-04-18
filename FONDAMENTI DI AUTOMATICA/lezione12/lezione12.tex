@@ -61,16 +61,71 @@ Quindi \textbf{in generale} con $u(t) = U e^{\lambda t}$ (con $U$ un numero qual
 \end{itemize}
 \newpage
 \section{Risposta sinusoidale (SD LTI a TC, SISO)}
+\subsection{Domanda}
 Dato il sistema $\begin{cases}
     \dot{x} = Ax +bu\\ 
     y = cx +du
 \end{cases}$ e l'ingresso $u(t) = U sin(\omega t)$ per $t\geq 0$ (o equivalentemente $u(t) = U sin(\omega t) sca(t)$), esiste un qualche stato iniziale $x(0)$ tale che $y(t) = Y sin(\omega t + \phi)$ per $t \geq 0$?\newline
 \newline
 In altri termini:\newline
-[La domanda è molto simile a quella data per la risposta esponenziale] Applicato un ingresso sinusoidale, esiste uno stato di iniziale che faccia elidere fra loro i modi del moto libero e i modi del moto forzato in modo che io veda in uscita solo una sinusoide?\newline
-\newline
+[La domanda è molto simile a quella data per la risposta esponenziale] Applicato un ingresso sinusoidale, esiste uno stato di iniziale che faccia elidere fra loro i modi del moto libero e i modi del moto forzato in modo che io veda in uscita solo una sinusoide?
+\subsection{Risposta alla domanda (dimostrazione)}
 Per rispondere ci basta ricordare che 
 \[
     sin(\omega t) = \frac{e^{j \omega t} - e^{-j \omega t}}{2 j}
 \]
 e che, data la linearità del sistema, vale il principi odi sovrapposizione degli effetti. Quindi applichiamo due volte il risultato ottenuto per la risposta esponenziale e combiniamo i risultati.\newline
+\newline
+Poniamo $u_1(t) = e^{j \omega t}$ e $u_2(t) = e^{-j \omega t}$, per cui $u(t) = U \frac{u_1(t) - u_2(t)}{2j}$\newline
+\newline
+Iniziamo analizzando $u_1(t)$: se $j \omega$ non è autovalore di $A$, allora esiste uno e un solo $x_1(0)$ tale che l'uscita ottenuta è 
+\[
+    y_1(t) = G(j \omega) e^{j \omega t}
+\]
+Per $u_2(t)$: se $-j \omega$ non è autovalore di $A$, allora esiste uno e un solo $x_2(0)$ tale che l'uscita ottenuta è 
+\[
+    y_2(t) = G(-j \omega) e^{-j \omega t}
+\]
+Combiniamo ora $y_1$ e $y_2$:
+\[
+    \begin{matrix}
+        u(t) = \frac{U}{2j} (u_1(t) - u_2(t))\\
+        x(0) = \frac{U}{2j} (x_1(0) - x_2(0))
+    \end{matrix} \Longrightarrow \text{Principio di sovrapposizione degli effetti}\; \Longrightarrow y(t) =\frac{U}{2j}(y_1(t) -y_2(t))
+\]
+Analiziamo $y(t)$:
+\[
+    y(t) = \frac{U}{2j}\left( G(j \omega)e^{j \omega t} - G(-j \omega)e^{- j \omega t} \right)
+\]
+Osserviamo che $G(s)$ è razionale fratta, quindi $G(-j \omega) = \bar{G}(j \omega)$ (complesso coniugato). Quindi se pongo $G(j \omega) = M e^{j \phi}$ (con $M$ modulo e $\phi$ argomento di $G(j \omega)$) otteniamo $G(-j \omega) = M e^{- j \phi}$.\newline
+\newline
+Allora
+\[
+    y(t) = \frac{U}{2j} \left( M e^{j \phi} e^{j \omega t} - Me^{-j \phi} e^{-j \omega t} \right) = M U \frac{e^{j (\omega t + \phi)} - e^{-j(\omega t + \phi)}}{2j}
+\]
+\[
+    y(t) = MU sin(\omega t + \phi)
+\]
+con $M= |G(j \omega|$ e $\phi = arg(G(j \omega))$
+\subsection{Generalizzazione della risposta (Teorema fondamentale della risposta in frequenza)}
+Dato il sistema dinamico LTI a TC, SISO $\begin{cases}
+    \dot{x} = Ax +bu\\ 
+    y = cx +du
+\end{cases}$, detta $G(s)$ la sua funzione di trasferimento e considerato l'ingresso $u(t) = U sin(\omega t)$ per $t\geq 0$:
+\begin{itemize}
+    \item Se $\mp j \omega$ non sono autovalori di $A$, allora esiste uno e uno solo stato iniziale $x(0)$ tale che $y(t) = |G(j \omega)| U sin(\omega t + arg(G(j \omega)))$ per $t\geq 0$. (Se $\mp j \omega$ sono autovalori di $A$, allora si verifica un fenomeno di risonanza, che però non è argomento di questo corso).
+    \item Se INOLTRE il sistema è asintoticamente stabile, allora qualunque sia lo stato iniziale, l'uscita  tenderà a $y(t) \rightarrow |G(j \omega) U sin( \omega t + arg(G(j \omega)))$ per $t \rightarrow  \infty$
+\end{itemize}
+\subsection{Definizione di risposta in frequenza}
+\textbf{definizione}:  Data una funzione di trasferimento $G(s)$, la sua restrizione all'asse immaginario positivo $J^+$, cioè $G(j \omega)$ con $\omega \geq 0$, si dice \textbf{rispsota in frequenza} (RF) di $G(s)$.
+\subsection{Esempio}
+\textbf{es.} Dato $G(s) = \frac{1}{1+0,15}$, che è asintoticamente stabile, e $u(t) = 5 sin(20 t)$, a cosa tende $y(t) \rightarrow ?$ per $t \rightarrow \infty$?\newline
+\newline
+Siccome il sistema è asintoticamente stabile, allora per il teorema della rispsota in frequenza $y(t) \rightarrow 5 |G(j 20)| sin(20 t + arg(G(j 20)))$.
+\[
+    G(j 20) = \frac{1}{1 + 2j} \Rightarrow \begin{matrix}
+        |G(j 20)| = \frac{1}{\sqrt{1+4}} \sim  0,45\\
+        arg(G(j 20)) = -arctan(2) \sim  -63,5
+    \end{matrix}
+\]
+[il prof ha terminato i conti e ha tracciato un grafico di $u(t)$ e $y(t)$ usando maxima: ci sta mostrando che il modulo $|G(j 20)|$ rappresenta la percentuale dell'ampiezza dell'uscita rispetto all'ampiezza dell'ingresso, in questo esempio l'uscita è ampia il $45\%$ dell'ingresso; invece l'argomento $arg(G(j 20))$ rappresenta lo sfasamento del segnale di uscita rispetto al segnale di ingresso, in questo esempio l'uscita è sfasata di $63$ gradi (in ritardo) e per capire quanto effettivamente sia uno sfasamento di $63$ gradi basta considerare che un periodo del segnale di ingresso sono $360$ gradi]

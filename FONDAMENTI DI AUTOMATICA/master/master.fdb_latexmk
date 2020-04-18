@@ -1,12 +1,12 @@
 # Fdb version 3
-["makeindex master.idx"] 1587173419 "master.idx" "master.ind" "master" 1587173547
-  "master.idx" 1587173546 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1587175949 "master.idx" "master.ind" "master" 1587176561
+  "master.idx" 1587176560 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "master.ind"
   "master.ilg"
-["pdflatex"] 1587173544 "c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" "master" 1587173547
+  "master.ind"
+["pdflatex"] 1587176558 "c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" "master" 1587176561
   "../../preamble/preamble.tex" 1586381539 707 ea9409653390c911ff58e23c44f6605e ""
-  "../lezione12/lezione12.tex" 1587173542 4903 01b24500a33f21a78a11bcbc742ca09e ""
+  "../lezione12/lezione12.tex" 1587176557 8738 f22db9efa8bc1a1bb5cfb1f07f3c7531 ""
   "c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.tex" 1587170919 872 cd18a539d3dec4d1b38bff5607b0a10c ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1584035588 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1584038501 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -38,6 +38,7 @@
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1584033703 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1584033703 36281 c355509802a035cadc5f15869451dcee ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1584033703 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1584033703 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1584033703 32762 7fee39e011c23b3589931effd97b9702 ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1584033703 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1584033703 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
@@ -181,18 +182,18 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1584048551 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1584049042 8274593 951864db8bcab083c09dd09dcef78fa9 ""
   "c:/texlive/2019/texmf.cnf" 1584048406 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux" 1587173546 1775 863d227f9a84c462cbba5ee1c1bf9b47 ""
-  "master.aux" 1587173546 1775 863d227f9a84c462cbba5ee1c1bf9b47 "pdflatex"
-  "master.ind" 1587173420 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1587173546 553 e02d79be36e86ed889e858c290b276ba "pdflatex"
+  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux" 1587176561 2479 dcd7e92292a456d8b8110a2495ef4138 ""
+  "master.aux" 1587176561 2479 dcd7e92292a456d8b8110a2495ef4138 "pdflatex"
+  "master.ind" 1587175950 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
+  "master.out" 1587176561 975 4bd9626c4bff5af90f096019c49903a5 "pdflatex"
   "master.tex" 1587170919 872 cd18a539d3dec4d1b38bff5607b0a10c ""
-  "master.toc" 1587173546 719 a05f6978a7ecb2bf037b9f046a197e23 "pdflatex"
+  "master.toc" 1587176561 1218 e1925ec893b7ace4ded4eceb7086679b "pdflatex"
   (generated)
   "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.log"
-  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf"
   "master.out"
-  "master.toc"
-  "master.log"
-  "master.aux"
+  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf"
   "master.pdf"
+  "master.toc"
+  "master.aux"
   "master.idx"
+  "master.log"
