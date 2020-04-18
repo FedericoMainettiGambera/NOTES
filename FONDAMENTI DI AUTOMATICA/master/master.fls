@@ -269,63 +269,34 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 OUTPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.toc
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione1/lezione1.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione1/lezione1.tex
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione12/lezione12.tex
+INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione12/lezione12.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/ts1cmss.fd
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/ts1cmss.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/tcss1000.tfm
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione2/lezione2.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione2/lezione2.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione3/lezione3.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione3/lezione3.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione4/lezione4.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione4/lezione4.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione5/lezione5.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione5/lezione5.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione6/lezione6.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione6/lezione6.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione7/lezione7.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione7/lezione7.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione10/lezione10b.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione10/lezione10b.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione11/lezione11.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione11/lezione11.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione12/lezione12.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione12/lezione12.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione8/lezione8.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione8/lezione8.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione9/lezione9.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione9/lezione9.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione10/lezione10a.tex
-INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione10/lezione10a.tex
+INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione13/lezione13.tex
+INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione13/lezione13.tex
 INPUT c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux
 INPUT c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.out
 INPUT c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.out
 INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
-INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb
-INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb
