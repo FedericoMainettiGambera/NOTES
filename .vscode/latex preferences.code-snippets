@@ -441,4 +441,8 @@
 		"prefix": "tilde",
 		"body": "\\tilde{$1}$0"
 	},
+	"dB":{
+		"prefix": "db",
+		"body": "_{dB}"
+	},
 }

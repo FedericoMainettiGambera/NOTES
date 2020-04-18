@@ -131,4 +131,78 @@ Siccome il sistema è asintoticamente stabile, allora per il teorema della risps
 [il prof ha terminato i conti e ha tracciato un grafico di $u(t)$ e $y(t)$ usando maxima: ci sta mostrando che il modulo $|G(j 20)|$ rappresenta la percentuale dell'ampiezza dell'uscita rispetto all'ampiezza dell'ingresso, in questo esempio l'uscita è ampia il $45\%$ dell'ingresso; invece l'argomento $arg(G(j 20))$ rappresenta lo sfasamento del segnale di uscita rispetto al segnale di ingresso, in questo esempio l'uscita è sfasata di $63$ gradi (in ritardo) e per capire quanto effettivamente sia uno sfasamento di $63$ gradi basta considerare che un periodo del segnale di ingresso sono $360$ gradi]
 \newpage
 \section{Rappresentazioni della risposta in frequenza di una funzione di trasferimento}
-\textbf{TIMESTAMP: 1:34:55}
+\subsection{Diagramma polare}
+[immagine dagli appunti del prof]\newline
+In un piano immaginario il termine $s = j \omega$ "cammina" lungo l'asse immaginario. Se ora calcoliamo $G(s)$ e lo mostriamo in un secondo piano immaginario, otteniamo una curva $
+G(j \omega)$ con parametro $\omega$.\newline
+\newline
+Possiamo ora dire che la risposta in frequenza è l'immagine attraverso $G$ dell semiasse immaginario positivo $J^+$.
+\subsection{Diagrammi cartesiani o di Bode}
+\subsubsection{Diagramma di Bode del modulo}
+[immagine dagli appunti del prof]\newline
+\newline
+Il diagramma di Bode del modulo è un piano cartesiano in cui l'asse delle ascisse è l'asse delle $\omega$ e quello delle ordinate è l'asse di $|G(j \omega)|$.\newline
+\newline
+L'asse delle $\omega$ è logaritmico, cioè a pari distanza non corrisponde pari differenza, ma pari rapporto logaritmico (in base $10$). Inoltre lo zero non viene rappresentato, perchè si trova a $- \infty$, e per questo l'intersezione con l'asse di $|G(j \omega)|$ non viene rappresentato.\newline
+\newline
+L'asse di $|G(j \omega)|$ è, invece, espresso in $dB$.\newline \textbf{Definizione}: Rappresentare una quantità in $dB$ significa $x_{dB} = 20 log_10|x|$.\newline
+Per esempio $100_{dB} = 40$, $0,1 _{dB} = -20$, $-0,1 _{dB} = -20$, $1 _{dB} = 0$. Notare che la scrittura in $dB$ non distingue il segno, e inoltre che se $|x| > 1$, allora $x _{dB} >0$ e se $|x|<1$, allora $x _{dB} <0$.
+\subsubsection{Diagramma di Bode della fase}
+[immagine dagli appunti del prof]\newline
+\newline
+Il diagramma di Bode della fase è un piano cartesiano in cui l'asse delle ascisse è sempre logaritmico ed è l'asse delle $\omega$, invece l'asse delle ordinate è l'asse di $arg(G(j \omega))$ misurato in gradi.
+\subsection{Tracciamento dei diagrammi di Bode (asintotici)}
+Scriviamo la funzione di trasferimento $G(s)$ della cui risposta in frequenza vogliamo i diagrammi di Bode nella forma 
+\[
+    G(s) = \frac{\mu}{s^g} \cdot \frac{(1 + s \tau_1)(1 + s \tau_2)\dots}{(1 + s t_1)(1 + s t_2)\dots} \cdot \frac{(1 + 2 \frac{\zeta}{\sigma_n}s + \frac{1}{\sigma_n^2}s^2)\dots}{(1 + 2 \frac{\xi}{\omega_n} s + \frac{1}{\omega_n^2}s^2)\dots}
+\]
+In cui:
+\begin{itemize}
+    \item prima frazione: $g$ è il \textbf{tipo} della funzione di trasferimneto ed è il numero di poli in $s=0$ meno il numero di zeri in $s=0$, o, per dirlo in altri termini, il numero di poli (se positivo) o zeri (se negativo) in $s=0$.\newline
+    Per esempio una funzione di trasferimento di tipo $1$ ha un polo nell'origine, una funzione di trasferimento di tipo $-1$ ha uno zero nell'origine, una funzione di trasferimento di tipo $2$ ha due poli nell'origine, una funzione di trasferimento di tipo $0$ non ha nè poli nè zeri nell'origine.
+    \item seconda frazione: i vari termini a numeratore del tipo $(1 + s \tau_i)$ rendono conto degli zeri reali non nell'origine; invece i vari termini a denominatore del tipo $(1 + s t_k)$ rendono conto dei poli reali non nell'origine.
+    \item terza frazione: infine ci possono essere coppie di zeri complessi coniugati e coppie di poli complessi coniugati, rappresentate dai termini $(1 + 2 \frac{\zeta}{\sigma_n}s + \frac{1}{\sigma_n^2}s^2)$ (per gli zeri) e $(1 + 2 \frac{\xi}{\omega_n} s + \frac{1}{\omega_n^2}s^2)$ (per i poli).
+\end{itemize}
+Inoltre il numero $\mu$ è detto \textbf{guadagno} della funzione di trasferimento, i termini $t, \tau$ sono \textbf{costanti di tempo} di zeri e poli,  $\omega, \sigma$ si dicono \textbf{frequenze naturali} (o pulsazioni naturali) e $\zeta, \xi$ sono i \textbf{fattori di smorzamento}.\newline
+\newline
+Una delle proprietà più particolari è che tutto il termine $\frac{(1 + s \tau_1)(1 + s \tau_2)\dots}{(1 + s t_1)(1 + s t_2)\dots} \cdot \frac{(1 + 2 \frac{\zeta}{\sigma_n}s + \frac{1}{\sigma_n^2}s^2)\dots}{(1 + 2 \frac{\xi}{\omega_n} s + \frac{1}{\omega_n^2}s^2)\dots}$ tende a $\rightarrow  1$ per $s \rightarrow 0$, quindi $G(s) \sim \frac{\mu}{s^g}$ per $s \rightarrow  0$.\newline
+\newline
+\textbf{es.} $G(s) = \frac{(s+2)(s^2-3s+2)}{s^3 + 4 s^2 + s}$.\newline
+Trasformiamola nella forma che vogliamo avere per il diagramma di Bode:
+\[
+    G(s) = \frac{2(1+\frac{s}{2})(s-1)(s-2)}{s(s^2+4s+1)} = \frac{2(1+ \frac{2}{2})(-1)(1-s)(-2)(1-\frac{s}{2})}{s(s-(-2-\sqrt{3}))(s-(-2+\sqrt{3}))}=
+\]
+\[
+    = \frac{2(-1)(-2)(1+\frac{s}{2})(1-s)(1-\frac{s}{2})}{(-2-\sqrt{3})(-2+\sqrt{3})s(1-\frac{s}{-2-\sqrt{3}})(1-\frac{s}{-2+\sqrt{3}})}
+\]
+in cui $\mu= \frac{2(-1)(-2)}{(-2-\sqrt{3})(-2+\sqrt{3})}$ e $g=1$.\newline
+\newline
+\newline
+Quindi ogni funzione di trasferimento razionale fratta si può esprimere come prodotto di termini del tipo 
+\[
+    \begin{matrix}
+        G_a(s) = \mu & \;\; & G_c(s) = 1+ s t\\
+        G_b(s) = \frac{1}{s^g} & \;\; & G_d(s) = 1 + 2 \frac{\xi}{\omega_n}s + \frac{1}{\omega_n^2}s^2
+    \end{matrix}
+\]
+\ \newline
+\newline
+Allora detti $G_i$ i fattori componenti $G$, Siccome
+\[
+    G=\prod G_i \;\; \Longrightarrow \;\; \begin{cases}
+        |G| = \prod |G_i| \;\; \Longrightarrow \;\; |G|_{dB} = \sum |G_i|_{dB}\\
+        arg(G) = \sum arg(G_i)
+    \end{cases}
+\]
+\ \newline
+\newline
+Vediamo perciò come tracciare i diagrammi di bode del modulo e della fase (asintotici) di $G_{a,b,c,d}$. Una volta fatto questo sarà semplice combinarli per arrivare al tracciamento definitivo di $G$.
+\begin{itemize}
+    \item $G_a(s) = \mu \rightarrow  G_a(j \omega) = \mu \rightarrow |G_a(j \omega)|_{dB} = 20 log_10|\mu|$ e $arg(G_a(j \omega)) = \begin{cases}
+        0 \;\;\; & \mu>0\\
+        -180^o & \mu<0
+    \end{cases}$.\newline
+    Il diagramma di bode del modulo è una retta orizzontale (se $|\mu| > 1$ è sopra l'asse delle ascisse, se $\mu < 1$ è sotto l'asse delle ascisse).\newline
+    Anche il diagramma di bode della fase è una retta orizzontale che coincide con l'asse delle ascisse se $\mu>0$, altrimenti se $\mu<0$ è posta all'altezza di $-180^o$.
+    \item [continua la prossima volta, ciau]
+\end{itemize}
