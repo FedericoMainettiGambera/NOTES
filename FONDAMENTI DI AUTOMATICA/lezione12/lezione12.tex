@@ -198,10 +198,13 @@ Allora detti $G_i$ i fattori componenti $G$, Siccome
 \newline
 Vediamo perciò come tracciare i diagrammi di bode del modulo e della fase (asintotici) di $G_{a,b,c,d}$. Una volta fatto questo sarà semplice combinarli per arrivare al tracciamento definitivo di $G$.
 \begin{itemize}
-    \item $G_a(s) = \mu \rightarrow  G_a(j \omega) = \mu \rightarrow |G_a(j \omega)|_{dB} = 20 log_10|\mu|$ e $arg(G_a(j \omega)) = \begin{cases}
-        0 \;\;\; & \mu>0\\
-        -180^o & \mu<0
+    \item $G_a(s) = \mu \rightarrow  G_a(j \omega) = \mu \rightarrow \begin{cases}
+        |G_a(j \omega)|_{dB} = 20 log_10|\mu|\\
+        arg(G_a(j \omega)) = \begin{cases}
+            0 \;\;\; & \mu>0\\
+            -180^o & \mu<0
+        \end{cases}
     \end{cases}$.\newline
     Il diagramma di bode del modulo è una retta orizzontale (se $|\mu| > 1$ è sopra l'asse delle ascisse, se $\mu < 1$ è sotto l'asse delle ascisse).\newline
-Anche il diagramma di bode della fase è una retta orizzontale che coincide con l'asse delle ascisse se $\mu>0$, altrimenti se $\mu<0$ è posta all'altezza di $-180^o$. (Il perchè di questi valori lo scopriremo più avanti)
+Anche il diagramma di bode della fase è una retta orizzontale che coincide con l'asse delle ascisse se $\mu>0$, altrimenti se $\mu<0$ è posta all'altezza di $-180^o$.
 \end{itemize}
