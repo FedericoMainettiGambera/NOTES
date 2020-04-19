@@ -28,6 +28,30 @@
         \end{cases}$
     \end{itemize}
     [immagine dagli appunti del prof]\newline \newline
-    diagramma di bode del modulo: Definiamo la \textbf{frequenza d'angolo} $\frac{1}{t}$ nel diagramma di Bode del modulo. Grazie alle approssimazioni che abbiamo fatto, andando a sinistra nell'asse delle $\omega$, cioè verso il valore di $0 _{dB}$, il modulo vale circa $1$. Facciamo valere questa approssiamazione fino al valore di frequenza d'angolo. Superata la frequenza d'angolo il modulo cresce con pendenza $+1$, cioè di $20 \frac{dB}{decade}$. Questa rappresentazione prende il nome di diagramma di bode del modulo asintotico (il diagramma di bode del modulo esatto è mostrato in figura, e la differenza è che non ha una curva "netta").\newline \newline
-    diagramma di bode della fase:
+    diagramma di bode del modulo: Definiamo la \textbf{frequenza d'angolo} $\frac{1}{|t|}$ nel diagramma di Bode del modulo. Grazie alle approssimazioni che abbiamo fatto, andando a sinistra nell'asse delle $\omega$, cioè verso il valore di $0 _{dB}$, il modulo vale circa $1$. Facciamo valere questa approssiamazione fino al valore di frequenza d'angolo. Superata la frequenza d'angolo il modulo cresce con pendenza $+1$, cioè di $20 \frac{dB}{decade}$. Questa rappresentazione prende il nome di diagramma di bode del modulo asintotico (il diagramma di bode del modulo esatto è mostrato in figura, e la differenza è che non ha una curva "netta").\newline \newline
+    diagramma di bode della fase: approssimiamo tutto ciò che precede la frequenza d'angolo con $0^o$, alla frequenza d'angolo c'è un salto in cui se $t$ è positivo prota a $90^o$ (rossa nel disegno), se è negativo a $-90^o$ (blu nel disegno). La rappresentazione non approssimata dovrebbe seguire la linea tratteggiata in rosso nel disegno.\newline
+    \newline
+    Notiamo che l'approssimazione del modulo è molto buona, mentre quella della fase non molto.
+    \item $G_d(s) = 1 + 2 \frac{\xi}{\omega_n}s + \frac{1}{\omega_n^2}s^2 \rightarrow  G_d(j \omega) = 1 + 2 \frac{\xi}{\omega_n} j \omega + \frac{1}{\omega_n^2}(j \omega)^2 = 1- \frac{\omega^2}{\omega_n^2} + j 2 \xi \frac{\omega}{\omega_n} $ con $1- \frac{\omega^2}{\omega_n^2}$ parte reale e $j 2 \xi \frac{\omega}{\omega_n}$ parte immaginaria
+    \begin{itemize}
+        \item per $\omega \rightarrow 0$: $\begin{cases}
+            \text{parte reale}\; \rightarrow  1\\
+            \text{parte immaginaria}\; \rightarrow 0
+        \end{cases} \Rightarrow \begin{cases}
+            |G_d(j \omega)| \rightarrow 1 \rightarrow |G_d(j \omega)|_{dB} \rightarrow 0\\
+            arg(G_d(j \omega)) \rightarrow  0^o
+        \end{cases}$ 
+        \item per $\omega \rightarrow + \infty$: \newline
+        [immagine dagli appunti del prof]\newline
+        Chiamiamo le generiche radici coniugate complesse  la coppia $s_1$ e $s_2$ di $G_d(s) = \frac{1}{\omega_n^2}(s-s_1)(s-s_2)$ e rappresentiamole nel grafico.\newline \newline
+        Facciamo un attimo un excursus dal caso $\omega \rightarrow  \infty$ e dimostriamo i risultati ottenuti precedentemente per $\omega \rightarrow 0$: [colore blu nel disegno] prendiamo il punto $j \omega$ con $\omega=0$, cioè $j0$, i vettori che connettono le radici $s_1$ e $s_2$ al punto $j0$ hanno modulo $\omega_n$, quindi il modulo di $|G_d(j0)|$ vale $\frac{\omega_n \cdot \omega_n}{\omega_n^2} = 1$. Possiamo anche dimostrare che la fase di $G_d$ per $\omega \rightarrow 0$, cioè in $j0$, che vale $0^o$, infatti gli angoli di $s_1$ e $s_2$ rispetto a un asse orizzontale sono opposti e si annullano a vicenda.\newline \newline
+        Vediamo ora il caso in cui, invece di considerare il punto $j0$, consideriamo il generico punto $j \omega$. Analiziamo i vettori che connettono il generico punto $j \omega$ e $s_1$ e $s_2$ [in rosso nel disegno], questi vettori $j \omega - s_i$ per $\omega \rightarrow \infty$ (cioè per facendo salire lungo l'asse immaginario il generico punto $j \omega$) hanno entrami modulo che tende a $\infty$ e fase che tende a $90^o$ (quindi in totale $180^o$).\newline
+        Quindi per $\omega \rightarrow  \infty \Rightarrow \begin{cases}
+            |G_d(j \omega)| \rightarrow \infty \;\;\text{allo stesso modo in cui tende}\;\omega^2\\
+            arg(G_d(j \omega)) \rightarrow  180^o
+        \end{cases}$ 
+        \textbf{oss.} Il modulo del vettore $|j \omega - s_2|$ è monotono crescente, mentre il modulo del vettore $|j \omega - s_1|$ no, infatti ha un minimo per $\omega = Im(s_1)$, il perchè si vede graficamente:\newline
+        [immagine dagli appunti del prof]\newline
+        \textbf{oss.} più $s_1$ e $s_2$ sono vicini all'asse immaginario, più il minimo di $s_1$ è pronunciato.
+    \end{itemize}
 \end{itemize}
