@@ -4,5 +4,30 @@
     \item $G_b(s)= \frac{1}{s^g} \rightarrow G(j \omega) = \frac{1}{(j \omega)^g} \rightarrow \begin{cases}
         |G_b(j \omega)| = \frac{1}{\omega^g} \rightarrow |G_b(j \omega)|_{dB}= - 20 g log(\omega)\\
         arg(G_b(j \omega)) = - g \cdot 90^o
-    \end{cases} $
+    \end{cases} $\newline
+    [immagine dagli appunti del prof]\newline \newline
+    diagramma di bode del modulo: Il diagramma di bode del modulo corrispondente interseca sempre l'asse delle ascisse nel punto $\omega = 1$ e la pendenza è $-20g \frac{dB}{decade}$ (spesso abbreviato come "pendenza $-g$"), dove la \textbf{decade} è la distanza corrispondente a un rapporto che vale $10$.\newline \newline
+    diagramma di bode delle fasi: Il diagramma di bode delle fasi è orizzontale al valore $-g \cdot 90^o$.\newline \newline
+    Da notare è che fino ad ora non abbiamo fatto nessuna approssimazione.
+    \item $G_c(s)= 1 + st \rightarrow  G_c(j \omega) = 1 + j \omega t \rightarrow \begin{cases}
+        |G_c(j \omega)| = \sqrt{1 + (\omega t)^2}\\
+        arg(G_c(j \omega))= arctan(\omega t)
+    \end{cases}$\newline
+    Per facilitare i conti applichiamo un approssimazione, che è il motivo del perchè stiamo facendo diagrammi di bode asintotici:
+    \begin{itemize}
+        \item se $| \omega t| >> 1$ (molto maggiore di $1$), allora $G_c(j \omega) \sim  j \omega t$, per cui otteniamo \newline che $\begin{cases}
+            |G_c(j \omega)| \sim  | \omega t| \\
+            arg(G_c(j \omega)) \sim  \begin{cases}
+                90^o  \;\;& t>0\\
+                -90^o & t <0
+            \end{cases}
+        \end{cases}$
+        \item se $| \omega t| << 1$ (molto minore di $1$), allora $G_c(j \omega) \sim 1$, per cui otteniamo \newline ce $\begin{cases}
+            |G_c(j \omega)| \sim  1 \\
+            arg(G_c(j \omega)) \sim 0^o
+        \end{cases}$
+    \end{itemize}
+    [immagine dagli appunti del prof]\newline \newline
+    diagramma di bode del modulo: Definiamo la \textbf{frequenza d'angolo} $\frac{1}{t}$ nel diagramma di Bode del modulo. Grazie alle approssimazioni che abbiamo fatto, andando a sinistra nell'asse delle $\omega$, cioè verso il valore di $0 _{dB}$, il modulo vale circa $1$. Facciamo valere questa approssiamazione fino al valore di frequenza d'angolo. Superata la frequenza d'angolo il modulo cresce con pendenza $+1$, cioè di $20 \frac{dB}{decade}$. Questa rappresentazione prende il nome di diagramma di bode del modulo asintotico (il diagramma di bode del modulo esatto è mostrato in figura, e la differenza è che non ha una curva "netta").\newline \newline
+    diagramma di bode delle fasi:
 \end{itemize}
