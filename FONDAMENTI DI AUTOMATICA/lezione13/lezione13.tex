@@ -66,3 +66,32 @@
         Diagramma di Bode della fase: Il diagramma asintotico (approssimato) è fatto a scalino e va da $0^o$ a $+ 180^o$ se $\xi > 0$ o a $-180^o$ se $\xi < 0$. Il diagramma esatto è mostrato in figura (tratteggiato in rosso) e può avere una pendenza più o meno ripida per $|\xi| \rightarrow 0$.
     \end{itemize} 
 \end{itemize}
+\subsubsection{Tracciamento complessivo}
+Per capire come unire tutti i diagrammi fino ad ora visti di $G_{a,b,c,d}$ vediamo un esempio. \newline
+\newline
+\textbf{es.} Sia $G(s) = \frac{10(1-s)(1+\frac{s}{2})}{s(1+ \frac{s}{10})^2}$, con $\mu=10$ e $g=1$. Riscriviamolo per una migliore comprensione come:
+\[
+    G(s) = \frac{10}{s} \cdot  (1-s) \cdot  (1+\frac{s}{2}) \cdot \frac{1}{1 + \frac{s}{10}} \cdot  \frac{1}{1+\frac{s}{10}}
+\]
+\ \newline
+Facciamo ora i diagrammi di bode del modulo di tutti questi termini e infine li sommiamo per avere il diagramma complessivo.
+\begin{itemize}
+    \item $\frac{10}{s}$: pendenza $-1$ e intersezione con l'asse $\omega$ in $10$.
+    \item $(1-s)$: parte da $0$ e alla frequenza d'angolo $1$ ottiene pendenza $+1$. 
+    \item $(1+\frac{s}{2})$: vale $0$ fino a frequenza $2$ e poi sale con pendenza $+1$. 
+    \item $\frac{1}{1 + \frac{s}{10}}$ (di cui ce ne sono due identici, da ricordare per fare il diagramma complessivo finale): vale $0$ fino a frequenza d'angolo $10$ e poi ottiene pendenza (scende) $-1$, perchè essendo a denominatore il logaritmo cambia segno.
+    \item diagramma di bode complessivo: è la somma dei diagrammi precedenti, graficamente si può ragionare sul fatto che il diagramma complessivo è fatto da dei semplici cambi di pendenza dovuti a tutti i diagrammi precedenti. (notiamo che l'ultimo termine è presente due volte).
+\end{itemize}
+[immagine dagli appunti del prof]\newline
+\newline
+Facciamo ora i diagrammi di bode della fase di tutti questi termini e infine li sommiamo per avere il diagramma complessivo.
+\begin{itemize}
+    \item $\frac{10}{s}$: è una retta orizzontale a $-90^o$ fissi.
+    \item $(1-s)$: parte da $0^o$ e poi ha uno scalino negativo fino a $-90^o$ (negativo perchè è del tipo $1-j \omega$) alla frequenza di $\omega=1$.
+    \item $(1+\frac{s}{2})$:  parte da $0^o$ e alla sua frequenza d'angolo che vale $2$ ha uno scalino in cui passa a $+ 90^o$ (positivo perchè è del tipo $1+j \omega$).
+    \item $\frac{1}{1 + \frac{s}{10}}$ (di cui ce ne sono due identici, da ricordare per fare il diagramma complessivo finale): parte da $0^o$ e alla frequenza di $10$ ha uno scalino fino a $-90^o$ (è della forma $1 + j \omega$, ma \textbf{siccome è al denominatore il segno viene cambiato}, quindi è negativo)
+    \item diagramma di bode complessivo: è la somma dei diagrammi precedenti, graficamente si può ragionare sul fatto che il diagramma complessivo è fatto dalla somma dei vari scalini alla frequenza opportuna. (notiamo che l'ultimo termine è presente due volte).
+\end{itemize}
+[immagine dagli appunti del prof]\newline
+\newline
+\textbf{In generale per la fase}: Se è del tipo $1+j \omega$ allora abbiamo uno scalino positivo di $+90^o$ gradi alla frequenza d'angolo, se è del tipo $1- j \omega$ allora abbiamo uno scalino negativo di $-90^o$ alla frequenza d'angolo. Se invece il termine $1\pm j \omega$ è a denominatore, il ragionamento è al contrario, cioè se è del tipo $\frac{1}{1+j \omega}$ allora abbiamo uno scalino negativo di $-90^o$ alla frequenza d'angolo, se è del tipo $\frac{1}{1- j \omega}$ allora abbiamo uno scalino positivo di $+90^o$ alla frequenza d'angolo.

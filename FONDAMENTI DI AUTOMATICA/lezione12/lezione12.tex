@@ -152,6 +152,7 @@ Per esempio $100_{dB} = 40$, $0,1 _{dB} = -20$, $-0,1 _{dB} = -20$, $1 _{dB} = 0
 \newline
 Il diagramma di Bode della fase è un piano cartesiano in cui l'asse delle ascisse è sempre logaritmico ed è l'asse delle $\omega$, invece l'asse delle ordinate è l'asse di $arg(G(j \omega))$ misurato in gradi.
 \subsection{Tracciamento dei diagrammi di Bode (asintotici)}
+\subsubsection{Forma della funzione di trasferimento per diagrammi di Bode}
 Scriviamo la funzione di trasferimento $G(s)$ della cui risposta in frequenza vogliamo i diagrammi di Bode nella forma 
 \[
     G(s) = \frac{\mu}{s^g} \cdot \frac{(1 + s \tau_1)(1 + s \tau_2)\dots}{(1 + s t_1)(1 + s t_2)\dots} \cdot \frac{(1 + 2 \frac{\zeta}{\sigma_n}s + \frac{1}{\sigma_n^2}s^2)\dots}{(1 + 2 \frac{\xi}{\omega_n} s + \frac{1}{\omega_n^2}s^2)\dots}
@@ -194,8 +195,7 @@ Allora detti $G_i$ i fattori componenti $G$, Siccome
         arg(G) = \sum arg(G_i)
     \end{cases}
 \]
-\ \newline
-\newline
+\subsubsection{Diagrammi di bode di modulo e fase di $G_{a,b,c,d}$}
 Vediamo perciò come tracciare i diagrammi di bode del modulo e della fase (asintotici) di $G_{a,b,c,d}$. Una volta fatto questo sarà semplice combinarli per arrivare al tracciamento definitivo di $G$.
 \begin{itemize}
     \item $G_a(s) = \mu \rightarrow  G_a(j \omega) = \mu \rightarrow \begin{cases}

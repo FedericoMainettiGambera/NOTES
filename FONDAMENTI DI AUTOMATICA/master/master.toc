@@ -18,4 +18,7 @@
 \contentsline {subsubsection}{\numberline {3.2.1}Diagramma di Bode del modulo}{7}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Diagramma di Bode della fase}{7}{subsubsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.3}Tracciamento dei diagrammi di Bode (asintotici)}{7}{subsection.3.3}%
-\contentsline {part}{II\hspace {1em}Esercitazioni}{11}{part.2}%
+\contentsline {subsubsection}{\numberline {3.3.1}Forma della funzione di trasferimento per diagrammi di Bode}{7}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Diagrammi di bode di modulo e fase di $G_{a,b,c,d}$}{8}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Tracciamento complessivo}{10}{subsubsection.3.3.3}%
+\contentsline {part}{II\hspace {1em}Esercitazioni}{12}{part.2}%
