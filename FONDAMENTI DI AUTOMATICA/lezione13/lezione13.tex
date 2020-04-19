@@ -95,3 +95,42 @@ Facciamo ora i diagrammi di bode della fase di tutti questi termini e infine li 
 [immagine dagli appunti del prof]\newline
 \newline
 \textbf{In generale per la fase}: Se è del tipo $1+j \omega$ allora abbiamo uno scalino positivo di $+90^o$ gradi alla frequenza d'angolo, se è del tipo $1- j \omega$ allora abbiamo uno scalino negativo di $-90^o$ alla frequenza d'angolo. Se invece il termine $1\pm j \omega$ è a denominatore, il ragionamento è al contrario, cioè se è del tipo $\frac{1}{1+j \omega}$ allora abbiamo uno scalino negativo di $-90^o$ alla frequenza d'angolo, se è del tipo $\frac{1}{1- j \omega}$ allora abbiamo uno scalino positivo di $+90^o$ alla frequenza d'angolo.
+\subsubsection{Metodo di tracciamento}
+\textbf{Diagramma di Bode del modulo}: 
+\begin{enumerate}
+    \item Tracciare il diagramma di Bode del modulo di $\frac{\mu}{s^g}$ (se $g=0$ è orizzontale a valore $\mu$, se $g >0$ ha pendenza negativa, se $g<0$ ha pendenza positiva, e questa pendenza è sempre di $-20 g \frac{db}{decade}$).
+    \item Segnare sull'asse delle $\omega$ le frequenze d'angolo dei poli (radici del denominatore) e zeri (radici del numeratore) non in $s=0$ (perchè son già presenti nel punto precedente).\newline
+    Quando si incontra una frequenza d'angolo di uno zero, la pendenza aumenta di $1$, quando si incontra una frequenza d'angolo di un polo, la pendenza diminuisce di $1$.
+\end{enumerate}
+\textbf{Diagramma di Bode della fase}:
+\begin{enumerate}
+    \item Il diagramma di Bode della fase parte al valore di $arg(\frac{\mu}{(j \omega)^g})$, che è calcolabile analizzando i contributi di $\mu$ e $\frac{1}{s^g}$ nel seguente modo:
+    \[
+        \mu \rightarrow \begin{cases}
+            0^o \;\;\;& se > 0\\
+            -180^o \;\;\; & se <0
+        \end{cases} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \frac{1}{s^g}\rightarrow -g \cdot 90^o
+    \]
+    \item zero "a sinistra" (nel semipiano sinistro, cioè con parte reale negativa) la fase aumenta di $90^o$;\newline
+    zero "a destra" (nel semipiano destro, cioè con parte reale positiva) la fase diminuisce di $90^o$;\newline
+    polo "a sinistra" (\dots) diminuisce di $90^o$;\newline
+    polo "a destra" (\dots) aumenta di $90^o$.
+\end{enumerate}
+\subsubsection{Esempio}
+\textbf{es.} Disegnare i diagrammi di Bode asintotici per la funzione di trasferimento 
+\[
+    G(s) = \frac{100(1-s)(1+ \frac{s}{5})}{s^2(1-\frac{s}{10})(1+ \frac{s}{100})^2}
+\]
+$\mu = 100$ e $g=2 \; \Rightarrow  \; \frac{\mu}{s^g}$ ha pendenza $-2$ e taglia l'asse delle $\omega$ per $\frac{100}{\omega^2} =1$ cioè per $\omega =10$.\newline
+\newline
+Frequenze d'angolo di poli e zeri non nell'origine:
+\[
+    \begin{matrix}
+        \omega = 1 \;\;\;\;\; & 1 \;\text{zero destro}\; \\
+        \omega = 5 \;\;\;\;\; & 1 \;\text{zero sinistro}\; \\
+        \omega = 10 \;\;\;\;\; & 1 \;\text{polo destro}\; \\
+        \omega = 100 \;\;\;\;\; & 2 \;\text{poli sinistri }\; \\
+    \end{matrix}
+\]
+Usiamo ora il foglio semilogaritmico (che si può trovare fra i materiali del corso sul sito del professore):\newline
+[foglio logaritmico dagli appunti del prof]\newline
