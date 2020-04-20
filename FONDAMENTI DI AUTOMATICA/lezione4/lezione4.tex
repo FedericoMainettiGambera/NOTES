@@ -173,15 +173,17 @@ Tutti gli autovalori di $A$ hanno $Re \leq 0$ e ne esiste almeno uno con $Re = 0
 $x_L(k) = A^k x(0)$\newline
 $A^k = (T diag\{\lambda_i\} T^{-1})^k = T diag\{\lambda_i\}\cancel{T^{-1}T} diag\{\lambda_i\} T^{-1} \dots$ (k volte) $= T diag\{\lambda_i^k\}T^{-1}$, dove $\lambda_i^{k}$ sono i modi del sistema.\newline
 \newline
-Quindi \newline
-$|\lambda_i| < 1$ $\;\forall\;i$ $\longleftrightarrow$ sistema AS.\newline
-\newline
-$\;\;\exists\;\; i \;\;:\;\; |\lambda_i| > 1$ $\Longrightarrow$ sistema I.\newline
-\newline
-$\begin{cases}
-    |\lambda_i| \leq 1 \;\;\forall\; i\\
-    \;\;\exists\;\;i \;\;:\;\;|\lambda_i| = 1 
-\end{cases}$ $\Longrightarrow$ Sistema S, ma non AS; oppure sistema I.
+Quindi
+\begin{itemize}
+    \item $|\lambda_i| < 1$ $\;\forall\;i$ $\longleftrightarrow$ sistema AS.
+    \item $\;\;\exists\;\; i \;\;:\;\; |\lambda_i| > 1$ $\Longrightarrow$ sistema I.
+    \item $\begin{cases}
+        |\lambda_i| \leq 1 \;\;\forall\; i\\
+        \;\;\exists\;\;i \;\;:\;\;|\lambda_i| = 1 
+    \end{cases}$ $\Longrightarrow$ Sistema S, ma non AS, oppure sistema I.
+\end{itemize}
+\textbf{oss.1} Errore tipico: Nel caso a tempo continuo si guarda la parte reale degli autovalori, nel caso a tempo discreto di guarda il modulo (!) degli autovalori.\newline
+\textbf{oss.2} Errore tipico: Più avanti vedremo il criterio di Routh, ma da notare è che non vale per i sistemi a tempo discreto, vale solo per sistemi a tempo continuo (!).
 \subsection{Criteri di stabilità (asintotica) per SD LTI a TC}
 Domanda: data la matrice $A$, posso dire se tutti i suoi autovalori hanno o meno $Re <0$ senza calcolarli?\newline
 \newline

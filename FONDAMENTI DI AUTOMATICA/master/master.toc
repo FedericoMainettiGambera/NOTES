@@ -43,7 +43,7 @@
 \contentsline {subsection}{\numberline {5.4}Stabilità di un SD LTI a TC e matrice A}{18}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Stabilità e autovalori di $A$}{18}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Caso a TD (A diagonalizzabile)}{18}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Criteri di stabilità (asintotica) per SD LTI a TC}{18}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.7}Criteri di stabilità (asintotica) per SD LTI a TC}{19}{subsection.5.7}%
 \contentsline {subsection}{\numberline {5.8}Esempi}{19}{subsection.5.8}%
 \contentsline {subsection}{\numberline {5.9}Routh}{19}{subsection.5.9}%
 \contentsline {subsubsection}{\numberline {5.9.1}Tabella di Routh}{19}{subsubsection.5.9.1}%

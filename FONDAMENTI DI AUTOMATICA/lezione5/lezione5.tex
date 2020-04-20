@@ -9,7 +9,7 @@
 \newline
 \textbf{es.} $\Pi(s) = s^4 +2s^3+4s^2+s+5$: in questo esempio le condizioni necessarie sono soddisfatte, ma non sappiamo dire se è o meno asintoticamente stabile. Ci serve ora un criterio per stabilire se è asintoticamente stabile.
 \subsection{Routh}
-il criterio di Routh è una condizione necessaria e succificiente per la stabilità asintotica di un SD LTI a TC (l'analogo a TD è il criterio di Jury, ma noi non lo tratteremo).\newline
+Il criterio di Routh è una condizione necessaria e succificiente per la stabilità asintotica di un SD LTI a TC (NOTA BENE: non vale per sistemi a tempo discreto! L'analogo a TD è il criterio di Jury, ma noi non lo tratteremo).\newline
 \newline
 Il criterio di Routh si basa sulla tabella di Routh che si costruisce a partire dal polinomio caratteristico $\Pi(s)$.
 \subsubsection{Tabella di Routh}
@@ -29,7 +29,7 @@ La tabella di Routh si costruisce nel seguente modo:
             a_1 & \;\;\;\;\;\; a_3 & \;\;\;\;\;\;\dots 
         \end{matrix}
     \]
-    \item l'ultima colonna può terminare in due modi:
+    \item l'ultima colonna (delle prime due righe) può terminare in due modi:
     \[
         \begin{matrix}
             \dots & a_{n-1}\\
