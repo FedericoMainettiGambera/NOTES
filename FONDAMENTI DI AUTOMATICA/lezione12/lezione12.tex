@@ -145,7 +145,7 @@ Il diagramma di Bode del modulo è un piano cartesiano in cui l'asse delle ascis
 \newline
 L'asse delle $\omega$ è logaritmico, cioè a pari distanza non corrisponde pari differenza, ma pari rapporto logaritmico (in base $10$). Inoltre lo zero non viene rappresentato, perchè si trova a $- \infty$, e per questo l'intersezione con l'asse di $|G(j \omega)|$ non viene rappresentato.\newline
 \newline
-L'asse di $|G(j \omega)|$ è, invece, espresso in $dB$.\newline \textbf{Definizione}: Rappresentare una quantità in $dB$ significa $x_{dB} = 20 log_10|x|$.\newline
+L'asse di $|G(j \omega)|$ è, invece, espresso in $dB$.\newline \textbf{Definizione}: Rappresentare una quantità in $dB$ significa $x_{dB} = 20 log_{10}|x|$.\newline
 Per esempio $100_{dB} = 40$, $0,1 _{dB} = -20$, $-0,1 _{dB} = -20$, $1 _{dB} = 0$. Notare che la scrittura in $dB$ non distingue il segno, e inoltre che se $|x| > 1$, allora $x _{dB} >0$ e se $|x|<1$, allora $x _{dB} <0$.
 \subsubsection{Diagramma di Bode della fase}
 [immagine dagli appunti del prof]\newline
@@ -199,13 +199,13 @@ Allora detti $G_i$ i fattori componenti $G$, Siccome
 Vediamo perciò come tracciare i diagrammi di bode del modulo e della fase (asintotici) di $G_{a,b,c,d}$. Una volta fatto questo sarà semplice combinarli per arrivare al tracciamento definitivo di $G$.
 \begin{itemize}
     \item $G_a(s) = \mu \rightarrow  G_a(j \omega) = \mu \rightarrow \begin{cases}
-        |G_a(j \omega)|_{dB} = 20 log_10|\mu|\\
+        |G_a(j \omega)|_{dB} = 20 log_{10}|\mu|\\
         arg(G_a(j \omega)) = \begin{cases}
             0 \;\;\; & \mu>0\\
             -180^o & \mu<0
         \end{cases}
     \end{cases}$.\newline
     [immagine dagli appunti del prof]\newline \newline
-    diagramma di bode del modulo: Il diagramma di bode del modulo è una retta orizzontale (se $|\mu| > 1$ è sopra l'asse delle ascisse, se $\mu < 1$ è sotto l'asse delle ascisse).\newline \newline
+    diagramma di bode del modulo: Il diagramma di bode del modulo è una retta orizzontale all'altezza $\mu$ (se $\mu > 1$ è sopra l'asse delle ascisse, se $\mu < 1$ è sotto l'asse delle ascisse). L'influenza che $G_a$ ha sul diagramma complessivo è una semplice traslazione verso l'alto o verso il basso dell'intero grafico di una quantità $\mu$.\newline \newline
     diagramma di bode della fase: Anche il diagramma di bode della fase è una retta orizzontale che coincide con l'asse delle ascisse se $\mu>0$, altrimenti se $\mu<0$ è posta all'altezza di $-180^o$.
 \end{itemize}

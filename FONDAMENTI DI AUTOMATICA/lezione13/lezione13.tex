@@ -6,8 +6,8 @@
         arg(G_b(j \omega)) = - g \cdot 90^o
     \end{cases} $\newline
     [immagine dagli appunti del prof]\newline \newline
-    diagramma di bode del modulo: Il diagramma di bode del modulo corrispondente interseca sempre l'asse delle ascisse nel punto $\omega = 1$ e la pendenza è $-20g \frac{dB}{decade}$ (spesso abbreviato come "pendenza $-g$"), dove la \textbf{decade} è la distanza corrispondente a un rapporto che vale $10$.\newline \newline
-    diagramma di bode della fase: Il diagramma di bode delle fasi è orizzontale al valore $-g \cdot 90^o$.\newline \newline
+    diagramma di bode del modulo: Il diagramma di bode del modulo corrispondente è una retta che interseca sempre l'asse delle ascisse nel punto $\omega = 1$ e la cui pendenza è $-20g \frac{dB}{decade}$ (spesso abbreviato come "pendenza $-g$"), dove la \textbf{decade} è la distanza corrispondente a un rapporto che vale $10$. Notiamo che spesso il diagramma di $G_a$ e $G_b$ vengono analizzati assieme: si considera che la retta $G_b$ non interseca più l'asse delle $\omega$ nel punto $\omega=1$, ma interseca la retta orizzontale $G_a$ nel punto $\omega = 1$.\newline \newline
+    diagramma di bode della fase: Il diagramma di bode delle fasi è orizzontale al valore $-g \cdot 90^o$. Anche per la fase spesso i termini $G_a$ e $G_b$ vengono analizzati assieme: il valore della retta orizzontale di $G_a$ e $G_b$ assieme è la semplice somma dei valori a cui dovrebbero essere le singole rette di $G_a$ e $G_b$\newline \newline
     Da notare è che fino ad ora non abbiamo fatto nessuna approssimazione.
     \item $G_c(s)= 1 + st \rightarrow  G_c(j \omega) = 1 + j \omega t \rightarrow \begin{cases}
         |G_c(j \omega)| = \sqrt{1 + (\omega t)^2}\\
@@ -28,7 +28,7 @@
         \end{cases}$
     \end{itemize}
     [immagine dagli appunti del prof]\newline \newline
-    diagramma di bode del modulo: Definiamo la \textbf{frequenza d'angolo} $\frac{1}{|t|}$ nel diagramma di Bode del modulo. Grazie alle approssimazioni che abbiamo fatto, andando a sinistra nell'asse delle $\omega$, cioè verso il valore di $0 _{dB}$, il modulo vale circa $1$. Facciamo valere questa approssiamazione fino al valore di frequenza d'angolo. Superata la frequenza d'angolo il modulo cresce con pendenza $+1$, cioè di $20 \frac{dB}{decade}$. Questa rappresentazione prende il nome di diagramma di bode del modulo asintotico (il diagramma di bode del modulo esatto è mostrato in figura, e la differenza è che non ha una curva "netta").\newline \newline
+    diagramma di bode del modulo: Definiamo la \textbf{frequenza d'angolo} come $\frac{1}{|t|}$ (da notare il modulo !). Grazie alle approssimazioni che abbiamo fatto, andando a sinistra nell'asse delle $\omega$, cioè verso il valore di $0 _{dB}$, il modulo vale circa $1$. Facciamo valere questa approssiamazione fino al valore di frequenza d'angolo. Superata la frequenza d'angolo il modulo cresce con pendenza $+1$, cioè di $20 \frac{dB}{decade}$. Questa rappresentazione prende il nome di diagramma di bode del modulo asintotico (il diagramma di bode del modulo esatto è mostrato in figura, e la differenza è che non ha una curva "netta").\newline \newline
     diagramma di bode della fase: approssimiamo tutto ciò che precede la frequenza d'angolo con $0^o$, alla frequenza d'angolo c'è un salto in cui se $t$ è positivo prota a $90^o$ (rossa nel disegno), se è negativo a $-90^o$ (blu nel disegno). La rappresentazione non approssimata dovrebbe seguire la linea tratteggiata in rosso nel disegno.\newline
     \newline
     Notiamo che l'approssimazione del modulo è molto buona, mentre quella della fase non molto.
@@ -96,25 +96,26 @@ Facciamo ora i diagrammi di bode della fase di tutti questi termini e infine li 
 \newline
 \textbf{In generale per la fase}: Se è del tipo $1+j \omega$ allora abbiamo uno scalino positivo di $+90^o$ gradi alla frequenza d'angolo, se è del tipo $1- j \omega$ allora abbiamo uno scalino negativo di $-90^o$ alla frequenza d'angolo. Se invece il termine $1\pm j \omega$ è a denominatore, il ragionamento è al contrario, cioè se è del tipo $\frac{1}{1+j \omega}$ allora abbiamo uno scalino negativo di $-90^o$ alla frequenza d'angolo, se è del tipo $\frac{1}{1- j \omega}$ allora abbiamo uno scalino positivo di $+90^o$ alla frequenza d'angolo.
 \subsubsection{Metodo di tracciamento}
+Per prima cosa si ricavano i valori di $\mu$, $g$, poi si ricavano tutte le frequenze d'angolo (modulo delle radici di ogni termine al numeratore e al denominatore) e per ognuna di queste si dice quanti zeri (radici del numeratore) destri (con parte reale positiva) o sinistri (con parte reale negativa) e quanti poli (radici del denominatore) destri (con parte reale positiva) o sinistri (con parte reale negativa) ci sono.
 \textbf{Diagramma di Bode del modulo}: 
 \begin{enumerate}
-    \item Tracciare il diagramma di Bode del modulo di $\frac{\mu}{s^g}$ (se $g=0$ è orizzontale a valore $\mu$, se $g >0$ ha pendenza negativa, se $g<0$ ha pendenza positiva, e questa pendenza è sempre di $-20 g \frac{db}{decade}$).
+    \item Tracciare il diagramma di Bode del modulo di $\frac{\mu}{s^g}$ ( che sono $G_a$ e $G_b$ assieme).
     \item Segnare sull'asse delle $\omega$ le frequenze d'angolo dei poli (radici del denominatore) e zeri (radici del numeratore) non in $s=0$ (perchè son già presenti nel punto precedente).\newline
-    Quando si incontra una frequenza d'angolo di uno zero, la pendenza aumenta di $1$, quando si incontra una frequenza d'angolo di un polo, la pendenza diminuisce di $1$.
+    Quando si incontra una frequenza d'angolo di uno zero, la pendenza aumenta di $1$, quando si incontra una frequenza d'angolo di un polo, la pendenza diminuisce di $1$. (Ricordiamo che per 1 di pendenza si intendono $20 dB/decade$).
 \end{enumerate}
 \textbf{Diagramma di Bode della fase}:
 \begin{enumerate}
-    \item Il diagramma di Bode della fase parte al valore di $arg(\frac{\mu}{(j \omega)^g})$, che è calcolabile analizzando i contributi di $\mu$ e $\frac{1}{s^g}$ nel seguente modo:
+    \item Il diagramma di Bode della fase parte al valore di $arg(\frac{\mu}{(j \omega)^g})$, che è calcolabile sommando i contributi di $\mu$ e $\frac{1}{s^g}$ nel seguente modo:
     \[
         \mu \rightarrow \begin{cases}
             0^o \;\;\;& se > 0\\
             -180^o \;\;\; & se <0
         \end{cases} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \frac{1}{s^g}\rightarrow -g \cdot 90^o
     \]
-    \item zero "a sinistra" (nel semipiano sinistro, cioè con parte reale negativa) la fase aumenta di $90^o$;\newline
-    zero "a destra" (nel semipiano destro, cioè con parte reale positiva) la fase diminuisce di $90^o$;\newline
-    polo "a sinistra" (\dots) diminuisce di $90^o$;\newline
-    polo "a destra" (\dots) aumenta di $90^o$.
+    \item zero "a sinistra" la fase aumenta di $90^o$;\newline
+    zero "a destra" la fase diminuisce di $90^o$;\newline
+    polo "a sinistra" la fase diminuisce di $90^o$;\newline
+    polo "a destra" la fase aumenta di $90^o$.
 \end{enumerate}
 \subsubsection{Esempio}
 \textbf{es.} Disegnare i diagrammi di Bode asintotici per la funzione di trasferimento 
