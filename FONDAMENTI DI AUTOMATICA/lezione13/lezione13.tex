@@ -1,4 +1,4 @@
-\title{LEZIONE 14 31/03/2020}\newline
+\title{LEZIONE 13 31/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/22a546ac-3e6b-43e0-b0f9-45a630661700?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
 \begin{itemize}
     \item $G_b(s)= \frac{1}{s^g} \rightarrow G(j \omega) = \frac{1}{(j \omega)^g} \rightarrow \begin{cases}
@@ -6,7 +6,7 @@
         arg(G_b(j \omega)) = - g \cdot 90^o
     \end{cases} $\newline
     [immagine dagli appunti del prof]\newline \newline
-    diagramma di bode del modulo: Il diagramma di bode del modulo corrispondente è una retta che interseca sempre l'asse delle ascisse nel punto $\omega = 1$ e la cui pendenza è $-20g \frac{dB}{decade}$ (spesso abbreviato come "pendenza $-g$"), dove la \textbf{decade} è la distanza corrispondente a un rapporto che vale $10$. Notiamo che spesso il diagramma di $G_a$ e $G_b$ vengono analizzati assieme: si considera che la retta $G_b$ non interseca più l'asse delle $\omega$ nel punto $\omega=1$, ma interseca la retta orizzontale $G_a$ nel punto $\omega = 1$.\newline \newline
+    diagramma di bode del modulo: Il diagramma di bode del modulo corrispondente è una retta che interseca sempre l'asse delle ascisse nel punto $\omega = 1$ e la cui pendenza è $-20g \frac{dB}{decade}$ (spesso abbreviato come "pendenza $-g$"), dove la \textbf{decade} è la distanza corrispondente a un rapporto che vale $10$.\newline \newline
     diagramma di bode della fase: Il diagramma di bode delle fasi è orizzontale al valore $-g \cdot 90^o$. Anche per la fase spesso i termini $G_a$ e $G_b$ vengono analizzati assieme: il valore della retta orizzontale di $G_a$ e $G_b$ assieme è la semplice somma dei valori a cui dovrebbero essere le singole rette di $G_a$ e $G_b$\newline \newline
     Da notare è che fino ad ora non abbiamo fatto nessuna approssimazione.
     \item $G_c(s)= 1 + st \rightarrow  G_c(j \omega) = 1 + j \omega t \rightarrow \begin{cases}
@@ -96,10 +96,10 @@ Facciamo ora i diagrammi di bode della fase di tutti questi termini e infine li 
 \newline
 \textbf{In generale per la fase}: Se è del tipo $1+j \omega$ allora abbiamo uno scalino positivo di $+90^o$ gradi alla frequenza d'angolo, se è del tipo $1- j \omega$ allora abbiamo uno scalino negativo di $-90^o$ alla frequenza d'angolo. Se invece il termine $1\pm j \omega$ è a denominatore, il ragionamento è al contrario, cioè se è del tipo $\frac{1}{1+j \omega}$ allora abbiamo uno scalino negativo di $-90^o$ alla frequenza d'angolo, se è del tipo $\frac{1}{1- j \omega}$ allora abbiamo uno scalino positivo di $+90^o$ alla frequenza d'angolo.
 \subsubsection{Metodo di tracciamento}
-Per prima cosa si ricavano i valori di $\mu$, $g$, poi si ricavano tutte le frequenze d'angolo (modulo delle radici di ogni termine al numeratore e al denominatore) e per ognuna di queste si dice quanti zeri (radici del numeratore) destri (con parte reale positiva) o sinistri (con parte reale negativa) e quanti poli (radici del denominatore) destri (con parte reale positiva) o sinistri (con parte reale negativa) ci sono.
+Per prima cosa si ricavano i valori di $\mu$, $g$, poi si ricavano tutte le frequenze d'angolo (modulo delle radici di ogni termine al numeratore e al denominatore, escluse quelle in $s=0$) e per ognuna di queste si dice quanti zeri (radici del numeratore) destri (con parte reale positiva) o sinistri (con parte reale negativa) e quanti poli (radici del denominatore) destri (con parte reale positiva) o sinistri (con parte reale negativa) ci sono.\newline
 \textbf{Diagramma di Bode del modulo}: 
 \begin{enumerate}
-    \item Tracciare il diagramma di Bode del modulo di $\frac{\mu}{s^g}$ ( che sono $G_a$ e $G_b$ assieme).
+    \item Tracciare il diagramma di Bode del modulo di $\frac{\mu}{s^g}$ (è una retta la cui pendenza viene ricavata dall'analisi di $g$: $-20 \cdot g \frac{dB}{decade}$; per capire dove interseca l'asse delle $\omega$ basta ricavare il valore di $\omega$ per cui $\left| \frac{\mu}{s^g} \right| = 1$).
     \item Segnare sull'asse delle $\omega$ le frequenze d'angolo dei poli (radici del denominatore) e zeri (radici del numeratore) non in $s=0$ (perchè son già presenti nel punto precedente).\newline
     Quando si incontra una frequenza d'angolo di uno zero, la pendenza aumenta di $1$, quando si incontra una frequenza d'angolo di un polo, la pendenza diminuisce di $1$. (Ricordiamo che per 1 di pendenza si intendono $20 dB/decade$).
 \end{enumerate}
