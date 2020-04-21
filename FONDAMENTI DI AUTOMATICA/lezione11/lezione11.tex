@@ -76,6 +76,7 @@ Domande:
 Andiamo a vedere tre configurazioni particolari che ci permettono di studiare gli schemi a blocchi.
 \subsubsection{Blocchi in serie o cascata}
 [immagine dagli appunti del prof]\newline
+\newline
 Quale è la funzione di trasferimento $\frac{Y(s)}{U(s)}$ per un blocco in serie?
 \[
     Y= Y_2 = G_2U_2 = G_2 Y_1 = G_2G_1 U_1 = G_2G_1 U \Longrightarrow \frac{Y}{U} = G_2G_1
@@ -86,9 +87,10 @@ Scriviamo ora $G_1 = \frac{N_1}{D_1}$ e $G_2= \frac{N_2}{D_2}$:
 \]
 Per ipotesi abbiamo detto che $N_i$ e $D_i$ sono coprimi fra di loro, ma non per forza lo sono anche $N_i$ e $D_j$.\newline
 Quindi gli autovalori del sistema complessivo sono $\{\text{poli di $G_1$}\} U \{\text{poli di $G_2$}\}$, ma possono esserci cancellazioni tra $N_1$ e $D_2$ e/o tra $N_2$ e $D_1$.\newline
+\newline
 Di conseguenza:
 \begin{itemize}
-    \item $G_1$ e $G_2$ asintoticamente stabili è condizione neccessaria e sufficiente ($\Leftrightarrow$) per avere un sistema complessivo asintoticamente stabile.
+    \item $G_1$ e $G_2$ (entrambi) asintoticamente stabili è condizione neccessaria e sufficiente ($\Leftrightarrow$) per avere un sistema complessivo asintoticamente stabile.
     \item possono esserci cancellazioni, cioè parti nascoste.
 \end{itemize} 
 \ \newline
@@ -137,7 +139,7 @@ Che ci danno il sisetma matriciale nella forma:
 \subsubsection{Blocchi in parallelo}
 [immagine dagli appunti del prof]\newline
 \[
-    Y = Y_1 + Y_2 = G_1 U_1 + G_2 U_2 = (G_1 + G_2)U \Longrightarrow \frac{Y}{U} G_1 +G_2
+    Y = Y_1 + Y_2 = G_1 U_1 + G_2 U_2 = (G_1 + G_2)U \Longrightarrow \frac{Y}{U} = G_1 +G_2
 \]
 scrivendo $G_i= \frac{N_i}{D_i}$
 \[
@@ -145,7 +147,7 @@ scrivendo $G_i= \frac{N_i}{D_i}$
 \]
 Gli autovalori del complessivo sistema sono $\{\text{poli di $G_1$}\} U \{\text{poli di $G_2$}\}$:
 \begin{itemize}
-    \item $G_1$ e $G_2$ asintoticamente stabili è condizione necessaria e sufficiente ($\Leftrightarrow$) per avere un sistema complessivo asintoticamente stabile.
+    \item $G_1$ e $G_2$ (entrambi) asintoticamente stabili è condizione necessaria e sufficiente ($\Leftrightarrow$) per avere un sistema complessivo asintoticamente stabile.
     \item possono esserci cancellazioni, cioè parti nascoste (ce ne sono di sicuro se $D_1$ e $D_2$ non sono coprimi).
 \end{itemize}
 \ \newline
@@ -202,7 +204,7 @@ questa elisione non è una cancellazione, nel senso che non porta a una parte na
 \]
 tra poli di $G_a$ e $G_r$ e gli autovalori del sistema complessivo non c'è una relazione banale:
 \begin{itemize}
-    \item $G_a$ e $G_r$ asintoticamente stabili nè occorrono nè bastano per avere un sistema complessivo asintoticamente stabile.
+    \item $G_a$ e $G_r$ asintoticamente stabili nè occorrono nè bastano per avere un sistema complessivo asintoticamente stabile. (Non ho ben capito il caso in cui si ha un blocco qualsiasi $G_1$ in parallelo (o in serie) a un anello $G_a$ composto da altri "sottoblocchi" (quello di andata e quello di ritorno)\dots chi deve essere asintoticamente stabile? Immagino che affinchè il sistema complessivo sia asintoticamente stabile, sicuramente $G_1$ dovrà esserlo (vedi proprietà dei blocchi in parallelo e in serie), ma per quanto riguarda l'anello $G_a$ complessivo penso che l'intero anello debba essere asintoticamente stabile, mentre i suoi "sottoblocchi" non hanno nessun vincolo, in quanto non limitano la asintotica stabilità dell'intero anello $G_a$\dots Non sono sicuro al $100\%$, ma mi sembra un ragionamento sensato, TODO).
     \item possono esserci cancellazioni, cioè parti nascoste.
 \end{itemize}
 \ \newline
