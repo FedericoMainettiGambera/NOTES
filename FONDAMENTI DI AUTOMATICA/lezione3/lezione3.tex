@@ -48,7 +48,7 @@ Il caso a \textbf{tempo discreto} (TD) è analogo.
     x(k+1) = Ax(k) + bu(k)\\
     y(k+1) = cx(k+1) +d u(k+1)
 \end{cases}$, comunque la cosa importatne è che nella prima equazione del sistema ci siano due valori successivi di $k$ e nella seconda ci sia un solo valore di $k$.
-\subsubsection{Equilibrio}
+\subsection{Equilibrio}
 Poniamoci una domanda: con $u(t)$ (o $u(k)$) $=\bar{u}$ costante, esiste un qualche valore $\bar{x}$ costante tale che 
 \[
     \begin{rcases}
@@ -66,13 +66,14 @@ Vediamo il caso a \textbf{tempo continuo} (TC). Se $x$ deve rimanere costante, s
 \newline
 Vediamo il caso a \textbf{tempo discreto} (TD). Se $x$ deve rimanere costante, significa che $x(k+1) = x(k)$ per ogni $k$, cioè che $x(k+1)$ deve rimanere costante. Quindi in tal caso dovrò risolvere per $\bar{x}$ l'equazione $f(\bar{x}, \bar{u}) = \bar{x}$.\newline
 \newline
-Vediamo ora il caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $0 = A \bar{x} + b \bar{u}$. Se $A$ non è singolare, allora esiste uno e uno solo $\bar{x} = -A^{-1} b u$, altrimento o non esiste $\bar{x}$ o esistono infiniti $\bar{x}$.\newline
+Vediamo ora il caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI, per sistemi non lineari guardare l'osservazione più avanti). In questo caso l'equazione da risolvere diventa $0 = A \bar{x} + b \bar{u}$ (risolvendo questo sistema matriciale si trovano i vari stati di equilibrio). Se $A$ non è singolare, allora esiste uno e uno solo $\bar{x} = -A^{-1} b u$, altrimento o non esiste $\bar{x}$ o esistono infiniti $\bar{x}$.\newline
 \newline
 Vediamo ora il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $\bar{x} = A \bar{x} + b \bar{u}$. Questa equazione si scrive anche $(I-A)\bar{x} = b \bar{u}$ e se $I-A$ non è singolare, cioè se $A$ non ha autovalori in 1, allora esiste uno e uno solo $\bar{x} = (I-A)^{-1} b \bar{u}$, altrimento o non esiste $\bar{x}$ o esistono infiniti valori $\bar{x}$.\newline
 \newline
 Se esiste un $\bar{x}$ (cioè se un sistema ammette un certo stato di equilibrio) per certo $u = \bar{u}$, in generale esiste un \textbf{uscita di equilibrio} $\bar{y} = g(\bar{x}, \bar{u})$.\newline
+\newline
 \textbf{oss.} Nel caso non lineare $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$
-\subsubsection{Esempi}
+\subsection{Esempi}
 \textbf{es.} Esempio della massa-molla visto la lezione scorsa:\newline
 L'equazione che governa il sistema è $m \ddot{y} = F - ky - h \dot{y}$, con $u = F$, ed eravamo arrivati a dire che $\begin{cases}
     \dot{x}_1 = x_2\\
@@ -124,7 +125,7 @@ Il risultato è che $\begin{cases}
     \item  se $|\bar{u}| > mgl$, non esiste equilibrio $\bar{x}$, e il pendolo continua a girare.
     \item  se $\bar{u} = 0$, allora abbiamo due soluzioni: $\bar{x}_1 = 0$ o $\bar{x}_1 = \pi$ (sono due equilibri).
 \end{itemize}
-\subsubsection{Movimento}
+\subsection{Movimento}
 Dato uno stato iniziale $x(0)$ e dato un ingresso $u(t)$ o $u(k)$, per $t$ o $k > 0$:
 \[
     \begin{rcases}
@@ -133,7 +134,7 @@ Dato uno stato iniziale $x(0)$ e dato un ingresso $u(t)$ o $u(k)$, per $t$ o $k 
     \end{rcases} \rightarrow \text{si produce un}\; x(t) \;\text{(o $x(k)$)}\; \text{e un }\;y(t) \;\text{(o $y(k)$)}\; 
 \]
 Questi $x(t) \;\text{(o $x(k)$)} \;\text{e un }\;y(t) \;\text{(o $y(k)$)}$ prendono il nome di \textbf{movimenti di stato e uscita}.
-\subsubsection*{Formule di Lagrange}
+\subsubsection{Formule di Lagrange}
 Vediamo il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). Questo sistema, come sappiamo, è fatto così:
 \[
     \begin{cases}
@@ -175,7 +176,7 @@ con $e^{At}x(0)$ \textbf{movimento libero (ML) dello stato} e $\int_{0}^{t}e^{A(
     y(t) = c e^{At}x(0) + c\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)
 \]
 con $ce^{At}x(0)$ \textbf{movimento libero (ML) dell'uscita} e $\;\; c\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)$ \textbf{movimento forzato (MF) dell'uscita}.
-\subsubsection{Esponenziale di matrice}
+\subsection{Esponenziale di matrice}
 Per sistemi di ordine maggiore di $1$ occorre calcolare l'esponenziale di matrice $e^{At}$, vediamo come fare per il caso in cui $A$ sia diagonalizzabile (altrimenti si usa un altro metodo, ma la incontreremo più avanti):\newline
 Definizioni e concetti importanti:
 \begin{itemize}
@@ -238,7 +239,7 @@ In breve i passaggi per calcolare un generico esponenziale di matrice $e^{At}$ d
         \dots & \dots & 0 & e^{\lambda_n t}
     \end{matrix}\right] T^{-1}$, si fanno i conti e abbiamo finito.
 \end{itemize}
-\subsubsection{Esempi}
+\subsection{Esempi}
 \textbf{es.} Movimento a TC:\newline
 siano\newline
 $\dot{x} = -2x$ (solo ML dello stato) e $x(0) = 4$\newline

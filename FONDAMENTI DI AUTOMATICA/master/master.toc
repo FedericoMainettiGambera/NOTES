@@ -26,11 +26,12 @@
 \contentsline {subsubsection}{\numberline {3.4.2}Definizioni}{11}{subsubsection.3.4.2}%
 \contentsline {subsubsection}{\numberline {3.4.3}Esempi}{11}{subsubsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.5}Sistemi dinamici (SD) lineari tempo invarianti (LTI)}{11}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Equilibrio}{12}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Esempi}{13}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}Movimento}{13}{subsubsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.4}Esponenziale di matrice}{14}{subsubsection.3.5.4}%
-\contentsline {subsubsection}{\numberline {3.5.5}Esempi}{15}{subsubsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.6}Equilibrio}{12}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Esempi}{13}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Movimento}{13}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}Formule di Lagrange}{13}{subsubsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.9}Esponenziale di matrice}{14}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Esempi}{15}{subsection.3.10}%
 \contentsline {section}{\numberline {4}Linearizzazione di sistemi dinamici non lineari (SD, NL, SISO, TC) nell'intorno di un equilibrio}{16}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Per l'equazione di stato}{16}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Per l'equazione d'uscita}{16}{subsection.4.2}%
