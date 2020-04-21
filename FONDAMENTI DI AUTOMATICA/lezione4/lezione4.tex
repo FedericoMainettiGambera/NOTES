@@ -129,7 +129,7 @@ Quindi
 \rule{\textwidth}{0,4pt}
 \subsection{Proprietà dei SD LTI a TC AS}
 \begin{itemize}
-    \item i ML di $x$ e di $y$ tendono a $0$ per $t \rightarrow  \infty$, quindi tali SD "dimenticnao lo stato iniziale";
+    \item i movimenti liberi di $x$ e di $y$ tendono a $0$ per $t \rightarrow  \infty$, quindi tali SD "dimenticnao lo stato iniziale";
     \item Se 
     \[
         u(t) = \begin{cases}
@@ -140,11 +140,11 @@ Quindi
     allora per $t \geq \bar{t}$ c'è solo ML e quindi $x,y \rightarrow 0$ per $t \rightarrow \infty$.
 \end{itemize}
 \subsection{Stabilità di un SD LTI a TC e matrice A}
-Cosa in cui $A$ è diagonalizzabile (se no vedi più avanti):
+Caso in cui $A$ è diagonalizzabile (se no vedi più avanti):
 $x_L (t) = e^{At} x(0) = e^{T diag\{\lambda_i\}T^{-1} t}x(0) = T diag\{e^{\lambda_i t}\}T^{-1}x(0)$, dove $x_L(t)$ è ML di $x$, T è la matrice che diagonalizza $A$ e $e^{\lambda_it}$ prende il nome di modi del sistema.\newline
 \newline
 Se $A$ è reale, allora $\lambda_i$ sono o reali o coppie complesse coniugate.\newline
-ML $\rightarrow  0$ per ogni $x(0)$ vuol dire che tutti i modi devono tendere a $0$ per $t \rightarrow \infty$.
+Movimento libero $\rightarrow  0$ per ogni $x(0)$ vuol dire che tutti i modi devono tendere a $0$ per $t \rightarrow \infty$.
 \begin{itemize}
     \item $\lambda_i \; \text{reale}$
     \[
@@ -164,11 +164,11 @@ ML $\rightarrow  0$ per ogni $x(0)$ vuol dire che tutti i modi devono tendere a 
     \]
 \end{itemize}
 \subsection{Stabilità e autovalori di $A$}
-Tutti gli autovalori di $A$ hanno $Re <0$ $\Longleftrightarrow$ Sistema AS.\newline
-\newline
-Almeno un autovalore di $A$ ha $Re > 0$ $\Longrightarrow$ Sistema I.\newline
-\newline
-Tutti gli autovalori di $A$ hanno $Re \leq 0$ e ne esiste almeno uno con $Re = 0$ $\Longrightarrow$ Sistema S, ma non AS; oppure sistema I.
+\begin{itemize}
+    \item Tutti gli autovalori di $A$ hanno $Re <0$ $\Longleftrightarrow$ Sistema AS.
+    \item Almeno un autovalore di $A$ ha $Re > 0$ $\Longrightarrow$ Sistema I.
+    \item Tutti gli autovalori di $A$ hanno $Re \leq 0$ e ne esiste almeno uno con $Re = 0$ $\Longrightarrow$ Sistema S, ma non AS; oppure sistema I.
+\end{itemize}
 \subsection{Caso a TD (A diagonalizzabile)}
 $x_L(k) = A^k x(0)$\newline
 $A^k = (T diag\{\lambda_i\} T^{-1})^k = T diag\{\lambda_i\}\cancel{T^{-1}T} diag\{\lambda_i\} T^{-1} \dots$ (k volte) $= T diag\{\lambda_i^k\}T^{-1}$, dove $\lambda_i^{k}$ sono i modi del sistema.\newline
