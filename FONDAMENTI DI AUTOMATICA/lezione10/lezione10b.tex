@@ -80,7 +80,7 @@ Vediamo la scrittura matriciale:
         \zeta_{n-1}](t)
     \end{matrix}\right]
 \]
-La prima matrice prende il nome di $M_R=$ matrice di raggiungibilità $=\left[\begin{matrix}
+La prima matrice prende il nome di $M_R=$ \textbf{matrice di raggiungibilità} $=\left[\begin{matrix}
     b & Ab & A^2 b & \dots & A^{n-1}b
 \end{matrix}\right] $, dove nel caso SISO ogni suo termine è una matrice colonna $n$x$1$, e quindi in totale è una matrice $n$x$n$.\newline
 Invece la seconda matrice (quella colonna) la indichiamo come $Z(t) = \left[\begin{matrix}
@@ -102,7 +102,12 @@ Supponiamo ora di voler portare lo stato (da zero) a $\tilde{x}$. Perchè questo
 \]
 Quindi dire che ciò è possibile, per ogni $\tilde{x}$, equivale a dire che $M_R$ non è singolare.\newline
 \newline
-\textbf{Sistema raggiungibile se e solo se ($\Leftrightarrow$) $M_R$ è non singolare}.
+\textbf{Sistema raggiungibile se e solo se ($\Leftrightarrow$) $M_R$ è non singolare}, dove:
+\[
+    M_R= \;\text{matrice di raggiungibilità}\; =\left[\begin{matrix}
+        b & Ab & A^2 b & \dots & A^{n-1}b
+    \end{matrix}\right]
+\]
 \subsubsection{Esempi}
 \textbf{es.} 
 \[
@@ -143,7 +148,7 @@ Cioè uno stato è non osservabile se produce sull'uscita un movimento libero nu
 \newline
 Un \textbf{sistema} è (completamente) \textbf{osservabile} se nessuno stato è non osservabile.
 \subsubsection{Criterio di osservabilità}
-Chiamiamo $M_O$ una matrice di osservabilità $n$x$n$ definita come:
+Chiamiamo $M_O$ una \textbf{matrice di osservabilità} $n$x$n$ definita come:
 \[
     M_O = \left[\begin{matrix}
         c'A'c' & \dots & (A^{n-1})' c'
@@ -318,7 +323,7 @@ Assemblando il tutto otteniamo la matrice $c$:
 \]
 \ \newline
 \newline
-\subsubsection{Riassunto}:\newline
+\subsubsection{Riassunto}
 Presa una funzione di trasferimento, per ottenere una quaterna ($A,b,c,d$) di dimensione minima si procede così: se il grado del numeratore è uguale al grado del denominatore si fa la divisione e si ottiene $G(s) = d + \frac{N(s)}{D(s)}$, da cui si ricava il valore $d$. A questo punto riscriviamo la frazione $\frac{N(s)}{D(s)} = \frac{ b_1 s^{n-1} + b_2 s^{n-2} + \dots + b_n }{ s^n + a_1 s^{n-1} + \dots + a_n }$ e scriviamo le $A, b$ e $c$:
 \[
     A=\left[\begin{matrix}

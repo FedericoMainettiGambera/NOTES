@@ -180,7 +180,8 @@ Per sistemi di ordine maggiore di $1$ occorre calcolare l'esponenziale di matric
 Definizioni e concetti importanti:
 \begin{itemize}
     \item Data una matrice $M$, scriviamo $e^M = I + M + \frac{M^2}{2!} + \frac{M^3}{3!}+\dots$.
-    \item Se $M$ è diagonalizzabile, allora esiste una matrice $T^{-1}$ (non singolare) tale che $T^{-1} M T = D$ è una matrice diagonale tale che i suoi elementi sulla diagonale sono gli autovalori $\lambda_i$ di $M$. Di conseguenza $M = T D T^{-1}$.
+    \item Se $M$ è diagonalizzabile, allora esiste una matrice $T^{-1}$ (non singolare) tale che $T^{-1} M T = D$ è una matrice diagonale tale che i suoi elementi sulla diagonale sono gli autovalori $\lambda_i$ di $M$. Di conseguenza $M = T D T^{-1}$.\newline
+    (\textbf{oss.} $T$ è la matrice degli autovettori accostati, $T^{-1}$ si ricava da $T$, e la matrice diagonale $D$ ha lungo la sua diagonale gli autovalori nell'ordine corrispondente agli autovettori di $T$).
 \end{itemize}
 Quindi unendo questi due concetti posso scrivere
 \[
@@ -221,7 +222,22 @@ Tornando alla nostra matrice $A$ (diagonalizzabile),
         0 & \dots &0\\
         0 &0 & e^{\lambda_nt}
     \end{matrix}\right]T^{-1}
-\] con $\lambda_i$ autovalore i-esimo di $A$, gli autovalori di $e^{\lambda_it}$ prendono il nome di \textbf{modi del sistema}.
+\] con $\lambda_i$ autovalore i-esimo di $A$, gli autovalori di $e^{\lambda_it}$ prendono il nome di \textbf{modi del sistema}.\newline
+\newline
+In breve i passaggi per calcolare un generico esponenziale di matrice $e^{At}$ da seguire sono:
+\begin{itemize}
+    \item calcolare gli autovalori di $A$;
+    \item calcolcare gli autovettori degli autovalori di $A$;
+    \item definire la matrice diagonalizzante $T$ come l'accostamento degli autovettori (e ricordarsi l'ordine) e la sua inversa $T^{-1}$;
+    \item notare che $T^{-1} A T = D =$ matrice con gli autovalori di $A$ lungo la diagonale nell'ordine in cui compaiono gli autovettori in $T$;
+    \item $e^{At}= e^{T D T^{-1} t}$ (notare l'ordine con cui sono scritti $T$ e $T^{-1}$, un errore tipico è confondersi in questo punto)
+    \item $e^{At} = T e^{D t} T^{-1} = T \left[\begin{matrix}
+        e^{\lambda_1 t} & 0 & \dots & 0\\
+        0 & e^{\lambda_2 t} & \dots & \dots\\
+        \dots & \dots & \dots & 0\\
+        \dots & \dots & 0 & e^{\lambda_n t}
+    \end{matrix}\right] T^{-1}$, si fanno i conti e abbiamo finito.
+\end{itemize}
 \subsubsection{Esempi}
 \textbf{es.} Movimento a TC:\newline
 siano\newline

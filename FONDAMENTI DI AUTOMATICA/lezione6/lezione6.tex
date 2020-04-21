@@ -18,17 +18,17 @@ dove possiamo usare $v(0^+)$ se $v$ è discontinua in $0$.\newline
      \hline
      \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$v(t)$ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;& \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$V(s)$ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\\ 
      \hline
-     $imp(t)$ & $1$ \\ 
-     $sca(t)$ & $\frac{1}{s}$  \\ 
-     $ram(t) = t \cdot  sca(t)$ & $\frac{1}{s^2}$ \\
-     $e^{at}sca(t)$ & $\frac{1}{s-a}$ \\ 
+     $k \cdot imp(t)$ & $k \cdot 1$ \\ 
+     $k \cdot sca(t)$ & $k \cdot \frac{1}{s}$  \\ 
+     $k \cdot ram(t) =k \cdot t \cdot  sca(t)$ & $k \cdot \frac{1}{s^2}$ \\
+     $k \cdot e^{at}sca(t)$ & $k \cdot \frac{1}{s-a}$ \\ 
      $t^{n}\cdot e^{at}sca(t)$ & $\frac{n!}{(s-a)^{n+1}}$\\ 
      \hline
     \end{tabular}
 \end{center}
 \renewcommand{\arraystretch}{1}
-Da notare è che la rampa è l'integrale dello scalino, che a sua volta è l'integrale dell'impulso.\newline
-Queste prime tre trasformate prendono il nome di segnali canonici, e sono tutte quelle trasformate di Laplace che valgono $\frac{1}{s^n}$.\newline
+Da notare è che la rampa è l'integrale dello scalino, che a sua volta è l'integrale dell'impulso. Queste prime tre trasformate prendono il nome di segnali canonici, e sono tutte quelle trasformate di Laplace che valgono $\frac{1}{s^n}$.\newline
+\newline
 Notiamo che segnali come trigonometrici sono rappresentabili come esponenziali complessi, come $sin(\omega t) = \frac{e^{j \omega t}- e^{-j \omega t}}{2j} \dots$ e così possiamo ricavare le trasformate di Laplace di tutte le funzioni trigonometriche.
 \subsection{Antitrasformazione secondo Heaviside}
 Questo metodo vale per trasformate di Laplace razionali fratte, cioè trasformate che possono essere scritte come
@@ -159,9 +159,10 @@ Allora per qualunque $s$ che appartiene all'insieme degli autovalori di $A$ poss
 \[
     X(s) = (sI-A)^{-1} x(0) + (sI-A)^{-1} bU(s)
 \]
-La trasformata di Laplace dell'equazione di stato è quindi composta da due termini: il primo dipende linearmente solo dallo stato iniziale, il secondo dipende linearmente solo dall'ingresso. Quindi il primo termine $(sI-A)^{-1} x(0)$ è la trasformata di Laplace del \textbf{movimento libero (ML)} di $x$, e il secondo termine $(sI-A)^{-1} bU(s)$ è la trasformata di Laplace del \textbf{movimento forzato (MF)} di $x$.\newline
-Questa formula che abbiamo scritto è la corrispondente nel dominio delle trasformate di ciò che nel dominio del tempo è la formula di Lagrange nello stato.\newline
-\newline
+\subsubsection{Equazione di stato}
+La trasformata di Laplace dell'\textbf{equazione di stato} è quindi composta da due termini: il primo dipende linearmente solo dallo stato iniziale, il secondo dipende linearmente solo dall'ingresso. Quindi il primo termine $(sI-A)^{-1} x(0)$ è la trasformata di Laplace del \textbf{movimento libero (ML)} di $x$, e il secondo termine $(sI-A)^{-1} bU(s)$ è la trasformata di Laplace del \textbf{movimento forzato (MF)} di $x$.\newline
+Questa formula che abbiamo scritto è la corrispondente nel dominio delle trasformate di ciò che nel dominio del tempo è la formula di Lagrange nello stato.
+\subsubsection{Equazione d'uscita}
 Ora trasformo l'\textbf{equazione d'uscita} e vi sostituisco $X(s)$ che abbiamo appena trovato:
 \[
     Y(s) = cX(s) + dU(s) = c(sI-A)^{-1} x(0) + [c(sI-A)^{-1} b + d]U(s)
