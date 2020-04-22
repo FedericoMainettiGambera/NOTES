@@ -1,6 +1,6 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {part}{I\hspace {1em}Lezioni}{4}{part.1}%
+\contentsline {part}{I\hspace {1em}Prima parte del corso}{4}{part.1}%
 \contentsline {section}{\numberline {1}SLIDE: Introduzione al corso}{4}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Informazioni generale}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Concetti preliminari}{4}{subsection.1.2}%
@@ -111,11 +111,12 @@
 \contentsline {subsubsection}{\numberline {14.3.3}Tracciamento complessivo}{50}{subsubsection.14.3.3}%
 \contentsline {subsubsection}{\numberline {14.3.4}Metodo di tracciamento}{51}{subsubsection.14.3.4}%
 \contentsline {subsubsection}{\numberline {14.3.5}Esempio}{51}{subsubsection.14.3.5}%
-\contentsline {part}{II\hspace {1em}Esercitazioni}{53}{part.2}%
-\contentsline {section}{\numberline {15}Esercitazione 1}{53}{section.15}%
-\contentsline {section}{\numberline {16}Esercitazione 2}{53}{section.16}%
-\contentsline {section}{\numberline {17}Esercitazione 3}{53}{section.17}%
-\contentsline {section}{\numberline {18}Esercitazione 4}{53}{section.18}%
-\contentsline {section}{\numberline {19}Esercitazione 5}{53}{section.19}%
-\contentsline {section}{\numberline {20}Esercitazione 6}{53}{section.20}%
-\contentsline {section}{\numberline {21}Esercitazione 7}{54}{section.21}%
+\contentsline {part}{II\hspace {1em}Seconda parte del corso}{53}{part.2}%
+\contentsline {part}{III\hspace {1em}Esercitazioni}{54}{part.3}%
+\contentsline {section}{\numberline {15}Esercitazione 1}{54}{section.15}%
+\contentsline {section}{\numberline {16}Esercitazione 2}{54}{section.16}%
+\contentsline {section}{\numberline {17}Esercitazione 3}{54}{section.17}%
+\contentsline {section}{\numberline {18}Esercitazione 4}{54}{section.18}%
+\contentsline {section}{\numberline {19}Esercitazione 5}{54}{section.19}%
+\contentsline {section}{\numberline {20}Esercitazione 6}{54}{section.20}%
+\contentsline {section}{\numberline {21}Esercitazione 7}{55}{section.21}%
