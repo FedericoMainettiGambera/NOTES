@@ -21,11 +21,11 @@ Definiamo il polinomio caratteristico come
 \[
     \Pi(s) = a_0s^n + a_1 s^{n-1} + \dots + a_{n-1}s + a_n
 \]
-\textbf{oss.} il polinomio deve avere tutti i termini, altrimenti violiamo una delle condizioni necessarie che abbiamo visto alla lezione scorsa.\newline
+\textbf{oss.} il polinomio deve avere tutti i termini, altrimenti violiamo una delle condizioni necessarie esposta nella sezione precedente "Criteri di stabilità dedotti dalla matrice A", e il sistema non è sicuramente asintoticamente stabile.\newline
 \newline
 La tabella di Routh si costruisce nel seguente modo:
 \begin{itemize}
-    \item Si compilano le prime due righe a "zig-zag" (come mostrato con dalle frecce) con i coefficienti del polinomio.
+    \item Si compilano le prime due righe a "zig-zag" (come mostrato dalle frecce) con i coefficienti del polinomio.
     \[
         \begin{matrix}
             a_0 & \;\;\;\;\;\; a_2 & \;\;\;\;\;\;\dots\\
@@ -33,20 +33,19 @@ La tabella di Routh si costruisce nel seguente modo:
             a_1 & \;\;\;\;\;\; a_3 & \;\;\;\;\;\;\dots 
         \end{matrix}
     \]
-    \item l'ultima colonna (delle prime due righe) può terminare in due modi:
+    \item a seconda che il numero di termini sia pari (le due righe sono di pari lunghezza) o dispari (la prima riga ha un termine in più della seconda, per cui si aggiunge uno $0$) l'ultima colonna può terminare in due modi:
     \[
         \begin{matrix}
             \dots & a_{n-1}\\
             \;\\
             \dots & a_n
-        \end{matrix}\;\;\;\;\;\; \text{oppure}\;\;\;\;\;\; \begin{matrix}
+        \end{matrix}\;\;\;\;\;\;\;\;\;\;\; \text{oppure}\;\;\;\;\;\;\;\;\;\;\; \begin{matrix}
             \dots &a_n\\
             \;\\
             \dots & 0 
         \end{matrix}
     \]
-    \item Le righe successive si costruiscono a partire dalle prime due.\newline
-    In totale, considerando anche le prime due righe, ci sono $n+1$ righe.\newline
+    \item In totale, considerando anche le prime due righe, ci sono $n+1$ righe.\newline
     Ogni riga dalla terza in poi dipende dalle due precedenti seguendo una regola:
     \[
         \begin{matrix}
@@ -57,17 +56,17 @@ La tabella di Routh si costruisce nel seguente modo:
             w_1 & w_2 & w_3 & \dots
         \end{matrix}
     \]
-    prese due generiche righe ($h_i$ e $q_i$), la riga successiva ($w_i$) si genera come $w_i = - \frac{1}{q_1} det\left[\begin{matrix}
+    prese due generiche righe ($h_i$ e $q_i$), i termini della riga successiva ($w_i$) si costruiscono come $w_i = - \frac{1}{q_1} det\left[\begin{matrix}
         h_1 & h_{i+1} \\
         q_1 & q_{i+1}
     \end{matrix}\right]$.\newline
-    Gli elementi mancanti al termine delle righe soprastanti si assumono nulli.
+    Se manca un termine in una delle righe precedenti ($h$ e $q$) si assume nullo.
     \item Se troviamo un elemento nullo in prima colonna, ci si ferma, sicuramente il sistema non è asintoticamente stabile, e siamo in presenza di un caso particolare che non ci permette di calcolare la tabella di Routh.
 \end{itemize}
 \subsubsection*{Criterio di Routh}
-Un SD con polinomio caratteristico $\Pi(s)$ è asintoticamente stabile se e solo tutti gli elementi della prima colonna della tabella di Routh sono concordi (e non nulli).\newline
+Un sistema dinamico con polinomio caratteristico $\Pi(s)$ è asintoticamente stabile se e solo se tutti gli elementi della prima colonna della tabella di Routh sono concordi (e non nulli).\newline
 \newline
-\textbf{Corollario}: Se non vi sono elementi nulli in prima colonna, allora il numero di inversioni di segno sulla prima colonna è uguale al numero di radici di $\Pi(s)0$ con $Re>0$. [non lo useremo mai questo corollario].
+\textbf{Corollario}: Se non vi sono elementi nulli in prima colonna, allora il numero di inversioni di segno sulla prima colonna è uguale al numero di radici di $\Pi(s)$ con $Re>0$. [non lo useremo mai questo corollario].
 \subsubsection*{Esempi}
 \textbf{es.} $\Pi(s) = s^4 + 2s^3 + 4s^2 + s + 5$: soddisfa le condizioni necessarie, quindi faciamo la tabella di Routh. Siccome $n=4$ la tabella avrà $n+1 = 5$ righe:
 \[
@@ -91,11 +90,13 @@ Un SD con polinomio caratteristico $\Pi(s)$ è asintoticamente stabile se e solo
     \end{matrix}\right]
 \]
 Siccome $\gamma$ è discorde, sappiamo che non è asintoticamente stabile.\newline
-Inoltre fra $\alpha$ e $\gamma$ c'è un'inversione di segno e fra $\gamma$ e $\delta$ c'è un'altra inversione di segno. Avendo due inversioni di segno, so che ci sono due radici con $Re > 0$. Da notare che, anche se abbiamo un solo elemento discorde, ci sono due inversioni di segno.\newline
+Inoltre fra $\alpha$ e $\gamma$ c'è un'inversione di segno e fra $\gamma$ e $\delta$ c'è un'altra inversione di segno. Avendo due inversioni di segno, so che ci sono due radici con $Re > 0$.\newline
+\newline
+\textbf{oss.} Da notare che, anche se abbiamo un solo elemento discorde, ci sono due inversioni di segno.\newline
 \rule{\textwidth}{0,4pt}\newline
 \newline
 \textbf{es.} Dato il SD LTI a TC con polinomio caratteristico $\Pi(s) = s^3 + 2s^2 + hs +k$, dire per quali valori di $(h,k)$ esso è asintoticamente stabile.\newline
-Deduciamo che dovremo avere $h>0$ e $k>0$ (altrimenti violo una delle condizioni necessarie viste la lezione scorsa). Usiamo ora Rout, l'unico caso in cui si può evitare di usare Routh è se il polinomio caratteristico è di secondo grado.
+Deduciamo che dovremo avere $h>0$ e $k>0$ (altrimenti violo una delle condizioni necessarie). Usiamo ora Routh, l'unico caso in cui si può evitare di usare Routh è se il polinomio caratteristico è di secondo grado.
 \[
     \begin{matrix}
         1&h\\

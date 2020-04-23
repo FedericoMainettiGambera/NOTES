@@ -239,5 +239,9 @@ Sì, vi sono criteri per dirlo basati sull'ispezione di $A$ o del suo polinomio 
 \begin{itemize}
     \item Siccome $det(A) = \Pi_{i=1}^{n}S_i$, dove con $S_i$ si intendono gli autovalori $\Longrightarrow$ allora se $det(A) = 0$ esiste $S_i = 0$ $\Longrightarrow$ sistema non AS.
     \item Siccome $tr(A) = \sum_{i=1}^{n}S_i$, dove con $S_i$ si intendono gli autovalori $\Longrightarrow$ se $tr(A) >0$ esiste $S_i$ tale che $Re(S_i) > 0$ $\Longrightarrow$ sistema I.
-    \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è asintoticamente stabile), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli (\textbf{oss.} Errore tipico: il viceversa vale solo per polinomi del secondo ordine).
+    \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è asintoticamente stabile), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli \newline
+    \textbf{oss.} Errore tipico: il viceversa vale solo per polinomi del secondo ordine.
 \end{itemize}
+\textbf{oss.}  Questi tre criteri non ci permettono di capire se un sistema è asintoticamente stabile, ma ci permettono facilmente di capire se non lo è (primi due criteri).\newline
+\newline
+\textbf{oss.} Per stabilire se un sistema è asintoticamente stabile abbiamo due possibilità: per prima cosa con i primi due dei tre criteri appena esposti stabiliamo se non è asintoticamente stabile, altrimenti, se non abbiamo avuto fortuna con questi criteri, usiamo il criterio di Routh (prossimo argomento, vedi più avanti). Un caso particolare è rappresentato dai polinomi di secondo ordine, in cui possiamo evitare di usare Routh e usare il terzo criterio appena visto.
