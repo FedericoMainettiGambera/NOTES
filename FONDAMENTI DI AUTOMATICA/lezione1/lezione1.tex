@@ -39,47 +39,67 @@ Non ci sono prove in itinere.
 \newpage
 \section{Il problema del controllo}
 \subsection{Concetti fondamentali}
-[immagine dagli appunti del prof]\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione1/img1.PNG}
+\end{center}
 $S$: sistema da controllare. \newline
-$U$: variabili di controllo o in generale variabili di ingresso. Da notare è che per esempio anche una pompa che possiamo comandare e che tira fuori acqua dal nostro sistema è una variabile di ingresso perchè la controlliamo, nonostante la massa fisica dell'acqua esca.
+$U$: variabili di controllo o in generale variabili di ingresso. Da notare è che per esempio anche una pompa che possiamo comandare e che tira fuori acqua dal nostro sistema è una variabile di ingresso perchè la controlliamo, nonostante la massa fisica dell'acqua esca.\newline
 $y$: variabili d'uscita.\newline
 $w$: andamento desiderato di $y$ o segnale di riferimento o set point.\newline
 $d$: disturbi.\newline
 L'obbiettivo è che $y$ sia il più possibile uguale a $w$ nonostante $d$ e nonostante una conoscenza potenzialmente imperfetta di $S$.
 \subsection{Strategie di controllo}
 \subsubsection{Controllo in anello aperto (AA)}
-[immagine dagli appunti del prof]\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione1/img2.PNG}
+\end{center}
 $C$: controllore.\newline
 Il controllore decide l'andamento di $U$ sulla base di $w$. Il controllore non sa cosa succede in $y$ e non conosce $d$.\newline
 Questo approccio funziona se il legame $U \rightarrow y$ è esattamente noto e non ci sono disturbi $d$.\newline
 \subsubsection{Controllo in anello aperto (AA) con compensazione del disturbo misurabile}
-[immagine dagli appunti del prof]\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione1/img3.PNG}
+\end{center}
 $M_d$: misuratore del disturbo.\newline
-$d_m$: misura di $d$.\newline
-Il controllore in questo caso non vede $y$, ma vede $d$, o meglio $d_m$.\newline
-Questo approccio funziona s il legame $(U,d) \rightarrow y$ è esattamente noto e se $d_m = d$, cioè se la misura del disturbo è corretta.
+$d_m$: misura del disturbo $d$.\newline
+Il controllore in questo caso non vede $y$, ma vede $d$ (o meglio $d_m$).\newline
+Questo approccio funziona se il legame $(U,d) \rightarrow y$ è esattamente noto e se $d_m = d$, cioè se la misura del disturbo è corretta.
 \subsubsection{Controllo in anello chiuso (AC) o in retroazione o Feedback}
-[immagine dagli appunti del prof]\newline
-$M_y$: misuratore di $y$.\newline
-$y_m$: misura di $y$.\newline
-Questo sistema può contrastare i disturbi ed errori di modello anche senza conoscerli, il controllore ne vede gli effetti tramite $y_m$.\newline
-Naturalmente occorre sempre che $y_m = y$, se la misurazione è sbagliata non si può fare nulla. Non laavoriamo con le grandezze vere e proprie, ma con le loro misurazioni.
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione1/img4.PNG}
+\end{center}
+$M_y$: misuratore dell'uscita.\newline
+$y_m$: misura dell'uscita $y$.\newline
+Questo sistema può contrastare i disturbi ed errori di modello anche senza conoscerli, infatti il controllore ne vede gli effetti tramite $y_m$.\newline
+Naturalmente occorre sempre che $y_m = y$, se la misurazione è sbagliata non si può fare nulla. Facciamo notare che le misurazioni sono particolarmente importanti, non lavoriamo con le grandezze vere e proprie, ma con le loro misurazioni.
 \subsubsection{Controllo in anello chiuso (AC) con compensazione del disturbo}
-[immagine dagli appunti del prof]\newline
-Questo approccio è come il caso precedente ma più pronto nel reagire a $d$. Nel caso precedente in seguito a un disturbo si reagisce alle sue conseguenze, in questo caso si reagisce in maniera preventiva ai disturbi.\newline
-N.B. la precisione di $M_d$ conta meno di quella di $M_y$.
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione1/img5.PNG}
+\end{center}
+Questo approccio è come il caso precedente ma più pronto nel reagire ai disturbi $d$. Nel caso precedente potevamo correggere gli effetti di un disturbo osservando i suoi effetti sull'uscita, in questo caso, invece, si reagisce in maniera preventiva ai disturbi, cioè non appena viene rilevato un disturbo il controllore può già andare a contrastarlo senza dover aspettare che questo influesca l'uscita.\newline
+\textbf{oss.} La precisione di $M_d$ conta meno di quella di $M_y$.
 \subsubsection{Esempio}
-[immagine dagli appunti del prof]\newline
-Abbiamo una guida su cui scorre una massa $M$ attaccata con una molla di costante elastica $k$. La massa viene spinta da una forza $F = U$ (è l'ingresso, lo imponiamo al sistema). La $y$ (uscita) del sistema è la posizione della massa sulla guida.\newline
-$F_{molla} = -ky$\newline
-$F_{attrito} = - h \frac{d}{dt}y = -h \dot{y}$
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione1/img6.PNG}
+\end{center}
+Abbiamo una guida su cui scorre una massa $M$ attaccata con una molla di costante elastica $k$. La massa viene spinta da una forza $F = U$ (che è l'ingresso con cui possiamo interagire col sistema). La $y$ (uscita) del sistema è la posizione della massa sulla guida, che vale $0$ quando il sistema è a riposo.
+\[
+    F_{molla} = -ky \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;F_{attrito} = - h \frac{d}{dt}y = -h \dot{y}
+\]
+Analiziamo ora questo sistema nel caso in cui sia in equilibrio (cioè fermo) e nel caso in cui è in movimento.
 \subsubsection*{Modello statico}
 Per prima cosa vediamo un \textbf{modello statico (all'equilibrio)} di questo sistema:\newline
-In un modello statico la velocità è nulla, e quindi la $F_{attrito} = 0$ e $F + F_{molla} = 0$, che diventa $F-k \bar{y} = 0$, dove peri $\bar{y}$ si intende il valore di $y$ in stato di equilibrio, e dunque $\bar{y} = \frac{F}{k}$.\newline
+In un modello statico la velocità è nulla, e quindi la $F_{attrito} = 0$ e $F + F_{molla} = 0$, che diventa $F-k \bar{y} = 0$, dove per $\bar{y}$ si intende il valore di $y$ in stato di equilibrio, e dunque $\bar{y} = \frac{F}{k}$.\newline
 Quindi se voglio $y = y^o$, dove per $y^o$ si intende un $y$ desiderato, dovrò applicare una forza $F = k y^o$.\newline
 \newline
-Analiziamo ora il sistema con un controllo in \textbf{AA}, supponendo che la costante elastica della molla sia $k = k_n + \Delta k$, dove $k_n$ è detto $k$ nominale.\newline
-Applicando quindi $F = k_n y^o$, otterrò $y = \frac{F}{k_n + \Delta k} = \frac{k_n}{kn + \Delta k} y^o$. Quindi si può avere un errore di modello dovuto a quel $\Delta k$, che provoca un errore di controllo, cioè che $y \neq y^o$.\newline
+Analiziamo ora il sistema con un controllo in \textbf{AA}, supponendo che la costante elastica della molla sia $k = k_n + \Delta k$, dove $k_n$ è detto $k$ nominale e $\Delta k$ rappresenta un possibile errore di modello a noi sconosciuto.\newline
+Applicando quindi $F = k_n y^o$, otterrò $y = \frac{F}{k_n + \Delta k} = \frac{k_n}{kn + \Delta k} y^o$. Quindi si può avere un errore di modello dovuto a quel $\Delta k$, che provoca un errore di controllo, cioè un errore in cui l'uscita effettiva non è esattamente l'uscita che volevamo: $y \neq y^o$.\newline
 \[
     \text{Errore nel modello ($\Delta k$) $\Longrightarrow$ errore nel controllo ($y \neq y^o$)}\;
 \]
@@ -92,7 +112,7 @@ Con questo approccio ottengo $y = \frac{F}{k_n + \Delta k} = \frac{\alpha (y^o -
 Quindi:
 \begin{itemize}
     \item  il controllo in AA è basato sul modello (usa $k_n$); l'errore è nullo se il modello è esatto, se no non si può contrastare l'incertezza.
-    \item il controllo in AC è basato su misure (usa $y^o-y$); l'errore può essere nullo anche con modello esatto, ma può rendere l'errore piccolo a piacere.
+    \item il controllo in AC è basato su misure (usa $y^o-y$); l'errore può essere reso piccolo a piacere.
 \end{itemize}
 \subsubsection*{Modello dinamico}
 Vediamo ora il \textbf{modello dinamico}:
@@ -104,3 +124,6 @@ Nel caso di un sistema con controllo in \textbf{AA}, $F(t)$ non dipende da $y(t)
 Nel caso di un sistema con controllo in \textbf{AC}, se, per esempio, $F(t) = \alpha(y^o(t) -y(t)) + \beta \dot{y}(t)$, ovvero se faccio dipendere la forza istante per istante, devo scrivere che $m \ddot{y}(t) + h \dot{y}(t) + k y(t) = \alpha(y^o(t) - y(t) ) + \beta \dot{y}(t)$, cioè $m \ddot{y}(t) + (h - \beta) \dot{y}(t) + (k + \alpha)y(t) = \alpha y^o(t)$. Agendo con $alfa$ e $\beta$ sto cambiando il polinomio caratteristico dell'equazione differenziale e quindi sto cambiando l'integrale generale. L'integrale generale dipende dai parametri di controllo $\alpha$ e $\beta$.\newline
 \newline
 [immagine dagli appunti del prof]: schema a blocchi (verrà spiegato meglio più avanti) dell'esempio appena fatto.
+\begin{center}
+    \includegraphics[height=3cm]{../lezione1/img7.PNG}
+\end{center}
