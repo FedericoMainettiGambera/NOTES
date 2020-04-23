@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  23 APR 2020 04:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  23 APR 2020 04:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -952,68 +952,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--235
  []
 
 [18]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione4/lezione4.tex [19]
-Underfull \hbox (badness 10000) in paragraph at lines 13--17
+Underfull \hbox (badness 10000) in paragraph at lines 12--16
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 52.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 52.
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 66--70
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--78
+Underfull \hbox (badness 10000) in paragraph at lines 71--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--124
+Underfull \hbox (badness 10000) in paragraph at lines 104--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--124
+Underfull \hbox (badness 10000) in paragraph at lines 104--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--124
+Underfull \hbox (badness 10000) in paragraph at lines 104--123
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 143--148
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
 
  []
 
 
-Overfull \hbox (47.0947pt too wide) in paragraph at lines 157--158
+Overfull \hbox (47.0947pt too wide) in paragraph at lines 156--157
 []$\OML/cmm/m/it/10 ^^U[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10  \OMS/cmsy/m/n/10 ^^F \OML/cmm/m/it/10 i^^L   [] $\OT1/cmss/m/n/10 , im-pli-ca che $\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 e[][]$
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 166.
+(hyperref)                removing `math shift' on input line 165.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 166.
+(hyperref)                removing `math shift' on input line 165.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--177
+Underfull \hbox (badness 10000) in paragraph at lines 172--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--191
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
 
  []
 
@@ -1662,7 +1662,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  62i,17n,77p,1450b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (59 pages, 760517 bytes).
+Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (59 pages, 760514 bytes).
 PDF statistics:
  1094 PDF objects out of 1200 (max. 8388607)
  976 compressed objects within 10 object streams
