@@ -136,7 +136,7 @@ Da quest'ultima equazione, deduciamo diverse osservazioni:\newline
 \textbf{oss.} Questa equazione ci mostra che la maniera in cui $x_\Delta$ di muove rispetto a $\bar{x}$ (cioè il termine $x_\Delta (t) - \bar{x}$) non dipende dal particolare $\bar{x}$ (che al secondo membro dell'equazione non compare).\newline
 \newline
 \textbf{oss.}  Tutti gli equilibri (se ve ne sono) hanno le stesse caratteristiche di stabilità.\newline
-Quindi nei sistemi lineari (TI) \textbf{la stabilità è una proprietà del sistema}, non è una proprietà dell'equilibrio, non ci possono essere equilibri instabili e equilibri stabili in uno stesso sitema lineare, sono tutti dello stesso "tipo". Se il sistema fosse non lineare questo discorso non vale.\newline
+Quindi nei sistemi lineari (tempo invarianti) \textbf{la stabilità è una proprietà del sistema}, e non una proprietà dell'equilibrio, non ci possono essere equilibri instabili e equilibri stabili in uno stesso sitema lineare, devono essere tutti dello stesso "tipo". Se il sistema fosse non lineare questo discorso non varrebbe.\newline
 \newline
 \textbf{oss.} La stabilità del sistema dipende soltanto dal comportamento di $e^{At}$, cioè dalla matrice $A$.\newline
 \newline
@@ -157,12 +157,12 @@ Quindi riassumendo:
     x_{\Delta}(t) - \bar{x} = e^{At}\Delta \bar{x}
 \]
 \begin{itemize}
-    \item Se $e^{At} \rightarrow$ tende a diventare la matrice nulla $0_{nxn}$ per $t \rightarrow  \infty$ $\Longrightarrow$ allora il sistema è AS (cioè che il movimento libero di $x \rightarrow  0$);
+    \item Se $e^{At} \rightarrow$ tende a diventare la matrice nulla $0_{nxn}$ per $t \rightarrow  \infty$ $\Longrightarrow$ allora il sistema è AS (cioè che il movimento libero di $x$ tende a $0$);
     \item Se $e^{At}$ diverge per $t \rightarrow  \infty$ $\Longrightarrow$ Allora il sistema è I (perchè il movimento libero di $x$ diverge, salvo eccezzioni, quali per esempio partire dall'equilibrio stesso);
     \item Se $e^{At}$ nè tende a $0$ nè diverge per $t \rightarrow  \infty$ $\Longrightarrow$  Allora il sistema è S.
 \end{itemize}
 \subsubsection{Proprietà di sistemi asintoticamente stabili (SD LTI a TC)}
-Per i nostri scopi ci interessa principalmente la stabilità asintotica, che ha delle le seguenti particolari proprietà:
+Per i nostri scopi ci interessa principalmente la stabilità asintotica, che ha le seguenti particolari proprietà:
 \begin{itemize}
     \item i movimenti liberi di $x$ e di $y$ tendono a $0$ per $t \rightarrow  \infty$, quindi tali sistemi "dimenticano lo stato iniziale", cioè da un certo punto in poi il movimento libero diventa trascurabile;
     \item Se 
@@ -178,7 +178,7 @@ Per i nostri scopi ci interessa principalmente la stabilità asintotica, che ha 
 \subsubsection*{caso a tempo continuo (TC) e A diagonalizzabile}
 Caso in cui $A$ è diagonalizzabile (se non è diagonalizzabile, vedi più avanti).\newline
 \newline
-Partiamo dal movimento livero di $x$: $x_L (t) = e^{At} x(0) = e^{T diag\{\lambda_i\}T^{-1} t}x(0) = T diag\{e^{\lambda_i t}\}T^{-1}x(0)$, dove $x_L(t)$ è il movimento libero di $x$, T è la matrice che diagonalizza $A$ e $e^{\lambda_it}$ prendono il nome di modi del sistema.\newline
+Partiamo dal movimento libero di $x$: $x_L (t) = e^{At} x(0) = e^{T diag\{\lambda_i\}T^{-1} t}x(0) = T diag\{e^{\lambda_i t}\}T^{-1}x(0)$, dove $x_L(t)$ è il movimento libero di $x$, T è la matrice che diagonalizza $A$ e i vari $e^{\lambda_it}$ prendono il nome di modi del sistema.\newline
 \newline
 Se $A$ è reale, allora $\lambda_i$ sono o reali o coppie complesse coniugate.\newline
 \newline
