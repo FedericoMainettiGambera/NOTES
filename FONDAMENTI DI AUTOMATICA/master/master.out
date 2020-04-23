@@ -47,10 +47,10 @@
 \BOOKMARK [3][-]{subsubsection.7.1.1}{Equilibrio stabile \(S\)}{subsection.7.1}% 47
 \BOOKMARK [3][-]{subsubsection.7.1.2}{Equilibrio asintoticamente stabile \(AS\)}{subsection.7.1}% 48
 \BOOKMARK [3][-]{subsubsection.7.1.3}{Equilibrio instabile \(I\)}{subsection.7.1}% 49
-\BOOKMARK [2][-]{subsection.7.2}{Stabilit\340 nei sistemi dinamici \(SD\) lineari tempo invarianti \(LTI\) a tempo continuo \(TC\)}{section.7}% 50
+\BOOKMARK [2][-]{subsection.7.2}{Stabilit\340 nei sistemi dinamici \(SD\) lineari tempo invarianti \(LTI\)}{section.7}% 50
 \BOOKMARK [3][-]{subsubsection.7.2.1}{Stabilit\340 come propriet\340 di sistema \(SD LTI a TC\)}{subsection.7.2}% 51
 \BOOKMARK [3][-]{subsubsection.7.2.2}{Propriet\340 di sistemi asintoticamente stabili \(SD LTI a TC\)}{subsection.7.2}% 52
-\BOOKMARK [3][-]{subsubsection.7.2.3}{Matrice A e Stabilit\340 \(SD LTI\)}{subsection.7.2}% 53
+\BOOKMARK [3][-]{subsubsection.7.2.3}{Matrice A e Stabilit\340 \(SD LTI a TC e a TD\)}{subsection.7.2}% 53
 \BOOKMARK [2][-]{subsection.7.3}{Criteri di stabilit\340}{section.7}% 54
 \BOOKMARK [3][-]{subsubsection.7.3.1}{Criteri di stabilit\340 dedotti dalla matrice A \(SD LTI a TC\)}{subsection.7.3}% 55
 \BOOKMARK [3][-]{subsubsection.7.3.2}{Criterio di stabilit\340 secondo Routh \(SD LTI a TC\)}{subsection.7.3}% 56
