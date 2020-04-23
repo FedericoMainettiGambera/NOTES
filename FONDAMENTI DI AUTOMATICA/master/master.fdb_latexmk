@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex master.idx"] 1587603347 "master.idx" "master.ind" "master" 1587605369
-  "master.idx" 1587605358 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1587608161 "master.idx" "master.ind" "master" 1587609230
+  "master.idx" 1587609216 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "master.ilg"
   "master.ind"
-["pdflatex"] 1587605356 "c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" "master" 1587605369
+  "master.ilg"
+["pdflatex"] 1587609214 "c:/Users/enric/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.tex" "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" "master" 1587609230
   "../../preamble/preamble.tex" 1587603066 707 ea9409653390c911ff58e23c44f6605e ""
   "../lezione1/img1.PNG" 1587598662 13424 65d9f7104b62ef6f4aaae2bd696c5691 ""
   "../lezione1/img2.PNG" 1587599054 19985 90da9d779d4e46572fd1a2806189f343 ""
@@ -32,7 +32,7 @@
   "../lezione2/img5.PNG" 1587600752 43531 5d5a472660d74fc970c3758978d9af31 ""
   "../lezione2/img6.PNG" 1587600827 38812 59259546a8c35f77d0f6c6c612a28bf9 ""
   "../lezione2/lezione2.tex" 1587605355 19705 26a8bbff1d9a676bc824950e4ea23db2 ""
-  "../lezione3/lezione3.tex" 1587433736 14598 18c5795681c77738ba5abd9222857d1c ""
+  "../lezione3/lezione3.tex" 1587609191 15253 f1d9b924ff0eda079e50975a8d905723 ""
   "../lezione4/lezione4.tex" 1587427300 10538 286499c63c91f475fa8a212f307f68ff ""
   "../lezione5/lezione5.tex" 1587426915 15869 5e03bf95e2ca70cd69f295e7c8bf0cf6 ""
   "../lezione6/lezione6.tex" 1587431032 13391 9eb2a9efc23786a45bbcd677f992efaa ""
@@ -223,18 +223,18 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1584048551 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1584049042 8274593 951864db8bcab083c09dd09dcef78fa9 ""
   "c:/texlive/2019/texmf.cnf" 1584048406 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux" 1587605361 17161 a5262bf656245fcb01a466985376fe8b ""
-  "master.aux" 1587605361 17161 a5262bf656245fcb01a466985376fe8b "pdflatex"
-  "master.ind" 1587603348 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1587605361 9534 60ae28f27e670eb0ef8311ad55c2b1b3 "pdflatex"
+  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux" 1587609220 18148 5c532f42994d26654c733b66f8dccbf3 ""
+  "master.aux" 1587609220 18148 5c532f42994d26654c733b66f8dccbf3 "pdflatex"
+  "master.ind" 1587608162 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
+  "master.out" 1587609220 10135 f1b39393f5f0984644909b1bbdf28d72 "pdflatex"
   "master.tex" 1587521631 1206 c83c770d841debc9bb2eaaf915192bec ""
-  "master.toc" 1587605361 11509 4190604843af9291e3335af349dcc0ce "pdflatex"
+  "master.toc" 1587609220 12209 ecceab9be428f7b054ff912a514039d0 "pdflatex"
   (generated)
-  "master.toc"
-  "master.pdf"
   "master.idx"
-  "master.aux"
-  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.log"
   "master.out"
-  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf"
   "master.log"
+  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.log"
+  "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf"
+  "master.pdf"
+  "master.aux"
+  "master.toc"

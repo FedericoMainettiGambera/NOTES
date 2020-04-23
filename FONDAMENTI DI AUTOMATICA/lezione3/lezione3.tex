@@ -1,10 +1,11 @@
 \title{LEZIONE 3 12/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/0f5f35c0-ba36-4f9c-a496-057ebab138ec?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
 \subsection{Sistemi dinamici (SD) lineari tempo invarianti (LTI)}
-I sistemi dinamici lineari tempo invarianti sono sistemi in cui $f$ e $g$ sono lineari in $x$ e in $u$, e per cui non c'è dipendenza esplicita da $t$ (TC) o da $k$ (TD).\newline
+I sistemi dinamici \textbf{lineari tempo invarianti} sono sistemi in cui $f$ e $g$ sono lineari in $x$ e in $u$, e per cui non c'è dipendenza esplicita da $t$ (TC) o da $k$ (TD).\newline
+\newline
 Li vedremo solo SISO (single input, single output).\newline
 \newline
-Cominciamo per il caso a \textbf{tempo continuo} (TC). L'unico modo per fare un sistme DC TC LTI è il seguente:
+Cominciamo per il caso a \textbf{tempo continuo} (TC). L'unico modo per fare un sistema dinamico a tempo continuo lineare tempo invariante (SD TC LTI) è il seguente:
 \[
     \begin{cases}
         \dot{x}_1(t) &= a_{11}x_1(t) + \dots+ a_{1n}x_{n}(t) + b_1 u(t)\\
@@ -47,8 +48,10 @@ Il caso a \textbf{tempo discreto} (TD) è analogo.
 \textbf{oss.} Nei libri di testo si può trovare scritto così: $\begin{cases}
     x(k+1) = Ax(k) + bu(k)\\
     y(k+1) = cx(k+1) +d u(k+1)
-\end{cases}$, comunque la cosa importatne è che nella prima equazione del sistema ci siano due valori successivi di $k$ e nella seconda ci sia un solo valore di $k$.
-\subsection{Equilibrio}
+\end{cases}$, comunque la cosa importatne è che nella prima equazione del sistema ci siano due valori successivi di $k$ (quello corrente e quello successivo oppure quello corrente e quello precedente) e nella seconda ci sia un solo valore di $k$ (stesso valore consistente, che sia quello corrente, quello successivo o quello precedente, etc.).
+\newpage
+\section{Equilibrio}
+\subsection{Definizione}
 Poniamoci una domanda: con $u(t)$ (o $u(k)$) $=\bar{u}$ costante, esiste un qualche valore $\bar{x}$ costante tale che 
 \[
     \begin{rcases}
@@ -58,21 +61,19 @@ Poniamoci una domanda: con $u(t)$ (o $u(k)$) $=\bar{u}$ costante, esiste un qual
 \]
 , cioè, con un ingresso costante deciso, esiste un qualche stato costante tale che, prendendo proprio questo stato come stato iniziale e applicando l'ingresso costante deciso, lo stato non cabia?\newline
 \newline
-\textbf{oss.} Il concetto di equilibrio è che se io metto un sistema in uno stato di equilibrio, lui rimane lì. Da notare è che la stabilità è un altra cosa (se muovo dallo stato d'equilibrio, il sistema ritorna lì).\newline
-\newline
-Per rispondere a questa domanda dobbiamo distinguere i casi a tempo continuo e a tempo discreto:\newline
-\newline
-Vediamo il caso a \textbf{tempo continuo} (TC). Se $x$ deve rimanere costante, significa che $\dot{x} = 0$ la derivata deve essere nulla. Quindi in generale con $\dot{x} = f(x,u)$, noto il valore $\bar{u}$ segnato che applico, gli eventuali $\bar{x}$ sono le soluzioni di $f(\bar{x}, \bar{u}) = 0$.\newline
+\textbf{oss.} Il concetto di equilibrio è che se io metto un sistema in uno stato di equilibrio, lui rimane lì. Da notare è che la stabilità è un altra cosa: se "sposto" il sistema dallo stato di stabilità, il sistema tende a ritornare lì.
+\subsection{Calcolo degli equilibri}
+Vediamo il caso a \textbf{tempo continuo} (TC). Se $x$ deve rimanere costante, significa che la derivata deve essere nulla $\dot{x} = 0$. Quindi in generale con $\dot{x} = f(x,u)$, noto il valore $\bar{u}$ segnato che applico, gli eventuali $\bar{x}$ sono le soluzioni di $f(\bar{x}, \bar{u}) = 0$.\newline
 \newline
 Vediamo il caso a \textbf{tempo discreto} (TD). Se $x$ deve rimanere costante, significa che $x(k+1) = x(k)$ per ogni $k$, cioè che $x(k+1)$ deve rimanere costante. Quindi in tal caso dovrò risolvere per $\bar{x}$ l'equazione $f(\bar{x}, \bar{u}) = \bar{x}$.\newline
 \newline
-Vediamo ora il caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI, per sistemi non lineari guardare l'osservazione più avanti). In questo caso l'equazione da risolvere diventa $0 = A \bar{x} + b \bar{u}$ (risolvendo questo sistema matriciale si trovano i vari stati di equilibrio). Se $A$ non è singolare, allora esiste uno e uno solo $\bar{x} = -A^{-1} b u$, altrimento o non esiste $\bar{x}$ o esistono infiniti $\bar{x}$.\newline
+Vediamo ora il caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI) (per sistemi non lineari guardare l'osservazione più avanti). In questo caso l'equazione da risolvere diventa $0 = A \bar{x} + b \bar{u}$ (risolvendo questo sistema matriciale si trovano i vari stati di equilibrio). Se $A$ non è singolare, allora esiste uno e uno solo $\bar{x} = -A^{-1} b u$, altrimenti o non esiste $\bar{x}$ o esistono infiniti $\bar{x}$.\newline
 \newline
-Vediamo ora il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $\bar{x} = A \bar{x} + b \bar{u}$. Questa equazione si scrive anche $(I-A)\bar{x} = b \bar{u}$ e se $I-A$ non è singolare, cioè se $A$ non ha autovalori in 1, allora esiste uno e uno solo $\bar{x} = (I-A)^{-1} b \bar{u}$, altrimento o non esiste $\bar{x}$ o esistono infiniti valori $\bar{x}$.\newline
+Vediamo ora il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $\bar{x} = A \bar{x} + b \bar{u}$. Questa equazione si scrive anche $(I-A)\bar{x} = b \bar{u}$ e se $I-A$ non è singolare, cioè se $A$ non ha autovalori in 1, allora esiste uno e uno solo $\bar{x} = (I-A)^{-1} b \bar{u}$, altrimenti o non esiste $\bar{x}$ o esistono infiniti valori $\bar{x}$.\newline
 \newline
-Se esiste un $\bar{x}$ (cioè se un sistema ammette un certo stato di equilibrio) per certo $u = \bar{u}$, in generale esiste un \textbf{uscita di equilibrio} $\bar{y} = g(\bar{x}, \bar{u})$.\newline
+\textbf{oss.} Nel caso non lineare $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$.\newline
 \newline
-\textbf{oss.} Nel caso non lineare $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$
+Se esiste un $\bar{x}$ (cioè se un sistema ammette un certo stato di equilibrio) per certo $u = \bar{u}$, in generale esiste un \textbf{uscita di equilibrio} $\bar{y} = g(\bar{x}, \bar{u})$.
 \subsection{Esempi}
 \textbf{es.} Esempio della massa-molla visto la lezione scorsa:\newline
 L'equazione che governa il sistema è $m \ddot{y} = F - ky - h \dot{y}$, con $u = F$, ed eravamo arrivati a dire che $\begin{cases}
@@ -109,11 +110,10 @@ Pongo $\dot{x}_1 = 0$ $\Longrightarrow$ $\bar{x}_2 = 0$, ovvio perchè la veloci
 Pongo $\dot{x}_2 = 0$, quindi $- \frac{k}{m} \bar{x}_1 - \cancel{ \frac{h}{m}\bar{x}_2} + \frac{1}{m}\bar{u} = 0$ $\Longrightarrow$ $\bar{x}_1 = \frac{\bar{u}}{k}$.\newline
 \newline
 \textbf{es.} Esempio del pendolo visto la lezione scorsa:\newline
-[immagine dagli appunti del prof]\newline
 Avevamo posto $x_1 = \theta$ e $x_2 = \dot{\theta}$. Andando a rivedere le equazioni che governano questo sistema che abbiamo scritto la volta scorsa si arriva ad avere $\begin{cases}
     \dot{x}_1 = x_2\\
     \dot{x}_2 = - \frac{g}{l} sin(x_1) - \frac{h}{ml^2} x_2 + \frac{1}{ml^2}u
-\end{cases}$
+\end{cases}$.\newline
 Ponendo $u = \bar{u}$ esiste un equilibrio $\bar{x}$?\newline
 Pongo $\dot{x}_1= 0$ $\Longrightarrow$ $x_2 = 0$, ovvio perchè la velocità angolare è nulla all'equilibrio.\newline
 Pongo $\dot{x}_2$ $\Longrightarrow$ $0 = - \frac{g}{l}sin(\bar{x}_1) + \frac{1}{ml^2} \bar{u}$.\newline
@@ -125,17 +125,19 @@ Il risultato è che $\begin{cases}
     \item  se $|\bar{u}| > mgl$, non esiste equilibrio $\bar{x}$, e il pendolo continua a girare.
     \item  se $\bar{u} = 0$, allora abbiamo due soluzioni: $\bar{x}_1 = 0$ o $\bar{x}_1 = \pi$ (sono due equilibri).
 \end{itemize}
-\subsection{Movimento}
-Dato uno stato iniziale $x(0)$ e dato un ingresso $u(t)$ o $u(k)$, per $t$ o $k > 0$:
+\newpage
+\section{Movimento}
+\subsection{Definizione}
 \[
     \begin{rcases}
-        \text{dato uno stato iniziale}\; &x(0)\\
-        \text{dato un ingresso}\; &u(t) \;\text{(o $u(k)$)} \;\;\text{per $t$ (o $k$) $\geq 0$}\;
-    \end{rcases} \rightarrow \text{si produce un}\; x(t) \;\text{(o $x(k)$)}\; \text{e un }\;y(t) \;\text{(o $y(k)$)}\; 
+        \text{uno stato iniziale}\; x(0)\\
+        \text{un ingresso}\; u(t) \;\text{(o $u(k)$)} \;\;\text{per $t$ (o $k$) $\geq 0$}\;
+    \end{rcases} \rightarrow \text{producono}\; x(t) \;\text{(o $x(k)$)}\; \text{e un}\;y(t) \;\text{(o $y(k)$)}\; 
 \]
-Questi $x(t) \;\text{(o $x(k)$)} \;\text{e un }\;y(t) \;\text{(o $y(k)$)}$ prendono il nome di \textbf{movimenti di stato e uscita}.
-\subsubsection{Formule di Lagrange}
-Vediamo il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). Questo sistema, come sappiamo, è fatto così:
+Questi $x(t) \;\text{(o $x(k)$)} \;\text{e}\;y(t) \;\text{(o $y(k)$)}$ prendono il nome di \textbf{movimenti di stato e uscita}.
+\subsection{Formule di Lagrange (TD LTI)}
+\subsubsection{Caso a tempo discreto (TD) lineare tempo invariante (LTI)}
+Studiamo il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI):\newline
 \[
     \begin{cases}
         x(k) = A x(k-1) + b u(k-1)\\
@@ -149,13 +151,24 @@ $x(0)$ è il dato di partenza, \newline
 $x(1) = Ax(0) + bu(0)$, \newline
 $x(2) ) A x(1) + bu(1) = A^2 x(0) + Abu(0) + bu(1)$,\newline
 $\dots$,\newline
-quinidi per il generico $k$ posso scrivere
+quinidi per il generico $k$ possiamo scrivere la \textbf{formula di Lagrange a tempo discreto per lo stato}
 \[
     x(k) = A^kx(0) + \sum_{l=0}^{k-1}A^{k-l-1}bu(l)
 \]
-che prende il nome di \textbf{formula di Lagrange a tempo discreto per lo stato}, dove il termine $A^k x(0)$ è il \textbf{movimento libero (ML) dello stato} e il termine $\sum_{l=0}^{k-1}A^{k-l-1}bu(l)$ è il \textbf{movimento forzato (MF) dello stato}.\newline
+dove il termine
+\[
+    A^k x(0)
+\]
+è il \textbf{movimento libero (ML) dello stato} e il termine 
+\[
+    \sum_{l=0}^{k-1}A^{k-l-1}bu(l)
+\]
+è il \textbf{movimento forzato (MF) dello stato}.\newline
+\newline
 \textbf{oss.}  ML dipende linearmente solo dallo stato iniziale $x(0)$ e non dall'ingresso $u(k)$, MF dipende linearmente solo dall'ingresso $u(k)$ e non dallo stato iniziale $x(0)$.\newline
+\newline
 \textbf{oss.}  ML e MF sommati danno il movimento totale, vale quindi il principio di sovrapposizione degli effetti (PSE).\newline
+\newline
 \textbf{oss.} Se il sistema non è lineare, in genere non si riesce a separare il movimento in ML e MF. \newline
 \newline
 Calcoliamo il movimento dell'uscita $u$:\newline
@@ -163,21 +176,63 @@ Analogamente si giunge alla \textbf{formula di Lagrange a tempo discreto per l'u
 \[
     y(k) = cx(k) + du(k) = c A^k x(0) + c \sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)
 \]
-dove il termine $c A^k x(0)$ è il \textbf{movimento libero (ML) dell'uscita} e il termine $c \sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)$ è il \textbf{movimento forzato (MF) dell'uscita}.\newline
-\newline
+dove il termine
+\[
+    c A^k x(0)
+\]
+è il \textbf{movimento libero (ML) dell'uscita} e il termine
+\[
+    c \sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)
+\]
+è il \textbf{movimento forzato (MF) dell'uscita}.
+\subsubsection{Caso a tempo continuo (TC) lineare tempo invariante (LTI)}
 Vediamo il caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI).\newline
 \textbf{Formula di Lagrange a tempo continuo per lo stato}
 \[
     x(t) = e^{At}x(0) + \int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau
 \]
-con $e^{At}x(0)$ \textbf{movimento libero (ML) dello stato} e $\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau$ \textbf{movimento forzato (MF) dello stato}.\newline
+dove il termine
+\[
+    e^{At}x(0)
+\] è il \textbf{movimento libero (ML) dello stato} e il termine
+\[
+    \int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau
+\] è il \textbf{movimento forzato (MF) dello stato}.\newline
+\newline
 \textbf{Formula di Lagrange a tempo continuo per l'uscita}
 \[
     y(t) = c e^{At}x(0) + c\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)
 \]
-con $ce^{At}x(0)$ \textbf{movimento libero (ML) dell'uscita} e $\;\; c\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)$ \textbf{movimento forzato (MF) dell'uscita}.
+dove il termine
+\[
+    ce^{At}x(0)
+\]
+è il \textbf{movimento libero (ML) dell'uscita} e il termine
+\[
+    c\int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)
+\] 
+è il \textbf{movimento forzato (MF) dell'uscita}.
+\subsection{Esempi}
+\textbf{es.} Movimento a TC:\newline
+siano\newline
+$\dot{x} = -2x$ (solo ML dello stato) e $x(0) = 4$\newline
+Che cosa è $x(t)$ per $t\geq 0$?\newline
+Applicando la formula otteniamo: $x(t) = e^{At}x(0) = e^{-2t}4$\newline
+\newline
+\textbf{es.} Da risolvere a casa!\newline
+Siano $\dot{x} = Ax$, con $A = \left[\begin{matrix}
+    1&1\\
+    2&1
+\end{matrix}\right]$ e $x(0) = \left[\begin{matrix}
+    3\\
+    4
+\end{matrix}\right]$, allora come è $x(t)$ per $t\geq 0$?\newline
+[il professore lo risolve con Maxima]
 \subsection{Esponenziale di matrice}
-Per sistemi di ordine maggiore di $1$ occorre calcolare l'esponenziale di matrice $e^{At}$, vediamo come fare per il caso in cui $A$ sia diagonalizzabile (altrimenti si usa un altro metodo, ma la incontreremo più avanti):\newline
+Per sistemi a tempo continuo lineari tempo invarianti di ordine maggiore di $1$, nel calcolo dei movimenti dello stato e dell'uscita occorre calcolare l'esponenziale di matrice $e^{At}$.\newline
+\newline
+Vediamo come fare per il caso in cui $A$ sia \textbf{diagonalizzabile} (altrimenti il movimento non è calcolabile con l'esponenziale di amtrice e quindi si userà un altro approccio, che incontreremo più avanti).
+\subsubsection{Dimostrazione}
 Definizioni e concetti importanti:
 \begin{itemize}
     \item Data una matrice $M$, scriviamo $e^M = I + M + \frac{M^2}{2!} + \frac{M^3}{3!}+\dots$.
@@ -223,13 +278,13 @@ Tornando alla nostra matrice $A$ (diagonalizzabile),
         0 & \dots &0\\
         0 &0 & e^{\lambda_nt}
     \end{matrix}\right]T^{-1}
-\] con $\lambda_i$ autovalore i-esimo di $A$, gli autovalori di $e^{\lambda_it}$ prendono il nome di \textbf{modi del sistema}.\newline
-\newline
-In breve i passaggi per calcolare un generico esponenziale di matrice $e^{At}$ da seguire sono:
+\] con $\lambda_i$ autovalore i-esimo di $A$, gli autovalori $e^{\lambda_it}$ prendono il nome di \textbf{modi del sistema}.
+\subsubsection{Metodo pratico}
+I passaggi per calcolare un generico esponenziale di matrice $e^{At}$ da seguire sono:
 \begin{itemize}
     \item calcolare gli autovalori di $A$;
-    \item calcolcare gli autovettori degli autovalori di $A$;
-    \item definire la matrice diagonalizzante $T$ come l'accostamento degli autovettori (e ricordarsi l'ordine) e la sua inversa $T^{-1}$;
+    \item calcolcare gli autovettori corrispondenti per ogni autovalore di $A$;
+    \item definire la matrice diagonalizzante $T$ come l'accostamento degli autovettori (e ricordarsi l'ordine) e, una volta determinato $T$, calcolare la sua inversa $T^{-1}$;
     \item notare che $T^{-1} A T = D =$ matrice con gli autovalori di $A$ lungo la diagonale nell'ordine in cui compaiono gli autovettori in $T$;
     \item $e^{At}= e^{T D T^{-1} t}$ (notare l'ordine con cui sono scritti $T$ e $T^{-1}$, un errore tipico è confondersi in questo punto)
     \item $e^{At} = T e^{D t} T^{-1} = T \left[\begin{matrix}
@@ -237,21 +292,5 @@ In breve i passaggi per calcolare un generico esponenziale di matrice $e^{At}$ d
         0 & e^{\lambda_2 t} & \dots & \dots\\
         \dots & \dots & \dots & 0\\
         \dots & \dots & 0 & e^{\lambda_n t}
-    \end{matrix}\right] T^{-1}$, si fanno i conti e abbiamo finito.
+    \end{matrix}\right] T^{-1}$, fare i conti e fine.
 \end{itemize}
-\subsection{Esempi}
-\textbf{es.} Movimento a TC:\newline
-siano\newline
-$\dot{x} = -2x$ (solo ML dello stato) e $x(0) = 4$\newline
-Che cosa è $x(t)$ per $t\geq 0$?\newline
-Applicando la formula otteniamo: $x(t) = e^{At}x(0) = e^{-2t}4$\newline
-\newline
-\textbf{es.} Da risolvere a casa!\newline
-Siano $\dot{x} = Ax$, con $A = \left[\begin{matrix}
-    1&1\\
-    2&1
-\end{matrix}\right]$ e $x(0) = \left[\begin{matrix}
-    3\\
-    4
-\end{matrix}\right]$, allora come è $x(t)$ per $t\geq 0$?\newline
-[il professore lo risolve con Maxima]

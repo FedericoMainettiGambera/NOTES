@@ -24,97 +24,104 @@
 \BOOKMARK [3][-]{subsubsection.3.4.2}{Definizioni}{subsection.3.4}% 24
 \BOOKMARK [3][-]{subsubsection.3.4.3}{Esempi}{subsection.3.4}% 25
 \BOOKMARK [2][-]{subsection.3.5}{Sistemi dinamici \(SD\) lineari tempo invarianti \(LTI\)}{section.3}% 26
-\BOOKMARK [2][-]{subsection.3.6}{Equilibrio}{section.3}% 27
-\BOOKMARK [2][-]{subsection.3.7}{Esempi}{section.3}% 28
-\BOOKMARK [2][-]{subsection.3.8}{Movimento}{section.3}% 29
-\BOOKMARK [3][-]{subsubsection.3.8.1}{Formule di Lagrange}{subsection.3.8}% 30
-\BOOKMARK [2][-]{subsection.3.9}{Esponenziale di matrice}{section.3}% 31
-\BOOKMARK [2][-]{subsection.3.10}{Esempi}{section.3}% 32
-\BOOKMARK [1][-]{section.4}{Linearizzazione di sistemi dinamici non lineari \(SD, NL, SISO, TC\) nell'intorno di un equilibrio}{part.1}% 33
-\BOOKMARK [2][-]{subsection.4.1}{Per l'equazione di stato}{section.4}% 34
-\BOOKMARK [2][-]{subsection.4.2}{Per l'equazione d'uscita}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.3}{Sistema linearizzato nell'intorno dell'equilibrio , , }{section.4}% 36
-\BOOKMARK [2][-]{subsection.4.4}{Interpretazione}{section.4}% 37
-\BOOKMARK [1][-]{section.5}{Stabilit\340}{part.1}% 38
-\BOOKMARK [2][-]{subsection.5.1}{Equilibrio}{section.5}% 39
-\BOOKMARK [2][-]{subsection.5.2}{Stabilit\340 nei SD LTI a TC}{section.5}% 40
-\BOOKMARK [2][-]{subsection.5.3}{Propriet\340 dei SD LTI a TC AS}{section.5}% 41
-\BOOKMARK [2][-]{subsection.5.4}{Stabilit\340 di un SD LTI a TC e matrice A}{section.5}% 42
-\BOOKMARK [2][-]{subsection.5.5}{Stabilit\340 e autovalori di A}{section.5}% 43
-\BOOKMARK [2][-]{subsection.5.6}{Caso a TD \(A diagonalizzabile\)}{section.5}% 44
-\BOOKMARK [2][-]{subsection.5.7}{Criteri di stabilit\340 \(asintotica\) per SD LTI a TC}{section.5}% 45
-\BOOKMARK [2][-]{subsection.5.8}{Esempi}{section.5}% 46
-\BOOKMARK [2][-]{subsection.5.9}{Routh}{section.5}% 47
-\BOOKMARK [3][-]{subsubsection.5.9.1}{Tabella di Routh}{subsection.5.9}% 48
-\BOOKMARK [3][-]{subsubsection.5.9.2}{Criterio di Routh}{subsection.5.9}% 49
-\BOOKMARK [3][-]{subsubsection.5.9.3}{Esempi}{subsection.5.9}% 50
-\BOOKMARK [1][-]{section.6}{Segnali e trasformate}{part.1}% 51
-\BOOKMARK [2][-]{subsection.6.1}{Serie di Fourier}{section.6}% 52
-\BOOKMARK [2][-]{subsection.6.2}{Trasformata di Fourier}{section.6}% 53
-\BOOKMARK [2][-]{subsection.6.3}{Trasformata di Laplace}{section.6}% 54
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Esempi}{subsection.6.3}% 55
-\BOOKMARK [3][-]{subsubsection.6.3.2}{Propriet\340 della trasformata di Laplace}{subsection.6.3}% 56
-\BOOKMARK [2][-]{subsection.6.4}{Teorema del valore iniziale}{section.6}% 57
-\BOOKMARK [2][-]{subsection.6.5}{Teorema del valore finale}{section.6}% 58
-\BOOKMARK [2][-]{subsection.6.6}{Trasformate di Laplace notevoli}{section.6}% 59
-\BOOKMARK [2][-]{subsection.6.7}{Antitrasformazione secondo Heaviside}{section.6}% 60
-\BOOKMARK [1][-]{section.7}{Funzione di trasferimento}{part.1}% 61
-\BOOKMARK [2][-]{subsection.7.1}{Definizioni e nuovi concetti}{section.7}% 62
-\BOOKMARK [3][-]{subsubsection.7.1.1}{Equazione di stato}{subsection.7.1}% 63
-\BOOKMARK [3][-]{subsubsection.7.1.2}{Equazione d'uscita}{subsection.7.1}% 64
-\BOOKMARK [2][-]{subsection.7.2}{Calcolo e aspetto di una funzione di trasferimento}{section.7}% 65
-\BOOKMARK [2][-]{subsection.7.3}{Esempi}{section.7}% 66
-\BOOKMARK [1][-]{section.8}{Esercizi di ricapitolazione degli argomenti fino ad ora trattati}{part.1}% 67
-\BOOKMARK [2][-]{subsection.8.1}{Es. Equilibri e stabilit\340 in un sistema non lineare, TDE 06/05/2014 E1}{section.8}% 68
-\BOOKMARK [2][-]{subsection.8.2}{Es. Stabilit\340, funzione di trasferimento e calcolo del movimento forzato con Heaviside, TDE 04/05/2015 E1}{section.8}% 69
-\BOOKMARK [2][-]{subsection.8.3}{Es Applicazione reale}{section.8}% 70
-\BOOKMARK [1][-]{section.9}{Raggiungibilit\340 e osservabilit\340}{part.1}% 71
-\BOOKMARK [2][-]{subsection.9.1}{Raggiungibilit\340 \(SD LTI a TC SISO\)}{section.9}% 72
-\BOOKMARK [3][-]{subsubsection.9.1.1}{Definizioni}{subsection.9.1}% 73
-\BOOKMARK [3][-]{subsubsection.9.1.2}{Criterio di raggiungibilit\340}{subsection.9.1}% 74
-\BOOKMARK [3][-]{subsubsection.9.1.3}{Esempi}{subsection.9.1}% 75
-\BOOKMARK [2][-]{subsection.9.2}{Osservabilit\340 \(SD LTI a TC SISO\)}{section.9}% 76
-\BOOKMARK [3][-]{subsubsection.9.2.1}{Definizioni}{subsection.9.2}% 77
-\BOOKMARK [3][-]{subsubsection.9.2.2}{Criterio di osservabilit\340}{subsection.9.2}% 78
-\BOOKMARK [3][-]{subsubsection.9.2.3}{Esempi}{subsection.9.2}% 79
-\BOOKMARK [2][-]{subsection.9.3}{Osservazioni}{section.9}% 80
-\BOOKMARK [1][-]{section.10}{Realizzazione}{part.1}% 81
-\BOOKMARK [2][-]{subsection.10.1}{Forma canonica di raggiungibilit\340}{section.10}% 82
-\BOOKMARK [3][-]{subsubsection.10.1.1}{Riassunto}{subsection.10.1}% 83
-\BOOKMARK [2][-]{subsection.10.2}{Esempi}{section.10}% 84
-\BOOKMARK [1][-]{section.11}{Sistemi interconnessi \(LTI a TC\)}{part.1}% 85
-\BOOKMARK [2][-]{subsection.11.1}{Elaborazione degli schemi a blocchi}{section.11}% 86
-\BOOKMARK [3][-]{subsubsection.11.1.1}{Blocchi in serie o cascata}{subsection.11.1}% 87
-\BOOKMARK [3][-]{subsubsection.11.1.2}{Blocchi in parallelo}{subsection.11.1}% 88
-\BOOKMARK [3][-]{subsubsection.11.1.3}{Blocchi in retroazione o feedback}{subsection.11.1}% 89
-\BOOKMARK [1][-]{section.12}{Risposta esponenziale \(SD LTI a TC, SISO\)}{part.1}% 90
-\BOOKMARK [2][-]{subsection.12.1}{Domanda}{section.12}% 91
-\BOOKMARK [2][-]{subsection.12.2}{Risposta alla domanda \(dimostrazione\)}{section.12}% 92
-\BOOKMARK [2][-]{subsection.12.3}{Generalizzazione della risposta}{section.12}% 93
-\BOOKMARK [2][-]{subsection.12.4}{Riassunto e propriet\340}{section.12}% 94
-\BOOKMARK [1][-]{section.13}{Risposta sinusoidale \(SD LTI a TC, SISO\)}{part.1}% 95
-\BOOKMARK [2][-]{subsection.13.1}{Domanda}{section.13}% 96
-\BOOKMARK [2][-]{subsection.13.2}{Risposta alla domanda \(dimostrazione\)}{section.13}% 97
-\BOOKMARK [2][-]{subsection.13.3}{Generalizzazione della risposta \(Teorema fondamentale della risposta in frequenza\)}{section.13}% 98
-\BOOKMARK [2][-]{subsection.13.4}{Definizione di risposta in frequenza}{section.13}% 99
-\BOOKMARK [2][-]{subsection.13.5}{Esempio}{section.13}% 100
-\BOOKMARK [1][-]{section.14}{Rappresentazioni della risposta in frequenza di una funzione di trasferimento}{part.1}% 101
-\BOOKMARK [2][-]{subsection.14.1}{Diagramma polare}{section.14}% 102
-\BOOKMARK [2][-]{subsection.14.2}{Diagrammi cartesiani o di Bode}{section.14}% 103
-\BOOKMARK [3][-]{subsubsection.14.2.1}{Diagramma di Bode del modulo}{subsection.14.2}% 104
-\BOOKMARK [3][-]{subsubsection.14.2.2}{Diagramma di Bode della fase}{subsection.14.2}% 105
-\BOOKMARK [2][-]{subsection.14.3}{Tracciamento dei diagrammi di Bode \(asintotici\)}{section.14}% 106
-\BOOKMARK [3][-]{subsubsection.14.3.1}{Forma della funzione di trasferimento per diagrammi di Bode}{subsection.14.3}% 107
-\BOOKMARK [3][-]{subsubsection.14.3.2}{Diagrammi di bode di modulo e fase di Ga,b,c,d}{subsection.14.3}% 108
-\BOOKMARK [3][-]{subsubsection.14.3.3}{Tracciamento complessivo}{subsection.14.3}% 109
-\BOOKMARK [3][-]{subsubsection.14.3.4}{Metodo di tracciamento}{subsection.14.3}% 110
-\BOOKMARK [3][-]{subsubsection.14.3.5}{Esempio}{subsection.14.3}% 111
-\BOOKMARK [0][-]{part.2}{II Seconda parte del corso}{}% 112
-\BOOKMARK [0][-]{part.3}{III Esercitazioni}{}% 113
-\BOOKMARK [1][-]{section.15}{Esercitazione 1}{part.3}% 114
-\BOOKMARK [1][-]{section.16}{Esercitazione 2}{part.3}% 115
-\BOOKMARK [1][-]{section.17}{Esercitazione 3}{part.3}% 116
-\BOOKMARK [1][-]{section.18}{Esercitazione 4}{part.3}% 117
-\BOOKMARK [1][-]{section.19}{Esercitazione 5}{part.3}% 118
-\BOOKMARK [1][-]{section.20}{Esercitazione 6}{part.3}% 119
-\BOOKMARK [1][-]{section.21}{Esercitazione 7}{part.3}% 120
+\BOOKMARK [1][-]{section.4}{Equilibrio}{part.1}% 27
+\BOOKMARK [2][-]{subsection.4.1}{Definizione}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.2}{Calcolo degli equilibri}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.3}{Esempi}{section.4}% 30
+\BOOKMARK [1][-]{section.5}{Movimento}{part.1}% 31
+\BOOKMARK [2][-]{subsection.5.1}{Definizione}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.2}{Formule di Lagrange \(TD LTI\)}{section.5}% 33
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Caso a tempo discreto \(TD\) lineare tempo invariante \(LTI\)}{subsection.5.2}% 34
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Caso a tempo continuo \(TC\) lineare tempo invariante \(LTI\)}{subsection.5.2}% 35
+\BOOKMARK [2][-]{subsection.5.3}{Esempi}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.4}{Esponenziale di matrice}{section.5}% 37
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Dimostrazione}{subsection.5.4}% 38
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Metodo pratico}{subsection.5.4}% 39
+\BOOKMARK [1][-]{section.6}{Linearizzazione di sistemi dinamici non lineari \(SD, NL, SISO, TC\) nell'intorno di un equilibrio}{part.1}% 40
+\BOOKMARK [2][-]{subsection.6.1}{Per l'equazione di stato}{section.6}% 41
+\BOOKMARK [2][-]{subsection.6.2}{Per l'equazione d'uscita}{section.6}% 42
+\BOOKMARK [2][-]{subsection.6.3}{Sistema linearizzato nell'intorno dell'equilibrio , , }{section.6}% 43
+\BOOKMARK [2][-]{subsection.6.4}{Interpretazione}{section.6}% 44
+\BOOKMARK [1][-]{section.7}{Stabilit\340}{part.1}% 45
+\BOOKMARK [2][-]{subsection.7.1}{Equilibrio}{section.7}% 46
+\BOOKMARK [2][-]{subsection.7.2}{Stabilit\340 nei SD LTI a TC}{section.7}% 47
+\BOOKMARK [2][-]{subsection.7.3}{Propriet\340 dei SD LTI a TC AS}{section.7}% 48
+\BOOKMARK [2][-]{subsection.7.4}{Stabilit\340 di un SD LTI a TC e matrice A}{section.7}% 49
+\BOOKMARK [2][-]{subsection.7.5}{Stabilit\340 e autovalori di A}{section.7}% 50
+\BOOKMARK [2][-]{subsection.7.6}{Caso a TD \(A diagonalizzabile\)}{section.7}% 51
+\BOOKMARK [2][-]{subsection.7.7}{Criteri di stabilit\340 \(asintotica\) per SD LTI a TC}{section.7}% 52
+\BOOKMARK [2][-]{subsection.7.8}{Esempi}{section.7}% 53
+\BOOKMARK [2][-]{subsection.7.9}{Routh}{section.7}% 54
+\BOOKMARK [3][-]{subsubsection.7.9.1}{Tabella di Routh}{subsection.7.9}% 55
+\BOOKMARK [3][-]{subsubsection.7.9.2}{Criterio di Routh}{subsection.7.9}% 56
+\BOOKMARK [3][-]{subsubsection.7.9.3}{Esempi}{subsection.7.9}% 57
+\BOOKMARK [1][-]{section.8}{Segnali e trasformate}{part.1}% 58
+\BOOKMARK [2][-]{subsection.8.1}{Serie di Fourier}{section.8}% 59
+\BOOKMARK [2][-]{subsection.8.2}{Trasformata di Fourier}{section.8}% 60
+\BOOKMARK [2][-]{subsection.8.3}{Trasformata di Laplace}{section.8}% 61
+\BOOKMARK [3][-]{subsubsection.8.3.1}{Esempi}{subsection.8.3}% 62
+\BOOKMARK [3][-]{subsubsection.8.3.2}{Propriet\340 della trasformata di Laplace}{subsection.8.3}% 63
+\BOOKMARK [2][-]{subsection.8.4}{Teorema del valore iniziale}{section.8}% 64
+\BOOKMARK [2][-]{subsection.8.5}{Teorema del valore finale}{section.8}% 65
+\BOOKMARK [2][-]{subsection.8.6}{Trasformate di Laplace notevoli}{section.8}% 66
+\BOOKMARK [2][-]{subsection.8.7}{Antitrasformazione secondo Heaviside}{section.8}% 67
+\BOOKMARK [1][-]{section.9}{Funzione di trasferimento}{part.1}% 68
+\BOOKMARK [2][-]{subsection.9.1}{Definizioni e nuovi concetti}{section.9}% 69
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Equazione di stato}{subsection.9.1}% 70
+\BOOKMARK [3][-]{subsubsection.9.1.2}{Equazione d'uscita}{subsection.9.1}% 71
+\BOOKMARK [2][-]{subsection.9.2}{Calcolo e aspetto di una funzione di trasferimento}{section.9}% 72
+\BOOKMARK [2][-]{subsection.9.3}{Esempi}{section.9}% 73
+\BOOKMARK [1][-]{section.10}{Esercizi di ricapitolazione degli argomenti fino ad ora trattati}{part.1}% 74
+\BOOKMARK [2][-]{subsection.10.1}{Es. Equilibri e stabilit\340 in un sistema non lineare, TDE 06/05/2014 E1}{section.10}% 75
+\BOOKMARK [2][-]{subsection.10.2}{Es. Stabilit\340, funzione di trasferimento e calcolo del movimento forzato con Heaviside, TDE 04/05/2015 E1}{section.10}% 76
+\BOOKMARK [2][-]{subsection.10.3}{Es Applicazione reale}{section.10}% 77
+\BOOKMARK [1][-]{section.11}{Raggiungibilit\340 e osservabilit\340}{part.1}% 78
+\BOOKMARK [2][-]{subsection.11.1}{Raggiungibilit\340 \(SD LTI a TC SISO\)}{section.11}% 79
+\BOOKMARK [3][-]{subsubsection.11.1.1}{Definizioni}{subsection.11.1}% 80
+\BOOKMARK [3][-]{subsubsection.11.1.2}{Criterio di raggiungibilit\340}{subsection.11.1}% 81
+\BOOKMARK [3][-]{subsubsection.11.1.3}{Esempi}{subsection.11.1}% 82
+\BOOKMARK [2][-]{subsection.11.2}{Osservabilit\340 \(SD LTI a TC SISO\)}{section.11}% 83
+\BOOKMARK [3][-]{subsubsection.11.2.1}{Definizioni}{subsection.11.2}% 84
+\BOOKMARK [3][-]{subsubsection.11.2.2}{Criterio di osservabilit\340}{subsection.11.2}% 85
+\BOOKMARK [3][-]{subsubsection.11.2.3}{Esempi}{subsection.11.2}% 86
+\BOOKMARK [2][-]{subsection.11.3}{Osservazioni}{section.11}% 87
+\BOOKMARK [1][-]{section.12}{Realizzazione}{part.1}% 88
+\BOOKMARK [2][-]{subsection.12.1}{Forma canonica di raggiungibilit\340}{section.12}% 89
+\BOOKMARK [3][-]{subsubsection.12.1.1}{Riassunto}{subsection.12.1}% 90
+\BOOKMARK [2][-]{subsection.12.2}{Esempi}{section.12}% 91
+\BOOKMARK [1][-]{section.13}{Sistemi interconnessi \(LTI a TC\)}{part.1}% 92
+\BOOKMARK [2][-]{subsection.13.1}{Elaborazione degli schemi a blocchi}{section.13}% 93
+\BOOKMARK [3][-]{subsubsection.13.1.1}{Blocchi in serie o cascata}{subsection.13.1}% 94
+\BOOKMARK [3][-]{subsubsection.13.1.2}{Blocchi in parallelo}{subsection.13.1}% 95
+\BOOKMARK [3][-]{subsubsection.13.1.3}{Blocchi in retroazione o feedback}{subsection.13.1}% 96
+\BOOKMARK [1][-]{section.14}{Risposta esponenziale \(SD LTI a TC, SISO\)}{part.1}% 97
+\BOOKMARK [2][-]{subsection.14.1}{Domanda}{section.14}% 98
+\BOOKMARK [2][-]{subsection.14.2}{Risposta alla domanda \(dimostrazione\)}{section.14}% 99
+\BOOKMARK [2][-]{subsection.14.3}{Generalizzazione della risposta}{section.14}% 100
+\BOOKMARK [2][-]{subsection.14.4}{Riassunto e propriet\340}{section.14}% 101
+\BOOKMARK [1][-]{section.15}{Risposta sinusoidale \(SD LTI a TC, SISO\)}{part.1}% 102
+\BOOKMARK [2][-]{subsection.15.1}{Domanda}{section.15}% 103
+\BOOKMARK [2][-]{subsection.15.2}{Risposta alla domanda \(dimostrazione\)}{section.15}% 104
+\BOOKMARK [2][-]{subsection.15.3}{Generalizzazione della risposta \(Teorema fondamentale della risposta in frequenza\)}{section.15}% 105
+\BOOKMARK [2][-]{subsection.15.4}{Definizione di risposta in frequenza}{section.15}% 106
+\BOOKMARK [2][-]{subsection.15.5}{Esempio}{section.15}% 107
+\BOOKMARK [1][-]{section.16}{Rappresentazioni della risposta in frequenza di una funzione di trasferimento}{part.1}% 108
+\BOOKMARK [2][-]{subsection.16.1}{Diagramma polare}{section.16}% 109
+\BOOKMARK [2][-]{subsection.16.2}{Diagrammi cartesiani o di Bode}{section.16}% 110
+\BOOKMARK [3][-]{subsubsection.16.2.1}{Diagramma di Bode del modulo}{subsection.16.2}% 111
+\BOOKMARK [3][-]{subsubsection.16.2.2}{Diagramma di Bode della fase}{subsection.16.2}% 112
+\BOOKMARK [2][-]{subsection.16.3}{Tracciamento dei diagrammi di Bode \(asintotici\)}{section.16}% 113
+\BOOKMARK [3][-]{subsubsection.16.3.1}{Forma della funzione di trasferimento per diagrammi di Bode}{subsection.16.3}% 114
+\BOOKMARK [3][-]{subsubsection.16.3.2}{Diagrammi di bode di modulo e fase di Ga,b,c,d}{subsection.16.3}% 115
+\BOOKMARK [3][-]{subsubsection.16.3.3}{Tracciamento complessivo}{subsection.16.3}% 116
+\BOOKMARK [3][-]{subsubsection.16.3.4}{Metodo di tracciamento}{subsection.16.3}% 117
+\BOOKMARK [3][-]{subsubsection.16.3.5}{Esempio}{subsection.16.3}% 118
+\BOOKMARK [0][-]{part.2}{II Seconda parte del corso}{}% 119
+\BOOKMARK [0][-]{part.3}{III Esercitazioni}{}% 120
+\BOOKMARK [1][-]{section.17}{Esercitazione 1}{part.3}% 121
+\BOOKMARK [1][-]{section.18}{Esercitazione 2}{part.3}% 122
+\BOOKMARK [1][-]{section.19}{Esercitazione 3}{part.3}% 123
+\BOOKMARK [1][-]{section.20}{Esercitazione 4}{part.3}% 124
+\BOOKMARK [1][-]{section.21}{Esercitazione 5}{part.3}% 125
+\BOOKMARK [1][-]{section.22}{Esercitazione 6}{part.3}% 126
+\BOOKMARK [1][-]{section.23}{Esercitazione 7}{part.3}% 127
