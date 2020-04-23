@@ -1,18 +1,22 @@
 \title{LEZIONE 5 17/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/72b5f396-c34b-4ff6-8d6e-44bf6832dd2e?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}
-\subsection{Esempi}
+\subsubsection*{Esempi}
 \textbf{es.} Prendiamo un polinomio caratteristico $\Pi(s) = 5 s^2 +s$: questo è chiaramente non asintoticamente stabile (c'è una radice nulla).\newline
+\rule{\textwidth}{0,4pt}\newline
 \newline
 \textbf{es.} $\Pi(s) = s^3 -s^2 +s +4$: anche questo non è asintoticamente stabile (c'è un coefficiente discorde)\newline
+\rule{\textwidth}{0,4pt}\newline
 \newline
 \textbf{es.} $\Pi(s) = s^5 +4 s^3 +3s^2 +s + 5$: anche questo non è asintoticamene stabile (manca il termine $s^4$ che quindi ha coefficiente nullo).\newline
+\rule{\textwidth}{0,4pt}\newline
 \newline
-\textbf{es.} $\Pi(s) = s^4 +2s^3+4s^2+s+5$: in questo esempio le condizioni necessarie sono soddisfatte, ma non sappiamo dire se è o meno asintoticamente stabile. Ci serve ora un criterio per stabilire se è asintoticamente stabile.
-\subsection{Routh}
+\textbf{es.} $\Pi(s) = s^4 +2s^3+4s^2+s+5$: in questo esempio le condizioni necessarie sono soddisfatte, ma non sappiamo dire se è o meno asintoticamente stabile. Ci serve ora un criterio per stabilire se è asintoticamente stabile.\newline
+\rule{\textwidth}{0,4pt}
+\subsubsection{Criterio di stabilità secondo Routh (SD LTI a TC)}
 Il criterio di Routh è una condizione necessaria e succificiente per la stabilità asintotica di un SD LTI a TC (NOTA BENE: non vale per sistemi a tempo discreto! L'analogo a TD è il criterio di Jury, ma noi non lo tratteremo).\newline
 \newline
 Il criterio di Routh si basa sulla tabella di Routh che si costruisce a partire dal polinomio caratteristico $\Pi(s)$.
-\subsubsection{Tabella di Routh}
+\subsubsection*{Tabella di Routh}
 Definiamo il polinomio caratteristico come
 \[
     \Pi(s) = a_0s^n + a_1 s^{n-1} + \dots + a_{n-1}s + a_n
@@ -60,12 +64,11 @@ La tabella di Routh si costruisce nel seguente modo:
     Gli elementi mancanti al termine delle righe soprastanti si assumono nulli.
     \item Se troviamo un elemento nullo in prima colonna, ci si ferma, sicuramente il sistema non è asintoticamente stabile, e siamo in presenza di un caso particolare che non ci permette di calcolare la tabella di Routh.
 \end{itemize}
-\subsubsection{Criterio di Routh}
+\subsubsection*{Criterio di Routh}
 Un SD con polinomio caratteristico $\Pi(s)$ è asintoticamente stabile se e solo tutti gli elementi della prima colonna della tabella di Routh sono concordi (e non nulli).\newline
 \newline
-\textbf{Corollario}\newline
-Se non vi sono elementi nulli in prima colonna, allora il numero di inversioni di segno sulla prima colonna è uguale al numero di radici di $\Pi(s)0$ con $Re>0$. [non lo useremo mai questo corollario].
-\subsubsection{Esempi}
+\textbf{Corollario}: Se non vi sono elementi nulli in prima colonna, allora il numero di inversioni di segno sulla prima colonna è uguale al numero di radici di $\Pi(s)0$ con $Re>0$. [non lo useremo mai questo corollario].
+\subsubsection*{Esempi}
 \textbf{es.} $\Pi(s) = s^4 + 2s^3 + 4s^2 + s + 5$: soddisfa le condizioni necessarie, quindi faciamo la tabella di Routh. Siccome $n=4$ la tabella avrà $n+1 = 5$ righe:
 \[
     \begin{matrix}
@@ -89,6 +92,7 @@ Se non vi sono elementi nulli in prima colonna, allora il numero di inversioni d
 \]
 Siccome $\gamma$ è discorde, sappiamo che non è asintoticamente stabile.\newline
 Inoltre fra $\alpha$ e $\gamma$ c'è un'inversione di segno e fra $\gamma$ e $\delta$ c'è un'altra inversione di segno. Avendo due inversioni di segno, so che ci sono due radici con $Re > 0$. Da notare che, anche se abbiamo un solo elemento discorde, ci sono due inversioni di segno.\newline
+\rule{\textwidth}{0,4pt}\newline
 \newline
 \textbf{es.} Dato il SD LTI a TC con polinomio caratteristico $\Pi(s) = s^3 + 2s^2 + hs +k$, dire per quali valori di $(h,k)$ esso è asintoticamente stabile.\newline
 Deduciamo che dovremo avere $h>0$ e $k>0$ (altrimenti violo una delle condizioni necessarie viste la lezione scorsa). Usiamo ora Rout, l'unico caso in cui si può evitare di usare Routh è se il polinomio caratteristico è di secondo grado.
@@ -114,6 +118,7 @@ Disequazioni per imporre che i termini della prima colonna siano concordi:
         k>2h
     \end{cases} \text{ricordando che} \; k>0 \;\text{e}\;h>0
 \]
+\rule{\textwidth}{0,4pt}
 \newpage
 \section{Segnali e trasformate}
 Consideriamo un sistema $S$ dinamico LTI a TC (SISO), con un ingresso $u$ e un'uscita $y$.\newline

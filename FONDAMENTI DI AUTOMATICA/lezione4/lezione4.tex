@@ -7,7 +7,7 @@ Consideriamo un sistema dinamico non lineare (TI):
 \[
     S: \begin{cases}
         \dot{x} = f(x,u)\\
-        y = h(x,u)
+        y = g(x,u)
     \end{cases}
 \]
 e un suo equilibrio $(\bar{u}, \bar{x}, \bar{y})$.\newline
@@ -16,119 +16,155 @@ Volgiamo determinare un sistema dinamico lineare tempo invariante che approssimi
 \subsection{Per l'equazione di stato}
 Consideriamo \textbf{l'equazione di stato} e sviluppiamola in serie fermandoci al primo ordine:
 \[
-    d(\bar{x} + \delta x, \bar{u} + \delta u) = \cancel{ f(\bar{x} \bar{u})} + f_x|_{\bar{x}, \bar{u}}\delta x + f_0|_{\bar{x}, \bar{u}} \delta u (+ \dots)
+    f(\bar{x} + \delta x, \bar{u} + \delta u) = \cancel{ f(\bar{x} \bar{u})} + f_x|_{\bar{x}, \bar{u}}\delta x + f_0|_{\bar{x}, \bar{u}} \delta u + \dots
 \]
 dove
 \begin{itemize}
     \item $\delta x$ e $\delta u$ rappresentano gli scostamenti di $x$ e di $u$ rispetto all'equilibrio;
     \item $f(\bar{x}, \bar{u})$ vale $0$ perchè $\bar{x}$ è stato di equilibrio per $u = \bar{u}$:
-    \item $f_x$ è la derivata parziale rispetto a $x$ della funzionei $f$: $\frac{\delta f}{\delta x}$;
-    \item $(+ ...)$ indica i termini di ordine superiore dello sviluppo.
+    \item $f_x$ è la derivata parziale rispetto a $x$: $\frac{\delta f}{\delta x}$;
+    \item $(+ ...)$ indica i termini di ordine superiore al primo dello sviluppo.
 \end{itemize}
+Calcoliamo ora la derivata temporale dello scostamento di $x$ rispetto all'equilibrio:
 \[
-    \frac{d}{dt} (\bar{x} + \delta x) = \frac{d}{dt} (\delta x) = \delta \dot{x} = \; \text{derivata temporale dello scostamento di $x$ rispetto all'equilibrio}\;
+    \frac{d}{dt} (\bar{x} + \delta x) = \frac{d}{dt} (\delta x) = \delta \dot{x}
 \]
+Siccome $\dot{x} = f(x,u)$ e $\dot{x} = \delta \dot{x}$ e $x = \bar{x} + dx$ e $u = \bar{u} + \delta u$, posso scrivere:
 \[
-    \dot{x} = f(x,u) \;\;\;\;\;\;\;\; x = \bar{x} + dx \;\;\;\;\;\;\;\; \dot{x} = \delta \dot{x} \;\;\;\;\;\;\;\; 0 = \tau + \delta u
+    \delta \dot{x} = f_x|_{\bar{x}, \bar{u}} \delta x + f_u |_{\bar{x}, \bar{u}} \delta u + \dots
 \]
-\[
-    \delta \dot{x} = f_x|_{\bar{x}, \bar{u}} \delta x + f_u |_{\bar{x}, \bar{u}} \delta u
-\]
-Equazione di stato lineare, alle variazioni $\Longrightarrow$ Equazione di stato del sistema linearizzato.
+che è un'equazione di stato lineare, alle variazioni.\newline
+\newline
+Abbiamo dunque trovato l'equazione di stato del sistema linearizzato.
 \subsection{Per l'equazione d'uscita}
 Consideriamo ora \textbf{l'equazione d'uscita} $y = g(x,u)$ e come prima sviluppiamola in serie fermandoci al primo ordine:
 \[
-    g(\bar{x} + \delta x , \bar{u} + \delta u) = g(\bar{x}, \bar{u}) + g_x|_{\bar{x}, \bar{u}} \delta x + g_u |_{\bar{x}, \bar{u}} \delta u (+ ...)
+    g(\bar{x} + \delta x , \bar{u} + \delta u) = g(\bar{x}, \bar{u}) + g_x|_{\bar{x}, \bar{u}} \delta x + g_u |_{\bar{x}, \bar{u}} \delta u + ...
 \]
 dove
 \begin{itemize}
-    \item $g(\bar{x} + \delta x , \bar{u} + \delta u)$ è $g(x,u)$, cioè $y$;
-    \item $g(\bar{x}, \bar{u})$ è $y$;
-    \item $(+ ...)$ indica i termini di ordine superiore dello sviluppo.
+    \item $g(\bar{x} + \delta x , \bar{u} + \delta u) = g(x,u) = y$;
+    \item $g(\bar{x}, \bar{u}) =\bar{y}$;
+    \item $(+ ...)$ indica i termini di ordine superiore al primo dello sviluppo.
 \end{itemize}
+Per cui possiamo scrivere:
 \[
-    y - \bar{y} = g_x|_{\bar{x}, \bar{u}} \delta x + g_u |_{\bar{x}, \bar{u}} \delta u \Longrightarrow \delta y = g_x|_{\bar{x}, \bar{u}} \delta x + g_u |_{\bar{x}, \bar{u}} 
+    y - \bar{y} = g_x|_{\bar{x}, \bar{u}} \delta x + g_u |_{\bar{x}, \bar{u}} \delta u
 \]
+Da cui ricaviamo:
+\[
+    \delta y = g_x|_{\bar{x}, \bar{u}} \delta x + g_u |_{\bar{x}, \bar{u}} \delta u
+\]
+che è un'equazione d'uscita lineare.\newline
+\newline
+Abbiamo dunque trovato l'equazione dell'uscita del sistema linearizzato.
 \subsection{Sistema linearizzato nell'intorno dell'equilibrio $\bar{u}, \bar{x}, \bar{y}$}
 \[
-    \mathcal{L}^S : \begin{cases}
-        \delta \dot{x} = f_x |_{\bar{x},\bar{u}} \delta x + f_0|_{\bar{x},\bar{u}} \delta u\\
+    \mathcal{L}^\delta : \begin{cases}
+        \delta \dot{x} = f_x |_{\bar{x},\bar{u}} \delta x + f_u|_{\bar{x},\bar{u}} \delta u\\
         \delta y = g_x|_{\bar{x},\bar{u}} \delta x + g_u |_{\bar{x},\bar{u}} \delta u
     \end{cases}
 \]
 con $ \delta u = u - \bar{u}$, $\delta x = x -\bar{x}$, $ \delta y = y - \bar{y}$.
 \subsection{Interpretazione}
 [immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=7cm]{../lezione4/img1.PNG}
+\end{center}
+Facendo una linearizzazione di un sistema non lineare $S$, con un ingresso $u$ e un'uscita $y$, nell'intorno dell'equilibrio $(\bar{u}, \bar{x},\bar{y})$, otteniamo un sistema $S^\delta$ che ha come ingresso $\delta u$ e un'uscita $\delta y$, cioè l'ingresso e l'uscita sono le variazioni. Allora per avere un sistema linearizzato che abbia un effettivo ingresso $u$ e un'uscita $y$, dobbiamo aggiungere i due nodi sommatori che si vedono in figura.\newline
+\newline
+\textbf{oss.} Il riquadro tratteggiato di rosso nell'immagine (non solo $S^\delta$) è ciò che approssima $S$ nell'intorno dell'equilibrio, un errore molto tipico è pensare che il solo $S^\delta$ sia la linearizzazione.
 \newpage
 \section{Stabilità}
-\subsection{Equilibrio}
-Il concetto di stabilità si applica solitamente agli equilibri, ma a volta anche a movimenti, e qualche volta ai sistemi.\newline
-\newline
-\textbf{Equilibrio stabile}:\newline
-Sia $\bar{x}$ uno stato di equilibrio del SD generico $\dot{x} = f(x,u)$ per $u = \bar{u}$ costante, si dice equilibrio stabile se
+Il concetto di stabilità è tipicamente noto applicato agli equilibri, ma a volta si applica anche ai movimenti e ai sistemi.
+\subsection{Stabilità di un equilibrio}
+\subsubsection{Equilibrio stabile (S)}
+Sia $\bar{x}$ uno stato di equilibrio del sistema dinamico non lineare generico $\dot{x} = f(x,u)$ per $u = \bar{u}$ costante, si dice equilibrio stabile se
 \[
-    \;\forall\; \epsilon > 0 \;\; \exists \; \delta > 0 \;\;:\;\; |x(0) - \bar{x}| < \delta \Rightarrow  |x(t) - \bar{x}| < \epsilon \;\;\;\forall\;t \geq 0
+    \;\forall\; \epsilon > 0 \;\; \exists \; \delta > 0 \;\;:\;\; ||x(0) - \bar{x}|| < \delta \Rightarrow  ||x(t) - \bar{x}|| < \epsilon \;\;\;\forall\;t \geq 0
 \]
-Interpretazione con $x$ scalare:\newline
-[immagine dagli appunti del prof]\newline
+dove per $|| \dots ||$ si intende la "norma" (lunghezza del vettore).\newline
 \newline
-\textbf{Equilibrio asintoticamente stabile (AS)}:\newline
+Questo significa che desideriamo che il sistema, partendo vicino all'equilibrio, non si allontani mai dall'equilibrio più di un $\epsilon$, allora qualunque sia questo $\epsilon$ scelto, se l'equilibrio è stabile, esiste un $\delta$ tale per cui se "partiamo" non più lontani di $\delta$ dall'equilibrio, allora tutto il movimento rimarrà vicino all'equilibrio entro $\epsilon$.\newline
+\newline
+Interpretazione con $x$ scalare:\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione4/img2.PNG}
+\end{center}
+Prendiamo un valore di equilibrio $\bar{x}$ (in blu), allora tutto il movimento si deve sviluppare in una fascia compresa fra $\bar{x}+ \epsilon$ e $\bar{x} - \epsilon$. Qualunque sia questo $\epsilon$ preso, esiste un $\delta$, tale per cui, partendo dal valore $x(0) = \bar{x}+ \delta$, l'intero movimento si sviluppa all'interno della fascia. Due esempi di movimento validi di stabilità sono la curva nera e la curva rosa. Un esempio non valido di stabilità è la curva grigia, esce dalla fascia rossa!
+\subsubsection{Equilibrio asintoticamente stabile (AS)}
 L'equilibrio deve essere stabile e inoltre deve valere
 \[
-    |x(t) - \bar{x}| \rightarrow 0  \;per \; t \rightarrow \infty
+    ||x(t) - \bar{x}|| \rightarrow 0  \;per \; t \rightarrow \infty
 \]
-\newline
-\textbf{Equilibrio instabile}:\newline
+Cioè il movimento oltre a essere contenuto nella fascia compresa fra $\bar{x}+ \epsilon$ e $\bar{x} - \epsilon$, deve ritornare esattamente al punto esatto di equilibrio $\bar{x}$.
+\subsubsection{Equilibrio instabile (I)}
 In tutti gli altri casi.
-\subsection{Stabilità nei SD LTI a TC}
-$\dot{x} = Ax + bu$\newline
-Sia $\bar{x}$ uno stato di eq. per $u = \bar{u}$\newline
-Allora
+\subsection{Stabilità nei sistemi dinamici (SD) lineari tempo invarianti (LTI) a tempo continuo (TC)}
+\subsubsection{Stabilità come proprietà di sistema (SD LTI a TC)}
+L'equazione di stato per sistemi dinamici lineari tempo invarianti a tempo continuo è:
+\[
+    \dot{x} = Ax + bu
+\]
+Sia $\bar{x}$ uno stato di equilibrio per $u = \bar{u}$, allora, prendendo lo stato iniziale all'equilibrio e mantenendo l'ingresso al valore $\bar{u}$ lo stato non si muove e rimane nell'equilibrio:
 \[
     \begin{rcases}
         x(0) &= \bar{x}\\
         u(t) &= \bar{u} \;\;\; t\geq 0
     \end{rcases} \rightarrow  x(t) = \bar{x} \;\;\;t \geq 0
 \]
-Quindi
+Quindi possiamo ora esprimere il movimento $x(t)$ con la formula di Lagrange e porlo uguale a $\bar{x}$
 \[
     x(t) = e^{At} \bar{x} + \int_{0}^{t}e^{A(t-\tau)} b \bar{u} d \tau = \bar{x}
 \]
-Consideriamo ora il movimento perturbato 
+\ \newline 
+Vediamo ora cosa succede se invece di partire dallo stato di equilibrio ci scosiamo di un certo valore $\Delta \bar{x}$. Consideriamo il \textbf{movimento perturbato} $x_{\Delta}$, prodotto da $u(t) = \bar{u}$ e $x(0) = \bar{x} + \Delta \bar{x}$
 \[
     x_{\Delta}(t) = e^{At}(\bar{x} + \Delta \bar{x}) + \int_{0}^{t}e^{A(t- \tau)}b \bar{u} d \tau
 \]
-Quindi 
+in cui notiamo che il secondo termine $\int_{0}^{t}e^{A(t- \tau)}b \bar{u} d \tau$ è uguale a prima.\newline
+\newline
+Scriviamo la differenza fra il movimento perturbato appena scritto e $\bar{x}$ trovato prima:
 \[
     x_\Delta (t) - \bar{x} = e^{At} \Delta \bar{x}
 \]
-dove notiamo che la maniera in cui $x_\Delta$ di muove rispetto a $\bar{x}$ non dipende dal particolare $\bar{x}$ che al secondo membro non compare.\newline
+Notiamo che gli integrali si sono elisi a vicenda.\newline
 \newline
-Tutti gli equilibri (se ve ne sono) hanno le stesse caratteristiche di stabilità.\newline
-Quindi nei sistemi lineari (TI) la stabilità è una proprietà del sistema.\newline
-In tal caso la stabilità del sistema dipende soltanto dal comportamento di $e^{At}$, cioè dalla matrice $A$.\newline
+Da quest'ultima equazione, deduciamo diverse osservazioni:\newline
+\newline
+\textbf{oss.} Questa equazione ci mostra che la maniera in cui $x_\Delta$ di muove rispetto a $\bar{x}$ (cioè il termine $x_\Delta (t) - \bar{x}$) non dipende dal particolare $\bar{x}$ (che al secondo membro dell'equazione non compare).\newline
+\newline
+\textbf{oss.}  Tutti gli equilibri (se ve ne sono) hanno le stesse caratteristiche di stabilità.\newline
+Quindi nei sistemi lineari (TI) \textbf{la stabilità è una proprietà del sistema}, non è una proprietà dell'equilibrio, non ci possono essere equilibri instabili e equilibri stabili in uno stesso sitema lineare, sono tutti dello stesso "tipo". Se il sistema fosse non lineare questo discorso non vale.\newline
+\newline
+\textbf{oss.} La stabilità del sistema dipende soltanto dal comportamento di $e^{At}$, cioè dalla matrice $A$.\newline
 \newline
 \textbf{es.}  Sistema LTI a TC di ordine 1:\newline
 $\dot{x} = a x$, con $a$ scalare e equilibrio $\bar{x} = 0$.\newline
 $x(0) = \Delta \bar{x}$\newline
-$x(t) = e^{at} \Delta \bar{x}$ $\Rightarrow $ $\begin{cases}
-    a < 0 \;\;\;\; & x(t) \rightarrow  0 = \bar{x} \;\text{eq. AS}\;\\
-    a = 0 \;\;\;\; & x(t) = \Delta \bar{x} \;\text{eq. S}\;\\
-    a > 0 \;\;\;\; & x(t) \;\text{diverse}\;\;\;\text{eq- I}\;
-\end{cases}$\newline
-\newline
+\[
+    x(t) = e^{at} \Delta \bar{x}\Rightarrow \begin{cases}
+        a < 0 \;\;\;\; & x(t) \rightarrow  0 = \bar{x} \;\text{equilibrio AS}\;\\
+        a = 0 \;\;\;\; & x(t) = \Delta \bar{x} \;\text{equilibrio S}\;\\
+        a > 0 \;\;\;\; & x(t) \;\text{diverge}\;\;\;\text{equilibrio I}\;
+    \end{cases}
+\]
 \rule{\textwidth}{0,4pt}\newline
-\textbf{Riassunto:}\newline
-Quindi 
+\newline
+Quindi riassumendo:
+\[
+    x_{\Delta}(t) - \bar{x} = e^{At}\Delta \bar{x}
+\]
 \begin{itemize}
-    \item $e^{At} \rightarrow  =_{nxn}$ per $t \rightarrow  \infty$ $\Longrightarrow$ sistema AS (ML di $x \rightarrow  0$);
-    \item $e^{At}$ diverge per $t \rightarrow  \infty$ $\Longrightarrow$ sistema I (ML di $x$ diverge salvo eccezzioni);
-    \item $e^{At}$ non $\rightarrow  0$ e non diverge per $t \rightarrow  \infty$ $\Longrightarrow$ sistema S.
+    \item Se $e^{At} \rightarrow$ tende a diventare la matrice nulla $0_{nxn}$ per $t \rightarrow  \infty$ $\Longrightarrow$ allora il sistema è AS (cioè che il movimento libero di $x \rightarrow  0$);
+    \item Se $e^{At}$ diverge per $t \rightarrow  \infty$ $\Longrightarrow$ Allora il sistema è I (perchè il movimento libero di $x$ diverge, salvo eccezzioni, quali per esempio partire dall'equilibrio stesso);
+    \item Se $e^{At}$ nè tende a $0$ nè diverge per $t \rightarrow  \infty$ $\Longrightarrow$  Allora il sistema è S.
 \end{itemize}
-\rule{\textwidth}{0,4pt}
-\subsection{Proprietà dei SD LTI a TC AS}
+\subsubsection{Proprietà di sistemi asintoticamente stabili (SD LTI a TC)}
+Per i nostri scopi ci interessa principalmente la stabilità asintotica, che ha delle le seguenti particolari proprietà:
 \begin{itemize}
-    \item i movimenti liberi di $x$ e di $y$ tendono a $0$ per $t \rightarrow  \infty$, quindi tali SD "dimenticnao lo stato iniziale";
+    \item i movimenti liberi di $x$ e di $y$ tendono a $0$ per $t \rightarrow  \infty$, quindi tali sistemi "dimenticano lo stato iniziale", cioè da un certo punto in poi il movimento libero diventa trascurabile;
     \item Se 
     \[
         u(t) = \begin{cases}
@@ -136,14 +172,17 @@ Quindi
             0 & t \geq \bar{t}
         \end{cases}
     \]
-    allora per $t \geq \bar{t}$ c'è solo ML e quindi $x,y \rightarrow 0$ per $t \rightarrow \infty$.
+    allora per $t \geq \bar{t}$ c'è solo movimento libero e quindi $x,y \rightarrow 0$ per $t \rightarrow \infty$.
 \end{itemize}
-\subsection{Stabilità di un SD LTI a TC e matrice A}
-Caso in cui $A$ è diagonalizzabile (se no vedi più avanti):
-$x_L (t) = e^{At} x(0) = e^{T diag\{\lambda_i\}T^{-1} t}x(0) = T diag\{e^{\lambda_i t}\}T^{-1}x(0)$, dove $x_L(t)$ è ML di $x$, T è la matrice che diagonalizza $A$ e $e^{\lambda_it}$ prende il nome di modi del sistema.\newline
+\subsubsection{Matrice A e Stabilità (SD LTI)}
+\subsubsection*{caso a tempo continuo (TC) e A diagonalizzabile}
+Caso in cui $A$ è diagonalizzabile (se non è diagonalizzabile, vedi più avanti).\newline
+\newline
+Partiamo dal movimento livero di $x$: $x_L (t) = e^{At} x(0) = e^{T diag\{\lambda_i\}T^{-1} t}x(0) = T diag\{e^{\lambda_i t}\}T^{-1}x(0)$, dove $x_L(t)$ è il movimento libero di $x$, T è la matrice che diagonalizza $A$ e $e^{\lambda_it}$ prendono il nome di modi del sistema.\newline
 \newline
 Se $A$ è reale, allora $\lambda_i$ sono o reali o coppie complesse coniugate.\newline
-Movimento libero $\rightarrow  0$ per ogni $x(0)$ vuol dire che tutti i modi devono tendere a $0$ per $t \rightarrow \infty$.
+\newline
+Se il movimento libero tende $0$ per ogni $x(0)$ vuol dire che tutti i modi devono tendere a $0$ per $t \rightarrow \infty$.
 \begin{itemize}
     \item $\lambda_i \; \text{reale}$
     \[
@@ -153,7 +192,7 @@ Movimento libero $\rightarrow  0$ per ogni $x(0)$ vuol dire che tutti i modi dev
             \lambda_i <0 \;\;& \text{modo}\;\rightarrow  0
         \end{cases}
     \]
-    \item $\lambda_{h,k} = \alpha \pm i \beta \;\;\;\text{coppia complessa coniugata, con $\alpha$ e $\beta$ reali}\;$, implica che $e^{()\alpha \pm i \beta)t} = e^{\alpha t} \cancel{sin(\beta t) + i cos(\beta t)}$ [perchè $sin(\beta t) + i cos(\beta t)$ è limitata] e quindi
+    \item $\lambda_{h,k} = \alpha \pm i \beta \;\;\;\text{coppia complessa coniugata, con $\alpha$ e $\beta$ reali}\;$, implica che $e^{(\alpha + i \beta)t} = e^{\alpha t} \cancel{sin(\beta t) + i cos(\beta t)}$ [perchè $sin(\beta t) + i cos(\beta t)$ è limitata] e quindi
     \[
         \begin{cases}
             Re(\lambda) < 0 \;\; & \text{modo convergente}\;\\
@@ -162,28 +201,38 @@ Movimento libero $\rightarrow  0$ per ogni $x(0)$ vuol dire che tutti i modi dev
         \end{cases}
     \]
 \end{itemize}
-\subsection{Stabilità e autovalori di $A$}
+Notiamo che tutto ciò che conta è la parte reale degli autovalori.\newline
+\newline
+Possiamo quindi dedurre dei criteri di stabilità basati sull'analisi degli autovalori di $A$:
 \begin{itemize}
     \item Tutti gli autovalori di $A$ hanno $Re <0$ $\Longleftrightarrow$ Sistema AS.
     \item Almeno un autovalore di $A$ ha $Re > 0$ $\Longrightarrow$ Sistema I.
-    \item Tutti gli autovalori di $A$ hanno $Re \leq 0$ e ne esiste almeno uno con $Re = 0$ $\Longrightarrow$ Sistema S, ma non AS; oppure sistema I.
+    \item Tutti gli autovalori di $A$ hanno $Re \leq 0$ e ne esiste almeno uno con $Re = 0$ $\Longrightarrow$ $\begin{cases}
+        \text{sistema I;}\;\\
+        \text{oppure sistema S, ma non AS.}\;
+    \end{cases}$
 \end{itemize}
-\subsection{Caso a TD (A diagonalizzabile)}
-$x_L(k) = A^k x(0)$\newline
-$A^k = (T diag\{\lambda_i\} T^{-1})^k = T diag\{\lambda_i\}\cancel{T^{-1}T} diag\{\lambda_i\} T^{-1} \dots$ (k volte) $= T diag\{\lambda_i^k\}T^{-1}$, dove $\lambda_i^{k}$ sono i modi del sistema.\newline
+Noi saremo prevalentemente interessati a sistemi asintoticamente stabili, per cui è importante che tutti gli autovalori di $A$ abbiano parte reale negativa.
+\subsubsection*{caso a tempo discreto (TD) e A diagonalizzabile}
+Partiamo anche qua dal movimento libero: $x_L(k) = A^k x(0)$\newline
 \newline
-Quindi
+In cui $A^k = (T diag\{\lambda_i\} T^{-1})^k = T diag\{\lambda_i\}\cancel{T^{-1}T} diag\{\lambda_i\} T^{-1} \dots$ (k volte) $= T diag\{\lambda_i^k\}T^{-1}$, dove $\lambda_i^{k}$ sono i modi del sistema.\newline
+\newline
+Quindi il discorso è del tutto analogo a quello del caso a tempo continuo, solo che non conta la parte reale, ma il modulo:
 \begin{itemize}
-    \item $|\lambda_i| < 1$ $\;\forall\;i$ $\longleftrightarrow$ sistema AS.
-    \item $\;\;\exists\;\; i \;\;:\;\; |\lambda_i| > 1$ $\Longrightarrow$ sistema I.
-    \item $\begin{cases}
-        |\lambda_i| \leq 1 \;\;\forall\; i\\
-        \;\;\exists\;\;i \;\;:\;\;|\lambda_i| = 1 
-    \end{cases}$ $\Longrightarrow$ Sistema S, ma non AS, oppure sistema I.
+    \item Tutti gli autovalori di $A$ hanno $|\lambda_i| < 1$ $\Longleftrightarrow$ sistema AS.
+    \item Almeno un autovalore di $A$ con modulo $|\lambda_i| > 1$ $\Longrightarrow$ sistema I.
+    \item Tutti gli autovalori di $A$ hanno $|\lambda_i| \leq 1$ e ne esiste almeno uno tale che $|\lambda_1| = 1$ $\Longrightarrow$ $\begin{cases}
+        \text{sistema I;}\;\\
+        \text{oppure sistema S, ma non AS.}\;
+    \end{cases}$
 \end{itemize}
 \textbf{oss.1} Errore tipico: Nel caso a tempo continuo si guarda la parte reale degli autovalori, nel caso a tempo discreto di guarda il modulo (!) degli autovalori.\newline
+\newline
 \textbf{oss.2} Errore tipico: Più avanti vedremo il criterio di Routh, ma da notare è che non vale per i sistemi a tempo discreto, vale solo per sistemi a tempo continuo (!).
-\subsection{Criteri di stabilità (asintotica) per SD LTI a TC}
+\subsection{Criteri di stabilità}
+Abbiamo visto che la stabilità asintotica è quella di nostro maggiore interesse, perchè possiede delle proprietà particolari. Vediamo ora dei criteri per stabilire se un sistema è asintoticamente stabile.
+\subsubsection{Criteri di stabilità dedotti dalla matrice A (SD LTI a TC)}
 Domanda: data la matrice $A$, posso dire se tutti i suoi autovalori hanno o meno $Re <0$ senza calcolarli?\newline
 \newline
 Sì, vi sono criteri per dirlo basati sull'ispezione di $A$ o del suo polinomio caratteristico (PC) $\Pi(s) = det (sI-A)$:
@@ -192,4 +241,3 @@ Sì, vi sono criteri per dirlo basati sull'ispezione di $A$ o del suo polinomio 
     \item $tr(A) = \sum_{i=1}^{n}S_i$ $\Longrightarrow$ se $tr(A) >0$ esiste $S_i$ tale che $Re(S_i) > 0$ $\Longrightarrow$ sistema I.
     \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è AS), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli (n.b. il viceversa vale solo per polinomi del secondo ordine).
 \end{itemize}
-\ \newline
