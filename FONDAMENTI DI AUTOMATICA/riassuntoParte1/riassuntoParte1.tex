@@ -1,0 +1,59 @@
+Un \textbf{sistema dinamico} (SD) è un sistema in cui la conoscenza degli ingressi su un intervallo di tempo non è sufficiente per determinare l'andamento delle uscite sullo stesso intervallo di tempo.\newline
+\newline
+Le quantità di cui occorre il valore iniziale per conoscere l'uscita, noto l'ingresso, si dicono \textbf{variabili di stato} e si indicano tipicamente con $x$.\newline
+\newline
+Sistemi dinamici con solo un ingresso e solo un'uscita si dicono \textbf{SISO} (Single Input, Single Output).\newline
+\newline
+Il numero di variabili di stato prende il nome di \textbf{ordine} del sistema.\newline
+\newline
+Nei sistemi dinamici a \textbf{tempo continuo}:
+\[
+    \begin{rcases}
+        \dot{x}_1(t) &= f_1(x_1(t),x_2(t), \dots, x_n(t), u(t), t)\\
+        \dots \;\;\;&= \;\;\;\dots\\
+        \dot{x}_n(t) &= f_n(x_1(t),x_2(t), \dots, x_n(t), u(t), t)
+    \end{rcases} \rightarrow \text{equazione (differenziale) di stato}\;
+\]
+\[
+    \begin{rcases}
+        \\
+        \;\;\;\; y(t) = g(x_1(t),x_2(t), \dots, x_n(t), u(t), t)\\
+        \\
+    \end{rcases} \rightarrow \text{equazione o trasformazione d'uscita}\;
+\].\newline
+In estressione vettoriale:
+\[
+    x(t) = \left[\begin{matrix}
+        x_1(t)\\
+        \dots\\
+        x_n(t)
+    \end{matrix}\right] \Rightarrow  \begin{cases}
+        \dot{x}(t) = f(x(t), u(t),t)\\
+        y(t) = g(x(t),u(t),t)
+    \end{cases} \;\;\;\;u,y \in \mathbb{R}, \;\;\;x \in \mathbb{R}^n
+\]
+\ \newline
+\newline
+Se $f$ e $g$ sono lineari in $x$ e in $u$, allorà dirò che il sistema dinamico è \textbf{lineare}.\newline
+\newline
+Se $f = f(x,u)$ (non compare esplicitamente $t$) e $g = g(x,u)$ (non compare esplicitamente $t$), allora dirò che il sistema dinamico è \textbf{tempo invariante o stazionario}.\newline
+\newline
+Se $g = g(x,t)$ (non compare $u$), allora dirò che il sistema dinamico è \textbf{strettamente proprio}.\newline
+\newline
+Per tempo discreto si intende che l'evoluzione temporate è "a passi", esiste infatti un indice temporale $k$ intero che tiene traccia dei numeri di passi.\newline
+Nei sistemi dinamici a \textbf{tempo discreto}: 
+\[
+    \begin{rcases}
+        \dot{x}_1(k) &= f_1(x_1(k-1),x_2(k-1), \dots, x_n(k-1), u(k-1), k)\\
+        \dots \;\;\;&= \;\;\;\dots\\
+        \dot{x}_n(k) &= f_n(x_1(k-1),x_2(k-1), \dots, x_n(k-1), u(k-1), k)
+    \end{rcases} \rightarrow \text{equazioni (di stato) alle differrenze}\;
+\]
+\[
+    \begin{rcases}
+        \\
+        \;\;\;\; y(k) = g(x_1(k),x_2(k), \dots, x_n(k), u(k), k)\\
+        \\
+    \end{rcases} \rightarrow \text{equazione o trasformazione d'uscita}\;
+\]
+Nel caso a tempo continuo usavamo l'integrazione per esprimere la dipendenza dagli stati passati, qui abbiamo un equivalente a tempo discreto, in cui lo stato attuale ($k$) dipende dallo stato di prima ($k-1$).
