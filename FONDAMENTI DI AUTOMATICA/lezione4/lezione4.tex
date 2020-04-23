@@ -233,11 +233,11 @@ Quindi il discorso è del tutto analogo a quello del caso a tempo continuo, solo
 \subsection{Criteri di stabilità}
 Abbiamo visto che la stabilità asintotica è quella di nostro maggiore interesse, perchè possiede delle proprietà particolari. Vediamo ora dei criteri per stabilire se un sistema è asintoticamente stabile.
 \subsubsection{Criteri di stabilità dedotti dalla matrice A (SD LTI a TC)}
-Domanda: data la matrice $A$, posso dire se tutti i suoi autovalori hanno o meno $Re <0$ senza calcolarli?\newline
+Domanda: dati il sistema $S$ di matrice $A$, posso dire se tutti gli autovalori di $A$ hanno o meno $Re <0$ senza calcolarli, in modo da stabilire che il sistema è asintoticamente stabile??\newline
 \newline
-Sì, vi sono criteri per dirlo basati sull'ispezione di $A$ o del suo polinomio caratteristico (PC) $\Pi(s) = det (sI-A)$:
+Sì, vi sono criteri per dirlo basati sull'ispezione di $A$ o del suo polinomio caratteristico $\Pi(s) = det (sI-A)$:
 \begin{itemize}
-    \item $det(A) = \Pi_{i=1}^{n}S_i$, dove con $S_i$ si intendono gli autovalori $\Longrightarrow$ se $det(A) = 0$ esiste $S_i = 0$ $\Longrightarrow$ sistema non AS.
-    \item $tr(A) = \sum_{i=1}^{n}S_i$ $\Longrightarrow$ se $tr(A) >0$ esiste $S_i$ tale che $Re(S_i) > 0$ $\Longrightarrow$ sistema I.
-    \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è AS), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli (n.b. il viceversa vale solo per polinomi del secondo ordine).
+    \item Siccome $det(A) = \Pi_{i=1}^{n}S_i$, dove con $S_i$ si intendono gli autovalori $\Longrightarrow$ allora se $det(A) = 0$ esiste $S_i = 0$ $\Longrightarrow$ sistema non AS.
+    \item Siccome $tr(A) = \sum_{i=1}^{n}S_i$, dove con $S_i$ si intendono gli autovalori $\Longrightarrow$ se $tr(A) >0$ esiste $S_i$ tale che $Re(S_i) > 0$ $\Longrightarrow$ sistema I.
+    \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è asintoticamente stabile), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli (\textbf{oss.} Errore tipico: il viceversa vale solo per polinomi del secondo ordine).
 \end{itemize}
