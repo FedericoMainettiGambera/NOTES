@@ -124,12 +124,16 @@ Disequazioni per imporre che i termini della prima colonna siano concordi:
 \section{Segnali e trasformate}
 Consideriamo un sistema $S$ dinamico LTI a TC (SISO), con un ingresso $u$ e un'uscita $y$.\newline
 \newline
-[immagine dagli appunti del prof]\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=6cm]{../lezione5/img1.PNG}
+\end{center}
+
+\textbf{Dominio del tempo}: fra il segnale $u(t)$ (la causa) e il segnale $y(t)$ (l'effetto) nel dominio del tempo c'è un legame differenziale ($u(t) \rightarrow y(t)$). Ciò che attribuisce a un sistema il carattere dinamico è la presenza di equazioni differenziali. Nel dominio del tempo abbiamo $t,u,y \in \mathbb{R}$\newline
 \newline
-\textbf{Dominio del tempo}: fra il segnale $u(t)$ (la causa) e il segnale $y(t)$ (effetto) per noi c'è un legame differenziale ($u(t) \rightarrow y(t)$). Ciò che attribuisce a un sistema il carattere dinamico è la presenza di equazioni differenziali. Nel dominio del tempo abbiamo $t,u,y \in \mathbb{R}$\newline
+\textbf{Dominio delle trasformate}: Supponiamo di poter associare a $u(t)$ del dominio del tempo, con un operazione che chiamiamo "trasformazione", un'altra funzione $U(s)$ del dominio delle trasformate ($u(t) \rightarrow U(s)$), dove $U$ è una funzione e $s$ è una variabile complessa. Nel dominio delle trasformate fra il segnale $U(s)$ (la causa) e il segnale $Y(s)$ (l'effetto) c'è un legame algebrico ($U(s) \rightarrow  Y(s)$). Facciamo ora l'operazione opposta alla trasformazione con $Y(s)\rightarrow y(t)$, questa operazione prende il nome di "antitrasformazione". Nel dominio delle trasformate abbiamo $s, U ,Y \in \mathbb{C}$.\newline
 \newline
-\textbf{Dominio delle trasformate}: Supponiamo di poter associare a $u(t)$ del dominio del tempo, con un operazione che chiamiamo "trasformazione", un'altra funzione $U(s)$ del dominio delle trasformate ($u(t) \rightarrow U(s)$), dove $U$ è una funzione e $s$ è una variabile complessa. Facciamo la medesima cosa, ma con verso opposto, con $Y(s)\rightarrow y(t)$, dove questa operazione prende il nome di "antitrasformazione". Nel dominio delle trasformate abbiamo $s, U ,Y \in \mathbb{C}$.\newline
-Date queste premesse, il legame fra $U(s)$ e $Y(s)$, il cui corrispondente nel dominio del tempo è differenziale , nel dominio delle trasformate è di tipo algebrico ($U(s) \rightarrow  Y(s)$).
+Date queste premesse, il legame fra $U(s)$ e $Y(s)$, il cui corrispondente nel dominio del tempo è \textbf{differenziale}, nel dominio delle trasformate è di tipo \textbf{algebrico}.
 \subsection{Serie di Fourier}
 Dato un segnale $v(t)$ periodico di periodo $T$, posso esprimerlo come 
 \[
@@ -137,30 +141,41 @@ Dato un segnale $v(t)$ periodico di periodo $T$, posso esprimerlo come
 \]
 dove $\omega_0 = \frac{2\pi}{T}$. Questo significa che posso esprimere un segnale periodico come somma di infinite (infinito numerabile) sinusoidi di frequenze multiple di una fondamentale ($\omega_0$, di periodo $T$).
 \subsection{Trasformata di Fourier}
-Dato un segnale $v(t)$ definito su tutto $\mathbb{R}$ (non necessariamente periodico), chiamiamo la sua trasformata di Fourier come 
+Dato un segnale $v(t)$ definito su tutto $\mathbb{R}$ (non necessariamente periodico), chiamiamo la sua \textbf{trasformata di Fourier} il termine 
 \[
     V(j \omega) = \mathcal{F}[v(t)] = \int_{-\infty}^{+\infty} v(t) e^{-j \omega t} dt \;\;\;\;\;\text{(se esiste)}\;
 \]
-L'antitrasformata di Fourier, invece, è
+L'\textbf{antitrasformata di Fourier}, invece, è
 \[
     v(t) = \mathcal{F}^{-1}[V(j \omega)] = \frac{1}{2\pi j} \int_{-\infty}^{+\infty} V(j \omega) e^{j \omega t} d \omega
 \]
-\textbf{oss.} una trasformata è definita dal suo nucleo, che è $e^{-j \omega t}$.\newline
-\textbf{oss.} l'antitrasformata è un integrale sulla variabile $\omega$. L'integrale è stato introdotto ad analisi con le somme integrali (per calcolare l'area sottesa a una funzione, si fanno i rettangolini e si sommano, poi si fa tendere la dimensione dei rettangolini a zero, etc). Immaginiamo, con la metafora dei rettangolini, di fare tanti rettangolini dell'asse della nostra variabile $\omega$, prendiamo uno di questi rettangolini e il suo contributo a $v(t)$ nell'antitrasformata è $e^{j \omega t}$ moltiplicata per un numero complesso $V(j \omega )$. Il termine $e^{j \omega t}$, il nostro nucleo, può avere due aspetti, se $\omega= 0$ è una costante, altrimenti è una sinusoide (ricordando che è un numero complesso e può essere espresso come somma di seni e coseni). Ora prendiamo il caso in cui il nucleo è una sinusoide, moltiplicarla per un numero complesso $V(j \omega)$ significa attenuarla o amplificarla (modulo) e sfasarla (argomento). Quindi noi per ricostruire $v(t)$ con l'antitrasformata devo sommare infinite sinusoidi, ognuna delle quali caratterizzate da una propria ampiezza e una propria fase indicata dal valore di $V(j \omega)$, \textbf{cioè $V(j \omega)$ ci dice quanto pesa ogni frequenza in $v(t)$}. In questo caso $v(t)$ è somma di infinte (infinito del continuo) sinusoidi.
+\textbf{oss.} una trasformata è definita dal suo \textbf{nucleo}, che è $e^{-j \omega t}$.\newline
+\newline
+\textbf{oss.} l'antitrasformata è un integrale sulla variabile $\omega$. L'integrale viene solitamente introdotto ad analisi 1 con il concetti di somme parziali (\dots per calcolare l'area sottesa a una funzione, si fanno i tipici rettangolini e si sommano, poi si fa tendere l'ampiezza dei rettangolini a zero\dots). Immaginiamo di fare tanti rettangolini dell'asse delle $\omega$, prendiamo uno di questi rettangolini e il suo contributo a $v(t)$ nell'antitrasformata è $e^{j \omega t}$ moltiplicata per un numero complesso $V(j \omega )$. Il termine $e^{j \omega t}$, il nostro nucleo, può avere due aspetti, se $\omega= 0$ è una costante, altrimenti se $omega \neq 0$ è una sinusoide (in realtà sarebbe un numero complesso, ma ricordiamo che un numero complesso può essere espresso come somma di seni e coseni). Ora prendiamo il caso in cui il nucleo è una sinusoide, moltiplicarla per un numero complesso $V(j \omega)$ significa attenuarla o amplificarla (modulo) e sfasarla (argomento). Quindi noi per ricostruire $v(t)$ con l'antitrasformata dobbiamo sommare infinite sinusoidi, ognuna delle quali caratterizzate da una propria ampiezza e una propria fase indicata dal valore di $V(j \omega)$, \textbf{cioè $V(j \omega)$ ci dice quanto pesa ogni frequenza in $v(t)$}. In questo caso $v(t)$ è somma di infinte (infinito del continuo) sinusoidi.
 \subsection{Trasformata di Laplace}
-Dato un segnale $v(t)$ definito per $t\geq 0$ (o equivalentemente nullo per $t < 0$), definiamo trasformata di Laplace come
+Dato un segnale $v(t)$ definito per $t\geq 0$ (o equivalentemente nullo per $t < 0$), definiamo trasformata di Laplace il termine
 \[
     V(s) = \mathcal{L}[v(t)] = \int_{0}^{\infty} v(t) e^{-st}dt
 \]
 con $s,V \in \mathbb{C}$.\newline
 L'antitrasformata di Laplace, invece, è
 \[
-    v(t) = \mathcal{L}[V(s)] = \frac{1}{2\pi j} \int_{\alpha + j \infty}^{\alpha - j \infty} V(s) e^{st}ds
+    v(t) = \mathcal{L}^{-1}[V(s)] = \frac{1}{2\pi j} \int_{\alpha + j \infty}^{\alpha - j \infty} V(s) e^{st}ds
 \]
-dove gli estremi dell'integrale rappresentano il fatto che quanto integriamo rispetto a una variabile complessa ($s$) dobbiamo specificare su quale linea si muove la variabile (spiegato molto "alla buona", non dare peso a questo fatto): la variabile di integrazione $s$ si muove su una retta parallela all'asse immaginario di parte reale (ascissa) $\alpha$, andando con la sua parte immaginaria (ordinata) da $- \infty$ a $+ \infty$.\newline
-\textbf{oss.} Abbiamo che il nucleo è $e^{st} = e^{()\alpha + j \omega) t} = e^{\alpha t} (cos(\omega t) + j sin(\omega t))$. I segnali con questa forma sono, non solo le costanti e le sinusoidi (come nel caso del nucleo di Fourier), ma anche le sinusoidi che si smorzano, le sinusoidi che divergono, i segnali che esponenzialmente divergono, i segnali che esponenzialmente convergono. I segnali che si lasciano trasformare secondo Fourier, sono i segnali che si lasciano ricostruire per mezzo di una somma infinita di segnali che partono dal nucleo $e^{j \omega t}$, cioè costanti e sinusoidi, moltiplicato per un numero complesso $V(j \omega)$, cioè amplificate o attenuate e sfasate; i segnali che si lasciano trasformare secondo Laplace, sono molti di più, perchè il nucleo di partenza $e^{st}$ rappresenta un insieme di segnali molto più grande. Tutti i segnali trasformabili secondo Fourier sono trasformabili anche secondo Laplace, ma non vale il viceversa.
+dove gli estremi dell'integrale rappresentano il fatto che quanto integriamo rispetto a una variabile complessa ($s$) dobbiamo specificare su quale linea si muove la variabile: la variabile di integrazione $s$ si muove su una retta parallela all'asse immaginario di parte reale (ascissa) $\alpha$, andando con la sua parte immaginaria (ordinata) da $- \infty$ a $+ \infty$.\newline
+\newline
+\textbf{oss.} Per le trasformate di Laplace il \textbf{nucleo} è $e^{st} = e^{(\alpha + j \omega) t} = e^{\alpha t} (cos(\omega t) + j sin(\omega t))$. Con questa forma di nucleo si possono rappresentare molti più segnali rispetto al nucleo di Fourier. Con il nucleo di Fourier si potevano rappresentare solo le costanti e le sinusoidi, mentre con il nucleo di Laplace anche le sinusoidi che si smorzano, le sinusoidi che divergono, i segnali che esponenzialmente divergono e i segnali che esponenzialmente convergono.\newline
+I segnali che si lasciano trasformare secondo Fourier, sono i segnali che si lasciano ricostruire per mezzo di una somma infinita di segnali che partono dal nucleo $e^{j \omega t}$ (costanti e sinusoidi) moltiplicato per un numero complesso $V(j \omega)$ (amplificate o attenuate, e sfasate).\newline
+I segnali che si lasciano trasformare secondo Laplace, sono molti di più, perchè il nucleo di partenza $e^{st}$ rappresenta un insieme di segnali molto più grande. Tutti i segnali trasformabili secondo Fourier sono trasformabili anche secondo Laplace, ma non vale il viceversa.\newline
+\newline
+\textbf{oss.} (Errore tipico) Per trasformare secondo Laplace il termine $\mathcal{L}[v(t-\tau)]$ dobbiamo scrivere $\int_{0}^{\infty}v(t-\tau) e^{-st}dt$. Se avessimo scritto $\mathcal{L}[v(t-\tau)]= \int_{0}^{\infty}v(t-\tau) e^{-s(t-\tau)}$ non avremmo applicato correttamente la definizione di trasformata: il termine $e^{-st}dt$ nell'integrale è sempre fatto così, non va modificato mai, dobbiamo vedere la trasformata di Laplace come un "modulo da compilare": $\mathcal{L}[\_\_] = \int_{0}^{\infty}\_\_ \; e^{-st}dt$.
+\subsubsection*{Riassunto dei concetti chiave introdotti}
+\begin{itemize}
+    \item Le trasformate sono strumenti che legano biunivocamente sengali nel tempo a funzioni complesse di variabile complessa.
+    \item Le trasformate di Fourier interpretano un segnale come somma di infinite sinusoidi, invece le trasformate di Laplace non considera sinusoidi, ma delle esponenziali complesse (categoria nella quale rientrano anche le sinusoidi).
+\end{itemize}
 \subsubsection{Esempi}
-Vediamo tre trasformate di Laplace notevoli (da imparare a memoria, perchè saranno molto frequenti).\newline
+Vediamo tre trasformate di Laplace notevoli (da imparare a memoria, useremo praticamente solo queste!).\newline
 \newline
 \textbf{es.} $v(t) = sca(t) := \begin{cases}
     1 \;\;\;\; &t\geq\\ 0 &t<0 
@@ -168,11 +183,17 @@ Vediamo tre trasformate di Laplace notevoli (da imparare a memoria, perchè sara
 \[
     \mathcal{L}[sca(t)] = \int_{0}^{\infty} sca(t)e^{-st} dt = \int_{0}^{\infty} 1 \cdot e^{-st}dt = \left[\frac{e^{-st}}{-s}\right]_0^\infty = 0 - \frac{1}{-s} = \frac{1}{s}
 \]
+\rule{\textwidth}{0,4pt}\newline
+\newline
 \textbf{es.} $v(t) = imp(t) := \begin{cases}
     imp(t)=0 \;\;\;&\forall\;t \neq 0\\
     \int_{-\infty}^{\infty}imp(t) dt =1
 \end{cases}$\newline
-[immagine dagli appunti del prof]\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione5/img2.PNG}
+\end{center}
+
 La trasformata di Laplace è
 \[
     \mathcal{L}[imp(t)] = \lim_{\epsilon\rightarrow 0} \mathcal{L}[f_\epsilon(t)] = \lim_{\epsilon\rightarrow 0}\int_{0}^{\infty}f_\epsilon (t) e^{-st} dt = \lim_{\epsilon\rightarrow 0}\int_{0}^{\epsilon}\frac{1}{\epsilon}e^{-st}dt =
@@ -180,17 +201,13 @@ La trasformata di Laplace è
 \[
     = \lim_{\epsilon\rightarrow 0}\left[\frac{e^{-st}}{-s\epsilon}\right]_0^\epsilon = \lim_{\epsilon\rightarrow 0}\left( \frac{e^{-s\epsilon}}{-s\epsilon}- \frac{1}{-s\epsilon} \right) = \lim_{\epsilon\rightarrow 0} \frac{1- e^{-s \epsilon}}{s\epsilon} = [F.I., Hopital] = \lim_{\epsilon\rightarrow 0}\frac{\cancel{s}e^{-s\epsilon}}{\cancel{s}} = 1
 \]
+\rule{\textwidth}{0,4pt}\newline
+\newline
 \textbf{es.} $v(t) = e^{at}$ per $t\geq 0$ o equivalentemente $v(t) = e^{at} sca(t)$, la trasformata di laplace è
 \[
     \mathcal{L}[e^{at} sca(t)] = \int_{0}^{\infty}e^{at}e^{-st}dt = \int_{0}^{\infty}e^{(a-s)t}dt = \left[\frac{e^{(a-s)t}}{a-s}\right]_0^\infty = \frac{1}{s-a} \;\;\;\text{se $Re(a-s)<0$, cioè $Re(s)>a$}\;
 \]
-\rule{\textwidth}{0,4pt}\newline
-\textbf{Riassunto dei concetti chiave introdotti}:
-\begin{itemize}
-    \item Le trasformate sono strumenti che legano biunivocamente sengali nel tempo a funzioni complesse di variabile complessa.
-    \item Le trasformate di Fourier interpretano un segnale come somma di infinite sinusoidi, invece le trasformate di Laplace non considera sinusoidi, ma delle esponenziali complesse (categoria nella quale rientrano anche le sinusoidi).
-\end{itemize}
-\rule{\textwidth}{0,4pt}\newline
+\rule{\textwidth}{0,4pt}
 \subsubsection{Proprietà della trasformata di Laplace}
 \begin{itemize}
     \item La trasformata di Laplace è un operatore lineare:
@@ -199,20 +216,21 @@ La trasformata di Laplace è
     \]
     \item Trasformata di Laplace della derivata: 
     \[
-        \mathcal{L}[\frac{dv(t)}{dt}] = s \mathcal{L}[v(t)]-v(0)
-    \] dove se $v$ è discontinua in $0$ di può usare $0^-$.\newline
-    Questa proprietà fa si che legami differenziali diventino legami algebrici. L'operazione che nel dominio del tempo è la derivata, corrisponde nel dominio delle trasformate a una moltiplicazione per $s$ più un termine $v(0)$.\newline
-    \textbf{es.} $\mathcal{L}[\frac{d}{dt}sca(t)] = s \mathcal{L}[sca(t)] - sca(0^-) = s \frac{1}{s}-0 = 1$.
+        \mathcal{L}\left[\frac{dv(t)}{dt}\right] = s \mathcal{L}[v(t)]-v(0)
+    \] dove se $v$ è discontinua in $0$ si può usare $0^-$.\newline
+    Questa proprietà fa si che legami differenziali diventino legami algebrici. L'operazione che nel dominio del tempo è la derivata, corrisponde nel dominio delle trasformate a una moltiplicazione per $s$ e alla differenza di un termine $v(0)$.\newline
+    \newline
+    \textbf{es.} $\mathcal{L}\left[\frac{d}{dt}sca(t)\right] = s \mathcal{L}[sca(t)] - sca(0^-) = s \frac{1}{s}-0 = 1$.
     \item Trasformata di laplace dell'intergrale:
     \[
-        \mathcal{L}[\int_{0}^{t}v(\tau)d \tau] = \frac{1}{s} \mathcal{L}[v(t)]
+        \mathcal{L}\left[\int_{0}^{t}v(\tau)d \tau\right] = \frac{1}{s} \mathcal{L}[v(t)]
     \]
     L'intergale nel dominio del tempo corrisponde a una divisione per $s$ nel dominio delle trasformate.
     \item Trasforamta di Laplace di un segnale ritardato:
     \[
         \mathcal{L}[v(t-\tau)] = e^{-s \tau} \mathcal{L}[v(t)]
     \] con $\tau > 0$ detto ritardo.\newline
-    \textbf{dim.} $\mathcal{L}[v(t-\tau)] = \int_{0}^{\infty}v(t-\tau) e^{-st}dt$. Se avessimo scritto $e^{-s(t-\tau)}$ non avremmo applicato correttamente la definizione di trasformata: il termine $e^{-st}dt$ nell'integrale è sempre fatto così, non va modificato mai (errore molto frequente), dobbiamo vedere la trasformata di Laplace come un modulo da compilare fatto così: $\mathcal{L}[\_\_] = \int_{0}^{\infty}\_\_ \; e^{-st}dt$. Continuiamo la dimostrazione con un cambio di variabile $x = t-\tau \Rightarrow \begin{cases}
+    \textbf{dim.} $\mathcal{L}[v(t-\tau)] = \int_{0}^{\infty}v(t-\tau) e^{-st}dt$. Facciamo un cambio di variabile $x = t-\tau \Rightarrow \begin{cases}
         t = x + \tau\\ dt = dx
     \end{cases} \;\;\;\begin{cases}
         t=0 \rightarrow x = - \tau\\ t= \infty \rightarrow  x= \infty

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  23 APR 2020 21:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  24 APR 2020 02:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1136,36 +1136,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--100
  []
 
 [26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 125--133
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+<../lezione5/img1.PNG, id=824, 844.65562pt x 413.29407pt>
+File: ../lezione5/img1.PNG Graphic file (type png)
+<use ../lezione5/img1.PNG>
+Package pdftex.def Info: ../lezione5/img1.PNG  used on input line 129.
+(pdftex.def)             Requested size: 348.90161pt x 170.71652pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--133
+Underfull \hbox (badness 10000) in paragraph at lines 132--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--133
+Underfull \hbox (badness 10000) in paragraph at lines 151--155
 
  []
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 163--168
+[28 <../lezione5/img1.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 164--172
 
  []
 
 
-Overfull \hbox (24.75977pt too wide) detected at line 186
+Underfull \hbox (badness 10000) in paragraph at lines 164--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--183
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 185--193
+
+ []
+
+<../lezione5/img2.PNG, id=835, 560.0925pt x 207.77625pt>
+File: ../lezione5/img2.PNG Graphic file (type png)
+<use ../lezione5/img2.PNG>
+Package pdftex.def Info: ../lezione5/img2.PNG  used on input line 194.
+(pdftex.def)             Requested size: 230.09236pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--207
+
+ []
+
+
+Overfull \hbox (24.75977pt too wide) detected at line 209
 \OMS/cmsy/m/n/10 L\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 e[]sca\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )] = [][] \OML/cmm/m/it/10 e[]e[]dt \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 e[]dt \OT1/cmr/m/n/10 = [][] = []   [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 220--224
 
  []
 
-[29]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione6/lezione6.tex
+[30 <../lezione5/img2.PNG>]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione6/lezione6.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
@@ -1175,11 +1210,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 37--44
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 37--44
 
@@ -1191,32 +1221,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--44
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--73
+Underfull \hbox (badness 10000) in paragraph at lines 37--44
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 94--100
+Underfull \hbox (badness 10000) in paragraph at lines 58--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
 
  []
 
@@ -1226,16 +1256,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--100
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--129
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--129
+Underfull \hbox (badness 10000) in paragraph at lines 94--100
 
  []
 
 [32]
+Underfull \hbox (badness 10000) in paragraph at lines 122--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--129
+
+ []
+
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 169--175
 
  []
@@ -1255,7 +1290,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
-[33]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 205--212
 
  []
@@ -1270,7 +1305,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--221
 
  []
 
-) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione7/lezione7.tex [34] [35]
+) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione7/lezione7.tex [35] [36]
 Underfull \hbox (badness 10000) in paragraph at lines 87--90
 
  []
@@ -1280,12 +1315,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--159
 
  []
 
-[36]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 190--194
 
  []
 
-[37]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione10/lezione10b.tex
+[38]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione10/lezione10b.tex
 Underfull \hbox (badness 10000) in paragraph at lines 227--1
 
  []
@@ -1315,7 +1350,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--1
 
  []
 
-[38]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 14--18
 
  []
@@ -1335,7 +1370,7 @@ Overfull \hbox (35.55002pt too wide) detected at line 47
 \OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 I \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^\\OT1/cmr/m/n/10 ) + [] + [] + [] +  []  []
  []
 
-[39]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 59--63
 
  []
@@ -1345,7 +1380,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--106
 
  []
 
-[40]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 146--150
 
  []
@@ -1365,12 +1400,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
-[41]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 212--217
 
  []
 
-[42]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 226--232
 
  []
@@ -1385,7 +1420,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--239
 
  []
 
-[43]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 303--307
 
  []
@@ -1410,7 +1445,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--7
 
  []
 
-[44]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 15--23
 
  []
@@ -1435,7 +1470,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--59
 
  []
 
-[45] [46]
+[46] [47]
 Underfull \hbox (badness 10000) in paragraph at lines 61--70
 
  []
@@ -1455,12 +1490,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--92
 
  []
 
-[47]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
-[48]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione12/lezione12.tex [49]
+[49]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione12/lezione12.tex [50]
 Underfull \hbox (badness 10000) in paragraph at lines 6--12
 
  []
@@ -1475,7 +1510,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--28
 
  []
 
-[50] [51]
+[51] [52]
 Underfull \hbox (badness 10000) in paragraph at lines 65--72
 
  []
@@ -1495,12 +1530,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--103
 
  []
 
-[52]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
-[53]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 135--140
 
  []
@@ -1535,7 +1570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--173
 
  []
 
-[54]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 178--183
 
  []
@@ -1587,67 +1622,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--12
 
  []
 
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 30--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--67
-
- []
-
 [56]
+Underfull \hbox (badness 10000) in paragraph at lines 30--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--67
+
+ []
+
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 70--73
 
  []
@@ -1657,7 +1692,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--88
 
  []
 
-[57]
+[58]
 Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
  []
@@ -1682,12 +1717,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--23
 
  []
 
-[58] [59] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione18/lezione18.tex) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione19/lezione19.tex)
+[59] [60] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione18/lezione18.tex) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione19/lezione19.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 1--28
 
  []
 
-[60] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione8/lezione8.tex) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione9/lezione9.tex
+[61] (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione8/lezione8.tex) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione9/lezione9.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--1
 
  []
@@ -1717,12 +1752,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
 
-[61]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione17/lezione17.tex
+[62]) (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/../lezione17/lezione17.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
 
-) [62]
+) [63]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
  (c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.aux)
@@ -1732,18 +1767,18 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: FE5AEDE945A2FB85517FE3CC7ABCFFE0;10357.
  ) 
 Here is how much of TeX's memory you used:
- 18654 strings out of 480994
- 343548 string characters out of 5916032
- 608728 words of memory out of 5000000
- 33464 multiletter control sequences out of 15000+600000
+ 18666 strings out of 480994
+ 343812 string characters out of 5916032
+ 608727 words of memory out of 5000000
+ 33474 multiletter control sequences out of 15000+600000
  542192 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,77p,1450b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,17n,77p,1490b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (62 pages, 877263 bytes).
+Output written on "c:\Users\enric\Desktop\NOTES\FONDAMENTI DI AUTOMATICA\master/master.pdf" (63 pages, 1002372 bytes).
 PDF statistics:
- 1113 PDF objects out of 1200 (max. 8388607)
- 988 compressed objects within 10 object streams
- 202 named destinations out of 1000 (max. 500000)
- 1096 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1122 PDF objects out of 1200 (max. 8388607)
+ 992 compressed objects within 10 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 1106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
