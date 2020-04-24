@@ -18,12 +18,12 @@ Un \textbf{sistema} si dice (completamente) \textbf{raggiungibile} se ogni stato
 \subsubsection{Criterio di raggiungibilità}
 Come si determina se un sistema dinamico è o meno raggiungibile?\newline
 \newline
-Teorema di Cayley-Hamilton: Ogni matrice annulla il polinomio caratteristico.\newline
+Introduciamo il Teorema di Cayley-Hamilton: Ogni matrice annulla il polinomio caratteristico.\newline
 Capiamo meglio questo terema guardando il polinomio caratteristico di una matrice $A$ che è il determinante della matrice $sI-A$:
 \[
     \Pi(s) = det(sI-A) = s^n + \beta_1 s^{n-1} + \dots + \beta_n
 \]
-quindi, se calcoliamo il polinomio caratteristico in $A$, vediamo questo si che si annulla:
+quindi, se calcoliamo il polinomio caratteristico in $A$, vediamo questo si annulla:
 \[
     \Pi(A) = det(AI-A) = det(0) = 0
 \]
@@ -32,7 +32,7 @@ Ne segue che
     A^n + \beta_1 A^{n-1} + \dots + \beta_n I = 0
 \]
 \[
-    A^n = -\beta_1 A^{n-1} - \beta_2 A^{n-1} - \dots - \beta_n I
+    A^n = -\beta_1 A^{n-1} - \beta_2 A^{n-2} - \dots - \beta_n I
 \]
 cioè la potenza ennesima della matrice $A$ può essere scritta come combinazione lineare di tutte le potenze inferiori, fino alla potenza $0$, cioè la matrice identità.\newline
 \newline
@@ -45,7 +45,7 @@ dove la matrice $e^{A(t - \tau)}$ è
 \[
     e^{A(t - \tau)} = I +A(t-\tau) + \frac{A^2(t-\tau)^2)}{2!} + \dots + \frac{A^{n-1} (t - \tau)^{n-1}}{(n-1)!} +\; \text{[combinazione lineare dei termini precedenti]}\;\dots 
 \]
-di conseguenza posso fare dei raccoglimenti di tutti itermini "combinazione lineare del termini precedenti" e scrivere questo termine grazie a una sommatoria:
+di conseguenza posso fare dei raccoglimenti di tutti i termini "combinazione lineare dei termini precedenti" e scrivere questo termine grazie a una sommatoria:
 \[
     e^{A(t - \tau)} = \sum_{l=0}^{n-1} \gamma_l(t-\tau) \cdot  A^l
 \]
@@ -133,7 +133,11 @@ Quindi qualunque stato con $x_1 \neq x_2$ non è raggiungibile. Verifichiamo ora
         1 &-1 \\1 & -1
     \end{matrix}\right] \;\;\text{singolare}\;
 \]
-[immagine dagli appunti del prof]\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione10/img1.PNG}
+\end{center}
+
 Esprimiamo lo spazio di stato con un piano di assi $x_1, x_2$, notiamo che lo stato non può muoversi liberamente in tutto lo spazio, ma è vincolata alla retta $x_1 = x_2$ che è il suo sottospazio di raggiungibilità.
 \subsection{Osservabilità (SD LTI a TC SISO)}
 \subsubsection{Definizioni}
@@ -174,7 +178,7 @@ Verifichiamo col criterio di osservabilità:\newline
     \end{matrix}\right] = A' \;\;\;\;\;\;\;\; A'c' = \left[\begin{matrix}
         -1 &0 \\ 0 & 4
     \end{matrix}\right] \left[\begin{matrix}
-        0 \\ 4
+        0 \\ 1
     \end{matrix}\right] = \left[\begin{matrix}
         0 \\ 4
     \end{matrix}\right]
@@ -195,7 +199,7 @@ Verifichiamo col criterio di osservabilità:\newline
             \dot{x}_2 = -x_2 +u
         \end{cases}
         \] 
-        Questo sistema non è completamente raggiungibile, e come si vede a occhio il suo sottospazio di raggiungibilità è la sola retta $x_1 = x_2$. In questo caso per raggiungibilità si intendono regioni dello spazio di stato che non posso raggiungere. Stato "non raggiungibile" significa che, qualunque sia l'ingresso, non posso raggiungere quel determinato stato a partire da $0$.\newline
+        Questo sistema non è completamente raggiungibile, e come si vede a occhio il suo sottospazio di raggiungibilità è la sola retta $x_1 = x_2$. Stato "non raggiungibile" significa che, qualunque sia l'ingresso, non posso raggiungere quel determinato stato a partire da $0$.\newline
         Facciamo un cambio variabili $q_1 = x_1 - x_2$ e $q_2 = x_1 + x_2$ e il sistema diventa: \[
             \begin{cases}
                 \dot{q}_1 = \dot{x}_1 - \dot{x}_2 = - x_1 + \cancel{u} + x_2 - \cancel{u} = - q_1\\
@@ -206,8 +210,8 @@ Verifichiamo col criterio di osservabilità:\newline
             \end{cases}
         \]
         Con questa trasformazione il significato di "non raggiungibile" cambia: significa che $u$ non influenza una parte dello stato.
-        \item Le parti non raggiungibili e/o non osservabili non sono presenti nella funzione di trasferimento: la funzione di trasferimento rappresenta il legame ingresso/uscita e quindi la sola parte non raggiungibili e/o non osservabili del sistema.
-        \item Gli autovalori delle parti non raggiungibili e/o non osservabili del sistema nel calcolo delal funzione di trasferimento sono cancellati (per cancellazione intendiamo il fatto che nel calcolo della funzione di trasferimento alcuni poli e zeri si possno cancellare fra di loro, e questi rappresentano proprio le parti non raggiungibili e/o non osservabili).
+        \item Le parti non raggiungibili e/o non osservabili non sono presenti nella funzione di trasferimento: la funzione di trasferimento rappresenta il legame ingresso/uscita e quindi la sola parte raggiungibile e osservabile del sistema.
+        \item Gli autovalori delle parti non raggiungibili e/o non osservabili del sistema nel calcolo della funzione di trasferimento sono cancellati (per cancellazione intendiamo il fatto che nel calcolo della funzione di trasferimento alcuni poli e zeri si possno cancellare fra di loro, e questi rappresentano proprio le parti non raggiungibili e/o non osservabili).
 \end{itemize}
 \ \newline
 \textbf{definizione}:  Una calcellazione è \textbf{critica} se avviene al di fuori della regione di asintotica stabilità (a tempo continuo significa che se l'autovalore è cancellato, non ha la parte reale negativa).
@@ -237,6 +241,7 @@ Con questa espressione della funzione di trasferimento, $d$ ce lo abbiamo già e
 \newline
 Questa premessa ci mostra che è sufficiente imparare a trattare il caso in cui $\frac{N(s)}{D(s)}$ ha grado di $N(s) <$ grado di $D(s)$ (perchè avevamo già dimostrato precedentemente che sicurametne $N(s)$ non può avere grado $>$ del grado di $D(s)$, e nel caso in cui il grado di $N(s) = $ grado di $D(s)$ possiamo ricondurci al caso grado di $N(s) <$ grado di $D(s)$).
 \subsection{Forma canonica di raggiungibilità}
+\subsubsection{Dimostrazione}
 Vediamo ora uno dei possibili modi di operare:\newline
 Nel caso più estremo il numeratore ha al massimo grado $n-1$:
 \[
@@ -321,9 +326,7 @@ Assemblando il tutto otteniamo la matrice $c$:
         b_n & b_{n-1} & \dots & b_1
     \end{matrix}\right] x(t)
 \]
-\ \newline
-\newline
-\subsubsection{Riassunto}
+\subsubsection{Metodo pratico}
 Presa una funzione di trasferimento, per ottenere una quaterna ($A,b,c,d$) di dimensione minima si procede così: se il grado del numeratore è uguale al grado del denominatore si fa la divisione e si ottiene $G(s) = d + \frac{N(s)}{D(s)}$, da cui si ricava il valore $d$. A questo punto riscriviamo la frazione $\frac{N(s)}{D(s)} = \frac{ b_1 s^{n-1} + b_2 s^{n-2} + \dots + b_n }{ s^n + a_1 s^{n-1} + \dots + a_n }$ e scriviamo le $A, b$ e $c$:
 \[
     A=\left[\begin{matrix}

@@ -50,10 +50,9 @@ Scriviamo ora la forma canonica di raggiungibilità:
     \end{matrix}\right]; \;\;\;\;\;d=0.
 \]
 Premettiamo che \textbf{la presenza di una cancellazione ci impone il fatto che la realizzazione ($A,b,c,d$) non può essere raggiungibile e osservabile contemporaneamente}. Quindi siccome abbiamo eseguito la realizzazione con la forma canonica di raggiungibilità, sicuramente $(A,b,c,d)$ sarà raggiungibile e di conseguenza non osservabile (perchè esiste una cancellazione). Se avessimo usato la forma canonica di osservabilità saremmo giunti a una realizzazione osservabile, ma non raggiungibile.\newline
+\newline
 \textbf{oss.} Errore tipico: Questo concetto è anche utilizzato nell'analisi di funzioni di trasferimento in cui sono presenti cancellazioni: se abbiamo valutato che è raggiungibile è inutile controllare se è anche osservabile, ovviamente non lo sarà! Vale anche il viceversa, cioè se abbiamo valutato che è osservabile, sicuramente non sarà raggiungibile. Da notare è che se si valuta la funzione di trasferimento non raggiungibile, bisogna per forza controllare se sia o meno osservabile! E anche il viceversa, cioè se valutiamo che è non osservabile, dobbiamo controllare se sia o meno raggiungibile! Potrebbe essere sia non osservabile sia non raggiungibile.
 \newline
-\newline
-[verifica di questa affermazioni con maxima].\newline
 \newline
 Quindi dalla sola funzione di trasferimento (con una parte nascosta) non possiamo sapere se il sistema è raggiungibile e osservabile (contemporaneamente), lo possiamo sapere solo dalle matrici. Se partiamo dalla funzione di trasferimento, le cancellazioni possono essere provocate o da una non raggiungibilità o da una non osservabilità, ma non sappiamo quale, quindi dobbiamo decidere se realizzare il sistema con la forma canonica osservabile o raggiungibile.
 \newpage
