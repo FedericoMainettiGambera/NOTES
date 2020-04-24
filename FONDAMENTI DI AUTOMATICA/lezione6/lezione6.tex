@@ -27,14 +27,14 @@ dove possiamo usare $v(0^+)$ se $v$ è discontinua in $0$.\newline
     \end{tabular}
 \end{center}
 \renewcommand{\arraystretch}{1}
-Da notare è che la rampa è l'integrale dello scalino, che a sua volta è l'integrale dell'impulso. Queste prime tre trasformate prendono il nome di segnali canonici, e sono tutte quelle trasformate di Laplace che valgono $\frac{1}{s^n}$.\newline
+\textbf{oss.} Da notare è che la rampa è l'integrale dello scalino, che a sua volta è l'integrale dell'impulso (vedi trasformata di Laplace dell'integrale). Queste prime tre trasformate fanno parte di un gruppo di segnali che prendono il nome di \textbf{segnali canonici}, e sono tutte quelle trasformate di Laplace che valgono $\frac{1}{s^n}$.\newline
 \newline
-Notiamo che segnali come trigonometrici sono rappresentabili come esponenziali complessi, come $sin(\omega t) = \frac{e^{j \omega t}- e^{-j \omega t}}{2j} \dots$ e così possiamo ricavare le trasformate di Laplace di tutte le funzioni trigonometriche.
+\textbf{oss.}  Notiamo che i segnali trigonometrici sono rappresentabili come esponenziali complessi, per esempio $sin(\omega t) = \frac{e^{j \omega t}- e^{-j \omega t}}{2j} \dots$ e così possiamo ricavare le trasformate di Laplace di tutte le funzioni trigonometriche.
 \subsection{Antitrasformazione secondo Heaviside}
 Questo metodo vale per trasformate di Laplace razionali fratte, cioè trasformate che possono essere scritte come
 \[
     V(s) = \frac{N(s)}{D(s)}
-\] dove $N, D$ sono polinomi in $s$, inoltre il grado di $N$ e sempre minore o uguale del grado di $D$.\newline
+\] dove $N, D$ sono polinomi in $s$; inoltre \textbf{il grado di $N$ è sempre minore o uguale al grado di $D$}.\newline
 \newline
 Il meccanismo di antitrasformazione di Heaviside consiste nella scomposizione di $V(s)$ in una somma di fratti semplici la cui $\mathcal{L}^{-1}$ è nota.\newline
 \newline
@@ -56,8 +56,7 @@ Quindi $V(s) = \frac{2/3}{s} - \frac{1/2}{s+1} - \frac{1/6}{s+3}$ di cui so fare
 \[
     \mathcal{L}^{-1} = \frac{2}{3}sca(t) - \frac{1}{2}e^{-t}sca(t) - \frac{1}{6}e^{-3t}sca(t)
 \]
-\newline
-\newline
+\rule{\textwidth}{0,4pt}
 \newline
 \newline
 Vediamo ora il \textbf{caso generale}:\newline
@@ -69,14 +68,14 @@ una trasformata di Laplace, con $N,D$ polinomi in $s$.\newline
 \newline
 Le radici di $N(s)$ prendono il nome di \textbf{zeri} della trasformata di Laplace, mentre le radici di $D(s)$ prendono il nome di \textbf{poli} della trasformata di Laplace.\newline
 \newline
-Il primo passaggio è quello di fattorizzare $D(s)$ che risulterà così espresso come prodotto di termini del tipo $s-p$ (dove quindi sarà presente un polo reale semplice) oppure $(s-p)^n$ (dove quindi sarà presente un polo reale moltiplo) oppure altri casi complessi che però non tratteremo.
+Il primo passaggio è quello di fattorizzare $D(s)$, che risulterà così espresso come prodotto di termini del tipo $s-p$ (dove quindi sarà presente un polo reale semplice) oppure $(s-p)^n$ (dove quindi sarà presente un polo reale multiplo) oppure altri casi complessi che però non tratteremo.
 \begin{itemize}
     \item \textbf{Polo reale semplice}:\newline
     La trasformata è della forma 
     \[
         \frac{N(s)}{\dots(s-p)\dots} =
     \]
-    (al denominatore ci possono essere vari fattori, l'importante è che ci sia il fattore $(s-p)$), la cui scomposizione è della forma
+    (al denominatore ci possono essere vari fattori, l'importante è che ci sia il fattore $(s-p)$), la scomposizione è della forma
     \[
         = \dots + \frac{\alpha}{s-p} + \dots
     \]
@@ -85,7 +84,7 @@ Il primo passaggio è quello di fattorizzare $D(s)$ che risulterà così espress
     \[
         \frac{N(s)}{\dots (s-p)^n \dots} =
     \]
-    la cui scomposizione è della forma
+    la scomposizione è della forma
     \[
         = \dots + \frac{\alpha_1}{s-p} + \frac{\alpha_2}{(s-p)^2} + \dots + \frac{\alpha_n}{(s-p)^n} + \dots
     \]
@@ -95,12 +94,12 @@ A seguito della scomposizione l'antitrasformata di Laplace è facilmente calcola
 \newline
 \newline
 \newline
-\textbf{es.} dato $V(s) = \frac{2}{(s-1)^2(s+2)}$, trovare $v(t)$:
-scompongo la trasformata:
+\textbf{es.} dato $V(s) = \frac{2}{(s-1)^2(s+2)}$, trovare $v(t)$:\newline
+Scompongo la trasformata:
 \[
     V(s) = \frac{\alpha}{s-1} + \frac{\beta}{(s-1)^2} + \frac{\gamma}{s+2}
 \]
-Eguaglio i numeratori:
+Denominatore comune ed eguaglio i numeratori:
 \[
     \alpha(s-1)(s+2) + \beta(s+2) + \gamma(s-1)^2 = 2
 \]
@@ -120,22 +119,27 @@ Quindi
 \[
     \mathcal{L}^{-1}[V(s)] = v(t) = -\frac{2}{9} e^{t} sca(t) + \frac{2}{3} t e^{t} sca(t) + \frac{2}{9}e^{-2t} sca(t)
 \]
+\rule{\textwidth}{0,4pt}
 \newline
 \newline
 \textbf{es.}\newline
-[immagine dagli appunti del prof]\newline 
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione6/img1.PNG}
+\end{center}
 Cerchiamo di scrivere il segnale $v(t)$ a partire dal suo grafico in una somma di segnali canonici eventualmente ritardati.\newline
 Ogni volta che c'è un cambio di pendenza interviene una rampa.\newline
 \[
     v(t)= 2 sca(t) + 0,5 ram(t) - 3 sca(t-2) - 0,5 ram(t-2)
 \] 
 \[
-    V(s) = \frac{2}{s} + \frac{0,5}{s^2} - \frac{3}{s}e^{-2s} - \frac{0,5}{s^2}e^{-2} 
+    V(s) = \frac{2}{s} + \frac{0,5}{s^2} - \frac{3}{s}e^{-2s} - \frac{0,5}{s^2}e^{-2s} 
 \]
 \newpage
 \section{Funzione di trasferimento}
 Lavoriamo con SD LTI a TC SISO.
-\subsection{Definizioni e nuovi concetti}
+\subsection{Trasformata di Laplace delle equazioni di stato e d'uscita}
+\subsubsection{Equazione di stato}
 \[
     \begin{cases}
         \dot{x} = Ax + bu\\
@@ -159,16 +163,18 @@ Allora per qualunque $s$ che appartiene all'insieme degli autovalori di $A$ poss
 \[
     X(s) = (sI-A)^{-1} x(0) + (sI-A)^{-1} bU(s)
 \]
-\subsubsection{Equazione di stato}
-La trasformata di Laplace dell'\textbf{equazione di stato} è quindi composta da due termini: il primo dipende linearmente solo dallo stato iniziale, il secondo dipende linearmente solo dall'ingresso. Quindi il primo termine $(sI-A)^{-1} x(0)$ è la trasformata di Laplace del \textbf{movimento libero (ML)} di $x$, e il secondo termine $(sI-A)^{-1} bU(s)$ è la trasformata di Laplace del \textbf{movimento forzato (MF)} di $x$.\newline
-Questa formula che abbiamo scritto è la corrispondente nel dominio delle trasformate di ciò che nel dominio del tempo è la formula di Lagrange nello stato.
+La trasformata di Laplace dell'equazione di stato è quindi composta da due termini: il primo dipende linearmente solo dallo stato iniziale, il secondo dipende linearmente solo dall'ingresso.\newline
+Quindi il primo termine $(sI-A)^{-1} x(0)$ è la trasformata di Laplace del \textbf{movimento libero (ML)} di $x$, e il secondo termine $(sI-A)^{-1} bU(s)$ è la trasformata di Laplace del \textbf{movimento forzato (MF)} di $x$.\newline
+\newline
+\textbf{oss.} Questa formula che abbiamo scritto è la corrispondente nel dominio delle trasformate di ciò che nel dominio del tempo è la \textbf{formula di Lagrange} dello stato.
 \subsubsection{Equazione d'uscita}
-Ora trasformo l'\textbf{equazione d'uscita} e vi sostituisco $X(s)$ che abbiamo appena trovato:
+Ora trasformiamo l'\textbf{equazione d'uscita} e vi sostituiamo $X(s)$ che calcolato precedentemente:
 \[
     Y(s) = cX(s) + dU(s) = c(sI-A)^{-1} x(0) + [c(sI-A)^{-1} b + d]U(s)
 \]
 Anche qui il primo termine $c(sI-A)^{-1} x(0)$ è la trasformata di Laplace del \textbf{movimento libero (ML)} di $y$, e il secondo termine $[c(sI-A)^{-1} b + d]U(s)$ è la trasformata di Laplace del \textbf{movimento forzato (MF)} di $y$.\newline
-Il movimento forzato contiene al suo interno il fattore $c(sI-A)^{-1} b$, che prende il nome di \textbf{funzione di trasferimento} $G(s)$ ed è il termine che moltiplicato per la trasformata dell'ingresso ti restituisce il movimento forzato.\newline
+\newline
+Il movimento forzato contiene al suo interno il fattore $c(sI-A)^{-1} b$, che prende il nome di \textbf{funzione di trasferimento} $G(s)$. La funzione di trasferimento è il termine che moltiplicato per la trasformata dell'ingresso ti restituisce il movimento forzato.\newline
 \newline
 \newline
 Riassunto per SD LTI a TC SISO:
@@ -225,7 +231,7 @@ Quindi, riassumendo,
     \item Il grado del numeratore è uguale al grado del denominatore se e solo se ($\Leftrightarrow$) $d\neq 0$, altrimento il grado del numeratore è minore ($<$) del grado del denominatore.
 \end{itemize}
 \subsection{Esempi}
-\textbf{es.}  Dato il Sd LTI a TC SISO descritto nell ospazio di stato da 
+\textbf{es.}  Dato il Sd LTI a TC SISO descritto nello spazio di stato da 
 \[
     A=\left[\begin{matrix}
         1 & -1\\
@@ -247,7 +253,7 @@ calcolare la funzione di trasferimento $G(s)$.
         1\\0
     \end{matrix}\right]+0 = 
 \]
-[esiste un trucchetto per calcolare la trasposta della generica matrice $M$ 2x2: si moltiplica $\frac{1}{M}$ per la matrice ottenuta scambiando di posto i termini sulla diagonale principale e invertendo il segno dei termini sulla diagonale secondaria]
+[esiste un trucchetto per calcolare la trasposta della generica matrice $M$ 2x2: si moltiplica $\frac{1}{det(M)}$ per la matrice ottenuta scambiando di posto i termini sulla diagonale principale e invertendo il segno dei termini sulla diagonale secondaria]
 \[
     = \frac{1}{(s-1)(s-4) +3} \left[\begin{matrix}
         2&1

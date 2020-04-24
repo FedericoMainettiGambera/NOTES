@@ -67,7 +67,7 @@
 \contentsline {subsection}{\numberline {8.6}Trasformate di Laplace notevoli}{31}{subsection.8.6}%
 \contentsline {subsection}{\numberline {8.7}Antitrasformazione secondo Heaviside}{31}{subsection.8.7}%
 \contentsline {section}{\numberline {9}Funzione di trasferimento}{34}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Definizioni e nuovi concetti}{34}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Trasformata di Laplace delle equazioni di stato e d'uscita}{34}{subsection.9.1}%
 \contentsline {subsubsection}{\numberline {9.1.1}Equazione di stato}{34}{subsubsection.9.1.1}%
 \contentsline {subsubsection}{\numberline {9.1.2}Equazione d'uscita}{34}{subsubsection.9.1.2}%
 \contentsline {subsection}{\numberline {9.2}Calcolo e aspetto di una funzione di trasferimento}{34}{subsection.9.2}%
