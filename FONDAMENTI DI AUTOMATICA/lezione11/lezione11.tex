@@ -3,7 +3,7 @@
 \title{LEZIONE 11 26/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/55dca95e-fe7f-4bf2-82e6-d3024939e5c3?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui} [registrazione solo audio, no video]\newline
 \newline
-Questa realizzazione è sempre raggiungibile, infatti usanto questi $(A,b,c,d)$, la matrice di raggiungibilità ha la seguetne forma:
+Questa realizzazione è sempre raggiungibile, infatti usando questi $(A,b,c,d)$, la matrice di raggiungibilità ha la seguetne forma:
 \[
     M_R = \left[\begin{matrix}
         0     & 0     & \dots & 0     & 1    \\
@@ -57,13 +57,21 @@ Premettiamo che \textbf{la presenza di una cancellazione ci impone il fatto che 
 Quindi dalla sola funzione di trasferimento (con una parte nascosta) non possiamo sapere se il sistema è raggiungibile e osservabile (contemporaneamente), lo possiamo sapere solo dalle matrici. Se partiamo dalla funzione di trasferimento, le cancellazioni possono essere provocate o da una non raggiungibilità o da una non osservabilità, ma non sappiamo quale, quindi dobbiamo decidere se realizzare il sistema con la forma canonica osservabile o raggiungibile.
 \newpage
 \section{Sistemi interconnessi (LTI a TC)}
+\subsection{Logica fondamentale degli schemi a blocchi}
 Rappresentiamo i sistemi interconnessi (LTI a TC) con schemi a blocchi.\newline
 \newline
-Logica fondamentale dei sistemi a blocchi:
-[immagine dagli appunti del prof]\newline
+Logica fondamentale dei sistemi interconnessi: 
+\begin{center}
+    \includegraphics[height=3cm]{../lezione11/img1.PNG}
+\end{center}
+(a sinistra abbiamo una formula molto usata a destra nodo sommatore).\newline
 \newline
-Poniamoci il seguente problema:\newline
-[immagine dagli appunti del prof]\newline
+Vediamo il seguente problema:\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione11/img2.PNG}
+\end{center}
+\ \newline
 Ipotesi: tutti i blocchi sono privi di parti nascoste, ovvero tutte le loro funzioni di trasferimento hanno numeratore e donominatore coprimi (non ci sono cancellazioni).\newline
 Domande:
 \begin{itemize}
@@ -74,8 +82,10 @@ Domande:
 \subsection{Elaborazione degli schemi a blocchi}
 Andiamo a vedere tre configurazioni particolari che ci permettono di studiare gli schemi a blocchi.
 \subsubsection{Blocchi in serie o cascata}
-[immagine dagli appunti del prof]\newline
-\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione11/img3.PNG}
+\end{center}
 Quale è la funzione di trasferimento $\frac{Y(s)}{U(s)}$ per un blocco in serie?
 \[
     Y= Y_2 = G_2U_2 = G_2 Y_1 = G_2G_1 U_1 = G_2G_1 U \Longrightarrow \frac{Y}{U} = G_2G_1
@@ -136,7 +146,10 @@ Che ci danno il sisetma matriciale nella forma:
     \end{cases}
 \]
 \subsubsection{Blocchi in parallelo}
-[immagine dagli appunti del prof]\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione11/img4.PNG}
+\end{center}
 \[
     Y = Y_1 + Y_2 = G_1 U_1 + G_2 U_2 = (G_1 + G_2)U \Longrightarrow \frac{Y}{U} = G_1 +G_2
 \]
@@ -187,7 +200,10 @@ Che ci danno sistema matriciale:
     \end{cases}
 \]
 \subsubsection{Blocchi in retroazione o feedback}
-[immagine dagli appunti del prof]\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=5cm]{../lezione11/img5.PNG}
+\end{center}
 $G_a$ è il blocco di andata, mentre $G_r$ è il blocco di retroazione.\newline
 Per capire come calcolare $\frac{Y}{U}$ immagino di tagliare l'anello nel punto di "taglio fittizio" dell'immagine. Seguiamo poi i numeri ($1-2-3-4$) nell'immagine per capire quanto valgono i vari segnali. Una volta arrivati al quarto punto, ripristiniamo il taglio fittizio e quindi possiamo porre $G_a(U-G_r Y) = Y$. Quindi rielaborando:
 \[
