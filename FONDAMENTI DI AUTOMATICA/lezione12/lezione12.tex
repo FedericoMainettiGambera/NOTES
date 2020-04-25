@@ -119,7 +119,7 @@ Dato il sistema dinamico LTI a TC, SISO $\begin{cases}
 \subsection{Definizione di risposta in frequenza}
 \textbf{definizione}:  Data una funzione di trasferimento $G(s)$, la sua restrizione all'asse immaginario positivo $J^+$, cioè $G(j \omega)$ con $\omega \geq 0$, si dice \textbf{rispsota in frequenza} (RF) di $G(s)$.
 \subsection{Esempio}
-\textbf{es.} Dato $G(s) = \frac{1}{1+0,15}$, che è asintoticamente stabile, e $u(t) = 5 sin(20 t)$, a cosa tende $y(t) \rightarrow ?$ per $t \rightarrow \infty$?\newline
+\textbf{es.} Dato $G(s) = \frac{1}{1+0,1 s}$, che è asintoticamente stabile, e $u(t) = 5 sin(20 t)$, a cosa tende $y(t) \rightarrow ?$ per $t \rightarrow \infty$?\newline
 \newline
 Siccome il sistema è asintoticamente stabile, allora per il teorema della rispsota in frequenza $y(t) \rightarrow 5 |G(j 20)| sin(20 t + arg(G(j 20)))$.
 \[
@@ -132,25 +132,34 @@ Siccome il sistema è asintoticamente stabile, allora per il teorema della risps
 \newpage
 \section{Rappresentazioni della risposta in frequenza di una funzione di trasferimento}
 \subsection{Diagramma polare}
-[immagine dagli appunti del prof]\newline
-In un piano immaginario il termine $s = j \omega$ "cammina" lungo l'asse immaginario. Se ora calcoliamo $G(s)$ e lo mostriamo in un secondo piano immaginario, otteniamo una curva $
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione12/img1.PNG}
+\end{center}
+In un piano immaginario il termine $s = j \omega$ al crescere del valore di $\omega$ cresce lungo l'asse immaginario. Se ora calcoliamo $G(s)$ e lo mostriamo in un secondo piano immaginario, otteniamo una curva $
 G(j \omega)$ con parametro $\omega$.\newline
 \newline
 Possiamo ora dire che la risposta in frequenza è l'immagine attraverso $G$ dell semiasse immaginario positivo $J^+$.
 \subsection{Diagrammi cartesiani o di Bode}
 \subsubsection{Diagramma di Bode del modulo}
-[immagine dagli appunti del prof]\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione12/img2.PNG}
+\end{center}
+Il diagramma di Bode del modulo è rappresentato su un piano cartesiano in cui l'asse delle ascisse è l'asse delle $\omega$ e quello delle ordinate è l'asse di $|G(j \omega)|$.\newline
 \newline
-Il diagramma di Bode del modulo è un piano cartesiano in cui l'asse delle ascisse è l'asse delle $\omega$ e quello delle ordinate è l'asse di $|G(j \omega)|$.\newline
+L'asse delle $\omega$ è logaritmico, cioè a pari distanza non corrisponde pari differenza, ma pari rapporto logaritmico (in base $10$). Inoltre lo zero non viene rappresentato, perchè si trova a $- \infty$, e per questo l'intersezione con l'asse di $|G(j \omega)|$ (cioè l'origine degli assi) non viene rappresentata.\newline
 \newline
-L'asse delle $\omega$ è logaritmico, cioè a pari distanza non corrisponde pari differenza, ma pari rapporto logaritmico (in base $10$). Inoltre lo zero non viene rappresentato, perchè si trova a $- \infty$, e per questo l'intersezione con l'asse di $|G(j \omega)|$ non viene rappresentato.\newline
+L'asse di $|G(j \omega)|$ è, invece, espresso in $dB$.\newline
 \newline
-L'asse di $|G(j \omega)|$ è, invece, espresso in $dB$.\newline \textbf{Definizione}: Rappresentare una quantità in $dB$ significa $x_{dB} = 20 log_{10}|x|$.\newline
+\textbf{Definizione}: Rappresentare una quantità in $dB$ significa $x_{dB} = 20 log_{10}|x|$.\newline
 Per esempio $100_{dB} = 40$, $0,1 _{dB} = -20$, $-0,1 _{dB} = -20$, $1 _{dB} = 0$. Notare che la scrittura in $dB$ non distingue il segno, e inoltre che se $|x| > 1$, allora $x _{dB} >0$ e se $|x|<1$, allora $x _{dB} <0$.
 \subsubsection{Diagramma di Bode della fase}
-[immagine dagli appunti del prof]\newline
-\newline
-Il diagramma di Bode della fase è un piano cartesiano in cui l'asse delle ascisse è sempre logaritmico ed è l'asse delle $\omega$, invece l'asse delle ordinate è l'asse di $arg(G(j \omega))$ misurato in gradi.
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione12/img3.PNG}
+\end{center}
+Anche il diagramma di Bode della fase è rappresentato su un piano cartesiano in cui l'asse delle ascisse è sempre logaritmico ed è l'asse delle $\omega$, invece l'asse delle ordinate è l'asse di $arg(G(j \omega))$ misurato in gradi.
 \subsection{Tracciamento dei diagrammi di Bode (asintotici)}
 \subsubsection{Forma della funzione di trasferimento per diagrammi di Bode}
 Scriviamo la funzione di trasferimento $G(s)$ della cui risposta in frequenza vogliamo i diagrammi di Bode nella forma 
@@ -159,8 +168,8 @@ Scriviamo la funzione di trasferimento $G(s)$ della cui risposta in frequenza vo
 \]
 In cui:
 \begin{itemize}
-    \item prima frazione: $g$ è il \textbf{tipo} della funzione di trasferimneto ed è il numero di poli in $s=0$ meno il numero di zeri in $s=0$, o, per dirlo in altri termini, il numero di poli (se positivo) o zeri (se negativo) in $s=0$.\newline
-    Per esempio una funzione di trasferimento di tipo $1$ ha un polo nell'origine, una funzione di trasferimento di tipo $-1$ ha uno zero nell'origine, una funzione di trasferimento di tipo $2$ ha due poli nell'origine, una funzione di trasferimento di tipo $0$ non ha nè poli nè zeri nell'origine.
+    \item prima frazione: il numero $g$ è il \textbf{tipo} della funzione di trasferimento e rappresenta il numero di poli in $s=0$ meno il numero di zeri in $s=0$, o, per dirlo in altri termini, il numero di poli (se positivo) o zeri (se negativo) in $s=0$.\newline
+    Per esempio una funzione di trasferimento di tipo $1$ ha un polo nell'origine, una funzione di trasferimento di tipo $-1$ ha uno zero nell'origine, una funzione di trasferimento di tipo $2$ ha due poli nell'origine, una funzione di trasferimento di tipo $0$ non ha nè poli nè zeri nell'origine, etc.
     \item seconda frazione: i vari termini a numeratore del tipo $(1 + s \tau_i)$ rendono conto degli zeri reali non nell'origine; invece i vari termini a denominatore del tipo $(1 + s t_k)$ rendono conto dei poli reali non nell'origine.
     \item terza frazione: infine ci possono essere coppie di zeri complessi coniugati e coppie di poli complessi coniugati, rappresentate dai termini $(1 + 2 \frac{\zeta}{\sigma_n}s + \frac{1}{\sigma_n^2}s^2)$ (per gli zeri) e $(1 + 2 \frac{\xi}{\omega_n} s + \frac{1}{\omega_n^2}s^2)$ (per i poli).
 \end{itemize}
@@ -177,6 +186,7 @@ Trasformiamola nella forma che vogliamo avere per il diagramma di Bode:
     = \frac{2(-1)(-2)(1+\frac{s}{2})(1-s)(1-\frac{s}{2})}{(-2-\sqrt{3})(-2+\sqrt{3})s(1-\frac{s}{-2-\sqrt{3}})(1-\frac{s}{-2+\sqrt{3}})}
 \]
 in cui $\mu= \frac{2(-1)(-2)}{(-2-\sqrt{3})(-2+\sqrt{3})}$ e $g=1$.\newline
+\rule{\textwidth}{0,4pt}
 \newline
 \newline
 Quindi ogni funzione di trasferimento razionale fratta si può esprimere come prodotto di termini del tipo 
@@ -205,7 +215,16 @@ Vediamo perciò come tracciare i diagrammi di bode del modulo e della fase (asin
             -180^o & \mu<0
         \end{cases}
     \end{cases}$.\newline
-    [immagine dagli appunti del prof]\newline \newline
-    diagramma di bode del modulo: Il diagramma di bode del modulo è una retta orizzontale (se $\mu > 1$ è sopra l'asse delle ascisse, se $\mu < 1$ è sotto l'asse delle ascisse).\newline \newline
+    \newline
+    [immagine dagli appunti del prof]
+    \begin{center}
+        \includegraphics[height=3cm]{../lezione12/img4.PNG}
+    \end{center}
+    diagramma di bode del modulo: Il diagramma di bode del modulo è una retta orizzontale (se $\mu > 1$ è sopra l'asse delle ascisse, se $\mu < 1$ è sotto l'asse delle ascisse).\newline
+    \newline
+    [immagine dagli appunti del prof]
+    \begin{center}
+        \includegraphics[height=3cm]{../lezione12/img5.PNG}
+    \end{center}
     diagramma di bode della fase: Anche il diagramma di bode della fase è una retta orizzontale che coincide con l'asse delle ascisse se $\mu>0$, altrimenti se $\mu<0$ è posta all'altezza di $-180^o$.
 \end{itemize}
