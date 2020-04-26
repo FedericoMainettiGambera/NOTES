@@ -55,7 +55,7 @@
 \contentsline {subsubsection}{\numberline {7.2.3}Matrice A e Stabilità (SD LTI a TC e a TD)}{24}{subsubsection.7.2.3}%
 \contentsline {subsection}{\numberline {7.3}Criteri di stabilità}{25}{subsection.7.3}%
 \contentsline {subsubsection}{\numberline {7.3.1}Criteri di stabilità dedotti dalla matrice A (SD LTI a TC)}{25}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Criterio di stabilità secondo Routh (SD LTI a TC)}{25}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.2}Criterio di stabilità secondo Routh (SD LTI a TC)}{26}{subsubsection.7.3.2}%
 \contentsline {section}{\numberline {8}Segnali e trasformate}{28}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Serie di Fourier}{28}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Trasformata di Fourier}{28}{subsection.8.2}%
@@ -126,5 +126,5 @@
 \contentsline {section}{\numberline {19}Esercitazione 3}{65}{section.19}%
 \contentsline {section}{\numberline {20}Esercitazione 4}{65}{section.20}%
 \contentsline {section}{\numberline {21}Esercitazione 5}{65}{section.21}%
-\contentsline {section}{\numberline {22}Esercitazione 6}{65}{section.22}%
+\contentsline {section}{\numberline {22}Esercitazione 6}{66}{section.22}%
 \contentsline {section}{\numberline {23}Esercitazione 7}{66}{section.23}%
