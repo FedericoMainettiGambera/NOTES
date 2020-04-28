@@ -132,6 +132,7 @@
 \contentsline {subsection}{\numberline {18.3}Ritardi nelle trasformate}{67}{subsection.18.3}%
 \contentsline {section}{\numberline {19}Esercitazione 3}{68}{section.19}%
 \contentsline {section}{\numberline {20}Esercitazione 4}{68}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Regolo delle fasi}{68}{subsection.20.1}%
 \contentsline {section}{\numberline {21}Esercitazione 5}{68}{section.21}%
-\contentsline {section}{\numberline {22}Esercitazione 6}{68}{section.22}%
+\contentsline {section}{\numberline {22}Esercitazione 6}{69}{section.22}%
 \contentsline {section}{\numberline {23}Esercitazione 7}{69}{section.23}%
