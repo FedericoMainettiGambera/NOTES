@@ -47,6 +47,7 @@ I JavaBean sono classi standard con attributi e getter e setter. Grazie all'util
 Farwarding: Una servlet può chiedere a una request un dispatcher, dare al dispatcher una destinazione (Servlet o template) e fare farward, cioè di passare la request a chiunque sia stato detto al dispatcher. Forward è il metodo parallelo rispetto al redirect per la separazione dei compiti.\newline
 Domanda classica da esame: Che differenza c'è fra redirect e farward? Redirect spezza il compito in due request, farward spezza il compito in una sola request, cioè i due componenti condivideranno la stessa request.\newline
 Un tipico esempio di suddivisioni dei compiti: una request viene gestita inizialmente da una Servlet che fa la query alla base di dati, poi trasforma il risultato in una serie di Bean, mette i bean nell'oggetto di scope requeste e poi fa il farwarding al template. \newline
+\url{https://javarevisited.blogspot.com/2011/09/sendredirect-forward-jsp-servlet.html}\newline
 \newline
 Come si organizzano (usanto anche i template) i vari componenti di una applicazione web?\newline
 L'applicazione web viene gestita su due livelli: uno strato che dipende dal web (web tier) e uno strato che non dipende dal web (Logica applicativa e accesso ai dati o Business and data tier). \newline
