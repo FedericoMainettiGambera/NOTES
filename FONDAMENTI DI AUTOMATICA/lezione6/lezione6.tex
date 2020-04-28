@@ -29,6 +29,13 @@ dove possiamo usare $v(0^+)$ se $v$ è discontinua in $0$.\newline
 \renewcommand{\arraystretch}{1}
 \textbf{oss.} Da notare è che la rampa è l'integrale dello scalino, che a sua volta è l'integrale dell'impulso (vedi trasformata di Laplace dell'integrale). Queste prime tre trasformate fanno parte di un gruppo di segnali che prendono il nome di \textbf{segnali canonici}, e sono tutte quelle trasformate di Laplace che valgono $\frac{1}{s^n}$.\newline
 \newline
+\textbf{oss.} Data una funzione $f(t)$ nel dominio del tempo, un ritardo $\tau$ è solitamente espresso come $f(t-\tau)$. Sia $f$ una dei segnali di cui sappiamo le trasformate notevoli, allora la corrispondente trasformata di Laplace è la trasformata di Laplace della funzione $f$ senza il ritardo, moltiplicata per il termine $e^{- \tau s}$ che rappresenta il ritardo (es. $ram(t-\tau) \rightarrow \frac{1}{s^2}e^{- \tau s}$).\newline
+\newline
+\textbf{oss.}  Questo concetto è da tenere a mente anche durante l'operazione inversa di antitrasformazione secondo Heaviside: Heaviside è utilizzato per antitrasformare trasformate di Laplace che sono razionali fratte ($\frac{N(s)}{D(s)}$), ma nel caso in cui la trasformata con cui sto lavorando presenta un termine esponenziale dovrò aggiungere un ritardo. L'importante è tenere la parte razionale fratta separata dalla parte esponenziale, inizialmente si ignora l'esponenziale e si eseguono tutti i passaggi di Heaviside sulla razionale fratta, e, solo alla fine, si aggiunge il ritardo espresso dall'esponenziale:
+\[
+    \mathcal{L}^{-1}[\frac{N(s)}{D(s)}e^{-s \tau}] \rightarrow \;\text{Heaviside di $\frac{N(s)}{D(s)}$ ottengo $y(t)$, poi con $e^{-s \tau}$ aggiungo ritardo $\tau$}\; \rightarrow  y(t- \tau)
+\]
+\newline
 \textbf{oss.}  Notiamo che i segnali trigonometrici sono rappresentabili come esponenziali complessi, per esempio $sin(\omega t) = \frac{e^{j \omega t}- e^{-j \omega t}}{2j} \dots$ e così possiamo ricavare le trasformate di Laplace di tutte le funzioni trigonometriche.
 \subsection{Antitrasformazione secondo Heaviside}
 Questo metodo vale per trasformate di Laplace razionali fratte, cioè trasformate che possono essere scritte come

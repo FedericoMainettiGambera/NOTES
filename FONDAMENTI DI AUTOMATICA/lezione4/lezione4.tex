@@ -212,6 +212,19 @@ Possiamo quindi dedurre dei criteri di stabilità basati sull'analisi degli auto
     \end{cases}$
 \end{itemize}
 \textbf{oss.} Per l'ultimo di questi tre punti, cioè se gli autovalori hanno parte reale nulla o $< 0$, sappiamo che sicuramente il sistema non è asintoticamente stabile. Per capire se si tratta di un sistema stabile o instabile bisogna andare a calcolare il movimento libero (per un genrico ingresso $x(0)$) e vederne il comportamento per $t \rightarrow \infty$. Se il movimento libero rimane sempre limitato allora il sistema è stabile, se il movimento libero diverge (anche una sola delle componenti del movimento libero) allora il sistema è instabile (Puoi trovare degli esempi di esercizi nell'esercitazione $1$, es. 2 e es. 3). \newline
+Esiste anche un altro metodo (per capire meglio questo esempio guardare l'esercitazione 2 es. 9) per capire se il sistema è stabile o instabile: guardando la matrice di Jordan, se il più grande miniblocco di Jordan ha dimensione $1$ allora il sistema è stabile, altrimenti è instabile. Un buon metodo per ricordarlo è usare i seguenti due esempi che abbiamo visto  (a esercitazione):
+\[
+    \left[\begin{matrix}
+        0 & 0 \\
+        0 & 0
+    \end{matrix}\right] \;\;\text{ha due miniblocchi di dimensione 1 e quindi è semplicemente stabile}\;
+\]
+\[
+    \left[\begin{matrix}
+        0&1\\
+        0&0
+    \end{matrix}\right] \;\; \text{ha un miniblocco di dimensione 2 e quindi è instabile}\;
+\]
 \newline
 Noi saremo prevalentemente interessati a sistemi asintoticamente stabili, per cui è importante che tutti gli autovalori di $A$ abbiano parte reale negativa.
 \subsubsection*{caso a tempo discreto (TD) e A diagonalizzabile}

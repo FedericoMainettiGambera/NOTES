@@ -8,6 +8,10 @@ Contenuto:
     \item Equilibrio;
     \item Stabilità per sistemi non lineari (linearizzazione);
     \item Linearizzazione di sistemi non lineari;
+    \item Calcolo del movimento con la funzione di trasferimento;
+    \item Heaviside con ritardi;
+    \item Realizzazione;
+    \item Relazione stabilità e Forma di Jordan).
 \end{itemize}
 \subsection{Stabilità per sistemi non lineari}
 Vediamo il caso generico per come calcolare la matrice $A$ nell'intorno di un equilibrio per un sistema non lineare con due variabili di stato:\newline
@@ -93,3 +97,10 @@ Una volta determinati tutti questi valori, per scrivere il sistema linearizzato 
 con $ \delta u = u - \bar{u}$, $\delta x = x -\left[\begin{matrix}
     \bar{x}_1 \\ \bar{x}_2
 \end{matrix}\right]$, $ \delta y = y - \bar{y}$.
+\subsection{Ritardi nelle trasformate}
+Data una funzione $f(t)$ nel dominio del tempo, un ritardo $\tau$ è solitamente espresso come $f(t-\tau)$. Sia $f$ una dei segnali di cui sappiamo le trasformate notevoli, allora la corrispondente trasformata di Laplace è la trasformata di Laplace della funzione $f$ senza il ritardo, moltiplicata per il termine $e^{- \tau s}$ che rappresenta il ritardo (es. $ram(t-\tau) \rightarrow \frac{1}{s^2}e^{- \tau s}$).\newline
+\newline
+Questo concetto è da tenere a mente anche durante l'operazione inversa di antitrasformazione secondo Heaviside: Heaviside è utilizzato per antitrasformare trasformate di Laplace che sono razionali fratte ($\frac{N(s)}{D(s)}$), ma nel caso in cui la trasformata con cui sto lavorando presenta un termine esponenziale dovrò aggiungere un ritardo. L'importante è tenere la parte razionale fratta separata dalla parte esponenziale, inizialmente si ignora l'esponenziale e si eseguono tutti i passaggi di Heaviside sulla razionale fratta, e, solo alla fine, si aggiunge il ritardo espresso dall'esponenziale:
+\[
+    \mathcal{L}^{-1}[\frac{N(s)}{D(s)}e^{-s \tau}] \rightarrow \;\text{Heaviside di $\frac{N(s)}{D(s)}$ ottengo $y(t)$, poi con $e^{-s \tau}$ aggiungo ritardo $\tau$}\; \rightarrow  y(t- \tau)
+\]
