@@ -2,4 +2,94 @@
 \title{LEZIONE 9 24/03/2020}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/c0596b77-fd44-467c-8085-683611779644?list=user&userId=faa91214-a6f5-40d7-8875-253fd49b8ce1}{clicca qui}\newline
 \newline
-Appunti del prof con annotazioni \url{../pdf/FdA-L09-2020.03.24.pdf}
+Appunti del prof con annotazioni \url{../pdf/FdA-L09-2020.03.24.pdf}\newline
+Contenuto:
+\begin{itemize}
+    \item Equilibrio;
+    \item Stabilità per sistemi non lineari (linearizzazione);
+    \item Linearizzazione di sistemi non lineari;
+\end{itemize}
+\subsection{Stabilità per sistemi non lineari}
+Vediamo il caso generico per come calcolare la matrice $A$ nell'intorno di un equilibrio per un sistema non lineare con due variabili di stato:\newline
+\newline
+Dato un sistema non lineare $\begin{cases}
+    \dot{x}_1 = a_{11}x_1 + a_{12}x_2 + b_{1}u\\ 
+    \dot{x}_2 = a_{21}x_1 + a_{22}x_2 +b_2u\\
+    y = c_1x_1 + c_2x_2 + d
+\end{cases}$, e determinati i suoi equilibri $\bar{x} = \left[\begin{matrix}
+    \bar{x}_1\\\bar{x}_2
+\end{matrix}\right]$ per l'uscita $\bar{u}$, la matrice $A$ linearizzata all'equilibrio si ottiene nel seguente modo:
+\begin{itemize}
+    \item Si calcola la matrice delle derivate parziali
+    \[
+        f_x = \left[\begin{matrix}
+            \frac{\delta f}{\delta x_1} (a_{11}x_1) & \frac{\delta f}{\delta x_2} (a_{12}x_2)\\
+            \frac{\delta f}{\delta x_1} (a_{21}x_1) & \frac{\delta f}{\delta x_2} (a_{22}x_2)
+        \end{matrix}\right]
+    \]
+    \item Per trovare la matrice $A$ linearizzata nell'intorno di uno dei suoi equilibri è sufficiente sostituire i valori dell'equilibrio e dell'uscita all'interno di questa matrice.
+\end{itemize}
+\textbf{oss.} Una volta stabilita la matrice $A$ del sistema linearizzato, è possibile procedere con l'analisi della stabilità. Per i sistemi non lineari i procedimenti da seguire sono i seguenti:
+\begin{itemize}
+    \item Se il sistema linearizzato nell'intorno di un equilibrio è asintoticamente stabile, allora l'equilibrio è asintoticamente stabile e per capirlo si usano i soliti criteri per la matrice $A$;
+    \item Se il sistema linearizzato nell'intorno di un quilibrio ha almeno un autovalore con parte reale positiva, allora l'equilibrio è instabile.
+    \item In tutti gli altri casi non si può dire nulla (la soluzione dipende da termini di sviluppo in serie maggiori del primo), non ci verrà richiesto in esame!
+\end{itemize}
+\textbf{oss.} Per i sistemi non lineari la stabilità non è una proprietà del sistema, quindi gli equilibri non condividono per forza la stessa "tipologia" di stabilità (AS/S/I). Di conseguenza è necessario analizzare la stabilità per ciascuno degli equilibri.
+\subsection{Linearizzazione di un sistema non lineare nell'intorno di un equilibrio}
+Dato un sistema non lineare 
+\[
+    S: \begin{cases}
+        \dot{x} = f(x, u)\\ y = g(x,u)
+    \end{cases}
+\]
+La sua linearizzazione è della forma:
+\[
+    \mathcal{L}^\delta : \begin{cases}
+        \delta \dot{x} = f_x |_{\bar{x},\bar{u}} \delta x + f_u|_{\bar{x},\bar{u}} \delta u\\
+        \delta y = g_x|_{\bar{x},\bar{u}} \delta x + g_u |_{\bar{x},\bar{u}} \delta u
+    \end{cases}
+\]
+con $ \delta u = u - \bar{u}$, $\delta x = x -\bar{x}$, $ \delta y = y - \bar{y}$.\newline
+\newline
+Bisogna ora calcolare $f_u$, $f_x$, $g_u$ e $g_x$:\newline
+\newline
+Nel caso di sistema scalare i termini $f_u$, $f_x$, $g_u$ e $g_x$ sono le varie dervate parziali.\newline
+\newline
+Vediamo ora il caso in cui il sistema non è scalare, ma matriciale, per esempio prendiamo il caso a due dimensioni in cui il sistema è della forma $\begin{cases}
+    \dot{x}_1 = f_1(x_1, x_2, u)\\ 
+    \dot{x}_2 = f_2(x_1,x_2, u)\\
+    y = g(x_1,x_2)
+\end{cases}$.
+\[
+    f_x=\left[\begin{matrix}
+        \frac{\delta f}{\delta x_1} (f_1) & \frac{\delta f}{\delta x_2} (f_1)\\
+        \frac{\delta f}{\delta x_1} (f_2) & \frac{\delta f}{\delta x_2} (f_2)
+    \end{matrix}\right]
+\]
+\[
+    f_u = \left[\begin{matrix}
+        \frac{\delta f}{\delta u} (f_1)\\
+        \frac{\delta f}{\delta u} (f_2)
+    \end{matrix}\right]
+\]
+\[
+    g_x = \left[\begin{matrix}
+        \frac{\delta f}{\delta x_1} (g) & \frac{\delta f}{\delta x_2} (g)
+    \end{matrix}\right]
+\]
+\[
+    g_u = \frac{\delta f}{\delta u} (g)
+\]
+Una volta determinati tutti questi valori, per scrivere il sistema linearizzato nell'intorno di un equilibrio $\bar{x} = \left[\begin{matrix}
+    \bar{x}_1 \\ \bar{x}_2
+\end{matrix}\right]$ per l'ingresso $\bar{u}$ e uscita $\bar{y}$ è sufficiente sostituire i valori:
+\[
+    \begin{cases}
+        \delta \dot{x} = f_x|_{x_1 = \bar{x}_1, x_2 = \bar{x}_2} \delta x + f_u|_{u = \bar{u}}\delta u\\
+        \delta y = g_x|_{x_1 = \bar{x}_1, x_2 = \bar{x}_2} \delta x + g_u|_{u = \bar{u}} \delta u
+    \end{cases}
+\]
+con $ \delta u = u - \bar{u}$, $\delta x = x -\left[\begin{matrix}
+    \bar{x}_1 \\ \bar{x}_2
+\end{matrix}\right]$, $ \delta y = y - \bar{y}$.
