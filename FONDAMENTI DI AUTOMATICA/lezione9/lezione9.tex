@@ -17,18 +17,18 @@ Contenuto:
 Vediamo il caso generico per come calcolare la matrice $A$ nell'intorno di un equilibrio per un sistema non lineare con due variabili di stato:\newline
 \newline
 Dato un sistema non lineare $\begin{cases}
-    \dot{x}_1 = a_{11}x_1 + a_{12}x_2 + b_{1}u\\ 
-    \dot{x}_2 = a_{21}x_1 + a_{22}x_2 +b_2u\\
-    y = c_1x_1 + c_2x_2 + d
+    \dot{x}_1 = a_{11}x_1 + a_{12}x_2 + b_{1}u = f_1\\ 
+    \dot{x}_2 = a_{21}x_1 + a_{22}x_2 +b_2u =f_2\\
+    y = c_1x_1 + c_2x_2 + d = g
 \end{cases}$, e determinati i suoi equilibri $\bar{x} = \left[\begin{matrix}
     \bar{x}_1\\\bar{x}_2
 \end{matrix}\right]$ per l'uscita $\bar{u}$, la matrice $A$ linearizzata all'equilibrio si ottiene nel seguente modo:
 \begin{itemize}
     \item Si calcola la matrice delle derivate parziali
     \[
-        f_x = \left[\begin{matrix}
-            \frac{\delta f}{\delta x_1} (a_{11}x_1) & \frac{\delta f}{\delta x_2} (a_{12}x_2)\\
-            \frac{\delta f}{\delta x_1} (a_{21}x_1) & \frac{\delta f}{\delta x_2} (a_{22}x_2)
+        f_x=\left[\begin{matrix}
+            \frac{\delta f}{\delta x_1} (f_1) & \frac{\delta f}{\delta x_2} (f_1)\\
+            \frac{\delta f}{\delta x_1} (f_2) & \frac{\delta f}{\delta x_2} (f_2)
         \end{matrix}\right]
     \]
     \item Per trovare la matrice $A$ linearizzata nell'intorno di uno dei suoi equilibri è sufficiente sostituire i valori dell'equilibrio e dell'uscita all'interno di questa matrice.
