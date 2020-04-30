@@ -1,10 +1,21 @@
 \BOOKMARK [1][-]{section.1}{L01-Introduzione}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Introduzione}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{Sistema termodinamico}{section.1}% 3
-\BOOKMARK [1][-]{section.2}{L01-Principi di conservazione}{}% 4
-\BOOKMARK [1][-]{section.3}{L01-Trasformazioni}{}% 5
-\BOOKMARK [1][-]{section.4}{L01-Sistemi bifase}{}% 6
-\BOOKMARK [1][-]{section.5}{L01-Macchine termodinamiche}{}% 7
-\BOOKMARK [1][-]{section.6}{L01-Sistemi aperti}{}% 8
-\BOOKMARK [1][-]{section.7}{L01-Cicli a gas}{}% 9
-\BOOKMARK [1][-]{section.8}{L08-Cicli a vapore}{}% 10
+\BOOKMARK [2][-]{subsection.1.3}{Il sistema semplice}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Stato di equilibrio}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Variabili termodinamiche}{subsection.1.4}% 6
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Legge di Duhem}{subsection.1.4}% 7
+\BOOKMARK [3][-]{subsubsection.1.4.3}{Regola di Gibbs}{subsection.1.4}% 8
+\BOOKMARK [2][-]{subsection.1.5}{Tipologie di sistemi termodinamici}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.6}{Trasformazioni termodinamiche}{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.7}{Equazione di stato}{section.1}% 11
+\BOOKMARK [3][-]{subsubsection.1.7.1}{Equazione di stato per i gas ideali}{subsection.1.7}% 12
+\BOOKMARK [3][-]{subsubsection.1.7.2}{Equazione di stato per i gas reali}{subsection.1.7}% 13
+\BOOKMARK [3][-]{subsubsection.1.7.3}{Equazione di stato per liquidi e solidi}{subsection.1.7}% 14
+\BOOKMARK [1][-]{section.2}{L01-Principi di conservazione}{}% 15
+\BOOKMARK [1][-]{section.3}{L01-Trasformazioni}{}% 16
+\BOOKMARK [1][-]{section.4}{L01-Sistemi bifase}{}% 17
+\BOOKMARK [1][-]{section.5}{L01-Macchine termodinamiche}{}% 18
+\BOOKMARK [1][-]{section.6}{L01-Sistemi aperti}{}% 19
+\BOOKMARK [1][-]{section.7}{L01-Cicli a gas}{}% 20
+\BOOKMARK [1][-]{section.8}{L08-Cicli a vapore}{}% 21
