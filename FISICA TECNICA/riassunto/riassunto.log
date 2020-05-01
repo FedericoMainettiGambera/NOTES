@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  30 APR 2020 19:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  1 MAY 2020 03:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,7 +595,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L01/L01.tex
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L01/L01.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
@@ -633,12 +633,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
-<../L01/img1.PNG, id=143, 673.76718pt x 129.48375pt>
+<../L01/img1.PNG, id=240, 673.76718pt x 129.48375pt>
 File: ../L01/img1.PNG Graphic file (type png)
 <use ../L01/img1.PNG>
 Package pdftex.def Info: ../L01/img1.PNG  used on input line 40.
 (pdftex.def)             Requested size: 296.10892pt x 56.9055pt.
-[2]
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 42--48
 
  []
@@ -653,12 +653,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--58
 
  []
 
-<../L01/img2.PNG, id=154, 599.23875pt x 260.47313pt>
+<../L01/img2.PNG, id=249, 599.23875pt x 260.47313pt>
 File: ../L01/img2.PNG Graphic file (type png)
 <use ../L01/img2.PNG>
 Package pdftex.def Info: ../L01/img2.PNG  used on input line 61.
 (pdftex.def)             Requested size: 261.82799pt x 113.81102pt.
-<../L01/img3.PNG, id=155, 637.63219pt x 257.46187pt>
+<../L01/img3.PNG, id=250, 637.63219pt x 257.46187pt>
 File: ../L01/img3.PNG Graphic file (type png)
 <use ../L01/img3.PNG>
 Package pdftex.def Info: ../L01/img3.PNG  used on input line 67.
@@ -668,47 +668,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--73
 
  []
 
-[3 <../L01/img1.PNG> <../L01/img2.PNG> <../L01/img3.PNG>]
+[4 <../L01/img1.PNG> <../L01/img2.PNG> <../L01/img3.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 84--88
 
  []
 
-<../L01/img4.PNG, id=165, 338.76563pt x 274.77657pt>
+<../L01/img4.PNG, id=260, 338.76563pt x 274.77657pt>
 File: ../L01/img4.PNG Graphic file (type png)
 <use ../L01/img4.PNG>
 Package pdftex.def Info: ../L01/img4.PNG  used on input line 89.
 (pdftex.def)             Requested size: 175.39926pt x 142.26378pt.
-<../L01/img5.PNG, id=166, 321.45094pt x 276.28218pt>
+<../L01/img5.PNG, id=261, 321.45094pt x 276.28218pt>
 File: ../L01/img5.PNG Graphic file (type png)
 <use ../L01/img5.PNG>
 Package pdftex.def Info: ../L01/img5.PNG  used on input line 111.
 (pdftex.def)             Requested size: 165.5221pt x 142.26378pt.
-[4 <../L01/img4.PNG>]
+[5 <../L01/img4.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
-<../L01/img8.PNG, id=176, 508.90125pt x 225.84375pt>
+<../L01/img8.PNG, id=270, 508.90125pt x 225.84375pt>
 File: ../L01/img8.PNG Graphic file (type png)
 <use ../L01/img8.PNG>
 Package pdftex.def Info: ../L01/img8.PNG  used on input line 122.
 (pdftex.def)             Requested size: 192.34395pt x 85.35826pt.
-<../L01/img6.PNG, id=177, 319.94531pt x 271.0125pt>
+<../L01/img6.PNG, id=271, 319.94531pt x 271.0125pt>
 File: ../L01/img6.PNG Graphic file (type png)
 <use ../L01/img6.PNG>
 Package pdftex.def Info: ../L01/img6.PNG  used on input line 125.
 (pdftex.def)             Requested size: 167.95427pt x 142.26378pt.
-<../L01/img9.PNG, id=178, 395.97937pt x 131.74219pt>
+<../L01/img9.PNG, id=272, 395.97937pt x 131.74219pt>
 File: ../L01/img9.PNG Graphic file (type png)
 <use ../L01/img9.PNG>
 Package pdftex.def Info: ../L01/img9.PNG  used on input line 139.
 (pdftex.def)             Requested size: 256.5739pt x 85.35826pt.
-<../L01/img7.PNG, id=179, 350.81062pt x 300.3722pt>
+<../L01/img7.PNG, id=273, 350.81062pt x 300.3722pt>
 File: ../L01/img7.PNG Graphic file (type png)
 <use ../L01/img7.PNG>
 Package pdftex.def Info: ../L01/img7.PNG  used on input line 142.
 (pdftex.def)             Requested size: 166.155pt x 142.26378pt.
-[5 <../L01/img5.PNG> <../L01/img8.PNG> <../L01/img6.PNG> <../L01/img9.PNG>]) [6 <../L01/img7.PNG>] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L02/L02.tex
+[6 <../L01/img5.PNG> <../L01/img8.PNG> <../L01/img6.PNG> <../L01/img9.PNG>]) [7 <../L01/img7.PNG>] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L02/L02.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
 
  []
@@ -728,33 +728,196 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--31
 
  []
 
-[7]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 84--89
 
  []
 
-) [8] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L03/L03.tex) [9] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/L04.tex) [10] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L05/L05.tex) [11] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L06/L06.tex) [12] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L07/L07.tex) [13] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L08/L08.tex) [14]
+) [9] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L03/L03.tex
+<../L03/img1.PNG, id=300, 265.74281pt x 149.8097pt>
+File: ../L03/img1.PNG Graphic file (type png)
+<use ../L03/img1.PNG>
+Package pdftex.def Info: ../L03/img1.PNG  used on input line 9.
+(pdftex.def)             Requested size: 151.4182pt x 85.35826pt.
+<../L03/img2.PNG, id=301, 267.24844pt x 147.55125pt>
+File: ../L03/img2.PNG Graphic file (type png)
+<use ../L03/img2.PNG>
+Package pdftex.def Info: ../L03/img2.PNG  used on input line 24.
+(pdftex.def)             Requested size: 103.06834pt x 56.9055pt.
+<../L03/img3.PNG, id=302, 324.46219pt x 149.8097pt>
+File: ../L03/img3.PNG Graphic file (type png)
+<use ../L03/img3.PNG>
+Package pdftex.def Info: ../L03/img3.PNG  used on input line 28.
+(pdftex.def)             Requested size: 123.24739pt x 56.9055pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
+
+ []
+
+<../L03/img4.PNG, id=303, 284.56313pt x 296.60812pt>
+File: ../L03/img4.PNG Graphic file (type png)
+<use ../L03/img4.PNG>
+Package pdftex.def Info: ../L03/img4.PNG  used on input line 34.
+(pdftex.def)             Requested size: 136.48888pt x 142.26378pt.
+[10 <../L03/img1.PNG> <../L03/img2.PNG> <../L03/img3.PNG>]
+<../L03/img5.PNG, id=311, 598.48593pt x 262.73157pt>
+File: ../L03/img5.PNG Graphic file (type png)
+<use ../L03/img5.PNG>
+Package pdftex.def Info: ../L03/img5.PNG  used on input line 41.
+(pdftex.def)             Requested size: 194.4417pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 67.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 67.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 67.
+
+[11 <../L03/img4.PNG> <../L03/img5.PNG>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 113.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 113.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 113.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 113.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 113.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 113.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 117.
+
+) [12] [13] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/L04.tex) [14] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L05/L05.tex) [15] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L06/L06.tex) [16] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L07/L07.tex) [17] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L08/L08.tex) [18]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
 Package rerunfilecheck Info: File `riassunto.out' has not changed.
-(rerunfilecheck)             Checksum: 9B79D2D0C4C9CE0470307FCCFECB33CE;1895.
+(rerunfilecheck)             Checksum: 67113915B7E1EEC9C728E160C6FF57DB;3609.
  ) 
 Here is how much of TeX's memory you used:
- 18289 strings out of 480994
- 334632 string characters out of 5916032
- 599733 words of memory out of 5000000
- 33317 multiletter control sequences out of 15000+600000
+ 18356 strings out of 480994
+ 335855 string characters out of 5916032
+ 603732 words of memory out of 5000000
+ 33362 multiletter control sequences out of 15000+600000
  541898 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,77p,885b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" (14 pages, 478051 bytes).
+Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" (18 pages, 544526 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 248 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 422 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 427 words of extra memory for PDF output out of 10000 (max. 10000000)
 
