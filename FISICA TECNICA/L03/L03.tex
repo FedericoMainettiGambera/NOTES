@@ -119,11 +119,134 @@ Per calcolare i calori specifici si usano le seguenti relazioni:
     c_V = c_P = c = \text{costante}
 \]
 \subsection{Le trasformazioni politropiche}
+Una \textbf{trasformazione politropica} è una trasformazione \textbf{quasi-statica}, cioè internamente reversibile, di un \textbf{gas ideale} per la quale $c_x = $ costante.\newline
+\newline
+Si definisce \textbf{indice della politropica}:
+\[
+    n = \frac{c_x-c_P}{c_x-c_V}
+\]
+e l' \textbf{equazione della politropica}:
+\[
+    Pv^n = \text{costante}
+\]
 \subsubsection{Trasformazione politropica per un gas ideale}
+Per un gas ideale il valore di $n$ è calcolabile
+\begin{center}
+    \includegraphics[height=3cm]{../L03/img6.PNG}
+\end{center}
 \subsubsection{Trasformazione politropica per un gas perfetto}
+Per un gas perfetto il valore di $n$ è calcolabile
+\begin{center}
+    \includegraphics[height=3cm]{../L03/img7.PNG}
+\end{center}
 \subsubsection{Espressioni della politropica}
+\[
+    Pv^n = costante
+\]
+\[
+    Tv^{n-1} = costante
+\]
+\[
+    PT^{\frac{n}{1-n}} = costante
+\]
+\[
+    Pvv^{n-1} = costante
+\]
+\[
+    T\left(\frac{R^*T}{P}\right)?{n-1}= costante
+\]
+\[
+    \frac{T^n}{P^{n-1}} = costante
+\]
 \subsubsection{Politropiche per trasformazioni elementari}
-\subsubsection{Lavoro lunga una generica politropica}
+\begin{center}
+    \begin{tabular}{ |c|c|c|c| } 
+    \hline
+    Trasformazione & $c_x$ & $n = \frac{c_x - x_P}{c_x - c_V}$ \\
+    \hline
+    Isoterma ($T = costante$) & $\pm \infty$ & $1$ \\ 
+    Isocora ($v = costante$) & $c_V$ & $\pm \infty$\\ 
+    Isobara ($P = costante$) & $c_P$ & $0$\\ 
+    Adiabatica ($q = costante$) & $0$ & $k= \frac{c_P}{c_V}$\\ 
+    \hline
+    \end{tabular}
+    \end{center}
+\subsubsection{Lavoro di una generica politropica}
+\begin{itemize}
+    \item per $n\neq 1$ 
+    \[
+        l^\rightarrow = \frac{P_1 v_1}{n-1}\left[1- \left(\frac{v_1}{v_2}\right)^{n-1}\right]
+    \]
+    \[
+        l^\rightarrow = \frac{P_1 v_1}{n-1}\left[1- \left(\frac{P_2}{P_1}\right)^{\frac{n-1}{n}}\right]
+    \]
+    \item per $n = 1$
+    \[
+        l^\rightarrow = P_1v_1 ln \frac{v_2}{v_1}
+    \]
+    \[
+        l^\rightarrow = P_1 v_1 ln \frac{P_1}{P_2}
+    \]
+\end{itemize}
 \subsubsection{Politropiche nel diagramma T-S}
-\subsection{Calcolo delle grandezze termodinamiche}
-\dots
+In un diagramma T-S, l'\textbf{area sottesa dalla curva} rappresentativa di una trasformazione \textbf{internamente reversibile} è uguale al \textbf{calore} scambiato dal sistema nella trasformazione:
+\[
+    Q_{rev} = \int_{i}^{f}\delta Q_{rev} = \int_{i}^{f} T(S)dS
+\]
+\begin{center}
+    \includegraphics[height=3cm]{../L03/img8.PNG}
+\end{center}
+Per una trasformazione \textbf{ciclica} e \textbf{internamente reversibile}, le aree incluse nelle curve chiuse rappresentative del ciclo nei diagrammi P-V e T-S sono \textbf{uguali}, essendo, per il primo principio $L^\rightarrow  = Q^\leftarrow $
+\begin{center}
+    \includegraphics[height=3cm]{../L03/img9.PNG}
+\end{center}
+Nel piano T-S (o T-s) tutte le \textbf{politropiche} sono rappresentate da \textbf{esponenziali}:
+\[
+    T = T_0 e^{\frac{s-s_0}{c_x}}
+\]
+\begin{itemize}
+    \item \textbf{Isoterme}: avendo $c_x = \infty$, sono \textbf{rette orizzontali} e così, per il \textbf{gas ideale}, anche le isoentalpiche dato che $h = h(T)$.
+    \item \textbf{Adiabatiche reversibili (isoentalpiche)} invece sono \textbf{rette verticali} visto che $c_x = 0$.
+    \item \textbf{Isocore}, essendo $c_V< c_P$ sono \textbf{più ripide} delle \textbf{isobare}.
+\end{itemize}
+\begin{center}
+    \includegraphics[height=5cm]{../L03/img10.PNG}
+\end{center}
+\subsection{Tabella per il calcolo di grandezze termodinamiche}
+Per il calcolo dell'\textbf{energia interna}:
+\begin{itemize}
+    \item Per i \textbf{gas perfetti}: $\Delta u = c_v \Delta T$
+    \item Per i \textbf{liquidi (e solidi) incomprimibili perfetti} ($v = costante$): $\Delta u = c \Delta T$
+\end{itemize}
+\ \newline
+\newline
+Per il calcolo dell'\textbf{entalpia}:
+\begin{itemize}
+    \item Per i \textbf{gas perfetti}: $\Delta h = c_P \Delta T$
+\end{itemize}
+\ \newline
+\newline
+Per il calcolo di \textbf{lavoro} e \textbf{calore} per \textbf{sistemi chiusi}, \textbf{determinate trasformazioni} e \textbf{GAS PERFETTI}:
+\begin{center}
+    \includegraphics[height=7cm]{../L03/img11.PNG}
+\end{center}
+\ \newline
+Per il calcolo dell'\textbf{entropia}:
+\begin{itemize}
+    \item Per un \textbf{generico sistema}: $\delta s = \frac{du}{T} + \frac{P}{T} dv$
+    \item Per \textbf{gas ideali}: $ds = c_V \frac{dT}{T} + R^* \frac{dv}{v}$
+    \item per \textbf{gas perfetti} ($c_V = costante$ e $c_P = costante$) possiamo integrare l'espressione e otteniamo: \newline
+    \[
+        \begin{matrix}
+            \Delta s = s_2-s_1 &= c_V ln \frac{T_2}{T_1} + R^* ln \frac{v_2}{v_1} =\\
+            \ \\
+            &= c_P ln \frac{T_2}{T_1} - R^* ln \frac{P_2}{P_1} =\\
+            \ \\
+            &= c_P ln \frac{v_2}{v_1} + c_V ln \frac{P_2}{P_1}
+        \end{matrix}
+    \]
+    \item per \textbf{liquidi (e solidi) incomprimibili perfetti} ($v = costante$): 
+    \[
+        \Delta s = s_2-s_1 = c ln \frac{T_2}{T_1}
+    \]
+\end{itemize}
