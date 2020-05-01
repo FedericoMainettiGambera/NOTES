@@ -17,7 +17,7 @@ Il lavoro termodinamico è dunque calcolabile come
 \[
     l^\rightarrow = \int_{i}^{f}Pdv
 \]
-che è un integrale calcolabile solo se si conosce la funzione $P = P (v)$ detta equazione della trasformazione, che si può ricavare dall'equazione di stato.
+che è un integrale calcolabile solo se si conosce la funzione $P = P (v)$ detta equazione della trasformazione.
 \subsubsection{Il lavoro termodinamico nelle trasformazioni reversibili e irreversibile}
 Nel caso di trasformazione \textbf{reversibile} in un cilindro-pistone la pressione interna è sempre omogenea all'interno del cilindro.
 \begin{center}
@@ -51,7 +51,7 @@ piano $PV$ chiamiamo macchine a \textbf{ciclo diretto} (motrici) quelle che eseg
 \]
 I calori specifici possono essere interpretati come \textbf{derivate parziali di funzioni termodinamiche}.\newline
 \newline
-Il pedice $x$ precisa la \textbf{trasformazione} lungo la quale viene scambiato il calore $\delta Q$. Vediamo i casi in cui $x$ è la pressione e $x$ è il volume.
+Il pedice $x$ precisa la \textbf{trasformazione} lungo la quale viene scambiato il calore $\delta Q$. Vediamo i casi in cui $x$ è la pressione e il caso in cui è il volume.
 \subsubsection{Calori specifici a volume costante $c_V$}
 \[
     c_V =\frac{1}{M}\left(\frac{\delta Q^\leftarrow }{dT}\right)_V = \left(\frac{\delta q^\leftarrow }{dT}\right)_V
@@ -83,10 +83,10 @@ Siccome è una \textbf{derivata di una funzione di stato}, può in generale esse
 \subsubsection{$c_V$ e $c_P$ per i gas ideali}
 Per un gas ideale la variazione di energia interna e l'entalpia sono funzioni della sola temperatura $u = u(T)$ e $h = h(T)$, per cui i calori specifici da derivate parziali diventano derivate esatte:
 \[
-    c_V = c_V(T) = \left(\frac{\delta u}{\delta T}\right)
+    c_V = c_V(T) = \left(\frac{d u}{d T}\right)
 \]
 \[
-    c_P = c_P(T) = \left( \frac{\delta h}{ \delta T}\right)
+    c_P = c_P(T) = \left( \frac{d h}{ d T}\right)
 \]
 Vale inoltre la \textbf{realzione di Mayer}
 \[
@@ -153,7 +153,7 @@ Per un gas perfetto il valore di $n$ è calcolabile
     Pvv^{n-1} = costante
 \]
 \[
-    T\left(\frac{R^*T}{P}\right)?{n-1}= costante
+    T\left(\frac{R^*T}{P}\right)^{n-1}= costante
 \]
 \[
     \frac{T^n}{P^{n-1}} = costante
@@ -212,7 +212,7 @@ Nel piano T-S (o T-s) tutte le \textbf{politropiche} sono rappresentate da \text
 \begin{center}
     \includegraphics[height=5cm]{../L03/img10.PNG}
 \end{center}
-\subsection{Tabella per il calcolo di grandezze termodinamiche}
+\subsection{Calcolo di grandezze termodinamiche ($u, h, s, l, q$)}
 Per il calcolo dell'\textbf{energia interna}:
 \begin{itemize}
     \item Per i \textbf{gas perfetti}: $\Delta u = c_v \Delta T$

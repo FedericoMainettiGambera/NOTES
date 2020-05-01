@@ -28,18 +28,18 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Calori specifici a pressione costante $c_P$}{12}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}$c_V$ e $c_P$ per i gas ideali}{12}{subsubsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.4}$c_V$ e $c_P$ per i gas perfetti}{12}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}$c_V$ e $c_P$ per i liqudi (e solidi) incomprimibili ideali}{12}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}$c_V$ e $c_P$ per i liqudi (e solidi) incomprimibili perfetti}{12}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.5}$c_V$ e $c_P$ per i liqudi (e solidi) incomprimibili ideali}{13}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}$c_V$ e $c_P$ per i liqudi (e solidi) incomprimibili perfetti}{13}{subsubsection.3.2.6}%
 \contentsline {subsection}{\numberline {3.3}Le trasformazioni politropiche}{13}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Trasformazione politropica per un gas ideale}{13}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Trasformazione politropica per un gas perfetto}{13}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Espressioni della politropica}{13}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}Politropiche per trasformazioni elementari}{13}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.4}Politropiche per trasformazioni elementari}{14}{subsubsection.3.3.4}%
 \contentsline {subsubsection}{\numberline {3.3.5}Lavoro di una generica politropica}{14}{subsubsection.3.3.5}%
 \contentsline {subsubsection}{\numberline {3.3.6}Politropiche nel diagramma T-S}{14}{subsubsection.3.3.6}%
-\contentsline {subsection}{\numberline {3.4}Tabella per il calcolo di grandezze termodinamiche}{15}{subsection.3.4}%
-\contentsline {section}{\numberline {4}L04-Sistemi bifase}{16}{section.4}%
-\contentsline {section}{\numberline {5}L05-Macchine termodinamiche}{17}{section.5}%
-\contentsline {section}{\numberline {6}L06-Sistemi aperti}{18}{section.6}%
-\contentsline {section}{\numberline {7}L07-Cicli a gas}{19}{section.7}%
-\contentsline {section}{\numberline {8}L08-Cicli a vapore}{20}{section.8}%
+\contentsline {subsection}{\numberline {3.4}Calcolo di grandezze termodinamiche ($u, h, s, l, q$)}{15}{subsection.3.4}%
+\contentsline {section}{\numberline {4}L04-Sistemi bifase}{17}{section.4}%
+\contentsline {section}{\numberline {5}L05-Macchine termodinamiche}{18}{section.5}%
+\contentsline {section}{\numberline {6}L06-Sistemi aperti}{19}{section.6}%
+\contentsline {section}{\numberline {7}L07-Cicli a gas}{20}{section.7}%
+\contentsline {section}{\numberline {8}L08-Cicli a vapore}{21}{section.8}%
