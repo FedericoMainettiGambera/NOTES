@@ -245,7 +245,11 @@ con i valori che troviamo con la tabella di liquido saturo eccetto per la temper
     h(P,T) = h_{ls} (P_{sat}(T)) + v (P-P_{sat}(T))
 \]
 inoltre per $v$ si può usare il valore del liquido saturo fornito dalla tabella $v = v_{ls}(P_{sat}(T))$.\newline
-\newline
+Notiamo che negli esercizi il valore di $v(P-P_{sat}(T))$ è trascurabile e lo approssimiamo a $0$ e quindi la formula diventa:
+\[
+    h(P,T) = h_{ls} (P_{sat}(T))
+\]
+\ \newline
 \textbf{Approccio a pressione costante}:\newline
 \textbf{N.B. non usare questo approccio!}
 \begin{center}
@@ -259,8 +263,8 @@ Se seguiamo il medesimo procedimento di prima ma con pressione fissa, otteniamo:
 \[
     h(P,T) = h_{ls}(P_{sat} (T)) + c (T-T_{sat}(P))
 \]
-che non è valido perchè in genere $c \neq costante$.\newline
-Cosa fare se si conosce $P$ e non $T$? (TODO, vedi esercizio ES 3.1.6)\newline
+che non è valido perchè in genere $c \neq costante$ per pressioni elevate.\newline
+Cosa fare se si conosce $P$ e non $T$? (vedi esercizio ES03-01.6)\newline
 \newline
 \textbf{Caso nel quale si conosce (P,h) e si vuole conoscere T}\newline
 \[

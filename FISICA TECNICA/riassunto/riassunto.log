@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  2 MAY 2020 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  2 MAY 2020 20:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1144,39 +1144,34 @@ File: ../L04/img13.PNG Graphic file (type png)
 <use ../L04/img13.PNG>
 Package pdftex.def Info: ../L04/img13.PNG  used on input line 232.
 (pdftex.def)             Requested size: 137.18484pt x 142.26378pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--251
-
- []
-
 File: ../L04/img13.PNG Graphic file (type png)
 <use ../L04/img13.PNG>
-Package pdftex.def Info: ../L04/img13.PNG  used on input line 252.
+Package pdftex.def Info: ../L04/img13.PNG  used on input line 256.
 (pdftex.def)             Requested size: 137.18484pt x 142.26378pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--266
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 261--266
-
- []
-
 [24 <../L04/img13.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 268--273
+Underfull \hbox (badness 10000) in paragraph at lines 265--270
 
  []
 
 
-Overfull \hbox (4.03767pt too wide) in paragraph at lines 273--273
+Underfull \hbox (badness 10000) in paragraph at lines 265--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+
+ []
+
+
+Overfull \hbox (4.03767pt too wide) in paragraph at lines 277--277
 []\OT1/cmss/bx/n/20.74 Relazioni sem-pli-fi-ca-te vi-ci-no al pun-to tri-
  []
 
 <../L04/img15.PNG, id=541, 283.0575pt x 283.0575pt>
 File: ../L04/img15.PNG Graphic file (type png)
 <use ../L04/img15.PNG>
-Package pdftex.def Info: ../L04/img15.PNG  used on input line 276.
+Package pdftex.def Info: ../L04/img15.PNG  used on input line 280.
 (pdftex.def)             Requested size: 142.26695pt x 142.26378pt.
 [25 <../L04/img15.PNG>]) [26] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L05/L05.tex) [27] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L06/L06.tex) [28] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L07/L07.tex) [29] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L08/L08.tex) [30]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
@@ -1196,7 +1191,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  62i,9n,77p,885b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" (30 pages, 2870382 bytes).
+Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" (30 pages, 2870628 bytes).
 PDF statistics:
  658 PDF objects out of 1000 (max. 8388607)
  533 compressed objects within 6 object streams
