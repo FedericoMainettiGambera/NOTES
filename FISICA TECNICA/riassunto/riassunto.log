@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  1 MAY 2020 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  2 MAY 2020 03:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -600,13 +600,13 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.toc)
+) (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.toc [1
+
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write8
 \openout8 = `riassunto.toc'.
 
- [1
-
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L01/L01.tex
+ [2] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L01/L01.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--16
 
  []
@@ -644,7 +644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
-<../L01/img1.PNG, id=240, 673.76718pt x 129.48375pt>
+<../L01/img1.PNG, id=300, 673.76718pt x 129.48375pt>
 File: ../L01/img1.PNG Graphic file (type png)
 <use ../L01/img1.PNG>
 Package pdftex.def Info: ../L01/img1.PNG  used on input line 40.
@@ -664,12 +664,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--58
 
  []
 
-<../L01/img2.PNG, id=249, 599.23875pt x 260.47313pt>
+<../L01/img2.PNG, id=309, 599.23875pt x 260.47313pt>
 File: ../L01/img2.PNG Graphic file (type png)
 <use ../L01/img2.PNG>
 Package pdftex.def Info: ../L01/img2.PNG  used on input line 61.
 (pdftex.def)             Requested size: 261.82799pt x 113.81102pt.
-<../L01/img3.PNG, id=250, 637.63219pt x 257.46187pt>
+<../L01/img3.PNG, id=310, 637.63219pt x 257.46187pt>
 File: ../L01/img3.PNG Graphic file (type png)
 <use ../L01/img3.PNG>
 Package pdftex.def Info: ../L01/img3.PNG  used on input line 67.
@@ -689,13 +689,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--93
 
  []
 
-<../L01/img4.PNG, id=260, 338.76563pt x 274.77657pt>
+<../L01/img4.PNG, id=320, 338.76563pt x 274.77657pt>
 File: ../L01/img4.PNG Graphic file (type png)
 <use ../L01/img4.PNG>
 Package pdftex.def Info: ../L01/img4.PNG  used on input line 94.
 (pdftex.def)             Requested size: 175.39926pt x 142.26378pt.
 [5 <../L01/img4.PNG>]
-<../L01/img5.PNG, id=267, 321.45094pt x 276.28218pt>
+<../L01/img5.PNG, id=327, 321.45094pt x 276.28218pt>
 File: ../L01/img5.PNG Graphic file (type png)
 <use ../L01/img5.PNG>
 Package pdftex.def Info: ../L01/img5.PNG  used on input line 116.
@@ -705,23 +705,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--122
 
  []
 
-<../L01/img8.PNG, id=268, 508.90125pt x 225.84375pt>
+<../L01/img8.PNG, id=328, 508.90125pt x 225.84375pt>
 File: ../L01/img8.PNG Graphic file (type png)
 <use ../L01/img8.PNG>
 Package pdftex.def Info: ../L01/img8.PNG  used on input line 127.
 (pdftex.def)             Requested size: 192.34395pt x 85.35826pt.
-<../L01/img6.PNG, id=269, 319.94531pt x 271.0125pt>
+<../L01/img6.PNG, id=329, 319.94531pt x 271.0125pt>
 File: ../L01/img6.PNG Graphic file (type png)
 <use ../L01/img6.PNG>
 Package pdftex.def Info: ../L01/img6.PNG  used on input line 130.
 (pdftex.def)             Requested size: 167.95427pt x 142.26378pt.
-<../L01/img9.PNG, id=270, 395.97937pt x 131.74219pt>
+<../L01/img9.PNG, id=330, 395.97937pt x 131.74219pt>
 File: ../L01/img9.PNG Graphic file (type png)
 <use ../L01/img9.PNG>
 Package pdftex.def Info: ../L01/img9.PNG  used on input line 144.
 (pdftex.def)             Requested size: 256.5739pt x 85.35826pt.
 [6 <../L01/img5.PNG> <../L01/img8.PNG> <../L01/img6.PNG>]
-<../L01/img7.PNG, id=281, 350.81062pt x 300.3722pt>
+<../L01/img7.PNG, id=342, 350.81062pt x 300.3722pt>
 File: ../L01/img7.PNG Graphic file (type png)
 <use ../L01/img7.PNG>
 Package pdftex.def Info: ../L01/img7.PNG  used on input line 147.
@@ -752,17 +752,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--89
  []
 
 ) [9] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L03/L03.tex
-<../L03/img1.PNG, id=300, 265.74281pt x 149.8097pt>
+<../L03/img1.PNG, id=361, 265.74281pt x 149.8097pt>
 File: ../L03/img1.PNG Graphic file (type png)
 <use ../L03/img1.PNG>
 Package pdftex.def Info: ../L03/img1.PNG  used on input line 9.
 (pdftex.def)             Requested size: 151.4182pt x 85.35826pt.
-<../L03/img2.PNG, id=301, 267.24844pt x 147.55125pt>
+<../L03/img2.PNG, id=362, 267.24844pt x 147.55125pt>
 File: ../L03/img2.PNG Graphic file (type png)
 <use ../L03/img2.PNG>
 Package pdftex.def Info: ../L03/img2.PNG  used on input line 24.
 (pdftex.def)             Requested size: 103.06834pt x 56.9055pt.
-<../L03/img3.PNG, id=302, 324.46219pt x 149.8097pt>
+<../L03/img3.PNG, id=363, 324.46219pt x 149.8097pt>
 File: ../L03/img3.PNG Graphic file (type png)
 <use ../L03/img3.PNG>
 Package pdftex.def Info: ../L03/img3.PNG  used on input line 28.
@@ -772,13 +772,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
-<../L03/img4.PNG, id=303, 284.56313pt x 296.60812pt>
+<../L03/img4.PNG, id=364, 284.56313pt x 296.60812pt>
 File: ../L03/img4.PNG Graphic file (type png)
 <use ../L03/img4.PNG>
 Package pdftex.def Info: ../L03/img4.PNG  used on input line 34.
 (pdftex.def)             Requested size: 136.48888pt x 142.26378pt.
 [10 <../L03/img1.PNG> <../L03/img2.PNG> <../L03/img3.PNG>]
-<../L03/img5.PNG, id=311, 598.48593pt x 262.73157pt>
+<../L03/img5.PNG, id=372, 598.48593pt x 262.73157pt>
 File: ../L03/img5.PNG Graphic file (type png)
 <use ../L03/img5.PNG>
 Package pdftex.def Info: ../L03/img5.PNG  used on input line 41.
@@ -920,28 +920,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
-<../L03/img6.PNG, id=324, 285.31593pt x 243.15843pt>
+<../L03/img6.PNG, id=385, 285.31593pt x 243.15843pt>
 File: ../L03/img6.PNG Graphic file (type png)
 <use ../L03/img6.PNG>
 Package pdftex.def Info: ../L03/img6.PNG  used on input line 135.
 (pdftex.def)             Requested size: 100.15375pt x 85.35826pt.
-<../L03/img7.PNG, id=325, 526.96875pt x 284.56313pt>
+<../L03/img7.PNG, id=386, 526.96875pt x 284.56313pt>
 File: ../L03/img7.PNG Graphic file (type png)
 <use ../L03/img7.PNG>
 Package pdftex.def Info: ../L03/img7.PNG  used on input line 140.
 (pdftex.def)             Requested size: 158.06772pt x 85.35826pt.
 [13 <../L03/img6.PNG> <../L03/img7.PNG>]
-<../L03/img8.PNG, id=335, 525.46312pt x 338.01282pt>
+<../L03/img8.PNG, id=395, 525.46312pt x 338.01282pt>
 File: ../L03/img8.PNG Graphic file (type png)
 <use ../L03/img8.PNG>
 Package pdftex.def Info: ../L03/img8.PNG  used on input line 197.
 (pdftex.def)             Requested size: 132.69643pt x 85.35826pt.
-<../L03/img9.PNG, id=336, 653.44125pt x 266.49562pt>
+<../L03/img9.PNG, id=396, 653.44125pt x 266.49562pt>
 File: ../L03/img9.PNG Graphic file (type png)
 <use ../L03/img9.PNG>
 Package pdftex.def Info: ../L03/img9.PNG  used on input line 201.
 (pdftex.def)             Requested size: 209.2949pt x 85.35826pt.
-<../L03/img10.PNG, id=337, 684.30656pt x 372.64218pt>
+<../L03/img10.PNG, id=397, 684.30656pt x 372.64218pt>
 File: ../L03/img10.PNG Graphic file (type png)
 <use ../L03/img10.PNG>
 Package pdftex.def Info: ../L03/img10.PNG  used on input line 213.
@@ -969,7 +969,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--230
 
  []
 
-<../L03/img11.PNG, id=344, 466.74374pt x 403.5075pt>
+<../L03/img11.PNG, id=404, 466.74374pt x 403.5075pt>
 File: ../L03/img11.PNG Graphic file (type png)
 <use ../L03/img11.PNG>
 Package pdftex.def Info: ../L03/img11.PNG  used on input line 231.
@@ -979,28 +979,116 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-[15 <../L03/img10.PNG> <../L03/img11.PNG>]) [16] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/L04.tex) [17] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L05/L05.tex) [18] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L06/L06.tex) [19] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L07/L07.tex) [20] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L08/L08.tex) [21]
+[15 <../L03/img10.PNG> <../L03/img11.PNG>]) [16] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/L04.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
+
+ []
+
+
+Overfull \hbox (4.78375pt too wide) in paragraph at lines 38--40
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P; v\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 T; v\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 P; u\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 T; u\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 P; h\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 T; h\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 P; s\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 T; s\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 v; u\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 v; h\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 v; s\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 u; h\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 u; s\OT1/cmr/m/n/10 )  (\OML/cmm/m/it/10 h; s\OT1/cmr/m/n/10 )$ 
+ []
+
+[17]
+<../L04/img2.PNG, id=420, 472.76625pt x 270.25969pt>
+File: ../L04/img2.PNG Graphic file (type png)
+<use ../L04/img2.PNG>
+Package pdftex.def Info: ../L04/img2.PNG  used on input line 85.
+(pdftex.def)             Requested size: 248.86966pt x 142.26378pt.
+<../L04/img1.PNG, id=421, 713.66624pt x 297.36093pt>
+File: ../L04/img1.PNG Graphic file (type png)
+<use ../L04/img1.PNG>
+Package pdftex.def Info: ../L04/img1.PNG  used on input line 88.
+(pdftex.def)             Requested size: 341.42337pt x 142.26378pt.
+<../L04/img3.PNG, id=422, 337.26pt x 351.56343pt>
+File: ../L04/img3.PNG Graphic file (type png)
+<use ../L04/img3.PNG>
+Package pdftex.def Info: ../L04/img3.PNG  used on input line 92.
+(pdftex.def)             Requested size: 191.06172pt x 199.16928pt.
+ [18 <../L04/img2.PNG> <../L04/img1.PNG>]
+<../L04/img4.PNG, id=429, 632.3625pt x 281.55188pt>
+File: ../L04/img4.PNG Graphic file (type png)
+<use ../L04/img4.PNG>
+Package pdftex.def Info: ../L04/img4.PNG  used on input line 97.
+(pdftex.def)             Requested size: 447.33054pt x 199.16928pt.
+
+Overfull \hbox (23.38446pt too wide) in paragraph at lines 97--98
+ [] 
+ []
+
+<../L04/img6.PNG, id=430, 675.27281pt x 292.09125pt>
+File: ../L04/img6.PNG Graphic file (type png)
+<use ../L04/img6.PNG>
+Package pdftex.def Info: ../L04/img6.PNG  used on input line 101.
+(pdftex.def)             Requested size: 394.68782pt x 170.71652pt.
+<../L04/img5.PNG, id=431, 666.99188pt x 308.65312pt>
+File: ../L04/img5.PNG Graphic file (type png)
+<use ../L04/img5.PNG>
+Package pdftex.def Info: ../L04/img5.PNG  used on input line 104.
+(pdftex.def)             Requested size: 430.4151pt x 199.16928pt.
+
+Overfull \hbox (6.46902pt too wide) in paragraph at lines 104--105
+ [] 
+ []
+
+[19 <../L04/img3.PNG> <../L04/img4.PNG> <../L04/img6.PNG>]
+<../L04/img7.PNG, id=440, 676.02562pt x 303.38344pt>
+File: ../L04/img7.PNG Graphic file (type png)
+<use ../L04/img7.PNG>
+Package pdftex.def Info: ../L04/img7.PNG  used on input line 108.
+(pdftex.def)             Requested size: 380.40788pt x 170.71652pt.
+<../L04/img8.PNG, id=441, 694.09312pt x 333.49594pt>
+File: ../L04/img8.PNG Graphic file (type png)
+<use ../L04/img8.PNG>
+Package pdftex.def Info: ../L04/img8.PNG  used on input line 113.
+(pdftex.def)             Requested size: 355.31728pt x 170.71652pt.
+<../L04/img9.PNG, id=442, 394.47375pt x 281.55188pt>
+File: ../L04/img9.PNG Graphic file (type png)
+<use ../L04/img9.PNG>
+Package pdftex.def Info: ../L04/img9.PNG  used on input line 117.
+(pdftex.def)             Requested size: 239.18402pt x 170.71652pt.
+ [20 <../L04/img5.PNG> <../L04/img7.PNG> <../L04/img8.PNG>]
+Overfull \hbox (17.50725pt too wide) in paragraph at lines 120--120
+[]\OT1/cmss/bx/n/20.74 Propriet^^Ra ter-mo-di-na-mi-che dei si-ste-mi ete-
+ []
+
+) [21 <../L04/img9.PNG>] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L05/L05.tex) [22] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L06/L06.tex) [23] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L07/L07.tex) [24] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L08/L08.tex) [25]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
  (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
 Package rerunfilecheck Info: File `riassunto.out' has not changed.
-(rerunfilecheck)             Checksum: 79FEA23A8F5872179216E2BF94AF3998;3621.
+(rerunfilecheck)             Checksum: 8EAAE5803FAAE7410CABBF0C6F2E82F9;4653.
  ) 
 Here is how much of TeX's memory you used:
- 18502 strings out of 480994
- 338107 string characters out of 5916032
- 605939 words of memory out of 5000000
- 33498 multiletter control sequences out of 15000+600000
+ 18575 strings out of 480994
+ 339467 string characters out of 5916032
+ 606938 words of memory out of 5000000
+ 33555 multiletter control sequences out of 15000+600000
  545577 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,77p,885b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,77p,885b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" (21 pages, 852277 bytes).
+Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" (25 pages, 2047596 bytes).
 PDF statistics:
- 459 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 500000)
- 457 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 559 PDF objects out of 1000 (max. 8388607)
+ 450 compressed objects within 5 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 598 words of extra memory for PDF output out of 10000 (max. 10000000)
 

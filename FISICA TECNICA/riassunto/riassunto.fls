@@ -271,8 +271,8 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-OUTPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.toc
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.toc
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L01/L01.tex
 INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L01/L01.tex
@@ -361,6 +361,33 @@ INPUT ../L03/img11.PNG
 INPUT ../L03/img11.PNG
 INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/L04.tex
 INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/L04.tex
+INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/img2.PNG
+INPUT ../L04/img2.PNG
+INPUT ../L04/img2.PNG
+INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/img1.PNG
+INPUT ../L04/img1.PNG
+INPUT ../L04/img1.PNG
+INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/img3.PNG
+INPUT ../L04/img3.PNG
+INPUT ../L04/img3.PNG
+INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/img4.PNG
+INPUT ../L04/img4.PNG
+INPUT ../L04/img4.PNG
+INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/img6.PNG
+INPUT ../L04/img6.PNG
+INPUT ../L04/img6.PNG
+INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/img5.PNG
+INPUT ../L04/img5.PNG
+INPUT ../L04/img5.PNG
+INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/img7.PNG
+INPUT ../L04/img7.PNG
+INPUT ../L04/img7.PNG
+INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/img8.PNG
+INPUT ../L04/img8.PNG
+INPUT ../L04/img8.PNG
+INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L04/img9.PNG
+INPUT ../L04/img9.PNG
+INPUT ../L04/img9.PNG
 INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L05/L05.tex
 INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L05/L05.tex
 INPUT c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../L06/L06.tex
