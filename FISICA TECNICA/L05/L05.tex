@@ -20,7 +20,7 @@ Un tipico esempio di serbatoio di calore e l'atmosfera terrestre.
 Il \textbf{serbatoio di lavoro} è un sistema termodinamico che scambia \textbf{solo lavoro} con l'esterno senza alterare il suo stato termodinamico; gli scambi avvengono con trasformazioni quasi-statiche (\textbf{internamente reversibili}).\newline
 \newline
 Un tipico esempio di serbatoio di lavoro è la rete elettrica.
-\subsubsection{Macchina motrice}
+\subsection{Macchina motrice}
 Per \textbf{macchina ciclica} si intendono macchine che compiono trasformazioni con stato finale e stato iniziale identici e ripetono $n$ volte tale ciclo.\newline
 \newline
 Esistono due schemi principali di macchine cicliche: quelle motrici e quelle operatrici. Vediamo la macchina motrice. \newline
@@ -62,7 +62,7 @@ Per cui deriviamo che
         -\frac{Q_C}{T_C} + \frac{Q_F}{T_F} = S_{irr}
     \end{cases}
 \]
-\textbf{Rendimento}:\newline
+\subsubsection{Rendimento}:\newline
 Da queste equazioni ricaviamo che il lavoro è massimo quando il processo è \textbf{reversibile}, per cui il \textbf{rendimento} è
 \[
     \eta = \frac{\text{EFFETTO UTILE}}{\text{SPESA}}
@@ -73,7 +73,7 @@ La definizione di rendimento si traduce in formule per la macchina motrice così
 \]
 dove $\eta_{reversibile}$ viene utilizzato per calcolare il rendimento massimo che si può avere.\newline
 Queste formule sono valide per serbatoi di calore a temperatura costante, nel momento in cui questa condizione viene meno, non possiamo più usarle, però possiamo sempre usare la definizione di rendimento (effetto utile/ spesa).
-\subsubsection{Macchina operatrice}
+\subsection{Macchina operatrice}
 La \textbf{macchina operatrice} ha un meccanismo opposto alla macchina motrice: usa del lavoro dal \textbf{serbatoio di lavoro} per assorbire calore da un \textbf{serbatoio freddo}, a causa dell'utilizzo di questo lavoro c'è bisogno di rilasciare del calore in un \textbf{serbatoio caldo}.
 \begin{center}
     \includegraphics[height=5cm]{../L05/img3.PNG}
@@ -112,7 +112,7 @@ Per cui deriviamo che
 \]
 \textbf{L'unica cosa che cambia rispetto alla macchina motrice sono i segni}.\newline
 \newline
-\textbf{Efficienza o COP (coefficient of performance)}:\newline
+\subsubsection{Efficienza o COP (coefficient of performance)}:\newline
 Il lavoro è minimo quando il processo è \textbf{reversibile}, per cui l'\textbf{efficienza} è
 \[
     \epsilon = \frac{\text{EFFETTO UTILE}}{\text{SPESA}}
@@ -136,7 +136,7 @@ C'è un legame fra l'efficienza della macchina frigorifera e l'efficienza della 
 \[
     \epsilon_P = \frac{Q_C}{L} = \frac{Q_F+L}{L} = \epsilon_F + 1
 \]
-\subsubsection{Macchina motrice con serbatoio caldo a massa finita}
+\subsection{Macchina motrice con serbatoio caldo a massa finita}
 Fino ad ora abbiamo analizzato il comportamento di macchine termodinamiche con serbatoi a massa infinita e quindi temperatura costatne. Vediamo ora il ragionamento che sta sotto l'analisi di macchine motrici con serbatoio caldp a \textbf{massa finita}.\newline
 \newline
 Per semplificare la trattazione analiziamo \textbf{Macchina motrice con serbatoio caldo a massa finita contenente liquido incomprimibile perfetto} (vediamo il caso con liquido incomprimibile perfetto, ma questo dettaglio ha un impatto irrilevante sulla trattazione, lo usiamo sol oper semplicità di esposizione, si può rieseguire il ragionamento anche con gas perfetti e altro ancora\dots).\newline
@@ -181,8 +181,8 @@ $Q_F = Mc T_F ln \frac{T_1}{T_2}$ valore assoluto.\newline
 $L^\rightarrow  = Q_C^\leftarrow  + Q_F^\leftarrow  = Mc(T_2 -T_1) + Mc T_F ln \frac{T_1}{T_2}$ negativo entrante;\newline
 $L = Q_C- Q_F = Mc (T_1-T_2) - McT_F ln \frac{T_1}{T_2}$ valore assoluto.\newline
 \newline
-Rendimento $\eta = \frac{L}{Q_C}$ e $\eta_{rev} = \frac{L_{rev}}{Q_C}$.\newline
-\newline
+Rendimento $\eta = \frac{L}{Q_C}$ e $\eta_{rev} = \frac{L_{rev}}{Q_C}$.
+\subsubsection{Rendimento di secondo principio}
 \textbf{Rendimento di secondo principio per la macchina motrice}:
 \[
     \eta_{II} = \frac{\eta}{\eta_{rev}} = \frac{L}{L_{rev}}
