@@ -73,5 +73,13 @@
 \BOOKMARK [2][-]{subsection.5.4}{Macchina motrice con serbatoio caldo a massa finita}{section.5}% 73
 \BOOKMARK [3][-]{subsubsection.5.4.1}{Rendimento di secondo principio}{subsection.5.4}% 74
 \BOOKMARK [1][-]{section.6}{L06-Sistemi aperti}{}% 75
-\BOOKMARK [1][-]{section.7}{L07-Cicli a gas}{}% 76
-\BOOKMARK [1][-]{section.8}{L08-Cicli a vapore}{}% 77
+\BOOKMARK [2][-]{subsection.6.1}{Sistema aperto}{section.6}% 76
+\BOOKMARK [2][-]{subsection.6.2}{Equazioni di bilancio}{section.6}% 77
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Bilancio di mass}{subsection.6.2}% 78
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Bilancio di energia}{subsection.6.2}% 79
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Calore scambiato}{subsection.6.2}% 80
+\BOOKMARK [3][-]{subsubsection.6.2.4}{Lavoro scambiato}{subsection.6.2}% 81
+\BOOKMARK [3][-]{subsubsection.6.2.5}{Lavoro di pulsione}{subsection.6.2}% 82
+\BOOKMARK [3][-]{subsubsection.6.2.6}{Energia associata al trasporto di massa}{subsection.6.2}% 83
+\BOOKMARK [1][-]{section.7}{L07-Cicli a gas}{}% 84
+\BOOKMARK [1][-]{section.8}{L08-Cicli a vapore}{}% 85
