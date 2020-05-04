@@ -1,92 +1,99 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {section}{\numberline {1}L01-Introduzione}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Introduzione}{3}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Sistema termodinamico}{3}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Il sistema semplice}{3}{subsubsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.2}Stato di equilibrio}{3}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1}Variabili termodinamiche}{3}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2}Regola di Gibbs}{4}{subsubsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.3}Tipologie di sistemi termodinamici}{4}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Trasformazioni termodinamiche}{5}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Equazione di stato nelle coordinate P,v,T}{5}{subsection.1.5}%
-\contentsline {subsubsection}{\numberline {1.5.1}Equazione di stato per i gas ideali}{5}{subsubsection.1.5.1}%
-\contentsline {subsubsection}{\numberline {1.5.2}Equazione di stato per i gas reali}{6}{subsubsection.1.5.2}%
-\contentsline {subsubsection}{\numberline {1.5.3}Equazione di stato per liquidi e solidi}{6}{subsubsection.1.5.3}%
-\contentsline {subsection}{\numberline {1.6}NOTE SUGLI ESERCIZI}{7}{subsection.1.6}%
-\contentsline {section}{\numberline {2}L02-Principi di conservazione}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Principi di conservazioni}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Principio di conservazione della massa}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Primo principio della termodinamica per sistemi chiusi}{8}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Secondo principio della termodinamica per sistemi chiusi}{9}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Osservazioni sul primo e secondo principio}{9}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}NOTE SUGLI ESERCIZI}{9}{subsection.2.6}%
-\contentsline {section}{\numberline {3}L03-Trasformazioni}{10}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Il lavoro termodinamico}{10}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Il lavoro termodinamico nelle trasformazioni reversibili e irreversibile}{10}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Il lavoro termodinamico di un ciclo}{11}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Il calore}{11}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Calori specifici a volume costante $c_V$}{11}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Calori specifici a pressione costante $c_P$}{12}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}$c_V$ e $c_P$ per i gas ideali}{12}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}$c_V$ e $c_P$ per i gas perfetti}{12}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}$c_V$ e $c_P$ per i liqudi (e solidi) incomprimibili ideali}{13}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}$c_V$ e $c_P$ per i liqudi (e solidi) incomprimibili perfetti}{13}{subsubsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.3}Le trasformazioni politropiche}{13}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Trasformazione politropica per un gas ideale}{13}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Trasformazione politropica per un gas perfetto}{13}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Espressioni della politropica}{13}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}Politropiche per trasformazioni elementari}{14}{subsubsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.5}Lavoro di una generica politropica}{14}{subsubsection.3.3.5}%
-\contentsline {subsubsection}{\numberline {3.3.6}Politropiche nel diagramma T-S}{14}{subsubsection.3.3.6}%
-\contentsline {subsection}{\numberline {3.4}Calcolo di grandezze termodinamiche ($u, h, s, l, q$)}{15}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}NOTE SUGLI ESERCIZI}{16}{subsection.3.5}%
-\contentsline {section}{\numberline {4}L04-Sistemi bifase}{17}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Sistema eterogeneo}{17}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Regola di gibs per sistemi eterogenei}{17}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Transizione di fase}{17}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Sistemi eterogenei monocomponente}{18}{subsubsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.2}Diagramma di stato P-v-T}{18}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}terminologia}{18}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Proiezione del diagramma P-v-T in un grafico P-T}{19}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Gas}{19}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Trasformazione isobara}{19}{subsubsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.5}Traformazione isoterma}{20}{subsubsection.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.2.6}Proiezione del diagramma P-v-T in un grafico P-s e P-h}{20}{subsubsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.3}Proprietà termodinamiche dei sistemi eterogenei}{21}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Entalpia di transizione di fase}{21}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Titoli}{21}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}Tabelle termodinamiche}{21}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Tabella di saturazione in pressione}{21}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Tabella di saturazione in temperatura}{22}{subsubsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}Tabella del vapore surriscaldato}{22}{subsubsection.4.4.3}%
-\contentsline {subsubsection}{\numberline {4.4.4}Interpolazione lineare}{23}{subsubsection.4.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.5}interpolazione bilineare}{23}{subsubsection.4.4.5}%
-\contentsline {subsubsection}{\numberline {4.4.6}Formule per l'acqua sottoraffreddata}{23}{subsubsection.4.4.6}%
-\contentsline {subsection}{\numberline {4.5}Relazioni semplificate vicino al punto triplo per l'acqua}{25}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Stato solido}{25}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Stato liquido}{25}{subsubsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}Stato vapore}{26}{subsubsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.6}NOTE SUGLI ESERCIZI}{26}{subsection.4.6}%
-\contentsline {section}{\numberline {5}L05-Macchine termodinamiche}{27}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Macchina termodinamica}{27}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Serbatoio di calore}{27}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Serbatoio di lavoro}{27}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Macchina motrice}{27}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Rendimento}{28}{subsubsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.3}Macchina operatrice}{28}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Efficienza o COP (coefficient of performance)}{29}{subsubsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.4}Macchina motrice con serbatoio caldo a massa finita}{30}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Rendimento di secondo principio}{30}{subsubsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.5}NOTE SUGLI ESERCIZI}{30}{subsection.5.5}%
-\contentsline {section}{\numberline {6}L06-Sistemi aperti}{31}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Sistema aperto}{31}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Equazioni di bilancio}{31}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Bilancio di mass}{31}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Bilancio di energia}{31}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Calore scambiato}{32}{subsubsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}Lavoro scambiato}{32}{subsubsection.6.2.4}%
-\contentsline {subsubsection}{\numberline {6.2.5}Lavoro di pulsione}{32}{subsubsection.6.2.5}%
-\contentsline {subsubsection}{\numberline {6.2.6}Energia associata al trasporto di massa}{32}{subsubsection.6.2.6}%
-\contentsline {section}{\numberline {7}L07-Cicli a gas}{34}{section.7}%
-\contentsline {section}{\numberline {8}L08-Cicli a vapore}{35}{section.8}%
+\contentsline {section}{\numberline {1}L01-Introduzione}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introduzione}{4}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Sistema termodinamico}{4}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Il sistema semplice}{4}{subsubsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.2}Stato di equilibrio}{4}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Variabili termodinamiche}{4}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Regola di Gibbs}{5}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}Tipologie di sistemi termodinamici}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Trasformazioni termodinamiche}{6}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Equazione di stato nelle coordinate P,v,T}{6}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}Equazione di stato per i gas ideali}{6}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}Equazione di stato per i gas reali}{7}{subsubsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.3}Equazione di stato per liquidi e solidi}{7}{subsubsection.1.5.3}%
+\contentsline {section}{\numberline {2}L02-Principi di conservazione}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Principi di conservazioni}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Principio di conservazione della massa}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Primo principio della termodinamica per sistemi chiusi}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Secondo principio della termodinamica per sistemi chiusi}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Osservazioni sul primo e secondo principio}{10}{subsection.2.5}%
+\contentsline {section}{\numberline {3}L03-Trasformazioni}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Il lavoro termodinamico}{11}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Il lavoro termodinamico nelle trasformazioni reversibili e irreversibile}{11}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Il lavoro termodinamico di un ciclo}{12}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Il calore}{12}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Calori specifici a volume costante $c_V$}{12}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Calori specifici a pressione costante $c_P$}{13}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}$c_V$ e $c_P$ per i gas ideali}{13}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}$c_V$ e $c_P$ per i gas perfetti}{13}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}$c_V$ e $c_P$ per i liqudi (e solidi) incomprimibili ideali}{14}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}$c_V$ e $c_P$ per i liqudi (e solidi) incomprimibili perfetti}{14}{subsubsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.3}Le trasformazioni politropiche}{14}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Trasformazione politropica per un gas ideale}{14}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Trasformazione politropica per un gas perfetto}{14}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Espressioni della politropica}{14}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Politropiche per trasformazioni elementari}{15}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}Lavoro di una generica politropica}{15}{subsubsection.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.6}Politropiche nel diagramma T-S}{15}{subsubsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.4}Calcolo di grandezze termodinamiche ($u, h, s, l, q$)}{16}{subsection.3.4}%
+\contentsline {section}{\numberline {4}L04-Sistemi bifase}{18}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Sistema eterogeneo}{18}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Regola di gibs per sistemi eterogenei}{18}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Transizione di fase}{18}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Sistemi eterogenei monocomponente}{19}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Diagramma di stato P-v-T}{19}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}terminologia}{19}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Proiezione del diagramma P-v-T in un grafico P-T}{20}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Gas}{20}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Trasformazione isobara}{20}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}Traformazione isoterma}{21}{subsubsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.6}Proiezione del diagramma P-v-T in un grafico P-s e P-h}{21}{subsubsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.3}Proprietà termodinamiche dei sistemi eterogenei}{22}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Entalpia di transizione di fase}{22}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Titoli}{22}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Tabelle termodinamiche}{22}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Tabella di saturazione in pressione}{22}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Tabella di saturazione in temperatura}{23}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Tabella del vapore surriscaldato}{23}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Interpolazione lineare}{24}{subsubsection.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}interpolazione bilineare}{24}{subsubsection.4.4.5}%
+\contentsline {subsubsection}{\numberline {4.4.6}Formule per l'acqua sottoraffreddata}{24}{subsubsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.5}Relazioni semplificate vicino al punto triplo per l'acqua}{26}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Stato solido}{26}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Stato liquido}{26}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}Stato vapore}{27}{subsubsection.4.5.3}%
+\contentsline {section}{\numberline {5}L05-Macchine termodinamiche}{28}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Macchina termodinamica}{28}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Serbatoio di calore}{28}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Serbatoio di lavoro}{28}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Macchina motrice}{28}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Rendimento}{29}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.3}Macchina operatrice}{29}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Efficienza o COP (coefficient of performance)}{30}{subsubsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.4}Macchina motrice con serbatoio caldo a massa finita}{31}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Rendimento di secondo principio}{31}{subsubsection.5.4.1}%
+\contentsline {section}{\numberline {6}L06-Sistemi aperti}{32}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Sistema aperto}{32}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Equazioni di bilancio}{32}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Bilancio di mass}{32}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Bilancio di energia}{32}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Calore scambiato}{33}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Lavoro scambiato}{33}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Lavoro di pulsione}{33}{subsubsection.6.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.6}Energia associata al trasporto di massa}{33}{subsubsection.6.2.6}%
+\contentsline {section}{\numberline {7}L07-Cicli a gas}{35}{section.7}%
+\contentsline {section}{\numberline {8}L08-Cicli a vapore}{36}{section.8}%
+\contentsline {section}{\numberline {9}NOTE SUGLI ESERCIZI}{37}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Linee guida per gli esercizi}{37}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Impostazione del problem}{37}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Soluzione del problema}{37}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Unità di misura}{37}{subsubsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.2}Equazioni di bilancio per i sistemi chiusi}{38}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Stati monofase: equazioni di stato e trasformazioni}{40}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Gas ideali}{40}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Liquidi e solidi incomprimibili ideali}{41}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}Gas reali}{41}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.4}Liquidi e solidi reali}{41}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9.3.5}Trasformazioni politropiche}{41}{subsubsection.9.3.5}%
