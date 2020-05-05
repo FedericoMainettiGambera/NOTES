@@ -184,7 +184,7 @@ Questo risultato ci dice che per un ciclo in cui non vale $T_4 = T_2$ (cioè in 
     \includegraphics[height=4cm]{../L07/img7.PNG}
 \end{center}
 L'immagine centrale rappresenta il caso ottimale. Le immagini laterali no, a sinistra l'uscita della turbina è più calda rispetto all'uscita del compressore, a destra l'uscita della turbina è più fredda dell'uscita del compressore.
-\subsection{Ciclo Joule-Brayton con rigenerazione}
+\subsubsection{Ciclo Joule-Brayton con rigenerazione}
 Una delle soluzioni che può portare a un migliroamento del rendimento e del lavoro specifico prodotto che si può applicare al caso $T_2<T_4$, ovvero in cui la temperatura in uscita dalla turbina è maggiore della temperatura in uscita dal compressore.
 \begin{center}
     \includegraphics[height=6cm]{../L07/img8.PNG}
@@ -205,4 +205,89 @@ Per ciclo rigenerato \textbf{ideale} si intende che $T_{2'} = T_4$ (si è recupe
     \eta_{rig} = 1- \frac{T_1}{T_3}r_P^{\frac{k-1}{k}}
 \]
 In una rigenerazione ideale si ha che $T_{2'}=T_4$, mentre in una reale si ha che $T_{2'} < T_4$ (è necessario un salto termico per effettuare lo scambio).
+\subsubsection{Ciclo J-B aperto}
+\begin{center}
+    \includegraphics[height=3cm]{../L07/img9.PNG}
+\end{center}
 \subsection{Ciclo otto}
+Il ciclo di Carnot è costituito da due isoentropiche e due isoterme, nel \textbf{ciclo otto}, invece delle isoterme, usiamo due \textbf{isocore} (a pari volume).
+\begin{center}
+    \includegraphics[height=3cm]{../L07/img10.PNG}
+\end{center}
+(1-2) è la prima isoentropica;\newline
+(2-3) seguita dalla prima isocora;\newline
+(3-4) seconda isoentropica;\newline
+(4-1) seconda isocora.\newline
+\newline
+Gli scambi di calore avvengono fra (2-3) e (4-1), perchè le isoentropiche sono adiabatiche reversibili e quindi avranno solo scambio di potenza meccanica.\newline
+\newline
+\subsubsection{Studio termodinamico del ciclo Otto}
+Il ciclo otto \textbf{ideale} è costituito da quattro trasformazioni internamente reversibili:
+\begin{itemize}
+    \item compressione isoentropica;
+    \item adduzione di calore a volume costante;
+    \item espansione isoentropica;
+    \item sottrazione di calore a volume costante.
+\end{itemize}
+\begin{center}
+    \includegraphics[height=3cm]{../L07/img11.PNG}
+\end{center}
+A sinistra abbiamo una rappresentazione di un ciclo reale, e a destra quello di un ciclo reale. La differenza principale che c'è fra un ciclo reale e ideale è che in quello ideale non andiamo a considerare il fatto di andare a caricare e scaricare il fluido di lavoro (Exhaust e intake).\newline
+\newline
+Analiziamo la fase di compressione:
+\begin{center}
+    \includegraphics[height=3cm]{../L07/img12.PNG}
+\end{center}
+\subsubsection{Rendimento termodinamico del ciclo Otto}
+Trattiamo il caso di ciclo ideale simmetrico con gas perfetto.\newline
+Gli scambi di calore avvengono in un sistema chiuso e in maniera isocora, quindi vale il concetto che
+\[
+    q_C = u_3- u_2
+\]
+Ipotizzando costante il calore specifico nell'intervallo di temperatura si ha:
+\[
+    q_c = c_V(T_3-T_2)
+\]
+Analogamente l'espressione del calore sottratto vale:
+\[
+    q_F = u_4-u_1 = c_V(T_4-T_1)
+\]
+Il rendimento termodinamico del ciclo (ideale) vale:
+\[
+    \eta_{otto} = \frac{q_c - q_f}{q_c} = 1- \frac{q_f}{q_c} = 1- \frac{T_4-T_1}{T_3-T_2} = 1- \frac{t_1 \left(\frac{T_4}{T_1}-1\right)}{T_2 \left(\frac{T_3}{T_2}-1\right)} = 1- \frac{T_1}{T_2}
+\]
+Inserendo il bilancio di entropia fra 1 e 2 per i gas perfetti:
+\[
+    \Delta s_{12} = c_V ln \frac{T_2}{T_1} + R^* ln \frac{V_2}{V_1} = 0
+\]
+da cui 
+\[
+    \left(\frac{T_2}{T_1}\right)^{c_V} = \left(\frac{V_1}{V_2}\right)^{R^*}
+\]
+\[
+    \left(\frac{T_2}{T_1}\right) = \left(\frac{V_1}{V_2}\right)^{\frac{R^*}{c_V}} = r_V^{\frac{R^*}{c_V}} = r_V^{k-1}
+\]
+per cui
+\[
+    \eta_{otto} = 1- r_V^{1-k}
+\]
+dove $r_V$ prende il nome di \textbf{rapporto di compressione volumetrico} ($\frac{V_1}{V_2}$, che è $\frac{V_{max}}{V_{min}}$).\newline
+\newline
+Ci sono spesso problemi nel cercare di migliorare il rendimento del ciclo otto, dovuti al fatto che se si diminuisce troppo $V_min$ (quindi aumentare troppo la pressione massima allo stato 2) , allora si iniziano ad avere combustioni non controllate (spontanee e non volute) della miscela benzina-aria e quindi problemi dal punto di vista del funzionamento (problemi di fattibilità). Nel caso ideale il fluido è aria, e quindi non ci sono problemi, nella pratica è una miscela aria-benzina.
+\subsubsection{Lavoro specifico del ciclo otto}
+Trattiamo il caso di ciclo ideale simmetrico con gas perfetto.\newline
+Con un ragionamento del tutto simile al precedente:
+\[
+    l = c_V(T_3-T_4) -c_V(T_2-T_1)
+\]
+\[
+    l = c_VT_3\left(1-\frac{T_4}{T_3}\right) - c_V T_1 \left(\frac{T_2}{T_1}-1 \right)
+\]
+\[
+    l = c_V T_3 \left(1- \frac{1}{r_V^{k-1}}\right) - c_V T_1 (r_V^{k-1} - 1)
+\]
+Il lavoro è ottimale quando il rapporto di compressione vale
+\[
+    r_{V,opt} = \left(\frac{T_3}{T_1}\right)^{\frac{1}{2(k-1)}}
+\]
+\subsection{Ciclo Diesel}
