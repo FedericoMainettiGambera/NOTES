@@ -103,16 +103,18 @@
 \contentsline {subsection}{\numberline {7.3}Ciclo di Joule-Bryton}{41}{subsection.7.3}%
 \contentsline {subsubsection}{\numberline {7.3.1}Rendimento del ciclo J-B (gas perfetto, ciclo ideale simmetrico)}{42}{subsubsection.7.3.1}%
 \contentsline {subsubsection}{\numberline {7.3.2}Lavoro specifico del ciclo J-B (gas perfetto, ciclo ideale simmetrico)}{43}{subsubsection.7.3.2}%
-\contentsline {section}{\numberline {8}L08-Cicli a vapore}{44}{section.8}%
-\contentsline {section}{\numberline {9}NOTE SUGLI ESERCIZI}{45}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Linee guida per gli esercizi}{45}{subsection.9.1}%
-\contentsline {subsubsection}{\numberline {9.1.1}Impostazione del problem}{45}{subsubsection.9.1.1}%
-\contentsline {subsubsection}{\numberline {9.1.2}Soluzione del problema}{45}{subsubsection.9.1.2}%
-\contentsline {subsubsection}{\numberline {9.1.3}Unità di misura}{45}{subsubsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.2}Equazioni di bilancio per i sistemi chiusi}{46}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Stati monofase: equazioni di stato e trasformazioni}{48}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Gas ideali}{48}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Liquidi e solidi incomprimibili ideali}{49}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}Gas reali}{49}{subsubsection.9.3.3}%
-\contentsline {subsubsection}{\numberline {9.3.4}Liquidi e solidi reali}{49}{subsubsection.9.3.4}%
-\contentsline {subsubsection}{\numberline {9.3.5}Trasformazioni politropiche}{50}{subsubsection.9.3.5}%
+\contentsline {subsubsection}{\numberline {7.3.3}Ciclo Joule-Brayton con rigenerazione}{43}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Rendimento del ciclo rigenerato ideale}{44}{subsubsection.7.3.4}%
+\contentsline {section}{\numberline {8}L08-Cicli a vapore}{45}{section.8}%
+\contentsline {section}{\numberline {9}NOTE SUGLI ESERCIZI}{46}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Linee guida per gli esercizi}{46}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Impostazione del problem}{46}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Soluzione del problema}{46}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Unità di misura}{46}{subsubsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.2}Equazioni di bilancio per i sistemi chiusi}{47}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Stati monofase: equazioni di stato e trasformazioni}{49}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Gas ideali}{49}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Liquidi e solidi incomprimibili ideali}{50}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}Gas reali}{50}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.4}Liquidi e solidi reali}{50}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9.3.5}Trasformazioni politropiche}{51}{subsubsection.9.3.5}%

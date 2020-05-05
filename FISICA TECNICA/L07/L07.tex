@@ -177,7 +177,31 @@ E inserendo in questa espressione al posto di $\frac{P_3}{P_4}$ (pari a $\frac{P
 \[
     T_4 = T_2 = \sqrt{T_1 T_3}
 \]
-cioè il lavoro specifico è massimo nel ciclo in cui la temperatura di fine espansione coincide con quella di fine compressione.
+cioè il lavoro specifico è massimo nel ciclo in cui la temperatura di fine espansione coincide con quella di fine compressione.\newline
+\newline
+Questo risultato ci dice che per un ciclo in cui non vale $T_4 = T_2$ (cioè in cui non si ha un lavoro ottimale), per migliorare il ciclo bisogna cercare di avvicinare il più possibile questi valori di temperature.
 \begin{center}
     \includegraphics[height=4cm]{../L07/img7.PNG}
 \end{center}
+L'immagine centrale rappresenta il caso ottimale. Le immagini laterali no, a sinistra l'uscita della turbina è più calda rispetto all'uscita del compressore, a destra l'uscita della turbina è più fredda dell'uscita del compressore.
+\subsubsection{Ciclo Joule-Brayton con rigenerazione}
+Una delle soluzioni che può portare a un migliroamento del rendimento e del lavoro specifico prodotto che si può applicare al caso $T_2<T_4$, ovvero in cui la temperatura in uscita dalla turbina è maggiore della temperatura in uscita dal compressore.
+\begin{center}
+    \includegraphics[height=6cm]{../L07/img8.PNG}
+\end{center}
+La corrente calda in uscita dalla turbina in eccesso viene sfruttata per innalzare la temperatura in uscita dal compressore.\newline
+\newline
+Per fare questo preriscaldamento durante il riscaldamento (2-3) possiamo utilizzare un rigeneratore (che è uno scambiatore) in modo da trasferire calore fra ciò che esce dalla turbina verso quello che esce dal compressore e quindi recuperare questa energia. Sfruttando questa energia in più il compressore dovrà solo eseguire una trasformazione (2'-3) e non più (2-3) e così si ha un risparmio sulla spesa.\newline
+\newline
+\subsubsection{Rendimento del ciclo rigenerato ideale}
+Per ciclo rigenerato \textbf{ideale} si intende che $T_{2'} = T_4$ (si è recuperata tutta l'energia), che si lavora con gas perfetti e che il ciclo è ideale e simmetrico.
+\[
+    \eta_{rig} = \frac{\dot{L}}{\dot{Q}_C} = \frac{\dot{L}_T - \dot{L}_C}{\dot{Q}_C} = \frac{(T_3-T_4)-(T_2-T_1)}{(T_3-T_4)} = 1- \frac{T_2-T_1}{T_3-T_4}
+\]
+\[
+    \eta_{rig} = 1- \frac{T_2}{T_3} = 1- \frac{T_2 T_1}{T_3T_1}
+\]
+\[
+    \eta_{rig} = 1- \frac{T_1}{T_3}r_P^{\frac{k-1}{k}}
+\]
+In una rigenerazione ideale si ha che $T_{2'}=T_4$, mentre in una reale si ha che $T_{2'} < T_4$ (è necessario un salto termico per effettuare lo scambio).
