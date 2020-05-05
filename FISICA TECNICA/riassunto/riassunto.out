@@ -94,16 +94,23 @@
 \BOOKMARK [2][-]{subsection.6.8}{Irreversibilit\340 interna e lavoro specifico}{section.6}% 94
 \BOOKMARK [3][-]{subsubsection.6.8.1}{Irreversibilit\340 interna associata al moto del fluido}{subsection.6.8}% 95
 \BOOKMARK [1][-]{section.7}{L07-Cicli a gas}{}% 96
-\BOOKMARK [1][-]{section.8}{L08-Cicli a vapore}{}% 97
-\BOOKMARK [1][-]{section.9}{NOTE SUGLI ESERCIZI}{}% 98
-\BOOKMARK [2][-]{subsection.9.1}{Linee guida per gli esercizi}{section.9}% 99
-\BOOKMARK [3][-]{subsubsection.9.1.1}{Impostazione del problem}{subsection.9.1}% 100
-\BOOKMARK [3][-]{subsubsection.9.1.2}{Soluzione del problema}{subsection.9.1}% 101
-\BOOKMARK [3][-]{subsubsection.9.1.3}{Unit\340 di misura}{subsection.9.1}% 102
-\BOOKMARK [2][-]{subsection.9.2}{Equazioni di bilancio per i sistemi chiusi}{section.9}% 103
-\BOOKMARK [2][-]{subsection.9.3}{Stati monofase: equazioni di stato e trasformazioni}{section.9}% 104
-\BOOKMARK [3][-]{subsubsection.9.3.1}{Gas ideali}{subsection.9.3}% 105
-\BOOKMARK [3][-]{subsubsection.9.3.2}{Liquidi e solidi incomprimibili ideali}{subsection.9.3}% 106
-\BOOKMARK [3][-]{subsubsection.9.3.3}{Gas reali}{subsection.9.3}% 107
-\BOOKMARK [3][-]{subsubsection.9.3.4}{Liquidi e solidi reali}{subsection.9.3}% 108
-\BOOKMARK [3][-]{subsubsection.9.3.5}{Trasformazioni politropiche}{subsection.9.3}% 109
+\BOOKMARK [2][-]{subsection.7.1}{Cicli termodinamici a gas}{section.7}% 97
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Propriet\340 dei cicli simmetrici}{subsection.7.1}% 98
+\BOOKMARK [2][-]{subsection.7.2}{Ciclo di Carnot}{section.7}% 99
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Rendimento del ciclo}{subsection.7.2}% 100
+\BOOKMARK [2][-]{subsection.7.3}{Ciclo di Joule-Bryton}{section.7}% 101
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Rendimento del ciclo J-B \(gas perfetto, ciclo ideale simmetrico\)}{subsection.7.3}% 102
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Lavoro specifico del ciclo J-B \(gas perfetto, ciclo ideale simmetrico\)}{subsection.7.3}% 103
+\BOOKMARK [1][-]{section.8}{L08-Cicli a vapore}{}% 104
+\BOOKMARK [1][-]{section.9}{NOTE SUGLI ESERCIZI}{}% 105
+\BOOKMARK [2][-]{subsection.9.1}{Linee guida per gli esercizi}{section.9}% 106
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Impostazione del problem}{subsection.9.1}% 107
+\BOOKMARK [3][-]{subsubsection.9.1.2}{Soluzione del problema}{subsection.9.1}% 108
+\BOOKMARK [3][-]{subsubsection.9.1.3}{Unit\340 di misura}{subsection.9.1}% 109
+\BOOKMARK [2][-]{subsection.9.2}{Equazioni di bilancio per i sistemi chiusi}{section.9}% 110
+\BOOKMARK [2][-]{subsection.9.3}{Stati monofase: equazioni di stato e trasformazioni}{section.9}% 111
+\BOOKMARK [3][-]{subsubsection.9.3.1}{Gas ideali}{subsection.9.3}% 112
+\BOOKMARK [3][-]{subsubsection.9.3.2}{Liquidi e solidi incomprimibili ideali}{subsection.9.3}% 113
+\BOOKMARK [3][-]{subsubsection.9.3.3}{Gas reali}{subsection.9.3}% 114
+\BOOKMARK [3][-]{subsubsection.9.3.4}{Liquidi e solidi reali}{subsection.9.3}% 115
+\BOOKMARK [3][-]{subsubsection.9.3.5}{Trasformazioni politropiche}{subsection.9.3}% 116
