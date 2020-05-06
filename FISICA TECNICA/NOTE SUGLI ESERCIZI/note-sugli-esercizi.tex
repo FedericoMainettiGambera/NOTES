@@ -355,7 +355,14 @@ liquida, si possono seguire queste indicazioni:
     \]
 \end{itemize}
 \section{Equazioni di bilancio per sistemi aperti}
-I bilanci di massa, energia ed entropia per i sistemi aperti sono la base per lo studio dei più
+Un \textbf{sistema aperto} è un sistema dal quale può \textbf{uscire} ed \textbf{entrare massa}.\newline
+\newline
+E' un \textbf{sistema fluente} è di conseguenza è necessario introdurre la \textbf{variabile di tempo} ($t$) e di conseguenza i \textbf{flussi di massa, di energia, di entropia,} etc.
+\[
+    \dot{m} \;\;\;\;\; \dot{E}\;\;\;\;\; \dot{U} \;\;\;\;\; \dot{H} \;\;\;\;\; \dot{S} \;\;\;\;\; \dot{Q} \;\;\;\;\; \dot{L}
+\]
+\ \newline
+I \textbf{bilanci di massa, energia ed entropia} per i sistemi aperti sono la base per lo studio dei più
 comuni componenti di interesse tecnico: pompe, compressori, turbine e scambiatori di calore. \newline
 \newline
 Le equazioni di bilancio, nella loro formulazione generale, sono:
@@ -366,44 +373,97 @@ Le equazioni di bilancio, nella loro formulazione generale, sono:
         \frac{dS}{dt} = \sum_{k=1}^{n} \dot{m}_k^\leftarrow  s_k + \dot{S}_Q^\leftarrow + \dot{S}_{irr}
     \end{cases}
 \]
-Considerando una porzione di condotto delimitata da una sezione di ingresso (i) ed una di
-uscita (u), i bilanci di energia e di entropia, in regime stazionario, si scrivono: 
+Con $k$ si intendono le varie sezioni di passaggio.\newline
+Con $\dot{L}_e^\rightarrow $ si intende il \textbf{lavoro d'elica}, cioè il lavoro scambiato per unità di tempo attraverso le sezioni non attraversate dalla massa.\newline 
+Esiste anche il \textbf{lavoro di pulsione} $\dot{L}_P^\leftarrow $ che è il lavoro scambiato per unità di tempo attraverso le sezioni attraversate dalla massa e (per l'ingresso) si calcola come
 \[
-    \begin{cases}
-        \dot{m}\left[ (h_i - h_u) + g(z_i-z_u) + \frac{w_i^2}{2} - \frac{w_u^2}{2}\right] + \dot{Q}-L_e\\
-        \dot{m}(s_i-s_u) + \dot{S}_Q + \dot{S}_{irr} = 0
-    \end{cases}
+    L_{P,i}^\leftarrow  = M_i P v_i
 \]
-dove $\dot{m} = \rho w \Omega$ è la portata in massa del sistema.\newline
-In questo caso il bilancio in massa risulta triviale e pertanto non viene generalmente inserito
-nel sistema risolutivo che comprende soltanto il bilancio di energia e di entropia. \newline
+con $M_i$ la massa immessa nel sistema, $P$ la pressione costante che agisce su $M_i$, e $v_i$ il volume specifico della sessione di ingresso. Allo stesso modo si calcola il lavoro di pulsione per l'uscita.\newline
 \newline
-Si riportano il sistema di equazioni risolutivi per alcuni componenti tipici. \newline
-\textbf{Scambiatori di calore}
+\newline
+\newline
+\textbf{Regime stazionario con un ingresso e con un'uscita}\newline
+Per regime stazionario o regime permanente si intende una condizione in cui le variazioni di massa, di energia e di entropia nel sistema sono nulle nel tempo:
+\[
+    \frac{dM}{dt} = 0 \;\;\;\;\;\;\;\;\;\; \frac{dE}{dt} = 0 \;\;\;\;\;\;\;\;\;\; \frac{dS}{dt} = 0
+\]
+Considerando inoltre una porzione di condotto delimitata da una sezione di \textbf{ingresso} (i) ed una di
+\textbf{uscita} (u), i bilanci di massa, di energia e di entropia, in regime stazionario, si scrivono: 
 \[
     \begin{cases}
-        \dot{m} (h_i-h_u) + \dot{Q} = 0\\
-        \dot{m} (s_i-s_u) + \dot{S}_Q + \dot{S}_{irr}
+        \dot{m}_i^\leftarrow = -\dot{m}_u^\leftarrow  = \dot{m}\\
+        \frac{dE}{dt} = \dot{m}\left[ (h_i - h_u) + g(z_i-z_u) + \frac{w_i^2}{2} - \frac{w_u^2}{2}\right] + \dot{Q}^\leftarrow -L_e^\rightarrow = 0\\
+        \dot{m}(s_i-s_u) + \dot{S}_Q^\leftarrow  + \dot{S}_{irr} = 0
     \end{cases}
 \]
-\textbf{Macchine aperte (turbine, compressori e pompe)}
+dove $\dot{m} = \rho w \Omega$ è la \textbf{portata} in massa del sistema ($\rho$ è la massa volumica, $\omega$ è la velocità media, $\Omega$ è l'area della sezione di passaggio).
+\subsection{Sistemi aperti notevoli}
+\subsubsection{Macchina aperta}
+La \textbf{machcina aperta} è un \textbf{dispositivo adiabatico} destinato a \textbf{scambiare lavoro} per il quale si ipotizzano trascurabili le variazioni di energia potenziale e di energia cinetica tra le sezioni di ingresso e di uscita.\newline
+\newline
+I bilanci diventano:
 \[
     \begin{cases}
-        \dot{m} (h_i-h_u) - \dot{L}_e = 0\\
-        \dot{m} (s_i-s_u) + \dot{S}_{irr}
+        \dot{m} (h_i - h_u) - \dot{L}_e^\rightarrow  = 0\\
+        \dot{m} (s_i-s_u) + \dot{S}_{irr} = 0
     \end{cases}
 \]
-\ \newline
-Pre le macchine aperte si definiscono:\newline
-\textbf{Rendimento isoentropico di espansione (turbina)}
+\begin{itemize}
+    \item \textbf{Turbina}:\newline
+    Una \textbf{turbina} produce lavoro, cioè genera potenza meccanica.\newline
+    \newline
+    Nel caso di turbina il \textbf{lavoro d'elica uscente} è positivo, quindi l'entalpia in ingresso è maggiore dell'antalpia in uscita.\newline
+    \newline
+    Si chiama \textbf{rendimento isoentalpico} di una \textbf{macchina motrice aperta} (turbina) il rapporto fra la potenza realmente ottenuta e la potenza massima ottenibile in condizioni ideali a parità di condizioni in ingresso e a parità di pressione di fine espansione:
+    \[
+        \eta_T = \frac{\dot{L}_{reale}^\rightarrow }{\dot{L}_{ideale}^\rightarrow } = \frac{h_1 - h_{2'}}{h_1-h_2}
+    \]
+    dove per $\dot{L}_{reale}^\rightarrow $ si intende $\dot{L}_e$ e per $\dot{L}_{ideale}^\rightarrow $ si intende la potenza meccanica scambiata con un processo ideale (isoentropico).
+    \item \textbf{Compressore e pompa}:\newline
+    Se la macchina aperta assorbe lavoro dall'esterno, si parla di comrpessore o pompa a seconda del fluido di lavoro.\newline
+    \newline
+    Nel caso di turbina il \textbf{lavoro d'elica uscente} è negatico.\newline
+    \newline
+    Si chiama \textbf{rendimento isoentropico} di una macchina operatrice aperta (compressore e pompa) il rapporto fra la potenza minima spesa in condizioni ideali e la potenza realmente spesa a parità di condizioni in ingresso e a parità di pressione di fine espansione:
+    \[
+        \eta_C = \frac{\dot{L}_{reale}^\rightarrow }{\dot{L}_{ideale}^\rightarrow } = \frac{h_1-h_2}{h_1-h_{2'}} 
+    \]
+    dove per $\dot{L}_{reale}^\rightarrow $ si intende $\dot{L}_e$ e per $\dot{L}_{ideale}^\rightarrow $ si intende la potenza meccanica scambiata con un processo ideale (isoentropico).
+\end{itemize}
+\subsubsection{Scambiatori di calore}
+Lo \textbf{scambiatore di calora} è un dispositivo destinato a \textbf{scambiare calre} e che \textbf{non scambia lavoro} per il quale si ipotizzano trascurabili le variazioni di energia potenziale e di energia cinetica tra le sezioni di ingresso e di uscita.\newline
+\newline
+I bilanci diventano:
 \[
-    \eta_{T} = \frac{\dot{L}_e}{\dot{L}_{id}}
+    \begin{cases}
+        \dot{m}(h_i - h_u) + \dot{Q}^\leftarrow  = 0\\
+        \dot{m}(s_i-s_u) + \dot{S}_{Q}^\leftarrow + \dot{S}_{irr} =0 
+    \end{cases}
 \]
-\textbf{Rendimento isoentropico di compressione (compressore e pompa)}
-\[
-    \eta_{C} = \frac{\dot{L}_{id}}{\dot{L}_{e}}
-\]
-dove il termine $\dot{L}_{id}$ rappresenta la potenza meccanica scambiata con un processo ideale (isoentropico).
+\subsubsection{Casi minori}
+\begin{itemize}
+    \item I \textbf{diffusori} ($w \searrow$) e gli \textbf{ugelli} ($w \nearrow$) sono sistemi aperti stazionari che operano \textbf{senza scambio di lavoro nè calore} per i quali si ipotizzano trascurabili le variazioni di energia potenziale tra le sezioni di ingresso e di uscita.\newline
+    La differenza fra diffusore e ugello dipende se lo stato di ingresso si trova a una velocità di ingresso maggiore (diffusore) rispetto a quella d'uscita o viceversa (ugello).\newline
+    \newline
+    I bilanci diventano:
+    \[
+        \begin{cases}
+            \left[(h_i-h_u) + \frac{w_i^2 - w_u^2}{2}\right] = 0\\
+            \dot{m} (s_i-s_u) + \dot{S}_{irr} =0 
+        \end{cases}
+    \]
+    \item La \textbf{valvola di laminazione} è un \textbf{dispositivo adiabatico} che \textbf{non scambia lavoro} per il quale si ipotizzano trascurabili le variazioni di energia potenziale e di energia cinetica tra le sezioni di ingresso e di uscita. Si ottiene un processo detto di \textbf{laminazione isoentalpica} (cioè in cui l'entalpia in ingresso e in uscita sono identiche).\newline
+    A livello pratico ciò che succede in questo tipo di sistemi è che la pressione scende fra ingresso e uscita (come se ci fosse uno strozzamenteo).\newline
+    \newline
+    I bilanci diventano:
+    \[
+        \begin{cases}
+            (h_i- h_u) = 0\\
+            \dot{m} (s_i-s_u) + \dot{S}_{irr} = 0
+        \end{cases}
+    \]
+\end{itemize}
 \section{Macchine termodinamiche}
 Con il termine di \textbf{macchina termodinamica} si intende un sistema composto da un opportuna
 combinazione di sottosistemi elementari (serbatoio di calore, serbatoio di lavoro e macchina
