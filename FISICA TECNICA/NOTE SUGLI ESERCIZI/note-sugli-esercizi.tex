@@ -222,6 +222,308 @@ Per le trasformazioni \textbf{isocore, isobare e adiabateche} (cioè con $n \neq
 Si suggerisce di ricorrere al calcolo degli integrali per determinare il lavoro e il calore
 scambiato soltanto quando strettamente necessario. Essendo questi due termini comunque
 legati tra loro dalla equazione di bilancio energetico. 
+\section{Stati bifase: grandezze di stato e trasformazioni}
+Lo \textbf{stato bifase} di una sostanza pura corrisponde alla coesistenza di due diverse fasi (solidoliquido, solido-vapore o liquido-vapore) in equilibrio tra loro (\textbf{stato eterogeneo}). Un sistema
+in uno stato eterogeneo può essere pensato come un insieme di più sottosistemi in stati
+omogenei. Si definisce \textbf{fase} di un sistema eterogeneo, il sottosistema omogeneo caratterizzato
+dagli stessi valori di tutte le proprietà specifiche. Un sistema eterogeneo è in uno stato di
+equilibrio se tutte le sue proprietà intensive hanno valori ovunque uguali (cioè sono uguali
+per tutte le fasi). \newline
+\newline
+Si definisce \textbf{transizione di fase} la trasformazione che porta un sistema che si trova in uno
+stato omogeneo a separarsi in due o più fasi.\newline
+\newline
+Un sistema monocomponente in uno stato bifase
+ha un solo grado di libertà (nella regola di Gibbs: $V=1$). \newline
+\newline
+La pressione P e la temperatura T di un sistema monocomponente bifase sono infatti legate,
+in qualsivoglia passaggio di stato, dalla relazione di Clausius-Clapeyron: 
+\[
+    \left(\frac{dP}{dT}\right)_{a \rightarrow b} = \frac{(s_a-s_b)}{(v_a-v_)b} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \left( \frac{dP}{dT} \right)_{a \rightarrow  b} = \frac{(h_a-h_b)}{T(v_a-v_b)}
+\]
+Lo stato termodinamico di un sistema monocomponente bifase è quindi compiutamente
+descritto da una variabile intensiva, essendo l'altra univocamente definita, e da una variabile
+estensiva specifica o anche dalla coppia estensiva-estensiva. \newline
+\newline
+Di qui le varie rappresentazioni grafiche per il bifase: (P, v), (T,s), (P,h), (h,s) che contengono
+sempre almeno una quantità estensiva specifica. 
+\subsection{Proprietà termodinamiche estensive}
+Faremo ora sempre assunzione allo stato bifase \textbf{liquido-vapore}.\newline
+\newline
+Indicando con $Z$ una generica grandezza estensiva, per una miscela bifase liquido-vapore si ha
+\[
+    Z = Z_l + Z_v
+\]
+cioè il valore della proprietà $Z$ per la miscela è pari alla somma del valore della proprietà estensiva della fase liquida $Z_l$ e della fase vapore $Z_v$. Adottando le grandezze estensive specifiche corrispondenti di $Z$, la relazione precedente può essere riscritta come 
+\[
+    Z = M_l z_l + M_v z_v
+\]
+dove $M_l$ e $M_v$ sono rispettivamente la massa di liquido e quella di vapore.\newline
+\newline
+Definendo \textbf{titolo} $x$ (espresso in massa) il rapporto tra la massa di vapore e la massa totale conenuta nel sistema:
+\[
+    x = \frac{M_v}{M_l+M_v}
+\]
+si ottiene la seguente relazione valida per ottenere il valore di qualsivoglia grandezza
+estensiva specifica di un sistema bifase avendo noto il titolo: 
+\[
+    z = z_l(1-x) + xz_v \;\;\;\;\;\text{oppure}\;\;\;\;\; z = z_l + x z_{lv}
+\]
+dove $z_{lv}$ rappresenta la variazione della proprietà estensiva specifica nella transizione di fase. \newline
+Con questa formula si possono esprimere \textbf{l'energia interna, il volume, l'entalpia e l'entropia specifiche} di un sistema bifase.\newline
+\newline
+Come si può notare per valutare il valore assunto da una grandezza estensiva specifica in un
+sistema bifase è necessario conoscere il valore assunto dalla grandezza estensiva in
+condizione di saturazione (liquido e vapore).
+\subsection{Tabelle}
+Questi valori sono riportati su tabelle. Le tabelle termodinamiche sono di due tipi: 
+\begin{itemize}
+    \item  tabelle dello \textbf{stato eterogeneo} dove sono riportate le proprietà termodinamiche del liquido
+    saturo e del vapore saturo; il dato di ingresso (argomento) è o la temperatura o la pressione. \newline
+    I dati in corrispondenza di questa sono : \newline
+    \begin{itemize}
+        \item la pressione o la temperatura di saturazione (univocamente definita); 
+        \item il volume specifico del liquido e del vapore saturi e la loro differenza ($m^3/kg$); 
+        \item la entalpia specifica del liquido e del vapore saturi e la loro differenza ($kJ/kg$);
+        \item la entropia specifica del liquido e del vapore saturi e la loro differenza ($kJ/kgK$);
+        \item l'energia interna specifica del liquido e del vapore saturi e la loro differenza ($kJ/kg$);
+    \end{itemize}
+    L' ultima grandezza non è sempre presente, ma è comunque valutabile dal legame
+    esistente tra l’entalpia e l’energia interna ($h= u+ Pv$). 
+    \item tabelle dello stato omogeneo che portano le proprietà del vapore surriscaldato; i dati di
+    ingresso sono la temperatura e pressione (le due intensive che definiscono lo stato).\newline
+    I dati in
+    corrispondenza della particolare pressione sono:
+    \begin{itemize}
+        \item il volume specifico del vapore surriscaldato ($m^3/kg$);
+        \item la entalpia specifica del vapore surriscaldato ($kJ/kg$);
+        \item la entropia specifica del vapore surriscaldato ($kJ/kgK$);
+        \item la energia interna specifica del vapore surriscaldato ($kJ/kg$);
+    \end{itemize}
+    L' ultima grandezza non è sempre presente, ma è comunque valutabile dal legame
+    esistente tra l’entalpia e l’energia interna ($h= u+ Pv$). 
+\end{itemize}
+\ \newline
+Qualora lo stato termodinamico di cui si stanno valutando le proprietà termodinamiche non
+coincide con gli stati discreti riportati sulle tabelle è necessario eseguire una interpolazione
+dei dati.\newline
+\newline
+L’utilizzo delle tabelle termodinamiche consente di valutare le proprietà di una sostanza,
+normalmente, in condizioni di bifase liquido-vapore o nello stato di vapore surriscaldato.
+L’analisi di alcuni processi può richiedere informazioni sulle proprietà termodinamiche in
+stati diversi quali liquido sottoraffreddato o solido. \newline
+In questi casi, se non sono disponibili tabelle specifiche, occorre ricorrere a valutazioni
+approssimate che si ottengono con l’ausilio di equazioni di stato. \newline
+Occorre porre attenzione che l’utilizzo contemporaneo di dati estratti da una tabella o valutati
+con l’ausilio di relazioni approssimate richiede l’adozione dello stesso stato di riferimento
+rispetto a cui valutare le grandezze di interesse (entalpia, entropia, energia interna, etc.). \newline
+In prima approssimazione, ipotizzando che lo stato di riferimento sia lo stato triplo e fase
+liquida, si possono seguire queste indicazioni: 
+\begin{itemize}
+    \item \textbf{Stato di liquido sottoraffreddato}:
+    \begin{itemize}
+        \item entalpia: \[
+            h(T,P) = h(T,P_s) + v (P-P_s)
+        \]
+        \[
+            h(T,P) \sim h(T,P_s)
+        \]
+        \item entropia: \[
+            s(T,P) = s(T,P_s)
+        \]
+    \end{itemize}
+    dove $h(T,P_s)$ e $s(T,P_s)$ sono l'entalpia e l'entropia dello stato di liquido saturo alla temperatura $T$ (e alla conseguente pressione di saturazione $P_s$).
+    \item \textbf{Stato di solido (ghiaccio)}:
+    \begin{itemize}
+        \item entalpia:\[
+            h(T,P) = h_{ls,t} + c_s(T-T_t) + v(P-P_t)
+        \]
+        \item entropia:\[
+            s(T,P) = s_{lv,t} +c_s ln \frac{T}{T_t}
+        \]
+    \end{itemize}
+    dove $h_{ls,t}$ e $s_{ls,t}$ sono l'entalpia e l'entropia associate alla transizione di fase liquido-solido allo stato triplo, $T_t$ e $P_t$ sono la temperatura e la pressione dello stato triplo mentre $c_s$ è il calore specifico della fase solida.\newline
+    Per la transizione di fase liquido-solido dell'acqua ($T_t = 273.16 K, P_t = 0.6122kPa$) si ha:
+    \[
+        h_{ls,t} = -333kJ/kg
+    \]
+    \[
+        s_{ls,t} = \frac{h_{ls,t}}{T_t} \;\;\;\;\;\;\;\;\;\;s_{ls,t} = \frac{-333}{273.16}kJ/kgK = -1.219 kJ/kgK
+    \]
+    \[
+        c_s = 2.093 kJ/kgK
+    \]
+\end{itemize}
+\section{Equazioni di bilancio per sistemi aperti}
+I bilanci di massa, energia ed entropia per i sistemi aperti sono la base per lo studio dei più
+comuni componenti di interesse tecnico: pompe, compressori, turbine e scambiatori di calore. \newline
+\newline
+Le equazioni di bilancio, nella loro formulazione generale, sono:
+\[
+    \begin{cases}
+        \frac{dM}{dt} = \sum_{k=1}^{n}\dot{m}_k^\leftarrow \\
+        \frac{dE}{dt} = \sum_{k=1}^{n}\dot{m}_k^\leftarrow  \left(h + gz + \frac{w^2}{2}\right) + \dot{Q}^\leftarrow  - L_e^\rightarrow \\
+        \frac{dS}{dt} = \sum_{k=1}^{n} \dot{m}_k^\leftarrow  s_k + \dot{S}_Q^\leftarrow + \dot{S}_{irr}
+    \end{cases}
+\]
+Considerando una porzione di condotto delimitata da una sezione di ingresso (i) ed una di
+uscita (u), i bilanci di energia e di entropia, in regime stazionario, si scrivono: 
+\[
+    \begin{cases}
+        \dot{m}\left[ (h_i - h_u) + g(z_i-z_u) + \frac{w_i^2}{2} - \frac{w_u^2}{2}\right] + \dot{Q}-L_e\\
+        \dot{m}(s_i-s_u) + \dot{S}_Q + \dot{S}_{irr} = 0
+    \end{cases}
+\]
+dove $\dot{m} = \rho w \Omega$ è la portata in massa del sistema.\newline
+In questo caso il bilancio in massa risulta triviale e pertanto non viene generalmente inserito
+nel sistema risolutivo che comprende soltanto il bilancio di energia e di entropia. \newline
+\newline
+Si riportano il sistema di equazioni risolutivi per alcuni componenti tipici. \newline
+\textbf{Scambiatori di calore}
+\[
+    \begin{cases}
+        \dot{m} (h_i-h_u) + \dot{Q} = 0\\
+        \dot{m} (s_i-s_u) + \dot{S}_Q + \dot{S}_{irr}
+    \end{cases}
+\]
+\textbf{Macchine aperte (turbine, compressori e pompe)}
+\[
+    \begin{cases}
+        \dot{m} (h_i-h_u) - \dot{L}_e = 0\\
+        \dot{m} (s_i-s_u) + \dot{S}_{irr}
+    \end{cases}
+\]
+\ \newline
+Pre le macchine aperte si definiscono:\newline
+\textbf{Rendimento isoentropico di espansione (turbina)}
+\[
+    \eta_{T} = \frac{\dot{L}_e}{\dot{L}_{id}}
+\]
+\textbf{Rendimento isoentropico di compressione (compressore e pompa)}
+\[
+    \eta_{C} = \frac{\dot{L}_{id}}{\dot{L}_{e}}
+\]
+dove il termine $\dot{L}_{id}$ rappresenta la potenza meccanica scambiata con un processo ideale (isoentropico).
+\section{Macchine termodinamiche}
+Con il termine di \textbf{macchina termodinamica} si intende un sistema composto da un opportuna
+combinazione di sottosistemi elementari (serbatoio di calore, serbatoio di lavoro e macchina
+ciclica) che ha come funzione o la conversione termodinamica di energia termica in lavoro
+(\textbf{macchina termodinamica motrice}) o il trasferimento di energia termica da uno o più serbatoi
+di calore a temperatura inferiore a uno o più serbatoi di calore a temperatura superiore
+(\textbf{macchina termodinamica operatrice}). 
+\subsection{Sistemi di conversione diretti: macchina motrice con sorgenti a temperatura cosante}
+\begin{center}
+    \includegraphics[height=5cm]{../NOTE SUGLI ESERCIZI/img4.PNG}
+\end{center}
+Dai bilanci energetico ed entropico della macchina termodinamica motrice illustrata in figura
+e che è caratterizzata da operare con serbatoi di calore a temperatura costante $T_S$ e $T_F$, si
+ottiene: 
+\[
+    \begin{cases}
+        -Q_C + L + Q_F = 0\\
+        - \frac{Q_C}{T_C} + \frac{Q_F}{T_F} = S_{irr}
+    \end{cases}
+\]
+L’analisi termodinamica di una macchina termodinamica motrice richiede spesso di separare
+l’analisi della macchina ideale (reversibile) che consente di massimizzare il lavoro prodotto
+da quella reale (irreversibile). \newline
+\newline
+Nel caso di macchina termodinamica motrice \textbf{ideale}, o reversibile, si ottiene: 
+\[
+    L_{rev} = Q_C \left(1- \frac{T_F}{T_C}\right)
+\]
+\[
+    \eta_{rev} = 1- \frac{T_F}{T_C}
+\]
+\ \newline
+Nel caso di macchina termodinamica motrice \textbf{reale}, o irreversibile, si ottiene:
+\[
+    L  = Q_C \left(1- \frac{T_F}{T_C}\right) - T_FS_{irr}
+\]
+\[
+    \eta =1-\frac{T_F}{T_C} - \frac{T_F S_{irr}}{Q_C}
+\]
+\ \newline
+Questi concetti consentono di introdurre il concetto di \textbf{lavoro perso} (o dissipato):
+\[
+    L_P = L_{rev} - L \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;L_{P} = T_FS_{irr}
+\]
+che rappresenta l’energia che il sistema termodinamico reale non è in grado di convertire in
+lavoro utile a causa di una non-idealità intrinseca del processo di conversione analizzato.
+\subsection{Sistemi di conversione inversi: macchina operatrice con sorgenti a temperatura costante}
+\begin{center}
+    \includegraphics[height=5cm]{../NOTE SUGLI ESERCIZI/img5.PNG}
+\end{center}
+Dai bilanci energetico ed entropico della macchina termodinamica operatrice illustrata in
+figura e che è caratterizzata da operare con serbatoi di calore a temperatura costante $T_C$ e $T_F$ si
+ottiene:
+\[
+    \begin{cases}
+        +Q_C - L - Q_F = 0\\
+        + \frac{Q_C}{T_C} - \frac{Q_F}{T_F} = S_{irr}
+    \end{cases}
+\]
+Rispetto alla macchina motrice è differente l’equazione di bilancio entropico in quanto
+cambiano i segni dei contributi associati ai serbatoi di calore e di lavoro.\newline
+\newline
+Anche in questo caso si separa l’analisi della macchina termodinamica ideale (reversibile) per
+la quale viene minimizzato il lavoro necessario per realizzare il processo, rispetto alla
+macchina termodinamica operatrice reale (o irreversibile). \newline
+\newline
+Nel caso di macchina termodinamica operatrice \textbf{ideale}, o reversibile, si ottengono le due
+relazioni: 
+\[
+    L_{rev} = Q_F\left(\frac{T_C}{T_F}-1\right) \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; L_{rev} = Q-C \left(1- \frac{T_F}{T_C}\right)
+\]
+che si differenziano per il fatto di consentire la valutazione del lavoro assorbito in funzione
+del calore prelevato dalla sorgente inferiore (analisi tipica della macchina frigorifera) o del
+lavoro assorbito in funzione del calore ceduto alla sorgente di lavoro (analisi tipica della
+pompa di calore).
+\newline
+\newline
+Nel caso di macchina termodinamica operatrice \textbf{reale}, o irreversibile, si ottengono: 
+\[
+    L = Q_F\left(\frac{T_C}{T_F}-1\right) + T_C S_{irr} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; L = Q_C \left(1- \frac{T_F}{T_C}\right) + T_F S_{irr}
+\]
+Il lavoro assorbito è in questo caso maggiore rispetto a quello assorbito nel caso ideale. \newline
+\newline
+Come parametro di merito si introduce, per le macchine termodinamiche operatrici
+l’efficienza $\epsilon$ (anche detto COP). \newline
+\newline
+Nel caso di funzionamento come macchina \textbf{frigorifera} si ha: 
+\[
+    \epsilon_{f,rev} = \frac{T_F}{T_C-T_F} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \epsilon_{f} = \frac{T_F}{T_C-T_F + \frac{T_CT_FS_{irr}}{Q_F}}
+\]
+Nel caso di funzionamento come pompa di calore si ha:
+\[
+    \epsilon_{PC, rev} = \frac{T_C}{T_C-T_F} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \epsilon_{PC} = \frac{T_C}{T_C-T_F + \frac{T_CT_FS_{irr}}{Q_C}}
+\]
+\ \newline
+Il rendimento di una macchina termodinamica motrice e l’efficienza (o il COP) di una
+macchina termodinamica operatrice rappresentano il cosiddetto \textbf{rendimento di primo
+principio} che è un indice della capacità del processo di conversione dell’energia di soddisfare
+gli obiettivi a fronte di una certa spesa energetica. \newline
+\newline
+Viene anche introdotto il concetto di \textbf{rendimento di secondo principio} che rappresenta la
+capacità di un processo reale di avvicinarsi alle prestazioni del processo ideale (che nel caso
+termodinamico è il processo reversibile per il quale non si ha produzione di entropia per
+irreversibilità). Per la macchina termodinamica motrice e per la macchina termodinamica
+operatrice (frigorifera o pompa di calore) si ha: 
+\[
+    \eta_{II} = \frac{L}{L_{rev}} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \eta_{II} = \left(\frac{\eta}{\eta_{rev}}\right)_{Tc, Qc, Tf}
+\]
+\[
+    \eta_{II} = \frac{L_{rev}}{L} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \eta_{II} = \left(\frac{\epsilon}{\epsilon_{rev}}\right)_{Tc,Tf,Qf}
+\]
+\ \newline
+\textbf{oss.} i risultati che sono stati ottenuti valgono solo per macchine termodinamiche con
+sorgenti a temperatura costante. 
+
+
+
+
+
+
 \section{Cicli a gas e a vapore}
 Una prima classificazione dei cicli termodinamici distingue tra cicli a gas e cicli a vapore.
 L’analisi termodinamica dei cicli richiede la valutazione degli stati termodinamici dei punti
