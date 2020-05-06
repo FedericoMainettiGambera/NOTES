@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex riassunto.idx"] 1588729708 "riassunto.idx" "riassunto.ind" "riassunto" 1588729767
-  "riassunto.idx" 1588729753 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex riassunto.idx"] 1588733132 "riassunto.idx" "riassunto.ind" "riassunto" 1588733168
+  "riassunto.idx" 1588733157 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "riassunto.ilg"
   "riassunto.ind"
-["pdflatex"] 1588729751 "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.tex" "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" "riassunto" 1588729767
+["pdflatex"] 1588733155 "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.tex" "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" "riassunto" 1588733168
   "../../preamble/preamble.tex" 1587603066 707 ea9409653390c911ff58e23c44f6605e ""
   "../L01/L01.tex" 1588558398 9275 ae0912f5ed04dd0656044efc458dc09b ""
   "../L01/img1.PNG" 1588257878 39485 bd19c47bdb2aec6adf2e0d8b882fb419 ""
@@ -83,8 +83,8 @@
   "../NOTE SUGLI ESERCIZI/img1.PNG" 1588613956 31115 743da1b0d437137742d10c5af47d2dda ""
   "../NOTE SUGLI ESERCIZI/img2.PNG" 1588614376 151360 3b97bdab0b8b505ce05bc3d7244c2085 ""
   "../NOTE SUGLI ESERCIZI/img3.PNG" 1588614667 107219 d7fe0dde4cf59947854e45a6aad6f242 ""
-  "../NOTE SUGLI ESERCIZI/note-sugli-esercizi.tex" 1588729743 16592 42a0a1d209559a39b6dac5b19755808c ""
-  "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.aux" 1588729764 20385 c24226d6949f7b177b714cf106bc1223 ""
+  "../NOTE SUGLI ESERCIZI/note-sugli-esercizi.tex" 1588733149 17443 e6dcbf8a3b01b7f30f8b6b3437366ce6 ""
+  "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.aux" 1588733165 20507 be626d245bae0be619a6955003bbe2da ""
   "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.tex" 1588728825 1403 f2f90872957ec328dd5e1d2a4cd1a4b0 ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1584035588 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1584038501 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -268,17 +268,17 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1584048551 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1584049042 8274593 951864db8bcab083c09dd09dcef78fa9 ""
   "c:/texlive/2019/texmf.cnf" 1584048406 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "riassunto.aux" 1588729764 20385 c24226d6949f7b177b714cf106bc1223 "pdflatex"
-  "riassunto.ind" 1588729710 0 d41d8cd98f00b204e9800998ecf8427e "makeindex riassunto.idx"
-  "riassunto.out" 1588729764 11552 411e42378d2d5a7d032fc9e1dca51609 "pdflatex"
+  "riassunto.aux" 1588733165 20507 be626d245bae0be619a6955003bbe2da "pdflatex"
+  "riassunto.ind" 1588733134 0 d41d8cd98f00b204e9800998ecf8427e "makeindex riassunto.idx"
+  "riassunto.out" 1588733165 11617 18998087324cf086f5f604d41142e3f4 "pdflatex"
   "riassunto.tex" 1588728825 1403 f2f90872957ec328dd5e1d2a4cd1a4b0 ""
-  "riassunto.toc" 1588729764 13917 dbfdf1ac35d7bcf046a41a8ef08452bb "pdflatex"
+  "riassunto.toc" 1588733165 13998 864ce07ed6ec50bbc9f4461c2f9e64ce "pdflatex"
   (generated)
-  "riassunto.toc"
+  "riassunto.log"
   "riassunto.out"
+  "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.log"
+  "riassunto.idx"
+  "riassunto.pdf"
   "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf"
   "riassunto.aux"
-  "riassunto.pdf"
-  "riassunto.log"
-  "riassunto.idx"
-  "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.log"
+  "riassunto.toc"

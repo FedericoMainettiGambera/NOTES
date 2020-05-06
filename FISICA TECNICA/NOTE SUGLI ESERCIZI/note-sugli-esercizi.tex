@@ -226,7 +226,7 @@ legati tra loro dalla equazione di bilancio energetico.
 Una prima classificazione dei cicli termodinamici distingue tra cicli a gas e cicli a vapore.
 L’analisi termodinamica dei cicli richiede la valutazione degli stati termodinamici dei punti
 caratteristici del ciclo al fine di determinare le potenze termiche e meccaniche scambiate tra
-macchina ciclica ed i serbatoi di calore e lavoro. 
+macchina ciclica ed i serbatoi di calore e lavoro.
 \subsection{Cicli a gas}
 \subsubsection{Ciclo Joule-Brayton}
 ciclo simmetrico a gas che nella sua realizzazione ideale è costituito da
@@ -281,3 +281,15 @@ L'efficienza frigorifera (detta anche $COP_F$) e l'efficienza della pompa di cal
     \epsilon_F = \frac{\dot{Q}_F}{\dot{L}} \;\;\;\;\;\;\;\;\;\;\epsilon_{PC} = \frac{\dot{Q}_C}{\dot{L}}
 \]
 Per l'analisi dei cicli termodinamici a vapore occorre utilizzare le tabelle termodinamiche con le proprietà delle sostanze.
+\subsection{Osservazioni}
+\begin{itemize}
+    \item Per la determinazione del rendimento termodinamico di un ciclo non noto ci viene utile la definizione di rendimento nella forma:
+    \[
+        \eta = 1- \frac{Q_F}{Q_C}
+    \]
+    osservando che le trasformazioni per le quali, nel piano T- s, si ha un aumento di entropia
+    comportano un trasferimento di calore alla macchina ciclica (calore entrante) mentre
+    viceversa le trasformazioni per le quali si ha una riduzione di entropia sono associate a una
+    cessione di calore dalla macchina ciclica. (es. isobara è calore entrante ($Q_C$), isocora è calore uscente ($Q_F$), le trasformazioni isoentropiche sono adiabatiche e quindi non hanno trasferimento di calore).
+    \item  trasformazione \textbf{isoentropica} significa trasformazione adiabatica reversibile.
+\end{itemize}
