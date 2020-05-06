@@ -223,3 +223,61 @@ Si suggerisce di ricorrere al calcolo degli integrali per determinare il lavoro 
 scambiato soltanto quando strettamente necessario. Essendo questi due termini comunque
 legati tra loro dalla equazione di bilancio energetico. 
 \section{Cicli a gas e a vapore}
+Una prima classificazione dei cicli termodinamici distingue tra cicli a gas e cicli a vapore.
+L’analisi termodinamica dei cicli richiede la valutazione degli stati termodinamici dei punti
+caratteristici del ciclo al fine di determinare le potenze termiche e meccaniche scambiate tra
+macchina ciclica ed i serbatoi di calore e lavoro. 
+\subsection{Cicli a gas}
+\subsubsection{Ciclo Joule-Brayton}
+ciclo simmetrico a gas che nella sua realizzazione ideale è costituito da
+due trasformazione isoentropiche e due trasformazioni isobare. Questo ciclo può essere
+realizzato anche come macchina operatrice. \newline
+Per il ciclo Joule Brayton viene definito il rapporto delle pressioni:
+\[
+    r_P = \frac{P_{max}}{P_{min}}
+\]
+mentre il rendimento termodinamico assume l'espressione:
+\[
+    \eta_{JB} = 1- \frac{T_1}{T_2} \;\;\;\;\;\;\;\;\;\;\eta_{JB} = 1- \frac{1}{r_P^{\frac{k-1}{k}}}
+\]
+\subsubsection{Ciclo Otto}
+ciclo simmetrico a gas che nella sua realizzazione ideale è costituito da due
+trasformazione isoentropiche e due trasformazioni isovolumiche. \newline
+Per il ciclo Otto viene definito il rapporto di compressione volumetrico:
+\[
+    r_V = \frac{V_1}{V_2}
+\]
+mentre il rendimento termodinamico assume l'espressione:
+\[
+    \eta_{O} = 1- \frac{T_1}{T_2} \;\;\;\;\;\;\;\;\;\; \eta_{O} = 1- \frac{1}{r_V^{k-1}}
+\]
+\subsubsection{Ciclo Diesel}
+ciclo non simmetrico a gas che nella sua realizzazione ideale è costituito da due
+trasformazione isoentropiche, una trasformazione isobara e una trasformazioni isovolumica. \newline
+Per il ciclo Diesel vengono definiti il rapporto di compressione volumetrico e il rapporto di
+combustione: 
+\[
+    r= \frac{V_1}{V_2} \;\;\;\;\;\;\;\;\;\;z = \frac{V_3}{V_2}
+\]
+mentre il rendimento termodinamico assume l'espressione:
+\[
+    \eta = 1- \frac{1}{r^{k-1}} \frac{1}{k} \frac{(z^k - 1)}{(z-1)}
+\]
+\subsection{Cicli a vapore}
+\subsubsection{Ciclo Rankine}
+ciclo che nella sua realizzazione ideale è costituito da due trasformazione
+isoentropiche e due trasformazioni isobare. Durante le due trasformazioni isobare si realizza
+la transizione di fase. \newline
+Il rendimento termodinamico è definito come:
+\[
+    \eta = \frac{\dot{L}}{\dot{Q}_C}
+\]
+\subsubsection{Ciclo frigorifero a vapore}
+ciclo che nella sua realizzazione ideale è costituito da due
+trasformazioni isobare, una trasformazione isoentropica e una trasformazione isoentalpica
+irreversibile. \newline
+L'efficienza frigorifera (detta anche $COP_F$) e l'efficienza della pompa di calore (detta anche $COP_{PC}$) sono definite come:
+\[
+    \epsilon_F = \frac{\dot{Q}_F}{\dot{L}} \;\;\;\;\;\;\;\;\;\;\epsilon_{PC} = \frac{\dot{Q}_C}{\dot{L}}
+\]
+Per l'analisi dei cicli termodinamici a vapore occorre utilizzare le tabelle termodinamiche con le proprietà delle sostanze.
