@@ -291,3 +291,63 @@ Il lavoro è ottimale quando il rapporto di compressione vale
     r_{V,opt} = \left(\frac{T_3}{T_1}\right)^{\frac{1}{2(k-1)}}
 \]
 \subsection{Ciclo Diesel}
+Il \textbf{ciclo diesel} è simile al ciclo otto, ed è composto da \textbf{due isoentropiche}, \textbf{una isocora} e \textbf{una isobara}
+\begin{center}
+    \includegraphics[height=4cm]{../L07/img13.PNG}
+\end{center}
+\subsubsection{Rendimento termodinamico del ciclo Diesel}
+Consideriamo anche in questo caso un ciclo \textbf{ideale} simmetrico di un gas perfetto.
+\[
+    \eta_{Diesel} = \frac{L}{Q_C} = 1- \frac{Q_F}{Q_C} = 1- \frac{c_V(T_4-T_1)}{c_P(T_3-T_2)} = 1- \frac{c_V T_1\left(\frac{T_4}{T_1}-1\right)}{c_P T_2 \left(\frac{T_3}{T_2}-1\right)}
+\]
+La cosa fondamentale che cambia rispetto al ciclo otto è che $Q_F$ è lo scambio termico lungo una isocora.\newline
+Definiamo:
+\[
+    r = \frac{V_1}{V_2} \;\;\;\text{che è uguale a dire }\; \frac{V_max}{V_min}
+\]
+\[
+    z = \frac{V_3}{V_2} \;\;\;\text{che è uguale a dire}\; \frac{V_{fine \; combustione}}{V_{inizio \; combustione}}
+\]
+dove $r$ è il \textbf{rapporto di comrpessione volumetrico} e $z$ è il \textbf{rapporto di combustione}.\newline
+Allora possiamo dire:
+\[
+    \eta_{Diesel} = 1- \frac{1}{r^{k-1}} \frac{1}{k} \frac{(z^k -1)}{(z-1)}
+\]
+Confrontando il rendimento del ciclo Diesel con quello del ciclo Otto a parità di compressione volumetrica, ci si accorge che il ciclo Otto ha un rendimento maggiore.
+\subsubsection{Vantaggi del motore Otto rispetto al motore Diesel}
+\begin{itemize}
+    \item Maggiore leggerezza;
+    \item Maggiore frequenza di rotazione;
+    \item Minore rumorosità;
+    \item Minore rendimento globale;
+    \item Brusco calo di rendimento al diminuire del carico;
+    \item Utilizzo di combustibili più pregiati
+\end{itemize}
+\subsection{Ciclo Joule-Brayton inverso}
+Il \textbf{ciclo Joule-Brayton inveso} è un ciclo \textbf{frigorifero} (per macchine operatrici) simmetrico costituito da \textbf{due isoentropiche} e \textbf{due isobare}.
+\begin{center}
+    \includegraphics[height=4cm]{../L07/img14.PNG}
+\end{center}
+\subsubsection{Efficienza del ciclo}
+\[
+    \epsilon = \frac{\dot{Q}_F}{\dot{Q}_C -\dot{Q}_F}
+\]
+\[
+    \epsilon = \left(\frac{T_2-T_1}{(T_3-T_4) - (T_2-T_1)}\right)
+\]
+\[
+    \epsilon = \frac{T_2}{T_3-T_2} = \frac{T_1}{T_4-T_1} = \left(  \frac{1}{r_P^{\frac{k-1}{k}}-1}  \right)
+\]
+\textbf{solo per cicli simmetrici}:
+\begin{itemize}
+    \item alta efficienza quando $r_P \rightarrow 1$ però aumentano le dimensioni dell'impianto;
+    \item miglioramento ottenibile con l'impiego della rigenerazione;
+\end{itemize}
+\subsection{Ciclo Stirling}
+\textbf{Ciclo simmetrico costituito da due isoterme e due isocore}
+\subsection{Ciclo Ericsson}
+\textbf{Ciclo simmetrico costituito da due isoterme e due isobare}
+\subsection{Riassunto dei cicli}
+\begin{center}
+    \includegraphics[height=6cm]{../L07/img15.PNG}
+\end{center}

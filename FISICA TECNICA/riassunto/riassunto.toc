@@ -111,16 +111,23 @@
 \contentsline {subsubsection}{\numberline {7.4.2}Rendimento termodinamico del ciclo Otto}{45}{subsubsection.7.4.2}%
 \contentsline {subsubsection}{\numberline {7.4.3}Lavoro specifico del ciclo otto}{46}{subsubsection.7.4.3}%
 \contentsline {subsection}{\numberline {7.5}Ciclo Diesel}{46}{subsection.7.5}%
-\contentsline {section}{\numberline {8}L08-Cicli a vapore}{47}{section.8}%
-\contentsline {section}{\numberline {9}NOTE SUGLI ESERCIZI}{48}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Linee guida per gli esercizi}{48}{subsection.9.1}%
-\contentsline {subsubsection}{\numberline {9.1.1}Impostazione del problem}{48}{subsubsection.9.1.1}%
-\contentsline {subsubsection}{\numberline {9.1.2}Soluzione del problema}{48}{subsubsection.9.1.2}%
-\contentsline {subsubsection}{\numberline {9.1.3}Unità di misura}{48}{subsubsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.2}Equazioni di bilancio per i sistemi chiusi}{49}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Stati monofase: equazioni di stato e trasformazioni}{51}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Gas ideali}{51}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Liquidi e solidi incomprimibili ideali}{52}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}Gas reali}{52}{subsubsection.9.3.3}%
-\contentsline {subsubsection}{\numberline {9.3.4}Liquidi e solidi reali}{52}{subsubsection.9.3.4}%
-\contentsline {subsubsection}{\numberline {9.3.5}Trasformazioni politropiche}{53}{subsubsection.9.3.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Rendimento termodinamico del ciclo Diesel}{47}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}Vantaggi del motore Otto rispetto al motore Diesel}{47}{subsubsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.6}Ciclo Joule-Brayton inverso}{47}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}Efficienza del ciclo}{47}{subsubsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.7}Ciclo Stirling}{48}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Ciclo Ericsson}{48}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Riassunto dei cicli}{48}{subsection.7.9}%
+\contentsline {section}{\numberline {8}L08-Cicli a vapore}{49}{section.8}%
+\contentsline {section}{\numberline {9}NOTE SUGLI ESERCIZI}{50}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Linee guida per gli esercizi}{50}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Impostazione del problem}{50}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Soluzione del problema}{50}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Unità di misura}{50}{subsubsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.2}Equazioni di bilancio per i sistemi chiusi}{51}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Stati monofase: equazioni di stato e trasformazioni}{53}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Gas ideali}{53}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Liquidi e solidi incomprimibili ideali}{54}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}Gas reali}{54}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.4}Liquidi e solidi reali}{54}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9.3.5}Trasformazioni politropiche}{55}{subsubsection.9.3.5}%
