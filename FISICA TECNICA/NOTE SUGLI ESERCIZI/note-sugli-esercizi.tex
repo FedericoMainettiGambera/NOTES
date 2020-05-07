@@ -381,6 +381,8 @@ Esiste anche il \textbf{lavoro di pulsione} $\dot{L}_P^\leftarrow $ che è il la
 \]
 con $M_i$ la massa immessa nel sistema, $P$ la pressione costante che agisce su $M_i$, e $v_i$ il volume specifico della sessione di ingresso. Allo stesso modo si calcola il lavoro di pulsione per l'uscita.\newline
 \newline
+Un approccio tipico prevede come primo passo la stesura dei tre bilanci seguiti dalla semplificazione dei bilanci di energia e di entropia tramite il bilancio di massa.
+\newline
 \newline
 \newline
 \textbf{Regime stazionario con un ingresso e con un'uscita}\newline
@@ -397,7 +399,7 @@ Considerando inoltre una porzione di condotto delimitata da una sezione di \text
         \dot{m}(s_i-s_u) + \dot{S}_Q^\leftarrow  + \dot{S}_{irr} = 0
     \end{cases}
 \]
-dove $\dot{m} = \rho w \Omega$ è la \textbf{portata} in massa del sistema ($\rho$ è la massa volumica, $\omega$ è la velocità media, $\Omega$ è l'area della sezione di passaggio).
+dove $\dot{m} = \rho w \Omega$ è la \textbf{portata} in massa del sistema ($\rho$ è la massa volumica, $\omega$ è la velocità media, $\Omega$ è l'area della sezione di passaggio, da notare che $\omega \Omega = \Gamma$ è la portata volumica e che $rho = VM$).
 \subsection{Sistemi aperti notevoli}
 \subsubsection{Macchina aperta}
 La \textbf{machcina aperta} è un \textbf{dispositivo adiabatico} destinato a \textbf{scambiare lavoro} per il quale si ipotizzano trascurabili le variazioni di energia potenziale e di energia cinetica tra le sezioni di ingresso e di uscita.\newline
@@ -413,6 +415,8 @@ I bilanci diventano:
     \item \textbf{Turbina}:\newline
     Una \textbf{turbina} produce lavoro, cioè genera potenza meccanica.\newline
     \newline
+    Una turbina riduce il suo contenuto entalpico, la sua pressione e temperatura e aumenta il suo volume specifico.\newline
+    \newline
     Nel caso di turbina il \textbf{lavoro d'elica uscente} è positivo, quindi l'entalpia in ingresso è maggiore dell'antalpia in uscita.\newline
     \newline
     Si chiama \textbf{rendimento isoentalpico} di una \textbf{macchina motrice aperta} (turbina) il rapporto fra la potenza realmente ottenuta e la potenza massima ottenibile in condizioni ideali a parità di condizioni in ingresso e a parità di pressione di fine espansione:
@@ -421,9 +425,11 @@ I bilanci diventano:
     \]
     dove per $\dot{L}_{reale}^\rightarrow $ si intende $\dot{L}_e$ e per $\dot{L}_{ideale}^\rightarrow $ si intende la potenza meccanica scambiata con un processo ideale (isoentropico).
     \item \textbf{Compressore e pompa}:\newline
-    Se la macchina aperta assorbe lavoro dall'esterno, si parla di comrpessore o pompa a seconda del fluido di lavoro.\newline
+    Se la macchina aperta assorbe lavoro dall'esterno, si parla di compressore o pompa a seconda del fluido di lavoro.\newline
     \newline
-    Nel caso di turbina il \textbf{lavoro d'elica uscente} è negatico.\newline
+    Il meccanismo è opposto a quello della turbina.\newline
+    \newline
+    Nel caso di compressore o pompa il \textbf{lavoro d'elica uscente} è negativo.\newline
     \newline
     Si chiama \textbf{rendimento isoentropico} di una macchina operatrice aperta (compressore e pompa) il rapporto fra la potenza minima spesa in condizioni ideali e la potenza realmente spesa a parità di condizioni in ingresso e a parità di pressione di fine espansione:
     \[
@@ -470,24 +476,53 @@ combinazione di sottosistemi elementari (serbatoio di calore, serbatoio di lavor
 ciclica) che ha come funzione o la conversione termodinamica di energia termica in lavoro
 (\textbf{macchina termodinamica motrice}) o il trasferimento di energia termica da uno o più serbatoi
 di calore a temperatura inferiore a uno o più serbatoi di calore a temperatura superiore
-(\textbf{macchina termodinamica operatrice}). 
-\subsection{Sistemi di conversione diretti: macchina motrice con sorgenti a temperatura cosante}
+(\textbf{macchina termodinamica operatrice}). \newline
+\newline
+Per \textbf{serbatoio di calore} si intende un sistema termodinamico che scambia \textbf{solo calore} con l'esterno senza alterare il suo stato termodinamico (cioè la temperatura e la pressione del serbatoio rimangono costanti, il suo stato non cambia); gli scambi avvvengono con trasformazioni quasi-statiche (\textbf{internamente reversibili}). Questa definizione di serbatoio è sinonimo di un sistema \textbf{a massa infinita}.\newline
+\newline
+Per \textbf{serbatoio di lavoro} si intende un sistema termodinamico che scambia \textbf{solo lavoro} con l'esterno senza alterare il suo stato termodinamico; gli scambi avvengono con trasformazioni quasi-statiche (\textbf{internamente reversibili}).
+\subsection{macchina motrice con sorgenti a temperatura cosante}
 \begin{center}
     \includegraphics[height=5cm]{../NOTE SUGLI ESERCIZI/img4.PNG}
 \end{center}
+Vediamo la macchina motrice da un punto di vista analitico.\newline
+Dalle equazioni di bilancio otteniamo:
+\[
+    \begin{cases}
+        \Delta U_Z = 0\\ \Delta S_Z = S_{irr}
+    \end{cases} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \begin{cases}
+        \Delta U_C + \Delta U_F + \Delta U_{SL} + \Delta U_M = 0 \\
+        \Delta S_C + \Delta S_F + \Delta S_{SL} + \Delta S_M = S_{irr}
+    \end{cases}
+\]
+Osservando i singoli sottosistemi otteniamo:
+\[
+    \begin{cases}
+        \Delta U_C = Q_C^\leftarrow \\ \Delta S_C = \frac{Q_C^\leftarrow }{T_C}
+    \end{cases} \;\;\;\;\; \begin{cases}
+        \Delta U_F = Q_F^\leftarrow \\ \Delta S_F = \frac{Q_F^\leftarrow}{T_F}
+    \end{cases} \;\;\;\;\; \begin{cases}
+        \Delta U_{SL} = - L_{SL}^\rightarrow \\ \Delta S_{SL} = 0
+    \end{cases} \;\;\;\;\; \begin{cases}
+        \Delta U_M = 0\\ \Delta S_M = 0
+    \end{cases}
+\]
 Dai bilanci energetico ed entropico della macchina termodinamica motrice illustrata in figura
 e che è caratterizzata da operare con serbatoi di calore a temperatura costante $T_S$ e $T_F$, si
 ottiene: 
 \[
     \begin{cases}
+        Q_C^\leftarrow  + Q_F^\leftarrow  - L_{SL}^\rightarrow = 0\\
+        \frac{Q_C^\leftarrow}{T_C} + \frac{Q_C^\leftarrow}{T_F} = S_{irr}
+    \end{cases}\;\;\;\;\;\longrightarrow\;\;\;\;\;\begin{cases}
         -Q_C + L + Q_F = 0\\
         - \frac{Q_C}{T_C} + \frac{Q_F}{T_F} = S_{irr}
     \end{cases}
 \]
+\ \newline
 L’analisi termodinamica di una macchina termodinamica motrice richiede spesso di separare
 l’analisi della macchina ideale (reversibile) che consente di massimizzare il lavoro prodotto
 da quella reale (irreversibile). \newline
-\newline
 Nel caso di macchina termodinamica motrice \textbf{ideale}, o reversibile, si ottiene: 
 \[
     L_{rev} = Q_C \left(1- \frac{T_F}{T_C}\right)
@@ -501,7 +536,7 @@ Nel caso di macchina termodinamica motrice \textbf{reale}, o irreversibile, si o
     L  = Q_C \left(1- \frac{T_F}{T_C}\right) - T_FS_{irr}
 \]
 \[
-    \eta =1-\frac{T_F}{T_C} - \frac{T_F S_{irr}}{Q_C}
+    \eta = \frac{L}{Q_C} = 1-\frac{T_F}{T_C} - \frac{T_F S_{irr}}{Q_C}
 \]
 \ \newline
 Questi concetti consentono di introdurre il concetto di \textbf{lavoro perso} (o dissipato):
@@ -510,15 +545,40 @@ Questi concetti consentono di introdurre il concetto di \textbf{lavoro perso} (o
 \]
 che rappresenta l’energia che il sistema termodinamico reale non è in grado di convertire in
 lavoro utile a causa di una non-idealità intrinseca del processo di conversione analizzato.
-\subsection{Sistemi di conversione inversi: macchina operatrice con sorgenti a temperatura costante}
+\subsection{macchina operatrice con sorgenti a temperatura costante}
 \begin{center}
     \includegraphics[height=5cm]{../NOTE SUGLI ESERCIZI/img5.PNG}
 \end{center}
+Vediamo la macchina operatrice da un punto di vista analitico.\newline
+Dalle equazioni di bilancio otteniamo:
+\[
+    \begin{cases}
+        \Delta U_Z = 0\\ \Delta S_Z = S_{irr}
+    \end{cases} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \begin{cases}
+        \Delta U_C + \Delta U_F + \Delta U_{SL} + \Delta U_M = 0 \\
+        \Delta S_C + \Delta S_F + \Delta S_{SL} + \Delta S_M = S_{irr}
+    \end{cases}
+\]
+Osservando i singoli sottosistemi otteniamo:
+\[
+    \begin{cases}
+        \Delta U_C = Q_C^\leftarrow \\ \Delta S_C = \frac{Q_C^\leftarrow }{T_C}
+    \end{cases} \;\;\;\;\; \begin{cases}
+        \Delta U_F = Q_F^\leftarrow \\ \Delta S_F = \frac{Q_F^\leftarrow}{T_F}
+    \end{cases} \;\;\;\;\; \begin{cases}
+        \Delta U_{SL} = - L_{SL}^\rightarrow \\ \Delta S_{SL} = 0
+    \end{cases} \;\;\;\;\; \begin{cases}
+        \Delta U_M = 0\\ \Delta S_M = 0
+    \end{cases}
+\]
 Dai bilanci energetico ed entropico della macchina termodinamica operatrice illustrata in
 figura e che è caratterizzata da operare con serbatoi di calore a temperatura costante $T_C$ e $T_F$ si
 ottiene:
 \[
     \begin{cases}
+        Q_C^\leftarrow  + Q_F^\leftarrow  - L_{SL}^\rightarrow  = 0\\
+        \frac{Q_C^\leftarrow}{T_C} + \frac{Q_F^\leftarrow}{T_F} = S_{irr}
+    \end{cases} \;\;\;\;\;\longrightarrow\;\;\;\;\;\begin{cases}
         +Q_C - L - Q_F = 0\\
         + \frac{Q_C}{T_C} - \frac{Q_F}{T_F} = S_{irr}
     \end{cases}
@@ -529,16 +589,15 @@ cambiano i segni dei contributi associati ai serbatoi di calore e di lavoro.\new
 Anche in questo caso si separa l’analisi della macchina termodinamica ideale (reversibile) per
 la quale viene minimizzato il lavoro necessario per realizzare il processo, rispetto alla
 macchina termodinamica operatrice reale (o irreversibile). \newline
-\newline
 Nel caso di macchina termodinamica operatrice \textbf{ideale}, o reversibile, si ottengono le due
 relazioni: 
 \[
-    L_{rev} = Q_F\left(\frac{T_C}{T_F}-1\right) \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; L_{rev} = Q-C \left(1- \frac{T_F}{T_C}\right)
+    L_{rev,F} = Q_F\left(\frac{T_C}{T_F}-1\right) \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; L_{rev,PC} = Q-C \left(1- \frac{T_F}{T_C}\right)
 \]
 che si differenziano per il fatto di consentire la valutazione del lavoro assorbito in funzione
-del calore prelevato dalla sorgente inferiore (analisi tipica della macchina frigorifera) o del
+del calore prelevato dalla sorgente inferiore (analisi tipica della macchina \textbf{frigorifera}) o del
 lavoro assorbito in funzione del calore ceduto alla sorgente di lavoro (analisi tipica della
-pompa di calore).
+\textbf{pompa di calore}).
 \newline
 \newline
 Nel caso di macchina termodinamica operatrice \textbf{reale}, o irreversibile, si ottengono: 
@@ -552,13 +611,18 @@ l’efficienza $\epsilon$ (anche detto COP). \newline
 \newline
 Nel caso di funzionamento come macchina \textbf{frigorifera} si ha: 
 \[
-    \epsilon_{f,rev} = \frac{T_F}{T_C-T_F} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \epsilon_{f} = \frac{T_F}{T_C-T_F + \frac{T_CT_FS_{irr}}{Q_F}}
+    \epsilon_{f,rev} = \frac{T_F}{T_C-T_F} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \epsilon_{f} = \frac{Q_F}{L} = \frac{T_F}{T_C-T_F + \frac{T_CT_FS_{irr}}{Q_F}}
 \]
-Nel caso di funzionamento come pompa di calore si ha:
+Nel caso di funzionamento come \textbf{pompa di calore} si ha:
 \[
-    \epsilon_{PC, rev} = \frac{T_C}{T_C-T_F} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \epsilon_{PC} = \frac{T_C}{T_C-T_F + \frac{T_CT_FS_{irr}}{Q_C}}
+    \epsilon_{PC, rev} = \frac{T_C}{T_C-T_F} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \epsilon_{PC} = \frac{Q_C}{L} = \frac{T_C}{T_C-T_F + \frac{T_CT_FS_{irr}}{Q_C}}
 \]
 \ \newline
+Legame fra efficienza della macchina frigorifera e della pompa di calore:
+\[
+    \epsilon_P = \frac{Q_C}{L} = \frac{Q_F + L}{L} = \epsilon_F +1
+\]
+\subsection{Rendimento di secondo principio}
 Il rendimento di una macchina termodinamica motrice e l’efficienza (o il COP) di una
 macchina termodinamica operatrice rappresentano il cosiddetto \textbf{rendimento di primo
 principio} che è un indice della capacità del processo di conversione dell’energia di soddisfare

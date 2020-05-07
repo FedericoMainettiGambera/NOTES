@@ -141,14 +141,15 @@
 \contentsline {subsubsection}{\numberline {13.1.2}Scambiatori di calore}{62}{subsubsection.13.1.2}%
 \contentsline {subsubsection}{\numberline {13.1.3}Casi minori}{62}{subsubsection.13.1.3}%
 \contentsline {section}{\numberline {14}Macchine termodinamiche}{63}{section.14}%
-\contentsline {subsection}{\numberline {14.1}Sistemi di conversione diretti: macchina motrice con sorgenti a temperatura cosante}{63}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Sistemi di conversione inversi: macchina operatrice con sorgenti a temperatura costante}{64}{subsection.14.2}%
-\contentsline {section}{\numberline {15}Cicli a gas e a vapore}{65}{section.15}%
-\contentsline {subsection}{\numberline {15.1}Cicli a gas}{65}{subsection.15.1}%
-\contentsline {subsubsection}{\numberline {15.1.1}Ciclo Joule-Brayton}{65}{subsubsection.15.1.1}%
-\contentsline {subsubsection}{\numberline {15.1.2}Ciclo Otto}{65}{subsubsection.15.1.2}%
-\contentsline {subsubsection}{\numberline {15.1.3}Ciclo Diesel}{65}{subsubsection.15.1.3}%
+\contentsline {subsection}{\numberline {14.1}macchina motrice con sorgenti a temperatura cosante}{63}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}macchina operatrice con sorgenti a temperatura costante}{64}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Rendimento di secondo principio}{65}{subsection.14.3}%
+\contentsline {section}{\numberline {15}Cicli a gas e a vapore}{66}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Cicli a gas}{66}{subsection.15.1}%
+\contentsline {subsubsection}{\numberline {15.1.1}Ciclo Joule-Brayton}{66}{subsubsection.15.1.1}%
+\contentsline {subsubsection}{\numberline {15.1.2}Ciclo Otto}{66}{subsubsection.15.1.2}%
+\contentsline {subsubsection}{\numberline {15.1.3}Ciclo Diesel}{66}{subsubsection.15.1.3}%
 \contentsline {subsection}{\numberline {15.2}Cicli a vapore}{66}{subsection.15.2}%
 \contentsline {subsubsection}{\numberline {15.2.1}Ciclo Rankine}{66}{subsubsection.15.2.1}%
-\contentsline {subsubsection}{\numberline {15.2.2}Ciclo frigorifero a vapore}{66}{subsubsection.15.2.2}%
-\contentsline {subsection}{\numberline {15.3}Osservazioni}{66}{subsection.15.3}%
+\contentsline {subsubsection}{\numberline {15.2.2}Ciclo frigorifero a vapore}{67}{subsubsection.15.2.2}%
+\contentsline {subsection}{\numberline {15.3}Osservazioni}{67}{subsection.15.3}%
