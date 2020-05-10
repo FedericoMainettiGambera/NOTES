@@ -8,8 +8,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../preamble/preamble.tex
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../preamble/preamble.tex
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../../preamble/preamble.tex
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../../preamble/preamble.tex
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -78,6 +78,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/transparent/transparent.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/transparent/transparent.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/auxhook/auxhook.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/cancel/cancel.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/cancel/cancel.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -159,6 +161,42 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/environ/environ.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/environ/environ.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hycolor/hycolor.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hycolor/hycolor.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT c:/texlive/2019/texmf-dist/tex/generic/intcalc/intcalc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/intcalc/intcalc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/url/url.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/url/url.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/bitset/bitset.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/bitset/bitset.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/atveryend/atveryend.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/atveryend/atveryend.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
 OUTPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.idx
@@ -179,6 +217,14 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+OUTPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.out
+OUTPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -205,8 +251,10 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.toc
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.toc
+OUTPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.toc
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../0-ripasso/ripasso.tex
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../0-ripasso/ripasso.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -216,34 +264,31 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-OUTPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf
-INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-OUTPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.toc
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/capitolo0c.tex
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/capitolo0c.tex
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../0-ripasso/trigonometria.PNG
+INPUT ../0-ripasso/trigonometria.PNG
+INPUT ../0-ripasso/trigonometria.PNG
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../0-ripasso/asintotici.PNG
+INPUT ../0-ripasso/asintotici.PNG
+INPUT ../0-ripasso/asintotici.PNG
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../0-ripasso/derivate1.PNG
+INPUT ../0-ripasso/derivate1.PNG
+INPUT ../0-ripasso/derivate1.PNG
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../0-ripasso/derivate2.PNG
+INPUT ../0-ripasso/derivate2.PNG
+INPUT ../0-ripasso/derivate2.PNG
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../0-ripasso/mclaurin.PNG
+INPUT ../0-ripasso/mclaurin.PNG
+INPUT ../0-ripasso/mclaurin.PNG
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../1-serie (analisi I)/serie (analisi I).tex
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../1-serie (analisi I)/serie (analisi I).tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/trigonometria.PNG
-INPUT ../capitolo0/trigonometria.PNG
-INPUT ../capitolo0/trigonometria.PNG
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/asintotici.PNG
-INPUT ../capitolo0/asintotici.PNG
-INPUT ../capitolo0/asintotici.PNG
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/derivate1.PNG
-INPUT ../capitolo0/derivate1.PNG
-INPUT ../capitolo0/derivate1.PNG
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/derivate2.PNG
-INPUT ../capitolo0/derivate2.PNG
-INPUT ../capitolo0/derivate2.PNG
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/mclaurin.PNG
-INPUT ../capitolo0/mclaurin.PNG
-INPUT ../capitolo0/mclaurin.PNG
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/capitolo0a.tex
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/capitolo0a.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/ts1cmss.fd
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/ts1cmss.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/tcss1000.tfm
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../2-serie (analisi II)/serie (analisi II).tex
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../2-serie (analisi II)/serie (analisi II).tex
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/capitolo0b.tex
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo0/capitolo0b.tex
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo2/capitolo2.tex
@@ -256,8 +301,6 @@ INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo6/capitolo6.tex
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo6/capitolo6.tex
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo7/capitolo7.tex
-INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo7/capitolo7.tex
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo1/capitolo1.tex
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo1/capitolo1.tex
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../img/eqdiff2.PNG
@@ -267,6 +310,8 @@ INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/../img/eqdiff2(1).PNG
 INPUT ../img/eqdiff2(1).png
 INPUT ../img/eqdiff2(1).png
 INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.aux
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.out
+INPUT c:/Users/enric/Desktop/NOTES/analisi 2/master/master.out
 INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb

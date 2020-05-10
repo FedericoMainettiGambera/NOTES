@@ -1,7 +1,5 @@
-\section{Serie di funzioni}
-\rule{\textwidth}{2pt}
+\section{Serie di funzioni (analisi II)}
 \subsection{Serie di potenze}
-\rule{\textwidth}{0,4pt}
 \subsubsection{Nel campo complesso}
 \textbf{def.} Sia $\{a_n\}$ una successione di numeri complessi e sia $z_0 \in \mathbb{C}$.\newline
 La serie
@@ -43,8 +41,6 @@ converga per $|z|<R$ (con $R> 0$). Allora le serie ottenute derivando e integran
     \sum_{n=1}^{\infty} n a_n z^{n-1} \quad \quad \quad \sum_{n=0}^{\infty} \frac{a_n}{n+1} z^{n+1}
 \]
 sono rispettivamente la derivata e una primitiva della funzione $f$; inoltre, il loro raggio di convergenza è ancora $R$.\newline
-\newline
-\rule{\textwidth}{0,4pt}
 \subsubsection{Nel campo reale}
 Diremo che una serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge puntualmente} per ogni $x \in I$ se la serie numerica $\sum_{n}f_n(x)$ converge per ogni $x \in I$.
 \[
@@ -90,7 +86,7 @@ che possiamo traslare nell'origine:
     f(x) = \sum_{n=0}^{\infty} a_n x^n
 \]
 \newline
-\textbf{Criteri del rapporto e della radice:} Si possono ancora usare i criteri della radice e del rapporto specificati nel campo complesso, $R$ rappresenta ancora il raggio del disco di convergenza nel piano complesso, ma essendo interezzati all'asse reale si considera il solo intervallo $(-R, R)$.\newline
+\textbf{Criteri del rapporto e della radice:} Si possono ancora usare i criteri della radice e del rapporto specificati nel campo complesso, $R$ rappresenta ancora il raggio del disco di convergenza nel piano complesso, ma essendo interessati all'asse reale si considera il solo intervallo $(-R, R)$.\newline
 La serie di potenza nel campo reale converge \textbf{puntualmente} per ogni $x \in (-R, R)$, dove $R$ è dato dal criterio del rapporto o dal criterio della radice, e non converge se $|x| > R$.\newline
 Come nel caso complesso, non possiamo dire nulle sulla convergenza in $x = \pm R$.\newline
 Per quanto riguarda la convergenza \textbf{uniforme}, la serie di potenza nel campo reale converge uniformemente in $[-R+\epsilon, R- \epsilon]$ per ogni $\epsilon \in (0,R)$.\newline
@@ -123,7 +119,7 @@ allora valgono le seguenti tesi:
         \frac{d}{dx}\left(\sum f_n(x)\right) = \sum f_n'(x).
     \]
 \end{itemize}
-\textbf{Serie di Taylor}\newline
+\subsubsection{Serie di Taylor}\newline
 Introduciamo una vasta classe di funzioni elementari delle quali sappiamo scrivere esplicitamente le serie di potenza che le rappresentano.\newline
 Data una funzione $f$ di classe $C^\infty$ in un punto $x_0$, possiamo scrivere formalmente
 \[
@@ -166,9 +162,7 @@ che, se poniamo $a_n = f^{(n)}(x_0)/n!$, coincide con una serie di potenza nel c
 \[
     (1+x)^\alpha = \sum_{n=0}^{\infty} \binom{\alpha}{n}x^n \;\;\;\; (R=1)
 \]
-\rule{\textwidth}{2pt}
 \subsection{Serie di Fourier}
-\rule{\textwidth}{0,4pt}
 \subsubsection{Forma trigonometrica}
 Nello studio delle serie di potenza $\sum_{n}a_n z^n$ abbiamo visto che i problemi principali riguardano lo studio di $|z| = R$ con $R$ raggio di convergenza. Per tali possiamo scrivere $z = R(cos(\theta) + sin(\theta))$ e ottenere:
 \[
@@ -183,7 +177,7 @@ Per ogni scelta di $\alpha_n, \beta_n \in \mathbb{R}$ le funzioni
     a_0 + \sum_{n=1}^{\infty} (\alpha_n cos(nx) + \beta_n sin(n x))
 \]
 si chiamano \textbf{polinomi trigonometrici} di grado $k$; che sono funzioni periodiche di periodo $2\pi$ che hanno valor medio $\alpha_0$ su $[0, 2\pi]$.\newline
-Diremo che una serie in fomra trigonometrica converge se converge una successione di polinomi trogonometrici.\newline
+Diremo che una serie in forma trigonometrica converge se converge una successione di polinomi trogonometrici.\newline
 \textbf{oss.} 
 \[
     \sum_{n=1}^{\infty} (|\alpha_n| + |\beta_n|) < \infty \Rightarrow \text{converge totalmente su } [0,2\pi] \Rightarrow \text{converge uniformemente} \Rightarrow \text{converge puntualmente}
@@ -271,8 +265,7 @@ Se una funzione $f$ è regolare a tratti allora la sua serie di Fourier converge
 \[
     \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n cos(nx_0) + b_n sin(nx_0) \right) = \frac{f(x_0^+) + f(x_0^-)}{2}
 \]
-con la convenzione che $f(0^\pm) = f(2\pi^\pm)$. In particolare, se $f$ è continua in $x_0$, allora la serie converge a $f(x_0)$.\newline
-\rule{\textwidth}{0,4pt}
+con la convenzione che $f(0^\pm) = f(2\pi^\pm)$. In particolare, se $f$ è continua in $x_0$, allora la serie converge a $f(x_0)$.
 \subsubsection{Funzioni pari e dispari, periodi diversi da $2\pi$}
 I coefficienti di Fourier di funzioni $2\pi$-periodiche si possono calcolare integrando su un qualunque intervallo di ampiezza $2\pi$. Tipicamente si sceglie l'intervallo $[-\pi, \pi]$ perchè permette di sfruttare eventuali simmetrie della funzione $f$.\newline
 Infatti, se la funzione $f$ è \textbf{pari} allora risulta pari anche $f(x)cos(nx)$ mentre risulta dispari $f(x)sin(nx)$, dunque:
@@ -283,8 +276,7 @@ Invece, se la funzione $f$ è \textbf{dispari} allora risulta dispari anche la f
 \[
     f \; \text{dispari}\; \Rightarrow a_n = 0, \;\;\;\;\;b_n = \frac{2}{\pi} \int_{0}^{\pi} f(x) sin(nx)dx
 \]
-\newline
-\rule{\textwidth}{0,4pt}\newline
+\ \newline
 Come ci si comporta in presenza di funzioni con periodo $T \neq 2\pi$?\newline
 L'unica differenza sta nel calcolo dei coefficienti di Fouriere:
 \[
@@ -298,7 +290,6 @@ Tutti i teoremi valgono allo stesso modo, l'unico da "sistemare" è l'identità 
 \[
     \frac{2}{T} \int_{0}^{T}f(x)^2 dx = \frac{a_0^2}{2} + \sum_{n=1}^{\infty} (a_n^2 + b_n^2)
 \]
-\rule{\textwidth}{0,4pt}
 \subsubsection{Forma esponenziale complessa}
 La formula di Eulero, $e^{i \theta} = cos(\theta) + i sin(\theta)$, suggerisce di scrivere una serie di Fourier utilizzando gli esponenziali.
 \[
@@ -322,10 +313,18 @@ Identità di Parseval:
 \[
     \frac{1}{2\pi}\int_{0}^{2\pi}f(x)^2dx = \sum_{n=-\infty}^{\infty}|f_n|^2
 \]
-\rule{\textwidth}{2pt}
 \subsection{Note sugli esercizi}
 \subsubsection{Serie di potenze nel campo reale}
-Una volta calcolato il raggio di convergenza $R$, ci sono tre casi possibili:
+Sono dette serie di potenza le serie di funzioni della forma:
+\[
+    \sum_{n} a_nx^n \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\sum_{n}a_n(x-x_0)^n
+\]
+in cui la prima si dice centrata nell'origine e la seconda centrata in $x_0$ (con la semplice traslazione di $x-x_0$ a $x$ ci si può sempre ricondurre al caso $x_0 = 0$).\newline
+\newline
+Una volta calcolato il raggio di convergenza $R$ come
+\[
+    R = \lim_{n\rightarrow +\infty} \frac{|a_n|}{|a_{n+1}|} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;R = \lim_{n\rightarrow +\infty} \frac{1}{\sqrt[n]{|a_n|}}
+\] dove l'uso della prima o della seconda è suggerito dalle circostanze, ci sono tre casi possibili:
 \begin{itemize}
     \item $R = 0$, la serie converge se e solo se $x = x_0$;
     \item $R = +\infty$, la serie converge puntualmente per ogni $x \in \mathbb{R}$;
@@ -342,7 +341,6 @@ Per calcolare il raggio di convergenza $R$ si usano due formule:
 \[
     R = \lim_{n\rightarrow +\infty} \frac{1}{\sqrt[n]{|a_n|}}
 \]
-\rule{\textwidth}{2pt}
 \subsubsection{Sviuluppabilità in serie di Fourier}
 Una funzione periodica $f: \mathbb{R} \rightarrow  \mathbb{R}$ è sviluppabile in serie di Fourier se vale una delle due condizioni seguenti:
 \begin{itemize}
@@ -365,8 +363,7 @@ allora (quale sia il valore che $f$ assume in $x_0$) il valore della serie in $x
 \]
 \newline
 In parole povere, \textbf{per valutare se la funzione sia rappresentabile o meno con una serie di Fourier}, si prende la funzione, e si fa l'integrale $\int_{0}^{2\pi} f^2$, se l'integrale ha un valore finito, allora la funzione può essere sviluppata con una serie di Fourier. Da notare che l'integrale può essere svolto anche in senso generalizzato per risolvere puntii in cui la funzione va a $\infty$.\newline
-\textbf{Per valutare per quali valori di $x$ la serie converge effettivamente alla funzione indicata}, si usa il seguente criterio: dove la funzione è continua, la serie converge al valore della funzione, dove ci sono discontinuità a salto la serie converge al valor medio degli estremi del salto, dove ci sono altri tipi di discontinuità non si può concludere nulla sul comportamento della seria.\newline
-\rule{\textwidth}{0,4pt}
+\textbf{Per valutare per quali valori di $x$ la serie converge effettivamente alla funzione indicata}, si usa il seguente criterio: dove la funzione è continua, la serie converge al valore della funzione, dove ci sono discontinuità a salto la serie converge al valor medio degli estremi del salto, dove ci sono altri tipi di discontinuità non si può concludere nulla sul comportamento della seria.
 \subsubsection{Riassunto dei criteri per la convergenza della serie di Fourier $\sum F$}
 \textbf{Appunti prof:}\newline
 Condizione di partenza:
@@ -405,8 +402,7 @@ Inoltre, poichè derivando la funzione termine a termine, otteniamo la serie
 \[
     \sum_{n=1}^{\infty} (n b_n ) cos(nx) - (n a_n)sin(nx)
 \]
-è sufficiente riapplicare a qeust'ultima i criteri di convergenza, per controllare se la serie di partenza converge a una funzione derivabile.\newline
-\rule{\textwidth}{0,4pt}
+è sufficiente riapplicare a qeust'ultima i criteri di convergenza, per controllare se la serie di partenza converge a una funzione derivabile.
 \subsubsection{Armoniche}
 \[
     f(x) \sim \text{valor medio}\; + \sum_{n=1}^{\infty}\alpha_n cos(nx + \theta_n)
@@ -433,4 +429,3 @@ se $a_n = 0$, non si può usare l'arcotangente, ma in tal caso la trasposizione 
 \[
     b_n sin(nx) = b_n cos(nx - \frac{\pi}{2})
 \]
-\rule{\textwidth}{2pt}

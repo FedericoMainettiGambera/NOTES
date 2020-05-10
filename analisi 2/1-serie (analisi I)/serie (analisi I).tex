@@ -1,17 +1,18 @@
-\section{Serie}
-\subsection{serie geometrica}
+\section{Serie (analisi I)}
+\subsection{Serie notevoli}
+\subsubsection{serie geometrica}
 \[
-    \sum_{n=0}^{\infty}q^n = \begin{cases}
+    \sum_{n=0}^{\infty}q^n = \lim_{k\rightarrow \infty} \frac{1-q^{k+1}}{1-q} = \begin{cases}
         \frac{1}{1-q} & se \;\; -1<q<1\\
         +\infty &se \;\; q \geq 1\\
         irregolare \;\;& se \;\; q\leq-1 
     \end{cases}
 \]
-\subsection{serie armonica}
+\subsubsection{serie armonica}
 \[
     \sum_{n=1}^{\infty}\frac{1}{n} \geq log(n+1) \rightarrow +\infty
 \]
-\subsection{serie armonica generalizzata}
+\subsubsection{serie armonica generalizzata}
 \[
     \sum_{n=1}^{\infty} \frac{1}{n^{\alpha}}
 \]
@@ -25,17 +26,17 @@ per $\alpha > 1$
 \]
 per $\alpha = 2$
 \[
-    \sum_{n=1}^{\infty}\frac{1}{n^2} = \frac{\pi^2}{6} (\sim  \sum_{n=1}^{\infty} \frac{1}{n(n+1)} = serie \;\; di \;\; mengoli)
+    \sum_{n=1}^{\infty}\frac{1}{n^2} = \frac{\pi^2}{6} \left(\sim  \sum_{n=1}^{\infty} \frac{1}{n(n+1)} = serie \;\; di \;\; mengoli\right)
 \]
-\subsection{serie di mengoli}
+\subsubsection{serie di mengoli}
 \[
     \sum_{n=1}^{\infty}\frac{1}{n(n+1)} = \sum_{n=1}^{\infty} \frac{1}{n}-\frac{1}{n+1} = 1- \frac{1}{n+1} \rightarrow 1
 \]
-\subsection{numero e}
+\subsubsection{numero e}
 \[
     \lim_{n\rightarrow \infty} \left( 1 + \frac{1}{n} \right)^n = e
 \]
-\subsection{sviluppi di Taylor delle funzioni elementari}
+\subsubsection{sviluppi di Taylor delle funzioni elementari}
 \[
     e^x = \lim_{n\rightarrow +\infty}\sum_{k=0}^{n} \frac{x^k}{k!} = \sum_{k=0}^{+\infty} \frac{x^k}{k!}
 \]
@@ -44,11 +45,6 @@ per $\alpha = 2$
 \]
 \[
     cos (x) =\sum_{k=0}^{\infty}(-1)^k \frac{x^{2k}}{(2k)!} =\frac{e^{ix} + e^{-ix}}{2}
-\]
-\subsection{Serie di potenza}
-Con $a_k$ costanti reali (o complesse) e $x$ variabile reale (o complessa)
-\[
-    \sum_{k=0}^{\infty}a_k x^k
 \]
 \[
     Sh (x) = \sum_{k=0}^{\infty} \frac{x^{2k+1}}{(2k+1)!}
@@ -59,10 +55,10 @@ Con $a_k$ costanti reali (o complesse) e $x$ variabile reale (o complessa)
 \[
     log(1+x)= \sum_{k=1}^{\infty} (-1)^{k+1} \frac{x^k}{k} \;\;\; per \;\; |x|<1
 \]
-per $\alpha \in \mathbb{R}$
 \[
-    (1+x)^\alpha = \sum_{k=0}^{\infty} \binom{\alpha}{k}x^k \;\;\; per \;\; |x|<1
+    (1+x)^\alpha = \sum_{k=0}^{\infty} \binom{\alpha}{k}x^k \;\;\;\;\;\; \text{per $\alpha \in \mathbb{R}$ e per}\; |x|<1
 \]
+\subsection{Criteri e teoremi}
 \textbf{teor.} Condizione necessaria affinché una serie $\sum_{n=0}^{\infty} a_n$ converga è che il termine generale $a_n$ tenda a zero. (Cioè perchè la serie converga, il termine $a_n$ deve tendere a zero, ma non per forza se il termine $a_n$ tende a zero allora la serie converge)\newline
 \newline
 \textbf{teor.}supponiamo che una serie $\sum_{n=0}^{\infty} a_n$ converga, allora per ogni $k$ anche risulta convergente anche $\sum_{n=k}^{\infty} a_n$.\newline
