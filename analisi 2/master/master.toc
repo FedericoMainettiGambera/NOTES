@@ -1,0 +1,166 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Ripasso}{5}%
+\contentsline {subsection}{\numberline {1.1}Trigonometria}{5}%
+\contentsline {subsection}{\numberline {1.2}Asintotici}{6}%
+\contentsline {subsection}{\numberline {1.3}Derivate}{7}%
+\contentsline {subsection}{\numberline {1.4}Sviluppi}{9}%
+\contentsline {section}{\numberline {2}Serie}{10}%
+\contentsline {subsection}{\numberline {2.1}serie geometrica}{10}%
+\contentsline {subsection}{\numberline {2.2}serie armonica}{10}%
+\contentsline {subsection}{\numberline {2.3}serie armonica generalizzata}{10}%
+\contentsline {subsection}{\numberline {2.4}serie di mengoli}{10}%
+\contentsline {subsection}{\numberline {2.5}numero e}{10}%
+\contentsline {subsection}{\numberline {2.6}sviluppi di Taylor delle funzioni elementari}{10}%
+\contentsline {subsection}{\numberline {2.7}Serie di potenza}{10}%
+\contentsline {section}{\numberline {3}Integrali}{13}%
+\contentsline {subsection}{\numberline {3.1}Teorema fondamentale del calcolo integrale:}{13}%
+\contentsline {subsection}{\numberline {3.2}Proprietà degli integrali:}{13}%
+\contentsline {subsection}{\numberline {3.3}Integrali fondamentali:}{13}%
+\contentsline {subsection}{\numberline {3.4}Integrali notevoli:}{14}%
+\contentsline {subsection}{\numberline {3.5}Integrali riconducibili:}{15}%
+\contentsline {subsection}{\numberline {3.6}Integrazione per sostituzione:}{15}%
+\contentsline {subsection}{\numberline {3.7}Integrazione delle funzioni razionali:}{15}%
+\contentsline {subsection}{\numberline {3.8}Funzioni razionali di $e^x$}{16}%
+\contentsline {subsection}{\numberline {3.9}Integrazione per parti:}{16}%
+\contentsline {subsection}{\numberline {3.10}integrazione delle funzioni trigonometriche}{17}%
+\contentsline {subsection}{\numberline {3.11}Integrazione delle funzioni irrazzionali}{18}%
+\contentsline {subsection}{\numberline {3.12}Simmetrie e valori assoluti nel calcolo di integrali definiti}{19}%
+\contentsline {subsection}{\numberline {3.13}Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}{19}%
+\contentsline {subsection}{\numberline {3.14}INTEGRALI GENERALIZZATI}{19}%
+\contentsline {subsection}{\numberline {3.15}Integrazione di funzioni non limitate}{19}%
+\contentsline {subsection}{\numberline {3.16}Criteri di integrabilità al finito}{19}%
+\contentsline {subsection}{\numberline {3.17}Integrazione su intervalli illimitati}{19}%
+\contentsline {subsection}{\numberline {3.18}Criteri di integrabilità all'infinito}{20}%
+\contentsline {subsection}{\numberline {3.19}Osservazione. Ordine di annullamento di una funzione derivabile.}{20}%
+\contentsline {subsection}{\numberline {3.20}Integrali generalizzati notevoli}{20}%
+\contentsline {subsection}{\numberline {3.21}FUNZIONI INTEGRALI}{21}%
+\contentsline {section}{\numberline {4}Calcolo infinitesimale per le curve}{23}%
+\contentsline {subsection}{\numberline {4.1}Richiami di calcolo vettoriale}{23}%
+\contentsline {subsection}{\numberline {4.2}Funzioni a valori vettoriali, limiti e continuità}{23}%
+\contentsline {subsection}{\numberline {4.3}Curve regolari e calcolo differenziale vettoriale}{24}%
+\contentsline {subsubsection}{\numberline {4.3.1}Derivata di una funzione vettoriale. Arco di curva regolare}{24}%
+\contentsline {subsubsection}{\numberline {4.3.2}Integrale di una funzione vettoriale}{25}%
+\contentsline {subsubsection}{\numberline {4.3.3}Classi di curve piane}{25}%
+\contentsline {subsection}{\numberline {4.4}Lunghezza di un arco di curva}{26}%
+\contentsline {subsubsection}{\numberline {4.4.1}Curve rettificabili e lunghezza}{26}%
+\contentsline {subsubsection}{\numberline {4.4.2}Cambiamenti di parametrizzazione, curve equivalenti}{27}%
+\contentsline {subsubsection}{\numberline {4.4.3}Parametro arco o ascissa curvilinea}{27}%
+\contentsline {subsection}{\numberline {4.5}Inegrali di linea (di prima specie)}{27}%
+\contentsline {subsection}{\numberline {4.6}Elementi di geometria differenziale delle curve}{28}%
+\contentsline {subsubsection}{\numberline {4.6.1}Curvatura e normale principale per una curva in $\mathbb {R}^n$}{28}%
+\contentsline {subsubsection}{\numberline {4.6.2}Calcolo della curvatura per curve nello spazio $\mathbb {R}^3$ o nel piano}{29}%
+\contentsline {subsubsection}{\numberline {4.6.3}Torsione(manca) e terna intrinseca per curve nello spazio $\mathbb {R}^3$}{29}%
+\contentsline {subsection}{\numberline {4.7}Note sugli esercizi}{30}%
+\contentsline {section}{\numberline {5}Calcolo differenziale per funzioni reali di più variabili}{32}%
+\contentsline {subsection}{\numberline {5.1}Continuità di una funzione in più variabili:}{32}%
+\contentsline {subsection}{\numberline {5.2}Calcolo di limiti in più variabili}{32}%
+\contentsline {subsubsection}{\numberline {5.2.1}Non esistenza del limite}{32}%
+\contentsline {subsubsection}{\numberline {5.2.2}Uso di maggiorazioni con funzioni radiali per provare l'esistenza del limite}{32}%
+\contentsline {subsubsection}{\numberline {5.2.3}Note sugli esercizi}{32}%
+\contentsline {subsection}{\numberline {5.3}Topologia in $\mathbb {R}^n$ e proprietà delle funzioni continue}{33}%
+\contentsline {subsection}{\numberline {5.4}Derivate parziali, piano tangente, differenziale}{34}%
+\contentsline {subsubsection}{\numberline {5.4.1}Derivata parziale}{34}%
+\contentsline {subsubsection}{\numberline {5.4.2}Calcolo delle derivate}{35}%
+\contentsline {subsubsection}{\numberline {5.4.3}Piano tangente}{35}%
+\contentsline {subsubsection}{\numberline {5.4.4}Differenziabilità e approssimazione lineare}{36}%
+\contentsline {subsubsection}{\numberline {5.4.5}Verifica della differenziabilità}{37}%
+\contentsline {subsubsection}{\numberline {5.4.6}Derivate direzionali}{37}%
+\contentsline {subsubsection}{\numberline {5.4.7}Riepilogo}{38}%
+\contentsline {subsubsection}{\numberline {5.4.8}Gradiente di una funzione radiale}{38}%
+\contentsline {subsubsection}{\numberline {5.4.9}Criterio di continuità e differenziabilità per funzioni radiali}{38}%
+\contentsline {subsubsection}{\numberline {5.4.10}Funzioni omogenee}{39}%
+\contentsline {subsubsection}{\numberline {5.4.11}Equazione del trasporto}{39}%
+\contentsline {subsection}{\numberline {5.5}Derivate di ordine superiore e approssimazioni successive}{40}%
+\contentsline {subsubsection}{\numberline {5.5.1}Derivate di ordine superiore}{40}%
+\contentsline {subsection}{\numberline {5.6}Differenziale secondo, matrice hessiana, formula di Taylor al secondo ordine}{40}%
+\contentsline {subsection}{\numberline {5.7}Ottimizzazione, estremi liberi}{41}%
+\contentsline {subsubsection}{\numberline {5.7.1}Generalità sui problemi di ottimizzazione}{41}%
+\contentsline {subsubsection}{\numberline {5.7.2}Estremi liberi, condizioni necessarie del prim'ordine}{41}%
+\contentsline {subsubsection}{\numberline {5.7.3}Forme quadratiche, classificazione}{41}%
+\contentsline {subsubsection}{\numberline {5.7.4}Forme quadratiche, test degli autovalori}{42}%
+\contentsline {subsubsection}{\numberline {5.7.5}Studio della natura dei punti critici}{43}%
+\contentsline {subsection}{\numberline {5.8}Ottimizzazione. Estremi vincolanti}{44}%
+\contentsline {subsubsection}{\numberline {5.8.1}Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}{44}%
+\contentsline {subsubsection}{\numberline {5.8.2}Moltiplicatore di Lagrange. Il caso generale}{44}%
+\contentsline {subsubsection}{\numberline {5.8.3}Metodo dei moltiplicatori di Lagrange (dal libro di Gazzola)}{45}%
+\contentsline {subsubsection}{\numberline {5.8.4}Il metodo delle restrizioni}{46}%
+\contentsline {subsection}{\numberline {5.9}Funzioni convesse di n variabili}{46}%
+\contentsline {subsubsection}{\numberline {5.9.1}Generalità sulle funzioni convesse}{46}%
+\contentsline {subsubsection}{\numberline {5.9.2}Ottimizzazione di funzioni convesse e concave}{47}%
+\contentsline {subsection}{\numberline {5.10}Funzioni definite implicitamente}{47}%
+\contentsline {subsubsection}{\numberline {5.10.1}Funzione implicita di una variabile}{47}%
+\contentsline {subsubsection}{\numberline {5.10.2}Note sugli esercizi}{47}%
+\contentsline {section}{\numberline {6}Calcolo integrale per funzioni di più variabili}{48}%
+\contentsline {subsection}{\numberline {6.1}Integrali doppi}{48}%
+\contentsline {subsubsection}{\numberline {6.1.1}Integrale su una regione semplice}{48}%
+\contentsline {subsubsection}{\numberline {6.1.2}Baricentro e momento d'inerzia con gli integrali doppi}{49}%
+\contentsline {subsubsection}{\numberline {6.1.3}Cambi di variabili negli integrali doppi}{49}%
+\contentsline {subsubsection}{\numberline {6.1.4}Cambio di variabili in coordinate polari}{50}%
+\contentsline {subsection}{\numberline {6.2}Integrali impropri}{50}%
+\contentsline {subsection}{\numberline {6.3}Integrali tripli}{50}%
+\contentsline {subsubsection}{\numberline {6.3.1}Integrazione per fili}{51}%
+\contentsline {subsubsection}{\numberline {6.3.2}Integrazione per strati}{51}%
+\contentsline {subsubsection}{\numberline {6.3.3}Cambi di variabili negli integrali tripli}{51}%
+\contentsline {subsubsection}{\numberline {6.3.4}Coordinate cilindriche}{51}%
+\contentsline {subsubsection}{\numberline {6.3.5}Coordinate sferiche}{51}%
+\contentsline {subsection}{\numberline {6.4}Note sugli esercizi}{52}%
+\contentsline {section}{\numberline {7}Calcolo differenziale per funzioni di più variabili a valori vettoriali (BRAMANTI)}{55}%
+\contentsline {subsection}{\numberline {7.1}Funzioni di più variabili a valori vettoriali: generalità}{55}%
+\contentsline {subsubsection}{\numberline {7.1.1}Superfici in forma parametrica}{55}%
+\contentsline {subsubsection}{\numberline {7.1.2}Trasformazioni di coordinate}{55}%
+\contentsline {subsubsection}{\numberline {7.1.3}Campi vettoriali}{55}%
+\contentsline {subsection}{\numberline {7.2}Limiti, continuità e differenziabilità per funzioni $\vec {f}:\mathbb {R}^n \rightarrow \mathbb {R}^m$}{56}%
+\contentsline {subsection}{\numberline {7.3}Superfici regolari in forma parametrica}{56}%
+\contentsline {subsubsection}{\numberline {7.3.1}Superfici cartesiane (grafico di funzioni di due variabili)}{57}%
+\contentsline {subsubsection}{\numberline {7.3.2}Superfici di rotazione}{58}%
+\contentsline {subsection}{\numberline {7.4}Varietà k-dimenzionali in $\mathbb {R}^n$ e funzioni definite implicitamente}{58}%
+\contentsline {subsubsection}{\numberline {7.4.1}Varietà k-dimensionali in $\mathbb {R}^n$ in forma parametrica}{58}%
+\contentsline {subsubsection}{\numberline {7.4.2}Funzioni implicite definite da sistemi di equazioni}{58}%
+\contentsline {subsubsection}{\numberline {7.4.3}Varietà k-dimensionali in $\mathbb {R}^n$ in forma implicita}{59}%
+\contentsline {subsection}{\numberline {7.5}Trasformazioni di coordinate e loro inversione}{59}%
+\contentsline {subsubsection}{\numberline {7.5.1}Il teorema della funzione inversa}{59}%
+\contentsline {subsubsection}{\numberline {7.5.2}Trasformazione di operatori differenziali}{61}%
+\contentsline {subsection}{\numberline {7.6}Note sugli esercizi}{61}%
+\contentsline {section}{\numberline {8}Funzioni di più variabili a valori vettoriali (GAZZOLA)}{62}%
+\contentsline {subsection}{\numberline {8.1}Campi vettoriali}{62}%
+\contentsline {subsection}{\numberline {8.2}Lavoro di un campo vettoriale}{63}%
+\contentsline {subsubsection}{\numberline {8.2.1}Forme differenziali lineari}{65}%
+\contentsline {subsection}{\numberline {8.3}Flusso e Teorema della divergenza}{65}%
+\contentsline {subsubsection}{\numberline {8.3.1}Flusso}{66}%
+\contentsline {subsubsection}{\numberline {8.3.2}Teorema della divergenza}{66}%
+\contentsline {section}{\numberline {9}Serie di funzioni}{67}%
+\contentsline {subsection}{\numberline {9.1}Serie di potenze}{67}%
+\contentsline {subsubsection}{\numberline {9.1.1}Nel campo complesso}{67}%
+\contentsline {subsubsection}{\numberline {9.1.2}Nel campo reale}{68}%
+\contentsline {subsection}{\numberline {9.2}Serie di Fourier}{70}%
+\contentsline {subsubsection}{\numberline {9.2.1}Forma trigonometrica}{70}%
+\contentsline {subsubsection}{\numberline {9.2.2}Funzioni pari e dispari, periodi diversi da $2\pi $}{72}%
+\contentsline {subsubsection}{\numberline {9.2.3}Forma esponenziale complessa}{72}%
+\contentsline {subsection}{\numberline {9.3}Note sugli esercizi}{73}%
+\contentsline {subsubsection}{\numberline {9.3.1}Serie di potenze nel campo reale}{73}%
+\contentsline {subsubsection}{\numberline {9.3.2}Sviuluppabilità in serie di Fourier}{73}%
+\contentsline {subsubsection}{\numberline {9.3.3}Riassunto dei criteri per la convergenza della serie di Fourier $\DOTSB \sum@ \slimits@ F$}{74}%
+\contentsline {subsubsection}{\numberline {9.3.4}Armoniche}{75}%
+\contentsline {section}{\numberline {10}Equazioni differenziali}{76}%
+\contentsline {subsection}{\numberline {10.1}Modelli differenziali}{76}%
+\contentsline {subsection}{\numberline {10.2}Equazioni del primo ordine}{76}%
+\contentsline {subsubsection}{\numberline {10.2.1}Generalità}{76}%
+\contentsline {subsubsection}{\numberline {10.2.2}Equazioni a variabili separabili}{76}%
+\contentsline {subsubsection}{\numberline {10.2.3}Equazioni lineari del prim'ordine}{77}%
+\contentsline {subsubsection}{\numberline {10.2.4}Note sugli esercizi}{78}%
+\contentsline {subsubsection}{\numberline {10.2.5}Equazione di Bernoulli}{78}%
+\contentsline {subsubsection}{\numberline {10.2.6}Prolungamento delle soluzioni}{78}%
+\contentsline {subsection}{\numberline {10.3}Equazioni lineari del secondo ordine}{79}%
+\contentsline {subsubsection}{\numberline {10.3.1}Spazi di funzioni}{79}%
+\contentsline {subsubsection}{\numberline {10.3.2}Generalità sulle equazioni lineari. Problema di Cauchy}{79}%
+\contentsline {subsubsection}{\numberline {10.3.3}La struttura dell'integrale generale}{79}%
+\contentsline {subsubsection}{\numberline {10.3.4}Equazioni omogenee a coefficienti costanti}{80}%
+\contentsline {subsubsection}{\numberline {10.3.5}Equazioni completa a coefficienti costanti}{81}%
+\contentsline {subsubsection}{\numberline {10.3.6}metodo di somiglianza}{81}%
+\contentsline {subsubsection}{\numberline {10.3.7}Metodo di sovrapposizione}{82}%
+\contentsline {subsubsection}{\numberline {10.3.8}Metodo di variazione delle costanti}{82}%
+\contentsline {subsubsection}{\numberline {10.3.9}Note sugli esercizi}{82}%
+\contentsline {subsubsection}{\numberline {10.3.10}Equazione di Eulero}{82}%
+\contentsline {subsection}{\numberline {10.4}Sistemi lineari omogenei}{84}%
+\contentsline {subsection}{\numberline {10.5}Diagonalizzazione di una matrice}{85}%

@@ -1,6 +1,6 @@
-\section*{Calcolo integrale per funzioni di più variabili}
+\section{Calcolo integrale per funzioni di più variabili}
 \rule{\textwidth}{2pt}
-\subsection*{Integrali doppi}
+\subsection{Integrali doppi}
 L'integrale doppio derve per il calcolo di volumi.\newline
 \[
     \int_{\Omega} f(x,y) dxdy
@@ -28,7 +28,7 @@ Proprietà:
 \textbf{Regione x-semplice:} Se l'intersezione di una qualunque retta orizzontale con la $\Omega$ è un segmento o vuota.\newline
 \end{tcolorbox}
 Una regione piana $\Omega$ si dice \textbf{regolare} se può essere scomposta in un numero finito di regioni semplici.
-\subsubsection*{Integrale su una regione semplice}
+\subsubsection{Integrale su una regione semplice}
 Consideriamo il caso in cui $\Omega$ è un rettangolo con vertici $a, b, c, d$.\newline
 Prendendo una sezione verticale rispetto a $x$ nel punto $x_0$, notiamo che l'area è rappresentata da $A = \int_{c}^{d}f(x_0, y)dy$. Variando per tutte le $x_0$ che appartengono all'intervallo $[a,b]$ otteniamo
 \[
@@ -53,7 +53,7 @@ Se $\Omega$ è \textbf{x-semplice}, cioè se $\Omega = \{(x,y) \in \mathbb{R}^2,
 Dove $g(x)$ rappresenta il limite inferiore di $\Omega$, e $h(x)$ il limite superiore.\newline
 \end{tcolorbox}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Baricentro e momento d'inerzia con gli integrali doppi}
+\subsubsection{Baricentro e momento d'inerzia con gli integrali doppi}
 Gli integrali doppi possono essere usati per calcolare il baricentro di una lamina piana e del momento d'inerzia della lamina rispetto ad un asse perpendicolare al piano della lamina.\newline
 Sia $\Omega$ la forma della lamina e $d(x,y)$ la densità di massa nel punto $(x,y)$. La massa sarà $M = \int_{\Omega}d(x,y) dxdy$.
 \begin{tcolorbox}
@@ -74,7 +74,7 @@ Sia $\Omega$ la forma della lamina e $d(x,y)$ la densità di massa nel punto $(x
 \end{itemize}
 \end{tcolorbox}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Cambi di variabili negli integrali doppi}
+\subsubsection{Cambi di variabili negli integrali doppi}
 Il problema è quello di trasformare un insieme $\Omega \subset \mathbb{R}^2$ in un altro insieme $T \subset \mathbb{R}^2$ più semplice geometricamente.
 \[
     (u,v) = \Phi(x,y)   
@@ -117,7 +117,7 @@ Questa condizione equivale a imporre che
     \int_\Omega f(x,y) dx dy = \int_T f(x(u,v), y(u,v)) \cdot \left|det(\frac{\delta(x,y)}{\delta(u,v)})\right| du dv
 \]
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Cambio di variabili in coordinate polari}
+\subsubsection{Cambio di variabili in coordinate polari}
 Sia $\Omega \in \mathbb{R}^2$, i punti $(x,y)$ vengono trasformati in punti $(\rho, \theta) \in T$ tali che
 \[
     \Phi : \begin{cases}
@@ -135,7 +135,7 @@ Un caso delicato è $\rho = 0$, in cui $\theta$ non è definito.\newline
 \]
 Nelle integrazioni in coordinate polari, essendo il Jacobiano = $\rho$, il termine $dx \; dy$ diventa $\rho \; d \rho \; d \theta$.\newline
 \rule{\textwidth}{2pt}
-\subsection*{Integrali impropri}
+\subsection{Integrali impropri}
 Se $\Omega \subset \mathbb{R}^n$ è un aperto illimitato e $f \in C^0(\bar{\Omega})$ soddisfa $f \geq 0$ (o $f\leq 0$) si costruiscono dei domini invadenti $\Omega_r = \Omega \cap B_r$. Se poi esiste finito il limite 
 \[
     \lim_{x\rightarrow \infty} \int_{\Omega_r} f(x) dx
@@ -145,10 +145,10 @@ diremo che $f$ è integrabile in senso generalizzato e
     \int_\Omega f = \lim_{x\rightarrow \infty} \int_{\Omega_r} f(x) dx
 \]
 \rule{\textwidth}{2pt}
-\subsection*{Integrali tripli}
+\subsection{Integrali tripli}
 \rule{\textwidth}{0,4pt}
 \begin{tcolorbox}
-\subsubsection*{Integrazione per fili}
+\subsubsection{Integrazione per fili}
 Se l'insieme $\Omega$ è semplice rispetto all'asse $z$ o \textbf{z-semplice}, cioè esistono $D \subset \mathbb{R}^2$ e $g,h \in C^0(\bar{D})$ tali che $g<h$ in $D$ e
 \[
     \Omega = \{(x,y,z) \in \mathbb{R}^3, (x,y)\in D, g(x,y)<z<h(x,y)\}
@@ -161,7 +161,7 @@ Allo stesso modo si procede nel caso di $\Omega$ x-semplice o y-semplice.\newlin
 \end{tcolorbox}
 \rule{\textwidth}{0,4pt}
 \begin{tcolorbox}
-\subsubsection*{Integrazione per strati}
+\subsubsection{Integrazione per strati}
 Se $\Omega$ è semplice rispetto alla coppia $(x,y)$ e cioè esistono $a<b$ tali che
 \[
     \Omega = \{(x,y,z) \in \mathbb{R}^3, a<z<b, (x,y) \in D_z \;\forall\;z \in(a,b)\}
@@ -173,8 +173,8 @@ dove $D_z$ è un insieme regolare $\;\forall\;z \in(a,b)$, cioè se l'intersezio
 Allo stesso modo si procede nel caso di $\Omega$ semplice rispetto alle coppie $(x,z)$ o $(y,z)$\newline
 \end{tcolorbox}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Cambi di variabili negli integrali tripli}
-\subsubsection*{Coordinate cilindriche}
+\subsubsection{Cambi di variabili negli integrali tripli}
+\subsubsection{Coordinate cilindriche}
 Presa una sezione verticale (cioè di un piano che passa per l'asse $z$) si definiscono:\newline
 $\rho$ rappresenta la distanza tra l'origine degli assi e la proiezione del punto P sul piano $xy$ (in poche parole la distanza fra il punto e l'asse $z$).\newline
 $z$ rappresenta la quota del punto $P$ dal piano $xy$.\newline
@@ -202,7 +202,7 @@ Matrice Jacobiana:
 \[
     det(\frac{\delta(x,y)}{\delta(u,v)}) = \rho = \left|det(\frac{\delta(x,y)}{\delta(u,v)})\right|
 \]
-\subsubsection*{Coordinate sferiche}
+\subsubsection{Coordinate sferiche}
 \[
     \;\forall\; \begin{cases}
         \rho \in [0,\infty)\\
@@ -239,7 +239,7 @@ Matrice Jacobiana:
 \]
 che si annulla in tutti i punti dell'asse $z$ che sono punti della frontiera e dunque non interessano.\newline
 \rule{\textwidth}{2pt}
-\subsection*{Note sugli esercizi}
+\subsection{Note sugli esercizi}
 Data una funzione su due variabili $f(x,y)$:
 \begin{itemize}
     \item $f$ è dispari rispetto a $x$ se 

@@ -1,15 +1,15 @@
-\section*{Calcolo differenziale per funzioni di più variabili a valori vettoriali (BRAMANTI)}
+\section{Calcolo differenziale per funzioni di più variabili a valori vettoriali (BRAMANTI)}
 \rule{\textwidth}{2pt}
-\subsection*{Funzioni di più variabili a valori vettoriali: generalità}
+\subsection{Funzioni di più variabili a valori vettoriali: generalità}
 \[
     \vec{f}: A\subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^m
 \]
 Mostriamo alcuni esempi di oggetti rappresentabili tramite funzioni di più variabili a valori vettoriali.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Superfici in forma parametrica}
+\subsubsection{Superfici in forma parametrica}
 Le superfici in forma parametrica, sono solo un caso particolare del concetto più asatratto e generale di varietà $k$-dimensionale in forma parametrica in $\mathbb{R}^m$. (Più avanti sarà discusso meglio).\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Trasformazioni di coordinate}
+\subsubsection{Trasformazioni di coordinate}
 \[
     \vec{f}: A\subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^n
 \]
@@ -43,10 +43,10 @@ Questa trasformazione si può vedere come una funzione $f: \mathbb{R}^3 \rightar
 Queste trasformazioni si possono vedere come funzioni $f: \mathbb{R}^2 \rightarrow \mathbb{R}^3$. \newline
 Da notare che se si ha $\rho$ costante, il sistema rappresenta la superficie di una sfera di raggio $\rho$ in forma parametrica.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Campi vettoriali}
+\subsubsection{Campi vettoriali}
 Sono solo esempi ed esercizi.\newline
 \rule{\textwidth}{2pt}
-\subsection*{Limiti, continuità e differenziabilità per funzioni $\vec{f}:\mathbb{R}^n \rightarrow \mathbb{R}^m$}
+\subsection{Limiti, continuità e differenziabilità per funzioni $\vec{f}:\mathbb{R}^n \rightarrow \mathbb{R}^m$}
 Se $\vec{f} : A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}^m$, possiamo scrivere
 \[
     \vec{f}(x) = (f_1(x), \dots,f_m(x))
@@ -83,7 +83,7 @@ Se $\vec{f}: A \subseteq \mathbb{R}^n \rightarrow \mathbb{R}^m$ è differenziabi
     D(\vec{g} \circ \vec{f})(x_0) = D \vec{g}(\vec{f}(x_0))D \vec{f}(x_0)
 \]
 \rule{\textwidth}{2pt}
-\subsection*{Superfici regolari in forma parametrica}
+\subsection{Superfici regolari in forma parametrica}
 Una superficie in forma parametrica è una funzione del tipo:
 \[
     \vec{r}:A \subseteq \mathbb{R}^2 \rightarrow \mathbb{R}^3
@@ -125,7 +125,7 @@ Una proprietà di quest'ultimo prodotto vettoriale è che è normale alla superf
     \]
 \end{tcolorbox}
 [Equazione del piano tangente (manca).]
-\subsubsection*{Superfici cartesiane (grafico di funzioni di due variabili)}
+\subsubsection{Superfici cartesiane (grafico di funzioni di due variabili)}
 \begin{tcolorbox}
 Il grafico di $z = f(x,y)$ è una superficie che si può riscrivere nella forma:
 \[
@@ -160,7 +160,7 @@ Elemento d'area:
     dS = \sqrt{1 + |\nabla f|^2} du dv
 \]
 \end{tcolorbox}
-\subsubsection*{Superfici di rotazione}
+\subsubsection{Superfici di rotazione}
 \begin{tcolorbox}
 Superfici ottenute facendo ruotare una curva $\gamma$ detta generatrice attorno a un asse.\newline
 In un riferimento $(x,y,a)$ sia $y$ l'asse a cui vogliamo far ruotare una curva $\gamma$, inizialmente assegnata al piano $x, z$ in forma parametrica:
@@ -196,14 +196,14 @@ Versore normale di superfici di rotazione:
 \]
 \end{tcolorbox}
 \rule{\textwidth}{2pt}
-\subsection*{Varietà k-dimenzionali in $\mathbb{R}^n$ e funzioni definite implicitamente}
+\subsection{Varietà k-dimenzionali in $\mathbb{R}^n$ e funzioni definite implicitamente}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Varietà k-dimensionali in $\mathbb{R}^n$ in forma parametrica}
+\subsubsection{Varietà k-dimensionali in $\mathbb{R}^n$ in forma parametrica}
 \textbf{def.} Si dice varietà regolare k-dimensionale in forma parametrica, immersa in $\mathbb{R}^n$ (con $1 \leq k \leq n-1$), una funzione $\vec{r} : \Omega \rightarrow \mathbb{R}^n$, con $\Omega$ aperto in $\mathbb{R}^k$, tale che $\vec{r} \in C^1(\Omega)$ e la matriche Jacobiana di $\vec{r}$ ha rango $k$ in ogni punto di $\Omega$.\newline
 Nel caso particolare in cui $k = n-1$ (e $n > 3$) la varietà si dice ipersuperficie in $\mathbb{R}^n$.\newline
 Dal punto di visa dell'intuizione geometrica, la varietà k-dimensionale è l'immagine della funzione $\vec{r}$ in $\mathbb{R}^n$\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Funzioni implicite definite da sistemi di equazioni}
+\subsubsection{Funzioni implicite definite da sistemi di equazioni}
 Avendo un sistema di $m$ equazioni in $n+m$ incognite, il teorema di Rouchè-Capelli ci dice che se la matrice del sistema ha rango massimo (cioè $m$) si riescono a esplicitare $m$ variabili in funzione di altre $n$. \newline
 Nel caso non lineare ci si limita a verificare il teorema di Rouchè-Capelli localmente: nell'intorno di un punto in cui si sa che il sistema è soddisfatto, il rango massimo della matrice del sistema lineare diventa il rango massimo della matrice del sistema linearizzato, cioè della matrice Jacobiana del sistema non lineare.\newline
 \newline
@@ -228,7 +228,7 @@ Allora esiste un intorno $U \subset \mathbb{R}^n$ di $x_0$ e un unica funzione $
     Dg(x) =-D_y \vec{f}(x,\vec{g}(x))^{-1}D_x \vec{f} (x, \vec{g}(x))
 \]
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Varietà k-dimensionali in $\mathbb{R}^n$ in forma implicita}
+\subsubsection{Varietà k-dimensionali in $\mathbb{R}^n$ in forma implicita}
 \textbf{def.} Si dice varietà k-dimensionale in forma implicita, immersa in $\mathbb{R}^n$, un sottoinieme (non vuoto) di $\mathbb{R}^n$ del tipo:
 \[
     M = \{x \in \Omega : \vec{f}(x) = 0\}
@@ -239,9 +239,9 @@ Si noti che se $k = n-1$ la funzione $f$ ha valori reali; in questo caso $M$ è 
 \newline
 Se $n=3$, $k=1$, abbiamo due equazioni in tre variabili, cioè una curva in forma cartesiana implicità (vista come intersezione di due superfici).\newline
 \rule{\textwidth}{2pt}
-\subsection*{Trasformazioni di coordinate e loro inversione}
+\subsection{Trasformazioni di coordinate e loro inversione}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Il teorema della funzione inversa}
+\subsubsection{Il teorema della funzione inversa}
 Una funzione lineare $\vec{f}: \mathbb{R}^n \rightarrow \mathbb{R}^n$ nella forma
 \[
     \vec{f}(\vec{x}) =A \vec{x}
@@ -322,7 +322,7 @@ ha matrice Jacobiana
 \]
 con determinante $\rho^2 sin(\phi)$. La trasformazione è regolare tranne che per $\rho = 0$ (origine dello spazio) e $\phi = 0, \pi$ (i due semiassi $z$ nello spazio). In conclusione sono singolari tutti i punti dell'asse $z$. \newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Trasformazione di operatori differenziali}
+\subsubsection{Trasformazione di operatori differenziali}
 \begin{tcolorbox}
 Sia
 \[
@@ -363,7 +363,7 @@ una trasformazione regolare di coordinate nel piano e sia $f(x,y)$ una funzione 
     \frac{\delta f}{\delta v} = \frac{\delta f}{\delta x} \frac{\delta g}{\delta v} + \frac{\delta f}{\delta y} \frac{\delta h}{\delta v}
 \]
 \rule{\textwidth}{2pt}
-\subsection*{Note sugli esercizi}
+\subsection{Note sugli esercizi}
 \begin{tcolorbox}
 \textbf{elemento d'area e regolarità}
 \[

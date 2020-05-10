@@ -1,8 +1,8 @@
-\section*{Serie di funzioni}
+\section{Serie di funzioni}
 \rule{\textwidth}{2pt}
-\subsection*{Serie di potenze}
+\subsection{Serie di potenze}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Nel campo complesso}
+\subsubsection{Nel campo complesso}
 \textbf{def.} Sia $\{a_n\}$ una successione di numeri complessi e sia $z_0 \in \mathbb{C}$.\newline
 La serie
 \[
@@ -45,7 +45,7 @@ converga per $|z|<R$ (con $R> 0$). Allora le serie ottenute derivando e integran
 sono rispettivamente la derivata e una primitiva della funzione $f$; inoltre, il loro raggio di convergenza è ancora $R$.\newline
 \newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Nel campo reale}
+\subsubsection{Nel campo reale}
 Diremo che una serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge puntualmente} per ogni $x \in I$ se la serie numerica $\sum_{n}f_n(x)$ converge per ogni $x \in I$.
 \[
     f(x) = \sum_{n=0}^{\infty} f_n(x) = \lim_{k\rightarrow \infty} \sum_{n=0}^{k} f_n(x) \quad \;\forall\;x \in I
@@ -167,9 +167,9 @@ che, se poniamo $a_n = f^{(n)}(x_0)/n!$, coincide con una serie di potenza nel c
     (1+x)^\alpha = \sum_{n=0}^{\infty} \binom{\alpha}{n}x^n \;\;\;\; (R=1)
 \]
 \rule{\textwidth}{2pt}
-\subsection*{Serie di Fourier}
+\subsection{Serie di Fourier}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Forma trigonometrica}
+\subsubsection{Forma trigonometrica}
 Nello studio delle serie di potenza $\sum_{n}a_n z^n$ abbiamo visto che i problemi principali riguardano lo studio di $|z| = R$ con $R$ raggio di convergenza. Per tali possiamo scrivere $z = R(cos(\theta) + sin(\theta))$ e ottenere:
 \[
     \sum_{n=0}^{\infty} a_n R^n(cos(n \theta) + isin(n \theta))
@@ -273,7 +273,7 @@ Se una funzione $f$ è regolare a tratti allora la sua serie di Fourier converge
 \]
 con la convenzione che $f(0^\pm) = f(2\pi^\pm)$. In particolare, se $f$ è continua in $x_0$, allora la serie converge a $f(x_0)$.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Funzioni pari e dispari, periodi diversi da $2\pi$}
+\subsubsection{Funzioni pari e dispari, periodi diversi da $2\pi$}
 I coefficienti di Fourier di funzioni $2\pi$-periodiche si possono calcolare integrando su un qualunque intervallo di ampiezza $2\pi$. Tipicamente si sceglie l'intervallo $[-\pi, \pi]$ perchè permette di sfruttare eventuali simmetrie della funzione $f$.\newline
 Infatti, se la funzione $f$ è \textbf{pari} allora risulta pari anche $f(x)cos(nx)$ mentre risulta dispari $f(x)sin(nx)$, dunque:
 \[
@@ -299,7 +299,7 @@ Tutti i teoremi valgono allo stesso modo, l'unico da "sistemare" è l'identità 
     \frac{2}{T} \int_{0}^{T}f(x)^2 dx = \frac{a_0^2}{2} + \sum_{n=1}^{\infty} (a_n^2 + b_n^2)
 \]
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Forma esponenziale complessa}
+\subsubsection{Forma esponenziale complessa}
 La formula di Eulero, $e^{i \theta} = cos(\theta) + i sin(\theta)$, suggerisce di scrivere una serie di Fourier utilizzando gli esponenziali.
 \[
     f_n =\frac{a_n-ib_n}{2} = \frac{1}{2\pi} \int_{0}^{2\pi}f(x)(cos(nx) - i sin(nx))dx = \frac{1}{2\pi} \int_{0}^{2\pi}f(x) e^{-inx}
@@ -323,8 +323,8 @@ Identità di Parseval:
     \frac{1}{2\pi}\int_{0}^{2\pi}f(x)^2dx = \sum_{n=-\infty}^{\infty}|f_n|^2
 \]
 \rule{\textwidth}{2pt}
-\subsection*{Note sugli esercizi}
-\subsubsection*{Serie di potenze nel campo reale}
+\subsection{Note sugli esercizi}
+\subsubsection{Serie di potenze nel campo reale}
 Una volta calcolato il raggio di convergenza $R$, ci sono tre casi possibili:
 \begin{itemize}
     \item $R = 0$, la serie converge se e solo se $x = x_0$;
@@ -343,7 +343,7 @@ Per calcolare il raggio di convergenza $R$ si usano due formule:
     R = \lim_{n\rightarrow +\infty} \frac{1}{\sqrt[n]{|a_n|}}
 \]
 \rule{\textwidth}{2pt}
-\subsubsection*{Sviuluppabilità in serie di Fourier}
+\subsubsection{Sviuluppabilità in serie di Fourier}
 Una funzione periodica $f: \mathbb{R} \rightarrow  \mathbb{R}$ è sviluppabile in serie di Fourier se vale una delle due condizioni seguenti:
 \begin{itemize}
     \item $f$ è limitata e monotona a tratti su un periodo, oppure
@@ -367,7 +367,7 @@ allora (quale sia il valore che $f$ assume in $x_0$) il valore della serie in $x
 In parole povere, \textbf{per valutare se la funzione sia rappresentabile o meno con una serie di Fourier}, si prende la funzione, e si fa l'integrale $\int_{0}^{2\pi} f^2$, se l'integrale ha un valore finito, allora la funzione può essere sviluppata con una serie di Fourier. Da notare che l'integrale può essere svolto anche in senso generalizzato per risolvere puntii in cui la funzione va a $\infty$.\newline
 \textbf{Per valutare per quali valori di $x$ la serie converge effettivamente alla funzione indicata}, si usa il seguente criterio: dove la funzione è continua, la serie converge al valore della funzione, dove ci sono discontinuità a salto la serie converge al valor medio degli estremi del salto, dove ci sono altri tipi di discontinuità non si può concludere nulla sul comportamento della seria.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Riassunto dei criteri per la convergenza della serie di Fourier $\sum F$}
+\subsubsection{Riassunto dei criteri per la convergenza della serie di Fourier $\sum F$}
 \textbf{Appunti prof:}\newline
 Condizione di partenza:
 \[
@@ -407,7 +407,7 @@ Inoltre, poichè derivando la funzione termine a termine, otteniamo la serie
 \]
 è sufficiente riapplicare a qeust'ultima i criteri di convergenza, per controllare se la serie di partenza converge a una funzione derivabile.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Armoniche}
+\subsubsection{Armoniche}
 \[
     f(x) \sim \text{valor medio}\; + \sum_{n=1}^{\infty}\alpha_n cos(nx + \theta_n)
 \]

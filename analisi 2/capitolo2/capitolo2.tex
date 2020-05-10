@@ -1,6 +1,6 @@
-\section*{Calcolo infinitesimale per le curve}
+\section{Calcolo infinitesimale per le curve}
 \rule{\textwidth}{2pt}
-\subsection*{Richiami di calcolo vettoriale}
+\subsection{Richiami di calcolo vettoriale}
 vettore
 \[
     \vec{x} = (x_1, x_2, \dots, x_n)
@@ -54,7 +54,7 @@ Prodotto misto:
 \]
 Il prodotto misto si annulla solo se i tre vettori sono linearmente indipendenti.\newline
 \rule{\textwidth}{2pt}
-\subsection*{Funzioni a valori vettoriali, limiti e continuità}
+\subsection{Funzioni a valori vettoriali, limiti e continuità}
 Si dice funzione a valori vettoriali una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ con $n > 1$. Le funzioni $\vec{f} : \mathbb{R} \rightarrow \mathbb{R}^2$ o $\mathbb{R}^3$.\newline
 Il limite della funzione a valori vettoriali si calcola componente per componente:
 \[
@@ -62,7 +62,7 @@ Il limite della funzione a valori vettoriali si calcola componente per component
 \]
 Valgono allo stesso modo delle funzioni unidimensionali il teorema di unicità del limite e la definizione di continuità (una funzione a valori vettoriali è continua in un punto se lo sono tutte le sue componenti).\newline
 \rule{\textwidth}{2pt}
-\subsection*{Curve regolari e calcolo differenziale vettoriale}
+\subsection{Curve regolari e calcolo differenziale vettoriale}
 Nel caso $n = 2$ o $3$, una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ rappresentano curve nel piano o nello spazio tridimensionale.\newline
 Sia $I$ un intervallo in $\mathbb{R}$. Si dice arco di curva continua, o cammino, in $\mathbb{R}^n$ una funzione $\vec{r}: I \rightarrow \mathbb{R}^n$ continua.\newline
 La curva si dice chiusa se $\vec{r}(a) = \vec{r}(b)$ con $I=[a,b]$.\newline
@@ -70,7 +70,7 @@ La curva si dice semplice se non ripassa mai nello stesso punto.\newline
 Il sostegno della curva è l'immagine della funzione, cioè l'insieme dei punti di $\mathbb{R}^n$ percorsi dal punto mobile.\newline
 Una curva si dice piana se esiste un piano che contiene il suo sostegno.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Derivata di una funzione vettoriale. Arco di curva regolare}
+\subsubsection{Derivata di una funzione vettoriale. Arco di curva regolare}
 \textbf{def.} Sia $\vec{r}: I \rightarrow \mathbb{R}^n$ e $t_0 \in I$, si dice che $\vec{r}$ è derivabile in $t_0$ se esiste finito
 \[
     \vec{r}'(t_0) = \lim_{h\rightarrow 0}\frac{\vec{r}(t_0 +h) - \vec{r}(t_0)}{h}
@@ -122,7 +122,7 @@ Dato un vettore $\vec{r}(t)$ si dice
     \item accellerazione scalare: $|\vec{r}''(t)|$
 \end{itemize}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Integrale di una funzione vettoriale}
+\subsubsection{Integrale di una funzione vettoriale}
 \[
     \int_{a}^{b} \vec{r}(t) dt =\left( \int_{a}^{b}\vec{r_1}(t) dt,\int_{a}^{b}\vec{r_2}(t) dt, \dots, \int_{a}^{b}\vec{r_n}(t) dt,\right)
 \]
@@ -136,7 +136,7 @@ Può essere utile utilizzare il seguente lemma:
 \]
 Se $\vec{r}(t)$ è una curva regolare e chiusa in $[a,b]$, allora $\int_{a}^{b}\vec{r}'(t) dt =0$.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Classi di curve piane}
+\subsubsection{Classi di curve piane}
 \textbf{curve piane, grafico di funzioni}
 \begin{tcolorbox}
 Curve ottenute da grafici di funzioni in una variabile:
@@ -211,9 +211,9 @@ Equazione della circonferenza:
         \rho = R
 \]
 \rule{\textwidth}{2pt}
-\subsection*{Lunghezza di un arco di curva}
+\subsection{Lunghezza di un arco di curva}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Curve rettificabili e lunghezza}
+\subsubsection{Curve rettificabili e lunghezza}
 \textbf{def.} Si dice che $\gamma$ è rettificabile se 
 \[
     sub_\mathcal{P} l(\mathcal{P}) = l(\gamma) < + \infty
@@ -249,12 +249,12 @@ Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabi
 \newline
 Se una curva $\gamma$ è regolare a tratti, allora è rettificabile.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Cambiamenti di parametrizzazione, curve equivalenti}
+\subsubsection{Cambiamenti di parametrizzazione, curve equivalenti}
 Passando da $\vec{r} = \vec{r} (t)$ a $\vec{r} = \vec{r} (f(u))$ diremo che abbiamo riparametrizzato la curva, con $f(u)$ monotona (crescente o decrescente).\newline
 Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane la stessa, anche se il verso o la velocità di percorrenza cambiano.\newline
 Per invertire il senso di percorrenza si può sostituire $t$ con $-t$.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Parametro arco o ascissa curvilinea}
+\subsubsection{Parametro arco o ascissa curvilinea}
 Se invece di calcolare la lunghezza in $[a,b]$ la calcolassimo da $[t_0, t]$ otterremmo una funzione di $t$:
 \begin{tcolorbox}
 \[
@@ -279,7 +279,7 @@ che si riscrive anche nella forma
 dove il simbolo $ds$ prende il nome di lunghezza d'arco elementare.
 \end{tcolorbox}
 \rule{\textwidth}{2pt}
-\subsection*{Inegrali di linea (di prima specie)}
+\subsection{Inegrali di linea (di prima specie)}
 Sia $\vec{r}: [a,b] \rightarrow \mathbb{R}$ un arco di curva regolare di sostegno $\gamma$ e sia $f$ una funzione a valori reali, definita in un sottoinsieme $A$ di $\mathbb{R}^n$ contenente $\gamma$, cioè $f:A\subset \mathbb{R}^n \rightarrow \mathbb{R}$ con $\gamma \subset A$.
 \begin{tcolorbox}
 Si dice integrale di linea (di prima specie) di $f$ lungo $\gamma$ l'integrale
@@ -321,9 +321,9 @@ Lintegrale di $f$ di prima specie lungo $\gamma$ è invariante per parametrizzaz
 \end{itemize}
 \end{tcolorbox}
 \rule{\textwidth}{2pt}
-\subsection*{Elementi di geometria differenziale delle curve}
+\subsection{Elementi di geometria differenziale delle curve}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Curvatura e normale principale per una curva in $\mathbb{R}^n$}
+\subsubsection{Curvatura e normale principale per una curva in $\mathbb{R}^n$}
 Il versore tangente è definito come:
 \[
     \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}\text{,} \quad \text{mentre} \;\vec{T}(s) =\vec{r}'(s)
@@ -372,7 +372,7 @@ Vale la seguente formula:
 dove $\vec{a}(t) = \vec{r}''(t)$\newline
 \newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Calcolo della curvatura per curve nello spazio $\mathbb{R}^3$ o nel piano}
+\subsubsection{Calcolo della curvatura per curve nello spazio $\mathbb{R}^3$ o nel piano}
 \[
     k(t) = \frac{|\vec{r}'(t) \text{x} \vec{r}''(t)|}{v^3(t)}
 \]
@@ -401,14 +401,14 @@ da cui derivano:
 \newline
 Si dicono vertici di una curva i punti in cui $k'(t) = 0$.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Torsione(manca) e terna intrinseca per curve nello spazio $\mathbb{R}^3$}
+\subsubsection{Torsione(manca) e terna intrinseca per curve nello spazio $\mathbb{R}^3$}
 Data una curva $\vec{r} : I \rightarrow \mathbb{R}^3$, regolare di classe $C^3(I)$, definiamo il versore binormale della curva come
 \[
     \vec{B} = \vec{T} \text{x} \vec{N}
 \]
 La terna intrinseca $\vec{B}, \vec{T}, \vec{N}$ costituisce un sistema di riferimento ortonormale.\newline
 \rule{\textwidth}{2pt}
-\subsection*{Note sugli esercizi}
+\subsection{Note sugli esercizi}
 \begin{tcolorbox}
 Proprietà delle curve:
 \begin{itemize}

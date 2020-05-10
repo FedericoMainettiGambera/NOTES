@@ -1,6 +1,6 @@
-\section*{Equazioni differenziali}
+\section{Equazioni differenziali}
 \rule{\textwidth}{2pt}
-\subsection*{Modelli differenziali}
+\subsection{Modelli differenziali}
 Si dice equazione differenziale di ordine $n$ un equazione del tipo:
 \[
     F(t, y, y', y'', \dots, y^{(n)}) = 0
@@ -12,9 +12,9 @@ Si dirà soluzione, o (curva) integrale, di un equazione differenziale, nell'int
 \]
 Infine si dirà integrale generale di un equazione differenziale una formula che rappresenti la famiglia di tutte le soluzioni.\newline
 \rule{\textwidth}{2pt}
-\subsection*{Equazioni del primo ordine}
+\subsection{Equazioni del primo ordine}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Generalità}
+\subsubsection{Generalità}
 L'insieme delle soluzioni di un'equazione differenziale del prim'ordine prende il nome di integrale generale dell'equazione.\newline
 Un equazione differenziale si dice in forma normale se è nella forma
 \[
@@ -35,7 +35,7 @@ Il problema di risolvere queste equazioni prende il nome di problema di Cauchy, 
     \item derivabile in tutto $I$ e che soddisfa l'equazione in tutto $I$.
 \end{itemize}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Equazioni a variabili separabili}
+\subsubsection{Equazioni a variabili separabili}
 Le equazioni a variabili separabili sono equazioni del tipo
 \begin{tcolorbox}
 \[
@@ -74,7 +74,7 @@ Dove $a$ è continua in un intorno $I$ di $t_0$ e $b$ è continua in un intonro 
 Se inoltre $b \in C^1(J)$, allora tale soluzione è unica.\newline
 \end{tcolorbox}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Equazioni lineari del prim'ordine}
+\subsubsection{Equazioni lineari del prim'ordine}
 Sono equazioni la cui forma normale è
 \begin{tcolorbox}
 \[
@@ -134,11 +134,11 @@ ha una e una sola soluzione $y \in C^1(I)$ e tale soluzione è
 \end{tcolorbox}
 \rule{\textwidth}{0,4pt}\newline
 \begin{tcolorbox}
-    \subsubsection*{Note sugli esercizi}
+    \subsubsection{Note sugli esercizi}
     Per trovare il massimo intervallo della soluzione bisogna prendere un intervallo contenente il punto $t_0$, per cui la soluzione e la funzione di partenza siano continue e definite (si può anche prolungare per continuità).\newline
 \end{tcolorbox}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Equazione di Bernoulli}
+\subsubsection{Equazione di Bernoulli}
 Un equazion differenziale si dice di \textbf{Bernoulli} se si può scrivere nella forma
 \[
     y' = a(t)y + b(t) y^\alpha
@@ -165,12 +165,12 @@ Risolvere un equazione di Bernoulli:\newline
 Si divide l'equazione per $y^\alpha$ e si ottiene $y^{-\alpha} y' = a(t) y^{1-\alpha} + b(t)$.\newline
 Si pone $z(t) = y(t)^{1-\alpha}$ e si ottiene $z' = (1-\alpha)a(t)z + (1-\alpha) b(t)$, che è un'equazione lineare e quindi possiamo risolvere con i soliti metodi. Una volta trovata la soluzione $z(t)$ (che sarà $\geq 0$ o $>0$ a seconda dei valori di $\alpha$), si determina $y(t) = z(t)^{\frac{1}{1-\alpha}}$\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Prolungamento delle soluzioni}
+\subsubsection{Prolungamento delle soluzioni}
 
 \rule{\textwidth}{2pt}
-\subsection*{Equazioni lineari del secondo ordine}
+\subsection{Equazioni lineari del secondo ordine}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Spazi di funzioni}
+\subsubsection{Spazi di funzioni}
 Sia $I$ un intervallo e consideriamo l'insieme $\mathbb{F}$ di tutte le funzioni definite in $I$, a valori reali. Con le operazioni naturali di somma di due funzioni e prodotto per uno scalare:
 \[
     (f+g)(x) = f(x) + g(x)
@@ -182,7 +182,7 @@ $\mathbb{F}$ risulta essere uno spazio vettoriale. \newline
 \newline
 \textbf{def.} definiamo $C^n(I)$ lo spazio delle funzioni dotate di derivata $n$-essima continua.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Generalità sulle equazioni lineari. Problema di Cauchy}
+\subsubsection{Generalità sulle equazioni lineari. Problema di Cauchy}
 Un equazione differenziale del secondo ordine si dice lineare se è del tipo
 \[
     a_2(t) y'' + a_1(t) y' +a_0(t) y = g(t)
@@ -215,7 +215,7 @@ ha una e una sola soluzione $y \in C^2(I)$.\newline
 Tale soluzione è individuata imponendo le condizioni iniziali nell'espressione che assegna l'integrale generale dell'equazione.\newline
 \end{tcolorbox}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{La struttura dell'integrale generale}
+\subsubsection{La struttura dell'integrale generale}
 \textbf{teor.} Struttura dell'integrale generale dell'equazione lineare completa \newline
 a. $\;\;\;$ L'insieme delle soluzioni dell'equazione omogenea $Lz = 0 $ con $L:C^2(I)\rightarrow C^0(I)$ in un dato intervallo $I$ è uno spazio vettoriale (sottospazio di $C^2(I)$).\newline
 b. $\;\;\;$ L'integrale generale dell'equazione completa di ottiene sommando l'integrale generale dell'equazione omogenea e una soluzione particolare dell'equazione completa.\newline
@@ -249,7 +249,7 @@ L'integrale generale avrà dunque la forma:
 \]
 \end{tcolorbox}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Equazioni omogenee a coefficienti costanti}
+\subsubsection{Equazioni omogenee a coefficienti costanti}
 \begin{tcolorbox}
 \[
     z''(t) + a z'(t) + bz(t) = 0
@@ -292,12 +292,12 @@ Calcoliamo il $\Delta$ di $r^2 + a r + b$, detta equazione caratteristica:
     \end{tcolorbox}
 \end{itemize}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Equazioni completa a coefficienti costanti}
+\subsubsection{Equazioni completa a coefficienti costanti}
 \[
     y''(t) + a y'(t) + b y(t) = f(t)
 \]
 Vediamo per prima cosa il 
-\subsubsection*{metodo di somiglianza}
+\subsubsection{metodo di somiglianza}
 Si analizza il termine noto $f(t)$:
 \begin{itemize}
     \item $f(t) = p_r(t)$, dove $p_r(t)$ è un polinomio di grado $r$, si cerca una soluzione di tipo polinomiale:
@@ -359,11 +359,11 @@ Si analizza il termine noto $f(t)$:
     Fa eccezione a questa tipologia il caso in cui manchi il termine in $y'$.\newline
     \newline
 \end{itemize}
-\subsubsection*{Metodo di sovrapposizione}
+\subsubsection{Metodo di sovrapposizione}
 \begin{tcolorbox}
 se, per esempio, il termine noto $f(t) =$ polinomio $+$ una funzione trigonometrica, si può trovare una soluzione per $f(t) =$ polinomio, e una per $f(t) =$ funzione trigonometrica e sommando le soluzioni si trova una soluzione dell'equazione di partenza.
 \end{tcolorbox}
-\subsubsection*{Metodo di variazione delle costanti}
+\subsubsection{Metodo di variazione delle costanti}
 Illustriamo ora un metodo generale che consente di determinare una soluzione particolare qualunque sia la forma del termine noto.\newline
 Il metodo è applicabile purchè si conoscando già due soluzioni $z_1, z_2$ indipendenti dell'equazione omogenea associata.\newline
 Dovremo quindi trovare le due funzioni $c_1$ e $c_2$ tali che
@@ -386,7 +386,7 @@ Dobbiamo quindi trovare due primitive di $c_1'$ e $c_2'$ e sostituire in:
 \]
 con $k_i$ costanti arbitrarie di integrazione.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Note sugli esercizi}
+\subsubsection{Note sugli esercizi}
 \[
     \int e^{ax}cos(bx) dx = Re (\int e^{a+ib}x dx ) 
 \]
@@ -396,7 +396,7 @@ con $k_i$ costanti arbitrarie di integrazione.\newline
 \[
     \int e^{(a+ib)x} dx = \frac{1}{a+ib}e^{(a+ib)x} = \frac{e^{ax}}{a^2+b^2} (a-ib)(cos(bx) + i sin(bx))
 \]
-\subsubsection*{Equazione di Eulero}
+\subsubsection{Equazione di Eulero}
 Per risolvere:
 \begin{tcolorbox}
 \[
@@ -441,7 +441,7 @@ Per $x<0$, si studia ancora la stessa equazione di secondo grado e si hanno solu
 \end{center}
 \end{tcolorbox}
 \rule{\textwidth}{2pt}
-\subsection*{Sistemi lineari omogenei}
+\subsection{Sistemi lineari omogenei}
 \[
     y' = A(t) y
 \]
@@ -498,7 +498,7 @@ Da queste osservazioni possiamo dedurre che
 \newline
 La fuznione $\phi(t) = C e^{\lambda t} $ è soluzione di $y'=At$ se e solo se $\lambda$ è un autovalore di $A$ (possibilmente complesso) e $C$ è un autovettore associato a $\lambda$.\newline
 \rule{\textwidth}{0,4pt}
-\subsection*{Diagonalizzazione di una matrice}
+\subsection{Diagonalizzazione di una matrice}
 Una matrice $A$ è diagonalizzabile se
 \begin{itemize}
     \item Il numero degli autovalori di $A$ contati con la loro molteplicità è uguale all'ordine della matrice

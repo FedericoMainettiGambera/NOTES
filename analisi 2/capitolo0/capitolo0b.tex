@@ -1,9 +1,9 @@
-\section*{Integrali}
-\subsection*{Teorema fondamentale del calcolo integrale:}
+\section{Integrali}
+\subsection{Teorema fondamentale del calcolo integrale:}
 \[
     \int_{a}^{b} f(x) dx = G(b) - G(a)
 \]
-\subsection*{Proprietà degli integrali:}
+\subsection{Proprietà degli integrali:}
 \[
     \int_{a}^{b} f(x)dx = \int_{a}^{r} f(x) dx + \int_{r}^{b} f(x) dx
 \]
@@ -16,7 +16,7 @@
 \[
     \int [f_1(x) + f_2(x) ] dx= \int f_1(x) dx + \int f_2(x) dx
 \]
-\subsection*{Integrali fondamentali:}
+\subsection{Integrali fondamentali:}
 \[
     \int f'(x) dx = f(x) +c
 \]
@@ -74,7 +74,7 @@
 \[
     \int a^x dx = \frac{a^x}{ln(a)}+c
 \]
-\subsection*{Integrali notevoli:}
+\subsection{Integrali notevoli:}
 \[
     \int sin^2(x) dx = [integrato \; una \; volta \; per \; parti \; e \; sostituzione \; con \; cos^2(x)+ sin^2(x) = 1] = \frac{1}{2}(x-sin(x)cos(x)) +c
 \]
@@ -141,7 +141,7 @@
 \[
     \int \sqrt{a^2 - x^2}dx = \frac{1}{2}(a^2arcsin(\frac{x}{a}) + x \sqrt{a^2 - x^2} )+c
 \]
-\subsection*{Integrali riconducibili:}
+\subsection{Integrali riconducibili:}
 \[
     \int f^n(x) \cdot f'(x) dx = \frac{f^{n+1}(x)}{n+1} +c
 \]
@@ -163,14 +163,14 @@
 \[
     \int \frac{f'(x)}{1+f^2(x)} dx = arctg(f(x))+c
 \]
-\subsection*{Integrazione per sostituzione:}
+\subsection{Integrazione per sostituzione:}
 Sostituire alla variabile $x$ una funzione di un'altra variabile $t$, purchè tale funzione sia derivabile e invertibile.\newline
 Ponendo $x = g(t)$ da cui deriva $dx = g'(t) dt$ si ha che:
 \[
     \int f(x) dx = \int f[g(t)] \cdot g'(t) dt
 \]
 Da ricordare è che se si è in presenza di un integrale definito bisogna aggiornare anche gli estremi di integrazione. Se non si volesse cambiare l'intervall odi integrazione si può risostituire il vecchio valore di $t$.
-\subsection*{Integrazione delle funzioni razionali:}
+\subsection{Integrazione delle funzioni razionali:}
 \[
     \int \frac{P_n(x)}{Q_m(x)} dx
 \]
@@ -227,9 +227,9 @@ Vediamo ora i vari casi possibili:
     \item \textbf{denominatore di grado maggiore di due:} è sempre possibile scomporlo in prodotti di fattori di primo grado o di secondo grado irriducibili, per farlo si usa Ruffini (o altrimenti si va a tentoni ricordando che PROBABILMENTE una radice della funzione è un dividendo (positivi e negativi) del numero che si ricava moltiplicando il coefficiente del termine massimo e il termine noto).\newline
     Fatto questo si scompone la frazione in fratti semplici con la stessa logica del caso di due radici distinte, ricordando che il numeratore deve essere un espressione di un grado minore del denominatore, per esempio se il denominatore è di grado $2$, allora si userà $ax+b$ che è di grado $1$.
 \end{itemize}
-\subsection*{Funzioni razionali di $e^x$}
+\subsection{Funzioni razionali di $e^x$}
 Si pone $e^x = t$, $x= log(t)$, $dx = \frac{dt}{t}$ e ci si riconduce a una funzione razionale classica.
-\subsection*{Integrazione per parti:}
+\subsection{Integrazione per parti:}
 \[
     \int f'(x) \cdot  g(x) dx = f(x) \cdot g(x) - \int f(x) \cdot g'(x)dx
 \]
@@ -294,7 +294,7 @@ L'integrazione per parti si usa:
         \int x^n arctg(x) dx  = \frac{x^{n+1}}{n+1}arctg(x) - \int\frac{x^{n+1}}{n+1} \frac{dx}{1+x^2}
     \]
 \end{itemize}
-\subsection*{integrazione delle funzioni trigonometriche}
+\subsection{integrazione delle funzioni trigonometriche}
 \begin{itemize}
     \item dovendo calcolare
     \[
@@ -330,7 +330,7 @@ L'integrazione per parti si usa:
     \]
     \item per calcolare integrali razionali con $Sh(x)$ e $Ch(x)$ o si trovano scorciatoie con trasformazioni oppure si usa la sostituzione $e^x = t, x= log(t), dx = \frac{dt}{t}$
 \end{itemize}
-\subsection*{Integrazione delle funzioni irrazzionali}
+\subsection{Integrazione delle funzioni irrazzionali}
 \begin{itemize}
     \item se l'integranda è una funzione razionale di $x$ moltiplicata per solo una delle seguenti
     \[
@@ -357,7 +357,7 @@ L'integrazione per parti si usa:
         \int x^{2n+1}R(\sqrt{x^2 \pm a^2})dx = [\sqrt{x^2 \pm a^2} = t, xdx= tdt, x^{2n+1} \cdot dx = (t^2 \mp a^2)^n t \cdot  dt]
     \]
 \end{itemize}
-\subsection*{Simmetrie e valori assoluti nel calcolo di integrali definiti}
+\subsection{Simmetrie e valori assoluti nel calcolo di integrali definiti}
 \begin{itemize}
     \item se $f(x)$ è \textbf{pari}:
     \[
@@ -368,10 +368,10 @@ L'integrazione per parti si usa:
         \int_{-k}^{k}f(x)dx = 0
     \]
 \end{itemize}
-\subsection*{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}
+\subsection{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}
 Non è corretto affermare l'annullarsi di un integrale dispari per motivi di simmetria in un intervallo simmetrico senza prima verificare la convergenza dell'integrale stesso.
-\subsection*{INTEGRALI GENERALIZZATI}
-\subsection*{Integrazione di funzioni non limitate}
+\subsection{INTEGRALI GENERALIZZATI}
+\subsection{Integrazione di funzioni non limitate}
 Metodo generale di risoluzione:
 \[
     \lim_{x\rightarrow b^-} f(x) = \pm \infty \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\lim_{x\rightarrow a^+}f(x) = \pm \infty
@@ -379,7 +379,7 @@ Metodo generale di risoluzione:
 \[
     \int_{a}^{b}f(x)dx = \lim_{\epsilon\rightarrow 0^+}\int_{a}^{b-\epsilon}f(x)dx \;\;\;\;\;\;\;\;\;\;\;\;\; \int_{a}^{b}f(x)dx = \lim_{\epsilon\rightarrow 0^+}\int_{a+\epsilon}^{b}f(x)dx 
 \]
-\subsection*{Criteri di integrabilità al finito}
+\subsection{Criteri di integrabilità al finito}
 Siano $\lim_{x\rightarrow b^-}f(x) = \lim_{x\rightarrow b^-}g(x) = + \infty$:
 \begin{itemize}
     \item confronto: se $0\leq f(x) \leq g(x)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
@@ -389,7 +389,7 @@ Siano $\lim_{x\rightarrow b^-}f(x) = \lim_{x\rightarrow b^-}g(x) = + \infty$:
         \int_{a}^{b}|f(x)|dx \;\; convergente \;\;\Rightarrow \int_{a}^{b}f(x)dx \;\;convergente
     \]
 \end{itemize}
-\subsection*{Integrazione su intervalli illimitati}
+\subsection{Integrazione su intervalli illimitati}
 Metodo generale di risoluzione:
 \[
     \int_{a}^{+\infty}f(x) dx = \lim_{\omega\rightarrow +\infty}\int_{a}^{\omega}f(x)dx
@@ -404,7 +404,7 @@ Metodo generale di risoluzione:
 \textbf{def.} Se il limite dell'integrale è $\pm \infty$, l'integrale si dice divergente.\newline
 \textbf{def.} Se il limite non esiste, l'integrale non esiste.\newline
 \textbf{per essere integrabile deve avere limite finito.}
-\subsection*{Criteri di integrabilità all'infinito}
+\subsection{Criteri di integrabilità all'infinito}
 \begin{itemize}
     \item confronto: se $0\leq f(x) \leq g(x)$ in $[a,+\infty)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
     \item confronto asintotico: se $f>0$, $g>0$ e $f \sim g$ per $x \rightarrow + \infty$, allora $f$ integrabile $\Leftrightarrow g$ integrabile
@@ -413,13 +413,13 @@ Metodo generale di risoluzione:
         \int_{a}^{+\infty}|f(x)| dx \;\; convergente \;\; \Rightarrow \int_{a}^{+\infty} f(x) dx \;\;convergente
     \]
 \end{itemize}
-\subsection*{Osservazione. Ordine di annullamento di una funzione derivabile.}
+\subsection{Osservazione. Ordine di annullamento di una funzione derivabile.}
 Se $f$ è una funzione derivabile in un intervallo $I$, la formula di Taylor ci dice che se $f$ si annulla in un punto $\alpha \in I$, si annulla almeno del prim'ordine. Precisamente poichè
 \[
     f(x) - f(\alpha) = f'(\alpha)(x-\alpha) + o(x-\alpha)
 \]
 se $f'(\alpha) \neq 0$ allora $f$ ha uno zero del prim'ordine in $\alpha$. Se $f'(\alpha) = 0$ ma, ad esempio, $f''(\alpha) \neq 0$, si può concludere che $f$ si annulla del $2^0$ ordine, e così via. In ogni caso non può annullarsi di un ordine inore di $1$.
-\subsection*{Integrali generalizzati notevoli}
+\subsection{Integrali generalizzati notevoli}
 Caso 1:
 \[
     \int_{a}^{b}\frac{1}{(x-a)^p}dx \rightarrow \begin{cases}
@@ -477,7 +477,7 @@ Caso 5: con $\alpha> 1$
         diverge \;\; se \;\; &p\geq 1
     \end{cases}
 \]
-\subsection*{FUNZIONI INTEGRALI}
+\subsection{FUNZIONI INTEGRALI}
 \textbf{teor.} Secondo teorema fondamentale del calcolo integrale \newline
 Sia $f: [a,b] \rightarrow \mathbb{R}$ una funzione integrabile e sia $x_0 \in [a,b]$ e sia 
 \[

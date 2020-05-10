@@ -1,6 +1,6 @@
-\section*{Funzioni di più variabili a valori vettoriali (GAZZOLA)}
+\section{Funzioni di più variabili a valori vettoriali (GAZZOLA)}
 \rule{\textwidth}{2pt}
-\subsection*{Campi vettoriali}
+\subsection{Campi vettoriali}
 Un campo vettoriale $F: \mathbb{R}^n \rightarrow  \mathbb{R}^m$ è una funzione che ad ogni  punto dello spazio $\mathbb{R}^n$ associa un vettore di $\mathbb{R}^m$.
 \[
     F(\vec{x}) = \left(F_1(\vec{x}), \dots, f_m(\vec{x})\right) = \sum_{h=1}^{m} F_h(\vec{x})e_h
@@ -82,7 +82,7 @@ cioè un rotore è solenoidale;
     \nabla \cdot (\nabla u) = div(\nabla u) = \nabla u \quad \quad \;\forall\;u \in C^2(\Omega, \mathbb{R}).
 \]
 \rule{\textwidth}{2pt}
-\subsection*{Lavoro di un campo vettoriale}
+\subsection{Lavoro di un campo vettoriale}
 \textbf{def.} SIa $\gamma$ il sostegno orientato di una curva regolare a tratti $r: I \rightarrow \mathbb{R}^n$ e sia $F \in C ^0(\mathbb{R}^n, \mathbb{R}^n)$. Si chiama \textbf{lavoro} di $F$ lungo $\gamma$ l'integrale di linea
 \[
     L_\gamma (F) = \int_{\gamma} F \cdot dr = \int_{I} F(r(t))\cdot r'(t) dt
@@ -193,7 +193,7 @@ Come trovare un potenziale di un campo conservativo:
 \newline
 \textbf{oss.} Bisogna sempre verificare che il dominio sia un insieme semplicemente connesso, se non lo fosse bisogna suddividere il dominio in tanti intervalli semplicemente connessi e specificare che il potenziale vale per ognuno di questi separatamente.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Forme differenziali lineari}
+\subsubsection{Forme differenziali lineari}
 Nel calcolo del lavoro di un campo $F \in C^1 (\mathbb{R}^n, \mathbb{R}^n)$, ci imbattiamo in integrande del tipo
 \[
     F \cdot  dr = F_1 dx + f_2 dy + F_3 dz
@@ -227,9 +227,9 @@ allora la funzione $F$ è irrotazionale e la forma differenziale lineare corrisp
 \newline
 Ogni forma differenziale esatta è anche chiusa, mentre il viceversa non è vero.\newline
 \rule{\textwidth}{2pt}
-\subsection*{Flusso e Teorema della divergenza}
+\subsection{Flusso e Teorema della divergenza}
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Flusso}
+\subsubsection{Flusso}
 Per calcolare il flusso abbiamo bisogno di
 \begin{itemize}
     \item un campo vettoriale $F: C \subseteq \mathbb{R}^3 \rightarrow  \mathbb{R}^3$
@@ -255,7 +255,7 @@ Poichè il terzo elemento del vettore normale è 1 allora esso è rivolto verso 
 \newline
 Se la superficie è espressa in forma implicita dobbiamo parametrizzarla e usare le formule illustrate.\newline
 \rule{\textwidth}{0,4pt}
-\subsubsection*{Teorema della divergenza}
+\subsubsection{Teorema della divergenza}
 Consideriamo $F \in C^1(\Omega, \mathbb{R}^n)$ con $\Omega \subset \mathbb{R}^n$ e limitato, inoltre sia $\vec{n}$ un versore definito su un punto del bordo di $\Omega$ (detto $\delta\Omega$ ) e perpendicolare al piano tangente in $\delta \Omega$ e orientato verso l'esterno.\newline
 Il prodotto scalare $F \cdot \vec{n}$ rappresenta il flusso uscente (se $> 0$, entrante se $<0$)  da $\delta\Omega$.\newline
 \newline
