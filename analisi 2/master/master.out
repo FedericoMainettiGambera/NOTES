@@ -16,151 +16,152 @@
 \BOOKMARK [2][-]{subsection.3.1}{Serie di potenze}{section.3}% 16
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Nel campo complesso}{subsection.3.1}% 17
 \BOOKMARK [3][-]{subsubsection.3.1.2}{Nel campo reale}{subsection.3.1}% 18
-\BOOKMARK [3][-]{subsubsection.3.1.3}{Serie di Taylor}{subsection.3.1}% 19
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Serie di Taylor / MacLaurin}{subsection.3.1}% 19
 \BOOKMARK [2][-]{subsection.3.2}{Serie di Fourier}{section.3}% 20
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Forma trigonometrica}{subsection.3.2}% 21
 \BOOKMARK [3][-]{subsubsection.3.2.2}{Funzioni pari e dispari, periodi diversi da 2}{subsection.3.2}% 22
 \BOOKMARK [3][-]{subsubsection.3.2.3}{Forma esponenziale complessa}{subsection.3.2}% 23
 \BOOKMARK [2][-]{subsection.3.3}{Note sugli esercizi}{section.3}% 24
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Serie di potenze nel campo reale}{subsection.3.3}% 25
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Sviuluppabilit\340 in serie di Fourier}{subsection.3.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Riassunto dei criteri per la convergenza della serie di Fourier F}{subsection.3.3}% 27
-\BOOKMARK [3][-]{subsubsection.3.3.4}{Armoniche}{subsection.3.3}% 28
-\BOOKMARK [1][-]{section.4}{Integrali}{}% 29
-\BOOKMARK [2][-]{subsection.4.1}{Teorema fondamentale del calcolo integrale:}{section.4}% 30
-\BOOKMARK [2][-]{subsection.4.2}{Propriet\340 degli integrali:}{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.3}{Integrali fondamentali:}{section.4}% 32
-\BOOKMARK [2][-]{subsection.4.4}{Integrali notevoli:}{section.4}% 33
-\BOOKMARK [2][-]{subsection.4.5}{Integrali riconducibili:}{section.4}% 34
-\BOOKMARK [2][-]{subsection.4.6}{Integrazione per sostituzione:}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.7}{Integrazione delle funzioni razionali:}{section.4}% 36
-\BOOKMARK [2][-]{subsection.4.8}{Funzioni razionali di ex}{section.4}% 37
-\BOOKMARK [2][-]{subsection.4.9}{Integrazione per parti:}{section.4}% 38
-\BOOKMARK [2][-]{subsection.4.10}{integrazione delle funzioni trigonometriche}{section.4}% 39
-\BOOKMARK [2][-]{subsection.4.11}{Integrazione delle funzioni irrazzionali}{section.4}% 40
-\BOOKMARK [2][-]{subsection.4.12}{Simmetrie e valori assoluti nel calcolo di integrali definiti}{section.4}% 41
-\BOOKMARK [2][-]{subsection.4.13}{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}{section.4}% 42
-\BOOKMARK [2][-]{subsection.4.14}{INTEGRALI GENERALIZZATI}{section.4}% 43
-\BOOKMARK [2][-]{subsection.4.15}{Integrazione di funzioni non limitate}{section.4}% 44
-\BOOKMARK [2][-]{subsection.4.16}{Criteri di integrabilit\340 al finito}{section.4}% 45
-\BOOKMARK [2][-]{subsection.4.17}{Integrazione su intervalli illimitati}{section.4}% 46
-\BOOKMARK [2][-]{subsection.4.18}{Criteri di integrabilit\340 all'infinito}{section.4}% 47
-\BOOKMARK [2][-]{subsection.4.19}{Osservazione. Ordine di annullamento di una funzione derivabile.}{section.4}% 48
-\BOOKMARK [2][-]{subsection.4.20}{Integrali generalizzati notevoli}{section.4}% 49
-\BOOKMARK [2][-]{subsection.4.21}{FUNZIONI INTEGRALI}{section.4}% 50
-\BOOKMARK [1][-]{section.5}{Calcolo infinitesimale per le curve}{}% 51
-\BOOKMARK [2][-]{subsection.5.1}{Richiami di calcolo vettoriale}{section.5}% 52
-\BOOKMARK [2][-]{subsection.5.2}{Funzioni a valori vettoriali, limiti e continuit\340}{section.5}% 53
-\BOOKMARK [2][-]{subsection.5.3}{Curve regolari e calcolo differenziale vettoriale}{section.5}% 54
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Derivata di una funzione vettoriale. Arco di curva regolare}{subsection.5.3}% 55
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Integrale di una funzione vettoriale}{subsection.5.3}% 56
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Classi di curve piane}{subsection.5.3}% 57
-\BOOKMARK [2][-]{subsection.5.4}{Lunghezza di un arco di curva}{section.5}% 58
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Curve rettificabili e lunghezza}{subsection.5.4}% 59
-\BOOKMARK [3][-]{subsubsection.5.4.2}{Cambiamenti di parametrizzazione, curve equivalenti}{subsection.5.4}% 60
-\BOOKMARK [3][-]{subsubsection.5.4.3}{Parametro arco o ascissa curvilinea}{subsection.5.4}% 61
-\BOOKMARK [2][-]{subsection.5.5}{Inegrali di linea \(di prima specie\)}{section.5}% 62
-\BOOKMARK [2][-]{subsection.5.6}{Elementi di geometria differenziale delle curve}{section.5}% 63
-\BOOKMARK [3][-]{subsubsection.5.6.1}{Curvatura e normale principale per una curva in Rn}{subsection.5.6}% 64
-\BOOKMARK [3][-]{subsubsection.5.6.2}{Calcolo della curvatura per curve nello spazio R3 o nel piano}{subsection.5.6}% 65
-\BOOKMARK [3][-]{subsubsection.5.6.3}{Torsione\(manca\) e terna intrinseca per curve nello spazio R3}{subsection.5.6}% 66
-\BOOKMARK [2][-]{subsection.5.7}{Note sugli esercizi}{section.5}% 67
-\BOOKMARK [1][-]{section.6}{Calcolo differenziale per funzioni reali di pi\371 variabili}{}% 68
-\BOOKMARK [2][-]{subsection.6.1}{Continuit\340 di una funzione in pi\371 variabili:}{section.6}% 69
-\BOOKMARK [2][-]{subsection.6.2}{Calcolo di limiti in pi\371 variabili}{section.6}% 70
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Non esistenza del limite}{subsection.6.2}% 71
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Uso di maggiorazioni con funzioni radiali per provare l'esistenza del limite}{subsection.6.2}% 72
-\BOOKMARK [3][-]{subsubsection.6.2.3}{Note sugli esercizi}{subsection.6.2}% 73
-\BOOKMARK [2][-]{subsection.6.3}{Topologia in Rn e propriet\340 delle funzioni continue}{section.6}% 74
-\BOOKMARK [2][-]{subsection.6.4}{Derivate parziali, piano tangente, differenziale}{section.6}% 75
-\BOOKMARK [3][-]{subsubsection.6.4.1}{Derivata parziale}{subsection.6.4}% 76
-\BOOKMARK [3][-]{subsubsection.6.4.2}{Calcolo delle derivate}{subsection.6.4}% 77
-\BOOKMARK [3][-]{subsubsection.6.4.3}{Piano tangente}{subsection.6.4}% 78
-\BOOKMARK [3][-]{subsubsection.6.4.4}{Differenziabilit\340 e approssimazione lineare}{subsection.6.4}% 79
-\BOOKMARK [3][-]{subsubsection.6.4.5}{Verifica della differenziabilit\340}{subsection.6.4}% 80
-\BOOKMARK [3][-]{subsubsection.6.4.6}{Derivate direzionali}{subsection.6.4}% 81
-\BOOKMARK [3][-]{subsubsection.6.4.7}{Riepilogo}{subsection.6.4}% 82
-\BOOKMARK [3][-]{subsubsection.6.4.8}{Gradiente di una funzione radiale}{subsection.6.4}% 83
-\BOOKMARK [3][-]{subsubsection.6.4.9}{Criterio di continuit\340 e differenziabilit\340 per funzioni radiali}{subsection.6.4}% 84
-\BOOKMARK [3][-]{subsubsection.6.4.10}{Funzioni omogenee}{subsection.6.4}% 85
-\BOOKMARK [3][-]{subsubsection.6.4.11}{Equazione del trasporto}{subsection.6.4}% 86
-\BOOKMARK [2][-]{subsection.6.5}{Derivate di ordine superiore e approssimazioni successive}{section.6}% 87
-\BOOKMARK [3][-]{subsubsection.6.5.1}{Derivate di ordine superiore}{subsection.6.5}% 88
-\BOOKMARK [2][-]{subsection.6.6}{Differenziale secondo, matrice hessiana, formula di Taylor al secondo ordine}{section.6}% 89
-\BOOKMARK [2][-]{subsection.6.7}{Ottimizzazione, estremi liberi}{section.6}% 90
-\BOOKMARK [3][-]{subsubsection.6.7.1}{Generalit\340 sui problemi di ottimizzazione}{subsection.6.7}% 91
-\BOOKMARK [3][-]{subsubsection.6.7.2}{Estremi liberi, condizioni necessarie del prim'ordine}{subsection.6.7}% 92
-\BOOKMARK [3][-]{subsubsection.6.7.3}{Forme quadratiche, classificazione}{subsection.6.7}% 93
-\BOOKMARK [3][-]{subsubsection.6.7.4}{Forme quadratiche, test degli autovalori}{subsection.6.7}% 94
-\BOOKMARK [3][-]{subsubsection.6.7.5}{Studio della natura dei punti critici}{subsection.6.7}% 95
-\BOOKMARK [2][-]{subsection.6.8}{Ottimizzazione. Estremi vincolanti}{section.6}% 96
-\BOOKMARK [3][-]{subsubsection.6.8.1}{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}{subsection.6.8}% 97
-\BOOKMARK [3][-]{subsubsection.6.8.2}{Moltiplicatore di Lagrange. Il caso generale}{subsection.6.8}% 98
-\BOOKMARK [3][-]{subsubsection.6.8.3}{Metodo dei moltiplicatori di Lagrange \(dal libro di Gazzola\)}{subsection.6.8}% 99
-\BOOKMARK [3][-]{subsubsection.6.8.4}{Il metodo delle restrizioni}{subsection.6.8}% 100
-\BOOKMARK [2][-]{subsection.6.9}{Funzioni convesse di n variabili}{section.6}% 101
-\BOOKMARK [3][-]{subsubsection.6.9.1}{Generalit\340 sulle funzioni convesse}{subsection.6.9}% 102
-\BOOKMARK [3][-]{subsubsection.6.9.2}{Ottimizzazione di funzioni convesse e concave}{subsection.6.9}% 103
-\BOOKMARK [2][-]{subsection.6.10}{Funzioni definite implicitamente}{section.6}% 104
-\BOOKMARK [3][-]{subsubsection.6.10.1}{Funzione implicita di una variabile}{subsection.6.10}% 105
-\BOOKMARK [3][-]{subsubsection.6.10.2}{Note sugli esercizi}{subsection.6.10}% 106
-\BOOKMARK [1][-]{section.7}{Calcolo integrale per funzioni di pi\371 variabili}{}% 107
-\BOOKMARK [2][-]{subsection.7.1}{Integrali doppi}{section.7}% 108
-\BOOKMARK [3][-]{subsubsection.7.1.1}{Integrale su una regione semplice}{subsection.7.1}% 109
-\BOOKMARK [3][-]{subsubsection.7.1.2}{Baricentro e momento d'inerzia con gli integrali doppi}{subsection.7.1}% 110
-\BOOKMARK [3][-]{subsubsection.7.1.3}{Cambi di variabili negli integrali doppi}{subsection.7.1}% 111
-\BOOKMARK [3][-]{subsubsection.7.1.4}{Cambio di variabili in coordinate polari}{subsection.7.1}% 112
-\BOOKMARK [2][-]{subsection.7.2}{Integrali impropri}{section.7}% 113
-\BOOKMARK [2][-]{subsection.7.3}{Integrali tripli}{section.7}% 114
-\BOOKMARK [3][-]{subsubsection.7.3.1}{Integrazione per fili}{subsection.7.3}% 115
-\BOOKMARK [3][-]{subsubsection.7.3.2}{Integrazione per strati}{subsection.7.3}% 116
-\BOOKMARK [3][-]{subsubsection.7.3.3}{Cambi di variabili negli integrali tripli}{subsection.7.3}% 117
-\BOOKMARK [3][-]{subsubsection.7.3.4}{Coordinate cilindriche}{subsection.7.3}% 118
-\BOOKMARK [3][-]{subsubsection.7.3.5}{Coordinate sferiche}{subsection.7.3}% 119
-\BOOKMARK [2][-]{subsection.7.4}{Note sugli esercizi}{section.7}% 120
-\BOOKMARK [1][-]{section.8}{Calcolo differenziale per funzioni di pi\371 variabili a valori vettoriali \(BRAMANTI\)}{}% 121
-\BOOKMARK [2][-]{subsection.8.1}{Funzioni di pi\371 variabili a valori vettoriali: generalit\340}{section.8}% 122
-\BOOKMARK [3][-]{subsubsection.8.1.1}{Superfici in forma parametrica}{subsection.8.1}% 123
-\BOOKMARK [3][-]{subsubsection.8.1.2}{Trasformazioni di coordinate}{subsection.8.1}% 124
-\BOOKMARK [3][-]{subsubsection.8.1.3}{Campi vettoriali}{subsection.8.1}% 125
-\BOOKMARK [2][-]{subsection.8.2}{Limiti, continuit\340 e differenziabilit\340 per funzioni :Rn Rm}{section.8}% 126
-\BOOKMARK [2][-]{subsection.8.3}{Superfici regolari in forma parametrica}{section.8}% 127
-\BOOKMARK [3][-]{subsubsection.8.3.1}{Superfici cartesiane \(grafico di funzioni di due variabili\)}{subsection.8.3}% 128
-\BOOKMARK [3][-]{subsubsection.8.3.2}{Superfici di rotazione}{subsection.8.3}% 129
-\BOOKMARK [2][-]{subsection.8.4}{Variet\340 k-dimenzionali in Rn e funzioni definite implicitamente}{section.8}% 130
-\BOOKMARK [3][-]{subsubsection.8.4.1}{Variet\340 k-dimensionali in Rn in forma parametrica}{subsection.8.4}% 131
-\BOOKMARK [3][-]{subsubsection.8.4.2}{Funzioni implicite definite da sistemi di equazioni}{subsection.8.4}% 132
-\BOOKMARK [3][-]{subsubsection.8.4.3}{Variet\340 k-dimensionali in Rn in forma implicita}{subsection.8.4}% 133
-\BOOKMARK [2][-]{subsection.8.5}{Trasformazioni di coordinate e loro inversione}{section.8}% 134
-\BOOKMARK [3][-]{subsubsection.8.5.1}{Il teorema della funzione inversa}{subsection.8.5}% 135
-\BOOKMARK [3][-]{subsubsection.8.5.2}{Trasformazione di operatori differenziali}{subsection.8.5}% 136
-\BOOKMARK [2][-]{subsection.8.6}{Note sugli esercizi}{section.8}% 137
-\BOOKMARK [1][-]{section.9}{Funzioni di pi\371 variabili a valori vettoriali \(GAZZOLA\)}{}% 138
-\BOOKMARK [2][-]{subsection.9.1}{Campi vettoriali}{section.9}% 139
-\BOOKMARK [2][-]{subsection.9.2}{Lavoro di un campo vettoriale}{section.9}% 140
-\BOOKMARK [3][-]{subsubsection.9.2.1}{Forme differenziali lineari}{subsection.9.2}% 141
-\BOOKMARK [2][-]{subsection.9.3}{Flusso e Teorema della divergenza}{section.9}% 142
-\BOOKMARK [3][-]{subsubsection.9.3.1}{Flusso}{subsection.9.3}% 143
-\BOOKMARK [3][-]{subsubsection.9.3.2}{Teorema della divergenza}{subsection.9.3}% 144
-\BOOKMARK [1][-]{section.10}{Equazioni differenziali}{}% 145
-\BOOKMARK [2][-]{subsection.10.1}{Modelli differenziali}{section.10}% 146
-\BOOKMARK [2][-]{subsection.10.2}{Equazioni del primo ordine}{section.10}% 147
-\BOOKMARK [3][-]{subsubsection.10.2.1}{Generalit\340}{subsection.10.2}% 148
-\BOOKMARK [3][-]{subsubsection.10.2.2}{Equazioni a variabili separabili}{subsection.10.2}% 149
-\BOOKMARK [3][-]{subsubsection.10.2.3}{Equazioni lineari del prim'ordine}{subsection.10.2}% 150
-\BOOKMARK [3][-]{subsubsection.10.2.4}{Note sugli esercizi}{subsection.10.2}% 151
-\BOOKMARK [3][-]{subsubsection.10.2.5}{Equazione di Bernoulli}{subsection.10.2}% 152
-\BOOKMARK [3][-]{subsubsection.10.2.6}{Prolungamento delle soluzioni}{subsection.10.2}% 153
-\BOOKMARK [2][-]{subsection.10.3}{Equazioni lineari del secondo ordine}{section.10}% 154
-\BOOKMARK [3][-]{subsubsection.10.3.1}{Spazi di funzioni}{subsection.10.3}% 155
-\BOOKMARK [3][-]{subsubsection.10.3.2}{Generalit\340 sulle equazioni lineari. Problema di Cauchy}{subsection.10.3}% 156
-\BOOKMARK [3][-]{subsubsection.10.3.3}{La struttura dell'integrale generale}{subsection.10.3}% 157
-\BOOKMARK [3][-]{subsubsection.10.3.4}{Equazioni omogenee a coefficienti costanti}{subsection.10.3}% 158
-\BOOKMARK [3][-]{subsubsection.10.3.5}{Equazioni completa a coefficienti costanti}{subsection.10.3}% 159
-\BOOKMARK [3][-]{subsubsection.10.3.6}{metodo di somiglianza}{subsection.10.3}% 160
-\BOOKMARK [3][-]{subsubsection.10.3.7}{Metodo di sovrapposizione}{subsection.10.3}% 161
-\BOOKMARK [3][-]{subsubsection.10.3.8}{Metodo di variazione delle costanti}{subsection.10.3}% 162
-\BOOKMARK [3][-]{subsubsection.10.3.9}{Note sugli esercizi}{subsection.10.3}% 163
-\BOOKMARK [3][-]{subsubsection.10.3.10}{Equazione di Eulero}{subsection.10.3}% 164
-\BOOKMARK [2][-]{subsection.10.4}{Sistemi lineari omogenei}{section.10}% 165
-\BOOKMARK [2][-]{subsection.10.5}{Diagonalizzazione di una matrice}{section.10}% 166
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Convergenza uniforme per serie di potenza}{subsection.3.3}% 26
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Sviuluppabilit\340 in serie di Fourier}{subsection.3.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Riassunto dei criteri per la convergenza della serie di Fourier F}{subsection.3.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.3.5}{Armoniche}{subsection.3.3}% 29
+\BOOKMARK [1][-]{section.4}{Integrali}{}% 30
+\BOOKMARK [2][-]{subsection.4.1}{Teorema fondamentale del calcolo integrale:}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.2}{Propriet\340 degli integrali:}{section.4}% 32
+\BOOKMARK [2][-]{subsection.4.3}{Integrali fondamentali:}{section.4}% 33
+\BOOKMARK [2][-]{subsection.4.4}{Integrali notevoli:}{section.4}% 34
+\BOOKMARK [2][-]{subsection.4.5}{Integrali riconducibili:}{section.4}% 35
+\BOOKMARK [2][-]{subsection.4.6}{Integrazione per sostituzione:}{section.4}% 36
+\BOOKMARK [2][-]{subsection.4.7}{Integrazione delle funzioni razionali:}{section.4}% 37
+\BOOKMARK [2][-]{subsection.4.8}{Funzioni razionali di ex}{section.4}% 38
+\BOOKMARK [2][-]{subsection.4.9}{Integrazione per parti:}{section.4}% 39
+\BOOKMARK [2][-]{subsection.4.10}{integrazione delle funzioni trigonometriche}{section.4}% 40
+\BOOKMARK [2][-]{subsection.4.11}{Integrazione delle funzioni irrazzionali}{section.4}% 41
+\BOOKMARK [2][-]{subsection.4.12}{Simmetrie e valori assoluti nel calcolo di integrali definiti}{section.4}% 42
+\BOOKMARK [2][-]{subsection.4.13}{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}{section.4}% 43
+\BOOKMARK [2][-]{subsection.4.14}{INTEGRALI GENERALIZZATI}{section.4}% 44
+\BOOKMARK [2][-]{subsection.4.15}{Integrazione di funzioni non limitate}{section.4}% 45
+\BOOKMARK [2][-]{subsection.4.16}{Criteri di integrabilit\340 al finito}{section.4}% 46
+\BOOKMARK [2][-]{subsection.4.17}{Integrazione su intervalli illimitati}{section.4}% 47
+\BOOKMARK [2][-]{subsection.4.18}{Criteri di integrabilit\340 all'infinito}{section.4}% 48
+\BOOKMARK [2][-]{subsection.4.19}{Osservazione. Ordine di annullamento di una funzione derivabile.}{section.4}% 49
+\BOOKMARK [2][-]{subsection.4.20}{Integrali generalizzati notevoli}{section.4}% 50
+\BOOKMARK [2][-]{subsection.4.21}{FUNZIONI INTEGRALI}{section.4}% 51
+\BOOKMARK [1][-]{section.5}{Calcolo infinitesimale per le curve}{}% 52
+\BOOKMARK [2][-]{subsection.5.1}{Richiami di calcolo vettoriale}{section.5}% 53
+\BOOKMARK [2][-]{subsection.5.2}{Funzioni a valori vettoriali, limiti e continuit\340}{section.5}% 54
+\BOOKMARK [2][-]{subsection.5.3}{Curve regolari e calcolo differenziale vettoriale}{section.5}% 55
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Derivata di una funzione vettoriale. Arco di curva regolare}{subsection.5.3}% 56
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Integrale di una funzione vettoriale}{subsection.5.3}% 57
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Classi di curve piane}{subsection.5.3}% 58
+\BOOKMARK [2][-]{subsection.5.4}{Lunghezza di un arco di curva}{section.5}% 59
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Curve rettificabili e lunghezza}{subsection.5.4}% 60
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Cambiamenti di parametrizzazione, curve equivalenti}{subsection.5.4}% 61
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Parametro arco o ascissa curvilinea}{subsection.5.4}% 62
+\BOOKMARK [2][-]{subsection.5.5}{Inegrali di linea \(di prima specie\)}{section.5}% 63
+\BOOKMARK [2][-]{subsection.5.6}{Elementi di geometria differenziale delle curve}{section.5}% 64
+\BOOKMARK [3][-]{subsubsection.5.6.1}{Curvatura e normale principale per una curva in Rn}{subsection.5.6}% 65
+\BOOKMARK [3][-]{subsubsection.5.6.2}{Calcolo della curvatura per curve nello spazio R3 o nel piano}{subsection.5.6}% 66
+\BOOKMARK [3][-]{subsubsection.5.6.3}{Torsione\(manca\) e terna intrinseca per curve nello spazio R3}{subsection.5.6}% 67
+\BOOKMARK [2][-]{subsection.5.7}{Note sugli esercizi}{section.5}% 68
+\BOOKMARK [1][-]{section.6}{Calcolo differenziale per funzioni reali di pi\371 variabili}{}% 69
+\BOOKMARK [2][-]{subsection.6.1}{Continuit\340 di una funzione in pi\371 variabili:}{section.6}% 70
+\BOOKMARK [2][-]{subsection.6.2}{Calcolo di limiti in pi\371 variabili}{section.6}% 71
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Non esistenza del limite}{subsection.6.2}% 72
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Uso di maggiorazioni con funzioni radiali per provare l'esistenza del limite}{subsection.6.2}% 73
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Note sugli esercizi}{subsection.6.2}% 74
+\BOOKMARK [2][-]{subsection.6.3}{Topologia in Rn e propriet\340 delle funzioni continue}{section.6}% 75
+\BOOKMARK [2][-]{subsection.6.4}{Derivate parziali, piano tangente, differenziale}{section.6}% 76
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Derivata parziale}{subsection.6.4}% 77
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Calcolo delle derivate}{subsection.6.4}% 78
+\BOOKMARK [3][-]{subsubsection.6.4.3}{Piano tangente}{subsection.6.4}% 79
+\BOOKMARK [3][-]{subsubsection.6.4.4}{Differenziabilit\340 e approssimazione lineare}{subsection.6.4}% 80
+\BOOKMARK [3][-]{subsubsection.6.4.5}{Verifica della differenziabilit\340}{subsection.6.4}% 81
+\BOOKMARK [3][-]{subsubsection.6.4.6}{Derivate direzionali}{subsection.6.4}% 82
+\BOOKMARK [3][-]{subsubsection.6.4.7}{Riepilogo}{subsection.6.4}% 83
+\BOOKMARK [3][-]{subsubsection.6.4.8}{Gradiente di una funzione radiale}{subsection.6.4}% 84
+\BOOKMARK [3][-]{subsubsection.6.4.9}{Criterio di continuit\340 e differenziabilit\340 per funzioni radiali}{subsection.6.4}% 85
+\BOOKMARK [3][-]{subsubsection.6.4.10}{Funzioni omogenee}{subsection.6.4}% 86
+\BOOKMARK [3][-]{subsubsection.6.4.11}{Equazione del trasporto}{subsection.6.4}% 87
+\BOOKMARK [2][-]{subsection.6.5}{Derivate di ordine superiore e approssimazioni successive}{section.6}% 88
+\BOOKMARK [3][-]{subsubsection.6.5.1}{Derivate di ordine superiore}{subsection.6.5}% 89
+\BOOKMARK [2][-]{subsection.6.6}{Differenziale secondo, matrice hessiana, formula di Taylor al secondo ordine}{section.6}% 90
+\BOOKMARK [2][-]{subsection.6.7}{Ottimizzazione, estremi liberi}{section.6}% 91
+\BOOKMARK [3][-]{subsubsection.6.7.1}{Generalit\340 sui problemi di ottimizzazione}{subsection.6.7}% 92
+\BOOKMARK [3][-]{subsubsection.6.7.2}{Estremi liberi, condizioni necessarie del prim'ordine}{subsection.6.7}% 93
+\BOOKMARK [3][-]{subsubsection.6.7.3}{Forme quadratiche, classificazione}{subsection.6.7}% 94
+\BOOKMARK [3][-]{subsubsection.6.7.4}{Forme quadratiche, test degli autovalori}{subsection.6.7}% 95
+\BOOKMARK [3][-]{subsubsection.6.7.5}{Studio della natura dei punti critici}{subsection.6.7}% 96
+\BOOKMARK [2][-]{subsection.6.8}{Ottimizzazione. Estremi vincolanti}{section.6}% 97
+\BOOKMARK [3][-]{subsubsection.6.8.1}{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}{subsection.6.8}% 98
+\BOOKMARK [3][-]{subsubsection.6.8.2}{Moltiplicatore di Lagrange. Il caso generale}{subsection.6.8}% 99
+\BOOKMARK [3][-]{subsubsection.6.8.3}{Metodo dei moltiplicatori di Lagrange \(dal libro di Gazzola\)}{subsection.6.8}% 100
+\BOOKMARK [3][-]{subsubsection.6.8.4}{Il metodo delle restrizioni}{subsection.6.8}% 101
+\BOOKMARK [2][-]{subsection.6.9}{Funzioni convesse di n variabili}{section.6}% 102
+\BOOKMARK [3][-]{subsubsection.6.9.1}{Generalit\340 sulle funzioni convesse}{subsection.6.9}% 103
+\BOOKMARK [3][-]{subsubsection.6.9.2}{Ottimizzazione di funzioni convesse e concave}{subsection.6.9}% 104
+\BOOKMARK [2][-]{subsection.6.10}{Funzioni definite implicitamente}{section.6}% 105
+\BOOKMARK [3][-]{subsubsection.6.10.1}{Funzione implicita di una variabile}{subsection.6.10}% 106
+\BOOKMARK [3][-]{subsubsection.6.10.2}{Note sugli esercizi}{subsection.6.10}% 107
+\BOOKMARK [1][-]{section.7}{Calcolo integrale per funzioni di pi\371 variabili}{}% 108
+\BOOKMARK [2][-]{subsection.7.1}{Integrali doppi}{section.7}% 109
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Integrale su una regione semplice}{subsection.7.1}% 110
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Baricentro e momento d'inerzia con gli integrali doppi}{subsection.7.1}% 111
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Cambi di variabili negli integrali doppi}{subsection.7.1}% 112
+\BOOKMARK [3][-]{subsubsection.7.1.4}{Cambio di variabili in coordinate polari}{subsection.7.1}% 113
+\BOOKMARK [2][-]{subsection.7.2}{Integrali impropri}{section.7}% 114
+\BOOKMARK [2][-]{subsection.7.3}{Integrali tripli}{section.7}% 115
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Integrazione per fili}{subsection.7.3}% 116
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Integrazione per strati}{subsection.7.3}% 117
+\BOOKMARK [3][-]{subsubsection.7.3.3}{Cambi di variabili negli integrali tripli}{subsection.7.3}% 118
+\BOOKMARK [3][-]{subsubsection.7.3.4}{Coordinate cilindriche}{subsection.7.3}% 119
+\BOOKMARK [3][-]{subsubsection.7.3.5}{Coordinate sferiche}{subsection.7.3}% 120
+\BOOKMARK [2][-]{subsection.7.4}{Note sugli esercizi}{section.7}% 121
+\BOOKMARK [1][-]{section.8}{Calcolo differenziale per funzioni di pi\371 variabili a valori vettoriali \(BRAMANTI\)}{}% 122
+\BOOKMARK [2][-]{subsection.8.1}{Funzioni di pi\371 variabili a valori vettoriali: generalit\340}{section.8}% 123
+\BOOKMARK [3][-]{subsubsection.8.1.1}{Superfici in forma parametrica}{subsection.8.1}% 124
+\BOOKMARK [3][-]{subsubsection.8.1.2}{Trasformazioni di coordinate}{subsection.8.1}% 125
+\BOOKMARK [3][-]{subsubsection.8.1.3}{Campi vettoriali}{subsection.8.1}% 126
+\BOOKMARK [2][-]{subsection.8.2}{Limiti, continuit\340 e differenziabilit\340 per funzioni :Rn Rm}{section.8}% 127
+\BOOKMARK [2][-]{subsection.8.3}{Superfici regolari in forma parametrica}{section.8}% 128
+\BOOKMARK [3][-]{subsubsection.8.3.1}{Superfici cartesiane \(grafico di funzioni di due variabili\)}{subsection.8.3}% 129
+\BOOKMARK [3][-]{subsubsection.8.3.2}{Superfici di rotazione}{subsection.8.3}% 130
+\BOOKMARK [2][-]{subsection.8.4}{Variet\340 k-dimenzionali in Rn e funzioni definite implicitamente}{section.8}% 131
+\BOOKMARK [3][-]{subsubsection.8.4.1}{Variet\340 k-dimensionali in Rn in forma parametrica}{subsection.8.4}% 132
+\BOOKMARK [3][-]{subsubsection.8.4.2}{Funzioni implicite definite da sistemi di equazioni}{subsection.8.4}% 133
+\BOOKMARK [3][-]{subsubsection.8.4.3}{Variet\340 k-dimensionali in Rn in forma implicita}{subsection.8.4}% 134
+\BOOKMARK [2][-]{subsection.8.5}{Trasformazioni di coordinate e loro inversione}{section.8}% 135
+\BOOKMARK [3][-]{subsubsection.8.5.1}{Il teorema della funzione inversa}{subsection.8.5}% 136
+\BOOKMARK [3][-]{subsubsection.8.5.2}{Trasformazione di operatori differenziali}{subsection.8.5}% 137
+\BOOKMARK [2][-]{subsection.8.6}{Note sugli esercizi}{section.8}% 138
+\BOOKMARK [1][-]{section.9}{Funzioni di pi\371 variabili a valori vettoriali \(GAZZOLA\)}{}% 139
+\BOOKMARK [2][-]{subsection.9.1}{Campi vettoriali}{section.9}% 140
+\BOOKMARK [2][-]{subsection.9.2}{Lavoro di un campo vettoriale}{section.9}% 141
+\BOOKMARK [3][-]{subsubsection.9.2.1}{Forme differenziali lineari}{subsection.9.2}% 142
+\BOOKMARK [2][-]{subsection.9.3}{Flusso e Teorema della divergenza}{section.9}% 143
+\BOOKMARK [3][-]{subsubsection.9.3.1}{Flusso}{subsection.9.3}% 144
+\BOOKMARK [3][-]{subsubsection.9.3.2}{Teorema della divergenza}{subsection.9.3}% 145
+\BOOKMARK [1][-]{section.10}{Equazioni differenziali}{}% 146
+\BOOKMARK [2][-]{subsection.10.1}{Modelli differenziali}{section.10}% 147
+\BOOKMARK [2][-]{subsection.10.2}{Equazioni del primo ordine}{section.10}% 148
+\BOOKMARK [3][-]{subsubsection.10.2.1}{Generalit\340}{subsection.10.2}% 149
+\BOOKMARK [3][-]{subsubsection.10.2.2}{Equazioni a variabili separabili}{subsection.10.2}% 150
+\BOOKMARK [3][-]{subsubsection.10.2.3}{Equazioni lineari del prim'ordine}{subsection.10.2}% 151
+\BOOKMARK [3][-]{subsubsection.10.2.4}{Note sugli esercizi}{subsection.10.2}% 152
+\BOOKMARK [3][-]{subsubsection.10.2.5}{Equazione di Bernoulli}{subsection.10.2}% 153
+\BOOKMARK [3][-]{subsubsection.10.2.6}{Prolungamento delle soluzioni}{subsection.10.2}% 154
+\BOOKMARK [2][-]{subsection.10.3}{Equazioni lineari del secondo ordine}{section.10}% 155
+\BOOKMARK [3][-]{subsubsection.10.3.1}{Spazi di funzioni}{subsection.10.3}% 156
+\BOOKMARK [3][-]{subsubsection.10.3.2}{Generalit\340 sulle equazioni lineari. Problema di Cauchy}{subsection.10.3}% 157
+\BOOKMARK [3][-]{subsubsection.10.3.3}{La struttura dell'integrale generale}{subsection.10.3}% 158
+\BOOKMARK [3][-]{subsubsection.10.3.4}{Equazioni omogenee a coefficienti costanti}{subsection.10.3}% 159
+\BOOKMARK [3][-]{subsubsection.10.3.5}{Equazioni completa a coefficienti costanti}{subsection.10.3}% 160
+\BOOKMARK [3][-]{subsubsection.10.3.6}{metodo di somiglianza}{subsection.10.3}% 161
+\BOOKMARK [3][-]{subsubsection.10.3.7}{Metodo di sovrapposizione}{subsection.10.3}% 162
+\BOOKMARK [3][-]{subsubsection.10.3.8}{Metodo di variazione delle costanti}{subsection.10.3}% 163
+\BOOKMARK [3][-]{subsubsection.10.3.9}{Note sugli esercizi}{subsection.10.3}% 164
+\BOOKMARK [3][-]{subsubsection.10.3.10}{Equazione di Eulero}{subsection.10.3}% 165
+\BOOKMARK [2][-]{subsection.10.4}{Sistemi lineari omogenei}{section.10}% 166
+\BOOKMARK [2][-]{subsection.10.5}{Diagonalizzazione di una matrice}{section.10}% 167

@@ -50,24 +50,17 @@ cioè
 \[
     f_n(x) \rightarrow f(x) \; \text{puntualmente se}\; \lim_{n\rightarrow \infty} f_n(x) = f(x) 
 \]
-\newline
+\ \newline
 Diremo che la serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge uniformemente} a $f(x)$ su $I$ se
 \[
     \lim_{k\rightarrow \infty} sup_{x \in I}\left| f(x) - \sum_{n=0}^{k}f_n(x) \right| = 0
 \]
-cioè
+dove $f(x) = \sum_{n=1}^{\infty} f_n(x)$ è il limite puntuale della serie e $\sum_{n=0}^{k} f_n(x)$ è la somma parziale ennesima della serie.\newline
+Cioè
 \[
     f_n(x) \rightarrow f(x) \; \text{uniformemente se}\; \lim_{n\rightarrow \infty} sup_{x \in I}\left| f_n(x) - f(x) \right| = 0
 \]
-\textbf{oss.} Se una serie di potenze converge per $x \in (a,b)$, si dimostra che tale serie converge uniformemente in ogni intervallo $[\alpha, \beta]$ con $a < \alpha< \beta < b$; vale inoltre il teorema di Abel (se la serie di potenze $\sum a_n (x-x_0)^n$, converge negli estremi di un intervallo $[a,b]$, allora converge uniformemente in tutto l'intervallo $[a,b]$). Possibili casi:
-\begin{itemize}
-    \item converge in $x \in[a,b)$, converge uniformemente in $[a, b-\epsilon)$
-    \item converge in $x \in(a,b]$, converge uniformemente in $(a + \epsilon, b]$
-    \item converge in $x \in[a,b]$, converge uniformemente in $[a, b]$
-    \item converge in $(a,b)$, converge uniformemente in $(a + \delta, b-\epsilon)$
-    \item converge per $x$ uguale a un solo punto, non ha senso parlare di convergenza uniforme
-    \item converge per $x \in\mathbb{R}$, converge uniformemente in $[\alpha, \beta]$ con $-\infty < \alpha < \beta < + \infty$
-\end{itemize}
+\ \newline
 Diremo che la serie di funzioni $\sum_{n}f_n(x)$ \textbf{converge totalmente} su $I$ se
 \[
     \sum_{n=0}^{\infty} sup_{x \in I}\left| f_n(x) \right| < + \infty
@@ -119,7 +112,7 @@ allora valgono le seguenti tesi:
         \frac{d}{dx}\left(\sum f_n(x)\right) = \sum f_n'(x).
     \]
 \end{itemize}
-\subsubsection{Serie di Taylor}\newline
+\subsubsection{Serie di Taylor / MacLaurin}
 Introduciamo una vasta classe di funzioni elementari delle quali sappiamo scrivere esplicitamente le serie di potenza che le rappresentano.\newline
 Data una funzione $f$ di classe $C^\infty$ in un punto $x_0$, possiamo scrivere formalmente
 \[
@@ -134,9 +127,6 @@ che, se poniamo $a_n = f^{(n)}(x_0)/n!$, coincide con una serie di potenza nel c
 \]
 \[
     Sh(x) = \text{termini dispari dello sviluppo di $e^x$}\;=  \sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!} \;\;\;\; (R= \infty)
-\]
-\[
-    log(1-x) = \sum_{n=0}^{\infty} \frac{(-1)^{n+1}}{n} x^n\;\;\;\; (R=1)
 \]
 \[
     sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1}\;\;\;\; (R= \infty)
@@ -341,6 +331,20 @@ Per calcolare il raggio di convergenza $R$ si usano due formule:
 \[
     R = \lim_{n\rightarrow +\infty} \frac{1}{\sqrt[n]{|a_n|}}
 \]
+\subsubsection{Convergenza uniforme per serie di potenza}
+Se una serie di potenze converge per $x \in (a,b)$, si dimostra che tale serie converge uniformemente in ogni intervallo $[\alpha, \beta]$ con $a < \alpha< \beta < b$.\newline
+\newline
+Vale inoltre il \textbf{teorema di Abel}: se la serie di potenze $\sum a_n (x-x_0)^n$, converge negli estremi di un intervallo $[a,b]$, allora converge uniformemente in tutto l'intervallo $[a,b]$.\newline
+\newline
+Possibili casi:
+\begin{itemize}
+    \item converge in $x \in[a,b]$, converge uniformemente in $[a, b]$
+    \item converge in $x \in[a,b)$, fissato un $\epsilon > 0$, converge uniformemente in $[a, b-\epsilon]$
+    \item converge in $x \in(a,b]$, fissato un $\epsilon > 0$, converge uniformemente in $[a + \epsilon, b]$
+    \item converge in $(a,b)$, fissato un $\epsilon > 0$ e $\delta > 0$, converge uniformemente in $[a + \delta, b-\epsilon]$
+    \item converge per $x$ uguale a un solo punto, non ha senso parlare di convergenza uniforme
+    \item converge per $x \in\mathbb{R}$, converge uniformemente in $[\alpha, \beta]$ con $-\infty < \alpha < \beta < + \infty$
+\end{itemize}
 \subsubsection{Sviuluppabilità in serie di Fourier}
 Una funzione periodica $f: \mathbb{R} \rightarrow  \mathbb{R}$ è sviluppabile in serie di Fourier se vale una delle due condizioni seguenti:
 \begin{itemize}
