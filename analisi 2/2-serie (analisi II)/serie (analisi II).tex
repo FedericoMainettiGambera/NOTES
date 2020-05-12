@@ -195,7 +195,8 @@ dove con il simbolo $\downarrow 0$ indichiamo che le successioni descrescono mon
 \]
 Si trovano gli stessi valori integrando su qualunque intervallo di ampiezza $2\pi$.\newline
 \newline
-\textbf{teor. calcolo delle serie di Fourier per funzioni $2\pi$-periodiche} Se una funzione $f$ è $2\pi$-periodica ed è sviluppabile in serie di Fourier, si ha che
+\textbf{teor. calcolo delle serie di Fourier per funzioni $2\pi$-periodiche} 
+Se una funzione $f$ è $2\pi$-periodica ed è sviluppabile in serie di Fourier, si ha che
 \[
     f(x) \sim  \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n cos(nx) + b_n sin(nx))
 \]
@@ -206,7 +207,7 @@ allora
 \[
     b_n = \frac{1}{\pi} \int_{I} f(x) sin(nx) dx \;\;\;\;\;\forall\;n\geq 1
 \]
-dove l'intervallo $I$ è un qualunque intervallo di ampiezza $2\pi$ (tipicamente si prende da $-\pi$ a $\pi$, per sfruttare eventuali simmetrie\dots) e il termine $a_0$ si calcola come $a_0 = \frac{1}{\pi} \int_{I} f(x) dx$.
+dove l'intervallo $I$ è un qualunque intervallo di ampiezza $2\pi$ (tipicamente si prende da $-\pi$ a $\pi$, per sfruttare eventuali simmetrie\dots) e il termine $a_0$ si calcola come $a_0 = \frac{1}{\pi} \int_{I} f(x) dx$.\newline
 Gli $a_n$ e $b_n$ vengono chiamati \textbf{coefficienti di Fourier} di $f$, mentre la serie $f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n cos(nx) + b_n sin(nx))$ viene chiamata \textbf{serie di Fourier} associata a $f$.\newline
 \newline
 \textbf{oss.} Gli integrali del teorema si possono calcolare se risulta $\int_{0}^{2\pi}|f| < \infty$ e cioè se l'integrale improprio di $|f|$ è convergente.\newline
@@ -257,16 +258,6 @@ Se una funzione $f$ è regolare a tratti allora la sua serie di Fourier converge
     \frac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n cos(nx_0) + b_n sin(nx_0) \right) = \frac{f(x_0^+) + f(x_0^-)}{2}
 \]
 con la convenzione che $f(0^\pm) = f(2\pi^\pm)$. In particolare, se $f$ è continua in $x_0$, allora la serie converge a $f(x_0)$.
-\subsubsection{Funzioni pari e dispari}
-I coefficienti di Fourier di funzioni $2\pi$-periodiche si possono calcolare integrando su un qualunque intervallo di ampiezza $2\pi$. Tipicamente si sceglie l'intervallo $[-\pi, \pi]$ perchè permette di sfruttare eventuali simmetrie della funzione $f$.\newline
-Infatti, se la funzione $f$ è \textbf{pari} allora risulta pari anche $f(x)cos(nx)$ mentre risulta dispari $f(x)sin(nx)$, dunque:
-\[
-    f \; \text{pari}\; \Rightarrow a_n = \frac{2}{\pi} \int_{0}^{\pi}f(x) cos(nx) dx , \;\;\;\;\;b_n = 0
-\]
-Invece, se la funzione $f$ è \textbf{dispari} allora risulta dispari anche la funzioen $f(x)cos(nx)$ mentre risulta pari $f(x) sin(nx)$, dunque:
-\[
-    f \; \text{dispari}\; \Rightarrow a_n = 0, \;\;\;\;\;b_n = \frac{2}{\pi} \int_{0}^{\pi} f(x) sin(nx)dx
-\]
 \subsubsection{Funzioni con periodi diversi da $2\pi$}
 Come ci si comporta in presenza di funzioni con periodo $T \neq 2\pi$?\newline
 L'unica differenza sta nel calcolo dei coefficienti di Fouriere:
@@ -369,6 +360,29 @@ allora (quale sia il valore che $f$ assume in $x_0$) il valore della serie in $x
 \newline
 In parole povere, \textbf{per valutare se la funzione sia rappresentabile o meno con una serie di Fourier}, per prima cosa si controlla se è limitata e monotona tratti su un periodo (si capisce con una analisi grafica), se lo è allora la funzione è rappresentabile con Fourier. Altrimenti si può usare anche un metodo analitico: si prende la funzione, e si fa l'integrale $\int_{0}^{2\pi} f^2$, se l'integrale ha un valore finito, allora la funzione può essere sviluppata con una serie di Fourier. Da notare che l'integrale può essere svolto anche in senso generalizzato per risolvere puntii in cui la funzione va a $\infty$.\newline
 \textbf{Per valutare per quali valori di $x$ la serie converge effettivamente alla funzione indicata}, si usa il seguente criterio: dove la funzione è continua, la serie converge al valore della funzione, dove ci sono discontinuità a salto la serie converge al valor medio degli estremi del salto, dove ci sono altri tipi di discontinuità non si può concludere nulla sul comportamento della seria.
+\subsubsection{calcolo delle serie di Fourier per funzioni $2\pi$-periodiche} 
+Se una funzione $f$ è $2\pi$-periodica ed è sviluppabile in serie di Fourier, si ha che
+\[
+    f(x) \sim  \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n cos(nx) + b_n sin(nx))
+\]
+allora
+\[
+    a_n = \frac{1}{\pi} \int_{I} f(x) cos(nx) dx \;\;\;\; \;\forall\;n\geq0
+\]
+\[
+    b_n = \frac{1}{\pi} \int_{I} f(x) sin(nx) dx \;\;\;\;\;\forall\;n\geq 1
+\]
+dove l'intervallo $I$ è un qualunque intervallo di ampiezza $2\pi$ (tipicamente si prende da $-\pi$ a $\pi$, per sfruttare eventuali simmetrie\dots) e il termine $a_0$ si calcola come $a_0 = \frac{1}{\pi} \int_{I} f(x) dx$.
+\subsubsection{Funzioni pari e dispari}
+I coefficienti di Fourier di funzioni $2\pi$-periodiche si possono calcolare integrando su un qualunque intervallo di ampiezza $2\pi$. Tipicamente si sceglie l'intervallo $[-\pi, \pi]$ perchè permette di sfruttare eventuali simmetrie della funzione $f$.\newline
+Infatti, se la funzione $f$ è \textbf{pari} allora risulta pari anche $f(x)cos(nx)$ mentre risulta dispari $f(x)sin(nx)$, dunque:
+\[
+    f \; \text{pari}\; \Rightarrow a_n = \frac{2}{\pi} \int_{0}^{\pi}f(x) cos(nx) dx , \;\;\;\;\;b_n = 0
+\]
+Invece, se la funzione $f$ è \textbf{dispari} allora risulta dispari anche la funzioen $f(x)cos(nx)$ mentre risulta pari $f(x) sin(nx)$, dunque:
+\[
+    f \; \text{dispari}\; \Rightarrow a_n = 0, \;\;\;\;\;b_n = \frac{2}{\pi} \int_{0}^{\pi} f(x) sin(nx)dx
+\]
 \subsubsection{Riassunto dei criteri per la convergenza della serie di Fourier $\sum F$}
 \textbf{Appunti prof:}\newline
 Condizione di partenza:
