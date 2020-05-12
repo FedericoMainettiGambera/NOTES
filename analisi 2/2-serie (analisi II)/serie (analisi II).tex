@@ -423,10 +423,15 @@ Inoltre, poichè derivando la funzione termine a termine, otteniamo la serie
 \]
 è sufficiente riapplicare a qeust'ultima i criteri di convergenza, per controllare se la serie di partenza converge a una funzione derivabile.
 \subsubsection{Armoniche}
+Data una serie di Fourier:
+\[
+    f(x) \sim  \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n cos(nx) + b_n sin(nx))
+\]
+Allora può essere riscritta nella forma
 \[
     f(x) \sim \text{valor medio}\; + \sum_{n=1}^{\infty}\alpha_n cos(nx + \theta_n)
 \]
-dove
+di cui dobbiamo ricavare $\alpha_n$ e $\theta_n$:
 \[
     \alpha_n = \sqrt{a_n^2 + b_n^2}
 \]
@@ -444,7 +449,7 @@ da cui si ricava che $\theta_n$ è:
         \pi + arctan\left(\frac{-b_n}{a_n}\right) \;\;\;\;& se \; a_n < 0
     \end{cases}
 \]
-se $a_n = 0$, non si può usare l'arcotangente, ma in tal caso la trasposizione diventa:
+se $a_n = 0$, non si può usare l'arcotangente, ma in tal caso la trasposizione è banale e diventa diventa:
 \[
     b_n sin(nx) = b_n cos(nx - \frac{\pi}{2})
 \]
