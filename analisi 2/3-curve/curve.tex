@@ -1,0 +1,427 @@
+\section{Funzioni $R \rightarrow R^n$ ("Curve nel piano e nello spazio", "calcolo infinitesimale per le curve")}
+\subsection{Richiami di calcolo vettoriale}
+vettore
+\[
+    \vec{x} = (x_1, x_2, \dots, x_n)
+\]
+modulo di un vettore
+\[
+    |\vec{x}| = \sqrt{\sum_{i=1}^{n}x_i^2}
+\]
+versore
+\[
+    vers(\vec{x}) = \frac{\vec{x}}{|\vec{x}|}
+\]
+$\vec{x}, \vec{y}$ sono paralleli se
+\[
+    \lambda \vec{x} = \mu \vec{y}\;\; \text{ per qualche } \;\;\lambda, \mu \in \mathbb{R}
+\]
+Somma di vettori: si sommano le componenti simili.\newline
+Prodotto fra un vettore e uno scalare: si moltiplica ogni componente per lo scalare.\newline
+Prodotto scalare fra vettori: ha come risultato un numero reale ottenuto dalla formula
+\[
+    \vec{u} \cdot \vec{v} = (u_1 v_1 + u_2 v_2 + \dots + u_n v_n)
+\]
+Il prodotto scalare può essere espresso anche come
+\[
+    \vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| cos(\theta)
+\]
+dove $\theta$ rappresenta l'angolo tra i due vettori. Di conseguenza $\vec{u} \cdot  \vec{v} = 0$ solo se i due vettori sono ortogonali.\newline
+Dal prodotto scalare si può ricavare l'angolo fra due vettori
+\[
+    cos(\theta) = \frac{\vec{u} \cdot  \vec{v} }{|\vec{u}| |\vec{v}|}
+\]
+Inoltre $\vec{v} \cdot  \vec{v} = |\vec{v}|^2$.\newline
+Prodotto vettoriale:
+\[
+    \vec{u}\text{x}\vec{v} = \left|\begin{matrix}
+        i \;\; & j \;\;& k \;\;\\
+        u_1 & u_2 & u_3\\
+        v_1 & v_2 & v_3\\
+    \end{matrix}\right|
+\]
+Il prodotto vettoriale si annulla solo se i vettori sono paralleli.\newline
+Regola della mano destra: il primo fattore va sul pollice, il secondo sull indice, il risultato è nel medio.\newline
+Inoltre $\vec{v} \text{x} \vec{v} = 0$.\newline
+Prodotto misto:
+\[
+    \vec{u} \cdot (\vec{v} \text{x} \vec{w}) = \left|\begin{matrix}
+        u_1 \;\;& u_2 \;\;& u_3\\
+        v_1 &v_2 & v_3\\
+        w_1 &w_2 & w_3
+    \end{matrix}\right|
+\]
+Il prodotto misto si annulla solo se i tre vettori sono linearmente indipendenti.\newline
+\subsection{Funzioni a valori vettoriali, limiti e continuità}
+Si dice funzione a valori vettoriali una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ con $n > 1$. Le funzioni $\vec{f} : \mathbb{R} \rightarrow \mathbb{R}^2$ o $\mathbb{R}^3$.\newline
+Il limite della funzione a valori vettoriali si calcola componente per componente:
+\[
+    \lim_{t\rightarrow t_0}(r_1(t), r_2(t), \dots, r_n(t)) = \left(\lim_{t\rightarrow t_0}r_1(t), \lim_{t\rightarrow t_0}r_2(t), \dots, \lim_{t\rightarrow t_0}r_n(t)\right)
+\]
+Valgono allo stesso modo delle funzioni unidimensionali il teorema di unicità del limite e la definizione di continuità (una funzione a valori vettoriali è continua in un punto se lo sono tutte le sue componenti).\newline
+\subsection{Curve regolari e calcolo differenziale vettoriale}
+Nel caso $n = 2$ o $3$, una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ rappresentano curve nel piano o nello spazio tridimensionale.\newline
+Sia $I$ un intervallo in $\mathbb{R}$. Si dice arco di curva continua, o cammino, in $\mathbb{R}^n$ una funzione $\vec{r}: I \rightarrow \mathbb{R}^n$ continua.\newline
+La curva si dice chiusa se $\vec{r}(a) = \vec{r}(b)$ con $I=[a,b]$.\newline
+La curva si dice semplice se non ripassa mai nello stesso punto.\newline
+Il sostegno della curva è l'immagine della funzione, cioè l'insieme dei punti di $\mathbb{R}^n$ percorsi dal punto mobile.\newline
+Una curva si dice piana se esiste un piano che contiene il suo sostegno.\newline
+\subsubsection{Derivata di una funzione vettoriale. Arco di curva regolare}
+\textbf{def.} Sia $\vec{r}: I \rightarrow \mathbb{R}^n$ e $t_0 \in I$, si dice che $\vec{r}$ è derivabile in $t_0$ se esiste finito
+\[
+    \vec{r}'(t_0) = \lim_{h\rightarrow 0}\frac{\vec{r}(t_0 +h) - \vec{r}(t_0)}{h}
+\]
+\begin{tcolorbox}
+Se $\vec{r}$ è derivabile in tutto $I$ e inoltre $\vec{r}'$ è continuo in $I$, si dice che $\vec{r}$ è di classe $C^1(I)$ ($\vec{r}\in C^1(I)$).
+\end{tcolorbox}
+\begin{tcolorbox}
+Notiamo che il vettore derivato è il vettore delle derivate delle componeneti:
+\[
+    \vec{r'}(t_0) = (r'_1(t_0), r'_2(t_0), \dots, r'_n(t_0))
+\]
+\end{tcolorbox}
+\begin{tcolorbox}
+\textbf{def.} Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice arco di curva \textbf{regolare} un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$.
+\end{tcolorbox}
+\begin{tcolorbox}
+Di conseguenza per le curve regolari è ben definito il \textbf{versore tangente}:
+\[
+    \vec{T} = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}
+\]
+\end{tcolorbox}
+\textbf{def.} Si dice arco di curva regolare a tratti un arco di curva $\vec{r} : I \rightarrow \mathbb{R}^n$ tale che: $\vec{r}$ è continua e l'intervallo $I$ può essere suddiviso in un numero finito di sottointervalli, su ciascuno dei quali $\vec{r}$ è un arco di curva regolare.\newline
+\newline
+Alcune proprietà del calcolo differenziale vettoriale:
+\[
+    (\vec{u} + \vec{v})' = \vec{u}' + \vec{v}'
+\]
+\[
+    (c \vec{u})' = c \vec{u}' \;\;\; \text{con c costante}
+\]
+\[
+    (f \vec{u})' = f' \vec{u} + \vec{u}' f \;\;\;\text{con} \; f \; \text{funzione}
+\]
+\[
+    [\vec{u}(f(t))]' = \vec{u}'(f(t))f'(t)
+\]
+\[
+    (\vec{u} \cdot \vec{v})' = \vec{u}' \cdot  \vec{v} + \vec{u} \cdot  \vec{v}'
+\]
+\[
+    (\vec{u} \text{x} \vec{v})' = \vec{u}' \text{x} \vec{v} + \vec{u} \text{x} \vec{v}' \;\;\; in \;\mathbb{R}^3
+\]
+Dato un vettore $\vec{r}(t)$ si dice
+\begin{itemize}
+    \item velocità: $\vec{r}'(t)$
+    \item velocità scalare: $|\vec{r}'(t)|$
+    \item accellerazione: $\vec{r}''(t)$
+    \item accellerazione scalare: $|\vec{r}''(t)|$
+\end{itemize}
+\subsubsection{Integrale di una funzione vettoriale}
+\[
+    \int_{a}^{b} \vec{r}(t) dt =\left( \int_{a}^{b}\vec{r_1}(t) dt,\int_{a}^{b}\vec{r_2}(t) dt, \dots, \int_{a}^{b}\vec{r_n}(t) dt,\right)
+\]
+Diremo che $\vec{r}$ è integrabile in $[a,b]$ se lo è ognuna delle sue componenti.\newline
+\[
+    \int_{a}^{b} \vec{r}'(t) dt = \vec{r}(b) - \vec{r}(a)
+\]
+Può essere utile utilizzare il seguente lemma:
+\[
+    \left| \int_{a}^{b}\vec{r}(t)dt \right| \leq \int_{a}^{b}|\vec{r}(t)|dt
+\]
+Se $\vec{r}(t)$ è una curva regolare e chiusa in $[a,b]$, allora $\int_{a}^{b}\vec{r}'(t) dt =0$.\newline
+\subsubsection{Classi di curve piane}
+\textbf{curve piane, grafico di funzioni}
+\begin{tcolorbox}
+Curve ottenute da grafici di funzioni in una variabile:
+\[
+    y = f(x) \quad\text{per x in} \;[a,b]
+\]
+Forma parametrica:
+\[
+    \begin{cases}
+        x=t \\
+        y=f(t)
+    \end{cases} \;\;\;\; \text{per t} \;\in[a,b]
+\]
+\end{tcolorbox}
+Proprietà:
+\begin{itemize}
+    \item è continua se e solo se $f$ è continua
+    \item è regolare se e solo se $f$ è derivabile con continuità (le condizioni di non annullamento della derivata prima sono automaticamente verificate perchè $x'(t) = 1$)
+    \item è regolare a tratti se e solo se $f$ è continua e a tratti derivabile con continuità
+    \item non è mai chiusa
+    \item è sempre semplice
+\end{itemize}
+\textbf{curve piane, forma polare}\newline
+\begin{tcolorbox}
+L'equazione
+\[
+    \rho = f(\theta) \;\;\;\text{per } \; \theta \in [\theta_1, \theta_2]
+\]
+è una forma abbreviata che, tramite la sostituzione $x= \rho cos(\theta)$ e $y= \rho sin(\theta)$, può essere riscritta:
+\[
+    \begin{cases}
+        x = f(\theta) cos(\theta)\\
+        y = f(\theta) sin(\theta)
+    \end{cases} \;\;\; \text{per } \; \theta \in [\theta_1, \theta_2]
+\]
+\end{tcolorbox}
+Ricordiamo che $\rho = \sqrt{x^2 + y^2}$
+Osserviamo che 
+\[
+    \vec{r}'(\theta) = (f'(\theta) cos(\theta)- f(\theta)sin(\theta), f'(\theta) sin(\theta) - f(\theta)cos(\theta))
+\]
+\begin{tcolorbox}
+\[
+    |\vec{r}'(\theta)| = \sqrt{\rho(\theta)^2 + \rho'(\theta)^2} = \sqrt{f'(\theta)^2 + f(\theta)^2}
+\]
+\end{tcolorbox}
+Geometricamente la forma polare $\rho = f(\theta)$ può essere visualizzata come la curva tracciata da una penna posta su un braccio che ruota attorno all'origine a velocità costante (in modo che il tempo $t$ combaci con l'angolo $\theta$). Mentre il braccio ruota la penna si sposta lungo il braccio in modo da essere a distanza $f(\theta)$ dall'origine all'istante $\theta$.\newline
+\newline
+Proprietà:
+\begin{itemize}
+    \item è continua se e solo se $f$ è continua
+    \item è regolare se e solo se $f$ è derivabile con continuità, inoltra $f$ e $f'$ non si annullano mai contemporaneamente
+    \item è chiusa se e solo se $f(\theta_1) = f(\theta_2)$ e $\theta_2 - \theta_1 = 2n\pi$ per qualche intero $n$.
+\end{itemize}
+\textbf{coniche in forma polare}\newline
+Equazione polare della conica:
+\[
+        \rho = \frac{\epsilon p}{1- \epsilon cos(\theta)}
+\]
+con $\epsilon > 0$ e $p> 0$ e $\theta$ varia nell'intervallo in cui il secondo membro è definito e positivo.\newline
+Questa equazione rappresenta:
+\[
+    \begin{cases}
+        \text{un'ellissi} \;\; &\text{se} \; \epsilon< 1\\
+        \text{una parabola} \;\; &\text{se} \; \epsilon= 1\\
+        \text{un'iperbole} \;\; &\text{se} \; \epsilon> 1
+    \end{cases}
+\]
+Notiamo che il segmo $-$ davanti al coseno non è importante, infatti se cambiamo $\theta = t + \pi$ l'equazione si trasforma in $\rho = \frac{\epsilon p}{1 + \epsilon cos(t)}$.\newline
+Equazione della circonferenza:
+\[
+        \rho = R
+\]
+\subsection{Lunghezza di un arco di curva}
+\subsubsection{Curve rettificabili e lunghezza}
+\textbf{def.} Si dice che $\gamma$ è rettificabile se 
+\[
+    sub_\mathcal{P} l(\mathcal{P}) = l(\gamma) < + \infty
+\]
+Dove l'estremo superiore è calcolato al variare di tutte le possibili partizioni $\mathcal{P}$ di $[a,b]$.\newline
+In tal caso $l(\gamma)$ assegna per definizione, la lunghezza di $\gamma$.\newline
+\newline
+\textbf{teor.} Sia $\vec{r}:[a,b] \rightarrow \mathbb{R}^n$ la parametrizzazione di un arco di curva $\gamma$ regolare. Allora $\gamma$ è rettificabile e 
+\begin{tcolorbox}
+\[
+    l(\gamma) = \int_{a}^{b}|\vec{r}'(t)| dt
+\]
+\end{tcolorbox}
+Nello spazio tridimensionale la formula diventa:
+\[
+    l(\gamma)= \int_{a}^{b}\sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2}dt
+\]
+\textbf{Lunghezza di un grafico}\newline
+Sia $\gamma$ una curva piana regolare che sia grafico di una funzione, ossia:
+\[
+    \gamma : \begin{cases}
+        x =t \\
+        y= f(t)
+    \end{cases} \;\; \text{per} \;t \in[a,b]
+\]
+allora
+\begin{tcolorbox}
+\[
+    l(\gamma) = \int_{a}^{b}\sqrt{1+f'(t)^2}dt
+\]
+\end{tcolorbox}
+Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabile, la stessa proprietà si estende a un numero finito qualsiasi di curve rettificabili. \newline
+\newline
+Se una curva $\gamma$ è regolare a tratti, allora è rettificabile.\newline
+\subsubsection{Cambiamenti di parametrizzazione, curve equivalenti}
+Passando da $\vec{r} = \vec{r} (t)$ a $\vec{r} = \vec{r} (f(u))$ diremo che abbiamo riparametrizzato la curva, con $f(u)$ monotona (crescente o decrescente).\newline
+Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane la stessa, anche se il verso o la velocità di percorrenza cambiano.\newline
+Per invertire il senso di percorrenza si può sostituire $t$ con $-t$.\newline
+\subsubsection{Parametro arco o ascissa curvilinea}
+Se invece di calcolare la lunghezza in $[a,b]$ la calcolassimo da $[t_0, t]$ otterremmo una funzione di $t$:
+\begin{tcolorbox}
+\[
+    s(t) = \int_{t_0}^{t}|\vec{r}'(\tau)|d\tau
+\]
+Se si è in grado di calcolare esplicitamente tale funzione e poi di invertirla, esprimendo $t$ come funzione di $s$, è possibile riparametrizzare la curva in funzione del parametro $s$, detto parametro arco o ascissa curvilinea (ricordarsi di ricalcolare anche gli estremi dell'intervallo secondo il nuovo parametro).\newline
+\end{tcolorbox}
+\begin{tcolorbox}
+Notiamo che se $|\vec{r}'(t)| = 1$, $t$ coincide con il parametro arco, quindi la curva sarebbe già parametrizzata secondo  il parametro arco.
+\end{tcolorbox}
+Se $\vec{r} = \vec{r}(s)$ è un curva parametrizzata mediante il parametro arco, il vettore derivato $\vec{r}'(s)$ coincide col versore tangente $\vec{T}$
+\newline
+\begin{tcolorbox}
+Se $\vec{r}(t)$ è una curva parametrizzata rispetto a un parametro $t$ qualunque (non necessariamente il parametro arco), si ha:
+\[
+    \frac{ds}{dt} =|\vec{r}'(t)| = v(t)
+\]
+che si riscrive anche nella forma
+\[
+    ds =|\vec{r}'(t)|dt =v(t) dt
+\] 
+dove il simbolo $ds$ prende il nome di lunghezza d'arco elementare.
+\end{tcolorbox}
+\subsection{Inegrali di linea (di prima specie)}
+Sia $\vec{r}: [a,b] \rightarrow \mathbb{R}$ un arco di curva regolare di sostegno $\gamma$ e sia $f$ una funzione a valori reali, definita in un sottoinsieme $A$ di $\mathbb{R}^n$ contenente $\gamma$, cioè $f:A\subset \mathbb{R}^n \rightarrow \mathbb{R}$ con $\gamma \subset A$.
+\begin{tcolorbox}
+Si dice integrale di linea (di prima specie) di $f$ lungo $\gamma$ l'integrale
+\[
+    \int_{\gamma} f ds = \int_{a}^{b}f(\vec{r}(t))|\vec{r}'(t)|dt
+\]
+\end{tcolorbox}
+\begin{tcolorbox}
+Lintegrale di $f$ di prima specie lungo $\gamma$ è invariante per parametrizzazioni equivalenti e anche per cambiamento di orientazione.
+\end{tcolorbox}
+\textbf{applicazioni fisiche}
+\begin{tcolorbox}
+\begin{itemize}
+    \item Il \textbf{baricentro} di $\gamma$ è il punto $B = (\bar{x},\bar{y},\bar{z})$ con:
+    \[
+        \begin{cases}
+            \bar{x} = \frac{1}{m}\int_\gamma x\rho ds = \frac{1}{m}\int_{a}^{b}x(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt\\
+            \bar{y} = \frac{1}{m}\int_\gamma y\rho ds = \frac{1}{m}\int_{a}^{b}y(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt\\
+            \bar{z} = \frac{1}{m}\int_\gamma z\rho ds = \frac{1}{m}\int_{a}^{b}z(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt
+        \end{cases}
+    \]
+    Se il corpo è omogeneo ($\rho =$ costante), il baricentro si dice centroide e ha coordinate:
+    \[
+        \begin{cases}
+            \bar{x} = \frac{\rho}{m}\int_\gamma x ds = \frac{1}{l(\gamma)}\int_{a}^{b}x(t)|\vec{r}'(t)|dt = \frac{\int_{a}^{b}x(t)|\vec{r}'(t)|dt}{\int_{a}^{b}|\vec{r}'(t)|dt}\\
+            \bar{y} = \;\text{stesso di sopra}\\   
+            \bar{z} = \;\text{stesso di sopra}
+        \end{cases}
+    \]
+    \item \textbf{momento di inerzia} di $\gamma$ rispetto a un asse fissato. Se $\delta(x,y,z)$ indica la distanza del punto $(x,y,z)$ da quest'asse fissato, si ha:
+    \[
+        I = \int_\gamma \delta^2 \rho ds = \int_{a}^{b}\delta^2(\vec{r}(t))\rho(\vec{r}(t))|\vec{r}'(t)|dt
+    \]
+    Se il corpo è omogeneo:
+    \[
+        I = \frac{m}{l(\gamma)}\int_\gamma \delta^2ds = m \frac{\int_{a}^{b}\delta^2(\vec{r}(t))|\vec{r}'(t)|dt}{\int_{a}^{b}|\vec{r}'(t)|dt}
+    \]
+    Può essere molto utile cercare di ridefinire la curva spostandola in modo tale che l'asse di riferimento sia uno degli assi cartesiani, in questo modo esprimere la distanza $\delta$ di ogni punto dall'asse può essere più facile.
+\end{itemize}
+\end{tcolorbox}
+\subsection{Elementi di geometria differenziale delle curve}
+\subsubsection{Curvatura e normale principale per una curva in $\mathbb{R}^n$}
+Il versore tangente è definito come:
+\[
+    \vec{T}(t) = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}\text{,} \quad \text{mentre} \;\vec{T}(s) =\vec{r}'(s)
+\]
+in quanto $|\vec{r}'(s)| = 1$, se $s$ è il parametro arco.\newline
+Sia $\vec{u}: I \rightarrow \mathbb{R}^n$, una funzione vettoriale di modulo costante, ossia $|\vec{u}(t)| = c$ per ogni $t$. Allora $\vec{u} \cdot \vec{u}' = 0$, cioè $\vec{u}$ è ortogonale a $\vec{u}'$ in ogni istante.\newline
+\newline
+\textbf{Normale principale e curvatura, rispetto al parametro arco}\newline
+Chiamiamo versone normale principale della curva $\vec{r}(s)$ (parametrizzata rispetto al parametro arco), il versore
+\[
+    \vec{N}(s) =\frac{\vec{T}'(s)}{|\vec{T}'(s)|}
+\]
+definito nei punti in cui $\vec{T}'(s) \neq 0$.\newline
+Chiamiamo curvatura della curva la funzione scalare
+\[
+    k(s) = |\vec{T}'(s)|
+\]
+da cui ricaviamo che $\vec{T}'(s) = k(s) \vec{N}(s)$. \newline
+La normale principale ci dice la direzione verso cui sta curvando la nostra curva, mentre la curvatura è uno scalare e rappresenta l'intensità con cui curva.\newline
+Definiamo invece come raggio di curvatura
+\[
+    \rho(s) = \frac{1}{k(s)}
+\]
+nei punti in cui $k(s) \neq 0$, nei punti in cui invece $k(s) = 0$ si dice che il raggio di curvatura è infinito.\newline
+\newline
+\newline
+\textbf{Normale principale e curvatura, rispetto a un parametro qualsiasi}\newline
+Versone normale principale:
+\[
+    \vec{N}(t) =\frac{\vec{T}'(t)}{|\vec{T}'(t)}
+\]
+e definendo $\frac{ds}{dt} = |\vec{r}'(t)| = v(t)$ da cui ricaviamo che la curvatura è:
+\[
+    k(t) = \frac{|\vec{T}'(t)|}{v(t)}
+\]
+da cui $\vec{T}'(t) = k(t)v(t)\vec{N}(t)$.\newline
+Raggio di curvatura:
+\[
+    \rho(t)= \frac{1}{k(t)}
+\]
+\newline
+Vale la seguente formula:
+\[
+    \vec{a}(t) = v'(t)\vec{T}(t) + v^2(t) k(t) \vec{N}(t)
+\]
+dove $\vec{a}(t) = \vec{r}''(t)$.
+\subsubsection{Calcolo della curvatura per curve nello spazio $\mathbb{R}^3$ o nel piano}
+\[
+    k(t) = \frac{|\vec{r}'(t) \text{x} \vec{r}''(t)|}{v^3(t)}
+\]
+\[
+    k(s) = |\vec{r}'(s) \text{x} \vec{r}''(s)|
+\]
+\newline
+\textbf{caso di curve piane}\newline
+Sia $\vec{r}(t) =(x(t), y(t))$ per $t \in[a,b]$, possiamo vederla come curva in $\mathbb{R}^3$ così: $\vec{r}(t) = (x(t), y(t), 0)$ per $t \in[a,b]$.\newline
+Perciò,
+\[
+    \vec{r}' \text{x} \vec{r}'' =\left|\begin{matrix}
+        i \;\;& j \;\;& k \\
+        x'(t) & y'(t) & 0\\
+        x''(t) & y''(t) & 0
+    \end{matrix} \right|
+\]
+da cui derivano:
+\[
+    k(t) = \frac{|x'(t)y''(t) - x''(t) y'(t)|}{(x'(t)^2 + y'(t)^2)^{\frac{3}{3}}}
+\]
+\[
+    k(s) = |x'(s) y''(s) - x''(s) y'(s)|
+\]
+\newline
+\newline
+Si dicono vertici di una curva i punti in cui $k'(t) = 0$.
+\subsubsection{Torsione(manca) e terna intrinseca per curve nello spazio $\mathbb{R}^3$}
+Data una curva $\vec{r} : I \rightarrow \mathbb{R}^3$, regolare di classe $C^3(I)$, definiamo il versore binormale della curva come
+\[
+    \vec{B} = \vec{T} \text{x} \vec{N}
+\]
+La terna intrinseca $\vec{B}, \vec{T}, \vec{N}$ costituisce un sistema di riferimento ortonormale.
+\subsection{Note sugli esercizi}
+\begin{tcolorbox}
+Proprietà delle curve:
+\begin{itemize}
+    \item continua: se le componenti sono continue.
+    \item chiusa: se agli estremi dell'intervallo in cui son definite la curva ha lo stesso valore (se fosse definita su tutto $\mathbb{R}$ si controllano i limiti all'infinito).
+    \item asintoti: se i limiti all'infinito hanno un valore finito per una delle due componenti.
+    \item semplice: se la curva non passa mai due volte per lo stesso punto. Si verifica per logica, spesso è utile notare se almeno una delle due componenti è strettamente monotona (crescente o decrescente). Spesso per funzioni trigonometriche si cerca di ragionare sulla loro periodicità.
+    \item regolare: Si calcola la derivata della curva (derivata delle componenti) e in seguito il modulo della derivata (radice della somma delle componenti alla seconda). Se le derivate delle componenti sono funzioni continue e il modulo della derivata non si annulla mai per i valori di $t$ per cui la curva è definita (estremi esclusi, sempre) allora la curva è regolare. (Ci sono metodi particolari per calcolare il modulo della derivata, per esempio, per funzioni in forma polare il modulo della derivata è: $\rho = f(\theta) \; \Rightarrow \; |\vec{r}'(\theta)| = \sqrt{f'(\theta)^2 + f(\theta)^2}$; ma, inoltre, non bisogna scordarsi di calcolare le derivate delle componenti per controllare che siano continue).\newline
+    Infine per individuare i punti di singolarità (cioè quelli in cui la funzione non è regolare) si calcolano i punti in cui $\vec{r}(t) = (x,y,z)$ per cui $t$ annulla la derivata.
+    \item piana: \newline
+    Primo metodo: si controlla se il versore binormale alla curva è costante. Il vettore binormale della caruva $\gamma(x(t), y(t), z(t))$ si calcola come prodotto vettoriale di $\gamma'(t) \text{x} \gamma''(t)$, una volta normalizzato (dividendo ogni componente per il modulo (componenti al quadrato sommate sotto radice)) si ottiene il versore e si controlla se è costante (curva piana) o non costante (curva non piana) e dunque basta assicurarsi che non sia presente la variabile $t$ (p.s. $\gamma'(t) = (x'(t), y'(t), z'(t)$, $\gamma''(t) = (x'(t), y'(t), z'(t))$ ). Concettualmente, se i calcoli sono troppo complicati, si può ragionare sul fatto che se il vettore binormale (che è sempre ortonormale alla curva) ha sempre la stessa direzione (anche se di modulo diverso) allora la curva è piana.\newline
+    Secondo metodo: sostiuiamo le equazioni parametriche della curva $\gamma(x(t), y(t), z(t))$ nella formula del piano generico $ax + by +cz + d = 0$. Se risulta che l'equazione è sempre soddisfatta, allora la curva è complanare.
+\end{itemize}
+\end{tcolorbox}
+\ \newline
+Equazione di una retta passante per due punt:\newline
+Dati due punti $(x_1, x_2)$ e $(y_1, y_2)$ la retta passante per questi punti è definita dall'equazione
+\[
+    \frac{x-x_1}{x_2-x_1} = \frac{y-y_1}{y_2-y_1}
+\]
+Questa formula vale se i due punti non sono allineati verticalmente o orizzontalmente.\newline
+\newline
+Negli esercizi sul calcolo delle lunghezze di archi di curve e di parametrizzazione secondo il parametro arco è risultato molto utile l'intergale:
+\[
+    \int_{0}^{2\pi} \sqrt{1 + cos(t)}dt = \left[\text{moltiplicando per} \; \frac{\sqrt{1-cos(t)}}{\sqrt{1-cos(t)}}\right] = \int_{0}^{2\pi}\frac{|sin(t)|}{\sqrt{1-cos(t)}}dt =
+\]
+\[
+    = [2 \sqrt{cos(t) +1}\cdot  tan(\frac{t}{2}) ]_0^{2\pi} = 4 \sqrt{2}
+\]
+Equazione della retta tangente a una curva $r(t) = (x(t), y(t))$ in un punto $t_0$:\newline
+La generica retta ha forma $y = mx +q$. \newline
+Il coefficiente $m$ si trova facendo il rapporto $\frac{y'(t_0)}{x'(t_0)}$.\newline
+Il valore di $q$ si ricava sostituendo nell'equazione $y = mx +q$ la $m$ trovata, la $y$ con il valore di $y(t_0)$ e la $x$ con il valore di $x(t_0)$.

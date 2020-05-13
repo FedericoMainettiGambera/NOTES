@@ -29,45 +29,45 @@
 \BOOKMARK [3][-]{subsubsection.3.3.5}{Semplificazioni nel calcolo delle serie di Fourier per funzioni pari e dispari}{subsection.3.3}% 29
 \BOOKMARK [3][-]{subsubsection.3.3.6}{Riassunto dei criteri per la convergenza della serie di Fourier F}{subsection.3.3}% 30
 \BOOKMARK [3][-]{subsubsection.3.3.7}{Armoniche}{subsection.3.3}% 31
-\BOOKMARK [1][-]{section.4}{Integrali}{}% 32
-\BOOKMARK [2][-]{subsection.4.1}{Teorema fondamentale del calcolo integrale:}{section.4}% 33
-\BOOKMARK [2][-]{subsection.4.2}{Propriet\340 degli integrali:}{section.4}% 34
-\BOOKMARK [2][-]{subsection.4.3}{Integrali fondamentali:}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.4}{Integrali notevoli:}{section.4}% 36
-\BOOKMARK [2][-]{subsection.4.5}{Integrali riconducibili:}{section.4}% 37
-\BOOKMARK [2][-]{subsection.4.6}{Integrazione per sostituzione:}{section.4}% 38
-\BOOKMARK [2][-]{subsection.4.7}{Integrazione delle funzioni razionali:}{section.4}% 39
-\BOOKMARK [2][-]{subsection.4.8}{Funzioni razionali di ex}{section.4}% 40
-\BOOKMARK [2][-]{subsection.4.9}{Integrazione per parti:}{section.4}% 41
-\BOOKMARK [2][-]{subsection.4.10}{integrazione delle funzioni trigonometriche}{section.4}% 42
-\BOOKMARK [2][-]{subsection.4.11}{Integrazione delle funzioni irrazzionali}{section.4}% 43
-\BOOKMARK [2][-]{subsection.4.12}{Simmetrie e valori assoluti nel calcolo di integrali definiti}{section.4}% 44
-\BOOKMARK [2][-]{subsection.4.13}{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}{section.4}% 45
-\BOOKMARK [2][-]{subsection.4.14}{INTEGRALI GENERALIZZATI}{section.4}% 46
-\BOOKMARK [2][-]{subsection.4.15}{Integrazione di funzioni non limitate}{section.4}% 47
-\BOOKMARK [2][-]{subsection.4.16}{Criteri di integrabilit\340 al finito}{section.4}% 48
-\BOOKMARK [2][-]{subsection.4.17}{Integrazione su intervalli illimitati}{section.4}% 49
-\BOOKMARK [2][-]{subsection.4.18}{Criteri di integrabilit\340 all'infinito}{section.4}% 50
-\BOOKMARK [2][-]{subsection.4.19}{Osservazione. Ordine di annullamento di una funzione derivabile.}{section.4}% 51
-\BOOKMARK [2][-]{subsection.4.20}{Integrali generalizzati notevoli}{section.4}% 52
-\BOOKMARK [2][-]{subsection.4.21}{FUNZIONI INTEGRALI}{section.4}% 53
-\BOOKMARK [1][-]{section.5}{Calcolo infinitesimale per le curve}{}% 54
-\BOOKMARK [2][-]{subsection.5.1}{Richiami di calcolo vettoriale}{section.5}% 55
-\BOOKMARK [2][-]{subsection.5.2}{Funzioni a valori vettoriali, limiti e continuit\340}{section.5}% 56
-\BOOKMARK [2][-]{subsection.5.3}{Curve regolari e calcolo differenziale vettoriale}{section.5}% 57
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Derivata di una funzione vettoriale. Arco di curva regolare}{subsection.5.3}% 58
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Integrale di una funzione vettoriale}{subsection.5.3}% 59
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Classi di curve piane}{subsection.5.3}% 60
-\BOOKMARK [2][-]{subsection.5.4}{Lunghezza di un arco di curva}{section.5}% 61
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Curve rettificabili e lunghezza}{subsection.5.4}% 62
-\BOOKMARK [3][-]{subsubsection.5.4.2}{Cambiamenti di parametrizzazione, curve equivalenti}{subsection.5.4}% 63
-\BOOKMARK [3][-]{subsubsection.5.4.3}{Parametro arco o ascissa curvilinea}{subsection.5.4}% 64
-\BOOKMARK [2][-]{subsection.5.5}{Inegrali di linea \(di prima specie\)}{section.5}% 65
-\BOOKMARK [2][-]{subsection.5.6}{Elementi di geometria differenziale delle curve}{section.5}% 66
-\BOOKMARK [3][-]{subsubsection.5.6.1}{Curvatura e normale principale per una curva in Rn}{subsection.5.6}% 67
-\BOOKMARK [3][-]{subsubsection.5.6.2}{Calcolo della curvatura per curve nello spazio R3 o nel piano}{subsection.5.6}% 68
-\BOOKMARK [3][-]{subsubsection.5.6.3}{Torsione\(manca\) e terna intrinseca per curve nello spazio R3}{subsection.5.6}% 69
-\BOOKMARK [2][-]{subsection.5.7}{Note sugli esercizi}{section.5}% 70
+\BOOKMARK [1][-]{section.4}{Funzioni R Rn \("Curve nel piano e nello spazio", "calcolo infinitesimale per le curve"\)}{}% 32
+\BOOKMARK [2][-]{subsection.4.1}{Richiami di calcolo vettoriale}{section.4}% 33
+\BOOKMARK [2][-]{subsection.4.2}{Funzioni a valori vettoriali, limiti e continuit\340}{section.4}% 34
+\BOOKMARK [2][-]{subsection.4.3}{Curve regolari e calcolo differenziale vettoriale}{section.4}% 35
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Derivata di una funzione vettoriale. Arco di curva regolare}{subsection.4.3}% 36
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Integrale di una funzione vettoriale}{subsection.4.3}% 37
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Classi di curve piane}{subsection.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.4}{Lunghezza di un arco di curva}{section.4}% 39
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Curve rettificabili e lunghezza}{subsection.4.4}% 40
+\BOOKMARK [3][-]{subsubsection.4.4.2}{Cambiamenti di parametrizzazione, curve equivalenti}{subsection.4.4}% 41
+\BOOKMARK [3][-]{subsubsection.4.4.3}{Parametro arco o ascissa curvilinea}{subsection.4.4}% 42
+\BOOKMARK [2][-]{subsection.4.5}{Inegrali di linea \(di prima specie\)}{section.4}% 43
+\BOOKMARK [2][-]{subsection.4.6}{Elementi di geometria differenziale delle curve}{section.4}% 44
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Curvatura e normale principale per una curva in Rn}{subsection.4.6}% 45
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Calcolo della curvatura per curve nello spazio R3 o nel piano}{subsection.4.6}% 46
+\BOOKMARK [3][-]{subsubsection.4.6.3}{Torsione\(manca\) e terna intrinseca per curve nello spazio R3}{subsection.4.6}% 47
+\BOOKMARK [2][-]{subsection.4.7}{Note sugli esercizi}{section.4}% 48
+\BOOKMARK [1][-]{section.5}{Integrali}{}% 49
+\BOOKMARK [2][-]{subsection.5.1}{Teorema fondamentale del calcolo integrale:}{section.5}% 50
+\BOOKMARK [2][-]{subsection.5.2}{Propriet\340 degli integrali:}{section.5}% 51
+\BOOKMARK [2][-]{subsection.5.3}{Integrali fondamentali:}{section.5}% 52
+\BOOKMARK [2][-]{subsection.5.4}{Integrali notevoli:}{section.5}% 53
+\BOOKMARK [2][-]{subsection.5.5}{Integrali riconducibili:}{section.5}% 54
+\BOOKMARK [2][-]{subsection.5.6}{Integrazione per sostituzione:}{section.5}% 55
+\BOOKMARK [2][-]{subsection.5.7}{Integrazione delle funzioni razionali:}{section.5}% 56
+\BOOKMARK [2][-]{subsection.5.8}{Funzioni razionali di ex}{section.5}% 57
+\BOOKMARK [2][-]{subsection.5.9}{Integrazione per parti:}{section.5}% 58
+\BOOKMARK [2][-]{subsection.5.10}{integrazione delle funzioni trigonometriche}{section.5}% 59
+\BOOKMARK [2][-]{subsection.5.11}{Integrazione delle funzioni irrazzionali}{section.5}% 60
+\BOOKMARK [2][-]{subsection.5.12}{Simmetrie e valori assoluti nel calcolo di integrali definiti}{section.5}% 61
+\BOOKMARK [2][-]{subsection.5.13}{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}{section.5}% 62
+\BOOKMARK [2][-]{subsection.5.14}{INTEGRALI GENERALIZZATI}{section.5}% 63
+\BOOKMARK [2][-]{subsection.5.15}{Integrazione di funzioni non limitate}{section.5}% 64
+\BOOKMARK [2][-]{subsection.5.16}{Criteri di integrabilit\340 al finito}{section.5}% 65
+\BOOKMARK [2][-]{subsection.5.17}{Integrazione su intervalli illimitati}{section.5}% 66
+\BOOKMARK [2][-]{subsection.5.18}{Criteri di integrabilit\340 all'infinito}{section.5}% 67
+\BOOKMARK [2][-]{subsection.5.19}{Osservazione. Ordine di annullamento di una funzione derivabile.}{section.5}% 68
+\BOOKMARK [2][-]{subsection.5.20}{Integrali generalizzati notevoli}{section.5}% 69
+\BOOKMARK [2][-]{subsection.5.21}{FUNZIONI INTEGRALI}{section.5}% 70
 \BOOKMARK [1][-]{section.6}{Calcolo differenziale per funzioni reali di pi\371 variabili}{}% 71
 \BOOKMARK [2][-]{subsection.6.1}{Continuit\340 di una funzione in pi\371 variabili:}{section.6}% 72
 \BOOKMARK [2][-]{subsection.6.2}{Calcolo di limiti in pi\371 variabili}{section.6}% 73
