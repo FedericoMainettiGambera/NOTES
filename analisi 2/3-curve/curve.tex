@@ -75,33 +75,30 @@ Una curva si dice \textbf{semplice} se non ripassa mai nello stesso punto.\newli
 \newline
 Il \textbf{sostegno} della curva è l'immagine della funzione, cioè l'insieme dei punti di $\mathbb{R}^n$ percorsi dal punto mobile.\newline
 \newline
-Una curva si dice \textbf{piana} se esiste un piano che contiene il suo sostegno.\newline
+Una curva si dice \textbf{piana} se esiste un piano che contiene il suo sostegno.
 \subsubsection{Derivata di una funzione vettoriale. Arco di curva regolare}
-\textbf{def.} Sia $\vec{r}: I \rightarrow \mathbb{R}^n$ e $t_0 \in I$, si dice che $\vec{r}$ è derivabile in $t_0$ se esiste finito
+\textbf{def.} Sia $\vec{r}: I \rightarrow \mathbb{R}^n$ e $t_0 \in I$, si dice che $\vec{r}$ è \textbf{derivabile} in $t_0$ se esiste finito
 \[
     \vec{r}'(t_0) = \lim_{h\rightarrow 0}\frac{\vec{r}(t_0 +h) - \vec{r}(t_0)}{h}
 \]
-\begin{tcolorbox}
-Se $\vec{r}$ è derivabile in tutto $I$ e inoltre $\vec{r}'$ è continuo in $I$, si dice che $\vec{r}$ è di classe $C^1(I)$ ($\vec{r}\in C^1(I)$).
-\end{tcolorbox}
-\begin{tcolorbox}
-Notiamo che il vettore derivato è il vettore delle derivate delle componeneti:
+Se $\vec{r}$ è derivabile in tutto $I$ e inoltre $\vec{r}'$ è continuo in $I$, si dice che $\vec{r}$ è di \textbf{classe} $C^1(I)$ ($\vec{r}\in C^1(I)$).
+\newline
+\newline
+Notiamo che il \textbf{vettore derivato} è il \textbf{vettore delle derivate} delle componeneti:
 \[
     \vec{r'}(t_0) = (r'_1(t_0), r'_2(t_0), \dots, r'_n(t_0))
 \]
-\end{tcolorbox}
-\begin{tcolorbox}
-\textbf{def.} Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice arco di curva \textbf{regolare} un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$.
-\end{tcolorbox}
-\begin{tcolorbox}
+\ \newline
+\textbf{def.} Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice arco di curva \textbf{regolare} un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$.\newline
+\newline
 Di conseguenza per le curve regolari è ben definito il \textbf{versore tangente}:
 \[
     \vec{T} = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}
 \]
-\end{tcolorbox}
-\textbf{def.} Si dice arco di curva regolare a tratti un arco di curva $\vec{r} : I \rightarrow \mathbb{R}^n$ tale che: $\vec{r}$ è continua e l'intervallo $I$ può essere suddiviso in un numero finito di sottointervalli, su ciascuno dei quali $\vec{r}$ è un arco di curva regolare.\newline
+\ \newline
+\textbf{def.} Si dice arco di curva \textbf{regolare a tratti} un arco di curva $\vec{r} : I \rightarrow \mathbb{R}^n$ tale che: $\vec{r}$ è continua e l'intervallo $I$ può essere suddiviso in un numero finito di sottointervalli, su ciascuno dei quali $\vec{r}$ è un arco di curva regolare.\newline
 \newline
-Alcune proprietà del calcolo differenziale vettoriale:
+Alcune \textbf{proprietà} del calcolo differenziale vettoriale:
 \[
     (\vec{u} + \vec{v})' = \vec{u}' + \vec{v}'
 \]
@@ -120,18 +117,19 @@ Alcune proprietà del calcolo differenziale vettoriale:
 \[
     (\vec{u} \text{x} \vec{v})' = \vec{u}' \text{x} \vec{v} + \vec{u} \text{x} \vec{v}' \;\;\; in \;\mathbb{R}^3
 \]
+\ \newline
 Dato un vettore $\vec{r}(t)$ si dice
 \begin{itemize}
-    \item velocità: $\vec{r}'(t)$
-    \item velocità scalare: $|\vec{r}'(t)|$
-    \item accellerazione: $\vec{r}''(t)$
-    \item accellerazione scalare: $|\vec{r}''(t)|$
+    \item \textbf{velocità}: $\vec{r}'(t)$
+    \item \textbf{velocità scalare}: $|\vec{r}'(t)|$
+    \item \textbf{accellerazione}: $\vec{r}''(t)$
+    \item \textbf{accellerazione scalare}: $|\vec{r}''(t)|$
 \end{itemize}
 \subsubsection{Integrale di una funzione vettoriale}
 \[
     \int_{a}^{b} \vec{r}(t) dt =\left( \int_{a}^{b}\vec{r_1}(t) dt,\int_{a}^{b}\vec{r_2}(t) dt, \dots, \int_{a}^{b}\vec{r_n}(t) dt,\right)
 \]
-Diremo che $\vec{r}$ è integrabile in $[a,b]$ se lo è ognuna delle sue componenti.\newline
+Diremo che $\vec{r}$ è \textbf{integrabile} in $[a,b]$ se lo è ognuna delle sue componenti.\newline
 \[
     \int_{a}^{b} \vec{r}'(t) dt = \vec{r}(b) - \vec{r}(a)
 \]
