@@ -1,62 +1,6 @@
 \section{Funzioni $R \rightarrow R^n$ ("Curve nel piano e nello spazio", "calcolo infinitesimale per le curve")}
-\subsection{Richiami di calcolo vettoriale}
-\textbf{vettore}:
-\[
-    \vec{x} = (x_1, x_2, \dots, x_n)
-\]
-\textbf{modulo} di un vettore:
-\[
-    |\vec{x}| = \sqrt{\sum_{i=1}^{n}x_i^2}
-\]
-\textbf{versore}:
-\[
-    vers(\vec{x}) = \frac{\vec{x}}{|\vec{x}|}
-\]
-$\vec{x}, \vec{y}$ sono \textbf{paralleli} se
-\[
-    \lambda \vec{x} = \mu \vec{y}\;\; \text{ per qualche } \;\;\lambda, \mu \in \mathbb{R}
-\]
-\textbf{Somma} di vettori: si sommano le componenti simili.\newline
-\newline
-\textbf{Prodotto} fra un \textbf{vettore} e uno \textbf{scalare}: si moltiplica ogni componente per lo scalare.\newline
-\newline
-\textbf{Prodotto scalare} fra vettori: ha come risultato un numero reale ottenuto dalla formula
-\[
-    \vec{u} \cdot \vec{v} = (u_1 v_1 + u_2 v_2 + \dots + u_n v_n)
-\]
-Il prodotto scalare può essere espresso anche come
-\[
-    \vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| cos(\theta)
-\]
-dove $\theta$ rappresenta l'angolo tra i due vettori. Di conseguenza $\vec{u} \cdot  \vec{v} = 0$ solo se i due vettori sono ortogonali.\newline
-Dal prodotto scalare si può ricavare l'angolo fra due vettori
-\[
-    cos(\theta) = \frac{\vec{u} \cdot  \vec{v} }{|\vec{u}| |\vec{v}|}
-\]
-Inoltre $\vec{v} \cdot  \vec{v} = |\vec{v}|^2$.\newline
-\newline
-\textbf{Prodotto vettoriale}:
-\[
-    \vec{u}\text{x}\vec{v} = \left|\begin{matrix}
-        i \;\; & j \;\;& k \;\;\\
-        u_1 & u_2 & u_3\\
-        v_1 & v_2 & v_3\\
-    \end{matrix}\right|
-\]
-Il prodotto vettoriale si annulla solo se i vettori sono paralleli.\newline
-\textbf{Regola della mano destra}: il primo fattore va sul pollice, il secondo sull indice, il risultato è nel medio.\newline
-Inoltre $\vec{v} \text{x} \vec{v} = 0$.\newline
-\newline
-\textbf{Prodotto misto}:
-\[
-    \vec{u} \cdot (\vec{v} \text{x} \vec{w}) = \left|\begin{matrix}
-        u_1 \;\;& u_2 \;\;& u_3\\
-        v_1 &v_2 & v_3\\
-        w_1 &w_2 & w_3
-    \end{matrix}\right|
-\]
-Il prodotto misto si annulla solo se i tre vettori sono linearmente indipendenti.\newline
 \subsection{Introduzione alle funzioni $R \rightarrow R^n$}
+\subsubsection{Definizioni e terminologia}
 Si dice \textbf{funzione a valori vettoriali} una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ con $n > 1$.\newline
 \newline
 Il \textbf{limite} della funzione a valori vettoriali si calcola componente per componente:
@@ -71,11 +15,13 @@ Sia $I$ un intervallo in $\mathbb{R}$. Si dice \textbf{arco di curva continua}, 
 \newline
 Una curva si dice \textbf{chiusa} se $\vec{r}(a) = \vec{r}(b)$ con $I=[a,b]$.\newline
 \newline
-Una curva si dice \textbf{semplice} se non ripassa mai nello stesso punto.\newline
+Una curva si dice \textbf{semplice} se non ripassa mai nello stesso punto, cioè se $r:(a,b) \rightarrow \mathbb{R}^n$ è iniettiva..\newline
 \newline
 Il \textbf{sostegno} della curva è l'immagine della funzione, cioè l'insieme dei punti di $\mathbb{R}^n$ percorsi dal punto mobile.\newline
 \newline
-Una curva si dice \textbf{piana} se esiste un piano che contiene il suo sostegno.
+Due curve si dicono \textbf{equivalenti} se hanno lo stesso sostegno. Sostanzialmente, due curve equivalenti dipendono da un cambio di variabile. Se $r = r(t)$ con $t \in[a,b]$ ha per sostegno $\gamma$ e se $\phi: [c,d] \rightarrow [a,b]$ è una funzione continua e strettamente monotona, allora la curva $\rho(t) := r(\phi(t))$, con $t \in [c,d]$, ha lo stesso sostegno di $\gamma$. Si usa dire che $\rho(t)$ è una \textbf{riparametrizzazione} di $r(t)$.
+\newline
+Una curva si dice \textbf{piana} se esiste un piano che contiene il suo sostegno (in particolare tutte le curve  $f: \mathbb{R} \rightarrow \mathbb{R}^n$ con $n=2$).
 \subsubsection{Calcolo differenziale per funzioni $R \rightarrow R^n$}
 Sia $\vec{r}: I \rightarrow \mathbb{R}^n$ e $t_0 \in I$, si dice che $\vec{r}$ è \textbf{derivabile} in $t_0$ se esiste finito
 \[
@@ -89,8 +35,17 @@ Notiamo che il \textbf{vettore derivato} è il \textbf{vettore delle derivate} d
     \vec{r'}(t_0) = (r'_1(t_0), r'_2(t_0), \dots, r'_n(t_0))
 \]
 \ \newline
-Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice arco di curva \textbf{regolare} un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$.\newline
+Sia $I \subseteq \mathbb{R}$ un intervallo. Si dice arco di curva \textbf{regolare} un arco di curva $\vec{r}: I \rightarrow  \mathbb{R}^n$ tale che $\vec{r} \in C^1(I)$ e $\vec{r}'(t) \neq 0$ per ogni $t \in I$ (solo nell'intervallo aperto, queste due proprietà possono non verificarsi agli estremi).\newline
+Il fatto che $\vec{r}' (t) \neq 0$ è una proprietà il cui significato è vettoriale: le componenti di $\vec{r}'(t)$ non possono annullarsi contemporanemante, e cioè che $|\vec{r}'(t)|\neq 0$, cioè che il punto mobile non si ferma mai ($\vec{r}'(t)$ rappresenta la velocità).\newline
 \newline
+Dato un vettore $\vec{r}(t)$ si dice
+\begin{itemize}
+    \item \textbf{velocità}: $\vec{r}'(t)$
+    \item \textbf{velocità scalare}: $|\vec{r}'(t)|$
+    \item \textbf{accellerazione}: $\vec{r}''(t)$
+    \item \textbf{accellerazione scalare}: $|\vec{r}''(t)|$
+\end{itemize}
+\ \newline
 Di conseguenza per le curve regolari è ben definito il \textbf{versore tangente}:
 \[
     \vec{T} = \frac{\vec{r}'(t)}{|\vec{r}'(t)|}
@@ -117,14 +72,6 @@ Alcune \textbf{proprietà} del calcolo differenziale vettoriale:
 \[
     (\vec{u} \text{x} \vec{v})' = \vec{u}' \text{x} \vec{v} + \vec{u} \text{x} \vec{v}' \;\;\; in \;\mathbb{R}^3
 \]
-\ \newline
-Dato un vettore $\vec{r}(t)$ si dice
-\begin{itemize}
-    \item \textbf{velocità}: $\vec{r}'(t)$
-    \item \textbf{velocità scalare}: $|\vec{r}'(t)|$
-    \item \textbf{accellerazione}: $\vec{r}''(t)$
-    \item \textbf{accellerazione scalare}: $|\vec{r}''(t)|$
-\end{itemize}
 \subsubsection{Calcolo integrale per funzioni $R \rightarrow R^n$}
 \[
     \int_{a}^{b} \vec{r}(t) dt =\left( \int_{a}^{b}\vec{r_1}(t) dt,\int_{a}^{b}\vec{r_2}(t) dt, \dots, \int_{a}^{b}\vec{r_n}(t) dt,\right)
@@ -139,8 +86,8 @@ Può essere utile utilizzare il seguente lemma:
 \]
 Se $\vec{r}(t)$ è una curva regolare e chiusa in $[a,b]$, allora $\int_{a}^{b}\vec{r}'(t) dt =0$.\newline
 \subsubsection{Classi di curve piane}
-\textbf{curve piane, grafico di funzioni}
-\begin{tcolorbox}
+\textbf{curve piane, grafico di funzioni}\newline
+\newline
 Curve ottenute da grafici di funzioni in una variabile:
 \[
     y = f(x) \quad\text{per x in} \;[a,b]
@@ -152,7 +99,6 @@ Forma parametrica:
         y=f(t)
     \end{cases} \;\;\;\; \text{per t} \;\in[a,b]
 \]
-\end{tcolorbox}
 Proprietà:
 \begin{itemize}
     \item è continua se e solo se $f$ è continua
@@ -161,8 +107,9 @@ Proprietà:
     \item non è mai chiusa
     \item è sempre semplice
 \end{itemize}
+\ \newline
 \textbf{curve piane, forma polare}\newline
-\begin{tcolorbox}
+\newline
 L'equazione
 \[
     \rho = f(\theta) \;\;\;\text{per } \; \theta \in [\theta_1, \theta_2]
@@ -174,17 +121,15 @@ L'equazione
         y = f(\theta) sin(\theta)
     \end{cases} \;\;\; \text{per } \; \theta \in [\theta_1, \theta_2]
 \]
-\end{tcolorbox}
+\ \newline
 Ricordiamo che $\rho = \sqrt{x^2 + y^2}$
 Osserviamo che 
 \[
     \vec{r}'(\theta) = (f'(\theta) cos(\theta)- f(\theta)sin(\theta), f'(\theta) sin(\theta) - f(\theta)cos(\theta))
 \]
-\begin{tcolorbox}
 \[
     |\vec{r}'(\theta)| = \sqrt{\rho(\theta)^2 + \rho'(\theta)^2} = \sqrt{f'(\theta)^2 + f(\theta)^2}
 \]
-\end{tcolorbox}
 Geometricamente la forma polare $\rho = f(\theta)$ può essere visualizzata come la curva tracciata da una penna posta su un braccio che ruota attorno all'origine a velocità costante (in modo che il tempo $t$ combaci con l'angolo $\theta$). Mentre il braccio ruota la penna si sposta lungo il braccio in modo da essere a distanza $f(\theta)$ dall'origine all'istante $\theta$.\newline
 \newline
 Proprietà:
@@ -400,6 +345,64 @@ Data una curva $\vec{r} : I \rightarrow \mathbb{R}^3$, regolare di classe $C^3(I
 \]
 La terna intrinseca $\vec{B}, \vec{T}, \vec{N}$ costituisce un sistema di riferimento ortonormale.
 \subsection{Note sugli esercizi}
+\subsubsection{Ripasso sul calcolo vettoriale}
+\textbf{vettore}:
+\[
+    \vec{x} = (x_1, x_2, \dots, x_n)
+\]
+\textbf{modulo} di un vettore:
+\[
+    |\vec{x}| = \sqrt{\sum_{i=1}^{n}x_i^2}
+\]
+\textbf{versore}:
+\[
+    vers(\vec{x}) = \frac{\vec{x}}{|\vec{x}|}
+\]
+$\vec{x}, \vec{y}$ sono \textbf{paralleli} se
+\[
+    \lambda \vec{x} = \mu \vec{y}\;\; \text{ per qualche } \;\;\lambda, \mu \in \mathbb{R}
+\]
+\textbf{Somma} di vettori: si sommano le componenti simili.\newline
+\newline
+\textbf{Prodotto} fra un \textbf{vettore} e uno \textbf{scalare}: si moltiplica ogni componente per lo scalare.\newline
+\newline
+\textbf{Prodotto scalare} fra vettori: ha come risultato un numero reale ottenuto dalla formula
+\[
+    \vec{u} \cdot \vec{v} = (u_1 v_1 + u_2 v_2 + \dots + u_n v_n)
+\]
+Il prodotto scalare può essere espresso anche come
+\[
+    \vec{u} \cdot \vec{v} = |\vec{u}| |\vec{v}| cos(\theta)
+\]
+dove $\theta$ rappresenta l'angolo tra i due vettori. Di conseguenza $\vec{u} \cdot  \vec{v} = 0$ solo se i due vettori sono ortogonali.\newline
+Dal prodotto scalare si può ricavare l'angolo fra due vettori
+\[
+    cos(\theta) = \frac{\vec{u} \cdot  \vec{v} }{|\vec{u}| |\vec{v}|}
+\]
+Inoltre $\vec{v} \cdot  \vec{v} = |\vec{v}|^2$.\newline
+\newline
+\textbf{Prodotto vettoriale}:
+\[
+    \vec{u}\text{x}\vec{v} = \left|\begin{matrix}
+        i \;\; & j \;\;& k \;\;\\
+        u_1 & u_2 & u_3\\
+        v_1 & v_2 & v_3\\
+    \end{matrix}\right|
+\]
+Il prodotto vettoriale si annulla solo se i vettori sono paralleli.\newline
+\textbf{Regola della mano destra}: il primo fattore va sul pollice, il secondo sull indice, il risultato è nel medio.\newline
+Inoltre $\vec{v} \text{x} \vec{v} = 0$.\newline
+\newline
+\textbf{Prodotto misto}:
+\[
+    \vec{u} \cdot (\vec{v} \text{x} \vec{w}) = \left|\begin{matrix}
+        u_1 \;\;& u_2 \;\;& u_3\\
+        v_1 &v_2 & v_3\\
+        w_1 &w_2 & w_3
+    \end{matrix}\right|
+\]
+Il prodotto misto si annulla solo se i tre vettori sono linearmente indipendenti.
+\subsubsection{Altre cose cambia titolo}
 \begin{tcolorbox}
 Proprietà delle curve:
 \begin{itemize}
