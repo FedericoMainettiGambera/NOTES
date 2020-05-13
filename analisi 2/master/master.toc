@@ -31,7 +31,7 @@
 \contentsline {subsubsection}{\numberline {3.3.5}Semplificazioni nel calcolo delle serie di Fourier per funzioni pari e dispari}{20}{subsubsection.3.3.5}%
 \contentsline {subsubsection}{\numberline {3.3.6}Riassunto dei criteri per la convergenza della serie di Fourier $\DOTSB \sum@ \slimits@ F$}{20}{subsubsection.3.3.6}%
 \contentsline {subsubsection}{\numberline {3.3.7}Armoniche}{21}{subsubsection.3.3.7}%
-\contentsline {section}{\numberline {4}Funzioni $R \rightarrow R^n$ ("Curve nel piano e nello spazio", "calcolo infinitesimale per le curve")}{22}{section.4}%
+\contentsline {section}{\numberline {4}Funzioni $R \rightarrow R^n$ ("Funzioni di una variabile a valori vettoriali", "Curve nel piano e nello spazio")}{22}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Introduzione alle funzioni $R \rightarrow R^n$}{22}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Definizioni e terminologia}{22}{subsubsection.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.2}Calcolo differenziale per funzioni $R \rightarrow R^n$}{22}{subsubsection.4.1.2}%
@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {4.2}Lunghezza di un arco di curva}{24}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Curve rettificabili e lunghezza}{24}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Riparametrizzazioni e parametro arco (o ascissa curvilinea)}{25}{subsubsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}Inegrali di linea (di prima specie)}{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Integrali di linea (di prima specie)}{25}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Note sugli esercizi}{26}{subsection.4.4}%
 \contentsline {subsubsection}{\numberline {4.4.1}Ripasso sul calcolo vettoriale}{26}{subsubsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.2}Altre cose cambia titolo}{28}{subsubsection.4.4.2}%
