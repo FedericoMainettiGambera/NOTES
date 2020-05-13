@@ -174,6 +174,7 @@ Nello spazio tridimensionale la formula diventa:
 \[
     l(\gamma)= \int_{a}^{b}\sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2}dt
 \]
+(Da un punto di vista fisico queste due formule ci dicono che lo spostamento è l'integrale della velocità, cosa ben nota).
 \ \newline
 Inoltre:\newline
 Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabile, la stessa proprietà si estende a un numero finito qualsiasi di curve rettificabili. \newline
@@ -214,20 +215,18 @@ che si riscrive anche nella forma
 \[
     ds =|\vec{r}'(t)|dt =v(t) dt
 \] 
-dove il simbolo $ds$ prende il nome di lunghezza d'arco elementare.
+dove il simbolo $ds$ prende il nome di \textbf{lunghezza d'arco elementare}.
 \subsection{Inegrali di linea (di prima specie)}
-Sia $\vec{r}: [a,b] \rightarrow \mathbb{R}$ un arco di curva regolare di sostegno $\gamma$ e sia $f$ una funzione a valori reali, definita in un sottoinsieme $A$ di $\mathbb{R}^n$ contenente $\gamma$, cioè $f:A\subset \mathbb{R}^n \rightarrow \mathbb{R}$ con $\gamma \subset A$.
-\begin{tcolorbox}
-Si dice integrale di linea (di prima specie) di $f$ lungo $\gamma$ l'integrale
+Sia $\vec{r}: [a,b] \rightarrow \mathbb{R}$ un arco di curva regolare di sostegno $\gamma$ e sia $f$ una funzione a valori reali, definita in un sottoinsieme $A$ di $\mathbb{R}^n$ contenente $\gamma$, cioè $f:A\subset \mathbb{R}^n \rightarrow \mathbb{R}$ con $\gamma \subset A$.\newline
+\newline
+Si dice \textbf{integrale di linea (di prima specie)} di $f$ lungo $\gamma$ l'integrale
 \[
     \int_{\gamma} f ds = \int_{a}^{b}f(\vec{r}(t))|\vec{r}'(t)|dt
 \]
-\end{tcolorbox}
-\begin{tcolorbox}
-Lintegrale di $f$ di prima specie lungo $\gamma$ è invariante per parametrizzazioni equivalenti e anche per cambiamento di orientazione.
-\end{tcolorbox}
-\textbf{applicazioni fisiche}
-\begin{tcolorbox}
+Lintegrale di $f$ di prima specie lungo $\gamma$ è \textbf{invariante} per \textbf{parametrizzazioni equivalenti} e anche per \textbf{cambiamento di orientazione}.\newline
+\newline
+Osserviamo che se $f = 1$ (soffitto di altezza costatne), ritroviamo la lunghezza di una linea.
+\textbf{Applicazioni fisiche}:
 \begin{itemize}
     \item Il \textbf{baricentro} di $\gamma$ è il punto $B = (\bar{x},\bar{y},\bar{z})$ con:
     \[
@@ -237,7 +236,7 @@ Lintegrale di $f$ di prima specie lungo $\gamma$ è invariante per parametrizzaz
             \bar{z} = \frac{1}{m}\int_\gamma z\rho ds = \frac{1}{m}\int_{a}^{b}z(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt
         \end{cases}
     \]
-    Se il corpo è omogeneo ($\rho =$ costante), il baricentro si dice centroide e ha coordinate:
+    Se il corpo è \textbf{omogeneo} ($\rho =$ costante), il baricentro si dice \textbf{centroide} e ha coordinate:
     \[
         \begin{cases}
             \bar{x} = \frac{\rho}{m}\int_\gamma x ds = \frac{1}{l(\gamma)}\int_{a}^{b}x(t)|\vec{r}'(t)|dt = \frac{\int_{a}^{b}x(t)|\vec{r}'(t)|dt}{\int_{a}^{b}|\vec{r}'(t)|dt}\\
@@ -249,13 +248,12 @@ Lintegrale di $f$ di prima specie lungo $\gamma$ è invariante per parametrizzaz
     \[
         I = \int_\gamma \delta^2 \rho ds = \int_{a}^{b}\delta^2(\vec{r}(t))\rho(\vec{r}(t))|\vec{r}'(t)|dt
     \]
-    Se il corpo è omogeneo:
+    Se il corpo è \textbf{omogeneo} ($\rho =$ costante):
     \[
         I = \frac{m}{l(\gamma)}\int_\gamma \delta^2ds = m \frac{\int_{a}^{b}\delta^2(\vec{r}(t))|\vec{r}'(t)|dt}{\int_{a}^{b}|\vec{r}'(t)|dt}
     \]
-    Può essere molto utile cercare di ridefinire la curva spostandola in modo tale che l'asse di riferimento sia uno degli assi cartesiani, in questo modo esprimere la distanza $\delta$ di ogni punto dall'asse può essere più facile.
+    Per gli esercizi: può essere molto utile cercare di ridefinire la curva spostandola in modo tale che l'asse di riferimento sia uno degli assi cartesiani, in questo modo esprimere la distanza $\delta$ di ogni punto dall'asse può essere più facile.
 \end{itemize}
-\end{tcolorbox}
 \subsection{Elementi di geometria differenziale delle curve}
 \subsubsection{Curvatura e normale principale per una curva in $\mathbb{R}^n$}
 Il versore tangente è definito come:
