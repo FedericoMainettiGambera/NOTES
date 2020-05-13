@@ -21,8 +21,7 @@ Una curva si dice \textbf{piana} se esiste un piano che contiene il suo sostegno
 \newline
 Il \textbf{sostegno} della curva è l'immagine della funzione, cioè l'insieme dei punti di $\mathbb{R}^n$ percorsi dal punto mobile.\newline
 \newline
-Due curve si dicono \textbf{equivalenti} se hanno lo stesso sostegno. Sostanzialmente, due curve equivalenti dipendono da un cambio di variabile. Se $r = r(t)$ con $t \in[a,b]$ ha per sostegno $\gamma$ e se $\phi: [c,d] \rightarrow [a,b]$ è una funzione continua e strettamente monotona (crescente o descrescente), allora la curva $\rho(t) := r(\phi(t))$, con $t \in [c,d]$, ha lo stesso sostegno di $\gamma$. Si usa dire che $\rho(t)$ è una \textbf{riparametrizzazione} di $r(t)$.\newline
-Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane la stessa, anche se il verso o la velocità di percorrenza cambiano (es. per invertire il senso di percorrenza si può riparametrizzare $t$ con $-t$).
+Due curve si dicono \textbf{equivalenti} se hanno lo stesso sostegno.
 \subsubsection{Calcolo differenziale per funzioni $R \rightarrow R^n$}
 Sia $\vec{r}: I \rightarrow \mathbb{R}^n$ e $t_0 \in I$, si dice che $\vec{r}$ è \textbf{derivabile} in $t_0$ se esiste finito
 \[
@@ -192,7 +191,10 @@ allora
 \[
     l(\gamma) = \int_{a}^{b}\sqrt{1+f'(t)^2}dt
 \]
-\subsubsection{Parametro arco o ascissa curvilinea}
+\subsubsection{Riparametrizzazioni e parametro arco (o ascissa curvilinea)}
+Sostanzialmente, due curve equivalenti dipendono da un cambio di variabile. Se $r = r(t)$ con $t \in[a,b]$ ha per sostegno $\gamma$ e se $\phi: [c,d] \rightarrow [a,b]$ è una funzione continua e strettamente monotona (crescente o descrescente), allora la curva $\rho(t) := r(\phi(t))$, con $t \in [c,d]$, ha lo stesso sostegno di $\gamma$. Si usa dire che $\rho(t)$ è una \textbf{riparametrizzazione} di $r(t)$.\newline
+Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane la stessa, anche se il verso o la velocità di percorrenza cambiano (es. per invertire il senso di percorrenza si può riparametrizzare $t$ con $-t$).\newline
+\newline
 Se invece di calcolare la lunghezza di una curva da un valore $a$ a un valore $b$, cioè in $[a,b]$, la calcolassimo in $[t_0, t]$, con $t_0$ un effettivo valore e $t$ una variabile, otterremmo una funzione di $t$ definita come:
 \[
     s(t) = \int_{t_0}^{t}|\vec{r}'(\tau)|d\tau
