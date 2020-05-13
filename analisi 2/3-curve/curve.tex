@@ -17,11 +17,12 @@ Una curva si dice \textbf{chiusa} se $\vec{r}(a) = \vec{r}(b)$ con $I=[a,b]$.\ne
 \newline
 Una curva si dice \textbf{semplice} se non ripassa mai nello stesso punto, cioè se $r:(a,b) \rightarrow \mathbb{R}^n$ è iniettiva..\newline
 \newline
+Una curva si dice \textbf{piana} se esiste un piano che contiene il suo sostegno (in particolare tutte le curve  $f: \mathbb{R} \rightarrow \mathbb{R}^n$ con $n=2$).\newline
+\newline
 Il \textbf{sostegno} della curva è l'immagine della funzione, cioè l'insieme dei punti di $\mathbb{R}^n$ percorsi dal punto mobile.\newline
 \newline
-Due curve si dicono \textbf{equivalenti} se hanno lo stesso sostegno. Sostanzialmente, due curve equivalenti dipendono da un cambio di variabile. Se $r = r(t)$ con $t \in[a,b]$ ha per sostegno $\gamma$ e se $\phi: [c,d] \rightarrow [a,b]$ è una funzione continua e strettamente monotona, allora la curva $\rho(t) := r(\phi(t))$, con $t \in [c,d]$, ha lo stesso sostegno di $\gamma$. Si usa dire che $\rho(t)$ è una \textbf{riparametrizzazione} di $r(t)$.
-\newline
-Una curva si dice \textbf{piana} se esiste un piano che contiene il suo sostegno (in particolare tutte le curve  $f: \mathbb{R} \rightarrow \mathbb{R}^n$ con $n=2$).
+Due curve si dicono \textbf{equivalenti} se hanno lo stesso sostegno. Sostanzialmente, due curve equivalenti dipendono da un cambio di variabile. Se $r = r(t)$ con $t \in[a,b]$ ha per sostegno $\gamma$ e se $\phi: [c,d] \rightarrow [a,b]$ è una funzione continua e strettamente monotona (crescente o descrescente), allora la curva $\rho(t) := r(\phi(t))$, con $t \in [c,d]$, ha lo stesso sostegno di $\gamma$. Si usa dire che $\rho(t)$ è una \textbf{riparametrizzazione} di $r(t)$.\newline
+Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane la stessa, anche se il verso o la velocità di percorrenza cambiano (es. per invertire il senso di percorrenza si può riparametrizzare $t$ con $-t$).
 \subsubsection{Calcolo differenziale per funzioni $R \rightarrow R^n$}
 Sia $\vec{r}: I \rightarrow \mathbb{R}^n$ e $t_0 \in I$, si dice che $\vec{r}$ è \textbf{derivabile} in $t_0$ se esiste finito
 \[
@@ -85,7 +86,7 @@ Può essere utile utilizzare il seguente lemma:
     \left| \int_{a}^{b}\vec{r}(t)dt \right| \leq \int_{a}^{b}|\vec{r}(t)|dt
 \]
 Se $\vec{r}(t)$ è una curva regolare e chiusa in $[a,b]$, allora $\int_{a}^{b}\vec{r}'(t) dt =0$.\newline
-\subsubsection{Classi di curve piane}
+\subsubsection{Classi di curve piane (non mi piace sto titolo)}
 \textbf{curve piane, grafico di funzioni}\newline
 \newline
 Curve ottenute da grafici di funzioni in una variabile:
@@ -159,24 +160,27 @@ Equazione della circonferenza:
 \]
 \subsection{Lunghezza di un arco di curva}
 \subsubsection{Curve rettificabili e lunghezza}
-\textbf{def.} Si dice che $\gamma$ è rettificabile se 
+Si dice che $\gamma$ è \textbf{rettificabile} se 
 \[
     sub_\mathcal{P} l(\mathcal{P}) = l(\gamma) < + \infty
 \]
 Dove l'estremo superiore è calcolato al variare di tutte le possibili partizioni $\mathcal{P}$ di $[a,b]$.\newline
 In tal caso $l(\gamma)$ assegna per definizione, la lunghezza di $\gamma$.\newline
 \newline
-\textbf{teor.} Sia $\vec{r}:[a,b] \rightarrow \mathbb{R}^n$ la parametrizzazione di un arco di curva $\gamma$ regolare. Allora $\gamma$ è rettificabile e 
-\begin{tcolorbox}
+\textbf{teor.} Sia $\vec{r}:[a,b] \rightarrow \mathbb{R}^n$ la parametrizzazione di un arco di curva $\gamma$ regolare. Allora $\gamma$ è rettificabile e la sua \textbf{lunghezza} vale 
 \[
     l(\gamma) = \int_{a}^{b}|\vec{r}'(t)| dt
 \]
-\end{tcolorbox}
 Nello spazio tridimensionale la formula diventa:
 \[
     l(\gamma)= \int_{a}^{b}\sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2}dt
 \]
-\textbf{Lunghezza di un grafico}\newline
+\ \newline
+Inoltre:\newline
+Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabile, la stessa proprietà si estende a un numero finito qualsiasi di curve rettificabili. \newline
+Se una curva $\gamma$ è regolare a tratti, allora è rettificabile.\newline
+\newline
+Vediamo il caso in si vuole calcolare la \textbf{lunghezza di un grafico di una funzione} $f(x)$:\newline
 Sia $\gamma$ una curva piana regolare che sia grafico di una funzione, ossia:
 \[
     \gamma : \begin{cases}
@@ -185,32 +189,21 @@ Sia $\gamma$ una curva piana regolare che sia grafico di una funzione, ossia:
     \end{cases} \;\; \text{per} \;t \in[a,b]
 \]
 allora
-\begin{tcolorbox}
 \[
     l(\gamma) = \int_{a}^{b}\sqrt{1+f'(t)^2}dt
 \]
-\end{tcolorbox}
-Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabile, la stessa proprietà si estende a un numero finito qualsiasi di curve rettificabili. \newline
-\newline
-Se una curva $\gamma$ è regolare a tratti, allora è rettificabile.\newline
-\subsubsection{Cambiamenti di parametrizzazione, curve equivalenti}
-Passando da $\vec{r} = \vec{r} (t)$ a $\vec{r} = \vec{r} (f(u))$ diremo che abbiamo riparametrizzato la curva, con $f(u)$ monotona (crescente o decrescente).\newline
-Notiamo che dopo una riparametrizzazione la lunghezza dell'arco di curva rimane la stessa, anche se il verso o la velocità di percorrenza cambiano.\newline
-Per invertire il senso di percorrenza si può sostituire $t$ con $-t$.\newline
 \subsubsection{Parametro arco o ascissa curvilinea}
-Se invece di calcolare la lunghezza in $[a,b]$ la calcolassimo da $[t_0, t]$ otterremmo una funzione di $t$:
-\begin{tcolorbox}
+Se invece di calcolare la lunghezza di una curva da un valore $a$ a un valore $b$, cioè in $[a,b]$, la calcolassimo in $[t_0, t]$, con $t_0$ un effettivo valore e $t$ una variabile, otterremmo una funzione di $t$ definita come:
 \[
     s(t) = \int_{t_0}^{t}|\vec{r}'(\tau)|d\tau
 \]
-Se si è in grado di calcolare esplicitamente tale funzione e poi di invertirla, esprimendo $t$ come funzione di $s$, è possibile riparametrizzare la curva in funzione del parametro $s$, detto parametro arco o ascissa curvilinea (ricordarsi di ricalcolare anche gli estremi dell'intervallo secondo il nuovo parametro).\newline
-\end{tcolorbox}
-\begin{tcolorbox}
-Notiamo che se $|\vec{r}'(t)| = 1$, $t$ coincide con il parametro arco, quindi la curva sarebbe già parametrizzata secondo  il parametro arco.
-\end{tcolorbox}
+Inoltre se si è in grado di calcolare esplicitamente tale funzione e poi di invertirla, esprimendo $t$ come funzione di $s$, è possibile riparametrizzare la curva in funzione del parametro $s$, detto \textbf{parametro arco} o \textbf{ascissa curvilinea} (ricordarsi di ricalcolare anche gli estremi dell'intervallo secondo il nuovo parametro).\newline
+\newline
+Notiamo che se $|\vec{r}'(t)| = 1$, $t$ coincide con il parametro arco, quindi la curva sarebbe già parametrizzata secondo  il parametro arco.\newline
+\newline
 Se $\vec{r} = \vec{r}(s)$ è un curva parametrizzata mediante il parametro arco, il vettore derivato $\vec{r}'(s)$ coincide col versore tangente $\vec{T}$
 \newline
-\begin{tcolorbox}
+\newline
 Se $\vec{r}(t)$ è una curva parametrizzata rispetto a un parametro $t$ qualunque (non necessariamente il parametro arco), si ha:
 \[
     \frac{ds}{dt} =|\vec{r}'(t)| = v(t)
@@ -220,7 +213,6 @@ che si riscrive anche nella forma
     ds =|\vec{r}'(t)|dt =v(t) dt
 \] 
 dove il simbolo $ds$ prende il nome di lunghezza d'arco elementare.
-\end{tcolorbox}
 \subsection{Inegrali di linea (di prima specie)}
 Sia $\vec{r}: [a,b] \rightarrow \mathbb{R}$ un arco di curva regolare di sostegno $\gamma$ e sia $f$ una funzione a valori reali, definita in un sottoinsieme $A$ di $\mathbb{R}^n$ contenente $\gamma$, cioè $f:A\subset \mathbb{R}^n \rightarrow \mathbb{R}$ con $\gamma \subset A$.
 \begin{tcolorbox}
