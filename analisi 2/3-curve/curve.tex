@@ -1,24 +1,26 @@
 \section{Funzioni $R \rightarrow R^n$ ("Curve nel piano e nello spazio", "calcolo infinitesimale per le curve")}
 \subsection{Richiami di calcolo vettoriale}
-vettore
+\textbf{vettore}:
 \[
     \vec{x} = (x_1, x_2, \dots, x_n)
 \]
-modulo di un vettore
+\textbf{modulo} di un vettore:
 \[
     |\vec{x}| = \sqrt{\sum_{i=1}^{n}x_i^2}
 \]
-versore
+\textbf{versore}:
 \[
     vers(\vec{x}) = \frac{\vec{x}}{|\vec{x}|}
 \]
-$\vec{x}, \vec{y}$ sono paralleli se
+$\vec{x}, \vec{y}$ sono \textbf{paralleli} se
 \[
     \lambda \vec{x} = \mu \vec{y}\;\; \text{ per qualche } \;\;\lambda, \mu \in \mathbb{R}
 \]
-Somma di vettori: si sommano le componenti simili.\newline
-Prodotto fra un vettore e uno scalare: si moltiplica ogni componente per lo scalare.\newline
-Prodotto scalare fra vettori: ha come risultato un numero reale ottenuto dalla formula
+\textbf{Somma} di vettori: si sommano le componenti simili.\newline
+\newline
+\textbf{Prodotto} fra un \textbf{vettore} e uno \textbf{scalare}: si moltiplica ogni componente per lo scalare.\newline
+\newline
+\textbf{Prodotto scalare} fra vettori: ha come risultato un numero reale ottenuto dalla formula
 \[
     \vec{u} \cdot \vec{v} = (u_1 v_1 + u_2 v_2 + \dots + u_n v_n)
 \]
@@ -32,7 +34,8 @@ Dal prodotto scalare si può ricavare l'angolo fra due vettori
     cos(\theta) = \frac{\vec{u} \cdot  \vec{v} }{|\vec{u}| |\vec{v}|}
 \]
 Inoltre $\vec{v} \cdot  \vec{v} = |\vec{v}|^2$.\newline
-Prodotto vettoriale:
+\newline
+\textbf{Prodotto vettoriale}:
 \[
     \vec{u}\text{x}\vec{v} = \left|\begin{matrix}
         i \;\; & j \;\;& k \;\;\\
@@ -41,9 +44,10 @@ Prodotto vettoriale:
     \end{matrix}\right|
 \]
 Il prodotto vettoriale si annulla solo se i vettori sono paralleli.\newline
-Regola della mano destra: il primo fattore va sul pollice, il secondo sull indice, il risultato è nel medio.\newline
+\textbf{Regola della mano destra}: il primo fattore va sul pollice, il secondo sull indice, il risultato è nel medio.\newline
 Inoltre $\vec{v} \text{x} \vec{v} = 0$.\newline
-Prodotto misto:
+\newline
+\textbf{Prodotto misto}:
 \[
     \vec{u} \cdot (\vec{v} \text{x} \vec{w}) = \left|\begin{matrix}
         u_1 \;\;& u_2 \;\;& u_3\\
@@ -53,19 +57,25 @@ Prodotto misto:
 \]
 Il prodotto misto si annulla solo se i tre vettori sono linearmente indipendenti.\newline
 \subsection{Funzioni a valori vettoriali, limiti e continuità}
-Si dice funzione a valori vettoriali una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ con $n > 1$. Le funzioni $\vec{f} : \mathbb{R} \rightarrow \mathbb{R}^2$ o $\mathbb{R}^3$.\newline
-Il limite della funzione a valori vettoriali si calcola componente per componente:
+Si dice funzione a valori vettoriali una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ con $n > 1$.\newline
+\newline
+Il \textbf{limite} della funzione a valori vettoriali si calcola componente per componente:
 \[
     \lim_{t\rightarrow t_0}(r_1(t), r_2(t), \dots, r_n(t)) = \left(\lim_{t\rightarrow t_0}r_1(t), \lim_{t\rightarrow t_0}r_2(t), \dots, \lim_{t\rightarrow t_0}r_n(t)\right)
 \]
-Valgono allo stesso modo delle funzioni unidimensionali il teorema di unicità del limite e la definizione di continuità (una funzione a valori vettoriali è continua in un punto se lo sono tutte le sue componenti).\newline
+Valgono allo stesso modo delle funzioni unidimensionali il teorema di unicità del limite e la definizione di \textbf{continuità} (una funzione a valori vettoriali è continua in un punto se lo sono tutte le sue componenti).\newline
 \subsection{Curve regolari e calcolo differenziale vettoriale}
-Nel caso $n = 2$ o $3$, una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ rappresentano curve nel piano o nello spazio tridimensionale.\newline
-Sia $I$ un intervallo in $\mathbb{R}$. Si dice arco di curva continua, o cammino, in $\mathbb{R}^n$ una funzione $\vec{r}: I \rightarrow \mathbb{R}^n$ continua.\newline
-La curva si dice chiusa se $\vec{r}(a) = \vec{r}(b)$ con $I=[a,b]$.\newline
-La curva si dice semplice se non ripassa mai nello stesso punto.\newline
-Il sostegno della curva è l'immagine della funzione, cioè l'insieme dei punti di $\mathbb{R}^n$ percorsi dal punto mobile.\newline
-Una curva si dice piana se esiste un piano che contiene il suo sostegno.\newline
+Nel caso $n = 2$ o $3$, una funzione $\vec{f} : \mathbb{R} \rightarrow  \mathbb{R}^n$ rappresenta una curva nel piano o nello spazio tridimensionale.\newline
+\newline
+Sia $I$ un intervallo in $\mathbb{R}$. Si dice \textbf{arco di curva continua}, o \textbf{cammino}, in $\mathbb{R}^n$ una funzione $\vec{r}: I \rightarrow \mathbb{R}^n$ continua.\newline
+\newline
+Una curva si dice \textbf{chiusa} se $\vec{r}(a) = \vec{r}(b)$ con $I=[a,b]$.\newline
+\newline
+Una curva si dice \textbf{semplice} se non ripassa mai nello stesso punto.\newline
+\newline
+Il \textbf{sostegno} della curva è l'immagine della funzione, cioè l'insieme dei punti di $\mathbb{R}^n$ percorsi dal punto mobile.\newline
+\newline
+Una curva si dice \textbf{piana} se esiste un piano che contiene il suo sostegno.\newline
 \subsubsection{Derivata di una funzione vettoriale. Arco di curva regolare}
 \textbf{def.} Sia $\vec{r}: I \rightarrow \mathbb{R}^n$ e $t_0 \in I$, si dice che $\vec{r}$ è derivabile in $t_0$ se esiste finito
 \[
