@@ -84,79 +84,7 @@ Può essere utile utilizzare il seguente lemma:
 \[
     \left| \int_{a}^{b}\vec{r}(t)dt \right| \leq \int_{a}^{b}|\vec{r}(t)|dt
 \]
-Se $\vec{r}(t)$ è una curva regolare e chiusa in $[a,b]$, allora $\int_{a}^{b}\vec{r}'(t) dt =0$.\newline
-\subsubsection{Classi di curve piane (non mi piace sto titolo)}
-\textbf{curve piane, grafico di funzioni}\newline
-\newline
-Curve ottenute da grafici di funzioni in una variabile:
-\[
-    y = f(x) \quad\text{per x in} \;[a,b]
-\]
-Forma parametrica:
-\[
-    \begin{cases}
-        x=t \\
-        y=f(t)
-    \end{cases} \;\;\;\; \text{per t} \;\in[a,b]
-\]
-Proprietà:
-\begin{itemize}
-    \item è continua se e solo se $f$ è continua
-    \item è regolare se e solo se $f$ è derivabile con continuità (le condizioni di non annullamento della derivata prima sono automaticamente verificate perchè $x'(t) = 1$)
-    \item è regolare a tratti se e solo se $f$ è continua e a tratti derivabile con continuità
-    \item non è mai chiusa
-    \item è sempre semplice
-\end{itemize}
-\ \newline
-\textbf{curve piane, forma polare}\newline
-\newline
-L'equazione
-\[
-    \rho = f(\theta) \;\;\;\text{per } \; \theta \in [\theta_1, \theta_2]
-\]
-è una forma abbreviata che, tramite la sostituzione $x= \rho cos(\theta)$ e $y= \rho sin(\theta)$, può essere riscritta:
-\[
-    \begin{cases}
-        x = f(\theta) cos(\theta)\\
-        y = f(\theta) sin(\theta)
-    \end{cases} \;\;\; \text{per } \; \theta \in [\theta_1, \theta_2]
-\]
-\ \newline
-Ricordiamo che $\rho = \sqrt{x^2 + y^2}$
-Osserviamo che 
-\[
-    \vec{r}'(\theta) = (f'(\theta) cos(\theta)- f(\theta)sin(\theta), f'(\theta) sin(\theta) - f(\theta)cos(\theta))
-\]
-\[
-    |\vec{r}'(\theta)| = \sqrt{\rho(\theta)^2 + \rho'(\theta)^2} = \sqrt{f'(\theta)^2 + f(\theta)^2}
-\]
-Geometricamente la forma polare $\rho = f(\theta)$ può essere visualizzata come la curva tracciata da una penna posta su un braccio che ruota attorno all'origine a velocità costante (in modo che il tempo $t$ combaci con l'angolo $\theta$). Mentre il braccio ruota la penna si sposta lungo il braccio in modo da essere a distanza $f(\theta)$ dall'origine all'istante $\theta$.\newline
-\newline
-Proprietà:
-\begin{itemize}
-    \item è continua se e solo se $f$ è continua
-    \item è regolare se e solo se $f$ è derivabile con continuità, inoltra $f$ e $f'$ non si annullano mai contemporaneamente
-    \item è chiusa se e solo se $f(\theta_1) = f(\theta_2)$ e $\theta_2 - \theta_1 = 2n\pi$ per qualche intero $n$.
-\end{itemize}
-\textbf{coniche in forma polare}\newline
-Equazione polare della conica:
-\[
-        \rho = \frac{\epsilon p}{1- \epsilon cos(\theta)}
-\]
-con $\epsilon > 0$ e $p> 0$ e $\theta$ varia nell'intervallo in cui il secondo membro è definito e positivo.\newline
-Questa equazione rappresenta:
-\[
-    \begin{cases}
-        \text{un'ellissi} \;\; &\text{se} \; \epsilon< 1\\
-        \text{una parabola} \;\; &\text{se} \; \epsilon= 1\\
-        \text{un'iperbole} \;\; &\text{se} \; \epsilon> 1
-    \end{cases}
-\]
-Notiamo che il segmo $-$ davanti al coseno non è importante, infatti se cambiamo $\theta = t + \pi$ l'equazione si trasforma in $\rho = \frac{\epsilon p}{1 + \epsilon cos(t)}$.\newline
-Equazione della circonferenza:
-\[
-        \rho = R
-\]
+Se $\vec{r}(t)$ è una curva regolare e chiusa in $[a,b]$, allora $\int_{a}^{b}\vec{r}'(t) dt =0$.
 \subsection{Lunghezza di un arco di curva}
 \subsubsection{Curve rettificabili e lunghezza}
 Si dice che $\gamma$ è \textbf{rettificabile} se 
@@ -409,7 +337,74 @@ Il prodotto misto si annulla solo se i tre vettori sono linearmente indipendenti
     Primo metodo: si controlla se il versore binormale alla curva è costante. Il vettore binormale della caruva $\gamma(x(t), y(t), z(t))$ si calcola come prodotto vettoriale di $\gamma'(t) \text{x} \gamma''(t)$, una volta normalizzato (dividendo ogni componente per il modulo (componenti al quadrato sommate sotto radice)) si ottiene il versore e si controlla se è costante (curva piana) o non costante (curva non piana) e dunque basta assicurarsi che non sia presente la variabile $t$ (p.s. $\gamma'(t) = (x'(t), y'(t), z'(t)$, $\gamma''(t) = (x'(t), y'(t), z'(t))$ ). Concettualmente, se i calcoli sono troppo complicati, si può ragionare sul fatto che se il vettore binormale (che è sempre ortonormale alla curva) ha sempre la stessa direzione (anche se di modulo diverso) allora la curva è piana.\newline
     Secondo metodo: sostiuiamo le equazioni parametriche della curva $\gamma(x(t), y(t), z(t))$ nella formula del piano generico $ax + by +cz + d = 0$. Se risulta che l'equazione è sempre soddisfatta, allora la curva è complanare.
 \end{itemize}
+\subsubsection{Equazioni di grafici di funzioni}
+Curve ottenute da grafici di funzioni in una variabile:
+\[
+    y = f(x) \quad\text{per x in} \;[a,b]
+\]
+Forma parametrica:
+\[
+    \begin{cases}
+        x=t \\
+        y=f(t)
+    \end{cases} \;\;\;\; \text{per t} \;\in[a,b]
+\]
+Proprietà:
+\begin{itemize}
+    \item è continua se e solo se $f$ è continua
+    \item è regolare se e solo se $f$ è derivabile con continuità (le condizioni di non annullamento della derivata prima sono automaticamente verificate perchè $x'(t) = 1$)
+    \item è regolare a tratti se e solo se $f$ è continua e a tratti derivabile con continuità
+    \item non è mai chiusa
+    \item è sempre semplice
+\end{itemize}
+\subsubsection{Rappresentazioni di equazioni in forma polare}
+L'equazione
+\[
+    \rho = f(\theta) \;\;\;\text{per } \; \theta \in [\theta_1, \theta_2]
+\]
+è una forma abbreviata che, tramite la sostituzione $x= \rho cos(\theta)$ e $y= \rho sin(\theta)$, può essere riscritta:
+\[
+    \begin{cases}
+        x = f(\theta) cos(\theta)\\
+        y = f(\theta) sin(\theta)
+    \end{cases} \;\;\; \text{per } \; \theta \in [\theta_1, \theta_2]
+\]
 \ \newline
+Ricordiamo che $\rho = \sqrt{x^2 + y^2}$
+Osserviamo che 
+\[
+    \vec{r}'(\theta) = (f'(\theta) cos(\theta)- f(\theta)sin(\theta), f'(\theta) sin(\theta) - f(\theta)cos(\theta))
+\]
+\[
+    |\vec{r}'(\theta)| = \sqrt{\rho(\theta)^2 + \rho'(\theta)^2} = \sqrt{f'(\theta)^2 + f(\theta)^2}
+\]
+Geometricamente la forma polare $\rho = f(\theta)$ può essere visualizzata come la curva tracciata da una penna posta su un braccio che ruota attorno all'origine a velocità costante (in modo che il tempo $t$ combaci con l'angolo $\theta$). Mentre il braccio ruota la penna si sposta lungo il braccio in modo da essere a distanza $f(\theta)$ dall'origine all'istante $\theta$.\newline
+\newline
+Proprietà:
+\begin{itemize}
+    \item è continua se e solo se $f$ è continua
+    \item è regolare se e solo se $f$ è derivabile con continuità, inoltra $f$ e $f'$ non si annullano mai contemporaneamente
+    \item è chiusa se e solo se $f(\theta_1) = f(\theta_2)$ e $\theta_2 - \theta_1 = 2n\pi$ per qualche intero $n$.
+\end{itemize}
+\subsubsection{Rappresetnazioni di coniche in forma polare}
+Equazione polare della conica:
+\[
+        \rho = \frac{\epsilon p}{1- \epsilon cos(\theta)}
+\]
+con $\epsilon > 0$ e $p> 0$ e $\theta$ varia nell'intervallo in cui il secondo membro è definito e positivo.\newline
+Questa equazione rappresenta:
+\[
+    \begin{cases}
+        \text{un'ellissi} \;\; &\text{se} \; \epsilon< 1\\
+        \text{una parabola} \;\; &\text{se} \; \epsilon= 1\\
+        \text{un'iperbole} \;\; &\text{se} \; \epsilon> 1
+    \end{cases}
+\]
+Notiamo che il segmo $-$ davanti al coseno non è importante, infatti se cambiamo $\theta = t + \pi$ l'equazione si trasforma in $\rho = \frac{\epsilon p}{1 + \epsilon cos(t)}$.\newline
+Equazione della circonferenza:
+\[
+        \rho = R
+\]
 \subsubsection{Equazione di una retta passante per due punti}
 Dati due punti $(x_1, x_2)$ e $(y_1, y_2)$ la retta passante per questi punti è definita dall'equazione
 \[
@@ -424,7 +419,45 @@ Negli esercizi sul calcolo delle lunghezze di archi di curve e di parametrizzazi
 \[
     = [2 \sqrt{cos(t) +1}\cdot  tan(\frac{t}{2}) ]_0^{2\pi} = 4 \sqrt{2}
 \]
+\ \newline
+Alternativamente l'equazione della retta può essere trovata come
+\[
+    y = m x + q
+\]
+con $m = \frac{y_1 - y_2}{x_1-x_2}$ e $q = \frac{x_1 y_2 - x_2 y_1}{x_1-x_2}$
 \subsubsection{Equazione della retta tangente a una curva $r(t) = (x(t), y(t))$ in un punto $t_0$}
 La generica retta ha forma $y = mx +q$. \newline
 Il coefficiente $m$ si trova facendo il rapporto $\frac{y'(t_0)}{x'(t_0)}$.\newline
 Il valore di $q$ si ricava sostituendo nell'equazione $y = mx +q$ la $m$ trovata, la $y$ con il valore di $y(t_0)$ e la $x$ con il valore di $x(t_0)$.
+\subsubsection{Equazione della circonferenza}
+\[
+    (x-x_c)^2 + (y-y_c)^2 = r^2
+\]
+con $r$ raggio e $(x_c, y_c)$ centro. Centrata nell'origine la circonferenza è $x^2 + y^2 = 1$.\newline
+\newline
+La forma canonica è
+\[
+    x^2 y^2 + \alpha x + \beta y + \gamma = 0
+\]
+\ \newline
+La circonferenza parametrizzata è spesso:
+\[
+    \begin{cases}
+        x = x_0 + R \cdot  cos \alpha\\
+        y = y_0 + R \cdot  sin \alpha
+    \end{cases}
+\]
+con $(x_0,y_0)$ centro e $R$ raggio.
+\subsubsection{Equazione dell'ellisse}
+Con $a$ lunghezza del semiaasse orizzontale e $b$ lunghezza del semiasse verticale
+\[
+    \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+\]
+\ \newline
+L'ellisse parametrizzata è spesso:
+\[
+    \begin{cases}
+        x = a \cdot  cos \alpha\\
+        y = b \cdot  sin \alpha
+    \end{cases}
+\]
