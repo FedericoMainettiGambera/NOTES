@@ -108,7 +108,7 @@ Inoltre:\newline
 Sia $\gamma$ l'unione di due curve rettificabili, allora $\gamma$ è rettificabile, la stessa proprietà si estende a un numero finito qualsiasi di curve rettificabili. \newline
 Se una curva $\gamma$ è regolare a tratti, allora è rettificabile.\newline
 \newline
-Vediamo il caso in si vuole calcolare la \textbf{lunghezza di un grafico di una funzione} $f(x)$:\newline
+Vediamo il caso in cui si vuole calcolare la \textbf{lunghezza di una curva in forma cartesiana (una funzione\dots)} $y=f(x)$:\newline
 Sia $\gamma$ una curva piana regolare che sia grafico di una funzione, ossia:
 \[
     \gamma : \begin{cases}
@@ -119,6 +119,19 @@ Sia $\gamma$ una curva piana regolare che sia grafico di una funzione, ossia:
 allora
 \[
     l(\gamma) = \int_{a}^{b}\sqrt{1+f'(t)^2}dt
+\]
+\ \newline
+Vediamo il caso in cui su vuole calcolare la \textbf{lunghezza di una curva in forma polare} $\rho= f(\theta)$:\newline
+Sia $\gamma$ una curva piana regolare in forma polare, ossia:
+\[
+    \gamma : \begin{cases}
+        x = f(\theta) cos(\theta) \\
+        y= f(\theta) sin(\theta)
+    \end{cases} \;\; \text{per} \;\theta \in[\theta_1,\theta_2]
+\]
+allora
+\[
+    l(\gamma) = \int_{\theta_1}^{\theta_2}\sqrt{g(\theta)^2 + g'(\theta)^2}d \theta
 \]
 \subsubsection{Riparametrizzazioni e parametro arco (o ascissa curvilinea)}
 Sostanzialmente, due curve equivalenti dipendono da un cambio di variabile. Se $r = r(t)$ con $t \in[a,b]$ ha per sostegno $\gamma$ e se $\phi: [c,d] \rightarrow [a,b]$ è una funzione continua e strettamente monotona (crescente o descrescente), allora la curva $\rho(t) := r(\phi(t))$, con $t \in [c,d]$, ha lo stesso sostegno di $\gamma$. Si usa dire che $\rho(t)$ è una \textbf{riparametrizzazione} di $r(t)$.\newline
@@ -132,7 +145,7 @@ Inoltre se si è in grado di calcolare esplicitamente tale funzione e poi di inv
 \newline
 Notiamo che se $|\vec{r}'(t)| = 1$, $t$ coincide con il parametro arco, quindi la curva sarebbe già parametrizzata secondo  il parametro arco.\newline
 \newline
-Se $\vec{r} = \vec{r}(s)$ è un curva parametrizzata mediante il parametro arco, il vettore derivato $\vec{r}'(s)$ coincide col versore tangente $\vec{T}$
+Se $\vec{r} = \vec{r}(s)$ è un curva parametrizzata mediante il parametro arco, il vettore derivato $\vec{r}'(s)$ coincide col \textbf{versore tangente} $\vec{T}$.
 \newline
 \newline
 Se $\vec{r}(t)$ è una curva parametrizzata rispetto a un parametro $t$ qualunque (non necessariamente il parametro arco), si ha:
@@ -437,7 +450,14 @@ In alternativa, data una curva $\vec{r}(t) = \begin{cases}
     x = x'(t)\\ y = y'(t) \\ z = z'(t)
 \end{cases}$. Ora per scrivere l'equazione della retta tangente in un certo punto $\vec{r}(t_0) = \left[\begin{matrix}
     x(t_0)\\ y(t_0) \\ z(t_0)
-\end{matrix}\right]$ è sufficiente calcolare il valore di $\vec{r}' (t)$ in $t = t_0$.
+\end{matrix}\right]$ è sufficiente calcolare il valore di $\vec{r}' (t)$ in $t = t_0$ e scrivere:
+\[
+    \vec{r}(t) = \left[\begin{matrix}
+        x'(t_0)\\ y'(t_0) \\ z'(t_0)
+    \end{matrix}\right] + t \cdot \left[\begin{matrix}
+        
+    \end{matrix}\right]
+\]
 \subsubsection{Equazione della circonferenza}
 \[
     (x-x_c)^2 + (y-y_c)^2 = r^2
