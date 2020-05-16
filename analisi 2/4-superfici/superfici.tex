@@ -1,21 +1,65 @@
 \section{Funzioni $\mathbb{R}^n \rightarrow \mathbb{R}$ ("Calcolo differenziale per funzioni reali di più variabili", "Funzioni reali di più variabili")}
-\rule{\textwidth}{2pt}
-\subsection{Continuità di una funzione in più variabili:}
-Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow  \mathbb{R}$ è continua in un punto $x_0$ se 
+\subsection{Topologia in $\mathbb{R}^n$ e proprietà delle funzioni continue}
+Dato un punto $M(x_0,y_0) \in \mathbb{R}^2$ e dato $r > 0$ indicheremo con $B_r(M)$ il disco centrato in $M$ di raggio $r$:
 \[
-    \lim_{(x,y)\rightarrow (x_0,y_0)} f(x,y) = f(x_0,y_0)
+    B_r(X_0,y_0) = \{ (x,y) \in \mathbb{R}^2; (x-x_0)^2+ (y-y_0)^2 < r^2\}.
 \]
-La continuità di una funzione è anche deducibile dal fatto che sia costituita (somma/ prodotto/ quoziente/ certe volte anche composizione) da funzioni elementari continue.
-\begin{tcolorbox}
-    Per verificare la continuità di una funzione si usa spesso il concetto di differenziabilità (vedi sotto, "verifica della differenziabilità").
-\end{tcolorbox}
-\rule{\textwidth}{2pt}
+Diremo anche che $B_r(x_0,y_0)$ è un \textbf{intorno} del punto $(x_0,y_0)$: tutti gli intorni del punto si ottengono facendo variare $r>0$. Indicheremo invece con $B_r^0(x_0,y_0)$ un \textbf{intorno bucato} di $(x_0,y_0)$ e cioè:
+\[
+    B_r^0 (x_0,y_0) = \{ (x,y) \in \mathbb{R}^2; 0 < (x-x_0)^2 + (y-y_0)^2 < r^2\}
+\]
+Nel caso $n$-dimensionale, dato un punto $M(x_1^0, \dots, x_n^0) \in \mathbb{R}^n$, si definisce
+\[
+    B_r(M) = \left\{ (x_1, \dots,x_n) \in \mathbb{R}^n; \sum_{i=1}^{n} (x_i-x_i^0)^2 < r^2 \right\}
+\]
+\ \newline
+Sia $E$ un sottoinsieme di $\mathbb{R}^n$, un \textbf{punto} $x_0$ si dice:
+\begin{itemize}
+    \item \textbf{interno} ad $E$, se esiste un intorno centrato in $x_0$ contenuto in $E$;
+    \item \textbf{esterno} ad $E$, se esiste un intorno centrato in $x_0$ contenuto in $E^c$;
+    \item di \textbf{frontiera} per $E$, se ogni intorno centrato in $x_0$ contiene almeno un punto di $E$ e uno di $E^c$.
+\end{itemize}
+Un insieme $E \subseteq \mathbb{R}^n$ si dice:
+\begin{itemize}
+    \item \textbf{aperto}, se ogni suo punto è interno a $E$;
+    \item \textbf{chiuso}, se il suo complementare è aperto.
+\end{itemize} 
+Sia $E$ un \textbf{insieme} di $\mathbb{R}^n$, si dice:
+\begin{itemize}
+    \item \textbf{interno} di $E$, e si indica con $E^o$, l'insieme dei punti interni di $E$;
+    \item \textbf{frontiera} o \textbf{bordo} di $E$, e si indica con $\delta E$, l'insieme dei punti di frontiera di $E$;
+    \item \textbf{chiusura} di $E$, e si indica con $\bar{E}$, l'insieme $E \cup \delta E$.
+\end{itemize}
+Alcune informazioni extra: 
+\begin{itemize}
+    \item si ha sempre $E^o \subseteq \delta E \subseteq \bar{E}$;
+    \item il complementare di un aperto è chiuso e viceversa; 
+    \item esistono insiemi nè aperti nè chiusi, gli unici insiemi sia aperti sia chiusi sono quello vuoto e $\mathbb{R}^n$;
+    \item l'unione di una famiglia qualsiasi (anche infinita) di insiemi aperti e l'intersezione di un numero finito di insiemi aperti sono insiemi aperti 
+    \item l'intersezione di una famiglia qualsiasi (anche infinita) di insiemi chiusi è l'unione di un numero finito di insiemi chiusi sono insiemi chiusi;
+    \item un insieme aperto non contiene nessuno dei suoi punti di frontiera, un insieme chiuso contiene tutti i suoi punti di frontiera.
+\end{itemize}
+Un \textbf{insieme} si dice:
+\begin{itemize}
+    \item \textbf{limitato} se esiste un intorno che lo contiene tutto;
+    \item \textbf{connesso} se per ogni coppia di punti dell'insieme, esiste un arco continuo che che li connette contenuto nell'insieme.
+\end{itemize}
+\ \newline
+Estremi:\newline
+Sia $\Omega \subset \mathbb{R}^n$ e sia $f_\Omega \rightarrow \mathbb{R}$. Diremo che $(\bar{x}, \bar{y}) \in \Omega$ è un punto di \textbf{massimo relativo} per $f$ se esiste $r > 0$ tale che $f(x,y) \leq f(\bar{x},\bar{y})$ per ogni $(x,y) \in B_r(\bar{x},\bar{y}) \cap \Omega$; Diremo che $(\bar{x},\bar{y}) \in \Omega$ è un punto di \textbf{minimo relativo} per $f$ se vale la disuguaglianza opposta. Diremo che $(\bar{x},\bar{y}) \in \Omega$ è punto di \textbf{massimo assoluto} per $f$ se $f(x,y)\leq f(\bar{x},\bar{y})$ per ogni $(x,y) \in \Omega$; diremo che $(\bar{x},\bar{y}) \in \Omega$ è punto di \textbf{minimo assoluto} per $f$ se vale la disuguaglianza opposta.
 \subsection{Calcolo di limiti in più variabili}
-\rule{\textwidth}{0.4pt}
+Sia $l \in \mathbb{R}$, diremo che
+\[
+    \lim_{(x,y) \rightarrow (x_0,y_0)} f(x,y) = l
+\]
+se 
+\[
+    \;\forall\; \epsilon > 0 \; \exists \; \delta > 0 \; \text{tale che}\; (x,y) \in b_\delta^0 (x_0,y_0) \Rightarrow |f(x,y)-l| < \epsilon 
+\]
+In $\mathbb{R}$ si parla di limite "destro" e "sinistro", in $\mathbb{R}^n$, per via della presenza dell'intorno bucato, ci sono infiniti modi di avvicinarsi al limite: il valore dipende dal cammina che si segue.
 \subsubsection{Non esistenza del limite}
-\begin{tcolorbox}
-Per mostrare che un certa funzione in più varibili non ammette limite in un determinato punto, è sufficiente determinare due curve passasnti per il punto lungo le quali la funzione assume limiti diversi.
-\end{tcolorbox}
+Per mostrare che un certa funzione in più varibili non ammette limite in un determinato punto, è sufficiente determinare due curve passasnti per il punto lungo le quali la funzione assume limiti diversi.\newline
+\newline
 \textbf{es.} 
 \[
     \lim_{(x,y)\rightarrow (0,0)} \frac{xy}{x^2+y^2}
@@ -25,20 +69,17 @@ Analiziamo la funzione lungo due curve:
     \item con $y=x$ ottengo $f(x,x) = \frac{1}{2}$
     \item con $y=-x$ ottengo $f(x,-x) = - \frac{1}{2}$
 \end{itemize}
-non ammette limite.\newline
-\rule{\textwidth}{0.4pt}
+non ammette limite.
 \subsubsection{Uso di maggiorazioni con funzioni radiali per provare l'esistenza del limite}
-\begin{tcolorbox}
-Per dimostrare l'esistenza di un limite per $(x,y) \rightarrow (0,0)$, si impone $x=\rho \cdot  cos(\theta)$ e $y= \rho \cdot sin(\theta)$, successivamente si pone l'intera funzione sotto modulo e si procede con semplificazioni e maggiorazioni (per eliminare i seni e i coseni). E' essenziale che la funzione non dipenda da $\theta$.\newline
-Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, y_0)$ si pongono $x=x_0 +\rho \cdot  cos(\theta)$ e $y= y_0 + \rho \cdot sin(\theta)$
-\end{tcolorbox}
-\rule{\textwidth}{0.4pt}
-\subsubsection{Note sugli esercizi}
+Il trucco più efficace per calcolare i limiti (in $\mathbb{R}^2$) è quello di passare in \textbf{coordinate polari}.\newline
+\newline
+Per dimostrare l'esistenza di un limite per $(x,y) \rightarrow (0,0)$ (!), si impone $x=\rho \cdot  cos(\theta)$ e $y= \rho \cdot sin(\theta)$, successivamente si pone l'intera funzione sotto modulo e si fa il limite per $\rho \rightarrow  0$. Il segreto dta nell'usare semplificazioni e maggiorazioni per eliminare i seni e i coseni. E' essenziale che la funzione non dipenda da $\theta$, altrimenti il limite non esiste.\newline
+\newline
+Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, y_0)$ (con $(x_0, y_0)$ anche diverso dall'origine) si pongono $x=x_0 +\rho \cdot  cos(\theta)$ e $y= y_0 + \rho \cdot sin(\theta)$ e si procede come sopra.\newline
+\newline
+\subsubsection{Note sugli esercizi per il calcolo di limiti}
 \begin{itemize}
-    \begin{tcolorbox}
     \item Se il limite non presenta una forma di indeterminazione allora il valore cercato si ricava sostituendo direttamente il punto nella funzione.
-    \end{tcolorbox}
-    \begin{tcolorbox}
     \item Tecniche standard della maggiorazione: 
         \begin{itemize}
             \item disuguaglianza triangolare:
@@ -54,56 +95,27 @@ Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, 
                     |cos(\theta)| \leq 1 \;\;,\;\;|sin(\theta)|\leq 1
                 \]
         \end{itemize}
-    \end{tcolorbox}
-    \begin{tcolorbox}
     \item Il criterio che ci permette di trovare il limite richiede di trovare una funzione maggiorante di $|f|$ che sia radiale (dipenda solo da $\rho$, non $\theta$) e infinitesima. Da notare è che è possibile semplificare la funzione anche senza passare subito in coordinate polari.
-    \end{tcolorbox}
-    \begin{tcolorbox}
     \item Solitamente si suddivide la funzione in una serie di somme di funzioni e si studiano quest'ultime separatamente.
-    \end{tcolorbox}
 \end{itemize}
-\rule{\textwidth}{2pt}
-\subsection{Topologia in $\mathbb{R}^n$ e proprietà delle funzioni continue}
-Sia $E$ un sottoinsieme di $\mathbb{R}^n$, un punto $x_0$ si dice:
+\subsection{Continuità di una funzione in più variabili}
+Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow  \mathbb{R}$ è \textbf{continua} in un punto $x_0$ se 
+\[
+    \lim_{(x,y)\rightarrow (x_0,y_0)} f(x,y) = f(x_0,y_0)
+\]
+La continuità di una funzione è anche deducibile dal fatto che sia costituita (somma/ prodotto/ quoziente/ certe volte anche composizione) da funzioni elementari continue.
+\newline
+\newline
+\textbf{oss.} Per verificare la continuità di una funzione si usa spesso il concetto di differenziabilità (vedi sotto, "verifica della differenziabilità").
+\newline
+\newline
+Proprietà delle funzioni continue:
 \begin{itemize}
-    \item interno ad $E$, se esiste un intorno centrato in $x_0$ contenuto in $E$;
-    \item esterno ad $E$, se esiste un intorno centrato in $x_0$ contenuto in $E^c$;
-    \item di frontiera per $E$, se ogni intorno centrato in $x_0$ contiene almeno un punto di $E$ e uno di $E^c$.
+    \item \textbf{Teorema di Weierstrass}. Sia $E \subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua, allora $f$ ammette massimo e minimo in $E$, cioè esistono $x_m$ e $x_M$ tali che $f(x_m) \leq f(x) \leq f(x_M)$ per ogni $x in E$.
+    \item \textbf{Teorema degli zeri}. Sia $E$ un insieme connesso di $\mathbb{R}^n$ e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua. Se $x$, $y$ sono due punti di $E$ tali che $ f(x) < 0$ e $f(y) > 0$, allora esiste un terzo punto $z \in E$ in cui $f$ si annulla. In particolare, lungo ogni arco di curva continua contenuto in $E$ che congiunge $x$ e $y$, c'è almeno un punto in cui $f$ si annulla.
+    \item \textbf{Teorema di permanenza del segno}. Se $f$ è continua in $(x_0, y_0) \in \mathbb{R}^2$ e $f(x_0, y_0) > 0$, allora esiste $\delta>0$ tale che $fx,y) > 0$ per ogni $(x,y) \in B_\delta(x_0,y_0)$.
 \end{itemize}
-Un insieme $E \subseteq \mathbb{R}^n$ si dice:
-\begin{itemize}
-    \item aperto, se ogni suo punto è interno a $E$;
-    \item chiuso, se il suo complementare è aperto.
-\end{itemize} 
-Sia $E$ un sottoinsieme di $\mathbb{R}^n$, si dice:
-\begin{itemize}
-    \item interno di $E$, e si indica con $E^o$, l'insieme dei punti interni di $E$;
-    \item frontiera o brodo di $E$, e si indica con $\delta E$, l'insieme dei punti di frontiera di $E$;
-    \item chiusura di $E$, e si indica con $\bar{E}$, l'insieme $E \cup \delta E$.
-\end{itemize}
-Alcune informazioni extra: 
-\begin{itemize}
-    \item si ha sempre $E^o \subseteq \delta E \subseteq \bar{E}$;
-    \item il complementare di un aperto è chiuso e viceversa; 
-    \item esistono insiemi nè aperti nè chiusi, gli unici insiemi sia aperti sia chiusi sono quello vuoto e $\mathbb{R}^n$;
-    \item l'unione di una famiglia qualsiasi (anche infinita) di insiemi aperti e l'intersezione di un numero finito di insiemi aperti sono insiemi aperti 
-    \item l'intersezione di una famiglia qualsiasi (anche infinita) di insiemi chiusi è l'unione di un numero finito di insiemi chiusi sono insiemi chiusi;
-    \item un insieme aperto non contiene nessuno dei suoi punti di frontiera, un insieme chiuso contiene tutti i suoi punti di frontiera.
-\end{itemize}
-Un inieme si dice:
-\begin{itemize}
-    \item limitato se esiste un intorno che lo contiene tutto;
-    \item connesso se per ogni coppia di punti dell'insieme, esiste un arco continuo che che li connette contenuto nell'insieme.
-\end{itemize}
-Proprietà topologiche delle funzioni continue:
-\begin{itemize}
-    \item \textbf{teor.} Teorema di Weierstrass. Sia $E \subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua, allora $f$ ammette massimo e minimo in $E$, cioè esistono $x_m$ e $x_M$ tali che $f(x_m) \leq f(x) \leq f(x_M)$ per ogni $x in E$.
-    \item \textbf{teor.} Teorema degli zeri. Sia $E$ un insieme connesso di $\mathbb{R}^n$ e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua. Se $x$, $y$ sono due punti di $E$ tali che $ f(x) < 0$ e $f(y) > 0$, allora esiste un terzo punto $z \in E$ in cui $f$ si annulla. In particolare, lungo ogni arco di curva continua contenuto in $E$ che congiunge $x$ e $y$, c'è almeno un punto in cui $f$ si annulla.
-    \item \textbf{teor.} Permanenza del segno. Se $f$ è continua in $(x_0, y_0) \in \mathbb{R}^2$ e $f(x_0, y_0) > 0$, allora esiste $\delta>0$ tale che $fx,y) > 0$ per ogni $(x,y) \in B_\delta(x_0,y_0)$.
-\end{itemize}
-\rule{\textwidth}{2pt}
 \subsection{Derivate parziali, piano tangente, differenziale}
-\rule{\textwidth}{0.4pt}
 \subsubsection{Derivata parziale}
 Calcolo di una derivata parziale tramite la definizione di rapporto incrementale in un punto $(x_0, y_0)$. \newline
 Per prima cosa fissiamo $y=y_0$ e deriviamo rispetto alla $x$:
