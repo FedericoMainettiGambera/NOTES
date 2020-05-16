@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex master.idx"] 1589482984 "master.idx" "master.ind" "master" 1589558734
-  "master.idx" 1589558722 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1589593148 "master.idx" "master.ind" "master" 1589593309
+  "master.idx" 1589593300 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ilg"
   "master.ind"
-["pdflatex"] 1589558714 "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" "master" 1589558734
+["pdflatex"] 1589593297 "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" "master" 1589593309
   "../../preamble/preamble.tex" 1587603066 707 ea9409653390c911ff58e23c44f6605e ""
   "../0-ripasso/asintotici.PNG" 1589131226 81145 cd68750df7e46980af23b001d340d336 ""
   "../0-ripasso/derivate1.PNG" 1589131226 40267 a3e54c2c8c0abdc16f892ff59f355518 ""
@@ -14,7 +14,7 @@
   "../0-ripasso/trigonometria.PNG" 1589131226 98258 fc51c11679d5f6debea88629e6338e76 ""
   "../1-serie (analisi I)/serie (analisi I).tex" 1589130934 5883 fab145300532b9b668b2f7b9460af79e ""
   "../2-serie (analisi II)/serie (analisi II).tex" 1589301974 24867 c451387fb06de86119740ee33cc90c02 ""
-  "../3-curve/curve.tex" 1589558703 25745 651c59be10df0d27a36d5f5daa802063 ""
+  "../3-curve/curve.tex" 1589593293 26972 4f278446e6a701cdd317211bdd651141 ""
   "../capitolo0/capitolo0b.tex" 1589070772 25120 6caa29e272c91271d7b67ca51b7818e6 ""
   "../capitolo1/capitolo1.tex" 1589070850 25282 11978a6dfb753862d9fb65f986693fe9 ""
   "../capitolo3/capitolo3.tex" 1589070797 47734 a656c1f415e8110175887621dfc22c26 ""
@@ -25,7 +25,7 @@
   "../img/eqdiff2(1).png" 1584032199 338207 baa06ca27852220832d359b977f3ef1c ""
   "../img/eqdiff2.PNG" 1584032199 300959 9e520b0f43eb5104df2c0d17c5a82ab6 ""
   "../img/eqdiff2.png" 1584032199 300959 9e520b0f43eb5104df2c0d17c5a82ab6 ""
-  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.aux" 1589558732 26157 5df3881ae77f652b30314c23ad5c6c32 ""
+  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.aux" 1589593308 26491 1aea9f98b23c3dba1d1f690513032cbd ""
   "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" 1589337170 1300 d777c27335fc223a3ab1293642b1b0b7 ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1584035588 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1584038501 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -207,17 +207,17 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1584048551 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1584049042 8274593 951864db8bcab083c09dd09dcef78fa9 ""
   "c:/texlive/2019/texmf.cnf" 1584048406 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1589558732 26157 5df3881ae77f652b30314c23ad5c6c32 "pdflatex"
-  "master.ind" 1589482985 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1589558732 15352 f1c49767c14377cf74f011a4995c283e "pdflatex"
+  "master.aux" 1589593308 26491 1aea9f98b23c3dba1d1f690513032cbd "pdflatex"
+  "master.ind" 1589593150 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
+  "master.out" 1589593308 15570 5f465e52008deddceea722267fcd2d9d "pdflatex"
   "master.tex" 1589337170 1300 d777c27335fc223a3ab1293642b1b0b7 ""
-  "master.toc" 1589558732 18413 96b2c201fc0c9c92f8572e2f5784b29b "pdflatex"
+  "master.toc" 1589593308 18665 a7cfccf697aea2d2928f0c6937db3f64 "pdflatex"
   (generated)
-  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf"
-  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.log"
-  "master.idx"
   "master.log"
   "master.toc"
   "master.pdf"
-  "master.out"
+  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf"
   "master.aux"
+  "master.out"
+  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.log"
+  "master.idx"

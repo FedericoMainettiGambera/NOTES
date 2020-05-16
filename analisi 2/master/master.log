@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  15 MAY 2020 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  16 MAY 2020 03:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,7 +605,7 @@ Overfull \hbox (53.64177pt too wide) detected at line 51
 \OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 SettSh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )) = []    \OML/cmm/m/it/10 ottenuta da \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = []] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 SettSh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )]
  []
 
-<../0-ripasso/trigonometria.PNG, id=897, 510.40688pt x 484.05844pt>
+<../0-ripasso/trigonometria.PNG, id=907, 510.40688pt x 484.05844pt>
 File: ../0-ripasso/trigonometria.PNG Graphic file (type png)
 <use ../0-ripasso/trigonometria.PNG>
 Package pdftex.def Info: ../0-ripasso/trigonometria.PNG  used on input line 89.
@@ -614,25 +614,25 @@ Package pdftex.def Info: ../0-ripasso/trigonometria.PNG  used on input line 89.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5]
-<../0-ripasso/asintotici.PNG, id=904, 809.27344pt x 296.60812pt>
+<../0-ripasso/asintotici.PNG, id=914, 809.27344pt x 296.60812pt>
 File: ../0-ripasso/asintotici.PNG Graphic file (type png)
 <use ../0-ripasso/asintotici.PNG>
 Package pdftex.def Info: ../0-ripasso/asintotici.PNG  used on input line 94.
 (pdftex.def)             Requested size: 423.94608pt x 155.38214pt.
  [6 <../0-ripasso/trigonometria.PNG> <../0-ripasso/asintotici.PNG>]
-<../0-ripasso/derivate1.PNG, id=911, 533.74406pt x 697.10437pt>
+<../0-ripasso/derivate1.PNG, id=921, 533.74406pt x 697.10437pt>
 File: ../0-ripasso/derivate1.PNG Graphic file (type png)
 <use ../0-ripasso/derivate1.PNG>
 Package pdftex.def Info: ../0-ripasso/derivate1.PNG  used on input line 99.
 (pdftex.def)             Requested size: 423.94608pt x 553.71667pt.
  [7 <../0-ripasso/derivate1.PNG>]
-<../0-ripasso/derivate2.PNG, id=918, 531.48563pt x 360.59718pt>
+<../0-ripasso/derivate2.PNG, id=928, 531.48563pt x 360.59718pt>
 File: ../0-ripasso/derivate2.PNG Graphic file (type png)
 <use ../0-ripasso/derivate2.PNG>
 Package pdftex.def Info: ../0-ripasso/derivate2.PNG  used on input line 103.
 (pdftex.def)             Requested size: 423.94608pt x 287.64178pt.
  [8 <../0-ripasso/derivate2.PNG>]
-<../0-ripasso/mclaurin.PNG, id=924, 499.8675pt x 648.92438pt>
+<../0-ripasso/mclaurin.PNG, id=934, 499.8675pt x 648.92438pt>
 File: ../0-ripasso/mclaurin.PNG Graphic file (type png)
 <use ../0-ripasso/mclaurin.PNG>
 Package pdftex.def Info: ../0-ripasso/mclaurin.PNG  used on input line 108.
@@ -1034,67 +1034,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--164
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 166--171
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--306
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--306
+Underfull \hbox (badness 10000) in paragraph at lines 303--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--309
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 317--321
+Underfull \hbox (badness 10000) in paragraph at lines 320--324
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--333
+Underfull \hbox (badness 10000) in paragraph at lines 330--336
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 393--397
+Underfull \hbox (badness 10000) in paragraph at lines 396--400
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 425--429
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 441.
+(hyperref)                removing `math shift' on input line 444.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 441.
+(hyperref)                removing `math shift' on input line 444.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 441.
+(hyperref)                removing `math shift' on input line 444.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 441.
+(hyperref)                removing `subscript' on input line 444.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 441.
+(hyperref)                removing `math shift' on input line 444.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--454
+Underfull \hbox (badness 10000) in paragraph at lines 445--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--468
+Underfull \hbox (badness 10000) in paragraph at lines 467--471
 
  []
 
@@ -1809,12 +1814,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 359--361
  []
 
 [81]
-<../img/eqdiff2.PNG, id=1252, 686.565pt x 484.05844pt>
+<../img/eqdiff2.PNG, id=1262, 686.565pt x 484.05844pt>
 File: ../img/eqdiff2.PNG Graphic file (type png)
 <use ../img/eqdiff2.PNG>
 Package pdftex.def Info: ../img/eqdiff2.PNG  used on input line 437.
 (pdftex.def)             Requested size: 355.92633pt x 250.93842pt.
-<../img/eqdiff2(1).PNG, id=1253, 688.82344pt x 467.49657pt>
+<../img/eqdiff2(1).PNG, id=1263, 688.82344pt x 467.49657pt>
 File: ../img/eqdiff2(1).PNG Graphic file (type png)
 <use ../img/eqdiff2(1).PNG>
 Package pdftex.def Info: ../img/eqdiff2(1).PNG  used on input line 440.
@@ -1896,21 +1901,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: F1C49767C14377CF74F011A4995C283E;15352.
+(rerunfilecheck)             Checksum: 5F465E52008DEDDCEEA722267FCD2D9D;15570.
  ) 
 Here is how much of TeX's memory you used:
- 18801 strings out of 480994
- 344046 string characters out of 5916032
- 607714 words of memory out of 5000000
- 33594 multiletter control sequences out of 15000+600000
+ 18805 strings out of 480994
+ 344130 string characters out of 5916032
+ 607713 words of memory out of 5000000
+ 33596 multiletter control sequences out of 15000+600000
  543275 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,13n,77p,1013b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" (85 pages, 1405864 bytes).
+Output written on "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" (85 pages, 1407450 bytes).
 PDF statistics:
- 1399 PDF objects out of 1440 (max. 8388607)
- 1267 compressed objects within 13 object streams
- 268 named destinations out of 1000 (max. 500000)
- 1416 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1409 PDF objects out of 1440 (max. 8388607)
+ 1277 compressed objects within 13 object streams
+ 270 named destinations out of 1000 (max. 500000)
+ 1432 words of extra memory for PDF output out of 10000 (max. 10000000)
 

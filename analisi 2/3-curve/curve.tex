@@ -166,8 +166,10 @@ Si dice \textbf{integrale di linea (di prima specie)} di $f$ lungo $\gamma$ l'in
 \]
 Lintegrale di $f$ di prima specie lungo $\gamma$ è \textbf{invariante} per \textbf{parametrizzazioni equivalenti} e anche per \textbf{cambiamento di orientazione}.\newline
 \newline
-Osserviamo che se $f = 1$ (soffitto di altezza costatne), ritroviamo la lunghezza di una linea.
+Osserviamo che se $f = 1$ (soffitto di altezza costatne), ritroviamo la lunghezza di una linea.\newline
+\newline
 \textbf{Applicazioni fisiche}:
+
 \begin{itemize}
     \item Il \textbf{baricentro} di $\gamma$ è il punto $B = (\bar{x},\bar{y},\bar{z})$ con:
     \[
@@ -177,6 +179,7 @@ Osserviamo che se $f = 1$ (soffitto di altezza costatne), ritroviamo la lunghezz
             \bar{z} = \frac{1}{m}\int_\gamma z\rho ds = \frac{1}{m}\int_{a}^{b}z(t)\rho(\vec{r}(t))|\vec{r}'(t)|dt
         \end{cases}
     \]
+    dove $\rho$ è la densità lineare e $m$ è la massa (calcolabile come $\int_{\gamma}\rho ds$).\newline
     Se il corpo è \textbf{omogeneo} ($\rho =$ costante), il baricentro si dice \textbf{centroide} e ha coordinate:
     \[
         \begin{cases}
@@ -490,3 +493,15 @@ L'ellisse parametrizzata è spesso:
         y = b \cdot  sin \alpha
     \end{cases}
 \]
+\subsubsection{Interpretazione geometrica degli integrali di prima specie}
+Data una linea $\gamma$ nel piano $(x,y)$ e data una funzione $z = f(x,y)$ (una superficie) definita e non negativa in corrispondenza dei punti di $\gamma$, l'integrale
+\[
+    \int_{\gamma} f(x,y) ds 
+\]
+può essere visto come l'area della superficie verticale compresa tra la linea $\gamma$ nel piano $(x,y)$ e la superficie $z = f(x,y)$
+\subsubsection{Integrali di linea di seconda specie}
+Come per gli integrali di prima specie, anche per gli integrali di seconda specie le variabiliche compaiono  nell'integrale vengono trasformate nel parametro della linea $\gamma$; mentre nel caso degli integrali di prima specie $ds$ diventava $|\vec{r}'(t)|dt$, ora negli integrali compaiono i termini $dx, dy, dz$ che diventano rispettivamente
+\[
+    dx = x'(t) dt \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;dy = y'(t) dt \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;dz = z'(t) dt
+\]
+Da notare è che negli integrali di seconda specie, siccome le variabili di integrazione sono $x,y,z$, il risultato è legatoal verso di percorrenza della linea.
