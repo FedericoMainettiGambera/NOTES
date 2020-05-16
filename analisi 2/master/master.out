@@ -50,67 +50,67 @@
 \BOOKMARK [3][-]{subsubsection.4.4.9}{Equazione dell'ellisse}{subsection.4.4}% 50
 \BOOKMARK [3][-]{subsubsection.4.4.10}{Interpretazione geometrica degli integrali di prima specie}{subsection.4.4}% 51
 \BOOKMARK [3][-]{subsubsection.4.4.11}{Integrali di linea di seconda specie}{subsection.4.4}% 52
-\BOOKMARK [1][-]{section.5}{Integrali}{}% 53
-\BOOKMARK [2][-]{subsection.5.1}{Teorema fondamentale del calcolo integrale:}{section.5}% 54
-\BOOKMARK [2][-]{subsection.5.2}{Propriet\340 degli integrali:}{section.5}% 55
-\BOOKMARK [2][-]{subsection.5.3}{Integrali fondamentali:}{section.5}% 56
-\BOOKMARK [2][-]{subsection.5.4}{Integrali notevoli:}{section.5}% 57
-\BOOKMARK [2][-]{subsection.5.5}{Integrali riconducibili:}{section.5}% 58
-\BOOKMARK [2][-]{subsection.5.6}{Integrazione per sostituzione:}{section.5}% 59
-\BOOKMARK [2][-]{subsection.5.7}{Integrazione delle funzioni razionali:}{section.5}% 60
-\BOOKMARK [2][-]{subsection.5.8}{Funzioni razionali di ex}{section.5}% 61
-\BOOKMARK [2][-]{subsection.5.9}{Integrazione per parti:}{section.5}% 62
-\BOOKMARK [2][-]{subsection.5.10}{integrazione delle funzioni trigonometriche}{section.5}% 63
-\BOOKMARK [2][-]{subsection.5.11}{Integrazione delle funzioni irrazzionali}{section.5}% 64
-\BOOKMARK [2][-]{subsection.5.12}{Simmetrie e valori assoluti nel calcolo di integrali definiti}{section.5}% 65
-\BOOKMARK [2][-]{subsection.5.13}{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}{section.5}% 66
-\BOOKMARK [2][-]{subsection.5.14}{INTEGRALI GENERALIZZATI}{section.5}% 67
-\BOOKMARK [2][-]{subsection.5.15}{Integrazione di funzioni non limitate}{section.5}% 68
-\BOOKMARK [2][-]{subsection.5.16}{Criteri di integrabilit\340 al finito}{section.5}% 69
-\BOOKMARK [2][-]{subsection.5.17}{Integrazione su intervalli illimitati}{section.5}% 70
-\BOOKMARK [2][-]{subsection.5.18}{Criteri di integrabilit\340 all'infinito}{section.5}% 71
-\BOOKMARK [2][-]{subsection.5.19}{Osservazione. Ordine di annullamento di una funzione derivabile.}{section.5}% 72
-\BOOKMARK [2][-]{subsection.5.20}{Integrali generalizzati notevoli}{section.5}% 73
-\BOOKMARK [2][-]{subsection.5.21}{FUNZIONI INTEGRALI}{section.5}% 74
-\BOOKMARK [1][-]{section.6}{Calcolo differenziale per funzioni reali di pi\371 variabili}{}% 75
-\BOOKMARK [2][-]{subsection.6.1}{Continuit\340 di una funzione in pi\371 variabili:}{section.6}% 76
-\BOOKMARK [2][-]{subsection.6.2}{Calcolo di limiti in pi\371 variabili}{section.6}% 77
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Non esistenza del limite}{subsection.6.2}% 78
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Uso di maggiorazioni con funzioni radiali per provare l'esistenza del limite}{subsection.6.2}% 79
-\BOOKMARK [3][-]{subsubsection.6.2.3}{Note sugli esercizi}{subsection.6.2}% 80
-\BOOKMARK [2][-]{subsection.6.3}{Topologia in Rn e propriet\340 delle funzioni continue}{section.6}% 81
-\BOOKMARK [2][-]{subsection.6.4}{Derivate parziali, piano tangente, differenziale}{section.6}% 82
-\BOOKMARK [3][-]{subsubsection.6.4.1}{Derivata parziale}{subsection.6.4}% 83
-\BOOKMARK [3][-]{subsubsection.6.4.2}{Calcolo delle derivate}{subsection.6.4}% 84
-\BOOKMARK [3][-]{subsubsection.6.4.3}{Piano tangente}{subsection.6.4}% 85
-\BOOKMARK [3][-]{subsubsection.6.4.4}{Differenziabilit\340 e approssimazione lineare}{subsection.6.4}% 86
-\BOOKMARK [3][-]{subsubsection.6.4.5}{Verifica della differenziabilit\340}{subsection.6.4}% 87
-\BOOKMARK [3][-]{subsubsection.6.4.6}{Derivate direzionali}{subsection.6.4}% 88
-\BOOKMARK [3][-]{subsubsection.6.4.7}{Riepilogo}{subsection.6.4}% 89
-\BOOKMARK [3][-]{subsubsection.6.4.8}{Gradiente di una funzione radiale}{subsection.6.4}% 90
-\BOOKMARK [3][-]{subsubsection.6.4.9}{Criterio di continuit\340 e differenziabilit\340 per funzioni radiali}{subsection.6.4}% 91
-\BOOKMARK [3][-]{subsubsection.6.4.10}{Funzioni omogenee}{subsection.6.4}% 92
-\BOOKMARK [3][-]{subsubsection.6.4.11}{Equazione del trasporto}{subsection.6.4}% 93
-\BOOKMARK [2][-]{subsection.6.5}{Derivate di ordine superiore e approssimazioni successive}{section.6}% 94
-\BOOKMARK [3][-]{subsubsection.6.5.1}{Derivate di ordine superiore}{subsection.6.5}% 95
-\BOOKMARK [2][-]{subsection.6.6}{Differenziale secondo, matrice hessiana, formula di Taylor al secondo ordine}{section.6}% 96
-\BOOKMARK [2][-]{subsection.6.7}{Ottimizzazione, estremi liberi}{section.6}% 97
-\BOOKMARK [3][-]{subsubsection.6.7.1}{Generalit\340 sui problemi di ottimizzazione}{subsection.6.7}% 98
-\BOOKMARK [3][-]{subsubsection.6.7.2}{Estremi liberi, condizioni necessarie del prim'ordine}{subsection.6.7}% 99
-\BOOKMARK [3][-]{subsubsection.6.7.3}{Forme quadratiche, classificazione}{subsection.6.7}% 100
-\BOOKMARK [3][-]{subsubsection.6.7.4}{Forme quadratiche, test degli autovalori}{subsection.6.7}% 101
-\BOOKMARK [3][-]{subsubsection.6.7.5}{Studio della natura dei punti critici}{subsection.6.7}% 102
-\BOOKMARK [2][-]{subsection.6.8}{Ottimizzazione. Estremi vincolanti}{section.6}% 103
-\BOOKMARK [3][-]{subsubsection.6.8.1}{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}{subsection.6.8}% 104
-\BOOKMARK [3][-]{subsubsection.6.8.2}{Moltiplicatore di Lagrange. Il caso generale}{subsection.6.8}% 105
-\BOOKMARK [3][-]{subsubsection.6.8.3}{Metodo dei moltiplicatori di Lagrange \(dal libro di Gazzola\)}{subsection.6.8}% 106
-\BOOKMARK [3][-]{subsubsection.6.8.4}{Il metodo delle restrizioni}{subsection.6.8}% 107
-\BOOKMARK [2][-]{subsection.6.9}{Funzioni convesse di n variabili}{section.6}% 108
-\BOOKMARK [3][-]{subsubsection.6.9.1}{Generalit\340 sulle funzioni convesse}{subsection.6.9}% 109
-\BOOKMARK [3][-]{subsubsection.6.9.2}{Ottimizzazione di funzioni convesse e concave}{subsection.6.9}% 110
-\BOOKMARK [2][-]{subsection.6.10}{Funzioni definite implicitamente}{section.6}% 111
-\BOOKMARK [3][-]{subsubsection.6.10.1}{Funzione implicita di una variabile}{subsection.6.10}% 112
-\BOOKMARK [3][-]{subsubsection.6.10.2}{Note sugli esercizi}{subsection.6.10}% 113
+\BOOKMARK [1][-]{section.5}{Funzioni Rn R \("Calcolo differenziale per funzioni reali di pi\371 variabili", "Funzioni reali di pi\371 variabili"\)}{}% 53
+\BOOKMARK [2][-]{subsection.5.1}{Continuit\340 di una funzione in pi\371 variabili:}{section.5}% 54
+\BOOKMARK [2][-]{subsection.5.2}{Calcolo di limiti in pi\371 variabili}{section.5}% 55
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Non esistenza del limite}{subsection.5.2}% 56
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Uso di maggiorazioni con funzioni radiali per provare l'esistenza del limite}{subsection.5.2}% 57
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Note sugli esercizi}{subsection.5.2}% 58
+\BOOKMARK [2][-]{subsection.5.3}{Topologia in Rn e propriet\340 delle funzioni continue}{section.5}% 59
+\BOOKMARK [2][-]{subsection.5.4}{Derivate parziali, piano tangente, differenziale}{section.5}% 60
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Derivata parziale}{subsection.5.4}% 61
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Calcolo delle derivate}{subsection.5.4}% 62
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Piano tangente}{subsection.5.4}% 63
+\BOOKMARK [3][-]{subsubsection.5.4.4}{Differenziabilit\340 e approssimazione lineare}{subsection.5.4}% 64
+\BOOKMARK [3][-]{subsubsection.5.4.5}{Verifica della differenziabilit\340}{subsection.5.4}% 65
+\BOOKMARK [3][-]{subsubsection.5.4.6}{Derivate direzionali}{subsection.5.4}% 66
+\BOOKMARK [3][-]{subsubsection.5.4.7}{Riepilogo}{subsection.5.4}% 67
+\BOOKMARK [3][-]{subsubsection.5.4.8}{Gradiente di una funzione radiale}{subsection.5.4}% 68
+\BOOKMARK [3][-]{subsubsection.5.4.9}{Criterio di continuit\340 e differenziabilit\340 per funzioni radiali}{subsection.5.4}% 69
+\BOOKMARK [3][-]{subsubsection.5.4.10}{Funzioni omogenee}{subsection.5.4}% 70
+\BOOKMARK [3][-]{subsubsection.5.4.11}{Equazione del trasporto}{subsection.5.4}% 71
+\BOOKMARK [2][-]{subsection.5.5}{Derivate di ordine superiore e approssimazioni successive}{section.5}% 72
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Derivate di ordine superiore}{subsection.5.5}% 73
+\BOOKMARK [2][-]{subsection.5.6}{Differenziale secondo, matrice hessiana, formula di Taylor al secondo ordine}{section.5}% 74
+\BOOKMARK [2][-]{subsection.5.7}{Ottimizzazione, estremi liberi}{section.5}% 75
+\BOOKMARK [3][-]{subsubsection.5.7.1}{Generalit\340 sui problemi di ottimizzazione}{subsection.5.7}% 76
+\BOOKMARK [3][-]{subsubsection.5.7.2}{Estremi liberi, condizioni necessarie del prim'ordine}{subsection.5.7}% 77
+\BOOKMARK [3][-]{subsubsection.5.7.3}{Forme quadratiche, classificazione}{subsection.5.7}% 78
+\BOOKMARK [3][-]{subsubsection.5.7.4}{Forme quadratiche, test degli autovalori}{subsection.5.7}% 79
+\BOOKMARK [3][-]{subsubsection.5.7.5}{Studio della natura dei punti critici}{subsection.5.7}% 80
+\BOOKMARK [2][-]{subsection.5.8}{Ottimizzazione. Estremi vincolanti}{section.5}% 81
+\BOOKMARK [3][-]{subsubsection.5.8.1}{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}{subsection.5.8}% 82
+\BOOKMARK [3][-]{subsubsection.5.8.2}{Moltiplicatore di Lagrange. Il caso generale}{subsection.5.8}% 83
+\BOOKMARK [3][-]{subsubsection.5.8.3}{Metodo dei moltiplicatori di Lagrange \(dal libro di Gazzola\)}{subsection.5.8}% 84
+\BOOKMARK [3][-]{subsubsection.5.8.4}{Il metodo delle restrizioni}{subsection.5.8}% 85
+\BOOKMARK [2][-]{subsection.5.9}{Funzioni convesse di n variabili}{section.5}% 86
+\BOOKMARK [3][-]{subsubsection.5.9.1}{Generalit\340 sulle funzioni convesse}{subsection.5.9}% 87
+\BOOKMARK [3][-]{subsubsection.5.9.2}{Ottimizzazione di funzioni convesse e concave}{subsection.5.9}% 88
+\BOOKMARK [2][-]{subsection.5.10}{Funzioni definite implicitamente}{section.5}% 89
+\BOOKMARK [3][-]{subsubsection.5.10.1}{Funzione implicita di una variabile}{subsection.5.10}% 90
+\BOOKMARK [3][-]{subsubsection.5.10.2}{Note sugli esercizi}{subsection.5.10}% 91
+\BOOKMARK [1][-]{section.6}{Integrali}{}% 92
+\BOOKMARK [2][-]{subsection.6.1}{Teorema fondamentale del calcolo integrale:}{section.6}% 93
+\BOOKMARK [2][-]{subsection.6.2}{Propriet\340 degli integrali:}{section.6}% 94
+\BOOKMARK [2][-]{subsection.6.3}{Integrali fondamentali:}{section.6}% 95
+\BOOKMARK [2][-]{subsection.6.4}{Integrali notevoli:}{section.6}% 96
+\BOOKMARK [2][-]{subsection.6.5}{Integrali riconducibili:}{section.6}% 97
+\BOOKMARK [2][-]{subsection.6.6}{Integrazione per sostituzione:}{section.6}% 98
+\BOOKMARK [2][-]{subsection.6.7}{Integrazione delle funzioni razionali:}{section.6}% 99
+\BOOKMARK [2][-]{subsection.6.8}{Funzioni razionali di ex}{section.6}% 100
+\BOOKMARK [2][-]{subsection.6.9}{Integrazione per parti:}{section.6}% 101
+\BOOKMARK [2][-]{subsection.6.10}{integrazione delle funzioni trigonometriche}{section.6}% 102
+\BOOKMARK [2][-]{subsection.6.11}{Integrazione delle funzioni irrazzionali}{section.6}% 103
+\BOOKMARK [2][-]{subsection.6.12}{Simmetrie e valori assoluti nel calcolo di integrali definiti}{section.6}% 104
+\BOOKMARK [2][-]{subsection.6.13}{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}{section.6}% 105
+\BOOKMARK [2][-]{subsection.6.14}{INTEGRALI GENERALIZZATI}{section.6}% 106
+\BOOKMARK [2][-]{subsection.6.15}{Integrazione di funzioni non limitate}{section.6}% 107
+\BOOKMARK [2][-]{subsection.6.16}{Criteri di integrabilit\340 al finito}{section.6}% 108
+\BOOKMARK [2][-]{subsection.6.17}{Integrazione su intervalli illimitati}{section.6}% 109
+\BOOKMARK [2][-]{subsection.6.18}{Criteri di integrabilit\340 all'infinito}{section.6}% 110
+\BOOKMARK [2][-]{subsection.6.19}{Osservazione. Ordine di annullamento di una funzione derivabile.}{section.6}% 111
+\BOOKMARK [2][-]{subsection.6.20}{Integrali generalizzati notevoli}{section.6}% 112
+\BOOKMARK [2][-]{subsection.6.21}{FUNZIONI INTEGRALI}{section.6}% 113
 \BOOKMARK [1][-]{section.7}{Calcolo integrale per funzioni di pi\371 variabili}{}% 114
 \BOOKMARK [2][-]{subsection.7.1}{Integrali doppi}{section.7}% 115
 \BOOKMARK [3][-]{subsubsection.7.1.1}{Integrale su una regione semplice}{subsection.7.1}% 116
