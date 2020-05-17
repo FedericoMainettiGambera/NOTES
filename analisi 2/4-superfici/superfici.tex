@@ -47,7 +47,7 @@ Un \textbf{insieme} si dice:
 \ \newline
 Estremi:\newline
 Sia $\Omega \subset \mathbb{R}^n$ e sia $f_\Omega \rightarrow \mathbb{R}$. Diremo che $(\bar{x}, \bar{y}) \in \Omega$ è un punto di \textbf{massimo relativo} per $f$ se esiste $r > 0$ tale che $f(x,y) \leq f(\bar{x},\bar{y})$ per ogni $(x,y) \in B_r(\bar{x},\bar{y}) \cap \Omega$; Diremo che $(\bar{x},\bar{y}) \in \Omega$ è un punto di \textbf{minimo relativo} per $f$ se vale la disuguaglianza opposta. Diremo che $(\bar{x},\bar{y}) \in \Omega$ è punto di \textbf{massimo assoluto} per $f$ se $f(x,y)\leq f(\bar{x},\bar{y})$ per ogni $(x,y) \in \Omega$; diremo che $(\bar{x},\bar{y}) \in \Omega$ è punto di \textbf{minimo assoluto} per $f$ se vale la disuguaglianza opposta.
-\subsection{Calcolo di limiti in più variabili}
+\subsection{Calcolo di limiti di funzioni in più variabili}
 Sia $l \in \mathbb{R}$, diremo che
 \[
     \lim_{(x,y) \rightarrow (x_0,y_0)} f(x,y) = l
@@ -98,7 +98,7 @@ Più in generale se si volesse calcolare il limite per $(x,y) \rightarrow (x_0, 
     \item Il criterio che ci permette di trovare il limite richiede di trovare una funzione maggiorante di $|f|$ che sia radiale (dipenda solo da $\rho$, non $\theta$) e infinitesima. Da notare è che è possibile semplificare la funzione anche senza passare subito in coordinate polari.
     \item Solitamente si suddivide la funzione in una serie di somme di funzioni e si studiano quest'ultime separatamente.
 \end{itemize}
-\subsection{Continuità di una funzione in più variabili}
+\subsection{Continuità di funzioni in più variabili}
 Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow  \mathbb{R}$ è \textbf{continua} in un punto $x_0$ se 
 \[
     \lim_{(x,y)\rightarrow (x_0,y_0)} f(x,y) = f(x_0,y_0)
@@ -115,32 +115,30 @@ Proprietà delle funzioni continue:
     \item \textbf{Teorema degli zeri}. Sia $E$ un insieme connesso di $\mathbb{R}^n$ e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua. Se $x$, $y$ sono due punti di $E$ tali che $ f(x) < 0$ e $f(y) > 0$, allora esiste un terzo punto $z \in E$ in cui $f$ si annulla. In particolare, lungo ogni arco di curva continua contenuto in $E$ che congiunge $x$ e $y$, c'è almeno un punto in cui $f$ si annulla.
     \item \textbf{Teorema di permanenza del segno}. Se $f$ è continua in $(x_0, y_0) \in \mathbb{R}^2$ e $f(x_0, y_0) > 0$, allora esiste $\delta>0$ tale che $fx,y) > 0$ per ogni $(x,y) \in B_\delta(x_0,y_0)$.
 \end{itemize}
-\subsection{Derivate parziali, piano tangente, differenziale}
-\subsubsection{Derivata parziale}
-Calcolo di una derivata parziale tramite la definizione di rapporto incrementale in un punto $(x_0, y_0)$. \newline
-Per prima cosa fissiamo $y=y_0$ e deriviamo rispetto alla $x$:
+\subsection{Calcolo differenziale di funzioni in più variabili}
+\subsubsection{Derivate parziali}
+Una funzione $f:\mathbb{R}^2 \rightarrow \mathbb{R}$ si dice \textbf{derivabile} in $(x_0,y_0) \in \mathbb{R}^2$ se esistono finiti i due limiti
 \[
-    \frac{\delta f}{\delta x} (x_0,y_0) = \lim_{h\rightarrow 0}\frac{f(x_0+h, y_0)- f(x_0,y_0)}{h}.
+    f_x(x_0,y_0) = \lim_{x\rightarrow x_0} \frac{f(x,y_0)- f(x_0,y_0)}{x-x_0}
 \]
-Successivamente facciamo l'opposto, cioè fissiamo $x=x_0$ e deriviamo rispetto alla $y$:
 \[
-    \frac{\delta f}{\delta y} (x_0,y_0) = \lim_{k\rightarrow 0}\frac{f(x_0, y_0+k)- f(x_0,y_0)}{k}
+    f_y(x_0,y_0) = \lim_{y\rightarrow y_0} \frac{f(x_0,y) - f(x_0,y_0)}{y-y_0}
 \]
-\begin{tcolorbox}
-Molto spesso, per calcolare una derivata parziale si può evitare di usare la definizione: per derivare rispetto a $x$ basta considerare $y$ come una costante e derivare la funzione come se fosse della sola variabile $x$.
-\end{tcolorbox}
+in tal caso, i numeri $f_x(x_0,y_0)$ e $f_y(x_0,y_0)$ si chiamato \textbf{derivate parziali} di $f$ in $(x_0,y_0)$.
+\newline
+\newline
 Geometricamente, le derivate parziali rappresentano le pendenze che si hanno sul fianco della montagna quando si prendono le direzioni degli assi orientati.\newline
-\begin{tcolorbox}
-Una funzione $f: A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}$ si dice derivabile in un punto del suo dominio se in quel punto esistono tutte le sue derivate parziali; si dice derivabile in $A$ se è derivabile in ogni punto di $A$.
-\end{tcolorbox}
-\begin{tcolorbox}
-Se $f$ è derivabile in un punto, chiameremo \textbf{gradiente} ( $\nabla f(x)$ ) il vettore delle sue derivate parziali.
-\end{tcolorbox}
-\begin{tcolorbox}
-    \textbf{Derivabilità non implica continuità}
-\end{tcolorbox}
-\rule{\textwidth}{0.4pt}
-\subsubsection{Calcolo delle derivate}
+\newline
+Una funzione $f: A \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}$ si dice \textbf{derivabile} in un punto del suo dominio se in quel punto \textbf{esistono tutte le sue derivate parziali}; si dice derivabile in $A$ se è derivabile in ogni punto di $A$.
+\newline
+\newline
+Se le derivate parziali, oltre ad esistere, sono continue nel punto $(x_0, y_0)$, diremo che la funzione $f$ è di classe $C^1$ in tale punto.\newline
+\newline
+Se $f$ è derivabile in un punto, chiameremo \textbf{gradiente} ( $\nabla f(x)$ ) il vettore delle sue derivate parziali.\newline
+\newline
+Diversamente dal caso $n=1$, in $n=2$ la \textbf{derivabilità non implica continuità}.\newline
+\newline
+\textbf{Proprietà per il calcolo delle derivate}:
 \[
     \delta(\alpha \cdot f + \beta \cdot g) = \alpha \delta(f) + \beta \delta (g)
 \]
@@ -148,34 +146,31 @@ Se $f$ è derivabile in un punto, chiameremo \textbf{gradiente} ( $\nabla f(x)$ 
     \delta(f \cdot  g) = g \cdot \delta(f) + f  \cdot \delta(g)
 \]
 \[
-    \delta(\frac{f}{g}) = \frac{ g \cdot \delta(f) - f \delta(g)}{g^2}
+    \delta\left(\frac{f}{g}\right) = \frac{ g \cdot \delta(f) - f \delta(g)}{g^2}
 \]
 \[
     h(x) = f(g(x)) = g \circ f \Rightarrow h'(x) = f'(g(x)) g'(x)
 \]
 \[
-    \frac{\delta}{\delta x} [|x|] = \frac{|x|}{x} 
+    \frac{\delta}{\delta x} |x| = \frac{|x|}{x} 
 \]
-
-\begin{tcolorbox}
-    Per calcolare il valore di una \textbf{derivata parziale in punto $(x_0, y_0)$ secondo la definizione}, seguire questo procedimento:\newline
-    Se si richiede di calcolare il valore della derivata parziale di $x$ ( cioè $\frac{\delta f}{\delta x}(x_0,y_0)$), si parte dalla funzione $f(x,y)$ e si sostituisce $y= y_0$, ottenendo quindi $f(x,y_0)$, successivamente si calcola la derivata parziale, ottenendo dunque $\frac{\delta f}{\delta x} (x,y_0)$. Come ultima cosa si sostituisce $x = x_0$ e si arriva a un risultato numerico. Per la trovare il valore della derivata parziale di $y$ in un preciso punto seguire lo stesso procedimento opposto.
-\end{tcolorbox}
-\begin{tcolorbox}
+\ \newline
+Molto spesso, per calcolare una derivata parziale si può evitare di usare la definizione: \textbf{per derivare rispetto a $x$ basta considerare $y$ come una costante e derivare la funzione come se fosse della sola variabile $x$ e viceversa.}\newline
+\newline
+Per il \textbf{calcolo di una derivata parziale in punto $(x_0, y_0)$ secondo la definizione}, seguire questo procedimento: se si richiede di calcolare il valore della derivata parziale di $x$ ( cioè $\frac{\delta f}{\delta x}(x_0,y_0)$), si parte dalla funzione $f(x,y)$ e si sostituisce $y= y_0$, ottenendo quindi $f(x,y_0)$, successivamente si calcola la derivata parziale, ottenendo dunque $\frac{\delta f}{\delta x} (x,y_0)$. Come ultima cosa si sostituisce $x = x_0$ e si arriva a un risultato numerico. Per la trovare il valore della derivata parziale di $y$ in un preciso punto seguire lo stesso procedimento opposto.\newline
+\newline
 In alcuni esercizi è richiesto di \textbf{calcolare le derivate parziali in tutti i punti in cui esistono}. Il procedimento tipico consiste nel calcolare per prima cosa le derivate parziali generiche. Una volta calcolate sapremo che sicuramente esistono dove queste sono definite (dominio), ma non siamo sicuri dei punti in cui non lo sono (al di fuori del dominio). Quindi dobbiamo analizzare singolarmente tutti i punti al di fuori del dominio e per farlo sfruttiamo il procedimento visto sopra ("derivata parziale in un punto secondo la definizione"), calcolando esplicitamente le derivate nei punti richiesti.
 Finchè si tratta per esempio di calcolarle per un punto preciso non ci sono problemi, il calcolo è facile, ma ci sono alcuni casi difficili, per esempio:
 \begin{itemize}
     \item Calcolare le derivate parziali secondo la definizione lungo una retta. Per esempio in $y=0$, per calcolare la $\frac{\delta f}{\delta x}(x_0, 0)$ non ci sono problemi, si procede come al solito. Ma per la $\frac{\delta f}{\delta y} (x_0, 0)$ ci sono difficoltà, siccome non possiamo sostituire le $y$ con $0$ e poi derivare per la $y$, dobbiamo ragionare così: la derivata non esiste a meno che non ci sia un valore che le $x$ possono assumere che annullino la funzione (per gli es che ho fatto fino ad ora sono solo al numeratore). Il concetto generale è che se non si trovano valori per $x_0$ tali che annullino la funzione e quindi ci permettano di calcolare la derivata parziale, si finisce per tornare a guardare la derivata parziale generica e quindi a non trovarla per quella retta. [spiegato davvero male, ma è un concetto strano].
 \end{itemize}
-\end{tcolorbox}
-
-\begin{tcolorbox}
+\ \newline
 Per \textbf{stabilire dove la funzione sia derivabile} bisogna calcolare le derivate parziali e osservarne il dominio.\newline
 (n.b. tipicamente negli esercizi le funzioni sono descritte da un sistema che contiene una funzione prolungata nell'origine, in questo caso bisogna calcolare le derivate parziali al di fuori dell'origine e studiarne il dominio, in seguito bisogna calcolare il valore della derivata parziale nel punto $(0,0)$ col metodo descritto precedentemente).
-\end{tcolorbox}
-\rule{\textwidth}{0.4pt}
-\subsubsection{Piano tangente}
-Costruire il piano tangente a una funzione in due variabili in un punto $(x_0, y_0)$:
+\subsubsection{Piano tangente a funzioni in due variabili}
+Il procedimento che mostriamo permette di individuare il piano tangente nell'ipotesi che esso esista, potrebbe però non esserci.\newline
+\newline
+Costruire il \textbf{piano tangente} a una funzione in due variabili in un punto $(x_0, y_0)$:
 \begin{enumerate}
     \item troviamo la retta tangente alla funzione nel piano $y=y_0$:
     \[
@@ -192,51 +187,42 @@ Costruire il piano tangente a una funzione in due variabili in un punto $(x_0, y
         \end{cases}
     \]
     \item costruiamo il piano che contiene entrambe le rette:
-    \begin{tcolorbox}
     \[
         z = f(x_0, y_0) + \frac{\delta f}{\delta x}(x_0, y_0) \cdot (x-x_0) + \frac{\delta f}{\delta x}(x_0, y_0) \cdot (y-y_0)
     \]
-    \end{tcolorbox}
 \end{enumerate}
-Il procedimento appena mostrato individua il piano tangente nell'ipotesi che esso esista, potrebbe però non esserci.\newline
-\rule{\textwidth}{0.4pt}
 \subsubsection{Differenziabilità e approssimazione lineare}
-\begin{tcolorbox}
-In due o più variabili la sola derivabilità non implica nè continuità nè l'esistenza del piano tangente.
-\end{tcolorbox}
+\textbf{In due o più variabili la sola derivabilità non implica nè continuità nè l'esistenza del piano tangente.}\newline
+\newline
 Concetto di differenziabilità in più variabili: l'incremento di $f$ è uguale all'incremento calcolato lungo il piano tangente, più un infinitesimo di ordine superiore rispetto alla lunghezza dell'incremento $(h,k)$ delle variabili indipendenti. In formule:
 \[
     f(x_0 + h, y_0 + k) - f(x_0, y_0) = \frac{\delta f}{\delta x} (x_0,y_0) \cdot (x-x_0) + \frac{\delta f}{\delta y}(x_0, y_0) \cdot (y-y_0) + o(\sqrt{h^2 + k^2})
 \]
 per $(h,k) \rightarrow  (0,0)$.\newline
 Tutto ciò che è prima dell'uguale (primo membro) rappresenta l'incremento della funzione, i primi due addendi del secondo membro rappresentano l'incremento calacolato lungo il pinao tangente. Ricordiamo che l'ultimo addendo rappresenta una funzione tale che $\lim_{(h,k)\rightarrow (0,0)}\frac{o(\sqrt{h^2 + k^2})}{\sqrt{h^2 + k^2}} = 0$.\newline
-Se l'equazione di prima è soddisfatta, diremo che la funzione è differenziabile in $(x_0, y_0)$.\newline
-
-\begin{tcolorbox}
-    Una funzione $f: \mathbb{R}^2 \rightarrow  \mathbb{R}$ si dice \textbf{differenziabile} in $(x_0, y_0)$ se è derivabile e se
-    \[
-        \lim_{(h,k)\rightarrow (0,0)} \frac{f(x_0 + h, y_0+k)-f(x_0,y_0) - h f_x(x_0, y_0) - k f_y(x_0,y_0)}{\sqrt{h^2 + k^2}} = 0
-    \]
-    (Ricordiamo che $h = x-x_0$ e $k = y-y_o$)
-\end{tcolorbox}
+Se l'equazione di prima è soddisfatta, diremo che la funzione è \textbf{differenziabile} in $(x_0, y_0)$.\newline
+\newline
+Una funzione $f: \mathbb{R}^2 \rightarrow  \mathbb{R}$ si dice \textbf{differenziabile} in $(x_0, y_0)$ se è derivabile e se
+\[
+    \lim_{(h,k)\rightarrow (0,0)} \frac{f(x_0 + h, y_0+k)-f(x_0,y_0) - h f_x(x_0, y_0) - k f_y(x_0,y_0)}{\sqrt{h^2 + k^2}} = 0
+\]
+(Ricordiamo che $h = x-x_0$ e $k = y-y_o$).\newline
+\newline
 Questa scrittura dice che "il grafico della superficie si allontana dal piano tangente con un ordine di infinitesimo superiore a quello della distanza dal punto".
 \newline
-\begin{tcolorbox}
 \[
-    f \;\text{differenziabile in $(x_0, y_0)$}\; \Rightarrow f \; \text{continua in $(x_0,y_0)$}\;
+    f \;\text{\textbf{differenziabile} in $(x_0, y_0)$}\; \Rightarrow f \; \text{\textbf{continua} in $(x_0,y_0)$}\;
 \]
-\end{tcolorbox}
-Da notare che la differenziabilità implica la derivabilità, cioè se una funzione è differenziabile in un punto, allora è anche derivabile nello stesso.\newline
-
-Se $f$ è differenziabile in $x_0$, si dice differenziale di $f$ calcolato in $x_0$ la funzione lineare $df(x_0) \;:\; \mathbb{R}^n \rightarrow  \mathbb{R}$ definita da:
+\ \newline
+Da notare che la \textbf{differenziabilità implica la derivabilità}, cioè se una funzione è differenziabile in un punto, allora è anche derivabile nello stesso.\newline
+\newline
+Se $f$ è differenziabile in $x_0$, si dice \textbf{differenziale} di $f$ calcolato in $x_0$ la funzione lineare $df(x_0) \;:\; \mathbb{R}^n \rightarrow  \mathbb{R}$ definita da:
 \[
     df(x_0) \;\;:\;\;h \rightarrow  \nabla f(x_0) \cdot h.
 \] 
 Nel caso in due varibiali, il numero $\nabla f(x_0) \cdot h$ rappresenta l'incremento della funzione nel passare da $x_0$ a $x_0+h$, calcolato lungo il piano tangente al grafico di $f$ in $x_0$.\newline
-\begin{tcolorbox}
-L'approssimazione dell'incremento di $f$ con il suo differenziale prende il nome di linearizzazione.
-\end{tcolorbox}
-\rule{\textwidth}{0.4pt}
+\newline
+L'approssimazione dell'incremento di $f$ con il suo differenziale prende il nome di \textbf{linearizzazione}.
 \subsubsection{Verifica della differenziabilità}
 Per dimostrare la differenziabilità in un punto $(x_0,y_0)$ bisogna provare che:
 \[
@@ -245,66 +231,57 @@ Per dimostrare la differenziabilità in un punto $(x_0,y_0)$ bisogna provare che
         \}}{\sqrt{h^2+k^2}} =0.
 \]
 dove $h = x-x_0$ e $k = y-y_0$.\newline
-Ma per certi casi particolari esistono criteri molto più comodi e semplici.
-
-\begin{tcolorbox}
-Teorema di condizione sufficiente di differenziabilità: se le derivate parziali di $f$ esistono in un intorno di $x_0$ e sono continue in $x_0$, allora $f$ è differenziabile in $x_0$.\newline
+\newline
+Ma per certi casi particolari esistono criteri molto più comodi e semplici.\newline
+\newline
+\textbf{Teorema di condizione sufficiente di differenziabilità}: se le derivate parziali di $f$ esistono in un intorno di $x_0$ e sono continue in $x_0$, allora $f$ è differenziabile in $x_0$.\newline
 In particolare se le derivate parziali esistono e sono continue in tutto $A$, allora $f$ è differenziabile in tutto $A$.\newline
-Una funzione le cui derivate parziali esistono e sono continue in tutto $A$ si dice di classe $C^1(A)$, dunque: $f \in C^1(A) \rightarrow$ f differenziabile in $A$.
-\end{tcolorbox}
-
+Una funzione le cui derivate parziali esistono e sono continue in tutto $A$ si dice di classe $C^1(A)$, \textbf{dunque}: $f \in C^1(A) \rightarrow$ f differenziabile in $A$.\newline
+\newline
 Negli esercizi spesso si usa anche l'omogeneità di una funzione per sapere se essa è differenziabile o continua, oppure le proprietà delle funzioni radiali.\newline
-
+\newline
 Negli esercizi seguire quest'ordine:
-\begin{tcolorbox}
-\begin{itemize}
+\begin{enumerate}
     \item E' continua nel punto richiesto? se non lo è, può essere allungata?
     \item Funzione radiale? (vedi più avanti)
     \item Funzione omogenea? (vedi più avanti)
     \item Calcolo delle derivate parziali nel punto. Sono continue in quel punto?
     \item Verifica della differenziabilità tramite la definizione.
-\end{itemize}
-\end{tcolorbox}
+\end{enumerate}
 \rule{\textwidth}{0.4pt}
 \subsubsection{Derivate direzionali}
-\begin{tcolorbox}
-Si dice derivata direzionale della funzione $f$ rispetto al versore $v$, nel punto $x_0$, il limite
+Si dice \textbf{derivata direzionale} della funzione $f$ rispetto al versore $v_\theta = \begin{cases}
+    cos(\theta)\\ sin(\theta)
+\end{cases}$, nel punto $(x_0,y_0)$, il limite
 \[
-    D_vf(x_0) = \lim_{t\rightarrow 0}\frac{f(x_0 + tv) - f(x_0)}{t}
+    \frac{\delta f}{\delta \theta}(x_0,y_0) = \lim_{t\rightarrow 0}\frac{f(x_0 + t cos(\theta), y_0 + t sin(v_\theta)) - f(x_0,y_0)}{t}
 \]
-purchè esista finito.
-\end{tcolorbox}
-Detto in maniera diversa signifca considerare la restrizione della funzione $f$ alla direzione della retta passante per $x_0$ con direzione $v$, cioè $g(t)= f(x_0+tv)$, e calcolarne la derivata, cioè $D_vf(x_0)= g'(0)$.\newline
-\begin{tcolorbox}
-Calcolo di una derivata direzionale per un generico vettore $(cos(\theta), sin(\theta))$ nell'origine di una funzione $f$: Per prima cosa si ottiene la funzione $g(t) = f(t \cdot cos(\theta), t \cdot sin(\theta))$ e la si semplifica per $t \rightarrow 0$ (anche usando asintotici). In seguito si studia la derivata $g'(0) = \frac{\delta f}{\delta t}(t \cdot cos(\theta), t \cdot sin(\theta))$.\newline
-Se è richiesto il calcolo in un punto generico, e non nell'origine, è sufficiente usare $t \cdot cos(\theta) + x_0$ e $t \cdot sin(\theta) + y_0$.
-\end{tcolorbox}
-Se la funzione è differenziabile, allora le derivate parziali consentono di calcolare tutte le altre derivate direzionali.
-\begin{tcolorbox}
+Se tale limite esiste ed è finito diremo che $f$ è derivabile nella direzione $v_\theta$.\newline
+\newline
+\textbf{Calcolo di una derivata direzionale per un generico vettore} $(cos(\theta), sin(\theta))$ nell'origine di una funzione $f$: Per prima cosa si ottiene la funzione $g(t) = f(t \cdot cos(\theta), t \cdot sin(\theta))$ e la si semplifica per $t \rightarrow 0$ (anche usando asintotici). In seguito si studia la derivata $g'(0) = \frac{\delta f}{\delta t}(t \cdot cos(\theta), t \cdot sin(\theta))$.\newline
+Se è richiesto il calcolo in un punto generico, e non nell'origine, è sufficiente usare $t \cdot cos(\theta) + x_0$ e $t \cdot sin(\theta) + y_0$. \newline
+\newline
+\textbf{Se la funzione è differenziabile, allora le derivate parziali consentono di calcolare tutte le altre derivate direzionali}.\newline
+\newline
 \textbf{Formula del gradiente}: 
 \[
-    D_vf(x_0) = \nabla f(x_0) \cdot v =  \sum_{i=1}^{n} \frac{\delta f}{\delta x_i}(x_0) \cdot  v_i
+    \frac{\delta f}{\delta v_\theta}(x_0,y_0) = \nabla f(x_0,y_0) \cdot v_\theta = \frac{\delta f}{\delta x} (x_0,y_0)cos(\theta) + \frac{\delta f}{\delta y}(x_0, y_0) sin(\theta)
 \]
-Cioè la derivata direzionale è il prodotto scalare del gradiente con il versore nella direzione in cui si deriva, quindi tutte le derivate direzionali sono combinazioni lineari delle derivate parziali. Nel caso in due variabili la formula si riduce a $D_vf(x_0) = \nabla f(x_0,y_0) \cdot v = \frac{\delta f}{\delta x} (x_0,y_0)cos(\theta) + \frac{\delta f}{\delta y}(x_0, y_0) sin(\theta)$.\newline
+Cioè la derivata direzionale è il prodotto scalare del gradiente con il versore nella direzione in cui si deriva, quindi tutte le derivate direzionali sono combinazioni lineari delle derivate parziali.\newline
 Se la formula del gradiente non vale in un punto, allora la funzione non è differenziabile in quel punto.\newline
-Inoltre la formula del gradiente non vale se la generica derivata direzionale non è combinazione lineare di $cos(\theta), sin(\theta)$.
-\end{tcolorbox}
-
-\begin{tcolorbox}
-Da notare è che $\nabla f(x_0)$ indica la \textbf{direzione di massima crescita} di $f$, ossia la direzione di massima derivata direzionale, invece $-\nabla f(x_0)$ rappresenta la direzione di minima derivata direzionale, infine nelle direzioni ortogonali al gradiente le derivate direzionali sono nulle, quindi di \textbf{pendenza nulla}.
-\end{tcolorbox}
-\begin{tcolorbox}
+Inoltre la formula del gradiente non vale se la generica derivata direzionale non è combinazione lineare di $cos(\theta), sin(\theta)$.\newline
+\newline
+Da notare è che $\nabla f(x_0,y_0)$ indica la \textbf{direzione di massima crescita} di $f$, ossia la direzione di massima derivata direzionale, invece $-\nabla f(x_0)$ rappresenta la direzione di minima derivata direzionale, infine nelle direzioni ortogonali al gradiente le derivate direzionali sono nulle, quindi di \textbf{pendenza nulla}.\newline
+\newline
 Il gradiente è ortogolane il ogni punto alle linee di livello.
-\end{tcolorbox}
-\rule{\textwidth}{0.4pt}
 \subsubsection{Riepilogo}
 \begin{itemize}
     \item $f \in C^1(A) \Rightarrow f$ differenziabile in $A$ (cioè $f$ ha iperpiano tangente) $\Rightarrow f$ è continua, derivabile, ha derivate direzionali, vale la formula del gradiente.
     \item $f$ continua, derivabile, dotata di tutte le derivate direzionali $\nRightarrow f$ differenziabile
     \item $f$ derivabile, dotata di tutte le derivate direzionali $\nRightarrow f$ continua 
 \end{itemize}
-\rule{\textwidth}{0.4pt}
-\subsubsection{Gradiente di una funzione radiale}
+\subsubsection{Extra: Gradiente di una funzione radiale, Criterio di continuità e differenziabilità per funzioni radiali, funzioni omogenee, Equazione del trasporto}
+\subsubsection*{Gradiente di una funzione radiale}
 Si chiama funzione radiale una funzione $h$ che dipende solo dalla distanza di dall'origine, ossia
 \[
     h(x) = g(|x|).
@@ -319,17 +296,15 @@ ponendo $\rho = |x| = \sqrt{\sum_{j=1}^{n}x_j^2}$ si ha:
 \[
     |\nabla h(x)| = |g'(|x|)|
 \]
-Le funzioni radiali sono spesso utilizzate negli esercizi in cui le incognite compaiono solo all'interno del termine $\sqrt{\sum_{j=1}^{n}x_j^2}$, in tal caso si ottiene $g(\rho)$ sostituendo ogni $\sqrt{\sum_{j=1}^{n}x_j^2}$ con $ \rho$, successivamente si può procedere sfruttando le proprietà di continuità e differenziabilità delle funzioni radiali.\newline
-\rule{\textwidth}{0.4pt}
-\subsubsection{Criterio di continuità e differenziabilità per funzioni radiali}
+Le funzioni radiali sono spesso utilizzate negli esercizi in cui le incognite compaiono solo all'interno del termine $\sqrt{\sum_{j=1}^{n}x_j^2}$, in tal caso si ottiene $g(\rho)$ sostituendo ogni $\sqrt{\sum_{j=1}^{n}x_j^2}$ con $ \rho$, successivamente si può procedere sfruttando le proprietà di continuità e differenziabilità delle funzioni radiali.
+\subsubsection*{Criterio di continuità e differenziabilità per funzioni radiali}
 Sia $f \;\;:\;\; \mathbb{R}^n-\{0\} \rightarrow  \mathbb{R}$ una funzione radiale, cioè $f(x) = g(|x|)$ con $g \;\;:\;\;(0, +\infty) \rightarrow \mathbb{R}$ e sia $f$ continua fuori dall'origine. Allora:
 \begin{itemize}
     \item $f$ è continua in $0$, se e solo se esiste finito $\lim_{\rho\rightarrow 0^+}g(\rho)$;
     \item $f$ è differenziabile in $0$ se e solo se esiste $g'(0)=0$.
 \end{itemize}
 Negli esercizi spesso si controlla prima la continuità nell'origine, se non lo è si allunga la funzione e successivamente si calcola la differenziabilità nell'origine.\newline
-\rule{\textwidth}{0.4pt}
-\subsubsection{Funzioni omogenee}
+\subsubsection*{Funzioni omogenee}
 Una funzione $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ (eventualmente definita solo per $x\neq 0$), non identicamente nulla, si dice positivamente omogenea di grado $\alpha \in \mathbb{R}$ se
 \[
     f(\lambda x) = \lambda^\alpha f(x) \;\;\;\;\; \;\forall\;x \in \mathbb{R}^n, x\neq 0, \lambda>0.
@@ -358,10 +333,8 @@ Sia $f \;\;:\;\; \mathbb{R}^n \rightarrow \mathbb{R}$ una funzione positivamente
     \item $f$ è continua anche nell'origine se $\alpha>0$; in questo caso $f(0) = 0$; $f$ è discontinua nell'origine se $\alpha<0$; è discontinua anche se $\alpha=0$, tranne il caso banale in cui $f$ è costante.
     \item $f$ è differenziabile nell'origine se $\alpha>1$; non è differenziabile nell'origine se $\alpha <1$, tranne il caso banale in cui $\alpha=0$ e $f$ è costante; se $\alpha=1$, $f$ è differenziabile se e solo se è una funzione lineare, (ossia $f(x) = a \cdot x$ per qualche vettore costante $a \in \mathbb{R}^n$).
 \end{itemize}
-
 Si ricordi che ogni ogni derivata parziale prima di una funzione posivamente omogenea di grado $\alpha$, se esiste, è una funzione positivamente omogenea di grado $\alpha -1$. \newline
-\rule{\textwidth}{0.4pt}
-\subsubsection{Equazione del trasporto}
+\subsubsection*{Equazione del trasporto}
 Si definisce equazione del trasporto la seguente:
 \[
     c \frac{\delta u}{\delta x} + \frac{\delta u}{\delta t} = 0 \;\;\;\;\; \;\;\;\;\; (?)
@@ -375,8 +348,6 @@ In particolare:
 \[
     |f(x_1) - f(x_0)| \leq |\nabla f(x^*)| \cdot |(x_1 + x_0)|.
 \]
-\rule{\textwidth}{2pt}
-
 \subsection{Derivate di ordine superiore e approssimazioni successive}
 \rule{\textwidth}{0.4pt}
 \subsubsection{Derivate di ordine superiore}
