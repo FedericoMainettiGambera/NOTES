@@ -541,7 +541,7 @@ dove $H_f(x_0)$ è la matrice Hessiana di $f$ in $x_0$.\newline
 \end{itemize}
 \end{tcolorbox}
 \end{comment}
-\subsection{Ottimizzazione. Estremi vincolanti}
+\subsection{Ottimizzazione vincolata}
 \begin{comment}
 \rule{\textwidth}{0,4pt}
 \subsubsection{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}
@@ -625,7 +625,7 @@ tale che $(\vec{x}^*, \vec{\lambda}^*)$ è un punto critico libero per la Lagran
 \]
 \rule{\textwidth}{0,4pt}
 \end{comment}
-\subsubsection{Metodo dei moltiplicatori di Lagrange (dal libro di Gazzola)}
+\subsubsection{Metodo dei moltiplicatori di Lagrange}
 Un punto di ottimo per $f$ vincolato a $g = 0$ si ottiene c ercando una curva di livello di $f$ che sia tangente alla curva di livello $0$ di $g$. Dato che il gradiente di una funzione è ortogonale alla sua curva di livello, la condizione di tangenza tra le due curve di livello si traduce in una relazione di proporzionalità tra $\nabla f$ e $\nabla g$. Questo è il principio che governa il \textbf{metodo dei moltiplicatori di Lagrange}.\newline
 \newline
 Siano $f,g \in C^1$ e supponiamo di volere ottimizzare (massimizzare o minimizzare) la funzione $z = f(x,y)$ sotto il vincolo $g(x,y) = 0$ (se fosse $g(x,y) = b$ possiamo trasformarla in $g(x,y) - b = 0$). Introduciamo la funzione $L : \mathbb{R}^3 \rightarrow \mathbb{R}$ definita da
@@ -650,34 +650,31 @@ Il \textbf{teorema di Weierstrass} può essere di aiuto per garantire l'esistenz
 Notiamo che il valore esatto del moltiplicatore $\lambda$ non è essenziale: permette di trovare i punti candidati, ma non serve per calcolare il livello delal funzione.\newline
 \newline
 Un punto più delicato diguarda i punti in cui i vettori delle derivate parziali di $f$ e di $g$ ($\nabla f$ e $\nabla g$) si annullano sul vincolo. Se si annulla $\nabla f$ troveremo un moltiplicatore nullo e saremo in presenza di un punto critico libero di $f$ che posiamo tranquillamente inserire tra i candidati e valutarlo insieme agli altri punti. Se invece di annulla $\nabla g$ il metodo di Lagrange non funziona dato che non si riesce a determinare il moltiplicatore, quindi questi punti dovranno essere inseriti fra i candidati e valutati a parte.
-\subsubsection{Il metodo delle restrizioni}
-[TODO]\dots
 \subsection{Funzioni convesse di n variabili}
-\rule{\textwidth}{0.4pt}
 \subsubsection{Generalità sulle funzioni convesse}
-Un insieme $\Omega \subseteq \mathbb{R}^n$ si dice convesso se per ogni coppia di punti $x_1, x_2 \in \Omega$ si ha che $[x_1,x_2]\subseteq \Omega$ (dove col simbolo $[x_1,x_2]$ si denota il segmento con estremi $x_1,x_2$); si dice strettamente convesso se per ogni coppia di punti $x_1,x_2 \in \Omega$ il segmento $(x_1,x_2)$ privato degli estremi è strettamente contenuto in $\Omega$.\newline
-
-Si dice epigrafico di una funzione $f \;\;:\;\; \Omega \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}$ l'insieme
+Un insieme $\Omega \subseteq \mathbb{R}^n$ si dice \textbf{convesso} se per ogni coppia di punti $x_1, x_2 \in \Omega$ si ha che $[x_1,x_2]\subseteq \Omega$ (dove col simbolo $[x_1,x_2]$ si denota il segmento con estremi $x_1,x_2$); si dice strettamente convesso se per ogni coppia di punti $x_1,x_2 \in \Omega$ il segmento $(x_1,x_2)$ privato degli estremi è strettamente contenuto in $\Omega$.\newline
+\newline
+Si dice \textbf{epigrafico} di una funzione $f \;\;:\;\; \Omega \subseteq \mathbb{R}^n \rightarrow  \mathbb{R}$ l'insieme
 \[
     epi(f)=\{(x,z) \in \mathbb{R}^{n+1} \;\;:\;\; z\geq f(x), x \in\Omega\}
 \]
 \newline
-
-Si dice che una funzione è convessa se $epi(f)$ è un sottoinsieme convesso, si dice che una funzione è concava se $-f$ è convessa.\newline
+\newline
+Si dice che una funzione è \textbf{convessa} se $epi(f)$ è un sottoinsieme convesso, si dice che una funzione è \textbf{concava} se $-f$ è convessa.\newline
 Formalmente si dice che una funzione è convessa se e solo se per ogni $x_1,x_2$, $t \in [0,1]$ vale la condizione
 \[
     f(tx_2 + (1-t)x_1) \leq tf(x_2) + (1-t)f(x_1).
 \]
 Si noti che $tx_2 + (1-t)x_1$ percorre il segmento $[x_1,x_2]$ al variare di $t \in[0,1]$\newline
-
+\newline
 Se $f$ è convessa allora:
 \begin{itemize}
     \item $f$ è continua;
     \item $f$ ha derivate parziali destre e sinistre in ogni punto;
     \item nei punti in cui è derivabile, $f$ è anche dierenziabile.
 \end{itemize}
-
-Teorema di convessità e piano tangente. Sia $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ differenziabile in $\Omega$. Allora $f$ è convessa in $\Omega$ se e solo se per ogni coppia di punti $x_0, x \in \Omega$ si ha:
+\ \newline
+\textbf{Teorema di convessità e piano tangente}. Sia $f \;\;:\;\; \Omega \rightarrow \mathbb{R}$ differenziabile in $\Omega$. Allora $f$ è convessa in $\Omega$ se e solo se per ogni coppia di punti $x_0, x \in \Omega$ si ha:
 \[
     f(x) \geq f(x_0) + \nabla f(x_0) \cdot (x-x_0).
 \]
@@ -686,16 +683,13 @@ In due dimensioni:
     f(x,y) \geq f(x_0,y_0) + \frac{\delta f}{\delta x}(x_0,y_0)(x-x_0)+\frac{\delta f}{\delta y}(x_0, y_0)(y-y_0).
 \]
 che geometricamente signifca che il paino tangente in $x-0, y_0$ sta sotto $f$.\newline
-
-Teorema di convessità e matrice Hessiana. Sia $f \in C^2(\Omega)$, con $\Omega$ aperto convesso in $\mathbb{R}^n$. Se per ogni $x_0$ in $\Omega$ la forma quadratica $d^2f(x_0)$ è semidefinita positiva, allora $f$ è convessa in $\Omega$. \newline
-\rule{\textwidth}{0.4pt}
+\newline
+\textbf{Teorema di convessità e matrice Hessiana}. Sia $f \in C^2(\Omega)$, con $\Omega$ aperto convesso in $\mathbb{R}^n$. Se per ogni $x_0$ in $\Omega$ la forma quadratica $d^2f(x_0)$ è semidefinita positiva, allora $f$ è convessa in $\Omega$.
 \subsubsection{Ottimizzazione di funzioni convesse e concave}
-Nelle funzioni convesse (concave) i punti stazionari, se esistono, rappresentano minimi (massimi) globali. Inoltre se la funzione è strettamente convessa (concava), il punto critico è di minimo (massimo) globale forte, quindi, in particolare, è unico. \newline
-\rule{\textwidth}{2pt}
+Nelle funzioni convesse (concave) i punti stazionari, se esistono, rappresentano minimi (massimi) globali. Inoltre se la funzione è strettamente convessa (concava), il punto critico è di minimo (massimo) globale forte, quindi, in particolare, è unico.
 \subsection{Funzioni definite implicitamente}
-\rule{\textwidth}{0.4pt}
 \subsubsection{Funzione implicita di una variabile}
-\textbf{Teor. di Dini della funzione implicita}. Sia $A$ un aperto in $\mathbb{R}^2$ e $f \;\;:\;\; A \rightarrow \mathbb{R}$ una funzione $C^1(A)$. Supponiamo che in un punto $(x_0,y_0) \in A$ sia:
+\textbf{Teorema di Dini della funzione implicita}. Sia $A$ un aperto in $\mathbb{R}^2$ e $f \;\;:\;\; A \rightarrow \mathbb{R}$ una funzione $C^1(A)$. Supponiamo che in un punto $(x_0,y_0) \in A$ sia:
 \[
     f(x_0,y_0)= 0 \;\;\;\; e \;\;\;\; f_y(x_0,y_0) \neq 0.
 \] 
@@ -708,10 +702,8 @@ Inoltre, $g \in C^1(I)$ e
     g'(x) = - \frac{f_x(x,g_x)}{f_y(x,g_x)} \;\;\;\; \;\forall\;x \in I.
 \]
 Notiamo che se $f(x_0,y_0) = 0$ e $f_y(x_0, y_0) = 0$, ma $f_x(x_0, y_0) \neq 0$, il teorema è ancora applicabile scambiando gli ruoli di $x$ e $y$.\newline
-In sostanza i punti in cui il teorema di Dini non è applicabile sono quelli in cui il gradiente di $f$ si annulla, ossia i punti critici. \newline
-\rule{\textwidth}{0.4pt}
+In sostanza i punti in cui il teorema di Dini non è applicabile sono quelli in cui il gradiente di $f$ si annulla, ossia i punti critici.
 \subsubsection{Note sugli esercizi}
 Tipicamente negli esercizi la richiesta è di calcolare la funzione $g'(x)$ in un punto. Si inizia calcolando i punti per cui $f(x,y) = 0$ (solitamente vengono forniti). Una volta trovati questi punti si deve verificare che $\frac{\delta f}{\delta y} f(x,y)$ (oppure $\frac{\delta f}{\delta x} f(x,y)$) sia $\neq 0$. Se queste condizioni si verificano, allora il Teorema di Dini è applicabile e si può procedere a calcolare $g'(x) = - \frac{\frac{\delta f}{\delta x}(x,y)}{\frac{\delta f}{\delta y} (x,y)}$ e a trovarne il valore in un punto.\newline
-
-Se in un esercizio viene chiesto di calcolare, oltre a $g'(x)$, anche $g''(x)$, allora si può usare un altro procedimento: si può derivare rispetto a $x$ l'equazione $f(x, g(x)) = 0$ e quindi ricavare $g'(x)$. Succesivamente si può derivare ancora l'equazione e ricavare $g''(x)$. Spesso per risolvere queste equazioni è più semplice derivarle e poi sostituire $x = x_0$ con l'$x_0$ richiesto dall'esercizio.\newline
-\rule{\textwidth}{2pt}
+\newline
+Se in un esercizio viene chiesto di calcolare, oltre a $g'(x)$, anche $g''(x)$, allora si può usare un altro procedimento: si può derivare rispetto a $x$ l'equazione $f(x, g(x)) = 0$ e quindi ricavare $g'(x)$. Succesivamente si può derivare ancora l'equazione e ricavare $g''(x)$. Spesso per risolvere queste equazioni è più semplice derivarle e poi sostituire $x = x_0$ con l'$x_0$ richiesto dall'esercizio.
