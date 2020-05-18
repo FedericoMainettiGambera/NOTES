@@ -70,7 +70,7 @@
 \contentsline {subsection}{\numberline {5.5}Derivate di ordine superiore e matrice Hessiana}{37}{subsection.5.5}%
 \contentsline {subsubsection}{\numberline {5.5.1}Formula di Taylor (resto secondo Peano)}{37}{subsubsection.5.5.1}%
 \contentsline {subsection}{\numberline {5.6}Ottimizzazione libera}{38}{subsection.5.6}%
-\contentsline {subsubsection}{\numberline {5.6.1}Ripasso: autovalori e autovetori}{38}{subsubsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.1}Ripasso sugli autovalori e autovetori}{38}{subsubsection.5.6.1}%
 \contentsline {subsubsection}{\numberline {5.6.2}Massimi e minimi}{38}{subsubsection.5.6.2}%
 \contentsline {subsubsection}{\numberline {5.6.3}Strategia per lo studio dei massimi e dei minimi}{39}{subsubsection.5.6.3}%
 \contentsline {subsection}{\numberline {5.7}Ottimizzazione. Estremi vincolanti}{39}{subsection.5.7}%

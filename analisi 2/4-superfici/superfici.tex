@@ -408,7 +408,7 @@ Formula di Taylor (resto secondo Peano) scritta per esteso per $(x,y) \rightarro
 \]
 per $(x,y) \rightarrow (x_0,y_0)$.
 \subsection{Ottimizzazione libera}
-\subsubsection{Ripasso: autovalori e autovetori}
+\subsubsection{Ripasso sugli autovalori e autovetori}
 Ricordiamo che un numero complesso $\lambda$ e un vettore non nullo $v \in \mathbb{C}^n$. Si dicono, rispettivamente, \textbf{autovalore e autovettore} (di $\lambda$) di una matrice $M$ di ordine $n$, se soddisfano la relazione:
 \[
     Mv = \lambda v
@@ -490,6 +490,57 @@ Vediamo una strategia da seguire:
             \item se $det(H_f(x_0, y_0)) = 0$ occore un analisi ulteriore. Si possono percorrere due vie: 1.si studiano le derivate successive (terza e quarta) [sconsigliato]; 2. si affronta il problema direttamente analizzando il segno di $f(x,y) - f(x_0, y_0)$
         \end{enumerate}
 \end{enumerate}
+\begin{comment}
+    roba che nel libro del Gazzola non c'è, quindi la tolgo
+\subsubsection{Forme quadratiche, classificazione}
+Un modo per determinare la natura di un punto stazionario è quello di analizzare il segno dell'incremento $\nabla f(x_0) = f(x_0 + h ) - f(x_0)$. \textbf{Se infatti si riesce a stabilire che $\nabla f(x_0)$ si mantiene di segno positivo o negativo, per ogni $h$ di modulo abbastanza piccolo, possiamo dedurre che $x_0$ è punto di minimo o massimo locale}. Se invece al variare di $h$, $\nabla f(x_0)$ cambia segno, siamo in presenza di un punto si sella.\newline
+\begin{tcolorbox}
+Lo studio del segno di $\nabla f(x_0)$ riconduce all'analisi del segno del polinomio omogeneo di secondo grado nelle componenti di $h$ (che prende il nome di \textbf{forma quadratica}) dato da
+\[
+    \sum_{i,j=1}^{n}f_{x_ix_j}(x_0)h_ih_j.
+\]
+Ogni forma quadratica risulta associata a una matrice simmetrica $M$. Nel caso del differenziale la matrice $M$ coincide con la matrice Hessiana.
+\end{tcolorbox}
+\begin{tcolorbox}
+Il segno della forma quadratica è quindi studiabile analizzando la sua matrice $M = \left(\begin{matrix}
+    a \;\;\; b\\
+    b \;\;\; c\\
+\end{matrix} \right)$ con $a\neq 0$ nel seguente modo:
+\begin{itemize}
+    \item è definitivamente positiva (negativa) se e solo se $det(M)>0$ e $a >0$ ($a<0$);
+    \item indefinita se $det(M)<0$;
+    \item semidefinita positiva (negativa) se e solo se $det(M)=0$ e $a>0$ ($a<0$).
+\end{itemize}
+Se $a = 0$ e $c\neq 0$, nelle affermazioni precedenti occore sostituire $a$ con $c$.
+\end{tcolorbox}
+\rule{\textwidth}{0.4pt}
+\subsubsection{Forme quadratiche, test degli autovalori}
+Un importante test per determinare il segno di una funzione quadratica in $\mathbb{R}^n$ è basato sul segno degli autovalori della matrice $M$.\newline
+\begin{tcolorbox}
+Tornando allo studio del segno della forma quadratica con la sua matrice $M$:
+\begin{itemize}
+    \item definitivamente positiva (negativa) se e solo se tutti gli autovalori di $M$ sono positivi (negativi);
+    \item semidefinita positiva (negativa) se e solo se tutti gli autovalori di $M$ sono $\geq 0$ ($\leq 0$) e almeno uno di essi è nullo;
+    \item indefinita se $M$ ha almeno un autovalore positivo e uno negativo.
+\end{itemize}
+\end{tcolorbox}
+Da notare è che per una forma quadratica l'origine è sempre un punto stazionario. \newline
+\rule{\textwidth}{0.4pt}
+\subsubsection{Studio della natura dei punti critici}
+Per estrarre informazioni su un punto critico $x_0$ occorre studiare e classificare la forma quadratica 
+\[
+    q(h) = \sum_{i,j=1}^{n}f_{x_ix_j}(x_0)h_ih_j = h^TH_f(x_0)h
+\]
+dove $H_f(x_0)$ è la matrice Hessiana di $f$ in $x_0$.\newline
+\begin{tcolorbox}
+\begin{itemize}
+    \item se la forma quadratica è definitivamente positiva (negativa), allora $x_0$ è un punto di minimo (massimo) locale forte;
+    \item se la forma quadratica è indefinita, allora $x_0$ è un punto di sella;
+    \item se la forma quadratica è in $x_0$ semidefinita positiva (negativa) e non nulla, allora $x_0$ è di minimo (massimo) debole oppure di colle; la situazione cambia se la forma quadratica è semidefinita positiva (negativa) non solo in $x_0$, ma anche per ogni $x$ in un intorno di $x_0$, f è convessa (concava), dunque un punto di minimo (massimo) debole;
+    \item se la forma quadratica è nulla, allora non possiamo estrarne informazioni significanti.
+\end{itemize}
+\end{tcolorbox}
+\end{comment}
 \subsection{Ottimizzazione. Estremi vincolanti}
 \rule{\textwidth}{0,4pt}
 \subsubsection{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}
