@@ -542,6 +542,7 @@ dove $H_f(x_0)$ è la matrice Hessiana di $f$ in $x_0$.\newline
 \end{tcolorbox}
 \end{comment}
 \subsection{Ottimizzazione. Estremi vincolanti}
+\begin{comment}
 \rule{\textwidth}{0,4pt}
 \subsubsection{Vincoli di uguaglianza e moltiplicatori di Lagrange. Funzioni di due variabili}
 \textbf{Problema:} Date due funzioni $f= f(x,y)$ e $g = g(x,y)$, dotate di derivate parziali continue in $\mathbb{R}^2$. Si vogliono determinare gli estremi di $f$ sotto la condizione di vincolo $g(x,y) = b$, $b \in \mathbb{R}^2$.\newline
@@ -623,8 +624,10 @@ tale che $(\vec{x}^*, \vec{\lambda}^*)$ è un punto critico libero per la Lagran
     \end{cases}
 \]
 \rule{\textwidth}{0,4pt}
+\end{comment}
 \subsubsection{Metodo dei moltiplicatori di Lagrange (dal libro di Gazzola)}
-\begin{tcolorbox}
+Un punto di ottimo per $f$ vincolato a $g = 0$ si ottiene c ercando una curva di livello di $f$ che sia tangente alla curva di livello $0$ di $g$. Dato che il gradiente di una funzione è ortogonale alla sua curva di livello, la condizione di tangenza tra le due curve di livello si traduce in una relazione di proporzionalità tra $\nabla f$ e $\nabla g$. Questo è il principio che governa il \textbf{metodo dei moltiplicatori di Lagrange}.\newline
+\newline
 Siano $f,g \in C^1$ e supponiamo di volere ottimizzare (massimizzare o minimizzare) la funzione $z = f(x,y)$ sotto il vincolo $g(x,y) = 0$ (se fosse $g(x,y) = b$ possiamo trasformarla in $g(x,y) - b = 0$). Introduciamo la funzione $L : \mathbb{R}^3 \rightarrow \mathbb{R}$ definita da
 \[
     L(x,y,\lambda) = f(x,y) - \lambda g(x,y)
@@ -637,23 +640,18 @@ e che si chiama \textbf{Lagrangiana}. Se cerchiamo i punti stazionari (in $\math
         g(x,y) = 0
     \end{cases}
 \]
-Chiaramente da queste equazioni non distinguiamo gli eventuali massimi dai minimi e non è nemmeno detto che una soluzione sia un estremo relativo, tuttavia 
-\textbf{Gli eventuali punti di ottimo di $f$ soggetti al vincolo $g = 0$ vanno cercati tra le soluzioni di queste equazioni}.\newline
-Per capire quali dei punti che sono soluzione del sistema sono estremi, è sufficiente calcolare i valori della funzione in tali punti e valutare se sono massimi o minimi.
-\end{tcolorbox}
-\begin{tcolorbox}
-Il teorema di Weierstrass può essere di aiuto per garantire l'esistenza dei massimi e dei minimi: Sia $[a,b]\subset \mathbb {R}$ un intervallo chiuso e limitato non vuoto e sia $f\colon [a,b]\to \mathbb {R}$ una funzione continua. Allora $f(x)$ ammette (almeno) un punto di massimo assoluto e un punto di minimo assoluto nell'intervallo $[a,b]$.
-\end{tcolorbox}
-\begin{tcolorbox}
-Notiamo che il valore esatto del moltiplicatore $\lambda$ non è essenziale: permette di trovare i punti candidati, ma non serve per calcolare il livello delal funzione.
-\end{tcolorbox}
-\begin{tcolorbox}
-Un punto più delicato diguarda i punti in cui i vettori delle derivate parziali di $f$ e di $g$ ($\nabla f \;\;e \;\; \nabla g$) si annullano. Se si annulla $\nabla f$ troveremo un moltiplicatore nullo e saremo in presenza di un punto critico libero di $f$ che posiamo tranquillamente inserire tra i candidati e valutarlo insieme agli altri punti. Se invece di annulla $\nabla g$ il metodo di Lagrange non funziona dato che non si riesce a determinare il moltiplicatore.
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
+Le prime due condizioni si possono riscrivere coem $\nabla f = \lambda \nabla g$ ed esprimono la proporzionalità tra gradienti chem a sua volta, descrive la tangenza delle curve di livello di $f$ e $g$. La terza equazione è l'equazione del vincolo e dice che la suddetta tangenza va cercata tra i punto che appartengono al vincolo.\newline
+Chiaramente da queste equazioni non distinguiamo gli eventuali massimi dai minimi e non è nemmeno detto che una soluzione sia un estremo relativo, tuttavia: \textbf{gli eventuali punti di ottimo di $f$ soggetti al vincolo $g = 0$ vanno cercati tra le soluzioni di queste tre equazioni}.\newline
+\newline
+Per capire quali dei punti che sono soluzione del sistema sono estremi, è sufficiente calcolare i valori della funzione in tali punti e valutare se sono massimi o minimi.\newline
+\newline
+Il \textbf{teorema di Weierstrass} può essere di aiuto per garantire l'esistenza dei massimi e dei minimi: Sia $[a,b]\subset \mathbb {R}$ un intervallo chiuso e limitato non vuoto e sia $f\colon [a,b]\to \mathbb {R}$ una funzione continua. Allora $f(x)$ ammette (almeno) un punto di massimo assoluto e un punto di minimo assoluto nell'intervallo $[a,b]$. Da notare è che se il vincolo non è chiuso e limitato non si può usare il teorema di Weierstrass.\newline
+\newline
+Notiamo che il valore esatto del moltiplicatore $\lambda$ non è essenziale: permette di trovare i punti candidati, ma non serve per calcolare il livello delal funzione.\newline
+\newline
+Un punto più delicato diguarda i punti in cui i vettori delle derivate parziali di $f$ e di $g$ ($\nabla f$ e $\nabla g$) si annullano sul vincolo. Se si annulla $\nabla f$ troveremo un moltiplicatore nullo e saremo in presenza di un punto critico libero di $f$ che posiamo tranquillamente inserire tra i candidati e valutarlo insieme agli altri punti. Se invece di annulla $\nabla g$ il metodo di Lagrange non funziona dato che non si riesce a determinare il moltiplicatore, quindi questi punti dovranno essere inseriti fra i candidati e valutati a parte.
 \subsubsection{Il metodo delle restrizioni}
-
-\rule{\textwidth}{2pt}
+[TODO]\dots
 \subsection{Funzioni convesse di n variabili}
 \rule{\textwidth}{0.4pt}
 \subsubsection{Generalità sulle funzioni convesse}
