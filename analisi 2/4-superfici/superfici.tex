@@ -54,7 +54,7 @@ Sia $l \in \mathbb{R}$, diremo che
 \]
 se 
 \[
-    \;\forall\; \epsilon > 0 \; \exists \; \delta > 0 \; \text{tale che}\; (x,y) \in b_\delta^0 (x_0,y_0) \Rightarrow |f(x,y)-l| < \epsilon 
+    \;\forall\; \epsilon > 0 \; \exists \; \delta > 0 \; \text{tale che}\; (x,y) \in B_\delta^0 (x_0,y_0) \Rightarrow |f(x,y)-l| < \epsilon 
 \]
 In $\mathbb{R}$ si parla di limite "destro" e "sinistro", in $\mathbb{R}^n$, per via della presenza dell'intorno bucato, ci sono infiniti modi di avvicinarsi al limite: il valore dipende dal cammina che si segue.
 \subsubsection{Non esistenza del limite}
@@ -111,7 +111,7 @@ La continuità di una funzione è anche deducibile dal fatto che sia costituita 
 \newline
 Proprietà delle funzioni continue:
 \begin{itemize}
-    \item \textbf{Teorema di Weierstrass}. Sia $E \subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua, allora $f$ ammette massimo e minimo in $E$, cioè esistono $x_m$ e $x_M$ tali che $f(x_m) \leq f(x) \leq f(x_M)$ per ogni $x in E$.
+    \item \textbf{Teorema di Weierstrass}. Sia $E \subset \mathbb{R}^n$ un insieme chiuso e limitato e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua, allora $f$ ammette massimo e minimo in $E$, cioè esistono $x_m$ e $x_M$ tali che $f(x_m) \leq f(x) \leq f(x_M)$ per ogni $x \in E$.
     \item \textbf{Teorema degli zeri}. Sia $E$ un insieme connesso di $\mathbb{R}^n$ e $f \;\;:\;\; E \rightarrow \mathbb{R}$ sia continua. Se $x$, $y$ sono due punti di $E$ tali che $ f(x) < 0$ e $f(y) > 0$, allora esiste un terzo punto $z \in E$ in cui $f$ si annulla. In particolare, lungo ogni arco di curva continua contenuto in $E$ che congiunge $x$ e $y$, c'è almeno un punto in cui $f$ si annulla.
     \item \textbf{Teorema di permanenza del segno}. Se $f$ è continua in $(x_0, y_0) \in \mathbb{R}^2$ e $f(x_0, y_0) > 0$, allora esiste $\delta>0$ tale che $fx,y) > 0$ per ogni $(x,y) \in B_\delta(x_0,y_0)$.
 \end{itemize}
@@ -216,11 +216,14 @@ Questa scrittura dice che "il grafico della superficie si allontana dal piano ta
 \ \newline
 Da notare che la \textbf{differenziabilità implica la derivabilità}, cioè se una funzione è differenziabile in un punto, allora è anche derivabile nello stesso.\newline
 \newline
-Se $f$ è differenziabile in $x_0$, si dice \textbf{differenziale} di $f$ calcolato in $x_0$ la funzione lineare $df(x_0) \;:\; \mathbb{R}^n \rightarrow  \mathbb{R}$ definita da:
+Se $f$ è differenziabile in $\vec{x} \in \mathbb{R}^n$, si dice \textbf{differenziale} di $f$ calcolato in $\vec{x}$ la funzione lineare $df(\vec{x}) \;:\; \mathbb{R}^n \rightarrow  \mathbb{R}$ definita da:
 \[
-    df(x_0) \;\;:\;\;h \rightarrow  \nabla f(x_0) \cdot h.
+    df(\vec{x}) \;\;:\;\;h \rightarrow  \nabla f(\vec{x}) \cdot h.
 \] 
+dove $\nabla f(\vec{x})$ è il gradiente e $h$ è l'incremento.\newline
 Nel caso in due varibiali, il numero $\nabla f(x_0) \cdot h$ rappresenta l'incremento della funzione nel passare da $x_0$ a $x_0+h$, calcolato lungo il piano tangente al grafico di $f$ in $x_0$.\newline
+\newline
+Negli esercizi viene spesso richeisto di calcolare il differenziale per una funzione $f(x,y)$ in un punto $(x_0,y_0)$: per farlo si calcolano le derivate parziali di $f$ nel punto, cioè il valore di $f_x(x_0,y_0)$ e $f_y(x_0,y_0)$, una volta calcolate si pone "$dx$" come l'incremento lungo l'asse delle $x$ e $dy$ l'incremento lungo l'asse delle $y$ e il \textbf{differenziale} si scrive come: $df(x-0,y_0) = f_x(x_0,y_0) \cdot dx + f_y(x_0,y_0) dy$.\newline
 \newline
 L'approssimazione dell'incremento di $f$ con il suo differenziale prende il nome di \textbf{linearizzazione}.
 \subsubsection{Verifica della differenziabilità}
