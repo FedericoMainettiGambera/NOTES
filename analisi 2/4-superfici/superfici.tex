@@ -168,7 +168,7 @@ Finchè si tratta per esempio di calcolarle per un punto preciso non ci sono pro
 Per \textbf{stabilire dove la funzione sia derivabile} bisogna calcolare le derivate parziali e osservarne il dominio.\newline
 (n.b. tipicamente negli esercizi le funzioni sono descritte da un sistema che contiene una funzione prolungata nell'origine, in questo caso bisogna calcolare le derivate parziali al di fuori dell'origine e studiarne il dominio, in seguito bisogna calcolare il valore della derivata parziale nel punto $(0,0)$ col metodo descritto precedentemente).
 \subsubsection{Piano tangente a funzioni in due variabili}
-Il procedimento che mostriamo permette di individuare il piano tangente nell'ipotesi che esso esista, potrebbe però non esserci.\newline
+Il procedimento che mostriamo permette di individuare il piano tangente nell'ipotesi che esso esista, potrebbe però non esserci (il piano tangente esiste se la funzione è differenziabile in quel punto).\newline
 \newline
 Costruire il \textbf{piano tangente} a una funzione in due variabili in un punto $(x_0, y_0)$:
 \begin{enumerate}
@@ -223,7 +223,7 @@ Se $f$ è differenziabile in $\vec{x} \in \mathbb{R}^n$, si dice \textbf{differe
 dove $\nabla f(\vec{x})$ è il gradiente e $h$ è l'incremento.\newline
 Nel caso in due varibiali, il numero $\nabla f(x_0) \cdot h$ rappresenta l'incremento della funzione nel passare da $x_0$ a $x_0+h$, calcolato lungo il piano tangente al grafico di $f$ in $x_0$.\newline
 \newline
-Negli esercizi viene spesso richeisto di calcolare il differenziale per una funzione $f(x,y)$ in un punto $(x_0,y_0)$: per farlo si calcolano le derivate parziali di $f$ nel punto, cioè il valore di $f_x(x_0,y_0)$ e $f_y(x_0,y_0)$, una volta calcolate si pone "$dx$" come l'incremento lungo l'asse delle $x$ e $dy$ l'incremento lungo l'asse delle $y$ e il \textbf{differenziale} si scrive come: $df(x-0,y_0) = f_x(x_0,y_0) \cdot dx + f_y(x_0,y_0) dy$.\newline
+Negli esercizi viene spesso richeisto di calcolare il differenziale per una funzione $f(x,y)$ in un punto $(x_0,y_0)$: Per prima cosa bisogna verificare che la funzione sia differenziabile in quel punto, in seguito si calcolano le derivate parziali di $f$ nel punto, cioè il valore di $f_x(x_0,y_0)$ e $f_y(x_0,y_0)$, una volta calcolate si pone "$dx$" come l'incremento lungo l'asse delle $x$ e $dy$ l'incremento lungo l'asse delle $y$ e il \textbf{differenziale} si scrive come: $df(x_0,y_0) = f_x(x_0,y_0) \cdot dx + f_y(x_0,y_0) dy$.\newline
 \newline
 L'approssimazione dell'incremento di $f$ con il suo differenziale prende il nome di \textbf{linearizzazione}.
 \subsubsection{Verifica della differenziabilità}
@@ -273,6 +273,8 @@ Se è richiesto il calcolo in un punto generico, e non nell'origine, è sufficie
 Cioè la derivata direzionale è il prodotto scalare del gradiente con il versore nella direzione in cui si deriva, quindi tutte le derivate direzionali sono combinazioni lineari delle derivate parziali.\newline
 Se la formula del gradiente non vale in un punto, allora la funzione non è differenziabile in quel punto.\newline
 Inoltre la formula del gradiente non vale se la generica derivata direzionale non è combinazione lineare di $cos(\theta), sin(\theta)$.\newline
+\newline
+Negli esercizi se viene dato un vettore come direzione, bisogna prima assicurarsi che esso sia un versore, se non lo è bisogna ottenerlo dividendo per il modulo del vettore.\newline
 \newline
 Da notare è che $\nabla f(x_0,y_0)$ indica la \textbf{direzione di massima crescita} di $f$, ossia la direzione di massima derivata direzionale, invece $-\nabla f(x_0)$ rappresenta la direzione di minima derivata direzionale, infine nelle direzioni ortogonali al gradiente le derivate direzionali sono nulle, quindi di \textbf{pendenza nulla}.\newline
 \newline
