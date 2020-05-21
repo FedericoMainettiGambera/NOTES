@@ -441,7 +441,46 @@ Le matrici $M$ simmetriche hanno prorpietà importanti:
         \end{matrix}\right]
     \]
 \end{itemize}
+\subsubsection{Posizione reciproca di una superficie e il piano tangente hessiano}
+Data una funzione $f$, e dato il piano tangente ad essa in un punto $(x_0, y_0, f(x_0,y_0))$, la differenza fra le quote nel punto $(\bar{x}, \bar{y})$ della superficie definita da $f$ e del piano tangente è data (a meno di infinitesimi di ordine superiore al secondo, rispetto alla distanza $(x_0, y_0)$ e $(\bar{x}, \bar{y})$)dai termini di secondo grado dello sviluppo di Taylor:
+\[
+    f_{xx}(x_0,y_0)(x-x_0)^2 + 2 f_{xy}(x_0,y_0)(x-x_0)(y-y_0) + f_{yy}(x_0,y_0)(y-y_0)^2
+\]
+se questa espressione è sempre positiva (negativa) nell'intorno di $(x_0,y_0)$, possiamo affermare con sicurezza che la superficie si trova sempre sopra (sotto) il piano tangente. La teoria permette di risolvere tale questione con l'analisi della matrice Hessiana:
+\[
+    H_f(x_0,y_0) = \left[\begin{matrix}
+        f_{xx}(x_0,y_0) & f_{xy}(x_0,y_0)\\
+        f_{yx}(x_0,y_0) & f_{yy}(x_0,y_0)
+    \end{matrix}\right]
+\]
+Infatti tutto dipende dagli autovalori di $H_f$:
+\begin{enumerate}
+    \item se sono entrambi positivi, allora la superficie è tutta al di sopra del piano tangente;
+    \item se sono entrambi negativi, allora la superficie è tutta al di sotto del piano tangente;
+    \item se uno è positivo e uno e negativo, allora la superficie e il piano si intersecano;
+    \item se uno dei due autovalori è nullo, nulla si può dire.
+\end{enumerate}
+Poichè il determinante di una matrice è il prodotto degli autovalori, nel caso di una matrice $2$x$2$ è sufficiente osservare il segno del determinante di $H_f$:
+\[
+    detH_f(x_0,y_0) > 0 \rightarrow  \text{casi 1 e 2}\;
+\]
+\[
+    detH_f(x_0,y_0) < 0 \rightarrow  \text{caso 3}\;
+\]
+\[
+    detH_f(x_0,y_0) = 0 \rightarrow  \text{4}\;
+\]
+e, se il determinante è maggiore di $0$, è sufficiente guardare il segno di $f_{xx}(x_0,y_0)$ (o, che è lo stesso, $f_{yy}(x_0,y_0)$):
+\begin{itemize}
+    \item se $f_{xx}(x_0,y_0) > 0$: la superficie è al di sopra del piano;
+    \item se $f_{xx}(x_0,y_0) < 0$: la superficie è al di sotto del piano.
+\end{itemize}
 \subsubsection{Massimi e minimi}
+\textbf{Riassunto - note sugli esercizi}:\newline
+Se la funzione $f$ di cui cerchiamo massimi e minimi liberi è definita in un insieme aperto, ed è differenziabile in tutti i punti di tale insieme, si cercano i punti in cui il gradiente di $f$ si annulla, ossia i punti con piano tangente orizzontale e in tali punti si studia poi l'hessiano (come nel paragrafo precedente): se la superficie si trova al di sopra del piano tangente siamo in presenza di un minimo, se la superficie si trova al di sotto del piano tangente siamo in presenza di un massimo, se la superficie attraversa il piano tangente siamo in presenza di un punto di sella e non vi è né minimo né massimo.\newline
+Invece, se la funzione non è differenziabile in alcuni punti del proprio insieme di definizione, oltre allo studio dei punti di differenziabilità è necessario esaminare singolarmente i punti di non differenziabilità.\newline
+\newline
+\textbf{Teoria}:\newline
 \textbf{Teorema} Sia $f$ di classe $C^2$ in un punto $\vec{x}^0 \in \mathbb{R}^n$ e sia $H_f (\vec{x}^0)$ la sua matrice Hessiana. Se tutti gli autovalori di $H_f(\vec{x}^0)$ sono \textbf{positivi}, allora esiste un intorno di $\vec{x}^0$ dove la superficie di equazione $x_{n+1} = f(x_1,\dots,x_n)$ sta sopra al piano tangente in $\vec{x}^0$. Se tutti gli autovalori di $H_f(\vec{x}^0)$ sono \textbf{negativi}, allora esiste un intorno di $\vec{x}^0$ dove la superficie di equazione $x_{n+1} = f(x_1,\dots,x_n)$ sta sotto al piano tangente in $\vec{x}^0$. Se $H_f(\vec{x}^0)$ ha autovalori di entrambi i segni, allora la superficie di equazione $x_{n+1} = f(x_1,\dots,x_n)$ attraversa il piano tangente in $\vec{x}^0$.\newline
 \newline
 Questo teorema si può enunciare geometricamente dicendo che se tutti gli autovalori di $H_f(\vec{x}^0)$  sono positivi (negativi) allora la funzione $f$ è convessa (concava) in $\vec{x}^0$.\newline
