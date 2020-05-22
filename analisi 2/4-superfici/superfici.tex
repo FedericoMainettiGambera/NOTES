@@ -442,6 +442,8 @@ Le matrici $M$ simmetriche hanno prorpietà importanti:
     \]
 \end{itemize}
 \subsubsection{Posizione reciproca di una superficie e il piano tangente hessiano}
+\textbf{Caso funzione in due variabili}:\newline
+\newline
 Data una funzione $f$, e dato il piano tangente ad essa in un punto $(x_0, y_0, f(x_0,y_0))$, la differenza fra le quote nel punto $(\bar{x}, \bar{y})$ della superficie definita da $f$ e del piano tangente è data (a meno di infinitesimi di ordine superiore al secondo, rispetto alla distanza $(x_0, y_0)$ e $(\bar{x}, \bar{y})$)dai termini di secondo grado dello sviluppo di Taylor:
 \[
     f_{xx}(x_0,y_0)(x-x_0)^2 + 2 f_{xy}(x_0,y_0)(x-x_0)(y-y_0) + f_{yy}(x_0,y_0)(y-y_0)^2
@@ -475,6 +477,16 @@ e, se il determinante è maggiore di $0$, è sufficiente guardare il segno di $f
     \item se $f_{xx}(x_0,y_0) > 0$: la superficie è al di sopra del piano;
     \item se $f_{xx}(x_0,y_0) < 0$: la superficie è al di sotto del piano.
 \end{itemize}
+\textbf{Caso funzione in tre o più variabili}:\newline
+\newline
+Poichè ciò che ci interessa è il segno degli autovalori dell'hessiano, nel caso di una matrice $3$x$3$ (0, più in generale, $n$x$n$) il determinante non costituisce più un indicatore  completo del loro comportamento.  Dato che l'hessiano è una matrice reale e simmetrica, e pertanto possiede solo autovalori reali, un metodo di facile applicazione per determinare il segno di tali autovalori consiste nell'applicare al suo polinomio caratteristico la \textbf{regola dei segni di Cartesio}:\newline
+Data un'equazione di grado $n$
+\[
+    a_nx^n + a_{n-1}x^{n-1} +\dots + a_0 = 0 
+\]
+essa ha tante radici positive quanti i cambi di segno tra i coefficienti, e tante radici negative quante le permanenze di segno.\newline
+\newline
+Alternativamente si può procedere al calcolo completo degli autovalori grazie al segno dei quali si può stabilire la posizione della superficie rispetto al piano tangente.
 \subsubsection{Massimi e minimi}
 \textbf{Riassunto - note sugli esercizi}:\newline
 Se la funzione $f$ di cui cerchiamo massimi e minimi liberi è definita in un insieme aperto, ed è differenziabile in tutti i punti di tale insieme, si cercano i punti in cui il gradiente di $f$ si annulla, ossia i punti con piano tangente orizzontale e in tali punti si studia poi l'hessiano (come nel paragrafo precedente): se la superficie si trova al di sopra del piano tangente siamo in presenza di un minimo, se la superficie si trova al di sotto del piano tangente siamo in presenza di un massimo, se la superficie attraversa il piano tangente siamo in presenza di un punto di sella e non vi è né minimo né massimo.\newline
