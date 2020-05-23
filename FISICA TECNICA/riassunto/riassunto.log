@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  23 MAY 2020 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  23 MAY 2020 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1608,29 +1608,30 @@ Overfull \hbox (0.70526pt too wide) in paragraph at lines 72--73
 File: ../L08/img2.PNG Graphic file (type png)
 <use ../L08/img2.PNG>
 Package pdftex.def Info: ../L08/img2.PNG  used on input line 77.
-(pdftex.def)             Requested size: 232.348pt x 142.26378pt.
+(pdftex.def)             Requested size: 278.82458pt x 170.71652pt.
 <../L08/img3.PNG, id=1193, 484.81125pt x 363.60844pt>
 File: ../L08/img3.PNG Graphic file (type png)
 <use ../L08/img3.PNG>
 Package pdftex.def Info: ../L08/img3.PNG  used on input line 81.
-(pdftex.def)             Requested size: 113.81229pt x 85.35826pt.
+(pdftex.def)             Requested size: 189.68962pt x 142.26378pt.
 [52 <../L08/img2.PNG>]
 <../L08/img4.PNG, id=1199, 973.38657pt x 509.65407pt>
 File: ../L08/img4.PNG Graphic file (type png)
 <use ../L08/img4.PNG>
 Package pdftex.def Info: ../L08/img4.PNG  used on input line 90.
-(pdftex.def)             Requested size: 163.02283pt x 85.35826pt.
+(pdftex.def)             Requested size: 271.71463pt x 142.26378pt.
 <../L08/img5.PNG, id=1200, 322.95656pt x 207.02344pt>
 File: ../L08/img5.PNG Graphic file (type png)
 <use ../L08/img5.PNG>
 Package pdftex.def Info: ../L08/img5.PNG  used on input line 101.
 (pdftex.def)             Requested size: 177.5478pt x 113.81102pt.
-<../L08/img6.PNG, id=1201, 632.3625pt x 332.74312pt>
+ [53 <../L08/img3.PNG> <../L08/img4.PNG> <../L08/img5.PNG>]
+<../L08/img6.PNG, id=1208, 632.3625pt x 332.74312pt>
 File: ../L08/img6.PNG Graphic file (type png)
 <use ../L08/img6.PNG>
 Package pdftex.def Info: ../L08/img6.PNG  used on input line 106.
 (pdftex.def)             Requested size: 270.36673pt x 142.26378pt.
- [53 <../L08/img3.PNG> <../L08/img4.PNG> <../L08/img5.PNG>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 108--113
 
  []
@@ -1660,24 +1661,74 @@ File: ../L08/img8.PNG Graphic file (type png)
 <use ../L08/img8.PNG>
 Package pdftex.def Info: ../L08/img8.PNG  used on input line 129.
 (pdftex.def)             Requested size: 278.65944pt x 142.26378pt.
-[54 <../L08/img6.PNG> <../L08/img7.PNG>]) [55 <../L08/img8.PNG>] [56] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../NOTE SUGLI ESERCIZI/note-sugli-esercizi.tex
-<../L01/img10.PNG, id=1228, 475.7775pt x 192.72pt>
+[54 <../L08/img6.PNG> <../L08/img7.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+<../L08/img9.PNG, id=1217, 340.27126pt x 232.61906pt>
+File: ../L08/img9.PNG Graphic file (type png)
+<use ../L08/img9.PNG>
+Package pdftex.def Info: ../L08/img9.PNG  used on input line 137.
+(pdftex.def)             Requested size: 124.85995pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+<../L08/img10.PNG, id=1218, 350.05782pt x 225.84375pt>
+File: ../L08/img10.PNG Graphic file (type png)
+<use ../L08/img10.PNG>
+Package pdftex.def Info: ../L08/img10.PNG  used on input line 148.
+(pdftex.def)             Requested size: 132.30759pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
+
+ []
+
+[55 <../L08/img8.PNG> <../L08/img9.PNG> <../L08/img10.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+) [56] [57] (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/../NOTE SUGLI ESERCIZI/note-sugli-esercizi.tex
+<../L01/img10.PNG, id=1236, 475.7775pt x 192.72pt>
 File: ../L01/img10.PNG Graphic file (type png)
 <use ../L01/img10.PNG>
 Package pdftex.def Info: ../L01/img10.PNG  used on input line 26.
 (pdftex.def)             Requested size: 351.21317pt x 142.26378pt.
-<../L01/img11.PNG, id=1229, 474.27188pt x 305.64188pt>
+<../L01/img11.PNG, id=1237, 474.27188pt x 305.64188pt>
 File: ../L01/img11.PNG Graphic file (type png)
 <use ../L01/img11.PNG>
 Package pdftex.def Info: ../L01/img11.PNG  used on input line 29.
 (pdftex.def)             Requested size: 309.05464pt x 199.16928pt.
- [57 <../L01/img10.PNG>]
-<../L01/img12.PNG, id=1236, 475.02469pt x 321.45094pt>
+ [58 <../L01/img10.PNG>]
+<../L01/img12.PNG, id=1244, 475.02469pt x 321.45094pt>
 File: ../L01/img12.PNG Graphic file (type png)
 <use ../L01/img12.PNG>
 Package pdftex.def Info: ../L01/img12.PNG  used on input line 32.
 (pdftex.def)             Requested size: 210.23647pt x 142.26378pt.
-<../L01/img13.PNG, id=1237, 475.7775pt x 160.34906pt>
+<../L01/img13.PNG, id=1245, 475.7775pt x 160.34906pt>
 File: ../L01/img13.PNG Graphic file (type png)
 <use ../L01/img13.PNG>
 Package pdftex.def Info: ../L01/img13.PNG  used on input line 35.
@@ -1692,7 +1743,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--50
 
  []
 
-[58 <../L01/img11.PNG> <../L01/img12.PNG> <../L01/img13.PNG>]
+[59 <../L01/img11.PNG> <../L01/img12.PNG> <../L01/img13.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 52--56
 
  []
@@ -1707,23 +1758,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--94
 
  []
 
-[59]
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 111--119
 
  []
 
-<../NOTE SUGLI ESERCIZI/img1.PNG, id=1249, 319.94531pt x 174.6525pt>
+<../NOTE SUGLI ESERCIZI/img1.PNG, id=1257, 319.94531pt x 174.6525pt>
 File: ../NOTE SUGLI ESERCIZI/img1.PNG Graphic file (type png)
 <use ../NOTE SUGLI ESERCIZI/img1.PNG>
 Package pdftex.def Info: ../NOTE SUGLI ESERCIZI/img1.PNG  used on input line 139.
 (pdftex.def)             Requested size: 156.36935pt x 85.35826pt.
-[60 <../NOTE SUGLI ESERCIZI/img1.PNG>]
-<../NOTE SUGLI ESERCIZI/img2.PNG, id=1255, 467.49657pt x 330.48468pt>
+[61 <../NOTE SUGLI ESERCIZI/img1.PNG>]
+<../NOTE SUGLI ESERCIZI/img2.PNG, id=1264, 467.49657pt x 330.48468pt>
 File: ../NOTE SUGLI ESERCIZI/img2.PNG Graphic file (type png)
 <use ../NOTE SUGLI ESERCIZI/img2.PNG>
 Package pdftex.def Info: ../NOTE SUGLI ESERCIZI/img2.PNG  used on input line 163.
 (pdftex.def)             Requested size: 201.24786pt x 142.26378pt.
-<../NOTE SUGLI ESERCIZI/img3.PNG, id=1256, 615.80063pt x 203.25937pt>
+<../NOTE SUGLI ESERCIZI/img3.PNG, id=1265, 615.80063pt x 203.25937pt>
 File: ../NOTE SUGLI ESERCIZI/img3.PNG Graphic file (type png)
 <use ../NOTE SUGLI ESERCIZI/img3.PNG>
 Package pdftex.def Info: ../NOTE SUGLI ESERCIZI/img3.PNG  used on input line 178.
@@ -1733,7 +1784,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--185
 
  []
 
-[61 <../NOTE SUGLI ESERCIZI/img2.PNG> <../NOTE SUGLI ESERCIZI/img3.PNG>]
+[62 <../NOTE SUGLI ESERCIZI/img2.PNG> <../NOTE SUGLI ESERCIZI/img3.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 226--241
 
  []
@@ -1753,7 +1804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--250
 
  []
 
-[62]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
  []
@@ -1773,7 +1824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--284
 
  []
 
-[63]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 306--322
 
  []
@@ -1783,7 +1834,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--361
 
  []
 
-[64]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 363--369
 
  []
@@ -1808,7 +1859,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 405--408
 
  []
 
-[65]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 415--423
 
  []
@@ -1853,7 +1904,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 462--466
 
  []
 
-[66]
+[67]
 Underfull \hbox (badness 10000) in paragraph at lines 474--484
 
  []
@@ -1863,17 +1914,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 474--484
 
  []
 
-<../NOTE SUGLI ESERCIZI/img4.PNG, id=1284, 234.1247pt x 182.93344pt>
+<../NOTE SUGLI ESERCIZI/img4.PNG, id=1293, 234.1247pt x 182.93344pt>
 File: ../NOTE SUGLI ESERCIZI/img4.PNG Graphic file (type png)
 <use ../NOTE SUGLI ESERCIZI/img4.PNG>
 Package pdftex.def Info: ../NOTE SUGLI ESERCIZI/img4.PNG  used on input line 486.
 (pdftex.def)             Requested size: 182.08423pt x 142.26378pt.
-[67 <../NOTE SUGLI ESERCIZI/img4.PNG>]
+[68 <../NOTE SUGLI ESERCIZI/img4.PNG>]
 Overfull \hbox (11.61359pt too wide) in paragraph at lines 548--548
 []\OT1/cmss/bx/n/20.74 macchina ope-ra-tri-ce con sor-gen-ti a tem-
  []
 
-<../NOTE SUGLI ESERCIZI/img5.PNG, id=1291, 248.42813pt x 185.19188pt>
+<../NOTE SUGLI ESERCIZI/img5.PNG, id=1299, 248.42813pt x 185.19188pt>
 File: ../NOTE SUGLI ESERCIZI/img5.PNG Graphic file (type png)
 <use ../NOTE SUGLI ESERCIZI/img5.PNG>
 Package pdftex.def Info: ../NOTE SUGLI ESERCIZI/img5.PNG  used on input line 550.
@@ -1883,7 +1934,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 585--594
 
  []
 
-[68 <../NOTE SUGLI ESERCIZI/img5.PNG>]
+[69 <../NOTE SUGLI ESERCIZI/img5.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 596--604
 
  []
@@ -1903,7 +1954,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 628--638
 
  []
 
-[69]
+[70]
 Underfull \hbox (badness 10000) in paragraph at lines 653--658
 
  []
@@ -1937,7 +1988,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 675--680
 
  []
 
-[70]
+[71]
 Underfull \hbox (badness 10000) in paragraph at lines 690--694
 
  []
@@ -1967,7 +2018,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 728--732
 
  []
 
-[71]
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 755--760
 
  []
@@ -1987,7 +2038,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 788--793
 
  []
 
-[72]) [73]
+[73]) [74]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
  (c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.aux)
@@ -1997,18 +2048,18 @@ Package rerunfilecheck Info: File `riassunto.out' has not changed.
 (rerunfilecheck)             Checksum: E5CD36705C2E8F15B013C23132393BAC;13417.
  ) 
 Here is how much of TeX's memory you used:
- 19101 strings out of 480994
- 349356 string characters out of 5916032
+ 19112 strings out of 480994
+ 349564 string characters out of 5916032
  608939 words of memory out of 5000000
- 33917 multiletter control sequences out of 15000+600000
+ 33927 multiletter control sequences out of 15000+600000
  546471 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,77p,885b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" (73 pages, 4984122 bytes).
+Output written on "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" (74 pages, 5011309 bytes).
 PDF statistics:
- 1437 PDF objects out of 1440 (max. 8388607)
- 1173 compressed objects within 12 object streams
- 237 named destinations out of 1000 (max. 500000)
- 1704 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1445 PDF objects out of 1728 (max. 8388607)
+ 1176 compressed objects within 12 object streams
+ 238 named destinations out of 1000 (max. 500000)
+ 1714 words of extra memory for PDF output out of 10000 (max. 10000000)
 

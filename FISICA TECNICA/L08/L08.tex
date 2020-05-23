@@ -74,11 +74,11 @@ Evitare infiltrazioni di gas incondensabili e conseguente necessità di apparecc
 \ \newline
 Vediamo una tabella che mostra le caratteristiche di acqua e R134a, i due fluidi che useremo in questo corso:
 \begin{center}
-    \includegraphics[height=5cm]{../L08/img2.PNG}
+    \includegraphics[height=6cm]{../L08/img2.PNG}
 \end{center}
 Vediamo ora i diagrammi $T-s$ (che possono anche essere usati al posto delle tabelle... le tabelle sono più precise):
 \begin{center}
-    \includegraphics[height=3cm]{../L08/img3.PNG}
+    \includegraphics[height=5cm]{../L08/img3.PNG}
 \end{center}
 In azzurro: curva di saturazione, notiamo che la parte a destra di questa curva non è particolarmente ripida;\newline
 Le curve nere sono le isobare, in cui si leggono le pressioni in mega pascal alcune in alto e alcune a destra;\newline
@@ -87,7 +87,7 @@ Le curve rosse sono isoentalpiche (a parità di entalpia); \newline
 Le curve verdi sono isovolumiche;\newline
 Le curve azzurre tratteggiate sono quelle di isotitolo.
 \begin{center}
-    \includegraphics[height=3cm]{../L08/img4.PNG}
+    \includegraphics[height=5cm]{../L08/img4.PNG}
 \end{center}
 La curva nera marcata è la curva di saturazione: per l'r124a abbiamo una forte pendenza nella parte destra della curva di saturazione, questo vuol dire che si ha in uscita un alto titolo;\newline
 Le curve verdi sono isovolumiche;\newline
@@ -128,3 +128,33 @@ Dal punto di vista impiantistico la differenza è che il flusso in uscita dal ge
 \begin{center}
     \includegraphics[height=5cm]{../L08/img8.PNG}
 \end{center}
+\ \newline
+\textbf{Soluzioni per migliorare il rendimento del ciclo Rankine}\newline
+\begin{itemize}
+    \item \textbf{Riduzione della pressione di condensazione}:\newline
+    Cioè si cerca di portare la temperatura nel condensatore a quella dell'ambiente (cioè la sorgente di calore inferiore), ovvero stiamo cercando di abbassare la trasformazione $6-1$.
+    \begin{center}
+        \includegraphics[height=3cm]{../L08/img9.PNG}
+    \end{center}
+    Nel condensatore se si abbassa la temperatura di saturazione si abbassa anche la pressione.\newline
+    \newline
+    Il limite principale di questo miglioramente sono i limiti tecnologici: limiti tecnologici per le infiltrazioni quando $P < P_{atm}$ (tipico quando si utilizza acqua)..\newline
+    \newline
+    Siccome si ha una differenza di temperatura maggiore nella trasformazione della turbina, allora si ha un aumento del lavoro prodotto, contemporaneamente si avrà anche un innalzamento del consumo della pompa, ma la turbina produce di più di quanto la pompa consumi.\newline
+    \newline
+    Avremo tendenzialmente un rendimento del ciclo maggiore, ma anche un rendimento della macchina termica migliore (si diminuiscono le irreversibilità esterne).
+    \item \textbf{Aumento della temperatura finale di surriscaldamento}:\newline
+    \begin{center}
+        \includegraphics[height=3cm]{../L08/img10.PNG}
+    \end{center}
+    Si aumenta la temperatura massima del ciclo, in modo che aumenti il salto entalpico della turbina e quindi aumenti il lavoro prodotto. Il lavoro prodotto dalla turbina è maggiore della quantità di calore necessaria da fornire e quindi si ha un miglioramento del rendimento.\newline
+    \newline
+    Inoltre si ha pure un aumento del titolo d'uscita dalla turbina. \newline
+    \newline
+    I limiti dell'aumento della temperatura sono di tipo tecnologico ($T_{max} = 650^o C$).
+    \item \textbf{ Aumento della pressione di vaporizzazione}:\newline
+    Questo consente di ridurre la potenza termita scambiata a parità di produzione di energia meccanica della turbina.
+    \item Surriscaldamenti ripetuti.\newline
+    Nel ciclo Rankine ne abbiamo solo uno di surriscaldamento, ma se ne possono fare di più.
+    \item \textbf{Rigenerazione}:\newline
+\end{itemize}
