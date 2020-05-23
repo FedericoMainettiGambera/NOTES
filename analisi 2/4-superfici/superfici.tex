@@ -597,6 +597,16 @@ dove $H_f(x_0)$ è la matrice Hessiana di $f$ in $x_0$.\newline
 \end{itemize}
 \end{tcolorbox}
 \end{comment}
+\subsubsection{Massimi e minimi per funzioni con domini chiusi e limitati}
+Per una funzione $f(x,y)$ definita e continua in un dominio chiuso e limitato, vale il \textbf{teorema di Weierstrass}: una funzione $f$ definita e continua in un insieme chiuso e limitato, ammette massimo e minimo assoluto.\newline
+\newline
+La ricerca di massimo e minimo, in questa tipologia di esercizi, si svolge così: innanzitutto si cercano tutti gli estremi liberi di $f$ (ci si comporta come sempre: annullando il gradiente e analizzando il comportamento di $f$ negli eventuali punti di non differenziabilità), fra questi punti trovati si scartano quelli esterni al dominio e dopodichè si procede a studiare il comportamento di $f$ lungo la linea che costituisce la frontiera del dominio in esame, combinando i risultati si trovano i massimi e minimi globali e relativi di $f$ ristretta per un certo dominio chiuso e limitato. Per studiare il comportamento lungo le linee che costituiscono la frontiera tipicamente si cerca di esprimere queste come funzioni $y=f(x)$ o $x=f(y)$ e si studia la funzione $f$ sostituendo le espressioni trovate. In seguito logicamente si combinano tutti i risultati ottenuti per giugnere a una conclusione.
+\subsubsection{Massimi e minimi (assoluti) per funzioni con domini illimitati}
+Per determinare la presenza di massimi o minimi assoluti per funzioni con domini illimitati occorne stabilirne il comprotamento all'infinito:
+\begin{itemize}
+    \item Se si riesce a stabilire una direzione lungo la quale $f$ tende a $+ \infty$, allora $f$ non potrà ammettere massimo assoluto;
+    \item Se si reisce a stabilire una direzione lungo la quale $f$ tende a $- \infty$, allora $f$ non potrà ammettere minimo assoluto.
+\end{itemize}
 \subsection{Ottimizzazione vincolata}
 \begin{comment}
 \rule{\textwidth}{0,4pt}
@@ -714,7 +724,7 @@ Il \textbf{teorema di Weierstrass} può essere di aiuto per garantire l'esistenz
 \newline
 Notiamo che il valore esatto del moltiplicatore $\lambda$ non è essenziale: permette di trovare i punti candidati, ma non serve per calcolare il livello della funzione.\newline
 \newline
-Un punto più delicato riguarda i punti in cui i vettori delle derivate parziali di $f$ e di $g$ ($\nabla f$ e $\nabla g$) si annullano sul vincolo. Se si annulla $\nabla f$ troveremo un moltiplicatore nullo e saremo in presenza di un punto critico libero di $f$ che posiamo tranquillamente inserire tra i candidati e valutarlo insieme agli altri punti. Se invece si annulla $\nabla g$ il metodo di Lagrange non funziona dato che non si riesce a determinare il moltiplicatore, quindi questi punti dovranno essere inseriti fra i candidati e valutati a parte.
+Un punto più delicato riguarda i punti in cui i vettori delle derivate parziali di $f$ e di $g$ ($\nabla f$ e $\nabla g$) si annullano sul vincolo. Se si annulla $\nabla f$ troveremo un moltiplicatore nullo e saremo in presenza di un punto critico libero di $f$ che posiamo tranquillamente inserire tra i candidati e valutarlo insieme agli altri punti. Se invece si annulla $\nabla g$ il metodo di Lagrange non funziona dato che non si riesce a determinare il moltiplicatore, quindi questi punti dovranno essere inseriti fra i candidati e valutati a parte. 
 \subsection{Funzioni convesse di n variabili}
 \subsubsection{Generalità sulle funzioni convesse}
 Un insieme $\Omega \subseteq \mathbb{R}^n$ si dice \textbf{convesso} se per ogni coppia di punti $x_1, x_2 \in \Omega$ si ha che $[x_1,x_2]\subseteq \Omega$ (dove col simbolo $[x_1,x_2]$ si denota il segmento con estremi $x_1,x_2$); si dice strettamente convesso se per ogni coppia di punti $x_1,x_2 \in \Omega$ il segmento $(x_1,x_2)$ privato degli estremi è strettamente contenuto in $\Omega$.\newline
