@@ -123,39 +123,42 @@
 \contentsline {subsection}{\numberline {8.1}Cicli termodinamici a vapore}{51}{subsection.8.1}%
 \contentsline {subsubsection}{\numberline {8.1.1}Ciclo di Carnot a vapore}{51}{subsubsection.8.1.1}%
 \contentsline {subsubsection}{\numberline {8.1.2}Caratteristiche di un fluido di lavoro per il ciclo a vapore}{51}{subsubsection.8.1.2}%
-\contentsline {part}{II\hspace {1em}NOTE SUGLI ESERCIZI}{53}{part.2}%
-\contentsline {section}{\numberline {9}Linee guida per gli esercizi}{54}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Impostazione del problem}{54}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Soluzione del problema}{54}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Unità di misura}{54}{subsection.9.3}%
-\contentsline {section}{\numberline {10}Equazioni di bilancio per i sistemi chiusi}{55}{section.10}%
-\contentsline {section}{\numberline {11}Stati monofase: equazioni di stato e trasformazioni}{57}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Gas ideali}{57}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Liquidi e solidi incomprimibili ideali}{58}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}Gas reali}{58}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}Liquidi e solidi reali}{58}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Trasformazioni politropiche}{59}{subsection.11.5}%
-\contentsline {section}{\numberline {12}Stati bifase: grandezze di stato e trasformazioni}{59}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Proprietà termodinamiche estensive}{60}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Tabelle}{60}{subsection.12.2}%
-\contentsline {section}{\numberline {13}Equazioni di bilancio per sistemi aperti}{62}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Sistemi aperti notevoli}{62}{subsection.13.1}%
-\contentsline {subsubsection}{\numberline {13.1.1}Macchina aperta}{62}{subsubsection.13.1.1}%
-\contentsline {subsubsection}{\numberline {13.1.2}Scambiatori di calore}{63}{subsubsection.13.1.2}%
-\contentsline {subsubsection}{\numberline {13.1.3}Casi minori}{63}{subsubsection.13.1.3}%
-\contentsline {section}{\numberline {14}Macchine termodinamiche}{64}{section.14}%
-\contentsline {subsection}{\numberline {14.1}macchina motrice con sorgenti a temperatura cosante}{64}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}macchina operatrice con sorgenti a temperatura costante}{65}{subsection.14.2}%
-\contentsline {subsection}{\numberline {14.3}Macchina motrice con serbatoio caldo a massa finita}{66}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4}Rendimento di secondo principio}{66}{subsection.14.4}%
-\contentsline {section}{\numberline {15}Cicli a gas e a vapore}{67}{section.15}%
-\contentsline {subsection}{\numberline {15.1}Cicli a gas}{67}{subsection.15.1}%
-\contentsline {subsubsection}{\numberline {15.1.1}Ciclo di Carnot}{68}{subsubsection.15.1.1}%
-\contentsline {subsubsection}{\numberline {15.1.2}Ciclo Joule-Brayton}{68}{subsubsection.15.1.2}%
-\contentsline {subsubsection}{\numberline {15.1.3}Ciclo Otto}{69}{subsubsection.15.1.3}%
-\contentsline {subsubsection}{\numberline {15.1.4}Ciclo Diesel}{69}{subsubsection.15.1.4}%
-\contentsline {subsubsection}{\numberline {15.1.5}Ciclo Joule-Brayton inverso}{69}{subsubsection.15.1.5}%
-\contentsline {subsection}{\numberline {15.2}Cicli a vapore}{69}{subsection.15.2}%
-\contentsline {subsubsection}{\numberline {15.2.1}Ciclo Rankine}{69}{subsubsection.15.2.1}%
-\contentsline {subsubsection}{\numberline {15.2.2}Ciclo frigorifero a vapore}{70}{subsubsection.15.2.2}%
-\contentsline {subsection}{\numberline {15.3}Osservazioni}{70}{subsection.15.3}%
+\contentsline {subsection}{\numberline {8.2}Ciclo Rankine}{53}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Ciclo Rankine semplice (a vapore saturo)}{53}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Ciclo Rankine}{54}{subsubsection.8.2.2}%
+\contentsline {part}{II\hspace {1em}NOTE SUGLI ESERCIZI}{56}{part.2}%
+\contentsline {section}{\numberline {9}Linee guida per gli esercizi}{57}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Impostazione del problem}{57}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Soluzione del problema}{57}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Unità di misura}{57}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Equazioni di bilancio per i sistemi chiusi}{58}{section.10}%
+\contentsline {section}{\numberline {11}Stati monofase: equazioni di stato e trasformazioni}{60}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Gas ideali}{60}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Liquidi e solidi incomprimibili ideali}{61}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Gas reali}{61}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Liquidi e solidi reali}{61}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Trasformazioni politropiche}{62}{subsection.11.5}%
+\contentsline {section}{\numberline {12}Stati bifase: grandezze di stato e trasformazioni}{62}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Proprietà termodinamiche estensive}{63}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Tabelle}{63}{subsection.12.2}%
+\contentsline {section}{\numberline {13}Equazioni di bilancio per sistemi aperti}{65}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Sistemi aperti notevoli}{65}{subsection.13.1}%
+\contentsline {subsubsection}{\numberline {13.1.1}Macchina aperta}{65}{subsubsection.13.1.1}%
+\contentsline {subsubsection}{\numberline {13.1.2}Scambiatori di calore}{66}{subsubsection.13.1.2}%
+\contentsline {subsubsection}{\numberline {13.1.3}Casi minori}{66}{subsubsection.13.1.3}%
+\contentsline {section}{\numberline {14}Macchine termodinamiche}{67}{section.14}%
+\contentsline {subsection}{\numberline {14.1}macchina motrice con sorgenti a temperatura cosante}{67}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}macchina operatrice con sorgenti a temperatura costante}{68}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Macchina motrice con serbatoio caldo a massa finita}{69}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Rendimento di secondo principio}{69}{subsection.14.4}%
+\contentsline {section}{\numberline {15}Cicli a gas e a vapore}{70}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Cicli a gas}{70}{subsection.15.1}%
+\contentsline {subsubsection}{\numberline {15.1.1}Ciclo di Carnot}{71}{subsubsection.15.1.1}%
+\contentsline {subsubsection}{\numberline {15.1.2}Ciclo Joule-Brayton}{71}{subsubsection.15.1.2}%
+\contentsline {subsubsection}{\numberline {15.1.3}Ciclo Otto}{72}{subsubsection.15.1.3}%
+\contentsline {subsubsection}{\numberline {15.1.4}Ciclo Diesel}{72}{subsubsection.15.1.4}%
+\contentsline {subsubsection}{\numberline {15.1.5}Ciclo Joule-Brayton inverso}{72}{subsubsection.15.1.5}%
+\contentsline {subsection}{\numberline {15.2}Cicli a vapore}{72}{subsection.15.2}%
+\contentsline {subsubsection}{\numberline {15.2.1}Ciclo Rankine}{72}{subsubsection.15.2.1}%
+\contentsline {subsubsection}{\numberline {15.2.2}Ciclo frigorifero a vapore}{73}{subsubsection.15.2.2}%
+\contentsline {subsection}{\numberline {15.3}Osservazioni}{73}{subsection.15.3}%
