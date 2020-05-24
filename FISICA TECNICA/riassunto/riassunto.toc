@@ -126,6 +126,7 @@
 \contentsline {subsection}{\numberline {8.2}Ciclo Rankine}{53}{subsection.8.2}%
 \contentsline {subsubsection}{\numberline {8.2.1}Ciclo Rankine semplice (a vapore saturo)}{53}{subsubsection.8.2.1}%
 \contentsline {subsubsection}{\numberline {8.2.2}Ciclo Rankine}{54}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.3}Ciclo frigorifero a vapore}{56}{subsection.8.3}%
 \contentsline {part}{II\hspace {1em}NOTE SUGLI ESERCIZI}{57}{part.2}%
 \contentsline {section}{\numberline {9}Linee guida per gli esercizi}{58}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Impostazione del problem}{58}{subsection.9.1}%
