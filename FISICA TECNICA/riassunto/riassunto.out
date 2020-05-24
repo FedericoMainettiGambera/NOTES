@@ -129,39 +129,46 @@
 \BOOKMARK [3][-]{subsubsection.8.3.2}{Ciclo frigorifero a vapore teorico}{subsection.8.3}% 129
 \BOOKMARK [3][-]{subsubsection.8.3.3}{Ciclo frigorifero a vapore}{subsection.8.3}% 130
 \BOOKMARK [1][-]{section.9}{L09-Trasmissione del calore}{part.1}% 131
-\BOOKMARK [0][-]{part.2}{II NOTE SUGLI ESERCIZI}{}% 132
-\BOOKMARK [1][-]{section.10}{Linee guida per gli esercizi}{part.2}% 133
-\BOOKMARK [2][-]{subsection.10.1}{Impostazione del problem}{section.10}% 134
-\BOOKMARK [2][-]{subsection.10.2}{Soluzione del problema}{section.10}% 135
-\BOOKMARK [2][-]{subsection.10.3}{Unit\340 di misura}{section.10}% 136
-\BOOKMARK [1][-]{section.11}{Equazioni di bilancio per i sistemi chiusi}{part.2}% 137
-\BOOKMARK [1][-]{section.12}{Stati monofase: equazioni di stato e trasformazioni}{part.2}% 138
-\BOOKMARK [2][-]{subsection.12.1}{Gas ideali}{section.12}% 139
-\BOOKMARK [2][-]{subsection.12.2}{Liquidi e solidi incomprimibili ideali}{section.12}% 140
-\BOOKMARK [2][-]{subsection.12.3}{Gas reali}{section.12}% 141
-\BOOKMARK [2][-]{subsection.12.4}{Liquidi e solidi reali}{section.12}% 142
-\BOOKMARK [2][-]{subsection.12.5}{Trasformazioni politropiche}{section.12}% 143
-\BOOKMARK [1][-]{section.13}{Stati bifase: grandezze di stato e trasformazioni}{part.2}% 144
-\BOOKMARK [2][-]{subsection.13.1}{Propriet\340 termodinamiche estensive}{section.13}% 145
-\BOOKMARK [2][-]{subsection.13.2}{Tabelle}{section.13}% 146
-\BOOKMARK [1][-]{section.14}{Equazioni di bilancio per sistemi aperti}{part.2}% 147
-\BOOKMARK [2][-]{subsection.14.1}{Sistemi aperti notevoli}{section.14}% 148
-\BOOKMARK [3][-]{subsubsection.14.1.1}{Macchina aperta}{subsection.14.1}% 149
-\BOOKMARK [3][-]{subsubsection.14.1.2}{Scambiatori di calore}{subsection.14.1}% 150
-\BOOKMARK [3][-]{subsubsection.14.1.3}{Casi minori}{subsection.14.1}% 151
-\BOOKMARK [1][-]{section.15}{Macchine termodinamiche}{part.2}% 152
-\BOOKMARK [2][-]{subsection.15.1}{macchina motrice con sorgenti a temperatura cosante}{section.15}% 153
-\BOOKMARK [2][-]{subsection.15.2}{macchina operatrice con sorgenti a temperatura costante}{section.15}% 154
-\BOOKMARK [2][-]{subsection.15.3}{Macchina motrice con serbatoio caldo a massa finita}{section.15}% 155
-\BOOKMARK [2][-]{subsection.15.4}{Rendimento di secondo principio}{section.15}% 156
-\BOOKMARK [1][-]{section.16}{Cicli a gas e a vapore}{part.2}% 157
-\BOOKMARK [2][-]{subsection.16.1}{Cicli a gas}{section.16}% 158
-\BOOKMARK [3][-]{subsubsection.16.1.1}{Ciclo di Carnot}{subsection.16.1}% 159
-\BOOKMARK [3][-]{subsubsection.16.1.2}{Ciclo Joule-Brayton}{subsection.16.1}% 160
-\BOOKMARK [3][-]{subsubsection.16.1.3}{Ciclo Otto}{subsection.16.1}% 161
-\BOOKMARK [3][-]{subsubsection.16.1.4}{Ciclo Diesel}{subsection.16.1}% 162
-\BOOKMARK [3][-]{subsubsection.16.1.5}{Ciclo Joule-Brayton inverso}{subsection.16.1}% 163
-\BOOKMARK [2][-]{subsection.16.2}{Cicli a vapore}{section.16}% 164
-\BOOKMARK [3][-]{subsubsection.16.2.1}{Ciclo Rankine}{subsection.16.2}% 165
-\BOOKMARK [3][-]{subsubsection.16.2.2}{Ciclo frigorifero a vapore}{subsection.16.2}% 166
-\BOOKMARK [2][-]{subsection.16.3}{Osservazioni}{section.16}% 167
+\BOOKMARK [2][-]{subsection.9.1}{Concetti base}{section.9}% 132
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Calore scambiato}{subsection.9.1}% 133
+\BOOKMARK [3][-]{subsubsection.9.1.2}{Flusso termico}{subsection.9.1}% 134
+\BOOKMARK [3][-]{subsubsection.9.1.3}{La conduzione}{subsection.9.1}% 135
+\BOOKMARK [3][-]{subsubsection.9.1.4}{La convezione}{subsection.9.1}% 136
+\BOOKMARK [3][-]{subsubsection.9.1.5}{L'irraggiamento}{subsection.9.1}% 137
+\BOOKMARK [1][-]{section.10}{L10-Conduzione}{part.1}% 138
+\BOOKMARK [0][-]{part.2}{II NOTE SUGLI ESERCIZI}{}% 139
+\BOOKMARK [1][-]{section.11}{Linee guida per gli esercizi}{part.2}% 140
+\BOOKMARK [2][-]{subsection.11.1}{Impostazione del problem}{section.11}% 141
+\BOOKMARK [2][-]{subsection.11.2}{Soluzione del problema}{section.11}% 142
+\BOOKMARK [2][-]{subsection.11.3}{Unit\340 di misura}{section.11}% 143
+\BOOKMARK [1][-]{section.12}{Equazioni di bilancio per i sistemi chiusi}{part.2}% 144
+\BOOKMARK [1][-]{section.13}{Stati monofase: equazioni di stato e trasformazioni}{part.2}% 145
+\BOOKMARK [2][-]{subsection.13.1}{Gas ideali}{section.13}% 146
+\BOOKMARK [2][-]{subsection.13.2}{Liquidi e solidi incomprimibili ideali}{section.13}% 147
+\BOOKMARK [2][-]{subsection.13.3}{Gas reali}{section.13}% 148
+\BOOKMARK [2][-]{subsection.13.4}{Liquidi e solidi reali}{section.13}% 149
+\BOOKMARK [2][-]{subsection.13.5}{Trasformazioni politropiche}{section.13}% 150
+\BOOKMARK [1][-]{section.14}{Stati bifase: grandezze di stato e trasformazioni}{part.2}% 151
+\BOOKMARK [2][-]{subsection.14.1}{Propriet\340 termodinamiche estensive}{section.14}% 152
+\BOOKMARK [2][-]{subsection.14.2}{Tabelle}{section.14}% 153
+\BOOKMARK [1][-]{section.15}{Equazioni di bilancio per sistemi aperti}{part.2}% 154
+\BOOKMARK [2][-]{subsection.15.1}{Sistemi aperti notevoli}{section.15}% 155
+\BOOKMARK [3][-]{subsubsection.15.1.1}{Macchina aperta}{subsection.15.1}% 156
+\BOOKMARK [3][-]{subsubsection.15.1.2}{Scambiatori di calore}{subsection.15.1}% 157
+\BOOKMARK [3][-]{subsubsection.15.1.3}{Casi minori}{subsection.15.1}% 158
+\BOOKMARK [1][-]{section.16}{Macchine termodinamiche}{part.2}% 159
+\BOOKMARK [2][-]{subsection.16.1}{macchina motrice con sorgenti a temperatura cosante}{section.16}% 160
+\BOOKMARK [2][-]{subsection.16.2}{macchina operatrice con sorgenti a temperatura costante}{section.16}% 161
+\BOOKMARK [2][-]{subsection.16.3}{Macchina motrice con serbatoio caldo a massa finita}{section.16}% 162
+\BOOKMARK [2][-]{subsection.16.4}{Rendimento di secondo principio}{section.16}% 163
+\BOOKMARK [1][-]{section.17}{Cicli a gas e a vapore}{part.2}% 164
+\BOOKMARK [2][-]{subsection.17.1}{Cicli a gas}{section.17}% 165
+\BOOKMARK [3][-]{subsubsection.17.1.1}{Ciclo di Carnot}{subsection.17.1}% 166
+\BOOKMARK [3][-]{subsubsection.17.1.2}{Ciclo Joule-Brayton}{subsection.17.1}% 167
+\BOOKMARK [3][-]{subsubsection.17.1.3}{Ciclo Otto}{subsection.17.1}% 168
+\BOOKMARK [3][-]{subsubsection.17.1.4}{Ciclo Diesel}{subsection.17.1}% 169
+\BOOKMARK [3][-]{subsubsection.17.1.5}{Ciclo Joule-Brayton inverso}{subsection.17.1}% 170
+\BOOKMARK [2][-]{subsection.17.2}{Cicli a vapore}{section.17}% 171
+\BOOKMARK [3][-]{subsubsection.17.2.1}{Ciclo Rankine}{subsection.17.2}% 172
+\BOOKMARK [3][-]{subsubsection.17.2.2}{Ciclo frigorifero a vapore}{subsection.17.2}% 173
+\BOOKMARK [2][-]{subsection.17.3}{Osservazioni}{section.17}% 174
