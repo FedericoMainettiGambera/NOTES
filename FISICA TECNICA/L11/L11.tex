@@ -102,3 +102,61 @@ Video dimostrativo: \url{https://www.youtube.com/watch?v=wXsl4eyupUY}\newline
 \end{itemize}
 \subsection{Convezione forzata}
 \subsubsection{L'analisi dimensionale}
+Il coefficiente convettivo nel caso di \textbf{convezione forzata} dipende da:
+\begin{itemize}
+    \item le caratteristiche del fluido: densità ($\rho$), viscosità ($\mu$), calore specifico a pressione costante ($c_P$), conduttività termica ($k$);
+    \item dalle condizioni di moto del fluido: velcoità caratteristica ($w$);
+    \item dalla geometria della parete: lunghezza caratteristica ($\lambda$).
+\end{itemize}
+\[
+    h = h(\rho, \mu, c_P, k , w , \lambda)
+\]
+(nota: $h$ non è una proprietà della materia).\newline
+\newline
+Si hanno $r= 7$ grandezze fisiche ($h, \rho, \mu, c_P, k , w , \lambda$) e $n = 4$ grandezze fondamentali ($L,M,t,T$). \newline
+\newline
+Dal \textbf{teorema di buckingham} (dispensa sezione $6.4$), si dovrà avere un legame tra $\Pi = r - n = 3$ \textbf{gruppi adimensionali}.\newline
+\newline
+Esiste una relazione funzionale (da determinare sperimentalmente) tra questi $3$ gruppi adimensionali
+\[
+    g'(\pi_1, \pi_2, \pi_3) = 0
+\]
+\textbf{Gruppi adimensionali per convezione forzata}:
+\[
+    Nu = \frac{h\lambda}{k} \;\;\;\;\; \text{numero di Nusselt}
+\]
+\[
+    Re = \frac{\rho w \lambda}{\mu} \;\;\;\;\;\text{numero di Reynolds}
+\]
+\[
+    Pr = \frac{c_P \mu}{k} \;\;\;\;\;\text{numero di Prandtl}
+\]
+\subsubsection{Numero di Nusselt}
+Può essere interpretato come \textbf{rapporto} tra la potenza termica
+scambiata con moti macroscopici (\textbf{convezione}) e la potenza
+termica scambiata per \textbf{conduzione} nello strato limite
+\[
+    Nu = \frac{h\lambda}{k}
+\]
+In effetti, dividendo il flusso di calore per convezione ($h \Delta T$)
+per il flusso di calore per conduzione ($k / \lambda \cdot \Delta T$) si ottiene
+il numero di Nusselt
+\[
+    Nu = \frac{h\Delta T}{\frac{k}{\lambda}\Delta T}
+\]
+Indica di quanto è stato incrementato lo scambio termico
+per via del moto del fluido.
+\subsubsection{Numero di Reynolds}
+\[
+    Re = \frac{\rho w \lambda}{\mu}
+\]
+Può essere interpretato come rapporto tra la risultante
+delle forze di inerzia e la risultante delle forze viscose
+\[
+    Re = \frac{\text{Forze d'inerzia}}{\text{Forze viscose}} = \frac{\rho w \frac{\delta w}{\delta x}}{\mu \frac{\delta ^2 w}{\delta y^2}} + ???
+\]
+Indica se il moto è in regime laminare o turbolento (Reynolds critico).
+\subsubsection{Numero di Prandtl}
+\[
+    Pr = \frac{c_P \mu}{k}
+\]
