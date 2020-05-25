@@ -142,13 +142,13 @@
 \BOOKMARK [2][-]{subsection.10.2}{Equazione generale della conduzione}{section.10}% 142
 \BOOKMARK [2][-]{subsection.10.3}{Condizioni al contorno}{section.10}% 143
 \BOOKMARK [2][-]{subsection.10.4}{Sistema di coordinate}{section.10}% 144
-\BOOKMARK [2][-]{subsection.10.5}{Conduzione 1D con generazione interna}{section.10}% 145
-\BOOKMARK [2][-]{subsection.10.6}{Parete piana indefinita}{section.10}% 146
-\BOOKMARK [2][-]{subsection.10.7}{Barra cilindrica piena \(con generazione di potenza\)}{section.10}% 147
-\BOOKMARK [2][-]{subsection.10.8}{Cilindro cavo \(senza generazione di potenza\)}{section.10}% 148
-\BOOKMARK [2][-]{subsection.10.9}{Parete sferica cava \(senza generazione di potenza\)}{section.10}% 149
-\BOOKMARK [2][-]{subsection.10.10}{Conduttivit\340 termica}{section.10}% 150
-\BOOKMARK [2][-]{subsection.10.11}{Coefficiente convettivo}{section.10}% 151
+\BOOKMARK [2][-]{subsection.10.5}{Conduzione in una dimensione con generazione interna}{section.10}% 145
+\BOOKMARK [3][-]{subsubsection.10.5.1}{Parete piana indefinita}{subsection.10.5}% 146
+\BOOKMARK [3][-]{subsubsection.10.5.2}{Barra cilindrica piena \(con generazione di potenza\)}{subsection.10.5}% 147
+\BOOKMARK [3][-]{subsubsection.10.5.3}{Cilindro cavo \(senza generazione di potenza\)}{subsection.10.5}% 148
+\BOOKMARK [3][-]{subsubsection.10.5.4}{Parete sferica cava \(senza generazione di potenza\)}{subsection.10.5}% 149
+\BOOKMARK [2][-]{subsection.10.6}{Conduttivit\340 termica}{section.10}% 150
+\BOOKMARK [2][-]{subsection.10.7}{Coefficiente convettivo}{section.10}% 151
 \BOOKMARK [0][-]{part.2}{II NOTE SUGLI ESERCIZI}{}% 152
 \BOOKMARK [1][-]{section.11}{Linee guida per gli esercizi}{part.2}% 153
 \BOOKMARK [2][-]{subsection.11.1}{Impostazione del problem}{section.11}% 154

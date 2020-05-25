@@ -145,7 +145,7 @@ Laplace.
         \nabla^2 T = \frac{1}{r^2} \frac{\delta}{\delta r}\left(r^2 \frac{\delta T}{\delta r}\right) + \frac{1}{r^2 sin^2(\psi)}\frac{\delta^2 T}{\delta \theta^2} + \frac{1}{r^2 sin(\psi)}\frac{\delta}{\delta\psi}\left(sin(\psi)\frac{\delta T}{\delta \psi}\right)
     \]
 \end{itemize}
-\subsection{Conduzione 1D con generazione interna}
+\subsection{Conduzione in una dimensione con generazione interna}
 L’equazione generale di Fourier in regime stazionario, con generazione interna
 (costante), monodimensionale diventa:
 \begin{itemize}
@@ -162,12 +162,13 @@ L’equazione generale di Fourier in regime stazionario, con generazione interna
         \frac{1}{r^2} \frac{d}{dr}\left(r^2 \frac{dT}{dr}\right) + \frac{\sigma}{k} = 0
     \]
 \end{itemize}
-Integrando diventa:
+Integrando (due volte) diventa:
 \begin{itemize}
     \item In coordiante cartesiane ortogonali $T = T(x)$:
     \[
         T = -\frac{\sigma}{2k} x^2 + Ax + B
     \]
+    (senza generazione interna sarebbe $T = Ax + B$)
     \item In coordiante cilindriche $T= T(r)$:
     \[
         T = - \frac{\sigma}{4k}r^2 + C ln(r) + D
@@ -178,9 +179,11 @@ Integrando diventa:
     \]
 \end{itemize}
 Le \textbf{costanti di integrazione} ($A,B,C,D,E,F$) sono determinabili con le \textbf{condizioni al contorno}.
-\subsection{Parete piana indefinita}
-Si consideri il caso senza generazione interna $T = Ax + B$. \newline
-\newline
+\subsubsection{Parete piana indefinita}
+Si consideri il caso senza generazione interna
+\[
+    T = Ax + B
+\]
 Si consideri il caso di \textbf{due condizioni di prima specie}:
 \begin{center}
     \includegraphics[height=4cm]{../L10/img1.PNG}
@@ -207,14 +210,14 @@ Il flusso termico complessivo è dato per una superficie $S$:
 \[
     \dot{Q} = k S \frac{T_1-T_2}{L}
 \]
+Analogia elettrica: possiamo interpretare $T_1-T_2$ come una differenza di potenziale, $\dot{Q}$ come una corrente elettrica e quindi otteniamo$\Delta V = RI$. Possiamo quindi riscrivere il flusso termico come:
 \[
     \dot{Q} = \frac{T_1-T_2}{R_{cond}}
 \]
-dove $R_{cond}$ è la \textbf{resistenza termica di tipo conduttiva} e vale $R_{cond} = \frac{L}{kS}$.\newline
+dove abbiamo introdotto il termine $R_{cond}$ che è la \textbf{resistenza termica di tipo conduttiva} e vale $R_{cond} = \frac{L}{kS}$.\newline
 \newline
-Analogia elettrica $\Delta V = RI$.\newline
-\newline
-Caso di una \textbf{Parete composta}:
+\rule{\textwidth}{0,4pt}
+Caso di una \textbf{parete composta} (più pareti una dietro l'altra):
 \begin{center}
     \includegraphics[height=4cm]{../L10/img3.PNG}
 \end{center}
@@ -226,19 +229,25 @@ Caso di una \textbf{Parete composta}:
         \dot{Q} = \frac{T_{n-1,n} - T_{n}}{R_n}
     \end{matrix}  
 \]
+Vediamo dunque che c'è un legame fra gli estremi della prima e dell'utlima parete:
 \[
     \dot{Q} = \frac{T_1-T_n}{R_{eq}}
 \]
-Resistenze in serie
+La prima e l'ultima parete sono quindi legate da una sorta di "resistenza in serie" composta dalle singole resistenze di ogni parete
 \[
     R_{eq} = \sum_{i=1}^{n}R_i
 \]
-Il gradiente di temperatura (pendenza) nella parete è inversamente proporzionale alla conduttività termica del mezzo.\newline
+Il gradiente di temperatura (pendenza) nella parete è inversamente proporzionale alla conduttività termica del mezzo. Il flusso termico è continuo in tutti gli strati nel senso che ha la stessa quantità sia nella prima sia nella seconda, etc, sia nell'utlima parete.\newline
 \newline
-Caso di condizioni al contorno di \textbf{terza specie (tipo convettivo)} $T= Ax + B$
+\rule{\textwidth}{0,4pt}
+Caso di condizioni al contorno di \textbf{terza specie (tipo convettivo)}
+\[
+    T= Ax + B
+\]
 \begin{center}
     \includegraphics[height=5cm]{../L10/img4.PNG}
 \end{center}
+Tipicamente negli esercizi non conosciamo $T_1$ e $T_2$, ma solo $T_{\infty 1}$ e $T_{\infty 2}$ e quindi dobbiamo lavorare con questi.
 \[
     \begin{cases}
         x = 0 \\ h_1(T_{\infty 1}-T) = -k \frac{dT}{dx}
@@ -260,13 +269,6 @@ Caso di condizioni al contorno di \textbf{terza specie (tipo convettivo)} $T= Ax
 \[
     T = - \frac{(T_{\infty 1} - T_{\infty 2})}{\left(\frac{1}{h_1} + \frac{L}{k} + \frac{1}{h_2}\right)}\left(\frac{x}{k} + \frac{1}{h_1}\right) + T_{\infty 1}
 \]
-\ \newline
-\newline
-Caso di condizioni al contorno di \textbf{terza specie (tipo convettivo)} $T = Ax + B$
-\begin{center}
-    \includegraphics[height=4cm]{../L10/img5.PNG}
-\end{center}
-
 \[
     \dot{Q} = \frac{T_{\infty 1}- T_{1}}{\frac{1}{h_1 S}} \;\;\;\;\;\;\;\;\;\; \dot{Q} = \frac{T_1-T_2}{\frac{L}{kS}} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \dot{Q} = \frac{T_2-T_{\infty 2}}{\frac{1}{h_2S}}
 \]
@@ -276,16 +278,20 @@ Caso di condizioni al contorno di \textbf{terza specie (tipo convettivo)} $T = A
 \[
     R_{eq} = \frac{1}{S}\left(\frac{1}{h_1} + \frac{L}{k} + \frac{1}{h_2}\right)
 \]
-Con \textbf{resistenza termica di tipo convettiva} $R_{conv} = \frac{1}{hS}$.
-\subsection{Barra cilindrica piena (con generazione di potenza)}
-Caso di condizioni al contorno di \textbf{prima specie}
+Con \textbf{resistenza termica di tipo convettiva}
+\[
+    R_{conv} = \frac{1}{hS}
+\]
+\subsubsection{Barra cilindrica piena (con generazione di potenza)}
+Caso di condizioni al contorno di \textbf{prima specie}:
 \begin{center}
     \includegraphics[height=4cm]{../L10/img6.PNG}
 \end{center}
-
+L'andamento della temperatura non è più lineare ma è logaritmico e abbiamo pure la generazione di potenza con un andamento parabolico. Qualitativamente, come si vede nell'immaigne, si ottiene un andamento parabolico.
 \[
     T= - \frac{\sigma}{4k} r^2 + C ln(r) + D \;\;\;\;\;\;\;\;\;\; \frac{dT}{dr} = - \frac{\sigma}{2k}r + \frac{C}{r}
 \]
+Condizioni al contorno del sistema di prima specie sono
 \[
     \begin{cases}
         r = 0 \\ \frac{dT}{dr} = 0
@@ -295,6 +301,7 @@ Caso di condizioni al contorno di \textbf{prima specie}
         C=0 \\ D = T_2 + \frac{\sigma}{4k} R^2
     \end{cases}
 \]
+Per il raggio uguale a $0$ la superficie è nulla e non si ha flusso termico (si può pensare anche che ci sia una condizione di simmetria).
 \[
     T = \frac{\sigma}{4k} (R^2 - r^2) + T_2 \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \frac{dT}{dr}  = - \frac{\sigma}{2k}r
 \]
@@ -302,7 +309,7 @@ Caso di condizioni al contorno di \textbf{prima specie}
     J = -k \frac{dT}{dr} = \frac{\sigma}{2} r \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \frac{\dot{Q}}{L} = \frac{JA}{L} = \pi r^2 \sigma
 \]
 con $A$ l'area dello scambio temrico
-\subsection{Cilindro cavo (senza generazione di potenza)}
+\subsubsection{Cilindro cavo (senza generazione di potenza)}
 Caso di condizioni al contorno di \textbf{prima specie}
 \begin{center}
     \includegraphics[height=3cm]{../L10/img7.PNG}
@@ -334,14 +341,17 @@ Caso di condizioni al contorno di \textbf{prima specie}
 \[
     \dot{Q} = \frac{(T_i-T_e)}{\frac{1}{2\pi L k}ln\left(\frac{R_e}{R_i}\right)} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \dot{Q} = \frac{(T-i-T_e)}{R_{cond}}
 \]
-con $R_{cond} = \frac{1}{2 \pi L k}ln\left(\frac{R_e}{R_i}\right)$ \textbf{resistenza termica di tipo conduttiva}.\newline
-\newline
+con \textbf{resistenza termica di tipo conduttiva}
+\[
+    R_{cond} = \frac{1}{2 \pi L k}ln\left(\frac{R_e}{R_i}\right)
+\]
 Si ha un andamento logaritmico della temperatura nella parete solida:
 \begin{center}
     \includegraphics[height=3cm]{../L10/img8.PNG}
 \end{center}
 \ \newline
 \newline
+\rule{\textwidth}{0,4pt}
 Caso di condizioni al contorno di \textbf{terza specie (tipo convettivo)}
 \[
     \dot{Q} = \frac{(T_{\infty i}-T_{\infty 2})}{\frac{1}{2\pi L}\left( \frac{1}{h_i R_i} + \frac{1}{k}ln\left(\frac{R_e}{R_i}\right) + \frac{1}{h_eR_e}\right)}
@@ -349,20 +359,24 @@ Caso di condizioni al contorno di \textbf{terza specie (tipo convettivo)}
 \[
     \dot{Q}= \frac{(T_{\infty i} - T_{\infty e})}{R_{eq}}
 \]
-\textbf{Resistenza termica di tipo convettiva}: $R_{conv} = \frac{1}{2\pi L h R}$
-\newline
-\newline
+\textbf{Resistenza termica di tipo convettiva}:
+\[
+    R_{conv} = \frac{1}{2\pi L h R}
+\]
+\ \newline
 \textbf{Raggio critico di isolamento}:
+\begin{center}
+    \includegraphics[height=3cm]{../L10/img9.PNG}
+\end{center}
+
 \[
     \dot{Q} = \frac{(T_i - T_e)}{R_{eq}}
 \]
 con $T_i$ temperatura fluido interno e $T_e$ temperatura fluido esterno.
-\begin{center}
-    \includegraphics[height=3cm]{../L10/img9.PNG}
-\end{center}
 \[
     R_{eq} = \frac{1}{2\pi L}\left( \frac{1}{h_i R_1} + \frac{1}{k} ln \left(\frac{R_2}{R_1}\right) + \frac{1}{K_{is}} ln \left(\frac{R_{is}}{R_2}\right) + \frac{1}{h_eR_{is}}\right)
 \]
+Nel caso di cilindro cavo abbiamo anche il problema dell'isolamento: in pratica se consideriamo una tubazione in cui all'interno fluisce un fluido e all'esterno fluisce un altro fluido (l'ambiente). Si può lasciare il condotto senza nessuno strato di isolamento esterno e ottenere così una certa resistena equivalente, ma nel momento in cui si aggiunge uno strato isolante sulla parete esterna del condotto, si modifica questa resistenza equivalente. In particolare le modifiche dovute allo strato isolante sono: aggiunta di una resistenza di conduzione ($ \frac{1}{K_{is}} ln \left(\frac{R_{is}}{R_2}\right)$) e modifica della resistenza convettiva con l'esterno ($\frac{1}{h_eR_{is}}$). Ciò ch può succedere è che la resistenza di conduzione dovuta allo strato isolante, siccome cresce in maniera logaritmica, e la resistenza convettiva con l'esterno, siccome decresce in funzione dell'inverso del raggio, possono avere un effetto negativo sulla resistenza equivalente. Quindi in determinate condizioni l'aggiunta dell'isolante può peggiorare la situazione, nel senso che la resistenza equivalente totale decresce (nell'immagine si vede che la curva decresce fino a un certo raggio critico $r_{cr}$, c'è anche un raggio minimo $R_{min}$ oltre il quale l'isolamento ha un effetto di isolamento positivo).
 \begin{center}
     \includegraphics[height=3cm]{../L10/img10.PNG}
 \end{center}
@@ -372,10 +386,10 @@ con $T_i$ temperatura fluido interno e $T_e$ temperatura fluido esterno.
 \[
     \rightarrow R_{cr} = \frac{k_{is}}{h_e}
 \]
-\subsection{Parete sferica cava (senza generazione di potenza)}
+\subsubsection{Parete sferica cava (senza generazione di potenza)}
 caso di condizioni al contonro di \textbf{prima specie}
 \begin{center}
-    \includegraphics[height=3cm]{../L10/img11.PNG}
+    \includegraphics[height=5cm]{../L10/img11.PNG}
 \end{center}
 \[
     T = \frac{E}{r} + F \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\frac{dT}{dr} = - \frac{E}{r^2}
@@ -401,16 +415,19 @@ caso di condizioni al contonro di \textbf{prima specie}
 \[
     J = k \frac{T_1-T_2}{\frac{1}{R_1}- \frac{1}{R_2}} \frac{1}{r^2}
 \]
-\textbf{resistenza termica di tipo conduttiva}: $R_{cond} = \frac{1}{4\pi k} \left( \frac{1}{R_1} - \frac{1}{R_2} \right)$
+\textbf{Resistenza termica di tipo conduttiva}:
+\[
+    R_{cond} = \frac{1}{4\pi k} \left( \frac{1}{R_1} - \frac{1}{R_2} \right)
+\]
 \subsection{Conduttività termica}
 Valori indicativi per diversi materiali in condizioni normali di temperatura e pressione
 \begin{center}
-    \includegraphics[height=3cm]{../L10/img12.PNG}
+    \includegraphics[height=4cm]{../L10/img12.PNG}
 \end{center}
 \ \newline
 Valori indicativi per diversi materiali in condizioni normali di temperatura e pressione
 \begin{center}
-    \includegraphics[height=3cm]{../L10/img13.PNG}
+    \includegraphics[height=7cm]{../L10/img13.PNG}
 \end{center}
 \subsection{Coefficiente convettivo}
 \textbf{Dipende fortemente} dal tipo di fluido, dalla geometrica e dal tipo di moto (regime, velocità, ecc.).\newline
