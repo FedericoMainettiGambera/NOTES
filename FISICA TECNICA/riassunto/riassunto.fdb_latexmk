@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex riassunto.idx"] 1590528125 "riassunto.idx" "riassunto.ind" "riassunto" 1590528155
+["makeindex riassunto.idx"] 1590528125 "riassunto.idx" "riassunto.ind" "riassunto" 1590528157
   "riassunto.idx" 1590528142 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "riassunto.ind"
   "riassunto.ilg"
-["pdflatex"] 1590528140 "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.tex" "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" "riassunto" 1590528155
+  "riassunto.ind"
+["pdflatex"] 1590528140 "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.tex" "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf" "riassunto" 1590528157
   "../../preamble/preamble.tex" 1587603066 707 ea9409653390c911ff58e23c44f6605e ""
   "../L01/L01.tex" 1588558398 9275 ae0912f5ed04dd0656044efc458dc09b ""
   "../L01/img1.PNG" 1588257878 39485 bd19c47bdb2aec6adf2e0d8b882fb419 ""
@@ -323,11 +323,11 @@
   "riassunto.tex" 1590527496 1831 73d38e799089852ce3eea35e9573424b ""
   "riassunto.toc" 1590528154 20907 96de81932a50d02e03ca4f0fbeaedc55 "pdflatex"
   (generated)
-  "riassunto.aux"
-  "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.log"
-  "riassunto.toc"
-  "riassunto.idx"
-  "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf"
-  "riassunto.pdf"
-  "riassunto.out"
   "riassunto.log"
+  "riassunto.out"
+  "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.log"
+  "riassunto.pdf"
+  "riassunto.toc"
+  "c:/Users/enric/Desktop/NOTES/FISICA TECNICA/riassunto/riassunto.pdf"
+  "riassunto.aux"
+  "riassunto.idx"
