@@ -34,8 +34,8 @@ fluido che lambisce la parete solida.
 dove \newline
 $h =$ coefficiente di scambio termico convettivo $[W/m^2 K]$\newline
 $T_p =$ temperatura della parete solida $[K]$\newline
-$T_f =$ temperatura del fluido $[K]$\newline
-\newline
+$T_f =$ temperatura del fluido $[K]$
+\subsubsection{coefficiente di scambio termico convettivo}
 Tutta la complessità delle equazioni del paragrafo precedente è concentrata all'interno del parametro $h$ (coefficiente di scambio termico convettivo).\newline
 Il coefficiente di scambio convettivo (o conduttanza convettiva) dipende da:
 \begin{itemize}
@@ -83,11 +83,25 @@ varia da punto a punto.
     con $\rho$ massa volumica del fluido $[kg/m^3]$, $c_P$ calore specifico del fluido $[j/kgK]$, $w$ velocità del fluido $[m/s]$, $S$ sezione del condotto $[m^2]$.
 \end{itemize}
 \subsubsection{Il moto dei fluidi: esempio della lastra piana}
-Si consideri il moto di un fluido su una lastra piana non in movimento.
+Poichè la convezione del calore è strettamente legata allaa fluidodinamica, è essenziale chiarire alcuni aspetti fenomenologici, in particolare il regime di flusso. Quando si ha un fluido che fluisce attorno a un oggetto all'interno di un condotto, quello che succede è che in funzione della velocità della corrente del fluido, possiamo trovare due situazioni:
+\begin{itemize}
+    \item il flusso è laminare: i vari strati del fluido scorrono nello spazio in maniera "ordinata", senza oscillazioni, e senza miscugli fra i vari strati.
+    \item Se si alza la velocità del fluido, si trova un altroregime di flusso, cioè il flusso turbolento, in cui i vari strati oscillano e si creano una serie di vortici e moti disordinati.
+\end{itemize}
+per quanto riguarda la trasmissione del calore, che si occupa dell ostudio degli scambi di calore fra un fluido in movimento e una parete solida, possiamo studiare il problema della latra piana non in movimento:
 \begin{center}
-    \includegraphics[height=3cm]{../L11/img1.PNG}
+    \includegraphics[height=5cm]{../L11/img1.PNG}
 \end{center}
-Video dimostrativo: \url{https://www.youtube.com/watch?v=wXsl4eyupUY}\newline
+La velocità $w_{\infty}$ rappresenta la velocità del flusso lontano dalla parete (linea nera spessa inferiore). Lontano dalla parete il flusso può essere turbolento o meno, la cosa non è di nostro interesse, ciò che importa è il comprotamento del fluido a contatto con la lastra.\newline
+I filetti di fluido che scorrono in prossimità della parete devono adattarsi alle condizioni di aderenza con la parete: siccome la parete non si muove, anche il fluido adiacenti al fluido non si devono muovere. Dunque la velocità del flusso passa da $w_{\infty}$ e $0$. Appena ci spostiamo leggermente dalla parete notiamo che anche qui i filetti di fluido vengono rallentati a causa della presenza del fluido a velocità $0$ (c'è una sorta di attrito causato dalla viscosità del fluido). Quindi la velocità $w_{\infty}$ del flusso, più ci si avvicina alla parete più è lenta fino a raggiungere la velocità $0$ quando è a contatto diretto con la parete. Si chiama zona di \textbf{strato limite} la zona in cui la velocità del fluido $w < 0.99 w_{\infty}$.\newline
+\newline
+All'inizio l'interazione fra i vari strati fluidi è stabile, quindi all'inizio il movimento del fluido nello strato limite è laminare. Più si continua a percorrere la parete il movimento del fluido nello strato limite inizia a essere instabile, e, superata una certa soglia, si raggiunge una zona di strato limite turbolento in cui il fluido è completamente instabile. All'interno dello strato limite turbolento ci sono tre aree: in prossimità della parete si ha un sottostrato laminare (la parete ha un effetto stabilizzante), in seguito si trova uno strato di transizione e uno strato turbolento.\newline
+\newline
+Questa fenomenologia del moto dei fluidi implica che, all'inizio, nello strato limite laminare, ci sarà uno scambio termico "facile", i filetti fluidi sono ordinati e non c'è uno spostamento verticale dei filetti del fluido. Nel caso turbolento invece i filetti che sono inizialmente a contatto con la parete dopo aver scambiato calore, possono spostarsi "verticlamente" (nell immagine) e allontanarsi dalla parete, c'è quindi una sorta di trasporto di massa verticale.\newline
+\newline
+Per quanto riguarda il coefficiente convettivo: nella zona laminare $h$ ha un determinato valore e nella zona turbolenta questo coefficiente $h$ subirà un notevole incremento (dovuto allo scambio di massa verticale fra i vari filetti di fluido).\newline
+\newline
+Video dimostrativo: \url{https://www.youtube.com/watch?v=wXsl4eyupUY}
 \newline
 \begin{itemize}
     \item Negli strati adiacenti allo strato aderente alla lastra le particelle del fluido per
@@ -111,7 +125,7 @@ Il coefficiente convettivo nel caso di \textbf{convezione forzata} dipende da:
 \[
     h = h(\rho, \mu, c_P, k , w , \lambda)
 \]
-(nota: $h$ non è una proprietà della materia).\newline
+(nota: $h$ \textbf{non è una proprietà della materia}).\newline
 \newline
 Si hanno $r= 7$ grandezze fisiche ($h, \rho, \mu, c_P, k , w , \lambda$) e $n = 4$ grandezze fondamentali ($L,M,t,T$). \newline
 \newline
