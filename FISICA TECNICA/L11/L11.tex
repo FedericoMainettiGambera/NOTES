@@ -146,12 +146,13 @@ Esiste una relazione funzionale (da determinare sperimentalmente) tra questi $3$
     Pr = \frac{c_P \mu}{k} \;\;\;\;\;\text{numero di Prandtl}
 \]
 \subsubsection{Numero di Nusselt}
-Può essere interpretato come \textbf{rapporto} tra la potenza termica
-scambiata con moti macroscopici (\textbf{convezione}) e la potenza
-termica scambiata per \textbf{conduzione} nello strato limite
 \[
     Nu = \frac{h\lambda}{k}
 \]
+Può essere interpretato come \textbf{rapporto} tra la potenza termica
+scambiata con moti macroscopici (\textbf{convezione}) e la potenza
+termica scambiata per \textbf{conduzione} nello strato limite. \newline
+\newline
 In effetti, dividendo il flusso di calore per convezione ($h \Delta T$)
 per il flusso di calore per conduzione ($k / \lambda \cdot \Delta T$) si ottiene
 il numero di Nusselt
@@ -159,7 +160,9 @@ il numero di Nusselt
     Nu = \frac{h\Delta T}{\frac{k}{\lambda}\Delta T}
 \]
 Indica di quanto è stato incrementato lo scambio termico
-per via del moto del fluido.
+per via del moto del fluido.\newline
+\newline
+Non è mai minore di $1$.
 \subsubsection{Numero di Reynolds}
 \[
     Re = \frac{\rho w \lambda}{\mu}
@@ -167,10 +170,216 @@ per via del moto del fluido.
 Può essere interpretato come rapporto tra la risultante
 delle forze di inerzia e la risultante delle forze viscose
 \[
-    Re = \frac{\text{Forze d'inerzia}}{\text{Forze viscose}} = \frac{\rho w \frac{\delta w}{\delta x}}{\mu \frac{\delta ^2 w}{\delta y^2}} + ???
+    Re = \frac{\text{Forze d'inerzia}}{\text{Forze viscose}} = \frac{\rho w \frac{\delta w}{\delta x}}{\mu \frac{\delta ^2 w}{\delta y^2}} \propto \frac{\rho w \frac{w}{\lambda}}{\mu \frac{w}{\lambda^2}}
 \]
 Indica se il moto è in regime laminare o turbolento (Reynolds critico).
+\begin{itemize}
+    \item Flussso interno a un condotto ($\lambda = D_i, w = w_m$):\newline
+    $Re_D < 2000$, moto laminare;\newline
+    $Re_D > 4000$, moto turbolento;
+    \item Moto lungo una lastra piana ($\lambda = x, w = w_\infty$):\newline
+    $Re_x < 3,5 \cdot  10^5$, moto laminare; \newline
+    $Re_x > 3,5 \cdot  10^5$, moto turbolento;
+    \item Moto attorno ad un cilindro ($\lambda = D_e, w = w_\infty$):\newline
+    $Re_D < 2,8 \cdot  10^5$, moto laminare;\newline
+    $Re_D > 2,8 \cdot  10^5$, moto tubrolendo;
+\end{itemize}
+Attenzione: valori limiti variabili in funzione di molti altri parametri secondari.
 \subsubsection{Numero di Prandtl}
 \[
     Pr = \frac{c_P \mu}{k}
 \]
+Può essere interpretato come rapporto tra la viscosità cinematica, $v = \mu/\rho$, (da cui dipende la diffusione della quantità di moto) e la diffusività termica del fluido, $a = k / \rho c_P$ (da cui dipende la diffuzione molecolare della potenza termica).
+\[
+    Pr = \frac{\rho c_P}{k} \frac{\mu}{\rho}
+\]
+gas: fra $0,7$ e $1$\newline
+acqua: fra $2$ e $10$ \newline
+metalli liquidi: fra $0,005$ e $0,03$\newline
+oli pesanti: fra $100$ e $100000$\newline
+\newline
+\textbf{Indica lo spessore relativo dello strato limite termico rispetto a quello fluidodinamico}.
+\subsubsection{Forma monomia}
+La relazione tra i gruppi adimensionali è espressa tramite una forma monomia 
+\[
+    Nu = A R e^\alpha Pr^\beta
+\]
+I coefficienti $A, \alpha, \beta$ devono essere determinati attraverso l'interpolazione di risultati di prove sperimentali.\newline
+\newline
+I numeri adimensionali dipendono da parametri termofisici che normalmente a
+loro volta dipendono dalla temperatura (e talvolta anche dalla pressione) alla
+quale avviene il fenomeno di convezione. Diventa quindi importante stabilire a
+\textbf{quale temperatura} devono essere valutati i suddetti parametri.
+\subsubsection{Temperature}
+Le proprietà termofisiche si possono valutare in condizioni differenti:
+\begin{itemize}
+    \item Alla temperatura di parete $T_P$,
+    \item Alla temperatura asintotica $T_\infty$,
+    \item Alla temperatura di film $T_{film} = \frac{T_P + T_\infty}{2}$,
+    \item Alla temperatura di miscelamento adiabatico (temperatura media dal punto di vista energetico) $T_m = \frac{\int_S \rho w c_P T dS}{\int_S \rho w c_P dS}$
+\end{itemize}
+\subsubsection{Alcune correlazioni}
+Convenzione \textbf{forzata}: flusso su lastra piana a $T_P$  costante:
+\begin{itemize}
+    \item Se strato limite laminare sull'intera lastra $(L<x_c)$ e se $P_r \geq 0,6$:\newline
+    $h = h(x)$ locale: $Nu_x = 0,332 Re_x^{0,5}Pr^{1/3}$\newline
+    $h$ medio: $\bar{Nu} = 0,664Re_L^{0,5}Pr^{1/3}$
+    \item Se strato limite turbolento sull'intera lastra ($x_c << L$) e se $0,6 \leq Pr \leq 60$:\newline
+    $h = h(x)$ locale: $Nu_x = 0,0296Re_x^{0,8} Pr^{1/3}$\newline
+    $h$ medio: $\bar{Nu} = 0,037 Re_L^{0,8} Pr^{1/3}$
+\end{itemize}
+\ \newline
+\rule{\textwidth}{0,4pt}
+Convenzione \textbf{forzata}: flusso esterno su cilindri a $T_P$ costante:\newline
+Relazione di Churchill e Bernstein (cilindro singolo liscio)
+\[
+    Nu_D = 0,3 + \frac{0,62Re^{0,5Pr^{1/3}}}{\left[1 + \left(\frac{0,4}{Pr}\right)^{\frac{2}{3}}\right]^{\frac{1}{4}}}\cdot \left[1 + \left(\frac{Re}{28200}\right)^{\frac{5}{8}}\right]^{\frac{4}{5}}\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;Re \cdot Pr > 0,2
+\]
+Le proprietà termofisiche sono valutate alla temperatura di film.\newline
+\newline
+\rule{\textwidth}{0,4pt}
+Convezione \textbf{forzata}: flusso esterno su cilindri a $T_P$ costante:\newline
+relazione di Hilpert (cilindro singolo liscio)
+\[
+    Nu_D = C Re^m Pr^{1/3}
+\]
+\begin{center}
+    \includegraphics[height=3cm]{../L11/img2.PNG}
+\end{center}
+\ \newline
+\rule{\textwidth}{0,4pt}
+Convezione \textbf{forzata}: moto sviluppato all'interno di un condotto circolare:\newline
+\[
+    Nu_D = 3,66 \;\;\;\;\; \text{moto laminare con $T_P$ costante}\;
+\]
+\[
+    Nu_D = 4,36 \;\;\;\;\; \text{moto laminare con $J$ costante}\;
+\]
+\[
+    Nu_D = 0,23 Re^{0,8}Pr^n \;\;\;\;\; \text{moto turbolento (relazione di Dittus-Boelter)}\;\begin{cases}
+        Re > 10000 \;\; 0,7< Pr, 160\\
+        n = 0,3 \; \text{fluido in raffreddamento}\\
+        n = 0,4 \; \text{fluido in riscaldamento}
+    \end{cases}
+\]
+\[
+    Nu_D = 0,027 Re^{0,8} Pr^{1/3}\left(\frac{\mu}{\mu_P}\right)^{0,14}\;\;\;\;\; \text{moto turbolento (relazione di Sieder-Tate)} \;\begin{cases}
+        re > 10000\\
+        0,7 < Pr< 16700\\
+        \mu_P = \mu(T_P)
+    \end{cases}
+\]
+Le proprietà termofisiche sono valutate alla temperatura di miscelamento adiabatico.
+\subsubsection{Flusso all'interno di tubi}
+In ogni sezione: $w$ varia da un valore pari a zero sulla parete a un valore
+massimo sull’asse del tubo. \newline
+\newline
+In ogni sezione: $T$ varia da un valore pari a quello che si rileva sulla parete a
+un valore maggiore o inferiore (a seconda che il processo sia di
+raffreddamento o di riscaldamento) sull’asse del tubo.\newline
+\newline
+$T$ e $w$ si assumono comunque costante per ogni sezione e pari al loro valore
+medio. Ovviamente questi valori medi possono variare lungo l’asse del tubo.
+\newline
+\begin{itemize}
+    \item La velocità media si determina col principio di conservazione della massa $\dot{m} = \rho w_m S$.
+    \item La temperatura media si determina col principio di conservazione dell'energia (temperatura adiabatica di miscelamento).
+\end{itemize}
+\ \newline
+Esistono due principali tipologie di problemi (semplificati):
+\begin{itemize}
+    \item Il flusso termico superficiale è costante $J =$ costante;
+    \item La temperatura della parete è costante $T_P =$ costante.
+\end{itemize}
+Non possono essere contemporaneamente presenti ambedue le condizioni.\newline
+\newline
+Il flusso termico è dato da $J = h (T_P - T_m)$.\newline
+\newline
+\textbf{Caso flusso termico superficiale costante} ($J =$ costante):
+\begin{center}
+    \includegraphics[height=3cm]{../L11/img3.PNG}
+\end{center}
+\[
+    \dot{Q} = JS = \dot{m} c_P (T_u- T_i)
+\]
+\[
+    T_u = T_i + \frac{JS}{\dot{m} c_P}
+\]
+\[
+    J = h (T_P - T_m)
+\]
+\ \newline
+\textbf{Caso temperatura della parete costante} ($T_P =$ costante):
+\begin{center}
+    \includegraphics[height=3cm]{../L11/img4.PNG}
+\end{center}
+\[
+    \dot{Q} = JS = \dot{m} c_P (T_u - T_i)
+\]
+\[
+    T_u = T_i + \frac{JS}{\dot{m}c_P}
+\]
+\[
+    J = h \Delta T_{ml} = h \frac{\Delta T_u - \Delta T_i}{ln \left(\frac{\Delta T_u}{\Delta T_i}\right)}
+\]
+\subsection{Convezione naturale}
+\subsubsection{L'analisi dimensionale}
+Invece di avere la velocità del fluido abbiamo $g \beta \Delta T$, che sono le spinte di galleggiamento:
+\[
+    h = h(\rho, \mu, c_P, k, g \beta \Delta T, \lambda)
+\]
+Si hanno $r = 7$ grandezze fisiche ($h, \rho, \mu, c_P, k, g \beta \Delta T, \lambda$) e $n = 4$ grandezze fondamentali ($L, M, t, T$).\newline
+\newline
+Dal \textbf{teorema di Buckingham} (dispensa sezione $6.4$), si dovrà avere un legame tra $\Pi = r-n = 3$ \textbf{gruppi fondamentali}.\newline
+\newlineEsiste una relazione funzionale (da determinare sperimentalmente) tra questi $3$ gruppi adimensionali:
+\[
+    g'(\pi_1, \pi_2, \pi_3) = 0
+\]
+\textbf{Gruppi adimensionali per convezione naturale}
+\[
+    Nu = \frac{h \lambda}{k} \;\;\;\;\;\text{Numero di Nusselt}
+\]
+\[
+    Gr = \frac{\rho^2 g \beta \Delta T \lambda^3}{\mu^2} \;\;\;\;\;\text{Numero di Grashoff}
+\]
+\[
+    Pr = \frac{C_P \mu}{k} \;\;\;\;\; \text{Numero di Prandtl}
+\]
+\subsubsection{Numero di Grashoff}
+\[
+    Gr = \frac{\rho^2 g \beta \Delta T \lambda^3}{\mu^2}
+\]
+Può essere interpretato come \textbf{rapporto} tra il prodotto delle forze di \textbf{galleggiamento} e di inerzia ed il quadrato della risultante delle forze \textbf{viscose}.
+\[
+    Gr = \frac{F_{galleggiamento}F_{inerzia}}{F_{viscose}^2} = \frac{\rho g \beta \Delta T \left(\rho w \frac{\delta w}{\delta x}\right)}{\left(\mu \frac{\delta^2 w}{\delta y^2}\right)^2} \propto \frac{\rho g \beta \Delta T \rho w \frac{w}{\lambda}}{\mu^2 \frac{w^2}{\lambda^4}}
+\]
+\textbf{Indica se il moto è in regime laminare o turbolento (Grashoff critico)}.
+\subsubsection{Peclet e Rayleigh}
+\textbf{Convezione forzata}:
+\[
+    Pe = Re \cdot Pr = \frac{w \lambda}{a} \;\;\;\;\;\text{Numero di Peclet (poco usato)}
+\]
+\textbf{Convezione naturale}:
+\[
+    Ra = Gr \cdot Pr = \frac{g \beta \Delta T \lambda^3}{a v} \;\;\;\;\; \text{Numero di Rayleigh (spesso usato)}
+\]
+Spesso viene usato il numero di Rayleight al posto del numero di Grashoff e di Prandtl.\newline
+\newline
+Il numero di Rayleigh ha la stessa funzione del numero di raynolds per la convezione forzata, cioè \textbf{determinare il regime di moto}.
+\subsubsection{Considerazioni}
+Il coefficiente $h$ dipende:
+\begin{itemize}
+    \item dalle caratteristiche del fluido: come nel caso della convezione forzata, ma in
+    più abbiamo il coefficiente di dilatazione termica a pressione costante $\beta$ da cui
+    dipende il cambiamento di densità;
+    \item dalle condizioni di moto del fluido: la velocità del fluido varia localmente e
+    dipende dalle spinte di galleggiamento $f_g \sim \rho g \beta (T_P- T_{\infty})$;
+    \item dalla geometria della parete: come nel caso precedente ma con la necessità di
+    conoscere la posizione della parete rispetto al campo gravitazionale.    
+\end{itemize}
+Le proprietà termofisiche sono valutate alla temperatura di film
+\subsubsection{Alcune correlazioni}
+\begin{center}
+    \includegraphics[height=6cm]{../L11/img5.PNG}
+\end{center}
+Le proprietà termofisiche sono valutate alal temperatura di film
