@@ -51,7 +51,8 @@ Dunque:\newline
     \]
     Dove $g(x)$ rappresenta il limite inferiore di $\Omega$, e $h(x)$ il limite superiore.
 \end{itemize}
-\subsubsection{Cambio di variabili in coordiante cartesiane}
+Questo teorema afferma che, su una regione semplice, un integrale doppio si può calcolare con due integrazioni successive. Se poi la regione fosse regolare ma non semplice, si può scomporre in un numero finito di regioni semplici sulle quali applicare questo teorema e concludere sommando tutti i risultati.
+\subsubsection{Cambio di variabili}
 Il problema è quello di trasformare un insieme $\Omega \subset \mathbb{R}^2$ in un altro insieme $T \subset \mathbb{R}^2$ più semplice geometricamente.
 \[
     (u,v) = \Phi(x,y)   
@@ -65,38 +66,35 @@ Stiamo quindi cercando di creare una trasformazione $\Phi: \Omega \rightarrow T$
     \end{cases}
 \]
 \[
-    \Phi^-1 : \begin{cases}
+    \Phi^{-1} : \begin{cases}
         x = x(u,v)\\
         y = y(u,v)
     \end{cases}
 \]
 Cerchiamo ora una condizione sulle derivate di $\Phi$ in modo da essere sicuri che il cambio di variabile sia invertibile.\newline
 \newline
-\textbf{Matrice Jacobiana}:
+Sia $\Phi : \Omega \rightarrow  T$ una trasformazione piana con componenti $u = (x,y)$ e $v = v(x,y)$ di classe $C^1$. Si chiama \textbf{matrice Jacobiana} della trasformazione $\Phi$ la matriche
 \[
-    \frac{\delta(x,y)}{\delta(u,v)} = \left[\begin{matrix}
-        \frac{\delta x}{ \delta u} & \frac{\delta x}{ \delta v}\\
-        \frac{\delta y}{\delta u} & \frac{\delta x}{ \delta v}
-    \end{matrix}\right] = \left[\begin{matrix}
-        x_u & x_v\\
-        y_u & y_v
-    \end{matrix}\right] \quad \text{della trasformazione}\;\Phi
+    \frac{\delta(u,v)}{\delta(x,y)} = \left[\begin{matrix}
+        u_x(x,y) & u_y(x,y)\\
+        v_x(x,y) & v_y(x,y)
+    \end{matrix}\right]
 \]
-Se risulta $det\left(\frac{\delta(x,y)}{\delta(u,v)}\right) \neq 0 \;\; \;\forall\;(u,v) \in T$(senza la frontiera), allora $\Phi$ sarà localmente invertibile. \newline
+Se risulta $det\left(\frac{\delta(u,v)}{\delta(x,y)}\right) \neq 0 \;\; \;\forall\;(x,y) \in \Omega$(senza la frontiera), allora $\Phi$ sarà localmente invertibile. A differenza del caso monodimensionale, questa condizione non consente però di concludere che $\Phi$ sia globalmente invertibile. Inoltre se questa condizione è valida, sappiamo che di sicuro anche per la matrice Jacobiana della funzione inversa $\Phi^{-1}$ vale $det\left(\frac{\delta(x,y)}{\delta(u,v)}\right) \neq 0 \;\; \;\forall\;(u,v) \in T$. Inoltre questa condizione di non annullamento viene garantita solo nell'insieme aperto.\newline
 \newline
-Questa condizione equivale a imporre che
+Il termine $det\left(\frac{\delta(x,y)}{\delta(u,v)}\right)$ rappresenta il fattore che dilata o contrae l'elemento d'area, dunque abbiamo:
 \[
-    \text{Jacobiano}\; = \left|det\left(\frac{\delta(x,y)}{\delta(u,v)}\right)\right| = |x_u y_v - x_v y_u| > 0
+    dxdy = det\left(\frac{\delta(x,y)}{\delta(u,v)}\right)dudv
 \]
-\newline
-\textbf{teor.} Date le premesse fin'ora mostrate, allora:
+\textbf{teorema del cambiamento di variabili negli integrali doppi}\newline
+Sia $\Omega \in \mathbb{R}^2$ un aperto limitato regolare e sia $\Phi : \Omega \rightarrow T$ una trasformazione piana invertibile di classe $C^1$. Allora, detta $\Phi^{-1}$ la sua inversa, se vale $det\left(\frac{\delta(u,v)}{\delta(x,y)}\right) \neq 0 \;\; \;\forall\;(x,y) \in \Omega$, allora vale anche $det\left(\frac{\delta(x,y)}{\delta(u,v)}\right) \neq 0 \;\; \;\forall\;(u,v) \in T$. Sia poi $f \in R(\Omega)$; allora
 \[
     \int_\Omega f(x,y) dx dy = \int_T f(x(u,v), y(u,v)) \cdot \left|det\left(\frac{\delta(x,y)}{\delta(u,v)}\right)\right| du dv
 \]
 \subsubsection{Cambio di variabili in coordinate polari}
 Sia $\Omega \in \mathbb{R}^2$, i punti $(x,y)$ vengono trasformati in punti $(\rho, \theta) \in T$ tali che
 \[
-    \Phi : \begin{cases}
+    \Phi^{-1} : \begin{cases}
         x = \rho cos(\theta)\\
         y =\rho sin(\theta)
     \end{cases}
@@ -104,7 +102,7 @@ Sia $\Omega \in \mathbb{R}^2$, i punti $(x,y)$ vengono trasformati in punti $(\r
 \[
     \rho = \sqrt{x^2 +y^2} \geq 0 \quad \quad \theta \in[0, 2\pi)
 \]
-La trasformazione $\Phi$ trasforma il piano $\mathbb{R}^2$ in una striscia di piano, la cui altezza massima è $\theta = 2\pi$ (non compresa) e la lunghezza è determinata da $\rho$.\newline
+Questa trasformazione trasforma il piano $\mathbb{R}^2$ in una striscia di piano, la cui altezza massima è $\theta = 2\pi$ (non compresa) e la lunghezza è determinata da $\rho$.\newline
 \newline
 Un caso particolare è rappresentato da $\rho = 0$, in cui $\theta$ non è definito.\newline
 \newline
@@ -112,17 +110,12 @@ Analiziamo il Jacobiano:
 \[
     \text{Jacobiano}\;= \rho
 \]
-Nelle integrazioni in coordinate polari, essendo il Jacobiano = $\rho$, il termine $dx \; dy$ diventa $\rho \; d \rho \; d \theta$.
-\subsection{Integrali impropri ?????????????????}
-Se $\Omega \subset \mathbb{R}^n$ è un aperto illimitato e $f \in C^0(\bar{\Omega})$ soddisfa $f \geq 0$ (o $f\leq 0$) si costruiscono dei domini invadenti $\Omega_r = \Omega \cap B_r$. Se poi esiste finito il limite 
-\[
-    \lim_{x\rightarrow \infty} \int_{\Omega_r} f(x) dx
-\]
-diremo che $f$ è integrabile in senso generalizzato e
-\[
-    \int_\Omega f = \lim_{x\rightarrow \infty} \int_{\Omega_r} f(x) dx
-\]
+Nelle integrazioni in coordinate polari, essendo il Jacobiano = $\rho$, il termine $dx \; dy$ diventa $\rho \; d \rho \; d \theta$.\newline
+\newline
+Il cambio in coordinate polari è consigliabile quando nell'integranda compare l'espressione $x^2 + y^2$.
 \subsection{Integrali tripli}
+Ridurre un integrale triplo significa scomporre $3 = 1+2$ o $3=2+1$,cioè svolgere prima un integrale semplice e poi un integrale doppio o viceversa.\newline
+Salvo pochi casi in cui si può operare in entrambi i modi, la scelta dipenderà dalla forma dell'insieme di integrazione.
 \subsubsection{Integrazione per fili}
 Se l'insieme $\Omega$ è semplice rispetto all'asse $z$ o \textbf{z-semplice}, cioè esistono $D \subset \mathbb{R}^2$ e $g,h \in C^0(\bar{D})$ tali che $g<h$ in $D$ e
 \[
@@ -132,7 +125,9 @@ cioè se l'intersezione di una retta parallela all'asse $z$ e $\Omega$ è un seg
 \[
     \int_\Omega f(x,y,z) dxdydz = \int_D\left(\int_{g(x,y)}^{h(x,y)}f(x,y,z) dz\right)dxdy
 \] 
-Allo stesso modo si procede nel caso di $\Omega$ x-semplice o y-semplice.
+Allo stesso modo si procede nel caso di $\Omega$ x-semplice o y-semplice.\newline
+\newline
+Ma non tutti i domini sono semplici rispetto a una delle tre variabili, per cui\dots
 \subsubsection{Integrazione per strati}
 Se $\Omega$ è semplice rispetto alla coppia $(x,y)$ e cioè esistono $a<b$ tali che
 \[
@@ -143,7 +138,11 @@ dove $D_z$ è un insieme regolare $\;\forall\;z \in(a,b)$, cioè se l'intersezio
     \int_\Omega f(x,y,z) dxdydz = \int_{a}^{b}\left(\int_{D_z}f(x,y,z)dxdy\right)dz
 \]
 Allo stesso modo si procede nel caso di $\Omega$ semplice rispetto alle coppie $(x,z)$ o $(y,z)$.
-\subsubsection{Cambi di variabili in coordinate cilindriche}
+\subsubsection{Cambio di variabili}
+ANche le formule di cambio di variabili negli integrali tripli si ricavano senza sorprese rispetto a quelle per gli integrali doppi.
+\subsubsection{Cambio di variabili in coordinate cilindriche}
+Le coordinate cilindriche sono le coordinate polari con una dimensione invariante (la $z$) in più.\newline
+\newline
 Presa una sezione verticale (cioè di un piano che passa per l'asse $z$) si definiscono:
 \begin{itemize}
     \item $\rho$ rappresenta la distanza tra l'origine degli assi e la proiezione del punto P sul piano $xy$ (in poche parole la distanza fra il punto e l'asse $z$).
@@ -171,9 +170,10 @@ Matrice Jacobiana:
     \end{matrix}\right]
 \]
 \[
-    det\left(\frac{\delta(x,y)}{\delta(u,v)}\right) = \rho = \left|det\left(\frac{\delta(x,y)}{\delta(u,v)}\right)\right|
+    det\left(\frac{\delta(x,y,z)}{\delta(\rho,\theta,z)}\right) = \rho 
 \]
-\subsubsection{Cambi di variabili in coordinate sferiche}
+Il fattore di variazione del volume è quindi $\rho$ e si annulla solo sull'asse $z$ che è parte della prontiera dell'insieme dove variano $(\rho,\theta,z)$.
+\subsubsection{Cambio di variabili in coordinate sferiche}
 \[
     \;\forall\; \begin{cases}
         \rho \in [0,\infty)\\
@@ -188,7 +188,8 @@ Matrice Jacobiana:
 \[
     \rho^2 = x^2 +y^2+z^2 \;\; \text{e rappresenta la distanza fra il punto $(x,y,z)$ e l'origine}\;
 \]
-oppure se si prende $\phi \in [-\pi /2, + \pi/2]$ si ottengono le coordinate:
+\ \newline
+oppure, se si prende $\phi \in [-\pi /2, + \pi/2]$, si ottengono le coordinate:
 \[
     \begin{cases}
         x = \rho cos(\phi) cos(\theta)\\
@@ -208,7 +209,9 @@ Matrice Jacobiana:
 \[
     det\left(\frac{\delta(x,y)}{\delta(u,v)}\right) = \rho^2 sin(\phi)
 \]
-che si annulla in tutti i punti dell'asse $z$ che sono punti della frontiera e dunque non interessano.
+che si annulla per $\phi \in \{0,\pi\}$ (poli) e per $\rho=0$ (centro) e cioè i punti dell'asse $z$.
+\subsubsection{Cenno agli integrali multipli generalizzati}
+[manca]
 \subsection{Note sugli esercizi}
 \subsubsection{Ripasso sulle simmetrie (pari e dispari) per funzioni in due variabili}
 Data una funzione su due variabili $f(x,y)$:
