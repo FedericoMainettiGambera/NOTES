@@ -22,11 +22,10 @@ Proprietà:
         f(x_0, y_0) = \frac{1}{|\Omega|}\int_{\Omega}f(x,y)dxdy
     \]
 \end{itemize}
-\rule{\textwidth}{0,4pt}\newline
-\begin{tcolorbox}
+\ \newline
 \textbf{Regione y-semplice:} Se l'intersezione di una qualunque retta verticale con la $\Omega$ è un segmento o vuota.\newline
 \textbf{Regione x-semplice:} Se l'intersezione di una qualunque retta orizzontale con la $\Omega$ è un segmento o vuota.\newline
-\end{tcolorbox}
+\newline
 Una regione piana $\Omega$ si dice \textbf{regolare} se può essere scomposta in un numero finito di regioni semplici.
 \subsubsection{Integrale su una regione semplice}
 Consideriamo il caso in cui $\Omega$ è un rettangolo con vertici $a, b, c, d$.\newline
@@ -39,42 +38,20 @@ Questo concetto è applicabile anche a tutte le $\Omega$ semplici, l'area della 
     \int_{a}^{b}\left(\int_{g(x)}^{h(x)}f(x,y) dy \right)dx
 \]
 Dunque:\newline
-\begin{tcolorbox}
-\textbf{teor.} Formula di riduzione per integrali doppi.\newline
-Se $\Omega$ è \textbf{y-semplice}, cioè se $\Omega = \{(x,y) \in \mathbb{R}^2, a< x<b, g(x)<y<h(x)\}$
-\[
-    \int_{\Omega}f(x,y)dxdy = \int_{a}^{b}\left(\int_{g(x)}^{h(x)}f(x,y)dy\right)dx
-\]
-Dove $g(x)$ rappresenta il limite inferiore di $\Omega$, e $h(x)$ il limite superiore.\newline
-Se $\Omega$ è \textbf{x-semplice}, cioè se $\Omega = \{(x,y) \in \mathbb{R}^2, a< y<b, g(x)<x<h(x)\}$
-\[
-    \int_{\Omega}f(x,y)dxdy = \int_{a}^{b}\left(\int_{g(y)}^{h(y)}f(x,y)dx\right)dy
-\]
-Dove $g(x)$ rappresenta il limite inferiore di $\Omega$, e $h(x)$ il limite superiore.\newline
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
-\subsubsection{Baricentro e momento d'inerzia con gli integrali doppi}
-Gli integrali doppi possono essere usati per calcolare il baricentro di una lamina piana e del momento d'inerzia della lamina rispetto ad un asse perpendicolare al piano della lamina.\newline
-Sia $\Omega$ la forma della lamina e $d(x,y)$ la densità di massa nel punto $(x,y)$. La massa sarà $M = \int_{\Omega}d(x,y) dxdy$.
-\begin{tcolorbox}
+\textbf{teor.} Formula di riduzione per integrali doppi:
 \begin{itemize}
-    \item \textbf{Baricentro:} $B(x_b, y_b)$
+    \item Se $\Omega$ è \textbf{y-semplice}, cioè se $\Omega = \{(x,y) \in \mathbb{R}^2, a< x<b, g(x)<y<h(x)\}$
     \[
-        x_b = \frac{1}{M}\int_\Omega x d(x,y) dx dy \quad \quad y_b =\frac{1}{M}\int_\Omega y d(x,y) dxdy 
+        \int_{\Omega}f(x,y)dxdy = \int_{a}^{b}\left(\int_{g(x)}^{h(x)}f(x,y)dy\right)dx
     \]
-    Se la densità fosse costante avremmo $d(x,y) = d$, $M = d |\Omega|$ e
+    Dove $g(x)$ rappresenta il limite inferiore di $\Omega$, e $h(x)$ il limite superiore.
+    \item Se $\Omega$ è \textbf{x-semplice}, cioè se $\Omega = \{(x,y) \in \mathbb{R}^2, a< y<b, g(x)<x<h(x)\}$
     \[
-        x_b = \frac{1}{|\Omega|}\int_\Omega x dx dy \quad \quad y_b =\frac{1}{|\Omega|}\int_\Omega y dxdy
+        \int_{\Omega}f(x,y)dxdy = \int_{a}^{b}\left(\int_{g(y)}^{h(y)}f(x,y)dx\right)dy
     \]
-    \item \textbf{Momento d'inerzia:}\newline
-    Detta $\delta(x,y)$ la distanza di ogni punto $(x,y) \in \Omega$ dall'asse $r$ perpendicolare al piano:
-    \[
-        I = \int_\Omega \delta^2(x,y) \cdot  d(x,y) dxdy
-    \]
+    Dove $g(x)$ rappresenta il limite inferiore di $\Omega$, e $h(x)$ il limite superiore.
 \end{itemize}
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
-\subsubsection{Cambi di variabili negli integrali doppi}
+\subsubsection{Cambio di variabili in coordiante cartesiane}
 Il problema è quello di trasformare un insieme $\Omega \subset \mathbb{R}^2$ in un altro insieme $T \subset \mathbb{R}^2$ più semplice geometricamente.
 \[
     (u,v) = \Phi(x,y)   
@@ -93,30 +70,29 @@ Stiamo quindi cercando di creare una trasformazione $\Phi: \Omega \rightarrow T$
         y = y(u,v)
     \end{cases}
 \]
-Cerchiamo ora una condizione sulle derivate di $\Phi$ in modo che sia sicuramente invertibile.\newline
+Cerchiamo ora una condizione sulle derivate di $\Phi$ in modo da essere sicuri che il cambio di variabile sia invertibile.\newline
 \newline
-\textbf{Matrice Jacobiana:}
+\textbf{Matrice Jacobiana}:
 \[
-    \frac{\delta(x,y)}{\delta(u,v)} = \left(\begin{matrix}
+    \frac{\delta(x,y)}{\delta(u,v)} = \left[\begin{matrix}
         \frac{\delta x}{ \delta u} & \frac{\delta x}{ \delta v}\\
         \frac{\delta y}{\delta u} & \frac{\delta x}{ \delta v}
-    \end{matrix}\right) = \left(\begin{matrix}
+    \end{matrix}\right] = \left[\begin{matrix}
         x_u & x_v\\
         y_u & y_v
-    \end{matrix}\right) \quad \text{della trasformazione}\;\Phi
+    \end{matrix}\right] \quad \text{della trasformazione}\;\Phi
 \]
-Se risulta $det(\frac{\delta(x,y)}{\delta(u,v)}) \neq 0 \;\; \;\forall\;(u,v) \in T$(senza la frontiera), allora $\Phi$ sarà localmente invertibile. \newline
+Se risulta $det\left(\frac{\delta(x,y)}{\delta(u,v)}\right) \neq 0 \;\; \;\forall\;(u,v) \in T$(senza la frontiera), allora $\Phi$ sarà localmente invertibile. \newline
 \newline
 Questa condizione equivale a imporre che
 \[
-    \text{Jacobiano}\; = \left|det(\frac{\delta(x,y)}{\delta(u,v)})\right| = |x_u y_v - x_v y_u| > 0
+    \text{Jacobiano}\; = \left|det\left(\frac{\delta(x,y)}{\delta(u,v)}\right)\right| = |x_u y_v - x_v y_u| > 0
 \]
 \newline
 \textbf{teor.} Date le premesse fin'ora mostrate, allora:
 \[
-    \int_\Omega f(x,y) dx dy = \int_T f(x(u,v), y(u,v)) \cdot \left|det(\frac{\delta(x,y)}{\delta(u,v)})\right| du dv
+    \int_\Omega f(x,y) dx dy = \int_T f(x(u,v), y(u,v)) \cdot \left|det\left(\frac{\delta(x,y)}{\delta(u,v)}\right)\right| du dv
 \]
-\rule{\textwidth}{0,4pt}
 \subsubsection{Cambio di variabili in coordinate polari}
 Sia $\Omega \in \mathbb{R}^2$, i punti $(x,y)$ vengono trasformati in punti $(\rho, \theta) \in T$ tali che
 \[
@@ -129,13 +105,15 @@ Sia $\Omega \in \mathbb{R}^2$, i punti $(x,y)$ vengono trasformati in punti $(\r
     \rho = \sqrt{x^2 +y^2} \geq 0 \quad \quad \theta \in[0, 2\pi)
 \]
 La trasformazione $\Phi$ trasforma il piano $\mathbb{R}^2$ in una striscia di piano, la cui altezza massima è $\theta = 2\pi$ (non compresa) e la lunghezza è determinata da $\rho$.\newline
-Un caso delicato è $\rho = 0$, in cui $\theta$ non è definito.\newline
+\newline
+Un caso particolare è rappresentato da $\rho = 0$, in cui $\theta$ non è definito.\newline
+\newline
+Analiziamo il Jacobiano:
 \[
     \text{Jacobiano}\;= \rho
 \]
-Nelle integrazioni in coordinate polari, essendo il Jacobiano = $\rho$, il termine $dx \; dy$ diventa $\rho \; d \rho \; d \theta$.\newline
-\rule{\textwidth}{2pt}
-\subsection{Integrali impropri}
+Nelle integrazioni in coordinate polari, essendo il Jacobiano = $\rho$, il termine $dx \; dy$ diventa $\rho \; d \rho \; d \theta$.
+\subsection{Integrali impropri ?????????????????}
 Se $\Omega \subset \mathbb{R}^n$ è un aperto illimitato e $f \in C^0(\bar{\Omega})$ soddisfa $f \geq 0$ (o $f\leq 0$) si costruiscono dei domini invadenti $\Omega_r = \Omega \cap B_r$. Se poi esiste finito il limite 
 \[
     \lim_{x\rightarrow \infty} \int_{\Omega_r} f(x) dx
@@ -144,10 +122,7 @@ diremo che $f$ è integrabile in senso generalizzato e
 \[
     \int_\Omega f = \lim_{x\rightarrow \infty} \int_{\Omega_r} f(x) dx
 \]
-\rule{\textwidth}{2pt}
 \subsection{Integrali tripli}
-\rule{\textwidth}{0,4pt}
-\begin{tcolorbox}
 \subsubsection{Integrazione per fili}
 Se l'insieme $\Omega$ è semplice rispetto all'asse $z$ o \textbf{z-semplice}, cioè esistono $D \subset \mathbb{R}^2$ e $g,h \in C^0(\bar{D})$ tali che $g<h$ in $D$ e
 \[
@@ -157,10 +132,7 @@ cioè se l'intersezione di una retta parallela all'asse $z$ e $\Omega$ è un seg
 \[
     \int_\Omega f(x,y,z) dxdydz = \int_D\left(\int_{g(x,y)}^{h(x,y)}f(x,y,z) dz\right)dxdy
 \] 
-Allo stesso modo si procede nel caso di $\Omega$ x-semplice o y-semplice.\newline
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
-\begin{tcolorbox}
+Allo stesso modo si procede nel caso di $\Omega$ x-semplice o y-semplice.
 \subsubsection{Integrazione per strati}
 Se $\Omega$ è semplice rispetto alla coppia $(x,y)$ e cioè esistono $a<b$ tali che
 \[
@@ -170,15 +142,14 @@ dove $D_z$ è un insieme regolare $\;\forall\;z \in(a,b)$, cioè se l'intersezio
 \[
     \int_\Omega f(x,y,z) dxdydz = \int_{a}^{b}\left(\int_{D_z}f(x,y,z)dxdy\right)dz
 \]
-Allo stesso modo si procede nel caso di $\Omega$ semplice rispetto alle coppie $(x,z)$ o $(y,z)$\newline
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
-\subsubsection{Cambi di variabili negli integrali tripli}
-\subsubsection{Coordinate cilindriche}
-Presa una sezione verticale (cioè di un piano che passa per l'asse $z$) si definiscono:\newline
-$\rho$ rappresenta la distanza tra l'origine degli assi e la proiezione del punto P sul piano $xy$ (in poche parole la distanza fra il punto e l'asse $z$).\newline
-$z$ rappresenta la quota del punto $P$ dal piano $xy$.\newline
-$\theta$ di quando deve ruotare il piano per rappresentare il volume di partenza.
+Allo stesso modo si procede nel caso di $\Omega$ semplice rispetto alle coppie $(x,z)$ o $(y,z)$.
+\subsubsection{Cambi di variabili in coordinate cilindriche}
+Presa una sezione verticale (cioè di un piano che passa per l'asse $z$) si definiscono:
+\begin{itemize}
+    \item $\rho$ rappresenta la distanza tra l'origine degli assi e la proiezione del punto P sul piano $xy$ (in poche parole la distanza fra il punto e l'asse $z$).
+    \item $z$ rappresenta la quota del punto $P$ dal piano $xy$.
+    \item $\theta$ di quando deve ruotare il piano per rappresentare il volume di partenza.
+\end{itemize}
 \[
     \;\forall\; \begin{cases}
         \rho \in [0,\infty)\\
@@ -192,17 +163,17 @@ $\theta$ di quando deve ruotare il piano per rappresentare il volume di partenza
 \]
 Matrice Jacobiana:
 \[
-    \frac{\delta(x,y,z)}{\delta(\rho,\theta,z)} = \left(
+    \frac{\delta(x,y,z)}{\delta(\rho,\theta,z)} = \left[
     \begin{matrix}
         cos(\theta) & -\rho sin(\theta) & 0\\ 
         sin(\theta) & \rho cos(\theta) & 0 \\ 
         0 & 0 & 1
-    \end{matrix}\right)
+    \end{matrix}\right]
 \]
 \[
-    det(\frac{\delta(x,y)}{\delta(u,v)}) = \rho = \left|det(\frac{\delta(x,y)}{\delta(u,v)})\right|
+    det\left(\frac{\delta(x,y)}{\delta(u,v)}\right) = \rho = \left|det\left(\frac{\delta(x,y)}{\delta(u,v)}\right)\right|
 \]
-\subsubsection{Coordinate sferiche}
+\subsubsection{Cambi di variabili in coordinate sferiche}
 \[
     \;\forall\; \begin{cases}
         \rho \in [0,\infty)\\
@@ -227,19 +198,19 @@ oppure se si prende $\phi \in [-\pi /2, + \pi/2]$ si ottengono le coordinate:
 \]
 Matrice Jacobiana:
 \[
-    \frac{\delta(x,y,z)}{\delta(\rho,\theta,z)} = \left(
+    \frac{\delta(x,y,z)}{\delta(\rho,\theta,z)} = \left[
         \begin{matrix}
             sin(\phi) cos(\theta) & \rho cos(\phi) cos(\theta) & -\rho sin(\phi) sin(\theta)\\ 
             sin(\phi) sin(\theta) & \rho cos(\phi) sin(\theta) & \rho sin(\phi) cos(\theta) \\ 
             cos(\phi) & -\rho sin(\phi) & 0
-        \end{matrix}\right)
+        \end{matrix}\right]
 \]
 \[
-    det(\frac{\delta(x,y)}{\delta(u,v)}) = \rho^2 sin(\phi)
+    det\left(\frac{\delta(x,y)}{\delta(u,v)}\right) = \rho^2 sin(\phi)
 \]
-che si annulla in tutti i punti dell'asse $z$ che sono punti della frontiera e dunque non interessano.\newline
-\rule{\textwidth}{2pt}
+che si annulla in tutti i punti dell'asse $z$ che sono punti della frontiera e dunque non interessano.
 \subsection{Note sugli esercizi}
+\subsubsection{Ripasso sulle simmetrie (pari e dispari) per funzioni in due variabili}
 Data una funzione su due variabili $f(x,y)$:
 \begin{itemize}
     \item $f$ è dispari rispetto a $x$ se 
@@ -260,47 +231,45 @@ Data una funzione su due variabili $f(x,y)$:
     \]
 \end{itemize}
 Quindi
-\begin{tcolorbox}
 \begin{itemize}
     \item Se la funzione $f$ è dispari rispetto a $y$ e la superficie di integrazione è simmetrica rispetto a $x$, allora l'integrale è nullo.
     \item Se la funzione $f$ è dispari rispetto a $x$ e la superficie di integrazione è simmetrica rispetto a $y$, allora l'integrale è nullo.
-    \item Se la funzione $f$ è pari rispetto a $y$ e la superficie di intergrazione è simmetrica rispetto a $x$, allora l'integrale si può calcolare solo sul metà superficie e moltiplicando per due il risultato finale    \item Se la funzione $f$ è pari rispetto a $x$ e la superficie di intergrazione è simmetrica rispetto a $y$, allora l'integrale si può calcolare solo sul metà superficie e moltiplicando per due il risultato finale
+    \item Se la funzione $f$ è pari rispetto a $y$ e la superficie di intergrazione è simmetrica rispetto a $x$, allora l'integrale si può calcolare solo su metà superficie (moltiplicando per due il risultato finale)  
+    \item Se la funzione $f$ è pari rispetto a $x$ e la superficie di intergrazione è simmetrica rispetto a $y$, allora l'integrale si può calcolare solo su metà superficie (moltiplicando per due il risultato finale)
 \end{itemize}
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}\newline
-\begin{tcolorbox}
-Dato un dominio $T$ (superficie) del piano e una funzione $f(x,y) \geq 0$ definita su $T$, l'integrale doppio esteso a $T$ di $f$ rappresenta, il volume del solido compreso tra il piano $xy$ e la superficie definita dalla funzione $f$, che si proietta in $T$; sempre in analogia con quanto accade in una variabile, se la funzione cambia segno in $T$, il volume del solido va calcolato integrando su $T$ il valore assoluto di $f$: $|f|$. Inoltre, ponendo $f = 1$ su $T$, l'integrale doppio della funzione costante uguale a $1$ sappresenta l'area di $T$.
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}\newline
-\begin{tcolorbox}
+\subsubsection{Significato geometrico di un integrale doppio e calcolo del volume}
+Dato un dominio $T$ (superficie) del piano e una funzione $f(x,y) \geq 0$ definita su $T$, l'integrale doppio esteso a $T$ di $f$ rappresenta, il volume del solido compreso tra il piano $xy$ e la superficie definita dalla funzione $f$, che si proietta in $T$.\newline
+\newline
+Sempre in analogia con quanto accade in una variabile, se la funzione cambia segno in $T$, il volume del solido va calcolato integrando su $T$ il valore assoluto di $f$: $|f|$. Inoltre, ponendo $f = 1$ su $T$, l'integrale doppio della funzione costante uguale a $1$ sappresenta l'area di $T$.\newline
+\newline
 Dato un dominio $T$ di $\mathbb{R}^3$, il volume di $T$ può essere espresso  tramite il calcolo dell'integrale triplo della funzione costante $f(x,y,z) = 1$
 \[
     \text{Volume(T)}\; = \int \int \int_{T} dx dy dz
 \]
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
-\begin{tcolorbox}
-Passando nel piano da coordinate cartesiane a coordinate polari abbiamo visto che l'elemento d'area $dx \; dy$ diventa $\rho \; d \rho \;d \theta$, allo stesso modo nello spazio l'elemento di volume $dx \; dy \; dz$ diventa in coordinate cilindriche $\rho\; d \rho d \;\theta dz$ e in coordinate sferiche $R^2 sin(\phi)\; dR \;d \phi \;d \theta$ (se però adottiamo le coordiante sferiche con $-\frac{\pi}{2} \leq \phi \leq \frac{\pi}{2}$ l'elemento di volume diventa $R^2 cos(\phi) \;dR \;d \phi \;d \theta$).
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}\newline
-\begin{tcolorbox}
-Data una regione piana $T$, e detta $\delta (x,y)$ non negativa su $T$ densità superficiale di massa relativa alla lamina rappresentata dalla regione $T$, l'integrale doppio esteso su $T$ della funzione $\delta$ rappresenta la masssa $M$ della lamina $T$:
+\subsubsection{Note sull'elemento d'area per vari cambi di variabile}
+Passando nel piano da coordinate cartesiane a coordinate polari abbiamo visto che l'elemento d'area $dx \; dy$ diventa $\rho \; d \rho \;d \theta$, allo stesso modo nello spazio l'elemento di volume $dx \; dy \; dz$ diventa in coordinate cilindriche $\rho\; d \rho\; d \theta \; dz$ e in coordinate sferiche $R^2 sin(\phi)\; dR \;d \phi \;d \theta$ (se però adottiamo le coordiante sferiche con $-\frac{\pi}{2} \leq \phi \leq \frac{\pi}{2}$ l'elemento di volume diventa $R^2 cos(\phi) \;dR \;d \phi \;d \theta$).
+\subsubsection{Baricentro e momento d'inerzia}
+Data una regione piana $T$ di $\mathbb{R}^2$, e detta $\delta (x,y)$ non negativa su $T$ densità superficiale di massa relativa alla lamina rappresentata dalla regione $T$, l'integrale doppio esteso su $T$ della funzione $\delta$ rappresenta la masssa $M$ della lamina $T$:
 \[
     M = \int \int_{T} \delta(x,y) dx dy
 \]
-Valgono inoltre le seguenti formule per il calcolo delle coordinate ($x_b$, $x_a$) del baricentro della lamina e per il calcolo del momento d'inerzia $M_{(x_0, y_0)}$ della lamina rispetto all'asse perpendicolare al piano passante per il punto $(,x_0, y_0)$:
+Valgono inoltre le seguenti formule per il calcolo delle coordinate ($x_b$, $x_a$) del baricentro della lamina:
 \[
     x_b = \frac{1}{M}\int \int_{T} x \delta(x,y)dxdy
 \]
 \[
     y_b= \frac{1}{M} \int \int_{T} y \delta(x,y)dxdy
 \]
+Se la densità fosse costante avremmo $\delta(x,y) = d, \; M = d|\Omega|$ e 
 \[
-    M_{(x_0, y_0)} = \int \int_{T}((x-x_0)^2 + (y-y_0)^2) \delta(x,y) dxdy
+    x_b = \frac{1}{|T|} \int \int_{T} x \;dxdy \;\;\;\;\;\;\;\;\;\; y_b =\frac{1}{|T|} \int \int_{T} y \;dxdy
 \]
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}\newline
-\begin{tcolorbox}
+Invece per il calcolo del momento d'inerzia $M_{(x_0, y_0)}$ della lamina rispetto a un asse $r$ perpendicolare al piano passante per il punto $(,x_0, y_0)$, detta $d(x,y)$ la distanza di ogni punto $(x,y) \in T$ dall'asse $r$ perpendicolare al piano:
+\[
+    M_{(x_0, y_0)} =\int \int_{T}d^2(x,y) \delta(x,y) dxdy = \int \int_{T}((x-x_0)^2 + (y-y_0)^2) \delta(x,y) dxdy
+\]
+\ \newline
+\newline
 Data una regione $T$ di $\mathbb{R}^3$, e data una funzione $\delta(x,y,z)$ non negativa su $T$, interpretando $\delta$ come densità di massa, relativa al solido rappresentato dalla regione $T$, l'integrale triplo esteso a $T$ della funzione $\delta$ rappresenta la massa $M$ del solido $T$:
 \[
     M = \int \int \int_{T} \delta(X,y,z)dx dy dz
@@ -315,23 +284,17 @@ Valgono inoltre le seguenti formule, per il calcolo delle coordinate $(x_b, y_b,
 \[
     z_b = \frac{1}{M} \int \int \int_{T} z \; \delta(x,y,z)dx dy dz
 \]
-Momento d'inerzia di un solido $T$ rispetto all'asse $z$:
+Invece per il calcolo del momento d'inerzia di un solido $T$ rispetto all'asse $z$:
 \[
     M_z = \int \int \int_{T} (x^2+y^2) \; \delta(x,y,z) dx \; dy \; dz
 \]
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}\newline
+\subsubsection{Consigli sull'espressione di domini in $\mathbb{R}^3$}
 Domini in $\mathbb{R}^3$: vi sono 6 differenti oridini con i quali esprimere i domini, tra questi meritano particolare attenzione i seguenti:
 \begin{itemize}
-    \item quello per cui $z$ è la variabile più esterna e, fissata $z$, si procede a fissare le restanti due coordinate ($x,y$ per coordinate cartesiante, $\rho, \theta$ per coordinate cilindriche) sui domini piani che corrispondono alle varie quote di $z$, la cosiddetta espressione per strati;
-    \item quell per cui $z$ è la variabile più interna : si fissano le due coordinate piane ($x,y$ per coordinate polari, $\rho, \theta$ per coordiante cilindriche) in modo generale, dopodichè per ogni coppia $x,y$ o $\rho, \theta$, si fissa la corrispondente $z$, la cosiddetta espressione per fili.
+    \item quello per cui $z$ è la variabile più esterna: fissata $z$, si procede a fissare le restanti due coordinate ($x,y$ per coordinate cartesiante, $\rho, \theta$ per coordinate cilindriche) sui domini piani che corrispondono alle varie quote di $z$ (la cosiddetta espressione per strati);
+    \item quell per cui $z$ è la variabile più interna: si fissano le due coordinate piane ($x,y$ per coordinate polari, $\rho, \theta$ per coordiante cilindriche) in modo generale, dopodichè per ogni coppia $x,y$ o $\rho, \theta$, si fissa la corrispondente $z$ (la cosiddetta espressione per fili).
 \end{itemize}
-\rule{\textwidth}{0,4pt}\newline
-\begin{tcolorbox}
-Retta per due punti $(x_1, y_1)$ e $(x_2, y_2)$:
-\[
-    \frac{x - x_1}{x_2 - x_1} = \frac{y-y_1}{y_2 - y_1}
-\]
+\subsubsection{Equazione di un piano passante per tre punti}
 Piano per tre punti $(x_a, y_a, z_a)$ $(x_b, y_b, z_b)$ e $(x_c, y_c, z_c)$ è il determinante della matrice 
 \[
     det\left(\begin{matrix}
@@ -340,4 +303,3 @@ Piano per tre punti $(x_a, y_a, z_a)$ $(x_b, y_b, z_b)$ e $(x_c, y_c, z_c)$ è i
         x_c-x_a & y_c - y_a & z_c -z_a 
     \end{matrix}\right) = 0
 \]
-\end{tcolorbox}
