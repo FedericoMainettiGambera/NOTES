@@ -7,7 +7,7 @@ equilibrio se tutte le sue proprietà intensive hanno valori ovunque uguali (cio
 per tutte le fasi). \newline
 \newline
 Si definisce \textbf{transizione di fase} la trasformazione che porta un sistema che si trova in uno
-stato omogeneo a separarsi in due o più fasi.\newline
+stato omogeneo a separarsi in due o più fasi. Le transizioni di fase avvengono a \textbf{temperatura} e \textbf{pressione costanti}.\newline
 \newline
 Un sistema monocomponente in uno stato bifase
 ha un solo grado di libertà (nella regola di Gibbs: $V=1$). \newline
@@ -81,9 +81,30 @@ Questi valori sono riportati su tabelle. Le tabelle termodinamiche sono di due t
 \end{itemize}
 \ \newline
 Qualora lo stato termodinamico di cui si stanno valutando le proprietà termodinamiche non
-coincide con gli stati discreti riportati sulle tabelle è necessario eseguire una interpolazione
+coincide con gli stati discreti riportati sulle tabelle è necessario eseguire una \textbf{interpolazione}
 dei dati.\newline
 \newline
+\textbf{Interpolazione lineare}:
+\[
+    Y = Y_A + \frac{Y_B - Y_A}{X_B - X_A} (X - X_A)
+\]
+con $Y$ grandezza che si vuole ricavare, $X$ grandezza conosciuta e $A,B$ stati di riferimento (presenti in tabella, $X_A<X<X_B$).\newline
+Oppure si può usare anche:
+\[
+    \frac{X_X - X_A}{X_B - X_A} = \frac{Y_X - Y_A}{Y_B - Y_A}
+\]
+\textbf{Interpolazione bilineare}:
+Nel caso in cui più di una grandezza non corrisponda a nessun valore preciso della tabella usiamo la formula di \textbf{interpolazione bilineare}
+\[
+    Y = Y_A + \frac{Y_B - Y_A}{X_B - X_A}(X - X_A)
+\]
+\[
+    Y_A = Y_{A1} + \frac{Y_{A2}- Y_{A1}}{X_{A2}- X_{A1}} (X_A - X_{A1})
+\]
+\[
+    Y_B = Y_{B1} + \frac{Y_{B2}- Y_{B1}}{X_{B2}- X_{B1}} (X_B - X_{B1})
+\]
+\ \newline
 L’utilizzo delle tabelle termodinamiche consente di valutare le proprietà di una sostanza,
 normalmente, in condizioni di bifase liquido-vapore o nello stato di vapore surriscaldato.
 L’analisi di alcuni processi può richiedere informazioni sulle proprietà termodinamiche in
