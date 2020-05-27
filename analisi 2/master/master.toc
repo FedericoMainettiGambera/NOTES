@@ -84,7 +84,7 @@
 \contentsline {subsection}{\numberline {5.9}Funzioni definite implicitamente}{43}{subsection.5.9}%
 \contentsline {subsubsection}{\numberline {5.9.1}Funzione implicita di una variabile}{43}{subsubsection.5.9.1}%
 \contentsline {subsubsection}{\numberline {5.9.2}Note sugli esercizi}{44}{subsubsection.5.9.2}%
-\contentsline {section}{\numberline {6}Integrali}{45}{section.6}%
+\contentsline {section}{\numberline {6}Ripasso sugli integrali (analisi I)}{45}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Teorema fondamentale del calcolo integrale:}{45}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Proprietà degli integrali:}{45}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Integrali fondamentali:}{45}{subsection.6.3}%
@@ -97,72 +97,70 @@
 \contentsline {subsection}{\numberline {6.10}integrazione delle funzioni trigonometriche}{49}{subsection.6.10}%
 \contentsline {subsection}{\numberline {6.11}Integrazione delle funzioni irrazzionali}{50}{subsection.6.11}%
 \contentsline {subsection}{\numberline {6.12}Simmetrie e valori assoluti nel calcolo di integrali definiti}{51}{subsection.6.12}%
-\contentsline {subsection}{\numberline {6.13}Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}{51}{subsection.6.13}%
-\contentsline {subsection}{\numberline {6.14}INTEGRALI GENERALIZZATI}{51}{subsection.6.14}%
-\contentsline {subsection}{\numberline {6.15}Integrazione di funzioni non limitate}{51}{subsection.6.15}%
-\contentsline {subsection}{\numberline {6.16}Criteri di integrabilità al finito}{51}{subsection.6.16}%
-\contentsline {subsection}{\numberline {6.17}Integrazione su intervalli illimitati}{51}{subsection.6.17}%
-\contentsline {subsection}{\numberline {6.18}Criteri di integrabilità all'infinito}{52}{subsection.6.18}%
-\contentsline {subsection}{\numberline {6.19}Osservazione. Ordine di annullamento di una funzione derivabile.}{52}{subsection.6.19}%
-\contentsline {subsection}{\numberline {6.20}Integrali generalizzati notevoli}{52}{subsection.6.20}%
-\contentsline {subsection}{\numberline {6.21}FUNZIONI INTEGRALI}{53}{subsection.6.21}%
-\contentsline {section}{\numberline {7}Calcolo integrale per funzioni di più variabili}{55}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Integrali doppi}{55}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Integrale su una regione semplice}{55}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Baricentro e momento d'inerzia con gli integrali doppi}{56}{subsubsection.7.1.2}%
-\contentsline {subsubsection}{\numberline {7.1.3}Cambi di variabili negli integrali doppi}{56}{subsubsection.7.1.3}%
-\contentsline {subsubsection}{\numberline {7.1.4}Cambio di variabili in coordinate polari}{57}{subsubsection.7.1.4}%
-\contentsline {subsection}{\numberline {7.2}Integrali impropri}{57}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Integrali tripli}{57}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Integrazione per fili}{58}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Integrazione per strati}{58}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Cambi di variabili negli integrali tripli}{58}{subsubsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.4}Coordinate cilindriche}{58}{subsubsection.7.3.4}%
-\contentsline {subsubsection}{\numberline {7.3.5}Coordinate sferiche}{58}{subsubsection.7.3.5}%
-\contentsline {subsection}{\numberline {7.4}Note sugli esercizi}{59}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Calcolo differenziale per funzioni di più variabili a valori vettoriali (BRAMANTI)}{62}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Funzioni di più variabili a valori vettoriali: generalità}{62}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Superfici in forma parametrica}{62}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Trasformazioni di coordinate}{62}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Campi vettoriali}{62}{subsubsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.2}Limiti, continuità e differenziabilità per funzioni $\vec {f}:\mathbb {R}^n \rightarrow \mathbb {R}^m$}{63}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Superfici regolari in forma parametrica}{63}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Superfici cartesiane (grafico di funzioni di due variabili)}{64}{subsubsection.8.3.1}%
-\contentsline {subsubsection}{\numberline {8.3.2}Superfici di rotazione}{65}{subsubsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.4}Varietà k-dimenzionali in $\mathbb {R}^n$ e funzioni definite implicitamente}{65}{subsection.8.4}%
-\contentsline {subsubsection}{\numberline {8.4.1}Varietà k-dimensionali in $\mathbb {R}^n$ in forma parametrica}{65}{subsubsection.8.4.1}%
-\contentsline {subsubsection}{\numberline {8.4.2}Funzioni implicite definite da sistemi di equazioni}{65}{subsubsection.8.4.2}%
-\contentsline {subsubsection}{\numberline {8.4.3}Varietà k-dimensionali in $\mathbb {R}^n$ in forma implicita}{66}{subsubsection.8.4.3}%
-\contentsline {subsection}{\numberline {8.5}Trasformazioni di coordinate e loro inversione}{66}{subsection.8.5}%
-\contentsline {subsubsection}{\numberline {8.5.1}Il teorema della funzione inversa}{66}{subsubsection.8.5.1}%
-\contentsline {subsubsection}{\numberline {8.5.2}Trasformazione di operatori differenziali}{68}{subsubsection.8.5.2}%
-\contentsline {subsection}{\numberline {8.6}Note sugli esercizi}{68}{subsection.8.6}%
-\contentsline {section}{\numberline {9}Funzioni di più variabili a valori vettoriali (GAZZOLA)}{69}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Campi vettoriali}{69}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Lavoro di un campo vettoriale}{70}{subsection.9.2}%
-\contentsline {subsubsection}{\numberline {9.2.1}Forme differenziali lineari}{72}{subsubsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.3}Flusso e Teorema della divergenza}{72}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Flusso}{73}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Teorema della divergenza}{73}{subsubsection.9.3.2}%
-\contentsline {section}{\numberline {10}Equazioni differenziali}{74}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Modelli differenziali}{74}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Equazioni del primo ordine}{74}{subsection.10.2}%
-\contentsline {subsubsection}{\numberline {10.2.1}Generalità}{74}{subsubsection.10.2.1}%
-\contentsline {subsubsection}{\numberline {10.2.2}Equazioni a variabili separabili}{74}{subsubsection.10.2.2}%
-\contentsline {subsubsection}{\numberline {10.2.3}Equazioni lineari del prim'ordine}{75}{subsubsection.10.2.3}%
-\contentsline {subsubsection}{\numberline {10.2.4}Note sugli esercizi}{76}{subsubsection.10.2.4}%
-\contentsline {subsubsection}{\numberline {10.2.5}Equazione di Bernoulli}{76}{subsubsection.10.2.5}%
-\contentsline {subsubsection}{\numberline {10.2.6}Prolungamento delle soluzioni}{76}{subsubsection.10.2.6}%
-\contentsline {subsection}{\numberline {10.3}Equazioni lineari del secondo ordine}{77}{subsection.10.3}%
-\contentsline {subsubsection}{\numberline {10.3.1}Spazi di funzioni}{77}{subsubsection.10.3.1}%
-\contentsline {subsubsection}{\numberline {10.3.2}Generalità sulle equazioni lineari. Problema di Cauchy}{77}{subsubsection.10.3.2}%
-\contentsline {subsubsection}{\numberline {10.3.3}La struttura dell'integrale generale}{77}{subsubsection.10.3.3}%
-\contentsline {subsubsection}{\numberline {10.3.4}Equazioni omogenee a coefficienti costanti}{78}{subsubsection.10.3.4}%
-\contentsline {subsubsection}{\numberline {10.3.5}Equazioni completa a coefficienti costanti}{79}{subsubsection.10.3.5}%
-\contentsline {subsubsection}{\numberline {10.3.6}metodo di somiglianza}{79}{subsubsection.10.3.6}%
-\contentsline {subsubsection}{\numberline {10.3.7}Metodo di sovrapposizione}{80}{subsubsection.10.3.7}%
-\contentsline {subsubsection}{\numberline {10.3.8}Metodo di variazione delle costanti}{80}{subsubsection.10.3.8}%
-\contentsline {subsubsection}{\numberline {10.3.9}Note sugli esercizi}{80}{subsubsection.10.3.9}%
-\contentsline {subsubsection}{\numberline {10.3.10}Equazione di Eulero}{80}{subsubsection.10.3.10}%
-\contentsline {subsection}{\numberline {10.4}Sistemi lineari omogenei}{82}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Diagonalizzazione di una matrice}{83}{subsection.10.5}%
+\contentsline {subsection}{\numberline {6.13}Integrali generalizzati}{51}{subsection.6.13}%
+\contentsline {subsubsection}{\numberline {6.13.1}Integrazione di funzioni non limitate}{51}{subsubsection.6.13.1}%
+\contentsline {subsubsection}{\numberline {6.13.2}Criteri di integrabilità al finito}{51}{subsubsection.6.13.2}%
+\contentsline {subsubsection}{\numberline {6.13.3}Integrazione su intervalli illimitati}{51}{subsubsection.6.13.3}%
+\contentsline {subsubsection}{\numberline {6.13.4}Criteri di integrabilità all'infinito}{51}{subsubsection.6.13.4}%
+\contentsline {subsubsection}{\numberline {6.13.5}Integrali generalizzati notevoli}{52}{subsubsection.6.13.5}%
+\contentsline {subsection}{\numberline {6.14}Funzioni integrali}{52}{subsection.6.14}%
+\contentsline {section}{\numberline {7}Integrali doppi e tripli (analisi II)}{54}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Integrali doppi}{54}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Integrale su una regione semplice}{54}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Baricentro e momento d'inerzia con gli integrali doppi}{55}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Cambi di variabili negli integrali doppi}{55}{subsubsection.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.4}Cambio di variabili in coordinate polari}{56}{subsubsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.2}Integrali impropri}{56}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Integrali tripli}{56}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Integrazione per fili}{57}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Integrazione per strati}{57}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Cambi di variabili negli integrali tripli}{57}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Coordinate cilindriche}{57}{subsubsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.5}Coordinate sferiche}{57}{subsubsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.4}Note sugli esercizi}{58}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Calcolo differenziale per funzioni di più variabili a valori vettoriali (BRAMANTI)}{61}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Funzioni di più variabili a valori vettoriali: generalità}{61}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Superfici in forma parametrica}{61}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Trasformazioni di coordinate}{61}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Campi vettoriali}{61}{subsubsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.2}Limiti, continuità e differenziabilità per funzioni $\vec {f}:\mathbb {R}^n \rightarrow \mathbb {R}^m$}{62}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Superfici regolari in forma parametrica}{62}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Superfici cartesiane (grafico di funzioni di due variabili)}{63}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Superfici di rotazione}{64}{subsubsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.4}Varietà k-dimenzionali in $\mathbb {R}^n$ e funzioni definite implicitamente}{64}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Varietà k-dimensionali in $\mathbb {R}^n$ in forma parametrica}{64}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}Funzioni implicite definite da sistemi di equazioni}{64}{subsubsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.3}Varietà k-dimensionali in $\mathbb {R}^n$ in forma implicita}{65}{subsubsection.8.4.3}%
+\contentsline {subsection}{\numberline {8.5}Trasformazioni di coordinate e loro inversione}{65}{subsection.8.5}%
+\contentsline {subsubsection}{\numberline {8.5.1}Il teorema della funzione inversa}{65}{subsubsection.8.5.1}%
+\contentsline {subsubsection}{\numberline {8.5.2}Trasformazione di operatori differenziali}{67}{subsubsection.8.5.2}%
+\contentsline {subsection}{\numberline {8.6}Note sugli esercizi}{67}{subsection.8.6}%
+\contentsline {section}{\numberline {9}Funzioni di più variabili a valori vettoriali (GAZZOLA)}{68}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Campi vettoriali}{68}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Lavoro di un campo vettoriale}{69}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Forme differenziali lineari}{71}{subsubsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.3}Flusso e Teorema della divergenza}{71}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Flusso}{72}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Teorema della divergenza}{72}{subsubsection.9.3.2}%
+\contentsline {section}{\numberline {10}Equazioni differenziali}{73}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Modelli differenziali}{73}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Equazioni del primo ordine}{73}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Generalità}{73}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Equazioni a variabili separabili}{73}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}Equazioni lineari del prim'ordine}{74}{subsubsection.10.2.3}%
+\contentsline {subsubsection}{\numberline {10.2.4}Note sugli esercizi}{75}{subsubsection.10.2.4}%
+\contentsline {subsubsection}{\numberline {10.2.5}Equazione di Bernoulli}{75}{subsubsection.10.2.5}%
+\contentsline {subsubsection}{\numberline {10.2.6}Prolungamento delle soluzioni}{75}{subsubsection.10.2.6}%
+\contentsline {subsection}{\numberline {10.3}Equazioni lineari del secondo ordine}{76}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Spazi di funzioni}{76}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Generalità sulle equazioni lineari. Problema di Cauchy}{76}{subsubsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.3.3}La struttura dell'integrale generale}{76}{subsubsection.10.3.3}%
+\contentsline {subsubsection}{\numberline {10.3.4}Equazioni omogenee a coefficienti costanti}{77}{subsubsection.10.3.4}%
+\contentsline {subsubsection}{\numberline {10.3.5}Equazioni completa a coefficienti costanti}{78}{subsubsection.10.3.5}%
+\contentsline {subsubsection}{\numberline {10.3.6}metodo di somiglianza}{78}{subsubsection.10.3.6}%
+\contentsline {subsubsection}{\numberline {10.3.7}Metodo di sovrapposizione}{79}{subsubsection.10.3.7}%
+\contentsline {subsubsection}{\numberline {10.3.8}Metodo di variazione delle costanti}{79}{subsubsection.10.3.8}%
+\contentsline {subsubsection}{\numberline {10.3.9}Note sugli esercizi}{79}{subsubsection.10.3.9}%
+\contentsline {subsubsection}{\numberline {10.3.10}Equazione di Eulero}{79}{subsubsection.10.3.10}%
+\contentsline {subsection}{\numberline {10.4}Sistemi lineari omogenei}{81}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Diagonalizzazione di una matrice}{82}{subsection.10.5}%

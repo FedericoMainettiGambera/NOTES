@@ -1,4 +1,4 @@
-\section{Integrali}
+\section{Ripasso sugli integrali (analisi I)}
 \subsection{Teorema fondamentale del calcolo integrale:}
 \[
     \int_{a}^{b} f(x) dx = G(b) - G(a)
@@ -368,10 +368,11 @@ L'integrazione per parti si usa:
         \int_{-k}^{k}f(x)dx = 0
     \]
 \end{itemize}
-\subsection{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}
+\ \newline
+\textbf{Osservazione. Integrale generalizzato di una funzioen dispari su un intervallo simmetrico}
 Non è corretto affermare l'annullarsi di un integrale dispari per motivi di simmetria in un intervallo simmetrico senza prima verificare la convergenza dell'integrale stesso.
-\subsection{INTEGRALI GENERALIZZATI}
-\subsection{Integrazione di funzioni non limitate}
+\subsection{Integrali generalizzati}
+\subsubsection{Integrazione di funzioni non limitate}
 Metodo generale di risoluzione:
 \[
     \lim_{x\rightarrow b^-} f(x) = \pm \infty \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\lim_{x\rightarrow a^+}f(x) = \pm \infty
@@ -379,7 +380,7 @@ Metodo generale di risoluzione:
 \[
     \int_{a}^{b}f(x)dx = \lim_{\epsilon\rightarrow 0^+}\int_{a}^{b-\epsilon}f(x)dx \;\;\;\;\;\;\;\;\;\;\;\;\; \int_{a}^{b}f(x)dx = \lim_{\epsilon\rightarrow 0^+}\int_{a+\epsilon}^{b}f(x)dx 
 \]
-\subsection{Criteri di integrabilità al finito}
+\subsubsection{Criteri di integrabilità al finito}
 Siano $\lim_{x\rightarrow b^-}f(x) = \lim_{x\rightarrow b^-}g(x) = + \infty$:
 \begin{itemize}
     \item confronto: se $0\leq f(x) \leq g(x)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
@@ -389,7 +390,7 @@ Siano $\lim_{x\rightarrow b^-}f(x) = \lim_{x\rightarrow b^-}g(x) = + \infty$:
         \int_{a}^{b}|f(x)|dx \;\; convergente \;\;\Rightarrow \int_{a}^{b}f(x)dx \;\;convergente
     \]
 \end{itemize}
-\subsection{Integrazione su intervalli illimitati}
+\subsubsection{Integrazione su intervalli illimitati}
 Metodo generale di risoluzione:
 \[
     \int_{a}^{+\infty}f(x) dx = \lim_{\omega\rightarrow +\infty}\int_{a}^{\omega}f(x)dx
@@ -404,7 +405,7 @@ Metodo generale di risoluzione:
 \textbf{def.} Se il limite dell'integrale è $\pm \infty$, l'integrale si dice divergente.\newline
 \textbf{def.} Se il limite non esiste, l'integrale non esiste.\newline
 \textbf{per essere integrabile deve avere limite finito.}
-\subsection{Criteri di integrabilità all'infinito}
+\subsubsection{Criteri di integrabilità all'infinito}
 \begin{itemize}
     \item confronto: se $0\leq f(x) \leq g(x)$ in $[a,+\infty)$, allora $g$ integrabile $\Rightarrow f$ integrabile e $f$ non integrabile $\Rightarrow g$ non integrabile.
     \item confronto asintotico: se $f>0$, $g>0$ e $f \sim g$ per $x \rightarrow + \infty$, allora $f$ integrabile $\Leftrightarrow g$ integrabile
@@ -413,13 +414,7 @@ Metodo generale di risoluzione:
         \int_{a}^{+\infty}|f(x)| dx \;\; convergente \;\; \Rightarrow \int_{a}^{+\infty} f(x) dx \;\;convergente
     \]
 \end{itemize}
-\subsection{Osservazione. Ordine di annullamento di una funzione derivabile.}
-Se $f$ è una funzione derivabile in un intervallo $I$, la formula di Taylor ci dice che se $f$ si annulla in un punto $\alpha \in I$, si annulla almeno del prim'ordine. Precisamente poichè
-\[
-    f(x) - f(\alpha) = f'(\alpha)(x-\alpha) + o(x-\alpha)
-\]
-se $f'(\alpha) \neq 0$ allora $f$ ha uno zero del prim'ordine in $\alpha$. Se $f'(\alpha) = 0$ ma, ad esempio, $f''(\alpha) \neq 0$, si può concludere che $f$ si annulla del $2^0$ ordine, e così via. In ogni caso non può annullarsi di un ordine inore di $1$.
-\subsection{Integrali generalizzati notevoli}
+\subsubsection{Integrali generalizzati notevoli}
 Caso 1:
 \[
     \int_{a}^{b}\frac{1}{(x-a)^p}dx \rightarrow \begin{cases}
@@ -477,7 +472,7 @@ Caso 5: con $\alpha> 1$
         diverge \;\; se \;\; &p\geq 1
     \end{cases}
 \]
-\subsection{FUNZIONI INTEGRALI}
+\subsection{Funzioni integrali}
 \textbf{teor.} Secondo teorema fondamentale del calcolo integrale \newline
 Sia $f: [a,b] \rightarrow \mathbb{R}$ una funzione integrabile e sia $x_0 \in [a,b]$ e sia 
 \[

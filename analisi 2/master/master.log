@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  27 MAY 2020 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  27 MAY 2020 12:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,7 +605,7 @@ Overfull \hbox (53.64177pt too wide) detected at line 51
 \OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 SettSh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )) = []    \OML/cmm/m/it/10 ottenuta da \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 Ch[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Sh[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 1] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = []] \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 SettSh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 )]
  []
 
-<../0-ripasso/trigonometria.PNG, id=874, 510.40688pt x 484.05844pt>
+<../0-ripasso/trigonometria.PNG, id=864, 510.40688pt x 484.05844pt>
 File: ../0-ripasso/trigonometria.PNG Graphic file (type png)
 <use ../0-ripasso/trigonometria.PNG>
 Package pdftex.def Info: ../0-ripasso/trigonometria.PNG  used on input line 89.
@@ -614,25 +614,25 @@ Package pdftex.def Info: ../0-ripasso/trigonometria.PNG  used on input line 89.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5]
-<../0-ripasso/asintotici.PNG, id=881, 809.27344pt x 296.60812pt>
+<../0-ripasso/asintotici.PNG, id=871, 809.27344pt x 296.60812pt>
 File: ../0-ripasso/asintotici.PNG Graphic file (type png)
 <use ../0-ripasso/asintotici.PNG>
 Package pdftex.def Info: ../0-ripasso/asintotici.PNG  used on input line 94.
 (pdftex.def)             Requested size: 423.94608pt x 155.38214pt.
  [6 <../0-ripasso/trigonometria.PNG> <../0-ripasso/asintotici.PNG>]
-<../0-ripasso/derivate1.PNG, id=888, 533.74406pt x 697.10437pt>
+<../0-ripasso/derivate1.PNG, id=878, 533.74406pt x 697.10437pt>
 File: ../0-ripasso/derivate1.PNG Graphic file (type png)
 <use ../0-ripasso/derivate1.PNG>
 Package pdftex.def Info: ../0-ripasso/derivate1.PNG  used on input line 99.
 (pdftex.def)             Requested size: 423.94608pt x 553.71667pt.
  [7 <../0-ripasso/derivate1.PNG>]
-<../0-ripasso/derivate2.PNG, id=895, 531.48563pt x 360.59718pt>
+<../0-ripasso/derivate2.PNG, id=885, 531.48563pt x 360.59718pt>
 File: ../0-ripasso/derivate2.PNG Graphic file (type png)
 <use ../0-ripasso/derivate2.PNG>
 Package pdftex.def Info: ../0-ripasso/derivate2.PNG  used on input line 103.
 (pdftex.def)             Requested size: 423.94608pt x 287.64178pt.
  [8 <../0-ripasso/derivate2.PNG>]
-<../0-ripasso/mclaurin.PNG, id=901, 499.8675pt x 648.92438pt>
+<../0-ripasso/mclaurin.PNG, id=891, 499.8675pt x 648.92438pt>
 File: ../0-ripasso/mclaurin.PNG Graphic file (type png)
 <use ../0-ripasso/mclaurin.PNG>
 Package pdftex.def Info: ../0-ripasso/mclaurin.PNG  used on input line 108.
@@ -1480,7 +1480,7 @@ Overfull \hbox (0.11873pt too wide) detected at line 344
 [] \OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[] = [\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 Ch\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; dx \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dt\OT1/cmr/m/n/10 ] = [] []\OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 a \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 Sh\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 dx
  []
 
-[50] [51] [52] [53]) [54] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../6-integrali doppi e tripli (analisi II)/integrali doppi e tripli (analisi II).tex
+[50] [51] [52]) [53] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../6-integrali doppi e tripli (analisi II)/integrali doppi e tripli (analisi II).tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
@@ -1508,7 +1508,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--54
 
  []
 
-[55]
+[54]
 Overfull \hbox (15.0pt too wide) in paragraph at lines 55--56
 [][] 
  []
@@ -1523,7 +1523,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--99
 
  []
 
-[56]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 107--111
 
  []
@@ -1538,7 +1538,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
-[57]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
@@ -1553,7 +1553,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 175--176
 [][] 
  []
 
-[58]
+[57]
 Overfull \hbox (15.0pt too wide) in paragraph at lines 270--273
 [][] 
  []
@@ -1573,7 +1573,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--280
 
  []
 
-[59]
+[58]
 Overfull \hbox (15.0pt too wide) in paragraph at lines 281--284
 [][] 
  []
@@ -1603,12 +1603,12 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 323--325
 [][] 
  []
 
-[60]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 329--343
 
  []
 
-) [61] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
+) [60] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--26
 
  []
@@ -1643,37 +1643,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--57
 
  []
 
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 59--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--82
+
+ []
+
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 59--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
-
- []
-
-[63]
 Underfull \hbox (badness 10000) in paragraph at lines 155--159
 
  []
 
-[64]
+[63]
 Overfull \hbox (15.0pt too wide) in paragraph at lines 198--199
 [][] 
  []
@@ -1707,7 +1707,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--212
 
  []
 
-[65]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 214--220
 
  []
@@ -1749,7 +1749,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--261
 
  []
 
-[66]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 267--272
 
  []
@@ -1764,7 +1764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 303--308
 
  []
 
-[67]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 371--375
 
  []
@@ -1774,7 +1774,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--24
 
  []
 
-[68] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo6/capitolo6.tex
+[67] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo6/capitolo6.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--14
 
  []
@@ -1789,7 +1789,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--73
 
  []
 
-[69]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 89--95
 
  []
@@ -1824,7 +1824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--117
 
  []
 
-[70] [71]
+[69] [70]
 Underfull \hbox (badness 10000) in paragraph at lines 185--189
 
  []
@@ -1849,7 +1849,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--230
 
  []
 
-[72]
+[71]
 Overfull \hbox (3.10513pt too wide) in paragraph at lines 236--237
 []\OT1/cmss/m/n/10 una su-per-fi-cie $\OT1/cmr/m/n/10 ^^F$ \OT1/cmss/m/n/10 del-lo spa-zio $\U/msb/m/n/10 R[]$ \OT1/cmss/m/n/10 espres-sa in for-ma pa-ra-me-tri-ca: $[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; y\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; z\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 ))$ 
  []
@@ -1869,7 +1869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--272
 
  []
 
-) [73] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo1/capitolo1.tex [74]
+) [72] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo1/capitolo1.tex [73]
 Underfull \hbox (badness 10000) in paragraph at lines 72--75
 
  []
@@ -1884,7 +1884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--112
 
  []
 
-[75]
+[74]
 Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
@@ -1919,7 +1919,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--168
 
  []
 
-[76]
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 180--185
 
  []
@@ -1954,33 +1954,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--229
 
  []
 
-[77]
+[76]
 Overfull \hbox (15.0pt too wide) in paragraph at lines 251--252
 [][] 
  []
 
-[78]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 353--358
 
  []
 
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--361
+
+ []
+
 [79]
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
-
- []
-
-[80]
-<../img/eqdiff2.PNG, id=1238, 686.565pt x 484.05844pt>
+<../img/eqdiff2.PNG, id=1224, 686.565pt x 484.05844pt>
 File: ../img/eqdiff2.PNG Graphic file (type png)
 <use ../img/eqdiff2.PNG>
 Package pdftex.def Info: ../img/eqdiff2.PNG  used on input line 437.
 (pdftex.def)             Requested size: 355.92633pt x 250.93842pt.
-<../img/eqdiff2(1).PNG, id=1239, 688.82344pt x 467.49657pt>
+<../img/eqdiff2(1).PNG, id=1225, 688.82344pt x 467.49657pt>
 File: ../img/eqdiff2(1).PNG Graphic file (type png)
 <use ../img/eqdiff2(1).PNG>
 Package pdftex.def Info: ../img/eqdiff2(1).PNG  used on input line 440.
@@ -1990,7 +1990,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 433--442
 
  []
 
-[81]
+[80]
 Overfull \hbox (15.0pt too wide) in paragraph at lines 443--444
 [][] 
  []
@@ -2020,7 +2020,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 454--465
 
  []
 
-[82 <../img/eqdiff2.png> <../img/eqdiff2(1).png>]
+[81 <../img/eqdiff2.png> <../img/eqdiff2(1).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 481--489
 
  []
@@ -2050,33 +2050,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 521--526
 
  []
 
-[83]
+[82]
 Underfull \hbox (badness 10000) in paragraph at lines 533--536
 
  []
 
-) [84]
+) [83]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (c:/Users/enric/Desktop/NOTES/analisi 2/master/master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 9D3552188CE4AB9A1512189C5F855AB9;15075.
+(rerunfilecheck)             Checksum: A04707ACFDC8EEC15E25D75C45086A2E;14890.
  ) 
 Here is how much of TeX's memory you used:
- 18761 strings out of 480994
- 343657 string characters out of 5916032
+ 18756 strings out of 480994
+ 343636 string characters out of 5916032
  606714 words of memory out of 5000000
- 33547 multiletter control sequences out of 15000+600000
+ 33545 multiletter control sequences out of 15000+600000
  543863 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,13n,77p,1017b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" (84 pages, 1402032 bytes).
+Output written on "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" (83 pages, 1400027 bytes).
 PDF statistics:
- 1385 PDF objects out of 1440 (max. 8388607)
- 1254 compressed objects within 13 object streams
- 275 named destinations out of 1000 (max. 500000)
- 1376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1371 PDF objects out of 1440 (max. 8388607)
+ 1241 compressed objects within 13 object streams
+ 272 named destinations out of 1000 (max. 500000)
+ 1360 words of extra memory for PDF output out of 10000 (max. 10000000)
 
