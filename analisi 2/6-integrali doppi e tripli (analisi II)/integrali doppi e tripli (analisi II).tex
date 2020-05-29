@@ -294,13 +294,28 @@ Invece per il calcolo del momento d'inerzia di un solido $T$ rispetto all'asse $
 \[
     M_z = \int \int \int_{T} (x^2+y^2) \; \delta(x,y,z) dx \; dy \; dz
 \]
-\subsubsection{Consigli sull'espressione di domini in $\mathbb{R}^3$}
+\subsubsection{Significato dei domini in $\mathbb{R}^3$ per "strati" e per "fili"}
 Domini in $\mathbb{R}^3$: vi sono 6 differenti oridini con i quali esprimere i domini, tra questi meritano particolare attenzione i seguenti:
 \begin{itemize}
-    \item quello per cui $z$ è la variabile più esterna: fissata $z$, si procede a fissare le restanti due coordinate ($x,y$ per coordinate cartesiante, $\rho, \theta$ per coordinate cilindriche) sui domini piani che corrispondono alle varie quote di $z$ (la cosiddetta espressione per strati);
-    \item quell per cui $z$ è la variabile più interna: si fissano le due coordinate piane ($x,y$ per coordinate polari, $\rho, \theta$ per coordiante cilindriche) in modo generale, dopodichè per ogni coppia $x,y$ o $\rho, \theta$, si fissa la corrispondente $z$ (la cosiddetta espressione per fili).
+    \item quello per cui $z$ è la variabile più esterna: fissata $z$, si procede a fissare le restanti due coordinate ($x,y$ per coordinate cartesiante, $\rho, \theta$ per coordinate cilindriche) sui domini piani che corrispondono alle varie quote di $z$ (la cosiddetta espressione per \textbf{strati});
+    \item quell per cui $z$ è la variabile più interna: si fissano le due coordinate piane ($x,y$ per coordinate polari, $\rho, \theta$ per coordiante cilindriche) in modo generale, dopodichè per ogni coppia $x,y$ o $\rho, \theta$, si fissa la corrispondente $z$ (la cosiddetta espressione per \textbf{fili}).
 \end{itemize}
+Esempio per fili a sinistra, per strati a destra:
+\begin{center}
+    \includegraphics[height=5cm]{../6-integrali doppi e tripli (analisi II)/img2.PNG}
+\end{center}
 \subsubsection{Equazione di un piano passante per tre punti}
+L'equazione caratteristica di un piano è $ax + bx + cz = d$, dati i tre punti $(x_1,y_1,z_1), (x_2,y_2,z_2), (x_3,y_3,z_3)$ scriviamo il sistema:
+\[
+    \begin{cases}
+        a x_1 + by_1 + c z_1 = d\\
+        a x_2 + by_2 + c z_2 = d\\
+        a x_3 + by_3 + c z_3 = d
+    \end{cases}
+\]
+da cui ricaviamo i valori di $a,b,c$ e $d$ da sostituire.\newline
+\newline
+C'è anche quest'altro metodo ma non ne sono sicurissimo:\newline
 Piano per tre punti $(x_a, y_a, z_a)$ $(x_b, y_b, z_b)$ e $(x_c, y_c, z_c)$ è il determinante della matrice 
 \[
     det\left(\begin{matrix}

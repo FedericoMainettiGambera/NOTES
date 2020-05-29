@@ -121,8 +121,8 @@
 \contentsline {subsubsection}{\numberline {7.3.2}Significato geometrico di un integrale doppio e calcolo del volume}{58}{subsubsection.7.3.2}%
 \contentsline {subsubsection}{\numberline {7.3.3}Note sull'elemento d'area per vari cambi di variabile}{58}{subsubsection.7.3.3}%
 \contentsline {subsubsection}{\numberline {7.3.4}Baricentro e momento d'inerzia}{58}{subsubsection.7.3.4}%
-\contentsline {subsubsection}{\numberline {7.3.5}Consigli sull'espressione di domini in $\mathbb {R}^3$}{59}{subsubsection.7.3.5}%
-\contentsline {subsubsection}{\numberline {7.3.6}Equazione di un piano passante per tre punti}{59}{subsubsection.7.3.6}%
+\contentsline {subsubsection}{\numberline {7.3.5}Significato dei domini in $\mathbb {R}^3$ per "strati" e per "fili"}{59}{subsubsection.7.3.5}%
+\contentsline {subsubsection}{\numberline {7.3.6}Equazione di un piano passante per tre punti}{60}{subsubsection.7.3.6}%
 \contentsline {subsubsection}{\numberline {7.3.7}Equazioni di circonferenze non centrate nell'origine}{60}{subsubsection.7.3.7}%
 \contentsline {section}{\numberline {8}Calcolo differenziale per funzioni di più variabili a valori vettoriali (BRAMANTI)}{61}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Funzioni di più variabili a valori vettoriali: generalità}{61}{subsection.8.1}%

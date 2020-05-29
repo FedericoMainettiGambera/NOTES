@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  29 MAY 2020 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.12)  29 MAY 2020 18:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1561,12 +1561,27 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 297.
 
+<../6-integrali doppi e tripli (analisi II)/img2.PNG, id=1166, 401.24907pt x 176.91093pt>
+File: ../6-integrali doppi e tripli (analisi II)/img2.PNG Graphic file (type png)
+<use ../6-integrali doppi e tripli (analisi II)/img2.PNG>
+Package pdftex.def Info: ../6-integrali doppi e tripli (analisi II)/img2.PNG  used on input line 305.
+(pdftex.def)             Requested size: 322.67114pt x 142.26378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--320
+Overfull \hbox (12.15726pt too wide) in paragraph at lines 308--309
+\OT1/cmss/m/n/10 L'equazione ca-rat-te-ri-sti-ca di un pia-no ^^Re $\OML/cmm/m/it/10 ax \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 bx \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 cz \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 d$\OT1/cmss/m/n/10 , da-ti i tre pun-ti $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]; z[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]; z[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]; z[]\OT1/cmr/m/n/10 )$
+ []
+
+[59 <../6-integrali doppi e tripli (analisi II)/img2.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 315--320
 
  []
 
-) [59] [60] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--335
+
+ []
+
+) [60] (c:/Users/enric/Desktop/NOTES/analisi 2/master/../capitolo4/capitolo4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--26
 
  []
@@ -1933,12 +1948,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 359--361
  []
 
 [79]
-<../img/eqdiff2.PNG, id=1256, 686.565pt x 484.05844pt>
+<../img/eqdiff2.PNG, id=1258, 686.565pt x 484.05844pt>
 File: ../img/eqdiff2.PNG Graphic file (type png)
 <use ../img/eqdiff2.PNG>
 Package pdftex.def Info: ../img/eqdiff2.PNG  used on input line 437.
 (pdftex.def)             Requested size: 355.92633pt x 250.93842pt.
-<../img/eqdiff2(1).PNG, id=1257, 688.82344pt x 467.49657pt>
+<../img/eqdiff2(1).PNG, id=1259, 688.82344pt x 467.49657pt>
 File: ../img/eqdiff2(1).PNG Graphic file (type png)
 <use ../img/eqdiff2(1).PNG>
 Package pdftex.def Info: ../img/eqdiff2(1).PNG  used on input line 440.
@@ -2020,21 +2035,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 2A6B7585F51FD50CB5D3407E58975D86;15598.
+(rerunfilecheck)             Checksum: 5C024F11C888EBFC462DAC3579B71711;15611.
  ) 
 Here is how much of TeX's memory you used:
- 18762 strings out of 480994
- 343976 string characters out of 5916032
+ 18768 strings out of 480994
+ 344258 string characters out of 5916032
  607714 words of memory out of 5000000
- 33544 multiletter control sequences out of 15000+600000
+ 33549 multiletter control sequences out of 15000+600000
  543863 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,13n,77p,1017b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" (83 pages, 1418723 bytes).
+Output written on "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" (83 pages, 1456481 bytes).
 PDF statistics:
- 1404 PDF objects out of 1440 (max. 8388607)
+ 1406 PDF objects out of 1440 (max. 8388607)
  1272 compressed objects within 13 object streams
  278 named destinations out of 1000 (max. 500000)
- 1413 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1418 words of extra memory for PDF output out of 10000 (max. 10000000)
 
