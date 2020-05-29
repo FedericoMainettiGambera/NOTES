@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex master.idx"] 1590610206 "master.idx" "master.ind" "master" 1590610347
-  "master.idx" 1590610339 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1590763124 "master.idx" "master.ind" "master" 1590763146
+  "master.idx" 1590763136 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ind"
   "master.ilg"
-["pdflatex"] 1590610337 "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" "master" 1590610347
+["pdflatex"] 1590763133 "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" "master" 1590763146
   "../../preamble/preamble.tex" 1587603066 707 ea9409653390c911ff58e23c44f6605e ""
   "../0-ripasso/asintotici.PNG" 1589131226 81145 cd68750df7e46980af23b001d340d336 ""
   "../0-ripasso/derivate1.PNG" 1589131226 40267 a3e54c2c8c0abdc16f892ff59f355518 ""
@@ -17,7 +17,8 @@
   "../3-curve/curve.tex" 1589593903 26990 204e5f69bafb9dbae9c3b8c2fec56bdd ""
   "../4-superfici/superfici.tex" 1590243107 59373 9c83aa8bae9fdd89ed1b69105c5c58d8 ""
   "../5-integrali (analisi I)/integrali (analisi I).tex" 1590577407 24577 aed2b7b40f24d2d11fe1060929306394 ""
-  "../6-integrali doppi e tripli (analisi II)/integrali doppi e tripli (analisi II).tex" 1590610338 17987 815969f9d0022ddf31189d3c65a77e4a ""
+  "../6-integrali doppi e tripli (analisi II)/img1.PNG" 1590762995 23859 d30412469fb018479feae3a58b81799b ""
+  "../6-integrali doppi e tripli (analisi II)/integrali doppi e tripli (analisi II).tex" 1590763126 18104 8e2258e53698a5011a79332fcd6328e9 ""
   "../capitolo1/capitolo1.tex" 1589070850 25282 11978a6dfb753862d9fb65f986693fe9 ""
   "../capitolo4/capitolo4.tex" 1589070823 20856 2f5c6ee60cd9fa60ebff6acf164baa67 ""
   "../capitolo6/capitolo6.tex" 1589070832 17713 9354897f552a8b0a643247af94770c11 ""
@@ -25,7 +26,7 @@
   "../img/eqdiff2(1).png" 1584032199 338207 baa06ca27852220832d359b977f3ef1c ""
   "../img/eqdiff2.PNG" 1584032199 300959 9e520b0f43eb5104df2c0d17c5a82ab6 ""
   "../img/eqdiff2.png" 1584032199 300959 9e520b0f43eb5104df2c0d17c5a82ab6 ""
-  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.aux" 1590610344 26401 457156cb377e834b7b6d5a9fb4f73903 ""
+  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.aux" 1590763141 26401 6be781ffb1d2c4f8a2ead931d10e98f3 ""
   "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" 1590573062 1166 37cedc1142905e290ec8369f8d4f7ce4 ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1584035588 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1584038501 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -207,17 +208,17 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1584048551 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1584049042 8274593 951864db8bcab083c09dd09dcef78fa9 ""
   "c:/texlive/2019/texmf.cnf" 1584048406 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1590610344 26401 457156cb377e834b7b6d5a9fb4f73903 "pdflatex"
-  "master.ind" 1590610208 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1590610344 15598 2a6b7585f51fd50cb5d3407e58975d86 "pdflatex"
+  "master.aux" 1590763141 26401 6be781ffb1d2c4f8a2ead931d10e98f3 "pdflatex"
+  "master.ind" 1590763125 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
+  "master.out" 1590763141 15598 2a6b7585f51fd50cb5d3407e58975d86 "pdflatex"
   "master.tex" 1590573062 1166 37cedc1142905e290ec8369f8d4f7ce4 ""
-  "master.toc" 1590610344 18693 fffb5cc9925ecd53ff486ae16af89272 "pdflatex"
+  "master.toc" 1590763141 18693 a660c35fbd482e3964e66c1fcdab7840 "pdflatex"
   (generated)
-  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf"
-  "master.idx"
-  "master.out"
   "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.log"
-  "master.aux"
+  "master.out"
+  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf"
   "master.pdf"
+  "master.aux"
   "master.log"
   "master.toc"
+  "master.idx"
