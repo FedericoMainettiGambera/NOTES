@@ -253,7 +253,7 @@ Dato un dominio $T$ di $\mathbb{R}^3$, il volume di $T$ può essere espresso  tr
     \text{Volume(T)}\; = \int \int \int_{T} dx dy dz
 \]
 \subsubsection{Note sull'elemento d'area per vari cambi di variabile}
-Passando nel piano da coordinate cartesiane a coordinate polari abbiamo visto che l'elemento d'area $dx \; dy$ diventa $\rho \; d \rho \;d \theta$, allo stesso modo nello spazio l'elemento di volume $dx \; dy \; dz$ diventa in coordinate cilindriche $\rho\; d \rho\; d \theta \; dz$ e in coordinate sferiche $R^2 sin(\phi)\; dR \;d \phi \;d \theta$ (se però adottiamo le coordiante sferiche con $-\frac{\pi}{2} \leq \phi \leq \frac{\pi}{2}$ l'elemento di volume diventa $R^2 cos(\phi) \;dR \;d \phi \;d \theta$).
+Passando nel piano da coordinate cartesiane a coordinate polari abbiamo visto che l'elemento d'area $dx \; dy$ diventa $\rho \; d \rho \;d \theta$, allo stesso modo nello spazio l'elemento di volume $dx \; dy \; dz$ diventa in coordinate cilindriche $\rho\; d \rho\; d \theta \; dz$ e in coordinate sferiche, se adottiamo la convezione che $\phi$ parte dall'asse $z$, $R^2 sin(\phi)\; dR \;d \phi \;d \theta$ (se però adottiamo le coordiante sferiche con $phi$ che parte dall'asse delle $x$, e quindi spazia in $-\frac{\pi}{2} \leq \phi \leq \frac{\pi}{2}$, l'elemento di volume diventa $R^2 cos(\phi) \;dR \;d \phi \;d \theta$).
 \subsubsection{Baricentro e momento d'inerzia}
 Data una regione piana $T$ di $\mathbb{R}^2$, e detta $\delta (x,y)$ non negativa su $T$ densità superficiale di massa relativa alla lamina rappresentata dalla regione $T$, l'integrale doppio esteso su $T$ della funzione $\delta$ rappresenta la masssa $M$ della lamina $T$:
 \[
@@ -290,9 +290,9 @@ Valgono inoltre le seguenti formule, per il calcolo delle coordinate $(x_b, y_b,
 \[
     z_b = \frac{1}{M} \int \int \int_{T} z \; \delta(x,y,z)dx dy dz
 \]
-Invece per il calcolo del momento d'inerzia di un solido $T$ rispetto all'asse $z$:
+Invece per il calcolo del momento d'inerzia di un solido $T$ rispetto all'asse $z$, detta $d(x,y,z)$ la distanza di un generico punto dall'asse $z$:
 \[
-    M_z = \int \int \int_{T} (x^2+y^2) \; \delta(x,y,z) dx \; dy \; dz
+    M_z = \int \int \int_{T} d^2(x,y,z) \; \delta(x,y,z) dx \; dy \; dz =  \int \int \int_{T} (x^2+y^2) \; \delta(x,y,z) dx \; dy \; dz
 \]
 \subsubsection{Significato dei domini in $\mathbb{R}^3$ per "strati" e per "fili"}
 Domini in $\mathbb{R}^3$: vi sono 6 differenti oridini con i quali esprimere i domini, tra questi meritano particolare attenzione i seguenti:
