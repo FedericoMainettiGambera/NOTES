@@ -1,5 +1,4 @@
-\section{Funzioni di più variabili a valori vettoriali (GAZZOLA)}
-\rule{\textwidth}{2pt}
+\section{Funzioni di più variabili a valori vettoriali}
 \subsection{Campi vettoriali}
 Un campo vettoriale $F: \mathbb{R}^n \rightarrow  \mathbb{R}^m$ è una funzione che ad ogni  punto dello spazio $\mathbb{R}^n$ associa un vettore di $\mathbb{R}^m$.
 \[
@@ -8,6 +7,7 @@ Un campo vettoriale $F: \mathbb{R}^n \rightarrow  \mathbb{R}^m$ è una funzione 
 dove le componenti $F_h$ sono funzioni scalari e gli $e_h$ rappresentano i vettori della base canonica di $\mathbb{R}^m$. Se tutte le componenti $F_h$ sono di classe $C^1$, diremo che $F \in C^1(\mathbb{R}^n, \mathbb{R}^m)$\newline
 \newline
 \textbf{oss.} $n=m=1$ funzione reale di variabile reale; $n=1, m \geq 2$ curva; $n \geq 2, m = 1$ funzione scalare di più variabili.\newline
+\newline
 \newline
 Sia $\Omega \in \mathbb{R}^3$ un aperto, dato un campo $F \in C^1(\Omega, \mathbb{R}^3)$, chiameremo \textbf{linea di campo} di $F$ una curva regolare che in ongi punto del suo sostegno sia tangente a $F$.\newline
 Con questa definizione si caratterizza una linea di campo di $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$ con una curva regolare $r = r(t)$ tale che $r'(t)$ sia proporzionale a $F(r(t))$. Dato che il coefficiente di proporzionalità è variabile possiamo scrivere:
@@ -42,7 +42,8 @@ e le linee di campo si ottengono integrando:
     \int \frac{dy}{F_2(x,y,z)} = 
     \int \frac{dz}{F_3(x,y,z)}
 \]
-\rule{\textwidth}{0,4pt}\newline
+\ \newline
+\newline
 Chiamiamo \textbf{rotore} di un campo $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$ il vettore
 \[
     rot(F) = \nabla \land F = \left|\begin{matrix}
@@ -58,40 +59,46 @@ Per calcolare il rotore di una funzione $F \in C^1(\mathbb{R}^2, \mathbb{R}^2)$,
 \]
 Quindi il rotore è perpendicolare al piano del campo.\newline
 Anche in tre dimensioni il rotore individue una direzione che è perpendicolare al piano che localmente tende a contenere le linee di campo.\newline
-Il modulo del rotore misura la tendenza a ruotare attorno all'asse della sua direzione. Se le linee di campo tendono ad accolgersi attorno all'asse, il rotore abrà il verso della vite che ruota nel verso delle linee di campo. Se il rotore è nullo, non c'è effetto rotatorio.\newline
-\rule{\textwidth}{0,4pt}\newline
+Il modulo del rotore misura la tendenza a ruotare attorno all'asse della sua direzione. Se le linee di campo tendono ad avvolgersi attorno all'asse, il rotore avrà il verso della vite che ruota nel verso delle linee di campo. Se il rotore è nullo, non c'è effetto rotatorio.\newline
+\newline
+\newline
 Chiamiamo \textbf{divergenza} di un campo $F \in C^1(\mathbb{R}^3, \mathbb{R}^3)$ lo scalare
 \[
     div(F) = \nabla \cdot F = \frac{\delta F_1}{\delta x} +\frac{\delta F_2}{\delta y} +\frac{\delta F_3}{\delta z}
 \]
-Un campo a divergenza nulla viene chiamato solenoidale.\newline
+Un campo a divergenza nulla viene chiamato \textbf{solenoidale}.\newline
 La divergenza in $n=1$ coincide con la derivata di una funzione scalare.\newline
-\rule{\textwidth}{0,4pt}
 \newline
 \newline
 \textbf{oss.} 
 \[
-    \nabla \land (\nabla u) = rot(\nabla u) = 0 \quad \quad \;\forall\;u \in C^2(\Omega, \mathbb{R}),
+    \nabla \land (\nabla u) = rot(\nabla u) = 0 \quad \quad \;\forall\;u \in C^2(\Omega, \mathbb{R}), \;\;\; \text{cioè un gradiente è irrotazionale;}
 \]
-cioè un gradiente è irrotazionale;
 \[
-    \nabla \cdot  (\nabla \land F) = div(rot(F)) = 0 \quad \quad \;\forall\; F \in C^2(\Omega, \mathbb{R}^3),
+    \nabla \cdot  (\nabla \land F) = div(rot(F)) = 0 \quad \quad \;\forall\; F \in C^2(\Omega, \mathbb{R}^3), \;\;\;\text{cioè un rotore è solenoidale;}
 \]
-cioè un rotore è solenoidale;
 \[
     \nabla \cdot (\nabla u) = div(\nabla u) = \nabla u \quad \quad \;\forall\;u \in C^2(\Omega, \mathbb{R}).
 \]
-\rule{\textwidth}{2pt}
 \subsection{Lavoro di un campo vettoriale}
-\textbf{def.} SIa $\gamma$ il sostegno orientato di una curva regolare a tratti $r: I \rightarrow \mathbb{R}^n$ e sia $F \in C ^0(\mathbb{R}^n, \mathbb{R}^n)$. Si chiama \textbf{lavoro} di $F$ lungo $\gamma$ l'integrale di linea
+\subsubsection{Definizioni}
+Sostenzialmente il lavoro è dato dalla forza per lo spostamento.\newline
+\newline
+\textbf{def.} Sia $\gamma$ il sostegno orientato di una curva regolare a tratti $r: I \rightarrow \mathbb{R}^n$ e sia $F \in C ^0(\mathbb{R}^n, \mathbb{R}^n)$. Si chiama \textbf{lavoro} di $F$ lungo $\gamma$ l'integrale di linea
 \[
     L_\gamma (F) = \int_{\gamma} F \cdot dr = \int_{I} F(r(t))\cdot r'(t) dt
 \]
 Sia $I = [a,b]$, da un punto di vista fisico, $L_\gamma(F)$ rappresenta il lavoro che compie la forza $F$ per spostare il suo punto di applicazione lungo $\gamma$ da $r(a)$ a $r(b)$.\newline
 Rispetto al classico integrale di linea che non cambia se riparametriziamo la curva con verso opposto, l'integrale che calcola il lavoro cambia segno se la curva cambia verso.\newline
 \newline
+Notiamo che l'integrale che serve per il calcolo del lavoro cambia segno se la curva cambia verso.
+\newline
+\newline
 Diremo che $F \in C^1(\Omega, \mathbb{R}^n)$ è \textbf{conservativo} se esite una funzione reale $U \in C^2(\Omega, \mathbb{R})$, che chiameremo \textbf{potenziale} di $F$, tale che $\nabla U = F$.\newline
 \newline
+Pertanto, se esiste, il potenziale $U$ ha derivate parziali che coincidono con le componenti del campo $F$, inoltre, sempre se esiste, il potenziale $U$ è unico a meno di una costante additiva.\newline
+\newline
+\textbf{teor.} 
 \[
     F \; \text{conservativo}\; \Longrightarrow F \; \text{irrotazionale}\;
 \]
@@ -103,6 +110,13 @@ Il lavoro di $F$ lungo un qualunque sostegno $\gamma$ si esprime come
 \]
 Questa espressione ci dice che il lavoro di un campo conservativo si calcola come differenza di potenziale e che il lavoro di un campo conservativo non dipende dalla curva di percorrenza, ma solo dai suoi estremi. Inoltre il lavoro di $F$ lungo il sostegno di una qualunque linea chiusa è nullo.\newline
 \newline
+\textbf{teor.} SIa $\Omega \subset \mathbb{R}^n$ un aperto; un campo $F \in C^1(\Omega,\mathbb{R}^n)$ è \textbf{conservativo} se e solo se vale una delle condizioni seguenti (equivalenti fra di loro):
+\begin{itemize}
+    \item Il lavoro di $F$ lungo un qualunque sostegno orientato $\gamma$ si esprime tramite $L_\gamma(F) = \int_{a}^{b}\nabla U(r(t)) \cdot r'(t) dt = U(r(b)) - U(r(a))$;
+    \item il lavoro di $F$ lungo il sostegno orientato di qualunque coppia di curve coincidenti agli estremi è uguale;
+    \item il lavoro di $F$ lungo il sostegno di una qualunque linea chiusa è nullo.
+\end{itemize}
+\ \newline
 \textbf{def.} Un insieme $\Omega \subset \mathbb{R}^n$ si dice \textbf{semplicemente connesso} se ogni linea chiusa $\gamma \subset \Omega$ è contraibile in $\Omega$ a un punto di $\Omega$. In altre parole, partendo da una linea chiusa $\gamma \subset \Omega$ deve essere possibile contrarla con continuità, fino a ridurla a un punto e questo deve avvenire sempre rimanendo in $\Omega$.\newline
 In parole povere, in $\mathbb{R}^2$ un insieme si dice semplicemente connsesso se è fatto da un "pezzo unico" e non ha buchi (anche di un solo punto), in $\mathbb{R}^3$ un buco puntuale non è sufficiente a far perdere questa proprietà, ma deve esserci un buco della forma simile a quella di un segmento perchè l'insieme non sia semplicemente connesso.\newline
 \newline
@@ -111,8 +125,8 @@ In parole povere, in $\mathbb{R}^2$ un insieme si dice semplicemente connsesso s
     F \; \text{conservativo}\; \Longleftrightarrow F \; \text{irrotazionale}\;
 \]
 Da notare è il fatto che sia una condizione sufficiente, non necessaria.\newline
-Notiamo anche che un campo irrotazionale è sempre localmente conservativo.\newline
-\newline
+Notiamo anche che un campo irrotazionale è sempre localmente conservativo.
+\subsubsection{Calcolo del lavoro}
 Per sapere se un campo è conservativo:
 \begin{itemize}
     \item si controlla se è irrotazionale:
@@ -191,8 +205,7 @@ Come trovare un potenziale di un campo conservativo:
 \newline
 \textbf{oss.} è sempre possibile  verificare l'esattezza dei propri conti nella ricerca di un potenziale: $grad(U) = F$, dunque calcolando le derivate parziali di $U$ dovremmo trovare le componenti di $F$.\newline
 \newline
-\textbf{oss.} Bisogna sempre verificare che il dominio sia un insieme semplicemente connesso, se non lo fosse bisogna suddividere il dominio in tanti intervalli semplicemente connessi e specificare che il potenziale vale per ognuno di questi separatamente.\newline
-\rule{\textwidth}{0,4pt}
+\textbf{oss.} Bisogna sempre verificare che il dominio sia un insieme semplicemente connesso, se non lo fosse bisogna suddividere il dominio in tanti intervalli semplicemente connessi e specificare che il potenziale vale per ognuno di questi separatamente.
 \subsubsection{Forme differenziali lineari}
 Nel calcolo del lavoro di un campo $F \in C^1 (\mathbb{R}^n, \mathbb{R}^n)$, ci imbattiamo in integrande del tipo
 \[
@@ -225,16 +238,14 @@ Se
 \]
 allora la funzione $F$ è irrotazionale e la forma differenziale lineare corrispondente viene chiamata forma differenziale \textbf{chiusa}.\newline
 \newline
-Ogni forma differenziale esatta è anche chiusa, mentre il viceversa non è vero.\newline
-\rule{\textwidth}{2pt}
+Ogni forma differenziale esatta è anche chiusa, mentre il viceversa non è vero.
 \subsection{Flusso e Teorema della divergenza}
-\rule{\textwidth}{0,4pt}
 \subsubsection{Flusso}
 Per calcolare il flusso abbiamo bisogno di
 \begin{itemize}
     \item un campo vettoriale $F: C \subseteq \mathbb{R}^3 \rightarrow  \mathbb{R}^3$
     \item una superficie $\Sigma$ dello spazio $\mathbb{R}^3$ espressa in forma parametrica: $\vec{r}(u,v)  = (x(u,v), y(u,v), z(u,v))$
-    \item $\vec{n}: \mathbb{R}^3 \rightarrow  \mathbb{R}^3$, il versore normale alla superficie al variare del punto (posizione) $(x,y,z)$ appartenente alla superficie. Bisogna porre attenzione al verso della normale, che olitamente è dato dall'esercizio stesso, per ogni normale potremmo dare dure versi, opposti tra loro. Quando la superficie è espressa in forma parametrica, il vettore normale si ottiene effettuando il prodotto vettoriale tra $\frac{\delta \vec{r}}{\delta u} \; \text{x}\;\frac{\delta \vec{r}}{\delta v}$ e quindi il versore normale è dato da:
+    \item $\vec{n}: \mathbb{R}^3 \rightarrow  \mathbb{R}^3$, il versore normale alla superficie al variare del punto (posizione) $(x,y,z)$ appartenente alla superficie. Bisogna porre attenzione al verso della normale, che solitamente è dato dall'esercizio stesso, per ogni normale potremmo dare dure versi, opposti tra loro. Quando la superficie è espressa in forma parametrica, il vettore normale si ottiene effettuando il prodotto vettoriale tra $\frac{\delta \vec{r}}{\delta u} \; \text{x}\;\frac{\delta \vec{r}}{\delta v}$ e quindi il versore normale è dato da:
     \[
         \frac{\frac{\delta \vec{r}}{\delta u} \; \text{x}\;\frac{\delta \vec{r}}{\delta v}}{\left|\frac{\delta \vec{r}}{\delta u} \; \text{x}\;\frac{\delta \vec{r}}{\delta v}\right|}
     \]
@@ -253,14 +264,13 @@ Se la superficie è il grafico di una funzione nella forma $z = f(x,y)$ allora l
 \]
 Poichè il terzo elemento del vettore normale è 1 allora esso è rivolto verso le quote crescenti di $z$.\newline
 \newline
-Se la superficie è espressa in forma implicita dobbiamo parametrizzarla e usare le formule illustrate.\newline
-\rule{\textwidth}{0,4pt}
+Se la superficie è espressa in forma implicita dobbiamo parametrizzarla e usare le formule illustrate.
 \subsubsection{Teorema della divergenza}
 Consideriamo $F \in C^1(\Omega, \mathbb{R}^n)$ con $\Omega \subset \mathbb{R}^n$ e limitato, inoltre sia $\vec{n}$ un versore definito su un punto del bordo di $\Omega$ (detto $\delta\Omega$ ) e perpendicolare al piano tangente in $\delta \Omega$ e orientato verso l'esterno.\newline
 Il prodotto scalare $F \cdot \vec{n}$ rappresenta il flusso uscente (se $> 0$, entrante se $<0$)  da $\delta\Omega$.\newline
 \newline
-\textbf{teor.} della divergenza.\newline
-Sia $\Omega \subset \mathbb{R}^n$ un aperto limitato, semplice rispetto a tutti gli assi cartesiani con versore nomrale uscente $\vec{n}$ in ogni punto di $\delta\Omega$. Sia $F \in C^1(\bar{\Omega}, \mathbb{R}^n)$ un campo vettoriale. Allora
+\textbf{Teorema della divergenza}:\newline
+Sia $\Omega \subset \mathbb{R}^n$ un aperto limitato, semplice rispetto a tutti gli assi cartesiani con versore normale uscente $\vec{n}$ in ogni punto di $\delta\Omega$. Sia $F \in C^1(\bar{\Omega}, \mathbb{R}^n)$ un campo vettoriale. Allora
 \[
     \int_\Omega \nabla \cdot  F(x) dx = \int_{\delta\Omega} F \cdot  \vec{n} \; dS
 \]
