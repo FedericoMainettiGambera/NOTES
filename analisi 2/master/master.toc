@@ -129,7 +129,8 @@
 \contentsline {subsection}{\numberline {8.2}Lavoro di un campo vettoriale}{61}{subsection.8.2}%
 \contentsline {subsubsection}{\numberline {8.2.1}Definizioni}{61}{subsubsection.8.2.1}%
 \contentsline {subsubsection}{\numberline {8.2.2}Verifica della conservatività di un campo vettoriale}{62}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Forme differenziali lineari}{64}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.3}Calcolo di un potenziale}{62}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Forme differenziali lineari}{64}{subsubsection.8.2.4}%
 \contentsline {subsection}{\numberline {8.3}Flusso e Teorema della divergenza}{64}{subsection.8.3}%
 \contentsline {subsubsection}{\numberline {8.3.1}Flusso}{64}{subsubsection.8.3.1}%
 \contentsline {subsubsection}{\numberline {8.3.2}Teorema della divergenza}{65}{subsubsection.8.3.2}%
