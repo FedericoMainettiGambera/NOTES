@@ -126,7 +126,7 @@ In parole povere, in $\mathbb{R}^2$ un insieme si dice semplicemente connsesso s
 \]
 Da notare è il fatto che sia una condizione sufficiente, non necessaria.\newline
 Notiamo anche che un campo irrotazionale è sempre localmente conservativo.
-\subsubsection{Calcolo del lavoro}
+\subsubsection{Verifica della conservatività di un campo vettoriale}
 Per sapere se un campo è conservativo:
 \begin{itemize}
     \item si controlla se è irrotazionale:
@@ -137,7 +137,7 @@ Per sapere se un campo è conservativo:
             \item se lo è, il campo è conservativo (vedi metodi sotto per il calcolo del lavoro).
             \item se non lo è, non possiamo concludere nulla a priori e quindi siamo costretti a provare uno dei seguenti metodi:
             \begin{itemize}
-                \item cercare un potenziale. Se esiste ed è differenziabile (ricordiamo che è condizione sufficiente che il potenziale sia $C^1$ per essere differenziabile) in tutto il dominio di $F$, allora $F$ è conservativo.
+                \item Si cerca un potenziale e se esiste ed è differenziabile (ricordiamo che è condizione sufficiente che il potenziale sia $C^1$ per essere differenziabile) in tutto il dominio di $F$, allora $F$ è conservativo.
                 \item il lavoro di $F$ lungo un sostegno di una qualunque linea chiusa è nullo. Per mostrare questa proprietà mostro un esempio che può chiarire facilmente come procedere: abbiamo un campo $F$ il cui dominio è tutto $\mathbb{R}^2 - \{0,0\}$, tutte le curve chiuse che non circondano l'origine hanno sicuramente lavoro nullo (perchè possono essere racchiusi in sottoinsiemi del dominio di $F$ semplicemente connessi). Per quanto riguarda le curve che, invece, contengono l'origine, si fa la considerazione di analizzare una particolare curva "comoda", osservando che tutte le altre curve che circondano l'origine possono essere deformata con continuità fino a sovrapporsi alla nostra scelta "comoda". In questo esercizio in particolare come curva "comoda" si può scegliere la circonferenza di raggio $1$ centrata nell'origine ($x^2 + y^2=1$). Dunque si calcola il lavoro compiuto da $F$ lungo la curva $r(t) = cos(t) \vec{i} + sin(t) \vec{i}$ per $t \in[0,2\pi]$ e se esso è nullo il campo è conservativo in tutto il suo dominio, altrimento no. 
             \end{itemize}
         \end{itemize}
