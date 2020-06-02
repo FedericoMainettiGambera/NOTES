@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex master.idx"] 1590768343 "master.idx" "master.ind" "master" 1590951227
+["makeindex master.idx"] 1590768343 "master.idx" "master.ind" "master" 1591117885
   "master.idx" 1590951221 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ind"
   "master.ilg"
-["pdflatex"] 1590951219 "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" "master" 1590951227
+["pdflatex"] 1590951219 "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" "master" 1591117885
   "../../preamble/preamble.tex" 1587603066 707 ea9409653390c911ff58e23c44f6605e ""
   "../0-ripasso/asintotici.PNG" 1589131226 81145 cd68750df7e46980af23b001d340d336 ""
   "../0-ripasso/derivate1.PNG" 1589131226 40267 a3e54c2c8c0abdc16f892ff59f355518 ""
@@ -212,11 +212,11 @@
   "master.tex" 1590951214 1123 4be097707782b4132bff5a6b70110db8 ""
   "master.toc" 1590951225 16767 138da86c33019d78695579fde1871bc2 "pdflatex"
   (generated)
+  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.log"
+  "master.idx"
+  "master.aux"
+  "master.log"
   "master.out"
+  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf"
   "master.pdf"
   "master.toc"
-  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf"
-  "master.idx"
-  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.log"
-  "master.log"
-  "master.aux"
