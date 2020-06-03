@@ -248,7 +248,7 @@ Ogni forma differenziale esatta è anche chiusa, mentre il viceversa non è vero
 Per calcolare il flusso abbiamo bisogno di
 \begin{itemize}
     \item un campo vettoriale $F: C \subseteq \mathbb{R}^3 \rightarrow  \mathbb{R}^3$
-    \item una superficie $\Sigma$ dello spazio $\mathbb{R}^3$ espressa in forma parametrica: $\vec{r}(u,v)  = (x(u,v), y(u,v), z(u,v))$
+    \item una superficie $\Sigma$ dello spazio $\mathbb{R}^3$ espressa in forma parametrica: $\vec{r}(u,v)  = (x(u,v), y(u,v), z(u,v))$ (con anche il dominio $S$ in cui $u$ e $v$ si muovono, questo dominio servirà poi per fare un integrale doppio!).
     \item $\vec{n}: \mathbb{R}^3 \rightarrow  \mathbb{R}^3$, il versore normale alla superficie al variare del punto (posizione) $(x,y,z)$ appartenente alla superficie. Bisogna porre attenzione al verso della normale, che solitamente è dato dall'esercizio stesso, per ogni normale potremmo dare dure versi, opposti tra loro. Quando la superficie è espressa in forma parametrica, il vettore normale si ottiene effettuando il prodotto vettoriale tra $\frac{\delta \vec{r}}{\delta u} \; \text{x}\;\frac{\delta \vec{r}}{\delta v}$ e quindi il versore normale è dato da:
     \[
         \frac{\frac{\delta \vec{r}}{\delta u} \; \text{x}\;\frac{\delta \vec{r}}{\delta v}}{\left|\frac{\delta \vec{r}}{\delta u} \; \text{x}\;\frac{\delta \vec{r}}{\delta v}\right|}
@@ -261,6 +261,7 @@ Il flusso di un campo vettoriale $F$ attraverso la superficie $\Sigma$ è
 \[
     = \int \int_S F(r(u,v)) \cdot \frac{\delta \vec{r}}{\delta u} \; \text{x}\;\frac{\delta \vec{r}}{\delta v} du dv
 \]
+dove $S$ è il dominio in cui sono definite le coordinate $u$ e $v$.
 \newline
 Se la superficie è il grafico di una funzione nella forma $z = f(x,y)$ allora la precedente formula si riscrive come:
 \[
@@ -268,7 +269,9 @@ Se la superficie è il grafico di una funzione nella forma $z = f(x,y)$ allora l
 \]
 Poichè il terzo elemento del vettore normale è 1 allora esso è rivolto verso le quote crescenti di $z$.\newline
 \newline
-Se la superficie è espressa in forma implicita dobbiamo parametrizzarla e usare le formule illustrate.
+Se la superficie è espressa in forma implicita dobbiamo parametrizzarla e usare le formule illustrate.\newline
+\newline
+Ovviamente, queste formule danno uno dei due possibili versori normali di una superficie, nel caso in cui il flusso cercato abbia verso opposto al versore normale, sarà sufficiente cambiare di segno l'intergrale.
 \subsubsection{Teorema della divergenza}
 Consideriamo $F \in C^1(\Omega, \mathbb{R}^n)$ con $\Omega \subset \mathbb{R}^n$ e limitato, inoltre sia $\vec{n}$ un versore definito su un punto del bordo di $\Omega$ (detto $\delta\Omega$ ) e perpendicolare al piano tangente in $\delta \Omega$ e orientato verso l'esterno.\newline
 Il prodotto scalare $F \cdot \vec{n}$ rappresenta il flusso uscente (se $> 0$, entrante se $<0$)  da $\delta\Omega$.\newline
