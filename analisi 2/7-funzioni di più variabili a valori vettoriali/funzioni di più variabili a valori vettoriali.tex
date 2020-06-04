@@ -277,17 +277,35 @@ Consideriamo $F \in C^1(\Omega, \mathbb{R}^n)$ con $\Omega \subset \mathbb{R}^n$
 Il prodotto scalare $F \cdot \vec{n}$ rappresenta il flusso uscente (se $> 0$, entrante se $<0$)  da $\delta\Omega$.\newline
 \newline
 \textbf{Teorema della divergenza}:\newline
-Sia $\Omega \subset \mathbb{R}^n$ un aperto limitato, semplice rispetto a tutti gli assi cartesiani con versore normale uscente $\vec{n}$ in ogni punto di $\delta\Omega$. Sia $F \in C^1(\bar{\Omega}, \mathbb{R}^n)$ un campo vettoriale. Allora
+Sia $\Omega \subset \mathbb{R}^n$ un aperto limitato, semplice rispetto a tutti gli assi cartesiani con versore normale uscente $\vec{n}$ in ogni punto di $\delta\Omega$. Sia $F \in C^1(\bar{\Omega}, \mathbb{R}^n)$ (con $\bar{\Omega}$ chiusura di $\Omega$) un campo vettoriale. Allora
 \[
     \int_\Omega \nabla \cdot  F(x) dx = \int_{\delta\Omega} F \cdot  \vec{n} \; dS
 \]
 Questo teorema afferma che l'integrale su un dominio della divergenza di un campo è pari al flusso del campo che attraversa la sua frontiera.\newline
-Con questo teorema spiagamo anche il significato dell'operatore divergenza: misura il grado di comprimibilità di un fluido e, più in generale, quella di un campo vettoriale.\newline
 \newline
+Nel caso $n=1$, con $\Omega = (a,b)$, diventa il teorema fondamentale del calcolo integrale:
+\[
+    \int_{a}^{b} F'(x) dx = F(b)-F(a)
+\]
+\ \newline
+Con questo teorema spiagamo anche il significato dell'operatore divergenza: misura il grado di comprimibilità di un fluido e, più in generale, quella di un campo vettoriale.\newline
+\rule{\textwidth}{0,4pt}
+\textbf{es.} Determinare il flusso del campo vettoriale $F(x,y,z) = (3x + e^z) \vec{i} + (2y^2 + z cos(x)) \vec{j} + (x^2 + y^2) \vec{k}$ attraverso la superficie $\Sigma = \begin{cases}
+    x^2+y^2+z^2 =2\\z \geq 0
+\end{cases}$ scegliendo come versore normale quello avente componente positiva in $z$.\newline
+Osserviamo che $\Sigma$ è metà superficie sferica che, sul piano $(x,y)$, poggia sulla circonferenza $x^2 + y^2 = 2$. Immaginando di "chiudere" $\Sigma$ con il disco $D=\{x^2+y^2\leq 2, z=0\}$, possiamo calcolare il flusso di $F$ uscente dal volume $\Omega$ racchiuso tra la semisfera e il disco, tramite il teorema della divergenza:
+\[
+    \Phi_{\Omega} = \int_\Omega div(F)dxdydz = \int_{\Omega} (3+4y)dxdydz = \int_{\Omega} 3 dxdydz + \int_{\Omega} 4y dxdydz = 4\pi \sqrt{2}.
+\]
+Osserviamo ora che il flusso uscente da $\Omega$ è la somma del flusso $\Phi_{\Sigma}$ attraverso $\Sigma$ (con normale che punta verso l'alto) e del flusso $\Phi_D$ attraverso $D$ (con normale che punta verso il basso: $n = -\vec{k}$), otteniamo allora il flusso attraverso $\Sigma$ per differenza:
+\[
+    \Phi_{\Sigma} = \Phi_{\Omega} - \Phi_{D} = 4\pi\sqrt{2} - \int_{D} F \cdot (- k) dx dy = 4\pi \sqrt{2} + \int_{0}^{2\pi} d \theta \int_{0}^{\sqrt{2}}\rho^2 \rho d \rho = 4\pi\sqrt{2} + 2\pi
+\]
+\rule{\textwidth}{0,4pt}
 In parole più semplici il teorema della divergenza ci permette di dire che:\newline
 Se la superficie $l$ è la frontiera di un solido $V$, allora il flusso del campo vettoriale $F$ uscente da $l$ è uguale all'integrale triplo su $V$ della divergenza di $F$:
 \[
-    Flusso = \int \int_{l}F \cdot n \; dS = \int \int \int_{V} div(F) dx dy dz
+    Flusso = \Phi = \int \int_{l}F \cdot n \; dS = \int \int \int_{V} div(F) dx dy dz
 \]
 \textbf{oss.} se $l$ rappresentasse una superficie $D$, possiamo comunque calcolare il flusso del campo vettoriale attraverso $l$ come l'integrale doppio su $D$.\newline
 \textbf{oss.} Si può combinare il calcolo di flussi in superfici e volumi diversi, per alla fine sommarli o sottrarli ed ottenere flussi di figure complesse.
