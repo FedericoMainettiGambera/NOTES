@@ -70,7 +70,7 @@ Un'equazione differenziale del tipo
 \]
 si dice \textbf{equazione a variabili separabili}.\newline
 \newline
-Dai teoremi di Cauchy e di Peano ricaviamo il seguente corollario:\newline
+Dai teoremi di Cauchy e di Peano ricaviamo il seguente \textbf{corollario}:\newline
 Siamo $t_0,y_0 \in \mathbb{R}$ e sia $f$ continua in un intorno di $t_0$:
 \begin{itemize}
     \item Se $g$ è continua in un intorno di $y_0$, allora il problema di Cauchy $y(t_0) = y_0$ per l'equazione a variabili separabili $y'=f(t)g(y)$ ammette una soluzione.
@@ -81,7 +81,15 @@ Come prima cosa, osserviamo che se esiste $\bar{y} \in \mathbb{R}$ tale che $g(\
 \[
     \frac{dy}{dt} = f(t) g(y) \Longrightarrow \frac{dy}{g(y)} = f(t) dt \Longrightarrow \int \frac{1}{g(y)}dy = \int f(t) dt
 \]
-A questo punto, una volta risolti gli integrali, è sufficiente esprimere $y$ in funzione di tutto il resto. Notiamo che gli integrali fanno comparire una costante arbitraria che verrà determinata risolvendo il problema di Cauchy.
+A questo punto, una volta risolti gli integrali, è sufficiente esprimere $y$ in funzione di tutto il resto: quindi se $G(y)$ è una primitiva di $\frac{1}{g(y)}$ e $F(t)$ è una primitiva di $f(t)$, otteniamo
+\[
+    G(y) = F(t) + c
+\]
+e se si può ottenere la funzione inversa di $G$ possiamo scrivere;
+\[
+    y = G^{-1}(F(t) + c)
+\]
+Notiamo che gli integrali fanno comparire una costante arbitraria che verrà determinata tramite le condizioni importe dal problema di Cauchy.
 \newline
 \newline
 \textbf{Procedimento per risolvere equazioni a variabili separabili}:
@@ -93,81 +101,61 @@ A questo punto, una volta risolti gli integrali, è sufficiente esprimere $y$ in
     \item se $g \in C^1$ c'è unicità e le soluzioni costanti rappresentano dei "limiti invalicabili" per le altre soluzioni;
     \item risolvere il problema di Cauchy.
 \end{itemize}
-
-
-
-
-Le equazioni a variabili separabili sono equazioni del tipo
+\subsubsection{Equazioni lineari (derivata di un prodotto; sovrapposizione e variazione delle costanti arbitrarie)}
+Un'equazione differenziale del tipo
 \[
-    y' =a(t) b(y)
+    y' = a(t) y + b(t)
 \]
-con $a$ continua in $I \subset \mathbb{R}$ e b continua in $J \subset \mathbb{R}$.\newline
-Per risolverle notiamo che per tutte le $\bar{y}_0$ per cui $b(\bar{y}_0) = 0$, primo e secondo membro si annullano.\newline
-Prendendo in considerazione, invece, tutte le $\bar{y}_1$ per cui $b(\bar{y}_1) \neq 0$, otteniamo:
-\[
-    \int \frac{dy}{b(y)} = \int a(t) dt +c 
-\]
-Quindi se $B(y)$ è una primitiva di $\frac{1}{b(y)}$ e $A(t)$ è una primitiva di $a(t)$, otteniamo:
-\[
-    B(y) = A(t) + c
-\]
-e se si può ottenere la funzione inversa di $B$ possiamo scrivere:
-\[
-    y = B^{-1}(A(t) + c)
-\]
-\[
-    y = F(t,c)
-\]
-\textbf{teor.} Problema di Cauchy per un'equazione a variabili separabili.\newline
-Si consideri il problema di Cauchy:
-\[
-    \begin{cases}
-        y' = a(t) b(y)&\\
-        y(t_0) = y_0&
-    \end{cases}
-\]
-Dove $a$ è continua in un intorno $I$ di $t_0$ e $b$ è continua in un intonro $J$ di $t_0$. Allora essite un intorno $t_0$ $I' \subset I$ e una funzione $y \in C^1(I')$ soluzione del problema.\newline
-Se inoltre $b \in C^1(J)$, allora tale soluzione è unica.
-\subsubsection{Equazioni lineari}
-Sono equazioni la cui forma normale è
-\[
-    y'(t) + a(t)y(t) = f(t)
-\]
-e viene chiama equazione completa.\newline
-Se $f = 0$ l'equazione si dice omogenea.
-\[
-    z'(t) + a(t)z(t) = 0
-\]
-\textbf{teor.} L'integrale generale dell'equazione completa si ottiene aggiungengo all'integrale generale dell'omogenea una soluzione particolare della completa.\newline
-\textbf{Soluzione dell'equazione omogenea}
-\[
-    z(t) = c e^{-\int a(t) dt}
-\]
-\textbf{Ricerca di una soluzione particolare dell'equazione completa}\newline
-Se una soluzione particolare non si riesce a trovare facilmente, si può usare il seguente metodo, detto di variazione della costante
-\[
-    \bar{y}(t) = c(t)e^{-A(t)}
-\]
-Dove per $A(t)$ si intende una primitiva di $a(t)$ (essendo una primitiva qualunque, si può omettere la $c$).\newline
-Sostituendo $\bar{y}$ nella forma completa otteniamo l'integrale generale della forma completa:
-\[
-    y(t) = ce^{-A(t)} + e^{-A(t)}\int f(t)e^{A(t)}dt
-\]
-\textbf{oss.} Nella primitiva $A(t)$ e nell'integrale $\int f(t)e^{A(t)}dt$ non c'è bisogno di aggiungere la solita costante di integrazione arbitraria.\newline
+si dice \textbf{equazione lineare}.\newline
 \newline
-\textbf{Soluzione del problema di Cauchy}\newline
-La soluzione
-\[
-    y(t) = ce^{-A(t)} + e^{-A(t)}\int f(t)e^{A(t)}dt
-\]
-sarà determinata da una condizione iniziale
-\[
-    y(t_0) = y_0
-\]
-scegliendo la primitiva $A(t)$ tale che $A(t_0) = 0$ (cioè $A(t) = \int_{t_0}^{t}a(s)ds$), sarà
-\[
-    y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
-\]
+Dal teorema di Cauchy ricaviamo il seguente \textbf{corollario}:\newline
+Siano $t_0,y_0 \in \mathbb{R}$ e siano $a,b$ continue in un intorno di $t_0$. Allora il problema di Cauchy $y(t_0) = y_0$ per l'equazione differenziale lineare ammette una e una sola soluzione.\newline
+\newline
+Per trovare l'integrale generale ci sono due metodi:
+\begin{itemize}
+    \item \textbf{Primo metodo: derivata di un prodotto}:\newline
+    Data $y' = a(t) y + b(t)$, sia $A(t) = \int a(\tau)d \tau$ una qualunque primitiva di $a(t)$. Trasportando a primo membro il termine $a(t) y$ e moltiplicando per l'esponenziale $e^{-A(t)}$, possiamo riscrivere l'equazione differenziale lineare nella forma:
+    \[
+        e^{-A(t)} y'(t) - e^{-A(t)}a(t) y(t) = e^{-A(t)}b(t).
+    \]
+    In questa forma, a primo membro riconosciamo la derivata di un prodotto:
+    \[
+        \frac{d}{dt} \left( e^{-A(t)} y(t) \right) ) e^{-A(t)} b(t).
+    \]
+    Integrando ambo i membri si ottiene
+    \[
+        e^{-A(t)} y(t) = \int e^{-A(\tau)} b(\tau) d \tau + C
+    \]
+    dove con $C \in \mathbb{R}$ abbiamo indicato la generica costante dovuta all'integrale indefinito. Moltiplicando per l'esponenziale otteniamo infine
+    \[
+        y(t) = e^{A(t)}\left\{ \int e^{-A(\tau)} b(\tau) d \tau + C \right\}.
+    \]
+    La soluzione di un problema di Cauchy si ottiene imponendo la condizione iniziale $y(t_0) = y_0$.
+    \textbf{oss.} Non imparare a memoria la formula ! E' facile confondersi con i segni di $A$.
+    \item \textbf{Secondo metodo: sovrapposizione e variazione delle costanti arbitrarie}:\newline
+    Data $y' = a(t) y + b(t)$, per prima cosa risolviamo l'\textbf{equazione omogenea} associata, che si ottiene ponendo $b(t) = 0$ e che quindi è $y' = a(t) y$. Ovviamente $t \equiv 0$ è soluzione. Per $y\neq 0$, diventa un equazione a variabili separabili che, stando a quanto visto precedentemente si risolve come
+    \[
+        \frac{dy}{dt} = a(t) y \Rightarrow \frac{dy}{y} = a(t) dt \Rightarrow  log|y| = A(t) + c \Rightarrow |y(t)| = Ce^{A(t)}
+    \]
+    dove $c \in \mathbb{R}$ e $A$ è una primitiva di $a$.\newline
+    \newline
+    Possiamo quindi affermare che tutte le soluzioni dell'equazione $y'=a(t) y$ sono $y(t) = Ce^{A(t)}$ con $C \in \mathbb{R}$.\newline
+    \newline
+    Vale il \textbf{principio di sovrapposizione}:\newline
+    L'integrale generale dell'equazione $y' = a(t) y + b(t)$ si ottiene sommando all'integrale generale dell'equazione omogenea associata un integrale particolare di $y' = a(t) y + b(t)$.\newline
+    \newline
+    Resta dunque da determinare una soluzione dell'equazione completa $y' = a(t) y + b(t)$. Per trovarla sfruttiamo il \textbf{metodo della variazione delle costanti arbitrarie}. La costante che faremo variare è $C$ che compare in $Ce^{A(t)}$: supponiamo cioè che anzichè essere una costante sia una funzione e cerchiamo l'integrale particolare di $y' = a(t) y + b(t)$ nella forma $y_1(t) = C(t) e^{A(t)}$. Imponendo a questa funzione di soddisfare $y' = a(t) y + b(t)$ si trova
+    \begin{align*}
+        y'_1= a(t)y_1 + b(t) \Rightarrow C'(t) e^{A(t)} + C(t)a(t)e^{A(t)} = C(t) a(t) e^{A(t)} + b(t) \Rightarrow \\
+        \Rightarrow C'(t) e^{A(t)} = b(t) \Rightarrow C'(t) = b(t) e^{-A(t)} \Rightarrow C(t) = \int b(\tau) e^{-A(\tau)} d \tau
+    \end{align*}
+    Abbiamo così trovato l'integrale particolare $y_1(t) = e^{A(t)} \int b(\tau) e^{-A(\tau)} d \tau$ che, sommato all'integrale generale dell'equazione omogenea $Ce^{A(t)}$, fornisce lo stesso risultato che abbiamo ottenuto col primo metodo della derivata di un prodotto:
+    \[
+        y(t) = e^{A(t)}\left\{ \int e^{-A(\tau)} b(\tau) d \tau + C \right\}.
+    \]
+\end{itemize}
+\ \newline
+\textbf{Riassunto: equazioni lineari in breve}\newline
 \textbf{teor.} Problema di Cauchy per un equazione lineare del prim'ordine.\newline
 Siano $a, f$ funzioni continue in un intervallo $I$ contenente $t_0$. Allora, per ogni $y_0 \in \mathbb{R}$ il problema di Cauchy
 \[
@@ -180,36 +168,59 @@ ha una e una sola soluzione $y \in C^1(I)$ e tale soluzione è
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
 \]
-\subsubsection{Note sugli esercizi}
-Per trovare il massimo intervallo della soluzione bisogna prendere un intervallo contenente il punto $t_0$, per cui la soluzione e la funzione di partenza siano continue e definite (si può anche prolungare per continuità).
-\subsubsection{Equazione di Bernoulli}
-Un equazion differenziale si dice di \textbf{Bernoulli} se si può scrivere nella forma
+\subsubsection{Equazioni omogenee}
+Un'equazione differenziabile si dice \textbf{omogenea} se si può scrivere nella forma
 \[
-    y' = a(t)y + b(t) y^\alpha
+    y'=f(\frac{y}{t}).
 \]
-osserviamo subito che se $\alpha=0$ o $\alpha = 1$ l'equazione è lineare. Se poi $\alpha$ fosse irrazionale o razionale con denominatore pari, non avrebbe senso definire $y^\alpha$ per $y < 0$. Infine, se $\alpha < 0$ non ha senso $y^\alpha$ per $y=0$.\newline
+\ \newline
+Dal teorema di Cauchy ricaviamo il seguetne \textbf{corollario}:\newline
+Siano $t_0, y_0 \in \mathbb{R}$ e sia $f \in C^1$ in un intorno di $\frac{y_0}{t_0}$. Allora il problema di Cauchy $y(t_0) = y_0$ per l'equazione omogenea ammette una e una sola soluzione.\newline
+\newline
+La fomra stessa di un equazione omogenea richiede una certa prudenza nello scegliere $t_0 = 0$ come istante iniziale. In realtà la stessa prudenza va usata anche per $y_0 = 0$, dato che, ad esempio, anche l'equazione $y'=\frac{t}{y}$ è omogenea.\newline
+\newline
+Per trovare l'integrale generale dell'equazione omogenea, la si riconduce a un'equazione a variabili separabili. Si pone
+\[
+    z(t) = \frac{y(t)}{t} \Rightarrow y(t) = t z(t) \Rightarrow y'8t) = z(t) + tz'(t)
+\]
+e l'equazione omogenea diventa
+\[
+    z + tz' = f(z) \Rightarrow  z' = \frac{f(z) -z}{t} \Rightarrow  \frac{dz}{f(z) - z} = \frac{dt}{t}
+    \Rightarrow  \int \frac{dz}{f(z) -z} = log|t| + c.
+\]
+A questo punto, è enecessario risolvere l'equazione $f(z) = z$; se esiste $k \in \mathbb{R}$ tale che $f(k) = k$, allora $z(t) \equiv k$ è soluzione e, diconseguenza, $y(t) = kt$ è soluzione dell'equazione omogenea. Se $f \in C^1$, la retta che rappresenta tale funzione diventa un limite invalicabile per le altre soluzioni. Esclusi questi valori di $k$, l'equazione è diventata a variabili separabili.
+\subsubsection{Equazione di Bernoulli}
+Un equazione differenziale si dice di \textbf{Bernoulli} se si può scrivere nella forma
+\[
+    y' = a(t)y + b(t) y^\alpha \;\;\;\;\;\;\;(\alpha \in \mathbb{R})
+\]
+osserviamo subito che se $\alpha=0$ o $\alpha = 1$ l'equazione è lineare (e possiamo risolverla con il metodo della derivata di un prodotto o il metodo di sovrapposizione e variazione delle costanti arbitrarie). Se poi $\alpha$ fosse irrazionale o razionale con denominatore pari, non avrebbe senso definire $y^\alpha$ per $y < 0$. Infine, se $\alpha < 0$ non ha senso $y^\alpha$ per $y=0$.\newline
 \newline
 Per evitare complicazioni ci occuperemo solo di soluzioni non negativa ($y \geq 0$).\newline
 \newline
-\textbf{teor.} Siano $t_0 \in \mathbb{R}$, $y_0 \geq 0$ e siano $a,b \in C^0$ in un intorno di $t_0$. Allora il problema di Cauchy $y(t_0) = y_0$ per un equazione di Bernoulli ammette una e una sola soluzione nei seguenti casi:
-\[
-    \alpha> 1 \;\;\;\;\; y_0 \geq 0
-\]
-\[
-    0< \alpha< 1 \;\;\;\;\;y_0 > 0
-\]
-\[
-    \alpha<0 \;\;\;\;\;y_0 > 0
-\]
-Se $\alpha > 0$ l'equazione di bernoulli ammette anche la soluzione nulla $y=0$, pertanto se  $\alpha > 1$ e $y_0 = 0$, il problema di Cauchy ammette solo la soluzione nulla.\newline
-Nel caso $y_0 = 0$ e $0<\alpha < 1$, è garantita l'esistenza di una soluzione per il problema di Cauchy $y(t_0) = 0$ ma non ne è assicurata l'unicità (potrebbe crearsi un pannello di Peano).\newline
+Dal teorema di cauchy ricaviamo il seguente \textbf{corollario}:\newline
+Siano $t_0 \in \mathbb{R}$, $y_0 \geq 0$ e siano $a,b \in C^0$ in un intorno di $t_0$. Allora il problema di Cauchy $y(t_0) = y_0$ per un equazione di Bernoulli ammette una e una sola soluzione nei seguenti casi:
+\begin{itemize}
+    \item $\alpha> 1 \;\;\;\;\; y_0 \geq 0$
+    \item $0< \alpha< 1 \;\;\;\;\;y_0 > 0$
+    \item $\alpha<0 \;\;\;\;\;y_0 > 0$
+\end{itemize}
+Se $\alpha > 0$ l'equazione di bernoulli ammette anche la soluzione nulla $y \equiv 0$, pertanto se  $\alpha > 1$ e $y_0 = 0$, il problema di Cauchy ammette solo la soluzione nulla.\newline
+Nel caso $y_0 = 0$ e $0<\alpha < 1$, è garantita l'esistenza di una soluzione per il problema di Cauchy $y(t_0) = 0$ ma non ne è assicurata l'unicità (potrebbe crearsi un pennello di Peano).\newline
 Se $y_0 > 0$ la soluzione rimarrà strettamente positiva per $\alpha > 1$, potrenne agganciarsi alla soluzione $y= 0$ con un pannello di peano se $0< \alpha<1$, potrebbe tendere a $0$ con tangente verticale se $\alpha<0$ (in quest'ultimo caso, bisogna verificare il comportamento della funzione $b(t)$ che, annullandosi, potrebbe verificare l'infinito di $y^\alpha$).\newline
 \newline
-Risolvere un equazione di Bernoulli:\newline
+\textbf{Risolvere un equazione di Bernoulli}:\newline
 Si divide l'equazione per $y^\alpha$ e si ottiene $y^{-\alpha} y' = a(t) y^{1-\alpha} + b(t)$.\newline
-Si pone $z(t) = y(t)^{1-\alpha}$ e si ottiene $z' = (1-\alpha)a(t)z + (1-\alpha) b(t)$, che è un'equazione lineare e quindi possiamo risolvere con i soliti metodi. Una volta trovata la soluzione $z(t)$ (che sarà $\geq 0$ o $>0$ a seconda dei valori di $\alpha$), si determina $y(t) = z(t)^{\frac{1}{1-\alpha}}$\newline
+Si pone $z(t) = y(t)^{1-\alpha}$ e si ottiene $z' = (1-\alpha)a(t)z + (1-\alpha) b(t)$, che è un'equazione lineare e quindi possiamo risolvere con i soliti metodi. Una volta trovata la soluzione $z(t)$ (che sarà $\geq 0$ o $>0$ a seconda dei valori di $\alpha$), si determina $y(t) = z(t)^{\frac{1}{1-\alpha}}$.
 \subsubsection{Prolungamento delle soluzioni}
-\subsection{Equazioni lineari del secondo ordine}
+Sia $f, f_y \in C^0\left( (a,b) \text{x} \mathbb{R} \right)$ e supponiamo che esistano due costanti $k_1,k_2 > 0$ tali che 
+\[
+    |f(t,y)| \leq k_1 + k_2 |y| \;\;\;\;\; \;\forall(t,y) \in(a,b)\text{x}\mathbb{R}
+\]
+Allora per ogni $(t_0,y_0) \in(a,b) \text{x} \mathbb{R}$ lìunica soluzione del problema di Cauchy di prim'ordine è prolungabile a tutto l'intervallo $(a,b)$.
+\subsubsection{Note sugli esercizi}
+Per trovare il \textbf{massimo intervallo della soluzione} bisogna prendere un intervallo contenente il punto $t_0$, per cui la soluzione e la funzione di partenza siano continue e definite (si può anche prolungare per continuità).
+\subsection{Equazioni lineari del secondo ordine a coefficienti costanti}
 \subsubsection{Spazi di funzioni}
 Sia $I$ un intervallo e consideriamo l'insieme $\mathbb{F}$ di tutte le funzioni definite in $I$, a valori reali. Con le operazioni naturali di somma di due funzioni e prodotto per uno scalare:
 \[
