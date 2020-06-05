@@ -308,4 +308,14 @@ Se la superficie $l$ è una superficie chiusa, per calcolare il flusso di un cam
     Flusso = \Phi = \int \int_{l}F \cdot n \; dS = \int \int \int_{V} div(F) dx dy dz
 \]
 \ \newline
-\textbf{oss.} se $l$ rappresentasse una superficie $D$, possiamo comunque calcolare il flusso del campo vettoriale attraverso $l$ come l'integrale doppio su $D$.
+\textbf{oss.} se $l$ rappresentasse una superficie $D$, possiamo comunque calcolare il flusso del campo vettoriale attraverso $l$ come l'integrale doppio su $D$.\newline
+\newline
+E' anche possibile usare il teorema della divergenza per calcolare integrali tripli  su solidi $V$ la cui frontiera $l$ sia definita in forma parametrica: dovendo calcolare
+\[
+    \int \int \int_{V} f(x,y,z) dx dy dz
+\]
+è sufficiente determinare un campo vettoriale $\vec{F}(x,y,z)$ tale che $div(F)=f$ e
+\[
+    \int \int \int_{V} f(x,y,z) dx dy dz = \int \int_{l} \vec{F} \cdot \vec{n} dS
+\]
+dove $\vec{n}$ è la normale uscente dal solido $V$.

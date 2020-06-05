@@ -135,25 +135,25 @@
 \contentsline {subsection}{\numberline {8.3}Flusso e Teorema della divergenza}{64}{subsection.8.3}%
 \contentsline {subsubsection}{\numberline {8.3.1}Flusso}{64}{subsubsection.8.3.1}%
 \contentsline {subsubsection}{\numberline {8.3.2}Teorema della divergenza}{65}{subsubsection.8.3.2}%
-\contentsline {section}{\numberline {9}Equazioni differenziali}{66}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Modelli differenziali}{66}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Equazioni del primo ordine}{66}{subsection.9.2}%
-\contentsline {subsubsection}{\numberline {9.2.1}Generalità}{66}{subsubsection.9.2.1}%
-\contentsline {subsubsection}{\numberline {9.2.2}Equazioni a variabili separabili}{66}{subsubsection.9.2.2}%
-\contentsline {subsubsection}{\numberline {9.2.3}Equazioni lineari del prim'ordine}{67}{subsubsection.9.2.3}%
-\contentsline {subsubsection}{\numberline {9.2.4}Note sugli esercizi}{68}{subsubsection.9.2.4}%
-\contentsline {subsubsection}{\numberline {9.2.5}Equazione di Bernoulli}{68}{subsubsection.9.2.5}%
-\contentsline {subsubsection}{\numberline {9.2.6}Prolungamento delle soluzioni}{68}{subsubsection.9.2.6}%
-\contentsline {subsection}{\numberline {9.3}Equazioni lineari del secondo ordine}{69}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Spazi di funzioni}{69}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Generalità sulle equazioni lineari. Problema di Cauchy}{69}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}La struttura dell'integrale generale}{69}{subsubsection.9.3.3}%
-\contentsline {subsubsection}{\numberline {9.3.4}Equazioni omogenee a coefficienti costanti}{70}{subsubsection.9.3.4}%
-\contentsline {subsubsection}{\numberline {9.3.5}Equazioni completa a coefficienti costanti}{71}{subsubsection.9.3.5}%
-\contentsline {subsubsection}{\numberline {9.3.6}metodo di somiglianza}{71}{subsubsection.9.3.6}%
-\contentsline {subsubsection}{\numberline {9.3.7}Metodo di sovrapposizione}{72}{subsubsection.9.3.7}%
-\contentsline {subsubsection}{\numberline {9.3.8}Metodo di variazione delle costanti}{72}{subsubsection.9.3.8}%
-\contentsline {subsubsection}{\numberline {9.3.9}Note sugli esercizi}{72}{subsubsection.9.3.9}%
-\contentsline {subsubsection}{\numberline {9.3.10}Equazione di Eulero}{72}{subsubsection.9.3.10}%
-\contentsline {subsection}{\numberline {9.4}Sistemi lineari omogenei}{74}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Diagonalizzazione di una matrice}{75}{subsection.9.5}%
+\contentsline {section}{\numberline {9}Equazioni differenziali}{67}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Modelli differenziali}{67}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Equazioni del primo ordine}{67}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Generalità}{67}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Equazioni a variabili separabili}{67}{subsubsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.3}Equazioni lineari del prim'ordine}{68}{subsubsection.9.2.3}%
+\contentsline {subsubsection}{\numberline {9.2.4}Note sugli esercizi}{69}{subsubsection.9.2.4}%
+\contentsline {subsubsection}{\numberline {9.2.5}Equazione di Bernoulli}{69}{subsubsection.9.2.5}%
+\contentsline {subsubsection}{\numberline {9.2.6}Prolungamento delle soluzioni}{69}{subsubsection.9.2.6}%
+\contentsline {subsection}{\numberline {9.3}Equazioni lineari del secondo ordine}{70}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Spazi di funzioni}{70}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Generalità sulle equazioni lineari. Problema di Cauchy}{70}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}La struttura dell'integrale generale}{70}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.4}Equazioni omogenee a coefficienti costanti}{71}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9.3.5}Equazioni completa a coefficienti costanti}{72}{subsubsection.9.3.5}%
+\contentsline {subsubsection}{\numberline {9.3.6}metodo di somiglianza}{72}{subsubsection.9.3.6}%
+\contentsline {subsubsection}{\numberline {9.3.7}Metodo di sovrapposizione}{73}{subsubsection.9.3.7}%
+\contentsline {subsubsection}{\numberline {9.3.8}Metodo di variazione delle costanti}{73}{subsubsection.9.3.8}%
+\contentsline {subsubsection}{\numberline {9.3.9}Note sugli esercizi}{73}{subsubsection.9.3.9}%
+\contentsline {subsubsection}{\numberline {9.3.10}Equazione di Eulero}{73}{subsubsection.9.3.10}%
+\contentsline {subsection}{\numberline {9.4}Sistemi lineari omogenei}{75}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Diagonalizzazione di una matrice}{76}{subsection.9.5}%
