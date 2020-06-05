@@ -1,0 +1,110 @@
+\section{Sistemi differenziali lineari}
+\subsection{Sistemi lineari omogenei}
+\[
+    y' = A(t) y
+\]
+viene detto sistema omogeneo.\newline
+\[
+    \begin{cases}
+        y' = A(t) y\\
+        y(t_0) = y_0
+    \end{cases}
+\]
+è il problema di cauchy associato.\newline
+\newline
+Se $y_0 = 0$, allora l'unica soluzione è $y(t) = 0$.\newline
+\newline
+Se $\phi_1$ e $\phi_2$ risolvono il sistema omogeneo, anche $\alpha \phi_1 + \beta \phi_2$ per ogni $\alpha, \beta \in \mathbb{R}$ lo risolverà.\newline
+\newline
+Se $A$ è una matrice costante il sistema si dice a coefficienti costanti.\newline
+\newline
+Sia un matrice $M$, vogliamo calcolare $e^{M}$. \newline
+Se $M$ è diagonale si ottiene facilmente:
+\[
+    M = \left( \begin{matrix}
+        \lambda_1  & 0 &\dots & 0\\
+        0 & \lambda_2 &\dots &0\\
+        0 & 0 &\dots &0\\
+        0 & 0 &\dots &\lambda_n
+    \end{matrix} \right) \Rightarrow e^M = \left( \begin{matrix}
+        e^{\lambda_1}  & 0 &\dots & 0\\
+        0 & e^{\lambda_2} &\dots &0\\
+        0 & 0 &\dots &0\\
+        0 & 0 &\dots & e^{\lambda_n}
+    \end{matrix} \right)
+\]
+Se $M$ non è diagonale, ma è diagonalizzabile, e cioè esiste una matrice non singolare $S$ tale che $\Lambda = S^{-1}MS$ sia diagonale, allora
+\[
+    M = S\Lambda S^{-1} \Rightarrow  M^k = S\Lambda^kS^{-1} \Rightarrow e^M = S e^{\Lambda}S^{-1}
+\]
+con $e^{\Lambda}$ che si calcola come abbiamo visto per le matrici diagonali.\newline
+\newline
+Una matrice quadrata è diagonalizzabile se e solo se tutti i suoi autovalori sono regolari. \newline
+\newline
+Precisiamo che vengono considerati anche autovalori complessi che, per una matrice a coefficienti reali, possono esserci se e solo se c'è anche il loro coniugato. In tal caso, gli esponenziali dipendenti da tempo vanno interpretati con la formula di Eulero e generano funzioni trigonometriche.\newline
+\newline
+Abbiamo dunque visto come si trova l'esponenziale di una matrice diagonalizzabile costante. Volendo trovare l'esponenziale della matrice $At$, facciamo un paio di osservazioni elementari:
+\begin{itemize}
+    \item se A è diagonalizzabile, lo è anche $At$ e si può usare la stessa mtrice di passaggio $S$ per diagonalizzarla
+    \item gli autovali di $At$ sono uguali agli autovalori di $A$ moltiplicati per $t$
+\end{itemize}
+Da queste osservazioni possiamo dedurre che
+\[
+    e^A  S e^{\Lambda}S^{-1} \Rightarrow  e^{At} = S e^{\Lambda t} S^{-1}
+\]
+\textbf{teor.} Le colonne della matrice $e^{At}$ formano un sistema fondamentale di soluzioni di $y' = Ay$ e cioè, per ogni $C \in \mathbb{R}^n$ il vettore $e^{At} C$è una soluzione di di $y'=Ay$\newline
+\newline
+La fuznione $\phi(t) = C e^{\lambda t} $ è soluzione di $y'=At$ se e solo se $\lambda$ è un autovalore di $A$ (possibilmente complesso) e $C$ è un autovettore associato a $\lambda$.\newline
+\rule{\textwidth}{0,4pt}
+\subsection{Diagonalizzazione di una matrice}
+Una matrice $A$ è diagonalizzabile se
+\begin{itemize}
+    \item Il numero degli autovalori di $A$ contati con la loro molteplicità è uguale all'ordine della matrice
+    \item la molteplicità geometrica di ciascun autovalore coincide  con la realtiva molteplicità algebrica
+\end{itemize}
+
+Sia $A$ una matrice, i suoi autovalori si ottengono risolvendo
+\[
+    det(A-\lambda I ) = \left| \begin{matrix}
+        a_{11} -\lambda & a_{12}\\
+        a_{21} & a_{22} - \lambda
+    \end{matrix} \right| = 0
+\]
+risolvendo questa equazione per $\lambda$ otteniamo i vari autovalori.\newline
+La molteplicità algebrica consiste nel quante volte $\lambda$ appare come soluzione dell'equazione precedente.\newline
+Perchè $A$ sia diagonalizzabile, la somma della molteplicità algebrica di ogni autovalore deve essere uguale all'ordine della matrice.\newline
+Perchè $A$ sia diagonalizzabile bisogna anche verificare che la molteplicità algebrica di ogni autovalore coincide con la realtiva molteplicità geometrica, che si calcola così:
+\[
+    m_g(\lambda) = n - rk(A- \lambda I)
+\]
+dove $n$ è l'ordine di $A$.\newline
+\newline
+\newline
+Se $A$ è diagonalizzabile, allora esiste una matrice $P$  che la diagonalizza e una matrice $D$ a cui $A$ è simile, per cui valga:
+\[
+    D = P A P^{-1}
+\]
+\begin{itemize}
+    \item la matrice $D$ è una matrice diagonale i cui elementi della diagonale principale sono gli autovalori della matrice $A$. Gli autovalori con molteplicità algebrica maggiore di 1 vanno ripetuti più volte.
+    \item la matrice $P$ è la matrice che ha come colonne gli autovettori associati a ogni autovalore, ossia ha come colonne i vettori che fromano le basi degli autospazi relativi a ciascun autovalore.
+\end{itemize}
+Affinchè tutto funzioni ci deve essere corrispondenza fra le matrici $D$ e $P$: la $j$-esima colonna della matrice $P$ contiene l'autovettore associato all'autovalore presente nella $j$-esima colonna della matrice $D$.\newline
+\newline
+Il calcolo degli autovettori relativi a un autovalore $\lambda$ si esegue risolvendo il sistema:
+\[
+    (A- \lambda I ) v = 0
+\]
+con $v = \binom{x}{y}$, e cioè risolvendo il sistema:
+\[
+    \left(\begin{matrix}
+        a_{11} -\lambda & a_{12}\\
+        a_{21} & a_{22} - \lambda
+    \end{matrix} \right) \binom{x}{y} = 0
+\]
+\newline
+Invece per calcolare l'inversa della matrice $P$ si seguono i seguenti passaggi:
+\begin{itemize}
+    \item Calcola la trasposta $A^T$ della matrice $A$ (basta scambiare tra loro le righe con le colonne)
+    \item sostituire ogni elemento della matrice trasposta col il proprio complemento algebrico (complemento algebrico: preso l'elemento $a_{h,k}$ della matrice, il suo complemento algebrico si calcola come $(-1)^{(h+k)}\cdot C_{h,k}$, dove con $X_{h,k}$ si intende il determinante della matrice ottenuta da quella di partenza eliminando la riga $h$ e la colonna $k$)
+    \item Adesso dividi la matrice dei complementi algebrici per det(A) (cioe' dividi ogni termine per det(A)) e ottieni l'inversa della matrice quadrata di partenza
+\end{itemize}

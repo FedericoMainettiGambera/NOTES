@@ -1,55 +1,112 @@
 \section{Equazioni differenziali}
-\rule{\textwidth}{2pt}
-\subsection{Modelli differenziali}
-Si dice equazione differenziale di ordine $n$ un equazione del tipo:
+\subsection{Definizioni}
+Un'equazione differenziale è una relazione tra una funzione incognita $y=y(t)$ e alcune sue derivate.\newline
+\newline
+Si dice \textbf{equazione differenziale di ordine} $n$ un equazione del tipo:
 \[
-    F(t, y, y', y'', \dots, y^{(n)}) = 0
+    F(t, y(t), y'(t), y''(t), \dots, y^{(n)}(t)) = 0 \;\;\;\;\;\;\;(t \in I)
 \]
 dove $y(t)$ è la funzione incognita.\newline
-Si dirà soluzione, o (curva) integrale, di un equazione differenziale, nell'intervallo $I \subset \mathbb{R}$, una funzione $\phi(t)$, definita almeno in $I$ e a valori reali per cui risulti
+\newline
+Si dirà \textbf{soluzione}, o (curva) integrale, di un equazione differenziale, nell'intervallo $I$, una funzione $\phi(t)$, definita almeno in $I$ (ma in generale può essere definita in $J \subseteq I$) e a valori reali per cui risulti
 \[
-    F(t, \phi(t), \phi'(t), \phi''(t), \dots, \phi^{(n)}(t))= 0 \;\;\;\;\;\;\;\; \;\forall\;t \in I
+    F(t, \phi(t), \phi'(t), \phi''(t), \dots, \phi^{(n)}(t))= 0 \;\;\;\;\;\;\;\; \;\forall\;t \in J
 \]
-Infine si dirà integrale generale di un equazione differenziale una formula che rappresenti la famiglia di tutte le soluzioni.\newline
-\rule{\textwidth}{2pt}
-\subsection{Equazioni del primo ordine}
-\rule{\textwidth}{0,4pt}
-\subsubsection{Generalità}
-L'insieme delle soluzioni di un'equazione differenziale del prim'ordine prende il nome di integrale generale dell'equazione.\newline
-Un equazione differenziale si dice in forma normale se è nella forma
+\ \newline
+\newline
+Diremo che un'equazione differenziale è in \textbf{forma normale} se è possibile esplicitare la derivata di ordine massimo in funzione di tutte le derivate di ordine inferiore:
 \[
-    y'(t) = f(t,y(t))
+    y^{(n)}(t) = g(t,y(t),y'(t),y''(t), \dots, y^{(n-1)}(t)) \;\;\;\;\;\;\;(t \in I)
 \]
-e ha infinite soluzioni del tipo
+\ \newline
+\newline
+\textbf{Problema di Cauchy}:
+Data un'equazione in forma normale
 \[
-    y(t) = \int f(t, y(t)) dt + c .
+    y^{(n)}(t) = g(t,y(t),y'(t),y''(t), \dots, y^{(n-1)}(t)) \;\;\;\;\;\;\;(t \in I)
 \]
-La condizione supplementare
+a essa vengono associate $n$ delle condizioni
 \[
-    y(t_0) = y_0
+    y(t_0) = y_0 \;\;\;\;\; y'(t_0)=y_1 \;\;\;\;\;\dots \;\;\;\;\;y^{(n-1)}(t_0) = y_{n-1}
 \]
-permette di selezionare una soluzione particolare.\newline
-Il problema di risolvere queste equazioni prende il nome di problema di Cauchy, e si intende sempre che bisogna trovare come soluzione una funzione:
+dove $t_0$ rappresenta l'istante iniziale e $y_0,\dots,y_{n-1}$ rappresentano lo stato. Risolvere un problema di Cauchy significa riuscire a prevedere come si comproterà la $y(t)$ (stato del sistema) negli istanti futuri $t>t_0$. Per risolvere un problema di Cauchy si intende sempre che bisogna trovare come soluzione una funzione:
 \begin{itemize}
     \item definita su un intervallo $I$, contenente il punto $t_0$;
     \item derivabile in tutto $I$ e che soddisfa l'equazione in tutto $I$.
 \end{itemize}
-\rule{\textwidth}{0,4pt}
+\ \newline
+Chiameremo \textbf{integrale generale} di un'equazione differenziale l'insieme di tutte le sue infinite soluzioni; chiameremo invece \textbf{integrale particolare} una sua soluzione che soddisfa particolari proprietà quali, ad esempio, quelle imposte dal problema di Cauchy.\newline
+\newline
+L'integrale generale è ricavabile dall'equazione in forma normale con vari metodi che vediamo più avanti, mentre le varie condizioni permettono di ricavare un integrale particolare.
+\subsection{Esistenza e unicità}
+In questo paragrafo studiamo l'esistena e l'unicità per il problema di Cauchy nel caso di equazioni differenziali del prim'oridne in forma normale. Se un equazione fosse di ordine superiore, ad esempio del second'ordine $y'' = f(t,y,y')$, con un semplice trucco potremmo ricondurci a un sistema del prim'ordine: basta porre $z = y'$ e la precedente equazione del second'ordine si traduce nelle due seguenti equazioni del prim'ordine: $y'=z$ e $z' = f(t,y,z)$,  dove l'incognita è adesso il vettore $(y,z)$.\newline
+\newline
+\textbf{teor.} \textbf{Teorema di Peano}:\newline
+Sia $\Omega \subset \mathbb{R}^2$ un aperto e sia $(t_0, y_0) \in \Omega$. Se $f \in C^0 (\Omega)$ allora esiste una soluzione del problema di Cauchy:
+\[
+    \begin{cases}
+        y' = f(t,y)\\ y(t_0) = y_0
+    \end{cases}
+\]
+\ \newline
+\textbf{teor.} \textbf{Teorema di Cauchy}:\newline
+Sia $\Omega \subset \mathbb{R}^2$ un aperto e sia $(t_0, y_0) \in \Omega$. Se $f,f_y \in C^0(\Omega)$, allora esiste un'unica soluzione del problema di Cauchy:
+\[
+    \begin{cases}
+        y' = f(t,y)\\ y(t_0) = y_0
+    \end{cases}
+\]
+\subsection{Equazioni del primo ordine}
+Analiziamo ora vari metodi per risolvere il problema di Cauchy per equazioni del prim'ordine:
+\[
+    \begin{cases}
+        y' = f(t,y)\\ y(t_0) = y_0
+    \end{cases}
+\]
 \subsubsection{Equazioni a variabili separabili}
+Un'equazione differenziale del tipo
+\[
+    y' = f(t)g(y)
+\]
+si dice \textbf{equazione a variabili separabili}.\newline
+\newline
+Dai teoremi di Cauchy e di Peano ricaviamo il seguente corollario:\newline
+Siamo $t_0,y_0 \in \mathbb{R}$ e sia $f$ continua in un intorno di $t_0$:
+\begin{itemize}
+    \item Se $g$ è continua in un intorno di $y_0$, allora il problema di Cauchy $y(t_0) = y_0$ per l'equazione a variabili separabili $y'=f(t)g(y)$ ammette una soluzione.
+    \item Se $g$ è di classe $C^1$ in un intorno di $y_0$, allora il problema di Cauchy $y(t_0) = y_0$ per l'equazione a variabil iseparabili $y'=f(t) g(y)$ ammette una e una sola soluzione.
+\end{itemize}
+\ \newline
+Come prima cosa, osserviamo che se esiste $\bar{y} \in \mathbb{R}$ tale che $g(\bar{y}) = 0$ allora $y(t) \equiv \bar{y}$ è una soluzione costante dell'equazione a variabili separabili; pertanto, se all'equazione a variabili separabili associamo il problema di cauchy $y(t_0) = \bar{y}$ abbiamo già trovato una soluzione (naturalmente se $g$ è solo continua potrebbero essercene altre). Ma supponiamo di considerare un problema di cauchy $y(t_0) = y_0$ con $g(y_0) \neq 0$, in modo da poter dividere l'intera equazione a variabili separabili per $g(y)$ (almeno in un intorno di $y_0$). Usando la notazione $y' = \frac{dy}{dt}$, i semplici passaggi per risolvere l'equazione a variabil iseparabili $y' = f(t) g(y)$ sono i seguenti:
+\[
+    \frac{dy}{dt} = f(t) g(y) \Longrightarrow \frac{dy}{g(y)} = f(t) dt \Longrightarrow \int \frac{1}{g(y)}dy = \int f(t) dt
+\]
+A questo punto, una volta risolti gli integrali, è sufficiente esprimere $y$ in funzione di tutto il resto. Notiamo che gli integrali fanno comparire una costante arbitraria che verrà determinata risolvendo il problema di Cauchy.
+\newline
+\newline
+\textbf{Procedimento per risolvere equazioni a variabili separabili}:
+\begin{itemize}
+    \item stabilire se $f,g \in C^0$ o se $g \in C^1$;
+    \item risolvere l'equazione $g(\bar{y}) = 0$;
+    \item tutte le soluzioni di questa equazione rappresentano soluzioni costanti;
+    \item se $g \notin C^1$ ci potrebbe essere un pennello di Peano che si stacca dalla soluzione costante;
+    \item se $g \in C^1$ c'è unicità e le soluzioni costanti rappresentano dei "limiti invalicabili" per le altre soluzioni;
+    \item risolvere il problema di Cauchy.
+\end{itemize}
+
+
+
+
 Le equazioni a variabili separabili sono equazioni del tipo
-\begin{tcolorbox}
 \[
     y' =a(t) b(y)
 \]
-\end{tcolorbox}
 con $a$ continua in $I \subset \mathbb{R}$ e b continua in $J \subset \mathbb{R}$.\newline
 Per risolverle notiamo che per tutte le $\bar{y}_0$ per cui $b(\bar{y}_0) = 0$, primo e secondo membro si annullano.\newline
 Prendendo in considerazione, invece, tutte le $\bar{y}_1$ per cui $b(\bar{y}_1) \neq 0$, otteniamo:
-\begin{tcolorbox}
 \[
     \int \frac{dy}{b(y)} = \int a(t) dt +c 
 \]
-\end{tcolorbox}
 Quindi se $B(y)$ è una primitiva di $\frac{1}{b(y)}$ e $A(t)$ è una primitiva di $a(t)$, otteniamo:
 \[
     B(y) = A(t) + c
@@ -61,7 +118,6 @@ e se si può ottenere la funzione inversa di $B$ possiamo scrivere:
 \[
     y = F(t,c)
 \]
-\begin{tcolorbox}
 \textbf{teor.} Problema di Cauchy per un'equazione a variabili separabili.\newline
 Si consideri il problema di Cauchy:
 \[
@@ -71,16 +127,12 @@ Si consideri il problema di Cauchy:
     \end{cases}
 \]
 Dove $a$ è continua in un intorno $I$ di $t_0$ e $b$ è continua in un intonro $J$ di $t_0$. Allora essite un intorno $t_0$ $I' \subset I$ e una funzione $y \in C^1(I')$ soluzione del problema.\newline
-Se inoltre $b \in C^1(J)$, allora tale soluzione è unica.\newline
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
-\subsubsection{Equazioni lineari del prim'ordine}
+Se inoltre $b \in C^1(J)$, allora tale soluzione è unica.
+\subsubsection{Equazioni lineari}
 Sono equazioni la cui forma normale è
-\begin{tcolorbox}
 \[
     y'(t) + a(t)y(t) = f(t)
 \]
-\end{tcolorbox}
 e viene chiama equazione completa.\newline
 Se $f = 0$ l'equazione si dice omogenea.
 \[
@@ -105,11 +157,9 @@ Sostituendo $\bar{y}$ nella forma completa otteniamo l'integrale generale della 
 \newline
 \textbf{Soluzione del problema di Cauchy}\newline
 La soluzione
-\begin{tcolorbox} 
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)}\int f(t)e^{A(t)}dt
 \]
-\end{tcolorbox}
 sarà determinata da una condizione iniziale
 \[
     y(t_0) = y_0
@@ -118,7 +168,6 @@ scegliendo la primitiva $A(t)$ tale che $A(t_0) = 0$ (cioè $A(t) = \int_{t_0}^{
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
 \]
-\begin{tcolorbox}
 \textbf{teor.} Problema di Cauchy per un equazione lineare del prim'ordine.\newline
 Siano $a, f$ funzioni continue in un intervallo $I$ contenente $t_0$. Allora, per ogni $y_0 \in \mathbb{R}$ il problema di Cauchy
 \[
@@ -131,13 +180,8 @@ ha una e una sola soluzione $y \in C^1(I)$ e tale soluzione è
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
 \]
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}\newline
-\begin{tcolorbox}
-    \subsubsection{Note sugli esercizi}
-    Per trovare il massimo intervallo della soluzione bisogna prendere un intervallo contenente il punto $t_0$, per cui la soluzione e la funzione di partenza siano continue e definite (si può anche prolungare per continuità).\newline
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
+\subsubsection{Note sugli esercizi}
+Per trovare il massimo intervallo della soluzione bisogna prendere un intervallo contenente il punto $t_0$, per cui la soluzione e la funzione di partenza siano continue e definite (si può anche prolungare per continuità).
 \subsubsection{Equazione di Bernoulli}
 Un equazion differenziale si dice di \textbf{Bernoulli} se si può scrivere nella forma
 \[
@@ -164,12 +208,8 @@ Se $y_0 > 0$ la soluzione rimarrà strettamente positiva per $\alpha > 1$, potre
 Risolvere un equazione di Bernoulli:\newline
 Si divide l'equazione per $y^\alpha$ e si ottiene $y^{-\alpha} y' = a(t) y^{1-\alpha} + b(t)$.\newline
 Si pone $z(t) = y(t)^{1-\alpha}$ e si ottiene $z' = (1-\alpha)a(t)z + (1-\alpha) b(t)$, che è un'equazione lineare e quindi possiamo risolvere con i soliti metodi. Una volta trovata la soluzione $z(t)$ (che sarà $\geq 0$ o $>0$ a seconda dei valori di $\alpha$), si determina $y(t) = z(t)^{\frac{1}{1-\alpha}}$\newline
-\rule{\textwidth}{0,4pt}
 \subsubsection{Prolungamento delle soluzioni}
-
-\rule{\textwidth}{2pt}
 \subsection{Equazioni lineari del secondo ordine}
-\rule{\textwidth}{0,4pt}
 \subsubsection{Spazi di funzioni}
 Sia $I$ un intervallo e consideriamo l'insieme $\mathbb{F}$ di tutte le funzioni definite in $I$, a valori reali. Con le operazioni naturali di somma di due funzioni e prodotto per uno scalare:
 \[
@@ -180,8 +220,7 @@ Sia $I$ un intervallo e consideriamo l'insieme $\mathbb{F}$ di tutte le funzioni
 \]
 $\mathbb{F}$ risulta essere uno spazio vettoriale. \newline
 \newline
-\textbf{def.} definiamo $C^n(I)$ lo spazio delle funzioni dotate di derivata $n$-essima continua.\newline
-\rule{\textwidth}{0,4pt}
+\textbf{def.} definiamo $C^n(I)$ lo spazio delle funzioni dotate di derivata $n$-essima continua.
 \subsubsection{Generalità sulle equazioni lineari. Problema di Cauchy}
 Un equazione differenziale del secondo ordine si dice lineare se è del tipo
 \[
@@ -201,7 +240,6 @@ Nella soluzione si avranno sempre due coefficienti $c_1$ e $c_2$, per selezionar
 \]
 che insieme all'equazione iniziale prenderà il nome di problema di Cauchy.\newline
 \newline
-\begin{tcolorbox}
 \textbf{teor.} (per funzioni del secondo ordine in forma normale)\newline
 Se $a, b, f$ sono funzioni continue in un intervallo $I$ contenente il punto $t_0$, per ogni $y_0, y_1 \in \mathbb{R}$ il problema di Cauchy
 \[
@@ -212,9 +250,7 @@ Se $a, b, f$ sono funzioni continue in un intervallo $I$ contenente il punto $t_
     \end{cases}
 \]
 ha una e una sola soluzione $y \in C^2(I)$.\newline
-Tale soluzione è individuata imponendo le condizioni iniziali nell'espressione che assegna l'integrale generale dell'equazione.\newline
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
+Tale soluzione è individuata imponendo le condizioni iniziali nell'espressione che assegna l'integrale generale dell'equazione.
 \subsubsection{La struttura dell'integrale generale}
 \textbf{teor.} Struttura dell'integrale generale dell'equazione lineare completa \newline
 a. $\;\;\;$ L'insieme delle soluzioni dell'equazione omogenea $Lz = 0 $ con $L:C^2(I)\rightarrow C^0(I)$ in un dato intervallo $I$ è uno spazio vettoriale (sottospazio di $C^2(I)$).\newline
@@ -238,8 +274,8 @@ Siano $z_1$ e $z_2$ due funzioni $C^2(I)$, soluzioni di un equazione lineare omo
         z_1'(t) \;\; & z_2'(t)
     \end{matrix}
 \]
-detta matrice Wronskiana, ha determinante diverso da $0$ per ongi $t \in I$. Inoltre, affinché questo accada, è sufficiente che il determinante si adiverso da $0$ in un punto $t_0 \in I$ (il determinante o si annulla in tutti i punti o è diverso da $0$ in tutti i punti, se è diverso da zero in tutti i punti $z_1, z_2$ sono indipendenti).
-\begin{tcolorbox}
+detta matrice Wronskiana, ha determinante diverso da $0$ per ongi $t \in I$. Inoltre, affinché questo accada, è sufficiente che il determinante si adiverso da $0$ in un punto $t_0 \in I$ (il determinante o si annulla in tutti i punti o è diverso da $0$ in tutti i punti, se è diverso da zero in tutti i punti $z_1, z_2$ sono indipendenti).\newline
+\newline
 Per determinare l'integrale generale di un'equazione differenziale completa del secondo ordine si riconduce ai due passi seguenti:\newline
 1) $\;\;\;$ determinare l'integrale generale dell'equazione omogenea corrispondente, cioè due soluzioni $z_1(t), z_2(t)$ linearmente indipendenti.\newline
 2) $\;\;\;$ determinare una soluzione particolare $\bar{y}(t)$ dell'equazione completa.\newline
@@ -247,14 +283,10 @@ L'integrale generale avrà dunque la forma:
 \[
     \bar{y}(t) + c_1 z_1(t) + c_2 z_2(t)
 \]
-\end{tcolorbox}
-\rule{\textwidth}{0,4pt}
 \subsubsection{Equazioni omogenee a coefficienti costanti}
-\begin{tcolorbox}
 \[
     z''(t) + a z'(t) + bz(t) = 0
 \]
-\end{tcolorbox}
 Sostituendo $z(t) = e^{rt}$
 \[
     e^{rt}(r^2 + a r + b) = 0
@@ -262,11 +294,9 @@ Sostituendo $z(t) = e^{rt}$
 Calcoliamo il $\Delta$ di $r^2 + a r + b$, detta equazione caratteristica:
 \begin{itemize}
     \item $\Delta>0$, due radici reali distinte $r_1$ e $r_2$, soluzione:
-    \begin{tcolorbox}
     \[
         z(t) = c_1e^{r_1t} + c_2e^{r_2t}
     \]
-    \end{tcolorbox}
     \item $\Delta <0$, due radici complesse $r_1 =\alpha + i \beta$, $r_2 = \alpha - i \beta$, soluzione:
     \[
         z_1(t) = e^{(\alpha + i \beta)t} =e^{\alpha t} (cos(\beta t) + i sin(\beta t)) = e^{\alpha t} cos(\beta t)
@@ -275,23 +305,18 @@ Calcoliamo il $\Delta$ di $r^2 + a r + b$, detta equazione caratteristica:
         z_2(t) = e^{(\alpha-i \beta)t} = e^{\alpha t}(cos(\beta t) + i sin(\beta t)) = e^{\alpha t} sin (\beta t)
     \]
     da cui
-    \begin{tcolorbox}
     \[
         z(t) = e^{\alpha t}(c_1 cos(\beta t) + c_2 sin (\beta t))
     \]
-    \end{tcolorbox}
     quest'ultima espressione può essere riscritta anche come $z(t) = e^{\alpha t} A cos(\beta t + \phi)$, con $A$ e $\phi$ costanti reali arbitrarie.
     \item $\Delta = 0$, unica radice $r=\frac{-a}{2}$, soluzioni:
     \[
         e^{rt} \quad \quad \quad te^{rt}
     \] 
-    \begin{tcolorbox}
     \[
         z(t) = e^{rt}(c_1 + c_2 t)
     \]
-    \end{tcolorbox}
 \end{itemize}
-\rule{\textwidth}{0,4pt}
 \subsubsection{Equazioni completa a coefficienti costanti}
 \[
     y''(t) + a y'(t) + b y(t) = f(t)
@@ -335,7 +360,7 @@ Si analizza il termine noto $f(t)$:
         \item se $\lambda^2 + a \lambda + b = 0$, ma $2 \lambda + a = 0$
         \[
             \gamma''= A
-        \]z
+        \]
         \[
             \gamma(t) = \frac{A}{2}t^2
         \]
@@ -353,16 +378,12 @@ Si analizza il termine noto $f(t)$:
     \]
     Quindi se si è in presenza di un $sin(\omega t)$ come termine noto, si può studiare l'equazione che ha come termine noto $cos(\omega t) + i \cdot sin(\omega t)$ e poi prenderne la parte immaginaria.\newline
     Viceversa se si è in presenza di una $cos(\omega t)$ come termine noto, si può studiare l'equazione che ha come termine noto $cos(\omega t) + i \cdot sin(\omega t)$ e poi prenderne la parte reale.\newline
-    \begin{tcolorbox}
-        In ogni caso, per facilitare la derivazione, si trasforma $cos(\omega t) + i \cdot sin(\omega t)$ in $e^{i\omega t}$ e si procede nello studio di un termine noto della forma $f(t) = Ae^{\lambda t}$.
-    \end{tcolorbox}
+    In ogni caso, per facilitare la derivazione, si trasforma $cos(\omega t) + i \cdot sin(\omega t)$ in $e^{i\omega t}$ e si procede nello studio di un termine noto della forma $f(t) = Ae^{\lambda t}$.
     Fa eccezione a questa tipologia il caso in cui manchi il termine in $y'$.\newline
     \newline
 \end{itemize}
 \subsubsection{Metodo di sovrapposizione}
-\begin{tcolorbox}
 se, per esempio, il termine noto $f(t) =$ polinomio $+$ una funzione trigonometrica, si può trovare una soluzione per $f(t) =$ polinomio, e una per $f(t) =$ funzione trigonometrica e sommando le soluzioni si trova una soluzione dell'equazione di partenza.
-\end{tcolorbox}
 \subsubsection{Metodo di variazione delle costanti}
 Illustriamo ora un metodo generale che consente di determinare una soluzione particolare qualunque sia la forma del termine noto.\newline
 Il metodo è applicabile purchè si conoscando già due soluzioni $z_1, z_2$ indipendenti dell'equazione omogenea associata.\newline
@@ -384,8 +405,7 @@ Dobbiamo quindi trovare due primitive di $c_1'$ e $c_2'$ e sostituire in:
 \[
     y(t) =(c_1(t)+ k_1)z_1(t) + (c_2(t)+k_2)z_2(t)
 \]
-con $k_i$ costanti arbitrarie di integrazione.\newline
-\rule{\textwidth}{0,4pt}
+con $k_i$ costanti arbitrarie di integrazione.
 \subsubsection{Note sugli esercizi}
 \[
     \int e^{ax}cos(bx) dx = Re (\int e^{a+ib}x dx ) 
@@ -398,155 +418,34 @@ con $k_i$ costanti arbitrarie di integrazione.\newline
 \]
 \subsubsection{Equazione di Eulero}
 Per risolvere:
-\begin{tcolorbox}
 \[
     ax^2y''+bxy'+cy= 0
 \]
-\end{tcolorbox}
 si risolve l'equazione di secondo grado:
 \[
     ar(r-a)+br+c = 0
 \]
 \begin{itemize}
     \item $\Delta >0$, soluzioni $r_1, r_2$
-    \begin{tcolorbox}
     \[
         y(x) =c_1x^{r_1}+c_2x^{r_2}
     \]
-    \end{tcolorbox}
     per $x>0$
     \item $\Delta <0$, soluzioni $r_{1,2} = \alpha \pm i \beta$
-    \begin{tcolorbox}
     \[
         y(x) = x^{\alpha}(c_1 cos(\beta log(x)) + c_2 sin(\beta log(x)))
     \]
-    \end{tcolorbox}
     per $x>0$
     \item $\Delta = 0$, soluzioni coincidenti $r$
-    \begin{tcolorbox}
     \[
         y(x) = x^r(c_1 + c_2log(x))
     \]
-    \end{tcolorbox}
     per $x>0$
 \end{itemize}
 Per $x<0$, si studia ancora la stessa equazione di secondo grado e si hanno soluzioni analoghe, ma con $x$ sostituita da $-x$.\newline
-\rule{\textwidth}{0,4pt}\newline
-\begin{tcolorbox}
 \begin{center}
     \includegraphics[height=250px]{../img/eqdiff2.PNG}
 \end{center}
 \begin{center}
     \includegraphics[height=250px]{../img/eqdiff2(1).PNG}
 \end{center}
-\end{tcolorbox}
-\rule{\textwidth}{2pt}
-\subsection{Sistemi lineari omogenei}
-\[
-    y' = A(t) y
-\]
-viene detto sistema omogeneo.\newline
-\[
-    \begin{cases}
-        y' = A(t) y\\
-        y(t_0) = y_0
-    \end{cases}
-\]
-è il problema di cauchy associato.\newline
-\newline
-Se $y_0 = 0$, allora l'unica soluzione è $y(t) = 0$.\newline
-\newline
-Se $\phi_1$ e $\phi_2$ risolvono il sistema omogeneo, anche $\alpha \phi_1 + \beta \phi_2$ per ogni $\alpha, \beta \in \mathbb{R}$ lo risolverà.\newline
-\newline
-Se $A$ è una matrice costante il sistema si dice a coefficienti costanti.\newline
-\newline
-Sia un matrice $M$, vogliamo calcolare $e^{M}$. \newline
-Se $M$ è diagonale si ottiene facilmente:
-\[
-    M = \left( \begin{matrix}
-        \lambda_1  & 0 &\dots & 0\\
-        0 & \lambda_2 &\dots &0\\
-        0 & 0 &\dots &0\\
-        0 & 0 &\dots &\lambda_n
-    \end{matrix} \right) \Rightarrow e^M = \left( \begin{matrix}
-        e^{\lambda_1}  & 0 &\dots & 0\\
-        0 & e^{\lambda_2} &\dots &0\\
-        0 & 0 &\dots &0\\
-        0 & 0 &\dots & e^{\lambda_n}
-    \end{matrix} \right)
-\]
-Se $M$ non è diagonale, ma è diagonalizzabile, e cioè esiste una matrice non singolare $S$ tale che $\Lambda = S^{-1}MS$ sia diagonale, allora
-\[
-    M = S\Lambda S^{-1} \Rightarrow  M^k = S\Lambda^kS^{-1} \Rightarrow e^M = S e^{\Lambda}S^{-1}
-\]
-con $e^{\Lambda}$ che si calcola come abbiamo visto per le matrici diagonali.\newline
-\newline
-Una matrice quadrata è diagonalizzabile se e solo se tutti i suoi autovalori sono regolari. \newline
-\newline
-Precisiamo che vengono considerati anche autovalori complessi che, per una matrice a coefficienti reali, possono esserci se e solo se c'è anche il loro coniugato. In tal caso, gli esponenziali dipendenti da tempo vanno interpretati con la formula di Eulero e generano funzioni trigonometriche.\newline
-\newline
-Abbiamo dunque visto come si trova l'esponenziale di una matrice diagonalizzabile costante. Volendo trovare l'esponenziale della matrice $At$, facciamo un paio di osservazioni elementari:
-\begin{itemize}
-    \item se A è diagonalizzabile, lo è anche $At$ e si può usare la stessa mtrice di passaggio $S$ per diagonalizzarla
-    \item gli autovali di $At$ sono uguali agli autovalori di $A$ moltiplicati per $t$
-\end{itemize}
-Da queste osservazioni possiamo dedurre che
-\[
-    e^A  S e^{\Lambda}S^{-1} \Rightarrow  e^{At} = S e^{\Lambda t} S^{-1}
-\]
-\textbf{teor.} Le colonne della matrice $e^{At}$ formano un sistema fondamentale di soluzioni di $y' = Ay$ e cioè, per ogni $C \in \mathbb{R}^n$ il vettore $e^{At} C$è una soluzione di di $y'=Ay$\newline
-\newline
-La fuznione $\phi(t) = C e^{\lambda t} $ è soluzione di $y'=At$ se e solo se $\lambda$ è un autovalore di $A$ (possibilmente complesso) e $C$ è un autovettore associato a $\lambda$.\newline
-\rule{\textwidth}{0,4pt}
-\subsection{Diagonalizzazione di una matrice}
-Una matrice $A$ è diagonalizzabile se
-\begin{itemize}
-    \item Il numero degli autovalori di $A$ contati con la loro molteplicità è uguale all'ordine della matrice
-    \item la molteplicità geometrica di ciascun autovalore coincide  con la realtiva molteplicità algebrica
-\end{itemize}
-
-Sia $A$ una matrice, i suoi autovalori si ottengono risolvendo
-\[
-    det(A-\lambda I ) = \left| \begin{matrix}
-        a_{11} -\lambda & a_{12}\\
-        a_{21} & a_{22} - \lambda
-    \end{matrix} \right| = 0
-\]
-risolvendo questa equazione per $\lambda$ otteniamo i vari autovalori.\newline
-La molteplicità algebrica consiste nel quante volte $\lambda$ appare come soluzione dell'equazione precedente.\newline
-Perchè $A$ sia diagonalizzabile, la somma della molteplicità algebrica di ogni autovalore deve essere uguale all'ordine della matrice.\newline
-Perchè $A$ sia diagonalizzabile bisogna anche verificare che la molteplicità algebrica di ogni autovalore coincide con la realtiva molteplicità geometrica, che si calcola così:
-\[
-    m_g(\lambda) = n - rk(A- \lambda I)
-\]
-dove $n$ è l'ordine di $A$.\newline
-\newline
-\newline
-Se $A$ è diagonalizzabile, allora esiste una matrice $P$  che la diagonalizza e una matrice $D$ a cui $A$ è simile, per cui valga:
-\[
-    D = P A P^{-1}
-\]
-\begin{itemize}
-    \item la matrice $D$ è una matrice diagonale i cui elementi della diagonale principale sono gli autovalori della matrice $A$. Gli autovalori con molteplicità algebrica maggiore di 1 vanno ripetuti più volte.
-    \item la matrice $P$ è la matrice che ha come colonne gli autovettori associati a ogni autovalore, ossia ha come colonne i vettori che fromano le basi degli autospazi relativi a ciascun autovalore.
-\end{itemize}
-Affinchè tutto funzioni ci deve essere corrispondenza fra le matrici $D$ e $P$: la $j$-esima colonna della matrice $P$ contiene l'autovettore associato all'autovalore presente nella $j$-esima colonna della matrice $D$.\newline
-\newline
-Il calcolo degli autovettori relativi a un autovalore $\lambda$ si esegue risolvendo il sistema:
-\[
-    (A- \lambda I ) v = 0
-\]
-con $v = \binom{x}{y}$, e cioè risolvendo il sistema:
-\[
-    \left(\begin{matrix}
-        a_{11} -\lambda & a_{12}\\
-        a_{21} & a_{22} - \lambda
-    \end{matrix} \right) \binom{x}{y} = 0
-\]
-\newline
-Invece per calcolare l'inversa della matrice $P$ si seguono i seguenti passaggi:
-\begin{itemize}
-    \item Calcola la trasposta $A^T$ della matrice $A$ (basta scambiare tra loro le righe con le colonne)
-    \item sostituire ogni elemento della matrice trasposta col il proprio complemento algebrico (complemento algebrico: preso l'elemento $a_{h,k}$ della matrice, il suo complemento algebrico si calcola come $(-1)^{(h+k)}\cdot C_{h,k}$, dove con $X_{h,k}$ si intende il determinante della matrice ottenuta da quella di partenza eliminando la riga $h$ e la colonna $k$)
-    \item Adesso dividi la matrice dei complementi algebrici per det(A) (cioe' dividi ogni termine per det(A)) e ottieni l'inversa della matrice quadrata di partenza
-\end{itemize}
