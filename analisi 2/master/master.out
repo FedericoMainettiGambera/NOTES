@@ -122,35 +122,36 @@
 \BOOKMARK [3][-]{subsubsection.7.3.5}{Significato dei domini in R3 per "strati" e per "fili"}{subsection.7.3}% 122
 \BOOKMARK [3][-]{subsubsection.7.3.6}{Equazione di un piano passante per tre punti}{subsection.7.3}% 123
 \BOOKMARK [3][-]{subsubsection.7.3.7}{Equazioni di circonferenze non centrate nell'origine}{subsection.7.3}% 124
-\BOOKMARK [1][-]{section.8}{Funzioni di pi\371 variabili a valori vettoriali}{}% 125
-\BOOKMARK [2][-]{subsection.8.1}{Campi vettoriali}{section.8}% 126
-\BOOKMARK [2][-]{subsection.8.2}{Lavoro di un campo vettoriale}{section.8}% 127
-\BOOKMARK [3][-]{subsubsection.8.2.1}{Definizioni}{subsection.8.2}% 128
-\BOOKMARK [3][-]{subsubsection.8.2.2}{Verifica della conservativit\340 di un campo vettoriale}{subsection.8.2}% 129
-\BOOKMARK [3][-]{subsubsection.8.2.3}{Calcolo di un potenziale}{subsection.8.2}% 130
-\BOOKMARK [3][-]{subsubsection.8.2.4}{Forme differenziali lineari}{subsection.8.2}% 131
-\BOOKMARK [2][-]{subsection.8.3}{Flusso e Teorema della divergenza}{section.8}% 132
-\BOOKMARK [3][-]{subsubsection.8.3.1}{Flusso}{subsection.8.3}% 133
-\BOOKMARK [3][-]{subsubsection.8.3.2}{Teorema della divergenza}{subsection.8.3}% 134
-\BOOKMARK [1][-]{section.9}{Equazioni differenziali}{}% 135
-\BOOKMARK [2][-]{subsection.9.1}{Modelli differenziali}{section.9}% 136
-\BOOKMARK [2][-]{subsection.9.2}{Equazioni del primo ordine}{section.9}% 137
-\BOOKMARK [3][-]{subsubsection.9.2.1}{Generalit\340}{subsection.9.2}% 138
-\BOOKMARK [3][-]{subsubsection.9.2.2}{Equazioni a variabili separabili}{subsection.9.2}% 139
-\BOOKMARK [3][-]{subsubsection.9.2.3}{Equazioni lineari del prim'ordine}{subsection.9.2}% 140
-\BOOKMARK [3][-]{subsubsection.9.2.4}{Note sugli esercizi}{subsection.9.2}% 141
-\BOOKMARK [3][-]{subsubsection.9.2.5}{Equazione di Bernoulli}{subsection.9.2}% 142
-\BOOKMARK [3][-]{subsubsection.9.2.6}{Prolungamento delle soluzioni}{subsection.9.2}% 143
-\BOOKMARK [2][-]{subsection.9.3}{Equazioni lineari del secondo ordine}{section.9}% 144
-\BOOKMARK [3][-]{subsubsection.9.3.1}{Spazi di funzioni}{subsection.9.3}% 145
-\BOOKMARK [3][-]{subsubsection.9.3.2}{Generalit\340 sulle equazioni lineari. Problema di Cauchy}{subsection.9.3}% 146
-\BOOKMARK [3][-]{subsubsection.9.3.3}{La struttura dell'integrale generale}{subsection.9.3}% 147
-\BOOKMARK [3][-]{subsubsection.9.3.4}{Equazioni omogenee a coefficienti costanti}{subsection.9.3}% 148
-\BOOKMARK [3][-]{subsubsection.9.3.5}{Equazioni completa a coefficienti costanti}{subsection.9.3}% 149
-\BOOKMARK [3][-]{subsubsection.9.3.6}{metodo di somiglianza}{subsection.9.3}% 150
-\BOOKMARK [3][-]{subsubsection.9.3.7}{Metodo di sovrapposizione}{subsection.9.3}% 151
-\BOOKMARK [3][-]{subsubsection.9.3.8}{Metodo di variazione delle costanti}{subsection.9.3}% 152
-\BOOKMARK [3][-]{subsubsection.9.3.9}{Note sugli esercizi}{subsection.9.3}% 153
-\BOOKMARK [3][-]{subsubsection.9.3.10}{Equazione di Eulero}{subsection.9.3}% 154
-\BOOKMARK [2][-]{subsection.9.4}{Sistemi lineari omogenei}{section.9}% 155
-\BOOKMARK [2][-]{subsection.9.5}{Diagonalizzazione di una matrice}{section.9}% 156
+\BOOKMARK [3][-]{subsubsection.7.3.8}{Equazione di un toro di raggi \040e , con > }{subsection.7.3}% 125
+\BOOKMARK [1][-]{section.8}{Funzioni di pi\371 variabili a valori vettoriali}{}% 126
+\BOOKMARK [2][-]{subsection.8.1}{Campi vettoriali}{section.8}% 127
+\BOOKMARK [2][-]{subsection.8.2}{Lavoro di un campo vettoriale}{section.8}% 128
+\BOOKMARK [3][-]{subsubsection.8.2.1}{Definizioni}{subsection.8.2}% 129
+\BOOKMARK [3][-]{subsubsection.8.2.2}{Verifica della conservativit\340 di un campo vettoriale}{subsection.8.2}% 130
+\BOOKMARK [3][-]{subsubsection.8.2.3}{Calcolo di un potenziale}{subsection.8.2}% 131
+\BOOKMARK [3][-]{subsubsection.8.2.4}{Forme differenziali lineari}{subsection.8.2}% 132
+\BOOKMARK [2][-]{subsection.8.3}{Flusso e Teorema della divergenza}{section.8}% 133
+\BOOKMARK [3][-]{subsubsection.8.3.1}{Flusso}{subsection.8.3}% 134
+\BOOKMARK [3][-]{subsubsection.8.3.2}{Teorema della divergenza}{subsection.8.3}% 135
+\BOOKMARK [1][-]{section.9}{Equazioni differenziali}{}% 136
+\BOOKMARK [2][-]{subsection.9.1}{Modelli differenziali}{section.9}% 137
+\BOOKMARK [2][-]{subsection.9.2}{Equazioni del primo ordine}{section.9}% 138
+\BOOKMARK [3][-]{subsubsection.9.2.1}{Generalit\340}{subsection.9.2}% 139
+\BOOKMARK [3][-]{subsubsection.9.2.2}{Equazioni a variabili separabili}{subsection.9.2}% 140
+\BOOKMARK [3][-]{subsubsection.9.2.3}{Equazioni lineari del prim'ordine}{subsection.9.2}% 141
+\BOOKMARK [3][-]{subsubsection.9.2.4}{Note sugli esercizi}{subsection.9.2}% 142
+\BOOKMARK [3][-]{subsubsection.9.2.5}{Equazione di Bernoulli}{subsection.9.2}% 143
+\BOOKMARK [3][-]{subsubsection.9.2.6}{Prolungamento delle soluzioni}{subsection.9.2}% 144
+\BOOKMARK [2][-]{subsection.9.3}{Equazioni lineari del secondo ordine}{section.9}% 145
+\BOOKMARK [3][-]{subsubsection.9.3.1}{Spazi di funzioni}{subsection.9.3}% 146
+\BOOKMARK [3][-]{subsubsection.9.3.2}{Generalit\340 sulle equazioni lineari. Problema di Cauchy}{subsection.9.3}% 147
+\BOOKMARK [3][-]{subsubsection.9.3.3}{La struttura dell'integrale generale}{subsection.9.3}% 148
+\BOOKMARK [3][-]{subsubsection.9.3.4}{Equazioni omogenee a coefficienti costanti}{subsection.9.3}% 149
+\BOOKMARK [3][-]{subsubsection.9.3.5}{Equazioni completa a coefficienti costanti}{subsection.9.3}% 150
+\BOOKMARK [3][-]{subsubsection.9.3.6}{metodo di somiglianza}{subsection.9.3}% 151
+\BOOKMARK [3][-]{subsubsection.9.3.7}{Metodo di sovrapposizione}{subsection.9.3}% 152
+\BOOKMARK [3][-]{subsubsection.9.3.8}{Metodo di variazione delle costanti}{subsection.9.3}% 153
+\BOOKMARK [3][-]{subsubsection.9.3.9}{Note sugli esercizi}{subsection.9.3}% 154
+\BOOKMARK [3][-]{subsubsection.9.3.10}{Equazione di Eulero}{subsection.9.3}% 155
+\BOOKMARK [2][-]{subsection.9.4}{Sistemi lineari omogenei}{section.9}% 156
+\BOOKMARK [2][-]{subsection.9.5}{Diagonalizzazione di una matrice}{section.9}% 157
