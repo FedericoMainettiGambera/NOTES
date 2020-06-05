@@ -125,7 +125,7 @@
 \contentsline {subsubsection}{\numberline {7.3.6}Equazione di un piano passante per tre punti}{60}{subsubsection.7.3.6}%
 \contentsline {subsubsection}{\numberline {7.3.7}Equazioni di circonferenze non centrate nell'origine}{60}{subsubsection.7.3.7}%
 \contentsline {subsubsection}{\numberline {7.3.8}Equazione di un toro di raggi $\alpha $ e $\beta $, con $\alpha > \beta $}{60}{subsubsection.7.3.8}%
-\contentsline {section}{\numberline {8}Funzioni di più variabili a valori vettoriali}{61}{section.8}%
+\contentsline {section}{\numberline {8}Funzioni $\mathbb {R}^m \rightarrow \mathbb {R}^n$ ("funzioni di più variabili a valori vettoriali")}{61}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Campi vettoriali}{61}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Lavoro di un campo vettoriale}{62}{subsection.8.2}%
 \contentsline {subsubsection}{\numberline {8.2.1}Definizioni}{62}{subsubsection.8.2.1}%
