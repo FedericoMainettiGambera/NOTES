@@ -139,23 +139,24 @@
 \BOOKMARK [2][-]{subsection.9.3}{Equazioni del primo ordine}{section.9}% 139
 \BOOKMARK [3][-]{subsubsection.9.3.1}{Equazioni a variabili separabili}{subsection.9.3}% 140
 \BOOKMARK [3][-]{subsubsection.9.3.2}{Equazioni lineari \(derivata di un prodotto; sovrapposizione e variazione delle costanti arbitrarie\)}{subsection.9.3}% 141
-\BOOKMARK [3][-]{subsubsection.9.3.3}{Equazioni omogenee}{subsection.9.3}% 142
-\BOOKMARK [3][-]{subsubsection.9.3.4}{Equazione di Bernoulli}{subsection.9.3}% 143
-\BOOKMARK [3][-]{subsubsection.9.3.5}{Prolungamento delle soluzioni}{subsection.9.3}% 144
-\BOOKMARK [3][-]{subsubsection.9.3.6}{Note sugli esercizi}{subsection.9.3}% 145
+\BOOKMARK [3][-]{subsubsection.9.3.3}{Note sugli esercizi: Insieme di definizione di un problema ci Cauchy}{subsection.9.3}% 142
+\BOOKMARK [3][-]{subsubsection.9.3.4}{Equazioni omogenee}{subsection.9.3}% 143
+\BOOKMARK [3][-]{subsubsection.9.3.5}{Equazione di Bernoulli}{subsection.9.3}% 144
+\BOOKMARK [3][-]{subsubsection.9.3.6}{Prolungamento delle soluzioni}{subsection.9.3}% 145
 \BOOKMARK [2][-]{subsection.9.4}{Equazioni lineari del secondo ordine a coefficienti costanti}{section.9}% 146
-\BOOKMARK [3][-]{subsubsection.9.4.1}{Equazione di Eulero}{subsection.9.4}% 147
-\BOOKMARK [2][-]{subsection.9.5}{Equazioni lineari del secondo ordine \(bramanti\)}{section.9}% 148
-\BOOKMARK [3][-]{subsubsection.9.5.1}{Spazi di funzioni}{subsection.9.5}% 149
-\BOOKMARK [3][-]{subsubsection.9.5.2}{Generalit\340 sulle equazioni lineari. Problema di Cauchy}{subsection.9.5}% 150
-\BOOKMARK [3][-]{subsubsection.9.5.3}{La struttura dell'integrale generale}{subsection.9.5}% 151
-\BOOKMARK [3][-]{subsubsection.9.5.4}{Equazioni omogenee a coefficienti costanti}{subsection.9.5}% 152
-\BOOKMARK [3][-]{subsubsection.9.5.5}{Equazioni completa a coefficienti costanti}{subsection.9.5}% 153
-\BOOKMARK [3][-]{subsubsection.9.5.6}{metodo di somiglianza}{subsection.9.5}% 154
-\BOOKMARK [3][-]{subsubsection.9.5.7}{Metodo di sovrapposizione}{subsection.9.5}% 155
-\BOOKMARK [3][-]{subsubsection.9.5.8}{Metodo di variazione delle costanti}{subsection.9.5}% 156
-\BOOKMARK [3][-]{subsubsection.9.5.9}{Note sugli esercizi}{subsection.9.5}% 157
-\BOOKMARK [3][-]{subsubsection.9.5.10}{Equazione di Eulero}{subsection.9.5}% 158
-\BOOKMARK [1][-]{section.10}{Sistemi differenziali lineari}{}% 159
-\BOOKMARK [2][-]{subsection.10.1}{Sistemi lineari omogenei}{section.10}% 160
-\BOOKMARK [2][-]{subsection.10.2}{Diagonalizzazione di una matrice}{section.10}% 161
+\BOOKMARK [3][-]{subsubsection.9.4.1}{Integrale generalea dell\220equazione omogenea e integrale particolare dell\220equazione completa}{subsection.9.4}% 147
+\BOOKMARK [3][-]{subsubsection.9.4.2}{Equazione di Eulero}{subsection.9.4}% 148
+\BOOKMARK [2][-]{subsection.9.5}{Equazioni lineari del secondo ordine \(bramanti\)}{section.9}% 149
+\BOOKMARK [3][-]{subsubsection.9.5.1}{Spazi di funzioni}{subsection.9.5}% 150
+\BOOKMARK [3][-]{subsubsection.9.5.2}{Generalit\340 sulle equazioni lineari. Problema di Cauchy}{subsection.9.5}% 151
+\BOOKMARK [3][-]{subsubsection.9.5.3}{La struttura dell'integrale generale}{subsection.9.5}% 152
+\BOOKMARK [3][-]{subsubsection.9.5.4}{Equazioni omogenee a coefficienti costanti}{subsection.9.5}% 153
+\BOOKMARK [3][-]{subsubsection.9.5.5}{Equazioni completa a coefficienti costanti}{subsection.9.5}% 154
+\BOOKMARK [3][-]{subsubsection.9.5.6}{metodo di somiglianza}{subsection.9.5}% 155
+\BOOKMARK [3][-]{subsubsection.9.5.7}{Metodo di sovrapposizione}{subsection.9.5}% 156
+\BOOKMARK [3][-]{subsubsection.9.5.8}{Metodo di variazione delle costanti}{subsection.9.5}% 157
+\BOOKMARK [3][-]{subsubsection.9.5.9}{Note sugli esercizi}{subsection.9.5}% 158
+\BOOKMARK [3][-]{subsubsection.9.5.10}{Equazione di Eulero}{subsection.9.5}% 159
+\BOOKMARK [1][-]{section.10}{Sistemi differenziali lineari}{}% 160
+\BOOKMARK [2][-]{subsection.10.1}{Sistemi lineari omogenei}{section.10}% 161
+\BOOKMARK [2][-]{subsection.10.2}{Diagonalizzazione di una matrice}{section.10}% 162

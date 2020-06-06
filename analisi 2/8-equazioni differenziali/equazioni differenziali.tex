@@ -120,7 +120,7 @@ Per trovare l'integrale generale ci sono due metodi:
     \]
     In questa forma, a primo membro riconosciamo la derivata di un prodotto:
     \[
-        \frac{d}{dt} \left( e^{-A(t)} y(t) \right) ) e^{-A(t)} b(t).
+        \frac{d}{dt} \left( e^{-A(t)} y(t) \right) = e^{-A(t)} b(t).
     \]
     Integrando ambo i membri si ottiene
     \[
@@ -168,6 +168,31 @@ ha una e una sola soluzione $y \in C^1(I)$ e tale soluzione è
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
 \]
+\subsubsection{Note sugli esercizi: Insieme di definizione di un problema ci Cauchy}
+Dato il problema di Cauchy
+\[
+    \begin{cases}
+        y'= a(t) y + b(t)\\ y(t_0) = y_0
+    \end{cases}
+\]
+la teoria garantisce che, se le funzioni $a(t)$ e $b(t)$ sono continue in un intervallo $I$ aperto contenente $t_0$, allora esiste una e una sola soluzione dell'equazione differenziale data che soddisfi anche la condizione $y(t_0) = y_0$, tale soluzione sarà definita per $t \in I$.\newline
+Una volta calcolata $y(t)$ (cioè dopo aver trovato l'integrale generale $y(t)$ e averci sostituito il valore di $C$ trovato tramite la condizione $y(t_0) = y_0$) essa è soluzione di un problema di Cauchy nell'intervallo aperto più grande contenente $t_0$ e in cui è definita continua e derivabile.
+\newline
+\newline
+Analiziamo l'approccio da seguire:\newline
+\newline
+Per trovare l'\textbf{insieme di definizione della soluzione del problema di Cauchy} innanzitutto si controlla dove è definita e continua l'equazione di partenza $y' = a(t) y + b(t)$:
+\begin{itemize}
+    \item Se $t_0$ non appartiene all'insieme appena trovato, allora la teoria non permette di dire nulla circa l'esistenza di una soluzione.
+    \item Se $t_0$ appartiene all'insieme appena trovato la teoria ci dice che la soluzione esiste.
+\end{itemize}
+In ogni caso si procede col calcolo dell'integrale generale $y(t)$ e a trovare la soluzione del problema di Cauchy (si cerca il valore della costante $C$, imponendo il passaggio dell'integrale generale $y(t)$ per il punto definito dalla condizione di Cauchy $y(t_0) = y_0$).
+\newline
+\newline
+A questo punto per determinare l'insieme di definizione in cui questa soluzione sia valida bisogna prendere l'\textbf{intervallo} (cioè un insieme continuo) contenente il punto $t_0$ per cui la soluzione $y(t)$ e l'equazione di partenza $y'= a(t)y + b(t)$ (che rappresenta la derivata della soluzione) siano continue e definite.
+\newline
+\newline
+La ricerca dell'intervallo di definizione non finisce qui: c'è la possibilità di \textbf{prolungare per continuità} la soluzione in un intervallo più grande. Invece di stabilire l'intervallo in cui la soluzione sia valida nei domini di $y(t)$ e $y' = a(t) y + b(t)$, lo cerchiamo \textbf{dove la soluzione $y(t)$ è continua e derivabile} (in alcuni casi la derivata della soluzione ha un insieme di definizione "più grande" di quello dell'equazione differenziale di partenza $y' = a(t)y + b(t)$, questo effetto è dovuto al fatto che la costante $C$. che sostituiamo nella soluzione, modifica la soluzione e in alcuni casi "fa sparire" i termini fastidiosi che limitano il dominio).
 \subsubsection{Equazioni omogenee}
 Un'equazione differenziabile si dice \textbf{omogenea} se si può scrivere nella forma
 \[
@@ -218,9 +243,9 @@ Sia $f, f_y \in C^0\left( (a,b) \text{x} \mathbb{R} \right)$ e supponiamo che es
     |f(t,y)| \leq k_1 + k_2 |y| \;\;\;\;\; \;\forall(t,y) \in(a,b)\text{x}\mathbb{R}
 \]
 Allora per ogni $(t_0,y_0) \in(a,b) \text{x} \mathbb{R}$ lìunica soluzione del problema di Cauchy di prim'ordine è prolungabile a tutto l'intervallo $(a,b)$.
-\subsubsection{Note sugli esercizi}
-Per trovare il \textbf{massimo intervallo della soluzione} bisogna prendere un intervallo contenente il punto $t_0$, per cui la soluzione e la funzione di partenza siano continue e definite (si può anche prolungare per continuità).
 \subsection{Equazioni lineari del secondo ordine a coefficienti costanti}
+\subsubsection{Integrale generalea dell’equazione omogenea e integrale
+particolare dell’equazione completa}
 Consideriamo l'equazione differenziale 
 \[
     ay''(t) + by'(t) + cy(t) = f(t) \;\;\;\;\;\;\;t \in I
