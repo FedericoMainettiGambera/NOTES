@@ -221,6 +221,124 @@ Allora per ogni $(t_0,y_0) \in(a,b) \text{x} \mathbb{R}$ lìunica soluzione del 
 \subsubsection{Note sugli esercizi}
 Per trovare il \textbf{massimo intervallo della soluzione} bisogna prendere un intervallo contenente il punto $t_0$, per cui la soluzione e la funzione di partenza siano continue e definite (si può anche prolungare per continuità).
 \subsection{Equazioni lineari del secondo ordine a coefficienti costanti}
+Consideriamo l'equazione differenziale 
+\[
+    ay''(t) + by'(t) + cy(t) = f(t) \;\;\;\;\;\;\;t \in I
+\]
+dove $a,b,c \in \mathbb{R}$ e $f \in C^0(I)$. Se fosse $a=0$, questa equazione sarebbe del prim'ordine. Se $a\neq0$ possiamo dividere per $a$ e ottenere un'equazione del tipo
+\[
+    y''(t) + by'(t) + cy(t) = f(t) \;\;\;\;\;\;\; t \in I.
+\]
+Questa è un'\textbf{equazione lineare del second'ordine a coefficienti costanti}.\newline
+\newline
+Analogamente a quanto visto per il metodo di sovrapposizione e variazione delle costanti per le equazioni lineari di prim'ordine, vale il principio di sovrapposizione:\
+L'\textbf{integrale generale} di $y''(t) + by'(t) + cy(t) = f(t)$ si ottiene sommando all'integrale \textbf{generalea} dell'equazione \textbf{omogenea} un integrale \textbf{particolare} dell'equazione \textbf{completa}:
+\begin{itemize}
+    \item Vediamo dunque come risolvere l'\textbf{equazione omogenea associata}:
+    \[
+        y'' + by' + cy = 0 \;\;\;\;\;\;\;t \in I
+    \]
+    Dato che quest'equazione si può ricondurre a un sistema di due equazioni del prim'ordine, il problema di cauchy da associare sarà del tipo
+    \[
+        y(t_0) = y_0, \;\;\;\;\;\;\;y'(t_0)=y_1.
+    \]
+    Questo significa che, oltre alal posizionei niziale $y(t_0)$, è necessario imporre una variazione iniziale $y'(t_0)$, in questo modo il teorema di Cauchy nella versione per i sistemi, garantisce che ci sia un'unica soluzione.\newline
+    Le due condizioni imposte mostrano che le soluzioni hanno \textbf{due gradi di libertà}: l'integrale generale è uno spazio vettoriale di dimensione $2$. basta quindi trovare due soluzioni non proporzionali.\newline
+    Iniziamo sostituendo $y(t) = e^{\lambda t}$ e otteniamo
+    \[
+        e^{\lambda t} (\lambda^2 + b \lambda + c) = 0.
+    \]
+    L'equazione 
+    \[
+        \lambda^2 + b \lambda + c = 0
+    \]
+    viene chiamata \textbf{equazione caratteristica} associata e si possono verificare tre casi:
+    \begin{itemize}
+        \item $b^2 > 4c$: in tal caso, l'equazione caratteristica ammette due soluzioni reali $\lambda_1, \lambda_2 \in \mathbb{R}$ e le soluzioni cercate sono semplicemente 
+        \[
+            y_1(t) = e^{\lambda_1 t}, \;\;\;\;\; y_2(t) = e^{\lambda_2 t};
+        \]
+        \item $b^2 < 4c$: in tal caso, l'equazione caratteristica ammette due soluzioni complesse coniugate $\lambda = \alpha \pm i \beta$, ($\alpha,\beta \in \mathbb{R}$) e, usando la formula di Eulero per l'esponenziale complesso, si trovano le soluzioni
+        \[
+            y_1(t) = e^{\alpha t} cos(\beta t), \;\;\;\;\;y_2(t) = e^{\alpha t} sin(\beta t);
+        \]
+        \item $b^2 = 4c$: in tal caso, l'equazione caratteristica ammette due soluzioni reali coincidenti $\lambda_1 = \lambda_2 = \lambda \in \mathbb{R}$; le due soluzioni non proporzionali sono 
+        \[
+            y_1(t) = e^{\lambda t}, \;\;\;\;\; y_2(t) = t e^{\lambda t}.
+        \]
+    \end{itemize}
+    L'\textbf{integrale generale} dell'equazione omogenea è quindi dato da
+    \[
+        c_1 y_1(t) + c_2 y_2(t)
+    \]
+    dove $c_1, c_2 \in \mathbb{R}$ sono costanti arbitrarie.
+    \item Per determinare l'\textbf{integrale particolare dell'equazione completa} possiamo procedere in due metodi distinti:
+    \begin{itemize}
+        \item \textbf{Metodo di somiglianza}:\newline
+        Se la forzante $f$ ha una forma "semplice" possiamo cercare soluzioni particolari dell'equazione completa che le somiglino.
+        \begin{itemize}
+            \item Se $f$ è un \textbf{polinomio}, cherchiamo soluzioni \textbf{polinomiali}.\newline
+            Più precisamente, se $f$ è un polinomio di grado $n$ cerchiamo:
+            \begin{itemize}
+                \item soluzioni polinomiali di grado $n$ se $c \neq 0$;
+                \item soluzioni di grado $n+1$ se $c=0$ e $b\neq 0$;
+                \item soluzioni di grado $n+2$ se $c=b=0$.
+            \end{itemize}
+            Il motivo di questa distinzione è che nel membro di sinistra dell'equazione completa deve rimanere un polinomio che ha lo stess ogrado di $f$.
+            \item Se $f$ è \textbf{esponenziale}, cerchiamo soluzioni \textbf{esponenziali}.\newline
+            Più precisamente, se $f(t) ? e^{\lambda t}$ cerchiamo:
+            \begin{itemize}
+                \item soluzioni del tipo $y(t) = ce^{\lambda t}$ se $\lambda$ non risolve l'equazione caratteristica;
+                \item soluzioni del tipo $y(t) = cte^{\lambda t}$ se $\lambda$ è soluzione semplice dell'equazione caratteristica;
+                \item soluzioni del tipo $y(t) = ct^2e^{\lambda t}$ se $\lambda$ è soluzione doppia dell'equazione caratteristica.
+            \end{itemize}
+            \item Se $f$ è \textbf{esponenziale complessa}, cerchiamo soluzioni \textbf{esponenziali complesse}.\newline
+            Più precisamnete, se $f(t) = Ae^{\alpha t} cos(\beta t) + Be^{\alpha t} sin(\beta t)$ (possibilmente $\alpha = 0$, ma anche $A$ o $B$ nullo) cerchiuamo:
+            \begin{itemize}
+                \item soluzioni del tipo $y(t) = c_1 e^{\alpha t} cos(\beta t) + c_2 e^{\alpha t} sin(\beta t)$ se $\alpha \pm i \beta$ non risolvono l'equazione caratteristica;
+                \item soluzioni del tipo $y(t) = c_1 te^{\alpha t} cos(\beta t) + c_2 t e^{\alpha t} sin(\beta t)$ se $\alpha \pm i \beta$ sono soluzioni dell'equazione caratteristica;
+            \end{itemize}
+        \end{itemize}
+        Altre $f$ dove il metodo di somiglianza è possibile sono combinazioni lineari delle precedenti, oppure polinomi per esponenziali reali o complessi.
+        \item \textbf{metodo della variazione delle costanti arbitrarie}:\newline
+        Una volta trovato l'integrale generale dell'equazione omogenea associata, per trovare un integrale particolare dell'equazione completa facciamo variare le costanti $c_1$ e $c_2$ considerandole come funzioni. Cerchiamo dunque una soluzione particolare del tipo
+        \[
+            \bar{y}(t) = c_1(t) y_1(t) +c_2(t) y_2(t)
+        \]
+        dove $y_1$ e $y_2$ sono soluzioni non proporzionali.\newline
+        Ci sono diverse scelte possibili per $c_1(t)$ e $c_2(t)$, vediamone una: se $c_1, c_2 \in C^1(I)$ soddisfano le condizioni
+        \[
+            c_1'(t) y_1(t) + c_2'(t) y_2(t) = 0, \;\;\;\;\;c_1'(t) y_1'(t) + c_2'(t) y_2'(t) = f(t)
+        \]
+        allora la funzione $\bar{y} = c_1(t) y_1(t) +c_2(t) y_2(t)$ risolve l'equazione di second'ordine lineare a coefficienti costanti $y''(t) + by'(t) + cy(t) = f(t)$.\newline
+        \newline
+        Resta da stabilire se sia possibile trovare una coppia di funzioni $c_1, c_2$ che soddisfano le condizioni appena enunciate. Usando la regola di Cramer, si ottiene
+        \[
+            c_1' = \frac{-f y_2}{y_1y_2' - y_2y_1'}, \;\;\;\;\; c_2' = \frac{fy_1}{y_1y_2' - y_2y_1'}
+        \]
+        e integrando otteniamo $c_1$ e $c_2$. Osserviamo che l'integrale indefinito genera delle costanti arbitrarie che non hanno importanza dato che, a loro volta, genera soluzioni dell'equazione omogenea associata. Inoltre i denominatori  sono sempre diversi da $0$ perchè $y_1$ e $y_2$ non sono proporzionali.
+    \end{itemize}
+\end{itemize}
+\subsubsection{Equazione di Eulero}
+Un esempio di equazione lineare del second'ordine a coefficienti variabili, ma riconducibile a coefficienti costanti è l'\textbf{equazione di Eulero} che, nella sua forma generale, si scrive
+\[
+    t^2y''(t) + bty'(t) + cy(t) = f(t) \;\;\;\;\;t>0
+\]
+dove $b,c \in \mathbb{R}$.\newline
+Innanzitutto, anche per l'euqazione di Eulero, vale il principio di sovrapposizione e si applica il metodo della variazione delle costanti arbitrarie. Vediamo dunque solo come si risolve l'equazione omogenea:
+\[
+    t^2 y''(t) + bty(t) + cy(t) = 0 \;\;\;\;\;t>0
+\]
+Posto $t =  e^{s}$ risulta $s = log(t)$ e
+\[
+    y'(t) = \frac{dy}{dt} = \frac{dy\; ds}{ds\;dt} = \frac{y'(s)}{t}, \;\;\;\;\; y''(t) = \frac{y''(s)}{t^2} - \frac{y'(s)}{t^2}.
+\]
+Dunque l'equazione omogenea associata diventa:
+\[
+    y''(s) + (b-1)y'(s) + cy(s) = 0 \;\;\;\;\;s \in \mathbb{R}
+\]
+che è del tipo a coefficienti costanti.
+\subsection{Equazioni lineari del secondo ordine (bramanti)}
 \subsubsection{Spazi di funzioni}
 Sia $I$ un intervallo e consideriamo l'insieme $\mathbb{F}$ di tutte le funzioni definite in $I$, a valori reali. Con le operazioni naturali di somma di due funzioni e prodotto per uno scalare:
 \[

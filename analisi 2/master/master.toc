@@ -146,16 +146,18 @@
 \contentsline {subsubsection}{\numberline {9.3.5}Prolungamento delle soluzioni}{72}{subsubsection.9.3.5}%
 \contentsline {subsubsection}{\numberline {9.3.6}Note sugli esercizi}{72}{subsubsection.9.3.6}%
 \contentsline {subsection}{\numberline {9.4}Equazioni lineari del secondo ordine a coefficienti costanti}{72}{subsection.9.4}%
-\contentsline {subsubsection}{\numberline {9.4.1}Spazi di funzioni}{72}{subsubsection.9.4.1}%
-\contentsline {subsubsection}{\numberline {9.4.2}Generalità sulle equazioni lineari. Problema di Cauchy}{72}{subsubsection.9.4.2}%
-\contentsline {subsubsection}{\numberline {9.4.3}La struttura dell'integrale generale}{73}{subsubsection.9.4.3}%
-\contentsline {subsubsection}{\numberline {9.4.4}Equazioni omogenee a coefficienti costanti}{73}{subsubsection.9.4.4}%
-\contentsline {subsubsection}{\numberline {9.4.5}Equazioni completa a coefficienti costanti}{74}{subsubsection.9.4.5}%
-\contentsline {subsubsection}{\numberline {9.4.6}metodo di somiglianza}{74}{subsubsection.9.4.6}%
-\contentsline {subsubsection}{\numberline {9.4.7}Metodo di sovrapposizione}{75}{subsubsection.9.4.7}%
-\contentsline {subsubsection}{\numberline {9.4.8}Metodo di variazione delle costanti}{75}{subsubsection.9.4.8}%
-\contentsline {subsubsection}{\numberline {9.4.9}Note sugli esercizi}{75}{subsubsection.9.4.9}%
-\contentsline {subsubsection}{\numberline {9.4.10}Equazione di Eulero}{76}{subsubsection.9.4.10}%
-\contentsline {section}{\numberline {10}Sistemi differenziali lineari}{78}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Sistemi lineari omogenei}{78}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Diagonalizzazione di una matrice}{78}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {9.4.1}Equazione di Eulero}{74}{subsubsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.5}Equazioni lineari del secondo ordine (bramanti)}{74}{subsection.9.5}%
+\contentsline {subsubsection}{\numberline {9.5.1}Spazi di funzioni}{74}{subsubsection.9.5.1}%
+\contentsline {subsubsection}{\numberline {9.5.2}Generalità sulle equazioni lineari. Problema di Cauchy}{75}{subsubsection.9.5.2}%
+\contentsline {subsubsection}{\numberline {9.5.3}La struttura dell'integrale generale}{75}{subsubsection.9.5.3}%
+\contentsline {subsubsection}{\numberline {9.5.4}Equazioni omogenee a coefficienti costanti}{76}{subsubsection.9.5.4}%
+\contentsline {subsubsection}{\numberline {9.5.5}Equazioni completa a coefficienti costanti}{76}{subsubsection.9.5.5}%
+\contentsline {subsubsection}{\numberline {9.5.6}metodo di somiglianza}{76}{subsubsection.9.5.6}%
+\contentsline {subsubsection}{\numberline {9.5.7}Metodo di sovrapposizione}{77}{subsubsection.9.5.7}%
+\contentsline {subsubsection}{\numberline {9.5.8}Metodo di variazione delle costanti}{77}{subsubsection.9.5.8}%
+\contentsline {subsubsection}{\numberline {9.5.9}Note sugli esercizi}{78}{subsubsection.9.5.9}%
+\contentsline {subsubsection}{\numberline {9.5.10}Equazione di Eulero}{78}{subsubsection.9.5.10}%
+\contentsline {section}{\numberline {10}Sistemi differenziali lineari}{80}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Sistemi lineari omogenei}{80}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Diagonalizzazione di una matrice}{80}{subsection.10.2}%
