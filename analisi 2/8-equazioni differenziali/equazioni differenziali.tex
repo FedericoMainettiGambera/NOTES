@@ -101,6 +101,14 @@ Notiamo che gli integrali fanno comparire una costante arbitraria che verrà det
     \item se $g \in C^1$ c'è unicità e le soluzioni costanti rappresentano dei "limiti invalicabili" per le altre soluzioni;
     \item risolvere il problema di Cauchy.
 \end{itemize}
+\subsubsection{Note sugli esercizi: Insieme di definizione di un problema ci Cauchy per equazioni a variabili separabili}
+Dato un problema di Cauchy per un'equazione a variabili separabili
+\[
+    \begin{cases}
+        y' = f(t) g(y) \\ y(t_0) = y_0
+    \end{cases}
+\]
+la teoria garantisce che se $a(t)$ è continua in un intorno di $t = t_0$ e le funzioni $b(y), b'(y)$ sono continue in un intorno di $y_0$ allora esiste un'unica soluzione al problema di Cauchy, definita in un intorno di $t_0$ (contenuto nell'intorno di $t_0$ relativo alla funzione $a(t)$).
 \subsubsection{Equazioni lineari (derivata di un prodotto; sovrapposizione e variazione delle costanti arbitrarie)}
 Un'equazione differenziale del tipo
 \[
@@ -168,7 +176,7 @@ ha una e una sola soluzione $y \in C^1(I)$ e tale soluzione è
 \[
     y(t) = ce^{-A(t)} + e^{-A(t)} \int_{t_0}^{t} f(s)e^{A(s)}ds
 \]
-\subsubsection{Note sugli esercizi: Insieme di definizione di un problema ci Cauchy}
+\subsubsection{Note sugli esercizi: Insieme di definizione di un problema ci Cauchy per equazioni lineari del prim'ordine}
 Dato il problema di Cauchy
 \[
     \begin{cases}
@@ -343,6 +351,28 @@ L'\textbf{integrale generale} di $y''(t) + by'(t) + cy(t) = f(t)$ si ottiene som
         \]
         e integrando otteniamo $c_1$ e $c_2$. Osserviamo che l'integrale indefinito genera delle costanti arbitrarie che non hanno importanza dato che, a loro volta, genera soluzioni dell'equazione omogenea associata. Inoltre i denominatori  sono sempre diversi da $0$ perchè $y_1$ e $y_2$ non sono proporzionali.
     \end{itemize}
+\end{itemize}
+\subsubsection{Note sugli esercizi: Struttura della soluzione e principio di sovrapposizione per equazioni differenziali del second'ordine}
+Un'equazione lineare del second'ordine ha la forma
+\[
+    a(t) y'' + b(t) y' + c(t) y = f(t)
+\]
+se $f(t) = 0$ l'equazione è detta omogenea, altrimenti è detta completa. Per le equazioni lineari vale il principio di sovrapposizone: se $y_1(t)$ e $y_2(t)$ sono soluzioni rispettivamente di
+\[
+    a(t) y'' + b(t) y' + c(t) y = f_1(t)
+\]
+\[
+    a(t) y'' + b(t) y' + c(t) y = f_2(t)
+\]
+allora $y_1(t) \pm y_2(t)$ è soluzione di 
+\[
+    a(t) y'' + b(t) y' + c(t) y = f_1(t)\pm f_2(t)
+\]
+In particolare:
+\begin{itemize}
+    \item una combinazione lineare di due soluzioni $z_1(t)$ e $z_2(t)$ si un equazione omogenea $a(t)z'' + b(t) z' + c(t) z = 0$ è ancora soluzione della stessa equazione, ed è l'integrale generale se $z_1(t)$ e $z_2(t)$ sono linearmente indipendenti;
+    \item la differenza di deu soluzioni di una equazione completa dà una soluzione dell'equazione omogenea associata;
+    \item la somma di una soluzione dell'equazione completa con una soluzione (l'integrale generale) dell'equazione omogenea associata dà ancora una soluzione dell'equazione completa (ovvero: la somma di una soluzione dell'equazione completa con l'integrale generale dell'equazione omogenea associata dà l'integrale generale dell'equazione completa).
 \end{itemize}
 \subsubsection{Equazione di Eulero}
 Un esempio di equazione lineare del second'ordine a coefficienti variabili, ma riconducibile a coefficienti costanti è l'\textbf{equazione di Eulero} che, nella sua forma generale, si scrive
