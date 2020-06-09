@@ -393,6 +393,71 @@ Dunque l'equazione omogenea associata diventa:
     y''(s) + (b-1)y'(s) + cy(s) = 0 \;\;\;\;\;s \in \mathbb{R}
 \]
 che è del tipo a coefficienti costanti.
+\subsubsection{Note sugli esercizi: corrispondenza tra equazioni lineari del second'ordine e sistemi lineari del prim'ordine}
+Mostriamo ora come l'equazione $a y'' + by' + cy = f(t)$ può essere trasformata in un sistema di due equazioni differenziali del prim'ordine delal forma $\vec{y}' = A \vec{y} + \vec{f}(t)$.\newline
+\newline
+Il sistema di due equazioni del prim'ordine 
+\[
+    \begin{cases}
+        y'_1 = ay_1 + by_2 + f_1(t)\\
+        y'_2 = cy_1 + by_2 + f_2(t)
+    \end{cases}
+\]
+può essere scritto anche in forma vettoriale: posto
+\[
+    \vec{y} = \left[\begin{matrix}
+        y_1\\y_2        
+    \end{matrix}\right] \;\;\;\;\; A = \left[\begin{matrix}
+        a & b \\ c & d
+    \end{matrix}\right] \;\;\;\;\; \vec{f}(t) = \left[\begin{matrix}
+        f_1(t)\\f_2(t)
+    \end{matrix}\right]
+\]
+poichè il vettore derivato è il vettore delle derivate:
+\[
+    \vec{y}' = \left[\begin{matrix}
+        y'_1\\y'_2
+    \end{matrix}\right]
+\]
+abbiamo
+\[
+    \begin{cases}
+        y'_1 = ay_1 + by_2 + f_1(t)\\
+        y'_2 = cy_1 + by_2 + f_2(t)
+    \end{cases} \Leftrightarrow \left[\begin{matrix}
+        y'_1\\y'_2        
+    \end{matrix}\right] = \left[\begin{matrix}
+        a & b \\ c & d
+    \end{matrix}\right] \; \left[\begin{matrix}
+        y_1\\y_2        
+    \end{matrix}\right] + \left[\begin{matrix}
+        f_1(t)\\f_2(t)
+    \end{matrix}\right]
+\]
+cioè $\vec{y}' = A \vec{y} + \vec{f}(t)$.\newline
+\newline
+Veniamo alla nostra equazione: poniamo $y_1 = y$ e $y_2 = y'$ (cioè $y'_1 = y_2$), allora possiamo scrivere le due equazioni
+\[
+    y'_1 = y_2 \;\;\;\;\;\;\;\;\;\;ay'_2 + by_2 + cy_1 = f(t)
+\]
+queste, poste in forma normale, diventano
+\[
+    \begin{cases}
+        y'_1 = y_2\\
+        y'_2 = - \frac{c}{a}y_1 - \frac{b}{a}y_2 + \frac{1}{a} f(t)
+    \end{cases}
+\]
+e cioè, posto
+\[
+    \vec{y} = \left[\begin{matrix}
+        y_1\\y_2
+    \end{matrix}\right] \;\;\;\;\; A = \left[\begin{matrix}
+        0 & 1  \\ -\frac{c}{a} & - \frac{b}{a}
+    \end{matrix}\right] \;\;\;\;\; \vec{f}(t) = \left[\begin{matrix}
+        0 \\ \frac{1}{a}f(t)
+    \end{matrix}\right]
+\]
+il sistema $\vec{y}' = A \vec{y} + \vec{f}(t)$
 \subsection{Equazioni lineari del secondo ordine (bramanti)}
 \subsubsection{Spazi di funzioni}
 Sia $I$ un intervallo e consideriamo l'insieme $\mathbb{F}$ di tutte le funzioni definite in $I$, a valori reali. Con le operazioni naturali di somma di due funzioni e prodotto per uno scalare:
