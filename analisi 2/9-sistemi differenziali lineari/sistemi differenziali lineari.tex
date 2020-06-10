@@ -1,4 +1,246 @@
 \section{Sistemi differenziali lineari}
+\subsection{Il principio di sovrapposizione}
+Siano $A = A(t)$ e $b = b(t)$, rispettivamente, una matrice $n \text{x} n$ e un vettore di $\mathbb{R}^n$, dipendenti con continuità da un parametro reale $t \in I$, dove $i \subseteq \mathbb{R}$ è un intervallo. Il sistema di $n$ equazioni
+\[
+    y' = A(t) y +b(t) \;\;\;\;\; (t \in I)
+\]
+si chiama \textbf{sistema differenziale lineare}; l'incognita è il vettore $y = y(t) \in \mathbb{R}^n$. Dette $y_i(t)$ (con $i = 1,\dots,n$) le componenti del vettore $y$, il sistema si scrive anche
+\[
+    y'_i = \sum_{j=1}^{n} a_{ij}(t)y_{j}(t) + b_{i}(t) \;\;\;\;\; i = 1,\dots,n
+\]
+dove $a_{ij}(t)$ sono gli elementi della matrice $A(t)$ e $b_i(t)$ sono le componenti del vettore $b(t)$.\newline
+\newline
+Nel caso $n=1$ ci riduciamo al caso di equazioni differenziale lineare del prim'ordine, di cui abbiamo visto i metodi di soluzione (derivata di un prodotto e sovrapposizione + variazione delle costanti).\newline
+\newline
+Nel caso $n=2$ il sistema diventa
+\[
+    \begin{cases}
+        y'_1 = a_{11}(t)y_1 + a{12}y_2 + b_{1}(t)\\
+        y'_2 = a_{21}(t)y_1 + a{22}y_2 + b_{2}(t)\\
+    \end{cases}
+\]
+In questo caso (e in tutti i casi in cui $n \geq 2$) non si riesce ad usare il metodo della derivata di un prodotto, ma è invece possibile usare il metodo di sovrapposizione e variazione delle costanti in via generalizzata.\newline
+\newline
+In generale, un vettore $y = y(t) \in \mathbb{R}^n$ è soluzione di un sistema $y' = A(t) y + b(t) \;\;\; (t \in I)$ se la soddisfa per ogni $t \in I$. L'insieme di tutte le soluzioni viene ancora chiamato integrale generale.\newline
+Chiamaremo \textbf{sistema omogeneo associato} il sistema
+\[
+    y' = A(t) y \;\;\;\;\; (t \in I)
+\]
+con un ragionamento analogo a quello fatto per il caso di equazioni del prim'ordine si dimostra che l'integrale generale si ottiene sommando all'integrale generale del sistema omogeneo associato un integrale particolare del sistema completo.\newline
+L'integrale generale del sistema omogeneo è uno spazio vettoriale di dimensione $n$ e basterà quindi trovare una base di esso, e cioè $n$ soluzioni linearmente indipendenti (nel caso $n = 1$ la soluzione dell'equazione omogenea  è unica a meno di una costante moltiplicativa, e quindi l'integrale generale è uno spazio vettoriale mono-dimensionale).
+\ \newline
+\newline
+Facciamo notare che le equazioni differenziali lineari \textbf{di qualsiasi ordine} possono essere sempre ricondotte alla forma di un sistema differenziale lineare $y' = A(t)y + b(t)$.
+\subsubsection{Note sugli esercizi: corrispondenza tra equazioni lineari del second'ordine e sistemi lineari del prim'ordine}
+Mostriamo ora come l'equazione $a y'' + by' + cy = f(t)$ può essere trasformata in un sistema di due equazioni differenziali del prim'ordine delal forma $\vec{y}' = A \vec{y} + \vec{f}(t)$.\newline
+\newline
+Il sistema di due equazioni del prim'ordine 
+\[
+    \begin{cases}
+        y'_1 = ay_1 + by_2 + f_1(t)\\
+        y'_2 = cy_1 + by_2 + f_2(t)
+    \end{cases}
+\]
+può essere scritto anche in forma vettoriale: posto
+\[
+    \vec{y} = \left[\begin{matrix}
+        y_1\\y_2        
+    \end{matrix}\right] \;\;\;\;\; A = \left[\begin{matrix}
+        a & b \\ c & d
+    \end{matrix}\right] \;\;\;\;\; \vec{f}(t) = \left[\begin{matrix}
+        f_1(t)\\f_2(t)
+    \end{matrix}\right]
+\]
+poichè il vettore derivato è il vettore delle derivate:
+\[
+    \vec{y}' = \left[\begin{matrix}
+        y'_1\\y'_2
+    \end{matrix}\right]
+\]
+abbiamo
+\[
+    \begin{cases}
+        y'_1 = ay_1 + by_2 + f_1(t)\\
+        y'_2 = cy_1 + by_2 + f_2(t)
+    \end{cases} \Leftrightarrow \left[\begin{matrix}
+        y'_1\\y'_2        
+    \end{matrix}\right] = \left[\begin{matrix}
+        a & b \\ c & d
+    \end{matrix}\right] \; \left[\begin{matrix}
+        y_1\\y_2        
+    \end{matrix}\right] + \left[\begin{matrix}
+        f_1(t)\\f_2(t)
+    \end{matrix}\right]
+\]
+cioè $\vec{y}' = A \vec{y} + \vec{f}(t)$.\newline
+\newline
+Veniamo alla nostra equazione: poniamo $y_1 = y$ e $y_2 = y'$ (cioè $y'_1 = y_2$), allora possiamo scrivere le due equazioni
+\[
+    y'_1 = y_2 \;\;\;\;\;\;\;\;\;\;ay'_2 + by_2 + cy_1 = f(t)
+\]
+queste, poste in forma normale, diventano
+\[
+    \begin{cases}
+        y'_1 = y_2\\
+        y'_2 = - \frac{c}{a}y_1 - \frac{b}{a}y_2 + \frac{1}{a} f(t)
+    \end{cases}
+\]
+e cioè, posto
+\[
+    \vec{y} = \left[\begin{matrix}
+        y_1\\y_2
+    \end{matrix}\right] \;\;\;\;\; A = \left[\begin{matrix}
+        0 & 1  \\ -\frac{c}{a} & - \frac{b}{a}
+    \end{matrix}\right] \;\;\;\;\; \vec{f}(t) = \left[\begin{matrix}
+        0 \\ \frac{1}{a}f(t)
+    \end{matrix}\right]
+\]
+il sistema $\vec{y}' = A \vec{y} + \vec{f}(t)$.
+\subsection{Sistemi lineari omogenei}
+Nel caso in cui $b(t) = 0$, il sistema $y' = A(t) y + b(t)$ diventa
+\[
+    y' = A(t) y
+\]
+e viene detto \textbf{omogeneo}.\newline
+Associato al sistema lineare omogeneo abbiamo il problema di Cauchy
+\[
+    \begin{cases}
+        y' = A(t) y \;\;\;\; t \in I\\
+        y(t_0) y_0
+    \end{cases}
+\]
+dove $t_0 \in I$ e $y_0 \in \mathbb{R}^n$.\newline
+\newline
+\textbf{Teor.} Sia $A \in C^0(I)$ e sia $t_0 \in I$. Per ogni $y_0 \in \mathbb{R}^n$ il problema di Cauchy $\begin{cases}
+    y' = A(t) y \;\;\;\; t \in I\\
+    y(t_0) y_0
+\end{cases}$ ammette un'unica soluzione che è prolungabile a tutto l'intervallo $I$.\newline
+\newline
+Questo teorema ha delle \textbf{conseguenze} importanti:\newline
+Notiamo che nel problema di Cauchy, $y_0 = 0 \in \mathbb{R}^n$, allora l'unica soluzione è $y(t) \equiv 0$.\newline
+\newline
+Se $\phi_1$ e $\phi_2$ risolvono $y' = A(t) y$, allora anche $\alpha \phi_1 + \beta \phi_2$ lo risolvono per ogni $\alpha, \beta \in \mathbb{R}$:\newline
+\textbf{Corollario}: L'integrale generale di un sistema lineare omogeneo è uno spazio vettoriale di dimensione $n$.\newline
+\newline
+Il problema quindi si riduce a trovare $n$ soluzioni linearmente indipendenti del sistema omogeneo, che è una ricerca difficile, tuttavia, se  la mtrice dei coefficienti $A$ è costante esiste un metodo che consente di trovarle (vedi più avanti).\newline
+Ad ogni modo, fissate $n$ soluzioni $\phi_1, \phi_2, \dots, \phi_n$ ci poniamo il problema di capire se esse siano linearmente indipendenti: le $n$ soluzioni $\phi_1, \phi_2, \dots, \phi_n$ sono \textbf{linearmente indipendenti} se l'equazione 
+\[
+    c_1 \phi_1(t) + c_2 \phi_2(t) + \dots + c_n \phi_n (t) = 0 \;\;\;\;\; (t \in I)
+\]
+può essere soddisfatta solo per $c_1 = c_2 = \dots = c_n = 0$.\newline
+\newline
+Dalla definizione di combinazione lineare, possiamo dire che $ c_1 \phi_1(t) + c_2 \phi_2(t) + \dots + c_n \phi_n (t)$ si annulla in un certo $t_0 \in I$ se e solo se si annulla su tutto $I$.\newline
+\newline
+Per provare l'indipendenza lineare delle \textbf{funzioni} $\phi_k$ basta quindi verificare che i \textbf{vettori} $\phi_k (t_0)$ siano linearmente indipendenti per un certo $t_0 \in I$. Per formalizzare questa importante proprietà introduciamo la \textbf{matrice wronskiana} associata alle funzioni (vettoriali) $\phi_k$; questa si ottiene accostando i vettori colonna $\phi_k (t)$:
+\[
+    W(t) = \left( \phi_1(t) | \phi_2(t) | \dots | \phi_n (t) \right) \;\;\;\;\; t \in I
+\]
+Chiamiamo \textbf{determinante wronskiano} il suo determinante $det(W(t))$.\newline
+\textbf{Teor.} Le $n$ soluzioni $\phi_1, \dots, \phi_n$ sono linearmente indipendenti se e solo se il loro determinante wronskiano è diverso da zero in un punto di $I$:
+\[
+    \;\; \exists t_0 \in I, det(W(t_0)) \neq 0
+\]
+In tal caso diremo che la famiglia di soluzioni $\phi_k$ è un \textbf{sistema fondamentale di soluzioni} e che la corrispondente matrice wronskiana è una matrice fondamentale (una matrice wronskiana è fondamentale se e solo se il suo determinante è diverso da zero in almento un punto $t_0 \in I$).\newline
+\newline
+Proprietà delal matrice fondamentale $W$:
+\begin{itemize}
+    \item il vettore $y = y(t)$ è soluzione di un sistema lineare omogeneo se e solo se esiste $C \in \mathbb{R}^n$ tale che $y(t) = W(t) C$;
+    \item la matrice $W$ soddisfa l'equazione (matriciale!) $W'(t) = A(t) W(t)$.
+    \item detta $a(t)$ la traccia di $A(t)$, il determinante wronskiano soddisfa l'equazione (scalare!) $|W(t)|' = a(t) |W(t)|$;
+    \item fissato $t_0 \in I$ come istante iniziale, il determinante wronskiano in $t$ è esplicitamente dato da $|W(t)| = |W(t_0)| exp(\int_{t_0}^{t} a(\tau) d \tau)$;
+    \item le ultime due proprietà confermano che $W(t)$ è sempre singolare o non lo è mai.
+\end{itemize} 
+\subsection{Sistemi omogenei a coefficienti costanti}
+Studiamo ora il sistema omogeneo $y' = A(t) y$ nel caso in cui la matrice $A$ sia costante:
+\[
+    y' = Ay \;\;\;\;\;t \in I
+\]
+Se $n = 1$ ($A$ scalare), l'integrale generale è dato da $y(t) = Ce^{At}$ con $C \in \mathbb{R}$.\newline
+Se $n = 2$, il sistema si scrive come
+\[
+    y'_1 = a_{11}y_1 + a{12} y_2 \;\;\;\;\; y'_2 = a_{21}y_1 + a_{22} y_2 \;\;\;\;\; A=\left( a_{ij} \right)_{i,j = 1,2}
+\]
+questo sistema si può integrare riconducendolo a un'equazione del second'ordine: infatti, derivando la prima equazione e sostituendo la seconda si ottiene
+\[
+    y''_1 =(a_{11} + a_{22}) y'_1 + (a_{12} a_{21} - a_{11} a_{22})y_1
+\]
+che si risolve coi metodi già visti (osserviamo che i coefficienti solo la traccia e l'opposto del determinante di $A$).\newline
+\newline
+Quanto appena osservato suggerisce di cercare soluzioni tra gli esponenziali (eventualmente complessi).\newline
+\newline
+Sarebbe utile poter definire in qualche modo la matrice esponenziale $e^{At}$ e dedurre che le soluzioni della generica $y' = Ay$ sono tutte e sole del tipo $e^{At}C$ con $C \in \mathbb{R}^n$ vettore arbitrario.\newline
+\newline
+Il meotodo migliore per definire la matrice esponenziale di una matrice $M$ è quello di prendere spunto sia dalla definizione del numero $e$ che dalla serie di potenze dell'esponenziale:
+\[
+    e^{M} = \lim_{k\rightarrow \infty} \left( I_n + \frac{M}{k} \right)^k \;\;\;\;\;\;\;\;\;\; e^{M} = \sum_{k=0}^{\infty} \frac{M^k}{k!}
+\]
+dove $I_n$ è la matrice identità. Queste definizioni non possono però essere usate in maniera semplice per calcolare $e^{M}$. Ci sono due situazioni i ncui il calcolo si fa agevolmente:
+\begin{itemize}
+    \item Se $M$ è diagonale, si ottiene semplicemente l'esponenziale della diagonale:
+    \[
+        M = \left[\begin{matrix}
+            \lambda_1 & 0 & \dots & 0\\
+            0 & \lambda_2 & \dots & 0\\
+            \dots & \dots & \dots & \dots \\
+            0 & 0 & \dots & \lambda_n
+        \end{matrix}\right] \Longrightarrow e^{M} = \left[\begin{matrix}
+            e^{\lambda_1} & 0 & \dots & 0\\
+            0 & e^{\lambda_2} & \dots & 0\\
+            \dots & \dots & \dots & \dots \\
+            0 & 0 & \dots & e^{\lambda_n}
+        \end{matrix}\right]
+    \]
+    \item Se $M$ è diagonalizzabile, e cioè esiste una matrice non singolare $S$ tale che $\Lambda = S^{-1} M S$ sia diagonale, allora
+    \[
+        M = S \Lambda S^{-1} \Longrightarrow M^k = S \Lambda^k S^{-1} \Longrightarrow e^{M} = S e^{\Lambda}S^{-1}
+    \]
+    con $e^{\Lambda}$ che si calcola come nel caso precedente.\newline
+    \newline
+    Ricordiamo che una matrice quadrata è diagonalizzabile se e solo se tutti i suoi autovalori sono regolari. Precisiamo che vengono considerati anche autovalori complessi che, per una matrice a coefficienti reali, possono esserci se e solo se c'è anche il loro coniugato. In tal caso gli esponenziali dipendenti dal tempo vanno interpretati con la formula di Eulero e generano funzioni trigonometriche.\newline
+    \newline
+    Volendo ora trovare l'esponenziale della matrice $At$, afacciamo un paio di osservazioni elementari:
+    \begin{itemize}
+        \item se $A$ è diagonalizzabile, lo è anche $At$ e si può usare la stessa matrice di passaggio $S$ per diagonalizzarla;
+        \item gli autovalori di $At$ sono uguali agli autovalori di $A$ moltiplicati per $t$.
+    \end{itemize}
+    Da queste due osservazioni possiamo dedurre l'implicazione
+    \[
+        e^{A} = S e^{\Lambda} S^{-1} \Longrightarrow e^{At} = S e^{\Lambda t} S^{-1}
+    \]
+\end{itemize}
+\ \newline
+\textbf{Teor.} Le colonne della matrice $e^{At}$ formano un sistema fondamentale di soluzioni di $y' = Ay$ e cioè, per ogni $C \in \mathbb{R}^n$ il vettore $e^{At}C$ è una soluzione.\newline
+\newline
+Questo teorema permette di concludere che  la funzione $\phi(t) = Ce^{\lambda t}$ è soluzione di $y' = Ay$ se e solo se $\lambda$ è un autovalore di $A$ (possibilmente complesso) e $C$ è un autovettore associato a $\lambda$.
+\subsection{Sistemi non omogenei}
+Consideriamo il problema di cauchy
+\[
+    \begin{cases}
+        y' = A(t) y + b(t)\\
+        y(t_0) = t_0
+    \end{cases}
+\]
+dove $t_0 \in I$ e $y_0 \in \mathbb{R}^n$.\newline
+\newline
+\textbf{Teor.} Siano $A,b \in C^0 (I)$ e sia $t_0 \in I$. Per ogni $y_0 \in \mathbb{R}^n$ il problema di Cauchy ammette un'unica soluzione che è prolungabile a tutto l'intervallo $I$.\newline
+\newline
+Supponiamo ora di aver già trovato l'integrale generale del sistema omogeneo associato e cerchiamo un integrale particolare del sistema completo. Per fare ciò bisogna usare il metodo della \textbf{variazione delle costanti arbitrarie}. Sia dunque $\{ \phi_k\}_{k = 1, \dots, n}$ un sistema fondamentale di soluzioni e sia $W(t)$ la corrispondente matrice wronskiana fondamentale. Allora, l'integrale generale si scrive nella forma $y(t) = W(t) C$ con $C \in \mathbb{R}^n$ vettore arbitratio. Cerchiamo dunque una soluzione particolare del tipo
+\[
+    \phi(t) = W(t) C(t) \;\;\;\;\;t \in I
+\]
+dive, adesso, il vettore $C(t)$ può dipendere da $t$. Imponendo alla funzione vettoriale $\phi$ appena definita di soddisfare $y' = A(t) y + b(t)$ otteniamo 
+\[
+    W'(t) C(t) + W(t) C'(t) = A(t) W(t)C(t) + b(t)
+\]
+e usando una proprietà delle matrici wronskiane deduciamo
+\[
+    W(t) C'(t) = b(t) \Longrightarrow C'(t) = [W(t)]^{-1} b(t) \Longrightarrow C(t) = \int [W(\tau)]^{-1} b(\tau) d \tau
+\]
+Per calcolare l'integrale si fa in quest'ordine: si calcola l'inversa $W(t)^{-1}$, si applica al vettore $b(t)$ in modo da ottenere un altro vettore, e poi si integra componente per componente. Infine l'integrale è indefinito e quindi risulta determinato a meno di una vettore costante arbitrario.\newline
+Inserendo la forma trovata con questo integrale di $C(t)$ nella forma cercata di $phi(t)= W(t) C(t)$ otteniamo
+\[
+    \phi(t) = W(t) \int[W(\tau)]^{-1} b (\tau) d \tau \;\;\;\;\; t \in I
+\]
 \subsection{Sistemi lineari omogenei}
 \[
     y' = A(t) y
@@ -107,4 +349,70 @@ Invece per calcolare l'inversa della matrice $P$ si seguono i seguenti passaggi:
     \item Calcola la trasposta $A^T$ della matrice $A$ (basta scambiare tra loro le righe con le colonne)
     \item sostituire ogni elemento della matrice trasposta col il proprio complemento algebrico (complemento algebrico: preso l'elemento $a_{h,k}$ della matrice, il suo complemento algebrico si calcola come $(-1)^{(h+k)}\cdot C_{h,k}$, dove con $X_{h,k}$ si intende il determinante della matrice ottenuta da quella di partenza eliminando la riga $h$ e la colonna $k$)
     \item Adesso dividi la matrice dei complementi algebrici per det(A) (cioe' dividi ogni termine per det(A)) e ottieni l'inversa della matrice quadrata di partenza
+\end{itemize}
+\subsection{Note sugli esercizi: Esponenziale di matrice (preso da Automatica)}
+Per sistemi a tempo continuo lineari tempo invarianti di ordine maggiore di $1$, nel calcolo dei movimenti dello stato e dell'uscita occorre calcolare l'esponenziale di matrice $e^{At}$.\newline
+\newline
+Vediamo come fare per il caso in cui $A$ sia \textbf{diagonalizzabile} (cioè se il numero di autovalori contati con la loro molteplicità è pari all'ordine della matrice e se la molteplicità geometrica di ciascun autovalore coincide con la relativa molteplicità algebrica; notiamo che una matrice quadrata di ordine n che ammette esattamente n autovalori distinti è sicuramente diagonalizzabile), altrimenti il movimento non è calcolabile con l'esponenziale di matrice e quindi si userà un altro approccio, che incontreremo più avanti.
+\subsubsection{Dimostrazione}
+Definizioni e concetti importanti:
+\begin{itemize}
+    \item Data una matrice $M$, scriviamo $e^M = I + M + \frac{M^2}{2!} + \frac{M^3}{3!}+\dots$.
+    \item Se $M$ è diagonalizzabile, allora esiste una matrice $T^{-1}$ (non singolare) tale che $T^{-1} M T = D$ è una matrice diagonale tale che i suoi elementi sulla diagonale sono gli autovalori $\lambda_i$ di $M$. Di conseguenza $M = T D T^{-1}$.\newline
+    (\textbf{oss.} $T$ è la matrice degli autovettori accostati, $T^{-1}$ si ricava da $T$, e la matrice diagonale $D$ ha lungo la sua diagonale gli autovalori nell'ordine corrispondente agli autovettori di $T$).
+\end{itemize}
+Quindi unendo questi due concetti posso scrivere
+\[
+    e^M = I + M + \frac{M^2}{2!} + \frac{M^3}{3!}+\dots=
+\]
+\[
+    = TT^{-1} + T D T^{-1} + \frac{TD\cancel{T^{-1} T}DT^{-1}}{2!} + \frac{TD \cancel{T^{-1} T}D \cancel{T^{-1} T}DT^{-1}}{3!} + \dots =
+\]
+\[
+    = TT^{-1} + T D T^{-1} + \frac{TD^2T^{-1}}{2!} + \frac{TD^3T^{-1}}{3!} + \dots=
+\]
+[dove $TT^{-1} = I$. Ora raccogliendo ottengo]
+\[
+    = T(I + D + \frac{D^2}{2!} + \frac{D^3}{3!} + \dots)T^{-1} = T e^{D}T^{-1}
+\]
+ma siccome $D = \left[\begin{matrix}
+    \lambda_1 \;\; &0 \;\; &0\\
+    0 & \dots &0\\
+    0 &0 & \lambda_n
+\end{matrix}\right]$, allora elevando $D$ a un generico indice $k$, otteniamo $D^k= \left[\begin{matrix}
+    \lambda_1^k \;\; &0 \;\; &0\\
+    0 & \dots &0\\
+    0 &0 & \lambda_n^k
+\end{matrix}\right]$.\newline
+Di conseguenza $T e^{D}T^{-1} = T \left[\begin{matrix}
+    e^{\lambda_1} \;\; &0 \;\; &0\\
+    0 & \dots &0\\
+    0 &0 & e^{\lambda_n}
+\end{matrix}\right] T^{-1}$.\newline
+Tornando alla nostra matrice $A$ (diagonalizzabile), 
+\[
+    e^{At}= e^{TD_AT^{-1}t} =
+\] 
+[con $D_A = T^{-1} A T$ diagonale (cioè la matrice $A$ diagonalizzata). Porre molta \textbf{attenzione} alla posizione dei $T$ e $T^{-1}$, è un errore molto gettonato all'esame.]
+\[
+    = T(It + D_A t + \frac{(D_at)^2}{2!} + \dots)T^{-1} =  T \left[\begin{matrix}
+        e^{\lambda_1t} \;\; &0 \;\; &0\\
+        0 & \dots &0\\
+        0 &0 & e^{\lambda_nt}
+    \end{matrix}\right]T^{-1}
+\] con $\lambda_i$ autovalore i-esimo di $A$, gli autovalori $e^{\lambda_it}$ prendono il nome di \textbf{modi del sistema}.
+\subsubsection{Metodo pratico}
+I passaggi per calcolare un generico esponenziale di matrice $e^{At}$ da seguire sono:
+\begin{itemize}
+    \item calcolare gli autovalori di $A$;
+    \item calcolcare gli autovettori corrispondenti per ogni autovalore di $A$;
+    \item definire la matrice diagonalizzante $T$ come l'accostamento degli autovettori (e ricordarsi l'ordine) e, una volta determinato $T$, calcolare la sua inversa $T^{-1}$;
+    \item notare che $T^{-1} A T = D =$ matrice con gli autovalori di $A$ lungo la diagonale nell'ordine in cui compaiono gli autovettori in $T$;
+    \item $e^{At}= e^{T D T^{-1} t}$ (notare l'ordine con cui sono scritti $T$ e $T^{-1}$, un errore tipico è confondersi in questo punto)
+    \item $e^{At} = T e^{D t} T^{-1} = T \left[\begin{matrix}
+        e^{\lambda_1 t} & 0 & \dots & 0\\
+        0 & e^{\lambda_2 t} & \dots & \dots\\
+        \dots & \dots & \dots & 0\\
+        \dots & \dots & 0 & e^{\lambda_n t}
+    \end{matrix}\right] T^{-1}$, fare i conti e fine.
 \end{itemize}
