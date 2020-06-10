@@ -241,64 +241,7 @@ Inserendo la forma trovata con questo integrale di $C(t)$ nella forma cercata di
 \[
     \phi(t) = W(t) \int[W(\tau)]^{-1} b (\tau) d \tau \;\;\;\;\; t \in I
 \]
-\subsection{Sistemi lineari omogenei}
-\[
-    y' = A(t) y
-\]
-viene detto sistema omogeneo.\newline
-\[
-    \begin{cases}
-        y' = A(t) y\\
-        y(t_0) = y_0
-    \end{cases}
-\]
-è il problema di cauchy associato.\newline
-\newline
-Se $y_0 = 0$, allora l'unica soluzione è $y(t) = 0$.\newline
-\newline
-Se $\phi_1$ e $\phi_2$ risolvono il sistema omogeneo, anche $\alpha \phi_1 + \beta \phi_2$ per ogni $\alpha, \beta \in \mathbb{R}$ lo risolverà.\newline
-\newline
-Se $A$ è una matrice costante il sistema si dice a coefficienti costanti.\newline
-\newline
-Sia un matrice $M$, vogliamo calcolare $e^{M}$. \newline
-Se $M$ è diagonale si ottiene facilmente:
-\[
-    M = \left( \begin{matrix}
-        \lambda_1  & 0 &\dots & 0\\
-        0 & \lambda_2 &\dots &0\\
-        0 & 0 &\dots &0\\
-        0 & 0 &\dots &\lambda_n
-    \end{matrix} \right) \Rightarrow e^M = \left( \begin{matrix}
-        e^{\lambda_1}  & 0 &\dots & 0\\
-        0 & e^{\lambda_2} &\dots &0\\
-        0 & 0 &\dots &0\\
-        0 & 0 &\dots & e^{\lambda_n}
-    \end{matrix} \right)
-\]
-Se $M$ non è diagonale, ma è diagonalizzabile, e cioè esiste una matrice non singolare $S$ tale che $\Lambda = S^{-1}MS$ sia diagonale, allora
-\[
-    M = S\Lambda S^{-1} \Rightarrow  M^k = S\Lambda^kS^{-1} \Rightarrow e^M = S e^{\Lambda}S^{-1}
-\]
-con $e^{\Lambda}$ che si calcola come abbiamo visto per le matrici diagonali.\newline
-\newline
-Una matrice quadrata è diagonalizzabile se e solo se tutti i suoi autovalori sono regolari. \newline
-\newline
-Precisiamo che vengono considerati anche autovalori complessi che, per una matrice a coefficienti reali, possono esserci se e solo se c'è anche il loro coniugato. In tal caso, gli esponenziali dipendenti da tempo vanno interpretati con la formula di Eulero e generano funzioni trigonometriche.\newline
-\newline
-Abbiamo dunque visto come si trova l'esponenziale di una matrice diagonalizzabile costante. Volendo trovare l'esponenziale della matrice $At$, facciamo un paio di osservazioni elementari:
-\begin{itemize}
-    \item se A è diagonalizzabile, lo è anche $At$ e si può usare la stessa mtrice di passaggio $S$ per diagonalizzarla
-    \item gli autovali di $At$ sono uguali agli autovalori di $A$ moltiplicati per $t$
-\end{itemize}
-Da queste osservazioni possiamo dedurre che
-\[
-    e^A  S e^{\Lambda}S^{-1} \Rightarrow  e^{At} = S e^{\Lambda t} S^{-1}
-\]
-\textbf{teor.} Le colonne della matrice $e^{At}$ formano un sistema fondamentale di soluzioni di $y' = Ay$ e cioè, per ogni $C \in \mathbb{R}^n$ il vettore $e^{At} C$è una soluzione di di $y'=Ay$\newline
-\newline
-La fuznione $\phi(t) = C e^{\lambda t} $ è soluzione di $y'=At$ se e solo se $\lambda$ è un autovalore di $A$ (possibilmente complesso) e $C$ è un autovettore associato a $\lambda$.\newline
-\rule{\textwidth}{0,4pt}
-\subsection{Diagonalizzazione di una matrice}
+\subsection{Note sugli esercizi: diagonalizzazione di una matrice}
 Una matrice $A$ è diagonalizzabile se
 \begin{itemize}
     \item Il numero degli autovalori di $A$ contati con la loro molteplicità è uguale all'ordine della matrice

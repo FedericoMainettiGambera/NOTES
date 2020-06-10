@@ -168,8 +168,7 @@
 \contentsline {subsection}{\numberline {10.2}Sistemi lineari omogenei}{82}{subsection.10.2}%
 \contentsline {subsection}{\numberline {10.3}Sistemi omogenei a coefficienti costanti}{83}{subsection.10.3}%
 \contentsline {subsection}{\numberline {10.4}Sistemi non omogenei}{84}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Sistemi lineari omogenei}{85}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}Diagonalizzazione di una matrice}{86}{subsection.10.6}%
-\contentsline {subsection}{\numberline {10.7}Note sugli esercizi: Esponenziale di matrice (preso da Automatica)}{87}{subsection.10.7}%
-\contentsline {subsubsection}{\numberline {10.7.1}Dimostrazione}{87}{subsubsection.10.7.1}%
-\contentsline {subsubsection}{\numberline {10.7.2}Metodo pratico}{88}{subsubsection.10.7.2}%
+\contentsline {subsection}{\numberline {10.5}Note sugli esercizi: diagonalizzazione di una matrice}{85}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}Note sugli esercizi: Esponenziale di matrice (preso da Automatica)}{86}{subsection.10.6}%
+\contentsline {subsubsection}{\numberline {10.6.1}Dimostrazione}{86}{subsubsection.10.6.1}%
+\contentsline {subsubsection}{\numberline {10.6.2}Metodo pratico}{87}{subsubsection.10.6.2}%

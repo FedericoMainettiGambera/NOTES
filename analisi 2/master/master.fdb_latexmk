@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex master.idx"] 1591805740 "master.idx" "master.ind" "master" 1591806003
-  "master.idx" 1591805998 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1591805740 "master.idx" "master.ind" "master" 1591806085
+  "master.idx" 1591806079 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ilg"
   "master.ind"
-["pdflatex"] 1591805996 "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" "master" 1591806003
+["pdflatex"] 1591806077 "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf" "master" 1591806085
   "../../preamble/preamble.tex" 1587603066 707 ea9409653390c911ff58e23c44f6605e ""
   "../0-ripasso/asintotici.PNG" 1589131226 81145 cd68750df7e46980af23b001d340d336 ""
   "../0-ripasso/derivate1.PNG" 1589131226 40267 a3e54c2c8c0abdc16f892ff59f355518 ""
@@ -21,12 +21,12 @@
   "../6-integrali doppi e tripli (analisi II)/img2.PNG" 1590767426 48196 918ca88c25f4fa5767516574e96bcb48 ""
   "../6-integrali doppi e tripli (analisi II)/integrali doppi e tripli (analisi II).tex" 1591358179 19333 2bdb4f561fb44e95b24b853e0a46fe94 ""
   "../8-equazioni differenziali/equazioni differenziali.tex" 1591797531 39292 36e7053ab05ffe0acf9a37cf1c8ed1b3 ""
-  "../9-sistemi differenziali lineari/sistemi differenziali lineari.tex" 1591805974 24934 a74ac59285d0554e9485da785b05d376 ""
+  "../9-sistemi differenziali lineari/sistemi differenziali lineari.tex" 1591806070 22090 6f1a83b1313edb7553481946ea3efa0d ""
   "../img/eqdiff2(1).PNG" 1584032199 338207 baa06ca27852220832d359b977f3ef1c ""
   "../img/eqdiff2(1).png" 1584032199 338207 baa06ca27852220832d359b977f3ef1c ""
   "../img/eqdiff2.PNG" 1584032199 300959 9e520b0f43eb5104df2c0d17c5a82ab6 ""
   "../img/eqdiff2.png" 1584032199 300959 9e520b0f43eb5104df2c0d17c5a82ab6 ""
-  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.aux" 1591806002 27104 ba5a11aaf9f7e57aa398325ebeb32338 ""
+  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.aux" 1591806083 26991 07fcfded3e575ee04df23ba04b649391 ""
   "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.tex" 1591805994 1249 95128e40652eb35896752b3f28913b11 ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1584035588 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1584038501 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -208,17 +208,17 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1584048551 4850785 be240f94697c21bedf0eb948641e15bb ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1584049042 8274593 951864db8bcab083c09dd09dcef78fa9 ""
   "c:/texlive/2019/texmf.cnf" 1584048406 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1591806002 27104 ba5a11aaf9f7e57aa398325ebeb32338 "pdflatex"
+  "master.aux" 1591806083 26991 07fcfded3e575ee04df23ba04b649391 "pdflatex"
   "master.ind" 1591805741 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1591806002 16141 cf0b5a458327775b5c84285586d7b6da "pdflatex"
+  "master.out" 1591806083 16085 e98879bc845edb4ae0339ba0e671e1c7 "pdflatex"
   "master.tex" 1591805994 1249 95128e40652eb35896752b3f28913b11 ""
-  "master.toc" 1591806002 19277 534a98144fe373ab996e8bf445048f40 "pdflatex"
+  "master.toc" 1591806083 19205 e126f55fbee896c3770edc82c4e8c9fc "pdflatex"
   (generated)
+  "master.out"
   "master.aux"
+  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf"
+  "master.toc"
   "master.pdf"
   "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.log"
-  "master.out"
-  "master.idx"
   "master.log"
-  "master.toc"
-  "c:/Users/enric/Desktop/NOTES/analisi 2/master/master.pdf"
+  "master.idx"
