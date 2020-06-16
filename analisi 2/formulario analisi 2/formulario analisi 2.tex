@@ -1,0 +1,527 @@
+\author{Federico Mainetti Gambera}
+\documentclass[fontsize=8pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol} 
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+\usepackage{cancel}
+
+\usepackage{lipsum} %delete me
+
+\renewcommand{\familydefault}{\sfdefault}
+\newenvironment{rcases}
+  {\left.\begin{aligned}}
+  {\end{aligned}\right\rbrace}
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{../images/}{#1.pdf_tex}
+}
+
+\geometry{
+    a4paper,
+    lmargin=0.2cm,
+    rmargin=0.2cm,
+    tmargin=0.2cm,
+    bmargin=0.2cm,
+    landscape
+}
+
+\allowdisplaybreaks
+
+\begin{document}
+\pagestyle{empty}
+\fontsize{6pt}{8pt}\selectfont
+
+\begin{multicols*}{4}
+
+%---------------------------------------------------------------
+
+\subsubsection*{Trigonometria}
+$sin^2(x) + cos^2(x) = 1$\newline
+$sin(2x) = 2 sin(x) cos(x)$\newline
+$sin(x)cos(x) = \frac{1}{2}sin(2x)$\newline
+$cos(2x) = cos^2(x) - sin^2(x)$\newline
+$sin^2(x) = \frac{1}{2}(1-cos(2x))$\newline
+$cos^2(x) = \frac{1}{2} (1+cos(2x))$\newline
+$sin(cos^{-1}(x)) = cos(sin^{-1}(x)) = \sqrt{1-x^2}$\newline
+$Ch(x) = (e^x + e^{-x})/2$ e $Sh(x) = (e^{x}-e^{-x})/2$\newline
+$Ch^2(x) - Sh^2(x) = 1$\newline
+$Sh(2x) = 2 Sh(x) Ch(x)$\newline
+$Ch(2x) = Sh(x)^2 + Ch^2(x)$\newline
+$Sh(SettCh(x)) = \sqrt{x^2 -1}$\newline
+$Ch(SettSh(x)) = \sqrt{x^2 +1}$\newline
+$sin(a+b) = sin(a)cos(b) + sin(b)cos(a)$\newline
+$sin(a-b) = sin(a) cos(b) - sin(b) cos(a)$\newline
+$cos(a+b) = cos(a)cos(b) - sin(a) sin(b)$\newline
+$cos(a-b) = cos(a)cos(b) + sin(a) sin(b)$
+\begin{tabular}{ | c c c c | }
+    \hline
+    $\theta$ & $sin(\theta)$ & $cos(\theta)$ & $tan(\theta)$ \\
+    $0$     & $0$          & $1$ & $0$ \\
+    $\pi/6$ & $1/2$        & $\sqrt{3}/2$ & $\sqrt{3}/3$ \\
+    $\pi/4$ & $\sqrt{2}/2$ & $\sqrt{2}/2$ & $1$ \\
+    $\pi/3$ & $\sqrt{3}/2$ & $1/2$ & $\sqrt{3}$ \\
+    $\pi/2$ & $1$          & $0$ & $\infty$ \\
+    $\pi$   & $0$          & $-1$ & $0$ \\
+    \hline
+\end{tabular}
+\subsubsection*{Asintotici}
+\begin{tabular}{ c c }
+    $sin(x) \sim x$ & $e^{x} -1 \sim x$\\
+    $1-cos(x) \sim \frac{1}{2}x^2$ & $arctan(x) \sim x$ \\
+    $ln(1+x) \sim x$ & $a^{x} -1 \sim ln(a) x$\\
+    $tan(x) \sim x$ & $Sh(x) \sim x$ \\
+    $Th(x) \sim x$ & $log_a (1+x) \sim \frac{f}{ln(a)}$\\
+    $(1+x)^c -1 \sim cx$ & $arcsin(x) \sim x$\\
+    $Ch(x) -1 \sim  \frac{x^2}{2}$
+\end{tabular}
+\subsubsection*{Derivate}
+$tan(x) \rightarrow \frac{1}{cos^2(x)}$\newline
+$cotan(x) \rightarrow  - \frac{1}{sin^2(x)}$\newline
+$arcsin(x) \rightarrow  \frac{1}{\sqrt{1-x^2}}$\newline
+$arccos(x) \rightarrow - \frac{1}{\sqrt{1-x^2}}$\newline
+$arctan(x) \rightarrow  \frac{1}{1+x^2}$\newline
+$arccot(x) \rightarrow - \frac{1}{1+x^2}$
+\subsubsection*{Integrali (A1)}
+\textbf{Integrali fondamentali}\newline
+$
+\int tan(x) dx = -log|cos(x)| +c
+$\newline
+$
+\int log(x) dx = x log(x) -x + c
+$\newline
+$
+\int arctg (x) dx = x arctg(x) -\frac{1}{2}log(1+x^2) + c 
+$\newline
+$
+\int cotg(x) dx = log|sin(x)| +c
+$\newline
+$
+\int (1+tg^2(x))dx = \int \frac{1}{cos^2(x)} dx = tg(x) +c
+$\newline
+$
+\int (1+ctg^2(x))dx = \int \frac{1}{sin^2(x)} dx = -cotg(x) +c
+$\newline
+$
+\int Th(x) dx = log(Ch(x))+c
+$\newline
+$
+\int Coth(x) dx = log|Sh(x)| +c
+$\newline
+$
+\int a^x dx = \frac{a^x}{ln(a)}+c
+$\newline
+\textbf{Integrali notevoli}
+$
+\int sin^2(x) dx = \frac{1}{2}(x-sin(x)cos(x)) +c
+$\newline
+$
+\int cos^2(x) dx = \frac{1}{2}(x+sin(x)cos(x)) +c
+$\newline
+$
+\int tan^2(x) dx = tan(x) -x +c
+$\newline
+$
+\int cotan^2(x) dx = -x -cot(x) +c 
+$\newline
+$
+\int Sh^2(x) dx = \frac{1}{4}(Sh(2x)-2x) +c
+$\newline
+$
+\int Ch^2(x) dx = \frac{1}{2}(x + Sh(x)Ch(x)) +c
+$\newline
+$
+\int Th^2(x) dx = x - Th(x) +c 
+$\newline
+$
+\int Coth^2(x) dx = x - Coth(x) +c 
+$\newline
+$
+\int \frac{1}{sin^2(x)} dx = \int 1 + tan^2(x) dx = -cotan(x) + c
+$\newline
+$
+\int \frac{1}{cos^2(x)} dx = \int 1 + cotan^2(x) dx = tan(x) + c
+$\newline
+$
+\int \frac{1}{tan^2 (x)} dx = \int cotan^2(x) dx 
+$\newline
+$
+\int \frac{1}{cotan^2(x) }dx = \int tan^2(x) dx 
+$\newline
+$
+\int \frac{1}{Ch^2(x)} dx = \int (1-Th^2(x))dx= Th(x)+c
+$\newline
+$
+\int \frac{1}{Sh^2(x)} = \int (-1 Coth^2(x)) dx = -Coth(x) +c
+$\newline
+$
+\int \frac{1}{1+x^2} dx = arctg(x) +c
+$\newline
+$
+\int \frac{1}{1-x^2} dx = \frac{1}{2}log\left|\frac{1+x}{1-x}\right|+c
+$\newline
+$
+\int \frac{1}{\sqrt{1+x^2}} dx = arcSh(x) +c = log(x + \sqrt{1+x^2}) +c
+$\newline
+$
+\int \frac{1}{\sqrt{1-x^2}} dx = arcsin(x) +c
+$\newline
+$
+\int \frac{1}{\sqrt{-1 + x^2}} dx = log|x+ \sqrt{x^2-1}| +c
+$\newline
+$
+\int \frac{1}{\sqrt{\pm a^2 + x^2}} dx = log|x + \sqrt{x^2 \pm a^2}|+c
+$\newline
+$
+\int \sqrt{x^2 \pm a^2} dx = \frac{x}{2} \sqrt{x^2 \pm a^2} \pm \frac{a^2}{2} log(x + \sqrt{x^2 \pm a^2}) +c
+$\newline
+$
+\int \sqrt{a^2 - x^2}dx = \frac{1}{2}(a^2arcsin(\frac{x}{a}) + x \sqrt{a^2 - x^2} )+c
+$\newline
+$
+\int e^{ax}cos(bx) dx = Re (\int e^{a+ib}x dx ) 
+$\newline
+$
+\int e^{ax}sin(bx) dx = Im (\int e^{a+ib}x dx ) 
+$\newline
+$
+\int e^{(a+ib)x} dx = \frac{1}{a+ib}e^{(a+ib)x} = \frac{e^{ax}}{a^2+b^2} (a-ib)(cos(bx) + i sin(bx))
+$\newline
+$
+\int \frac{f'(x)}{1+f^2(x)} dx = arctg(f(x))+c
+$\newline
+\textbf{Integrali generalizzati}\newline
+$\lim_{x\rightarrow b^-} f(x) = \pm \infty \Rightarrow \int_{a}^{b}f(x) dx = \lim_{\epsilon\rightarrow 0^+} \int_{a}^{b-\epsilon} f(x) dx$\newline
+$\int_{- \infty}^{+\infty} f(x) dx = \int_{-\infty}^{c} f(x) dx + \int_{c}^{+\infty} f(x) dx$\newline
+Per essere integrabile deve avere limite finito.
+\subsubsection*{Serie (A1)}
+Serie geometrica:\newline
+$
+    \sum_{n=0}^{\infty} q^n = \begin{cases}
+        \frac{1}{1-q} \;-1 <q < 1\\
+        + \infty \; q\geq 1\\
+        \text{irregolare}\;q \leq -1
+    \end{cases}
+$\newline
+Serie armonica:\newline
+$
+    \sum_{n=1}^{\infty} \frac{1}{n} \rightarrow + \infty
+$\newline
+Serie armonica generalizzata:\newline
+$
+    \sum_{n=1}^{\infty} \frac{1}{n^{\alpha}} = \begin{cases}
+        \text{diverge}\; \alpha\leq 1\\
+        \text{converge}\; \alpha> 1
+    \end{cases}
+$\newline
+Serie di Mengoli $\sum_{n=1}^{\infty} \frac{1}{n(n+1)} \rightarrow  1$\newline
+Numero $e$: $\lim_{n\rightarrow \inf}(1 + \frac{1}{n})^n = e$\newline
+Criterio della radice e del rapporto: se esiste $\lim_{n\rightarrow \infty} \sqrt[n]{a_n} = l$ o $\lim_{n\rightarrow \infty} \frac{a_{n+1}}{a_n} = l$, allora se $l> 1$ la serie diverge, se $l< 1$ la serie converge, se $l=1$ nulla si può concludere.
+\subsubsection*{Serie (A2)}
+\textbf{Serie di potenza}:\newline
+Criterio del rapporto e della radice: il raggio di convergenza vale $R = \lim_{n\rightarrow \infty} \left| \frac{a_n}{a_{n+1}} \right|$, oppure $R = \lim_{n\rightarrow \infty} \frac{1}{\sqrt[n]{|a_n|}}$. La serie converge per $|x-x_0| < R$, non converge per $|x-x_0| > R$ e nulla si può dire per $x = \pm R$.\newline
+Integrazione: se la serie converge uniformemente allora si può far uscire la sommatoria dall'integrale e fare l'integrale solo di $x^n$.\newline
+Convergenza uniforme:\newline
+\begin{tabular} {c c}
+    puntuale & uniforme ($\epsilon, \delta > 0$)\\
+    $[a,b]$ & $[a,b]$\\
+    $[a,b)$ & $[a,b - \epsilon]$\\
+    $(a,b]$ & $[ a + \epsilon,b]$\\
+    $(a,b)$ & $[a + \delta, b - \epsilon]$\\
+    un punto & non ha senso\\
+    $\mathbb{R}$ & $[\alpha, \beta]$,$- \infty < \alpha < \beta < \infty$
+\end{tabular}
+\newline
+\textbf{Serie ti Taylor / MacLaurin}:\newline
+\textbf{def.} $f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x-x_0)^n$\newline
+$
+e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} \; (R= \infty)
+$\newline
+$
+Ch(x)= \sum_{n=0}^{\infty} \frac{x^{2n}}{(2n)!}\; (R= \infty)
+$\newline
+$
+Sh(x) = \sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!} \; (R= \infty)
+$\newline
+$
+sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} x^{2n+1}\;(R= \infty)
+$\newline
+$
+cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!}x^{2n}\; (R= \infty)
+$\newline
+$
+\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n\; (R= 1)
+$\newline
+$
+log(1+x) = \sum_{n=1}^{\infty} (-1)^{n+1} \frac{x^n}{n}\;\begin{cases}
+    R=1\\
+    x=1\; \text{conv}\\
+    x=-1\;\text{div}
+\end{cases}
+$\newline
+$
+\frac{1}{1+x^2} = \sum_{n=0}^{\infty} -1^n \cdot x^{2n}\;(R=1)
+$\newline
+$
+arctan(x) = \sum_{n=0}^{\infty}(-1)^n \frac{x^{2n+1}}{2n+1}\;(R=1)
+$\newline
+$
+(1+x)^\alpha = \sum_{n=0}^{\infty} \binom{\alpha}{n}x^n\; (R=1)
+$\newline
+\textbf{Serie di Fourier}:\newline
+$f(x) \sim \frac{a_0}{2} + \sum_{n=1}^{\infty}a_ncos(nx) + b_nsin(nx)$\newline
+$a_n = \frac{1}{\pi} \int_I f(x) cos(nx) dx$\newline
+$b_n = \frac{1}{\pi} \int_I f(x) sin(nx) dx$\newline
+$a_0 = \frac{1}{\pi} \int_I f(x) dx$\newline
+dove $I$ è un intervallo di ampiezza $2\pi$(tipicamente da $-\pi$ a $\pi$). \newline
+Regolare a tratti: se si può scomporre in un numero finito di sottointervalli su ciascuno dei quali $f$ è continua e derivabile, e inoltre, agli estremi, esistono finiti i limiti sia di $f$ sia di $f'$. In poche parole se $f$ è $C^1$ ma anche se ci sono punti angolosi o discontinuità a salto, purchè $f$ e $f'$ abbiano limiti finiti (no asintoti verticali o pt a tangenza verticale).\newline
+Serie di Fourier per funzioni con periodo $T$:\newline
+$f(x) \sim \frac{a_0}{2} + \sum_{n=1}^{\infty} a_n cos\left( \frac{2\pi n}{T}x \right) + b_n sin\left( \frac{2\pi n}{T}x \right)$
+$a_n = \frac{2}{T} \int_{0}^{T} f(x) cos(\frac{2\pi n}{T}x)dx$\newline
+$b_n = \frac{2}{T} \int_{0}^{T} f(x) sin(\frac{2\pi n}{T}x)dx$\newline
+Funzioni pari e dispari: se $f$ è pari allora $b_n = 0$ e $a_n$ è due volte l'integrale da $0$ a $\pi$; se $f$ è dispari, allora $a_n = 0$ e $b_n$ è due volte l'integrale da $0$ a $\pi$.\newline
+Criteri delle serie di Fourier:\newline
+(1) Se $f$ è limitata e monotona a tratti su un periodo, oppure, se il quadrato di $f$ è integrabile su un periodo, anche in senso generalizzato (vale meno di $\infty$).\newline
+(2) se $\sum_{n=1}^{\infty} (|a_n| + |b_n|) < \infty$, allora $\sum F \rightarrow  f$ totalmente e uniformemente.\newline
+(3) Se $f$ non è continua, $\sum F$ non può convergere uniformemente.\newline
+(4) Se $\int_{0}^{2\pi} f^2 < \infty$ e cioè $\sum_{n=0}^{\infty}a_n^2 + b_n^2 < \infty \leftrightarrow \sum F \rightarrow f$ in media quadratica.\newline
+(5) Se $a_n, b_n \downarrow 0$ allora c'è convergenza puntuale su $(0,2\pi)$.\newline
+(6) Se $f$ è regolare a tratti, allora $\sum F \rightarrow (f(x)^+ + f(x)^-)/2$ puntualmente su $[0,2\pi]$.
+\textbf{Forma esponenziale complessa}:\newline
+$f_n = \frac{a_n - i b_n}{2} = \frac{1}{2\pi} \int_{0}^{2\pi} f(x) e^{inx}$\newline
+$f_{-n} = \frac{a_n + i b_n}{2} = \frac{1}{2\pi} \int_{0}^{2\pi} f(x) e^{inx}$\newline
+$a_n = f_n + f_{-n}$\newline
+$b_n = i(f_n)$\newline
+$f(x) = \text{Fourier} = \sum_{n=-\infty}^{\infty} f_n e^{inx}$
+\subsubsection*{Funzioni $\mathbb{R} \rightarrow \mathbb{R}^n$}
+\textbf{Proprietà}:\newline
+Continua: se le componenti sono continue.\newline
+Chiusa: se gli estremi hanno lo stesso valore.\newline
+Asintoti: se i limiti all'infinito hanno un valore finito per una delle due componenti.\newline
+Semplice: Si verifica per logica, spesso si guarda se una delle componenti è strettamente monotona o per le funzioni trigonometriche si cerca di ragionare sulla loro periodicità.\newline
+Regolare: se è $C^1$ e $|r'(t)|\neq 0$ in tutti i punti eccetto gli estremi.\newline
+Piana: [due metodi] (1) versore binormale costante, il versore binormale si calcola normalizzando il prodotto vettoriale $r'(t)\text{x}r''(t)$; (2) sostituire le componenti di $r(t)$ in $ax + by + cz + d = 0$ e vedere se ci sono valori di $a,b,c,d$ che soddisfano l'equazione.
+\textbf{Lunghezza}:\newline
+Modulo della derivata: $r(t) = (x(t),y(t),z(t))$, allora $|r'(t)| = \sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2}$, per funzioni $|r'(t)| = \sqrt{1 + f'(t)^2}$, per forme polari $|r'(t)| = \sqrt{\rho(\theta)^2 + \rho'(\theta)^2}$.\newline
+Versore tangente: per le curve regolari è ben definito $T = r'(t) / |r'(t)|$\newline
+Lunghezza: se $r$ è regolare allora è rettificabile e la sua lunghezza vale $l(\gamma) = \int_{a}^{b} |r'(t)| dt$.\newline
+Parametro arco: si calcola $s(t) = \int_{t_0}^{t} |r'(t)| dt$ e si esprime il risultato in funzione di $s$. Inoltre $ds = |r'(t)| dt$.\newline
+\textbf{Integrali di prima specie}:\newline
+$\int_\gamma f ds = \int_{a}^{b} f(r(t)) |r'(t)| dt$, se $f=1$ ritroviamo la lunghezza.\newline
+\textbf{Baricentro di una linea}:\newline
+$\delta (x,y,z) =$ densità lineare.\newline
+$m = \int_\gamma \delta ds$.\newline
+$x_B = \frac{1}{m} \int_\gamma x \delta ds = \frac{1}{m} \int_{a}^{b} x(t) \delta(r(t))|r'(t)| dt$\newline
+\textbf{Momento d'inerzia}:\newline
+Cercare di ridefinire la curva in modo che l'asse di riferimento sia uno degli assi cartesiani.\newline
+$\delta(x,y,z) =$ densità lineare.\newline
+$d(x,y,z) =$ distnaza.\newline
+$I = \int_\gamma d^2 \delta ds = \int_{a}^{b} d^2(r(t)) \delta(r(t)) |r'(t)| dt$.
+\subsubsection*{Funzioni $\mathbb{R}^n \rightarrow  \mathbb{R}$}
+\textbf{Limiti}:\newline
+Si semplifica la funzione, si passa in coordiante polari e si semplifica ulterioremente e si usano maggiorazioni, solitamente si cerca di suddividere la fuznione in tante somme di funzioni più semplici.
+Maggiorazioni tipiche:\newline
+$|a+b| \leq |a| + |b|$\newline
+$\frac{a}{b+c} \leq \frac{a}{b}$\newline
+$|cos(\theta)| \leq 1$ e $|sin(\theta)| \leq 1$\newline
+\textbf{Continuità}:\newline
+se $\lim_{(x,y)\rightarrow (x_0, y_0)} f(x,y) = f(x_0,y_0)$, spesso è sufficiente deducibile dal fatto che sia costituita da funzioni elementari continue.\newline
+\textbf{Derivabilità}:\newline
+Derivabile se esistono finiti\newline
+$f_x(x_0,y_0) = \lim_{x\rightarrow x_0} \frac{f(x,y_0) - f(x0,y_0)}{x-x_0}$\newline
+$f_y(x_0,y_0) = \lim_{y\rightarrow y_0} \frac{f(x_0,y) - f(x_0,y_0)}{y-y_0}$\newline
+Gradiente: vettore delle derivate parziali $\nabla f(x,y)$.\newline
+Calocolo delle derivate in tutti i punti in cui esistono: si calcolano le derivate parziali generiche e per i punti esclusi dal dominio si calcolano le derivate secondo la definizione.
+\textbf{Piano tangente}:\newline
+$z = f(x_0,y_0) + f_x(x_0,y_0)(x-x_0) + f_y (x_0,y_0)(y-y_0)$\newline
+\textbf{Differenziaiblità}:\newline
+$f(x_0 + h, y_0 + k) - f(x_0,y_0) = f_x(x_0,y_0) (x-x_0) + f_y(x_0,y_0)(y-y_0) + o(\sqrt{h^2 + k^2})$\newline
+cioè se \newline
+$\lim_{(h,k)\rightarrow (0,0)} [ f(x_0 + h, y_0 +k) - f(x_0,y_0) - h f_x(x_0,y_0) - k f_y(x_0,y_0) ] / \sqrt{h^2+k^2} = 0$\newline
+Differenziale: $df(x_0,y_0) = f_x(x_0,y_0) dx + f_y(x_0,,y_0)dy$\newline
+Linearizzazione: approssimazione di $f$ con il suo differenziale.\newline
+Proprietà: $f \in C^1 \rightarrow $differenziabile $\rightarrow $ continua, derivabile, con derivate direzionali, vale formula del gradiente.\newline
+\textbf{Derivate direzionali}:\newline
+Sia il versore (N.B. versore) $v_\theta = (cos(\theta), sin(\theta))$, allora $f_\theta (x_0, y_0) = \lim_{t\rightarrow 0} [ f(x_0 + t cos(\theta), y_0 + t sin(\theta)) - f(x_0,y_0)]/t$, per calcolarlo prima si trova la funzione $g(t) = f(x_0 + t cos(\theta), y_0 + t sin(\theta))$ e la si semplifica per $t \rightarrow 0$ (con asintotici), poi si studia $g'(0)$.\newline
+Formula del gradiente: sia il versore (N.B. versore) $v_\theta = (cos(\theta), sin(\theta))$, allora $f_\theta(x_0,y_0) = f_x (x_0,y_0) cos(\theta) + f_y(x_0, y_0) sin(\theta)$, la formula del gradiente non vale se la generica derivata direzionale non è combinazione lineare di $cos(\theta)$, $sin(\theta)$.\newline
+$\nabla f(x_0,y_0)$ è la direzione di massima crescita, l'opposto è di minima crescita, la direzione ortogonale è di pendenza nulla.\newline
+\textbf{Formula di Taylor (Peano)}:\newline
+Per $f \in C^2$ e $(x,y) \rightarrow  (x_0, y_0)$, allora $f(x,y) = f(x_0,y_0) + \nabla f(x_0,y_0) \cdot \binom{x-x_0}{y-y_0} + \frac{1}{2} H_f(x_0,y_0) \binom{x-x_0}{y-y_0} \cdot \binom{x-x_0}{y-y_0} + o[(x-x_0)^2 + (y-y_0)^2]$\newline
+Per esteso: $f(x,y) = f(x_0, y_0) + f_x(x_0,y_0) (x-x_0) + f_y(x_0,y_0) (y-y_0) + \frac{1}{2} ( f_{xx}(x_0,y_0) (x-x_0)^2$ \newline $ + 2f_{xy}(x_0,y_0) (x-x_0) (y-y_0) + f_{yy}(x_0,y_0) (y-y_0)^2) +  o[(x-x_0)^2 + (y-y_0)^2]$\newline
+\textbf{Posizione di superficie e piano}:\newline
+Se gli autovalori della matrice $H_f(x_0,y_0)$ sono (1) positivi: superficie sopra piano ($det(H_f) > 0$ e $f_{xx}>0$); (2) negativi: superficie sotto piano ($det(H_f) > 0$ e $f_{xx}<0$); (3) uno positivo e uno negativo: superficie e piano si intersecano ($det(H_f) <0$); (4) autovalore nullo: nulla si può dire ($det(H_f) = 0$).\newline
+Caso in tre o più variabili: o si studiano direttamente gli autovalori o si usa Cartesio sul polinomio caratteristico (cambio di segno è radice positiva, permanenza di segno è radice negativa).\newline
+\textbf{Ottimizzazione libera}:\newline
+Massimi e minimi: (1) si isolano i punti non regolari (non derivabili una o due volte), (2) si trovano i punti critici guardando dove si annulla il gradiente, (3) si calcola l'hessiano per tutti i punti critici, (4) si analizzano i punti particolari studiando il segno di $f(x,y) - f(x_0, y_0)$.\newline
+Massimi e minimi per domini chiusi e limitati: per Weierstrass c'è massimo e minimo assoluti, (1) si studiano i punti come prima e si escludono quelli esterni al dominio, (2) si studia il comportamento della frontiera esprimendola come $y = g(x)$ o $x = g(y)$ e sostituendo nella funzione $f(x,y)$.\newline
+Massimi e minimi per domini illimitati: se si trova una direzione lungo la quale $f$ tende a $\pm \infty$, allora non c'è massimo (o minimo) assoluto.\newline
+\textbf{Ottimizzazione vincolata}:\newline
+Due strategie: \newline
+(1) se il vincolo è esprimibile con una delle due variabili in funzione dell'altra, allora si sostituisce e si studia la funzione ottenuta; \newline
+(2) Moltiplicatori di Lagrange: si pone il vincolo nella forma $g(x,y) = 0$ e si scrive la lagrangiana $L(x,y,\lambda) = f(x,y) - \lambda g(x,y)$ e si trovano i punti in cui il gradiente si annulla. Per capire i punti di massimo o minimo è sufficiente calcolare i valori della funzione di partenza per quei valori e prendere il più grande e il più piccolo. Si può usare Weierstrass se il vincolo è chiuso e limitato (allora esiste per forma un massimo e un minimo). Inoltre se il gradiente della funzione si annulla siamo in presenza di un vincolo libero e lo aggiungiamo ai candidati. Se invece il gradiente del vincolo si annulla il metodo di Lagrange non funziona e dovremo valutare a parte questi punti.
+\subsubsection*{Iintegrali doppi e tripli}
+\textbf{Coordinate polari}:\newline
+$x = \rho cos(\theta)$, $y = \rho sin(\theta)$, $\rho = \sqrt{x^2 + y^2}$, $dxdy \rightarrow  \rho \cdot d \rho d \theta$\newline
+\textbf{Coordinate cilindriche}:\newline
+$x = \rho cos(\theta)$, $y = \rho sin(\theta)$, $z = z$, $dxdydz \rightarrow \rho \cdot d \rho d \theta dz$\newline
+\textbf{Coordinate sferiche}:\newline
+$x = \rho sin(\phi) cos(\theta)$, $y = \rho sin(\phi) sin(\theta)$, $z = \rho cos(\phi)$ con $\rho \in [0,\infty)$, $\phi \in[0,\pi]$, $\theta \in [0,2\pi]$ e $\phi$ parte dall'asse positivo delle $z$ e scende verso l'asse positivo delle $x$, $dxdydz \rightarrow \rho^2 sin(\phi) d \phi d \rho d \theta$. Altrimenti, se si prende $\phi \in [-\pi/2, \pi/2]$ diventa $x = \rho cos(\phi) cos( \theta)$, $y = \rho cos(\phi) sin(\theta)$, $z = \rho sin(\phi)$, $dxdydz \rightarrow \rho^2 cos(\phi) d \phi d \rho d \theta$\newline
+\textbf{Simmetrie}:\newline
+$f$ dispari rispetto a $x$ (se $f(-x,y) = -f(x,y)$) e superficie simmetrica rispetto a $y$, allora vale $0$.\newline
+$f$ pari rispetto a $x$ (se $f(-x,y) = f(x,y)$) e superficie simmetrica rispetto a $y$, allora due volte metà integrale\newline
+$f$ dispari rispetto a $y$ (se $f(x,-y) = -f(x,y)$) e superficie simmetrica rispetto a $x$, allora vale $0$.\newline
+$f$ pari rispetto a $y$ (se $f(x,-y) = f(x,y)$) e superficie simmetrica rispetto a $x$, allora due volte metà integrale.\newline
+\textbf{Calcolo di volumi}:\newline
+Sia $T$ dominio di due dimensioni (una superficie) e $f(x,y) \geq 0$ (ricordarsi di separare gli integrali se si cambia di segno), l'integrale doppio di $f$ esteso a $T$ rappresenta il volume fra il piano $xy$ e la superficie della funzione $f$.\newline
+Se si pone $f = 1$ si ritrova l'are a di $T$.\newline
+Dato un dominio $T$ in tre dimensioni (un solido), il suo volume si può calcolare come l'integrale triplo di $f = 1$ su $T$.\newline
+\textbf{Baricentro di una superficie}: \newline
+$\delta(x,y) = $densità superficiale.\newline
+$T =$ regione piana.\newline
+$m = \int \int_T \delta(x,y) dx dy$\newline
+$x_B = \frac{1}{M} \int \int_T x \delta(x,y) dx dy$\newline
+\textbf{Momento d'inerzia di una superficie}:\newline
+rispetto a a un asse $r$ perpendicolare al piano passante per  il punto $(x_0,y_0)$ e detta $d(x,y)$ la distanza di ogni punto dall'asse \newline
+$I = \int \int_T  d^2 (x,y) \delta(x,y) dx dy = \int \int_T ((x-x_0)^2 + (y-y_0)^2) \delta(x,y) dx dy$\newline
+\textbf{Baricentro di un volume}:\newline
+$\delta (x,y,z) =$ densità di massa.\newline
+$T =$ solido.\newline
+$m = \int \int \int_T \delta(x,y,z) dx dy dz$.\newline
+$x_B = \frac{1}{m} \int \int \int_T x \delta(x,y,z) dx dy dz$\newline
+\textbf{Momento d'inerzia di un volume}:\newline
+rispetto all'asse $z$, detta $d(x,y,z)$ la distsanza di un generico punto dall'asse $z$\newline
+$I = \int \int \int_T d^2(x,y,z) \delta(x,y,z) dx dy dz = \int \int \int_T (x^2 + y^2) \delta(x,y,z) dx dy dz$
+\subsubsection*{Funzioni $\mathbb{R}^n \rightarrow  \mathbb{R}^m$}
+\textbf{Linee di campo}:\newline 
+Si ottengono integrando $\int \frac{dx}{F_1(x,y,z)} = \int \frac{dy}{F_2(x,y,z)} = \int \frac{dz}{F_3(x,y,z)}$\newline
+\textbf{Conservativo}:\newline 
+se o (1) il lavoro è esprimibile come differenza di potenziali, o (2) il lavoro di due curve con estremi coincidenti è uguale, o (3) il lavoro lungo una linea chiusa è nullo.\newline
+\textbf{Semplicemente connesso}:\newline
+In $\mathbb{R}^2$ non ci devono essere buchi, in $\mathbb{R}^3$ non ci devono essere buchi della fomra simile a quella di un segmento.\newline
+\textbf{Verifica della conservatività}:\newline
+si controlla se è irrotazionale:\newline
+(1) se non lo è, il campo non è conservativo, e per calcolarne il lavoro dobbiamo per forza usare la definizione.\newline
+(2) se lo è, dobbiamo vedere se il dominio dove è definito è semplicemente connesso:\newline
+(2.1) se lo è, il campo è conservativo (vedi metodi sotto per il calcolo del lavoro).\newline
+(2.2) se non lo è, non possiamo concludere nulla a priori e quindi siamo costretti a provare uno dei seguenti metodi:\newline
+(2.2.1) si cerca un potenziale e se esiste ed è differenziabile (ricordiamo che è condizione sufficiente che il potenziale sia $C^1$ per essere differenziabile) in tutto il dominio di $F$, allora $F$ è conservativo.\newline
+(2.2.2)Si verifica se il lavoro di $F$ lungo un sostegno di una qualunque linea chiusa è nullo.\newline
+\textbf{Calcolo di un potenziale}:\newline
+$U(x,y,z) = \int F_1(x,y,z) dx + \phi(y,z)$\newline
+$U(x,y,z) = \int F_2(x,y,z) dy + \phi(x,z)$\newline
+$U(x,y,z) = \int F_3(x,y,z) dz + \phi(x,y)$\newline
+oppure secondo la definizione:\newline
+Sia $r(t) = (x(t), y(t))$ una curva, il lavoro lungo il suo sostegno $\gamma$ di un campo $F(X(x,y), Y(x,y))$ è \newline
+$L_{\gamma}(F) = \int_\gamma F \cdot  dr = \int_{I} F(r(t)) \cdot r'(t) dt$\newline
+che si calcola come $L_{AB} = \int_{a}^{b} [ (x(t),y(t))x'(t) + Y(x(t), y(t)) y'(t) ]dt$.\newline
+N.B. se il dominio non è un insieme semplicemente connesso, bisogna suddividerlo in tanti intervalli semplicemente connessi e specificare che il potenziale vale per ognno di questi separatamente.\newline
+\textbf{Flusso}:\newline
+(1) un campo vettoriale $F$, (2) una superficie $\Sigma \in \mathbb{R}^3$ espressa in forma parametrica $r(u,v) = (x(u,v), y(u,v), z(u,v))$ con il dominio $S$ in cui $u$ e $v$ spaziano, (3) vettore normale alla superficie $n = \frac{\delta r}{\delta u}\text{x}\frac{\delta r}{\delta v}$.\newline
+$\Phi = \int \int_{\Sigma} F \cdot n \; d\Sigma = \int \int_{S} F(r(u,v)) \cdot \frac{\delta r}{\delta u}\text{x}\frac{\delta r}{\delta v} du dv$\newline
+Se la superficie è il grafico di una funzione $z = f(x,y)$, allora $\Phi = \int \int_S F(x,y,f(x,y)) \cdot \left[- \frac{\delta f}{\delta x}, - \frac{\delta f}{\delta y}, 1\right] dx dy$.\newline
+\textbf{Teorema della divergenza}:\newline
+Se la superficie $\Sigma$ è chiusa, per calcolare il flusso di $F$ uscente da $\Sigma$, possiamo indicare con $V$ il solido descritto da $\Sigma$ e $\Phi = \int \int \int_V div(F) dx dy dz$.
+\subsubsection*{Equazioni differenziali}
+\textbf{Esistenza}: Se $f$ è continua esiste una soluzione del problema $y' = f(ty)$, $y(t_0) = y_0$.\newline
+\textbf{Unicità}: Se $f$ e $f'$ sono continua, allora esiste un'unica soluzione del problema $y' = f(ty)$, $y(t_0) = y_0$.\newline
+\textbf{Variabili separabili}:\newline
+$y'=f(t) g(y)$\newline
+Se $g$ è continua in un intorno di $y_0$, allora il problema di Cauchy ammetta una soluzione.\newline
+Se $g$ è $C^1$ in un intorno di $y_0$, allora il problema di Cauchy ammette un'unica soluzione.\newline
+Se esiste un valore di $y^*$ tale che $g(y^*) = 0$ e se il problema di Cauchy è $y(t_0) = y^*$, allora $y(t) = y^*$ è una soluzione.\newline
+Se il problema di Cauchy associato è $y(t_0) = y_0$ con $g(y_0) \neq 0$, allora $y' = \frac{dy}{dt}$ e $\int\frac{dy}{g(y)}= \int f(t) dt$ e esprimendo $y$ in funzione di tutto il resto troviamo la soluzione.\newline
+\textbf{Derivata di un prodotto}:\newline
+$y' = a(t)y + b(t)$\newline
+Sia $A(t) = \int a(t) dt$, allora $e^{-A(t)}y'(t) - e^{-A(t)}a(t) y(t) = e^{-A(t)}b(t)$ e $e^{-A(t)}y(t) = \int e^{-A(t)}b(t) + C$, da cui ricaviamo la soluzione.\newline
+\textbf{Sovrapposizione e variazione delle costanti arbitrarie}:\newline
+$y' = a(t)y + b(t)$\newline
+Equazione omogenea: si pone $b(t) = 0$ e $y'= a(t) y$, notiamo che $y=0$ è soluzione, per $y \neq 0$ è una eq a variabili separabili (la cui soluzione è $y= Ce^{A(t)}$).\newline
+Integrale particolare: Ora si usa il metodo delle variazioni delle costanti arbitrarie. Partendo da $y = Ce^{A(t)}$ considerando $C = C(t)$ una funzione cerchiamo di soddisfare l'equazione completa $C'(t) e^{A(t)} + C(t) a(t) e^{A(t)} = C(t) a(t) e^{A(t)} + b(t)$, da cui $C(t) = \int b(t) e^{-A(t)} dt$, e lo sotituiamo in $y = C(t) e^{A(t)}$. Il risultato finale è $y(t) = e^{A(t)} \left{ \int e^{-A(t)} b(t) dt + C \right}$\newline
+\textbf{Insieme di definizione per eq lineari del prim'ordine}:\newline
+$y' = a(t) y + b(t)$, $y(t_0) = y_0$\newline
+Se $a(t)$ e $b(t)$ sono continua in un intervallo contenente $t_0$ allora esiste una sola soluzione.\newline
+Una volta risolto il problema di Cauchy (dopo aver determinato il valore di $C$) la soluzione vale nell'intervallo aperto più grande contenente $t_0$ e in cui la soluzione $y(t)$ è definita, continua e derivabile e in cui l'equazione di partenza $y' = a(t) y + b(t)$ è definita e continua.\newline
+\textbf{Equazioni omogenee}:\newline
+$y' = f\left(\frac{y}{t}\right)$\newline
+se $f$ è $C^1$ in un intorno $\frac{y_0}{t_0}$, allora il problema di Cauchy $y(t_0) = y_0$ ammette una e una sola soluzione.\newline
+\textbf{Equazione di Bernoulli}:\newline
+$y' = a(t) y +b(t) y^\alpha$\newline
+\textbf{Equazioni lineari del second'ordine a coefficienti costanti}:\newline
+$y''(t) + by'(t) + cy(t) = f(t)$\newline
+Equazione omogenea: $y'' + b y' + cy = 0$, si sostituisce $y(t) = e^{\lambda t}$ e si risolve $\lambda^2 + b \lambda + c = 0$ e (1) due radici $y_1(t) = e^{\lambda_1 t}$, $y_2 = e^{\lambda_2 t}$, (2) due radici complesse $\lambda = \alpha \pm i \beta$, $y_1(t) = e^{\alpha t} cos(\beta t)$, $y_2 = e^{\alpha t} sin(\beta t)$, (3) due radici uguali $y_1 = e^{\lambda t}$, $y_2 = t e^{\lambda t}$. L'integrale generale è $c_1y_1(t) + c_2 y_2(t)$.\newline
+Integrale particolare: Metodo di somiglianza:\newline
+(1) se $f$ è un polinomio di grado $n$, si cerca una soluzione polinomiale di grado $n$ se $c\neq 0$, di grado $n$ moltiplicato per $t$ se $c=0$ e $b\neq 0$, di grado $n$ se $c=b=0$.\newline
+(2) se $f = k \cdot  e^{\lambda t}$ è esponenziale, si cerca soluzione esponenziale $y(t) = ce^{\lambda t}$ se $\lambda$ non risolve l'equazione caratteristica, $y(t) = cte^{\lambda t}$ altrimenti.\newline
+(3) se $f = Ae^{\alpha t} cos(\beta t) + B e^{\alpha t} sin(\beta t)$ è esponenziale complessa, cerchiamo $y(t) =  c_1 e^{\alpha t} cos(\beta t) + c_2 e^{\alpha t} sin(\beta t)$ se $\alpha \pm i \beta$ non risolvono l'eq caratteristica, altrimenti $y(t) = c_1 t e^{\alpha t} cos(\beta t) + c_2 t e^{\alpha t}sin(\beta t)$.\newline
+Oppure, metodo della variazione delle costanti arbitrarie:\newline
+Una volta trovato l'integrale generale dell'equazione omogenea associata, facciamo variare le costanti $c_1$ e $c_2$ come fossero funzioni. Se $c_1$ e $c_2$ soddisfano le condizioni: $c'_1 (t) y_1 (t) + c'_2 (t) y_2(t) = 0$ e $c'_1(t) y'_1(t) + c'_2(t) y'_2(t) = f(t)$ allora ci basta sostiuirle e abbiamo trovato la soluzione. Ricaviamo che $c'_1 = \frac{- f y_2}{y_1y'_2 - y_2y'_1}$ e $c'_2 = \frac{f y_1}{y_1 y'_2 - y_2 y'_1}$ e integrando si ricavano i valori cercati.\newline
+\textbf{Equazione di Eulero}:\newline
+$t^2 y''(t) + bty'(t) + cy(t) = f(t)$
+\subsubsection*{Sistemi differenziali lineari}
+\textbf{Corrispondenza equazioni lineari del second'ordine e sistemi lineari}:\newline
+Equazioni diff lin di ordine $n$ possono essere ricondotte a sistemi dif lin della forma $y' = A(t) y + b(t)$.\newline
+$ay'' + by' + cy = f(t) \rightarrow y' = Ay + f(t)$, poniamo $y_1 = y_2$ e $ay'_2 + by_2 + cy_1 = f(t)$, che in forma normale diventano $\begin{cases}
+    y'_1 = y_2 \\
+    y'_2 = -\frac{c}{a}y_1 - \frac{b}{a}y_2 + \frac{1}{a} f(t)
+\end{cases}$ 
+e cioè $\vec{y} = \left[\begin{matrix}
+    y_1\\y_2
+\end{matrix}\right] $,$ A = \left[\begin{matrix}
+    0 & 1  \\ -\frac{c}{a} & - \frac{b}{a}
+\end{matrix}\right] $,$ \vec{f}(t) = \left[\begin{matrix}
+    0 \\ \frac{1}{a}f(t)
+\end{matrix}\right]$. \newline
+\textbf{Sistemi lineari omogenei}:\newline
+Se $b(t) = 0$ abbiamo $y' = A(t) y$, se $A$ è conitnua in un intorno di $t_0$, allora il problema di Cauchy ammette un'unica soluzione.
+Per un sistema di ordine $n$, cerchiamo $n$ soluzioni linearmente indipendenti $\phi_1, \dots, \phi_n$, ovvero se esiste un $t$ per cui il determinante Wronskiano ($det(W(t)) = det(\phi_1(t) | \dots | \phi_n)$) è diverso da $0$.\newline
+\textbf{Sistemi omogenei a coefficienti costanti}:\newline
+se $A(t)$ è costante abbiamo $y' = Ay$.\newline
+Se $n = 1$, $y(t) = Ce^{At}$.\newline
+Se $n = 2$, $y'_1 = a_{11} y_1 + a_{12} y_2$ e $y'_2 = a_{21} y_1 + a_{22} y_2$, che si riconduce a un'equazione di second'ordine derivando la prima equazione e sostituendo la seconda si ottiene $y''_1 = (a_{11} + a_{22}) y'_1 + (a_{12}a_{21} - a_{11} a_{22})y_1$. Cerchiamo quindi soluzioni del tipo $Ce^{At}$ (esponenziale di matrice), e le colonne di $e^{At}$ formano un sistema fondamentale di soluzioni, e cioè il vettore $Ce^{At}$ è soluzione.\newline
+\textbf{Sistemi completi}:\newline
+variazioni delle costanti arbitrarie: dato $y(t) = C W(t)$ soluzione del sistema omogeneo, cerchiamo soluzioni in cui $C =C(t)$ è una funzione, allora imponendo di risolvere l'equazione di partenza $y' = A(t) y + b(t)$ otteniamo $W'(t) C(t) + W(t) C'(t) = A(t) W(t) C(t) + b(t)$ da cui $C(t) = \int [W(t)]^{-1} b(t) dt$ (N.B. $[W(t)]^{-1} b(t)$ è un vettore e l'integrale si calcola componente per componente). Infine la soluzione si ricava sostituendo $C(t)$ trovato nella soluzione dell'omogenea $y(t) = W(t) C(t)$. \newline
+\textbf{Esponenziale di matrice}:\newline
+(1) calcolare autovalori di $A$, calcolare autovettori di $A$;\newline
+(2) $T =$ matrice degli autovalori accostati, calcolare $T^{-1};$\newline
+(3) $T^{-1}AT= D =$ matrice con gli autovalori di $A$ nella diagonale;\newline
+(4) $e^{At} = e^{TDT^{-1} t} = Te^{Dt} T^{-1}$, fare i conti.\newline
+\textbf{Autovettori e autovalori}:\newline
+Autovalori sono le soluzioni di $det(A-\lambda I)$, gli autovettori rispetto a un autovalore $\lambda^*$ si calcolano come $(A-\lambda^* I) \left(\begin{matrix}
+    x \\ y \\ z
+\end{matrix}\right) = 0$
+\subsubsection*{Extra}
+\textbf{Retta per due punti}: \newline
+$y = mx + q$, $m = \frac{y_1-y_2}{x_1-x_2}$ e $q = \frac{x_1y_2 - x_2 y_1}{x_1-x_2}$\newline
+\textbf{Retta tangente a una curva in un punto}:\newline
+$r(t) = (x(t),y(t))$\newline
+$y= mx + q$, $m = \frac{y'(t_0)}{x'(t_0)}$, $q$ si trova sostituendo nell'equazione il valore di $m$, di $y(t_0)$ e di $x(t_0)$.\newline
+Oppure il vettore tangente è $r'(t)$ e quindi $r(t) = r(t_0) + t \cdot r'(t_0)$.\newline
+\textbf{Circonferenza}:\newline
+$(x-x_c)^2 + (y-y_c)^2 = r^2$ oppure \newline
+$\begin{cases}
+    x= x_0 + r cos(\theta)\\ y= y_0 + r sin(\theta)
+\end{cases}$\newline
+\textbf{Pinao per tre punti}:\newline
+dati $(x_1, y_1, z_1), (x_2,y_2,z_2), (x_3,y_3,z_3)$ scriviamo:\newline
+$\begin{cases}
+    a x_1 + by_1 + c z_1 = d\\ 
+    a x_2 + by_2 + c z_2 = d\\ 
+    a x_3 + by_3 + c z_3 = d
+\end{cases}$ da cui ricaviamo i valori di $a,b,c,d$ da sostituire.\newline
+\textbf{Toro}:\newline
+con raggi $\alpha$ e $\beta$ ($\alpha> \beta$):\newline
+$e(u,v) = [(\alpha + \beta cos(u)) cos(v)]\vec{i} + [(\alpha + \beta cos(u))sin(v)]\vec{j} + [\beta sin(u)]\vec{k}$ con $u, v \in [0,2\pi]$.
+%---------------------------------------------------------------
+
+\end{multicols*}
+
+\end{document}
