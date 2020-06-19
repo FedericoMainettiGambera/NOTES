@@ -1,0 +1,22 @@
+\title{LEZIONE 10 22/04/20}
+\textbf{link} \href{https://web.microsoftstream.com/video/fe590834-dff5-4e57-a227-cb5e10913adc?list=user&userId=cfe0965d-9a7c-40e2-be6e-f078296a1914}{clicca qui}
+\section{CSS}
+CSS serve per separare la presentazione dalla struttura dell'interfaccia.\newline
+\newline
+Uno style sheet è un set di regole che specificano la presentazione, o, meglio, lo stile, da applicare a vari elementi. Le regole CSS sono composte da un selettore e da una lista di dichiarazioni.\newline
+\newline
+Le regole CSS si possono scrivere in vari "posti":
+\begin{itemize}
+    \item in un file esterno (utilizzo prevalente). Questo metodo separa fisicamente lo stile dal contenuto, ci sono due approcci: o si usa o il tag link di HTML (consigliato), o la clausola @import di CSS (sconsigliato) all'interno di un tag style di HTML. In caso di conflitto di regole, per il browser "vince" l'ultima regola "letta", dunque bisogna sempre tenere in mente l'ordine di scrittura.
+    \item nell'attributo style di un elemento HTML (inline styling, sconsigliato). L'inline styling ha prevalenza sullo styling da file esterno, nel senso che in caso di conflitto vince sempre. Inoltre, con javascript, quando modifichiamo lo stile di un elemento, stiamo accedendo e modificando l'attributo style di quest'ultimo, come fosse inline styling. Ci sono modi per evitare di usare inline styling e agire in maniera più indiretta sulla presentazione con javascript, per esempio modificando la classe dell'elemento (consigliato), invece dell'attributo style.
+\end{itemize}
+\subsection{Selettori}
+I selettori sono delle query, delle interrogazioni, un modo per filtrare un documento ed estrarne delle porzioni.\newline
+\newline
+Ci sono quattro grandi categorie di selettori:
+\begin{itemize}
+    \item Selettori basati sugli elemento;
+    \item Selettori basati sugli attributi;
+    \item Selettori basati sulle pseudo-classi/pseudo-elementi, cioè selettori che ci permettono di utilizzare informazioni che vanno oltre ciò che è esprimibile con HTML, per esempio la ricerca del primo o del secondo figlio di un elemento (in html non c'è nozione di primo o secondo), oppure la selezione degli elementi che l'utente ha già visitato (qui addirittura viene fatta una selezione tramite informazioni dinamiche);
+    \item Selettori basati sui combinatori, cioè la combinazione delle precedenti categorie tramite operatori, per esempio ">" è l'operatore figlio. In CSS ci sono più di 40 diversi combinatori (il prof ha caricato un documento con 40 diversi selettori, dagli un'occhiata).
+\end{itemize}

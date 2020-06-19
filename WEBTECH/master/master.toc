@@ -17,3 +17,7 @@
 \contentsline {subsection}{\numberline {10.1}Esercizio bacheca messaggi}{18}{subsection.10.1}% 
 \contentsline {subsection}{\numberline {10.2}Esercizio post management}{19}{subsection.10.2}% 
 \contentsline {section}{\numberline {11}esercizio da un tema d'esame (pt.1)}{20}{section.11}% 
+\contentsline {section}{\numberline {12}esercizio da un tema d'esame (pt.2)}{21}{section.12}% 
+\contentsline {section}{\numberline {13}Filtri}{21}{section.13}% 
+\contentsline {section}{\numberline {14}CSS}{22}{section.14}% 
+\contentsline {subsection}{\numberline {14.1}Selettori}{22}{subsection.14.1}% 
