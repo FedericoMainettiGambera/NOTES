@@ -20,3 +20,8 @@
 \BOOKMARK [1][-]{section.14}{CSS}{}% 20
 \BOOKMARK [2][-]{subsection.14.1}{Selettori}{section.14}% 21
 \BOOKMARK [2][-]{subsection.14.2}{Rendering}{section.14}% 22
+\BOOKMARK [1][-]{section.15}{Client-side scripting}{}% 23
+\BOOKMARK [2][-]{subsection.15.1}{eventi}{section.15}% 24
+\BOOKMARK [3][-]{subsubsection.15.1.1}{Eventi "ibridi" gestiti da client e server}{subsection.15.1}% 25
+\BOOKMARK [2][-]{subsection.15.2}{Architettura fat client}{section.15}% 26
+\BOOKMARK [3][-]{subsubsection.15.2.1}{Elementi di un'architettura fat client}{subsection.15.2}% 27
