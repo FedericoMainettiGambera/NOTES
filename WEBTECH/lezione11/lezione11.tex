@@ -1,4 +1,4 @@
-\title{LEZIONE 10 22/04/20}
+\title{LEZIONE 11 22/04/20}
 \textbf{link} \href{https://web.microsoftstream.com/video/fe590834-dff5-4e57-a227-cb5e10913adc?list=user&userId=cfe0965d-9a7c-40e2-be6e-f078296a1914}{clicca qui}
 \section{CSS}
 CSS serve per separare la presentazione dalla struttura dell'interfaccia.\newline
@@ -19,4 +19,23 @@ Ci sono quattro grandi categorie di selettori:
     \item Selettori basati sugli attributi;
     \item Selettori basati sulle pseudo-classi/pseudo-elementi, cioè selettori che ci permettono di utilizzare informazioni che vanno oltre ciò che è esprimibile con HTML, per esempio la ricerca del primo o del secondo figlio di un elemento (in html non c'è nozione di primo o secondo), oppure la selezione degli elementi che l'utente ha già visitato (qui addirittura viene fatta una selezione tramite informazioni dinamiche);
     \item Selettori basati sui combinatori, cioè la combinazione delle precedenti categorie tramite operatori, per esempio ">" è l'operatore figlio. In CSS ci sono più di 40 diversi combinatori (il prof ha caricato un documento con 40 diversi selettori, dagli un'occhiata).
+\end{itemize}
+\ \newline
+\subsection{Rendering}
+Parliamo ora al processo di renderizzazione del browser.\newline
+Le fasi in ordine sono le seguenti:
+\begin{itemize}
+    \item Declaration collection: fase di recupero di tutte le regole attive e valide (regole che appartengono a un ostyle sheet, regole il cui selettore selezionano un elemento, regole sintatticamente corrette).
+    \item Cascading: è il processo di analisi di tutte le regole rilevanti per la proprietà di un determinato elemento della pagina, mette in ordine le dichiarazioni a seconda della loro precedenza e sceglie sulla base di un criterio di precedenza quale sia il valore da applicare.\newline
+    Il cascading applica un criterio di precedenza fatto di quattro termini:
+    \begin{itemize}
+        \item origine e importanza (poco usato): per origine si intende chi è l'autore della regola (notiamo che anche il browser o user agent, ha un foglio di stile, oppure il lettore può crearlo, esistono strumenti particolari che i client possono usare), per importanza invece si intende che alcune regole possono essere marcate come importanti (poco usate). L'ordine considerato è il seguente: regola improtante > regola del foglio di stile del lettore > regola scritta da noi.
+        \item scope (poco applicato);
+        \item specificità (molto usato): il criterio di specificità indica che in caso di conflitto, vince il selettore più specifico, per capire il livello di specificità di un selettore si contano gli operatori utilizzati e gli si attribuisce un peso, per esempio il selettore per id (tipo a) è molto più importante di quello per classe (tipo b), che è molto più importante di quello per tag (tipo c);
+        \item ordine di apparizione (molto usato): l'ordine di apparizione è il criterio che fa si che l'inline styling sia sempre prevalente;
+    \end{itemize}
+    \item  Defaulting: nel caso in cui non venga specificato nessun valore per una determinata proprietà, viene scaturito il defaulting, cioè viene applicato un criterio di eredità (inheriting, ma che si esprime meglio in italiano come criterio di contenimento). Un elemento senza un valore per una proprietà, deriva quella proprietà da chi lo contiene, se pure chi lo contiene non ha tale proprietà, allora viene derivata dal contenitore ancora più a monte, e così via. Se si arriva fino al body e tale proprietà non è ancora stata definita si assume un valore iniziale (initial value). Da notare che non tutte le proprietà CSS vengono tramandate per ereditarietà, per esempio "background-color".
+    \item Dependency resolution: vengono calcolati i valori computati dai valori relativi (es. percentuali).
+    \item Formatting: vengono calcolati i valori usati tramite le informaizoni di layout (es. auto).
+    \item Rendering: il rendering sfrutta i valori effettivi.
 \end{itemize}
