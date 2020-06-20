@@ -1,0 +1,35 @@
+\title{LEZIONE 13 30/04/20}
+\textbf{link} \href{https://web.microsoftstream.com/video/9d3a5028-1a7e-471e-95cd-1bcf6ae58d8a?list=user&userId=cfe0965d-9a7c-40e2-be6e-f078296a1914}{clicca qui}
+\section{Javascript}
+Javascript è un linguaggio interpretato, quindi non ha una fase di compilazione.\newline
+\newline
+In Javascript è assente la tipizzazione delle variabili, il principale aspetto negativo di un linguaggio di programmazione a tipizzazione debole è che spesso, siccome non c'è un compilatore, gli errori passano inosservati finchè non si esegue il programma.\newline
+Inoltre pure la dichiarazione di una variabile non è obbligatoria, una variabile non dichiarata viene automaticamente identificata come una variabile globale (scope globale), cosa da evitare assolutamente.\newline
+L'ambiente di sviluppo è estremamente liberale.\newline
+\newline
+Gli script javascript agiscono su un documento HTML, il cuore della programmazione a lato client consiste nell'interagire con un'interfaccia.\newline
+\newline
+\subsection{Numeri}
+Javascript ha un solo tipo di numero (64-bit floating point).\newline
+\newline
+Esistono inoltre valori speciali: NaN (not a number), col relativo metodo isNaN(), e infinity o -infinity, col relativo metodo isFinite().
+\subsection{Stringhe}
+Le stringhe possono essere racchiuse dai simboli " e ' indifferentemente: non esiste il tipo char.\newline
+\newline
+Le stringhe sono immutabili, cioè, una volta create, non possono essere modificate.
+\subsection{Istruzioni}
+Le istruzioni sono eseguite in ordine di apparizione.\newline
+\newline
+Un blocco è un insieme di istruzioni racchiuse da parentesi graffe, che in javascript non rappresentano un ambito di scope. Gli unici scope che esistono sono dati dalle funzioni e dal "main" (scope globale). Questo concetto è importante per la programmazione asincrona.\newline
+\newline
+Scope di livello intermedio possono essere definiti con clausole speciali per la dichiarazione di variabili (let invece di var).\newline
+\newline
+Il temrinatore di istruzione ";" è opzionale.\newline
+\newline
+\url{http://www.jslint.com/} è un ottimo sito per scovare cattive pratiche all'interno di codice javascript.
+\subsection{Uguaglianza}
+Gli operatori di uguaglianza sono "===" e "!==", cioè se due oggetti sono dello stesso tipo ed hanno lo stesso valore, allora "===" ritorna true.\newline
+\newline
+L'operatore "==" (meno stringente di "===") prova a comparare oggetti di tipo differenti.\newline
+\newline
+In javascript la nozione di tipo è diversa da quella a cui siamo abituati per i linguaggi fortmente tipati, ovvero l'operatore typeof, che mostra il tipo di una variabile può ritornare solo uno di questi valori: number, string, boolean, undefined, function e object.
