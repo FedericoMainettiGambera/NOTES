@@ -1,34 +1,38 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {section}{\numberline {1}Architetture}{2}{section.1}% 
-\contentsline {section}{\numberline {2}HTTP}{3}{section.2}% 
-\contentsline {section}{\numberline {3}CGI, Common Gateway Interface}{3}{section.3}% 
-\contentsline {section}{\numberline {4}Servlet - base}{4}{section.4}% 
-\contentsline {section}{\numberline {5}Servlet - esempi}{6}{section.5}% 
-\contentsline {subsection}{\numberline {5.1}Esempio: contatore condiviso fra i client}{6}{subsection.5.1}% 
-\contentsline {subsection}{\numberline {5.2}Esempio: contatore per ogni client}{6}{subsection.5.2}% 
-\contentsline {subsection}{\numberline {5.3}Forme di identificazione}{6}{subsection.5.3}% 
-\contentsline {subsection}{\numberline {5.4}Tracciemento della sessione}{7}{subsection.5.4}% 
-\contentsline {section}{\numberline {6}JDBC}{9}{section.6}% 
-\contentsline {section}{\numberline {7}JSP}{11}{section.7}% 
-\contentsline {section}{\numberline {8}JSTL}{14}{section.8}% 
-\contentsline {section}{\numberline {9}Thymeleaf}{16}{section.9}% 
-\contentsline {section}{\numberline {10}Esercitazione}{18}{section.10}% 
-\contentsline {subsection}{\numberline {10.1}Esercizio bacheca messaggi}{18}{subsection.10.1}% 
-\contentsline {subsection}{\numberline {10.2}Esercizio post management}{19}{subsection.10.2}% 
-\contentsline {section}{\numberline {11}esercizio da un tema d'esame (pt.1)}{20}{section.11}% 
-\contentsline {section}{\numberline {12}esercizio da un tema d'esame (pt.2)}{21}{section.12}% 
-\contentsline {section}{\numberline {13}Filtri}{21}{section.13}% 
-\contentsline {section}{\numberline {14}CSS}{22}{section.14}% 
-\contentsline {subsection}{\numberline {14.1}Selettori}{22}{subsection.14.1}% 
-\contentsline {subsection}{\numberline {14.2}Rendering}{22}{subsection.14.2}% 
-\contentsline {section}{\numberline {15}Client-side scripting}{24}{section.15}% 
-\contentsline {subsection}{\numberline {15.1}eventi}{24}{subsection.15.1}% 
-\contentsline {subsubsection}{\numberline {15.1.1}Eventi "ibridi" gestiti da client e server}{24}{subsubsection.15.1.1}% 
-\contentsline {subsection}{\numberline {15.2}Architettura fat client}{24}{subsection.15.2}% 
-\contentsline {subsubsection}{\numberline {15.2.1}Elementi di un'architettura fat client}{25}{subsubsection.15.2.1}% 
-\contentsline {section}{\numberline {16}Javascript}{26}{section.16}% 
-\contentsline {subsection}{\numberline {16.1}Numeri}{26}{subsection.16.1}% 
-\contentsline {subsection}{\numberline {16.2}Stringhe}{26}{subsection.16.2}% 
-\contentsline {subsection}{\numberline {16.3}Istruzioni}{26}{subsection.16.3}% 
-\contentsline {subsection}{\numberline {16.4}Uguaglianza}{26}{subsection.16.4}% 
+\contentsline {section}{\numberline {1}Architetture}{3}{section.1}% 
+\contentsline {section}{\numberline {2}HTTP}{4}{section.2}% 
+\contentsline {section}{\numberline {3}CGI, Common Gateway Interface}{4}{section.3}% 
+\contentsline {section}{\numberline {4}Servlet - base}{5}{section.4}% 
+\contentsline {section}{\numberline {5}Servlet - esempi}{7}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Esempio: contatore condiviso fra i client}{7}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Esempio: contatore per ogni client}{7}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Forme di identificazione}{7}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.4}Tracciemento della sessione}{8}{subsection.5.4}% 
+\contentsline {section}{\numberline {6}JDBC}{10}{section.6}% 
+\contentsline {section}{\numberline {7}JSP}{12}{section.7}% 
+\contentsline {section}{\numberline {8}JSTL}{15}{section.8}% 
+\contentsline {section}{\numberline {9}Thymeleaf}{17}{section.9}% 
+\contentsline {section}{\numberline {10}Esercitazione}{19}{section.10}% 
+\contentsline {subsection}{\numberline {10.1}Esercizio bacheca messaggi}{19}{subsection.10.1}% 
+\contentsline {subsection}{\numberline {10.2}Esercizio post management}{20}{subsection.10.2}% 
+\contentsline {section}{\numberline {11}esercizio da un tema d'esame (pt.1)}{21}{section.11}% 
+\contentsline {section}{\numberline {12}esercizio da un tema d'esame (pt.2)}{22}{section.12}% 
+\contentsline {section}{\numberline {13}Filtri}{22}{section.13}% 
+\contentsline {section}{\numberline {14}CSS}{23}{section.14}% 
+\contentsline {subsection}{\numberline {14.1}Selettori}{23}{subsection.14.1}% 
+\contentsline {subsection}{\numberline {14.2}Rendering}{23}{subsection.14.2}% 
+\contentsline {section}{\numberline {15}Client-side scripting}{25}{section.15}% 
+\contentsline {subsection}{\numberline {15.1}eventi}{25}{subsection.15.1}% 
+\contentsline {subsubsection}{\numberline {15.1.1}Eventi "ibridi" gestiti da client e server}{25}{subsubsection.15.1.1}% 
+\contentsline {subsection}{\numberline {15.2}Architettura fat client}{25}{subsection.15.2}% 
+\contentsline {subsubsection}{\numberline {15.2.1}Elementi di un'architettura fat client}{26}{subsubsection.15.2.1}% 
+\contentsline {section}{\numberline {16}Javascript}{27}{section.16}% 
+\contentsline {subsection}{\numberline {16.1}Numeri}{27}{subsection.16.1}% 
+\contentsline {subsection}{\numberline {16.2}Stringhe}{27}{subsection.16.2}% 
+\contentsline {subsection}{\numberline {16.3}Istruzioni}{27}{subsection.16.3}% 
+\contentsline {subsection}{\numberline {16.4}Uguaglianza}{27}{subsection.16.4}% 
+\contentsline {subsection}{\numberline {16.5}Oggetti}{27}{subsection.16.5}% 
+\contentsline {subsection}{\numberline {16.6}Funzioni}{28}{subsection.16.6}% 
+\contentsline {subsection}{\numberline {16.7}Prototipi}{28}{subsection.16.7}% 
+\contentsline {subsection}{\numberline {16.8}Undefined}{28}{subsection.16.8}% 
