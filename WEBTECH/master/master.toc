@@ -36,3 +36,5 @@
 \contentsline {subsection}{\numberline {16.6}Funzioni}{28}{subsection.16.6}% 
 \contentsline {subsection}{\numberline {16.7}Prototipi}{28}{subsection.16.7}% 
 \contentsline {subsection}{\numberline {16.8}Undefined}{28}{subsection.16.8}% 
+\contentsline {section}{\numberline {17}Funzioni in JavaScript}{29}{section.17}% 
+\contentsline {section}{\numberline {18}bla bla bla}{31}{section.18}% 

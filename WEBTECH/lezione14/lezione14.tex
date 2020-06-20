@@ -1,0 +1,46 @@
+\title{LEZIONE 14 06/05/20}
+\textbf{link} \href{https://web.microsoftstream.com/video/1f9e0781-7149-4a62-851d-de458cb09274?list=user&userId=cfe0965d-9a7c-40e2-be6e-f078296a1914}{clicca qui}
+\section{Funzioni in JavaScript}
+Le funzioni in javascrip sono oggetti, perciò possono essere memorizzate in variabili, passate come argomento ad altre funzioni o ritornate come risultato di altre funzioni. Le funzioni possono avere proprietà e metodi, come un oggetto qualsiasi.\newline
+\newline
+In javascript si usano molto spesso le funzioni anonime, il nome della funzione è superfluo. Solitamente le funzioni vengono salvate all'interno di variabili, che quindi conterranno il riferimento all'indirizzo di memeoria della funzione.\newline
+Esempio:\newline
+var add = function sum(a,b)\{ return a +b; \};\newline
+Osserviamo che in questo caso il nome della funzione "sum" non viene neanche registrato nella tabella dei simboli del programma, quindi si può ignorare e riscrivere come:\newline
+var add = function (a,b)\{ return a +b; \};\newline
+Il nome "sum" è quindi sconosciuto al di fuori del body della funzione, può quindi per esempio essere usato per scrivere funzioni ricorsive.\newline
+\newline
+Esistono comunque le funzioni classiche il cui nome è essenziale e che hanno bisogno della definizione della funzion.\newline
+Esempio:\newline
+function sum(a,b)\{ return a+b;\}\newline
+\newline
+Una funzione viene chiamata se si aggiungono le parentesi tonde alla fine "()", altrimenti, se si omettono, la funzione non viene chiamata e ci si sta usando il riferimento all'indirizzo della funzione. Omettendo le parentesi quindi è possibile passare funzioni come parametri di altre funzioni, o avere come valori di ritorno una funzione, o assengare a una variabile una funzione.\newline
+\newline
+Se una funzione non ha ritorna un valore specifico (non ha definito la clausola return), JavaScript assume automaticamente il valore undefined come valore di ritorno.\newline
+Esempio:\newline
+funtion a()\{\newline
+\ \;\;\;\; console.log("A");\newline
+\}\newline
+function b()\{\newline
+\ \;\;\;\;    console.log("B");\newline
+\ \;\;\;\;    return a(); //a() non ha un valore di ritorno e quindi b() ritorna undefined\newline
+\}\newline
+\newline
+Le funzioni sono l'unico elemento (oltre allo scope globale) che rappresenta uno scope per le variabili all'interno di JavaScript. Una variabile dichiarata all'interno di una funzione, esiste solo all'interno di quest'ultima.\newline
+Una delle utilità delle funzioni anonime è proprio quella di vare da delimitatore per le variabili.\newline
+\newline
+Gli argomenti di una funzione sono gli i parametrti che il chiamante gli passa, inoltre, se la funzione è stata chiamata come proprietà di un oggetto, allora è presente il parametro aggiuntivo "this", che rappresenta un riferimento all'oggetto chiamante.\newline
+I parametri passati alla funzione possono anche non coincidere con la definizione della funzione, cioè una funzione può essere chiamata con un numero arbitrario di parametri, nel caso in cui fossero di meno, vengono assunti undefined quelli mancanti (se fossero di più c'è modo per accederci all'interno della funzione \dots).\newline
+\newline
+Le funzioni possono essere definite all'interno di altre funzioni, una funzione interna può accedere ai parametri e alle variabili locali della funzione in cui è innestata.\newline
+Si chiama chiusura (closure) una funzioen innestata che può accedere all'ambito di visibilità (scope) della funzione padre, anche quando quest'ultima ha terminato l'esecuzione (per esempio nel caso di funzioni asincrone).\newline
+Esempio di chiusura:\newline
+function esterna()\{\newline
+\ \;\;\;\;var a = 2;\newline
+\ \;\;\;\;function interna()\{\newline
+\ \;\;\;\;\;\;\;\;console.log(a);\newline
+\ \;\;\;\;\}\newline
+\ \;\;\;\;return interna;
+\}\newline
+var prova = esterna();\newline
+prova(); //esterna è chiusa, ma prova() può ancora vedere a, l'interna è sopravvisuta alla morte del padre.\newline
