@@ -1,3 +1,77 @@
 \title{LEZIONE 15 07/05/20}
 \textbf{link} \href{https://web.microsoftstream.com/video/cc735a4e-c7cb-467d-97bd-910450c2d0a3?list=user&userId=cfe0965d-9a7c-40e2-be6e-f078296a1914}{clicca qui}
-\section{bla bla bla}
+\newline
+\newline
+Function statement: function f()\{\dots;\}; definisce una funzione; la funzione si invoca con l'operatore di chiamata (); deve avere un nome; la funzione è soggetta a "hoisting" per cui è disponibile anche prima di dove è stata definita nel programma.\newline
+\newline
+Function expression: var f = function ()\{\dots;\};; definisce la variabile f che ha come valore una funzione; non necessita di un nome, ma nel caso in cui venga specificato, il nome è utilizzabile solo all'interno del body della stessa; la funzione è invocata tramite il nome della variabile; la funzione è definita solo quando avviene la valutazione dell'espressione, cioè finchè la riga di codice contenente la variabile f non viene eseguita, la funzione non esiste; la funzione può vedere le variabili dello scope in cui è definita (chiusura).\newline
+\newline
+Per creare variabili non globali in JavaScript bisogna creare uno scope tramite le funzioni. Mostriamo un esempio:
+\begin{lstlisting}
+var scope = ( function(){
+    var variabileNonGlobale = 0;
+    return function(){
+        //Possiamo usare la variabile non globale qua per via della chiusura.
+    }
+})();
+\end{lstlisting}
+\ \newline
+Questa è una cosiddetta "iife", cioè immediately invoked function expression.\newline
+Una iife è un'espressione che comporta la dichiarazione e l'esecuzione di una funzione e sono utilizzate per delimitare una porzione di codice evitando che le variabili finiscano nello scope globale.\newline
+La presenza delle parentesi tonde esterne (grouping operator) rendono la frase un'espressione valida, altrimenti sarebbe un function statement e non un function expression.\newline
+Le iife possono essere usate anche per realizzare un meccanismo di protezione delle variabili, cioè si riesce a imitare il comportamento dei getter e setter di attributi privati:
+\begin{lstlisting}
+var Sequence = (function sequenceIIFE(){
+    var current = 0; //variabile privata
+    return { //ritorna un oggetto
+        getCurrentValue: function(){
+            return current; //rimene vivo per chiusura
+        },
+        getNextValue: function(){
+            current = current +1;
+            return current; //rimane vivo per chiusura
+        }
+    };
+})();
+\end{lstlisting}
+In questo caso la variabile current non è accessibile se non attraverso i metodi Sequence.getCurrentValue() e Sequence.getNextValue().\newline
+\newline
+Le funzioni possono essere assegnate a proprietà di oggetti (metodi di un oggetto), il parametro this denota l'oggetto su cui la funzione è chiamata, ma un metodo non può usare una funzione innestata che operi direttamente sull'oggetto this, cioè la funzione innestata non condivide il riferimento a this. per permetterle di accedere a this bisogna salvarne un riferimento in una variabile (var self = this;) che sarà visibile nella funzione innestata.\newline
+\newline
+Invocazione indiretta di funzione: i metodi call e apply di un oggetto di tipo funzione permettono di invocare la funzione, passandogli un valore da usare come this e nel caso di call una lista di argomenti, nel caso di apply un vettore di argomenti.\newline
+\newline
+L'oggetto arguments è disponibile all'interno delle funzioni quando vengono invocate e contiene i valori dei parametri, include anche i valori opzionali ed è utile per la definizione di funzioni con un numero non specificato di parametri. Notare che arguments non è un vero e proprio vettore, ha la proprietà lenght, ma manca di tutti gli altri metodi tipici dei vettore, si dice essere un oggetto "array-like" o "pseudo-array".\newline
+\newline
+Una funzione restituisce sempre un valore. Casi speciali:
+\begin{itemize}
+    \item undefined: se il valore di ritorno non è specificato;
+    \item this: se la funzione è un costruttore invocato con l'operatore new.
+\end{itemize}
+\ \newline
+Arrow function: le arrow function sono una notazioen abbreviata per la scrittura di espressioni funzionali. Le uniche differenze sono:
+\begin{itemize}
+    \item non possiede l'oggetto arguments;
+    \item si può usare this, che eredità il valore dalla più vicina funzione normale che la racchiude;
+    \item non può essere usata come costruttore con la parola new.
+\end{itemize}
+\begin{lstlisting}
+var add = function(x,y){
+    return x + y;
+};
+//equivale a:
+var add = (x,y) => {
+    return x + y;
+};
+\end{lstlisting}
+\ \newline
+Una funzione di callback è un meccanismo usato per gestire eventi asincroni che causano la chiamata di una funzione:
+\begin{itemize}
+    \item la funzione da chiamare è passata come parametro alla funzione che gestisce l'evento;
+    \item la funzione passata come parametro è invocata quando l'evento si manifesta.
+\end{itemize}
+Un tipico esempio sono le richieste HTTP asincrone al server.
+\newpage
+\subsection{Vettori in JavaScript}
+I vettori in JavaScript non sono i classici array che conosciamo. Esiste un costruttore predefinito Array che crea oggetti che si comportano come array e la notazione con le parentesi quadrate equivale all'utilizzo di questo costruttore.\newline
+\newline
+Per tutto il resto gli array in javascript sono veri e propri oggetti, di conseguenza possiamo farci tutto quello che si può fare con un oggetto. In più possiede la funzione lenght (calcolato come 1 + il numero della proprietà di massimo valore nel vettore, non è il numero degli elementi), la funzione splice e degli indici con cui è possibile accedere alle proprietà. Notiamo che si possono eliminare alcune proprietà lasciano dei veri e propri buchi all'interno.

@@ -44,13 +44,15 @@ Gli oggetti sono sempre passati per riferimento, non vengono mai copiati (!).
 Uno dei tipi principali di Javascript sono le funzioni. Oltre ad essere usate nella maniera classica, esse sono dei veri e propri valori e di conseguenza possono essere assegnate a variabili. I metodi degli oggetti sono variabili che contengono funzioni.
 \subsection{Prototipi}
 In assenza di classi nel senso proprio del termine è possibile definire proprietà che si applicano a gruppi di oggetti con il concetto di prototipo (prototype object). Ogni oggetto è associato a un prototipo dal quale può ereditare proprietà, per default ogni oggetto è associato a Object.prototype, un oggetto standard di javascript. Il prototipo è dinamico, se si aggiunge una nuova proprietà al prototipo, essa sarà visibile in tutti gli oggetti basati su quel prototipo.\newline
-Esempio:\newline
-var property = {value : 1};\newline
-function MyObject() {};\newline
-MyObject.prototype = property;\newline
-var myObject = new MyObject();\newline
-myObject.value === 1 //true \newline
-\newline
+Esempio:
+\begin{lstlisting}
+var property = {value : 1};
+function MyObject() {};
+MyObject.prototype = property;
+var myObject = new MyObject();
+myObject.value === 1 //true 
+\end{lstlisting}
+\ \newline
 La ricerca della proprietà di un oggetto parte dalla definizione delle proprietà locali possedute direttamente e risale la catena dei prototipi fino a Object.prototype.
 \subsection{Undefined}
 Undefined è uno dei tipi fondamentali di javascript. Il tentativo di computare con valori undefined genera un'eccezione TypeError exeption.

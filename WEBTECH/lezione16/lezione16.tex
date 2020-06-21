@@ -1,0 +1,52 @@
+\title{LEZIONE 16 13/05/20}
+\textbf{link} \href{https://web.microsoftstream.com/video/5539d88f-c229-4790-acbc-d3ce4660da70?list=user&userId=cfe0965d-9a7c-40e2-be6e-f078296a1914}{clicca qui}
+\section{JavaScript and the DOM}
+Si può utilizzare JavaScript per interagire con l'user interface agendo sul documento HTML.\newline
+\newline
+I metodi di interazione sono standardizzati dal DOM (document object model) e dall'HTML APIs:
+\begin{itemize}
+    \item DOM API: permettono a un programma di accedere e modificare il contenuto, la struttura, il comportamento e lo stile di documenti HTML e XML.
+    \item HTML5 API: permettono di accedere a funzionalità dell'ambiente (il browser) che ospita il documento, come la finestra, la cronologia, le notifiche, la memoria, la connessione, etc.
+\end{itemize}
+\ \newline
+Il DOM definisce una struttura logica del documento e i metodi per accederci e manipolarlo.\newline
+La rappresentazione dei documenti è presentata come una gerarchia di nodi (oggetti JavaScript).\newline
+Il DOM è strutturato in diversi moduli che contengono funzionalità basiche e specializzate, le più improtanti e di nostro interesse sono i moduli: core, HTML, Events.\newline
+\newline
+le HTML APIs, in breve, ci permettono di riscrivere il comportamento del browser.\newline
+L'oggetto più importante è l'oggetto window, che è globale, e grazie al quale un programma JavaScript può interagire con l'ambiente (il browser). L'oggetto window ci espone tutte le funzionalità necessarie per interagire con il browser, una delle proprietà più usate è la proprietà window.document, che è il punto di ingresso del DOM, cioè è la radice più alta di tutto il documento HTML.\newline
+\newline
+Quindi, riassumendo, JavaScript può interagire con l'ambiente, cioè il browser, attraverso HTML APIs. Come? L'oggetto globale window ci offre tutti le proprietà necessarie per farlo, fra cui la proprietà window.document, che rappresenta l'ingresso al DOM. Quindi DOM e HTML APIs sono strettamente collegate. L'oggeto document si accede tramite le DOM API, che mostrano funzioni che permettono l'accesso ai vari elementi. GLi element object hanno a loro volta proprietà che rappresentano il loro contenuto, gli attributi, le classi, lo stile, etc.\newline
+\newline
+Window, document, element objects sono associati a eventi che possono essere monitorati e di conseguenza provocare la chiamata a funzioni che le gestiscono (handler function).\newline
+\newline
+Per evitare ritardi di caricamento della pagina, è consigliabile mettere il tag script nell'head e usare il metodo defer per fare il caricamento in parallelo.
+\newline
+\newline
+Il DOM core permette di accedere agli attributi e ai metodi degli elementi che rappresentano il documento.\newline
+In partocolare permette di:
+\begin{itemize}
+    \item cercare e accedere a elementi;
+    \item attraversare il document tree;
+    \item cercare e settare attributi di elementi;
+    \item cercare, settare e modificare il contenuto di elementi;
+    \item creare, inserire, eliminare, spostare elementi nel document tree;
+    \item lavorare con le form.
+\end{itemize}
+\ \newline
+\newline
+DOM events specifica un sistema di eventi, che permette la registrazione di event handler, descrive i metodi di propagazione di eventi attraverso la struttura del documento, offre informazioni sugli eventi. Permette anche la creazione di eventi custom (ancora in corso di standardizzazione).\newline
+\newline
+Uno degli oggetti più importanti è il Node object, che poi si specializza in document, character data (contenunto di un tag), HTML element (tag), attr.\newline
+\newline
+Le tipiche funzioni DOM ritornano spesso degli array-like object (NodeList), cioè oggetti che hanno una struttura uguale a quella di un array, solo che non hanno la funzione lenght gestita automaticamente e hanno una funzione splice. Notiamo che possono essere trasformati in array grazie alla funzione Array.from(\dots). Stare attenti a manipolare le NodeList, che spesso la proprietà lenght potrebbe dare problemi.\newline
+\newline
+E' sconsigliato avere un documento HTML "vuoto" e costruire dinamicamente la pagina con JavaScript, perchè si consumano risorse di calcolo.\newline
+\newline
+Il contenuto di un elemento è rappresentabile in tre maniere diverse:
+\begin{itemize}
+    \item innerHTML: rappresenta il contenuto come un frammento HTML e quindi richiede del parsing per lavorarci, il che è spesso inefficiente, l'unico utilizzo consigliato è per eliminare il contenuto: .innerHTML= "";
+    \item textContent: rappresenta il contenuto come plain text;
+    \item childNodes: è una proprietà che può essere usata per accedere alla lista dei sotto-nodi di un elemento.
+\end{itemize}
+La prima e la terza rappresentazione sono la stessa cosa, solo che la terza è cioè che si ottiene dopo il parsing della prima.

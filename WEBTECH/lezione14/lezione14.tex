@@ -11,21 +11,25 @@ var add = function (a,b)\{ return a +b; \};\newline
 Il nome "sum" è quindi sconosciuto al di fuori del body della funzione, può quindi per esempio essere usato per scrivere funzioni ricorsive.\newline
 \newline
 Esistono comunque le funzioni classiche il cui nome è essenziale e che hanno bisogno della definizione della funzion.\newline
-Esempio:\newline
-function sum(a,b)\{ return a+b;\}\newline
-\newline
+Esempio:
+\begin{lstlisting}
+function sum(a,b)\{ return a+b;\}
+\end{lstlisting}
+\ \newline
 Una funzione viene chiamata se si aggiungono le parentesi tonde alla fine "()", altrimenti, se si omettono, la funzione non viene chiamata e ci si sta usando il riferimento all'indirizzo della funzione. Omettendo le parentesi quindi è possibile passare funzioni come parametri di altre funzioni, o avere come valori di ritorno una funzione, o assengare a una variabile una funzione.\newline
 \newline
 Se una funzione non ha ritorna un valore specifico (non ha definito la clausola return), JavaScript assume automaticamente il valore undefined come valore di ritorno.\newline
-Esempio:\newline
-funtion a()\{\newline
-\ \;\;\;\; console.log("A");\newline
-\}\newline
-function b()\{\newline
-\ \;\;\;\;    console.log("B");\newline
-\ \;\;\;\;    return a(); //a() non ha un valore di ritorno e quindi b() ritorna undefined\newline
-\}\newline
-\newline
+Esempio:
+\begin{lstlisting}
+funtion a()\{
+    console.log("A");
+\}
+function b()\{
+    console.log("B");
+    return a(); //a() non ha un valore di ritorno e quindi b() ritorna undefined
+\}
+\end{lstlisting}
+\ \newline
 Le funzioni sono l'unico elemento (oltre allo scope globale) che rappresenta uno scope per le variabili all'interno di JavaScript. Una variabile dichiarata all'interno di una funzione, esiste solo all'interno di quest'ultima.\newline
 Una delle utilità delle funzioni anonime è proprio quella di vare da delimitatore per le variabili.\newline
 \newline
@@ -34,13 +38,15 @@ I parametri passati alla funzione possono anche non coincidere con la definizion
 \newline
 Le funzioni possono essere definite all'interno di altre funzioni, una funzione interna può accedere ai parametri e alle variabili locali della funzione in cui è innestata.\newline
 Si chiama chiusura (closure) una funzioen innestata che può accedere all'ambito di visibilità (scope) della funzione padre, anche quando quest'ultima ha terminato l'esecuzione (per esempio nel caso di funzioni asincrone).\newline
-Esempio di chiusura:\newline
-function esterna()\{\newline
-\ \;\;\;\;var a = 2;\newline
-\ \;\;\;\;function interna()\{\newline
-\ \;\;\;\;\;\;\;\;console.log(a);\newline
-\ \;\;\;\;\}\newline
-\ \;\;\;\;return interna;
-\}\newline
-var prova = esterna();\newline
-prova(); //esterna è chiusa, ma prova() può ancora vedere a, l'interna è sopravvisuta alla morte del padre.\newline
+Esempio di chiusura:
+\begin{lstlisting}
+function esterna()\{
+    var a = 2;
+    function interna()\{
+        console.log(a);
+    }
+    return interna;
+\}
+var prova = esterna();
+prova(); //esterna finisce, ma prova() vede ancora a, l'interna riesce a sopravvivere alla morte del padre.\end{lstlisting}
+\ \newline
