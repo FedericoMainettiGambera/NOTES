@@ -8,6 +8,6 @@ Un filtro è una classe Java che il servler container interpone fra la richiesta
 \newline
 La classe filtro ha sostanzialmente la stessa struttura di una servlet, ha init(), destroy() e invece di doGet e doPost, ha doFilter(). Ci sono tre interfaccie che vvengono usate per i filtri e sono: Filter, FilterChain e FIlterConfig.\newline
 \newline
-La catena di filtri si può specificare nel web.xml, inoltre la catena di filtri è unica per ogni app, non si possono specificare catene particolari per ogni servlet. Il comando doFilter() in poche parole passa il comando al prossimo filtro della catena, se ce ne è uno, altrimenti prosegue paassando la richiesta alla servlet che se ne deve occupare.\newline
+La catena di filtri si può specificare nel web.xml, inoltre la catena di filtri è unica per ogni app, non si possono specificare catene particolari per ogni servlet. Il comando chain.doFilter() in poche parole passa il comando al prossimo filtro della catena, se ce ne è uno, altrimenti prosegue paassando la richiesta alla servlet che se ne deve occupare.\newline
 \newline
 
