@@ -1,24 +1,15 @@
 \title{LEZIONE 1 11/03/20}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/58568b1d-5fc5-41c0-88f6-608e4b8f9f7a}{clicca qui}
-\section*{Calendario delle lezioni}
-\url{https://docs.google.com/spreadsheets/d/14ShTdkFCZ63MlyKP0LCSLPsPAeiu8D2sYVXSrkw9B6k/edit#gid=0}
-\section*{Prerequisiti}
-Introduzione al corso - Evoluzione architetture \newline
-Protocollo HTTP \newline
-HTML 3 e 4 \newline
-CGI
-\section*{Introduzione al corso}
-Non ci saranno prove in itinere per questo corso.\newline
-E' opportuno guardare i video relativi agli argomenti indicati prima di partecipare alla lezione.\newline
-Queste lezioni hanno lo scopo di aggiungere informazioni, chiarire dubbi e aiutarci a capire quali siano gli argomenti più importanti e i punti chiave.\newline
-I materiali video coprono interamente gli argomenti del corso.
 \section{Architetture}
-Il web è una piattaforma per sviluppo di applicazioni con un architettura molto particolare. Per architettura si intende l'insieme delle risorse (hardware, connettività, software di base, software applicativo).\newline
+Il web è una piattaforma per sviluppo di applicazioni con un architettura molto particolare. Per \textbf{architettura} si intende l'insieme delle risorse (hardware, connettività, software di base, software applicativo).\newline
+\newline
 Le applicazioni web hanno una particolare conformazione della loro architettura che prevede tre livelli: Client, Middle-tier, Data-tier.\newline 
 Le architetture sono  cambiate molto negli anni. Se ne individuano tre grandi famiglie: Mainframe, Client-Server, Multi-tier (per esempio le applicazioni web). \newline
 Il compito di questo corso è quello di riuscire a programmare nel Middle-tier con qualche accenno al Client.
-In un'applicazione web il Client interagisce con il Middle-tier con un preciso protocollo, che non è il classico tcp-ip, ma il protocollo HTTP.\newline
-[Una lettura molto importante per il corso è il documento RequestforComment 1945, Tim Berners Lee (https://www.w3.org/Protocols/rfc1945/rfc1945), che rappresenta l'atto di fondazione del web.]\newline
+In un'applicazione web il Client interagisce con il Middle-tier con un preciso protocollo, che non è il classico TCP-IP, ma è il protocollo HTTP.\newline
+\newline
+Una lettura molto importante per il corso è il documento RequestforComment 1945, Tim Berners Lee (\url{https://www.w3.org/Protocols/rfc1945/rfc1945}), che rappresenta l'atto di fondazione del web.]\newline
+\newline
 Il Client manda delle request al Server che invia delle responses. Le request del Client sono gestite tramite un applicazione detta User agent (browser).\newline
 Http è rivoluzionario per la sua semplicità: le richieste del Client e le risposte del server sono delle semplici stringhe. \newline
 Architettura delle applicazioni web: c'è un client (pc) con un user agent (browser) che emette richieste che vengono servite con delle risposte da un web server, detto anche HTTP server. L'archiettura di cui però ci occupiamo è più complicato di così, perchè vede alle spalle del web server un application server (TomCat), che ha lo scopo di calcolare una risposta "personalizzata" secondo parametri e criteri precisi e di produrre un pagina web appropriata.\newline
