@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  22 JUN 2020 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  22 JUN 2020 20:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -491,7 +491,55 @@ File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
-
+ (c:/texlive/2019/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
+\c@tracingmulticols=\count146
+\mult@box=\box48
+\multicol@leftmargin=\dimen174
+\c@unbalance=\count147
+\c@collectmore=\count148
+\doublecol@number=\count149
+\multicoltolerance=\count150
+\multicolpretolerance=\count151
+\full@width=\dimen175
+\page@free=\dimen176
+\premulticols=\dimen177
+\postmulticols=\dimen178
+\multicolsep=\skip50
+\multicolbaselineskip=\skip51
+\partial@page=\box49
+\last@line=\box50
+\maxbalancingoverflow=\dimen179
+\mult@rightbox=\box51
+\mult@grightbox=\box52
+\mult@gfirstbox=\box53
+\mult@firstbox=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\c@columnbadness=\count152
+\c@finalcolumnbadness=\count153
+\last@try=\dimen180
+\multicolovershoot=\dimen181
+\multicolundershoot=\dimen182
+\mult@nat@firstbox=\box72
+\colbreak@box=\box73
+\mc@col@check@num=\count154
+)
 
 LaTeX Warning: Unused global option(s):
     [9pt].
@@ -499,32 +547,32 @@ LaTeX Warning: Unused global option(s):
 (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.aux)
 \openout1 = `master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
  (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count146
-\scratchdimen=\dimen174
-\scratchbox=\box48
-\nofMPsegments=\count147
-\nofMParguments=\count148
+\scratchcounter=\count155
+\scratchdimen=\dimen183
+\scratchbox=\box74
+\nofMPsegments=\count156
+\nofMParguments=\count157
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count149
-\MPscratchDim=\dimen175
-\MPnumerator=\count150
-\makeMPintoPDFobject=\count151
+\MPscratchCnt=\count158
+\MPscratchDim=\dimen184
+\MPnumerator=\count159
+\makeMPintoPDFobject=\count160
 \everyMPtoPDFconversion=\toks37
 ) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -538,8 +586,8 @@ Package grfext Info: Graphics extension search list:
  (c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \it@ocap on input line 5.
-LaTeX Info: Redefining \it@ccap on input line 5.
+LaTeX Info: Redefining \it@ocap on input line 6.
+LaTeX Info: Redefining \it@ccap on input line 6.
 
 
 File italian.ldf warning: 
@@ -547,9 +595,9 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 5.
+italian.ldf    on input line 6.
 
-\AtBeginShipoutBox=\box49
+\AtBeginShipoutBox=\box75
 (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
  (c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
@@ -592,27 +640,27 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 5.
+Package hyperref Info: Link coloring OFF on input line 6.
  (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/12 v2.45 Cross-referencing by name of section
  (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count152
+\c@section@level=\count161
 )
-LaTeX Info: Redefining \ref on input line 5.
-LaTeX Info: Redefining \pageref on input line 5.
-LaTeX Info: Redefining \nameref on input line 5.
+LaTeX Info: Redefining \ref on input line 6.
+LaTeX Info: Redefining \pageref on input line 6.
+LaTeX Info: Redefining \nameref on input line 6.
  (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.out) (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.out)
 \@outlinefile=\write7
 \openout7 = `master.out'.
 
-\c@lstlisting=\count153
-LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+\c@lstlisting=\count162
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.toc [1
@@ -627,12 +675,12 @@ Overfull \hbox (17.05008pt too wide) in paragraph at lines 4--5
  []
 
 [3])
-Underfull \hbox (badness 10000) in paragraph at lines 34--10
+Underfull \hbox (badness 10000) in paragraph at lines 34--11
 
  []
 
 [4] (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/../lezione2/lezione2.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 6--12
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
 
  []
 
@@ -666,27 +714,27 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              for symbol `textbullet' on input line 30.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 37--14
+Underfull \hbox (badness 10000) in paragraph at lines 37--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--14
+Underfull \hbox (badness 10000) in paragraph at lines 37--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--14
+Underfull \hbox (badness 10000) in paragraph at lines 37--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--14
+Underfull \hbox (badness 10000) in paragraph at lines 37--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--14
+Underfull \hbox (badness 10000) in paragraph at lines 37--15
 
  []
 
@@ -721,32 +769,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--24
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 30--16
+Underfull \hbox (badness 10000) in paragraph at lines 30--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--16
+Underfull \hbox (badness 10000) in paragraph at lines 30--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--16
+Underfull \hbox (badness 10000) in paragraph at lines 30--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--16
+Underfull \hbox (badness 10000) in paragraph at lines 30--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--16
+Underfull \hbox (badness 10000) in paragraph at lines 30--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--16
+Underfull \hbox (badness 10000) in paragraph at lines 30--17
 
  []
 
@@ -761,67 +809,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--12
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
@@ -841,27 +889,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--14
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
 
@@ -906,17 +954,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--27
  []
 
 [17])
-Underfull \hbox (badness 10000) in paragraph at lines 32--22
+Underfull \hbox (badness 10000) in paragraph at lines 32--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--22
+Underfull \hbox (badness 10000) in paragraph at lines 32--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--22
+Underfull \hbox (badness 10000) in paragraph at lines 32--23
 
  []
 
@@ -971,17 +1019,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--44
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 45--24
+Underfull \hbox (badness 10000) in paragraph at lines 45--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--24
+Underfull \hbox (badness 10000) in paragraph at lines 45--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--24
+Underfull \hbox (badness 10000) in paragraph at lines 45--25
 
  []
 
@@ -1205,7 +1253,7 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              for symbol `textgreater' on input line 62.
 
 [31])
-Underfull \hbox (badness 10000) in paragraph at lines 75--37
+Underfull \hbox (badness 10000) in paragraph at lines 75--38
 
  []
 
@@ -1299,32 +1347,68 @@ File: ../lezione17/img1.PNG Graphic file (type png)
 <use ../lezione17/img1.PNG>
 Package pdftex.def Info: ../lezione17/img1.PNG  used on input line 30.
 (pdftex.def)             Requested size: 129.35646pt x 142.26378pt.
-[35]) [36 <../lezione17/img1.PNG>] (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/../lezione18/lezione18.tex) [37] (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/../lezione19/lezione19.tex) [38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
+[35]) [36 <../lezione17/img1.PNG>] (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/../lezione18/lezione18.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--16
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
+
+ []
+
+<../lezione18/img1.PNG, id=475, 556.32843pt x 269.50688pt>
+File: ../lezione18/img1.PNG Graphic file (type png)
+<use ../lezione18/img1.PNG>
+Package pdftex.def Info: ../lezione18/img1.PNG  used on input line 75.
+(pdftex.def)             Requested size: 234.93817pt x 113.81102pt.
+<../lezione18/img2.PNG, id=476, 552.56438pt x 413.29407pt>
+File: ../lezione18/img2.PNG Graphic file (type png)
+<use ../lezione18/img2.PNG>
+Package pdftex.def Info: ../lezione18/img2.PNG  used on input line 80.
+(pdftex.def)             Requested size: 114.11957pt x 85.35826pt.
+) [38 <../lezione18/img1.PNG> <../lezione18/img2.PNG>] (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/../lezione19/lezione19.tex
+<../lezione19/img1.PNG, id=501, 487.06969pt x 451.6875pt>
+File: ../lezione19/img1.PNG Graphic file (type png)
+<use ../lezione19/img1.PNG>
+Package pdftex.def Info: ../lezione19/img1.PNG  used on input line 6.
+(pdftex.def)             Requested size: 122.72585pt x 113.81102pt.
+<../lezione19/img2.PNG, id=502, 694.09312pt x 479.54156pt>
+File: ../lezione19/img2.PNG Graphic file (type png)
+<use ../lezione19/img2.PNG>
+Package pdftex.def Info: ../lezione19/img2.PNG  used on input line 10.
+(pdftex.def)             Requested size: 205.91011pt x 142.26378pt.
+) [39 <../lezione19/img1.PNG> <../lezione19/img2.PNG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
  (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: EDE98A088D5E38DE0AD44B1ADEB89D9E;2570.
+(rerunfilecheck)             Checksum: 746C7B782EDD8EA1BEE50343A773DEE9;2635.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19450 strings out of 492609
- 347950 string characters out of 6132818
- 451116 words of memory out of 5000000
- 22770 multiletter control sequences out of 15000+600000
+ 19602 strings out of 492609
+ 350415 string characters out of 6132818
+ 455791 words of memory out of 5000000
+ 22900 multiletter control sequences out of 15000+600000
  12259 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,6n,73p,1487b,1212s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.pdf (38 pages, 413098 bytes).
+Output written on c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.pdf (39 pages, 1391348 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 484 compressed objects within 5 object streams
- 147 named destinations out of 1000 (max. 500000)
- 359 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 573 PDF objects out of 1000 (max. 8388607)
+ 507 compressed objects within 6 object streams
+ 165 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 
