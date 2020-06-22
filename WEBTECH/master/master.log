@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  22 JUN 2020 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  22 JUN 2020 21:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1383,7 +1383,17 @@ File: ../lezione19/img2.PNG Graphic file (type png)
 <use ../lezione19/img2.PNG>
 Package pdftex.def Info: ../lezione19/img2.PNG  used on input line 10.
 (pdftex.def)             Requested size: 205.91011pt x 142.26378pt.
-) [39 <../lezione19/img1.PNG> <../lezione19/img2.PNG>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+[39 <../lezione19/img1.PNG> <../lezione19/img2.PNG>] [40]
+Underfull \hbox (badness 5893) in paragraph at lines 122--123
+\OT1/cmss/m/n/10 un'in-te-ra-zio-ne) ser-ve la ses-sio-ne o il
+ []
+
+) [41]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
  (c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.aux)
@@ -1397,18 +1407,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19602 strings out of 492609
- 350415 string characters out of 6132818
+ 19604 strings out of 492609
+ 350429 string characters out of 6132818
  455791 words of memory out of 5000000
  22900 multiletter control sequences out of 15000+600000
  12259 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,6n,73p,1487b,1212s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.pdf (39 pages, 1391348 bytes).
+Output written on c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.pdf (41 pages, 1395637 bytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 507 compressed objects within 6 object streams
- 165 named destinations out of 1000 (max. 500000)
+ 581 PDF objects out of 1000 (max. 8388607)
+ 513 compressed objects within 6 object streams
+ 167 named destinations out of 1000 (max. 500000)
  379 words of extra memory for PDF output out of 10000 (max. 10000000)
 

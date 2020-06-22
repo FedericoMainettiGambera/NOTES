@@ -48,7 +48,7 @@ Lo stato della richiesta può essere monitorato controllando le proprietà dell'
     \item XMLHttpRequest.onreadystatechange contiene un riferimento a una funzione che viene chiamata ogni volta che XMLHttpRequest.readyState cambia, cioè si produce l'evento readystatechange;
     \item XMLHttpRequest.status permette di controllare l'esito, per esempio vale 200 quando la risposta è OK oppure 404 quando la risorsa richiesta non è stata trovata.
 \end{itemize}
-Il contenuto della risposta del serer si trova come valore della proprietà responseText o responseXML.\newline
+Il contenuto della risposta del serer si trova come valore della proprietà responseText o responseXML (c'è anche JSON: studio autonomo).\newline
 \newline
 Vediammo ora la tipica funzione che effettua la chiamata:
 \begin{lstlisting}
@@ -79,5 +79,3 @@ Vediamo ora un'immagine che mostra l'architettura complessiva:
 \begin{center}
     \includegraphics[height=3cm]{../lezione18/img2.PNG}
 \end{center}
-\ \newline  
-Cosa è JSON? JSON sta per JavaScript Object Notation è un formato semplice di codifica testuale di dati. 
