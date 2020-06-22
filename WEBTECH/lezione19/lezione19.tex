@@ -9,7 +9,8 @@ Architettura FAT:
 \begin{center}
     \includegraphics[height=5cm]{../lezione19/img2.PNG}
 \end{center} 
-Differenze negli eventi.\newline
+\rule{\textwidth}{0,4pt}
+Differenze negli eventi:
 \begin{multicols}{2}
 Pure HTML:
 \begin{itemize}
@@ -28,6 +29,7 @@ RIA:
     \item gli eventi sono dal browser e notificati al gestore tramite l'oggetto contenitore window.
 \end{itemize}
 \end{multicols}
+\rule{\textwidth}{0,4pt}
 Mappatura degli eventi:
 \begin{multicols}{2}
 Pure HTML:
@@ -43,6 +45,7 @@ RIA:
     \item l'associazione tra evento e risponditore è a carico del programmatore (addEventListener).
 \end{itemize}
 \end{multicols}
+\rule{\textwidth}{0,4pt}
 Risposta agli eventi:
 \begin{multicols}{2}
 Pure HTML:
@@ -62,6 +65,7 @@ RIA:
     \item a lato client avviene la selezione della prossima vista: servlet manda response code e dati, la callback decide la prossima vista.
 \end{itemize}
 \end{multicols}
+\rule{\textwidth}{0,4pt}
 Cambio della vista:
 \begin{multicols}{2}
 Pure HTML:
@@ -77,6 +81,7 @@ RIA:
     \item la proprietà window.location.href permette la sostituzione della vista corrente;
 \end{itemize}
 \end{multicols}
+\rule{\textwidth}{0,4pt}
 Submit e risultato:
 \begin{multicols}{2}
 Pure HTML:
@@ -96,6 +101,7 @@ RIA:
     \item NB: per ragioni storiche la servlet che gestisca la chiamata asincrona deve essere annotata con @MultipartConfig.
 \end{itemize}
 \end{multicols}
+\rule{\textwidth}{0,4pt}
 Presentazione del contenuto dinamico:
 \begin{multicols}{2}
 Pure HTML:
@@ -113,6 +119,7 @@ RIA:
     \item la funzioen di callback del gestore dell'evento attualizza il contenuto della pagina con il contenuto della response.
 \end{itemize}
 \end{multicols}
+\rule{\textwidth}{0,4pt}
 Passaggio parametri e stato dell'ultima interazione:
 \begin{multicols}{2}
 Pure HTML:
@@ -128,6 +135,7 @@ RIA:
     \item quanddo un evento produce parametri che servono all'interno della stessa pagina questi sono preservati come parte dello stato della pagina mediante variabili dei componenti o parametri delle loro funzioni, per esempio la selezione di un elemento da un elenco che aggiorna il contenuto della stessa pagina.
 \end{itemize}
 \end{multicols}
+\rule{\textwidth}{0,4pt}
 Mantenimento dello stato:
 \begin{multicols}{2}
 Pure HTML:
@@ -145,5 +153,5 @@ RIA:
     \item il server può ricevere il contenuto dello stato se necessario, per esempio creare un ordine persistente dai prodotti temporanemente nel carrello.
 \end{itemize}
 \end{multicols}
-\ \newline
+\rule{\textwidth}{0,4pt}
 N.B. si trovano esempi completi di ognuno di questi concetti nelle slide del prof di questa lezione.
