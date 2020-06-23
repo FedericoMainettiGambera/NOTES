@@ -4,8 +4,41 @@
 \BOOKMARK [2][-]{subsection.2.2}{HTTP response}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{CGI}{}% 5
 \BOOKMARK [1][-]{section.4}{Servlet}{}% 6
-\BOOKMARK [1][-]{section.5}{Servlet - esempi}{}% 7
-\BOOKMARK [2][-]{subsection.5.1}{Esempio: contatore condiviso fra i client}{section.5}% 8
-\BOOKMARK [2][-]{subsection.5.2}{Esempio: contatore per ogni client}{section.5}% 9
-\BOOKMARK [2][-]{subsection.5.3}{Forme di identificazione}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.4}{Tracciemento della sessione}{section.5}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Concetti base}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Esempi}{section.4}% 8
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Esempio: contatore condiviso fra i client}{subsection.4.2}% 9
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Esempio: contatore per ogni client}{subsection.4.2}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Forme di identificazione}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Tracciemento della sessione}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.5}{Filtri}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.6}{JDBC}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{JSP}{}% 15
+\BOOKMARK [1][-]{section.6}{JSTL}{}% 16
+\BOOKMARK [1][-]{section.7}{Thymeleaf}{}% 17
+\BOOKMARK [1][-]{section.8}{Esercitazione}{}% 18
+\BOOKMARK [2][-]{subsection.8.1}{Esercizio bacheca messaggi}{section.8}% 19
+\BOOKMARK [2][-]{subsection.8.2}{Esercizio post management}{section.8}% 20
+\BOOKMARK [2][-]{subsection.8.3}{esercizio da un tema d'esame \(pt.1\)}{section.8}% 21
+\BOOKMARK [2][-]{subsection.8.4}{esercizio da un tema d'esame \(pt.2\)}{section.8}% 22
+\BOOKMARK [1][-]{section.9}{CSS}{}% 23
+\BOOKMARK [2][-]{subsection.9.1}{Selettori}{section.9}% 24
+\BOOKMARK [2][-]{subsection.9.2}{Rendering}{section.9}% 25
+\BOOKMARK [1][-]{section.10}{Rich Internet Application}{}% 26
+\BOOKMARK [2][-]{subsection.10.1}{Client side scripting}{section.10}% 27
+\BOOKMARK [3][-]{subsubsection.10.1.1}{eventi}{subsection.10.1}% 28
+\BOOKMARK [3][-]{subsubsection.10.1.2}{Architettura fat client}{subsection.10.1}% 29
+\BOOKMARK [2][-]{subsection.10.2}{Javascript}{section.10}% 30
+\BOOKMARK [3][-]{subsubsection.10.2.1}{Numeri}{subsection.10.2}% 31
+\BOOKMARK [3][-]{subsubsection.10.2.2}{Stringhe}{subsection.10.2}% 32
+\BOOKMARK [3][-]{subsubsection.10.2.3}{Istruzioni}{subsection.10.2}% 33
+\BOOKMARK [3][-]{subsubsection.10.2.4}{Uguaglianza}{subsection.10.2}% 34
+\BOOKMARK [3][-]{subsubsection.10.2.5}{Oggetti}{subsection.10.2}% 35
+\BOOKMARK [3][-]{subsubsection.10.2.6}{Funzioni}{subsection.10.2}% 36
+\BOOKMARK [3][-]{subsubsection.10.2.7}{Prototipi}{subsection.10.2}% 37
+\BOOKMARK [3][-]{subsubsection.10.2.8}{Undefined}{subsection.10.2}% 38
+\BOOKMARK [3][-]{subsubsection.10.2.9}{Vettori in JavaScript}{subsection.10.2}% 39
+\BOOKMARK [2][-]{subsection.10.3}{Funzioni in JavaScript}{section.10}% 40
+\BOOKMARK [2][-]{subsection.10.4}{JavaScript e il DOM}{section.10}% 41
+\BOOKMARK [2][-]{subsection.10.5}{JavaScript e la gestione degli eventi}{section.10}% 42
+\BOOKMARK [2][-]{subsection.10.6}{AJAX: javascript e l'interazione client server asincrona}{section.10}% 43
+\BOOKMARK [1][-]{section.11}{Patter pure HTML vs RIA}{}% 44

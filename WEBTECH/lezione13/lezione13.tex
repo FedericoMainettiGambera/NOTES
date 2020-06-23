@@ -1,6 +1,6 @@
 \title{LEZIONE 13 30/04/20}
 \textbf{link} \href{https://web.microsoftstream.com/video/9d3a5028-1a7e-471e-95cd-1bcf6ae58d8a?list=user&userId=cfe0965d-9a7c-40e2-be6e-f078296a1914}{clicca qui}
-\section{Javascript}
+\subsection{Javascript}
 Javascript è un linguaggio interpretato, quindi non ha una fase di compilazione.\newline
 \newline
 In Javascript è assente la tipizzazione delle variabili, il principale aspetto negativo di un linguaggio di programmazione a tipizzazione debole è che spesso, siccome non c'è un compilatore, gli errori passano inosservati finchè non si esegue il programma.\newline
@@ -8,15 +8,15 @@ Inoltre pure la dichiarazione di una variabile non è obbligatoria, una variabil
 L'ambiente di sviluppo è estremamente liberale.\newline
 \newline
 Gli script javascript agiscono su un documento HTML, il cuore della programmazione a lato client consiste nell'interagire con un'interfaccia.
-\subsection{Numeri}
+\subsubsection{Numeri}
 Javascript ha un solo tipo di numero (64-bit floating point).\newline
 \newline
 Esistono inoltre valori speciali: NaN (not a number), col relativo metodo isNaN(), e infinity o -infinity, col relativo metodo isFinite().
-\subsection{Stringhe}
+\subsubsection{Stringhe}
 Le stringhe possono essere racchiuse dai simboli " e ' indifferentemente: non esiste il tipo char.\newline
 \newline
 Le stringhe sono immutabili, cioè, una volta create, non possono essere modificate.
-\subsection{Istruzioni}
+\subsubsection{Istruzioni}
 Le istruzioni sono eseguite in ordine di apparizione.\newline
 \newline
 Un blocco è un insieme di istruzioni racchiuse da parentesi graffe, che in javascript non rappresentano un ambito di scope. Gli unici scope che esistono sono dati dalle funzioni e dal "main" (scope globale). Questo concetto è importante per la programmazione asincrona.\newline
@@ -26,13 +26,13 @@ Scope di livello intermedio possono essere definiti con clausole speciali per la
 Il temrinatore di istruzione ";" è opzionale.\newline
 \newline
 \url{http://www.jslint.com/} è un ottimo sito per scovare cattive pratiche all'interno di codice javascript.
-\subsection{Uguaglianza}
+\subsubsection{Uguaglianza}
 Gli operatori di uguaglianza sono "===" e "!==", cioè se due oggetti sono dello stesso tipo ed hanno lo stesso valore, allora "===" ritorna true.\newline
 \newline
 L'operatore "==" (meno stringente di "===") prova a comparare oggetti di tipo differenti.\newline
 \newline
 In javascript la nozione di tipo è diversa da quella a cui siamo abituati per i linguaggi fortmente tipati, ovvero l'operatore typeof, che mostra il tipo di una variabile può ritornare solo uno di questi valori: number, string, boolean, undefined, function e object. Da notare è che typeoff null ritorna object.
-\subsection{Oggetti}
+\subsubsection{Oggetti}
 La nozione di oggetto in javascript è diversa da quella per un linguaggio a oggetti. Per esempio in Java una classe definisce un tipo di dato e permette la creazione di oggetti. In javascript tutto è un oggetto, gli oggetti sono contenitori utilizzati per organizzare dati e possono essere definiti "al volo", è però fortemente consigliato usare funzioni costruttrici che sfruttano il riferimento "this". Esempio: "function Person(name, surname){this.name = name; this.surname = surname;}" e poi "var person = new Person();". Ci sono poi vari modi per ottenere informazioni ulteriori su un oggetto in javascript: abbiamo visto che "typeof" ci ritorna solo che è un "object", invece ".constructor" ci ritorna il costruttore che abbiamo usato per creare tale oggetto.\newline
 \newline
 Le proprietà degli oggetti possono essere eliminate con il comando "delete".\newline
@@ -40,9 +40,9 @@ Le proprietà degli oggetti possono essere eliminate con il comando "delete".\ne
 E' possibile accedere alle proprietà di un oggetto oltre che con la notazione punto, anche con la notazione a parentesi quadre: oggetto.proprietà, oppure oggetto["proprietà"]. Questo metodo è utile perchè all'interno delle quadre c'è una stringa e di conseguenza si possono usare variabili oppure ciclare fra le proprietà, etc\dots \newline
 \newline
 Gli oggetti sono sempre passati per riferimento, non vengono mai copiati (!).
-\subsection{Funzioni}
+\subsubsection{Funzioni}
 Uno dei tipi principali di Javascript sono le funzioni. Oltre ad essere usate nella maniera classica, esse sono dei veri e propri valori e di conseguenza possono essere assegnate a variabili. I metodi degli oggetti sono variabili che contengono funzioni.
-\subsection{Prototipi}
+\subsubsection{Prototipi}
 In assenza di classi nel senso proprio del termine è possibile definire proprietà che si applicano a gruppi di oggetti con il concetto di prototipo (prototype object). Ogni oggetto è associato a un prototipo dal quale può ereditare proprietà, per default ogni oggetto è associato a Object.prototype, un oggetto standard di javascript. Il prototipo è dinamico, se si aggiunge una nuova proprietà al prototipo, essa sarà visibile in tutti gli oggetti basati su quel prototipo.\newline
 Esempio:
 \begin{lstlisting}
@@ -54,5 +54,10 @@ myObject.value === 1 //true
 \end{lstlisting}
 \ \newline
 La ricerca della proprietà di un oggetto parte dalla definizione delle proprietà locali possedute direttamente e risale la catena dei prototipi fino a Object.prototype.
-\subsection{Undefined}
+\subsubsection{Undefined}
 Undefined è uno dei tipi fondamentali di javascript. Il tentativo di computare con valori undefined genera un'eccezione TypeError exeption.
+\subsubsection{Vettori in JavaScript}
+I vettori in JavaScript non sono i classici array che conosciamo. Esiste un costruttore predefinito Array che crea oggetti che si comportano come array e la notazione con le parentesi quadrate equivale all'utilizzo di questo costruttore.\newline
+\newline
+Per tutto il resto gli array in javascript sono veri e propri oggetti, di conseguenza possiamo farci tutto quello che si può fare con un oggetto. In più possiede la funzione lenght (calcolato come 1 + il numero della proprietà di massimo valore nel vettore, non è il numero degli elementi), la funzione splice e degli indici con cui è possibile accedere alle proprietà. Notiamo che si possono eliminare alcune proprietà lasciano dei veri e propri buchi all'interno.\newline
+\newline

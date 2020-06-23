@@ -1,6 +1,7 @@
 \title{LEZIONE 2 12/03/20}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/58568b1d-5fc5-41c0-88f6-608e4b8f9f7a}{clicca qui}
 \section{Servlet}
+\subsection{Concetti base}
 Nasce l'esigenza di generare \textbf{contenuti dinamici} per le applicazioni web, inizialmente, infatti, HTTP era concepito come protocollo per scambio di documenti statici.\newline
 \newline
 Il gateway è un elemento imprescindibile che aumenta le capacità di un'applicazione web. Abbiamo visto che la versione arcaica di gateway era il CGI, che rappresenta un modo semplice e che usa le variabili d'ambiente per adempiere al suo compito. Ma CGI ha diversi problemi, perciò è necessario trovare una nuova soluzione.\newline
@@ -20,17 +21,33 @@ Al programmatore di un \textbf{Servlet} si chiede di programmare una \textbf{cla
 \newline
 Java Servlet è appunto un framework, tutte le applicazioni web hanno in comune il protocollo HTTP. Dal framework ci aspettiamo quindi di non dover, per esempio, programmare la gestione delle request e delle response.\newline
 \newline
-Il Servlet container è un ambiente che esegue il tuo programma, nel nostro caso è \textbf{Tomcat}. Il container materializza l'API del framework che stiamo usando, per esempio il metodo doGet() di cui noi facciamo l'override viene chiamato dal Servlet container automaticamente, senza che ce ne dobbiamo preoccupare.\newline
+Il Servlet container è un componente dell'application server ed è un ambiente che esegue il tuo programma, nel nostro caso è \textbf{Tomcat}. Il container materializza l'API del framework che stiamo usando e interagisce con le Java servlet, per esempio il metodo doGet() di cui noi facciamo l'override viene chiamato dal Servlet container automaticamente, senza che ce ne dobbiamo preoccupare. Il servlet container è quindi un mediatore fra HTTP server e le Servlet, è responsabile del ciclo di vita delle Servlet e si occupa della mappatura delle richieste HTTP alla specifica servlet.\newline
 \newline
 (ooo) La gerarchia dunque è che a monte di tutto c'è la JVM, nella quale gira il web server, all'interno del quale risiede il servlet container che gestisce i Servlet che il programmatore scrive.\newline
 \newline
 Un primo beneficio che si nota nel programmare in un ambiente così fortemente strutturato è che, diversamente da CGI, i Servlet vengono eseguiti all'interno di un ambiente persistente e quindi è possibile eseguire più di una richiesta senza dover essere terminato.\newline
-Inoltre non c'è bisogno di preoccuparsi della concorrenza, semplicemente si programma un Servlet pensando a come deve rispondere a una certa request. Siamo quindi in presenza di un ambiente . C'è un prezzo da pagare per questo beneficio, ovvero che non siamo noi a gestire la concorrenza e quindi i thread, il modello di concorrenza lo ereditiamo dal contenitore. Il modello da seguire è chiamato "one thread per request" e significa che una volta sviluppato un servlet non siamo noi a invocare la "new" su quell'oggetto, perchè è il contenitore a gestire questo aspetto e lui ne avrà sempre e soltanto uno istanziato. Tutte le request interagiranno sempre con lo stesso oggetto istanza della Servlet programmata da noi. Quindi, si programma una servlet, ce ne ssarà una soltanta istanza, un solo oggetto, tutte le request che riceviamo (tante nello stesso istante) avrà un thread allcoato, non da noi, ma dal container e questi thread agiranno tutti sulla stessa istanza del Servlet. Questo processo ha ovviamente un grande problema: le variabili della classe Servlet sono condivise per tutte le request.\newline
+Inoltre non c'è bisogno di preoccuparsi della concorrenza, semplicemente si programma un Servlet pensando a come deve rispondere a una certa request. Siamo quindi in presenza di un ambiente \textbf{stateful}.\newline
+\newline
+C'è un prezzo da pagare per questo beneficio, ovvero che non siamo noi a gestire, per esempio, la concorrenza e quindi i thread, il modello di concorrenza lo ereditiamo dal contenitore.\newline
+Il modello da seguire è chiamato "\textbf{one thread per request}" (ooo) e significa che una volta sviluppata una servlet non siamo noi a invocare la "new" su quell'oggetto, perchè è il contenitore a gestire questo aspetto e lui ne avrà sempre e soltanto uno istanziato. Tutte le request interagiranno sempre con lo stesso oggetto istanza della Servlet programmata da noi.\newline
+Quindi: si programma una servlet, ce ne sarà una sola istanza, un solo oggetto, tutte le request che riceviamo (anche tante nello stesso istante) avranno un thread allocato, non da noi, ma dal container, e questi thread agiranno tutti sulla stessa istanza del Servlet.\newline
+Questo processo ha ovviamente un grande problema: le variabili della classe Servlet sono condivise per tutte le request.\newline
+\newline
 Un framework ti da servizi, ma ti impone dei vincoli.\newline
-Dal punto di vista materiale un framework è una libreria e noi in particolare useremo javax.servlet e javax.servlet.http, che sono interfacce implementate dal contenitore.\newline
-Il contenitore mappa le request sui metodi doGet() e doPost().\newline
+\newline
+Dal punto di vista materiale un framework è una libreria e noi useremo tendenzialmente javax.servlet e javax.servlet.http, che sono interfacce implementate dal contenitore.\newline
+\newline
+Analiziamo il ciclo di vita delle servlet. \newline
+Il contenitore mappa automaticamente le request sui metodi doGet() e doPost().\newline
+Il metodo init() viene chiamato quando la servlet inizia.
 Il metodo destroy() viene chiamato quando il processo dell'applicazione viene stoppato, fatto che è deciso dall'amministratore del server.\newline
-Il file web.xml serve per mappare le richieste http al corretto servlet.\newline
+\newline
+Il file web.xml serve per mappare le richieste http alla corretta servlet.\newline
+\newline
 La programmazione per Servlet è una programmazione per componenti, nel senso che il programmatore scrive solo i componenti variabili per l'applicazione, tutto il resto è gestito dal framework.\newline
-Il servlet Context è una scatola che contiene diversi componenti che presi nell'insieme rappresentano un'applicazione. L'oggetto java che rappresenta un'applicazione è proprio il servlet context, infatti quando devo fare la deploy di una applicazione si distribuisce il servlet context. Il servlet context è un insieme di risorse che contiene i sorgenti delle applicazioni java scritte dal programmatore, i file di configurazione e le risorse stesse (per esempio le immagini).\newline
-Il file web.xml contiene la configurazione dell'applicazione, fra cui la mappatura delle varie servlet. Per maggiori informazioni guardare i video. In breve: c'è Tomcat che è rappresentato dal server stesso, il contenitore, nei nostri esempi sarà localhost:8080, a Tomcat arriva una richiesta. Una richeista appende all'indicazione del server (localhost:8080) un url, che è quello che consente di scatenare la servlet corretta. Tomcat viene istruito tramite un processo di Servlet mapping. Per maggiori informazioni guardare i video o i lucidi.\newline
+\newline
+Il servlet Context è una scatola che contiene diversi componenti che presi nell'insieme rappresentano un'applicazione. L'oggetto java che rappresenta un'applicazione è proprio il servlet context, infatti quando bisogna fare la deploy di una applicazione si distribuisce il servlet context. Il servlet context è un insieme di risorse che contiene i sorgenti delle applicazioni java scritte dal programmatore, i file di configurazione e le risorse (per esempio delle immagini).\newline
+\newline
+Il file web.xml contiene la configurazione dell'applicazione, fra cui la mappatura delle varie servlet.
+\newline
+\newline

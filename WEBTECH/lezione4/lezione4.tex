@@ -1,45 +1,44 @@
 \title{LEZIONE 4 19/03/20}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/53d9a40e-3109-44fc-8195-0553eedfb6d9}{clicca qui}
-\section*{Prerequisiti}
-Connessione a database con JDBC
-\section*{Informazioni}
-Informazioni sul progetto.\newline
-Nuovo progetto caricato su beep: "Esercizio gestione spese di trasferta", è commentato (slide e readme.md) e contiene una base di dati. Contiene concetti molto improtanti su JDBC.
-\section{JDBC}
-Gli argomenti di questa lezione verranno corredati alla visualizzazione di un progetto nella cartella su Beep delle lezioni $>$ Servlet-base $>$ Progetto eclipse servlet con jDBC.\newline
+\subsection{JDBC}
+Gli argomenti di questa lezione sono strettamente legati alla visualizzazione di un progetto nella cartella su Beep delle lezioni $>$ Servlet-base $>$ Progetto eclipse servlet con jDBC.\newline
 \newline
 JDBC è un architettura molto elegante per il mondo Java e serve per mettere in contatto applicazioni Java con DB.\newline
 JDBC eredita la sua logica da ODBC, un architettura sviluppata originariamente da Microsoft.\newline
 \newline
-Il vantaggi di JDBC sono legati al mascheramento delle differenze che sono presenti nelle modalità con cui un'applicazione interagisce con una base di dati. Il principale aspetto di JDBC è quello di migliorare la portabilità dei sistemi che fanno uso di DB. Per ottenere questo sfrutta due tecniche: rimuove la necessità che il programmatore conosca le tecnicalità con cui avviene la connessione coi DB, maschera alcune differenze "dialettali" nell'uso di primitive SQL che alcune basi di dati offrono e altre magari offrono in maniera diversa.\newline
+Il vantaggi di JDBC sono legati al mascheramento delle differenze che sono presenti nelle modalità con cui un'applicazione interagisce con una base di dati.\newline
+La principale caratteristica di JDBC è di migliorare la portabilità dei sistemi che fanno uso di DB. Per ottenere questo sfrutta due tecniche: rimuove la necessità che il programmatore conosca le tecnicalità con cui avviene la connessione coi DB, maschera alcune differenze "dialettali" nell'uso di primitive SQL che alcune basi di dati offrono in un modo e altre in un altro.\newline
 \newline
-L'architettura JDBC struttura la connessione con la base di dati in maniera intelligente, che consente all'applicazione di ignorare l ospecifico modello della base di dati. Il modello utilizzato è \textbf{stratificato}: l'\textbf{applicazione Java} vede solo un'\textbf{API} (application programming interface) al di sotto del quale c'è un ambiente di runtime che, a fronte di un particolare modello di base di dati, carica un determinato Driver. Per un sistema operatico, un Driver è un programma speciale che contiene le istruzioni di gestione di una determinata periferica, questo stesso meccanismo è stato replicato per sviluppare JDBC.\newline
-Più in dettaglio, l'API utilizza un servizio chiamato \textbf{Driver Menager} che ha lo scopo di caricare un determinato \textbf{Driver} a seconda di con quale base di dati dovrà interagire.\newline
+L'architettura JDBC struttura la connessione con la base di dati in maniera intelligente e consente all'applicazione di ignorare lo specifico modello della base di dati.\newline
+Il modello utilizzato è \textbf{stratificato}: l'\textbf{applicazione Java} vede solo un'\textbf{API} (application programming interface) al di sotto del quale c'è un ambiente di runtime che, a fronte di un particolare modello di base di dati, carica un determinato \textbf{Driver}. Per un sistema operatico, un Driver è un programma speciale che contiene le istruzioni di gestione di una determinata periferica, questo stesso meccanismo è stato replicato per sviluppare JDBC.\newline
+\newline
+Più in dettaglio, l'API utilizza un servizio chiamato \textbf{Driver Menager} che ha lo scopo di caricare un determinato \textbf{Driver} a seconda di quale sia la base di dati con cui dovrà interagire.\newline
 \newline
 L'effettiva comodità di JDBC risiede nei vantaggi che il programmatore ne trae, ovvero che dovrà interagire con una serie di oggetti di utilità: Connection, Statement, ResultSet, SQLException (Driver e DriverManager li vedremo una sola volta). L'intera architettura JDBC è fatta da queste classi.\newline
 \newline
 JDBC è utilizzato anche al di fuori dell'ambiente web.\newline
 \newline
-Per l'uso di JDBC all'interno di una Servlet si usa il seguente workflow (pattern):
+Per l'uso di JDBC all'interno di una Servlet si segue il seguente work-flow/pattern:
 \begin{itemize}
     \item connsessione;
     \item preparazione ed esecuzione di query;
     \item precessamento dei risultati;
-    \item disconessione (molto importante, siccome la base di dati è una risorsa comune a tutte le servlet, lasciarla "libera" è essenziale, talvolta la disconnessione precede anche il processamento dei risultati; un metodo più avanzato per distribuire in maniera efficiente le connessioni è il cosiddetto "connection pooling", più informazioni sul video di questo argomento).
+    \item disconessione (molto importante, siccome la base di dati è una risorsa comune a tutte le servlet, lasciarla "libera" è essenziale, talvolta la disconnessione precede anche il processamento dei risultati.
 \end{itemize}
-Nel momento il programmatore non ha controllo sul ciclo di vita della propria applicazione (come nel caso dei Servlet) si prevedono dei pattern specifici riguardanti le quattro operazioni appena elencate.\newline
-\textbf{Connessione}: avviene nel momento di creazione della Servlet, cioè nella funzione init() della Servlet (nelle slide della lezioni ci sono più informazioni sull'esatto procedimento), i parametri (url, utente, pass, modello DB) necessari alla connessione al DB sono tipicamente inseriti all'interno del file xml di configurazione dell'applicazione web;\newline
-\textbf{oss.} tutti i blocchi riguardanti l'interazione con DB saranno contenuti in blocchi critici (try... catch... finally), nell'esercizio di gestione spese di trasferta su Beep c'è una variante molto carina, che abbrieva molto la lunghezza del codice.\newline
+\ \newline
+Nel momento in cui il programmatore non ha controllo sul ciclo di vita della propria applicazione (come nel nostro caso delle Servlet) si prevedono dei pattern specifici riguardanti le quattro operazioni appena elencate.\newline
+\newline
+\textbf{Connessione}: avviene nel momento di creazione della Servlet, cioè nella funzione init() della Servlet, i parametri (url, utente, pass, modello DB) necessari alla connessione al DB sono tipicamente inseriti all'interno del file xml di configurazione dell'applicazione web;\newline
+\textbf{oss.} tutti i blocchi riguardanti l'interazione con DB saranno contenuti in blocchi critici (try... catch... finally).\newline
+\newline
 \textbf{Disconnessione}: simmetricamente la disconnessione è eseguita nel metodo destroy(), per cui la servlet ha una connessione disponibile per tutta la sua durata.\newline
 \newline
 La connessione e disconnessione sono le operazioni più costose all'interno di un DB, dunque ci sono tecniche avanzate che permettono di sfruttare al meglio le connessioni (vedi connection pooling).\newline
 \newline
-Questo schema lo vedremo in tutti i progetti caricati.\newline
+C'è un grande problema che richiede una certa attenzione. Un processore di query è un componente che riceve una stringa query SQL, lo analizza (parsing), costruisce l'albero sintattico della query, lo ottimizza, lo compila in un piano di accesso disco e infine lo esegue. Il grande problema è che non c'è bisogno di ricompilare il piano di accesso disco per tutte quelle query che sono "simili" fra di loro (cioè che differiscono per alcune variabili), quindi mandare query a ricompilare continuamente spreca un sacco di risorse. Come soluzione a questo problema intervengono le \textbf{parametric prepare statement}, che utilizzano degli scheletri di istruzioni con dei "?" al posto dei valori che potrebbero cambiare, che sono dette variabili di binding, e vengono compilati in \textbf{piani di accesso} una sola volta ed eseguiti quante volte si vuole con le variabili che si vuole. Se una query è molto complessa e la sua preparazione è molto onerosa, sfruttare questi prepare statement può rappresentare un vantaggio molto ingente.\newline
 \newline
-In questo schema c'è un grande problema. Un processore di query è un componente che riceve una stringa query SQL, lo analizza (parsing), costruisce l'albero sintattico della query, lo ottimizza, lo compila in un piano di accesso disco e infine lo esegue. Il grande problema è che non c'è bisogno di ricompilare il piano di accesso disco per tutte quelle query che sono "simili" fra di loro (cioè che differiscono per alcune variabili), quindi mandare query a ricompilare continuamente spreca un sacco di tempo. Come soluzione a questo problema intervengono le \textbf{parametric prepare statement}, che utilizzano degli scheletri di istruzioni con dei "?" al posto dei valori che potrebbero cambiare, che sono dette variabili di binding, e vengono compilati in piani di accesso una sola volta ed eseguiti quante volte si vuole con le variabili che si vuole. Se una query è molto complessa e la sua preparazione è molto onerosa, sfruttare questi prepare può rappresentare un vantaggio molto ingente.\newline
-"Mai mai mai fare query al volo, è sempre buona pratica prepararle prima".\newline
+"Mai mai mai fare query al volo, è sempre buona pratica prepararle prima". \newline
 \newline
-Le \textbf{SQL injection} sono un problema che riguardando l'esecuzione di query che sono frutto della concatenazione di una parte sicura con una parte insicura.\newline
-Per parte insicura si intendono stringhe senza controlli di formattazione da parte del programmatore. Questi problemi insorgono tipicamente quando la query è formata da una parte programmata e una parte che è il risultato di un parametro o un campo inserito direttamente (senza controllo da parte del programmatore) dall'utente. Per esempio se usiamo una query "select * where ID = " + "[input dell'utente]", un utente male intenzionato potrebbe scrivere "1 OR 1=1", ricevendo quindi come risposta l'intera tabella dal database, in quanto 1=1  sempre vero. Il concetto è che dobbiamo evitare di dare all'utente la possibilità di poter modificare l'albero sintattico della queri (nel caso appena mostrato è successo quando l'utente ha inserito "OR") Questo meccanismo può creare grandi falle di sicurezza.\newline
-Il rimedio a questo problema è l'utilizzo dei prepare statement, infatti preparando le query, l'albero sintattico viene precreato e quindi l'utente può solo e soltanto inserire parametri, che se sono mal formati, la base di dati produce un errore, invece di rilevare informazioni che non dovrebbe.\newline
-\newline
+Le \textbf{SQL injection} sono un'altro problema critico delle interazioni con le basi di dati e riguardando l'esecuzione di query che sono frutto della concatenazione di una parte sicura con una parte insicura.\newline
+Per parte insicura si intendono stringhe senza controlli di formattazione da parte del programmatore. Questi problemi insorgono tipicamente quando la query è formata da una parte programmata e una parte che è il risultato di un parametro o un campo inserito direttamente (senza controllo da parte del programmatore) dall'utente. Per esempio se usiamo una query "select * where ID = " + "[input dell'utente]", un utente male intenzionato potrebbe scrivere "1 OR 1=1", ricevendo quindi come risposta l'intera tabella dal database, in quanto 1=1 è sempre vero. Il succo del discorso è che dobbiamo evitare di dare all'utente la possibilità di poter modificare l'albero sintattico della query (nel caso appena mostrato è successo quando l'utente ha inserito "OR"). Questo meccanismo può creare grandi falle di sicurezza.\newline
+Il rimedio a questo problema è l'utilizzo dei prepare statement, infatti preparando le query, l'albero sintattico viene precreato e quindi l'utente può solo e soltanto inserire parametri, che, nel caso in cui fossero mal formati, producono semplicemente un errore, invece di rilevare informazioni che non dovrebbe.

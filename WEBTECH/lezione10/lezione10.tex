@@ -1,13 +1,4 @@
 \title{LEZIONE 10 16/04/20}
 \textbf{link} \href{https://web.microsoftstream.com/video/23680e25-5ca6-48fc-aeb4-4cdbbee98726?list=user&userId=cfe0965d-9a7c-40e2-be6e-f078296a1914}{clicca qui}
-\section{esercizio da un tema d'esame (pt.2)}
-\section{Filtri}
-La verifica evento epr evento dei diritti di accesso è una funzionalità obligatoria dei siti multiruolo.\newline
-La verifica viene fatta in ogni controllore e per evitare di dduplicare codice si utilizzano i filtri.\newline
-Un filtro è una classe Java che il servler container interpone fra la richiesta (l'HTTP request) e il servizio (la servlet). I filtri possono essere anche concatenati uno dopo l'altro.\newline
-\newline
-La classe filtro ha sostanzialmente la stessa struttura di una servlet, ha init(), destroy() e invece di doGet e doPost, ha doFilter(). Ci sono tre interfaccie che vvengono usate per i filtri e sono: Filter, FilterChain e FIlterConfig.\newline
-\newline
-La catena di filtri si può specificare nel web.xml, inoltre la catena di filtri è unica per ogni app, non si possono specificare catene particolari per ogni servlet. Il comando chain.doFilter() in poche parole passa il comando al prossimo filtro della catena, se ce ne è uno, altrimenti prosegue paassando la richiesta alla servlet che se ne deve occupare.\newline
-\newline
+\subsection{esercizio da un tema d'esame (pt.2)}
 

@@ -1,51 +1,52 @@
 \title{LEZIONE 3 18/03/20}\newline
 \textbf{link} \href{https://web.microsoftstream.com/video/53d9a40e-3109-44fc-8195-0553eedfb6d9}{clicca qui}
-\section*{Prerequisiti}
-Fondamenti Servlet - esempi
-\section*{Informazioni}
-Su Beep nella sezione Documents and media $>$ Esercizi $>$ Servlet - jsp - jdbc $>$ esercizio server side messaggi, si trova un esempio (progetto eclipse completo .zip) commentato con video e power point. E' importante, dice il prof, perchè presenta tutto ciò che può esserci in esame.\newline
-\newline
-Sempre su Beep, ma nella sezione Documents and media $>$ Esercizi $>$ CSS c'è un esercizio, che però è integralmente spiegato nella cartella delle video lezioni riguardanti Css.\newline
-\newline
-Useremo i giorni di sospensione (8-9 aprile) pe le prove in itinere per fare degli esercizi autonomi.\newline
-\newline
-Verranno pubblicati anche altri progetti, man mano più complessi.\newline
-\newline
-Sono molto importanti la documentazione sul package javax.servlet.http e il package javax.servlet.
-\section{Servlet - esempi}
-Una programmazione in servlet è una programmazione che ci chiede di rispettare alcune regole per trarne dei benefici. I benefici principali sono la scalabilità, la gestione automatica dei cicli di vita, la mascheratura degli aspetti tecnici di HTTP. Java servlet ci permette di interagire com HTTP attraverso degli oggetti. Uno dei primo esempio di oggetto che si incontra è l'oggetto request.
-\subsection{Esempio: contatore condiviso fra i client}
+\subsection{Esempi}
+Una programmazione in servlet è una programmazione che ci chiede di rispettare alcune regole per trarne dei benefici. I benefici principali sono la scalabilità, la gestione automatica dei cicli di vita, il mascheramento degli aspetti tecnici di HTTP. Java servlet ci permette di interagire com HTTP attraverso degli oggetti. Uno dei primo esempio di oggetto che si incontra è l'oggetto request.
+\subsubsection{Esempio: contatore condiviso fra i client}
 Il file web.xml ci permette di controllare le impostazioni con cui vogliamo lavorare, inoltre ci permette di definire parametri a livello di applicazione (globali) o parametri a livello di servlet.\newline
 I parametri possono poi essere reperiti con chiamate di metodi di oggetti di sistema in maniera molto semplice.\newline
 Con questo esempio, oltre a mostrare l'utilizzo di questi parametri, viene mostrata l'utilità dei dati membro all'interno della servlet (gli attributi dell'oggetto servlet). Esistendo una sola istanza di servlet per tutte le request, ci aspettiamo che i dati membro vengano usati in maniera concorrente per tutti i client.\newline
 Nell'esempio particolare del contatore possiamo vedere che tutti i client possono incrementare il valore del contatore, perchè condividono il dato membro della servlet.\newline
 Quindi con questo esempio si imparano due cose importanti: come si configura una servlet per farla partire e il particolare modello di gestione della concorrenza e delle variabili.
-\subsection{Esempio: contatore per ogni client}
+\subsubsection{Esempio: contatore per ogni client}
 Con questo esempio andiamo ad analizzare il meccanismo di una sessione. Per sessione si intende un gruppo di richieste che possono essere fatte risalire a un unico cliente. HTTP ha solo il metodo GET e POST, e quindi sembra che non sia lui ad occuparsi della gestione della sessione, infatti la gestione della sessione non era nativamente intesa all'interno del protocollo HTTP, ma si è sviluppata successivamente grazie all'utilizzo degli header, in particolare esistono due tecnica: o l'uso degli header cookie, oppure grazie all'url rewriting.\newline
-Da un punto di vista programmativo queste due tecniche sono trasparenti per noi programmatori, noi otterremo un oggetto che maschererà i meccanismi che stanno dietro alla gestione delle sessioni.
+Queste due tecniche sono trasparenti per noi programmatori, noi otterremo un oggetto che maschererà i meccanismi che stanno dietro alla gestione delle sessioni.
 \subsection{Forme di identificazione}
 Il protocollo HTTP nella sua versione più base (senza i metadati aggiuntivi) serve richieste anonime.\newline
-[tema molto importante per il professore, spesso usato all'orale:] Analiziamo la terminologia e i concetti base che stanno dietro alla sicurezza della gestione delle sessioni (con forme di identificazione del client via via più stringenti):
+\newline
+Analiziamo la terminologia e i concetti base che stanno dietro alla sicurezza della gestione delle sessioni (con forme di identificazione del client via via più stringenti):
 \begin{itemize}
-    \item Pseudo identificazione: l'atto con cui il server associa un'etichetta arbitraria alle richeiste del client allo scopo di identificare quelle che provengono dallo stesso client. Come esempio si per vedere in atto la pseudo identificazione si può usare il "SessionCounter", aprire due browser (uno in incognito e uno no) e vedere come i due contatori non sono condivisi. La pseudo identificazione non ha bisogno che l'utente si logghi.
-    \item Identificazione: è il processo con cui il cliente dichiara un'identità. Non ci stiamo più riferendo a un client, ma a un user, un account, una persona.
-    \item Autenticazione: è il processo in cui il server verifica l'identificazione del client. Il client e il server condividono un "segreto" (password). La differenza fra pseudo identificazione e identificazione-autenticazione è che nel primo il server inventa un label da dare a un client, che comunque rimane anonimo in quanto l'identità è fornita dal server, e nel sencondo il client si dichiara un user che poi viene verificato dal server, quindi in questo caso l'identità proviene dal client.
-    \item Autorizzazione: è il processo in cui il server garantisce l'accesso a risorse e processi a un utente identificato e autenticato. L'autorizzazione è una proprietà dell'identità verificata. E' in poche parole il permesso di vedere o fare cose particolari a fronte di un'identità verificata.
-    \item RBAC (Role based access control): è uno schema di autorizzazione che garantisce diritti non solo sulla base della tua identità, ma anche grazie al tuo ruolo.
+    \item \textbf{Pseudo identificazione}: l'atto con cui il server associa un'etichetta arbitraria alle richeiste del client allo scopo di identificare quelle che provengono dallo stesso client.\newline
+    Come esempio per vedere in atto la pseudo identificazione si può usare il "SessionCounter", aprire due browser (uno in incognito e uno no) e vedere come i due contatori non sono condivisi. La pseudo identificazione non ha bisogno che l'utente effettui il login.
+    \item \textbf{Identificazione}: è il processo con cui il cliente dichiara un'identità. Non ci stiamo più riferendo a un client, ma a un user, un account, una persona.
+    \item \textbf{Autenticazione}: è il processo in cui il server verifica l'identificazione del client. Il client e il server condividono un "segreto" (password). La differenza fra pseudo identificazione e identificazione-autenticazione è che nel primo il server inventa un label da dare a un client, che comunque rimane anonimo in quanto l'identità è fornita dal server, e nel sencondo il client si dichiara come user e poi viene verificato dal server, quindi in questo caso l'identità proviene dal client.
+    \item \textbf{Autorizzazione}: è il processo in cui il server garantisce l'accesso a risorse e processi a un utente identificato e autenticato. L'autorizzazione è una proprietà dell'identità verificata. E' in poche parole il permesso di vedere o fare cose particolari a fronte di un'identità verificata.
+    \item \textbf{RBAC} (Role based access control): è uno schema di autorizzazione che garantisce diritti non solo sulla base dell'identità, ma anche sulla base del ruolo.
 \end{itemize}
 \subsection{Tracciemento della sessione}
-Si dice cookie un piccolo contenuto di informazioni che il server installa sul browser del client, allo scopo che venga restituito al server a ogni successiva richiesta per poter tracciare un client e la sua sessione.\newline
-Vediamo ora in maniera "tecnica" come funziona la pseudo-identificazione tramite gli header cookie. Il server, quando riceve la prima richiesta da parte di un client (quindi una richiesta anonima), vuole che la seconda richiesta sia pseudo-identificata (non più anonima). Se andiamo ad analizzare la seconda richiesta infatti ci accorgiamo che fra i request header è presente, nella voce cookie, il label che il server ha generato per me. Infatti se andiamo a vedere la response alla prima request, notiamo che il server propone al client un label tramite l'header set-cookie. Dunque alla seconda richiesta il client restituisce al server questo cookie e quindi riesce a pseudo-identificarsi.\newline
+Si dice \textbf{cookie} un piccolo contenuto di informazioni che il server installa sul browser del client, allo scopo che venga restituito al server a ogni successiva richiesta per poter tracciare un client e la sua sessione.\newline
 \newline
-Fra i vari esercizi caricati su beep ce n'è uno che si chiama cookie inspector, con cui possiamo andare a fondo con la questione dei cookie. Come esercizio provare anche a disabilitare i cookie e a vedere cosa succede.\newline
+Vediamo ora in maniera "tecnica" come funziona la pseudo-identificazione tramite gli header cookie. Il server, quando riceve la prima richiesta da parte di un client (quindi una richiesta anonima), vuole che la seconda richiesta sia pseudo-identificata (non più anonima), e chiede al client di impostare un label specifico tramite i cookie. Nel momento in cui avviene una richiesta successiva ci accorgiamo che fra i request header è presente, nella voce cookie, il label che il server ha generato e assegnato al client durante la prima interazione.\newline
 \newline
-I cookie non sono un canale sicuro, possono essere sniffati e si possono fare attacchi man in the middle.\newline
+Il server propone al client un label tramite l'header set-cookie. Dunque alla seconda richiesta il client restituisce al server questo cookie e quindi riesce a pseudo-identificarsi.\newline
 \newline
-L'identificazione autorizzata non sostituisce la pseudoidentificazione. Immaginiamo che avvenga sia una psaeudoidentificazione sia una identificazione autenticazione con per esempio un login, quindi il mio client è stato autenticato e la sessione è tracciata dai cookie. Da ora in poi è ovvio che la sola pseudoidentificazione non implica l'autenticazione precedentemente fatta (altrimenti dei semplici attacchi informatici potrebbero causare grandi problemi di falsa appropriazione di identità), ovvero il tracciamento della sessione e l'identificazione autenticazione sono su due piani diversi.\newline
+I cookie non sono un canale sicuro, possono essere sniffati e si possono fare attacchi man-in-the-middle.\newline
+\newline
+L'identificazione autorizzata non sostituisce la pseudoidentificazione. Immaginiamo che avvenga sia una psaeudo-identificazione, sia una identificazione-autenticazione tramite un login: il Client è stato autenticato e la sessione è tracciata dai cookie. Da ora in poi è ovvio che la sola pseudoidentificazione non implica l'autenticazione precedentemente fatta (altrimenti dei semplici attacchi informatici potrebbero causare grandi problemi di falsa appropriazione di identità), ovvero il tracciamento della sessione e l'identificazione autenticazione sono su due piani diversi.\newline
+\newline
 Il session tracking implica la psaudoidentificazione del client, o con cookie, dove il server inietta una stringa e il browser la restituisce a ogni futura richiesta, o con url rewriting, ormai non più usato.\newline
-Invece allo scopo di associare allo pseudo-cliente una qualunque informazione durevole (per esempio l'autenticazione di un client, oppure l'inserimento di un prodotto in un carrello), il server abbina a ogni pseudoidentità uun oggetto Java chiamato Session che è controllabile dal programmatore della servlet. In questo oggetto può essere presente un informazione che conferma che questa pseudoidentità è autenticata e corrisponde a un determinato user. In questo oggetto Java, presente nel server container e totalmente all'oscuro del browser, si possono depositare informazioni legate a una pseudoidentità (come per esempio il fatto che il client si sia identificato e autenticato).\newline
-Un esempio di utilizzo dell'oggetto Session si può vedere nel servlet fornito dal professore chiamato "SessionCounter".\newline
 \newline
-Possibile domanda da orale: c'è bisogno del login per personalizzare una pagina? no, basta il concetto di session tracking. A cosa serve il login? Il login serve ad associare ad una pseudoidentità un'identità autenticata allo scopo di fare autorizzazioni.\newline
+Invece, allo scopo di associare allo pseudo-cliente una qualunque informazione durevole (per esempio l'autenticazione di un client, oppure l'inserimento di un prodotto in un carrello), il server abbina a ogni pseudoidentità un oggetto Java chiamato Session che è controllabile dal programmatore della servlet. In questo oggetto può essere presente un informazione che conferma che questa pseudoidentità è autenticata e corrisponde a un determinato user. L'oggetto Session è nel server container e totalmente all'oscuro del browser, all'intenro si possono depositare informazioni legate a una pseudoidentità (come per esempio il fatto che il client si sia identificato e autenticato).\newline
 \newline
-In lezioni $>$ 8-Sevlet-base $>$ progetto eclipse-esempi-base-servlet e servlet con JDBC, ci sono progetti con cui possiam olavorare per scavare più a fondo in questi argomenti.
+Tipiche domande: c'è bisogno del login per personalizzare una pagina? no, basta il concetto di session tracking. A cosa serve il login? Il login serve ad associare ad una pseudoidentità un'identità autenticata allo scopo di fare autorizzazioni.
+\subsection{Filtri}
+La verifica evento epr evento dei diritti di accesso è una funzionalità obligatoria dei siti multiruolo.\newline
+\newline
+La verifica viene fatta in ogni controllore e per evitare di duplicare codice si utilizzano i filtri.\newline
+\newline
+Un filtro è una classe Java che il servler container interpone fra la richiesta (l'HTTP request) e il servizio (la servlet). I filtri possono essere anche concatenati uno dopo l'altro.\newline
+\newline
+La classe filtro ha sostanzialmente la stessa struttura di una servlet, ha init(), destroy() e invece di doGet e doPost, ha doFilter(). Ci sono tre interfaccie che vengono usate per i filtri e sono: Filter, FilterChain e FIlterConfig.\newline
+\newline
+La catena di filtri si può specificare nel web.xml, inoltre la catena di filtri è unica per ogni app, non si possono specificare catene particolari per ogni servlet. Il comando chain.doFilter() in poche parole passa il comando al prossimo filtro della catena, se ce ne è uno, altrimenti prosegue passando la richiesta alla servlet che se ne deve occupare.\newline
+\newline
