@@ -1,16 +1,16 @@
 # Fdb version 3
-["makeindex master.idx"] 1592878878 "master.idx" "master.ind" "master" 1592879574
-  "master.idx" 1592879573 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1592878878 "master.idx" "master.ind" "master" 1592880422
+  "master.idx" 1592880419 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "master.ind"
   "master.ilg"
-["pdflatex"] 1592879571 "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.tex" "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.pdf" "master" 1592879574
+  "master.ind"
+["pdflatex"] 1592880418 "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.tex" "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.pdf" "master" 1592880422
   "../../preamble/preamble.tex" 1592329557 707 ea9409653390c911ff58e23c44f6605e ""
   "../lezione1/img1.PNG" 1592877235 142676 c0a0d8815570cf4d8a590485e9f5a4fe ""
   "../lezione1/lezione1.tex" 1592879487 7640 e26d8a3ee6b053455cdf5607c21ba0fc ""
-  "../lezione2/lezione2.tex" 1592329551 5831 5664b762e4f7053639bf1959f8723422 ""
+  "../lezione2/lezione2.tex" 1592880415 6190 b0f7591f8cfdb4b4aa59f886b2aaafa6 ""
   "../lezione3/lezione3.tex" 1592329551 8839 add55674aa2cea528a7dd9b50c00c210 ""
-  "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.aux" 1592879573 2089 a8ff7c09d12ce6621c98f93ba7c382a4 ""
+  "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.aux" 1592880420 2082 4b334fe5be2d6fda9dad1ffc055113d2 ""
   "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.tex" 1592879565 1410 34afb14e9dbfa662a7cd64e79f53f88b ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570204714 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570202613 1004 54797486969f23fa377b128694d548df ""
@@ -171,17 +171,17 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1570209088 4694128 59e2d353f4dc7ded0243f5180e559ac1 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570209181 4261151 6e9769eabb4d92bbc917c56b8660c752 ""
   "c:/texlive/2019/texmf.cnf" 1570209062 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1592879573 2089 a8ff7c09d12ce6621c98f93ba7c382a4 "pdflatex"
+  "master.aux" 1592880420 2082 4b334fe5be2d6fda9dad1ffc055113d2 "pdflatex"
   "master.ind" 1592878879 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1592879573 671 39a4dcc43ae3441cb1a114971c59dcaf "pdflatex"
+  "master.out" 1592880420 664 7ab30fca42ea233b93cca8659b648e08 "pdflatex"
   "master.tex" 1592879565 1410 34afb14e9dbfa662a7cd64e79f53f88b ""
-  "master.toc" 1592879573 933 3c48176e7df76a9ab6fc7f8ae097333f "pdflatex"
+  "master.toc" 1592880420 926 5ec0786daa4c28bbaf191741224c8357 "pdflatex"
   (generated)
-  "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.log"
   "master.out"
+  "master.pdf"
+  "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.log"
   "master.aux"
   "master.idx"
-  "master.pdf"
-  "master.toc"
   "c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.pdf"
   "master.log"
+  "master.toc"

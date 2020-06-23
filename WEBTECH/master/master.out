@@ -3,7 +3,7 @@
 \BOOKMARK [2][-]{subsection.2.1}{HTTP request}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{HTTP response}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{CGI}{}% 5
-\BOOKMARK [1][-]{section.4}{Servlet - base}{}% 6
+\BOOKMARK [1][-]{section.4}{Servlet}{}% 6
 \BOOKMARK [1][-]{section.5}{Servlet - esempi}{}% 7
 \BOOKMARK [2][-]{subsection.5.1}{Esempio: contatore condiviso fra i client}{section.5}% 8
 \BOOKMARK [2][-]{subsection.5.2}{Esempio: contatore per ogni client}{section.5}% 9
