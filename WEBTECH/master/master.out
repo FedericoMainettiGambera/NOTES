@@ -1,42 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Architetture}{}% 1
 \BOOKMARK [1][-]{section.2}{HTTP}{}% 2
-\BOOKMARK [1][-]{section.3}{CGI, Common Gateway Interface}{}% 3
-\BOOKMARK [1][-]{section.4}{Servlet - base}{}% 4
-\BOOKMARK [1][-]{section.5}{Servlet - esempi}{}% 5
-\BOOKMARK [2][-]{subsection.5.1}{Esempio: contatore condiviso fra i client}{section.5}% 6
-\BOOKMARK [2][-]{subsection.5.2}{Esempio: contatore per ogni client}{section.5}% 7
-\BOOKMARK [2][-]{subsection.5.3}{Forme di identificazione}{section.5}% 8
-\BOOKMARK [2][-]{subsection.5.4}{Tracciemento della sessione}{section.5}% 9
-\BOOKMARK [1][-]{section.6}{JDBC}{}% 10
-\BOOKMARK [1][-]{section.7}{JSP}{}% 11
-\BOOKMARK [1][-]{section.8}{JSTL}{}% 12
-\BOOKMARK [1][-]{section.9}{Thymeleaf}{}% 13
-\BOOKMARK [1][-]{section.10}{Esercitazione}{}% 14
-\BOOKMARK [2][-]{subsection.10.1}{Esercizio bacheca messaggi}{section.10}% 15
-\BOOKMARK [2][-]{subsection.10.2}{Esercizio post management}{section.10}% 16
-\BOOKMARK [1][-]{section.11}{esercizio da un tema d'esame \(pt.1\)}{}% 17
-\BOOKMARK [1][-]{section.12}{esercizio da un tema d'esame \(pt.2\)}{}% 18
-\BOOKMARK [1][-]{section.13}{Filtri}{}% 19
-\BOOKMARK [1][-]{section.14}{CSS}{}% 20
-\BOOKMARK [2][-]{subsection.14.1}{Selettori}{section.14}% 21
-\BOOKMARK [2][-]{subsection.14.2}{Rendering}{section.14}% 22
-\BOOKMARK [1][-]{section.15}{Client-side scripting}{}% 23
-\BOOKMARK [2][-]{subsection.15.1}{eventi}{section.15}% 24
-\BOOKMARK [3][-]{subsubsection.15.1.1}{Eventi "ibridi" gestiti da client e server}{subsection.15.1}% 25
-\BOOKMARK [2][-]{subsection.15.2}{Architettura fat client}{section.15}% 26
-\BOOKMARK [3][-]{subsubsection.15.2.1}{Elementi di un'architettura fat client}{subsection.15.2}% 27
-\BOOKMARK [1][-]{section.16}{Javascript}{}% 28
-\BOOKMARK [2][-]{subsection.16.1}{Numeri}{section.16}% 29
-\BOOKMARK [2][-]{subsection.16.2}{Stringhe}{section.16}% 30
-\BOOKMARK [2][-]{subsection.16.3}{Istruzioni}{section.16}% 31
-\BOOKMARK [2][-]{subsection.16.4}{Uguaglianza}{section.16}% 32
-\BOOKMARK [2][-]{subsection.16.5}{Oggetti}{section.16}% 33
-\BOOKMARK [2][-]{subsection.16.6}{Funzioni}{section.16}% 34
-\BOOKMARK [2][-]{subsection.16.7}{Prototipi}{section.16}% 35
-\BOOKMARK [2][-]{subsection.16.8}{Undefined}{section.16}% 36
-\BOOKMARK [1][-]{section.17}{Funzioni in JavaScript}{}% 37
-\BOOKMARK [2][-]{subsection.17.1}{Vettori in JavaScript}{section.17}% 38
-\BOOKMARK [1][-]{section.18}{JavaScript e il DOM}{}% 39
-\BOOKMARK [1][-]{section.19}{JavaScript e la gestione degli eventi}{}% 40
-\BOOKMARK [1][-]{section.20}{AJAX: javascript e l'interazione client server asincrona}{}% 41
-\BOOKMARK [1][-]{section.21}{Patter pure HTML vs RIA}{}% 42
+\BOOKMARK [2][-]{subsection.2.1}{HTTP request}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{HTTP response}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{CGI}{}% 5
+\BOOKMARK [1][-]{section.4}{Servlet - base}{}% 6
+\BOOKMARK [1][-]{section.5}{Servlet - esempi}{}% 7
+\BOOKMARK [2][-]{subsection.5.1}{Esempio: contatore condiviso fra i client}{section.5}% 8
+\BOOKMARK [2][-]{subsection.5.2}{Esempio: contatore per ogni client}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.3}{Forme di identificazione}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.4}{Tracciemento della sessione}{section.5}% 11
