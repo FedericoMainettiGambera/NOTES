@@ -5,7 +5,7 @@ I sistemi dinamici \textbf{lineari tempo invarianti} sono sistemi in cui $f$ e $
 \newline
 Li vedremo solo SISO (single input, single output).\newline
 \newline
-Cominciamo per il caso a \textbf{tempo continuo} (TC). L'unico modo per fare un sistema dinamico a tempo continuo lineare tempo invariante (SD TC LTI) è il seguente:
+Cominciamo per il caso a \textbf{tempo continuo} (TC). L'unico modo per avere un sistema dinamico a tempo continuo lineare tempo invariante (SD TC LTI) è il seguente:
 \[
     \begin{cases}
         \dot{x}_1(t) &= a_{11}x_1(t) + \dots+ a_{1n}x_{n}(t) + b_1 u(t)\\
@@ -48,32 +48,32 @@ Il caso a \textbf{tempo discreto} (TD) è analogo.
 \textbf{oss.} Nei libri di testo si può trovare scritto così: $\begin{cases}
     x(k+1) = Ax(k) + bu(k)\\
     y(k+1) = cx(k+1) +d u(k+1)
-\end{cases}$, comunque la cosa importatne è che nella prima equazione del sistema ci siano due valori successivi di $k$ (quello corrente e quello successivo oppure quello corrente e quello precedente) e nella seconda ci sia un solo valore di $k$ (stesso valore consistente, che sia quello corrente, quello successivo o quello precedente, etc.).
+\end{cases}$, comunque sia scritta, cià che importa è che nella prima equazione del sistema ci siano due valori successivi di $k$ (quello corrente e quello successivo oppure quello corrente e quello precedente) e nella seconda ci sia un solo valore di $k$ (stesso valore consistente, che sia quello corrente, quello successivo o quello precedente, etc.).
 \newpage
 \section{Equilibrio}
 \subsection{Definizione}
-Poniamoci una domanda: con $u(t)$ (o $u(k)$) $=\bar{u}$ costante, esiste un qualche valore $\bar{x}$ costante tale che 
+Poniamoci una domanda:
 \[
     \begin{rcases}
         x(0) &= \bar{x}\\
         u(t) \;\text{(o $u(k)$)}\; &= \bar{u} \;\;\text{per $t$ (o $k$) $\geq 0$}\;
     \end{rcases} \rightarrow x(t) \;\text{(o $x(k)$)}\; = \bar{x} \;\;\;\;\text{per $t$ (o $k$) maggiore di 0}\;
 \]
-, cioè, con un ingresso costante deciso, esiste un qualche stato costante tale che, prendendo proprio questo stato come stato iniziale e applicando l'ingresso costante deciso, lo stato non cabia?\newline
+Cioè: con un ingresso costante deciso ($u(t)$ (o $u(k)$) $=\bar{u}$ costante), esiste un qualche stato costante ($\bar{x}$ costante) tale che, prendendo proprio questo stato come stato iniziale e applicando l'ingresso costante deciso, lo stato non cabia?\newline
 \newline
-\textbf{oss.} Il concetto di equilibrio è che se io metto un sistema in uno stato di equilibrio, lui rimane lì. Da notare è che la stabilità è un altra cosa: se "sposto" il sistema dallo stato di stabilità, il sistema tende a ritornare lì.
+\textbf{oss.} Il concetto di equilibrio è che se si pone un sistema in uno stato di equilibrio, lui rimane lì. Da notare è che la stabilità è un altra cosa: se "sposto" il sistema dallo stato di stabilità, il sistema tende a ritornare lì.
 \subsection{Calcolo degli equilibri}
 Vediamo il caso a \textbf{tempo continuo} (TC). Se $x$ deve rimanere costante, significa che la derivata deve essere nulla $\dot{x} = 0$. Quindi in generale con $\dot{x} = f(x,u)$, noto il valore $\bar{u}$ segnato che applico, gli eventuali $\bar{x}$ sono le soluzioni di $f(\bar{x}, \bar{u}) = 0$.\newline
 \newline
-Vediamo il caso a \textbf{tempo discreto} (TD). Se $x$ deve rimanere costante, significa che $x(k+1) = x(k)$ per ogni $k$, cioè che $x(k+1)$ deve rimanere costante. Quindi in tal caso dovrò risolvere per $\bar{x}$ l'equazione $f(\bar{x}, \bar{u}) = \bar{x}$.\newline
+Vediamo il caso a \textbf{tempo discreto} (TD). Se $x$ deve rimanere costante, significa che $x(k+1) = x(k)$ per ogni $k$, cioè $x(k+1)$ deve rimanere costante. Quindi in tal caso dovrò risolvere per $\bar{x}$ l'equazione $f(\bar{x}, \bar{u}) = \bar{x}$.\newline
 \newline
 Vediamo ora il caso \textbf{tempo continuo} (TC) \textbf{lineare tempo invariante} (LTI) (per sistemi non lineari guardare l'osservazione più avanti). In questo caso l'equazione da risolvere diventa $0 = A \bar{x} + b \bar{u}$ (risolvendo questo sistema matriciale si trovano i vari stati di equilibrio). Se $A$ non è singolare, allora esiste uno e uno solo $\bar{x} = -A^{-1} b u$, altrimenti o non esiste $\bar{x}$ o esistono infiniti $\bar{x}$.\newline
 \newline
 Vediamo ora il caso \textbf{tempo discreto} (TD) \textbf{lineare tempo invariante} (LTI). In questo caso l'equazione da risolvere diventa $\bar{x} = A \bar{x} + b \bar{u}$. Questa equazione si scrive anche $(I-A)\bar{x} = b \bar{u}$ e se $I-A$ non è singolare, cioè se $A$ non ha autovalori in 1, allora esiste uno e uno solo $\bar{x} = (I-A)^{-1} b \bar{u}$, altrimenti o non esiste $\bar{x}$ o esistono infiniti valori $\bar{x}$.\newline
 \newline
-\textbf{oss.} Nel caso non lineare $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$.\newline
+\textbf{oss.} Nel \textbf{caso non lineare} $g(\bar{x}, \bar{u})$ potrebbe anche non avere significato, quindi non esiste un'uscita d'equilibrio. Invece nel caso lineare (sia TC sia TD) se esiste $\bar{x}$, allora esiste sempre $\bar{y} = c \bar{x} + d \bar{u}$.\newline
 \newline
-Se esiste un $\bar{x}$ (cioè se un sistema ammette un certo stato di equilibrio) per certo $u = \bar{u}$, in generale esiste un \textbf{uscita di equilibrio} $\bar{y} = g(\bar{x}, \bar{u})$.
+Se esiste un $\bar{x}$ (cioè se un sistema ammette un certo stato di equilibrio) per un certo $u = \bar{u}$, in generale esiste un \textbf{uscita di equilibrio} $\bar{y} = g(\bar{x}, \bar{u})$.
 \subsection{Esempi}
 \textbf{es.} Esempio della massa-molla visto la lezione scorsa:\newline
 L'equazione che governa il sistema è $m \ddot{y} = F - ky - h \dot{y}$, con $u = F$, ed eravamo arrivati a dire che $\begin{cases}
@@ -149,9 +149,9 @@ Vediamo cosa succede se imponiamo un $x(0)$ e un $u(k)$ con $k\geq 0$.\newline
 Calcoliamo il movimento dello stato $x$:\newline
 $x(0)$ è il dato di partenza, \newline
 $x(1) = Ax(0) + bu(0)$, \newline
-$x(2) ) A x(1) + bu(1) = A^2 x(0) + Abu(0) + bu(1)$,\newline
-$\dots$,\newline
-quinidi per il generico $k$ possiamo scrivere la \textbf{formula di Lagrange a tempo discreto per lo stato}
+$x(2) = A x(1) + bu(1) = A^2 x(0) + Abu(0) + bu(1)$,\newline
+$\dots$\newline
+Quinidi per il generico $k$ possiamo scrivere la \textbf{formula di Lagrange a tempo discreto per lo stato}
 \[
     x(k) = A^kx(0) + \sum_{l=0}^{k-1}A^{k-l-1}bu(l)
 \]
@@ -167,7 +167,7 @@ dove il termine
 \newline
 \textbf{oss.}  ML dipende linearmente solo dallo stato iniziale $x(0)$ e non dall'ingresso $u(k)$, MF dipende linearmente solo dall'ingresso $u(k)$ e non dallo stato iniziale $x(0)$.\newline
 \newline
-\textbf{oss.}  ML e MF sommati danno il movimento totale, vale quindi il principio di sovrapposizione degli effetti (PSE).\newline
+\textbf{oss.}  ML e MF sommati danno il movimento totale, vale quindi il \textbf{principio di sovrapposizione degli effetti (PSE)}.\newline
 \newline
 \textbf{oss.} Se il sistema non è lineare, in genere non si riesce a separare il movimento in ML e MF. \newline
 \newline

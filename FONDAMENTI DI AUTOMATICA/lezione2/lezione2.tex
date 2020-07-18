@@ -48,16 +48,16 @@ Prendiamo come esempio un tram che fa delle fermate numerate da $0, \dots, N$. A
 \begin{center}
     \includegraphics[height=3cm]{../lezione2/img5.PNG}
 \end{center}
-Supponiamo di avere un nastro trasportatore, sopra la quale c'è una tamoggia che fa cadere del granulato. Definiamo come $u(t)$ la portata in ingresso in $[kg/s]$. Il granulato viene trasportato dal nastro finchè non cade e definiamo come $y(t)$ questa portata in uscita. Diciamo che il tempo di transito sul nastro trasportatore $\tau$ è costante.\newline
+Supponiamo di avere un nastro trasportatore, sopra il quale c'è una tramoggia che fa cadere del granulato. Definiamo come $u(t)$ la portata in ingresso in $[kg/s]$. Il granulato viene trasportato dal nastro finchè non cade e definiamo come $y(t)$ questa portata in uscita. Diciamo che il tempo di transito sul nastro trasportatore $\tau$ è costante.\newline
 Per conoscere $y[t_0,t]$ mi occorerrà analizzare la portata $u[t_0-\tau,t-\tau]$ (notare i $\tau$) e\dots, in questo caso notiamo che ci servono informazioni su un intervallo di tempo diverso da quello desiderato ($[t_0,t]$). Per proseguire nell'esempio in maniera più semplice non utiliziamo $u[t_0-\tau,t-\tau]$, ma utiliziamo un approccio del tutto analogo: per conoscere $y[t_0,t]$ mi occorrono $u[t_0,t]$ e $y[t_0-\tau,t_0]$, che rappresenta cosa c'era sul nastro. Comunque notiamo che, senza fissarci in maniera troppo pignola su questo esempio, diversamente dagli esempi precedenti, la condizione iniziale del sistema sono infiniti numeri, che è ciò che succede quando un sistema è ritardato.\newline
 Siamo in presenza di un sistema dinamico.\newline
 \rule{\textwidth}{0,4pt}\newline
 \newline
-Quindi un sistema dinamico per conoscere l'andamento dell'uscita ha bisogno di conoscere l'andamento dell'ingresso e il valore iniziale di qualcos'altro (variabili di stato), che solitamente è un numero finito di numeri, ma può anche essere un numero infinito se si è in presenza di un ritardo.\newline
+Quindi un sistema dinamico, per conoscere l'andamento dell'uscita, ha bisogno di conoscere l'andamento dell'ingresso e il valore iniziale di qualcos'altro (variabili di stato), che solitamente è un numero finito di numeri, ma può anche essere un numero infinito se si è in presenza di un ritardo.\newline
 \newline
 \textbf{es.} caso particolare:\newline
 Prendiamo in considerazione un sistema costituito da un pulsante e una lampadina e il cui funzionamento segue il seguente meccanismo: quando si rilascia il pulsante la lampada cambia stato (si accende se era spenta e viceversa).\newline
-Per conoscere l'andamento dell'accensione $y$ nell'intervallo $[t_0,t]$ occorre conoscere l'ingresso (istanti di rilascio entro $[t_0,t]$) e lo stato iniziale della lampada, che non rappresenta un numero, ma una variabile booleana. Non sarebbe sbagliato dire che lo stato iniziale della lampada è un numero, ma lo indichiamo come variabile booleana, per mostrare in maniera marcata che non è una variabile di cui si può fare una derivata temporale, l'intero sistema non è governato da un equazione differenziale.\newline
+Per conoscere l'andamento dell'accensione $y$ nell'intervallo $[t_0,t]$ occorre conoscere l'ingresso (istanti di rilascio del pulsante entro $[t_0,t]$) e lo stato iniziale della lampada, che non rappresenta un numero, ma una variabile booleana. Non sarebbe sbagliato dire che lo stato iniziale della lampada è un numero, ma lo indichiamo come variabile booleana, per mostrare in maniera marcata che non è una variabile di cui si può fare una derivata temporale, l'intero sistema non è governato da un equazione differenziale.\newline
 \textbf{oss.} Se mi interessa soltanto lo stato della lampada all'isante $t$, l'informazione che mi occorre è lo stato della lampada a $t_0$ e se il numero di volte in cui il pulsante è stato rilasciato è pari o dispari.\newline
 \rule{\textwidth}{0,4pt}\newline
 \newline
@@ -88,9 +88,9 @@ Il volore assunto dalla prima variabile di stato $x_1(t)$ all'istante $t$ è una
         x_1(t) &= \phi_1(x_1(t_0),x_2(t_0), \dots, x_n(t_0), u[t_0,t], t)\\
         \dots \;\;\;&= \;\;\;\dots\\
         x_n(t) &= \phi_n(x_1(t_0),x_2(t_0), \dots, x_n(t_0), u[t_0,t], t)
-    \end{rcases} \rightarrow \text{funzione di transizione dello stato}\;
+    \end{rcases} \rightarrow \text{funzioni di transizione dello stato}\;
 \]
-Queste espressioni prendono il nome di \textbf{funzione di transizione dello stato}.
+Queste espressioni prendono il nome di \textbf{funzioni di transizione dello stato}.
 \[
     \begin{rcases}
         \\
@@ -110,9 +110,9 @@ Nei sistemi dinamici a tempo continuo:
         \dot{x}_1(t) &= f_1(x_1(t),x_2(t), \dots, x_n(t), u(t), t)\\
         \dots \;\;\;&= \;\;\;\dots\\
         \dot{x}_n(t) &= f_n(x_1(t),x_2(t), \dots, x_n(t), u(t), t)
-    \end{rcases} \rightarrow \text{equazione (differenziale) di stato}\;
+    \end{rcases} \rightarrow \text{equazioni (differenziali) di stato}\;
 \]
-Queste espressioni prendono il nome di \textbf{equazione (differenziale) di stato}.
+Queste espressioni prendono il nome di \textbf{equazioni (differenziali) di stato}.
 \[
     \begin{rcases}
         \\
@@ -122,7 +122,7 @@ Queste espressioni prendono il nome di \textbf{equazione (differenziale) di stat
 \]
 Quello che è cambiato rispetto a prima è che siamo in presenza di un equazione differenziale e quindi, quando noi integriamo questa equazione differenziale, il valore della funzione dipende da tutta la storia del termine noto.\newline
 \newline
-Con espressione vettoriale:
+Espressione vettoriale:
 \[
     x(t) = \left[\begin{matrix}
         x_1(t)\\
@@ -190,7 +190,7 @@ Quindi riscrivendo l'equazione che governa il sistema otteniamo: $m l^2 \dot{x}_
 Questo è un sistema dinamico, è tempo invariante, è non lineare (per via del termine $sin(x_1)$), è strettamente proprio, è del secondo ordine.\newline
 \rule{\textwidth}{0,4pt}
 \subsection{Sistema dinamico (SD) a tempo discreto (TD)}
-Per tempo discreto si intende che l'evoluzione temporate è "a passi", esiste infatti un indice temporale $k$ intero che tiene traccia dei numeri di passi. In alcuni casi fra $k$ e il tempo $t$ esiste una relazione, nel senso che $k$ rappresenta un intervallo temporale.\newline
+Per tempo discreto si intende che l'evoluzione temporate è "a passi", esiste infatti un indice temporale $k$ intero che tiene traccia dei numeri di passi. In alcuni casi fra $k$ e il tempo $t$ esiste una relazione, nel senso che $k$ rappresenta un intervallo temporale.
 \subsubsection{Espressione del sistema}
 Come sarà fatto un sistema dinamico a tempo discreto?
 \[
@@ -198,9 +198,9 @@ Come sarà fatto un sistema dinamico a tempo discreto?
         x_1(k) &= \phi_1(x_1(k_0),x_2(k_0), \dots, x_n(k_0), u[k_0,k], k)\\
         \dots \;\;\;&= \;\;\;\dots\\
         x_n(k) &= \phi_n(x_1(k_0),x_2(k_0), \dots, x_n(k_0), u[k_0,k], t)
-    \end{rcases} \rightarrow \text{funzione di transizione dello stato}\;
+    \end{rcases} \rightarrow \text{funzioni di transizione dello stato}\;
 \]
-Queste espressioni prendono il nome di \textbf{funzione di transizione dello stato}.\newline
+Queste espressioni prendono il nome di \textbf{funzioni di transizione dello stato}.\newline
 \[
     \begin{rcases}
         \\
@@ -212,7 +212,7 @@ Queste espressioni prendono il nome di \textbf{equazione o trasformazione d'usci
 \newline
 E' la stessa identica cosa scritta per i sistemi dinamici a tempo continuo, solo che invece di $t$ abbiamo $k$.\newline
 \newline
-Anche qui ci domandiamo come effettivamente sostanziare queste formule a livello pratico. Nel caso a tempo continuo abbiamo usato le equazioni differenziali. Nel caso a tempo discreto, invece, usiamo le \textbf{equazioni (di stato) alle differrenze} grazie al concetto di "passo prima", cioè di $k-1$ (capiremo perchè più avanti nel corso).\newline
+Anche qui ci domandiamo come effettivamente sostanziare queste formule a livello pratico. Nel caso a tempo continuo abbiamo usato le equazioni differenziali. Nel caso a tempo discreto, invece, usiamo le \textbf{equazioni (di stato) alle differrenze} grazie al concetto di "passo prima", cioè del passo $k-1$ (capiremo perchè più avanti nel corso).\newline
 \newline
 Nei sistemi dinamici a tempo discreto: 
 \[
@@ -244,8 +244,9 @@ Vediamo la legge che governa questo sistema:
 \]
 \textbf{oss.} non è un eq. di stato ben posta perchè a secondo membro c'è $u(k)$ (e non $u(k-1)$ come vorremmo).\newline
 \newline
-Per capire bene perchè questa equazione di stato non è corretta vediamo un gioco di ragionamento (o come lo chiama il prof: "educational game"):\newline
-Definisco un operatore "anticipo di un passo" e lo chiamo $z$, cioè, quando scrivo $z[v(k)]$ (qualunque cosa sia $v$), intendo in realtà dire $v(k+1)$. Questo operatore è lineare ( $z (a v_1(k) + b v_2(k)) = a v_1(k+1) + b v_2(k+1) = a (z(v_1(k)) + b (z(v_2(k))))$ ).\newline
+Per capire bene perchè questa equazione di stato non è corretta vediamo un gioco di ragionamento - o come lo chiama il prof: "educational game":\newline
+\newline
+Definisco un operatore "anticipo di un passo" e lo chiamo $z$, cioè, quando scrivo $z[v(k)]$ (qualunque cosa sia $v$), intendo in realtà dire $v(k+1)$. Questo operatore è lineare: $z (a v_1(k) + b v_2(k)) = a v_1(k+1) + b v_2(k+1) = a (z(v_1(k)) + b (z(v_2(k))))$.\newline
 Tornando al sistema: $y(k) = x(k) = x(k-1) + u(k)$, siccome questo sistema è tempo invariante la stessa cosa succede anche se sposto l'indice di un'unità, quindi posso riscrivere quest'equazione come $x(k+1) = x(k) + u (k+1)$. Ora posso usare il nostro operatore $z$ e scrivere $zx(k) = x(k) + zu(k)$, $(z-1) x(k) = z u(k)$.\newline
 A questo punto posso scrivere $y(k) = \frac{z}{z-1}u(k) = (1+ \frac{1}{z-1})u(k) = \frac{1}{z-1}u(k) + u(k)$, dove chiamando $\xi(k) = \frac{1}{z-1}u(k)$, posso scrivere $\begin{cases}
     \xi(k) = \frac{1}{z-1}u(k)\\
@@ -256,11 +257,9 @@ A questo punto posso scrivere $y(k) = \frac{z}{z-1}u(k) = (1+ \frac{1}{z-1})u(k)
 \end{cases}$.\newline
 Tutto questo mi evidenzia che il sistema è diamico, lineare tempo invariante, del primo ordine, e non strettamente proprio (compare $u(k)$ nell'equazione d'uscita).\newline
 \newline
-[ci sono problemi tecnici nella lezione per cui questo esempio è molto mal spiegato, il prof ricommenta l'esempio da capo].\newline
-\newline
-La ragione per cui il sistema è dinamico è che c'è un legame fra ciò che succede al passo prima rispetto al passo corrente. La chiave di tutto è che c'è un anticipo (l'operatore lineare $z$). [numerosi passaggi algebrici dopo] Arrivo ad avere un $\frac{z}{z-1}$, termine con lo stesso grado sia al numeratore sia al denominatore, cosa che non ci piace molto (lo capiremo più avanti nel corso). [altri passaggi algebrici dopo] Arrivo a definire $\xi(k)$ [ancora un passaggio algebrico] e svolgo l'operatore $z$ su $\xi$ (da $(z-1)\xi(k)$ arrivo a $\xi(k+1) - \xi(k)$). [altri passaggi algebrici] e trovo un'equazione di stato ben posta.\newline
+La ragione per cui il sistema è dinamico è che c'è un legame fra ciò che succede al passo prima rispetto al passo corrente.\newline
 \rule{\textwidth}{0,4pt}\newline
 \newline
 Quindi nel caso a tempo continuo, la ragione per cui il sistema è dinamico è perchè c'è un'equazione differenziale e l'operatore utilizzato era la derivata. Nel caso a tempo discreto abbiamo usato questo operatore $z$, definito da noi.\newline
-Questo ci fa capire che andando a lavorare sugli operatori che rendono dinamico un sistema, si può elaborare il sistema stesso in modo da far emergere la sua struttura in termini di equazioni di stato e d'uscita, che ci permette quindi di studiare il sistema in un modo non possibile se lo lasciassimo come era in origine.\newline
+Questo ci fa capire che andando a lavorare sugli operatori che rendono dinamico un sistema, si può elaborare il sistema stesso in modo da far emergere la sua struttura in termini di equazioni di stato e d'uscita.\newline
 \newline
