@@ -117,7 +117,7 @@ Dato il sistema dinamico LTI a TC, SISO $\begin{cases}
     \item Se INOLTRE il sistema è asintoticamente stabile, allora qualunque sia lo stato iniziale, l'uscita  tenderà a $y(t) \rightarrow |G(j \omega) U sin( \omega t + arg(G(j \omega)))$ per $t \rightarrow  \infty$
 \end{itemize}
 \subsection{Definizione di risposta in frequenza}
-\textbf{definizione}:  Data una funzione di trasferimento $G(s)$, la sua restrizione all'asse immaginario positivo $J^+$, cioè $G(j \omega)$ con $\omega \geq 0$, si dice \textbf{rispsota in frequenza} (RF) di $G(s)$.
+\textbf{definizione}:  Data una funzione di trasferimento $G(s)$, la sua restrizione all'asse immaginario positivo $J^+$, cioè $G(j \omega)$ con $\omega \geq 0$, si dice \textbf{risposta in frequenza} (RF) di $G(s)$.
 \subsection{Esempio}
 \textbf{es.} Dato $G(s) = \frac{1}{1+0,1 s}$, che è asintoticamente stabile, e $u(t) = 5 sin(20 t)$, a cosa tende $y(t) \rightarrow ?$ per $t \rightarrow \infty$?\newline
 \newline
@@ -128,7 +128,7 @@ Siccome il sistema è asintoticamente stabile, allora per il teorema della risps
         arg(G(j 20)) = -arctan(2) \sim  -63,5
     \end{matrix}
 \]
-[il prof ha terminato i conti e ha tracciato un grafico di $u(t)$ e $y(t)$ usando maxima: ci sta mostrando che il modulo $|G(j 20)|$ rappresenta la percentuale dell'ampiezza dell'uscita rispetto all'ampiezza dell'ingresso, in questo esempio l'uscita è ampia il $45\%$ dell'ingresso; invece l'argomento $arg(G(j 20))$ rappresenta lo sfasamento del segnale di uscita rispetto al segnale di ingresso, in questo esempio l'uscita è sfasata di $63$ gradi (in ritardo) e per capire quanto effettivamente sia uno sfasamento di $63$ gradi basta considerare che un periodo del segnale di ingresso sono $360$ gradi]
+[il prof ha terminato i conti e ha tracciato un grafico di $u(t)$ e $y(t)$ usando maxima: ci sta mostrando che il modulo $|G(j 20)|$ rappresenta la percentuale dell'ampiezza dell'uscita rispetto all'ampiezza dell'ingresso, in questo esempio l'uscita è ampia il $45\%$ dell'ingresso; invece l'argomento $arg(G(j 20))$ rappresenta lo sfasamento del segnale di uscita rispetto al segnale di ingresso, in questo esempio l'uscita è sfasata di $63$ gradi (in ritardo) e per capire quanto effettivamente sia uno sfasamento di $63$ gradi basta considerare che un periodo del segnale di ingresso sono $360$ gradi e fare una proporzione].
 \newpage
 \section{Rappresentazioni della risposta in frequenza di una funzione di trasferimento}
 \subsection{Diagramma polare}
@@ -139,7 +139,7 @@ Siccome il sistema è asintoticamente stabile, allora per il teorema della risps
 In un piano immaginario il termine $s = j \omega$ al crescere del valore di $\omega$ cresce lungo l'asse immaginario. Se ora calcoliamo $G(s)$ e lo mostriamo in un secondo piano immaginario, otteniamo una curva $
 G(j \omega)$ con parametro $\omega$.\newline
 \newline
-Possiamo ora dire che la risposta in frequenza è l'immagine attraverso $G$ dell semiasse immaginario positivo $J^+$.
+Possiamo ora dire che la risposta in frequenza è l'immagine attraverso $G$ del semiasse immaginario positivo $J^+$.
 \subsection{Diagrammi cartesiani o di Bode}
 \subsubsection{Diagramma di Bode del modulo}
 [immagine dagli appunti del prof]
@@ -153,7 +153,7 @@ L'asse delle $\omega$ è logaritmico, cioè a pari distanza non corrisponde pari
 L'asse di $|G(j \omega)|$ è, invece, espresso in $dB$.\newline
 \newline
 \textbf{Definizione}: Rappresentare una quantità in $dB$ significa $x_{dB} = 20 log_{10}|x|$.\newline
-Per esempio $100_{dB} = 40$, $0,1 _{dB} = -20$, $-0,1 _{dB} = -20$, $1 _{dB} = 0$. Notare che la scrittura in $dB$ non distingue il segno, e inoltre che se $|x| > 1$, allora $x _{dB} >0$ e se $|x|<1$, allora $x _{dB} <0$.
+Per esempio $100_{dB} = 40$; $0,1 _{dB} = -20$; $-0,1 _{dB} = -20$; $1 _{dB} = 0$. Notare che la scrittura in $dB$ non distingue il segno, e inoltre che se $|x| > 1$, allora $x _{dB} >0$ e se $|x|<1$, allora $x _{dB} <0$.
 \subsubsection{Diagramma di Bode della fase}
 [immagine dagli appunti del prof]
 \begin{center}
@@ -198,7 +198,7 @@ Quindi ogni funzione di trasferimento razionale fratta si può esprimere come pr
 \]
 \ \newline
 \newline
-Allora detti $G_i$ i fattori componenti $G$, Siccome
+Allora detti $G_i$ i fattori che compongono $G$, possiamo dire
 \[
     G=\prod G_i \;\; \Longrightarrow \;\; \begin{cases}
         |G| = \prod |G_i| \;\; \Longrightarrow \;\; |G|_{dB} = \sum |G_i|_{dB}\\
