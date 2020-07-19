@@ -130,8 +130,7 @@ Consideriamo un sistema $S$ dinamico LTI a TC (SISO), con un ingresso $u$ e un'u
 \begin{center}
     \includegraphics[height=6cm]{../lezione5/img1.PNG}
 \end{center}
-
-\textbf{Dominio del tempo}: fra il segnale $u(t)$ (la causa) e il segnale $y(t)$ (l'effetto) nel dominio del tempo c'è un legame differenziale ($u(t) \rightarrow y(t)$). Ciò che attribuisce a un sistema il carattere dinamico è la presenza di equazioni differenziali. Nel dominio del tempo abbiamo $t,u,y \in \mathbb{R}$\newline
+\textbf{Dominio del tempo}: fra il segnale $u(t)$ (la causa) e il segnale $y(t)$ (l'effetto) nel dominio del tempo c'è un legame differenziale ($u(t) \rightarrow y(t)$). Ciò che attribuisce a un sistema il carattere dinamico è la presenza di equazioni differenziali. Nel dominio del tempo abbiamo $t,u,y \in \mathbb{R}$.\newline
 \newline
 \textbf{Dominio delle trasformate}: Supponiamo di poter associare a $u(t)$ del dominio del tempo, con un operazione che chiamiamo "trasformazione", un'altra funzione $U(s)$ del dominio delle trasformate ($u(t) \rightarrow U(s)$), dove $U$ è una funzione e $s$ è una variabile complessa. Nel dominio delle trasformate fra il segnale $U(s)$ (la causa) e il segnale $Y(s)$ (l'effetto) c'è un legame algebrico ($U(s) \rightarrow  Y(s)$). Facciamo ora l'operazione opposta alla trasformazione con $Y(s)\rightarrow y(t)$, questa operazione prende il nome di "antitrasformazione". Nel dominio delle trasformate abbiamo $s, U ,Y \in \mathbb{C}$.\newline
 \newline
@@ -167,17 +166,20 @@ L'antitrasformata di Laplace, invece, è
 dove gli estremi dell'integrale rappresentano il fatto che quanto integriamo rispetto a una variabile complessa ($s$) dobbiamo specificare su quale linea si muove la variabile: la variabile di integrazione $s$ si muove su una retta parallela all'asse immaginario di parte reale (ascissa) $\alpha$, andando con la sua parte immaginaria (ordinata) da $- \infty$ a $+ \infty$.\newline
 \newline
 \textbf{oss.} Per le trasformate di Laplace il \textbf{nucleo} è $e^{st} = e^{(\alpha + j \omega) t} = e^{\alpha t} (cos(\omega t) + j sin(\omega t))$. Con questa forma di nucleo si possono rappresentare molti più segnali rispetto al nucleo di Fourier. Con il nucleo di Fourier si potevano rappresentare solo le costanti e le sinusoidi, mentre con il nucleo di Laplace anche le sinusoidi che si smorzano, le sinusoidi che divergono, i segnali che esponenzialmente divergono e i segnali che esponenzialmente convergono.\newline
+\newline
 I segnali che si lasciano trasformare secondo Fourier, sono i segnali che si lasciano ricostruire per mezzo di una somma infinita di segnali che partono dal nucleo $e^{j \omega t}$ (costanti e sinusoidi) moltiplicato per un numero complesso $V(j \omega)$ (amplificate o attenuate, e sfasate).\newline
-I segnali che si lasciano trasformare secondo Laplace, sono molti di più, perchè il nucleo di partenza $e^{st}$ rappresenta un insieme di segnali molto più grande. Tutti i segnali trasformabili secondo Fourier sono trasformabili anche secondo Laplace, ma non vale il viceversa.\newline
+I segnali che si lasciano trasformare secondo Laplace, sono molti di più, perchè il nucleo di partenza $e^{st}$ rappresenta un insieme di segnali molto più grande.\newline
+\newline
+Tutti i segnali trasformabili secondo Fourier sono trasformabili anche secondo Laplace, ma non vale il viceversa.\newline
 \newline
 \textbf{oss.} (Errore tipico) Per trasformare secondo Laplace il termine $\mathcal{L}[v(t-\tau)]$ dobbiamo scrivere $\int_{0}^{\infty}v(t-\tau) e^{-st}dt$. Se avessimo scritto $\mathcal{L}[v(t-\tau)]= \int_{0}^{\infty}v(t-\tau) e^{-s(t-\tau)}$ non avremmo applicato correttamente la definizione di trasformata: il termine $e^{-st}dt$ nell'integrale è sempre fatto così, non va modificato mai, dobbiamo vedere la trasformata di Laplace come un "modulo da compilare": $\mathcal{L}[\_\_] = \int_{0}^{\infty}\_\_ \; e^{-st}dt$.
 \subsubsection*{Riassunto dei concetti chiave introdotti}
 \begin{itemize}
     \item Le trasformate sono strumenti che legano biunivocamente sengali nel tempo a funzioni complesse di variabile complessa.
-    \item Le trasformate di Fourier interpretano un segnale come somma di infinite sinusoidi, invece le trasformate di Laplace non considera sinusoidi, ma delle esponenziali complesse (categoria nella quale rientrano anche le sinusoidi).
+    \item Le trasformate di Fourier interpretano un segnale come somma di infinite sinusoidi, invece le trasformate di Laplace non considerano solamente le sinusoidi, ma delle esponenziali complesse (categoria nella quale rientrano anche le sinusoidi).
 \end{itemize}
 \subsubsection{Esempi}
-Vediamo tre trasformate di Laplace notevoli (da imparare a memoria, useremo praticamente solo queste!).\newline
+Vediamo tre \textbf{trasformate di Laplace notevoli} (da imparare a memoria, useremo praticamente solo queste!).\newline
 \newline
 \textbf{es.} $v(t) = sca(t) := \begin{cases}
     1 \;\;\;\; &t\geq\\ 0 &t<0 
@@ -195,7 +197,6 @@ Vediamo tre trasformate di Laplace notevoli (da imparare a memoria, useremo prat
 \begin{center}
     \includegraphics[height=3cm]{../lezione5/img2.PNG}
 \end{center}
-
 La trasformata di Laplace è
 \[
     \mathcal{L}[imp(t)] = \lim_{\epsilon\rightarrow 0} \mathcal{L}[f_\epsilon(t)] = \lim_{\epsilon\rightarrow 0}\int_{0}^{\infty}f_\epsilon (t) e^{-st} dt = \lim_{\epsilon\rightarrow 0}\int_{0}^{\epsilon}\frac{1}{\epsilon}e^{-st}dt =
@@ -212,23 +213,23 @@ La trasformata di Laplace è
 \rule{\textwidth}{0,4pt}
 \subsubsection{Proprietà della trasformata di Laplace}
 \begin{itemize}
-    \item La trasformata di Laplace è un operatore lineare:
+    \item La trasformata di Laplace è un \textbf{operatore lineare}:
     \[
         \mathcal{L}[\alpha v_1(t) + \beta v_2(t)] = \alpha \mathcal{L}[v_1(t)] + \beta \mathcal{L}[v_2(t)]
     \]
-    \item Trasformata di Laplace della derivata: 
+    \item \textbf{Trasformata di Laplace della derivata}: 
     \[
         \mathcal{L}\left[\frac{dv(t)}{dt}\right] = s \mathcal{L}[v(t)]-v(0)
     \] dove se $v$ è discontinua in $0$ si può usare $0^-$.\newline
     Questa proprietà fa si che legami differenziali diventino legami algebrici. L'operazione che nel dominio del tempo è la derivata, corrisponde nel dominio delle trasformate a una moltiplicazione per $s$ e alla differenza di un termine $v(0)$.\newline
     \newline
     \textbf{es.} $\mathcal{L}\left[\frac{d}{dt}sca(t)\right] = s \mathcal{L}[sca(t)] - sca(0^-) = s \frac{1}{s}-0 = 1$.
-    \item Trasformata di laplace dell'intergrale:
+    \item \textbf{Trasformata di laplace dell'intergrale}:
     \[
         \mathcal{L}\left[\int_{0}^{t}v(\tau)d \tau\right] = \frac{1}{s} \mathcal{L}[v(t)]
     \]
     L'intergale nel dominio del tempo corrisponde a una divisione per $s$ nel dominio delle trasformate.
-    \item Trasforamta di Laplace di un segnale ritardato:
+    \item \textbf{Trasforamta di Laplace di un segnale ritardato}:
     \[
         \mathcal{L}[v(t-\tau)] = e^{-s \tau} \mathcal{L}[v(t)]
     \] con $\tau > 0$ detto ritardo.\newline

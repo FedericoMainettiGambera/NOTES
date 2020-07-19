@@ -15,7 +15,7 @@ Questa realizzazione è sempre raggiungibile, infatti usando questi $(A,b,c,d)$,
 \]
 Questa matrice è ovviamente non singolare.\newline
 \newline
-Infatti questo metodo di realizzazione prende il nome di \textbf{forma canonica di ragigungibilità}.\newline
+Infatti questo metodo di realizzazione prende il nome di \textbf{forma canonica di raggiungibilità}.\newline
 \newline
 Esiste anche la \textbf{forma canonica di osservabilità}: vedi libro, studio autonomo.\newline
 \newline
@@ -64,7 +64,7 @@ Logica fondamentale dei sistemi interconnessi:
 \begin{center}
     \includegraphics[height=3cm]{../lezione11/img1.PNG}
 \end{center}
-(a sinistra abbiamo una formula molto usata a destra nodo sommatore).\newline
+(a sinistra abbiamo una formula molto usata che lega la funzione di trasferimento all'ingresso e all'uscita, a destra un nodo sommatore).\newline
 \newline
 Vediamo il seguente problema:\newline
 [immagine dagli appunti del prof]
@@ -126,7 +126,7 @@ Di conseguenza:
         y = c_2 x_2 + d_2 y_1 = c_2 x_2 + d_2 c_1 x_1 + d_2 d_1 u
     \end{cases}
 \]
-Che ci danno il sisetma matriciale nella forma:
+Che ci danno il sistema matriciale nella forma:
 \[
     \begin{cases}
         \left[\begin{matrix}
@@ -219,11 +219,12 @@ questa elisione non è una cancellazione, nel senso che non porta a una parte na
 \]
 tra poli di $G_a$ e $G_r$ e gli autovalori del sistema complessivo non c'è una relazione banale:
 \begin{itemize}
-    \item $G_a$ e $G_r$ asintoticamente stabili nè occorrono nè bastano per avere un sistema complessivo asintoticamente stabile. (Dubbio proveniente dall'esercitazione 6 (lezione 16), esercizio 6: non ho ben capito il caso in cui si ha un blocco qualsiasi $G_1$ in parallelo (o in serie) a un anello $G_a$ composto da altri "sottoblocchi" (quello di andata e quello di ritorno)\dots chi deve essere asintoticamente stabile? Immagino che affinchè il sistema complessivo sia asintoticamente stabile, sicuramente $G_1$ dovrà esserlo (vedi proprietà dei blocchi in parallelo e in serie), ma per quanto riguarda l'anello $G_a$ complessivo, i suoi "sottoblocchi" non hanno nessun vincolo, in quanto non limitano la asintotica stabilità dell'intero anello $G_a$\dots Non sono sicuro al $100\%$, ma mi sembra un ragionamento sensato, TODO).
+    \item $G_a$ e $G_r$ asintoticamente stabili nè occorrono nè bastano per avere un sistema complessivo asintoticamente stabile. (Dubbio proveniente dall'esercitazione 6 (lezione 16), esercizio 6: non ho ben capito il caso in cui si ha un blocco qualsiasi $G_1$ in parallelo (o in serie) a un anello $G_a$ composto da altri "sottoblocchi" (quello di andata e quello di ritorno)\dots chi deve essere asintoticamente stabile? Immagino che affinchè il sistema complessivo sia asintoticamente stabile, sicuramente $G_1$ dovrà esserlo (vedi proprietà dei blocchi in parallelo e in serie), ma per quanto riguarda l'anello $G_a$ complessivo, i suoi "sottoblocchi" non hanno nessun vincolo, in quanto non limitano la asintotica stabilità dell'intero anello $G_a$\dots Non sono sicuro al $100\%$, ma mi sembra un ragionamento sensato, \hl{TODO}).
     \item possono esserci cancellazioni, cioè parti nascoste.
 \end{itemize}
 \ \newline
-Vediamo questo ragionamento applicato allo spazio di stato:\newline
+Vediamo questo ragionamento applicato allo spazio di stato.\newline
+\newline
 Equazioni costituitive dei blocchi:
 \[
     G_a : (A_a, b_a, c_a,d_a); \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; G_r : (A_r, b_r,c_r,d_r).

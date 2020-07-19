@@ -29,14 +29,15 @@ dove possiamo usare $v(0^+)$ se $v$ è discontinua in $0$.\newline
 \renewcommand{\arraystretch}{1}
 \textbf{oss.} Da notare è che la rampa è l'integrale dello scalino, che a sua volta è l'integrale dell'impulso (vedi trasformata di Laplace dell'integrale). Queste prime tre trasformate fanno parte di un gruppo di segnali che prendono il nome di \textbf{segnali canonici}, e sono tutte quelle trasformate di Laplace che valgono $\frac{1}{s^n}$.\newline
 \newline
-\textbf{oss.} Data una funzione $f(t)$ nel dominio del tempo, un ritardo $\tau$ è solitamente espresso come $f(t-\tau)$. Sia $f$ una dei segnali di cui sappiamo le trasformate notevoli, allora la corrispondente trasformata di Laplace è la trasformata di Laplace della funzione $f$ senza il ritardo, moltiplicata per il termine $e^{- \tau s}$ che rappresenta il ritardo (es. $ram(t-\tau) \rightarrow \frac{1}{s^2}e^{- \tau s}$).\newline
+\textbf{oss.} Data una funzione $f(t)$ nel dominio del tempo, un ritardo $\tau$ è solitamente espresso come $f(t-\tau)$. Sia $f$ una dei segnali di cui sappiamo le trasformate notevoli, allora la corrispondente trasformata di Laplace ritardata è la trasformata di Laplace della funzione $f$ senza il ritardo, moltiplicata per il termine $e^{- \tau s}$ che rappresenta il ritardo (es. $ram(t-\tau) \rightarrow \frac{1}{s^2}e^{- \tau s}$).\newline
 \newline
-\textbf{oss.}  Questo concetto è da tenere a mente anche durante l'operazione inversa di antitrasformazione secondo Heaviside: Heaviside è utilizzato per antitrasformare trasformate di Laplace che sono razionali fratte ($\frac{N(s)}{D(s)}$), ma nel caso in cui la trasformata con cui sto lavorando presenta un termine esponenziale dovrò aggiungere un ritardo. L'importante è tenere la parte razionale fratta separata dalla parte esponenziale, inizialmente si ignora l'esponenziale e si eseguono tutti i passaggi di Heaviside sulla razionale fratta, e, solo alla fine, si aggiunge il ritardo espresso dall'esponenziale:
+\textbf{oss.}  Questo concetto è da tenere a mente anche durante l'operazione inversa di antitrasformazione secondo Heaviside: Heaviside è utilizzato per antitrasformare trasformate di Laplace che sono razionali fratte ($\frac{N(s)}{D(s)}$), ma nel caso in cui la trasformata con cui sto lavorando presenta un termine esponenziale dovrò aggiungere un ritardo.\newline
+L'importante è tenere la parte razionale fratta separata dalla parte esponenziale, inizialmente si ignora l'esponenziale e si eseguono tutti i passaggi di Heaviside sulla razionale fratta, e, solo alla fine, si aggiunge il ritardo espresso dall'esponenziale:
 \[
-    \mathcal{L}^{-1}[\frac{N(s)}{D(s)}e^{-s \tau}] \rightarrow \;\text{Heaviside di $\frac{N(s)}{D(s)}$ ottengo $y(t)$, poi con $e^{-s \tau}$ aggiungo ritardo $\tau$}\; \rightarrow  y(t- \tau)
+    \mathcal{L}^{-1}\left[\frac{N(s)}{D(s)}e^{-s \tau}\right] \rightarrow \;\text{Heaviside di $\frac{N(s)}{D(s)}$ ottengo $y(t)$, poi con $e^{-s \tau}$ aggiungo ritardo $\tau$}\; \rightarrow  y(t- \tau)
 \]
-\newline
-\textbf{oss.}  Notiamo che i segnali trigonometrici sono rappresentabili come esponenziali complessi, per esempio $sin(\omega t) = \frac{e^{j \omega t}- e^{-j \omega t}}{2j} \dots$ e così possiamo ricavare le trasformate di Laplace di tutte le funzioni trigonometriche.
+\ \newline
+\textbf{oss.}  Notiamo che i segnali trigonometrici sono rappresentabili come esponenziali complessi, per esempio $sin(\omega t) = \frac{e^{j \omega t}- e^{-j \omega t}}{2j} \dots$ e così possiamo ricavare le \textbf{trasformate di Laplace di tutte le funzioni trigonometriche}.
 \subsection{Antitrasformazione secondo Heaviside}
 Questo metodo vale per trasformate di Laplace razionali fratte, cioè trasformate che possono essere scritte come
 \[
@@ -142,6 +143,7 @@ Ogni volta che c'è un cambio di pendenza interviene una rampa.\newline
 \[
     V(s) = \frac{2}{s} + \frac{0,5}{s^2} - \frac{3}{s}e^{-2s} - \frac{0,5}{s^2}e^{-2s} 
 \]
+\rule{\textwidth}{0,4pt}
 \newpage
 \section{Funzione di trasferimento}
 Lavoriamo con SD LTI a TC SISO.
@@ -151,7 +153,7 @@ Lavoriamo con SD LTI a TC SISO.
     \begin{cases}
         \dot{x} = Ax + bu\\
         y = cx + du
-    \end{cases} \;\;\;\; \text{rappresentamento di stato}\;
+    \end{cases}
 \]
 \newline
 Trasformiamo secondo Laplace l'\textbf{equazione di stato}:
@@ -171,15 +173,31 @@ Allora per qualunque $s$ che appartiene all'insieme degli autovalori di $A$ poss
     X(s) = (sI-A)^{-1} x(0) + (sI-A)^{-1} bU(s)
 \]
 La trasformata di Laplace dell'equazione di stato è quindi composta da due termini: il primo dipende linearmente solo dallo stato iniziale, il secondo dipende linearmente solo dall'ingresso.\newline
-Quindi il primo termine $(sI-A)^{-1} x(0)$ è la trasformata di Laplace del \textbf{movimento libero (ML)} di $x$, e il secondo termine $(sI-A)^{-1} bU(s)$ è la trasformata di Laplace del \textbf{movimento forzato (MF)} di $x$.\newline
+Quindi il primo termine
+\[
+    (sI-A)^{-1} x(0)
+\]
+è la trasformata di Laplace del \textbf{movimento libero (ML)} di $x$, e il secondo termine 
+\[
+    (sI-A)^{-1} bU(s)
+\]
+è la trasformata di Laplace del \textbf{movimento forzato (MF)} di $x$.\newline
 \newline
 \textbf{oss.} Questa formula che abbiamo scritto è la corrispondente nel dominio delle trasformate di ciò che nel dominio del tempo è la \textbf{formula di Lagrange} dello stato.
 \subsubsection{Equazione d'uscita}
-Ora trasformiamo l'\textbf{equazione d'uscita} e vi sostituiamo $X(s)$ che calcolato precedentemente:
+Ora trasformiamo l'\textbf{equazione d'uscita} e vi sostituiamo $X(s)$ che abbiamo calcolato precedentemente:
 \[
     Y(s) = cX(s) + dU(s) = c(sI-A)^{-1} x(0) + [c(sI-A)^{-1} b + d]U(s)
 \]
-Anche qui il primo termine $c(sI-A)^{-1} x(0)$ è la trasformata di Laplace del \textbf{movimento libero (ML)} di $y$, e il secondo termine $[c(sI-A)^{-1} b + d]U(s)$ è la trasformata di Laplace del \textbf{movimento forzato (MF)} di $y$.\newline
+Anche qui il primo termine 
+\[
+    c(sI-A)^{-1} x(0)
+\]
+è la trasformata di Laplace del \textbf{movimento libero (ML)} di $y$, e il secondo termine
+\[
+    [c(sI-A)^{-1} b + d]U(s)
+\]
+è la trasformata di Laplace del \textbf{movimento forzato (MF)} di $y$.\newline
 \newline
 Il movimento forzato contiene al suo interno il fattore $c(sI-A)^{-1} b$, che prende il nome di \textbf{funzione di trasferimento} $G(s)$. La funzione di trasferimento è il termine che moltiplicato per la trasformata dell'ingresso ti restituisce il movimento forzato.\newline
 \newline
@@ -234,7 +252,7 @@ Quindi, riassumendo,
 \begin{itemize}
     \item $G(s)$ è razionale fratta.
     \item I suoi poli (radici del denominatore) sono autovalori di $A$.\newline
-    \textbf{oss.} In alcuni casi può darsi che non tutti gli autovalori di $A$ compaiano come poli, perchè capita che alcuni termini del numeratore si semplifichino col alcuni termini del denominatore (ci torneremo più avanti).
+    \textbf{oss.} In alcuni casi può darsi che non tutti gli autovalori di $A$ compaiano come poli, perchè capita che alcuni termini del numeratore si semplifichino con alcuni termini del denominatore (ci torneremo più avanti).
     \item Il grado del numeratore è uguale al grado del denominatore se e solo se ($\Leftrightarrow$) $d\neq 0$, altrimento il grado del numeratore è minore ($<$) del grado del denominatore.
 \end{itemize}
 \subsection{Esempi}
@@ -260,7 +278,7 @@ calcolare la funzione di trasferimento $G(s)$.
         1\\0
     \end{matrix}\right]+0 = 
 \]
-[esiste un trucchetto per calcolare la trasposta della generica matrice $M$ 2x2: si moltiplica $\frac{1}{det(M)}$ per la matrice ottenuta scambiando di posto i termini sulla diagonale principale e invertendo il segno dei termini sulla diagonale secondaria]
+\textbf{[esiste un trucchetto per calcolare l'inversa della generica matrice $M$ 2x2: si moltiplica $\frac{1}{det(M)}$ per la matrice ottenuta scambiando di posto i termini sulla diagonale principale e invertendo il segno dei termini sulla diagonale secondaria]}
 \[
     = \frac{1}{(s-1)(s-4) +3} \left[\begin{matrix}
         2&1
