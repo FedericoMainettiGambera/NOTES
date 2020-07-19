@@ -117,20 +117,21 @@
 \BOOKMARK [3][-]{subsubsection.16.3.4}{Metodo di tracciamento}{subsection.16.3}% 117
 \BOOKMARK [3][-]{subsubsection.16.3.5}{Esempio}{subsection.16.3}% 118
 \BOOKMARK [0][-]{part.2}{II Seconda parte del corso}{}% 119
-\BOOKMARK [0][-]{part.3}{III Esercitazioni}{}% 120
-\BOOKMARK [1][-]{section.17}{Esercitazione 1}{part.3}% 121
-\BOOKMARK [2][-]{subsection.17.1}{Schema a blocchi}{section.17}% 122
-\BOOKMARK [3][-]{subsubsection.17.1.1}{Primo metodo \(analitico\)}{subsection.17.1}% 123
-\BOOKMARK [3][-]{subsubsection.17.1.2}{Secondo metodo \(Funzione di trasferimento\)}{subsection.17.1}% 124
-\BOOKMARK [3][-]{subsubsection.17.1.3}{Terzo metodo \(Integratori\)}{subsection.17.1}% 125
-\BOOKMARK [1][-]{section.18}{Esercitazione 2}{part.3}% 126
-\BOOKMARK [2][-]{subsection.18.1}{Stabilit\340 per sistemi non lineari}{section.18}% 127
-\BOOKMARK [2][-]{subsection.18.2}{Linearizzazione di un sistema non lineare nell'intorno di un equilibrio}{section.18}% 128
-\BOOKMARK [2][-]{subsection.18.3}{Ritardi nelle trasformate}{section.18}% 129
-\BOOKMARK [1][-]{section.19}{Esercitazione 3}{part.3}% 130
-\BOOKMARK [1][-]{section.20}{Esercitazione 4}{part.3}% 131
-\BOOKMARK [2][-]{subsection.20.1}{Regolo delle fasi}{section.20}% 132
-\BOOKMARK [1][-]{section.21}{Esercitazione 5}{part.3}% 133
-\BOOKMARK [1][-]{section.22}{Esercitazione 6}{part.3}% 134
-\BOOKMARK [1][-]{section.23}{Esercitazione 7}{part.3}% 135
-\BOOKMARK [2][-]{subsection.23.1}{Diagrammi polari}{section.23}% 136
+\BOOKMARK [1][-]{section.17}{Schema fondamentale di un anello di controllo \(SD LTI A TC SISO\)}{part.2}% 120
+\BOOKMARK [0][-]{part.3}{III Esercitazioni}{}% 121
+\BOOKMARK [1][-]{section.18}{Esercitazione 1}{part.3}% 122
+\BOOKMARK [2][-]{subsection.18.1}{Schema a blocchi}{section.18}% 123
+\BOOKMARK [3][-]{subsubsection.18.1.1}{Primo metodo \(analitico\)}{subsection.18.1}% 124
+\BOOKMARK [3][-]{subsubsection.18.1.2}{Secondo metodo \(Funzione di trasferimento\)}{subsection.18.1}% 125
+\BOOKMARK [3][-]{subsubsection.18.1.3}{Terzo metodo \(Integratori\)}{subsection.18.1}% 126
+\BOOKMARK [1][-]{section.19}{Esercitazione 2}{part.3}% 127
+\BOOKMARK [2][-]{subsection.19.1}{Stabilit\340 per sistemi non lineari}{section.19}% 128
+\BOOKMARK [2][-]{subsection.19.2}{Linearizzazione di un sistema non lineare nell'intorno di un equilibrio}{section.19}% 129
+\BOOKMARK [2][-]{subsection.19.3}{Ritardi nelle trasformate}{section.19}% 130
+\BOOKMARK [1][-]{section.20}{Esercitazione 3}{part.3}% 131
+\BOOKMARK [1][-]{section.21}{Esercitazione 4}{part.3}% 132
+\BOOKMARK [2][-]{subsection.21.1}{Regolo delle fasi}{section.21}% 133
+\BOOKMARK [1][-]{section.22}{Esercitazione 5}{part.3}% 134
+\BOOKMARK [1][-]{section.23}{Esercitazione 6}{part.3}% 135
+\BOOKMARK [1][-]{section.24}{Esercitazione 7}{part.3}% 136
+\BOOKMARK [2][-]{subsection.24.1}{Diagrammi polari}{section.24}% 137

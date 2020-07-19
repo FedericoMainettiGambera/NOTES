@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  19 JUL 2020 13:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  19 JUL 2020 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -592,7 +592,6 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
- (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.out) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.out)
 \@outlinefile=\write7
 \openout7 = `master.out'.
 
@@ -603,19 +602,19 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 6.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.toc [1
-
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2])
+)
 \tf@toc=\write8
 \openout8 = `master.toc'.
 
- [3] (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione1/lezione1.tex [4]
-<../lezione1/img1.PNG, id=722, 261.22594pt x 144.54pt>
+ [1
+
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione1/lezione1.tex [2]
+<../lezione1/img1.PNG, id=31, 261.22594pt x 144.54pt>
 File: ../lezione1/img1.PNG Graphic file (type png)
 <use ../lezione1/img1.PNG>
 Package pdftex.def Info: ../lezione1/img1.PNG  used on input line 44.
 (pdftex.def)             Requested size: 154.26544pt x 85.35826pt.
-<../lezione1/img2.PNG, id=724, 349.305pt x 137.7647pt>
+<../lezione1/img2.PNG, id=33, 349.305pt x 137.7647pt>
 File: ../lezione1/img2.PNG Graphic file (type png)
 <use ../lezione1/img2.PNG>
 Package pdftex.def Info: ../lezione1/img2.PNG  used on input line 56.
@@ -625,23 +624,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
 
-<../lezione1/img3.PNG, id=725, 368.87813pt x 160.34906pt>
+<../lezione1/img3.PNG, id=34, 368.87813pt x 160.34906pt>
 File: ../lezione1/img3.PNG Graphic file (type png)
 <use ../lezione1/img3.PNG>
 Package pdftex.def Info: ../lezione1/img3.PNG  used on input line 64.
 (pdftex.def)             Requested size: 196.36565pt x 85.35826pt.
-<../lezione1/img4.PNG, id=726, 350.81062pt x 209.28188pt>
+<../lezione1/img4.PNG, id=35, 350.81062pt x 209.28188pt>
 File: ../lezione1/img4.PNG Graphic file (type png)
 <use ../lezione1/img4.PNG>
 Package pdftex.def Info: ../lezione1/img4.PNG  used on input line 73.
 (pdftex.def)             Requested size: 143.0785pt x 85.35826pt.
-[5 <../lezione1/img1.PNG> <../lezione1/img2.PNG> <../lezione1/img3.PNG>]
-<../lezione1/img5.PNG, id=735, 370.38374pt x 240.14719pt>
+[3 <../lezione1/img1.PNG> <../lezione1/img2.PNG> <../lezione1/img3.PNG>]
+<../lezione1/img5.PNG, id=52, 370.38374pt x 240.14719pt>
 File: ../lezione1/img5.PNG Graphic file (type png)
 <use ../lezione1/img5.PNG>
 Package pdftex.def Info: ../lezione1/img5.PNG  used on input line 82.
 (pdftex.def)             Requested size: 131.64821pt x 85.35826pt.
-<../lezione1/img6.PNG, id=736, 372.64218pt x 179.92218pt>
+<../lezione1/img6.PNG, id=53, 372.64218pt x 179.92218pt>
 File: ../lezione1/img6.PNG Graphic file (type png)
 <use ../lezione1/img6.PNG>
 Package pdftex.def Info: ../lezione1/img6.PNG  used on input line 89.
@@ -656,7 +655,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--103
 
  []
 
-[6 <../lezione1/img4.PNG> <../lezione1/img5.PNG> <../lezione1/img6.PNG>]
+[4 <../lezione1/img4.PNG> <../lezione1/img5.PNG> <../lezione1/img6.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 105--113
 
  []
@@ -683,13 +682,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--127
 
  []
 
-<../lezione1/img7.PNG, id=744, 545.03625pt x 325.215pt>
+<../lezione1/img7.PNG, id=64, 545.03625pt x 325.215pt>
 File: ../lezione1/img7.PNG Graphic file (type png)
 <use ../lezione1/img7.PNG>
 Package pdftex.def Info: ../lezione1/img7.PNG  used on input line 128.
 (pdftex.def)             Requested size: 143.05336pt x 85.35826pt.
-) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione2/lezione2.tex [7 <../lezione1/img7.PNG>]
-<../lezione2/img1.PNG, id=758, 255.95625pt x 142.28156pt>
+) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione2/lezione2.tex [5 <../lezione1/img7.PNG>]
+<../lezione2/img1.PNG, id=77, 255.95625pt x 142.28156pt>
 File: ../lezione2/img1.PNG Graphic file (type png)
 <use ../lezione2/img1.PNG>
 Package pdftex.def Info: ../lezione2/img1.PNG  used on input line 8.
@@ -704,7 +703,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--15
 
  []
 
-<../lezione2/img2.PNG, id=759, 338.76563pt x 182.18062pt>
+<../lezione2/img2.PNG, id=78, 338.76563pt x 182.18062pt>
 File: ../lezione2/img2.PNG Graphic file (type png)
 <use ../lezione2/img2.PNG>
 Package pdftex.def Info: ../lezione2/img2.PNG  used on input line 19.
@@ -714,7 +713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--27
 
  []
 
-<../lezione2/img3.PNG, id=760, 444.15938pt x 179.16937pt>
+<../lezione2/img3.PNG, id=79, 444.15938pt x 179.16937pt>
 File: ../lezione2/img3.PNG Graphic file (type png)
 <use ../lezione2/img3.PNG>
 Package pdftex.def Info: ../lezione2/img3.PNG  used on input line 28.
@@ -724,12 +723,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--36
 
  []
 
-<../lezione2/img4.PNG, id=761, 387.69844pt x 177.66376pt>
+<../lezione2/img4.PNG, id=80, 387.69844pt x 177.66376pt>
 File: ../lezione2/img4.PNG Graphic file (type png)
 <use ../lezione2/img4.PNG>
 Package pdftex.def Info: ../lezione2/img4.PNG  used on input line 37.
 (pdftex.def)             Requested size: 186.2706pt x 85.35826pt.
-[8 <../lezione2/img1.PNG> <../lezione2/img2.PNG> <../lezione2/img3.PNG>]
+[6 <../lezione2/img1.PNG> <../lezione2/img2.PNG> <../lezione2/img3.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--48
 
  []
@@ -739,7 +738,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--48
 
  []
 
-<../lezione2/img5.PNG, id=769, 599.99156pt x 209.28188pt>
+<../lezione2/img5.PNG, id=91, 599.99156pt x 209.28188pt>
 File: ../lezione2/img5.PNG Graphic file (type png)
 <use ../lezione2/img5.PNG>
 Package pdftex.def Info: ../lezione2/img5.PNG  used on input line 49.
@@ -759,7 +758,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--65
 
  []
 
-[9 <../lezione2/img4.PNG> <../lezione2/img5.PNG>]
+[7 <../lezione2/img4.PNG> <../lezione2/img5.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 72--76
 
  []
@@ -784,7 +783,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--108
 
  []
 
-[10]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 122--126
 
  []
@@ -809,12 +808,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--175
 
  []
 
-<../lezione2/img6.PNG, id=781, 396.7322pt x 278.54062pt>
+<../lezione2/img6.PNG, id=106, 396.7322pt x 278.54062pt>
 File: ../lezione2/img6.PNG Graphic file (type png)
 <use ../lezione2/img6.PNG>
 Package pdftex.def Info: ../lezione2/img6.PNG  used on input line 176.
 (pdftex.def)             Requested size: 202.63342pt x 142.26378pt.
-[11]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
  []
@@ -839,7 +838,7 @@ Overfull \hbox (6.3289pt too wide) detected at line 224
 [] \OMS/cmss/m/n/10 ! [] 
  []
 
-[12 <../lezione2/img6.PNG>]
+[10 <../lezione2/img6.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 236--242
 
  []
@@ -869,7 +868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--3
 
  []
 
-[13]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
@@ -884,7 +883,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
 
-[14]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 61--65
 
  []
@@ -919,7 +918,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--124
 
  []
 
-[15] [16]
+[13] [14]
 Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
@@ -949,7 +948,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--176
 
  []
 
-[17]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 200--203
 
  []
@@ -964,7 +963,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--235
 
  []
 
-[18]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione4/lezione4.tex [19]
+[16]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione4/lezione4.tex [17]
 Underfull \hbox (badness 10000) in paragraph at lines 12--16
 
  []
@@ -987,8 +986,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 61.
 
-[20]
-<../lezione4/img1.PNG, id=831, 624.08156pt x 371.13657pt>
+[18]
+<../lezione4/img1.PNG, id=178, 624.08156pt x 371.13657pt>
 File: ../lezione4/img1.PNG Graphic file (type png)
 <use ../lezione4/img1.PNG>
 Package pdftex.def Info: ../lezione4/img1.PNG  used on input line 72.
@@ -998,7 +997,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
 
-[21 <../lezione4/img1.PNG>]
+[19 <../lezione4/img1.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 84--91
 
  []
@@ -1008,12 +1007,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--91
 
  []
 
-<../lezione4/img2.PNG, id=839, 697.10437pt x 149.8097pt>
+<../lezione4/img2.PNG, id=189, 697.10437pt x 149.8097pt>
 File: ../lezione4/img2.PNG Graphic file (type png)
 <use ../lezione4/img2.PNG>
 Package pdftex.def Info: ../lezione4/img2.PNG  used on input line 92.
 (pdftex.def)             Requested size: 397.2047pt x 85.35826pt.
-[22 <../lezione4/img2.PNG>]
+[20 <../lezione4/img2.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 125--129
 
  []
@@ -1063,7 +1062,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--183
 
  []
 
-[23]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 201--204
 
  []
@@ -1083,7 +1082,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--235
 
  []
 
-[24]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 244--248
 
  []
@@ -1118,7 +1117,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--17
 
  []
 
-[25]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 18--21
 
  []
@@ -1133,7 +1132,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--72
 
  []
 
-[26]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 93--102
 
  []
@@ -1143,12 +1142,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--102
 
  []
 
-[27]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 127--130
 
  []
 
-<../lezione5/img1.PNG, id=873, 844.65562pt x 413.29407pt>
+<../lezione5/img1.PNG, id=234, 844.65562pt x 413.29407pt>
 File: ../lezione5/img1.PNG Graphic file (type png)
 <use ../lezione5/img1.PNG>
 Package pdftex.def Info: ../lezione5/img1.PNG  used on input line 131.
@@ -1168,7 +1167,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--156
 
  []
 
-[28 <../lezione5/img1.PNG>]
+[26 <../lezione5/img1.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 165--176
 
  []
@@ -1193,12 +1192,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--187
 
  []
 
-[29]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 189--197
 
  []
 
-<../lezione5/img2.PNG, id=884, 560.0925pt x 207.77625pt>
+<../lezione5/img2.PNG, id=250, 560.0925pt x 207.77625pt>
 File: ../lezione5/img2.PNG Graphic file (type png)
 <use ../lezione5/img2.PNG>
 Package pdftex.def Info: ../lezione5/img2.PNG  used on input line 198.
@@ -1218,7 +1217,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--227
 
  []
 
-[30 <../lezione5/img2.PNG>]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione6/lezione6.tex
+[28 <../lezione5/img2.PNG>]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione6/lezione6.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
@@ -1233,7 +1232,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--36
 
  []
 
-[31]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 45--52
 
  []
@@ -1263,7 +1262,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--80
 
  []
 
-[32]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 101--107
 
  []
@@ -1278,7 +1277,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--135
 
  []
 
-<../lezione6/img1.PNG, id=900, 325.96782pt x 152.82094pt>
+<../lezione6/img1.PNG, id=270, 325.96782pt x 152.82094pt>
 File: ../lezione6/img1.PNG Graphic file (type png)
 <use ../lezione6/img1.PNG>
 Package pdftex.def Info: ../lezione6/img1.PNG  used on input line 136.
@@ -1288,7 +1287,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
  []
 
-[33 <../lezione6/img1.PNG>]
+[31 <../lezione6/img1.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 183--187
 
  []
@@ -1313,7 +1312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--218
 
  []
 
-[34]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
@@ -1333,17 +1332,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--252
 
  []
 
-[35]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione7/lezione7.tex [36] [37]
+[33]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione7/lezione7.tex [34] [35]
 Underfull \hbox (badness 10000) in paragraph at lines 87--90
 
  []
 
-<../lezione7/img1.PNG, id=925, 537.50812pt x 212.29312pt>
+<../lezione7/img1.PNG, id=304, 537.50812pt x 212.29312pt>
 File: ../lezione7/img1.PNG Graphic file (type png)
 <use ../lezione7/img1.PNG>
 Package pdftex.def Info: ../lezione7/img1.PNG  used on input line 154.
 (pdftex.def)             Requested size: 216.12306pt x 85.35826pt.
-[38]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 156--162
 
  []
@@ -1353,7 +1352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--197
 
  []
 
-[39 <../lezione7/img1.PNG>]
+[37 <../lezione7/img1.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 230--247
 
  []
@@ -1378,12 +1377,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--247
 
  []
 
-<../lezione7/img2.PNG, id=936, 810.77907pt x 170.13562pt>
+<../lezione7/img2.PNG, id=317, 810.77907pt x 170.13562pt>
 File: ../lezione7/img2.PNG Graphic file (type png)
 <use ../lezione7/img2.PNG>
 Package pdftex.def Info: ../lezione7/img2.PNG  used on input line 248.
 (pdftex.def)             Requested size: 406.77415pt x 85.35826pt.
-) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione10/lezione10b.tex [40 <../lezione7/img2.PNG>]
+) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione10/lezione10b.tex [38 <../lezione7/img2.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 14--18
 
  []
@@ -1403,7 +1402,7 @@ Overfull \hbox (35.55002pt too wide) detected at line 47
 \OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 I \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t \OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 ^^\\OT1/cmr/m/n/10 ) + [] + [] + [] +  []  []
  []
 
-[41]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 59--63
 
  []
@@ -1413,8 +1412,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--106
 
  []
 
-[42]
-<../lezione10/img1.PNG, id=951, 301.8778pt x 216.05719pt>
+[40]
+<../lezione10/img1.PNG, id=336, 301.8778pt x 216.05719pt>
 File: ../lezione10/img1.PNG Graphic file (type png)
 <use ../lezione10/img1.PNG>
 Package pdftex.def Info: ../lezione10/img1.PNG  used on input line 138.
@@ -1434,7 +1433,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--174
 
  []
 
-[43 <../lezione10/img1.PNG>]
+[41 <../lezione10/img1.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
@@ -1444,7 +1443,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--221
 
  []
 
-[44]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 230--236
 
  []
@@ -1459,7 +1458,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--243
 
  []
 
-[45]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 308--312
 
  []
@@ -1489,7 +1488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--23
 
  []
 
-[46]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 51--58
 
  []
@@ -1499,12 +1498,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--58
 
  []
 
-[47]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
-<../lezione11/img1.PNG, id=975, 635.37375pt x 251.43938pt>
+<../lezione11/img1.PNG, id=371, 635.37375pt x 251.43938pt>
 File: ../lezione11/img1.PNG Graphic file (type png)
 <use ../lezione11/img1.PNG>
 Package pdftex.def Info: ../lezione11/img1.PNG  used on input line 65.
@@ -1514,12 +1513,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
-<../lezione11/img2.PNG, id=976, 402.75468pt x 179.16937pt>
+<../lezione11/img2.PNG, id=372, 402.75468pt x 179.16937pt>
 File: ../lezione11/img2.PNG Graphic file (type png)
 <use ../lezione11/img2.PNG>
 Package pdftex.def Info: ../lezione11/img2.PNG  used on input line 72.
 (pdftex.def)             Requested size: 191.87584pt x 85.35826pt.
-<../lezione11/img3.PNG, id=977, 448.67625pt x 112.16907pt>
+<../lezione11/img3.PNG, id=373, 448.67625pt x 112.16907pt>
 File: ../lezione11/img3.PNG Graphic file (type png)
 <use ../lezione11/img3.PNG>
 Package pdftex.def Info: ../lezione11/img3.PNG  used on input line 87.
@@ -1529,24 +1528,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--101
 
  []
 
-[48 <../lezione11/img1.PNG> <../lezione11/img2.PNG> <../lezione11/img3.PNG>]
-<../lezione11/img4.PNG, id=985, 313.9228pt x 147.55125pt>
+[46 <../lezione11/img1.PNG> <../lezione11/img2.PNG> <../lezione11/img3.PNG>]
+<../lezione11/img4.PNG, id=385, 313.9228pt x 147.55125pt>
 File: ../lezione11/img4.PNG Graphic file (type png)
 <use ../lezione11/img4.PNG>
 Package pdftex.def Info: ../lezione11/img4.PNG  used on input line 151.
 (pdftex.def)             Requested size: 181.60591pt x 85.35826pt.
- [49 <../lezione11/img4.PNG>]
-<../lezione11/img5.PNG, id=992, 654.19406pt x 290.58563pt>
+ [47 <../lezione11/img4.PNG>]
+<../lezione11/img5.PNG, id=392, 654.19406pt x 290.58563pt>
 File: ../lezione11/img5.PNG Graphic file (type png)
 <use ../lezione11/img5.PNG>
 Package pdftex.def Info: ../lezione11/img5.PNG  used on input line 205.
 (pdftex.def)             Requested size: 320.2784pt x 142.26378pt.
- [50 <../lezione11/img5.PNG>]
+ [48 <../lezione11/img5.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 225--229
 
  []
 
-) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione12/lezione12.tex [51]
+) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione12/lezione12.tex [49]
 Underfull \hbox (badness 10000) in paragraph at lines 6--12
 
  []
@@ -1561,7 +1560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--28
 
  []
 
-[52] [53]
+[50] [51]
 Underfull \hbox (badness 10000) in paragraph at lines 65--72
 
  []
@@ -1581,13 +1580,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--103
 
  []
 
-[54]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 122--125
 
  []
 
-[55]
-<../lezione12/img1.PNG, id=1021, 817.55438pt x 330.48468pt>
+[53]
+<../lezione12/img1.PNG, id=432, 817.55438pt x 330.48468pt>
 File: ../lezione12/img1.PNG Graphic file (type png)
 <use ../lezione12/img1.PNG>
 Package pdftex.def Info: ../lezione12/img1.PNG  used on input line 137.
@@ -1597,7 +1596,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--143
 
  []
 
-<../lezione12/img2.PNG, id=1022, 596.98032pt x 210.7875pt>
+<../lezione12/img2.PNG, id=433, 596.98032pt x 210.7875pt>
 File: ../lezione12/img2.PNG Graphic file (type png)
 <use ../lezione12/img2.PNG>
 Package pdftex.def Info: ../lezione12/img2.PNG  used on input line 147.
@@ -1617,12 +1616,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--157
 
  []
 
-<../lezione12/img3.PNG, id=1023, 536.0025pt x 144.54pt>
+<../lezione12/img3.PNG, id=434, 536.0025pt x 144.54pt>
 File: ../lezione12/img3.PNG Graphic file (type png)
 <use ../lezione12/img3.PNG>
 Package pdftex.def Info: ../lezione12/img3.PNG  used on input line 160.
 (pdftex.def)             Requested size: 316.53317pt x 85.35826pt.
-[56 <../lezione12/img1.PNG> <../lezione12/img2.PNG> <../lezione12/img3.PNG>]
+[54 <../lezione12/img1.PNG> <../lezione12/img2.PNG> <../lezione12/img3.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 176--182
 
  []
@@ -1659,8 +1658,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--220
 
  []
 
-[57]
-<../lezione12/img4.PNG, id=1035, 511.9125pt x 227.34938pt>
+[55]
+<../lezione12/img4.PNG, id=456, 511.9125pt x 227.34938pt>
 File: ../lezione12/img4.PNG Graphic file (type png)
 <use ../lezione12/img4.PNG>
 Package pdftex.def Info: ../lezione12/img4.PNG  used on input line 221.
@@ -1670,7 +1669,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--226
 
  []
 
-<../lezione12/img5.PNG, id=1036, 447.92343pt x 179.16937pt>
+<../lezione12/img5.PNG, id=457, 447.92343pt x 179.16937pt>
 File: ../lezione12/img5.PNG Graphic file (type png)
 <use ../lezione12/img5.PNG>
 Package pdftex.def Info: ../lezione12/img5.PNG  used on input line 227.
@@ -1680,7 +1679,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--10
 
  []
 
-<../lezione13/img1.PNG, id=1038, 982.42032pt x 220.57407pt>
+<../lezione13/img1.PNG, id=459, 982.42032pt x 220.57407pt>
 File: ../lezione13/img1.PNG Graphic file (type png)
 <use ../lezione13/img1.PNG>
 Package pdftex.def Info: ../lezione13/img1.PNG  used on input line 11.
@@ -1695,8 +1694,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
-[58 <../lezione12/img4.PNG> <../lezione12/img5.PNG> <../lezione13/img1.PNG>]
-<../lezione13/img2.PNG, id=1046, 1011.78pt x 180.675pt>
+[56 <../lezione12/img4.PNG> <../lezione12/img5.PNG> <../lezione13/img1.PNG>]
+<../lezione13/img2.PNG, id=467, 1011.78pt x 180.675pt>
 File: ../lezione13/img2.PNG Graphic file (type png)
 <use ../lezione13/img2.PNG>
 Package pdftex.def Info: ../lezione13/img2.PNG  used on input line 37.
@@ -1706,7 +1705,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
-<../lezione13/img3.PNG, id=1047, 1014.79124pt x 246.1697pt>
+<../lezione13/img3.PNG, id=468, 1014.79124pt x 246.1697pt>
 File: ../lezione13/img3.PNG Graphic file (type png)
 <use ../lezione13/img3.PNG>
 Package pdftex.def Info: ../lezione13/img3.PNG  used on input line 42.
@@ -1716,12 +1715,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
  []
 
-<../lezione13/img4.PNG, id=1048, 453.94594pt x 420.82219pt>
+<../lezione13/img4.PNG, id=469, 453.94594pt x 420.82219pt>
 File: ../lezione13/img4.PNG Graphic file (type png)
 <use ../lezione13/img4.PNG>
 Package pdftex.def Info: ../lezione13/img4.PNG  used on input line 59.
 (pdftex.def)             Requested size: 184.15187pt x 170.71652pt.
-[59 <../lezione13/img2.PNG> <../lezione13/img3.PNG>]
+[57 <../lezione13/img2.PNG> <../lezione13/img3.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 61--70
 
  []
@@ -1736,7 +1735,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--70
 
  []
 
-<../lezione13/img5.PNG, id=1055, 330.48468pt x 314.67563pt>
+<../lezione13/img5.PNG, id=476, 330.48468pt x 314.67563pt>
 File: ../lezione13/img5.PNG Graphic file (type png)
 <use ../lezione13/img5.PNG>
 Package pdftex.def Info: ../lezione13/img5.PNG  used on input line 71.
@@ -1751,17 +1750,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--78
 
  []
 
-<../lezione13/img6.PNG, id=1056, 1035.11719pt x 403.5075pt>
+<../lezione13/img6.PNG, id=477, 1035.11719pt x 403.5075pt>
 File: ../lezione13/img6.PNG Graphic file (type png)
 <use ../lezione13/img6.PNG>
 Package pdftex.def Info: ../lezione13/img6.PNG  used on input line 79.
 (pdftex.def)             Requested size: 291.9631pt x 113.81102pt.
-[60 <../lezione13/img4.PNG> <../lezione13/img5.PNG>]
+[58 <../lezione13/img4.PNG> <../lezione13/img5.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
-<../lezione13/img7.PNG, id=1063, 1054.6903pt x 297.36093pt>
+<../lezione13/img7.PNG, id=484, 1054.6903pt x 297.36093pt>
 File: ../lezione13/img7.PNG Graphic file (type png)
 <use ../lezione13/img7.PNG>
 Package pdftex.def Info: ../lezione13/img7.PNG  used on input line 85.
@@ -1776,12 +1775,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--101
 
  []
 
-<../lezione13/img8.PNG, id=1064, 901.86937pt x 572.1375pt>
+<../lezione13/img8.PNG, id=485, 901.86937pt x 572.1375pt>
 File: ../lezione13/img8.PNG Graphic file (type png)
 <use ../lezione13/img8.PNG>
 Package pdftex.def Info: ../lezione13/img8.PNG  used on input line 102.
 (pdftex.def)             Requested size: 313.95259pt x 199.16928pt.
-[61 <../lezione13/img6.PNG> <../lezione13/img7.PNG> <../lezione13/img8.PNG>]
+[59 <../lezione13/img6.PNG> <../lezione13/img7.PNG> <../lezione13/img8.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 111--116
 
  []
@@ -1791,7 +1790,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--116
 
  []
 
-<../lezione13/img9.PNG, id=1073, 901.86937pt x 522.45187pt>
+<../lezione13/img9.PNG, id=494, 901.86937pt x 522.45187pt>
 File: ../lezione13/img9.PNG Graphic file (type png)
 <use ../lezione13/img9.PNG>
 Package pdftex.def Info: ../lezione13/img9.PNG  used on input line 117.
@@ -1806,7 +1805,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
-[62 <../lezione13/img9.PNG>]
+[60 <../lezione13/img9.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 156--160
 
  []
@@ -1816,37 +1815,159 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--171
 
  []
 
-<../lezione13/img10.PNG, id=1079, 857.45343pt x 553.31718pt>
+<../lezione13/img10.PNG, id=500, 857.45343pt x 553.31718pt>
 File: ../lezione13/img10.PNG Graphic file (type png)
 <use ../lezione13/img10.PNG>
 Package pdftex.def Info: ../lezione13/img10.PNG  used on input line 172.
 (pdftex.def)             Requested size: 308.64374pt x 199.16928pt.
-[63])
-Overfull \hbox (226.46318pt too wide) in paragraph at lines 174--23
+[61])
+Overfull \hbox (226.46318pt too wide) in paragraph at lines 174--22
 \OT1/cmss/m/n/10 dia-gram-me di bo-de si con-si-de-ra er-ro-re in se-de d'e-sa-me! []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--23
+Underfull \hbox (badness 10000) in paragraph at lines 174--22
 
  []
 
-[64 <../lezione13/img10.PNG>] (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione18/lezione18.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione19/lezione19.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--28
+[62 <../lezione13/img10.PNG>] (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione18/lezione18.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione19/lezione19.tex
+
+c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione19/lezione19.tex:1: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \newline
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione19/lezione19.tex:2: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \newline
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione20/lezione20.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione21/lezione21.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione22/lezione22.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione23/lezione23.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione24/lezione24.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione25/lezione25.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione26/lezione26.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione27/lezione27.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione28/lezione28.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione29/lezione29.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione30/lezione30.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione31/lezione31.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione32/lezione32.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione33/lezione33.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione34/lezione34.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione35/lezione35.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione36/lezione36.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione37/lezione37.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione38/lezione38.tex) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione39/lezione39.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
 
  []
 
-[65] (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione8/lezione8.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--48
+
+ []
+
+[63] [64] (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione8/lezione8.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
 
-<../lezione8/img1.PNG, id=1101, 727.21687pt x 253.69781pt>
+<../lezione8/img1.PNG, id=555, 727.21687pt x 253.69781pt>
 File: ../lezione8/img1.PNG Graphic file (type png)
 <use ../lezione8/img1.PNG>
 Package pdftex.def Info: ../lezione8/img1.PNG  used on input line 44.
 (pdftex.def)             Requested size: 244.67609pt x 85.35826pt.
-) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione9/lezione9.tex [66 <../lezione8/img1.PNG>]
+) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione9/lezione9.tex [65 <../lezione8/img1.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -1856,7 +1977,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--26
 
  []
 
-[67]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 56--68
 
  []
@@ -1881,7 +2002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
 
-[68]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione14/lezione14.tex
+[67]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione14/lezione14.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -1901,7 +2022,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
 
-[69]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione17/lezione17.tex
+[68]) (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione17/lezione17.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -1911,12 +2032,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--15
 
  []
 
-<../lezione17/img1.PNG, id=1132, 885.3075pt x 393.72093pt>
+<../lezione17/img1.PNG, id=601, 885.3075pt x 393.72093pt>
 File: ../lezione17/img1.PNG Graphic file (type png)
 <use ../lezione17/img1.PNG>
 Package pdftex.def Info: ../lezione17/img1.PNG  used on input line 22.
 (pdftex.def)             Requested size: 319.88571pt x 142.26378pt.
-[70 <../lezione17/img1.PNG>]
+[69 <../lezione17/img1.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
@@ -1931,37 +2052,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--47
 
  []
 
-<../lezione17/img2.PNG, id=1139, 986.18437pt x 534.49687pt>
+<../lezione17/img2.PNG, id=610, 986.18437pt x 534.49687pt>
 File: ../lezione17/img2.PNG Graphic file (type png)
 <use ../lezione17/img2.PNG>
 Package pdftex.def Info: ../lezione17/img2.PNG  used on input line 48.
 (pdftex.def)             Requested size: 367.4858pt x 199.16928pt.
-[71 <../lezione17/img2.PNG>]) [72]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
+[70 <../lezione17/img2.PNG>]) [71]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
-Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: E5D367A8EA8EC51F57A993D0ADA70E01;11275.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 
+
+Package rerunfilecheck Warning: File `master.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `master.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  99303ED2725E8C4343A679EFACE961F4;11385.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 18382 strings out of 492609
- 337980 string characters out of 6132818
- 430134 words of memory out of 5000000
- 21622 multiletter control sequences out of 15000+600000
+ 18339 strings out of 492609
+ 340817 string characters out of 6132818
+ 430030 words of memory out of 5000000
+ 21485 multiletter control sequences out of 15000+600000
  13466 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,73p,1493b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.pdf" (72 pages, 2408734 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.pdf" (71 pages, 2393211 bytes).
 PDF statistics:
- 1266 PDF objects out of 1440 (max. 8388607)
- 1073 compressed objects within 11 object streams
+ 735 PDF objects out of 1000 (max. 8388607)
+ 548 compressed objects within 6 object streams
  223 named destinations out of 1000 (max. 500000)
- 1321 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
