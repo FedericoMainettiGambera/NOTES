@@ -1,0 +1,119 @@
+\fontsize{6pt}{8pt}\selectfont
+
+\begin{multicols*}{2}
+    \subsection*{Terminologia}
+    \[
+        \begin{cases}
+            \dot{x}(t) = f(x(t),u(t),t) = Ax + bu\\
+            y(t) = g(x(t),u(t),t) = cx +du
+        \end{cases}
+    \]
+    \textbf{Stato}: le varie $x$;\newline
+    \textbf{Uscita}: $y$;\newline
+    \textbf{Sistema dinamico}: se la conoscenza degli ingressi su un intervallo di tempo
+    non `e sufficiente per determinare l’andamento delle uscite sullo stesso intervallo di tempo.\newline
+    \textbf{Ordine del sistema}: numero di variabili di stato (quante $x$ ci sono).\newline
+    \textbf{Lineare}: se $f$ e $g$ sono lineari in $x$ e in $u$ (non importa che lo siano in $t$), da notare che una funzione del tipo $x(t) \cdot u(t)$ non è lineare.\newline
+    \textbf{Tempo invariante}: se in $f$ e $g$ non compare esplicitamente $t$;\newline
+    \textbf{Strettamente proprio}: se in $g$ non compare $u$.\newline
+    \textbf{SISO}: single input, single output; cioè se $u$ e $y$ sono scalari.
+    \subsection*{Equilibrio}
+    \subsubsection*{Caso generale}
+    Dato l'ingresso costante $u = \bar{u}$ e detto $\bar{x}$ l'equilibrio cercato, in generale si ha:\newline
+    \textbf{TC}: Soluzioni di $f(\bar{x},\bar{u}) = 0$.\newline
+    \textbf{TD}: Soluzioni di $f(\bar{x}, \bar{u}) = \bar{x}$.\newline
+    Per trovare le uscite di equilibrio $\bar{y}$ è sufficiente applicare gli stati di equilibrio $\bar{x}$ trovati all'uscita e vedere se l'espressione non perde senso e se produce soluzioni reali.
+    \subsubsection*{Caso lineare}
+    Se il sistema è lineare:\newline
+    \textbf{TC, LTI}: Soluzioni di $A\bar{x} + b \bar{u} = 0$.\newline
+    \textbf{TD, LTI}: Soluzioni di $A\bar{x} + b \bar{u} = \bar{x}$.\newline
+    Se esiste $\bar{x}$, allora per forza esiste un uscite di equilibrio $\bar{y}$
+    \subsubsection*{Caso non lineare}
+    Se il sistema \textbf{non} è lineare:\newline
+    L'uscita $\bar{y}$ potrebbe non avere senso per gli equilibri $\bar{x}$ trovati. 
+    \subsection*{Movimento}
+    \subsubsection*{Esponenziale di matrice}
+    $A$ è \textbf{diagonalizzabile} se:
+    \begin{itemize}
+        \item il numero di autovalori contati con la loro molteplicità è pari all’ordine della matrice;
+        \item la molteplicità geometrica di ciascun autovalore coincide con la relativa molteplicità algebrica;
+        \item una matrice quadrata di ordine $n$ che ammette esattamente $n$ autovalori distinti è sicuramente diagonalizzabile.
+    \end{itemize}
+    Per calcolare $e^{At}$ si seguono i seguenti passaggi:
+    \begin{itemize}
+        \item Calcolare gli autovalori di $A$ (risolvere $det[A-\lambda I] = 0$);
+        \item Calcolare gli autovettori corrsipondenti per ogni autovalore \newline (risolvere $[A-\lambda_i I] \cdot \left[\begin{matrix}
+            x\\y
+        \end{matrix}\right] = \left[\begin{matrix}
+            0\\0
+        \end{matrix}\right]$);
+        \item definire la matrice diagonalizzante $T$ come l'accostamento degli autovettori trovati (ricordando l'ordine) e calcolare $T^{-1}$. Per l’inversa della generica matrice $T$ 2x2 si moltiplica $\frac{1}{det(T)}$ per la matrice ottenuta da $T$ scambiando di posto i termini sulla diagonale principale e invertendo
+        il segno dei termini sulla diagonale secondaria.
+        \item notare che $T^{-1} A T = D = $ matrice con gli autovalori di $A$ lungo la diagonale nell'ordine in cui compaiono gli autovettori in $T$.
+        \item Calcolare $e^{At}$:\newline
+        $e^{At} = e^{TDT^{-1} t} = T e^{Dt} T^{-1} = \dots$
+    \end{itemize}
+    \subsubsection*{Formula di Lagrange TC, LTI}
+    \textbf{Per lo stato}:
+    \[
+            \begin{split}
+            x(t) &= x_L(t) + x_F(t) =\\
+            &=e^{At} x(0) + \int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau
+            \end{split}
+    \]
+    \[
+        \begin{cases}
+            x_L(t) = e^{At} x(0)\\
+            x_F(t) = \int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau
+        \end{cases}
+    \]
+    \textbf{Per l'uscita}:
+    \[
+            \begin{split}
+            y(t) 1 &= y_L(t) + y_F(t) =\\
+            &= ce^{At}x(0) + c \int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)
+            \end{split}
+    \]
+    \[
+        \begin{cases}
+            y_L(t) = ce^{At}x(0)\\
+            y_F(t) = c \int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)
+        \end{cases}
+    \]
+    \subsubsection*{Formula di Lagrange TD, LTI}
+    \textbf{Per lo stato}:
+    \[
+            \begin{split}
+            x(k) &= x_L(k) + x_F(k) =\\
+            &=A^k x(0) + \sum_{l=0}^{k-1}A^{k-l-1}bu(l)
+            \end{split}
+    \]
+    \[
+        \begin{cases}
+            x_L(k) A^k x(0)\\
+            x_F(k) \sum_{l=0}^{k-1}A^{k-l-1}bu(l)
+        \end{cases}
+    \]
+    \textbf{Per l'uscita}:
+    \[
+        \begin{split}
+            y(k) &= y_L(k) + y_F(k) =\\
+            &= cx(k)+du(k) = \\
+            &=cA^k x(0) + c\sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)
+        \end{split}
+    \]
+    \[
+        \begin{cases}
+            y_L(k) = cA^k x(0)\\
+            y_F(k) = c\sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)
+        \end{cases}
+    \]
+    \subsubsection*{Osservazioni}
+    \begin{itemize}
+        \item Se è richiesto il calcolo del movimento dell'uscita, è sufficiente calcolare il movimento dello stato e sostituirlo nell'equazione dell'uscita del sistema.
+        \item Se gli autovalori di $A$ sono numeri complessi: una volta ricondotti i numeri complessi in $x_L$ alla loro forma trigonometrica ($cos(\theta) + i sin(\theta) = e^{i \theta}$), si prende la sola parte reale, l'unità immaginaria deve scomparire.
+        \item Alla fine in $x_L$ devono comparire somme di termini del tipo $e^{\alpha t} cos(\omega t)$ e/o $e^{\alpha t} sin(\omega t)$, dove $\alpha$ e $\omega$ sono rispettivamente perti reali e immaginarie di autovalori di $A$. In realtà si possono trovare anche altri termini, ma in via generale se si trova un coefficiente del tempo all'esponente che non è parte reale di nessun autovalore di $A$, il risultato è certamente errato.
+        \item TODO: esercizio 2.3, caso autovalore multipli, questioni sui autovettori generalizzati\dots.
+        \item Il movimento libero dipende linearmente solo dallo stato iniziale e non dall’ingresso, il movimento forzato dipende linearmente solo dall’ingresso e non dallo stato iniziale.
+    \end{itemize}
+\end{multicols*}
