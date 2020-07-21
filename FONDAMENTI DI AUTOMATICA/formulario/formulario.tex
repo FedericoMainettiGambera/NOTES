@@ -38,27 +38,6 @@
     Se il sistema \textbf{non} è lineare:\newline
     L'uscita $\bar{y}$ potrebbe non avere senso per gli equilibri $\bar{x}$ trovati. 
     \subsection*{Movimento}
-    \subsubsection*{Esponenziale di matrice}
-    $A$ è \textbf{diagonalizzabile} se:
-    \begin{itemize}
-        \item il numero di autovalori contati con la loro molteplicità è pari all’ordine della matrice;
-        \item la molteplicità geometrica di ciascun autovalore coincide con la relativa molteplicità algebrica;
-        \item una matrice quadrata di ordine $n$ che ammette esattamente $n$ autovalori distinti è sicuramente diagonalizzabile.
-    \end{itemize}
-    Per calcolare $e^{At}$ si seguono i seguenti passaggi:
-    \begin{itemize}
-        \item Calcolare gli autovalori di $A$ (risolvere $det[A-\lambda I] = 0$);
-        \item Calcolare gli autovettori corrsipondenti per ogni autovalore \newline (risolvere $[A-\lambda_i I] \cdot \left[\begin{matrix}
-            x\\y
-        \end{matrix}\right] = \left[\begin{matrix}
-            0\\0
-        \end{matrix}\right]$);
-        \item definire la matrice diagonalizzante $T$ come l'accostamento degli autovettori trovati (ricordando l'ordine) e calcolare $T^{-1}$. Per l’inversa della generica matrice $T$ 2x2 si moltiplica $\frac{1}{det(T)}$ per la matrice ottenuta da $T$ scambiando di posto i termini sulla diagonale principale e invertendo
-        il segno dei termini sulla diagonale secondaria.
-        \item notare che $T^{-1} A T = D = $ matrice con gli autovalori di $A$ lungo la diagonale nell'ordine in cui compaiono gli autovettori in $T$.
-        \item Calcolare $e^{At}$:\newline
-        $e^{At} = e^{TDT^{-1} t} = T e^{Dt} T^{-1} = \dots$
-    \end{itemize}
     \subsubsection*{Formula di Lagrange TC, LTI}
     \textbf{Per lo stato}:
     \[
@@ -114,6 +93,92 @@
             y_F(k) = c\sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)
         \end{cases}
     \]
+    \subsubsection*{Esponenziale di matrice (con $A$ diagonalizzabile)}
+    $A$ è \textbf{diagonalizzabile} se:
+    \begin{itemize}
+        \item il numero di autovalori contati con la loro molteplicità è pari all’ordine della matrice;
+        \item la molteplicità geometrica di ciascun autovalore coincide con la relativa molteplicità algebrica;
+        \item una matrice quadrata di ordine $n$ che ammette esattamente $n$ autovalori distinti è sicuramente diagonalizzabile.
+    \end{itemize}
+    Per calcolare $e^{At}$ si seguono i seguenti passaggi:
+    \begin{itemize}
+        \item Calcolare gli autovalori di $A$ (risolvere $det[A-\lambda I] = 0$, oppure se matrice triangolare, gli autovalori sono sulla diagonale);
+        \item Calcolare gli autovettori corrsipondenti per ogni autovalore \newline (risolvere $[A-\lambda_i I] \cdot \left[\begin{matrix}
+            x\\y
+        \end{matrix}\right] = \left[\begin{matrix}
+            0\\0
+        \end{matrix}\right]$);
+        \item definire la matrice diagonalizzante $T$ come l'accostamento degli autovettori trovati (ricordando l'ordine) e calcolare $T^{-1}$. Per l’inversa della generica matrice $T$ 2x2 si moltiplica $\frac{1}{det(T)}$ per la matrice ottenuta da $T$ scambiando di posto i termini sulla diagonale principale e invertendo
+        il segno dei termini sulla diagonale secondaria.
+        \item notare che $T^{-1} A T = D = $ matrice con gli autovalori di $A$ lungo la diagonale nell'ordine in cui compaiono gli autovettori in $T$.
+        \item Calcolare $e^{At}$:\newline
+        $e^{At} = e^{TDT^{-1} t} = T e^{Dt} T^{-1} = \dots$
+    \end{itemize}
+    \subsubsection*{Movimento libero con Jordanizzazione (con $A$ non diagonalizzabile)}
+    Se la matrice $A$ non è diagonalizzabile calcolare $e^{At}$ col metodo spiegato prima non è fattibile, piuttosto usare questo procedimento:
+    \begin{itemize}
+        \item Calcolare gli autovalori di $A$;
+        \item Se ci sono autovalori coincidenti, cercare di calcolare gli autovettori corrispondenti (risulterà possibile se e solo se la molteplicità geometrica è pari alla molteplicità algebrica). Se non si riescono a trovare abbastanza autovettori bisogna usare la Jordanizzazione, vediamo come fare.
+        \item per ogni autovalore multiplo, chiamiamolo per semplicità $\lambda$, bisogna cercare gli autovettori generalizzati corrispondenti e da questi creare una catena di autovettori.
+        \item Il primo autovettore generalizzato è quello classico calcolato come soluzione di $(A-\lambda I_n) x = 0$.
+        \item Il secondo autovettore generalizzato è calcolato come soluzione di $(A-\lambda I_n)^2 x = 0$, dove per $(A-\lambda I_n)^2$ è sufficiente fare il prodotto della matrice per sè stessa. E' tipico che un autovettore generalizzato abbia come soluzione un insieme di soluzioni, se siamo al secondo, tipicamente ce ne saranno due.
+        \item Tutti gli altri autovettori generalizzati si calcolano allo stesso modo incrementando di uno l'esponente ogni volta.
+        \item Una volta trovati tutti gli autovettori generalizzati bisogna fare una catena di autovettori.
+        \item A partire dall'ultimo autovettore generalizzato trovato si sceglie un vettore, che chiamo qua $v_n$, fra quelli della soluzione che non appartenga all'insieme dei vettori soluzione dell'autovettore generalizzato precedente. Una volta selezionato, si trova l'autovettore precedente come $v_{n-1} = (A- \lambda I_n)v_n$. E si prosegue così anche per quello prima: $v_{n-2} = (A-\lambda I_n) v_{n-1}$.
+        \item una volta terminata la catena di autovettori, questi, accostati in colonna, rappresentano la matrrice jordanizzante $P$, tale che $P^{-1} A P = J =$ matrice in forma canonica di Jordan.
+    \end{itemize}
+    Vediamo ora come trovare la forma canonica di Jordan della matrice $A$ nel caso 2x2:
+    \begin{itemize}
+        \item se $\lambda_1 \neq \lambda_2$, allora la matrice di Jordan è la matrice diagonale classica;
+        \item se $\lambda_1 = \lambda_2$:
+        \begin{itemize}
+            \item se ammette due autovettori, allora siamo ancora nella matrice diagonale classica;
+            \item se la matrice ammette un solo autovettore, allora abbiamo una matrice di Jordan: $\left[\begin{matrix}
+                \lambda & 1\\ 0 & \lambda
+            \end{matrix}\right]$
+        \end{itemize}
+    \end{itemize}
+    Vediamo ora come trovare la forma canonica di Jordan della matrice $A$ nel caso 3x3:
+    \begin{itemize}
+        \item se $\lambda_1 \neq \lambda_2 \neq \lambda_3$ allora la matrice di jordan è la solita diagonale;
+        \item se $\lambda_1 = \lambda_2 = \lambda$ e $\lambda_3 \neq \lambda$ allora:
+        \begin{itemize}
+            \item se $\lambda$ ammette due autovettori, allora siamo alla diagonale solita;
+            \item se $\lambda$ non ammette due autovettori, allora la matrice di Jordan:$\left[\begin{matrix}
+                \lambda & 1 & 0 \\
+                0 & \lambda & 0\\
+                0 & 0 & \lambda_3
+            \end{matrix}\right]$
+        \end{itemize}
+        \item se $\lambda_1 = \lambda_2 = \lambda_3 = \lambda$, allora:
+        \begin{itemize}
+            \item se $\lambda$ ammette tre autovettori, allora siamo alla solita diagonale;
+            \item se $\lambda$ ammette due autovettori, allora la matrice di jordan: $\left[\begin{matrix}
+                \lambda & 1 & 0 \\
+                0 & \lambda & 0\\
+                0 & 0 & \lambda
+            \end{matrix}\right]$
+            \item se $\lambda$ ammette un solo autovettore, allora la matrice di Jordan: $\left[\begin{matrix}
+                \lambda & 1 & 0 \\
+                0 & \lambda & 1\\
+                0 & 0 & \lambda
+            \end{matrix}\right]$
+        \end{itemize}
+    \end{itemize}
+    Una volta determinate le matrici jordanizzanti e la matrice di jordan si può proseguire a calcolare il movimento libero:
+    \begin{itemize}
+        \item partendo dal sistema $\dot{x} = A x$, il movimento libero è $x_L(t) = e^{At}x(0)$;
+        \item per prima cosa si fa un cambio di variabile: $\bar{x} = P^{-1}x$, per cui il sistema diventa $P \bar{\dot{x}} = A P \bar{x}$, e spostando $P$ otteniamo $\bar{\dot{x}} = P^{-1} A P \bar{x} = J \bar{x}$.
+        \item Siccome la matrice di Jordan è triangolare alta si può ora evitare di usare le matrici e trasformare il sistema in forma scalare. Per esempio, ipotizzando $J = \left[\begin{matrix}
+            a & b \\ 0 & c
+        \end{matrix}\right]$ otteniamo il sistema $\begin{cases}
+            \bar{\dot{x}}_1 = a \bar{x}_1 + b \bar{x}_2\\
+            \bar{\dot{x}}_2 = c \bar{x}_2
+        \end{cases}$.
+        \item la seconda equazione contiene solo $\bar{x}_2$ e quindi il suo movimento libero è $\bar{x}_2 = e^{ct}\bar{x}_2(0)$
+        \item Il movimento libero della prima equazione è ora calcolabile come moviemento completo (!) considerando $b \bar{x}_2$ come fosse un ingresso: $\bar{x}_1 = e^{at}\bar{x}_1(0) + \int_{0}^{t} e^{a(t-\tau)} b \bar{x}_2(\tau) d \tau$ e sostituendo il $\bar{x}_2(\tau)$ trovato al punto precedente.
+        \item Abbiamo ora trovato le due componenti del vettore movimento libero per $\bar{x}_L$, bisogna però sostituire i valori iniziali $\bar{x}(0) = P^{-1}\bar{x}(0)$, e, infine, non ci resta che tornare alla variabile iniziale: $x_L (t) = P \bar{x}_L$
+    \end{itemize}
     \subsubsection*{Osservazioni}
     \begin{itemize}
         \item Se è richiesto il calcolo del movimento dell'uscita, è sufficiente calcolare il movimento dello stato e sostituirlo nell'equazione dell'uscita del sistema.
@@ -139,7 +204,7 @@
             \text{sistema I;}\;\\
             \text{oppure sistema S, ma non AS.}\;
         \end{cases}$. \newline
-        Per capire se si tratta di un sistema stabile o instabile bisogna andare a calcolare il movimento libero per un generico ingresso $x(0)$ e vederne il comportamento per $t \rightarrow \infty$. Se il movimento libero rimane sempre limitato allora il sistema è stabile, se il movimento libero diverge (anche una sola delle componenti del movimento libero) allora il sistema è instabile (Puoi trovare degli esempi di esercizi nell'esercitazione $1$, es. 2 e es. 3). \newline
+        Per capire se si tratta di un sistema stabile o instabile bisogna andare a calcolare il movimento libero per un generico ingresso $x(0)$ e vederne il comportamento per $t \rightarrow \infty$. Se il movimento libero rimane sempre limitato allora il sistema è stabile, se il movimento libero diverge (anche una sola delle componenti del movimento libero) allora il sistema è instabile. \newline
         Esiste anche un altro metodo: guardando la matrice di Jordan, se il più grande miniblocco di Jordan ha dimensione $1$ allora il sistema è stabile, altrimenti è instabile. Un buon metodo per ricordarlo è usare i seguenti due esempi che abbiamo visto a esercitazione:
         \[
             \left[\begin{matrix}
