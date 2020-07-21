@@ -1,6 +1,12 @@
 \fontsize{6pt}{8pt}\selectfont
-
-\begin{multicols*}{2}
+\newgeometry{
+    lmargin=0.2cm,
+    rmargin=0.2cm,
+    tmargin=0.2cm,
+    bmargin=0.2cm,
+}
+\begin{landscape}
+\begin{multicols*}{3}
     \subsection*{Terminologia}
     \[
         \begin{cases}
@@ -116,4 +122,99 @@
         \item TODO: esercizio 2.3, caso autovalore multipli, questioni sui autovettori generalizzati\dots.
         \item Il movimento libero dipende linearmente solo dallo stato iniziale e non dall’ingresso, il movimento forzato dipende linearmente solo dall’ingresso e non dallo stato iniziale.
     \end{itemize}
+    \subsection*{Stabilità}
+    \begin{itemize}
+        \item Tutti gli equilibri hanno le stesse caratteristiche di stabilità.
+        \item Nei sistemi lineari (tempo invarianti) la stabilità è una proprietà del sistema, e non una proprietà dell’equilibrio. 
+        \item Nei sistemi \textbf{asintoticamente stabili} i movimenti \textbf{liberi} di stato e di uscita tendono a $0$ per $t \rightarrow \infty$ (dimenticano lo stato inizile, movimento libero trascurabile a lungo andare) qualunque sia lo stato iniziale, mentre se li si sottopone a ingresso costante i movimenti (complessivi, non solo liberi) di stato e di uscita tendono ai medesimi valori costanti qualunque sia lo stato iniziale;
+        \item Nei sistemi \textbf{instabili} il movimento \textbf{libero} di stato e di uscita diverge a patto di alcune eccezioni. Diverge in generale anche il movimento (complessivo, non solo libero) di stato e di uscita a frornte di un ingresso costante.
+        \item nei sistemi \textbf{semplicemente stabili} i movimenti \textbf{liberi} di stato e di uscita nè divergono nè tendono a zero e il loro comportamento asintotico non è lo stesso per qualunque stato iniziale.
+    \end{itemize}
+    \subsubsection*{Criteri di stabilità}
+    \textbf{tempo continuo}:
+    \begin{itemize}
+        \item Tutti gli autovalori di $A$ hanno $Re < 0 \Longleftrightarrow $ sistema AS;
+        \item Almeno un autovalore di $A$ ha $Re > 0 \Longrightarrow$ sistema I;
+        \item Tutti gli autovalori di $A$ hanno $Re \leq 0$ e ne esiste almeno uno con $Re = 0$ $\Longrightarrow$ $\begin{cases}
+            \text{sistema I;}\;\\
+            \text{oppure sistema S, ma non AS.}\;
+        \end{cases}$. \newline
+        Per capire se si tratta di un sistema stabile o instabile bisogna andare a calcolare il movimento libero per un generico ingresso $x(0)$ e vederne il comportamento per $t \rightarrow \infty$. Se il movimento libero rimane sempre limitato allora il sistema è stabile, se il movimento libero diverge (anche una sola delle componenti del movimento libero) allora il sistema è instabile (Puoi trovare degli esempi di esercizi nell'esercitazione $1$, es. 2 e es. 3). \newline
+        Esiste anche un altro metodo: guardando la matrice di Jordan, se il più grande miniblocco di Jordan ha dimensione $1$ allora il sistema è stabile, altrimenti è instabile. Un buon metodo per ricordarlo è usare i seguenti due esempi che abbiamo visto a esercitazione:
+        \[
+            \left[\begin{matrix}
+                0 & 0 \\
+                0 & 0
+            \end{matrix}\right] \;\;\text{due miniblocchi di dimensione 1, quindi S}\;
+        \]
+        \[
+            \left[\begin{matrix}
+                0&1\\
+                0&0
+            \end{matrix}\right] \;\; \text{un miniblocco di dimensione 2, quindi I}\;
+        \]
+    \end{itemize}
+    \textbf{tempo discreto}:
+    \begin{itemize}
+        \item Tutti gli autovalori di $A$ hanno $|\lambda_i| < 1$ $\Longleftrightarrow$ sistema AS.
+        \item Almeno un autovalore di $A$ con modulo $|\lambda_i| > 1$ $\Longrightarrow$ sistema I.
+        \item Tutti gli autovalori di $A$ hanno $|\lambda_i| \leq 1$ e ne esiste almeno uno tale che $|\lambda_1| = 1$ $\Longrightarrow$ $\begin{cases}
+            \text{sistema I;}\;\\
+            \text{oppure sistema S, ma non AS.}\;
+        \end{cases}$. \newline
+        Per capire se il sistema è instabile o stabile nell'ultimo punto guarda il caso a tempo continuo.
+    \end{itemize}
+    \textbf{oss.} Errore tipico: Nel caso a tempo continuo si guarda la parte reale degli autovalori, nel caso a tempo discreto si guarda il modulo (!) degli autovalori.
+    \subsubsection*{Criteri di stabilità dedotti dalla matrice $A$}
+    \begin{itemize}
+        \item se $det(A) = 0$ esiste $S_i = 0$ $\Longrightarrow$ sistema non AS.
+        \item se $tr(A) >0$ esiste $S_i$ tale che $Re(S_i) > 0$ $\Longrightarrow$ sistema I.
+        \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è asintoticamente stabile), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli \newline
+        \textbf{oss.} Errore tipico: il viceversa vale solo per polinomi del secondo ordine.
+    \end{itemize}
+    \textbf{oss.} Per stabilire se un sistema è asintoticamente stabile abbiamo due possibilità: per prima cosa con i primi due dei tre criteri appena esposti stabiliamo se non è asintoticamente stabile, altrimenti, se non abbiamo avuto fortuna con questi criteri, usiamo il criterio di Routh. Un caso particolare è rappresentato dai polinomi di secondo ordine, in cui possiamo evitare di usare Routh e usare il terzo criterio appena visto.
+    \subsubsection*{Routh}
+    \[
+        \Pi(s) = a_0s^n + a_1 s^{n-1} + \dots + a_{n-1}s + a_n
+    \]
+    Prime due righe
+    \[
+        \begin{matrix}
+            a_0 & \;\;\;\;\;\; a_2 & \;\;\;\;\;\;\dots\\
+            \;\;\downarrow & \nearrow \;\; \downarrow & \nearrow \;\; \downarrow\\
+            a_1 & \;\;\;\;\;\; a_3 & \;\;\;\;\;\;\dots 
+        \end{matrix}
+    \]
+    a seconda che il numero di termini sia pari (le due righe sono di pari lunghezza) o dispari (la prima riga ha un termine in più della seconda, per cui si aggiunge uno $0$) l'ultima colonna può terminare in due modi:
+    \[
+        \begin{matrix}
+            \dots & a_{n-1}\\
+            \;\\
+            \dots & a_n
+        \end{matrix}\;\;\;\;\;\;\;\;\;\;\; \text{oppure}\;\;\;\;\;\;\;\;\;\;\; \begin{matrix}
+            \dots &a_n\\
+            \;\\
+            \dots & 0 
+        \end{matrix}
+    \]
+    In totale, considerando anche le prime due righe, ci sono $n+1$ righe.\newline
+    Ogni riga dalla terza in poi dipende dalle due precedenti seguendo una regola:
+    \[
+        \begin{matrix}
+            h_1 & h_2 & h_3 &\dots\\
+            \;\\
+            q_1 & q_2 & q_3 & \dots\\
+            \;\\
+            w_1 & w_2 & w_3 & \dots
+        \end{matrix}
+    \]
+    prese due generiche righe ($h_i$ e $q_i$), i termini della riga successiva ($w_i$) si costruiscono come $w_i = - \frac{1}{q_1} det\left[\begin{matrix}
+        h_1 & h_{i+1} \\
+        q_1 & q_{i+1}
+    \end{matrix}\right]$.\newline
+    Se manca un termine in una delle righe precedenti ($h$ e $q$) si assume nullo.\newline
+    Se troviamo un elemento nullo in prima colonna, ci si ferma, sicuramente il sistema non è asintoticamente stabile, e siamo in presenza di un caso particolare che non ci permette di calcolare la tabella di Routh.\newline
+    \newline
+    Un sistema dinamico con polinomio caratteristico $\Pi(s)$ è asintoticamente stabile se e solo se tutti gli elementi della prima colonna della tabella di Routh sono concordi (e non nulli).
 \end{multicols*}
+\end{landscape}
