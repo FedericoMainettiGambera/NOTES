@@ -177,7 +177,7 @@
         \end{cases}$.
         \item la seconda equazione contiene solo $\bar{x}_2$ e quindi il suo movimento libero è $\bar{x}_2 = e^{ct}\bar{x}_2(0)$
         \item Il movimento libero della prima equazione è ora calcolabile come moviemento completo (!) considerando $b \bar{x}_2$ come fosse un ingresso: $\bar{x}_1 = e^{at}\bar{x}_1(0) + \int_{0}^{t} e^{a(t-\tau)} b \bar{x}_2(\tau) d \tau$ e sostituendo il $\bar{x}_2(\tau)$ trovato al punto precedente.
-        \item Abbiamo ora trovato le due componenti del vettore movimento libero per $\bar{x}_L$, bisogna però sostituire i valori iniziali $\bar{x}(0) = P^{-1}\bar{x}(0)$, e, infine, non ci resta che tornare alla variabile iniziale: $x_L (t) = P \bar{x}_L$
+        \item Abbiamo ora trovato le due componenti del vettore movimento libero per $\bar{x}_L$, bisogna però sostituire i valori iniziali $\bar{x}(0) = P^{-1}x(0)$, e, infine, non ci resta che tornare alla variabile iniziale: $x_L (t) = P \bar{x}_L$
     \end{itemize}
     \subsubsection*{Osservazioni}
     \begin{itemize}
@@ -232,8 +232,10 @@
     \textbf{oss.} Errore tipico: Nel caso a tempo continuo si guarda la parte reale degli autovalori, nel caso a tempo discreto si guarda il modulo (!) degli autovalori.
     \subsubsection*{Criteri di stabilità dedotti dalla matrice $A$}
     \begin{itemize}
-        \item se $det(A) = 0$ esiste $S_i = 0$ $\Longrightarrow$ sistema non AS.
-        \item se $tr(A) >0$ esiste $S_i$ tale che $Re(S_i) > 0$ $\Longrightarrow$ sistema I.
+        \item Se il sistema è asintoticamente stabile, allora $tr(A)$ è negativa, ma non vale il viceversa.
+        \item se $det(A) = 0$ esiste $S_i = 0$ $\Longrightarrow$ no AS.
+        \item se $tr(A) >0$ $\Longrightarrow$ sistema I.
+        \item se $tr(A) = 0$ $\Longrightarrow$ no AS.
         \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è asintoticamente stabile), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli \newline
         \textbf{oss.} Errore tipico: il viceversa vale solo per polinomi del secondo ordine.
     \end{itemize}
@@ -281,5 +283,63 @@
     Se troviamo un elemento nullo in prima colonna, ci si ferma, sicuramente il sistema non è asintoticamente stabile, e siamo in presenza di un caso particolare che non ci permette di calcolare la tabella di Routh.\newline
     \newline
     Un sistema dinamico con polinomio caratteristico $\Pi(s)$ è asintoticamente stabile se e solo se tutti gli elementi della prima colonna della tabella di Routh sono concordi (e non nulli).
+    \subsection*{Linearizzazione}
+    \subsubsection*{Linearizzazione di sistemi tempo invarianti non lineari nell'intorno di un equilibrio}
+    Dato il sistema dinamico 
+    \[
+        \begin{cases}
+            \dot{x}_1(t) = f_1(x_1(t),x_2(t),\dots,x_n(t),u(t))\\
+            \dot{x}_2(t) = f_2(x_1(t),x_2(t),\dots,x_n(t),u(t))\\
+            \dots\\
+            \dot{x}_n(t) = f_n(x_1(t),x_2(t),\dots,x_n(t),u(t))\\
+            y(t) = g(x_1(t),x_2(t),\dots,x_n(t),u(t))
+        \end{cases}
+    \]
+    e un suo equilibrio $(\bar{x}, \bar{u})$ a fronte dell'ingresso costante $\bar{u}$, tale sistema è approssimabile con uno lineare e stazionario ottenuto dall'espansione in serie delle $f_i$ e $g$ al prim'ordine:
+    \[
+        \begin{cases}
+            \dot{\delta x} (t) = A \delta x(t) + b \delta u(t)\\
+            \delta y (t) = c \delta x (t) + d \delta u (t)
+        \end{cases}
+    \]
+    con:
+    \[
+        A = \left[\begin{matrix}
+            \frac{\delta f_1 (x,u)}{\delta x_1}_{\bar{x}, \bar{u}} & \frac{\delta f_1 (x,u)}{\delta x_2}_{\bar{x}, \bar{u}} & \dots & \frac{\delta f_2 (x,u)}{\delta x_n}_{\bar{x}, \bar{u}}\\
+            \frac{\delta f_2(x,u)}{\delta x_1}_{\bar{x}, \bar{u}} & \frac{\delta f_2(x,u)}{\delta x_2}_{\bar{x}, \bar{u}} & \dots & \frac{\delta f_1(x,u)}{\delta x_n}_{\bar{x}, \bar{u}}\\
+            \dots & \dots & \dots & \dots\\
+            \frac{\delta f_n(x,u)}{\delta x_1}_{\bar{x}, \bar{u}} & \frac{\delta f_n (x,u)}{\delta x_2}_{\bar{x}, \bar{u}} & \dots & \frac{\delta f_n (x,u)}{\delta x_n}_{\bar{x}, \bar{u}} 
+        \end{matrix}\right]
+    \]
+    \[
+        b = \left[\begin{matrix}
+            \frac{\delta f_1 (x,u)}{\delta u}_{\bar{x}, \bar{u}}\\
+            \frac{\delta f_2 (x,u)}{\delta u}_{\bar{x}, \bar{u}}\\
+            \dots\\
+            \frac{\delta f_n (x,u)}{\delta u}_{\bar{x}, \bar{u}}
+        \end{matrix}\right]
+    \]
+    \[
+        c = \left[\begin{matrix}
+            \frac{\delta g(x,u)}{\delta x_1}_{\bar{x}, \bar{u}} &
+            \frac{\delta g (x,u)}{\delta x_2}_{\bar{x}, \bar{u}} & 
+            \dots &
+            \frac{\delta g (x,u)}{\delta x_n}_{\bar{x}, \bar{u}}
+        \end{matrix}\right]
+    \]
+    \[
+        d = \frac{\delta g (x,u)}{\delta u}_{\bar{x}, \bar{u}}
+    \]
+    dove il pedice $|_{\bar{x}, \bar{u}}$ indica che sono derivate parziali valutate nell'equilibrio, e
+    \[
+        \delta x := x-\bar{x} \;\;\;\;\;\delta u := u- \bar{u} \;\;\;\;\; \delta y = := y- \bar{y}
+    \]
+    \subsubsection*{Stabilità dell'equilibrio di sistemi tempo invarianti non lineari}
+    La stabilità di un equilibrio si può studiare basandosi sul sistema linearizzato nell'intorno di quell'equilibrio:
+    \begin{itemize}
+        \item se il sistema linearizzato è AS, allora anche l'equilibrio è AS;
+        \item se il sistema linearizzato è I, allora anche l'equilibrio è I;
+        \item se il sistema linearizzato è S, allora nulla si può dire sulla stabilità dell'equilibrio, che in tal caso dipende da termini dello sviluppo in serie di $f$ di grado superiore a uno.
+    \end{itemize}
 \end{multicols*}
 \end{landscape}
