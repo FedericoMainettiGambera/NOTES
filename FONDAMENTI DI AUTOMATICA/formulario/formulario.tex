@@ -362,6 +362,7 @@
         $k \cdot ram(t) =k \cdot t \cdot  sca(t)$ & $k \cdot \frac{1}{s^2}$ \\
         $k \cdot e^{at}sca(t)$ & $k \cdot \frac{1}{s-a}$ \\ 
         $t^{n}\cdot e^{at}sca(t)$ & $\frac{n!}{(s-a)^{n+1}}$\\ 
+        $\frac{1}{(n-1)!} t^{n-1}e^{-at}$ & $\frac{1}{(s+a)^n}$\\
         \hline
         \end{tabular}
     \end{center}
@@ -412,8 +413,12 @@
     \[
         G(s) := c(sI-A)^{-1} b + d = \frac{\tilde{N}(s)}{D(s)} + d = \frac{N(s)}{D(s)}
     \]
+    Ricordiamo che $Y_F(s) = G(s) U(s)$.\newline
+    \newline
     La funzione di trasferimento è un rapporto di polinomi il cui denominatore $D(s)$ è il polinomio caratteristico della matrice $A$, quindi i poli sono gli autovalori di $A$. In alcuni casi può capitare che alcuni termini del numeratore si semplifichino con alcuni temrini del denominatore e quindi non tutti gli autovalori di $A$ compaiano come poli.\newline
     Se e solo se $d=0$ (cioè se il sistema è strettamente proprio) abbiamo $G(s) = \frac{\bar{N}(s)}{D(s)}$ in cui il grado del numeatore è minore del grado del denominatore.\newline
-    Altrimenti (se e solo se $d\neq 0$) abbiamo $G(s) = \frac{\bar{N}(s) + dD(s)}{D(s)} = \frac{N(s)}{D(s)}$, con $N(s) = \bar{N}(s) +dD(s)$, in cui il grado del numeratore è uguale al grado del denominatore.
+    Altrimenti (se e solo se $d\neq 0$) abbiamo $G(s) = \frac{\bar{N}(s) + dD(s)}{D(s)} = \frac{N(s)}{D(s)}$, con $N(s) = \bar{N}(s) +dD(s)$, in cui il grado del numeratore è uguale al grado del denominatore.\newline
+    \newline
+    Calcolo della funzione di trasferimento con un ritardo: il calcolo è del tutto analogo al caso senza ritardo, basta ricordarsi di moltiplicare l'intera funzione di trasferimento per il termine trascendentale che ne rappresenta il ritardo, $G(s) = (c(sI-A)^{-1} b + d) e^{-a \tau}$.
     \end{multicols*}
 \end{landscape}
