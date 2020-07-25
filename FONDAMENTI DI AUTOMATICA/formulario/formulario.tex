@@ -6,7 +6,7 @@
     bmargin=0.2cm,
 }
 \begin{landscape}
-\begin{multicols*}{3}
+%\begin{multicols*}{3}
     \subsection*{Terminologia}
     \[
         \begin{cases}
@@ -334,6 +334,7 @@
     \[
         \delta x := x-\bar{x} \;\;\;\;\;\delta u := u- \bar{u} \;\;\;\;\; \delta y = := y- \bar{y}
     \]
+    \textbf{oss.} Per i sistemi non lineari la stabilità non è una proprietà del sistema, quindi gli equilibri non condividono per forza la stessa "tipologia" di stabilità (AS/S/I). Di conseguenza è necessario analizzare la stabilità per ciascuno degli equilibri.
     \subsubsection*{Stabilità dell'equilibrio di sistemi tempo invarianti non lineari}
     La stabilità di un equilibrio si può studiare basandosi sul sistema linearizzato nell'intorno di quell'equilibrio:
     \begin{itemize}
@@ -401,6 +402,7 @@
             Y_F(s) = [c(sI-A)^{-1} b + d]U(s)
         \end{cases}
     \]
+    Spesso può essere utile calcolare la $Y_F(s)$ a partire dall'equazione $\frac{Y(s)}{U(s)} = G(s)$
     \subsubsection*{FdT}
     Il tipico sistema dinamico diventa:
     \[
@@ -420,5 +422,253 @@
     Altrimenti (se e solo se $d\neq 0$) abbiamo $G(s) = \frac{\bar{N}(s) + dD(s)}{D(s)} = \frac{N(s)}{D(s)}$, con $N(s) = \bar{N}(s) +dD(s)$, in cui il grado del numeratore è uguale al grado del denominatore.\newline
     \newline
     Calcolo della funzione di trasferimento con un ritardo: il calcolo è del tutto analogo al caso senza ritardo, basta ricordarsi di moltiplicare l'intera funzione di trasferimento per il termine trascendentale che ne rappresenta il ritardo, $G(s) = (c(sI-A)^{-1} b + d) e^{-a \tau}$.
-    \end{multicols*}
+    \subsection*{Raggiungibilità e osservabilità}
+    \subsubsection*{Raggiungibilità}
+    \textbf{Sistema raggiungibile se e solo se ($\Leftrightarrow$) $M_R$ è non singolare} (determinante diverso da zero), dove:
+    \[
+        M_R= \;\text{matrice di raggiungibilità}\; =\left[\begin{matrix}
+            b & Ab & A^2 b & \dots & A^{n-1}b
+        \end{matrix}\right]
+    \] 
+    dove nel caso SISO ogni suo termine è una matrice colonna $n$x$1$, e quindi in totale è una matrice $n$x$n$.
+    \subsubsection*{Osservabilità}
+    \textbf{Sistema osservabile se e solo se ($\Leftrightarrow$) $M_O$ è non singolare} (determinante diverso da zero), dove:
+    \[
+        M_O = \left[\begin{matrix}
+            c' & A'c' & \dots & (A^{n-1})' c'
+        \end{matrix}\right]
+    \]
+    \subsubsection*{Cancellazioni}
+    Le parti non raggiungibili e/o non osservabili non sono presenti nella funzione di trasferimento.\newline
+    Per cancellazione intendiamo il fatto che nel calcolo della funzione di trasferimento alcuni poli
+    e zeri si possono cancellare fra di loro, e questi rappresentano proprio le parti non raggiungibili
+    e/o non osservabili.\newline
+    \newline
+    Una calcellazione è \textbf{critica} se avviene al di fuori della regione di asintotica stabilità (a tempo continuo significa che se l'autovalore è cancellato, non ha la parte reale negativa).\newline
+    Poichè i poli di $G(s)$ sono gli autovalori della parte raggiungibile e osservabile del sistema, perchè si possa studiare la stabilità (asintotica) del sistema usando $G(s)$, non vi devono essere cancellazioni critiche.
+    \newline
+    \newline
+    Per capire se un FdT ha parti nascoste basta controllare se una radice del numeratore azzera anche il denominatore o se una radice del denominatore annulla il numeratore. 
+    \subsection*{Realizzazione}
+    Metodo per la \textbf{forma canonica di raggiungibilità} (realizzazione sempre raggiungibile).
+    se il grado del numeratore è uguale al grado del denominatore si fa la divisione e si ottiene $G(s) = d + \frac{N(s)}{D(s)}$, da cui si ricava il valore $d$. A questo punto riscriviamo la frazione $\frac{N(s)}{D(s)} = \frac{ b_1 s^{n-1} + b_2 s^{n-2} + \dots + b_n }{ s^n + a_1 s^{n-1} + \dots + a_n }$ e scriviamo le $A, b$ e $c$:
+    \[
+        A=\left[\begin{matrix}
+            0 & 1 & 0 & \dots & 0 \\
+            0 & 0 & 1 & \dots & 0 \\
+            \dots & \dots &\dots&\dots&\dots\\
+            0 & 0 & 0 & \dots & 1\\
+            -a_n & -a_{n-1} & \dots & \dots & -a_1
+        \end{matrix}\right]
+    \]
+    \[
+        b=\left[\begin{matrix}
+            0\\\dots\\0\\1
+        \end{matrix}\right]
+    \]
+    \[
+        c=\left[\begin{matrix}
+            b_n & b_{n-1} & \dots & b_1
+        \end{matrix}\right]
+    \]
+    \textbf{oss.} la presenza di una cancellazione ci impone il fatto che la realizzazione
+    $ (A, b, c, d)$ non può essere raggiungibile e osservabile contemporaneamente. Quindi siccome facciamo una realizzazione raggiungibile, sarà sicuramente non osservabile.
+    \subsection*{Schemi a blocchi}
+    \textbf{Blocchi in serie}: $u \rightarrow [G_1] \rightarrow  [G_2] \rightarrow y$, con $G_1 = \frac{N_1}{D_1}$ e $G_2 = \frac{N_2}{G_2}$: $\frac{Y}{U} = G_2G_1 = \frac{N_1N_2}{D_2D_1}$.\newline 
+    Gli autovalori del sistema complessivo sono i $\{$ poli di $G_1\} U \{$ poli di $G_2\}$.\newline
+    $G_1$ e $G_2$ (entrambi) asintoticamente stabili è condizione neccessaria e sufficiente ($\Leftrightarrow$) per avere un sistema complessivo asintoticamente stabile.\newline
+    \newline
+    \textbf{Blocchi in parallelo}: con $G_1 = \frac{N_1}{D_1}$ e $G_2 = \frac{N_2}{G_2}$: $\frac{Y}{U} = G_1 + G_2 = \frac{N_2D_1 + N_1 D_2}{D_1D_2}$.\newline
+    Quindi gli autovalori del sistema complessivo sono $\{\text{poli di $G_1$}\} U \{\text{poli di $G_2$}\}$.\newline
+    $G_1$ e $G_2$ (entrambi) asintoticamente stabili è condizione necessaria e sufficiente ($\Leftrightarrow$) per avere un sistema complessivo asintoticamente stabile.\newline
+    \newline
+    \textbf{Blocchi in retroazione}: con $G_a$ blocco di andata e $G_r$ blocco di retroazione: $\frac{Y}{U} = \frac{G_a}{1 + G_aG_r} = \frac{\text{"andata"}}{1+ \text{"anello"}} = \frac{N_aD_r}{D_aD_r +N_aN_r}$. \newline
+    $G_a$ e $G_r$ asintoticamente stabili nè occorrono nè bastano per avere un sistema complessivo asintoticamente stabile.
+    \subsubsection*{Costruzione dello schema a blocchi}
+    \textbf{Primo metodo (analitico)}
+    \begin{itemize}
+        \item Si trasforma il sistema $\begin{cases}
+            \dot{x} = A x + bu\\ y = cx +d
+        \end{cases}$ secondo Laplace: $\begin{cases}
+            s X = A X + b U\\ Y = c X + d
+        \end{cases}$;
+        \item Si esprime il sistema secondo le variabili di stato e secondo l'uscita:$\begin{cases}
+            X = \;\text{qualcosa}\;\\ Y = \;\text{qualcosa}\;
+        \end{cases}$;
+        \item Ora è facile ricostruire lo schema a blocchi.
+    \end{itemize}
+    \textbf{Secondo metodo (Funzione di trasferimento)}
+    \begin{itemize}
+        \item Si calcola la funzione di trasferimento $G(s)$;
+        \item Ricordando che $Y = G(s) U$ possiamo scrivere il sistema a blocchi come: $Y \longrightarrow \left[G(s)\right] \longrightarrow U$
+    \end{itemize}
+    \textbf{Terzo metodo (Integratori)}\newline
+    Ricordiamo che la funzione integrale nel dominio delle trasformate è rappresentato dall'aggiunta di un termine $\frac{1}{s}$ (\textbf{es.} $y(t) = \int_{0}^{t}u(\tau)d \tau \Rightarrow Y(s) = \frac{1}{s} U(s)$ ).\newline
+    Il termine $\frac{1}{s}$ è la funzione di trasferimento dell'integratore.
+    \begin{itemize}
+        \item Si disegnano $n$ blocchi integratori $\frac{1}{s}$ quante sono le $n$ variabili di stato del sistema;
+        \item Per ciascuno di questi blocchi $n$ si mette come ingresso la variabile derivata ($\dot{x}_n$) e come uscita la variabile semplice ($x_n$);
+        \item Osservando le matrici $A$ e $b$ si compongono con dei nodi sommatori i vari $\dot{x}_1, \dots, \dot{x}_n$;
+        \item Infine osservando le matrici $c$ e $d$ si compone l'uscita.
+    \end{itemize}
+    [immagine dagli appunti del prof]
+    \begin{center}
+        \includegraphics[height=2cm]{../lezione8/img1.PNG}
+    \end{center}
+    Rappresentazioen di dove solitamente si inseriscono i valori delle matrici del sistema all'interno dello schema a blocchi sviluppato con l'integratore.
+    \subsection*{Risposta esponenziale}
+    Quindi \textbf{in generale} con $u(t) = U e^{\lambda t}$ (con $U$ un numero qualunque che semplicemente amplifica l'esponenziale), se $\lambda$ non è autovalore di $A$, allora esiste uno e uno solo 
+    \[
+        x(0) = (\lambda I - A)^{-1}b U
+    \] tale che 
+    \[
+        \begin{cases}
+            x(t) = (\lambda I -A)^{-1} b U e^{\lambda t}\\
+            y(t) = cx(t) + du(t) =  [c(\lambda I -A)^{-1} b + d] U e^{\lambda t} = G(\lambda) u(t)
+        \end{cases}
+    \]
+    Se, inoltre, il sistema è asintoticamente stabile, allora qualunque sia lo stato iniziale $x(0)$, l'uscita tenderà a $y(t) \rightarrow G(\lambda) u(t)$ per $t \rightarrow  \infty$.
+    \subsection*{Risposta sinusoidale}
+    Dato il sistema dinamico LTI a TC, SISO $\begin{cases}
+        \dot{x} = Ax +bu\\ 
+        y = cx +du
+    \end{cases}$, detta $G(s)$ la sua funzione di trasferimento e considerato l'ingresso $u(t) = U sin(\omega t)$ per $t\geq 0$:
+    \begin{itemize}
+        \item Se $\mp j \omega$ non sono autovalori di $A$, allora esiste uno e uno solo stato iniziale $x(0)$ tale che $y(t) = |G(j \omega)| U sin(\omega t + arg(G(j \omega)))$ per $t\geq 0$. (Se $\mp j \omega$ sono autovalori di $A$, allora si verifica un fenomeno di risonanza, che però non è argomento di questo corso).
+        \item Se INOLTRE il sistema è asintoticamente stabile, allora qualunque sia lo stato iniziale, l'uscita  tenderà a $y(t) \rightarrow |G(j \omega) U sin( \omega t + arg(G(j \omega)))$ per $t \rightarrow  \infty$
+    \end{itemize}
+    \textbf{definizione}:  Data una funzione di trasferimento $G(s)$, la sua restrizione all'asse immaginario positivo $J^+$, cioè $G(j \omega)$ con $\omega \geq 0$, si dice \textbf{risposta in frequenza} (RF) di $G(s)$.
+    \subsection*{Diagramma di Bode}
+    $x_{dB} = 20 log_{10}|x|$\newline
+    \[
+        G(s) = \frac{\mu}{s^g} \cdot \frac{(1 + s \tau_1)(1 + s \tau_2)\dots}{(1 + s t_1)(1 + s t_2)\dots} \cdot \frac{(1 + 2 \frac{\zeta}{\sigma_n}s + \frac{1}{\sigma_n^2}s^2)\dots}{(1 + 2 \frac{\xi}{\omega_n} s + \frac{1}{\omega_n^2}s^2)\dots}
+    \]
+    \[
+        \begin{matrix}
+            G_a(s) = \mu & \;\; & G_c(s) = 1+ s t\\
+            G_b(s) = \frac{1}{s^g} & \;\; & G_d(s) = 1 + 2 \frac{\xi}{\omega_n}s + \frac{1}{\omega_n^2}s^2
+        \end{matrix}
+    \]
+    \subsubsection*{Metodo di tracciamento}
+    Per prima cosa si ricavano i valori di $\mu$, $g$, poi si ricavano tutte le frequenze d'angolo (modulo delle radici di ogni termine al numeratore e al denominatore, escluse quelle in $s=0$) e per ognuna di queste si dice quanti zeri (radici del numeratore) destri (con parte reale positiva) o sinistri (con parte reale negativa) e quanti poli (radici del denominatore) destri (con parte reale positiva) o sinistri (con parte reale negativa) ci sono.\newline
+    \newline
+    \textbf{Diagramma di Bode del modulo}: 
+    \begin{enumerate}
+        \item Tracciare il diagramma di Bode del modulo di $\frac{\mu}{s^g}$ (è una retta la cui pendenza viene ricavata da: $-20 \cdot g \frac{dB}{decade}$; per capire dove interseca l'asse delle $\omega$ basta ricavare il valore di $\omega$ per cui $\left| \frac{\mu}{\omega^g} \right| = 1$; se la retta non ha pendenza allora è una retta orizzontale all'altezza di $|\mu|_{dB}$).
+        \item Segnare sull'asse delle $\omega$ le frequenze d'angolo dei poli (radici del denominatore) e zeri (radici del numeratore) non in $s=0$ (perchè son già presenti nel punto precedente).\newline
+        Quando si incontra una frequenza d'angolo di uno zero, la pendenza aumenta di $1$, quando si incontra una frequenza d'angolo di un polo, la pendenza diminuisce di $1$. (Ricordiamo che per 1 di pendenza si intendono $20 dB/decade$).
+    \end{enumerate}
+    \textbf{Diagramma di Bode della fase}:
+    \begin{enumerate}
+        \item Il diagramma di Bode della fase parte al valore di $arg(\frac{\mu}{(j \omega)^g})$, che è calcolabile sommando i contributi di $\mu$ e $\frac{1}{s^g}$ nel seguente modo:
+        \[
+            \mu \rightarrow \begin{cases}
+                0^o \;\;\;& se > 0\\
+                -180^o \;\;\; & se <0
+            \end{cases} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \frac{1}{s^g}\rightarrow -g \cdot 90^o
+        \]
+        \item zero "a sinistra" la fase aumenta di $90^o$;\newline
+        zero "a destra" la fase diminuisce di $90^o$;\newline
+        polo "a sinistra" la fase diminuisce di $90^o$;\newline
+        polo "a destra" la fase aumenta di $90^o$.
+    \end{enumerate}
+    \textbf{Regolo delle fasi}:\newline
+    Il tipico diagramma di Bode della fase che facciamo è una approssimazione asintotica che può variare molto rispetto al vero e proprio grafico. Il regolo delle fasi è utilizzato per calcolare la fase esatta (senza approssimazione asintotica) per una specifica frequenza $\bar{\omega}$ calcolando il contributo che ciascun polo e ciascun zero apporta a quella data frequenza $\bar{\omega}$.\newline
+    I passaggi da seguire sono i seguenti:
+    \begin{itemize}
+        \item Si disegna il diagramma di Bode della fase approssimato;
+        \item Si pone il regolo delle fasi con la freccia dei 45 gradi sulla $\bar{\omega}$ di cui si desidera calcolare la fase;
+        \item Lungo il regolo si leggono i contributi (in modulo) di ogni polo e zero in corrispondenza delle loro frequenze d'angolo;
+        \item Per calcolare la fase nel punto $\bar{\omega}$ è ora sufficiente combinare i valori trovati al punto precedente (ricordando di aggiungere il segno corretto e  di moltiplicarli per il numero di poli o zeri presenti), inoltre bisogna ricordarsi anche il valore di partenza della fase che ovviamente nel regolo non è espresso.
+    \end{itemize}
+    \subsection*{Diagramma polare}
+    A differenza dei diagrammi di Bode, i diagrammi polari non hanno metodi comodi per tracciarne l'andamento. Possiamo però comprenderne l'andamento tramite un'analisi del comportamento asintotico per $\omega \rightarrow 0^+$ e per $\omega \rightarrow  \infty$ e tramite un'analisi dell'aspetto qualitativo.\newline
+    \newline
+    Quindi studiamo la generica funzione di trasferimento $G(s)$ nella classica forma con cui la analizzeremmo per Bode.
+    \begin{itemize}
+        \item per $\omega \rightarrow  0$:
+        \begin{itemize}
+            \item se $g=0$: $G(0) = \mu$;
+            \item se $g<0$: $G(0) = 0$;
+            \item se $g>0$: il diagramma polare "parte all'infinito", dalla direzione $-90^o \cdot  g$;
+        \end{itemize}
+        \item per $\omega \rightarrow  \infty$:
+        \begin{itemize}
+            \item se il numero di poli di $G(s)$ è $>$ del numero di zeri di $G(s)$ $\rightarrow $ il diagramma polare finisce nell'origine;
+            \item se il numero di poli di $G(s)$ è uguale al numero di zeri di $G(s)$ $\rightarrow $ il diagramma polare finisce su un asse.
+        \end{itemize}
+        \item in generale l'andamento del diagramma polare si può dedurre dai diagrammi di bode del modulo e della fase, ricordando che il modulo è la distanza dall'origine e la fase è l'angolo.
+    \end{itemize}
+    \subsection*{Ritardi}
+    Analiziamo gli effetti di un ritardo applicato a una funzione di trasferimento. Prendiamo $G(s) = \frac{N(s)}{D(s)} e^{-s \tau} = G_R(s) e^{-s \tau}$, in cui $G_R(s)$ rappresenta la dianmica razionale (cioè una tipica funzione di trasferimento) e $e^{-s \tau}$ un ritardo.
+        \[
+            G(j \omega) = G_r(j \omega) e^{- j \omega \tau} = \begin{cases}
+                |G(j \omega)| = |G_R(j \omega)|\\
+                arg(G(j \omega)) = arg(G_R(j \omega)) - \omega \tau
+            \end{cases}
+        \]
+        Notiamo che il ritardo non ha effetti sul modulo, ma solo sulla fase con il termine $- \omega \tau$ che è espresso in radianti (\textbf{oss.} Errore tipico è scordarsi di trasformare le radianti in gradi).\newline
+        Quindi gli effetti del ritardo sul diagramma di Bode del modulo sono nulli, mentre sul diagramma di Bode della fase il ritardo ha un contributo lineare $- \omega \tau$, che in scala logaritmica è rappresentato da un esponenziale.\newline
+        \newline
+        Ai fini pratici (in esame) l'unica cosa che ci può essere richiesta è il calcolo della fase di una funzione di trasferimento ritardata tramite il regolo delle fasi. Per farlo studiamo la funzione di trasferimento ignorando il ritardo e calcoliamo $arg(G(j \omega))$ normalmente con il regolo delle fase, infine ci basta sottrarre $\omega \tau$ (RADIANTI! ricordati di trasformarli in gradi, cioè moltiplicare per $\frac{180^o}{\pi}$). \newline
+        \newline
+        L'effetto grafico che si ha su un diagramma polare a causa di un ritardo è che l'intero diagramma polare viene "arrotolato su sè stesso".\newline
+        [immagine dagli appunti del prof]
+        \begin{center}
+            \includegraphics[height=3cm]{../lezione17/img2.PNG}
+        \end{center}
+        Data $G = \frac{N}{D} e^{- j \omega \tau}$ ci sono due casi possibili:
+        \begin{itemize}
+            \item Caso in cui il grado di $D$ sia maggiore del grado di $N$: il diagramma polare di $G$ dinisce nell'origine con fase tendente a $- \infty$, quindi il diagramma si arrotola su sè stesso come una spirale;
+            \item Caso in cui il grado di $D$ sia uguale al grado di $N$: il modulo è costante e la fase tende a $- \infty$, quindi il diagramma diventa una circonferenza percorsa infinite volte.
+        \end{itemize}
+    \subsection*{Sintesi diretta}
+    esercitazione 5, esercizio 2.
+    \subsection*{Stabilità di sistemi retroazionati}
+    \subsubsection*{Diagramma di Nyquist}
+    \textbf{Percorso di Nyquist}: Curva chiusa costituita dall'intero asse immaginario e da una semicirconferenza di raggio infinito giacente nel semipiano destro. Se $G(s)$ ha poli a parte reale nulla, il percorso di Nyquist viene modificato evitando tali poli con semicirconferenze di raggio infinitesimo giacenti nel semipiano destro. Il percorso di Nyquist è percorso in senso antiorario.\newline
+    \newline
+    \textbf{Diagramma di Nyquist}: Costituito dal diagramma polare e della sua immagine speculare rispetto all'asse reale.
+    \subsubsection*{Stabilità asintotica}
+    Il numero di giri antiorari del diagramma di Nyquist di $G(s)$ attorno all'oigine è \textbf{uguale} al numero di poli di $G(s)$ circondati dal suo percorso di Nyquist in senso orario \textbf{meno} il numero di zeri di $G(s)$ circondati dal suo percorso di Nyquist in senso orario.\newline
+    \newline
+    Detto $L(s) = R(s) \cdot P(s)$, allora:\newline
+    il numero di giri del diagramma di Nyquist di $L(s)$ attorno al punto $-1$ è \textbf{uguale} al numero di poli di $L(s)$ con $Re> 0$ \textbf{meno} il numero di poli dell'anello chiuso con $Re > 0$.\newline
+    \newline
+    Poichè per avere la \textbf{stabilità asintotica} dell'anello chiuso si vuole che il numero di poli dell'anello chiuso con $Re > 0$ sia uguale a zero, si ha che deve essere:\newline
+    numero di iri del diagramma di Nyquist di $L(s)$ attorno al punto $-1$ è \textbf{uguale} al numero di poli di $L(s)$ con $Re > 0$.
+    \subsubsection*{Criterio di Nyquist}
+    Considerando il sistema dinamico:
+    \begin{center}
+        \includegraphics[height=2cm]{../formulario/img1.JPG}
+    \end{center}
+    \begin{itemize}
+        \item Si tracci il diagramma di Nyquist di $L(s)$;
+        \item Sia $P_D$ il numero di poli di $L(s)$ con $Re > 0$;
+        \item Sia $N$ il numero di giri antiorari del diagramma di Nyquist di $L(s)$ attorno al punto $-1$ dell'asse reale; se il diagramma di Nyquist passa per il punto $-1$ si dirà che $N$ non è ben definito.
+    \end{itemize}
+    \textbf{Criterio}:\newline
+    Il sistema in anello chiuso è asintoticamente stabile $\Leftrightarrow$ $N$ è ben definito e $N = P_D$.\newline
+    \newline
+    \textbf{Caso $N$ non ben definito}:\newline
+    se $N$ non è ben definito, allora il diagramma di Nyquist passa per $-1$, il sistema in anello chiuso ha poli con parte reale nulla, quindi è \textbf{non asintoticamnete stabile} (stabile o instabile, ma non si può concludere nulla a proposito).\newline
+    \newline
+    \textbf{Caso $N \neq P_D$}:\newline
+    Se $N$ è ben definito ma $N\neq P_D$, il sistema in anello chiuso è sicuramento \textbf{instabile}.\newline
+    \newline
+    \textbf{Caso particolare $P_D = 0$}:\newline
+    In questo caso per essere asintoticamente stabile deve essere $N = 0$. Si possono in questo caso definire dei margini di stabilità:
+    \begin{itemize}
+        \item Margine di modulo: $M_m = min_{\omega} | 1 + L(j \omega)|$;
+        \item Margine di guadagno: $K_m = \frac{1}{\alpha}$, dove $\alpha$ è il valore del modulo nel punto in cui interseca l'asse dei reali negativi ($\mathbb{R}^{-}$);
+        \item Margine di fase: $\omega_c$: frequenza tache che $|L| = 1$, $\phi_c = arg(L(j \omega_c))$, $\phi_m = -180 - |\phi_c|$.
+    \end{itemize}
+    \subsection*{Criterio di Bode}:
+    \begin{itemize}
+        \item Sia $P_D = 0$ (cioè $L(s)$ non ha poli con $Re > 0$);
+        \item Sia il diagramma di Bode del modulo di $L(s)$ tale che intersechi l'asse $0_{dB}$ una sola volta dall'alto verso il basso (cioè $L$ entra una sola volta nele cerchio unitario e non ne esce più);
+        \item Sia $\mu_L$ il guadagno di $L(s)$ e $\phi_m$ il margine di fase;
+    \end{itemize}
+    Allora il sistema in anello chiuso è asintoticamente stabile se e solo se ($\Leftrightarrow$) $\mu_L > 0$ e $\phi_m > 0^o$
+%    \end{multicols*}
 \end{landscape}
