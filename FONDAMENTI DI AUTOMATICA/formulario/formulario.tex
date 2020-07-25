@@ -630,6 +630,17 @@
         \end{itemize}
     \subsection*{Sintesi diretta}
     esercitazione 5, esercizio 2.
+    \subsection*{Funzioni fondamentali di un anello di controllo}
+    \begin{itemize}
+        \item funzione di traferimento d'anello (aperto) $L(s) := R(s) \cdot P(s)$;
+        \item funzione di sensitività complementare $T(s) := \frac{L(s)}{1+ L(s)}$;
+        \item funzione di sensitività $S(s) := \frac{1}{1+ L(s)}$;
+        \item funzione di sensitività del controllo $Q(s) := \frac{R(s)}{1+L(s)}$
+        \item $\frac{Y}{W} = \frac{L}{1+L} = T$;
+        \item $\frac{Y}{D_r} = - \frac{L}{1+L} = -T$;
+        \item $\frac{Y}{D_a} = \frac{1}{1+L} = S$;
+        \item $Y = T \cdot W + S \cdot  D_a -T \cdot D_r = T \cdot W + S \cdot D_a - T \cdot D_r$.
+    \end{itemize}
     \subsection*{Stabilità di sistemi retroazionati}
     \subsubsection*{Diagramma di Nyquist}
     \textbf{Percorso di Nyquist}: Curva chiusa costituita dall'intero asse immaginario e da una semicirconferenza di raggio infinito giacente nel semipiano destro. Se $G(s)$ ha poli a parte reale nulla, il percorso di Nyquist viene modificato evitando tali poli con semicirconferenze di raggio infinitesimo giacenti nel semipiano destro. Il percorso di Nyquist è percorso in senso antiorario.\newline
@@ -672,5 +683,41 @@
         \item Sia $\mu_L$ il guadagno di $L(s)$ e $\phi_m$ il margine di fase;
     \end{itemize}
     Allora il sistema in anello chiuso è asintoticamente stabile se e solo se ($\Leftrightarrow$) $\mu_L > 0$ e $\phi_m > 0^o$
+    \subsection*{Sintesi del controllore in retroazione}
+    \begin{center}
+        \includegraphics[height=3cm]{../formulario/img2.JPG}
+    \end{center}
+    \subsubsection*{Progetto statico}
+    \begin{itemize}
+        \item Considero le sole componenti canoniche $w$ e $d_a$ come ingressi di un sistema in anello chiuso e asintoticamente stabile: $w$ e $d_a$ hanno solo poli in $s=0$ e il blocco ha solo poli con $Re<0$ e vale il teorema del valore finale.
+        \item Esprimo l'errore a transitorio esaurito con il teorema del valore finale:\newline
+        $e_\infty = \lim_{t\rightarrow +\infty} e(t)$ dove $e(t) : = w(t) - y(t)$.
+        \item Impongo i vincoli $e_\infty = 0$ oppure $|e_\infty| < $ un certo valore, e determino condizioni du tipo e/o guadagno di $L(s)$, ricordando che in generale:\newline
+        $P(s) 0 \frac{\mu_p}{s^{g_p} \cdot  \frac{1+ \dots}{1+ \dots}}$;\newline
+        $R(s) = \frac{\mu_r}{s^{g_r}} \cdot  \frac{1+ \dots}{1+ \dots}$;\newline
+        $L(s) = R(s) \cdot P(s) \rightarrow \begin{cases}
+            \mu_L = \mu_r \cdot \mu_p\\
+            g_L = g_r + g_p
+        \end{cases}$
+    \end{itemize}
+    \subsubsection*{Progetto dinamico}
+    $T = \frac{L}{1+L} = \begin{cases}
+        1 \; \text{se}\; |L| >> 1\\
+        L \; \text{se}\; |L| << 1
+    \end{cases}$\newline
+    $S = \frac{1}{1+L} = \begin{cases}
+        \frac{1}{L} \; \text{se}\; |L| >> 1\\
+        1 \; \text{se}\; |L| << 1
+    \end{cases}$
+    \begin{center}
+        \includegraphics[height=3cm]{../formulario/img3.JPG}
+    \end{center}
+    \textbf{Vincolo sulla velocità di risposta}: $\omega_{c_min} < \omega_c < \omega_{c_max}$ (nel diagramma di bode del modulo di $L(s)$, $\omega_c$ è il punto in cui interseca l'asse degli $0_{dB}$). \newline
+    \textbf{Vincolo sul grado di stabilità (e assenza di oscillazioni)}: $\phi_m > $ un determinato valore (si verifica con il regolo delle fasi).\newline
+    \textbf{Vincolo sulla reiezione di un disturbo in andata}: un disturbo sinusoidale $d_a(t) = A sin (\omega_a \cdot  t)$ con $|A| < \bar{A}$ e $0 \leq \omega_{a_1} \leq \omega_a \leq \omega_{a_2} \leq \omega_c$, devo produrre asintoticamnete (per $t \rightarrow \infty$) su $y$ un effetto di ampiezza non superiore a $\Delta_a$ (ampiezza del massimo effetto che tollero), occorre che $\left| \frac{Y(j \omega)}{D_a(j \omega)} \right| < \frac{\Delta a}{\bar{A}}$ per $\omega_{a_1} \leq \omega \leq \omega_{a_2}$. In definitiva bisogna che:
+    \[
+        |L(j \omega)| > \frac{\bar{A}}{\Delta a} \;\;\;\text{per}\; \omega_{a_1} \leq \omega \leq \omega_{a_2}
+    \]
+    \textbf{Vincolo sulla reiezione di un disturbo in retroazione}:
     \end{multicols*}
 \end{landscape}
