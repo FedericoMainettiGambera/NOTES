@@ -17,7 +17,7 @@
     \textbf{Stato}: le varie $x$;\newline
     \textbf{Uscita}: $y$;\newline
     \textbf{Sistema dinamico}: se la conoscenza degli ingressi su un intervallo di tempo
-    non `e sufficiente per determinare l’andamento delle uscite sullo stesso intervallo di tempo.\newline
+    non è sufficiente per determinare l’andamento delle uscite sullo stesso intervallo di tempo.\newline
     \textbf{Ordine del sistema}: numero di variabili di stato (quante $x$ ci sono).\newline
     \textbf{Lineare}: se $f$ e $g$ sono lineari in $x$ e in $u$ (non importa che lo siano in $t$), da notare che una funzione del tipo $x(t) \cdot u(t)$ non è lineare.\newline
     \textbf{Tempo invariante}: se in $f$ e $g$ non compare esplicitamente $t$;\newline
@@ -368,7 +368,13 @@
         \end{tabular}
     \end{center}
     \renewcommand{\arraystretch}{1}
-    Notiamo che i segnali trigonometrici sono rappresentabili come esponenziali complessi, per esempio $sin(\omega t) = \frac{e^{j \omega t}- e^{-j \omega t}}{2j} \dots$ e così possiamo ricavare le \textbf{trasformate di Laplace di tutte le funzioni trigonometriche}.
+    Notiamo che i segnali trigonometrici sono rappresentabili come esponenziali complessi, per esempio $sin(\omega t) = \frac{e^{j \omega t}- e^{-j \omega t}}{2j} \dots$ e così possiamo ricavare le \textbf{trasformate di Laplace di tutte le funzioni trigonometriche}.\newline
+    \newline
+    \textbf{Teorema del valore iniziale}:\newline
+    Se $V(s) = \mathcal{L}[v(t)]$, allora $v(0) = \lim_{s\rightarrow +\infty} s \cdot V(s)$, oppure $v(0^+) = \lim_{s\rightarrow \infty}s \cdot V(s)$.\newline
+    \newline
+    \textbf{Teorema del valore finale}:\newline
+    Se $V(s) = \mathcal{L}[v(t)]$ ed esiste $\lim_{t\rightarrow +\infty} v(t)$ o equivalentemente $V(s)$ ha solo poli con $Re< 0$ o nell'origine, allora $\lim_{t\rightarrow +\infty} v(t) = \lim_{s\rightarrow 0} s \cdot V(s)$.
     \subsubsection*{Antitrasformazione con Heaviside}
     \[
         V(s) = \frac{N(s)}{D(s)}
@@ -640,22 +646,18 @@
     \subsubsection*{Criterio di Nyquist}
     Considerando il sistema dinamico:
     \begin{center}
-        \includegraphics[height=2cm]{../formulario/img1.JPG}
+        \includegraphics[height=1cm]{../formulario/img1.JPG}
     \end{center}
     \begin{itemize}
         \item Si tracci il diagramma di Nyquist di $L(s)$;
         \item Sia $P_D$ il numero di poli di $L(s)$ con $Re > 0$;
         \item Sia $N$ il numero di giri antiorari del diagramma di Nyquist di $L(s)$ attorno al punto $-1$ dell'asse reale; se il diagramma di Nyquist passa per il punto $-1$ si dirà che $N$ non è ben definito.
     \end{itemize}
-    \textbf{Criterio}:\newline
-    Il sistema in anello chiuso è asintoticamente stabile $\Leftrightarrow$ $N$ è ben definito e $N = P_D$.\newline
-    \newline
+    \textbf{Criterio}: il sistema in anello chiuso è asintoticamente stabile $\Leftrightarrow$ $N$ è ben definito e $N = P_D$.\newline
     \textbf{Caso $N$ non ben definito}:\newline
     se $N$ non è ben definito, allora il diagramma di Nyquist passa per $-1$, il sistema in anello chiuso ha poli con parte reale nulla, quindi è \textbf{non asintoticamnete stabile} (stabile o instabile, ma non si può concludere nulla a proposito).\newline
-    \newline
     \textbf{Caso $N \neq P_D$}:\newline
     Se $N$ è ben definito ma $N\neq P_D$, il sistema in anello chiuso è sicuramento \textbf{instabile}.\newline
-    \newline
     \textbf{Caso particolare $P_D = 0$}:\newline
     In questo caso per essere asintoticamente stabile deve essere $N = 0$. Si possono in questo caso definire dei margini di stabilità:
     \begin{itemize}
@@ -663,7 +665,7 @@
         \item Margine di guadagno: $K_m = \frac{1}{\alpha}$, dove $\alpha$ è il valore del modulo nel punto in cui interseca l'asse dei reali negativi ($\mathbb{R}^{-}$);
         \item Margine di fase: $\omega_c$: frequenza tache che $|L| = 1$, $\phi_c = arg(L(j \omega_c))$, $\phi_m = -180 - |\phi_c|$.
     \end{itemize}
-    \subsection*{Criterio di Bode}:
+    \subsection*{Criterio di Bode}
     \begin{itemize}
         \item Sia $P_D = 0$ (cioè $L(s)$ non ha poli con $Re > 0$);
         \item Sia il diagramma di Bode del modulo di $L(s)$ tale che intersechi l'asse $0_{dB}$ una sola volta dall'alto verso il basso (cioè $L$ entra una sola volta nele cerchio unitario e non ne esce più);
