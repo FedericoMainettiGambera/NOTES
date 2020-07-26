@@ -143,3 +143,64 @@
 \BOOKMARK [1][-]{section.25}{Esercitazione 7}{part.3}% 143
 \BOOKMARK [2][-]{subsection.25.1}{Diagrammi polari}{section.25}% 144
 \BOOKMARK [0][-]{part.4}{IV Formulario}{}% 145
+\BOOKMARK [1][-]{section.26}{Terminologia}{part.4}% 146
+\BOOKMARK [1][-]{section.27}{Equilibrio}{part.4}% 147
+\BOOKMARK [2][-]{subsection.27.1}{Caso generale}{section.27}% 148
+\BOOKMARK [2][-]{subsection.27.2}{Caso lineare}{section.27}% 149
+\BOOKMARK [2][-]{subsection.27.3}{Caso non lineare}{section.27}% 150
+\BOOKMARK [1][-]{section.28}{Movimento}{part.4}% 151
+\BOOKMARK [2][-]{subsection.28.1}{Formula di Lagrange TC, LTI}{section.28}% 152
+\BOOKMARK [2][-]{subsection.28.2}{Formula di Lagrange TD, LTI}{section.28}% 153
+\BOOKMARK [2][-]{subsection.28.3}{Esponenziale di matrice \(con A diagonalizzabile\)}{section.28}% 154
+\BOOKMARK [2][-]{subsection.28.4}{Movimento libero con Jordanizzazione \(con A non diagonalizzabile\)}{section.28}% 155
+\BOOKMARK [2][-]{subsection.28.5}{Osservazioni}{section.28}% 156
+\BOOKMARK [1][-]{section.29}{Stabilit\340}{part.4}% 157
+\BOOKMARK [2][-]{subsection.29.1}{Criteri di stabilit\340}{section.29}% 158
+\BOOKMARK [2][-]{subsection.29.2}{Criteri di stabilit\340 dedotti dalla matrice A}{section.29}% 159
+\BOOKMARK [2][-]{subsection.29.3}{Routh}{section.29}% 160
+\BOOKMARK [1][-]{section.30}{Linearizzazione}{part.4}% 161
+\BOOKMARK [2][-]{subsection.30.1}{Linearizzazione di sistemi tempo invarianti non lineari nell'intorno di un equilibrio}{section.30}% 162
+\BOOKMARK [2][-]{subsection.30.2}{Stabilit\340 dell'equilibrio di sistemi tempo invarianti non lineari}{section.30}% 163
+\BOOKMARK [1][-]{section.31}{Trasformate e funzioni di trasferimento a TC}{part.4}% 164
+\BOOKMARK [2][-]{subsection.31.1}{Laplace}{section.31}% 165
+\BOOKMARK [2][-]{subsection.31.2}{Antitrasformazione con Heaviside}{section.31}% 166
+\BOOKMARK [2][-]{subsection.31.3}{Formula di Lagrange nel dominio delle trasformate}{section.31}% 167
+\BOOKMARK [2][-]{subsection.31.4}{FdT}{section.31}% 168
+\BOOKMARK [1][-]{section.32}{Raggiungibilit\340 e osservabilit\340}{part.4}% 169
+\BOOKMARK [2][-]{subsection.32.1}{Raggiungibilit\340}{section.32}% 170
+\BOOKMARK [2][-]{subsection.32.2}{Osservabilit\340}{section.32}% 171
+\BOOKMARK [2][-]{subsection.32.3}{Cancellazioni}{section.32}% 172
+\BOOKMARK [1][-]{section.33}{Realizzazione}{part.4}% 173
+\BOOKMARK [1][-]{section.34}{Schemi a blocchi}{part.4}% 174
+\BOOKMARK [2][-]{subsection.34.1}{Costruzione dello schema a blocchi}{section.34}% 175
+\BOOKMARK [1][-]{section.35}{Risposta esponenziale}{part.4}% 176
+\BOOKMARK [1][-]{section.36}{Risposta sinusoidale}{part.4}% 177
+\BOOKMARK [1][-]{section.37}{Diagramma di Bode}{part.4}% 178
+\BOOKMARK [2][-]{subsection.37.1}{Metodo di tracciamento}{section.37}% 179
+\BOOKMARK [1][-]{section.38}{Diagramma polare}{part.4}% 180
+\BOOKMARK [1][-]{section.39}{Ritardi}{part.4}% 181
+\BOOKMARK [1][-]{section.40}{Sintesi diretta}{part.4}% 182
+\BOOKMARK [1][-]{section.41}{Funzioni fondamentali di un anello di controllo}{part.4}% 183
+\BOOKMARK [1][-]{section.42}{Stabilit\340 di sistemi retroazionati}{part.4}% 184
+\BOOKMARK [2][-]{subsection.42.1}{Diagramma di Nyquist}{section.42}% 185
+\BOOKMARK [2][-]{subsection.42.2}{Stabilit\340 asintotica}{section.42}% 186
+\BOOKMARK [2][-]{subsection.42.3}{Criterio di Nyquist}{section.42}% 187
+\BOOKMARK [2][-]{subsection.42.4}{Criterio di Bode}{section.42}% 188
+\BOOKMARK [1][-]{section.43}{Sintesi del controllore in retroazione}{part.4}% 189
+\BOOKMARK [2][-]{subsection.43.1}{Progetto statico}{section.43}% 190
+\BOOKMARK [2][-]{subsection.43.2}{Progetto dinamico}{section.43}% 191
+\BOOKMARK [2][-]{subsection.43.3}{Sistema dinamico \(AS\) "a fase minima"}{section.43}% 192
+\BOOKMARK [1][-]{section.44}{compensazione di un disturbo misurabile}{part.4}% 193
+\BOOKMARK [1][-]{section.45}{Controllo a due gradi di libert\340}{part.4}% 194
+\BOOKMARK [1][-]{section.46}{Cenno al progetto del regolatore in condizioni d'incertezza}{part.4}% 195
+\BOOKMARK [1][-]{section.47}{Regolatore PID}{part.4}% 196
+\BOOKMARK [2][-]{subsection.47.1}{Azione proporzionale P}{section.47}% 197
+\BOOKMARK [2][-]{subsection.47.2}{Azione integrale I}{section.47}% 198
+\BOOKMARK [2][-]{subsection.47.3}{Azione derivativa D}{section.47}% 199
+\BOOKMARK [2][-]{subsection.47.4}{Forme alternative della legge di controllo PID}{section.47}% 200
+\BOOKMARK [2][-]{subsection.47.5}{Metodi di taratura}{section.47}% 201
+\BOOKMARK [2][-]{subsection.47.6}{Principio del modello interno \(IMC\)}{section.47}% 202
+\BOOKMARK [2][-]{subsection.47.7}{Regola di taratura per IMG PID per processi AS}{section.47}% 203
+\BOOKMARK [2][-]{subsection.47.8}{Metodo di Ziegler-Nichols}{section.47}% 204
+\BOOKMARK [2][-]{subsection.47.9}{PID a due gradi di libert\340 ed effetto dei pesi b e c e di N sugli zeri}{section.47}% 205
+\BOOKMARK [1][-]{section.48}{Cenno al controllo di sistemi instabili}{part.4}% 206
