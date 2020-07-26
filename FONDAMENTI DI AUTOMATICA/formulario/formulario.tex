@@ -665,16 +665,18 @@
         \item Sia $N$ il numero di giri antiorari del diagramma di Nyquist di $L(s)$ attorno al punto $-1$ dell'asse reale; se il diagramma di Nyquist passa per il punto $-1$ si dirà che $N$ non è ben definito.
     \end{itemize}
     \textbf{Criterio}: il sistema in anello chiuso è asintoticamente stabile $\Leftrightarrow$ $N$ è ben definito e $N = P_D$.\newline
-    \textbf{Caso $N$ non ben definito}:\newline
-    se $N$ non è ben definito, allora il diagramma di Nyquist passa per $-1$, il sistema in anello chiuso ha poli con parte reale nulla, quindi è \textbf{non asintoticamnete stabile} (stabile o instabile, ma non si può concludere nulla a proposito).\newline
-    \textbf{Caso $N \neq P_D$}:\newline
-    Se $N$ è ben definito ma $N\neq P_D$, il sistema in anello chiuso è sicuramento \textbf{instabile}.\newline
-    \textbf{Caso particolare $P_D = 0$}:\newline
-    In questo caso per essere asintoticamente stabile deve essere $N = 0$. Si possono in questo caso definire dei margini di stabilità:
     \begin{itemize}
-        \item Margine di modulo: $M_m = min_{\omega} | 1 + L(j \omega)|$;
-        \item Margine di guadagno: $K_m = \frac{1}{\alpha}$, dove $\alpha$ è il valore del modulo nel punto in cui interseca l'asse dei reali negativi ($\mathbb{R}^{-}$);
-        \item Margine di fase: $\omega_c$: frequenza tache che $|L| = 1$, $\phi_c = arg(L(j \omega_c))$, $\phi_m = -180 - |\phi_c|$.
+        \item \textbf{Caso $N$ non ben definito}:\newline
+        se $N$ non è ben definito, allora il diagramma di Nyquist passa per $-1$, il sistema in anello chiuso ha poli con parte reale nulla, quindi è \textbf{non asintoticamnete stabile} (stabile o instabile, ma non si può concludere nulla a proposito).\newline
+        \item \textbf{Caso $N \neq P_D$}:\newline
+        Se $N$ è ben definito ma $N\neq P_D$, il sistema in anello chiuso è sicuramento \textbf{instabile}.\newline
+        \item \textbf{Caso particolare $P_D = 0$}:\newline
+        In questo caso per essere asintoticamente stabile deve essere $N = 0$. Si possono in questo caso definire dei margini di stabilità:
+        \begin{itemize}
+            \item Margine di modulo: $M_m = min_{\omega} | 1 + L(j \omega)|$;
+            \item Margine di guadagno: $K_m = \frac{1}{\alpha}$, dove $\alpha$ è il valore del modulo nel punto in cui interseca l'asse dei reali negativi ($\mathbb{R}^{-}$);
+            \item Margine di fase: $\omega_c$: frequenza tache che $|L| = 1$, $\phi_c = arg(L(j \omega_c))$, $\phi_m = -180 - |\phi_c|$.
+        \end{itemize}
     \end{itemize}
     \subsection*{Criterio di Bode}
     \begin{itemize}
@@ -684,40 +686,207 @@
     \end{itemize}
     Allora il sistema in anello chiuso è asintoticamente stabile se e solo se ($\Leftrightarrow$) $\mu_L > 0$ e $\phi_m > 0^o$
     \subsection*{Sintesi del controllore in retroazione}
+    SD LTI A TC SISO nell'ipotesi di Bode.
     \begin{center}
         \includegraphics[height=3cm]{../formulario/img2.JPG}
     \end{center}
     \subsubsection*{Progetto statico}
     \begin{itemize}
-        \item Considero le sole componenti canoniche $w$ e $d_a$ come ingressi di un sistema in anello chiuso e asintoticamente stabile: $w$ e $d_a$ hanno solo poli in $s=0$ e il blocco ha solo poli con $Re<0$ e vale il teorema del valore finale.
-        \item Esprimo l'errore a transitorio esaurito con il teorema del valore finale:\newline
-        $e_\infty = \lim_{t\rightarrow +\infty} e(t)$ dove $e(t) : = w(t) - y(t)$.
-        \item Impongo i vincoli $e_\infty = 0$ oppure $|e_\infty| < $ un certo valore, e determino condizioni du tipo e/o guadagno di $L(s)$, ricordando che in generale:\newline
-        $P(s) 0 \frac{\mu_p}{s^{g_p} \cdot  \frac{1+ \dots}{1+ \dots}}$;\newline
-        $R(s) = \frac{\mu_r}{s^{g_r}} \cdot  \frac{1+ \dots}{1+ \dots}$;\newline
-        $L(s) = R(s) \cdot P(s) \rightarrow \begin{cases}
-            \mu_L = \mu_r \cdot \mu_p\\
-            g_L = g_r + g_p
-        \end{cases}$
+        \item assumo che il sistema AC sia AS.
+        \item Considero le sole componenti canoniche $w$ e $d_a$
+        \item Calcolo l'errore a transitorio esaurito con il teorema del valore finale:\newline
+        $e_\infty = \lim_{t\rightarrow +\infty} e(t)$ dove $e(t) : = w(t) - y(t)$.\newline
+        Vediamo i conti da fare:
+        \begin{itemize}
+            \item caso di influenza di $w$: si indica con $\frac{E}{W}$ la funzione di trasferimento da $W$ a $E$; $e_\infty = \lim_{s\rightarrow 0} s \cdot W(s) \cdot \frac{E(s)}{W(s)} = s \cdot W \cdot  \frac{1}{1+L} = \lim_{s\rightarrow 0} s \cdot W \cdot \frac{1}{1+ \frac{\mu_L}{s^{g_L}} \cdot \frac{1 + \dots}{1 + \dots}}$, dove $\frac{1 + \dots}{1 + \dots}$ va a $1$ per $s \rightarrow 0$, da cui ottengo che $\lim_{s\rightarrow 0} s \cdot W \cdot \frac{s^{g_L}}{s^{g_L} + \mu_L}$.
+            \item caso di influenza di $d_a$: in questo caso si usa $\frac{E}{D_a} = - \frac{1}{1+L}$, e quindi: $e_\infty = \lim_{s\rightarrow 0} s \cdot D_a(s) \cdot \frac{E(s)}{D_a(s)}$
+        \end{itemize}
+        infine si sceglie il vincolo più restrittivo tra quello per $w$ e quello per $d_a$.
+        \item Impongo i vincoli ($e_\infty = 0$ oppure $|e_\infty| < $ un certo valore), e determino condizioni su tipo e/o guadagno di $L(s)$, ricordando che si cerca di avere sempre $g_L$ il minimo necessario e che per le condizioni di Bode si deve avere $\mu_L > 0$.
     \end{itemize}
-    \subsubsection*{Progetto dinamico}
-    $T = \frac{L}{1+L} = \begin{cases}
-        1 \; \text{se}\; |L| >> 1\\
-        L \; \text{se}\; |L| << 1
+    In generale, ponendo: \newline
+    $P(s) = \frac{\mu_p}{s^{g_p} \cdot  \frac{1+ \dots}{1+ \dots}}$;\newline
+    $R(s) = \frac{\mu_r}{s^{g_r}} \cdot  \frac{1+ \dots}{1+ \dots}$;\newline
+    Si ottiene: \newline
+    $L(s) = R(s) \cdot P(s) \rightarrow \begin{cases}
+        \mu_L = \mu_r \cdot \mu_p\\
+        g_L = g_r + g_p
     \end{cases}$\newline
-    $S = \frac{1}{1+L} = \begin{cases}
-        \frac{1}{L} \; \text{se}\; |L| >> 1\\
-        1 \; \text{se}\; |L| << 1
-    \end{cases}$
+    Ricordiamo che:\newline
+    $\frac{Y}{W} = - \frac{Y}{D_r} = \frac{L}{1+L} = T$\newline
+    $\frac{Y}{D_a} = \frac{1}{1+L} = S$
+    \subsubsection*{Progetto dinamico}
     \begin{center}
         \includegraphics[height=3cm]{../formulario/img3.JPG}
     \end{center}
-    \textbf{Vincolo sulla velocità di risposta}: $\omega_{c_min} < \omega_c < \omega_{c_max}$ (nel diagramma di bode del modulo di $L(s)$, $\omega_c$ è il punto in cui interseca l'asse degli $0_{dB}$). \newline
+    $T = \frac{Y}{W} = - \frac{y}{D_r}\; \text{componente di $Y$ dovuto a $W$}\; = \frac{L}{1+L} = \begin{cases}
+        1 \; \text{se}\; |L| >> 1\\
+        L \; \text{se}\; |L| << 1
+    \end{cases}$\newline
+    $S = \frac{Y}{D_a} =\; \text{componente di $Y$ dovuto a $D_a$}\; = \frac{1}{1+L} = \begin{cases}
+        \frac{1}{L} \; \text{se}\; |L| >> 1\\
+        1 \; \text{se}\; |L| << 1
+    \end{cases}$\newline
+    \newline
+    \textbf{Vincolo sulla velocità di risposta}: ($\omega_c$ è la frequenza critica, cioè dove $L$ interseca l'asse $0_{dB}$) $\omega_{c_{min}} < \omega_c < \omega_{c_{max}}$, quindi $|L(j \omega)|$ deve tagliare l'asse $0_{dB}$ entro i limiti posti a $\omega_c$. \newline
+    In caso di esercizi con ritardi: E' buona norma tagliare l'asse con un tratto a pendenza $-1$ più lungo possibile. Solitamente, per capire dove posizionare $\omega_c$ si guarda subito quanta fase viene "mangiata" dal ritardo per $\omega_{c_{min}}$ e quanta per $\omega_{c_{max}}$, con la formula $-\omega \tau$ (in radianti).\newline
     \textbf{Vincolo sul grado di stabilità (e assenza di oscillazioni)}: $\phi_m > $ un determinato valore (si verifica con il regolo delle fasi).\newline
-    \textbf{Vincolo sulla reiezione di un disturbo in andata}: un disturbo sinusoidale $d_a(t) = A sin (\omega_a \cdot  t)$ con $|A| < \bar{A}$ e $0 \leq \omega_{a_1} \leq \omega_a \leq \omega_{a_2} \leq \omega_c$, devo produrre asintoticamnete (per $t \rightarrow \infty$) su $y$ un effetto di ampiezza non superiore a $\Delta_a$ (ampiezza del massimo effetto che tollero), occorre che $\left| \frac{Y(j \omega)}{D_a(j \omega)} \right| < \frac{\Delta a}{\bar{A}}$ per $\omega_{a_1} \leq \omega \leq \omega_{a_2}$. In definitiva bisogna che:
+    \textbf{Vincolo sulla reiezione di un disturbo in andata}: un disturbo sinusoidale (le componenti canoniche sono state gestite nel progetto statico) $d_a(t) = A sin (\omega_a \cdot  t)$ con $|A| < \bar{A}$ e $0 \leq \omega_{a_1} \leq \omega_a \leq \omega_{a_2} \leq \omega_c$, deve produrre asintoticamnete (per $t \rightarrow \infty$) su $y$ un effetto di ampiezza non superiore a $\Delta_a$ (ampiezza del massimo effetto che tollero).\newline
+    Per rispettare il vincolo occorre che nella banda su cui insiste il disturbo (da $\omega_{a1}$ a $\omega_{a2}$), il modulo della funzione di trasferimento dal disturbo $d_a$ all'uscita $y$ sia più picolo di $\frac{\text{"max ampiezza accettabile dell'effetto su y}}{\text{max ampiezza possibile del disturbo}}$.\newline
+    In definitiva bisogna che:
     \[
         |L(j \omega)| > \frac{\bar{A}}{\Delta a} \;\;\;\text{per}\; \omega_{a_1} \leq \omega \leq \omega_{a_2}
     \]
-    \textbf{Vincolo sulla reiezione di un disturbo in retroazione}:
+    \begin{center}
+        \includegraphics[height=2cm]{../formulario/img8.JPG}
+    \end{center}
+    \textbf{Vincolo sulla reiezione di un disturbo in retroazione}: un disturbo sinusoidale $d_r(t) = B \cdot  sin(\omega_r \cdot t)$ con $|b| < \bar{B}$ e $\omega_c < \omega_{r_1} \leq \omega_r \leq \omega_{r_2} \leq \infty$, deve produrre asintoticamente (per $t \rightarrow  \infty$) su $y$ un effetto di ampiezza non superiore a $\Delta r$. In definitiva bisogna che:
+    \[
+        |L(j \omega)| < \frac{\Delta r }{\bar{B}} \;\;\;\text{per}\; \omega_{r_1} \leq \omega \leq \omega_{r_2}
+    \]
+    \begin{center}
+        \includegraphics[height=2cm]{../formulario/img9.JPG}
+    \end{center}
+    \rule{\textwidth}{0,4pt}
+    In conclusione occorre trovare "per tentativi" una funzione di trasferimento $L(s)$ che:
+    \begin{itemize}
+        \item rispetti i vincoli del progetto statico;
+        \item rispetti i vincoli del progetto statico;
+        \item contenga eventuali zeri di $P(s)$ nel semipiano destro ($R(s)$ non li cancelli): \textbf{no cancellazioni nel semipiano destro!}. $P(s)$ è solitamente un dato del problema, dunque si controlla subito se ci sono zeri nel semipiano destro, se ci sono, sappiamo che di sicuro li avremo anche in $L(s)$, e di conseguenza dobbiamo costruirlo tenendolo in mente.
+        \item produca un margine di fase $\phi_m$ adeguato;
+        \item abbiamo un grado relativo almeno pari a quello di $P(s)$ (altrimenti $R(s)$ viene con più zeri che poli);
+        \item abbia meno zeri e poli possibile.
+    \end{itemize}
+    Fatto ciò si trova $R(s) = \frac{L(s)}{P(s)}$.\newline
+    Nota bene: siamo sempre nelle ipotesi di Bode, quindi $P_D = 0$ (solitamente implica che $\mu_L > 0$).
+    \subsubsection*{Sistema dinamico (AS) "a fase minima"}
+    Sono le configurazioni che hanno la fase meno negativa possibile:
+    \begin{itemize}
+        \item no zeri nel semipiano destro;
+        \item no ritardi
+    \end{itemize}
+    \subsection*{compensazione di un disturbo misurabile}
+    \begin{center}
+        \includegraphics[height=2cm]{../formulario/img4.JPG}
+    \end{center}
+    In generale $L(s) = \frac{\omega_c}{s}$.\newline
+    \newline
+    La compensazione serve se $\omega_d \leq \omega_c$, ma in realtà anche solo se sono vicini.\newline
+    $C_{ID}: \frac{Y}{D} = 0 \Rightarrow \frac{Y}{D} = \frac{H + MCD}{1+RP} = 0 \Rightarrow H + MCP = 0 \Rightarrow C_{ID} = - \frac{H}{MP}$.\newline
+    Tuttavia:
+    \begin{itemize}
+        \item $C_{ID}$ può risultare avere più zeri che poli (non realizzabile);
+        \item $C_{ID}$ può essere instabile: $H$ è AS per definizione (essendo fuori anello, deve esserlo), ma $P$ può avere zeri nel semipiano destro.
+    \end{itemize} 
+    Se $C_{ID}$ non si può implementare, occore conoscere un limite superiore $\omega_d$ per la banda del disturbo e trovare una funzione di trasferimento $C(s)$ realizzabile (aggiungere poli o togliere zeri per rendere realizzabile il controllore, solitamente dopo due decadi da $\omega_d$) e AS tale che $C(j \omega) \sim C_{ID} (j \omega)$ per $\omega \leq \omega_d$.
+    \subsection*{Controllo a due gradi di libertà}
+    \begin{center}
+        \includegraphics[height=2cm]{../formulario/img5.JPG}
+    \end{center}
+    $\frac{Y}{D_a} = \frac{1}{1+R_{FB} \cdot P}$\newline
+    $\frac{Y}{W} = \frac{R_{FF} R_{FB} P}{1 + R_{FB} P}$
+    \subsection*{Trade off tra meggiore robustezza e miglior reiezione di un disturbo "di carico"}
+    Ottenere buona reiezione ($G_{yd}$ piccola) e moderazione del controllo ($Q$ piccola) sono desideri contrapposti:\newline
+    $\frac{Y}{D} = \frac{P}{1+RP} = G_{yd} \sim \begin{cases}
+        \frac{1}{R} \; \text{se}\; |RP| >> 1 \Rightarrow \omega < \omega_c\\
+        P \; \text{se}\; |RP|<< 1 \Rightarrow \omega > \omega_c
+    \end{cases}$\newline
+    $Q = \frac{v}{W} = \frac{R}{1+RP} = \begin{cases}
+        \frac{1}{P} \; \text{se}\; |RP| >> 1 \Rightarrow  \omega< \omega_c\\
+        R \; \text{se}\; |RP| << 1 \Rightarrow \omega > \omega_c
+    \end{cases}$
+    \subsection*{Regolatore PID}
+    Legge di controllo ideale :
+    \[
+        u(t) = u_P + u_I + u_D = k_P \cdot e(t) + k_I \cdot \int_{0}^{t}e(\tau)d \tau + k_D \cdot \frac{\delta e (t)}{dt}
+    \]
+    \subsubsection*{Azione proporzionale P}
+    Ruolo: garantire una reiezione pronta a reiezioni dell'errore. \newline
+    \newline
+    $u_P = k_P \cdot e \rightarrow $ "più errore, più azione di controllo".\newline
+    Se $u$ è soltanto $u_P$, abbiamo $u \neq 0 \Leftrightarrow e \neq 0$ (male).\newline
+    Se $u$ non è soltanto $u_P$, abbiamo $u = u_P + \bar{u}$ e quindi scegliamo $\bar{u}$ in modo tale che $e = 0$, da notare che $\bar{u}$ dipende dal set point.
+    \subsubsection*{Azione integrale I}
+    Ruolo: garantire errore nullo a regime. \newline
+    \newline
+    $u_I = k_I \cdot \int_{0}^{t} e (tau) d \tau$, se il sistema in AC va a regime (costante), allora il presenza di azioni $I$ l'errore è nullo.
+    \subsubsection*{Azione derivativa D}
+    Ruolo: "anticipare" l'errore.\newline
+    \newline
+    $u_D$ è proporzionale alla variazione prevista dell'errore:
+    \begin{itemize}
+        \item $T_d$ è l'orizzonte di questa predizione;
+        \item K è il fattore di proporzionalità.
+    \end{itemize}
+    $\tilde{e}(\bar{t} + T_d) = e(\bar{t}) + \frac{d e(t)}{dt}_{t= \bar{t}} \cdot T_d$.
+    \subsubsection*{Forme alternative della legge di controllo PID}
+    \begin{itemize}
+        \item vediamo $u$ trasformata secondo Laplace:
+        \[
+            U = (k_P + \frac{k_I}{s} + k_D \cdot s) E = K ( 1 + \frac{1}{sT_i} + s T_d) \cdot E = K \left( \frac{sT_i + 1 + s^2 T_i T_d}{sT_i} \right) \cdot E
+        \]
+        con $K$ guadagno, $T_i$ tempo integrale e $T_d$ tempo derivato.
+        \item Forma ISA reale a un grado di libertà:
+        \[
+            U = K \left( 1+ \frac{1}{sT_i} + \frac{sT_d}{1+s \frac{T_d}{N}}\right)
+        \]
+        \item Forma ISa reale a due gradi di libertà:
+        \[
+            U = K \left( b W - Y + \frac{1}{sT_i}(W-Y) + \frac{sT_d}{1+s \frac{T_d}{N}} (c W-Y)\right)
+        \]
+        con $b$ pesi del set point nelle azioni P, e $c$ pesi del set point nelle azioni $D$:
+    \end{itemize}
+    \ \newline
+    Riassumendo:
+    \begin{itemize}
+        \item PID: regolatore con 2 zeri e 2 poli (di cui uno nell'origine): $\mu \cdot \frac{(1+sT_1) (1+sT_2)}{s(1+s \tau)}$;
+        \item PI: regolatore con 1 zero e 1 polo nell'origine: $\mu \cdot  \frac{1+sT}{s} = \mu(\frac{1}{s}+ T)$ 
+    \end{itemize} 
+    \subsection*{Metodi di taratura}
+    \textbf{modello}: $\mu, T_1, T_2$.\newline
+    \textbf{specifiche}: $\bar{\omega}_c, \bar{\phi}_m$.\newline
+    \newline
+    Equazioni per la taratura dei parametri del PID nella forma $\mu_R \frac{(1+sT_{R1}) (1+sT_{R2})}{S (1+s \tau_R)}$:
+    \begin{itemize}
+        \item poniamo $T_{R1} = T_1$ e $T_{R2} = T_2$.
+        \item $\bar{\omega}_c$: $\mu \cdot \mu_R = \bar{\omega}_c \rightarrow \mu_R = \frac{\bar{\omega}_c}{\mu}$;
+        \item $\bar{\phi}_m$: $90^o - arctg^o(\mu \mu_R \tau_R) = \bar{\phi}_m \rightarrow \tau_R = \frac{1}{\mu \mu_R} tg(90^o - \bar{\phi}_m)$  
+    \end{itemize}
+    \subsubsection*{Principio del modello interno (IMC)}
+    \begin{center}
+        \includegraphics[height=2cm]{../formulario/img6.JPG}
+    \end{center}
+    In condizioni nominali:
+    \begin{itemize}
+        \item $M(s) = P(s)$, modello esatto, no incertezza, nessun disturbo, l'anello è aperto ( segnale di retroazione è identiamente nullo);
+        \item $Y(s) = F(s)Q(s)P(s)W(s) = F(s) Q(s)M(s)W(s)$;
+        \item se si può porre $Q(s) = \frac{1}{M(s)}$, allora $Y(s) = F(s) W(s)$, per cui si può scegliere $F(s)$ "ad arbitrio", purchè $FQ$ sia realizzabile
+    \end{itemize}
+    \subsubsection*{IMG PID tuning per processi AS}
+    $P(s) = \mu \frac{e^{-s \tau}}{1+s T}$ con $T> 0$ (AS), $\tau \geq 0$ e $\mu > 0$ per comodità.\newline
+    $Q(s) = \frac{1 + s T}{\mu}$ (inverto quel che posso di $P(s)$, ovvero la parte a fase minima).\newline
+    $F(s) = \frac{1}{1+s \lambda}$ (almeno un polo sennò $QF$ non è realizzabile e $\lambda$ è una costante di tempo come "$T$").\newline
+    \newline
+    \textbf{Approssimanti di Padè}...
+    \subsubsection*{Metodo di ziegler-Nichols}
+    In anello chiuso:
+    \begin{itemize}
+        \item si chiuse l'anello di controllo con il regolatore PID (i cui parametri devono essere sintetizzati), imponendo nulle leazioni integrale e derivata, cioè $k_I = 0$, $k_D = 0$.
+        \item Partendo da valori molto piccoli di $k_P$ si effettua un semplice esperimento, consistente nell'applicare un piccolo gradino al segnale di riferimento.
+        \item Si aumenta progressivamente $k_P$ ripetendo di volta in volta l'esperimento finchè non si instaura nell'anello un'oscillazione permanente.
+        \item Detto $\bar{k}_P$ il valore del guadagno proporzionale corrispondente all'oscillazione permanente (guadagno critico) e $\bar{T}$ il periodo di tale oscillazione, si tarano i parametri di un regolatore $P, PI$ o $PID$ sulla base della seguente tabella:
+        \begin{center}
+            \includegraphics[height=3cm]{../formulario/img7.JPG}
+        \end{center}
+    \end{itemize}
+    \subsubsection*{PID a due gradi di libertà ed effetto dei poli sugli zeri}
+    Dalla formula ISA:\newline
+    $U = R_1 - R_2$, con \newline
+    $R_1 = k \left( b + \frac{1}{sT_i} + \frac{c s T_d}{1 + s \frac{T_d}{N}} \right) W$\newline
+    $R_2 = k\left( 1 + \frac{1}{sT_i} + \frac{sT_d}{1 + s \frac{T_d}{N}} \right)Y$\newline
+    \newline
+    Da cui sintetiziamo:\newline
+    $R_{FB} = K \frac{1 + s\left(T_i + \frac{T_d}{N}\right) + s^2 T_i T_d \left(1 + \frac{1}{N}\right)}{sT_i \left( 1 + \frac{sT_d}{N}\right)}$.\newline
+    $R_{FF} = \frac{1+ s\left(bT_i + \frac{T_d}{N}\right) + s^2 T_i T_d \left(c + \frac{b}{N}\right)}{1 + s \left( T_i + \frac{T_d}{N} \right) + s^2 T_i T_d \left( 1 + \frac{1}{N} \right)}$
     \end{multicols*}
 \end{landscape}
