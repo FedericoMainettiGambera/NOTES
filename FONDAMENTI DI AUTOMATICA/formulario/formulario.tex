@@ -769,25 +769,20 @@
     Inoltre, se un SD a fase minima e con $mu > 0$ ha il DBM con un lungo tratto a pendenza $-1$, allora nella parte centrale di quel tratto, la sua fase è circa $-90^o$, questo motiva il "tratto lungo a pendenza $-1$ attorno a $\omega_c$".\newline
     Anche nel caso non a fase minima rimane una buona idea, purchè gli zeri a destra siano a $\omega > \omega_c$ e il contributo si eventuali ritardi non sia eccessivo.
     \subsection*{compensazione di un disturbo misurabile}
+    Se $d$ ha componenti così veloci che la retroazione non può contrastarle e non è possibile/opportuno aumentare $\omega_c$, allora faccio la compensazione. \newline
+    La compensazione serve se $\omega_d \leq \omega_c$, ma in realtà anche solo se sono vicini.
     \begin{center}
         \includegraphics[height=2cm]{../formulario/img4.JPG}
     \end{center}
-    In generale $L(s) = \frac{\omega_c}{s}$.\newline
-    \newline
-    La compensazione serve se $\omega_d \leq \omega_c$, ma in realtà anche solo se sono vicini.\newline
     $C_{ID}: \frac{Y}{D} = 0 \Rightarrow \frac{Y}{D} = \frac{H + MCD}{1+RP} = 0 \Rightarrow H + MCP = 0 \Rightarrow C_{ID} = - \frac{H}{MP}$.\newline
-    Tuttavia:
+    Tuttavia $C_{ID}$ può non essere realizzabile se:
     \begin{itemize}
-        \item $C_{ID}$ può risultare avere più zeri che poli (non realizzabile);
-        \item $C_{ID}$ può essere instabile: $H$ è AS per definizione (essendo fuori anello, deve esserlo), ma $P$ può avere zeri nel semipiano destro.
+        \item $C_{ID}$ ha più zeri che poli (non realizzabile);
+        \item $C_{ID}$ è instabile: $H$ è AS per definizione (essendo fuori anello, deve esserlo), ma $P$ può avere zeri nel semipiano destro.
     \end{itemize} 
-    Se $C_{ID}$ non si può implementare, occore conoscere un limite superiore $\omega_d$ per la banda del disturbo e trovare una funzione di trasferimento $C(s)$ realizzabile (aggiungere poli o togliere zeri per rendere realizzabile il controllore, solitamente dopo due decadi da $\omega_d$) e AS tale che $C(j \omega) \sim C_{ID} (j \omega)$ per $\omega \leq \omega_d$.
-    \subsection*{Controllo a due gradi di libertà}
-    \begin{center}
-        \includegraphics[height=2cm]{../formulario/img5.JPG}
-    \end{center}
-    $\frac{Y}{D_a} = \frac{1}{1+R_{FB} \cdot P}$\newline
-    $\frac{Y}{W} = \frac{R_{FF} R_{FB} P}{1 + R_{FB} P}$
+    Se $C_{ID}$ non si può implementare, occore conoscere un limite superiore $\omega_d$ per la banda del disturbo (cioè $d$ non ha componenti di segnale per $\omega > \omega_d$) e trovare una funzione di trasferimento $C(s)$ reale realizzabile (aggiungere poli o togliere zeri per rendere realizzabile il controllore, solitamente dopo due decadi da $\omega_d$) e AS tale che $C(j \omega) \sim C_{ID} (j \omega)$ per $\omega \leq \omega_d$ in modulo e fase.\newline
+    \newline
+    A livello pratico: si cerca di ottenere un $L(s) = \frac{\omega_c}{s}$ (o almeno è approssimabile così nei pressi di $\omega_c$), da qui si trova $R(s)$. Calcoliamo ora $C_{ID} = - \frac{H}{MP}$ e guardiamo se è realizzabile. Se lo è siamo a posto, se non lo è: tracciamo il diagramma di Bode del modulo di $C_{ID}$ e ci sengamo la banda del disturbo (che arriva fino a $\omega_d$) e andiamo avanti di due decadi da $\omega_d$. Da qui si possono aggiungere poli e/o togliere zeri per costruire un $C_{RE}$ realizzabile.
     \subsection*{Trade off tra meggiore robustezza e miglior reiezione di un disturbo "di carico"}
     Ottenere buona reiezione ($G_{yd}$ piccola) e moderazione del controllo ($Q$ piccola) sono desideri contrapposti:\newline
     $\frac{Y}{D} = \frac{P}{1+RP} = G_{yd} \sim \begin{cases}
