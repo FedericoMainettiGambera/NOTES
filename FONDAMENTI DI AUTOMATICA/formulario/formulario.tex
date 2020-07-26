@@ -729,7 +729,7 @@
     \end{cases}$\newline
     \newline
     \textbf{Vincolo sulla velocità di risposta}: ($\omega_c$ è la frequenza critica, cioè dove $L$ interseca l'asse $0_{dB}$) $\omega_{c_{min}} < \omega_c < \omega_{c_{max}}$, quindi $|L(j \omega)|$ deve tagliare l'asse $0_{dB}$ entro i limiti posti a $\omega_c$. \newline
-    In caso di esercizi con ritardi: E' buona norma tagliare l'asse con un tratto a pendenza $-1$ più lungo possibile. Solitamente, per capire dove posizionare $\omega_c$ si guarda subito quanta fase viene "mangiata" dal ritardo per $\omega_{c_{min}}$ e quanta per $\omega_{c_{max}}$, con la formula $-\omega \tau$ (in radianti).\newline
+    nota bene: si cerca inizia sempre la costruzione di $L(s)$ a partire da un tratto con pendenza $-1$ il più lungo possibile (così avremo il vantaggio di avere un margine di fase maggiore).\newline
     \textbf{Vincolo sul grado di stabilità (e assenza di oscillazioni)}: $\phi_m > $ un determinato valore (si verifica con il regolo delle fasi).\newline
     \textbf{Vincolo sulla reiezione di un disturbo in andata}: un disturbo sinusoidale (le componenti canoniche sono state gestite nel progetto statico) $d_a(t) = A sin (\omega_a \cdot  t)$ con $|A| < \bar{A}$ e $0 \leq \omega_{a_1} \leq \omega_a \leq \omega_{a_2} \leq \omega_c$, deve produrre asintoticamnete (per $t \rightarrow \infty$) su $y$ un effetto di ampiezza non superiore a $\Delta_a$ (ampiezza del massimo effetto che tollero).\newline
     Per rispettare il vincolo occorre che nella banda su cui insiste il disturbo (da $\omega_{a1}$ a $\omega_{a2}$), il modulo della funzione di trasferimento dal disturbo $d_a$ all'uscita $y$ sia più picolo di $\frac{\text{"max ampiezza accettabile dell'effetto su y}}{\text{max ampiezza possibile del disturbo}}$.\newline
@@ -758,13 +758,15 @@
         \item abbia meno zeri e poli possibile.
     \end{itemize}
     Fatto ciò si trova $R(s) = \frac{L(s)}{P(s)}$.\newline
-    Nota bene: siamo sempre nelle ipotesi di Bode, quindi $P_D = 0$ (solitamente implica che $\mu_L > 0$).
     \subsubsection*{Sistema dinamico (AS) "a fase minima"}
-    Sono le configurazioni che hanno la fase meno negativa possibile:
+    Un SD LTI a TC AS è a fase minima se:
     \begin{itemize}
         \item no zeri nel semipiano destro;
         \item no ritardi
     \end{itemize}
+    Se un sistema è a fase minima, il DBF si può dedurre dalla conoscenza del DBM e del segno del guadagno, perchè tutti i poli/zeri sono nel semipiano sinistro e non ci sono ritardi, quindi, DBF inizia da $0^o$ se $\mu> 0$ o da $-180^o$ se $\mu< 0$, e poi un polo è $-90^o$ e uno zero è $+ 90^o$.\newline
+    Inoltre, se un SD a fase minima e con $mu > 0$ ha il DBM con un lungo tratto a pendenza $-1$, allora nella parte centrale di quel tratto, la sua fase è circa $-90^o$, questo motiva il "tratto lungo a pendenza $-1$ attorno a $\omega_c$".\newline
+    Anche nel caso non a fase minima rimane una buona idea, purchè gli zeri a destra siano a $\omega > \omega_c$ e il contributo si eventuali ritardi non sia eccessivo.
     \subsection*{compensazione di un disturbo misurabile}
     \begin{center}
         \includegraphics[height=2cm]{../formulario/img4.JPG}
