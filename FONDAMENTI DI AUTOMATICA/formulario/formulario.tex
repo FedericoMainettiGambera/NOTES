@@ -730,7 +730,7 @@
     \newline
     \textbf{Vincolo sulla velocità di risposta}: ($\omega_c$ è la frequenza critica, cioè dove $L$ interseca l'asse $0_{dB}$) $\omega_{c_{min}} < \omega_c < \omega_{c_{max}}$, quindi $|L(j \omega)|$ deve tagliare l'asse $0_{dB}$ entro i limiti posti a $\omega_c$. \newline
     nota bene: si cerca inizia sempre la costruzione di $L(s)$ a partire da un tratto con pendenza $-1$ il più lungo possibile (così avremo il vantaggio di avere un margine di fase maggiore).\newline
-    \textbf{Vincolo sul grado di stabilità (e assenza di oscillazioni)}: $\phi_m > $ un determinato valore (si verifica con il regolo delle fasi).\newline
+    \textbf{Vincolo sul grado di stabilità (e assenza di oscillazioni)}: $\phi_m > $ un determinato valore (si verifica con il regolo delle fasi). In caso di $P(s)$ con ritardo, allora ricordarsi di tenerne conto nel calcolo della fase critica (che serve per il calcolo del margine di fase) con la solita formula $-\omega_c \tau$.\newline
     \textbf{Vincolo sulla reiezione di un disturbo in andata}: un disturbo sinusoidale (le componenti canoniche sono state gestite nel progetto statico) $d_a(t) = A sin (\omega_a \cdot  t)$ con $|A| < \bar{A}$ e $0 \leq \omega_{a_1} \leq \omega_a \leq \omega_{a_2} \leq \omega_c$, deve produrre asintoticamnete (per $t \rightarrow \infty$) su $y$ un effetto di ampiezza non superiore a $\Delta_a$ (ampiezza del massimo effetto che tollero).\newline
     Per rispettare il vincolo occorre che nella banda su cui insiste il disturbo (da $\omega_{a1}$ a $\omega_{a2}$), il modulo della funzione di trasferimento dal disturbo $d_a$ all'uscita $y$ sia più picolo di $\frac{\text{"max ampiezza accettabile dell'effetto su y}}{\text{max ampiezza possibile del disturbo}}$.\newline
     In definitiva bisogna che:
@@ -750,6 +750,7 @@
     \rule{\textwidth}{0,4pt}
     In conclusione occorre trovare "per tentativi" una funzione di trasferimento $L(s)$ che:
     \begin{itemize}
+        \item se $P(s)$ ha un ritardo, anche nella formula finale di $L(s)$ sarà presente (!!);
         \item rispetti i vincoli del progetto statico;
         \item rispetti i vincoli del progetto statico;
         \item contenga eventuali zeri di $P(s)$ nel semipiano destro ($R(s)$ non li cancelli): \textbf{no cancellazioni nel semipiano destro!}. $P(s)$ è solitamente un dato del problema, dunque si controlla subito se ci sono zeri nel semipiano destro, se ci sono, sappiamo che di sicuro li avremo anche in $L(s)$, e di conseguenza dobbiamo costruirlo tenendolo in mente.

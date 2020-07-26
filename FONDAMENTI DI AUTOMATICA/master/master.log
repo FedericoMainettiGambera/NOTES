@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  26 JUL 2020 06:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  26 JUL 2020 06:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2430,17 +2430,17 @@ Overfull \hbox (314.90498pt too wide) in paragraph at lines 750--752
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 760--761
+Underfull \hbox (badness 10000) in paragraph at lines 761--762
 
  []
 
 <../formulario/img4.JPG, id=1348, 471.26062pt x 137.7647pt>
 File: ../formulario/img4.JPG Graphic file (type jpg)
 <use ../formulario/img4.JPG>
-Package pdftex.def Info: ../formulario/img4.JPG  used on input line 772.
+Package pdftex.def Info: ../formulario/img4.JPG  used on input line 773.
 (pdftex.def)             Requested size: 194.66347pt x 56.9055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 774--779
+Underfull \hbox (badness 10000) in paragraph at lines 775--780
 
  []
 
@@ -2448,45 +2448,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 774--779
 <../formulario/img5.JPG, id=1359, 322.95656pt x 72.27pt>
 File: ../formulario/img5.JPG Graphic file (type jpg)
 <use ../formulario/img5.JPG>
-Package pdftex.def Info: ../formulario/img5.JPG  used on input line 786.
+Package pdftex.def Info: ../formulario/img5.JPG  used on input line 787.
 (pdftex.def)             Requested size: 254.29514pt x 56.9055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 806--811
+Underfull \hbox (badness 10000) in paragraph at lines 807--812
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 812--815
+Underfull \hbox (badness 10000) in paragraph at lines 813--816
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 816--819
+Underfull \hbox (badness 10000) in paragraph at lines 817--820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 848--852
+Underfull \hbox (badness 10000) in paragraph at lines 849--853
 
  []
 
 <../formulario/img6.JPG, id=1360, 597.73312pt x 205.5178pt>
 File: ../formulario/img6.JPG Graphic file (type jpg)
 <use ../formulario/img6.JPG>
-Package pdftex.def Info: ../formulario/img6.JPG  used on input line 859.
+Package pdftex.def Info: ../formulario/img6.JPG  used on input line 860.
 (pdftex.def)             Requested size: 165.50351pt x 56.9055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 868--873
+Underfull \hbox (badness 10000) in paragraph at lines 869--874
 
  []
 
 <../formulario/img7.JPG, id=1361, 274.77657pt x 209.28188pt>
 File: ../formulario/img7.JPG Graphic file (type jpg)
 <use ../formulario/img7.JPG>
-Package pdftex.def Info: ../formulario/img7.JPG  used on input line 881.
+Package pdftex.def Info: ../formulario/img7.JPG  used on input line 882.
 (pdftex.def)             Requested size: 112.06793pt x 85.35826pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 885--893
+Underfull \hbox (badness 10000) in paragraph at lines 886--894
 
  []
 
@@ -2512,7 +2512,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  56i,17n,73p,1493b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.pdf" (89 pages, 3674766 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.pdf" (89 pages, 3675008 bytes).
 PDF statistics:
  1534 PDF objects out of 1728 (max. 8388607)
  1294 compressed objects within 13 object streams
