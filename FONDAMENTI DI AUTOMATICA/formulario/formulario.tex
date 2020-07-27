@@ -1007,8 +1007,112 @@
         R^*(z) = R( \frac{2}{T_s} \cdot \frac{z-1}{z+1})
     \]
     \subsection{Da $R^*(z)$ alla legge di controllo a TD}
-    \textbf{es.} $R^*(z) = \frac{2z^2 - 3z +4}{z^2 -z}$. \newline
-    Perchè sia realizzabile l'unico vincolo è che il grado del numeratore sia minore o uguale al grado del denominatore.
-    \subsubsection{Windup e antiwindup}
-    \dots
+    Vediamo un esempio per capirne il metodo generale:\newline
+    \textbf{es.} $R^*(z) = $ che d'ora in poi indichiamo solo come $R(z) = \frac{2z^2 - 3z +4}{z^2 -z}$. \newline
+    Perchè sia realizzabile l'unico vincolo è che il grado del numeratore sia minore o uguale al grado del denominatore.\newline
+    Detto $U(z)$ l'uscita di $R(z)$ e $E(z)$ l'ingresso di $R(z)$, sappiamo che $\frac{U(z)}{E(z)} = R(z) = \frac{2z^2 - 3z +4}{z^2 -z}$.\newline
+    Tolgo i denominatori: $(z^2-z) U(z) = (2z^2 -3z+4) E(z)$.\newline
+    Ridistribuisco il prodotto: $z^2 U(z) - z U(z) = 2z^2 E(z) - 3zE(z) + 4 E(z)$.\newline
+    Antitrasformo (condizioni iniziali nulle): $u(k+2) - u(k+1) = 2e(k+2) -3e(k+1) + 4e(k)$.\newline
+    Risolvo per "l'uscita più recente" e scalo i tempi: in questo caso quella più recente è $u(k+2)$, quindi $u(k) = u(k-1) + 2 e(k) -3e(k-1) + 4e(k-2)$.\newline
+    Quindi usiamo come convenzione: detta la generica variabile $x_n := x(k-n)$.\newline
+    Scriviamo il seguente algoritmo di controllo per ogni $T_s$:
+    \begin{itemize}
+        \item ottieni $e$;
+        \item $u = u_1 +  2e - 3e_1 + 4e_2$;
+        \item $e_2 = e_1$;
+        \item $e_1 = e$;
+        \item $u_1 = u$;
+        \item applica $u$.
+    \end{itemize}
+    \subsubsection{Windup}
+    Quello appena visto è "quasi" un algoritmo di controllo: per realizzare un regolatore industriale occorre considerare aspetti che non sono rappresentati col suo modello LTI $R^*(z)$ e in particolare di 
+    \begin{itemize}
+        \item limiti di saturazione del segnale di controllo - WINDUP (problema dovuto a modelli non lineari);
+        \item necessità di mettere il loop di controllo in modalità manuale ($U$ decisa dall'operatore) - TRACKING (problema docuto a modelli non tempo invarianti).
+    \end{itemize}
+    Vediamo un esempio per capirne il metodo generale:\newline
+    \textbf{es.}\newline
+    Ipotiziamo di avere un $w$ e una $y$ che lo segue.\newline
+    Poniamo ora $w$ a un valore non ottenibile con l'attuazione disponibile.\newline
+    Si dice che $u$ "satura" (raggiunge un limite), cioè raggiunge un $u_{max}$.\newline
+    L'$u$ calcolato, invece continua a crescere sempre di più.\newline
+    L'errore $e$ diventa una costante, perchè $y$ non riesce a raggiungere $w$.\newline
+    Riponiamo ora $w$ a un valore ammissibile e quindi l'errore cambia segno.\newline
+    l'$u$ calcolato, fa un saltino verso il basso, ma non è abbastanza per tornare sotto l'$u$ satura, e poi inizia a scendere, ma finchè non è scesa sotto l'$u$ satura (quindi c'è un ritardo), $y$ non reagisce.\newline
+    \newline
+    osservazione: non occore che $R$ contenga un'azione Integrale, basta che sia dinamico.
+    \subsubsection{Soluzione anti windup}
+    blocco di saturazione: blocco in cui il segnale viene tagliato sopra o sotto un certo valore.\newline
+    Vediamo due soluzioni:
+    \begin{itemize}
+        \item PI a TC: \begin{center}
+            \includegraphics[height=3cm]{../formulario/img11.JPG}
+        \end{center}
+        \item Generico controllore a TD: \begin{center}
+            \includegraphics[height=3cm]{../formulario/img12.jpg}
+        \end{center}
+    \end{itemize}
     \subsection{Scelta di $T_s$}
+    Problema: abbiamo un segnale $f(t)$ che facciamo entrare in un campionatore e otteniamo un segnale $f^{#}(t)$ o $f^*(k)$, che a sua volta entra in un ZOH e otteniamo un segnale $y(t)$. L'ingresso e l'uscita di questo sistema sono a tempo continuo, ma hanno un intermezzo a tempo discreto.\newline
+    \newline
+    \textbf{Impulso di Dirac S(t)}
+    \[
+        \begin{cases}
+            \delta(t) = 0 \;\forall\; t \neq 0\\
+            \int_{-\infty}^{\infty} \delta (t) dt = 1
+        \end{cases}
+    \]
+    \ \newline
+    \textbf{Treno d'impulsi unitari a passo $T_s$}
+    \[
+        \delta_{T_s} (t) = \sum_{k=0}^{\infty} \delta (t- k T_s)
+    \]
+    \ \newline
+    \subsubsection{Modello del campionatore}
+    Il campionamento mi genera un segnale discreto $f^*(k) = f(k T_s)$, noi definiamo un segnale nel tempo continuo $f^# (t)$ che è un treno d'impulsi equivalente, che ci servirà per poterne fare una trasformata di Laplace.\newline
+    \newline
+    Definiamo a tempo continuo $f^# (t) = \sum_{k=0}^{\infty} f(t) \delta(t-kT_s) = f(t) \sum_{k=0}^{\infty} \delta(t-kT_s) = f(t) \delta_{T_s} (t)$.\newline
+    \newline
+    Osservazione: posso anche scrivere $f^# (t) = \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s)$.\newline
+    \newline
+    Ora possiamo fare la trasformata di Laplace di $f^#(k)$:
+    \[
+        F^# (s) = \int_{0}^{\infty} \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) \int_{0}^{\infty} \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) e^{-skT_s}
+    \]
+    \ \newline
+    Possiamo anche però fare la trasformata Zeta di $f^*(k)$:
+    \[
+        f^*(k) = f(kT_s) \Rightarrow  F^*(z) = \sum_{k=0}^{\infty} f(kT_s) z^{-k}
+    \]
+    \ \newline
+    E notiamo che le due trasformate si assomigliano, infatti:
+    \[
+        F^*(e^{sT_s}) = \sum_{k=0}^{\infty} f(kT_s)e^{-skT_s} = F^#(s)
+    \]
+    \ \newline
+    Ma che relazione c'è tra le trasformate di Laplace di $f(t)$ e di $f^#(t)$?\newline
+    Premessa: vale il risultato $\delta_{T_s} (t) = \sum_{k=-\infty}^{\infty} \frac{1}{T_s} e^{j k \frac{2\pi}{T_s}t}$.\newline
+    Allora $f^#(t) = f(t) \delta_{T_s}(t) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} f(t) e^{j k \frac{2\pi}{T_s}t}$, la cui trasformata di Laplace è $\frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \frac{2\pi}{T_s})$, dove $\frac{2\pi}{T_s}$ prende il nome di $\omega_S$ "frequenza di campionamento" e $F$ è la trasfomrata di Laplace di $f(t)$.\newline
+    Ovvero $F^#(s) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \omega_s)$.\newline
+    \newline
+    Abbiamo quindi fino ad ora fatto il campionamento, ci serve ora analizzare l'holder (ZOH).\newline
+    Lo schema che analiziamo è costituito da un segnale discreto $F^*(k) = imp(k)$ (che equivale nel tempo continuo a una $f^#(t) = imp(t) = \delta(t)$) in ingresso a un ZOH che ha come uscita un $y(t)$ a tempo continuo.\newline
+    \newline
+    La funzione di trasferimento dello ZOH è uguale alla $\frac{\mathcal{L}[uscita]}{\mathcal{L}[ingresso]} = \frac{1-e^{-sT_s}}{s}$.\newline
+    \newline
+    Mettendo tutto insieme:\newline
+    Abbiamo un segnale $f(t)$ che viene fornito a un campionatore che produce un segnale che posso interpretare nel tempo continuo come $f^#(t)$ (con trasformata di Laplace $F^#(s)$) o nel tempo discreto come $f^*(k)$ (con trasformata Zeta $F^*(z)$). Infine questo segnale entra in uno ZOH che produce il segnale $y(t)$.\newline
+    \newline
+    Abbiamo quindi ottenuto che $Y(s) = \frac{1-e^{-sT_s}}{s} F^#(s) = \frac{1- e^{-sT_s}}{sT_s} \sum_{k=-\infty}^{\infty} F(s-j k \omega_s)$.\newline
+    Chiamiamo ora $H_0(s)$ la funzione di trasferimento di sampler and holder, il temrine $\frac{1- e^{-sT_s}}{sT_s}$.\newline
+    \newline
+    Quindi la trasformata del segnale di campionato e mantenuto è $H_0(s)$ che moltiplica la trasformata di laplace del segnale di partenza più infinite sue repliche a distanza $\omega_s$.\newline
+    \newline
+    Tutto questo può produrre un effetto di "aliasing": occore che $\omega_s$ sia almeno il doppio della massima frequenza contenuta in $f(t)$ (teorema di Shannon).\newline
+    \newline
+    Supponendo quindi che $T_s$ sia ben scelto, ovvero che non ci siano nel segnale campionato componenti (significative) a frequenza superiore a $\frac{\omega_s}{2}$, ci basta:
+    \begin{itemize}
+        \item tenere conto della sola fondamentale  $F(s)$;
+        \item considerare $H_0(j \omega)$ soltanto per $\omega< \omega_s/2$ e per $\omega< \omega_s /2$: $H_0(j \omega) \sim  e^{\frac{-j \omegaT_s}{2}}$.
+    \end{itemize}
