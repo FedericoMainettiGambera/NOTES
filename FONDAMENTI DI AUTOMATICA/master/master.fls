@@ -521,6 +521,7 @@ INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../formula
 INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../formulario/formulario.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione8/img1.PNG
 INPUT ../lezione8/img1.PNG
 INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../lezione17/img2.PNG
@@ -555,20 +556,20 @@ INPUT ../formulario/img7.JPG
 INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../formulario/img10.JPG
 INPUT ../formulario/img10.JPG
 INPUT ../formulario/img10.JPG
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../formulario/img11.JPG
 INPUT ../formulario/img11.JPG
 INPUT ../formulario/img11.JPG
 INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../formulario/img12.jpg
 INPUT ../formulario/img12.JPG
 INPUT ../formulario/img12.JPG
-INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/../formulario/img13.JPG
-INPUT ../formulario/img13.JPG
-INPUT ../formulario/img13.JPG
 INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.aux
 INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.out
 INPUT c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.out
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
@@ -580,6 +581,7 @@ INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
@@ -593,4 +595,3 @@ INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb

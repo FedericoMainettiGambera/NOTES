@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  27 JUL 2020 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  27 JUL 2020 19:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2352,15 +2352,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 483--493
  []
 
 
+Overfull \hbox (0.39452pt too wide) in paragraph at lines 483--493
+\OT1/cmss/m/n/8 Quindi gli au-to-va-lo-ri del si-ste-ma com-ples-si-vo so-no $\OMS/cmss/m/n/8 f[]g\OML/cmm/m/it/8 U\OMS/cmss/m/n/8 f[]g$\OT1/cmss/m/n/8 . 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 483--493
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--501
+[]\OT1/cmss/m/n/8 Si tra-sfor-ma il si-ste-ma $[]$ se-con-do La-pla-ce:
  []
 
 File: ../lezione8/img1.PNG Graphic file (type png)
 <use ../lezione8/img1.PNG>
 Package pdftex.def Info: ../lezione8/img1.PNG  used on input line 522.
 (pdftex.def)             Requested size: 163.11739pt x 56.9055pt.
-[89]
+[89] [90]
 Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
@@ -2389,299 +2399,257 @@ File: ../lezione17/img2.PNG Graphic file (type png)
 <use ../lezione17/img2.PNG>
 Package pdftex.def Info: ../lezione17/img2.PNG  used on input line 624.
 (pdftex.def)             Requested size: 157.49176pt x 85.35826pt.
-[90]
-Underfull \hbox (badness 10000) in paragraph at lines 647--650
+[91]
+Underfull \hbox (badness 10000) in paragraph at lines 646--649
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 651--658
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 651--658
-
- []
-
-<../formulario/img1.JPG, id=1689, 326.72063pt x 100.87688pt>
+<../formulario/img1.JPG, id=1697, 326.72063pt x 100.87688pt>
 File: ../formulario/img1.JPG Graphic file (type jpg)
 <use ../formulario/img1.JPG>
-Package pdftex.def Info: ../formulario/img1.JPG  used on input line 661.
+Package pdftex.def Info: ../formulario/img1.JPG  used on input line 660.
 (pdftex.def)             Requested size: 92.15416pt x 28.45274pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+Underfull \hbox (badness 10000) in paragraph at lines 669--671
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--672
+Underfull \hbox (badness 10000) in paragraph at lines 671--673
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 672--674
-
- []
-
-[91
-
- <../formulario/img1.JPG>]
-<../formulario/img2.JPG, id=1696, 466.74374pt x 299.61937pt>
+[92 <../formulario/img1.JPG>]
+<../formulario/img2.JPG, id=1702, 466.74374pt x 299.61937pt>
 File: ../formulario/img2.JPG Graphic file (type jpg)
 <use ../formulario/img2.JPG>
-Package pdftex.def Info: ../formulario/img2.JPG  used on input line 692.
+Package pdftex.def Info: ../formulario/img2.JPG  used on input line 691.
 (pdftex.def)             Requested size: 132.96637pt x 85.35826pt.
-<../formulario/img3.JPG, id=1697, 599.99156pt x 387.69844pt>
+<../formulario/img3.JPG, id=1703, 599.99156pt x 387.69844pt>
 File: ../formulario/img3.JPG Graphic file (type jpg)
 <use ../formulario/img3.JPG>
-Package pdftex.def Info: ../formulario/img3.JPG  used on input line 721.
+Package pdftex.def Info: ../formulario/img3.JPG  used on input line 720.
 (pdftex.def)             Requested size: 132.0901pt x 85.35826pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--738
+Underfull \hbox (badness 10000) in paragraph at lines 722--737
 
  []
 
-<../formulario/img8.JPG, id=1698, 435.12563pt x 282.30469pt>
+<../formulario/img8.JPG, id=1704, 435.12563pt x 282.30469pt>
 File: ../formulario/img8.JPG Graphic file (type jpg)
 <use ../formulario/img8.JPG>
-Package pdftex.def Info: ../formulario/img8.JPG  used on input line 742.
+Package pdftex.def Info: ../formulario/img8.JPG  used on input line 741.
 (pdftex.def)             Requested size: 87.70744pt x 56.9055pt.
-<../formulario/img9.JPG, id=1699, 420.06938pt x 244.66406pt>
+<../formulario/img9.JPG, id=1705, 420.06938pt x 244.66406pt>
 File: ../formulario/img9.JPG Graphic file (type jpg)
 <use ../formulario/img9.JPG>
-Package pdftex.def Info: ../formulario/img9.JPG  used on input line 749.
+Package pdftex.def Info: ../formulario/img9.JPG  used on input line 748.
 (pdftex.def)             Requested size: 97.70358pt x 56.9055pt.
 
-Overfull \hbox (298.06348pt too wide) in paragraph at lines 751--753
+Overfull \hbox (174.29399pt too wide) in paragraph at lines 750--752
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 762--763
+Underfull \hbox (badness 10000) in paragraph at lines 761--762
 
  []
 
-<../formulario/img4.JPG, id=1700, 471.26062pt x 137.7647pt>
+[93 <../formulario/img2.JPG> <../formulario/img3.JPG> <../formulario/img8.JPG> <../formulario/img9.JPG>]
+<../formulario/img4.JPG, id=1711, 471.26062pt x 137.7647pt>
 File: ../formulario/img4.JPG Graphic file (type jpg)
 <use ../formulario/img4.JPG>
-Package pdftex.def Info: ../formulario/img4.JPG  used on input line 776.
+Package pdftex.def Info: ../formulario/img4.JPG  used on input line 775.
 (pdftex.def)             Requested size: 194.66347pt x 56.9055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 784--787
+Underfull \hbox (badness 10000) in paragraph at lines 783--786
 
  []
 
-[92 <../formulario/img2.JPG> <../formulario/img3.JPG> <../formulario/img8.JPG> <../formulario/img9.JPG> <../formulario/img4.JPG>]
-<../formulario/img5.JPG, id=1706, 322.95656pt x 72.27pt>
+<../formulario/img5.JPG, id=1712, 322.95656pt x 72.27pt>
 File: ../formulario/img5.JPG Graphic file (type jpg)
 <use ../formulario/img5.JPG>
-Package pdftex.def Info: ../formulario/img5.JPG  used on input line 789.
+Package pdftex.def Info: ../formulario/img5.JPG  used on input line 788.
 (pdftex.def)             Requested size: 254.29514pt x 56.9055pt.
- [93 <../formulario/img5.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 807--813
+[94 <../formulario/img4.JPG> <../formulario/img5.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 806--812
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 814--817
+Underfull \hbox (badness 10000) in paragraph at lines 813--816
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--823
+Underfull \hbox (badness 10000) in paragraph at lines 817--822
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--823
+Underfull \hbox (badness 10000) in paragraph at lines 817--822
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 846--850
+Underfull \hbox (badness 10000) in paragraph at lines 845--849
 
  []
 
-<../formulario/img6.JPG, id=1711, 597.73312pt x 205.5178pt>
+<../formulario/img6.JPG, id=1717, 597.73312pt x 205.5178pt>
 File: ../formulario/img6.JPG Graphic file (type jpg)
 <use ../formulario/img6.JPG>
-Package pdftex.def Info: ../formulario/img6.JPG  used on input line 858.
+Package pdftex.def Info: ../formulario/img6.JPG  used on input line 857.
 (pdftex.def)             Requested size: 165.50351pt x 56.9055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--869
+Underfull \hbox (badness 10000) in paragraph at lines 865--868
 
  []
 
-<../formulario/img7.JPG, id=1712, 274.77657pt x 209.28188pt>
+[95 <../formulario/img6.JPG>]
+<../formulario/img7.JPG, id=1722, 274.77657pt x 209.28188pt>
 File: ../formulario/img7.JPG Graphic file (type jpg)
 <use ../formulario/img7.JPG>
-Package pdftex.def Info: ../formulario/img7.JPG  used on input line 890.
+Package pdftex.def Info: ../formulario/img7.JPG  used on input line 889.
 (pdftex.def)             Requested size: 112.06793pt x 85.35826pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--905
+Underfull \hbox (badness 10000) in paragraph at lines 893--904
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--905
+Underfull \hbox (badness 10000) in paragraph at lines 893--904
 
  []
 
-[94 <../formulario/img6.JPG> <../formulario/img7.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 911--912
+
+Underfull \hbox (badness 10000) in paragraph at lines 910--911
 
  []
 
-[95]
-Underfull \hbox (badness 10000) in paragraph at lines 943--949
+[96 <../formulario/img7.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 942--948
 
  []
 
-<../formulario/img10.JPG, id=1721, 956.82469pt x 337.26pt>
+<../formulario/img10.JPG, id=1728, 956.82469pt x 337.26pt>
 File: ../formulario/img10.JPG Graphic file (type jpg)
 <use ../formulario/img10.JPG>
-Package pdftex.def Info: ../formulario/img10.JPG  used on input line 951.
+Package pdftex.def Info: ../formulario/img10.JPG  used on input line 950.
 (pdftex.def)             Requested size: 242.15477pt x 85.35826pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 990--996
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 963.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 963.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 963.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 964--967
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 990--996
+Underfull \hbox (badness 10000) in paragraph at lines 979--986
 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1012.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 1012.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1012.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1037--1048
+Underfull \hbox (badness 10000) in paragraph at lines 979--986
 
  []
 
-[96 <../formulario/img10.JPG>]
-<../formulario/img11.JPG, id=1727, 941.76843pt x 482.55281pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--986
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--1014
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--1014
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--1014
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--1014
+
+ []
+
+[97 <../formulario/img10.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 1028--1032
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1038
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1058
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1093
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1093
+
+ []
+
+[98]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1109.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1146
+
+ []
+
+<../formulario/img11.JPG, id=1738, 941.76843pt x 482.55281pt>
 File: ../formulario/img11.JPG Graphic file (type jpg)
 <use ../formulario/img11.JPG>
-Package pdftex.def Info: ../formulario/img11.JPG  used on input line 1053.
-(pdftex.def)             Requested size: 166.57947pt x 85.35826pt.
-<../formulario/img12.jpg, id=1728, 552.56438pt x 353.82187pt>
+Package pdftex.def Info: ../formulario/img11.JPG  used on input line 1151.
+(pdftex.def)             Requested size: 222.10597pt x 113.81102pt.
+<../formulario/img12.jpg, id=1739, 552.56438pt x 353.82187pt>
 File: ../formulario/img12.jpg Graphic file (type jpg)
 <use ../formulario/img12.jpg>
-Package pdftex.def Info: ../formulario/img12.jpg  used on input line 1056.
-(pdftex.def)             Requested size: 133.3011pt x 85.35826pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1059.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1059.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1059.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1063
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1073--1075
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1076--1083
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1076--1083
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1076--1083
-
- []
-
-
-Overfull \hbox (32.87125pt too wide) detected at line 1085
-\OML/cmm/m/it/6 F[]\OT1/cmr/m/n/6 (\OML/cmm/m/it/6 s\OT1/cmr/m/n/6 ) = [][] [] \OML/cmm/m/it/6 f\OT1/cmr/m/n/6 (\OML/cmm/m/it/6 kT[]\OT1/cmr/m/n/6 )\OML/cmm/m/it/6 ^^N\OT1/cmr/m/n/6 (\OML/cmm/m/it/6 t \OMS/cmss/m/n/6 ^^@ \OML/cmm/m/it/6 kT[]\OT1/cmr/m/n/6 )\OML/cmm/m/it/6 e[]dt \OT1/cmr/m/n/6 = [] \OML/cmm/m/it/6 f\OT1/cmr/m/n/6 (\OML/cmm/m/it/6 kT[]\OT1/cmr/m/n/6 ) [][] \OML/cmm/m/it/6 ^^N\OT1/cmr/m/n/6 (\OML/cmm/m/it/6 t \OMS/cmss/m/n/6 ^^@ \OML/cmm/m/it/6 kT[]\OT1/cmr/m/n/6 )\OML/cmm/m/it/6 e[]dt \OT1/cmr/m/n/6 = [] \OML/cmm/m/it/6 f\OT1/cmr/m/n/6 (\OML/cmm/m/it/6 kT[]\OT1/cmr/m/n/6 )\OML/cmm/m/it/6 e[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1118
-
- []
-
-<../formulario/img13.JPG, id=1729, 918.43124pt x 480.29437pt>
-File: ../formulario/img13.JPG Graphic file (type jpg)
-<use ../formulario/img13.JPG>
-Package pdftex.def Info: ../formulario/img13.JPG  used on input line 1123.
-(pdftex.def)             Requested size: 163.22238pt x 85.35826pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1125--1128
-
- []
-
-[97 <../formulario/img11.JPG> <../formulario/img12.JPG> <../formulario/img13.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1151
-
- []
-
-[98])
+Package pdftex.def Info: ../formulario/img12.jpg  used on input line 1154.
+(pdftex.def)             Requested size: 222.17694pt x 142.26378pt.
+[99 <../formulario/img11.JPG>] [100 <../formulario/img12.JPG>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 510DCEEBA81801C17BA681C4CB7195E4;17830.
+(rerunfilecheck)             Checksum: BF83703158C3EECA1C33CA66081911E8;17838.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2689,17 +2657,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  18917 strings out of 492609
- 351388 string characters out of 6132818
- 446931 words of memory out of 5000000
- 21931 multiletter control sequences out of 15000+600000
- 14060 words of font info for 54 fonts, out of 8000000 for 9000
+ 351327 string characters out of 6132818
+ 444931 words of memory out of 5000000
+ 21930 multiletter control sequences out of 15000+600000
+ 14948 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,17n,73p,1493b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.pdf" (98 pages, 4180764 bytes).
+ 56i,17n,73p,1493b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "c:/Users/Federico/Desktop/NOTES/FONDAMENTI DI AUTOMATICA/master/master.pdf" (100 pages, 4056709 bytes).
 PDF statistics:
- 1902 PDF objects out of 2073 (max. 8388607)
- 1643 compressed objects within 17 object streams
- 336 named destinations out of 1000 (max. 500000)
- 2120 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1914 PDF objects out of 2073 (max. 8388607)
+ 1653 compressed objects within 17 object streams
+ 338 named destinations out of 1000 (max. 500000)
+ 2115 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,5 @@
 
-\fontsize{6pt}{8pt}\selectfont
+\fontsize{8pt}{10pt}\selectfont
 \newgeometry{
     lmargin=0.2cm,
     rmargin=0.2cm,
@@ -334,7 +334,6 @@
     \[
         \delta x := x-\bar{x} \;\;\;\;\;\delta u := u- \bar{u} \;\;\;\;\; \delta y = := y- \bar{y}
     \]
-    \textbf{oss.} Per i sistemi non lineari la stabilità non è una proprietà del sistema, quindi gli equilibri non condividono per forza la stessa "tipologia" di stabilità (AS/S/I). Di conseguenza è necessario analizzare la stabilità per ciascuno degli equilibri.
     \subsection{Stabilità dell'equilibrio di sistemi tempo invarianti non lineari}
     La stabilità di un equilibrio si può studiare basandosi sul sistema linearizzato nell'intorno di quell'equilibrio:
     \begin{itemize}
@@ -342,6 +341,7 @@
         \item se il sistema linearizzato è I, allora anche l'equilibrio è I;
         \item se il sistema linearizzato è S, allora nulla si può dire sulla stabilità dell'equilibrio, che in tal caso dipende da termini dello sviluppo in serie di $f$ di grado superiore a uno.
     \end{itemize}
+    \textbf{oss.} Per i sistemi non lineari la stabilità non è una proprietà del sistema, quindi gli equilibri non condividono per forza la stessa "tipologia" di stabilità (AS/S/I). Di conseguenza è necessario analizzare la stabilità per ciascuno degli equilibri.
     \newpage\section{Trasformate e funzioni di trasferimento a TC}
     \subsection{Laplace}
     \[
@@ -629,7 +629,6 @@
             \item Caso in cui il grado di $D$ sia uguale al grado di $N$: il modulo è costante e la fase tende a $- \infty$, quindi il diagramma diventa una circonferenza percorsa infinite volte.
         \end{itemize}
 \end{multicols*}
-\end{landscape}
 \begin{multicols*}{2}
     \newpage\section{Funzioni fondamentali di un anello di controllo}
     \begin{itemize}
@@ -648,11 +647,11 @@
     \newline
     \textbf{Diagramma di Nyquist}: Costituito dal diagramma polare e della sua immagine speculare rispetto all'asse reale.
     \subsection{Stabilità asintotica}
-    Il numero di giri antiorari del diagramma di Nyquist di $G(s)$ attorno all'oigine è \textbf{uguale} al numero di poli di $G(s)$ circondati dal suo percorso di Nyquist in senso orario \textbf{meno} il numero di zeri di $G(s)$ circondati dal suo percorso di Nyquist in senso orario.\newline
-    \newline
-    Detto $L(s) = R(s) \cdot P(s)$, allora:\newline
-    il numero di giri del diagramma di Nyquist di $L(s)$ attorno al punto $-1$ è \textbf{uguale} al numero di poli di $L(s)$ con $Re> 0$ \textbf{meno} il numero di poli dell'anello chiuso con $Re > 0$.\newline
-    \newline
+    \begin{itemize}
+        \item Il numero di giri antiorari del diagramma di Nyquist di $G(s)$ attorno all'oigine è \textbf{uguale} al numero di poli di $G(s)$ circondati dal suo percorso di Nyquist in senso orario \textbf{meno} il numero di zeri di $G(s)$ circondati dal suo percorso di Nyquist in senso orario.
+        \item Detto $L(s) = R(s) \cdot P(s)$, allora:\newline
+        il numero di giri del diagramma di Nyquist di $L(s)$ attorno al punto $-1$ è \textbf{uguale} al numero di poli di $L(s)$ con $Re> 0$ \textbf{meno} il numero di poli dell'anello chiuso con $Re > 0$.
+    \end{itemize}
     Poichè per avere la \textbf{stabilità asintotica} dell'anello chiuso si vuole che il numero di poli dell'anello chiuso con $Re > 0$ sia uguale a zero, si ha che deve essere:\newline
     numero di iri del diagramma di Nyquist di $L(s)$ attorno al punto $-1$ è \textbf{uguale} al numero di poli di $L(s)$ con $Re > 0$.
     \subsection{Criterio di Nyquist}
@@ -665,7 +664,7 @@
         \item Sia $P_D$ il numero di poli di $L(s)$ con $Re > 0$;
         \item Sia $N$ il numero di giri antiorari del diagramma di Nyquist di $L(s)$ attorno al punto $-1$ dell'asse reale; se il diagramma di Nyquist passa per il punto $-1$ si dirà che $N$ non è ben definito.
     \end{itemize}
-    \textbf{Criterio}: il sistema in anello chiuso è asintoticamente stabile $\Leftrightarrow$ $N$ è ben definito e $N = P_D$.\newline
+    \textbf{Criterio}: il sistema in anello chiuso è asintoticamente stabile $\Leftrightarrow$ $N$ è ben definito e $N = P_D$.
     \begin{itemize}
         \item \textbf{Caso $N$ non ben definito}:\newline
         se $N$ non è ben definito, allora il diagramma di Nyquist passa per $-1$, il sistema in anello chiuso ha poli con parte reale nulla, quindi è \textbf{non asintoticamnete stabile} (stabile o instabile, ma non si può concludere nulla a proposito).\newline
@@ -958,9 +957,107 @@
     \textbf{problema}: noi progettiamo il regolatore $R(s)$ nello schema solito, ovvero come se fosse tutto a TC, poi però dobbiamo ottenere $R^*(z)$ e implementare lo schema SH (sampling and holding) dovendo anche scegliere il tempo di campionamneto $T_s$.\newline
     Dividiamo il problema in:
     \begin{itemize}
-        \item scelta di $T_s$;
+        \item scelta di $T_s$ (tempo di campionamento);
         \item discretizzazione: $\{R(s), T_s\} \rightarrow  R^*(z)$;
-        \item la presenza di SH ha qualche effetto dinamico?
+    \end{itemize}
+    \subsection{Scelta di $T_s$}
+    Problema: abbiamo un segnale $f(t)$ che facciamo entrare in un campionatore e otteniamo un segnale $f^{\#}(t)$ o $f^*(k)$, che a sua volta entra in un ZOH e otteniamo un segnale $y(t)$. L'ingresso e l'uscita di questo sistema sono a tempo continuo, ma hanno un intermezzo a tempo discreto.\newline
+    \newline
+    \textbf{Impulso di Dirac S(t)}
+    \[
+        \begin{cases}
+            \delta(t) = 0 \;\forall\; t \neq 0\\
+            \int_{-\infty}^{\infty} \delta (t) dt = 1
+        \end{cases}
+    \]
+    \ \newline
+    \textbf{Treno d'impulsi unitari a passo $T_s$}
+    \[
+        \delta_{T_s} (t) = \sum_{k=0}^{\infty} \delta (t- k T_s)
+    \]
+    \subsubsection{Modello del campionatore}
+    Il campionamento mi genera un segnale discreto $f^*(k) = f(k T_s)$, noi definiamo un segnale nel tempo continuo $f^\# (t)$ che è un treno d'impulsi equivalente, che ci servirà per poterne fare una trasformata di Laplace.\newline
+    \newline
+    Definiamo a tempo continuo $f^\# (t) = \sum_{k=0}^{\infty} f(t) \delta(t-kT_s) = f(t) \sum_{k=0}^{\infty} \delta(t-kT_s) = f(t) \delta_{T_s} (t)$.\newline
+    \newline
+    Osservazione: posso anche scrivere $f^\# (t) = \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s)$.\newline
+    \newline
+    Ora possiamo fare la trasformata di Laplace di $f^\#(k)$:
+    \[
+        F^\# (s) = \int_{0}^{\infty} \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) \int_{0}^{\infty} \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) e^{-skT_s}
+    \]
+    \ \newline
+    Possiamo anche però fare la trasformata Zeta di $f^*(k)$:
+    \[
+        f^*(k) = f(kT_s) \Rightarrow  F^*(z) = \sum_{k=0}^{\infty} f(kT_s) z^{-k}
+    \]
+    \ \newline
+    E notiamo che le due trasformate si assomigliano, infatti:
+    \[
+        F^*(e^{sT_s}) = \sum_{k=0}^{\infty} f(kT_s)e^{-skT_s} = F^\#(s)
+    \]
+    \ \newline
+    Ma che relazione c'è tra le trasformate di Laplace di $f(t)$ e di $f^\#(t)$?\newline
+    Premessa: vale il risultato $\delta_{T_s} (t) = \sum_{k=-\infty}^{\infty} \frac{1}{T_s} e^{j k \frac{2\pi}{T_s}t}$.\newline
+    Allora $f^\#(t) = f(t) \delta_{T_s}(t) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} f(t) e^{j k \frac{2\pi}{T_s}t}$, la cui trasformata di Laplace è $\frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \frac{2\pi}{T_s})$, dove $\frac{2\pi}{T_s}$ prende il nome di $\omega_S$ "frequenza di campionamento" e $F$ è la trasfomrata di Laplace di $f(t)$.\newline
+    Ovvero $F^\#(s) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \omega_s)$.\newline
+    \newline
+    Abbiamo quindi fino ad ora fatto il campionamento ci serve ora analizzare l'holder (ZOH).\newline
+    Lo schema che analiziamo è costituito da un segnale discreto $F^*(k) = imp(k)$ (che equivale nel tempo continuo a una $f^\#(t) = imp(t) = \delta(t)$) in ingresso a un ZOH che ha come uscita un $y(t)$ a tempo continuo.\newline
+    \newline
+    La funzione di trasferimento dello ZOH è uguale alla $\frac{\mathcal{L}[uscita]}{\mathcal{L}[ingresso]} = \frac{1-e^{-sT_s}}{s}$.\newline
+    \newline
+    Mettendo tutto insieme:\newline
+    Abbiamo un segnale $f(t)$ che viene fornito a un campionatore che produce un segnale che posso interpretare nel tempo continuo come $f^\#(t)$ (con trasformata di Laplace $F^\#(s)$) o nel tempo discreto come $f^*(k)$ (con trasformata Zeta $F^*(z)$). Infine questo segnale entra in uno ZOH che produce il segnale $y(t)$.\newline
+    \newline
+    Abbiamo quindi ottenuto che:
+    \[
+        \omega_S =\frac{2\pi}{T_s} = \text{"\textbf{frequenza di campionamento}"}
+    \]
+        \[Y(s) = \frac{1-e^{-sT_s}}{s} F^\#(s) = \frac{1- e^{-sT_s}}{sT_s} \sum_{k=-\infty}^{\infty} F(s-j k \omega_s)
+    \]
+    \[
+        H_0(s) = \frac{1- e^{-sT_s}}{sT_s} = \text{\textbf{funzione di trasferimento di sampler and holder}}
+    \]
+    Quindi la trasformata del segnale di campionato e mantenuto è $H_0(s)$ che moltiplica la trasformata di laplace del segnale di partenza più infinite sue repliche a distanza $\omega_s$.\newline
+    Tutto questo può produrre un effetto di "aliasing": per evitarlo occore che $\omega_s$ \textbf{sia almeno il doppio della massima frequenza contenuta in} $f(t)$ (teorema di Shannon). Supponendo quindi che $T_s$ sia ben scelto, ovvero che non ci siano nel segnale campionato componenti (significative) a frequenza superiore a $\frac{\omega_s}{2}$, ci basta:
+    \begin{itemize}
+        \item tenere conto della sola fondamentale  $F(s)$;
+        \item considerare $H_0(j \omega)$ soltanto per $\omega< \omega_s/2$ e per $\omega< \omega_s /2$: $H_0(j \omega) \sim  e^{\frac{-j \omega T_s}{2}}$.
+    \end{itemize}
+    \ \newline
+    Nel progetto a TC, quando è noto che si dovrà realizzare il regolatore con tecnologia digitale, si tiene conto di sampling and hold tramite un ritardo aggiuntivo nel loop di entità $\frac{T_s}{2}$.\newline
+    \newline
+    Vediamo quindi i criteri per la scelta di $T_s$:
+    \begin{itemize}
+        \item \textbf{Criterio 1}: più $\omega_c$ è grande, più il segnale campionato $y(t)$ conterrà componenti in alta frequenza. Facciamo la pulsazione di campionamento $\omega_s = \frac{2\pi}{T_s}$ proporzionale a $\omega_c$: $\omega_s = K \omega_c$, con $K \sim 10 - 50$.
+        \item \textbf{Criterio 2}: Ipotizzando di porre $\omega_s$ superiore a $\omega_c$, definiamo la frequenza di Nyquist come $\omega_N = \frac{\omega_s}{2}$ (ancora maggiore di $\omega_c$) che rappresenta la massima frequenza rappresentabile con campionamento a passo $T_s$.\newline
+        Consideriamo ora il modulo di $|L(j \omega_N)|$. In un problema non patologico, alla frequenza di Nyquist ho $d_r$ attenuato (bene), $d_a$ non c'è (bene) e anche $w$ attenuato (va comunque bene, velcità di risposta ok, ho impostato io $\omega_c$), più il $|L(j \omega_N)|$ è piccolo, meno si ha aliasing.\newline
+        \newline
+        Quindi per trovare $\omega_s$ si traccia (nel diagramma di Bode del modulo di $L(s)$) la riga orizzontale a cui si vuole il $|L(j \omega_N)|$, dove interseca $|L|$ ci sarà la frequenza $\omega_N$, si moltiplica per due e si trova $\omega_s$.
+        \item \textbf{Criterio 3}: Il sempling and hold introduce un ritardo di $\frac{T_s}{2}$, che non cambia $\omega_c$, ma riduce $\phi_m$ di $\omega_c \frac{T_s}{2}$. Quindi il vincolo da imporre è: $\omega_c \frac{T_s}{2} < $ di un certo valore (da notare che $\omega_c \frac{T_s}{2}$ è in radianti !).
+        \item \textbf{Criterio 4}: $T_s$ molto minore (diciamo non oltre a $\frac{1}{5}$) della più piccola costante di tempo presente nel regolatore.
+    \end{itemize}
+    \ \newline
+    Mancano ora solo le considerazioni sul ritardo introdotto dal calcolatore che calcola $U^*(k)$. L'algoritmo si divide in:
+    \begin{itemize}
+        \item Lettura degli ingressi (consideriamo un tempo trascurabile);
+        \item Calcolo del controllo (questo passaggio è variabile, ha una durata che dipende da progetto a progetto);
+        \item Scrittura delle uscite (consideriamo un tempo trascurabile);
+    \end{itemize}
+    Consisderiamo il tempo di calcolo $\tau_C$ e vediamo i tre casi possibili:
+    \begin{itemize}
+        \item caso 1: $\tau_c$ è variabile, ma molto minore di $T_s$ (tutto ok);
+        \item caso 2: $\tau_c$ costante, ma non trascurabile rispetto a $T_s$ (problema);
+        \item caso 3: $\tau_c$ variabile e non trascurabile rispetto a $T_s$ (problema);
+    \end{itemize}
+    per gli ultimi due casi consideriamo il caso pessimo con $\tau_c = T_s$. 
+    \newline
+    \newline
+    Riassumendo
+    \begin{itemize}
+        \item (caso 1) se solo effetto sampling and hold e ritardo calcolabile trascurabile, allora $\frac{1}{2} \omega_c T_s <$ un certo valore.
+        \item (caso 2 e 3) se ritardo del calcolo non trascurabile, allora $\frac{3}{2} \omega_c T_S <$ un certo valore.
     \end{itemize}
     \subsection{Discretizzazione}
     Il problema che la discretizzazione risolve è: $\{R(s), T_s\} \rightarrow  R^*(z)$.
@@ -994,8 +1091,8 @@
     \newline
     Però non è noto dove sia $\tilde{t}$, quindi:
     \begin{itemize}
-        \item Approssimazione 1: metodo di Eulero esplicito o delle differenze in avanti $R^*(z) = R\left(\frac{z-1}{T_s}\right)$;
-        \item Approssimazione 2: metodo di Eulero implicito o delle differenze all'indietro $R^*(z) = R\left(\frac{1-z^{-1}}{T_s}\right) = R\left(\frac{z-1}{z T_s}\right)$
+        \item Approssimazione 1: metodo di \textbf{Eulero esplicito} o delle differenze in avanti $R^*(z) = R\left(\frac{z-1}{T_s}\right)$;
+        \item Approssimazione 2: metodo di \textbf{Eulero implicito} o delle differenze all'indietro $R^*(z) = R\left(\frac{1-z^{-1}}{T_s}\right) = R\left(\frac{z-1}{z T_s}\right)$
     \end{itemize}
     \subsubsection{Discretizzazione e stabilità}
     Data $G(s)$ AS, a seguito di una discretizzazione $G^*(z)$ è AS per ogni $T_s$?
@@ -1011,35 +1108,36 @@
     \]
     \subsection{Da $R^*(z)$ alla legge di controllo a TD}
     Vediamo un esempio per capirne il metodo generale:\newline
-    \textbf{es.} $R^*(z) = $ che d'ora in poi indichiamo solo come $R(z) = \frac{2z^2 - 3z +4}{z^2 -z}$. \newline
-    Perchè sia realizzabile l'unico vincolo è che il grado del numeratore sia minore o uguale al grado del denominatore.\newline
-    Detto $U(z)$ l'uscita di $R(z)$ e $E(z)$ l'ingresso di $R(z)$, sappiamo che $\frac{U(z)}{E(z)} = R(z) = \frac{2z^2 - 3z +4}{z^2 -z}$.\newline
-    Tolgo i denominatori: $(z^2-z) U(z) = (2z^2 -3z+4) E(z)$.\newline
-    Ridistribuisco il prodotto: $z^2 U(z) - z U(z) = 2z^2 E(z) - 3zE(z) + 4 E(z)$.\newline
-    Antitrasformo (condizioni iniziali nulle): $u(k+2) - u(k+1) = 2e(k+2) -3e(k+1) + 4e(k)$.\newline
-    Risolvo per "l'uscita più recente" e scalo i tempi: in questo caso quella più recente è $u(k+2)$, quindi $u(k) = u(k-1) + 2 e(k) -3e(k-1) + 4e(k-2)$.\newline
-    Quindi usiamo come convenzione: detta la generica variabile $x_n := x(k-n)$.\newline
-    Scriviamo il seguente algoritmo di controllo per ogni $T_s$:
+    \textbf{es.} $R^*(z) = $ che d'ora in poi indichiamo solo come $R(z) = \frac{2z^2 - 3z +4}{z^2 -z}$. 
     \begin{itemize}
-        \item ottieni $e$;
-        \item $u = u_1 +  2e - 3e_1 + 4e_2$;
-        \item $e_2 = e_1$;
-        \item $e_1 = e$;
-        \item $u_1 = u$;
-        \item applica $u$.
+        \item Perchè sia realizzabile l'unico vincolo è che il grado del numeratore sia minore o uguale al grado del denominatore.
+        \item  Detto $U(z)$ l'uscita di $R(z)$ e $E(z)$ l'ingresso di $R(z)$, sappiamo che $\frac{U(z)}{E(z)} = R(z) = \frac{2z^2 - 3z +4}{z^2 -z}$.
+        \item Tolgo i denominatori: $(z^2-z) U(z) = (2z^2 -3z+4) E(z)$.
+        \item Ridistribuisco il prodotto: $z^2 U(z) - z U(z) = 2z^2 E(z) - 3zE(z) + 4 E(z)$.
+        \item Antitrasformo (condizioni iniziali nulle): $u(k+2) - u(k+1) = 2e(k+2) -3e(k+1) + 4e(k)$.
+        \item Risolvo per "l'uscita più recente" e scalo i tempi: in questo caso quella più recente è $u(k+2)$, quindi $u(k) = u(k-1) + 2 e(k) -3e(k-1) + 4e(k-2)$.
+        \item Quindi, usando come convenzione "detta la generica variabile $x_n := x(k-n)$", possiamo scrivere il seguente algoritmo di controllo per ogni $T_s$:
+        \begin{itemize}
+            \item ottieni $e$;
+            \item $u = u_1 +  2e - 3e_1 + 4e_2$;
+            \item $e_2 = e_1$;
+            \item $e_1 = e$;
+            \item $u_1 = u$;
+            \item applica $u$.
+        \end{itemize}
     \end{itemize}
     \subsubsection{Windup}
     Quello appena visto è "quasi" un algoritmo di controllo: per realizzare un regolatore industriale occorre considerare aspetti che non sono rappresentati col suo modello LTI $R^*(z)$ e in particolare di 
     \begin{itemize}
         \item limiti di saturazione del segnale di controllo - WINDUP (problema dovuto a modelli non lineari);
-        \item necessità di mettere il loop di controllo in modalità manuale ($U$ decisa dall'operatore) - TRACKING (problema docuto a modelli non tempo invarianti).
+        \item necessità di mettere il loop di controllo in modalità manuale ($U$ decisa dall'operatore) - TRACKING (problema dovuto a modelli non tempo invarianti).
     \end{itemize}
     Vediamo un esempio per capirne il metodo generale:\newline
     \textbf{es.}\newline
     Ipotiziamo di avere un $w$ e una $y$ che lo segue.\newline
     Poniamo ora $w$ a un valore non ottenibile con l'attuazione disponibile.\newline
-    Si dice che $u$ "satura" (raggiunge un limite), cioè raggiunge un $u_{max}$.\newline
-    L'$u$ calcolato, invece continua a crescere sempre di più.\newline
+    Ipotiziamo che $u$ "saturi", cioè che raggiunga un $u_{max}$.\newline
+    Ma l'$u$ calcolato continua a crescere sempre di più.\newline
     L'errore $e$ diventa una costante, perchè $y$ non riesce a raggiungere $w$.\newline
     Riponiamo ora $w$ a un valore ammissibile e quindi l'errore cambia segno.\newline
     l'$u$ calcolato, fa un saltino verso il basso, ma non è abbastanza per tornare sotto l'$u$ satura, e poi inizia a scendere, ma finchè non è scesa sotto l'$u$ satura (quindi c'è un ritardo), $y$ non reagisce.\newline
@@ -1050,106 +1148,11 @@
     Vediamo due soluzioni:
     \begin{itemize}
         \item PI a TC: \begin{center}
-            \includegraphics[height=3cm]{../formulario/img11.JPG}
+            \includegraphics[height=4cm]{../formulario/img11.JPG}
         \end{center}
         \item Generico controllore a TD: \begin{center}
-            \includegraphics[height=3cm]{../formulario/img12.jpg}
+            \includegraphics[height=5cm]{../formulario/img12.jpg}
         \end{center}
     \end{itemize}
-    \subsection{Scelta di $T_s$}
-    Problema: abbiamo un segnale $f(t)$ che facciamo entrare in un campionatore e otteniamo un segnale $f^{\#}(t)$ o $f^*(k)$, che a sua volta entra in un ZOH e otteniamo un segnale $y(t)$. L'ingresso e l'uscita di questo sistema sono a tempo continuo, ma hanno un intermezzo a tempo discreto.\newline
-    \newline
-    \textbf{Impulso di Dirac S(t)}
-    \[
-        \begin{cases}
-            \delta(t) = 0 \;\forall\; t \neq 0\\
-            \int_{-\infty}^{\infty} \delta (t) dt = 1
-        \end{cases}
-    \]
-    \ \newline
-    \textbf{Treno d'impulsi unitari a passo $T_s$}
-    \[
-        \delta_{T_s} (t) = \sum_{k=0}^{\infty} \delta (t- k T_s)
-    \]
-    \ \newline
-    \subsubsection{Modello del campionatore}
-    Il campionamento mi genera un segnale discreto $f^*(k) = f(k T_s)$, noi definiamo un segnale nel tempo continuo $f^\# (t)$ che è un treno d'impulsi equivalente, che ci servirà per poterne fare una trasformata di Laplace.\newline
-    \newline
-    Definiamo a tempo continuo $f^\# (t) = \sum_{k=0}^{\infty} f(t) \delta(t-kT_s) = f(t) \sum_{k=0}^{\infty} \delta(t-kT_s) = f(t) \delta_{T_s} (t)$.\newline
-    \newline
-    Osservazione: posso anche scrivere $f^\# (t) = \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s)$.\newline
-    \newline
-    Ora possiamo fare la trasformata di Laplace di $f^\#(k)$:
-    \[
-        F^\# (s) = \int_{0}^{\infty} \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) \int_{0}^{\infty} \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) e^{-skT_s}
-    \]
-    \ \newline
-    Possiamo anche però fare la trasformata Zeta di $f^*(k)$:
-    \[
-        f^*(k) = f(kT_s) \Rightarrow  F^*(z) = \sum_{k=0}^{\infty} f(kT_s) z^{-k}
-    \]
-    \ \newline
-    E notiamo che le due trasformate si assomigliano, infatti:
-    \[
-        F^*(e^{sT_s}) = \sum_{k=0}^{\infty} f(kT_s)e^{-skT_s} = F^\#(s)
-    \]
-    \ \newline
-    Ma che relazione c'è tra le trasformate di Laplace di $f(t)$ e di $f^\#(t)$?\newline
-    Premessa: vale il risultato $\delta_{T_s} (t) = \sum_{k=-\infty}^{\infty} \frac{1}{T_s} e^{j k \frac{2\pi}{T_s}t}$.\newline
-    Allora $f^\#(t) = f(t) \delta_{T_s}(t) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} f(t) e^{j k \frac{2\pi}{T_s}t}$, la cui trasformata di Laplace è $\frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \frac{2\pi}{T_s})$, dove $\frac{2\pi}{T_s}$ prende il nome di $\omega_S$ "frequenza di campionamento" e $F$ è la trasfomrata di Laplace di $f(t)$.\newline
-    Ovvero $F^\#(s) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \omega_s)$.\newline
-    \newline
-    Abbiamo quindi fino ad ora fatto il campionamento, ci serve ora analizzare l'holder (ZOH).\newline
-    Lo schema che analiziamo è costituito da un segnale discreto $F^*(k) = imp(k)$ (che equivale nel tempo continuo a una $f^\#(t) = imp(t) = \delta(t)$) in ingresso a un ZOH che ha come uscita un $y(t)$ a tempo continuo.\newline
-    \newline
-    La funzione di trasferimento dello ZOH è uguale alla $\frac{\mathcal{L}[uscita]}{\mathcal{L}[ingresso]} = \frac{1-e^{-sT_s}}{s}$.\newline
-    \newline
-    Mettendo tutto insieme:\newline
-    Abbiamo un segnale $f(t)$ che viene fornito a un campionatore che produce un segnale che posso interpretare nel tempo continuo come $f^\#(t)$ (con trasformata di Laplace $F^\#(s)$) o nel tempo discreto come $f^*(k)$ (con trasformata Zeta $F^*(z)$). Infine questo segnale entra in uno ZOH che produce il segnale $y(t)$.\newline
-    \newline
-    Abbiamo quindi ottenuto che $Y(s) = \frac{1-e^{-sT_s}}{s} F^\#(s) = \frac{1- e^{-sT_s}}{sT_s} \sum_{k=-\infty}^{\infty} F(s-j k \omega_s)$.\newline
-    Chiamiamo ora $H_0(s)$ la funzione di trasferimento di sampler and holder, il temrine $\frac{1- e^{-sT_s}}{sT_s}$.\newline
-    \newline
-    Quindi la trasformata del segnale di campionato e mantenuto è $H_0(s)$ che moltiplica la trasformata di laplace del segnale di partenza più infinite sue repliche a distanza $\omega_s$.\newline
-    \newline
-    Tutto questo può produrre un effetto di "aliasing": occore che $\omega_s$ sia almeno il doppio della massima frequenza contenuta in $f(t)$ (teorema di Shannon).\newline
-    \newline
-    Supponendo quindi che $T_s$ sia ben scelto, ovvero che non ci siano nel segnale campionato componenti (significative) a frequenza superiore a $\frac{\omega_s}{2}$, ci basta:
-    \begin{itemize}
-        \item tenere conto della sola fondamentale  $F(s)$;
-        \item considerare $H_0(j \omega)$ soltanto per $\omega< \omega_s/2$ e per $\omega< \omega_s /2$: $H_0(j \omega) \sim  e^{\frac{-j \omega T_s}{2}}$.
-    \end{itemize}
-    \begin{center}
-        \includegraphics[height=3cm]{../formulario/img13.JPG}
-    \end{center}
-    Nel progetto a TC, quando è noto che si dovrà realizzare il regolatore con tecnologia digitale, si tiene conto di sampling and hold tramite un ritardo aggiuntivo nel loop di entità $\frac{T_s}{2}$.\newline
-    \newline
-    Vediamo quindi i criteri per la scelta di $T_s$:
-    \begin{itemize}
-        \item Criterio 1: più $\omega_c$ è grande, più il segnale campionato $y(t)$ conterrà componenti in alta frequenza. Facciamo la pulsazione di campionamento $\omega_s = \frac{2\pi}{T_s}$ proporzionale a $\omega_c$: $\omega_s = K \omega_c$, con $K \sim 10 - 50$.
-        \item Criterio 2: Ipotizzando di porre $\omega_s$ superiore a $\omega_c$, definiamo la frequenza di Nyquist come $\omega_N = \frac{\omega_s}{2}$ (ancora maggiore di $\omega_c$) che rappresenta la massima frequenza rappresentabile con campionamento a passo $T_s$. Consideriamo ora il modulo di $|L(j \omega_N)|$. In un problema non patologico, alla frequenza di Nyquist ho $d_r$ attenuato (bene), $d_a$ non c'è (bene) e anche $w$ attenuato (va comunque bene, velcità di risposta ok, ho impostato io $\omega_c$), più il $|L(j \omega_N)|$ è piccolo, meno di ha aliasing. Quindi per trovare $\omega_s$ si traccia la riga orizzontale a cui si vuole il $|L(j \omega_N)|$, dove interseca $|L|$ ci sarà la frequenza $\omega_N$, si moltiplica per due e si trova $\omega_s$.
-        \item Criterio 3: Il sempling and hold introduce un ritardo di $\frac{T_s}{2}$, che non cambia $\omega_c$, ma riduce $\phi_m$ di $\omega_c \frac{T_s}{2}$. Quindi il vincolo da imporre è: $\omega_c \frac{T_s}{2} < $ di un certo valore (da notare che $\omega_c \frac{T_s}{2}$ è in radianti !).
-        \item Criterio 4: $T_s$ molto minore (diciamo non oltre a $\frac{1}{5}$) della più piccola costante di tempo presente nel regolatore.
-    \end{itemize}
-    \ \newline
-    Mancano ora solo le considerazioni sul ritardo introdotto dal calcolatore che calcola $U^*(k)$. L'algoritmo si divide in:
-    \begin{itemize}
-        \item Lettura degli ingressi (consideriamo un tempo trascurabile);
-        \item Calcolo del controllo (questo passaggio è variabile, ha una durata che dipende da progetto a progetto);
-        \item Scrittura delle uscite (consideriamo un tempo trascurabile);
-    \end{itemize}
-    Consisderiamo il tempo di calcolo $\tau_C$ e vediamo i tre casi possibili:
-    \begin{itemize}
-        \item caso 1: $\tau_c$ è variabile, ma molto minore di $T_s$ (tutto ok);
-        \item caso 2: $\tau_c$ costante, ma non trascurabile rispetto a $T_s$ (problema);
-        \item caso 3: $\tau_c$ variabile e non trascurabile rispetto a $T_s$ (problema);
-    \end{itemize}
-    per gli ultimi due casi consideriamo il caso pessimo con $\tau_c = T_s$. 
-    \newline
-    \newline
-    Riassumendo
-    \begin{itemize}
-        \item (caso 1) se solo effetto sampling and hold e ritardo calcolabile trascurabile, allora $\frac{1}{2} \omega_c T_s <$ un certo valore.
-        \item (caso 2 e 3) se ritardo del calcolo non trascurabile, allora $\frac{3}{2} \omega_c T_S <$ un certo valore.
-    \end{itemize}
 \end{multicols*}
+\end{landscape}

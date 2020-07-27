@@ -116,7 +116,7 @@
 \BOOKMARK [3][-]{subsubsection.16.3.3}{Tracciamento complessivo}{subsection.16.3}% 116
 \BOOKMARK [3][-]{subsubsection.16.3.4}{Metodo di tracciamento}{subsection.16.3}% 117
 \BOOKMARK [3][-]{subsubsection.16.3.5}{Esempio}{subsection.16.3}% 118
-\BOOKMARK [0][-]{part.2}{II Seconda parte del corso}{}% 119
+\BOOKMARK [0][-]{part.2}{II Seconda parte del corso [MANCA]}{}% 119
 \BOOKMARK [1][-]{section.17}{Schema fondamentale di un anello di controllo \(SD LTI a TC, SISO\)}{part.2}% 120
 \BOOKMARK [2][-]{subsection.17.1}{Schema completo}{section.17}% 121
 \BOOKMARK [2][-]{subsection.17.2}{Schema semplificato}{section.17}% 122
@@ -207,13 +207,13 @@
 \BOOKMARK [2][-]{subsection.48.1}{Trasformata Zeta}{section.48}% 207
 \BOOKMARK [3][-]{subsubsection.48.1.1}{Funzione di trasferimento}{subsection.48.1}% 208
 \BOOKMARK [2][-]{subsection.48.2}{Schema di controllo \(loop\) ibrido}{section.48}% 209
-\BOOKMARK [2][-]{subsection.48.3}{Discretizzazione}{section.48}% 210
-\BOOKMARK [3][-]{subsubsection.48.3.1}{Discretizzazione esatta}{subsection.48.3}% 211
-\BOOKMARK [3][-]{subsubsection.48.3.2}{Discretizzazione approssimata}{subsection.48.3}% 212
-\BOOKMARK [3][-]{subsubsection.48.3.3}{Discretizzazione e stabilit\340}{subsection.48.3}% 213
-\BOOKMARK [3][-]{subsubsection.48.3.4}{Metodo di Tustin}{subsection.48.3}% 214
-\BOOKMARK [2][-]{subsection.48.4}{Da R*\(z\) alla legge di controllo a TD}{section.48}% 215
-\BOOKMARK [3][-]{subsubsection.48.4.1}{Windup}{subsection.48.4}% 216
-\BOOKMARK [3][-]{subsubsection.48.4.2}{Soluzione anti windup}{subsection.48.4}% 217
-\BOOKMARK [2][-]{subsection.48.5}{Scelta di Ts}{section.48}% 218
-\BOOKMARK [3][-]{subsubsection.48.5.1}{Modello del campionatore}{subsection.48.5}% 219
+\BOOKMARK [2][-]{subsection.48.3}{Scelta di Ts}{section.48}% 210
+\BOOKMARK [3][-]{subsubsection.48.3.1}{Modello del campionatore}{subsection.48.3}% 211
+\BOOKMARK [2][-]{subsection.48.4}{Discretizzazione}{section.48}% 212
+\BOOKMARK [3][-]{subsubsection.48.4.1}{Discretizzazione esatta}{subsection.48.4}% 213
+\BOOKMARK [3][-]{subsubsection.48.4.2}{Discretizzazione approssimata}{subsection.48.4}% 214
+\BOOKMARK [3][-]{subsubsection.48.4.3}{Discretizzazione e stabilit\340}{subsection.48.4}% 215
+\BOOKMARK [3][-]{subsubsection.48.4.4}{Metodo di Tustin}{subsection.48.4}% 216
+\BOOKMARK [2][-]{subsection.48.5}{Da R*\(z\) alla legge di controllo a TD}{section.48}% 217
+\BOOKMARK [3][-]{subsubsection.48.5.1}{Windup}{subsection.48.5}% 218
+\BOOKMARK [3][-]{subsubsection.48.5.2}{Soluzione anti windup}{subsection.48.5}% 219
