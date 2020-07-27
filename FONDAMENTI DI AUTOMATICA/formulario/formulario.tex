@@ -949,31 +949,31 @@
     \end{center}
     In questo corso consideriamo:
     \begin{itemize}
-        \item campionatore (sampler) idele: $y*(k) = y(k T_s)$
-        \item mantenitore (holder) di ordine zero (ZOH): $u(t) = u*(k)$ per $k T_s \leq t < (k+1)T_s$
+        \item campionatore (sampler) idele: $y^*(k) = y(k T_s)$
+        \item mantenitore (holder) di ordine zero (ZOH): $u(t) = u^*(k)$ per $k T_s \leq t < (k+1)T_s$
     \end{itemize}
-    \textbf{problema}: noi progettiamo il regolatore $R(s)$ nello schema solito, ovvero come se fosse tutto a TC, poi però dobbiamo ottenere $R*(z)$ e implementare lo schema SH (sampling and holding) dovendo anche scegliere il tempo di campionamneto $T_s$.\newline
+    \textbf{problema}: noi progettiamo il regolatore $R(s)$ nello schema solito, ovvero come se fosse tutto a TC, poi però dobbiamo ottenere $R^*(z)$ e implementare lo schema SH (sampling and holding) dovendo anche scegliere il tempo di campionamneto $T_s$.\newline
     Dividiamo il problema in:
     \begin{itemize}
         \item scelta di $T_s$;
-        \item discretizzazione: $\{R(s), T_s\} \rightarrow  R*(z)$;
+        \item discretizzazione: $\{R(s), T_s\} \rightarrow  R^*(z)$;
         \item la presenza di SH ha qualche effetto dinamico?
     \end{itemize}
     \subsection{Discretizzazione}
-    Il problema che la discretizzazione risolve è: $\{R(s), T_s\} \rightarrow  R*(z)$.
+    Il problema che la discretizzazione risolve è: $\{R(s), T_s\} \rightarrow  R^*(z)$.
     \subsubsection{Discretizzazione esatta}
     Idea: facciamo evolvere il sistema a TC per un tempo pari a $T_s$, e interpretiamo ciò come l'evoluzione di un passo a TD.\newline
     Quindi:
     \begin{itemize}
         \item Realiziamo $R(s) \rightarrow (A,b,c,d)$.
         \item Lagrange: $x(T_s) = e^{AT_s} x(0) + \int_{0}^{T_s} e^{A(T_s-\tau)} b u(\tau) d \tau$.
-        \item Approssimazione: $u(\tau)$ costante sul passo $[0, T_s]$ cioè uguale a $u(0)$. Quindi il movimento diventa $e^{AT_s} x(0) + \left(\int_{0}^{T_s} e^{A(T_s-\tau)} b d \tau\right) u(0)$. Notiamo che l'approssimazione influenza solo il movimento forzato. Chiamiamo $A* = e^{AT_s}$ e $b* = \int_{0}^{T_s} e^{A(T_s-\tau)} b d \tau$ e otteniamo:\newline
-        $x(T_s) = A* x(0) + b* u(0)$
-        \item Siccome abbiamo un campionatore ideale e un mantenitore di ordine zero e siccome $T_s$ rappresenta un passo discreto a tempo continuo, possiamo dire che un segnale $v*(k)$ discreto corrisponde a un segnale $v(kT_s)$ nel continuo. Quindi otteniamo:\newline
-        $x(1) = A* x*(0) + b* u*(0)$
+        \item Approssimazione: $u(\tau)$ costante sul passo $[0, T_s]$ cioè uguale a $u(0)$. Quindi il movimento diventa $e^{AT_s} x(0) + \left(\int_{0}^{T_s} e^{A(T_s-\tau)} b d \tau\right) u(0)$. Notiamo che l'approssimazione influenza solo il movimento forzato. Chiamiamo $A^* = e^{AT_s}$ e $b^* = \int_{0}^{T_s} e^{A(T_s-\tau)} b d \tau$ e otteniamo:\newline
+        $x(T_s) = A^* x(0) + b^* u(0)$
+        \item Siccome abbiamo un campionatore ideale e un mantenitore di ordine zero e siccome $T_s$ rappresenta un passo discreto a tempo continuo, possiamo dire che un segnale $v^*(k)$ discreto corrisponde a un segnale $v(kT_s)$ nel continuo. Quindi otteniamo:\newline
+        $x(1) = A^* x^*(0) + b^* u^*(0)$
         \item Possiamo infine scrivere $\begin{cases}
-            x(k) = A* x*(k-1) + b* u*(k-1)\\
-            y*(k) = c x*(k) + d u*(k)
+            x(k) = A^* x^*(k-1) + b^* u^*(k-1)\\
+            y^*(k) = c x^*(k) + d u^*(k)
         \end{cases}$ in cui $c$ e $d$ non cambiano.
     \end{itemize}
     Osservazioni:
@@ -987,25 +987,28 @@
     Idea: sostituiamo la derivata temporale con il rapporto incrementale lungo un passo di campionamento $T_s$.\newline
     Questo metodo può però alterare la stabilità se $T_s$ non è scelto in modo opportuno.\newline
     \newline
-    Se $y$ e $\dot{y}$ sono continue, allora esiste un $\tilde{t} \in [kT_s, (k+1) T_s]$ tale che $\dot{y}(\tilde{t}) = \frac{y*(k+1) - y*(k)}{T_s}$.\newline
+    Se $y$ e $\dot{y}$ sono continue, allora esiste un $\tilde{t} \in [kT_s, (k+1) T_s]$ tale che $\dot{y}(\tilde{t}) = \frac{y^*(k+1) - y^*(k)}{T_s}$.\newline
+    \newline
     Però non è noto dove sia $\tilde{t}$, quindi:
     \begin{itemize}
-        \item Approssimazione 1: metodo di Eulero esplicito o delle differenze in avanti $R*(z) = R\left(\frac{z-1}{T_s}\right)$;
-        \item Approssimazione 2: metodo di Eulero implicito o delle differenze all'indietro $R*(z) = R\left(\frac{1-z^{-1}}{T_s}\right) = R\left(\frac{z-1}{z T_s}\right)$
+        \item Approssimazione 1: metodo di Eulero esplicito o delle differenze in avanti $R^*(z) = R\left(\frac{z-1}{T_s}\right)$;
+        \item Approssimazione 2: metodo di Eulero implicito o delle differenze all'indietro $R^*(z) = R\left(\frac{1-z^{-1}}{T_s}\right) = R\left(\frac{z-1}{z T_s}\right)$
     \end{itemize}
     \subsubsection{Discretizzazione e stabilità}
-    Data $G(s)$ AS, a seguito di una discretizzazione $G*(z)$ è AS per ogni $T_s$?
+    Data $G(s)$ AS, a seguito di una discretizzazione $G^*(z)$ è AS per ogni $T_s$?
     \begin{itemize}
         \item Discretizzazione esatta: SI;
-        \item Eulero esplicito: può accadere che un regolatore $R(s)$ AS venga approssimato a un regolatore $R*(z)$ instabile;
+        \item Eulero esplicito: può accadere che un regolatore $R(s)$ AS venga approssimato a un regolatore $R^*(z)$ instabile;
         \item Eulero implicito: SI.
     \end{itemize}
     \subsubsection{Metodo di Tustin}
+    La trasformazione di Tustin è una trasformazione razionale $s \rightarrow z$ tale per cui il semipiano sinistro di $s$ corrisponde al cerchio unitario del piano $z$.
     \[
-        R*(z) = R( \frac{2}{T_s} \cdot \frac{z-1}{z+1})
+        R^*(z) = R( \frac{2}{T_s} \cdot \frac{z-1}{z+1})
     \]
-    \subsection{Da $R*(z)$ alla legge di controllo a TD}
-    \dots
+    \subsection{Da $R^*(z)$ alla legge di controllo a TD}
+    \textbf{es.} $R^*(z) = \frac{2z^2 - 3z +4}{z^2 -z}$. \newline
+    Perchè sia realizzabile l'unico vincolo è che il grado del numeratore sia minore o uguale al grado del denominatore.
     \subsubsection{Windup e antiwindup}
     \dots
     \subsection{Scelta di $T_s$}
