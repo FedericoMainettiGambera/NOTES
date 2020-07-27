@@ -908,6 +908,104 @@
         \item Sistema del second'ordine con un polo instabile: es. consideriamo due casi $P_1(s) = \frac{1}{(1+s) (1-5s)}$, $P_2(s) = \frac{1}{(1+5s) ( 1-s)}$.\newline
         \begin{itemize}
             \item per $P_1$: $R_1 = k \Rightarrow L = \frac{k}{(1+s) (1-5s)}$; $\frac{R_1 P_1}{1+R-1P_1} =  \frac{L}{1+L} = \frac{k}{1-4s-5s^2 + k}$, in cui il denominatore ha poli con $Re<0$ se $k+1<0$. Da qui sappiamo cosa fare (vedi caso precedente).
-            \item per $P_2$: $R_1 = k \Rightarrow L = \frac{k}{(1+5s) (1-s)}$; $\frac{R_1 P_2}{1+ R_1 P_2} = \frac{k}{-5s^2 + 4s \dots}$, ci fermiamo perchè non esiste $k$ che lo renda AS. 
+            \item per $P_2$: $R_1 = k \Rightarrow L = \frac{k}{(1+5s) (1-s)}$; $\frac{R_1 P_2}{1+ R_1 P_2} = \frac{k}{-5s^2 + 4s \dots}$, ci fermiamo perchè non esiste $k$ che lo renda AS. Però il polo sinistro si può cancellare e quindi con $R_1$ fatto da un polo e uno zero ci si può ripostare al caso $P_1$. Nell'esempio si ottiene $R_1(s) = k \frac{1+5s}{1+0,5 s}$ e otteniamo $L = \frac{k}{(1+0,5 s) (1-s)}$ che rimanda al caso $P_1$. 
         \end{itemize}
     \end{itemize}
+    \newpage\section{Sistemi di controllo digitale}
+    \subsection{Trasformata Zeta}
+    Dato un segnale (reale) a TD $v(k)$, si definisce la sua trasformata Zeta $V(z) = \mathcal{Z}[v(k)] := \sum_{k=0}^{\infty} v(k) z^{-k}$, con $z$ e $V(z)$ complessi.\newline
+    \textbf{Proprietà}:
+    \begin{itemize}
+        \item La trasformata di Zeta è un operatore lineare;
+        \item Trasformata di Zeta anticipata di un passo: $\mathcal{Z}[v(k+1)] = \sum_{k=0}^{\infty} v(k+1) z^{-k} = z \mathcal{Z}[v(k)] - z v(0)$;
+    \end{itemize}
+    \textbf{Trasformate Zeta notevoli}:
+    \begin{itemize}
+        \item impulso: $\mathcal{Z}[imp(k)] = 1$
+        \item scalino: $\mathcal{Z}[sca(k)] = \frac{z}{z-1}$ per $|z|>1$
+        \item esponenziale: $\mathcal{Z}[a^k sca(k)] = \frac{z}{z-a}$ per $|z| > |a|$
+    \end{itemize}
+    \subsubsection{Funzione di trasferimento}
+    \textbf{Trasformata Zeta dell'equazione di stato}:
+    \[
+        X(z) = (zI-A)^{-1} z x(0) + (zI-A)^{-1} b U(z)
+    \]
+    \textbf{Trasformata Zeta dell'equazione d'uscita}:
+    \[
+        Y(z) = cX(z) + dU(z) = c(zI-A)^{-1} z x(0) + [c(zI-A)^{-1} b + d] U(z)
+    \]
+    \textbf{Funzione di trasferimento}:
+    \[
+        c(zI-A)^{-1} b + d
+    \]
+    Siccome la funzione di trasferimento è uguale a quello di SD a TC, posso fare le stesse considerazioni su stabilità, poli, autovalori, parti nascoste, raggiungibilità, osservabilità.\newline
+    \newline
+    \textbf{Schema a blocchi}:\newline
+    Per la stesura dello schema a blocchi si può usare il metodo degli integratori $\frac{1}{s}$ a TC, ma con un blocco $z^{-1}$.\newline
+    Per quanto riguarda i paralleli/le serie/ gli anelli le formule sono le medesime a TC. 
+    \subsection{Schema di controllo (loop) ibrido}
+    \begin{center}
+        \includegraphics[height=3cm]{../formulario/img10.JPG}
+    \end{center}
+    In questo corso consideriamo:
+    \begin{itemize}
+        \item campionatore (sampler) idele: $y*(k) = y(k T_s)$
+        \item mantenitore (holder) di ordine zero (ZOH): $u(t) = u*(k)$ per $k T_s \leq t < (k+1)T_s$
+    \end{itemize}
+    \textbf{problema}: noi progettiamo il regolatore $R(s)$ nello schema solito, ovvero come se fosse tutto a TC, poi però dobbiamo ottenere $R*(z)$ e implementare lo schema SH (sampling and holding) dovendo anche scegliere il tempo di campionamneto $T_s$.\newline
+    Dividiamo il problema in:
+    \begin{itemize}
+        \item scelta di $T_s$;
+        \item discretizzazione: $\{R(s), T_s\} \rightarrow  R*(z)$;
+        \item la presenza di SH ha qualche effetto dinamico?
+    \end{itemize}
+    \subsection{Discretizzazione}
+    Il problema che la discretizzazione risolve è: $\{R(s), T_s\} \rightarrow  R*(z)$.
+    \subsubsection{Discretizzazione esatta}
+    Idea: facciamo evolvere il sistema a TC per un tempo pari a $T_s$, e interpretiamo ciò come l'evoluzione di un passo a TD.\newline
+    Quindi:
+    \begin{itemize}
+        \item Realiziamo $R(s) \rightarrow (A,b,c,d)$.
+        \item Lagrange: $x(T_s) = e^{AT_s} x(0) + \int_{0}^{T_s} e^{A(T_s-\tau)} b u(\tau) d \tau$.
+        \item Approssimazione: $u(\tau)$ costante sul passo $[0, T_s]$ cioè uguale a $u(0)$. Quindi il movimento diventa $e^{AT_s} x(0) + \left(\int_{0}^{T_s} e^{A(T_s-\tau)} b d \tau\right) u(0)$. Notiamo che l'approssimazione influenza solo il movimento forzato. Chiamiamo $A* = e^{AT_s}$ e $b* = \int_{0}^{T_s} e^{A(T_s-\tau)} b d \tau$ e otteniamo:\newline
+        $x(T_s) = A* x(0) + b* u(0)$
+        \item Siccome abbiamo un campionatore ideale e un mantenitore di ordine zero e siccome $T_s$ rappresenta un passo discreto a tempo continuo, possiamo dire che un segnale $v*(k)$ discreto corrisponde a un segnale $v(kT_s)$ nel continuo. Quindi otteniamo:\newline
+        $x(1) = A* x*(0) + b* u*(0)$
+        \item Possiamo infine scrivere $\begin{cases}
+            x(k) = A* x*(k-1) + b* u*(k-1)\\
+            y*(k) = c x*(k) + d u*(k)
+        \end{cases}$ in cui $c$ e $d$ non cambiano.
+    \end{itemize}
+    Osservazioni:
+    \begin{itemize}
+        \item Per il movimento libero la discretizzazione è esatta per davvero;
+        \item Per il movimento forzato la discretizazzione non è esatta;
+        \item $e^{AT_s}$ può essere complicato da calcolare;
+        \item Le proprietà di stabilità a TC non vengono alterate nel passaggio a TD.
+    \end{itemize}
+    \subsubsection{Discretizzazione approssimata}
+    Idea: sostituiamo la derivata temporale con il rapporto incrementale lungo un passo di campionamento $T_s$.\newline
+    Questo metodo può però alterare la stabilità se $T_s$ non è scelto in modo opportuno.\newline
+    \newline
+    Se $y$ e $\dot{y}$ sono continue, allora esiste un $\tilde{t} \in [kT_s, (k+1) T_s]$ tale che $\dot{y}(\tilde{t}) = \frac{y*(k+1) - y*(k)}{T_s}$.\newline
+    Però non è noto dove sia $\tilde{t}$, quindi:
+    \begin{itemize}
+        \item Approssimazione 1: metodo di Eulero esplicito o delle differenze in avanti $R*(z) = R\left(\frac{z-1}{T_s}\right)$;
+        \item Approssimazione 2: metodo di Eulero implicito o delle differenze all'indietro $R*(z) = R\left(\frac{1-z^{-1}}{T_s}\right) = R\left(\frac{z-1}{z T_s}\right)$
+    \end{itemize}
+    \subsubsection{Discretizzazione e stabilità}
+    Data $G(s)$ AS, a seguito di una discretizzazione $G*(z)$ è AS per ogni $T_s$?
+    \begin{itemize}
+        \item Discretizzazione esatta: SI;
+        \item Eulero esplicito: può accadere che un regolatore $R(s)$ AS venga approssimato a un regolatore $R*(z)$ instabile;
+        \item Eulero implicito: SI.
+    \end{itemize}
+    \subsubsection{Metodo di Tustin}
+    \[
+        R*(z) = R( \frac{2}{T_s} \cdot \frac{z-1}{z+1})
+    \]
+    \subsection{Da $R*(z)$ alla legge di controllo a TD}
+    \dots
+    \subsubsection{Windup e antiwindup}
+    \dots
+    \subsection{Scelta di $T_s$}

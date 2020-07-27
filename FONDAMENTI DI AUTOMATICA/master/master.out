@@ -204,3 +204,15 @@
 \BOOKMARK [2][-]{subsection.47.8}{Metodo di Ziegler-Nichols}{section.47}% 204
 \BOOKMARK [2][-]{subsection.47.9}{PID a due gradi di libert\340 ed effetto dei pesi b e c e di N sugli zeri}{section.47}% 205
 \BOOKMARK [1][-]{section.48}{Cenno al controllo di sistemi instabili}{part.4}% 206
+\BOOKMARK [1][-]{section.49}{Sistemi di controllo digitale}{part.4}% 207
+\BOOKMARK [2][-]{subsection.49.1}{Trasformata Zeta}{section.49}% 208
+\BOOKMARK [3][-]{subsubsection.49.1.1}{Funzione di trasferimento}{subsection.49.1}% 209
+\BOOKMARK [2][-]{subsection.49.2}{Schema di controllo \(loop\) ibrido}{section.49}% 210
+\BOOKMARK [2][-]{subsection.49.3}{Discretizzazione}{section.49}% 211
+\BOOKMARK [3][-]{subsubsection.49.3.1}{Discretizzazione esatta}{subsection.49.3}% 212
+\BOOKMARK [3][-]{subsubsection.49.3.2}{Discretizzazione approssimata}{subsection.49.3}% 213
+\BOOKMARK [3][-]{subsubsection.49.3.3}{Discretizzazione e stabilit\340}{subsection.49.3}% 214
+\BOOKMARK [3][-]{subsubsection.49.3.4}{Metodo di Tustin}{subsection.49.3}% 215
+\BOOKMARK [2][-]{subsection.49.4}{Da R*\(z\) alla legge di controllo a TD}{section.49}% 216
+\BOOKMARK [3][-]{subsubsection.49.4.1}{Windup e antiwindup}{subsection.49.4}% 217
+\BOOKMARK [2][-]{subsection.49.5}{Scelta di Ts}{section.49}% 218
