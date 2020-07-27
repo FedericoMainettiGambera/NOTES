@@ -1,10 +1,13 @@
-\fontsize{8pt}{10pt}\selectfont
+
+\fontsize{6pt}{8pt}\selectfont
 \newgeometry{
-    lmargin=1cm,
-    rmargin=1cm,
+    lmargin=0.2cm,
+    rmargin=0.2cm,
     tmargin=0.2cm,
     bmargin=0.2cm,
 }
+\begin{landscape}
+\begin{multicols*}{3}
     \section{Terminologia}
     \[
         \begin{cases}
@@ -21,7 +24,7 @@
     \textbf{Tempo invariante}: se in $f$ e $g$ non compare esplicitamente $t$;\newline
     \textbf{Strettamente proprio}: se in $g$ non compare $u$.\newline
     \textbf{SISO}: single input, single output; cioè se $u$ e $y$ sono scalari.
-    \newpage\section{Equilibrio}
+    \section{Equilibrio}
     \subsection{Caso generale}
     Dato l'ingresso costante $u = \bar{u}$ e detto $\bar{x}$ l'equilibrio cercato, in generale si ha:\newline
     \textbf{TC}: Soluzioni di $f(\bar{x},\bar{u}) = 0$.\newline
@@ -182,7 +185,6 @@
         \item Se è richiesto il calcolo del movimento dell'uscita, è sufficiente calcolare il movimento dello stato e sostituirlo nell'equazione dell'uscita del sistema.
         \item Se gli autovalori di $A$ sono numeri complessi: una volta ricondotti i numeri complessi in $x_L$ alla loro forma trigonometrica ($cos(\theta) + i sin(\theta) = e^{i \theta}$), si prende la sola parte reale, l'unità immaginaria deve scomparire.
         \item Alla fine in $x_L$ devono comparire somme di termini del tipo $e^{\alpha t} cos(\omega t)$ e/o $e^{\alpha t} sin(\omega t)$, dove $\alpha$ e $\omega$ sono rispettivamente perti reali e immaginarie di autovalori di $A$. In realtà si possono trovare anche altri termini, ma in via generale se si trova un coefficiente del tempo all'esponente che non è parte reale di nessun autovalore di $A$, il risultato è certamente errato.
-        \item TODO: esercizio 2.3, caso autovalore multipli, questioni sui autovettori generalizzati\dots.
         \item Il movimento libero dipende linearmente solo dallo stato iniziale e non dall’ingresso, il movimento forzato dipende linearmente solo dall’ingresso e non dallo stato iniziale.
     \end{itemize}
     \newpage\section{Stabilità}
@@ -453,7 +455,7 @@
     \newline
     \newline
     Per capire se un FdT ha parti nascoste basta controllare se una radice del numeratore azzera anche il denominatore o se una radice del denominatore annulla il numeratore. 
-    \newpage\section{Realizzazione}
+    \section{Realizzazione}
     Metodo per la \textbf{forma canonica di raggiungibilità} (realizzazione sempre raggiungibile).
     se il grado del numeratore è uguale al grado del denominatore si fa la divisione e si ottiene $G(s) = d + \frac{N(s)}{D(s)}$, da cui si ricava il valore $d$. A questo punto riscriviamo la frazione $\frac{N(s)}{D(s)} = \frac{ b_1 s^{n-1} + b_2 s^{n-2} + \dots + b_n }{ s^n + a_1 s^{n-1} + \dots + a_n }$ e scriviamo le $A, b$ e $c$:
     \[
@@ -477,7 +479,7 @@
     \]
     \textbf{oss.} la presenza di una cancellazione ci impone il fatto che la realizzazione
     $ (A, b, c, d)$ non può essere raggiungibile e osservabile contemporaneamente. Quindi siccome facciamo una realizzazione raggiungibile, sarà sicuramente non osservabile.
-    \newpage\section{Schemi a blocchi}
+    \section{Schemi a blocchi}
     \textbf{Blocchi in serie}: $u \rightarrow [G_1] \rightarrow  [G_2] \rightarrow y$, con $G_1 = \frac{N_1}{D_1}$ e $G_2 = \frac{N_2}{G_2}$: $\frac{Y}{U} = G_2G_1 = \frac{N_1N_2}{D_2D_1}$.\newline 
     Gli autovalori del sistema complessivo sono i $\{$ poli di $G_1\} U \{$ poli di $G_2\}$.\newline
     $G_1$ e $G_2$ (entrambi) asintoticamente stabili è condizione neccessaria e sufficiente ($\Leftrightarrow$) per avere un sistema complessivo asintoticamente stabile.\newline
@@ -520,7 +522,7 @@
         \includegraphics[height=2cm]{../lezione8/img1.PNG}
     \end{center}
     Rappresentazioen di dove solitamente si inseriscono i valori delle matrici del sistema all'interno dello schema a blocchi sviluppato con l'integratore.
-    \newpage\section{Risposta esponenziale}
+    \section{Risposta esponenziale}
     Quindi \textbf{in generale} con $u(t) = U e^{\lambda t}$ (con $U$ un numero qualunque che semplicemente amplifica l'esponenziale), se $\lambda$ non è autovalore di $A$, allora esiste uno e uno solo 
     \[
         x(0) = (\lambda I - A)^{-1}b U
@@ -585,7 +587,7 @@
         \item Lungo il regolo si leggono i contributi (in modulo) di ogni polo e zero in corrispondenza delle loro frequenze d'angolo;
         \item Per calcolare la fase nel punto $\bar{\omega}$ è ora sufficiente combinare i valori trovati al punto precedente (ricordando di aggiungere il segno corretto e  di moltiplicarli per il numero di poli o zeri presenti), inoltre bisogna ricordarsi anche il valore di partenza della fase che ovviamente nel regolo non è espresso.
     \end{itemize}
-    \newpage\section{Diagramma polare}
+    \section{Diagramma polare}
     A differenza dei diagrammi di Bode, i diagrammi polari non hanno metodi comodi per tracciarne l'andamento. Possiamo però comprenderne l'andamento tramite un'analisi del comportamento asintotico per $\omega \rightarrow 0^+$ e per $\omega \rightarrow  \infty$ e tramite un'analisi dell'aspetto qualitativo.\newline
     \newline
     Quindi studiamo la generica funzione di trasferimento $G(s)$ nella classica forma con cui la analizzeremmo per Bode.
@@ -603,7 +605,7 @@
         \end{itemize}
         \item in generale l'andamento del diagramma polare si può dedurre dai diagrammi di bode del modulo e della fase, ricordando che il modulo è la distanza dall'origine e la fase è l'angolo.
     \end{itemize}
-    \newpage\section{Ritardi}
+    \section{Ritardi}
     Analiziamo gli effetti di un ritardo applicato a una funzione di trasferimento. Prendiamo $G(s) = \frac{N(s)}{D(s)} e^{-s \tau} = G_R(s) e^{-s \tau}$, in cui $G_R(s)$ rappresenta la dianmica razionale (cioè una tipica funzione di trasferimento) e $e^{-s \tau}$ un ritardo.
         \[
             G(j \omega) = G_r(j \omega) e^{- j \omega \tau} = \begin{cases}
@@ -626,8 +628,9 @@
             \item Caso in cui il grado di $D$ sia maggiore del grado di $N$: il diagramma polare di $G$ dinisce nell'origine con fase tendente a $- \infty$, quindi il diagramma si arrotola su sè stesso come una spirale;
             \item Caso in cui il grado di $D$ sia uguale al grado di $N$: il modulo è costante e la fase tende a $- \infty$, quindi il diagramma diventa una circonferenza percorsa infinite volte.
         \end{itemize}
-    \newpage\section{Sintesi diretta}
-    esercitazione 5, esercizio 2.
+\end{multicols*}
+\end{landscape}
+\begin{multicols*}{2}
     \newpage\section{Funzioni fondamentali di un anello di controllo}
     \begin{itemize}
         \item funzione di traferimento d'anello (aperto) $L(s) := R(s) \cdot P(s)$;
@@ -639,7 +642,7 @@
         \item $\frac{Y}{D_a} = \frac{1}{1+L} = S$;
         \item $Y = T \cdot W + S \cdot  D_a -T \cdot D_r = T \cdot W + S \cdot D_a - T \cdot D_r$.
     \end{itemize}
-    \newpage\section{Stabilità di sistemi retroazionati}
+    \section{Stabilità di sistemi retroazionati}
     \subsection{Diagramma di Nyquist}
     \textbf{Percorso di Nyquist}: Curva chiusa costituita dall'intero asse immaginario e da una semicirconferenza di raggio infinito giacente nel semipiano destro. Se $G(s)$ ha poli a parte reale nulla, il percorso di Nyquist viene modificato evitando tali poli con semicirconferenze di raggio infinitesimo giacenti nel semipiano destro. Il percorso di Nyquist è percorso in senso antiorario.\newline
     \newline
@@ -766,7 +769,7 @@
     Se un sistema è a fase minima, il DBF si può dedurre dalla conoscenza del DBM e del segno del guadagno, perchè tutti i poli/zeri sono nel semipiano sinistro e non ci sono ritardi, quindi, DBF inizia da $0^o$ se $\mu> 0$ o da $-180^o$ se $\mu< 0$, e poi un polo è $-90^o$ e uno zero è $+ 90^o$.\newline
     Inoltre, se un SD a fase minima e con $mu > 0$ ha il DBM con un lungo tratto a pendenza $-1$, allora nella parte centrale di quel tratto, la sua fase è circa $-90^o$, questo motiva il "tratto lungo a pendenza $-1$ attorno a $\omega_c$".\newline
     Anche nel caso non a fase minima rimane una buona idea, purchè gli zeri a destra siano a $\omega > \omega_c$ e il contributo si eventuali ritardi non sia eccessivo.
-    \newpage\section{compensazione di un disturbo misurabile}
+    \section{compensazione di un disturbo misurabile}
     Se $d$ ha componenti così veloci che la retroazione non può contrastarle e non è possibile/opportuno aumentare $\omega_c$, allora faccio la compensazione. \newline
     La compensazione serve se $\omega_d \leq \omega_c$, ma in realtà anche solo se sono vicini.
     \begin{center}
@@ -781,13 +784,13 @@
     Se $C_{ID}$ non si può implementare, occore conoscere un limite superiore $\omega_d$ per la banda del disturbo (cioè $d$ non ha componenti di segnale per $\omega > \omega_d$) e trovare una funzione di trasferimento $C(s)$ reale realizzabile (aggiungere poli o togliere zeri per rendere realizzabile il controllore, solitamente dopo due decadi da $\omega_d$) e AS tale che $C(j \omega) \sim C_{ID} (j \omega)$ per $\omega \leq \omega_d$ in modulo e fase.\newline
     \newline
     A livello pratico: si cerca di ottenere un $L(s) = \frac{\omega_c}{s}$ (o almeno è approssimabile così nei pressi di $\omega_c$), da qui si trova $R(s)$. Calcoliamo ora $C_{ID} = - \frac{H}{MP}$ e guardiamo se è realizzabile. Se lo è siamo a posto, se non lo è: tracciamo il diagramma di Bode del modulo di $C_{ID}$ e ci sengamo la banda del disturbo (che arriva fino a $\omega_d$) e andiamo avanti di due decadi da $\omega_d$. Da qui si possono aggiungere poli e/o togliere zeri per costruire un $C_{RE}$ realizzabile.
-    \newpage\section{Controllo a due gradi di libertà}
+    \section{Controllo a due gradi di libertà}
     \begin{center}
         \includegraphics[height=2cm]{../formulario/img5.JPG}
     \end{center}
     $\frac{Y}{D_a} = \frac{1}{1+R_{FB} \cdot P}$\newline
     $\frac{Y}{W} = \frac{R_{FF} R_{FB} P}{1 + R_{FB} P}$
-    \newpage\section{Cenno al progetto del regolatore in condizioni d'incertezza}
+    \section{Cenno al progetto del regolatore in condizioni d'incertezza}
     Cosa succede se il modello $P(s)$ non è una descrizione esatta del processo?\newline
     Per esempio se $P(s) = P_n(s) + \Delta P(s)$, dove $P_n(s)$ è l'unico elemento a noi noto e sappiamo $|\Delta P(j \omega)| < f(\omega)$ con $f(\omega)$ nota. \newline
     Siamo in ipotesi di Bode e in particolare $P_n$ non ha poli con $Re > 0$ e nemmeno $P_n + \Delta P$.\newline
@@ -899,7 +902,7 @@
     Per risolvere il problema :\newline
     $R_{FB} = R_2 =  K \frac{1 + s\left(T_i + \frac{T_d}{N}\right) + s^2 T_i T_d \left(1 + \frac{1}{N}\right)}{sT_i \left( 1 + \frac{sT_d}{N}\right)}$.\newline
     $R_{FF} = \frac{R_1}{R_2} =  \frac{1+ s\left(bT_i + \frac{T_d}{N}\right) + s^2 T_i T_d \left(c + \frac{b}{N}\right)}{1 + s \left( T_i + \frac{T_d}{N} \right) + s^2 T_i T_d \left( 1 + \frac{1}{N} \right)}$
-    \newpage\section{Cenno al controllo di sistemi instabili}
+    \section{Cenno al controllo di sistemi instabili}
     Vedremo 2 casi:
     \begin{itemize}
         \item Sistema del prim'ordine con un polo instabile: es. $P(S) = \frac{\mu}{1-s \tau}$.\newline
@@ -1054,7 +1057,7 @@
         \end{center}
     \end{itemize}
     \subsection{Scelta di $T_s$}
-    Problema: abbiamo un segnale $f(t)$ che facciamo entrare in un campionatore e otteniamo un segnale $f^{#}(t)$ o $f^*(k)$, che a sua volta entra in un ZOH e otteniamo un segnale $y(t)$. L'ingresso e l'uscita di questo sistema sono a tempo continuo, ma hanno un intermezzo a tempo discreto.\newline
+    Problema: abbiamo un segnale $f(t)$ che facciamo entrare in un campionatore e otteniamo un segnale $f^{\#}(t)$ o $f^*(k)$, che a sua volta entra in un ZOH e otteniamo un segnale $y(t)$. L'ingresso e l'uscita di questo sistema sono a tempo continuo, ma hanno un intermezzo a tempo discreto.\newline
     \newline
     \textbf{Impulso di Dirac S(t)}
     \[
@@ -1070,15 +1073,15 @@
     \]
     \ \newline
     \subsubsection{Modello del campionatore}
-    Il campionamento mi genera un segnale discreto $f^*(k) = f(k T_s)$, noi definiamo un segnale nel tempo continuo $f^# (t)$ che è un treno d'impulsi equivalente, che ci servirà per poterne fare una trasformata di Laplace.\newline
+    Il campionamento mi genera un segnale discreto $f^*(k) = f(k T_s)$, noi definiamo un segnale nel tempo continuo $f^\# (t)$ che è un treno d'impulsi equivalente, che ci servirà per poterne fare una trasformata di Laplace.\newline
     \newline
-    Definiamo a tempo continuo $f^# (t) = \sum_{k=0}^{\infty} f(t) \delta(t-kT_s) = f(t) \sum_{k=0}^{\infty} \delta(t-kT_s) = f(t) \delta_{T_s} (t)$.\newline
+    Definiamo a tempo continuo $f^\# (t) = \sum_{k=0}^{\infty} f(t) \delta(t-kT_s) = f(t) \sum_{k=0}^{\infty} \delta(t-kT_s) = f(t) \delta_{T_s} (t)$.\newline
     \newline
-    Osservazione: posso anche scrivere $f^# (t) = \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s)$.\newline
+    Osservazione: posso anche scrivere $f^\# (t) = \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s)$.\newline
     \newline
-    Ora possiamo fare la trasformata di Laplace di $f^#(k)$:
+    Ora possiamo fare la trasformata di Laplace di $f^\#(k)$:
     \[
-        F^# (s) = \int_{0}^{\infty} \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) \int_{0}^{\infty} \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) e^{-skT_s}
+        F^\# (s) = \int_{0}^{\infty} \sum_{k=0}^{\infty} f(kT_s) \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) \int_{0}^{\infty} \delta(t-kT_s) e^{-st} dt = \sum_{k=0}^{\infty} f(kT_s) e^{-skT_s}
     \]
     \ \newline
     Possiamo anche però fare la trasformata Zeta di $f^*(k)$:
@@ -1088,23 +1091,23 @@
     \ \newline
     E notiamo che le due trasformate si assomigliano, infatti:
     \[
-        F^*(e^{sT_s}) = \sum_{k=0}^{\infty} f(kT_s)e^{-skT_s} = F^#(s)
+        F^*(e^{sT_s}) = \sum_{k=0}^{\infty} f(kT_s)e^{-skT_s} = F^\#(s)
     \]
     \ \newline
-    Ma che relazione c'è tra le trasformate di Laplace di $f(t)$ e di $f^#(t)$?\newline
+    Ma che relazione c'è tra le trasformate di Laplace di $f(t)$ e di $f^\#(t)$?\newline
     Premessa: vale il risultato $\delta_{T_s} (t) = \sum_{k=-\infty}^{\infty} \frac{1}{T_s} e^{j k \frac{2\pi}{T_s}t}$.\newline
-    Allora $f^#(t) = f(t) \delta_{T_s}(t) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} f(t) e^{j k \frac{2\pi}{T_s}t}$, la cui trasformata di Laplace è $\frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \frac{2\pi}{T_s})$, dove $\frac{2\pi}{T_s}$ prende il nome di $\omega_S$ "frequenza di campionamento" e $F$ è la trasfomrata di Laplace di $f(t)$.\newline
-    Ovvero $F^#(s) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \omega_s)$.\newline
+    Allora $f^\#(t) = f(t) \delta_{T_s}(t) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} f(t) e^{j k \frac{2\pi}{T_s}t}$, la cui trasformata di Laplace è $\frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \frac{2\pi}{T_s})$, dove $\frac{2\pi}{T_s}$ prende il nome di $\omega_S$ "frequenza di campionamento" e $F$ è la trasfomrata di Laplace di $f(t)$.\newline
+    Ovvero $F^\#(s) = \frac{1}{T_s} \sum_{k=-\infty}^{\infty} F (s- j k \omega_s)$.\newline
     \newline
     Abbiamo quindi fino ad ora fatto il campionamento, ci serve ora analizzare l'holder (ZOH).\newline
-    Lo schema che analiziamo è costituito da un segnale discreto $F^*(k) = imp(k)$ (che equivale nel tempo continuo a una $f^#(t) = imp(t) = \delta(t)$) in ingresso a un ZOH che ha come uscita un $y(t)$ a tempo continuo.\newline
+    Lo schema che analiziamo è costituito da un segnale discreto $F^*(k) = imp(k)$ (che equivale nel tempo continuo a una $f^\#(t) = imp(t) = \delta(t)$) in ingresso a un ZOH che ha come uscita un $y(t)$ a tempo continuo.\newline
     \newline
     La funzione di trasferimento dello ZOH è uguale alla $\frac{\mathcal{L}[uscita]}{\mathcal{L}[ingresso]} = \frac{1-e^{-sT_s}}{s}$.\newline
     \newline
     Mettendo tutto insieme:\newline
-    Abbiamo un segnale $f(t)$ che viene fornito a un campionatore che produce un segnale che posso interpretare nel tempo continuo come $f^#(t)$ (con trasformata di Laplace $F^#(s)$) o nel tempo discreto come $f^*(k)$ (con trasformata Zeta $F^*(z)$). Infine questo segnale entra in uno ZOH che produce il segnale $y(t)$.\newline
+    Abbiamo un segnale $f(t)$ che viene fornito a un campionatore che produce un segnale che posso interpretare nel tempo continuo come $f^\#(t)$ (con trasformata di Laplace $F^\#(s)$) o nel tempo discreto come $f^*(k)$ (con trasformata Zeta $F^*(z)$). Infine questo segnale entra in uno ZOH che produce il segnale $y(t)$.\newline
     \newline
-    Abbiamo quindi ottenuto che $Y(s) = \frac{1-e^{-sT_s}}{s} F^#(s) = \frac{1- e^{-sT_s}}{sT_s} \sum_{k=-\infty}^{\infty} F(s-j k \omega_s)$.\newline
+    Abbiamo quindi ottenuto che $Y(s) = \frac{1-e^{-sT_s}}{s} F^\#(s) = \frac{1- e^{-sT_s}}{sT_s} \sum_{k=-\infty}^{\infty} F(s-j k \omega_s)$.\newline
     Chiamiamo ora $H_0(s)$ la funzione di trasferimento di sampler and holder, il temrine $\frac{1- e^{-sT_s}}{sT_s}$.\newline
     \newline
     Quindi la trasformata del segnale di campionato e mantenuto è $H_0(s)$ che moltiplica la trasformata di laplace del segnale di partenza più infinite sue repliche a distanza $\omega_s$.\newline
@@ -1114,5 +1117,39 @@
     Supponendo quindi che $T_s$ sia ben scelto, ovvero che non ci siano nel segnale campionato componenti (significative) a frequenza superiore a $\frac{\omega_s}{2}$, ci basta:
     \begin{itemize}
         \item tenere conto della sola fondamentale  $F(s)$;
-        \item considerare $H_0(j \omega)$ soltanto per $\omega< \omega_s/2$ e per $\omega< \omega_s /2$: $H_0(j \omega) \sim  e^{\frac{-j \omegaT_s}{2}}$.
+        \item considerare $H_0(j \omega)$ soltanto per $\omega< \omega_s/2$ e per $\omega< \omega_s /2$: $H_0(j \omega) \sim  e^{\frac{-j \omega T_s}{2}}$.
     \end{itemize}
+    \begin{center}
+        \includegraphics[height=3cm]{../formulario/img13.JPG}
+    \end{center}
+    Nel progetto a TC, quando è noto che si dovrà realizzare il regolatore con tecnologia digitale, si tiene conto di sampling and hold tramite un ritardo aggiuntivo nel loop di entità $\frac{T_s}{2}$.\newline
+    \newline
+    Vediamo quindi i criteri per la scelta di $T_s$:
+    \begin{itemize}
+        \item Criterio 1: più $\omega_c$ è grande, più il segnale campionato $y(t)$ conterrà componenti in alta frequenza. Facciamo la pulsazione di campionamento $\omega_s = \frac{2\pi}{T_s}$ proporzionale a $\omega_c$: $\omega_s = K \omega_c$, con $K \sim 10 - 50$.
+        \item Criterio 2: Ipotizzando di porre $\omega_s$ superiore a $\omega_c$, definiamo la frequenza di Nyquist come $\omega_N = \frac{\omega_s}{2}$ (ancora maggiore di $\omega_c$) che rappresenta la massima frequenza rappresentabile con campionamento a passo $T_s$. Consideriamo ora il modulo di $|L(j \omega_N)|$. In un problema non patologico, alla frequenza di Nyquist ho $d_r$ attenuato (bene), $d_a$ non c'è (bene) e anche $w$ attenuato (va comunque bene, velcità di risposta ok, ho impostato io $\omega_c$), più il $|L(j \omega_N)|$ è piccolo, meno di ha aliasing. Quindi per trovare $\omega_s$ si traccia la riga orizzontale a cui si vuole il $|L(j \omega_N)|$, dove interseca $|L|$ ci sarà la frequenza $\omega_N$, si moltiplica per due e si trova $\omega_s$.
+        \item Criterio 3: Il sempling and hold introduce un ritardo di $\frac{T_s}{2}$, che non cambia $\omega_c$, ma riduce $\phi_m$ di $\omega_c \frac{T_s}{2}$. Quindi il vincolo da imporre è: $\omega_c \frac{T_s}{2} < $ di un certo valore (da notare che $\omega_c \frac{T_s}{2}$ è in radianti !).
+        \item Criterio 4: $T_s$ molto minore (diciamo non oltre a $\frac{1}{5}$) della più piccola costante di tempo presente nel regolatore.
+    \end{itemize}
+    \ \newline
+    Mancano ora solo le considerazioni sul ritardo introdotto dal calcolatore che calcola $U^*(k)$. L'algoritmo si divide in:
+    \begin{itemize}
+        \item Lettura degli ingressi (consideriamo un tempo trascurabile);
+        \item Calcolo del controllo (questo passaggio è variabile, ha una durata che dipende da progetto a progetto);
+        \item Scrittura delle uscite (consideriamo un tempo trascurabile);
+    \end{itemize}
+    Consisderiamo il tempo di calcolo $\tau_C$ e vediamo i tre casi possibili:
+    \begin{itemize}
+        \item caso 1: $\tau_c$ è variabile, ma molto minore di $T_s$ (tutto ok);
+        \item caso 2: $\tau_c$ costante, ma non trascurabile rispetto a $T_s$ (problema);
+        \item caso 3: $\tau_c$ variabile e non trascurabile rispetto a $T_s$ (problema);
+    \end{itemize}
+    per gli ultimi due casi consideriamo il caso pessimo con $\tau_c = T_s$. 
+    \newline
+    \newline
+    Riassumendo
+    \begin{itemize}
+        \item (caso 1) se solo effetto sampling and hold e ritardo calcolabile trascurabile, allora $\frac{1}{2} \omega_c T_s <$ un certo valore.
+        \item (caso 2 e 3) se ritardo del calcolo non trascurabile, allora $\frac{3}{2} \omega_c T_S <$ un certo valore.
+    \end{itemize}
+\end{multicols*}
