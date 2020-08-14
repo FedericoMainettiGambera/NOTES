@@ -1,0 +1,188 @@
+\textbf{Lagrange TC}
+\[
+    x(t) = x_L(t) + x_F(t) =e^{At} x(0) + \int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau
+\]
+\[
+    y(t) 1 = y_L(t) + y_F(t) = ce^{At}x(0) + c \int_{0}^{t}e^{A(t-\tau)}bu(\tau)d \tau + du(t)
+\]
+\textbf{Lagrange TD}
+\[
+    x(k)= x_L(k) + x_F(k) =A^k x(0) + \sum_{l=0}^{k-1}A^{k-l-1}bu(l)
+\]
+\[
+    y(k) = y_L(k) + y_F(k) = cx(k)+du(k) =cA^k x(0) + c\sum_{l=0}^{k-1}A^{k-l-1}bu(l) + du(k)
+\]
+\textbf{Esponenziale di matrice}
+\[
+    e^{At} = e^{TDT^{-1} t} = T e^{Dt} T^{-1} = \dots
+\]
+\textbf{Stabilità a TC:}
+\begin{itemize}
+    \item Tutti gli autovalori di $A$ hanno $Re < 0 \Longleftrightarrow $ sistema AS;
+    \item Almeno un autovalore di $A$ ha $Re > 0 \Longrightarrow$ sistema I;
+    \item Tutti gli autovalori di $A$ hanno $Re \leq 0$ e ne esiste almeno uno con $Re = 0$ $\Longrightarrow$ $\begin{cases}
+        \text{sistema I; (mov lib diverge per t -> inf)}\;\\
+        \text{oppure sistema S (mov lib limitato per t -> inf), ma non AS.}\;
+    \end{cases}$.
+\end{itemize}
+\textbf{Stabilità a TD:}
+\begin{itemize}
+    \item Tutti gli autovalori di $A$ hanno $|\lambda_i| < 1$ $\Longleftrightarrow$ sistema AS.
+    \item Almeno un autovalore di $A$ con modulo $|\lambda_i| > 1$ $\Longrightarrow$ sistema I.
+    \item Tutti gli autovalori di $A$ hanno $|\lambda_i| \leq 1$ e ne esiste almeno uno tale che $|\lambda_1| = 1$ $\Longrightarrow$ $\begin{cases}
+        \text{sistema I;}\;\\
+        \text{oppure sistema S, ma non AS.}\;
+    \end{cases}$.
+\end{itemize}
+\textbf{Stabilità e A:}
+\begin{itemize}
+    \item se $det(A) = 0$ esiste $S_i = 0$ $\Longrightarrow$ no AS.
+    \item se $tr(A) >0$ $\Longrightarrow$ sistema I.
+    \item se $tr(A) = 0$ $\Longrightarrow$ no AS.
+    \item Se $Re(S_i)<0$ per ogni $i$ (cioè se il sistema è asintoticamente stabile), allora i coefficienti di $\Pi(S)$ sono tutti concordi e non nulli \newline
+    \textbf{oss.} Errore tipico: il viceversa vale solo per polinomi del secondo ordine.
+\end{itemize}
+\textbf{Routh:}
+\[
+    w_i = - \frac{1}{q_1} det\left[\begin{matrix}
+        h_1 & h_{i+1} \\
+        q_1 & q_{i+1}
+    \end{matrix}\right]
+\]
+\textbf{Trasformata di Laplace}\newline
+Ritardo: $\mathcal{L}[ v(t - \tau)] = e^{-s \tau} \mathcal{L}[v(t)]$ (spesso utilizzata al contrario per Heaviside: $\mathcal{L}^{-1}\left[\frac{N(s)}{D(s)}e^{-s \tau}\right] \rightarrow $ Heaviside di $\frac{N(s)}{D(s)}$ ottengo $y(t)$, poi con $e^{-s \tau}$ aggiungo ritardo $\tau$ e $\rightarrow  y(t- \tau)$)
+\renewcommand{\arraystretch}{2}
+    \begin{center}
+        \begin{tabular}{ |c|c| } 
+        \hline
+        \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$v(t)$ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;& \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$V(s)$ \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\\ 
+        \hline
+        $k \cdot imp(t)$ & $k \cdot 1$ \\ 
+        $k \cdot sca(t)$ & $k \cdot \frac{1}{s}$  \\ 
+        $k \cdot ram(t) =k \cdot t \cdot  sca(t)$ & $k \cdot \frac{1}{s^2}$ \\
+        $k \cdot e^{at}sca(t)$ & $k \cdot \frac{1}{s-a}$ \\ 
+        $t^{n}\cdot e^{at}sca(t)$ & $\frac{n!}{(s-a)^{n+1}}$\\ 
+        $\frac{1}{(n-1)!} t^{n-1}e^{-at}$ & $\frac{1}{(s+a)^n}$\\
+        \hline
+        \end{tabular}
+    \end{center}
+    \renewcommand{\arraystretch}{1}
+Teorema del valore finale: Se $V(s) = \mathcal{L}[v(t)]$ ed esiste $\lim_{t\rightarrow +\infty} v(t)$ o equivalentemente $V(s)$ ha solo poli con $Re< 0$ o nell'origine, allora $\lim_{t\rightarrow +\infty} v(t) = \lim_{s\rightarrow 0} s \cdot V(s)$.\newline
+\textbf{Funzione di Trasferimento:}
+\[
+    X(s) = X_L(s) + X_F(s)
+\]
+\[
+    \begin{cases}
+        X_L(s) = (sI-A)^{-1} x(0)\\
+        X_F(s) = (sI-A) ^{-1} b U(s)
+    \end{cases}
+\]
+\[
+    Y(s) = cX(s) + dU(s) = Y_L(s) + Y_F(s)
+\]
+\[
+    \begin{cases}
+        Y_L(s) = c(sI-A)^{-1} x(0)\\
+        Y_F(s) = [c(sI-A)^{-1} b + d]U(s)
+    \end{cases}
+\]
+Spesso può essere utile calcolare la $Y_F(s)$ a partire dall'equazione $\frac{Y(s)}{U(s)} = G(s)$
+\[
+    G(s) := c(sI-A)^{-1} b + d
+\]
+\textbf{Raggiungibilità:}
+\[
+    M_R= \;\text{matrice di raggiungibilità}\; =\left[\begin{matrix}
+        b & Ab & A^2 b & \dots & A^{n-1}b
+    \end{matrix}\right]
+\] 
+\textbf{Osservabilità:}
+\[
+    M_O = \left[\begin{matrix}
+        c' & A'c' & \dots & (A^{n-1})' c'
+    \end{matrix}\right]
+\]
+\textbf{Diagramma di Bode del modulo}: 
+\begin{enumerate}
+    \item Tracciare il diagramma di Bode del modulo di $\frac{\mu}{s^g}$ (è una retta la cui pendenza viene ricavata da: $-20 \cdot g \frac{dB}{decade}$; per capire dove interseca l'asse delle $\omega$ basta ricavare il valore di $\omega$ per cui $\left| \frac{\mu}{\omega^g} \right| = 1$; se la retta non ha pendenza allora è una retta orizzontale all'altezza di $|\mu|_{dB}$).
+    \item Segnare sull'asse delle $\omega$ le frequenze d'angolo dei poli (radici del denominatore) e zeri (radici del numeratore) non in $s=0$ (perchè son già presenti nel punto precedente).\newline
+    Quando si incontra una frequenza d'angolo di uno zero, la pendenza aumenta di $1$, quando si incontra una frequenza d'angolo di un polo, la pendenza diminuisce di $1$. (Ricordiamo che per 1 di pendenza si intendono $20 dB/decade$).
+\end{enumerate}
+\textbf{Diagramma di Bode della fase}:
+\begin{enumerate}
+    \item Il diagramma di Bode della fase parte al valore di $arg(\frac{\mu}{(j \omega)^g})$, che è calcolabile sommando i contributi di $\mu$ e $\frac{1}{s^g}$ nel seguente modo:
+    \[
+        \mu \rightarrow \begin{cases}
+            0^o \;\;\;& se > 0\\
+            -180^o \;\;\; & se <0
+        \end{cases} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \frac{1}{s^g}\rightarrow -g \cdot 90^o
+    \]
+    \item zero "a sinistra" la fase aumenta di $90^o$;\newline
+    zero "a destra" la fase diminuisce di $90^o$;\newline
+    polo "a sinistra" la fase diminuisce di $90^o$;\newline
+    polo "a destra" la fase aumenta di $90^o$.
+\end{enumerate}
+\textbf{Trasformata Zeta:}
+\begin{itemize}
+    \item impulso: $\mathcal{Z}[imp(k)] = 1$
+    \item scalino: $\mathcal{Z}[sca(k)] = \frac{z}{z-1}$ per $|z|>1$
+    \item esponenziale: $\mathcal{Z}[a^k sca(k)] = \frac{z}{z-a}$ per $|z| > |a|$
+\end{itemize}
+\[
+    X(z) = (zI-A)^{-1} z x(0) + (zI-A)^{-1} b U(z)
+\]
+\[
+    Y(z) = cX(z) + dU(z) = c(zI-A)^{-1} z x(0) + [c(zI-A)^{-1} b + d] U(z)
+\]
+\[
+    c(zI-A)^{-1} b + d
+\]
+\textbf{Scelta $T_s$:}
+\[
+    \omega_S =\frac{2\pi}{T_s} = \text{"\textbf{frequenza di campionamento}"}
+\]
+\[
+    \omega_N = \frac{\omega_s}{2} = \text{\textbf{frequenza di Nyquist}}
+\]
+Quindi per trovare $\omega_s$ si traccia (nel diagramma di Bode del modulo di $L(s)$) la riga orizzontale a cui si vuole il $|L(j \omega_N)|$, dove interseca $|L|$ ci sarà la frequenza $\omega_N$, si moltiplica per due e si trova $\omega_s$.\newline
+Il sempling and hold introduce un ritardo che influenza solo $\phi_m$: $\omega_c \frac{T_s}{2} < $ di un certo valore (da notare che $\omega_c \frac{T_s}{2}$ è in radianti !).\newline
+Ritardi di calcolo:
+\begin{itemize}
+    \item caso 1: $\tau_c$ è variabile, ma molto minore di $T_s$ (tutto ok);
+    \item caso 2: $\tau_c$ costante, ma non trascurabile rispetto a $T_s$ (problema);
+    \item caso 3: $\tau_c$ variabile e non trascurabile rispetto a $T_s$ (problema);
+\end{itemize}
+Soluzione:
+\begin{itemize}
+    \item (caso 1) se solo effetto sampling and hold e ritardo calcolabile trascurabile, allora $\frac{1}{2} \omega_c T_s <$ un certo valore.
+    \item (caso 2 e 3) se ritardo del calcolo non trascurabile, allora $\frac{3}{2} \omega_c T_S <$ un certo valore.
+\end{itemize}
+\textbf{Discretizzazione approssimata:}
+\begin{itemize}
+    \item Approssimazione 1: metodo di \textbf{Eulero esplicito} o delle differenze in avanti $R^*(z) = R\left(\frac{z-1}{T_s}\right)$;
+    \item Approssimazione 2: metodo di \textbf{Eulero implicito} o delle differenze all'indietro $R^*(z) = R\left(\frac{1-z^{-1}}{T_s}\right) = R\left(\frac{z-1}{z T_s}\right)$
+\end{itemize}
+\textbf{Tustin:}
+\[
+    R^*(z) = R( \frac{2}{T_s} \cdot \frac{z-1}{z+1})
+\]
+\textbf{Da $R^*(z)$ alla legge di controllo a TD:}\newline
+$R^*(z) = $ che d'ora in poi indichiamo solo come $R(z) = \frac{2z^2 - 3z +4}{z^2 -z}$. 
+\begin{itemize}
+    \item Perchè sia realizzabile l'unico vincolo è che il grado del numeratore sia minore o uguale al grado del denominatore.
+    \item  Detto $U(z)$ l'uscita di $R(z)$ e $E(z)$ l'ingresso di $R(z)$, sappiamo che $\frac{U(z)}{E(z)} = R(z) = \frac{2z^2 - 3z +4}{z^2 -z}$.
+    \item Tolgo i denominatori: $(z^2-z) U(z) = (2z^2 -3z+4) E(z)$.
+    \item Ridistribuisco il prodotto: $z^2 U(z) - z U(z) = 2z^2 E(z) - 3zE(z) + 4 E(z)$.
+    \item Antitrasformo (condizioni iniziali nulle): $u(k+2) - u(k+1) = 2e(k+2) -3e(k+1) + 4e(k)$.
+    \item Risolvo per "l'uscita più recente" e scalo i tempi: in questo caso quella più recente è $u(k+2)$, quindi $u(k) = u(k-1) + 2 e(k) -3e(k-1) + 4e(k-2)$.
+    \item Quindi, usando come convenzione "detta la generica variabile $x_n := x(k-n)$", possiamo scrivere il seguente algoritmo di controllo per ogni $T_s$:
+    \begin{itemize}
+        \item ottieni $e$;
+        \item $u = u_1 +  2e - 3e_1 + 4e_2$;
+        \item $e_2 = e_1$;
+        \item $e_1 = e$;
+        \item $u_1 = u$;
+        \item applica $u$.
+    \end{itemize}
+\end{itemize}
