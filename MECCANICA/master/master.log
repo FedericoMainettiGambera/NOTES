@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  14 AUG 2020 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  14 AUG 2020 19:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -657,28 +657,62 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione1/lezione1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--16
-
- []
-
 LaTeX Font Info:    Try loading font information for OMS+cmss on input line 20.
 LaTeX Font Info:    No file OMScmss.fd. on input line 20.
+
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbullet' on input line 20.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--31
+
+ []
+
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+<../lezione1/img1.JPG, id=189, 435.87843pt x 418.56375pt>
+File: ../lezione1/img1.JPG Graphic file (type jpg)
+<use ../lezione1/img1.JPG>
+Package pdftex.def Info: ../lezione1/img1.JPG  used on input line 53.
+(pdftex.def)             Requested size: 88.88344pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--75
 
  []
 
-[3]) [4] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione2/lezione2.tex [5]
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+
+ []
+
+<../lezione1/img2.JPG, id=190, 634.62094pt x 374.90062pt>
+File: ../lezione1/img2.JPG Graphic file (type jpg)
+<use ../lezione1/img2.JPG>
+Package pdftex.def Info: ../lezione1/img2.JPG  used on input line 80.
+(pdftex.def)             Requested size: 144.48784pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--88
+
+ []
+
+[3 <../lezione1/img1.JPG> <../lezione1/img2.JPG>]
+<../lezione1/img3.JPG, id=197, 659.46375pt x 389.20406pt>
+File: ../lezione1/img3.JPG Graphic file (type jpg)
+<use ../lezione1/img3.JPG>
+Package pdftex.def Info: ../lezione1/img3.JPG  used on input line 109.
+(pdftex.def)             Requested size: 144.62965pt x 85.35826pt.
+ [4 <../lezione1/img3.JPG>]) [5] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione2/lezione2.tex [6]
 Underfull \hbox (badness 10000) in paragraph at lines 45--68
 
  []
@@ -698,7 +732,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--68
 
  []
 
-[6] [7]) [8] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione3/lezione3.tex
+[7] [8]) [9] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione3/lezione3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--16
 
  []
@@ -713,7 +747,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--16
 
  []
 
-[9]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 81--85
 
  []
@@ -723,12 +757,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
-[10]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
-[11]) [12] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione4/lezione4.tex
+[12]) [13] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione4/lezione4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
  []
@@ -743,32 +777,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
  []
 
-) [13] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione5/lezione5.tex) [14] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione6/lezione6.tex) [15]
+) [14] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione5/lezione5.tex) [15] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione6/lezione6.tex) [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 19.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
  (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 2AAFBA90CC640002739C49AACA137C66;2011.
+(rerunfilecheck)             Checksum: 42742D601005B8B8DE0EDDF5A4FA66E3;2088.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17962 strings out of 492609
- 326685 string characters out of 6132818
- 434916 words of memory out of 5000000
- 21452 multiletter control sequences out of 15000+600000
+ 17981 strings out of 492609
+ 327057 string characters out of 6132818
+ 436916 words of memory out of 5000000
+ 21465 multiletter control sequences out of 15000+600000
  13172 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,11n,73p,1331b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.pdf (15 pages, 213419 bytes).
+Output written on c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.pdf (16 pages, 299127 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 286 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 294 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 
