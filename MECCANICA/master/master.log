@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  14 AUG 2020 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  18 AUG 2020 16:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -676,7 +676,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--31
  []
 
 [2]
-<../lezione1/img1.JPG, id=189, 435.87843pt x 418.56375pt>
+<../lezione1/img1.JPG, id=184, 435.87843pt x 418.56375pt>
 File: ../lezione1/img1.JPG Graphic file (type jpg)
 <use ../lezione1/img1.JPG>
 Package pdftex.def Info: ../lezione1/img1.JPG  used on input line 53.
@@ -691,7 +691,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
-<../lezione1/img2.JPG, id=190, 634.62094pt x 374.90062pt>
+<../lezione1/img2.JPG, id=185, 634.62094pt x 374.90062pt>
 File: ../lezione1/img2.JPG Graphic file (type jpg)
 <use ../lezione1/img2.JPG>
 Package pdftex.def Info: ../lezione1/img2.JPG  used on input line 80.
@@ -707,12 +707,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--88
  []
 
 [3 <../lezione1/img1.JPG> <../lezione1/img2.JPG>]
-<../lezione1/img3.JPG, id=197, 659.46375pt x 389.20406pt>
+<../lezione1/img3.JPG, id=192, 659.46375pt x 389.20406pt>
 File: ../lezione1/img3.JPG Graphic file (type jpg)
 <use ../lezione1/img3.JPG>
 Package pdftex.def Info: ../lezione1/img3.JPG  used on input line 109.
 (pdftex.def)             Requested size: 144.62965pt x 85.35826pt.
- [4 <../lezione1/img3.JPG>]) [5] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione2/lezione2.tex [6]
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--118
+
+ []
+
+<../lezione1/img4.JPG, id=193, 719.68875pt x 356.83313pt>
+File: ../lezione1/img4.JPG Graphic file (type jpg)
+<use ../lezione1/img4.JPG>
+Package pdftex.def Info: ../lezione1/img4.JPG  used on input line 119.
+(pdftex.def)             Requested size: 172.15779pt x 85.35826pt.
+[4 <../lezione1/img3.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 121--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--128
+
+ []
+
+<../lezione1/img5.JPG, id=202, 584.93532pt x 382.42876pt>
+File: ../lezione1/img5.JPG Graphic file (type jpg)
+<use ../lezione1/img5.JPG>
+Package pdftex.def Info: ../lezione1/img5.JPG  used on input line 137.
+(pdftex.def)             Requested size: 130.55156pt x 85.35826pt.
+) [5 <../lezione1/img4.JPG> <../lezione1/img5.JPG>] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione2/lezione2.tex [6]
 Underfull \hbox (badness 10000) in paragraph at lines 45--68
 
  []
@@ -784,25 +829,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 19.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 19.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 19.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 42742D601005B8B8DE0EDDF5A4FA66E3;2088.
+(rerunfilecheck)             Checksum: 2AAFBA90CC640002739C49AACA137C66;2011.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17981 strings out of 492609
- 327057 string characters out of 6132818
- 436916 words of memory out of 5000000
- 21465 multiletter control sequences out of 15000+600000
+ 17990 strings out of 492609
+ 327241 string characters out of 6132818
+ 434916 words of memory out of 5000000
+ 21472 multiletter control sequences out of 15000+600000
  13172 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,11n,73p,1331b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,73p,1149b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.pdf (16 pages, 299127 bytes).
+Output written on c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.pdf (16 pages, 356104 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 294 compressed objects within 3 object streams
+ 333 PDF objects out of 1000 (max. 8388607)
+ 290 compressed objects within 3 object streams
  51 named destinations out of 1000 (max. 500000)
- 284 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

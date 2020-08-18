@@ -84,7 +84,7 @@ Cosa è $\Delta \vec{P}$? è il vettore che unisce il punto $P$ dalla posizione 
 \newline
 Dunque $\lim_{\Delta t\rightarrow 0} \left|\frac{\Delta \vec{P}}{\Delta s}\right| = 1$. Oltre ad avere quindi modulo pari a $1$, tenderà ad essere tangente alla traiettoria. \textbf{La velocità è sempre tangente alla traiettoria}.\newline
 \newline
-C'è più di un modo per definire la \textbf{velocità}:
+C'è più di un \textbf{modo} per definire la \textbf{velocità}:
 \begin{itemize}
     \item Il primo lo abbiamo appena visto: definita come $\vec{v} = \dot{s} \cdot \vec{t} = v \cdot \vec{t}$ (dove per $\vec{t}$ si intende il versore tangente alla traiettoria)
     \item Il secondo metodo sfrutta le coordinate cartesiane: $\vec{P} = x \vec{i} + y \vec{j}$: $\vec{v} = \dot{x} \vec{i} + \dot{y} \vec{j} = v_x \vec{i} + v_y \vec{j}$.
@@ -101,26 +101,39 @@ dove il termine $\frac{d \vec{P}}{ds}$ rappresenta il versore tangente alla trai
 \[
     \vec{a} = \ddot{s} \frac{d \vec{P}}{ds} + \dot{s}^2 \frac{d^2 \vec{P}}{ ds^2} = \ddot{s} \vec{t} + \frac{ \dot{s}^2}{\rho}\vec{n} = \dot{v} \vec{t} + \frac{v^2}{\rho}\vec{n}
 \]
-\subsubsection{Raggio osculatore}
+\subsubsection*{Raggio osculatore}
 Verifichiamo ora come $\frac{d^2 \vec{P}}{ds^2} = \frac{\vec{n}}{\rho}$:\newline
 Qualsiasi sia la traiettoria descritta nel piano, se noi consideriamo un qualsiasi istante di tempo, notiamo che la traiettoria può essere approssimata con un cerchio, che prende il nome di cerchio osculatore, il cui raggio è detto raggio osculatore.\newline
 [immagine dagli appunti del prof]
 \begin{center}
     \includegraphics[height=3cm]{../lezione1/img3.JPG}
 \end{center}
-\rule{\textwidth}{0,4pt}\newline
-\rule{\textwidth}{0,4pt}\newline
-\rule{\textwidth}{0,4pt}\newline
-[TIME STAMP = 1:12.10]\newline
-Questo cerchio condivide con la traiettoria il punto stesso, la derivata prima (tangente) e la derivata seconda (curvatura). La curvatura $c$ è l'inverso del raggio osculatore, $c = \frac{1}{\rho}$. Se definiamo la terna destrorsa (con asse $z$ uscente dal piano verso di noi e asce $x$ parallelo alla tangente) avremo che il versore $\vec{n}$ è diretto verso il centro del cerchio osculatore.\newline
+Questo cerchio condivide con la traiettoria il punto stesso, la derivata prima (tangente) e la derivata seconda (curvatura). \newline
+\newline
+La \textbf{curvatura} $c$ è l'inverso del raggio osculatore, $c = \frac{1}{\rho}$. Se definiamo la terna destrorsa (con asse $z$ uscente dal piano verso di noi e asce $x$ parallelo alla tangente) avremo che il versore $\vec{n}$ è diretto verso il centro del cerchio osculatore.\newline
+\newline
 Per dimostrare $\frac{d^2 \vec{P}}{ds^2} = \frac{\vec{n}}{\rho}$, usiamo $\frac{d}{ds} \left(\frac{d \vec{P}}{ds}\right) = \frac{d \vec{t}}{ds} = \lim_{\Delta t\rightarrow 0 \;\text{oppure}\;\Delta s \rightarrow 0} \frac{\Delta \vec{t}}{\Delta s} = \lim_{\Delta t\rightarrow 0} \frac{\vec{t'}- \vec{t}}{\Delta s}$.\newline
+\newline
 [immagine dagli appunti del prof]\newline
-Se consideriamo un generico piccolo spostamento lungo la traiettoria $ds$, questo tratto di traiettoria coinciderà con una sezione del cerchio osculatorio, di cui possiamo calcolare l'angolo $d\alpha$ (rosso nell'immagine). Consideriamo anche i punti estremi (di partenza e di fine) dello spostamento $ds$ che sono $P$ e $P'$. Per $P$ e $P'$ consideriamo le tangenti e gli angoli $\alpha$ (giallo e azzurrino) che formano con l'asse delle ascisse. La variazione angolare fra queste due $\alpha$ sarà pari all'angolo $d \alpha$ del cerchio osculatorio. Quindi fra $\vec{t}$ e $\vec{t'}$ ci sarà un angolo pari a $d \alpha$, ed inoltre il vettore differenza $d \vec{t} = \vec{t} - \vec{t'}$ (in azzurro-blu) tenderà a $0$ all'accorciarsi della tratto di traiettoria considerata. Coi calcoli esprimiamo questo concetto dicendo che $d \vec{t} = \vec{t} d \alpha = \vec{t'} d \alpha$ e quindi $|d \vec{t}| = 1 d \alpha$, e considerando che $ds = \rho d \alpha$ otteniamo che $\left|\frac{d^2 \vec{P}}{ds^2}\right| = \left| \frac{d \vec{t}}{ds} \right| = \left| \frac{1 d \alpha}{\rho d \alpha} \right| = \frac{1}{\rho}$. Ma essendo $d \vec{t} \perp \vec{t}$, questo andrà a coincidere col versore normale $\vec{n}$.\newline
-Abbiamo quindi dimostrato che $\vec{a} = \ddot{s} \frac{d \vec{P}}{ds} + \dot{s}^2 \frac{d^2 \vec{P}}{ ds^2} = \ddot{s} \vec{t} + \frac{ \dot{s}^2}{\rho}\vec{n} = \dot{v} \vec{t} + \frac{v^2}{\rho}\vec{n}$. La prima componente $\vec{a_t} = \dot{v} \vec{t}$ prende il nome di accellerazione tangenziale, la seconda componente $\vec{a_n} = \frac{v^2}{\rho}\vec{n}$ si chiama invece accellerazione normale. L'accellerazione tangenziale può annullarsi se per esempio siamo in presenza di un moto uniforma, in cui la velocità è costante, al contrario se siamo in presenza di un moto rettilineo, è la velocità normale ad essere nulla.\newline
-Come per la velocità, anche per l'accellerazione ci sono modi differenti per definirla:
+\begin{center}
+    \includegraphics[height=3cm]{../lezione1/img4.JPG}
+\end{center}
+Se consideriamo un generico piccolo spostamento lungo la traiettoria $ds$, questo tratto di traiettoria coinciderà con una sezione del cerchio osculatorio, di cui possiamo calcolare l'angolo $d\alpha$ (rosso nell'immagine). Consideriamo anche i punti estremi (di partenza e di fine) dello spostamento $ds$ che sono $P$ e $P'$. Per $P$ e $P'$ consideriamo le tangenti e gli angoli $\alpha$ (giallo e azzurrino) che formano con l'asse delle ascisse. La variazione angolare fra queste due $\alpha$ sarà pari all'angolo $d \alpha$ del cerchio osculatorio. Quindi fra $\vec{t}$ e $\vec{t'}$ ci sarà un angolo pari a $d \alpha$, ed inoltre il vettore differenza $d \vec{t} = \vec{t} - \vec{t'}$ (in azzurro-blu) tenderà a $0$ all'accorciarsi della tratto di traiettoria considerata.\newline
+\newline
+Coi calcoli esprimiamo questo concetto dicendo che $d \vec{t} = \vec{t} d \alpha = \vec{t'} d \alpha$ e quindi $|d \vec{t}| = 1 d \alpha$, e considerando che $ds = \rho d \alpha$ otteniamo che $\left|\frac{d^2 \vec{P}}{ds^2}\right| = \left| \frac{d \vec{t}}{ds} \right| = \left| \frac{1 d \alpha}{\rho d \alpha} \right| = \frac{1}{\rho}$. Ma essendo $d \vec{t} \perp \vec{t}$, questo andrà a coincidere col versore normale $\vec{n}$.\newline
+\newline
+Abbiamo quindi dimostrato che $\vec{a} = \ddot{s} \frac{d \vec{P}}{ds} + \dot{s}^2 \frac{d^2 \vec{P}}{ ds^2} = \ddot{s} \vec{t} + \frac{ \dot{s}^2}{\rho}\vec{n} = \dot{v} \vec{t} + \frac{v^2}{\rho}\vec{n}$. La prima componente $\vec{a_t} = \dot{v} \vec{t}$ prende il nome di \textbf{accellerazione tangenziale}, la seconda componente $\vec{a_n} = \frac{v^2}{\rho}\vec{n}$ si chiama invece \textbf{accellerazione normale}. Osserviamo che l'accellerazione tangenziale può annullarsi se per esempio siamo in presenza di un moto uniforme, in cui la velocità è costante, al contrario se siamo in presenza di un moto rettilineo, è la velocità normale ad essere nulla.\newline
+\newline
+Come per la velocità, anche per l'\textbf{accellerazione} ci sono \textbf{modi} differenti per definirla:
 \begin{itemize}
     \item Il primo metodo è quello appena visto: $\vec{a} = \ddot{s} \vec{t} + \frac{\dot{s}^2}{\rho} \vec{n}$.
     \item Il secondo metodo sfrutta il concetto di ascissa curvilinea e le coordinate cartesiane in cui $\vec{v} = \dot{x} \vec{i} + \dot{y} \vec{j}$: $\vec{a} = \ddot{c} \vec{i} + \ddot{y} \vec{j}$.
-    \item Il terzo metodo usa i numeri complessi in cui $\vec{v} = v e^{i \alpha}$: $\vec{a} = \dot{v} e^{i \alpha} + v i \dot{\alpha} e^{i \alpha}$, dove $i = e^{i \pi/2}$ e quindi $\vec{a} = \dot{v} e^{i \alpha} + v \dot{\alpha} e^{i(\alpha + \pi/2)}$. In questo caso $\vec{a_t} = \dot{v} e^{i \alpha}$ e $\vec{a_n} = v \dot{\alpha} e^{i(\alpha + \pi/2)}$. Notando che $ds = \rho d \alpha$, otteniamo $v = \frac{ds}{dt} = \rho \frac{d \alpha}{dt} = \rho \dot{\alpha}$ e se andiamo a sostituire otteniamo $\vec{a} = \dot{v} e^{i \alpha} + \frac{v^2}{\rho} e^{i(\alpha + \pi/2)}$.\newline
+    \item Il terzo metodo usa i numeri complessi in cui $\vec{v} = v e^{i \alpha}$: $\vec{a} = \dot{v} e^{i \alpha} + v i \dot{\alpha} e^{i \alpha}$, dove $i = e^{i \pi/2}$ e quindi $\vec{a} = \dot{v} e^{i \alpha} + v \dot{\alpha} e^{i(\alpha + \pi/2)}$. In questo caso $\vec{a_t} = \dot{v} e^{i \alpha}$ e $\vec{a_n} = v \dot{\alpha} e^{i(\alpha + \pi/2)}$. Notando che $ds = \rho d \alpha$, otteniamo $v = \frac{ds}{dt} = \rho \frac{d \alpha}{dt} = \rho \dot{\alpha}$ e se andiamo a sostituire otteniamo
+    \[
+        \vec{a} = \dot{v} e^{i \alpha} + \frac{v^2}{\rho} e^{i(\alpha + \pi/2)}
+    \]
     [immagine dagli appunti del prof]
+    \begin{center}
+        \includegraphics[height=3cm]{../lezione1/img5.JPG}
+    \end{center}
 \end{itemize}
