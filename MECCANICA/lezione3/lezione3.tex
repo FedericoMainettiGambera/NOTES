@@ -3,19 +3,37 @@
 \section{Analisi cinematica mediante osservatori in moto relativo}
 Fino ad ora abbiamo considerato sistemi di riferimento fissi, in questa lezione analiziamo sistemi di riferimento mobili rispetto a quello assoluto.\newline
 \newline
-\textbf{es.} [immagine dagli appunti del prof]\newline
-Carrello su cui è incernierata una barra $AP$. Se andiamo a considerare un unico sistema di riferimento assoluto (in rosso), il moto del punto $P$ è un moto rototraslatorio, ma, se noi andassimo a inserire un sistema di riverimento mobile (in verde) che trasla insieme al punto $A$, il moto del punto $P$ diventa un moto di rotazione. Abbiamo dunque scomposto il moto rototraslatorio del punto $P$ nel moto traslatorio del nuovo sistema di riferimento mobile e nel moto rotatorio del punto $P$ in questo nuovo sistema di riferimento.\newline
+\textbf{es.}\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione3/img1.JPG}
+\end{center} 
+L'immagine mostra un carrello su cui è incernierata una barra $AP$. Se andiamo a considerare un unico sistema di riferimento assoluto (in rosso), il moto del punto $P$ è un moto rototraslatorio, ma, se noi andassimo a inserire un sistema di riverimento mobile (in verde) che trasla insieme al punto $A$, il moto del punto $P$ diventa un moto di rotazione. Abbiamo dunque scomposto il moto rototraslatorio del punto $P$ nel moto traslatorio del nuovo sistema di riferimento mobile e nel moto rotatorio del punto $P$ in questo nuovo sistema di riferimento.\newline
+\rule{\textwidth}{0,4pt}
 \newline
-\textbf{es.} [immagine dagli appunti del prof]\newline
-Un asta $AB$ incernierata al pavimento che può ruotare, sull'asta può scivolare una seconda asta $CP$. Anche in questo caso il moto del punto $P$ rispetto a un unico sistema di riferimento assoluto (in rosso) sarebbe un moto rototraslatorio. Se però introduciamo un sistema di riferimento mobile (in verde) che abbia assi $Y_1$ e $X_1$ che ruotano insieme all'asse $AB$, il moto del punto $P$ diventa un moto traslatorio.\newline
-\newline
-[immagine dagli appunti del prof]\newline
+\textbf{es.}\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione3/img2.JPG}
+\end{center}
+L'immagine mostra un asta $AB$ incernierata al pavimento che può ruotare, sull'asta può, inoltre, scivolare una seconda asta $CP$. Anche in questo caso il moto del punto $P$ rispetto a un unico sistema di riferimento assoluto (in rosso) sarebbe un moto rototraslatorio. Se però introduciamo un sistema di riferimento mobile (in verde) che abbia assi $Y_1$ e $X_1$ che ruotano insieme all'asse $AB$, il moto del punto $P$ diventa un moto traslatorio.\newline
+\rule{\textwidth}{0,4pt}
+\subsection{Posizione}
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione3/img3.JPG}
+\end{center}
 Vogliamo descrivere il moto di un generico punto $P$ (velocità, posizione, accellerazione) andando a introdurre un nuovo sistema di riferimento mobile ($O_1, X_1, Y_1$) rispetto a un sistema di riferimento fisso ($O, X, Y$).\newline
 Il sistema di riferimento mobile introdotto è in moto rototraslatorio noto rispetto al sistema di riferimento assoluto.\newline
-Indichiamo con $\theta$ la rotazione del sistema di riferimento mobile rispetto al sistema di riferimento assoluto.
-\subsection{Posizione}
-Il punto generico $P$ ha coordinate $x_P, y_P$ rispetto al sistema assoluto, $x_{P,1}, y_{P,1}$ rispetto al sistema mobile. \newline
-La posizione può essere vista come somma vettoriale (come abbiamo visto per i corpi rigidi): $(P-O) = (O_1 - O) + (P-O_1)$, dove $(P-O) = x_P \vec{i} + y_P \vec{j}$ e $(O_1 - O) = x_{O_1} \vec{i} + y_{O_1} \vec{j}$ e $(P-O_1) = x_{P,1} \vec{i_1} + y_{P,1} \vec{j_1}$. Se il moto del sistema di riferimento mobile è noto, conoscendo la posizione di $P$ rispetto al sistema assoluto, posso ricavare la posizione rispetto al sistema mobile, viceversa, conoscendo la posizione di $P$ rispetto al sistema mobile, posso ricavare la posizione rispetto al sistema assoluto.
+Indichiamo con $\theta$ la rotazione del sistema di riferimento mobile rispetto al sistema di riferimento assoluto.\newline
+\newline
+Il punto generico $P$ ha coordinate $x_P, y_P$ rispetto al sistema assoluto, e $x_{P,1}, y_{P,1}$ rispetto al sistema mobile. \newline
+\newline
+La posizione può essere vista come somma vettoriale (come abbiamo visto per i corpi rigidi): 
+\[
+    (P-O) = (O_1 - O) + (P-O_1)
+\]
+dove $(P-O) = x_P \vec{i} + y_P \vec{j}$ e $(O_1 - O) = x_{O_1} \vec{i} + y_{O_1} \vec{j}$ e $(P-O_1) = x_{P,1} \vec{i_1} + y_{P,1} \vec{j_1}$. Se il moto del sistema di riferimento mobile è noto, conoscendo la posizione di $P$ rispetto al sistema assoluto, posso ricavare la posizione rispetto al sistema mobile, viceversa, conoscendo la posizione di $P$ rispetto al sistema mobile, posso ricavare la posizione rispetto al sistema assoluto.
 \[
     (P-O) = x_{O_1}\vec{i} + y_{O_1}\vec{j} + x_{P,1} \vec{i_1} + y_{P,1} \vec{j_1}
 \]
@@ -113,7 +131,8 @@ A questo termine di accellerazione di trascinamento vengono aggiunte un'acceller
     \vec{a}_P = \vec{a}_{tr,P} + \vec{a}_{co} + \vec{a}_{rel,P}
 \]
 Notiamo che l'accellerazione di Coriolis $\vec{a}_{co}$ si annulla per tre casi: $\vec{\omega} \parallel \vec{v}_{rel,P}$ (impossibile nel piano); $\vec{\omega} = 0$ (il sistema mobile si muove di moto traslatorio); $\vec{v}_{rel,P} = 0$.\newline
-Notiamo anche che se $\vec{v}_{rel,P} = \vec{a}_{rel,P} = 0$ il teorema di Coriolis coincide con il teorema di Rivals.\newline
+Notiamo anche che se $\vec{v}_{rel,P} = \vec{a}_{rel,P} = 0$ il teorema di Coriolis coincide con il teorema di Rivals.
+\newpage
 \section{Sistemi meccanici}
 In prima approssimazione possiamo vedere una macchina come un insieme di corpi rigidi legati fra loro attraverso opportuni vincoli. I vincoli sono decondizioni essenziali per lo studio di una macchina e devono sempre rispettati.\newline
 Esistono vincoli interni, cioè legati ai corpi rigidi del sistema, o esterni, cioè legati alla struttura che contiene questi corpi rigidi, chiamata telaio.
