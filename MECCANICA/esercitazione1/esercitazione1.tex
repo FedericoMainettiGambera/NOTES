@@ -1,0 +1,54 @@
+\title{Esercitazione 1 19/03/2020}\newline
+\textbf{link} \href{https://web.microsoftstream.com/video/4f8d8d0e-8354-4151-bbc2-efa8e7399119?list=user&userId=c487c446-28dc-44c3-b1fb-2fe7e71e0737}{Clicca qui} (solo audio)
+\section{Esercitazione I}
+APPUNTI DEL PROF (Anno corrente): \url{../esercitazione1/pdf/ese_1_notes.pdf}. [consigliato! Ho preso note su questo pdf, in caso di dubbi confrontare le esercitazioni degli anni scorsi che sono più ordinate]\newline
+\newline
+ESERCITAZIONE -1 (Anno scorso): \url{../esercitazione1/pdf/01-Richiami e cinematica punto.pdf}.\newline
+\newline
+ESERCITAZIONE -2 (Anno scorso): \url{../esercitazione1/pdf/01-Ese aggiuntivo cinematica.pdf}.
+\subsection{Vettori}
+Il generico vettore $\vec{P}$ è definito come $\vec{P} = (P-O) = x_p \vec{i} + y_P \vec{j} + z_P \vec{k}$ con $\vec{i} = \left[\begin{matrix}
+    1\\0\\0
+\end{matrix}\right]$, $\vec{j} = \left[\begin{matrix}
+    0\\1\\0
+\end{matrix}\right]$ e $\vec{k}= \left[\begin{matrix}
+    0\\0\\1
+\end{matrix}\right]$.\newline
+\newline
+Un vettore è definito da 
+\begin{itemize}
+    \item modulo $|\vec{P}| = P = \sqrt{x_P^2 + y_P^2 + z_P^2}$;
+    \item direzione;
+    \item verso;
+    \item punto di applicazione.
+\end{itemize}
+\subsubsection{Operazioni fra vettori}
+\begin{itemize}
+    \item \textbf{Prodotto scalare}: $c = \vec{a} \; x \; \vec{b} = |\vec{a}| | \vec{b}| cos(\alpha) = a b cos(\alpha)$, con $\alpha$ angolo compreso fra i due vettori, notiamo che $b cos(\alpha)$ è la proiezione di $b$ su $a$.
+    \item \textbf{Somma di vettori}: $\vec{c} = \vec{a} + \vec{b} = (a_x \vec{i} + a_y \vec{j}) + (b_x \vec{i} + b_y \vec{j})$, graficamente si può usare la regola del parallelogramma.
+    \item \textbf{Prodotto vettoriale}: $\vec{c} = \vec{a} \land \vec{b}$, direzione e verso di $\vec{c}$ sono decisi con la regola della mano destra (primo vettore che compare nel prodotto sul pollice, secondo vettore sull'indice, risultato nel medio), il modulo di $\vec{c}$ si trova come $|\vec{c}| = s b sin(\alpha)$.\newline
+    Per fare il prodotto vettoriale si usa spesso questo metodo: 
+    \[
+        \vec{c} = \vec{a} \land \vec{b} = det \left[\begin{matrix}
+            \vec{i} & \vec{j} & \vec{k}\\
+            a_x & a_y & a_z \\
+            b_x & b_y & b_z
+        \end{matrix}\right]
+    \]
+\end{itemize}
+\subsection{Cinematica del punto}
+\subsubsection{Legge oraria e traiettoria}
+Data una \textbf{legge oraria} $P(t) = x(t) \vec{i} + y(t) \vec{j}$ che descrive il moto di un punto nel tempo, si può ricavare la \textbf{traiettoria}:
+\begin{itemize}
+    \item Si esplicita la legge oraria in forma parametrica: $\begin{cases}
+        x = x(t)\\ y= y(t)
+    \end{cases}$
+    \item si ricava $t$ dalla priama equazione e la si sostituisce nella seconda ricavando così un'equazione $y = f(x)$, che prende il nome di traiettoria
+\end{itemize}
+\subsubsection{Numeri complessi}
+\textbf{Forma esponenziale}: $\vec{P} = r e^{j \theta}$.\newline
+\textbf{Forma trigonometrica}: $\vec{P} = r cos(\theta) + j r sin(\theta)$.\newline
+\newline
+Per passare da una forma all'altra si usano le \textbf{relazioni di eulero}: $e^{j \theta} = cos(\theta) + j sin(\theta)$.\newline
+\newline
+Notiamo che $e^{j 0} = 1$, $e^{j \frac{\pi}{2}} = j$, e $e^{j \pi} = -1$.
