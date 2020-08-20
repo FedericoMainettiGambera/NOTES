@@ -44,3 +44,5 @@
 \contentsline {subsubsection}{\numberline {7.2.1}Legge oraria e traiettoria}{24}{subsubsection.7.2.1}% 
 \contentsline {subsubsection}{\numberline {7.2.2}Numeri complessi}{25}{subsubsection.7.2.2}% 
 \contentsline {section}{\numberline {8}Esercitazione II}{26}{section.8}% 
+\contentsline {subsection}{\numberline {8.1}Ripasso sulla cinematica del corpo rigido}{26}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.2}Ripasso sui moti relativi}{26}{subsection.8.2}% 
