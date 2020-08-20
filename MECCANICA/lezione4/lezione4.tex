@@ -118,9 +118,10 @@ con $n_c$ il numero di corpi rigidi; $n_v$ il numero di vincoli, $n_1$ il numero
 \newline
 Ovviamente bisogna sempre tenere conto che il numero di gradi di libertà è sempre maggiore o uguale a $0$.\newline
 \newline
-Se utilizzando la regola di Grublen il numero di gradi di libertà è esattamente $0$, allora siamo in presenza di una struttura \textbf{isostatica}, se il numero di gradi di libertà risulta essere negativo, allora siamo in presenza di una struttura \textbf{iperstatica}.\newline
-\newline
-\subsection{Cinematica del manipolatore SCARA}
+Se utilizzando la regola di Grublen il numero di gradi di libertà è esattamente $0$, allora siamo in presenza di una struttura \textbf{isostatica}, se il numero di gradi di libertà risulta essere negativo, allora siamo in presenza di una struttura \textbf{iperstatica}.
+\newpage
+\section{Cinematica del manipolatore SCARA}
+\subsection{Introduzione}
 [immagini dagli appunti del prof]
 \begin{center}
     \includegraphics[height=3cm]{../lezione4/img7.JPG}
@@ -130,12 +131,13 @@ Se utilizzando la regola di Grublen il numero di gradi di libertà è esattament
 \end{center}
 Il manipolatore \textbf{SCARA} ha due gradi di libertà che sono $\alpha$ e $\beta$ ed è una \textbf{catena cinematica aperta}. Il punto $B$ prende il nome di \textbf{end-effector} ed è il punto di interesse. Per studiarlo bisogna conoscere in ogni istante l'evoluzione di $\alpha(t)$ e $\beta(t)$ nel tempo e le loro derivate.\newline
 \newline
+\subsection{Numeri complessi}
 Analiziamo il sistema SCARA col formalismo dei numeri complessi:\newline
 [immagine dagli appunti del prof]
 \begin{center}
     \includegraphics[height=4cm]{../lezione4/img9.JPG}
 \end{center}
-Per studiare la posizione del punto $B$ possiamo sommare le posizioni delle due aste $OA$ e $AB$:
+Per studiare la \textbf{posizione} del punto $B$ possiamo sommare le posizioni delle due aste $OA$ e $AB$:
 \[
     (B-O) = (A-O) + (B-A) = a e^{i \alpha} + b e^{i(\alpha + \beta)}
 \]
@@ -146,7 +148,7 @@ Passiamo ora in forma parametrica:
         y_B = a sin(\alpha) + b sin(\alpha + \beta)
     \end{cases}
 \]
-Derivando otteniamo la velocità:
+Derivando otteniamo la \textbf{velocità}:
 \[
     \vec{v}_B = \frac{d}{dt} (A-O) + \frac{d}{dt} (B-A) = i a \dot{\alpha} e^{i \alpha} + i b (\dot{\beta} + \dot{\alpha}) e^{i(\alpha+\beta)} = a \dot{\alpha} e^{i(\alpha + \frac{\pi}{2})} + b (\dot{\beta} + \dot{\alpha})e^{i(\alpha + \beta + \frac{\pi}{2})}
 \]
@@ -160,7 +162,7 @@ Derivando otteniamo la velocità:
 \begin{center}
     \includegraphics[height=3cm]{../lezione4/img10.JPG}
 \end{center}
-Deriviamo ancora per l'accellerazione:
+Deriviamo ancora per l'\textbf{accellerazione}:
 \[
     \vec{a}_B = a \ddot{\alpha} e^{i(\alpha + \frac{\pi}{2})} - a \dot{\alpha}^2 e^{i \alpha} + b (\ddot{\alpha} + \ddot{\beta})e^{i(\alpha + \beta + \frac{\pi}{2})} - b (\dot{\alpha} + \dot{\beta})^2 e^{i(\alpha + \beta)}
 \]
@@ -176,3 +178,35 @@ Andiamo ad analizzare i termini che compongono l'accellerazione:
 \begin{center}
     \includegraphics[height=4cm]{../lezione4/img11.JPG}
 \end{center}
+Interpretiamo ora i risultati ottenuti col teorema dei moti relativi, in particolare consideriamo le seguenti due possibili configurazioni: traslante e rotante. [impostiamo il problema, lasciamo la soluzione come compito dello studente].
+\subsection{Sistema mobile traslante}
+Poniamo un sistema mobile traslante con origine nel punto $A$ e traslante sulla sua traiettoria circolare.\newline
+\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione4/img12.JPG}
+\end{center}
+Accellerazione angolare della terna: $\omega_t = \dot{\omega}_t = 0$.\newline
+Accellerazione di Coriolis: $\vec{a}_{co} = 2 \vec{\omega}_t \land \vec{v}_{rel,B} = 0$.\newline
+\newline
+Utiliziamo ora i teoremi dei moti relativi per calcolare velocità e accellerazioni:\newline
+$\vec{v}_B = \vec{v}_{tr,B} + \vec{v}_{rel,B}$ e $\vec{a}_B = \vec{a}_{tr,B} + \vec{a}_{rel,B} + \vec{a}_{co}$.\newline
+\newline
+Notiamo che la velocità angolare dell'asta $AO$ è pari a $\vec{\omega}_{AO} = \dot{\alpha} \vec{k}$ (con $\alpha$ angolo fra l'asse delle $X$ e l'asta $AO$), mentre la velocità angolare dell'asta $BA$ è pari a $\vec{\omega}_{BA} = (\dot{\alpha} + \dot{\beta}) \vec{k}$ (con $\alpha + \beta$ angolo fra l'asse $X_1$ e l'asta $AB$).\newline
+\newline
+[terminare a casa, soluzione nel pdf della lezione]
+\subsection{Sistema mobile rotante}
+Poniamo un sistema mobile rotante con origine nel punto $A$ e rotante solidalmente all'asta $OA$.\newline
+\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione4/img13.JPG}
+\end{center}
+Accellerazione angolare della terna: $\vec{\omega}_t = \dot{\alpha} \vec{k}$, $\dot{\vec{\omega}} = \ddot{\alpha} \vec{k}$.\newline
+Accellerazione di Coriolis: $\vec{a}_{co} \neq 0$.\newline
+\newline
+Notiamo che la velocità angolare dell'asta $AO$ è pari a $\vec{\omega}_{AO} = \dot{\alpha} \vec{k}$ (come il caso precedente), mentre la velocità angolare dell'asta $BA$ è pari a $\vec{\omega}_{BA} = \dot{\beta} \vec{k}$.\newline
+\newline
+La velocità relativa di $B$ diventa $\vec{v}_{rel,B} = \vec{\omega}-{BA} \land (B-A) = \dot{\beta} e^{i(\alpha + \beta + \frac{\pi}{2})}$.\newline
+\newline
+[terminare a casa, soluzione nel pdf della lezione]
