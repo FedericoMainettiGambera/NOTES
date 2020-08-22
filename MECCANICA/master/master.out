@@ -44,15 +44,29 @@
 \BOOKMARK [2][-]{subsection.8.3}{Velocit\340 del manovellismo ordinario centrato}{section.8}% 44
 \BOOKMARK [3][-]{subsubsection.8.3.1}{Jacobiano del moto}{subsection.8.3}% 45
 \BOOKMARK [2][-]{subsection.8.4}{Accellerazione del manovellismo ordinario centrato}{section.8}% 46
-\BOOKMARK [0][-]{part.2}{II ESERCITAZIONI}{}% 47
-\BOOKMARK [1][-]{section.9}{Esercitazione I}{part.2}% 48
-\BOOKMARK [2][-]{subsection.9.1}{Vettori}{section.9}% 49
-\BOOKMARK [3][-]{subsubsection.9.1.1}{Operazioni fra vettori}{subsection.9.1}% 50
-\BOOKMARK [2][-]{subsection.9.2}{Cinematica del punto}{section.9}% 51
-\BOOKMARK [3][-]{subsubsection.9.2.1}{Legge oraria e traiettoria}{subsection.9.2}% 52
-\BOOKMARK [3][-]{subsubsection.9.2.2}{Numeri complessi}{subsection.9.2}% 53
-\BOOKMARK [1][-]{section.10}{Esercitazione II}{part.2}% 54
-\BOOKMARK [2][-]{subsection.10.1}{Ripasso sulla cinematica del corpo rigido}{section.10}% 55
-\BOOKMARK [2][-]{subsection.10.2}{Ripasso sui moti relativi}{section.10}% 56
-\BOOKMARK [1][-]{section.11}{Esercitazione III}{part.2}% 57
-\BOOKMARK [2][-]{subsection.11.1}{Tipico procedimento di risoluzione di un problema coi numeri complessi}{section.11}% 58
+\BOOKMARK [1][-]{section.9}{Statica del punto materiale}{part.1}% 47
+\BOOKMARK [2][-]{subsection.9.1}{Equazioni caridnali della statica per il punto materiale}{section.9}% 48
+\BOOKMARK [2][-]{subsection.9.2}{Reazioni vincolari}{section.9}% 49
+\BOOKMARK [3][-]{subsubsection.9.2.1}{Incastro}{subsection.9.2}% 50
+\BOOKMARK [3][-]{subsubsection.9.2.2}{Cerniera}{subsection.9.2}% 51
+\BOOKMARK [3][-]{subsubsection.9.2.3}{Pattino}{subsection.9.2}% 52
+\BOOKMARK [3][-]{subsubsection.9.2.4}{Manicotto}{subsection.9.2}% 53
+\BOOKMARK [3][-]{subsubsection.9.2.5}{Carrello-cerniera}{subsection.9.2}% 54
+\BOOKMARK [1][-]{section.10}{Statica del corpo rigido}{part.1}% 55
+\BOOKMARK [2][-]{subsection.10.1}{equazioni cardinali della statica per il corpo rigido}{section.10}% 56
+\BOOKMARK [2][-]{subsection.10.2}{Momento di una forza}{section.10}% 57
+\BOOKMARK [2][-]{subsection.10.3}{Coppia}{section.10}% 58
+\BOOKMARK [0][-]{part.2}{II ESERCITAZIONI}{}% 59
+\BOOKMARK [1][-]{section.11}{Esercitazione I}{part.2}% 60
+\BOOKMARK [2][-]{subsection.11.1}{Vettori}{section.11}% 61
+\BOOKMARK [3][-]{subsubsection.11.1.1}{Operazioni fra vettori}{subsection.11.1}% 62
+\BOOKMARK [2][-]{subsection.11.2}{Cinematica del punto}{section.11}% 63
+\BOOKMARK [3][-]{subsubsection.11.2.1}{Legge oraria e traiettoria}{subsection.11.2}% 64
+\BOOKMARK [3][-]{subsubsection.11.2.2}{Numeri complessi}{subsection.11.2}% 65
+\BOOKMARK [1][-]{section.12}{Esercitazione II}{part.2}% 66
+\BOOKMARK [2][-]{subsection.12.1}{Ripasso sulla cinematica del corpo rigido}{section.12}% 67
+\BOOKMARK [2][-]{subsection.12.2}{Ripasso sui moti relativi}{section.12}% 68
+\BOOKMARK [1][-]{section.13}{Esercitazione III}{part.2}% 69
+\BOOKMARK [2][-]{subsection.13.1}{Tipico procedimento di risoluzione di un problema coi numeri complessi}{section.13}% 70
+\BOOKMARK [1][-]{section.14}{Esercitazione IV}{part.2}% 71
+\BOOKMARK [2][-]{subsection.14.1}{Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{section.14}% 72
