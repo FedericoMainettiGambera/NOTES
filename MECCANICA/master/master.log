@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  22 AUG 2020 10:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  22 AUG 2020 12:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -676,7 +676,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--31
  []
 
 [3]
-<../lezione1/img1.JPG, id=394, 435.87843pt x 418.56375pt>
+<../lezione1/img1.JPG, id=409, 435.87843pt x 418.56375pt>
 File: ../lezione1/img1.JPG Graphic file (type jpg)
 <use ../lezione1/img1.JPG>
 Package pdftex.def Info: ../lezione1/img1.JPG  used on input line 53.
@@ -691,7 +691,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
-<../lezione1/img2.JPG, id=395, 634.62094pt x 374.90062pt>
+<../lezione1/img2.JPG, id=410, 634.62094pt x 374.90062pt>
 File: ../lezione1/img2.JPG Graphic file (type jpg)
 <use ../lezione1/img2.JPG>
 Package pdftex.def Info: ../lezione1/img2.JPG  used on input line 80.
@@ -707,7 +707,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--88
  []
 
 [4 <../lezione1/img1.JPG> <../lezione1/img2.JPG>]
-<../lezione1/img3.JPG, id=402, 659.46375pt x 389.20406pt>
+<../lezione1/img3.JPG, id=417, 659.46375pt x 389.20406pt>
 File: ../lezione1/img3.JPG Graphic file (type jpg)
 <use ../lezione1/img3.JPG>
 Package pdftex.def Info: ../lezione1/img3.JPG  used on input line 109.
@@ -733,7 +733,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--118
  []
 
 [5 <../lezione1/img3.JPG>]
-<../lezione1/img4.JPG, id=410, 719.68875pt x 356.83313pt>
+<../lezione1/img4.JPG, id=425, 719.68875pt x 356.83313pt>
 File: ../lezione1/img4.JPG Graphic file (type jpg)
 <use ../lezione1/img4.JPG>
 Package pdftex.def Info: ../lezione1/img4.JPG  used on input line 119.
@@ -753,13 +753,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--128
 
  []
 
-<../lezione1/img5.JPG, id=411, 584.93532pt x 382.42876pt>
+<../lezione1/img5.JPG, id=426, 584.93532pt x 382.42876pt>
 File: ../lezione1/img5.JPG Graphic file (type jpg)
 <use ../lezione1/img5.JPG>
 Package pdftex.def Info: ../lezione1/img5.JPG  used on input line 137.
 (pdftex.def)             Requested size: 130.55156pt x 85.35826pt.
 ) [6 <../lezione1/img4.JPG> <../lezione1/img5.JPG>] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione2/lezione2.tex
-<../lezione2/img1.JPG, id=418, 568.37344pt x 250.68657pt>
+<../lezione2/img1.JPG, id=433, 568.37344pt x 250.68657pt>
 File: ../lezione2/img1.JPG Graphic file (type jpg)
 <use ../lezione2/img1.JPG>
 Package pdftex.def Info: ../lezione2/img1.JPG  used on input line 20.
@@ -770,23 +770,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--26
  []
 
 [7 <../lezione2/img1.JPG>]
-<../lezione2/img2.JPG, id=424, 522.45187pt x 350.05782pt>
+<../lezione2/img2.JPG, id=439, 522.45187pt x 350.05782pt>
 File: ../lezione2/img2.JPG Graphic file (type jpg)
 <use ../lezione2/img2.JPG>
 Package pdftex.def Info: ../lezione2/img2.JPG  used on input line 40.
 (pdftex.def)             Requested size: 127.39197pt x 85.35826pt.
-<../lezione2/img3.JPG, id=425, 753.5653pt x 527.72156pt>
+<../lezione2/img3.JPG, id=440, 753.5653pt x 527.72156pt>
 File: ../lezione2/img3.JPG Graphic file (type jpg)
 <use ../lezione2/img3.JPG>
 Package pdftex.def Info: ../lezione2/img3.JPG  used on input line 47.
 (pdftex.def)             Requested size: 121.88373pt x 85.35826pt.
-<../lezione2/img4.JPG, id=426, 719.68875pt x 501.37312pt>
+<../lezione2/img4.JPG, id=441, 719.68875pt x 501.37312pt>
 File: ../lezione2/img4.JPG Graphic file (type jpg)
 <use ../lezione2/img4.JPG>
 Package pdftex.def Info: ../lezione2/img4.JPG  used on input line 53.
 (pdftex.def)             Requested size: 122.52116pt x 85.35826pt.
  [8 <../lezione2/img2.JPG> <../lezione2/img3.JPG> <../lezione2/img4.JPG>]
-<../lezione2/img5.JPG, id=431, 752.0597pt x 546.54187pt>
+<../lezione2/img5.JPG, id=446, 752.0597pt x 546.54187pt>
 File: ../lezione2/img5.JPG Graphic file (type jpg)
 <use ../lezione2/img5.JPG>
 Package pdftex.def Info: ../lezione2/img5.JPG  used on input line 59.
@@ -801,7 +801,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--68
 
  []
 
-<../lezione2/img6.JPG, id=432, 795.72281pt x 450.9347pt>
+<../lezione2/img6.JPG, id=447, 795.72281pt x 450.9347pt>
 File: ../lezione2/img6.JPG Graphic file (type jpg)
 <use ../lezione2/img6.JPG>
 Package pdftex.def Info: ../lezione2/img6.JPG  used on input line 69.
@@ -816,7 +816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--79
 
  []
 
-<../lezione2/img7.JPG, id=433, 778.40813pt x 447.92343pt>
+<../lezione2/img7.JPG, id=448, 778.40813pt x 447.92343pt>
 File: ../lezione2/img7.JPG Graphic file (type jpg)
 <use ../lezione2/img7.JPG>
 Package pdftex.def Info: ../lezione2/img7.JPG  used on input line 80.
@@ -826,7 +826,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--87
 
  []
 
-<../lezione2/img8.JPG, id=438, 662.475pt x 421.575pt>
+<../lezione2/img8.JPG, id=453, 662.475pt x 421.575pt>
 File: ../lezione2/img8.JPG Graphic file (type jpg)
 <use ../lezione2/img8.JPG>
 Package pdftex.def Info: ../lezione2/img8.JPG  used on input line 88.
@@ -836,7 +836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
-<../lezione2/img9.JPG, id=439, 666.23906pt x 483.30562pt>
+<../lezione2/img9.JPG, id=454, 666.23906pt x 483.30562pt>
 File: ../lezione2/img9.JPG Graphic file (type jpg)
 <use ../lezione2/img9.JPG>
 Package pdftex.def Info: ../lezione2/img9.JPG  used on input line 96.
@@ -846,13 +846,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--103
 
  []
 
-<../lezione2/img10.JPG, id=440, 593.21625pt x 366.61969pt>
+<../lezione2/img10.JPG, id=455, 593.21625pt x 366.61969pt>
 File: ../lezione2/img10.JPG Graphic file (type jpg)
 <use ../lezione2/img10.JPG>
 Package pdftex.def Info: ../lezione2/img10.JPG  used on input line 104.
 (pdftex.def)             Requested size: 138.11143pt x 85.35826pt.
 [10 <../lezione2/img7.JPG> <../lezione2/img8.JPG> <../lezione2/img9.JPG> <../lezione2/img10.JPG>]
-<../lezione2/img11.JPG, id=445, 575.14874pt x 420.82219pt>
+<../lezione2/img11.JPG, id=460, 575.14874pt x 420.82219pt>
 File: ../lezione2/img11.JPG Graphic file (type jpg)
 <use ../lezione2/img11.JPG>
 Package pdftex.def Info: ../lezione2/img11.JPG  used on input line 111.
@@ -897,17 +897,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
 
-<../lezione3/img1.JPG, id=455, 347.79938pt x 252.19218pt>
+<../lezione3/img1.JPG, id=470, 347.79938pt x 252.19218pt>
 File: ../lezione3/img1.JPG Graphic file (type jpg)
 <use ../lezione3/img1.JPG>
 Package pdftex.def Info: ../lezione3/img1.JPG  used on input line 9.
 (pdftex.def)             Requested size: 117.71951pt x 85.35826pt.
-<../lezione3/img2.JPG, id=456, 494.59781pt x 265.74281pt>
+<../lezione3/img2.JPG, id=471, 494.59781pt x 265.74281pt>
 File: ../lezione3/img2.JPG Graphic file (type jpg)
 <use ../lezione3/img2.JPG>
 Package pdftex.def Info: ../lezione3/img2.JPG  used on input line 17.
 (pdftex.def)             Requested size: 158.87073pt x 85.35826pt.
-<../lezione3/img3.JPG, id=457, 522.45187pt x 391.4625pt>
+<../lezione3/img3.JPG, id=472, 522.45187pt x 391.4625pt>
 File: ../lezione3/img3.JPG Graphic file (type jpg)
 <use ../lezione3/img3.JPG>
 Package pdftex.def Info: ../lezione3/img3.JPG  used on input line 24.
@@ -932,7 +932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--60
 
  []
 
-<../lezione3/img4.JPG, id=463, 411.03563pt x 258.9675pt>
+<../lezione3/img4.JPG, id=478, 411.03563pt x 258.9675pt>
 File: ../lezione3/img4.JPG Graphic file (type jpg)
 <use ../lezione3/img4.JPG>
 Package pdftex.def Info: ../lezione3/img4.JPG  used on input line 61.
@@ -953,34 +953,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--124
  []
 
 [15] [16]
-<../lezione3/img5.JPG, id=477, 215.30438pt x 80.55093pt>
+<../lezione3/img5.JPG, id=493, 215.30438pt x 80.55093pt>
 File: ../lezione3/img5.JPG Graphic file (type jpg)
 <use ../lezione3/img5.JPG>
 Package pdftex.def Info: ../lezione3/img5.JPG  used on input line 168.
 (pdftex.def)             Requested size: 114.0812pt x 42.67912pt.
-<../lezione3/img6.JPG, id=478, 219.82124pt x 170.13562pt>
+<../lezione3/img6.JPG, id=494, 219.82124pt x 170.13562pt>
 File: ../lezione3/img6.JPG Graphic file (type jpg)
 <use ../lezione3/img6.JPG>
 Package pdftex.def Info: ../lezione3/img6.JPG  used on input line 177.
 (pdftex.def)             Requested size: 110.28601pt x 85.35826pt.
-<../lezione3/img7.JPG, id=479, 158.84344pt x 191.9672pt>
+<../lezione3/img7.JPG, id=495, 158.84344pt x 191.9672pt>
 File: ../lezione3/img7.JPG Graphic file (type jpg)
 <use ../lezione3/img7.JPG>
 Package pdftex.def Info: ../lezione3/img7.JPG  used on input line 182.
 (pdftex.def)             Requested size: 70.63057pt x 85.35826pt.
-<../lezione3/img8.JPG, id=480, 304.13625pt x 118.94438pt>
+<../lezione3/img8.JPG, id=496, 304.13625pt x 118.94438pt>
 File: ../lezione3/img8.JPG Graphic file (type jpg)
 <use ../lezione3/img8.JPG>
 Package pdftex.def Info: ../lezione3/img8.JPG  used on input line 187.
 (pdftex.def)             Requested size: 145.50574pt x 56.9055pt.
  [17 <../lezione3/img5.JPG> <../lezione3/img6.JPG> <../lezione3/img7.JPG>]
-<../lezione3/img9.JPG, id=486, 232.61906pt x 231.11343pt>
+<../lezione3/img9.JPG, id=501, 232.61906pt x 231.11343pt>
 File: ../lezione3/img9.JPG Graphic file (type jpg)
 <use ../lezione3/img9.JPG>
 Package pdftex.def Info: ../lezione3/img9.JPG  used on input line 196.
 (pdftex.def)             Requested size: 85.91507pt x 85.35826pt.
 ) (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione4/lezione4.tex
-<../lezione4/img1.JPG, id=488, 481.8pt x 188.95593pt>
+<../lezione4/img1.JPG, id=503, 481.8pt x 188.95593pt>
 File: ../lezione4/img1.JPG Graphic file (type jpg)
 <use ../lezione4/img1.JPG>
 Package pdftex.def Info: ../lezione4/img1.JPG  used on input line 7.
@@ -1011,23 +1011,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--38
  []
 
 [18 <../lezione3/img8.JPG> <../lezione3/img9.JPG> <../lezione4/img1.JPG>]
-<../lezione4/img2.JPG, id=493, 683.55376pt x 291.33844pt>
+<../lezione4/img2.JPG, id=508, 683.55376pt x 291.33844pt>
 File: ../lezione4/img2.JPG Graphic file (type jpg)
 <use ../lezione4/img2.JPG>
 Package pdftex.def Info: ../lezione4/img2.JPG  used on input line 39.
 (pdftex.def)             Requested size: 267.02296pt x 113.81102pt.
-<../lezione4/img3.JPG, id=494, 944.7797pt x 360.59718pt>
+<../lezione4/img3.JPG, id=509, 944.7797pt x 360.59718pt>
 File: ../lezione4/img3.JPG Graphic file (type jpg)
 <use ../lezione4/img3.JPG>
 Package pdftex.def Info: ../lezione4/img3.JPG  used on input line 71.
 (pdftex.def)             Requested size: 298.18382pt x 113.81102pt.
-<../lezione4/img4.JPG, id=495, 453.94594pt x 152.82094pt>
+<../lezione4/img4.JPG, id=510, 453.94594pt x 152.82094pt>
 File: ../lezione4/img4.JPG Graphic file (type jpg)
 <use ../lezione4/img4.JPG>
 Package pdftex.def Info: ../lezione4/img4.JPG  used on input line 76.
 (pdftex.def)             Requested size: 338.06892pt x 113.81102pt.
  [19 <../lezione4/img2.JPG> <../lezione4/img3.JPG>]
-<../lezione4/img5.JPG, id=501, 280.79906pt x 191.9672pt>
+<../lezione4/img5.JPG, id=516, 280.79906pt x 191.9672pt>
 File: ../lezione4/img5.JPG Graphic file (type jpg)
 <use ../lezione4/img5.JPG>
 Package pdftex.def Info: ../lezione4/img5.JPG  used on input line 88.
@@ -1058,12 +1058,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--122
  []
 
 [21]
-<../lezione4/img7.JPG, id=510, 420.06938pt x 427.5975pt>
+<../lezione4/img7.JPG, id=525, 420.06938pt x 427.5975pt>
 File: ../lezione4/img7.JPG Graphic file (type jpg)
 <use ../lezione4/img7.JPG>
 Package pdftex.def Info: ../lezione4/img7.JPG  used on input line 127.
 (pdftex.def)             Requested size: 83.85214pt x 85.35826pt.
-<../lezione4/img8.JPG, id=511, 392.21532pt x 345.54094pt>
+<../lezione4/img8.JPG, id=526, 392.21532pt x 345.54094pt>
 File: ../lezione4/img8.JPG Graphic file (type jpg)
 <use ../lezione4/img8.JPG>
 Package pdftex.def Info: ../lezione4/img8.JPG  used on input line 130.
@@ -1078,12 +1078,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
-<../lezione4/img9.JPG, id=512, 642.90187pt x 381.67593pt>
+<../lezione4/img9.JPG, id=527, 642.90187pt x 381.67593pt>
 File: ../lezione4/img9.JPG Graphic file (type jpg)
 <use ../lezione4/img9.JPG>
 Package pdftex.def Info: ../lezione4/img9.JPG  used on input line 138.
 (pdftex.def)             Requested size: 191.70467pt x 113.81102pt.
-<../lezione4/img10.JPG, id=513, 453.94594pt x 307.1475pt>
+<../lezione4/img10.JPG, id=528, 453.94594pt x 307.1475pt>
 File: ../lezione4/img10.JPG Graphic file (type jpg)
 <use ../lezione4/img10.JPG>
 Package pdftex.def Info: ../lezione4/img10.JPG  used on input line 163.
@@ -1093,7 +1093,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--172
 
  []
 
-<../lezione4/img11.JPG, id=518, 452.4403pt x 372.64218pt>
+<../lezione4/img11.JPG, id=533, 452.4403pt x 372.64218pt>
 File: ../lezione4/img11.JPG Graphic file (type jpg)
 <use ../lezione4/img11.JPG>
 Package pdftex.def Info: ../lezione4/img11.JPG  used on input line 179.
@@ -1103,7 +1103,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--186
 
  []
 
-<../lezione4/img12.JPG, id=519, 490.83376pt x 296.60812pt>
+<../lezione4/img12.JPG, id=534, 490.83376pt x 296.60812pt>
 File: ../lezione4/img12.JPG Graphic file (type jpg)
 <use ../lezione4/img12.JPG>
 Package pdftex.def Info: ../lezione4/img12.JPG  used on input line 187.
@@ -1128,7 +1128,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--202
 
  []
 
-<../lezione4/img13.JPG, id=524, 512.66531pt x 335.75438pt>
+<../lezione4/img13.JPG, id=539, 512.66531pt x 335.75438pt>
 File: ../lezione4/img13.JPG Graphic file (type jpg)
 <use ../lezione4/img13.JPG>
 Package pdftex.def Info: ../lezione4/img13.JPG  used on input line 203.
@@ -1149,7 +1149,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--15
  []
 
 [24 <../lezione4/img13.JPG>] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione5/lezione5.tex
-<../lezione5/img1.JPG, id=530, 600.74437pt x 191.9672pt>
+<../lezione5/img1.JPG, id=545, 600.74437pt x 191.9672pt>
 File: ../lezione5/img1.JPG Graphic file (type jpg)
 <use ../lezione5/img1.JPG>
 Package pdftex.def Info: ../lezione5/img1.JPG  used on input line 7.
@@ -1184,7 +1184,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--30
 
  []
 
-<../lezione5/img2.JPG, id=531, 482.55281pt x 197.23688pt>
+<../lezione5/img2.JPG, id=546, 482.55281pt x 197.23688pt>
 File: ../lezione5/img2.JPG Graphic file (type jpg)
 <use ../lezione5/img2.JPG>
 Package pdftex.def Info: ../lezione5/img2.JPG  used on input line 31.
@@ -1214,7 +1214,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--79
 
  []
 
-<../lezione5/img3.JPG, id=537, 527.72156pt x 277.78781pt>
+<../lezione5/img3.JPG, id=552, 527.72156pt x 277.78781pt>
 File: ../lezione5/img3.JPG Graphic file (type jpg)
 <use ../lezione5/img3.JPG>
 Package pdftex.def Info: ../lezione5/img3.JPG  used on input line 80.
@@ -1224,12 +1224,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--119
 
  []
 
-<../lezione5/img4.JPG, id=542, 547.2947pt x 225.09094pt>
+<../lezione5/img4.JPG, id=557, 547.2947pt x 225.09094pt>
 File: ../lezione5/img4.JPG Graphic file (type jpg)
 <use ../lezione5/img4.JPG>
 Package pdftex.def Info: ../lezione5/img4.JPG  used on input line 132.
 (pdftex.def)             Requested size: 207.53989pt x 85.35826pt.
-<../lezione5/img5.JPG, id=543, 490.08093pt x 210.03468pt>
+<../lezione5/img5.JPG, id=558, 490.08093pt x 210.03468pt>
 File: ../lezione5/img5.JPG Graphic file (type jpg)
 <use ../lezione5/img5.JPG>
 Package pdftex.def Info: ../lezione5/img5.JPG  used on input line 166.
@@ -1254,7 +1254,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--35
 
  []
 
-<../lezione6/img1.JPG, id=553, 327.47343pt x 106.89937pt>
+<../lezione6/img1.JPG, id=568, 327.47343pt x 106.89937pt>
 File: ../lezione6/img1.JPG Graphic file (type jpg)
 <use ../lezione6/img1.JPG>
 Package pdftex.def Info: ../lezione6/img1.JPG  used on input line 36.
@@ -1275,22 +1275,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--53
  []
 
 [29 <../lezione6/img1.JPG>]
-<../lezione6/img2.JPG, id=558, 246.9225pt x 84.315pt>
+<../lezione6/img2.JPG, id=573, 246.9225pt x 84.315pt>
 File: ../lezione6/img2.JPG Graphic file (type jpg)
 <use ../lezione6/img2.JPG>
 Package pdftex.def Info: ../lezione6/img2.JPG  used on input line 56.
 (pdftex.def)             Requested size: 249.98126pt x 85.35826pt.
-<../lezione6/img3.JPG, id=559, 223.58531pt x 79.04532pt>
+<../lezione6/img3.JPG, id=574, 223.58531pt x 79.04532pt>
 File: ../lezione6/img3.JPG Graphic file (type jpg)
 <use ../lezione6/img3.JPG>
 Package pdftex.def Info: ../lezione6/img3.JPG  used on input line 62.
 (pdftex.def)             Requested size: 241.45828pt x 85.35826pt.
-<../lezione6/img4.JPG, id=560, 228.10219pt x 88.83188pt>
+<../lezione6/img4.JPG, id=575, 228.10219pt x 88.83188pt>
 File: ../lezione6/img4.JPG Graphic file (type jpg)
 <use ../lezione6/img4.JPG>
 Package pdftex.def Info: ../lezione6/img4.JPG  used on input line 68.
 (pdftex.def)             Requested size: 219.1879pt x 85.35826pt.
-<../lezione6/img5.JPG, id=561, 293.59688pt x 53.44969pt>
+<../lezione6/img5.JPG, id=576, 293.59688pt x 53.44969pt>
 File: ../lezione6/img5.JPG Graphic file (type jpg)
 <use ../lezione6/img5.JPG>
 Package pdftex.def Info: ../lezione6/img5.JPG  used on input line 74.
@@ -1301,7 +1301,7 @@ Overfull \hbox (44.95836pt too wide) in paragraph at lines 74--75
  []
 
 [30 <../lezione6/img2.JPG> <../lezione6/img3.JPG> <../lezione6/img4.JPG> <../lezione6/img5.JPG>]
-<../lezione6/img6.JPG, id=566, 199.49532pt x 83.5622pt>
+<../lezione6/img6.JPG, id=581, 199.49532pt x 83.5622pt>
 File: ../lezione6/img6.JPG Graphic file (type jpg)
 <use ../lezione6/img6.JPG>
 Package pdftex.def Info: ../lezione6/img6.JPG  used on input line 80.
@@ -1311,7 +1311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--87
 
  []
 
-<../lezione6/img7.JPG, id=567, 222.8325pt x 100.87688pt>
+<../lezione6/img7.JPG, id=582, 222.8325pt x 100.87688pt>
 File: ../lezione6/img7.JPG Graphic file (type jpg)
 <use ../lezione6/img7.JPG>
 Package pdftex.def Info: ../lezione6/img7.JPG  used on input line 88.
@@ -1321,7 +1321,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--94
 
  []
 
-<../lezione6/img8.JPG, id=568, 196.48407pt x 179.16937pt>
+<../lezione6/img8.JPG, id=583, 196.48407pt x 179.16937pt>
 File: ../lezione6/img8.JPG Graphic file (type jpg)
 <use ../lezione6/img8.JPG>
 Package pdftex.def Info: ../lezione6/img8.JPG  used on input line 95.
@@ -1331,7 +1331,7 @@ Overfull \hbox (43.55368pt too wide) detected at line 112
 [] \OMS/cmss/m/n/10 ! [] ! [] ! []
  []
 
-<../lezione6/img9.JPG, id=569, 187.45032pt x 140.02313pt>
+<../lezione6/img9.JPG, id=584, 187.45032pt x 140.02313pt>
 File: ../lezione6/img9.JPG Graphic file (type jpg)
 <use ../lezione6/img9.JPG>
 Package pdftex.def Info: ../lezione6/img9.JPG  used on input line 116.
@@ -1361,7 +1361,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--179
 
  []
 
-<../lezione6/img10.JPG, id=575, 477.28313pt x 349.305pt>
+<../lezione6/img10.JPG, id=590, 477.28313pt x 349.305pt>
 File: ../lezione6/img10.JPG Graphic file (type jpg)
 <use ../lezione6/img10.JPG>
 Package pdftex.def Info: ../lezione6/img10.JPG  used on input line 187.
@@ -1386,7 +1386,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--208
 
  []
 
-<../lezione6/img11.JPG, id=580, 156.585pt x 235.63031pt>
+<../lezione6/img11.JPG, id=595, 156.585pt x 235.63031pt>
 File: ../lezione6/img11.JPG Graphic file (type jpg)
 <use ../lezione6/img11.JPG>
 Package pdftex.def Info: ../lezione6/img11.JPG  used on input line 209.
@@ -1396,7 +1396,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--228
 
  []
 
-<../lezione6/img12.JPG, id=581, 301.8778pt x 197.98969pt>
+<../lezione6/img12.JPG, id=596, 301.8778pt x 197.98969pt>
 File: ../lezione6/img12.JPG Graphic file (type jpg)
 <use ../lezione6/img12.JPG>
 Package pdftex.def Info: ../lezione6/img12.JPG  used on input line 229.
@@ -1406,7 +1406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--235
 
  []
 
-<../lezione6/img13.jpg, id=586, 414.79968pt x 164.11313pt>
+<../lezione6/img13.jpg, id=601, 414.79968pt x 164.11313pt>
 File: ../lezione6/img13.jpg Graphic file (type jpg)
 <use ../lezione6/img13.jpg>
 Package pdftex.def Info: ../lezione6/img13.jpg  used on input line 236.
@@ -1416,7 +1416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--261
 
  []
 
-<../lezione6/img14.JPG, id=587, 328.22626pt x 239.39438pt>
+<../lezione6/img14.JPG, id=602, 328.22626pt x 239.39438pt>
 File: ../lezione6/img14.JPG Graphic file (type jpg)
 <use ../lezione6/img14.JPG>
 Package pdftex.def Info: ../lezione6/img14.JPG  used on input line 262.
@@ -1431,18 +1431,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--270
 
  []
 
-<../lezione6/img15.JPG, id=588, 353.06906pt x 232.61906pt>
+<../lezione6/img15.JPG, id=603, 353.06906pt x 232.61906pt>
 File: ../lezione6/img15.JPG Graphic file (type jpg)
 <use ../lezione6/img15.JPG>
 Package pdftex.def Info: ../lezione6/img15.JPG  used on input line 271.
 (pdftex.def)             Requested size: 129.55602pt x 85.35826pt.
 [34 <../lezione6/img12.JPG> <../lezione6/img13.JPG> <../lezione6/img14.JPG> <../lezione6/img15.JPG>]
-<../lezione6/img16.JPG, id=593, 283.81032pt x 206.27063pt>
+<../lezione6/img16.JPG, id=608, 283.81032pt x 206.27063pt>
 File: ../lezione6/img16.JPG Graphic file (type jpg)
 <use ../lezione6/img16.JPG>
 Package pdftex.def Info: ../lezione6/img16.JPG  used on input line 276.
 (pdftex.def)             Requested size: 117.44562pt x 85.35826pt.
-<../lezione6/img17.JPG, id=594, 407.27156pt x 273.27094pt>
+<../lezione6/img17.JPG, id=609, 407.27156pt x 273.27094pt>
 File: ../lezione6/img17.JPG Graphic file (type jpg)
 <use ../lezione6/img17.JPG>
 Package pdftex.def Info: ../lezione6/img17.JPG  used on input line 280.
@@ -1452,7 +1452,145 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--19
 
  []
 
-[35 <../lezione6/img16.JPG> <../lezione6/img17.JPG>] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../esercitazione1/esercitazione1.tex
+[35 <../lezione6/img16.JPG> <../lezione6/img17.JPG>] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../lezione7/lezione7.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
+
+ []
+
+<../lezione7/img1.JPG, id=615, 654.94687pt x 443.40656pt>
+File: ../lezione7/img1.JPG Graphic file (type jpg)
+<use ../lezione7/img1.JPG>
+Package pdftex.def Info: ../lezione7/img1.JPG  used on input line 33.
+(pdftex.def)             Requested size: 210.13693pt x 142.26378pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
+
+ []
+
+<../lezione7/img2.JPG, id=616, 396.7322pt x 252.945pt>
+File: ../lezione7/img2.JPG Graphic file (type jpg)
+<use ../lezione7/img2.JPG>
+Package pdftex.def Info: ../lezione7/img2.JPG  used on input line 41.
+(pdftex.def)             Requested size: 133.88225pt x 85.35826pt.
+[36 <../lezione7/img1.JPG>]
+<../lezione7/img3.JPG, id=622, 327.47343pt x 257.46187pt>
+File: ../lezione7/img3.JPG Graphic file (type jpg)
+<use ../lezione7/img3.JPG>
+Package pdftex.def Info: ../lezione7/img3.JPG  used on input line 46.
+(pdftex.def)             Requested size: 108.56625pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--64
+
+ []
+
+<../lezione7/img4.JPG, id=623, 464.4853pt x 325.215pt>
+File: ../lezione7/img4.JPG Graphic file (type jpg)
+<use ../lezione7/img4.JPG>
+Package pdftex.def Info: ../lezione7/img4.JPG  used on input line 65.
+(pdftex.def)             Requested size: 121.9115pt x 85.35826pt.
+[37 <../lezione7/img2.JPG> <../lezione7/img3.JPG> <../lezione7/img4.JPG>]
+<../lezione7/img5.JPG, id=629, 377.91188pt x 232.61906pt>
+File: ../lezione7/img5.JPG Graphic file (type jpg)
+<use ../lezione7/img5.JPG>
+Package pdftex.def Info: ../lezione7/img5.JPG  used on input line 88.
+(pdftex.def)             Requested size: 138.6719pt x 85.35826pt.
+<../lezione7/img6.JPG, id=630, 747.54282pt x 234.1247pt>
+File: ../lezione7/img6.JPG Graphic file (type jpg)
+<use ../lezione7/img6.JPG>
+Package pdftex.def Info: ../lezione7/img6.JPG  used on input line 91.
+(pdftex.def)             Requested size: 272.54858pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--100
+
+ []
+
+<../lezione7/img7.JPG, id=631, 359.84438pt x 196.48407pt>
+File: ../lezione7/img7.JPG Graphic file (type jpg)
+<use ../lezione7/img7.JPG>
+Package pdftex.def Info: ../lezione7/img7.JPG  used on input line 101.
+(pdftex.def)             Requested size: 156.32788pt x 85.35826pt.
+<../lezione7/img8.JPG, id=632, 450.18187pt x 168.63pt>
+File: ../lezione7/img8.JPG Graphic file (type jpg)
+<use ../lezione7/img8.JPG>
+Package pdftex.def Info: ../lezione7/img8.JPG  used on input line 106.
+(pdftex.def)             Requested size: 227.87927pt x 85.35826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--114
+
+ []
+
+<../lezione7/img9.JPG, id=633, 393.72093pt x 354.57469pt>
+File: ../lezione7/img9.JPG Graphic file (type jpg)
+<use ../lezione7/img9.JPG>
+Package pdftex.def Info: ../lezione7/img9.JPG  used on input line 115.
+(pdftex.def)             Requested size: 94.77731pt x 85.35826pt.
+[38 <../lezione7/img5.JPG> <../lezione7/img6.JPG> <../lezione7/img7.JPG> <../lezione7/img8.JPG>]
+<../lezione7/img10.JPG, id=638, 365.86688pt x 155.83218pt>
+File: ../lezione7/img10.JPG Graphic file (type jpg)
+<use ../lezione7/img10.JPG>
+Package pdftex.def Info: ../lezione7/img10.JPG  used on input line 126.
+(pdftex.def)             Requested size: 200.40675pt x 85.35826pt.
+<../lezione7/img11.JPG, id=639, 391.4625pt x 153.57375pt>
+File: ../lezione7/img11.JPG Graphic file (type jpg)
+<use ../lezione7/img11.JPG>
+Package pdftex.def Info: ../lezione7/img11.JPG  used on input line 144.
+(pdftex.def)             Requested size: 217.58083pt x 85.35826pt.
+<../lezione7/img12.JPG, id=640, 901.11656pt x 341.02406pt>
+File: ../lezione7/img12.JPG Graphic file (type jpg)
+<use ../lezione7/img12.JPG>
+Package pdftex.def Info: ../lezione7/img12.JPG  used on input line 162.
+(pdftex.def)             Requested size: 300.73811pt x 113.81102pt.
+ [39 <../lezione7/img9.JPG> <../lezione7/img10.JPG> <../lezione7/img11.JPG>])
+Underfull \hbox (badness 10000) in paragraph at lines 164--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--21
+
+ []
+
+[40 <../lezione7/img12.JPG>] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../esercitazione1/esercitazione1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
@@ -1473,26 +1611,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--19
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 49--22
+Underfull \hbox (badness 10000) in paragraph at lines 49--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--22
+Underfull \hbox (badness 10000) in paragraph at lines 49--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--22
+Underfull \hbox (badness 10000) in paragraph at lines 49--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--22
+Underfull \hbox (badness 10000) in paragraph at lines 49--24
 
  []
 
-[36] [37] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../esercitazione2/esercitazione2.tex
+[41] [42] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../esercitazione2/esercitazione2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
@@ -1507,7 +1645,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--16
 
  []
 
-<../esercitazione2/img1.JPG, id=618, 493.845pt x 344.78813pt>
+<../esercitazione2/img1.JPG, id=666, 493.845pt x 344.78813pt>
 File: ../esercitazione2/img1.JPG Graphic file (type jpg)
 <use ../esercitazione2/img1.JPG>
 Package pdftex.def Info: ../esercitazione2/img1.JPG  used on input line 24.
@@ -1517,32 +1655,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--33
 
  []
 
-) [38 <../esercitazione2/img1.JPG>] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../esercitazione3/esercitazione3.tex) [39] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../esercitazione4/esercitazione4.tex) [40]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+) [43 <../esercitazione2/img1.JPG>] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../esercitazione3/esercitazione3.tex) [44] (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/../esercitazione4/esercitazione4.tex) [45]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
  (c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 571224EFA838BB22BADE2ED883562DA0;5230.
+(rerunfilecheck)             Checksum: 5DB189DFA848418D868D77DFC2B0DAB6;5487.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 18351 strings out of 492609
- 335586 string characters out of 6132818
+ 18415 strings out of 492609
+ 337182 string characters out of 6132818
  436916 words of memory out of 5000000
- 21736 multiletter control sequences out of 15000+600000
+ 21787 multiletter control sequences out of 15000+600000
  13466 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,18n,73p,1049b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.pdf (40 pages, 1800198 bytes).
+Output written on c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.pdf (45 pages, 2135388 bytes).
 PDF statistics:
- 722 PDF objects out of 1000 (max. 8388607)
- 597 compressed objects within 6 object streams
- 115 named destinations out of 1000 (max. 500000)
- 889 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 773 PDF objects out of 1000 (max. 8388607)
+ 630 compressed objects within 7 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 973 words of extra memory for PDF output out of 10000 (max. 10000000)
 
