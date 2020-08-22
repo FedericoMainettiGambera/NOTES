@@ -59,17 +59,24 @@
 \BOOKMARK [1][-]{section.11}{Statica dei sistemi di corpi rigidi}{part.1}% 59
 \BOOKMARK [2][-]{subsection.11.1}{Equazioni cardinali della statica dei sistemi di corpi rigidi}{section.11}% 60
 \BOOKMARK [2][-]{subsection.11.2}{Azioni interne}{section.11}% 61
-\BOOKMARK [0][-]{part.2}{II ESERCITAZIONI}{}% 62
-\BOOKMARK [1][-]{section.12}{Esercitazione I}{part.2}% 63
-\BOOKMARK [2][-]{subsection.12.1}{Vettori}{section.12}% 64
-\BOOKMARK [3][-]{subsubsection.12.1.1}{Operazioni fra vettori}{subsection.12.1}% 65
-\BOOKMARK [2][-]{subsection.12.2}{Cinematica del punto}{section.12}% 66
-\BOOKMARK [3][-]{subsubsection.12.2.1}{Legge oraria e traiettoria}{subsection.12.2}% 67
-\BOOKMARK [3][-]{subsubsection.12.2.2}{Numeri complessi}{subsection.12.2}% 68
-\BOOKMARK [1][-]{section.13}{Esercitazione II}{part.2}% 69
-\BOOKMARK [2][-]{subsection.13.1}{Ripasso sulla cinematica del corpo rigido}{section.13}% 70
-\BOOKMARK [2][-]{subsection.13.2}{Ripasso sui moti relativi}{section.13}% 71
-\BOOKMARK [1][-]{section.14}{Esercitazione III}{part.2}% 72
-\BOOKMARK [2][-]{subsection.14.1}{Tipico procedimento di risoluzione di un problema coi numeri complessi}{section.14}% 73
-\BOOKMARK [1][-]{section.15}{Esercitazione IV}{part.2}% 74
-\BOOKMARK [2][-]{subsection.15.1}{Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{section.15}% 75
+\BOOKMARK [1][-]{section.12}{Dinamica dei corpi rigidi}{part.1}% 62
+\BOOKMARK [2][-]{subsection.12.1}{Baricentro}{section.12}% 63
+\BOOKMARK [3][-]{subsubsection.12.1.1}{Masse puntiformi}{subsection.12.1}% 64
+\BOOKMARK [3][-]{subsubsection.12.1.2}{Copri rigidi}{subsection.12.1}% 65
+\BOOKMARK [2][-]{subsection.12.2}{Momento di inerzia}{section.12}% 66
+\BOOKMARK [3][-]{subsubsection.12.2.1}{Masse puntiformi}{subsection.12.2}% 67
+\BOOKMARK [3][-]{subsubsection.12.2.2}{Corpo rigido}{subsection.12.2}% 68
+\BOOKMARK [0][-]{part.2}{II ESERCITAZIONI}{}% 69
+\BOOKMARK [1][-]{section.13}{Esercitazione I}{part.2}% 70
+\BOOKMARK [2][-]{subsection.13.1}{Vettori}{section.13}% 71
+\BOOKMARK [3][-]{subsubsection.13.1.1}{Operazioni fra vettori}{subsection.13.1}% 72
+\BOOKMARK [2][-]{subsection.13.2}{Cinematica del punto}{section.13}% 73
+\BOOKMARK [3][-]{subsubsection.13.2.1}{Legge oraria e traiettoria}{subsection.13.2}% 74
+\BOOKMARK [3][-]{subsubsection.13.2.2}{Numeri complessi}{subsection.13.2}% 75
+\BOOKMARK [1][-]{section.14}{Esercitazione II}{part.2}% 76
+\BOOKMARK [2][-]{subsection.14.1}{Ripasso sulla cinematica del corpo rigido}{section.14}% 77
+\BOOKMARK [2][-]{subsection.14.2}{Ripasso sui moti relativi}{section.14}% 78
+\BOOKMARK [1][-]{section.15}{Esercitazione III}{part.2}% 79
+\BOOKMARK [2][-]{subsection.15.1}{Tipico procedimento di risoluzione di un problema coi numeri complessi}{section.15}% 80
+\BOOKMARK [1][-]{section.16}{Esercitazione IV}{part.2}% 81
+\BOOKMARK [2][-]{subsection.16.1}{Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{section.16}% 82
