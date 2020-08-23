@@ -15,12 +15,12 @@ Esistono diverse modalità per studiare la dinamica di un sistema meccanico:
         \item \textbf{Equazioni di Lagrange}
     \end{itemize}
 \end{itemize}
-\subsection{Principio di D'Alambent}
+\newpage
+\section{Principio di D'Alambent}
 Il principio di D'Alambent si basa sulla scrittura di equazioni di equilibrio dinamico.\newline
 \newline
-Secondo questo approccio la dinamica viene studiata come una condizione statica equivalente. In poche parole andremmo a generalizzare le equazioni cardinali della statica, andando ad aggiungere tra le forze che agiscono sul punto o sui corpi rigidi anche le forze e coppie di inerzia che agiscono sul sistema stesso.\newline
-\newline
-\subsubsection{Principio di D'Alament per il punto materiale}
+Secondo questo approccio la dinamica viene studiata come una condizione statica equivalente. In poche parole andremmo a generalizzare le equazioni cardinali della statica, andando ad aggiungere tra le forze che agiscono sul punto o sui corpi rigidi anche le forze e coppie di inerzia che agiscono sul sistema stesso.
+\subsection{Principio di D'Alament per il punto materiale}
 Partiamo dal secondo principio della dinamica o \textbf{prima legge di Newton}:\newline
 Se abbiamo un punto materiale di massa $m$, che si muove con una certa accellerazione $a$ e sul quale agiscono un certo numero di forze $\vec{F}_1, \vec{F}_2, \dots, \vec{F}_i$, la risultante delle forze sul punto dovrà eguagliare il prodotto fra la massa del punto e l'accellerazione del punto (\textbf{forza = massa x accellerazione}):
 \[
@@ -53,7 +53,7 @@ L'equazione di equilibrio del principio di D'alambent è un'equazione vettoriale
     \item se sono note le forze attive applicate al punto, di determinare il moto del punto, ovvero velocità e accellerazioni;
     \item se è noto il moto del punto, ovvero velocità e accellerazione, di calcolare le forze attive necessarie per mantenere la condizione di moto assegnata.
 \end{itemize}
-\subsubsection{Principio di D'Alambent per il corpo rigido: forze e coppie di inerzia}
+\subsection{Principio di D'Alambent per il corpo rigido: forze e coppie di inerzia}
 Valgono le stesse considerazioni fatte per il punto materiale: si estendono le equazioni cardinali della statica, aggiungendo le forze di inerzia che agiscono sul corpo rigido.\newline
 \newline
 \textbf{Principio di D'Alambent per il corpo rigido}:\newline
@@ -65,7 +65,7 @@ Definiamo quindi \textbf{forze e coppie di inerzia} per un copro rigido:\newline
     \includegraphics[height=3cm]{../lezione9/img1.JPG}
 \end{center}
 Dato una sezione infinitesima $P$ del corpo rigido, con massa $dm$ e accellerazione $\vec{a}_P$, allora $d \vec{F}_{in} = - \vec{a}_P \cdot dm$, inoltre, siccome $dm = \rho dV$, allora $d \vec{F}_{in} = - \vec{a}_P \rho dV$.
-\subsubsection*{Forza di inerzia}
+\subsection*{Forza di inerzia}
 Ora per trovare la \textbf{forza di inerzia del corpo rigido} è sufficiente estendere la formula con l'integrale su tutta la superficie del corpo:
 \[
     \vec{F}_{in} = - \int_V \vec{a}_P \rho dV
@@ -96,7 +96,7 @@ Quindi tutto ciò che rimane nella definizione della \textbf{forza di inerzia} �
 dove $\int_V \rho dV = m$.\newline
 \newline
 Quindi la forza di inerzia di un corpo rigido è la sua massa moltiplicata per l'accellerazione del baricentro. Notiamo come ancora una volta il baricentro può essere visto come quel punto in cui è concentrata tutta la massa del corpo.
-\subsubsection*{Coppia di inerzia}
+\subsection*{Coppia di inerzia}
 Bisogna calcolare il momento risultante di tutte le forze di inerzia infinitesime rispetto al baricentro del corpo
 \[
     \vec{C}_{in} = \int_V (P-G) \land d \vec{F}_{in} =  - \int_V (P-G) \land \vec{a}_P \rho dV
@@ -134,3 +134,93 @@ Infine dunque la \textbf{coppia di inerzia} può essere scritta come il prodotto
 \[
     \vec{C}_{in} = - J_G \dot{\vec{\omega}}
 \]
+\subsection*{Principio di D'Alambent}
+Vediamo infine i risultati fino ad ora ottenuti applicati al principio di D'Alambent:
+\[
+    \begin{cases}
+        \sum_i \vec{F}_i + \vec{F}_in = 0\\
+        \sum_i (P_i - O) \land \vec{F}_i + \sum_j \vec{C}_j - (G-O) \land \vec{F}_{in} + \vec{C}_{in} = 0
+    \end{cases}
+\]
+con $O$ polo scelto arbitrariamente e $P_i$ punto di applicazione della forza $i$-esima.\newline
+\newline
+Questo sistema di due equazioni, nel piano rappresenta un sistema di tre equazioni linearmente indipendenti che ci permettono:
+\begin{itemize}
+    \item di calcolare le reazioni vincolari;
+    \item se sono note le forze attive applciate al corpo rigido, di determinare tanti parametri cinematici che definiscono il moto del corpo, tanti quanti sono i gradi di libertà del sistema ($3-n_v \geq 1$) (\textbf{dinamica direatta});
+    \item se è assegnata la velocità e accellerazione del corpo, di determinare le forze attive necessarie a mantenere le condizioni di moto assegnate (\textbf{dinamica inversa}).
+\end{itemize}
+\ \newline
+\newline
+\textbf{es.} dinamica inversa:\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione9/img4.JPG}
+\end{center}
+Dati: $\theta = 30^0$, $\dot{\theta} = 3 rad/s$, $\ddot{\theta} = 1 rad/s^2$, $m = 6 kg$, $L = 1m$, trave snella, omogenea, nel piano verticale.\newline
+Problema: trovare il momento angolare $M$ che mi consente di mantenere la condizione di moto assegnata.\newline
+\newline
+Per prima cosa procediamo con un analisi cinematica del problema per determinare le accellerazioni, che mi consentiranno di determinare le coppie e forze di inerzia.\newline
+In seguito isoleremo il corpo per mettere in evidenza tutte le forze attive e reattive.\newline
+Come ultima cosa applicheremo il principio di D'Alambent.\newline
+\newline
+Analisi cinemaitca:\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione9/img5.JPG}
+\end{center}
+ $(G-O) = \frac{L}{2}e^{i \alpha}$, con $\alpha = \frac{3}{2} \pi + \theta$, $\dot{\alpha} = \dot{\theta} = \omega$, $\ddot{\alpha} = \ddot{\theta} = \dot{\omega}$.\newline
+Velocità: $\vec{v}_G = i \dot{\alpha} \frac{L}{2} e^{i \alpha} = \dot{\alpha} \frac{}{2} e^{i (\alpha + \frac{\pi}{2})} = \dot{\theta} \frac{L}{2} e^{i (\alpha + \frac{\pi}{2})}$.\newline
+Accellerazione: $\vec{a}_G = \ddot{\alpha} \frac{L}{2} e^{i (\alpha + \frac{\pi}{2})} - \dot{\alpha}^2 \frac{L}{2} e^{i \alpha} = \ddot{\theta} \frac{L}{2} e^{i (\alpha + \frac{\pi}{2})} - \dot{\theta}^2 \frac{L}{2} e^{i \alpha}$, con $a^{(t)}_G = \ddot{\theta} \frac{L}{2} e^{i (\alpha + \frac{\pi}{2})}$ e $a^{(n)}_G = \dot{\theta}^2 \frac{L}{2} e^{i \alpha}$\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione9/img6.JPG}
+\end{center}
+Possiamo ora calcolare le forze e le coppie d'inerzia:
+\[
+    \vec{F}_{in} = - m \vec{a}_G = - m (\vec{a}_G^{(t)} + \vec{a}_G^{(n)})
+\]
+\[
+    \vec{C}_{in} = - J_G \dot{\vec{\omega}}
+\]
+tenendo sempre a mente che $\dot{\omega} = \ddot{\theta}$ e siccome abbiamo una trave snella omogenea, sappiamo che $J_G = \frac{m L^2}{12} = 0,5 kg m^2$.\newline
+\newline
+A questo punto possiamo isolare il corpo, indicare tutte le forze e scrivere il principio di D'Alambent:\newline
+[immagine dagli appunti del prof]
+\begin{center}
+    \includegraphics[height=3cm]{../lezione9/img7.JPG}
+\end{center}
+\[
+    \begin{cases}
+        R_x = 0\\
+        R_y = 0\\
+        M_o = 0
+    \end{cases} \rightarrow V_o, H_o, M = ?
+\]
+Calcoliamo il momento ripetto al polo $O$:
+\[
+    M - mg \frac{L}{2}sin(\theta) - J_G \dot{\omega} - m \ddot{\theta} \frac{L}{2} \frac{L}{2} = 0
+\]
+\[
+    M = \left(J_G + m \frac{L^2}{4}\right) \ddot{\theta} + mg \frac{L}{2} sin(\theta) = 16,7 Nm 
+\]
+Ora calcoliamo le forze vincolari con gli equilibri sugli assi $X$ e $Y$:
+\[
+    H_o + m \dot{\theta}^2 \frac{L}{2} sin(\theta) - m \ddot{\theta} \frac{L}{2} cos(\theta) = 0 \Rightarrow H_o = -10,9 N
+\]
+\[
+    V_o - mg - m \frac{L}{2} \ddot{\theta} sin(\theta) - m \frac{L}{2}\dot{\theta}^2 cos(\theta) = 0 \Rightarrow V_o = 83,7N
+\]
+\rule{\textwidth}{0,4pt}
+\subsection{Principio di D'Alambent per sistemi di corpi rigidi}
+Come per la statica, ci basta spezzare il sistema in tutti i corpi rigidi che lo costituiscono e verificare le condizioni di equilibrio dinamico per ciascuno di essi.\newline
+\newline
+\textbf{Principio di D'Alambent per sistemi di corpi rigidi}:\newline
+Condizione necessaria e sufficiente per l'equilibrio dinamico di un sistema di corpi rigidi è che sia in equilibrio ogni sua parte supposta rigida sotto l'azione di tutte le forze interne ed esterne, attive e reattive, applicate al corpo, incluse pure le forze e coppie di inerzia.\newline
+\newline
+Le equazioni del principio di D'Alambent applicato ai sistemi di corpi rigidi ci permettono:
+\begin{itemize}
+    \item di calcolare le reazioni vincolari;
+    \item se sono date le forze attive esterne, di determinare il moto del sistema, ovvero tanti parametri cinematici del sistema, tanti quanti sono i gradi di libertà $n$ del sistema (\textbf{dinamica diretta});
+    \item se è assegnata una condizione di moto, di calcolare tante forze necessarie a mantenere la condizione di moto, quanti sono i gradi di libertà del sistema (\textbf{dinamica inversa}).
+\end{itemize}
