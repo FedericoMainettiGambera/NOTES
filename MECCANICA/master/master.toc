@@ -82,3 +82,7 @@
 \contentsline {subsection}{\numberline {15.1}Tipico procedimento di risoluzione di un problema coi numeri complessi}{48}{subsection.15.1}% 
 \contentsline {section}{\numberline {16}Esercitazione IV}{49}{section.16}% 
 \contentsline {subsection}{\numberline {16.1}Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{49}{subsection.16.1}% 
+\contentsline {section}{\numberline {17}Esercitazione V}{50}{section.17}% 
+\contentsline {subsection}{\numberline {17.1}Ripasso sulle equazioni cardinali della statica}{50}{subsection.17.1}% 
+\contentsline {subsection}{\numberline {17.2}Ripasso sul momento di una forza}{50}{subsection.17.2}% 
+\contentsline {subsection}{\numberline {17.3}Ripasso sulle azioni interne}{50}{subsection.17.3}% 
