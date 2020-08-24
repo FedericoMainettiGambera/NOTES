@@ -101,3 +101,4 @@
 \contentsline {subsection}{\numberline {23.1}Forza elastica}{65}{subsection.23.1}% 
 \contentsline {subsection}{\numberline {23.2}Forza applicata su un vincolo}{65}{subsection.23.2}% 
 \contentsline {subsection}{\numberline {23.3}Biella}{65}{subsection.23.3}% 
+\contentsline {section}{\numberline {24}Esercitazione VII}{66}{section.24}% 
