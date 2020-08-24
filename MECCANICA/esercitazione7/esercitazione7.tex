@@ -3,3 +3,44 @@
 \section{Esercitazione VII}
 \url{../esercitazione7/pdf/07-Dinamica01.pdf}\newline
 \url{../esercitazione7/pdf/ese_7_notes.pdf}
+\subsection{Ripasso dinamica}
+La dinamica studia il legame fra le forze e le coppie agenti su un sistema meccanico e il moto che ne deriva.
+\subsubsection{Equazioni di D'alambert}
+Le equazioni di D'Alambert sono equazioni di equilibrio dinamico, cioè avendo un corpo e delle forze e coppie applicate ad esso, ne consegue un moto descrivibile con un accellerazione del baricentro $\vec{a}_G$ e una certa velocità angolare $\dot{\omega}$.\newline
+\newline
+Forze e coppie di inerzia:
+\[
+    \begin{cases}
+        F_{in} = -m \vec{a}_G\\
+        C_{in} = - J_G \dot{\vec{\omega}}
+    \end{cases}
+\]
+\ \newline
+Le equazioni di D'Alambert sono:
+\[
+    \sum_i \vec{F}_i + \vec{F}_{in} = 0
+\]
+che proiettate sugli assi ci porta ad avere un sistema di due equazioni nel piano per ogni corpo.
+\[
+    \sum_i (P_i - O) \land \vec{F}_i + \sum_j \vec{C}_j + (G-O) \land \vec{F}_{in} + C_{in} = 0
+\]
+che è un equazione nel piano per ogni corpo.\newline
+Quindi in totale si hanno $3 \cdot n_c$ equazioni, con $n_c$ il numero di corpi, che ci permettono di calcolare i legami dinamici tra le forze e coppie applicate del corpo e l'accellerazione e velocità angolare del copro, in più ci permettono pure di calcolare le reazioni vincolari.
+\subsubsection{Bilancio di Potenze o teorema dell'energia cinetica}
+Questo approccio alla dinamica è un approccio energetico.\newline
+\newline
+Abbiamo visto che la potenza $W$ delle forze e coppie attive applicate sul corpo sommati alla potenza $W_{in}$ delle forze e coppie di inerzia è nullo:
+\[
+    W + W_{in} = 0
+\]
+\ \newline
+In alternativa possiamo scrivere
+\[
+    W_{in} = - \frac{d E_c}{dt}
+\]
+e quindi il teorema dell'energia cinetica:
+\[
+    W = \frac{d E_c}{dt}
+\]
+\ \newline
+Questo approccio è più diretto perchè non ci richiede di calcolare le reazioni vincolari.

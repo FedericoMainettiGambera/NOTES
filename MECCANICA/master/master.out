@@ -66,10 +66,10 @@
 \BOOKMARK [2][-]{subsection.13.1}{Masse puntiformi}{section.13}% 66
 \BOOKMARK [2][-]{subsection.13.2}{Corpo rigido}{section.13}% 67
 \BOOKMARK [1][-]{section.14}{Dinamica}{part.1}% 68
-\BOOKMARK [1][-]{section.15}{Principio di D'Alambent}{part.1}% 69
+\BOOKMARK [1][-]{section.15}{Principio di D'Alambert}{part.1}% 69
 \BOOKMARK [2][-]{subsection.15.1}{Principio di D'Alament per il punto materiale}{section.15}% 70
-\BOOKMARK [2][-]{subsection.15.2}{Principio di D'Alambent per il corpo rigido: forze e coppie di inerzia}{section.15}% 71
-\BOOKMARK [2][-]{subsection.15.3}{Principio di D'Alambent per sistemi di corpi rigidi}{section.15}% 72
+\BOOKMARK [2][-]{subsection.15.2}{Principio di D'Alambert per il corpo rigido: forze e coppie di inerzia}{section.15}% 71
+\BOOKMARK [2][-]{subsection.15.3}{Principio di D'Alambert per sistemi di corpi rigidi}{section.15}% 72
 \BOOKMARK [1][-]{section.16}{Bilancio di Potenze \(BdP\)}{part.1}% 73
 \BOOKMARK [2][-]{subsection.16.1}{Introduzione}{section.16}% 74
 \BOOKMARK [2][-]{subsection.16.2}{Energia cinetica e teorema di Konig}{section.16}% 75
@@ -100,3 +100,6 @@
 \BOOKMARK [2][-]{subsection.23.2}{Forza applicata su un vincolo}{section.23}% 100
 \BOOKMARK [2][-]{subsection.23.3}{Biella}{section.23}% 101
 \BOOKMARK [1][-]{section.24}{Esercitazione VII}{part.2}% 102
+\BOOKMARK [2][-]{subsection.24.1}{Ripasso dinamica}{section.24}% 103
+\BOOKMARK [3][-]{subsubsection.24.1.1}{Equazioni di D'alambert}{subsection.24.1}% 104
+\BOOKMARK [3][-]{subsubsection.24.1.2}{Bilancio di Potenze o teorema dell'energia cinetica}{subsection.24.1}% 105
