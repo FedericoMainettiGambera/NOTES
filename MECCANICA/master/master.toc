@@ -1,103 +1,103 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {part}{I\hspace {1em}LEZIONI}{2}{part.1}% 
-\contentsline {section}{\numberline {1}Informazioni sul corso}{2}{section.1}% 
-\contentsline {subsection}{\numberline {1.1}Libro di testo}{2}{subsection.1.1}% 
-\contentsline {subsection}{\numberline {1.2}Argomenti del corso}{2}{subsection.1.2}% 
-\contentsline {section}{\numberline {2}Cinematica di un punto}{2}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Gradi di libert\IeC {\`a}}{2}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}Moto}{2}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}Velocit\IeC {\`a}}{3}{subsection.2.3}% 
-\contentsline {subsection}{\numberline {2.4}Accellerazione}{4}{subsection.2.4}% 
-\contentsline {section}{\numberline {3}Cinematica di un corpo}{6}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}Definizioni}{6}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Corpo rigido}{6}{subsection.3.2}% 
-\contentsline {subsection}{\numberline {3.3}Moto in grande}{7}{subsection.3.3}% 
-\contentsline {subsubsection}{\numberline {3.3.1}Traslazione}{7}{subsubsection.3.3.1}% 
-\contentsline {subsubsection}{\numberline {3.3.2}Rotazione}{7}{subsubsection.3.3.2}% 
-\contentsline {subsubsection}{\numberline {3.3.3}Rototraslazione}{8}{subsubsection.3.3.3}% 
-\contentsline {subsection}{\numberline {3.4}Moto in piccolo (Atto di moto)}{8}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}Cinematica del corpo rigido}{10}{subsection.3.5}% 
-\contentsline {subsubsection}{\numberline {3.5.1}Posizone}{10}{subsubsection.3.5.1}% 
-\contentsline {subsubsection}{\numberline {3.5.2}Velocit\IeC {\`a}}{10}{subsubsection.3.5.2}% 
-\contentsline {subsubsection}{\numberline {3.5.3}Accellerazione}{11}{subsubsection.3.5.3}% 
-\contentsline {section}{\numberline {4}Analisi cinematica mediante osservatori in moto relativo}{12}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Posizione}{12}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Velocit\IeC {\`a}}{13}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}Accellerazione}{14}{subsection.4.3}% 
-\contentsline {section}{\numberline {5}Sistemi meccanici}{16}{section.5}% 
-\contentsline {subsection}{\numberline {5.1}Vincoli elementari}{16}{subsection.5.1}% 
-\contentsline {subsubsection}{\numberline {5.1.1}Vincoli tripli}{16}{subsubsection.5.1.1}% 
-\contentsline {subsubsection}{\numberline {5.1.2}Vincoli doppi}{16}{subsubsection.5.1.2}% 
-\contentsline {subsubsection}{\numberline {5.1.3}Vincoli singoli}{17}{subsubsection.5.1.3}% 
-\contentsline {subsection}{\numberline {5.2}Vincoli di contatto}{17}{subsection.5.2}% 
-\contentsline {subsection}{\numberline {5.3}Vincolo di puro rotolamento}{17}{subsection.5.3}% 
-\contentsline {section}{\numberline {6}Cinematica dei sistemi meccanici}{20}{section.6}% 
-\contentsline {subsection}{\numberline {6.1}Classificazione dei sistemi meccanici}{20}{subsection.6.1}% 
-\contentsline {subsubsection}{\numberline {6.1.1}Regola di Grublen}{20}{subsubsection.6.1.1}% 
-\contentsline {section}{\numberline {7}Cinematica del manipolatore SCARA}{21}{section.7}% 
-\contentsline {subsection}{\numberline {7.1}Introduzione}{21}{subsection.7.1}% 
-\contentsline {subsection}{\numberline {7.2}Numeri complessi}{21}{subsection.7.2}% 
-\contentsline {subsection}{\numberline {7.3}Sistema mobile traslante}{22}{subsection.7.3}% 
-\contentsline {subsection}{\numberline {7.4}Sistema mobile rotante}{23}{subsection.7.4}% 
-\contentsline {section}{\numberline {8}Cinematica del manovellismo ordinario}{24}{section.8}% 
-\contentsline {subsection}{\numberline {8.1}Introduzione}{24}{subsection.8.1}% 
-\contentsline {subsection}{\numberline {8.2}Posizione del manovellismo ordinario centrato}{24}{subsection.8.2}% 
-\contentsline {subsection}{\numberline {8.3}Velocit\IeC {\`a} del manovellismo ordinario centrato}{25}{subsection.8.3}% 
-\contentsline {subsubsection}{\numberline {8.3.1}Jacobiano del moto}{26}{subsubsection.8.3.1}% 
-\contentsline {subsection}{\numberline {8.4}Accellerazione del manovellismo ordinario centrato}{26}{subsection.8.4}% 
-\contentsline {section}{\numberline {9}Statica del punto materiale}{28}{section.9}% 
-\contentsline {subsection}{\numberline {9.1}Equazioni caridnali della statica per il punto materiale}{28}{subsection.9.1}% 
-\contentsline {subsection}{\numberline {9.2}Reazioni vincolari}{29}{subsection.9.2}% 
-\contentsline {subsubsection}{\numberline {9.2.1}Incastro}{29}{subsubsection.9.2.1}% 
-\contentsline {subsubsection}{\numberline {9.2.2}Cerniera}{29}{subsubsection.9.2.2}% 
-\contentsline {subsubsection}{\numberline {9.2.3}Pattino}{29}{subsubsection.9.2.3}% 
-\contentsline {subsubsection}{\numberline {9.2.4}Manicotto}{29}{subsubsection.9.2.4}% 
-\contentsline {subsubsection}{\numberline {9.2.5}Carrello-cerniera}{30}{subsubsection.9.2.5}% 
-\contentsline {section}{\numberline {10}Statica del corpo rigido}{31}{section.10}% 
-\contentsline {subsection}{\numberline {10.1}equazioni cardinali della statica per il corpo rigido}{31}{subsection.10.1}% 
-\contentsline {subsection}{\numberline {10.2}Momento di una forza}{32}{subsection.10.2}% 
-\contentsline {subsection}{\numberline {10.3}Coppia}{32}{subsection.10.3}% 
-\contentsline {section}{\numberline {11}Statica dei sistemi di corpi rigidi}{35}{section.11}% 
-\contentsline {subsection}{\numberline {11.1}Equazioni cardinali della statica dei sistemi di corpi rigidi}{35}{subsection.11.1}% 
-\contentsline {subsection}{\numberline {11.2}Azioni interne}{37}{subsection.11.2}% 
-\contentsline {section}{\numberline {12}Baricentro}{40}{section.12}% 
-\contentsline {subsection}{\numberline {12.1}Masse puntiformi}{40}{subsection.12.1}% 
-\contentsline {subsection}{\numberline {12.2}Copri rigidi}{40}{subsection.12.2}% 
-\contentsline {section}{\numberline {13}Momento di inerzia}{42}{section.13}% 
-\contentsline {subsection}{\numberline {13.1}Masse puntiformi}{42}{subsection.13.1}% 
-\contentsline {subsection}{\numberline {13.2}Corpo rigido}{42}{subsection.13.2}% 
-\contentsline {section}{\numberline {14}Dinamica}{45}{section.14}% 
-\contentsline {section}{\numberline {15}Principio di D'Alambent}{46}{section.15}% 
-\contentsline {subsection}{\numberline {15.1}Principio di D'Alament per il punto materiale}{46}{subsection.15.1}% 
-\contentsline {subsection}{\numberline {15.2}Principio di D'Alambent per il corpo rigido: forze e coppie di inerzia}{46}{subsection.15.2}% 
-\contentsline {subsection}{\numberline {15.3}Principio di D'Alambent per sistemi di corpi rigidi}{50}{subsection.15.3}% 
-\contentsline {section}{\numberline {16}Bilancio di Potenze (BdP)}{51}{section.16}% 
-\contentsline {subsection}{\numberline {16.1}Introduzione}{51}{subsection.16.1}% 
-\contentsline {subsection}{\numberline {16.2}Energia cinetica e teorema di Konig}{52}{subsection.16.2}% 
-\contentsline {subsection}{\numberline {16.3}Bilancio di potenze con energia cinetica}{52}{subsection.16.3}% 
-\contentsline {section}{\numberline {17}Attrito}{54}{section.17}% 
-\contentsline {subsection}{\numberline {17.1}Modello di Coulomb}{54}{subsection.17.1}% 
-\contentsline {subsection}{\numberline {17.2}Attrito statico}{54}{subsection.17.2}% 
-\contentsline {part}{II\hspace {1em}ESERCITAZIONI}{55}{part.2}% 
-\contentsline {section}{\numberline {18}Esercitazione I}{55}{section.18}% 
-\contentsline {subsection}{\numberline {18.1}Vettori}{55}{subsection.18.1}% 
-\contentsline {subsubsection}{\numberline {18.1.1}Operazioni fra vettori}{55}{subsubsection.18.1.1}% 
-\contentsline {subsection}{\numberline {18.2}Cinematica del punto}{55}{subsection.18.2}% 
-\contentsline {subsubsection}{\numberline {18.2.1}Legge oraria e traiettoria}{55}{subsubsection.18.2.1}% 
-\contentsline {subsubsection}{\numberline {18.2.2}Numeri complessi}{56}{subsubsection.18.2.2}% 
-\contentsline {section}{\numberline {19}Esercitazione II}{57}{section.19}% 
-\contentsline {subsection}{\numberline {19.1}Ripasso sulla cinematica del corpo rigido}{57}{subsection.19.1}% 
-\contentsline {subsection}{\numberline {19.2}Ripasso sui moti relativi}{57}{subsection.19.2}% 
-\contentsline {section}{\numberline {20}Esercitazione III}{58}{section.20}% 
-\contentsline {subsection}{\numberline {20.1}Tipico procedimento di risoluzione di un problema coi numeri complessi}{58}{subsection.20.1}% 
-\contentsline {section}{\numberline {21}Esercitazione IV}{59}{section.21}% 
-\contentsline {subsection}{\numberline {21.1}Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{59}{subsection.21.1}% 
-\contentsline {section}{\numberline {22}Esercitazione V}{60}{section.22}% 
-\contentsline {subsection}{\numberline {22.1}Ripasso sulle equazioni cardinali della statica}{60}{subsection.22.1}% 
-\contentsline {subsection}{\numberline {22.2}Ripasso sul momento di una forza}{60}{subsection.22.2}% 
-\contentsline {subsection}{\numberline {22.3}Ripasso sulle azioni interne}{60}{subsection.22.3}% 
-\contentsline {section}{\numberline {23}Esercitazione VI}{62}{section.23}% 
-\contentsline {subsection}{\numberline {23.1}Forza elastica}{62}{subsection.23.1}% 
-\contentsline {subsection}{\numberline {23.2}Forza applicata su un vincolo}{62}{subsection.23.2}% 
-\contentsline {subsection}{\numberline {23.3}Biella}{62}{subsection.23.3}% 
+\contentsline {part}{I\hspace {1em}LEZIONI}{4}{part.1}% 
+\contentsline {section}{\numberline {1}Informazioni sul corso}{4}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Libro di testo}{4}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Argomenti del corso}{4}{subsection.1.2}% 
+\contentsline {section}{\numberline {2}Cinematica di un punto}{4}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Gradi di libert\IeC {\`a}}{4}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Moto}{4}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Velocit\IeC {\`a}}{5}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Accellerazione}{6}{subsection.2.4}% 
+\contentsline {section}{\numberline {3}Cinematica di un corpo}{8}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Definizioni}{8}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Corpo rigido}{8}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Moto in grande}{9}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Traslazione}{9}{subsubsection.3.3.1}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Rotazione}{9}{subsubsection.3.3.2}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Rototraslazione}{10}{subsubsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Moto in piccolo (Atto di moto)}{10}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Cinematica del corpo rigido}{12}{subsection.3.5}% 
+\contentsline {subsubsection}{\numberline {3.5.1}Posizone}{12}{subsubsection.3.5.1}% 
+\contentsline {subsubsection}{\numberline {3.5.2}Velocit\IeC {\`a}}{12}{subsubsection.3.5.2}% 
+\contentsline {subsubsection}{\numberline {3.5.3}Accellerazione}{13}{subsubsection.3.5.3}% 
+\contentsline {section}{\numberline {4}Analisi cinematica mediante osservatori in moto relativo}{14}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Posizione}{14}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Velocit\IeC {\`a}}{15}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Accellerazione}{16}{subsection.4.3}% 
+\contentsline {section}{\numberline {5}Sistemi meccanici}{18}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Vincoli elementari}{18}{subsection.5.1}% 
+\contentsline {subsubsection}{\numberline {5.1.1}Vincoli tripli}{18}{subsubsection.5.1.1}% 
+\contentsline {subsubsection}{\numberline {5.1.2}Vincoli doppi}{18}{subsubsection.5.1.2}% 
+\contentsline {subsubsection}{\numberline {5.1.3}Vincoli singoli}{19}{subsubsection.5.1.3}% 
+\contentsline {subsection}{\numberline {5.2}Vincoli di contatto}{19}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Vincolo di puro rotolamento}{19}{subsection.5.3}% 
+\contentsline {section}{\numberline {6}Cinematica dei sistemi meccanici}{22}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Classificazione dei sistemi meccanici}{22}{subsection.6.1}% 
+\contentsline {subsubsection}{\numberline {6.1.1}Regola di Grublen}{22}{subsubsection.6.1.1}% 
+\contentsline {section}{\numberline {7}Cinematica del manipolatore SCARA}{23}{section.7}% 
+\contentsline {subsection}{\numberline {7.1}Introduzione}{23}{subsection.7.1}% 
+\contentsline {subsection}{\numberline {7.2}Numeri complessi}{23}{subsection.7.2}% 
+\contentsline {subsection}{\numberline {7.3}Sistema mobile traslante}{24}{subsection.7.3}% 
+\contentsline {subsection}{\numberline {7.4}Sistema mobile rotante}{25}{subsection.7.4}% 
+\contentsline {section}{\numberline {8}Cinematica del manovellismo ordinario}{26}{section.8}% 
+\contentsline {subsection}{\numberline {8.1}Introduzione}{26}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.2}Posizione del manovellismo ordinario centrato}{26}{subsection.8.2}% 
+\contentsline {subsection}{\numberline {8.3}Velocit\IeC {\`a} del manovellismo ordinario centrato}{27}{subsection.8.3}% 
+\contentsline {subsubsection}{\numberline {8.3.1}Jacobiano del moto}{28}{subsubsection.8.3.1}% 
+\contentsline {subsection}{\numberline {8.4}Accellerazione del manovellismo ordinario centrato}{28}{subsection.8.4}% 
+\contentsline {section}{\numberline {9}Statica del punto materiale}{30}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Equazioni caridnali della statica per il punto materiale}{30}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Reazioni vincolari}{31}{subsection.9.2}% 
+\contentsline {subsubsection}{\numberline {9.2.1}Incastro}{31}{subsubsection.9.2.1}% 
+\contentsline {subsubsection}{\numberline {9.2.2}Cerniera}{31}{subsubsection.9.2.2}% 
+\contentsline {subsubsection}{\numberline {9.2.3}Pattino}{31}{subsubsection.9.2.3}% 
+\contentsline {subsubsection}{\numberline {9.2.4}Manicotto}{31}{subsubsection.9.2.4}% 
+\contentsline {subsubsection}{\numberline {9.2.5}Carrello-cerniera}{32}{subsubsection.9.2.5}% 
+\contentsline {section}{\numberline {10}Statica del corpo rigido}{33}{section.10}% 
+\contentsline {subsection}{\numberline {10.1}equazioni cardinali della statica per il corpo rigido}{33}{subsection.10.1}% 
+\contentsline {subsection}{\numberline {10.2}Momento di una forza}{34}{subsection.10.2}% 
+\contentsline {subsection}{\numberline {10.3}Coppia}{34}{subsection.10.3}% 
+\contentsline {section}{\numberline {11}Statica dei sistemi di corpi rigidi}{37}{section.11}% 
+\contentsline {subsection}{\numberline {11.1}Equazioni cardinali della statica dei sistemi di corpi rigidi}{37}{subsection.11.1}% 
+\contentsline {subsection}{\numberline {11.2}Azioni interne}{39}{subsection.11.2}% 
+\contentsline {section}{\numberline {12}Baricentro}{42}{section.12}% 
+\contentsline {subsection}{\numberline {12.1}Masse puntiformi}{42}{subsection.12.1}% 
+\contentsline {subsection}{\numberline {12.2}Copri rigidi}{42}{subsection.12.2}% 
+\contentsline {section}{\numberline {13}Momento di inerzia}{44}{section.13}% 
+\contentsline {subsection}{\numberline {13.1}Masse puntiformi}{44}{subsection.13.1}% 
+\contentsline {subsection}{\numberline {13.2}Corpo rigido}{44}{subsection.13.2}% 
+\contentsline {section}{\numberline {14}Dinamica}{47}{section.14}% 
+\contentsline {section}{\numberline {15}Principio di D'Alambent}{48}{section.15}% 
+\contentsline {subsection}{\numberline {15.1}Principio di D'Alament per il punto materiale}{48}{subsection.15.1}% 
+\contentsline {subsection}{\numberline {15.2}Principio di D'Alambent per il corpo rigido: forze e coppie di inerzia}{48}{subsection.15.2}% 
+\contentsline {subsection}{\numberline {15.3}Principio di D'Alambent per sistemi di corpi rigidi}{52}{subsection.15.3}% 
+\contentsline {section}{\numberline {16}Bilancio di Potenze (BdP)}{53}{section.16}% 
+\contentsline {subsection}{\numberline {16.1}Introduzione}{53}{subsection.16.1}% 
+\contentsline {subsection}{\numberline {16.2}Energia cinetica e teorema di Konig}{54}{subsection.16.2}% 
+\contentsline {subsection}{\numberline {16.3}Bilancio di potenze con energia cinetica}{54}{subsection.16.3}% 
+\contentsline {section}{\numberline {17}Attrito}{56}{section.17}% 
+\contentsline {subsection}{\numberline {17.1}Modello di Coulomb}{56}{subsection.17.1}% 
+\contentsline {subsection}{\numberline {17.2}Attrito statico}{56}{subsection.17.2}% 
+\contentsline {part}{II\hspace {1em}ESERCITAZIONI}{58}{part.2}% 
+\contentsline {section}{\numberline {18}Esercitazione I}{58}{section.18}% 
+\contentsline {subsection}{\numberline {18.1}Vettori}{58}{subsection.18.1}% 
+\contentsline {subsubsection}{\numberline {18.1.1}Operazioni fra vettori}{58}{subsubsection.18.1.1}% 
+\contentsline {subsection}{\numberline {18.2}Cinematica del punto}{58}{subsection.18.2}% 
+\contentsline {subsubsection}{\numberline {18.2.1}Legge oraria e traiettoria}{58}{subsubsection.18.2.1}% 
+\contentsline {subsubsection}{\numberline {18.2.2}Numeri complessi}{59}{subsubsection.18.2.2}% 
+\contentsline {section}{\numberline {19}Esercitazione II}{60}{section.19}% 
+\contentsline {subsection}{\numberline {19.1}Ripasso sulla cinematica del corpo rigido}{60}{subsection.19.1}% 
+\contentsline {subsection}{\numberline {19.2}Ripasso sui moti relativi}{60}{subsection.19.2}% 
+\contentsline {section}{\numberline {20}Esercitazione III}{61}{section.20}% 
+\contentsline {subsection}{\numberline {20.1}Tipico procedimento di risoluzione di un problema coi numeri complessi}{61}{subsection.20.1}% 
+\contentsline {section}{\numberline {21}Esercitazione IV}{62}{section.21}% 
+\contentsline {subsection}{\numberline {21.1}Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{62}{subsection.21.1}% 
+\contentsline {section}{\numberline {22}Esercitazione V}{63}{section.22}% 
+\contentsline {subsection}{\numberline {22.1}Ripasso sulle equazioni cardinali della statica}{63}{subsection.22.1}% 
+\contentsline {subsection}{\numberline {22.2}Ripasso sul momento di una forza}{63}{subsection.22.2}% 
+\contentsline {subsection}{\numberline {22.3}Ripasso sulle azioni interne}{63}{subsection.22.3}% 
+\contentsline {section}{\numberline {23}Esercitazione VI}{65}{section.23}% 
+\contentsline {subsection}{\numberline {23.1}Forza elastica}{65}{subsection.23.1}% 
+\contentsline {subsection}{\numberline {23.2}Forza applicata su un vincolo}{65}{subsection.23.2}% 
+\contentsline {subsection}{\numberline {23.3}Biella}{65}{subsection.23.3}% 
