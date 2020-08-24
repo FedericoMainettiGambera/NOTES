@@ -90,3 +90,4 @@
 \contentsline {subsection}{\numberline {20.1}Ripasso sulle equazioni cardinali della statica}{58}{subsection.20.1}% 
 \contentsline {subsection}{\numberline {20.2}Ripasso sul momento di una forza}{58}{subsection.20.2}% 
 \contentsline {subsection}{\numberline {20.3}Ripasso sulle azioni interne}{58}{subsection.20.3}% 
+\contentsline {section}{\numberline {21}Esercitazione V}{60}{section.21}% 
