@@ -70,25 +70,32 @@
 \BOOKMARK [2][-]{subsection.15.1}{Principio di D'Alament per il punto materiale}{section.15}% 70
 \BOOKMARK [2][-]{subsection.15.2}{Principio di D'Alambent per il corpo rigido: forze e coppie di inerzia}{section.15}% 71
 \BOOKMARK [2][-]{subsection.15.3}{Principio di D'Alambent per sistemi di corpi rigidi}{section.15}% 72
-\BOOKMARK [0][-]{part.2}{II ESERCITAZIONI}{}% 73
-\BOOKMARK [1][-]{section.16}{Esercitazione I}{part.2}% 74
-\BOOKMARK [2][-]{subsection.16.1}{Vettori}{section.16}% 75
-\BOOKMARK [3][-]{subsubsection.16.1.1}{Operazioni fra vettori}{subsection.16.1}% 76
-\BOOKMARK [2][-]{subsection.16.2}{Cinematica del punto}{section.16}% 77
-\BOOKMARK [3][-]{subsubsection.16.2.1}{Legge oraria e traiettoria}{subsection.16.2}% 78
-\BOOKMARK [3][-]{subsubsection.16.2.2}{Numeri complessi}{subsection.16.2}% 79
-\BOOKMARK [1][-]{section.17}{Esercitazione II}{part.2}% 80
-\BOOKMARK [2][-]{subsection.17.1}{Ripasso sulla cinematica del corpo rigido}{section.17}% 81
-\BOOKMARK [2][-]{subsection.17.2}{Ripasso sui moti relativi}{section.17}% 82
-\BOOKMARK [1][-]{section.18}{Esercitazione III}{part.2}% 83
-\BOOKMARK [2][-]{subsection.18.1}{Tipico procedimento di risoluzione di un problema coi numeri complessi}{section.18}% 84
-\BOOKMARK [1][-]{section.19}{Esercitazione IV}{part.2}% 85
-\BOOKMARK [2][-]{subsection.19.1}{Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{section.19}% 86
-\BOOKMARK [1][-]{section.20}{Esercitazione V}{part.2}% 87
-\BOOKMARK [2][-]{subsection.20.1}{Ripasso sulle equazioni cardinali della statica}{section.20}% 88
-\BOOKMARK [2][-]{subsection.20.2}{Ripasso sul momento di una forza}{section.20}% 89
-\BOOKMARK [2][-]{subsection.20.3}{Ripasso sulle azioni interne}{section.20}% 90
-\BOOKMARK [1][-]{section.21}{Esercitazione VI}{part.2}% 91
-\BOOKMARK [2][-]{subsection.21.1}{Forza elastica}{section.21}% 92
-\BOOKMARK [2][-]{subsection.21.2}{Forza applicata su un vincolo}{section.21}% 93
-\BOOKMARK [2][-]{subsection.21.3}{Biella}{section.21}% 94
+\BOOKMARK [1][-]{section.16}{Bilancio di Potenze \(BdP\)}{part.1}% 73
+\BOOKMARK [2][-]{subsection.16.1}{Introduzione}{section.16}% 74
+\BOOKMARK [2][-]{subsection.16.2}{Energia cinetica e teorema di Konig}{section.16}% 75
+\BOOKMARK [2][-]{subsection.16.3}{Bilancio di potenze con energia cinetica}{section.16}% 76
+\BOOKMARK [1][-]{section.17}{Attrito}{part.1}% 77
+\BOOKMARK [2][-]{subsection.17.1}{Modello di Coulomb}{section.17}% 78
+\BOOKMARK [2][-]{subsection.17.2}{Attrito statico}{section.17}% 79
+\BOOKMARK [0][-]{part.2}{II ESERCITAZIONI}{}% 80
+\BOOKMARK [1][-]{section.18}{Esercitazione I}{part.2}% 81
+\BOOKMARK [2][-]{subsection.18.1}{Vettori}{section.18}% 82
+\BOOKMARK [3][-]{subsubsection.18.1.1}{Operazioni fra vettori}{subsection.18.1}% 83
+\BOOKMARK [2][-]{subsection.18.2}{Cinematica del punto}{section.18}% 84
+\BOOKMARK [3][-]{subsubsection.18.2.1}{Legge oraria e traiettoria}{subsection.18.2}% 85
+\BOOKMARK [3][-]{subsubsection.18.2.2}{Numeri complessi}{subsection.18.2}% 86
+\BOOKMARK [1][-]{section.19}{Esercitazione II}{part.2}% 87
+\BOOKMARK [2][-]{subsection.19.1}{Ripasso sulla cinematica del corpo rigido}{section.19}% 88
+\BOOKMARK [2][-]{subsection.19.2}{Ripasso sui moti relativi}{section.19}% 89
+\BOOKMARK [1][-]{section.20}{Esercitazione III}{part.2}% 90
+\BOOKMARK [2][-]{subsection.20.1}{Tipico procedimento di risoluzione di un problema coi numeri complessi}{section.20}% 91
+\BOOKMARK [1][-]{section.21}{Esercitazione IV}{part.2}% 92
+\BOOKMARK [2][-]{subsection.21.1}{Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{section.21}% 93
+\BOOKMARK [1][-]{section.22}{Esercitazione V}{part.2}% 94
+\BOOKMARK [2][-]{subsection.22.1}{Ripasso sulle equazioni cardinali della statica}{section.22}% 95
+\BOOKMARK [2][-]{subsection.22.2}{Ripasso sul momento di una forza}{section.22}% 96
+\BOOKMARK [2][-]{subsection.22.3}{Ripasso sulle azioni interne}{section.22}% 97
+\BOOKMARK [1][-]{section.23}{Esercitazione VI}{part.2}% 98
+\BOOKMARK [2][-]{subsection.23.1}{Forza elastica}{section.23}% 99
+\BOOKMARK [2][-]{subsection.23.2}{Forza applicata su un vincolo}{section.23}% 100
+\BOOKMARK [2][-]{subsection.23.3}{Biella}{section.23}% 101
