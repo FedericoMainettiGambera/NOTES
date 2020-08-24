@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex master.idx"] 1598265299 "master.idx" "master.ind" "master" 1598265310
-  "master.idx" 1598265306 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1598265299 "master.idx" "master.ind" "master" 1598274010
+  "master.idx" 1598274005 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ind"
   "master.ilg"
-["pdflatex"] 1598265304 "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.tex" "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.pdf" "master" 1598265310
+["pdflatex"] 1598274004 "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.tex" "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.pdf" "master" 1598274010
   "../../preamble/preamble.tex" 1595343273 773 b64ba7c5562df2026c454a43f943a743 ""
   "../esercitazione1/esercitazione1.tex" 1597941804 3942 8e270d2396489b9ddbe7fd6a101c5c07 ""
   "../esercitazione2/esercitazione2.tex" 1597942114 2557 a43fd56b9ee1ae06064fafaa0f2347cc ""
@@ -22,6 +22,7 @@
   "../lezione1/img4.JPG" 1597759907 32055 439c5e64b90ffdae18cdeeaba38d006d ""
   "../lezione1/img5.JPG" 1597760385 24432 28220c4d8d269add02b41e6120650213 ""
   "../lezione1/lezione1.tex" 1597760401 13771 1adc16e97b4659d99b8495e3ad7bbcc1 ""
+  "../lezione10/lezione10.tex" 1598273982 148 b6b5f12544e60a8a5d0291f876ae44a8 ""
   "../lezione2/img1.JPG" 1597760966 22506 fade281e1b584e1d4e1149c27dcc34a7 ""
   "../lezione2/img10.JPG" 1597763846 27562 6da426965fc568e12f16accde19efb4b ""
   "../lezione2/img11.JPG" 1597764319 29483 3f00961d25cfcf0df63d459722a9874a ""
@@ -111,8 +112,8 @@
   "../lezione9/img6.JPG" 1598198982 18559 57decd5432f7177c593bfa6a07764db6 ""
   "../lezione9/img7.JPG" 1598199414 26633 b78df6b6728515fd71c9fa2fd4489e61 ""
   "../lezione9/lezione9.tex" 1598200342 15279 3d985a95a48441d1dc9bc9cc85533fd0 ""
-  "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.aux" 1598265307 13093 4b4049c5f139c66a7da3f7001c6876e7 ""
-  "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.tex" 1598262540 1051 3c68ab228dabb09f0734e62d7a72efc6 ""
+  "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.aux" 1598274007 13093 da04378362024371ffaf544ea57eecc9 ""
+  "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.tex" 1598273999 1105 d786fe4a17a54444204f5c67d077fd0c ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570204714 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1570204206 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570202613 1004 54797486969f23fa377b128694d548df ""
@@ -283,17 +284,17 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1570209088 4694128 59e2d353f4dc7ded0243f5180e559ac1 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570209181 4261151 6e9769eabb4d92bbc917c56b8660c752 ""
   "c:/texlive/2019/texmf.cnf" 1570209062 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1598265307 13093 4b4049c5f139c66a7da3f7001c6876e7 "pdflatex"
+  "master.aux" 1598274007 13093 da04378362024371ffaf544ea57eecc9 "pdflatex"
   "master.ind" 1598265300 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1598265307 6889 c9932f5fc8a9cdaa22f88c345d724049 "pdflatex"
-  "master.tex" 1598262540 1051 3c68ab228dabb09f0734e62d7a72efc6 ""
-  "master.toc" 1598265307 8615 fb8fa1cc4c12fd71ebabdb0bac003085 "pdflatex"
+  "master.out" 1598274007 6889 c9932f5fc8a9cdaa22f88c345d724049 "pdflatex"
+  "master.tex" 1598273999 1105 d786fe4a17a54444204f5c67d077fd0c ""
+  "master.toc" 1598274007 8615 fe24701fa552a649ff82b7dd4af2df81 "pdflatex"
   (generated)
   "master.out"
-  "master.log"
-  "master.idx"
   "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.log"
-  "master.aux"
-  "master.pdf"
   "master.toc"
+  "master.pdf"
+  "master.log"
+  "master.aux"
   "c:/Users/Federico/Desktop/NOTES/MECCANICA/master/master.pdf"
+  "master.idx"
