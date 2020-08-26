@@ -84,30 +84,30 @@
 \contentsline {subsection}{\numberline {17.4}Potenza legata alle forze d'attrito}{60}{subsection.17.4}% 
 \contentsline {subsection}{\numberline {17.5}Attrito per un disco che rotola su una guida piana}{60}{subsection.17.5}% 
 \contentsline {subsection}{\numberline {17.6}Bilancio di Potenze (BdP) con attriti}{61}{subsection.17.6}% 
-\contentsline {part}{II\hspace {1em}ESERCITAZIONI}{62}{part.2}% 
-\contentsline {section}{\numberline {18}Esercitazione I}{62}{section.18}% 
-\contentsline {subsection}{\numberline {18.1}Vettori}{62}{subsection.18.1}% 
-\contentsline {subsubsection}{\numberline {18.1.1}Operazioni fra vettori}{62}{subsubsection.18.1.1}% 
-\contentsline {subsection}{\numberline {18.2}Cinematica del punto}{62}{subsection.18.2}% 
-\contentsline {subsubsection}{\numberline {18.2.1}Legge oraria e traiettoria}{62}{subsubsection.18.2.1}% 
-\contentsline {subsubsection}{\numberline {18.2.2}Numeri complessi}{63}{subsubsection.18.2.2}% 
-\contentsline {section}{\numberline {19}Esercitazione II}{64}{section.19}% 
-\contentsline {subsection}{\numberline {19.1}Ripasso sulla cinematica del corpo rigido}{64}{subsection.19.1}% 
-\contentsline {subsection}{\numberline {19.2}Ripasso sui moti relativi}{64}{subsection.19.2}% 
-\contentsline {section}{\numberline {20}Esercitazione III}{65}{section.20}% 
-\contentsline {subsection}{\numberline {20.1}Tipico procedimento di risoluzione di un problema coi numeri complessi}{65}{subsection.20.1}% 
-\contentsline {section}{\numberline {21}Esercitazione IV}{66}{section.21}% 
-\contentsline {subsection}{\numberline {21.1}Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{66}{subsection.21.1}% 
-\contentsline {section}{\numberline {22}Esercitazione V}{67}{section.22}% 
-\contentsline {subsection}{\numberline {22.1}Ripasso sulle equazioni cardinali della statica}{67}{subsection.22.1}% 
-\contentsline {subsection}{\numberline {22.2}Ripasso sul momento di una forza}{67}{subsection.22.2}% 
-\contentsline {subsection}{\numberline {22.3}Ripasso sulle azioni interne}{67}{subsection.22.3}% 
-\contentsline {section}{\numberline {23}Esercitazione VI}{69}{section.23}% 
-\contentsline {subsection}{\numberline {23.1}Forza elastica}{69}{subsection.23.1}% 
-\contentsline {subsection}{\numberline {23.2}Forza applicata su un vincolo}{69}{subsection.23.2}% 
-\contentsline {subsection}{\numberline {23.3}Biella}{69}{subsection.23.3}% 
-\contentsline {section}{\numberline {24}Esercitazione VII}{70}{section.24}% 
-\contentsline {subsection}{\numberline {24.1}Ripasso dinamica}{70}{subsection.24.1}% 
-\contentsline {subsubsection}{\numberline {24.1.1}Equazioni di D'alambert}{70}{subsubsection.24.1.1}% 
-\contentsline {subsubsection}{\numberline {24.1.2}Bilancio di Potenze o teorema dell'energia cinetica}{70}{subsubsection.24.1.2}% 
-\contentsline {section}{\numberline {25}Esercitazione VIII}{71}{section.25}% 
+\contentsline {part}{II\hspace {1em}ESERCITAZIONI}{64}{part.2}% 
+\contentsline {section}{\numberline {18}Esercitazione I}{64}{section.18}% 
+\contentsline {subsection}{\numberline {18.1}Vettori}{64}{subsection.18.1}% 
+\contentsline {subsubsection}{\numberline {18.1.1}Operazioni fra vettori}{64}{subsubsection.18.1.1}% 
+\contentsline {subsection}{\numberline {18.2}Cinematica del punto}{64}{subsection.18.2}% 
+\contentsline {subsubsection}{\numberline {18.2.1}Legge oraria e traiettoria}{64}{subsubsection.18.2.1}% 
+\contentsline {subsubsection}{\numberline {18.2.2}Numeri complessi}{65}{subsubsection.18.2.2}% 
+\contentsline {section}{\numberline {19}Esercitazione II}{66}{section.19}% 
+\contentsline {subsection}{\numberline {19.1}Ripasso sulla cinematica del corpo rigido}{66}{subsection.19.1}% 
+\contentsline {subsection}{\numberline {19.2}Ripasso sui moti relativi}{66}{subsection.19.2}% 
+\contentsline {section}{\numberline {20}Esercitazione III}{67}{section.20}% 
+\contentsline {subsection}{\numberline {20.1}Tipico procedimento di risoluzione di un problema coi numeri complessi}{67}{subsection.20.1}% 
+\contentsline {section}{\numberline {21}Esercitazione IV}{68}{section.21}% 
+\contentsline {subsection}{\numberline {21.1}Osservazioni sulla risoluzione di problemi col metodo dei moti relativi}{68}{subsection.21.1}% 
+\contentsline {section}{\numberline {22}Esercitazione V}{69}{section.22}% 
+\contentsline {subsection}{\numberline {22.1}Ripasso sulle equazioni cardinali della statica}{69}{subsection.22.1}% 
+\contentsline {subsection}{\numberline {22.2}Ripasso sul momento di una forza}{69}{subsection.22.2}% 
+\contentsline {subsection}{\numberline {22.3}Ripasso sulle azioni interne}{69}{subsection.22.3}% 
+\contentsline {section}{\numberline {23}Esercitazione VI}{71}{section.23}% 
+\contentsline {subsection}{\numberline {23.1}Forza elastica}{71}{subsection.23.1}% 
+\contentsline {subsection}{\numberline {23.2}Forza applicata su un vincolo}{71}{subsection.23.2}% 
+\contentsline {subsection}{\numberline {23.3}Biella}{71}{subsection.23.3}% 
+\contentsline {section}{\numberline {24}Esercitazione VII}{72}{section.24}% 
+\contentsline {subsection}{\numberline {24.1}Ripasso dinamica}{72}{subsection.24.1}% 
+\contentsline {subsubsection}{\numberline {24.1.1}Equazioni di D'alambert}{72}{subsubsection.24.1.1}% 
+\contentsline {subsubsection}{\numberline {24.1.2}Bilancio di Potenze o teorema dell'energia cinetica}{72}{subsubsection.24.1.2}% 
+\contentsline {section}{\numberline {25}Esercitazione VIII}{73}{section.25}% 
