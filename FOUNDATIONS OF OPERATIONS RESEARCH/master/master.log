@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  15 SEP 2020 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  16 SEP 2020 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -656,7 +656,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/../lezione1/lezione1.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 1--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--9
+
+ []
+
+[2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 9.
  (c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.aux)
@@ -666,18 +676,18 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17827 strings out of 492609
- 324438 string characters out of 6132818
+ 17845 strings out of 492609
+ 324875 string characters out of 6132818
  420941 words of memory out of 5000000
- 21399 multiletter control sequences out of 15000+600000
- 10117 words of font info for 38 fonts, out of 8000000 for 9000
+ 21408 multiletter control sequences out of 15000+600000
+ 11984 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,6n,73p,902b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.pdf" (1 page, 34766 bytes).
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.pdf" (2 pages, 48758 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 43 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
