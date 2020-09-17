@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  23 JUN 2020 05:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  17 SEP 2020 12:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -463,57 +463,42 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip49
 ) (c:/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-)
-\@indexfile=\write6
-\openout6 = `master.idx'.
-
-
-Writing index file master.idx
-) (c:/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count138
-\lst@gtempboxa=\box46
-\lst@token=\toks35
-\lst@length=\count139
-\lst@currlwidth=\dimen170
-\lst@column=\count140
-\lst@pos=\count141
-\lst@lostspace=\dimen171
-\lst@width=\dimen172
-\lst@newlines=\count142
-\lst@lineno=\count143
-\lst@maxwidth=\dimen173
- (c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count144
-\lst@skipnumbers=\count145
-\lst@framebox=\box47
-) (c:/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2019/09/10 1.8c listings configuration
-))
-Package: listings 2019/09/10 1.8c (Carsten Heinz)
- (c:/texlive/2019/texmf-dist/tex/latex/tools/multicol.sty
+) (c:/texlive/2019/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks35
+\SOUL@lasttoken=\toks36
+\SOUL@cmds=\toks37
+\SOUL@buffer=\toks38
+\SOUL@token=\toks39
+\SOUL@spaceskip=\skip50
+\SOUL@ttwidth=\dimen170
+\SOUL@uldp=\dimen171
+\SOUL@ulht=\dimen172
+) (c:/texlive/2019/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
-\c@tracingmulticols=\count146
-\mult@box=\box48
-\multicol@leftmargin=\dimen174
-\c@unbalance=\count147
-\c@collectmore=\count148
-\doublecol@number=\count149
-\multicoltolerance=\count150
-\multicolpretolerance=\count151
-\full@width=\dimen175
-\page@free=\dimen176
-\premulticols=\dimen177
-\postmulticols=\dimen178
-\multicolsep=\skip50
-\multicolbaselineskip=\skip51
-\partial@page=\box49
-\last@line=\box50
-\maxbalancingoverflow=\dimen179
-\mult@rightbox=\box51
-\mult@grightbox=\box52
-\mult@gfirstbox=\box53
-\mult@firstbox=\box54
+\c@tracingmulticols=\count138
+\mult@box=\box46
+\multicol@leftmargin=\dimen173
+\c@unbalance=\count139
+\c@collectmore=\count140
+\doublecol@number=\count141
+\multicoltolerance=\count142
+\multicolpretolerance=\count143
+\full@width=\dimen174
+\page@free=\dimen175
+\premulticols=\dimen176
+\postmulticols=\dimen177
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box47
+\last@line=\box48
+\maxbalancingoverflow=\dimen178
+\mult@rightbox=\box49
+\mult@grightbox=\box50
+\mult@gfirstbox=\box51
+\mult@firstbox=\box52
+\@tempa=\box53
+\@tempa=\box54
 \@tempa=\box55
 \@tempa=\box56
 \@tempa=\box57
@@ -529,17 +514,49 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \@tempa=\box67
 \@tempa=\box68
 \@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\c@columnbadness=\count152
-\c@finalcolumnbadness=\count153
-\last@try=\dimen180
-\multicolovershoot=\dimen181
-\multicolundershoot=\dimen182
-\mult@nat@firstbox=\box72
-\colbreak@box=\box73
-\mc@col@check@num=\count154
+\c@columnbadness=\count144
+\c@finalcolumnbadness=\count145
+\last@try=\dimen179
+\multicolovershoot=\dimen180
+\multicolundershoot=\dimen181
+\mult@nat@firstbox=\box70
+\colbreak@box=\box71
+\mc@col@check@num=\count146
+) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+ (c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+\@indexfile=\write6
+\openout6 = `master.idx'.
+
+
+Writing index file master.idx
+) (c:/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count147
+\lst@gtempboxa=\box72
+\lst@token=\toks40
+\lst@length=\count148
+\lst@currlwidth=\dimen182
+\lst@column=\count149
+\lst@pos=\count150
+\lst@lostspace=\dimen183
+\lst@width=\dimen184
+\lst@newlines=\count151
+\lst@lineno=\count152
+\lst@maxwidth=\dimen185
+ (c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count153
+\lst@skipnumbers=\count154
+\lst@framebox=\box73
+) (c:/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
 
 LaTeX Warning: Unused global option(s):
     [9pt].
@@ -564,16 +581,16 @@ LaTeX Font Info:    ... okay on input line 6.
  (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count155
-\scratchdimen=\dimen183
+\scratchdimen=\dimen186
 \scratchbox=\box74
 \nofMPsegments=\count156
 \nofMParguments=\count157
-\everyMPshowfont=\toks36
+\everyMPshowfont=\toks41
 \MPscratchCnt=\count158
-\MPscratchDim=\dimen184
+\MPscratchDim=\dimen187
 \MPnumerator=\count159
 \makeMPintoPDFobject=\count160
-\everyMPtoPDFconversion=\toks37
+\everyMPtoPDFconversion=\toks42
 ) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -598,13 +615,6 @@ italian.ldf    See the documentation concerning the babel-italian typesetting
 italian.ldf    on input line 6.
 
 \AtBeginShipoutBox=\box75
-(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
-Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
- (c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1632,15 +1642,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 19597 strings out of 492609
- 350644 string characters out of 6132818
- 451790 words of memory out of 5000000
- 22906 multiletter control sequences out of 15000+600000
- 12259 words of font info for 48 fonts, out of 8000000 for 9000
+ 19765 strings out of 492609
+ 352720 string characters out of 6132818
+ 455387 words of memory out of 5000000
+ 23069 multiletter control sequences out of 15000+600000
+ 12572 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,7n,73p,1166b,1779s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.pdf (36 pages, 1525868 bytes).
+Output written on c:/Users/Federico/Desktop/NOTES/WEBTECH/master/master.pdf (36 pages, 1525727 bytes).
 PDF statistics:
  558 PDF objects out of 1000 (max. 8388607)
  494 compressed objects within 5 object streams

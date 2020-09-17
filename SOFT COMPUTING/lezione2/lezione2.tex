@@ -1,0 +1,26 @@
+\title{LEZIONE 2 17/09/2020}\newline
+\newline
+In today's lesson we will see some typical problems.\newline
+\newline
+\textbf{es.} Cruise control.\newline
+The problem consist of a given car that:
+\begin{itemize}
+    \item has a goal speed as defined;
+    \item wants to stay away from front vehicle.
+\end{itemize}
+\ \newline
+Lets analyze the possible variable we can have and try to give them a range of possible values:
+\begin{itemize}
+    \item $V_{des} = $ desired speed $[km/h]$.
+    \item $DIST =$ distance from front vehicle $[m]$: we hypothesize this variable from $0m$ as a "danger" zone, followed by an "alert" range from $10m$ and $70m$, and, finally, the "safe" zone of $200m$.
+    \item $V_{curr} = $ current velocity $[km/h]$: we hypothesize this variable from $0$ to the maximum speed of the car. Analyzing this variable we notice that the $DIST$ variable depends from the current velocity, the danger, safe and alert ranges depends on speed. Because of this problem we introduce three new variable:
+    \item $S_{dist} = $ safety distance $[m] = k V_{curr}$ (this function is just an idea..).
+    \item $\Delta DIST = DIST - S_{dist} [m]$: lets say this variable's range goes from $-200$ to $50$.
+    \item $\Delta VEL = V_{curr} - V_{des} [km/h]$: we hypothesize that our system won't accept values out of the range going from $-15$ to $+15$.
+\end{itemize}
+\ \newline
+[another example of a robot that needs to follow a trajectory..]\newline
+\newline
+[another example of a robot that needs to reach a goal, but with an obstacle in the way]\newline
+\newline
+[another example of a job assignment decision problem]

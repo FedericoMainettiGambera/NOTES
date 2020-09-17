@@ -249,6 +249,17 @@ INPUT c:/Users/Federico/Desktop/NOTES/SOFTWARE ENGINEERING 2/master/master.toc
 INPUT c:/Users/Federico/Desktop/NOTES/SOFTWARE ENGINEERING 2/master/master.toc
 OUTPUT c:/Users/Federico/Desktop/NOTES/SOFTWARE ENGINEERING 2/master/master.toc
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/Users/Federico/Desktop/NOTES/SOFTWARE ENGINEERING 2/master/../lezione2/lezione2.tex
+INPUT c:/Users/Federico/Desktop/NOTES/SOFTWARE ENGINEERING 2/master/../lezione2/lezione2.tex
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT c:/Users/Federico/Desktop/NOTES/SOFTWARE ENGINEERING 2/master/master.aux
 INPUT c:/Users/Federico/Desktop/NOTES/SOFTWARE ENGINEERING 2/master/master.out
 INPUT c:/Users/Federico/Desktop/NOTES/SOFTWARE ENGINEERING 2/master/master.out
@@ -256,3 +267,4 @@ INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
