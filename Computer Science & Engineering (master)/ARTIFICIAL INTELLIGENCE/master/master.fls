@@ -248,11 +248,6 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.toc
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.toc
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.toc
-INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/IntroductionToTheCourse.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/IntroductionToTheCourse.tex
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -261,6 +256,24 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.toc
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/1IntroductionToTheCourse.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/1IntroductionToTheCourse.tex
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../other/schedule.jpg
+INPUT ../other/schedule.jpg
+INPUT ../other/schedule.jpg
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/2WhatIsAI.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/2WhatIsAI.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/3IntelligentAgents.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/3IntelligentAgents.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/SensorsAndActuators.JPG
+INPUT ../arguments/SensorsAndActuators.JPG
+INPUT ../arguments/SensorsAndActuators.JPG
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../notrevised/notrevised.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../notrevised/notrevised.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.aux
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.out
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.out
@@ -268,4 +281,5 @@ INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
