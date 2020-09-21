@@ -1,0 +1,64 @@
+\title{LEZIONE 2 17/09/2020}\newline
+\newline
+In today's lesson we will see some typical problems.\newline
+\newline
+\textbf{es.} Cruise control.\newline
+The problem consist of a given car that:
+\begin{itemize}
+    \item has a goal speed as defined;
+    \item wants to stay away from front vehicle.
+\end{itemize}
+\ \newline
+Lets analyze the possible variable we can have and try to give them a range of possible values:
+\begin{itemize}
+    \item $V_{des} = $ desired speed $[km/h]$.
+    \item $DIST =$ distance from front vehicle $[m]$: we hypothesize this variable from $0m$ as a "danger" zone, followed by an "alert" range from $10m$ and $70m$, and, finally, the "safe" zone of $200m$.
+    \item $V_{curr} = $ current velocity $[km/h]$: we hypothesize this variable from $0$ to the maximum speed of the car. Analyzing this variable we notice that the $DIST$ variable depends from the current velocity, the danger, safe and alert ranges depends on speed. Because of this problem we introduce three new variable:
+    \item $S_{dist} = $ safety distance $[m] = k V_{curr}$ (this function is just an idea..).
+    \item $\Delta DIST = DIST - S_{dist} [m]$: lets say this variable's range goes from $-200$ to $50$.
+    \item $\Delta VEL = V_{curr} - V_{des} [km/h]$: we hypothesize that our system won't accept values out of the range going from $-15$ to $+15$.
+\end{itemize}
+\ \newline
+[another example of a robot that needs to follow a trajectory..]\newline
+\newline
+[another example of a robot that needs to reach a goal, but with an obstacle in the way]\newline
+\newline
+[another example of a job assignment decision problem]
+\newpage
+\title{LEZIONE 3 21/09/2020}\newline
+\newline
+\url{../other/professor's slides/Introduction Fuzzy Logic.pdf}\newline
+\newline
+[2] "quantifiers": functions used to quantify something (existance, for any, etc.)\newline
+All the logics are based on the fact that something is \textbf{true} or \textbf{false}.\newline
+\newline
+[3] this slide is saying that there are some terms that are conventions, for example, the term "true" or the quantifiers.\newline
+Axioms are something that is true by definition.\newline
+\newline
+[4] in porpositional logic the truth is based on the truth value of the proposition, not the meaning it has.\newline
+\newline
+[5] operators: confuntion (AND), disjunction (OR) and negation (NOT).\newline
+\newline
+[8] lol, classical logic is not enougth. \newline
+\newline
+[9] one solution to the previous problem is the many-valued logics: lets start with a three-velued logic, true ($1$), false ($0$) and undefined ($\frac{1}{2}$), but there we can extend this idea to an infinite valued logic, for example ranging from $0$ to $1$.\newline
+The example show a particular logic (tukasievicz) and show the basic rules, that are a generalization of the classical boolean logic.\newline
+\newline
+[10] L1 e L2 are tukasievicz and classic logic (boolean)\newline
+\newline
+[11] paradoxes are big problem in classical logic, becaus they can't be accepted \newline
+\newline
+[14-15] path from fuzzy set to fuzzy logic. if a memeber \newline
+\newline
+[16] fuzzy truth aro not probabilities.\newline
+\newline
+[17] very is a modifier that can modify the term Young or the term true . the very true is less than true and fairly true is more than true. "very true" correspond to increasing accuracy of our model (thus more restrictive) and "fairly true" correspond to having less accuracy. Hence, using "very" we move to a crisper set while using "fairly" we move to a smoother one. \newline
+\newline
+[18] with the modifiers we can create some operators (the two shown in the slide)\newline
+\newline
+[19] the "<=" is a less than or equal to, not an arrow.\newline
+\newline
+\rule{\textwidth}{0,4pt}
+\url{../other/professor's slides/Fuzzy rules.pdf}\newline
+\newline
+[...]
