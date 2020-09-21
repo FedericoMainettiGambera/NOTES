@@ -1,7 +1,6 @@
 \section{Intelligent Agents}
 \textbf{Professor's slides}:\newline
-\url{../other/professor's slides/Part III - Intelligent agents.pdf}\newline
-\newline
+\url{../other/professor's slides/Part III - Intelligent agents.pdf}
 \subsection{Agent-Environment interaction}
 What is an agent? Intuitively, an \textbf{agent} is a system that is able to \textbf{act}.\newline
 \newline
@@ -16,8 +15,8 @@ The interaction between an agent and its environment consists of two \textbf{str
 The function of an agent is to \textbf{control its environment}, in order to achieve certain \textbf{goals}.\newline
 \newline
 At the interface with its environment, an agent has to:
-transform the input physical events into input data suitable for internal processing\begin{itemize}
-    \item performed by what we can call the agent’s \textbf{controller};
+\begin{itemize}
+    \item transform the input physical events into input data suitable for internal processing performed by what we can call the agent’s \textbf{controller};
     \item tranform the output data of internal processing into the output physical events.
 \end{itemize}
 These operations are performed by two types of devices, called \textbf{transducers}:
@@ -26,7 +25,7 @@ These operations are performed by two types of devices, called \textbf{transduce
     \item output transducers, called \textbf{actuators} or effectors.
 \end{itemize}
 \begin{center}
-    \includegraphics[height=4cm]{../arguments/SensorsAndActuators.JPG}
+    \includegraphics[height=6cm]{../arguments/SensorsAndActuators.JPG}
 \end{center}
 \ \newline
 The main function of the agent’s \textbf{controller} is to \textbf{decide what to do} in order to fulfill the
@@ -39,15 +38,26 @@ Symmetrically to the case of perception, such representations will have to be tr
 into \textbf{control data} to drive the actuators.
 \newline
 \newline
-Agent-environment interactions take place in time, whose flow is usually conceived to be
-continuous; however, an artificial agent will typically consider time to be discrete sequence
-of time instants t0, t1, t2, and so on.
+In this course we shall concentrate only on the decision module:
+\begin{center}
+    \includegraphics[height=4cm]{../arguments/decisionModule.JPG}
+\end{center}
 \subsection{Agent classification}
 In view of our goals it is important to classify agents according to the complexity of their
-decision-making function.
+decision-making function.\newline
+\newline
+A first distinction is between \textbf{reactive} and \textbf{proactive} agents. A purely
+reactive agent is an agent that decides what to do only on the basis of the state of the perceived state of
+its environment; in other words, such an agents simply reacts to elements of the current external (or
+internal) situation. A proactive agent, on the contrary, is also sensitive to the future, at least as far as
+this can be anticipated by the agent.\newline
+\newline
+Purely reactive agents are often further classified in the two categories of simple
+reflex agent and model-based reflex agents, and proactive agents in the two categories of goal-based
+agents and utility-based agents.
 \subsubsection*{Simple reflex agents}
 Simple reflex agents are agents whose decisions at time t are based on the agent’s
-perceptions at time t.\newline
+perceptions at time $t$.\newline
 Simple reflex agents are stateless and therefore have no memory of past perceptions and
 actions.
 \subsubsection*{Model-based reflex agents}

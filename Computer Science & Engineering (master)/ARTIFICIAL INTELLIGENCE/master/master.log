@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  20 SEP 2020 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  21 SEP 2020 13:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -657,24 +657,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/1IntroductionToTheCourse.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--16
+Underfull \hbox (badness 10000) in paragraph at lines 5--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--16
+Underfull \hbox (badness 10000) in paragraph at lines 5--13
 
  []
 
 <../other/schedule.jpg, id=50, 957.5775pt x 1284.8pt>
 File: ../other/schedule.jpg Graphic file (type jpg)
 <use ../other/schedule.jpg>
-Package pdftex.def Info: ../other/schedule.jpg  used on input line 17.
+Package pdftex.def Info: ../other/schedule.jpg  used on input line 14.
 (pdftex.def)             Requested size: 360.508pt x 483.69684pt.
 ) [2 <../other/schedule.jpg>] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/2WhatIsAI.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--22
@@ -709,71 +704,76 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              for symbol `textbullet' on input line 23.
 
 ) [3] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/3IntelligentAgents.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--5
+Underfull \hbox (badness 10000) in paragraph at lines 5--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--5
+Underfull \hbox (badness 10000) in paragraph at lines 5--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--19
+Underfull \hbox (badness 10000) in paragraph at lines 5--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--19
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--19
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--19
+Underfull \hbox (badness 10000) in paragraph at lines 5--18
 
  []
 
 <../arguments/SensorsAndActuators.JPG, id=63, 594.72188pt x 255.95625pt>
 File: ../arguments/SensorsAndActuators.JPG Graphic file (type jpg)
 <use ../arguments/SensorsAndActuators.JPG>
-Package pdftex.def Info: ../arguments/SensorsAndActuators.JPG  used on input line 29.
-(pdftex.def)             Requested size: 264.43715pt x 113.81102pt.
+Package pdftex.def Info: ../arguments/SensorsAndActuators.JPG  used on input line 28.
+(pdftex.def)             Requested size: 396.6648pt x 170.71652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--45
+Underfull \hbox (badness 10000) in paragraph at lines 30--42
 
  []
 
-[4 <../arguments/SensorsAndActuators.JPG>]) [5] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../notrevised/notrevised.tex)
+<../arguments/decisionModule.JPG, id=64, 854.44218pt x 230.36063pt>
+File: ../arguments/decisionModule.JPG Graphic file (type jpg)
+<use ../arguments/decisionModule.JPG>
+Package pdftex.def Info: ../arguments/decisionModule.JPG  used on input line 43.
+(pdftex.def)             Requested size: 422.13533pt x 113.81102pt.
+[4 <../arguments/SensorsAndActuators.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 46--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--58
+
+ []
+
+) [5 <../arguments/decisionModule.JPG>] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../notrevised/notrevised.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
  (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: C4AC703E60873878A39B9A351A571C50;375.
+(rerunfilecheck)             Checksum: DCA9089CCF68AD0828491D2EBA3A25AE;368.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17897 strings out of 492609
- 327131 string characters out of 6132818
- 425930 words of memory out of 5000000
- 21430 multiletter control sequences out of 15000+600000
+ 17902 strings out of 492609
+ 327292 string characters out of 6132818
+ 424930 words of memory out of 5000000
+ 21434 multiletter control sequences out of 15000+600000
  12572 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,6n,73p,931b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.pdf" (5 pages, 324226 bytes).
+ 56i,6n,73p,931b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.pdf" (5 pages, 376395 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

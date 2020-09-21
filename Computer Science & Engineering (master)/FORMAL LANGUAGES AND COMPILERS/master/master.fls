@@ -1,15 +1,15 @@
-PWD c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master
+PWD c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master
 INPUT c:/texlive/2019/texmf.cnf
 INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.tex
-OUTPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.log
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.tex
+OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.log
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/../../preamble/preamble.tex
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/../../preamble/preamble.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/../../preamble/preamble.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/../../preamble/preamble.tex
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -194,10 +194,10 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
-OUTPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.idx
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.aux
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.aux
-OUTPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.aux
+OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.idx
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.aux
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.aux
+OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.aux
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -211,14 +211,14 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.out
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.out
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.out
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.out
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.out
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.out
-OUTPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.out
-OUTPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.pdf
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.out
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.out
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.out
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.out
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.out
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.out
+OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.out
+OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.pdf
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -245,13 +245,15 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.toc
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.toc
-OUTPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.toc
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.toc
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.toc
+OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.toc
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.aux
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.out
-INPUT c:/Users/Federico/Desktop/NOTES/FORMAL LANGUAGES AND COMPILERS/master/master.out
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/../notrevised/notrevised.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/../notrevised/notrevised.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.aux
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.out
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FORMAL LANGUAGES AND COMPILERS/master/master.out
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
