@@ -2,7 +2,7 @@
 \babel@toc {italian}{}
 \contentsline {section}{\numberline {1}Introduction to the course}{2}{section.1}% 
 \contentsline {subsection}{\numberline {1.1}Course informations}{2}{subsection.1.1}% 
-\contentsline {section}{\numberline {2}What is AI?}{4}{section.2}% 
-\contentsline {section}{\numberline {3}Intelligent Agents}{5}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}Agent-Environment interaction}{5}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Agent classification}{5}{subsection.3.2}% 
+\contentsline {section}{\numberline {2}What is AI?}{3}{section.2}% 
+\contentsline {section}{\numberline {3}Intelligent Agents}{4}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Agent-Environment interaction}{4}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Agent classification}{4}{subsection.3.2}% 
