@@ -1,14 +1,14 @@
 # Fdb version 3
-["makeindex master.idx"] 1600183054 "master.idx" "master.ind" "master" 1600255623
-  "master.idx" 1600255622 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1600183054 "master.idx" "master.ind" "master" 1600770521
+  "master.idx" 1600770520 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ilg"
   "master.ind"
-["pdflatex"] 1600255620 "c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.tex" "c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.pdf" "master" 1600255623
-  "../../preamble/preamble.tex" 1595343273 773 b64ba7c5562df2026c454a43f943a743 ""
-  "../lezione1/lezione1.tex" 1600255618 174 3d03bec3150e09ec4dadf6a979eb0e94 ""
-  "c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.aux" 1600255622 762 0fe773cff59fef4cc22739423231358f ""
-  "c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.tex" 1600251078 244 a5767040707356d9a80996401cfcdf1a ""
+["pdflatex"] 1600770518 "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.tex" "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.pdf" "master" 1600770521
+  "../../preamble/preamble.tex" 1600604217 796 4b3c78979ef1ab23eeac773f908c5809 ""
+  "../notrevised/notrevised.tex" 1600770517 267 6dba978cbae366be1590d0b105d8564d ""
+  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.aux" 1600770521 762 0fe773cff59fef4cc22739423231358f ""
+  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.tex" 1600770358 248 d2fb20dfb44aa8e9c1bb0f235d5f4668 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570204714 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1570204206 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570202613 1004 54797486969f23fa377b128694d548df ""
@@ -165,17 +165,17 @@
   "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1570209088 4694128 59e2d353f4dc7ded0243f5180e559ac1 ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1570209181 4261151 6e9769eabb4d92bbc917c56b8660c752 ""
   "c:/texlive/2019/texmf.cnf" 1570209062 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "master.aux" 1600255622 762 0fe773cff59fef4cc22739423231358f "pdflatex"
+  "master.aux" 1600770521 762 0fe773cff59fef4cc22739423231358f "pdflatex"
   "master.ind" 1600183055 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.out" 1600255622 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "master.tex" 1600251078 244 a5767040707356d9a80996401cfcdf1a ""
-  "master.toc" 1600255622 46 179ce4f7e0c50cd5b142b677e78fb0dd "pdflatex"
+  "master.out" 1600770520 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "master.tex" 1600770358 248 d2fb20dfb44aa8e9c1bb0f235d5f4668 ""
+  "master.toc" 1600770521 46 179ce4f7e0c50cd5b142b677e78fb0dd "pdflatex"
   (generated)
+  "master.log"
+  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.log"
+  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.pdf"
+  "master.pdf"
   "master.idx"
   "master.out"
-  "master.pdf"
-  "master.log"
-  "c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.pdf"
-  "master.toc"
   "master.aux"
-  "c:/Users/Federico/Desktop/NOTES/FOUNDATIONS OF OPERATIONS RESEARCH/master/master.log"
+  "master.toc"
