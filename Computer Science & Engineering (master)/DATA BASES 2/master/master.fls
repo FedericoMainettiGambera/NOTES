@@ -264,6 +264,9 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/1transactions.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/1transactions.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/ACIDandDBMSarchitectures.JPG
+INPUT ../arguments/ACIDandDBMSarchitectures.JPG
+INPUT ../arguments/ACIDandDBMSarchitectures.JPG
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/2concurrencycontrol.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/2concurrencycontrol.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../notrevised/notrevised.tex
@@ -275,4 +278,5 @@ INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
