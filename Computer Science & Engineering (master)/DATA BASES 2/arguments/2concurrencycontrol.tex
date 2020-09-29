@@ -159,4 +159,6 @@ The lock manager grants access to resources according to the \textbf{conflict ta
     \end{tabular}
 \end{center}
 \renewcommand{\arraystretch}{1}
-where $n$ is the counter of the current readers
+where $n$ is the counter of the current readers.\newline
+\newline
+Is respecting locks enough for serializability? No. For example non repeatable read anomalies can still occur and to prevent it we use the \textbf{Two-Phase Locking (2PL)}: the requirement (two-phase rule) is that a transaction cannot acquire any other lock after releasing a lock. Doing so we avoid non repeatable reads.
