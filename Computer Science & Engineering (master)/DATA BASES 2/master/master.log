@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  25 SEP 2020 21:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  29 SEP 2020 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -698,47 +698,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--19
 
  []
 
-<../arguments/ACIDandDBMSarchitectures.JPG, id=57, 1026.08344pt x 602.25pt>
+<../arguments/ACIDandDBMSarchitectures.JPG, id=130, 1026.08344pt x 602.25pt>
 File: ../arguments/ACIDandDBMSarchitectures.JPG Graphic file (type jpg)
 <use ../arguments/ACIDandDBMSarchitectures.JPG>
 Package pdftex.def Info: ../arguments/ACIDandDBMSarchitectures.JPG  used on input line 28.
 (pdftex.def)             Requested size: 339.3288pt x 199.16928pt.
-) [3 <../arguments/ACIDandDBMSarchitectures.JPG>] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/2concurrencycontrol.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--13
+) [3 <../arguments/ACIDandDBMSarchitectures.JPG>] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/2concurrencycontrol.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+<../arguments/serial-interleaved-nested.JPG, id=137, 913.91437pt x 445.665pt>
+File: ../arguments/serial-interleaved-nested.JPG Graphic file (type jpg)
+<use ../arguments/serial-interleaved-nested.JPG>
+Package pdftex.def Info: ../arguments/serial-interleaved-nested.JPG  used on input line 14.
+(pdftex.def)             Requested size: 233.38673pt x 113.81102pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--13
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
 
  []
 
-[4] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../notrevised/notrevised.tex)
+[4 <../arguments/serial-interleaved-nested.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 54--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
+
+ []
+
+<../arguments/serializableSchedules.JPG, id=145, 733.23938pt x 478.78876pt>
+File: ../arguments/serializableSchedules.JPG Graphic file (type jpg)
+<use ../arguments/serializableSchedules.JPG>
+Package pdftex.def Info: ../arguments/serializableSchedules.JPG  used on input line 72.
+(pdftex.def)             Requested size: 261.43741pt x 170.71652pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--84
+
+ []
+
+[5 <../arguments/serializableSchedules.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--100
+
+ []
+
+<../arguments/CSRandVSR.JPG, id=154, 642.90187pt x 289.08pt>
+File: ../arguments/CSRandVSR.JPG Graphic file (type jpg)
+<use ../arguments/CSRandVSR.JPG>
+Package pdftex.def Info: ../arguments/CSRandVSR.JPG  used on input line 101.
+(pdftex.def)             Requested size: 316.38824pt x 142.26378pt.
+<../arguments/topologicalpartialorderingCSR.JPG, id=155, 391.4625pt x 384.6872pt>
+File: ../arguments/topologicalpartialorderingCSR.JPG Graphic file (type jpg)
+<use ../arguments/topologicalpartialorderingCSR.JPG>
+Package pdftex.def Info: ../arguments/topologicalpartialorderingCSR.JPG  used on input line 117.
+(pdftex.def)             Requested size: 144.77315pt x 142.26378pt.
+[6 <../arguments/CSRandVSR.JPG>]) [7 <../arguments/topologicalpartialorderingCSR.JPG>] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../notrevised/notrevised.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
  (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: D5ACA67713AFDF97F24B6BE55474F0C7;300.
+(rerunfilecheck)             Checksum: FD8DA1155FBCB0D85378F52A93C93828;1454.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17885 strings out of 492609
- 326640 string characters out of 6132818
- 423919 words of memory out of 5000000
- 21424 multiletter control sequences out of 15000+600000
+ 17939 strings out of 492609
+ 328022 string characters out of 6132818
+ 425919 words of memory out of 5000000
+ 21456 multiletter control sequences out of 15000+600000
  12572 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,6n,73p,920b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf" (4 pages, 182129 bytes).
+ 56i,7n,73p,920b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf" (7 pages, 469458 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
