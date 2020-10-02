@@ -117,7 +117,7 @@ If $S$’s graph is acyclic then it induces a \textbf{topological (partial) orde
     \includegraphics[height=5cm]{../arguments/topologicalpartialorderingCSR.JPG}
 \end{center}
 In general, there can be many compatible serial schedules.
-\subsection{Concurrency control approaches: locking}
+\subsection{Concurrency control based on locking}
 Everything we have seen untill now is based on study of schedules after they have been executed. In real life we need a system that can assure cocnurrency control in "live".\newline
 There are two main families of techniques:
 \begin{itemize}
@@ -159,6 +159,175 @@ The lock manager grants access to resources according to the \textbf{conflict ta
     \end{tabular}
 \end{center}
 \renewcommand{\arraystretch}{1}
-where $n$ is the counter of the current readers.\newline
+where $n$ is the counter of the current readers.
+\subsubsection{2PL}
+Is respecting locks enough for serializability? No. For example non repeatable read anomalies can still occur and to prevent it we use the \textbf{Two-Phase Locking (2PL)}: the requirement (two-phase rule) is that a transaction cannot acquire any other lock after releasing a lock. Doing so we prevent \textbf{non repeatable reads}.\newline
 \newline
-Is respecting locks enough for serializability? No. For example non repeatable read anomalies can still occur and to prevent it we use the \textbf{Two-Phase Locking (2PL)}: the requirement (two-phase rule) is that a transaction cannot acquire any other lock after releasing a lock. Doing so we avoid non repeatable reads.
+A scheduler that only processes well-formed transactions, grants locks according to the conflict table and checks that all transactions apply the two-phase rule generetes a class of schedules called \textbf{2PL}.\newline
+\newline
+\textbf{Schedules in 2PL are view- and conflict-serializable}. 2PL impies CSR.
+\begin{center}
+    \includegraphics[height=5cm]{../arguments/2PL.JPG}
+\end{center}
+\subsubsection{Strict 2PL}
+Up to now, we were still using the hypothesis of
+commit-projection (no transactions in the schedule
+abort).\newline
+2PL, as seen so far, does not protect against \textbf{dirty} (uncommitted data) \textbf{reads} (and therefore neither do VSR nor CSR): Releasing locks before rollbacks exposes “dirty” data.\newline
+\newline
+To remove this hypothesis, we need to add a constraint to
+2PL, that defines \textbf{strict 2PL}: \textbf{Locks held by a transaction can be released only after
+commit/rollback}.\newline
+\newline
+Strict 2PL locks are also called \textbf{long duration locks}, 2PL locks \textbf{short duration locks}.\newline
+\newline
+A phantom insertion occurs when a transaction adds ites to a data set previously read by another transaction. To prevent phantom inserts a lock should be placed also on
+“future data”.\newline
+\newline
+\textbf{Predicate locks} extend the notion of \textbf{data locks} to “future data”.\newline
+\newline
+Write locks are held until the completion (commit) of the transaction, and not only untill the end of the write, to enable the proper processing of abort events.
+\subsubsection{Isolation Levels in SQL:1999 (and JDBC)}
+Isolation Levels in SQL:1999 (and JDBC):
+\begin{itemize}
+    \item READ UNCOMMITTED allows dirty reads, nonrepeatable reads and
+    phantom updates and inserts: No read locks (and ignores locks of other transactions).
+    \item READ COMMITTED prevents dirty reads but allows nonrepeatable
+    reads and phantom updates/inserts: Read locks (and complies with locks of other transactions), but
+    without 2PL on read locks (read locks are released as soon as
+    the read operation is performed and can be acquired again).
+    \item REPEATABLE READ avoids dirty reads, nonrepeatable reads and
+    phantom updates, but allows phantom inserts: long duration read locks $\rightarrow$ 2PL also for reads.
+    \item SERIALIZABLE avoids all anomalies: 2PL with predicate locks to avoid phantom inserts
+\end{itemize}
+\ \newline
+The locking requirements to meet this guarantee can
+frequently lead to deadlock where one of the transactions
+needs to be rolled back. Therefore SERIALIZABLE isolation level is used sparingly and
+in NOT the default in most commercial systems.
+\newline
+\newline
+SQL Isolation levels may be implemented with the appropriate
+use of lock.
+\begin{center}
+    \includegraphics[height=5cm]{../arguments/isolationlevels.JPG}
+\end{center}
+\subsubsection{Deadlock}
+A resource can be free, read-locked or write-locked.\newline
+\newline
+Transactions requesting locks are either \textbf{granted the lock} or
+\textbf{suspended and queued} (first-in first-out). There is risk of:
+\begin{itemize}
+    \item \textbf{deadlock}: two or more transactions in endless (mutual) wait (Typically occurs when each transaction waits for
+    another to release a lock).    
+    \item \textbf{starvation}: a single transaction in endless wait (Typically occurs due to write transactions waiting for
+    resources that are continuously read).
+\end{itemize}
+\ \newline
+\textbf{Lock graph}:  a bipartite graph in which nodes are resources
+or transactions and arcs are lock requests or lock
+assignments.\newline
+\newline
+\textbf{Wait for graph}:  a graph in which nodes are transactions
+and arcs are “waits for” relationships.\newline
+A deadlock is represented by a cycle in the wait-for graph
+of transactions.\newline
+\newline
+Deadlock resolution techniques:
+\begin{itemize}
+    \item \textbf{Timeout}: transaction killed and restarted after a given
+    amount of waiting;
+    \item \textbf{Deadlock prevention}: transaction killed when they could be in deadlock.
+    \begin{itemize}
+        \item \textbf{Resource-based prevention}: transactions request all resources at once, and only once; resources are globally sorted and must be requested in that order.
+        \item \textbf{Transaction-based prevention}: assigning IDs to transactions incrementally (transactions' "age") and preventing older transactions from waiting for younger ones to end their work.
+    \end{itemize}
+    \item \textbf{Deadlock detection}: transaction killed when they are in deadlock. Requires an algorithm to detect cycles in the wait-for graph.
+\end{itemize}
+\subsubsection{Deadlock detection}
+The deadlock detectiton requires an algorithm to detect cycles in the wait-for graph.\newline
+\newline
+Assumptions:
+\begin{itemize}
+    \item Transactions execute on a single main node (one locus of
+    control);
+    \item Transactions may be decomposed in “sub-transactions”
+    running on other nodes;
+    \item Synchronicity: when a transaction spawns a sub-transaction it
+    suspends work until the latter completes;
+    \item Two waits-for relationships: (1) $T_i$ waits from $T_j$ on the same node because $T_i$ needs a datum locked by $T_j$; (2) a sub-transaction of $T_i$ waits for another sub-transaction of $T_i$ running on a different node.
+\end{itemize}
+Because of the macanism of sub-transactions we need a distributed dependency graph, that is a global view of all the dependencies in all the differents nodes, where external call nodes represent a sub-transaction activating another sub-transaction at a different node.\newline
+\newline
+We will use the symbol "$\rightarrow$" as a "wait for" relation among local transactions.\newline
+\newline
+Lets see an example of deadlock (cycle) in a distributed dependency graph:
+\begin{center}
+    \includegraphics[height=5cm]{../arguments/distributeddependencygraph.JPG}
+\end{center}
+We can see a cycle between two differents node (A and B) in $T_{2a} \rightarrow T_{1a} \rightarrow T_{1b} \rightarrow T_{2b} \rightarrow T_{2a}$.\newline
+\newline
+The problem is how we can detect such occurance without maintaining the global view of the distributed dependeny graph but keeping it as much possible local for each node. To do so we need to  establishing a communication protocol whereby each node has a local projection of the global dependencies. Nodes exchange information and update their local graph based on the received information and communication is optimized to avoid that multiple nodes detect the same potential deadlock.\newline
+\newline
+Node $A$ sends its local info to a node $B$ only if
+\begin{itemize}
+    \item $A$ contains a transaction $T_i$ that is waited from another remote transaction and waits for a transaction $T_j$ active on $B$;
+    \item $i>j$ (this ensure a kind of message "forwarding" along a node path where node $A$ "precedes" node $B$ if $i>j$).
+\end{itemize}
+Mnemonically: I send info to you if a d-transaction listed at me waits for a d-transaction listed at you with smaller index.
+\subsubsection{Obermark's algorithm}
+The Obermark's algorithm runs periodically at each node and consists of four steps:
+\begin{itemize}
+    \item Get graph info (wait dependencies among transactions
+    and external calls) from the "previous" nodes.
+    Sequences contain only node and top-level transaction
+    identifiers
+    \item Update the local graph by merging the received
+    information
+    \item Check the existence of cycles among transactions
+    denoting potential deadlocks: if found, select one
+    transaction in the cycle and kill it
+    \item Send updated graph info to the “next” nodes
+\end{itemize}
+\subsubsection{Update lock}
+The most frequent deadlock occurs when two concurrent
+transactions start by reading the same resources (SL) and
+then decide to write and try to upgrade their lock to XL.\newline
+\newline
+To avoid this situation, systems offer the \textbf{update lock}: is a special lock asked by transactions that will read and then write an item.\newline
+\newline
+Update locks extend the interval during which a resource is locked, but we can't lock entire tables. Locks can be specified with different granularities (schema, table, fragment, page, tuple, field).\newline
+\newline
+The \textbf{intention locking scheme} is a mode to express the intention of locking at lower levels of granularity, there are 3 more lock modes in addition to SL (read shared locks) and XL (write exclusive locks):
+\begin{itemize}
+    \item \textbf{ISL}: Intention of locking a subelement of current element
+    in shared mode
+    \item \textbf{IXL}: Intention of locking a subelement of current
+    element in exclusive mode
+    \item \textbf{SIXL}: Lock of the element in shared mode with intention
+    of locking a subelement in exclusive mode (SL+IXL)    
+\end{itemize}
+\textbf{Hierarchical locking}:
+\begin{itemize}
+    \item Locks are requested starting from the root (the whole table) and going down in the hierarchy;
+    \item Locks are released starting from the leaves and going up
+    in the hierarchy
+    \item To request an SL or ISL lock on a non-root element, a
+    transaction must hold an equally or more restrictive lock
+    (ISL or IXL) on its "parent"
+    \item  To request an IXL, XL or SIXL lock on a non-root element,
+    a transaction must hold an equally or more restrictive lock
+    (SIXL or IXL) on its "parent"
+    \item When a lock is requested on a resource, the lock manager
+    decides based on the rules specified in the hierarchical
+    lock granting table 
+\end{itemize}
+\textbf{Hierarchical lock granting table}:
+\begin{center}
+    \includegraphics[height=4cm]{../arguments/hierarchicallockgrantingtable.JPG}
+\end{center}
+\subsection{Concurrency control based on timestamps}
+Locking is also named pessimistic concurrency control because it assumes that collisions will arise, alternative are the optimistic concurrency control methods.\newline
+\newline
+\textbf{Timestamp}: Identifier that defines a total ordering of events of a system.\newline
+\newline
