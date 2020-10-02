@@ -26,3 +26,7 @@
 \BOOKMARK [3][-]{subsubsection.3.3.7}{Obermark's algorithm}{subsection.3.3}% 26
 \BOOKMARK [3][-]{subsubsection.3.3.8}{Update lock}{subsection.3.3}% 27
 \BOOKMARK [2][-]{subsection.3.4}{Concurrency control based on timestamps}{section.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Timestamps in distributed systems}{subsection.3.4}% 29
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Timestamp principles}{subsection.3.4}% 30
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Thomas Rule}{subsection.3.4}% 31
+\BOOKMARK [3][-]{subsubsection.3.4.4}{Multiversion concurrency control}{subsection.3.4}% 32
