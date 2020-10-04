@@ -24,17 +24,19 @@ An update is applied from a state that ignores a preceding update, wich is lost.
 \[
     r_1(x) \; \rightarrow \; w_1(x) \; \rightarrow \; r_2(x) \; \rightarrow \; abort_1 \; \rightarrow \; w_(2)
 \]
-An uncommitted value is used to update the data.
+An uncommitted (aborted transaction) value is used to update the data.
 \subsubsection{Nonrepeatable Read}
 \[
     r_1(x) \; \rightarrow \; r_2(x) \; \rightarrow \; w_2(x) \; \rightarrow \; r_1(x)
 \]
-Someone else updates a previously read value.
+Someone else updates a previously read value: inside of the same transaction a data is read and, after a while, without changing the value of the data, if we try to read it again, now its a different value.
 \subsubsection{Phantom Update}
 \[
     r_1(x) \; \rightarrow \; r_2(x) \; \rightarrow \; w_2(x) \; \rightarrow \; r_1(x)
 \]
-Someone else updates data that contributes to a previously read datum.\newline
+Someone else updates data that contributes to a previously read datum: a transaction reads multiple data, but at different times. There is inconcistency in the time of when the data that contributes to the constraints have been read.\newline
+\newline
+This anomaly is also known as "contraint violation".
 \newline
 Lets see an example: given the costraint $A+B+C = 100$ and the initial values $A = 50, B = 30, C = 20$\newline
 $T_1 : r(A), r(B)$\newline
@@ -47,7 +49,7 @@ So for $T_1$ it is as if "somebody else" had updated the value o the sum, but fo
 \[
     r_1(x) \; \rightarrow \; w_2(new\; tuple) \; \rightarrow \; r_1(x)
 \]
-Someone else inserts dataa that contributes to a previously read datum.\newline
+Someone else inserts data that contributes to a previously read datum.\newline
 \newline
 This anomaly does not depend on data already present in the DB when $T_1$ executes, but on a “phantom” tuple that is inserted by “someone else” and satisfies the conditions of a previous query of $T_1$.
 \subsection{Principles of Concurrency Control}

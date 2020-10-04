@@ -11,6 +11,8 @@
 \titleformat*{\subsection}{\normalfont\Large\bfseries\color{BurntOrange}}
 \titleformat*{\subsubsection}{\normalfont\normalsize\bfseries\color{BurntOrange}}
 
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textcolor{purple}{\oldtextbf{#1}}}
 
 \begin{document}
     \maketitle
