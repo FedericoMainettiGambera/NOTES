@@ -195,6 +195,8 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.idx
+INPUT c:/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.aux
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.aux
 OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.aux
@@ -243,7 +245,6 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.toc
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.toc
@@ -261,6 +262,7 @@ INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/1IntroductionToTheCourse.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../arguments/1IntroductionToTheCourse.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../other/schedule.jpg
 INPUT ../other/schedule.jpg

@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex master.idx"] 1601830837 "master.idx" "master.ind" "master" 1601831281
+["makeindex master.idx"] 1601830837 "master.idx" "master.ind" "master" 1601831939
   "master.idx" 1601831280 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "master.ilg"
   "master.ind"
-["pdflatex"] 1601831278 "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.tex" "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf" "master" 1601831281
+  "master.ilg"
+["pdflatex"] 1601831278 "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.tex" "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf" "master" 1601831939
   "../../preamble/preamble.tex" 1600604217 796 4b3c78979ef1ab23eeac773f908c5809 ""
   "../arguments/0introduction.tex" 1601303975 687 1cbeeec5f14eed6a2d810cc333a7d4f0 ""
   "../arguments/1transactions.tex" 1601305930 1854 4750333f466c101b1d1f1a6c96193bc2 ""
@@ -23,7 +23,7 @@
   "../arguments/tsand2pl.JPG" 1601602097 60907 0aff946b3d39452ffb2148ab2ad2b148 ""
   "../notrevised/notrevised.tex" 1600782751 0 d41d8cd98f00b204e9800998ecf8427e ""
   "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.aux" 1601831280 5021 e7b78c44421893ee22877045d310a0e5 ""
-  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.tex" 1601831277 833 fe58a152aa7b598ffffab6d587f29666 ""
+  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.tex" 1601831937 833 fe58a152aa7b598ffffab6d587f29666 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1570204714 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1570204206 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1570202613 1004 54797486969f23fa377b128694d548df ""
@@ -186,14 +186,14 @@
   "master.aux" 1601831280 5021 e7b78c44421893ee22877045d310a0e5 "pdflatex"
   "master.ind" 1601830838 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
   "master.out" 1601831280 2407 54c68f238f68df134d379a1a96240f99 "pdflatex"
-  "master.tex" 1601831277 833 fe58a152aa7b598ffffab6d587f29666 ""
+  "master.tex" 1601831937 833 fe58a152aa7b598ffffab6d587f29666 ""
   "master.toc" 1601831280 3025 cdf81b8679169d74af71756bfed4e532 "pdflatex"
   (generated)
-  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.log"
-  "master.log"
-  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf"
-  "master.pdf"
   "master.aux"
+  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.log"
+  "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf"
   "master.idx"
-  "master.out"
+  "master.pdf"
   "master.toc"
+  "master.log"
+  "master.out"

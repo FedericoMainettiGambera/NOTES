@@ -1,6 +1,19 @@
 \documentclass[a4paper, 9pt]{article}
 \title{ARTIFICIAL INTELLIGENCE}
 \input{../../preamble/preamble.tex}
+
+\color{black}
+\pagecolor{white}
+\usepackage{titlesec}
+\definecolor{bluetitle}{RGB}{0, 51, 153}
+\titleformat*{\section}{\normalfont\LARGE\bfseries\color{bluetitle}}
+\titleformat*{\subsection}{\normalfont\Large\bfseries\color{bluetitle}}
+\titleformat*{\subsubsection}{\normalfont\normalsize\bfseries\color{bluetitle}}
+
+\definecolor{bluebold}{RGB}{0, 123, 255}
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textcolor{bluebold}{\oldtextbf{#1}}}
+
 \begin{document}
     \maketitle
     \tableofcontents{}

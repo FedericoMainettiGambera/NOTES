@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  21 SEP 2020 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  4 OCT 2020 19:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -535,6 +535,19 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 Writing index file master.idx
 )
+\GPT@outputbox=\box72
+ (c:/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/09/09 v2.12 Sectioning titles
+\ttl@box=\box73
+\beforetitleunit=\skip53
+\aftertitleunit=\skip54
+\ttl@plus=\dimen182
+\ttl@minus=\dimen183
+\ttl@toksa=\toks40
+\titlewidth=\dimen184
+\titlewidthlast=\dimen185
+\titlewidthfirst=\dimen186
+)
 
 LaTeX Warning: Unused global option(s):
     [9pt].
@@ -542,33 +555,33 @@ LaTeX Warning: Unused global option(s):
 (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.aux)
 \openout1 = `master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
  (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count147
-\scratchdimen=\dimen182
-\scratchbox=\box72
+\scratchdimen=\dimen187
+\scratchbox=\box74
 \nofMPsegments=\count148
 \nofMParguments=\count149
-\everyMPshowfont=\toks40
+\everyMPshowfont=\toks41
 \MPscratchCnt=\count150
-\MPscratchDim=\dimen183
+\MPscratchDim=\dimen188
 \MPnumerator=\count151
 \makeMPintoPDFobject=\count152
-\everyMPtoPDFconversion=\toks41
+\everyMPtoPDFconversion=\toks42
 ) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -581,8 +594,8 @@ Package grfext Info: Graphics extension search list:
  (c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \it@ocap on input line 4.
-LaTeX Info: Redefining \it@ccap on input line 4.
+LaTeX Info: Redefining \it@ocap on input line 17.
+LaTeX Info: Redefining \it@ccap on input line 17.
 
 
 File italian.ldf warning: 
@@ -590,9 +603,9 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 4.
+italian.ldf    on input line 17.
 
-\AtBeginShipoutBox=\box73
+\AtBeginShipoutBox=\box75
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -628,7 +641,7 @@ italian.ldf    on input line 4.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 4.
+Package hyperref Info: Link coloring OFF on input line 17.
  (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/12 v2.45 Cross-referencing by name of section
  (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -636,18 +649,18 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count153
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
  (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.out) (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.out)
 \@outlinefile=\write7
 \openout7 = `master.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 6.
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 6.
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.toc)
@@ -666,7 +679,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--13
 
  []
 
-<../other/schedule.jpg, id=50, 957.5775pt x 1284.8pt>
+<../other/schedule.jpg, id=49, 957.5775pt x 1284.8pt>
 File: ../other/schedule.jpg Graphic file (type jpg)
 <use ../other/schedule.jpg>
 Package pdftex.def Info: ../other/schedule.jpg  used on input line 14.
@@ -723,7 +736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--18
 
  []
 
-<../arguments/SensorsAndActuators.JPG, id=63, 594.72188pt x 255.95625pt>
+<../arguments/SensorsAndActuators.JPG, id=62, 594.72188pt x 255.95625pt>
 File: ../arguments/SensorsAndActuators.JPG Graphic file (type jpg)
 <use ../arguments/SensorsAndActuators.JPG>
 Package pdftex.def Info: ../arguments/SensorsAndActuators.JPG  used on input line 28.
@@ -733,7 +746,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--42
 
  []
 
-<../arguments/decisionModule.JPG, id=64, 854.44218pt x 230.36063pt>
+<../arguments/decisionModule.JPG, id=63, 854.44218pt x 230.36063pt>
 File: ../arguments/decisionModule.JPG Graphic file (type jpg)
 <use ../arguments/decisionModule.JPG>
 Package pdftex.def Info: ../arguments/decisionModule.JPG  used on input line 43.
@@ -749,11 +762,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--58
  []
 
 ) [5 <../arguments/decisionModule.JPG>] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/../notrevised/notrevised.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 15.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 15.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 15.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 15.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: DCA9089CCF68AD0828491D2EBA3A25AE;368.
 
@@ -762,18 +775,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17902 strings out of 492609
- 327292 string characters out of 6132818
- 424930 words of memory out of 5000000
- 21434 multiletter control sequences out of 15000+600000
+ 18177 strings out of 492609
+ 330753 string characters out of 6132818
+ 431927 words of memory out of 5000000
+ 21709 multiletter control sequences out of 15000+600000
  12572 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,6n,73p,931b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.pdf" (5 pages, 376395 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/ARTIFICIAL INTELLIGENCE/master/master.pdf" (5 pages, 376544 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
