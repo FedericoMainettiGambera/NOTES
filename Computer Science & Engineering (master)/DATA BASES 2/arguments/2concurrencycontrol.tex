@@ -129,21 +129,21 @@ There are two main families of techniques:
 \subsubsection{Locking}
 A transaction is \textbf{well-formed w.r.t. locking} if
 \begin{itemize}
-    \item read operations are preceded by \textbf{r\_lock} (shared lock) and followed by \textbf{unlock};
-    \item write operations are preceded by \textbf{w\_lock} (exclusice lock) and followed by \textbf{unlock}.
+    \item read operations are preceded by \textbf{r\_lock} (shared lock SL) and followed by \textbf{unlock};
+    \item write operations are preceded by \textbf{w\_lock} (exclusice lock XL) and followed by \textbf{unlock}.
 \end{itemize}
 \ \newline
 Transactions that first read and then write an object may:
 \begin{itemize}
     \item acquire a w\_lock already when reading or
-    \item acquire a r\_lock first and then upgrade it into a w\_lock (lock escalation).
+    \item acquire a r\_lock first and then upgrade it into a w\_lock (lock \textbf{escalation}).
 \end{itemize}
 \ \newline
 Possible states of an object:
 \begin{itemize}
-    \item free;
-    \item r-locked (locked by one or more readers);
-    \item w-locked (locked by a writer);
+    \item \textbf{free};
+    \item \textbf{r-locked} (locked by one or more readers);
+    \item \textbf{w-locked} (locked by a writer);
 \end{itemize}
 \ \newline
 When a lock request is granted, the resource is acquired; when an unlock is executed, the resource becomes available.\newline
@@ -154,16 +154,16 @@ The lock manager grants access to resources according to the \textbf{conflict ta
      \hline
      & FREE & R\_LOCKED & W\_LOCKED \\ 
      \hline
-     r\_lock & OK (R\_LOCKED) & OK (R\_LOCKED n++) & NO (W\_LOCKED) \\ 
-     w\_lock & OK (W\_LOCKED) & NO (R\_LOCKED) & NO (W\_LOCKED)\\ 
-     unlock & ERROR & OK (DEPENDS n- -) & OK (FREE) \\ 
+     r\_lock & \textcolor{green}{OK} (R\_LOCKED) & \textcolor{green}{OK} (R\_LOCKED n++) & \textcolor{red}{NO} (W\_LOCKED) \\ 
+     w\_lock & \textcolor{green}{OK} (W\_LOCKED) & \textcolor{red}{NO} (R\_LOCKED) & \textcolor{red}{NO} (W\_LOCKED)\\ 
+     unlock & \textcolor{red}{ERROR} & \textcolor{green}{OK} (DEPENDS n- -) & \textcolor{green}{OK} (FREE) \\ 
      \hline
     \end{tabular}
 \end{center}
 \renewcommand{\arraystretch}{1}
 where $n$ is the counter of the current readers.
 \subsubsection{2PL}
-Is respecting locks enough for serializability? No. For example non repeatable read anomalies can still occur and to prevent it we use the \textbf{Two-Phase Locking (2PL)}: the requirement (two-phase rule) is that a transaction cannot acquire any other lock after releasing a lock. Doing so we prevent \textbf{non repeatable reads}.\newline
+Is respecting locks enough for serializability? No. For example non repeatable read anomalies can still occur and to prevent it we use the \textbf{Two-Phase Locking (2PL)}: the requirement (two-phase rule) is that \textbf{"a transaction cannot acquire any other lock after releasing a lock"}. Doing so we prevent \textbf{non repeatable reads}.\newline
 \newline
 A scheduler that only processes well-formed transactions, grants locks according to the conflict table and checks that all transactions apply the two-phase rule generetes a class of schedules called \textbf{2PL}.\newline
 \newline
@@ -172,10 +172,10 @@ A scheduler that only processes well-formed transactions, grants locks according
     \includegraphics[height=5cm]{../arguments/2PL.JPG}
 \end{center}
 \subsubsection{Strict 2PL}
-Up to now, we were still using the hypothesis of
-commit-projection (no transactions in the schedule
+Up to now, we were still using the \textbf{hypothesis of
+commit-projection} (no transactions in the schedule
 abort).\newline
-2PL, as seen so far, does not protect against \textbf{dirty} (uncommitted data) \textbf{reads} (and therefore neither do VSR nor CSR): Releasing locks before rollbacks exposes “dirty” data.\newline
+2PL, as seen so far, does not protect against \textbf{dirty} (uncommitted data) \textbf{reads} (and therefore neither do VSR nor CSR): releasing locks before rollbacks exposes “dirty” data.\newline
 \newline
 To remove this hypothesis, we need to add a constraint to
 2PL, that defines \textbf{strict 2PL}: \textbf{Locks held by a transaction can be released only after
@@ -183,10 +183,10 @@ commit/rollback}.\newline
 \newline
 Strict 2PL locks are also called \textbf{long duration locks}, 2PL locks \textbf{short duration locks}.\newline
 \newline
-A phantom insertion occurs when a transaction adds ites to a data set previously read by another transaction. To prevent phantom inserts a lock should be placed also on
+A phantom insertion occurs when a transaction adds items to a data set previously read by another transaction. To prevent phantom inserts a lock should be placed also on
 “future data”.\newline
 \newline
-\textbf{Predicate locks} extend the notion of \textbf{data locks} to “future data”.\newline
+\textbf{Predicate locks} extend the notion of \textbf{data locks} to “future data”. Predicate locks are a tool to lock data that doesn't already exist.\newline
 \newline
 Write locks are held until the completion (commit) of the transaction, and not only untill the end of the write, to enable the proper processing of abort events.
 \subsubsection{Isolation Levels in SQL:1999 (and JDBC)}
@@ -206,11 +206,12 @@ Isolation Levels in SQL:1999 (and JDBC):
 The locking requirements to meet this guarantee can
 frequently lead to deadlock where one of the transactions
 needs to be rolled back. Therefore SERIALIZABLE isolation level is used sparingly and
-in NOT the default in most commercial systems.
+is NOT the default in most commercial systems.
 \newline
 \newline
 SQL Isolation levels may be implemented with the appropriate
-use of lock.
+use of lock.\newline
+The isolatioon levels define the way read lock are managed, write lock are always managed in strict 2PL (because it is the only way to handle aborts).
 \begin{center}
     \includegraphics[height=5cm]{../arguments/isolationlevels.JPG}
 \end{center}

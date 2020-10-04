@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  4 OCT 2020 19:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  4 OCT 2020 21:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -829,72 +829,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--192
  []
 
 [9 <../arguments/2PL.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 205--214
+Underfull \hbox (badness 10000) in paragraph at lines 205--215
 
  []
 
 <../arguments/isolationlevels.JPG, id=233, 679.78969pt x 321.45094pt>
 File: ../arguments/isolationlevels.JPG Graphic file (type jpg)
 <use ../arguments/isolationlevels.JPG>
-Package pdftex.def Info: ../arguments/isolationlevels.JPG  used on input line 215.
+Package pdftex.def Info: ../arguments/isolationlevels.JPG  used on input line 216.
 (pdftex.def)             Requested size: 300.86137pt x 142.26378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--222
+Underfull \hbox (badness 10000) in paragraph at lines 219--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--239
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--239
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
 
  []
 
 [10 <../arguments/isolationlevels.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 250--253
+Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--267
+Underfull \hbox (badness 10000) in paragraph at lines 263--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--267
+Underfull \hbox (badness 10000) in paragraph at lines 263--268
 
  []
 
 <../arguments/distributeddependencygraph.JPG, id=238, 525.46312pt x 201.75375pt>
 File: ../arguments/distributeddependencygraph.JPG Graphic file (type jpg)
 <use ../arguments/distributeddependencygraph.JPG>
-Package pdftex.def Info: ../arguments/distributeddependencygraph.JPG  used on input line 268.
+Package pdftex.def Info: ../arguments/distributeddependencygraph.JPG  used on input line 269.
 (pdftex.def)             Requested size: 370.52371pt x 142.26378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--275
+Underfull \hbox (badness 10000) in paragraph at lines 271--276
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--275
+Underfull \hbox (badness 10000) in paragraph at lines 271--276
 
  []
 
 [11 <../arguments/distributeddependencygraph.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 295--304
+Underfull \hbox (badness 10000) in paragraph at lines 296--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--304
+Underfull \hbox (badness 10000) in paragraph at lines 296--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--304
+Underfull \hbox (badness 10000) in paragraph at lines 296--305
 
  []
 
@@ -902,25 +902,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--304
 <../arguments/hierarchicallockgrantingtable.JPG, id=247, 488.57532pt x 197.98969pt>
 File: ../arguments/hierarchicallockgrantingtable.JPG Graphic file (type jpg)
 <use ../arguments/hierarchicallockgrantingtable.JPG>
-Package pdftex.def Info: ../arguments/hierarchicallockgrantingtable.JPG  used on input line 329.
+Package pdftex.def Info: ../arguments/hierarchicallockgrantingtable.JPG  used on input line 330.
 (pdftex.def)             Requested size: 280.85408pt x 113.81102pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--341
+Underfull \hbox (badness 10000) in paragraph at lines 333--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--341
+Underfull \hbox (badness 10000) in paragraph at lines 333--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--351
+Underfull \hbox (badness 10000) in paragraph at lines 343--352
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--355
+Underfull \hbox (badness 10000) in paragraph at lines 353--356
 
  []
 
@@ -928,30 +928,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--355
 <../arguments/tsand2pl.JPG, id=253, 681.29532pt x 313.17pt>
 File: ../arguments/tsand2pl.JPG Graphic file (type jpg)
 <use ../arguments/tsand2pl.JPG>
-Package pdftex.def Info: ../arguments/tsand2pl.JPG  used on input line 362.
+Package pdftex.def Info: ../arguments/tsand2pl.JPG  used on input line 363.
 (pdftex.def)             Requested size: 309.50125pt x 142.26378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--373
+Underfull \hbox (badness 10000) in paragraph at lines 369--374
 
  []
 
 <../arguments/thomasrule.JPG, id=254, 607.51968pt x 283.0575pt>
 File: ../arguments/thomasrule.JPG Graphic file (type jpg)
 <use ../arguments/thomasrule.JPG>
-Package pdftex.def Info: ../arguments/thomasrule.JPG  used on input line 374.
+Package pdftex.def Info: ../arguments/thomasrule.JPG  used on input line 375.
 (pdftex.def)             Requested size: 305.34425pt x 142.26378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--389
+Underfull \hbox (badness 10000) in paragraph at lines 378--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--389
+Underfull \hbox (badness 10000) in paragraph at lines 378--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--389
+Underfull \hbox (badness 10000) in paragraph at lines 378--390
 
  []
 
@@ -959,7 +959,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 377--389
 <../arguments/multiversionts.JPG, id=259, 705.38531pt x 304.88907pt>
 File: ../arguments/multiversionts.JPG Graphic file (type jpg)
 <use ../arguments/multiversionts.JPG>
-Package pdftex.def Info: ../arguments/multiversionts.JPG  used on input line 394.
+Package pdftex.def Info: ../arguments/multiversionts.JPG  used on input line 395.
 (pdftex.def)             Requested size: 329.15245pt x 142.26378pt.
 ) [15 <../arguments/multiversionts.JPG>] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../notrevised/notrevised.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
@@ -981,9 +981,9 @@ Here is how much of TeX's memory you used:
  21775 multiletter control sequences out of 15000+600000
  13474 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,7n,73p,920b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,7n,73p,920b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf" (15 pages, 874496 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf" (15 pages, 875093 bytes).
 PDF statistics:
  312 PDF objects out of 1000 (max. 8388607)
  270 compressed objects within 3 object streams
