@@ -262,18 +262,18 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.toc
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/0introduction.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/0introduction.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/00introduction.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/00introduction.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/1transactions.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/1transactions.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/01transactions.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/01transactions.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/ACIDandDBMSarchitectures.JPG
 INPUT ../arguments/ACIDandDBMSarchitectures.JPG
 INPUT ../arguments/ACIDandDBMSarchitectures.JPG
-INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/2concurrencycontrol.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/2concurrencycontrol.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/02concurrencycontrol.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/02concurrencycontrol.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/serial-interleaved-nested.JPG
 INPUT ../arguments/serial-interleaved-nested.JPG
 INPUT ../arguments/serial-interleaved-nested.JPG
@@ -307,6 +307,8 @@ INPUT ../arguments/thomasrule.JPG
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/multiversionts.JPG
 INPUT ../arguments/multiversionts.JPG
 INPUT ../arguments/multiversionts.JPG
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/03physicaldatabases.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/03physicaldatabases.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../notrevised/notrevised.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../notrevised/notrevised.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.aux

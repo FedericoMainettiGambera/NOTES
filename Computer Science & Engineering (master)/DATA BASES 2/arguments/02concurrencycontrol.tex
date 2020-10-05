@@ -188,7 +188,21 @@ A phantom insertion occurs when a transaction adds items to a data set previousl
 \newline
 \textbf{Predicate locks} extend the notion of \textbf{data locks} to “future data”. Predicate locks are a tool to lock data that doesn't already exist.\newline
 \newline
-Write locks are held until the completion (commit) of the transaction, and not only untill the end of the write, to enable the proper processing of abort events.
+Write locks are held until the completion (commit) of the transaction, and not only untill the end of the write, to enable the proper processing of abort events.\newline
+\newline
+\newline
+2PL and locking have two foundamentals principles:
+\begin{itemize}
+    \item \textbf{same transaction i}: a transaction consists of a growing phase (locking resources), a plateau (operations) and a shrinking phase (releasing locks). Because of the 2PL rule we can say that all the locks must happen before the unlocks:
+    \[
+        L^?_i < U^?_i
+    \]
+    \item \textbf{same resource R}: if we analyze a resource, we can say that before being able to lock a resource, it must be unlocked by the precedent transaction that was locking it:
+    \[
+        U^R_? < L^R_?
+    \]
+    this constraint is not a 2PL rule, but is necessary to have a working locking system.
+\end{itemize}
 \subsubsection{Isolation Levels in SQL:1999 (and JDBC)}
 Isolation Levels in SQL:1999 (and JDBC):
 \begin{itemize}
@@ -270,7 +284,7 @@ Lets see an example of deadlock (cycle) in a distributed dependency graph:
 \end{center}
 We can see a cycle between two differents node (A and B) in $T_{2a} \rightarrow T_{1a} \rightarrow T_{1b} \rightarrow T_{2b} \rightarrow T_{2a}$.\newline
 \newline
-The problem is how we can detect such occurance without maintaining the global view of the distributed dependeny graph but keeping it as much possible local for each node. To do so we need to  establishing a communication protocol whereby each node has a local projection of the global dependencies. Nodes exchange information and update their local graph based on the received information and communication is optimized to avoid that multiple nodes detect the same potential deadlock.\newline
+The problem is how we can detect such occurance without maintaining the global view of the distributed dependeny graph but keeping it as much possible local for each node. To do so we need to  establish a communication protocol whereby each node has a local projection of the global dependencies. Nodes exchange information and update their local graph based on the received information and communication is optimized to avoid that multiple nodes detect the same potential deadlock.\newline
 \newline
 Node $A$ sends its local info to a node $B$ only if
 \begin{itemize}
@@ -295,11 +309,29 @@ The Obermark's algorithm runs periodically at each node and consists of four ste
 \subsubsection{Update lock}
 The most frequent deadlock occurs when two concurrent
 transactions start by reading the same resources (SL) and
-then decide to write and try to upgrade their lock to XL.\newline
+then decide to write and try to upgrade their lock to write (XL).\newline
 \newline
-To avoid this situation, systems offer the \textbf{update lock}: is a special lock asked by transactions that will read and then write an item.\newline
+To avoid this situation, systems offer the \textbf{update lock} (UL): is a special lock asked by transactions that will read and then write an item..\newline
 \newline
-Update locks extend the interval during which a resource is locked, but we can't lock entire tables. Locks can be specified with different granularities (schema, table, fragment, page, tuple, field).\newline
+Here it is the \textbf{table of conflict} with the update lock:
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+    \begin{tabular}{ |c|c c c| } 
+     \hline
+      & & resource status & \\
+     request & SL & UL & XL \\ 
+     \hline
+     SL & \textcolor{green}{OK} & \textcolor{green}{OK} & \textcolor{red}{NO} \\ 
+     UL & \textcolor{green}{OK} & \textcolor{red}{NO} & \textcolor{red}{NO} \\ 
+     XL & \textcolor{red}{NO} & \textcolor{red}{NO} & \textcolor{red}{NO} \\ 
+     \hline
+    \end{tabular}
+\end{center}
+\renewcommand{\arraystretch}{1}
+\ \newline
+The price for using update locks is that they extend the interval during which a resource is locked.
+\subsubsection{Hierarchical locking}
+Locks can be specified with different granularities (schema, table, fragment, page, tuple, field) and we have two objectives: locking the minimum amount of data and recognizing conflicts as soon as possible. We obtain this by requesting resources top-down until the right level is obtained and releasing locks bottom-up.\newline
 \newline
 The \textbf{intention locking scheme} is a mode to express the intention of locking at lower levels of granularity, there are 3 more lock modes in addition to SL (read shared locks) and XL (write exclusive locks):
 \begin{itemize}
