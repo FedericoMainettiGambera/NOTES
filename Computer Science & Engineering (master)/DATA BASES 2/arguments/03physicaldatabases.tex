@@ -1,3 +1,78 @@
 \section{Physical data structures
 and query optimization}
 \url{../other/professor's slides/3_PhysicalDatabases.pdf}
+\begin{center}
+    \includegraphics[height=5cm]{../arguments/Querymanagement.JPG}
+\end{center}
+\subsection{Data Access and Cost Model}
+\subsubsection{Main and secondry memory}
+Data bases have two memories: \textbf{main memory} and \textbf{secondary memory}.\newline
+\newline
+Databases must be stored mainly in files onto secondary memory for two reasons: size and persistance.\newline
+\newline
+Data stored in secondary memory can only be used if first transferred to main memory.\newline
+\newline
+Second memory devices are organized in \textbf{blocks} of \textbf{fixed} length.\newline
+\newline
+The cost of an access to secondary memory is 4 orders of magnitude higher than that to main memory.
+\subsubsection{DBMS and file system}
+\textbf{File System (FS)}: component of the OS which manages access to secondary memory.\newline
+\newline
+DBMSs make limited use of FS functionalities: the DBMS directly manages the file organization, both in terms of the distribution of records within blocks and with respect to the internal structure of each block. A DBMS may also control the physical allocation of blocks onto the disk for faster sequential reads.
+\subsection{Physical access structures}
+\textbf{Access methods}: software modules that provide data access and manipulation (store and retrieve) \textbf{primitives} for each physical access structure.\newline
+\newline
+Access methods have their own data structures to organize data:
+\begin{itemize}
+    \item each table is stored into \textbf{exactly one primary} physical access structure;
+    \item each table may have \textbf{one or more optional secondary} access structure.
+\end{itemize}
+\ \newline
+\textbf{Primary structure}: it contains all the tuples of a table. The main purpose is to store the table content.\newline
+\newline
+\textbf{Secondary structures}: are used to index primary structure, and only contain the values of some fields, interleaved with pointers to the blocks of the primary structure. The main purpose is to speed up the search for specific tuples, according to some earch criterion.\newline
+\newline
+Three main \textbf{types of data access structures}:
+\begin{itemize}
+    \item \textbf{Sequential} structures;
+    \item \textbf{Hash-based} structures;
+    \item \textbf{Tree-based} structures.
+\end{itemize}
+\subsubsection{Blocks and tuples}
+\textbf{Block}: the "physical" components of files. The size of a block is typically fixed and depends on the file system and on how the disk is formatted.\newline
+\newline
+\textbf{Tuples}: the "logical" components of tables. The size of a tuple (also called record) depends on the database design and is typically variable within a file.
+\newline
+\newline
+\textbf{Organization of tuples within blocks/pages}:
+\begin{center}
+    \includegraphics[height=4cm]{../arguments/organizationoftuples.JPG}
+\end{center}
+\begin{itemize}
+    \item Block header and trailer with control information used by the file system;
+    \item Page header and trailer with control information about the access method;
+    \item A page dictionary, which contains pointers (offset table) to each elementary item of useful data contained in the page;
+    \item A useful part, which contains the data;
+    \item A checksum, to detect corrupted data.
+\end{itemize}
+\textbf{Block factor (B)}: the number oftuples within a block
+\[
+    B = floor\left(\frac{\text{size of blok}}{\text{avarage size of a tuple}}\right)
+\]
+\subsubsection{Page manager primitives}
+\begin{itemize}
+    \item \textbf{Insertion and update of a tuple}: may require a reorganization of the page or usage of a new page;
+    \item \textbf{deletion of a tuple}: often carried out by marking the tuple as "invalid";
+    \item \textbf{access to a field of a particular tuple}: identified according to an offset w.r.t. the beginning of the tuple and the lenght of the field itself.
+\end{itemize}
+\subsubsection{Sequential access structures}
+Sequential structures is a sequential arrangement of tuples in the secondary memory.\newline
+\newline
+Three cases:
+\begin{itemize}
+    \item \textbf{Entry-sequenced} organization: sequence of tuples dictated by their order of entry. Optimal for space occupancy and carrying out sequntial reading and writing, non optimal with respect to searching specific data units.
+    \item \textbf{Array} organization: the tuples are arranged as in array, they can be accessed through an index. Possible only when tuples are of fixed lenght.
+    \item \textbf{Sequentially-ordered} organization: tuples ordered according to the value of a key (one or more attributes). The main problem are related to insertion of new tuples and updates, reordering techniwques are needed for the tuples already present.
+\end{itemize}
+\subsubsection{Hash-based access structures}
+\subsubsection{Tree-Based access structures}

@@ -260,8 +260,8 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.toc
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.toc
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/00introduction.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/00introduction.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
@@ -309,6 +309,14 @@ INPUT ../arguments/multiversionts.JPG
 INPUT ../arguments/multiversionts.JPG
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/03physicaldatabases.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/03physicaldatabases.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/Querymanagement.JPG
+INPUT ../arguments/Querymanagement.JPG
+INPUT ../arguments/Querymanagement.JPG
+INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/organizationoftuples.JPG
+INPUT ../arguments/organizationoftuples.JPG
+INPUT ../arguments/organizationoftuples.JPG
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../notrevised/notrevised.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../notrevised/notrevised.tex
 INPUT c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.aux
