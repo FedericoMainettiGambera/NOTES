@@ -362,15 +362,13 @@ The \textbf{intention locking scheme} is a mode to express the intention of lock
     \includegraphics[height=4cm]{../arguments/hierarchicallockgrantingtable.JPG}
 \end{center}
 \subsection{Concurrency control based on timestamps}
-Locking is also named pessimistic concurrency control because it assumes that collisions will arise, alternative are the optimistic concurrency control methods.\newline
+Locking is also named pessimistic concurrency control because it assumes that collisions will arise, alternative are the optimistic concurrency control methods like concurrency control based on timestamps.\newline
 \newline
 \textbf{Timestamp}: Identifier that defines a total ordering of events of a system.\newline
 \newline
 Each transaction has a timestamp representing the time
 at which the transaction begins so that transactions can
-be ordered by “birth date”.\newline
-A schedule is accepted only if it reflects the serial
-ordering of the transactions induced by their timestamps.
+be ordered by “birth date”.
 \subsubsection{Timestamps in distributed systems}
 How do we assign timestamps in distributed systems where there is no "global time" available? A system’s function gives out timestamps on requests.\newline
 We can now use an algorithm, known as "Lamport method": cannot receive a message from "the
@@ -390,17 +388,20 @@ The scheduler receives read/write requests tagged with timestamps:
     \item write(x,ts): if ts $<$ RTM(x) or ts $<$ WTM(x) the request is rejected and the transaction is killed, else access is granted and WTM(x) is set to ts.
 \end{itemize}
 This approach uses a commit-projection hypothesis, meaning that there are no abort and each transaction is committed.\newline
-To work without this hypothesis write operations should be buffered until commit, in this way aborted transactions do not even issue write requests and the commitprojection hypothesis is equivalent to a full schedule with committed and abored transactions.
+To work without this hypothesis write operations should be buffered until commit, in this way aborted transactions do not even issue write requests and the commit-projection hypothesis is equivalent to a full schedule with committed and abored transactions.
 \begin{center}
     \includegraphics[height=5cm]{../arguments/tsand2pl.JPG}
 \end{center}
-Notice how some serial transaction are killed in the timestamp approach.\newline
+Notice how some serial transaction aren't present in the timestamp approach.\newline
+\newline
 In 2PL transactions can be actively waiting. In TS they are
 killed and restarted. Restarting a transaction costs more than waiting: 2PL wins!
 \subsubsection{Thomas Rule}
-A variant of the basic timestamp-based concurrency control is the Thomas Rule, where the only thing that change is the write(x,ts): if ts $<$ RTM(x) the requesti is rejected and the transaction is killed, else if ts $<$ WTM(x) then our write is "obsolete": is can be skipped.\newline
-\newline
-skipping a write on an object that has already been written
+A variant of the basic timestamp-based concurrency control is the Thomas Rule, where the only thing that change is the write(x,ts) rule:
+\begin{itemize}
+    \item if ts $<$ RTM(x) the request is rejected and the transaction is killed, else if ts $<$ WTM(x) then our write is "obsolete": it can be skipped.
+\end{itemize}
+Skipping a write on an object that has already been written
 by a younger transaction, without killing the transaction, works only if the transaction issues a write without requiring a previous
 read on the object (so SET X = X+1 would fail).
 \begin{center}
@@ -411,7 +412,7 @@ Idea: writes generate new copies, reads access the
 "right" copy.\newline
 \newline
 Writes generate new copies, each one with a new WTM.
-Each object x always has n>=1 active copies with
+Each object x always has n$>=$1 active copies with
 WTMn(x). There is a unique global RTM(x).\newline
 \newline
 Old copies are discarded when there are no
