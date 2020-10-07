@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  6 OCT 2020 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  7 OCT 2020 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -939,42 +939,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--386
 
  []
 
-<../arguments/tsand2pl.JPG, id=320, 681.29532pt x 313.17pt>
+[15 <../arguments/hierarchicallockgrantingtable.JPG>]
+<../arguments/tsand2pl.JPG, id=324, 681.29532pt x 313.17pt>
 File: ../arguments/tsand2pl.JPG Graphic file (type jpg)
 <use ../arguments/tsand2pl.JPG>
 Package pdftex.def Info: ../arguments/tsand2pl.JPG  used on input line 393.
 (pdftex.def)             Requested size: 309.50125pt x 142.26378pt.
-[15 <../arguments/hierarchicallockgrantingtable.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 395--399
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--405
 
  []
 
 <../arguments/thomasrule.JPG, id=325, 607.51968pt x 283.0575pt>
 File: ../arguments/thomasrule.JPG Graphic file (type jpg)
 <use ../arguments/thomasrule.JPG>
-Package pdftex.def Info: ../arguments/thomasrule.JPG  used on input line 408.
+Package pdftex.def Info: ../arguments/thomasrule.JPG  used on input line 412.
 (pdftex.def)             Requested size: 305.34425pt x 142.26378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--423
+Underfull \hbox (badness 10000) in paragraph at lines 415--429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--423
+Underfull \hbox (badness 10000) in paragraph at lines 415--429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--423
+Underfull \hbox (badness 10000) in paragraph at lines 415--429
 
  []
 
-<../arguments/multiversionts.JPG, id=326, 705.38531pt x 304.88907pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--429
+
+ []
+
+[16 <../arguments/tsand2pl.JPG> <../arguments/thomasrule.JPG>]
+<../arguments/multiversionts.JPG, id=330, 705.38531pt x 304.88907pt>
 File: ../arguments/multiversionts.JPG Graphic file (type jpg)
 <use ../arguments/multiversionts.JPG>
-Package pdftex.def Info: ../arguments/multiversionts.JPG  used on input line 428.
+Package pdftex.def Info: ../arguments/multiversionts.JPG  used on input line 434.
 (pdftex.def)             Requested size: 329.15245pt x 142.26378pt.
-[16 <../arguments/tsand2pl.JPG> <../arguments/thomasrule.JPG>]) [17 <../arguments/multiversionts.JPG>] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/03physicaldatabases.tex
+) [17 <../arguments/multiversionts.JPG>] (c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/../arguments/03physicaldatabases.tex
 <../arguments/Querymanagement.JPG, id=336, 662.475pt x 410.2828pt>
 File: ../arguments/Querymanagement.JPG Graphic file (type jpg)
 <use ../arguments/Querymanagement.JPG>
@@ -1056,13 +1073,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  18330 strings out of 492609
  334429 string characters out of 6132818
- 434910 words of memory out of 5000000
+ 434898 words of memory out of 5000000
  21797 multiletter control sequences out of 15000+600000
  14074 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,7n,73p,920b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf" (20 pages, 974701 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/Computer Science & Engineering (master)/DATA BASES 2/master/master.pdf" (20 pages, 975213 bytes).
 PDF statistics:
  402 PDF objects out of 1000 (max. 8388607)
  352 compressed objects within 4 object streams

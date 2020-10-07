@@ -33,7 +33,7 @@
 \contentsline {subsubsection}{\numberline {3.4.1}Timestamps in distributed systems}{15}{subsubsection.3.4.1}% 
 \contentsline {subsubsection}{\numberline {3.4.2}Timestamp principles}{15}{subsubsection.3.4.2}% 
 \contentsline {subsubsection}{\numberline {3.4.3}Thomas Rule}{16}{subsubsection.3.4.3}% 
-\contentsline {subsubsection}{\numberline {3.4.4}Multiversion concurrency control}{16}{subsubsection.3.4.4}% 
+\contentsline {subsubsection}{\numberline {3.4.4}Multiversion concurrency control}{17}{subsubsection.3.4.4}% 
 \contentsline {section}{\numberline {4}Physical data structures and query optimization}{18}{section.4}% 
 \contentsline {subsection}{\numberline {4.1}Data Access and Cost Model}{18}{subsection.4.1}% 
 \contentsline {subsubsection}{\numberline {4.1.1}Main and secondry memory}{18}{subsubsection.4.1.1}% 
