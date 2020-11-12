@@ -43,4 +43,5 @@
 \contentsline {subsubsection}{\numberline {4.2.2}Page manager primitives}{20}{subsubsection.4.2.2}% 
 \contentsline {subsubsection}{\numberline {4.2.3}Sequential access structures}{20}{subsubsection.4.2.3}% 
 \contentsline {subsubsection}{\numberline {4.2.4}Hash-based access structures}{20}{subsubsection.4.2.4}% 
-\contentsline {subsubsection}{\numberline {4.2.5}Tree-Based access structures}{20}{subsubsection.4.2.5}% 
+\contentsline {subsubsection}{\numberline {4.2.5}Index}{21}{subsubsection.4.2.5}% 
+\contentsline {subsubsection}{\numberline {4.2.6}Tree-Based access structures}{21}{subsubsection.4.2.6}% 

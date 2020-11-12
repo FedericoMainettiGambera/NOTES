@@ -41,4 +41,5 @@
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Page manager primitives}{subsection.4.2}% 41
 \BOOKMARK [3][-]{subsubsection.4.2.3}{Sequential access structures}{subsection.4.2}% 42
 \BOOKMARK [3][-]{subsubsection.4.2.4}{Hash-based access structures}{subsection.4.2}% 43
-\BOOKMARK [3][-]{subsubsection.4.2.5}{Tree-Based access structures}{subsection.4.2}% 44
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Index}{subsection.4.2}% 44
+\BOOKMARK [3][-]{subsubsection.4.2.6}{Tree-Based access structures}{subsection.4.2}% 45

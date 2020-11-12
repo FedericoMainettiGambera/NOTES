@@ -2,7 +2,7 @@
 and query optimization}
 \url{../other/professor's slides/3_PhysicalDatabases.pdf}
 \begin{center}
-    \includegraphics[height=5cm]{../arguments/Querymanagement.JPG}
+    \includegraphics[height=6cm]{../arguments/Querymanagement.JPG}
 \end{center}
 \subsection{Data Access and Cost Model}
 \subsubsection{Main and secondry memory}
@@ -10,11 +10,11 @@ Data bases have two memories: \textbf{main memory} and \textbf{secondary memory}
 \newline
 Databases must be stored mainly in files onto secondary memory for two reasons: size and persistance.\newline
 \newline
-Data stored in secondary memory can only be used if first transferred to main memory.\newline
+Data stored in secondary memory can only be used if first transferred to the main memory.\newline
 \newline
-Second memory devices are organized in \textbf{blocks} of \textbf{fixed} length.\newline
+Second memory devices are organized in \textbf{blocks} of \textbf{fixed} length. Main memory is instead organized in \textbf{buffer}, that is a large area of memory organized in \textbf{pages}. We assume that the size of a page is the size of a block\newline
 \newline
-The cost of an access to secondary memory is 4 orders of magnitude higher than that to main memory.
+The cost of an access to secondary memory is usually considered 4 orders of magnitude higher than that to main memory.
 \subsubsection{DBMS and file system}
 \textbf{File System (FS)}: component of the OS which manages access to secondary memory.\newline
 \newline
@@ -28,9 +28,11 @@ Access methods have their own data structures to organize data:
     \item each table may have \textbf{one or more optional secondary} access structure.
 \end{itemize}
 \ \newline
-\textbf{Primary structure}: it contains all the tuples of a table. The main purpose is to store the table content.\newline
+\textbf{Primary structure}: it contains all the tuples of a table. The main purpose is to actually store the table content.\newline
 \newline
-\textbf{Secondary structures}: are used to index primary structure, and only contain the values of some fields, interleaved with pointers to the blocks of the primary structure. The main purpose is to speed up the search for specific tuples, according to some earch criterion.\newline
+\textbf{Secondary structures}: are used to index primary structure, and only contain the values of some fields, interleaved with pointers to the blocks of the primary structure. The main purpose is to speed up the search for specific tuples, according to some search criterion.\newline
+\newline
+[off topic: An example of primary and secodnary structure may be an array (primary structure) contianing the data and a red and black tree of pointers (secondary structure) pointing to the array's cells.]\newline
 \newline
 Three main \textbf{types of data access structures}:
 \begin{itemize}
@@ -55,7 +57,7 @@ Three main \textbf{types of data access structures}:
     \item A useful part, which contains the data;
     \item A checksum, to detect corrupted data.
 \end{itemize}
-\textbf{Block factor (B)}: the number oftuples within a block
+\textbf{Block factor (B)}: the number of tuples within a block
 \[
     B = floor\left(\frac{\text{size of blok}}{\text{avarage size of a tuple}}\right)
 \]
@@ -75,4 +77,42 @@ Three cases:
     \item \textbf{Sequentially-ordered} organization: tuples ordered according to the value of a key (one or more attributes). The main problem are related to insertion of new tuples and updates, reordering techniwques are needed for the tuples already present.
 \end{itemize}
 \subsubsection{Hash-based access structures}
+the hash-based access structures are an efficient \textbf{associative access} to data, based on the value of a \textbf{key} field.\newline
+\newline
+A hash-based structure has $N_B$ \textbf{buckets} (unit of storage, typically of the size of 1 block - often all adjacent in the file).\newline
+\newline
+A \textbf{hash function} maps the key field to a value between $0$ and $N_B-1$, and this value is interpreted as the index of a bucket.\newline
+The implementation consists of two parts:
+\begin{itemize}
+    \item \textbf{folding}: transforms the key values so that they become
+    positive integer values, uniformly distributed over a large
+    range
+    \item \textbf{hashing}: transforms the positive binary number into a number
+    between 0 and NB–1, to identify the right bucket for the tuple
+\end{itemize}
+\textbf{Collisions} happen when two kays are associated with the same bucket.\newline
+There are two resolution techniques:
+\begin{itemize}
+    \item \textbf{closed hashing}: try to find a slot in another bucket in the hash table (not used in DBMS)
+    \item \textbf{open hashing}: a new bucket is allocated for the same hash result, linked to the previous one
+\end{itemize}
+\ \newline
+We can estimate the cost of accessing the tuple by considering the average length of the overflow chain. The \textbf{avarage lenght of the overflow chain} is a function of the \textbf{load factor} $\frac{T}{(B \cdot N_B)}$, where $T$ is the number of tuples and $N_B$ is the number of buckets, and the \textbf{block factor} $B$, that is the number of tuples within a block.
+\subsubsection{Index}
+\textbf{Indexes} are data structures that efficiently retrieve tuples on the basis of a search key. THey contain records of the form [search-key | pointer].\newline
+\newline
+In case of "sequentially ordered" access structures it is possible to dfifne a \textbf{primary index}:
+\begin{itemize}
+    \item The search key (SK) is the same attribute according to which the structure
+    is ordered (ordering key - OK);
+    \item only primary key can be defined, uually on the primary key, but not necessarily.
+\end{itemize}
+\ \newline
+\textbf{Dense index}: an index entry for each search-key in the file.\newline
+\newline
+\textbf{Sparse index}: index entries only for some search-key values, applicable when tuples are sequentially ordered on search-key, occupy less space, but is generally slower.\newline
+\newline
+\textbf{Clustering index}: if the ordering key field in the primary structure is not unique, a clustering index is used.\newline
+\newline
+\textbf{Secondary index}: the search key specifies an order different from the sequential order of the file.
 \subsubsection{Tree-Based access structures}
