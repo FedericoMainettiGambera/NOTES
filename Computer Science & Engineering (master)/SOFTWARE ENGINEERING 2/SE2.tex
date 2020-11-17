@@ -1,0 +1,40 @@
+\input{header.tex}
+
+\begin{document}
+
+\raggedright
+\footnotesize
+\begin{multicols}{3}
+
+% multicol parameters
+% These lengths are set only within the two main columns
+%\setlength{\columnseprule}{0.25pt}
+\setlength{\premulticols}{1pt}
+\setlength{\postmulticols}{1pt}
+\setlength{\multicolsep}{1pt}
+\setlength{\columnsep}{2pt}
+
+{\Large{\textbf{Software Engineering 2}}}
+
+\input{2-alloy/alloy.tex}
+\input{3-world-machine/3-world-machine.tex}
+\input{4-uml/4-uml.tex}
+\input{6-design/6-design.tex}
+\input{7-testing/7-testing.tex}
+\input{8-project-management/8-project-management.tex}
+\input{9-JEE/9-JEE.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vfill
+\rule{\linewidth}{0.25pt}
+\scriptsize\\
+\href{mailto:marco.donadoni@mail.polimi.it}{M. Donadoni}, \href{mailto:edoardo.morassutto@mail.polimi.it}{E. Morassutto}, Politecnico di Milano, A.A. 2018/19
+\vfill\null
+\columnbreak
+\vfill\null
+\columnbreak
+\vfill\null
+\columnbreak
+\end{multicols}
+
+\includepdf[page=-]{alloy-cheatsheet.pdf}
+\end{document}

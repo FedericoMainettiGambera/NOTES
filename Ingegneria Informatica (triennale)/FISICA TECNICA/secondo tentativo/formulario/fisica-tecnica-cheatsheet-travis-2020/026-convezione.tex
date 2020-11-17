@@ -1,0 +1,217 @@
+\section{Convezione}
+Trasferimento di energia tra una superficie solida e un fluido adiacente in movimento.
+\begin{description}
+ \item[Convezione forzata] Avviene quando il fluido è forzato a scorrere su una superficie da mezzi esterni
+ \item[Convezione naturale] Avviene quando il moto del fluido è causato da forze ascensionali che sono indotte dalle differenze di densità dovute alla variazione di temperatura del fluido in un campo gravitazionale
+\end{description}
+
+\subsection{Equazione generale}
+\[ \dot{q} = h \cdot \qty(T_s - T_f) \]
+\begin{align*}
+h & \quad \text{coefficiente convettivo} \\
+T_s & \quad \text{temperatura superficie} \\
+T_f & \quad \text{temperatura fluido} \\
+\end{align*}
+\[ \qq*{Ponendo} R_{conv} = \frac{1}{h \cdot A} \qq{si ha che} \dot{Q}_{conv} = -\frac{\Delta T}{R_{conv}} \]
+
+\subsection{Raggio critico di isolamento}
+Considerando gusci cilindrici aventi come utimo strato uno strato di isolante soggetto a fenomeni convettivi.
+\[ R_{tot} = R_{isol} + R_{conv} = \frac{\ln(\frac{R_e}{R_i})}{2\pi L k} + \frac{1}{2\pi R_e L h} \]
+\begin{align*}
+R_e & \quad \text{raggio esterno isolante} \\
+R_i & \quad \text{raggio interno isolante}
+\end{align*}
+Si ha che inizialmente $R_{tot}$ decresce all'aumentare dello spessore di isolante.
+Si ha $R_{tot}$ minimo quando $R_e = R_{critico} = \frac{k}{h}$.
+
+\subsection{Coefficiente convettivo}
+
+\begin{tabular}{p{5cm}r}
+    \toprule
+    Fluido & $h \quad \qty[\frac{W}{m^2K}]$ \\ \midrule
+    gas stagnante &  \numrange{5}{50} \\
+    acqua stagnante & $100$ \\
+    gas in moto & \numrange{50}{1000} \\
+    olio minerale & \numrange{50}{3000} \\
+    acqua in moto & \numrange{200}{10000} \\
+    acqua ebollizione/condensazione & \numrange{1000}{100000} \\
+    metalli liquidi & \numrange{10000}{100000} \\
+    \bottomrule
+\end{tabular}\\
+
+Il coefficiente convettivo non è una proprietà della materia e dipende da:
+\begin{align*}
+    \rho & \quad \text{densità} \\
+    \mu & \quad \text{viscosità} \\
+    c_p & \quad \text{cal. spec. pressione cost.} \\
+    k & \quad \text{conduttività} \\
+    w & \quad \text{velocità} \\
+    D & \quad \text{diametro equivalente} \\
+\end{align*}
+
+
+\subsubsection{Numero di Nusselt}
+\[ \Nus = \frac{h D}{k} \qty( = \frac{h \Delta T}{\frac{k}{D} \Delta T})\] 
+Può essere interpretato come rapporto tra potenza termica scambiata per convezione e potenza termica scambiata per conduzione nello strato limite.
+
+\subsubsection{Numero di Reynolds}
+\[ \Rey = \frac{\rho w D}{\mu} \qty( = \frac{F_{inerzia}}{F_{viscose}})\] 
+Può essere interpretato come rapporto tra la risultante delle forze di inerzia e la risultante delle forze viscose.
+
+\subsubsection{Valori tipici di Reynolds}
+\textit{Moto in un condotto:}\\
+\phantom{→}$\put(3,2){\line(0,1){5}}\to$ laminare se $\Rey < 2000$, turbolento se $\Rey > 2500$\\
+\textit{Moto lungo lastra piana:}\\
+\phantom{→}$\put(3,2){\line(0,1){5}}\to$ laminare se $\Rey < 5 \cdot 10^5$, turbolento se $\Rey > 5 \cdot 10^5$\\
+\textit{Moto attorno ad un cilindro:}\\
+\phantom{→}$\put(3,2){\line(0,1){5}}\to$ laminare se $\Rey < 2 \cdot 10^5$, turbolento se $\Rey > 2 \cdot 10^5$\\
+
+\subsubsection{Numero di Prandtl}
+\[ \Pra = \frac{c_p \mu}{k} \]
+Si ottiene dividendo $\nu = \frac{\mu}{\rho}$ (viscosità cinematica, $\nu$) per $a = \frac{k}{\rho c_p}$ (diffusività termica, $a$).
+
+\subsubsection{Valori tipici di Prandtl}
+\begin{tabular}{p{3cm}r}
+    \toprule
+    gas ideali & $0.7$\\
+    acqua & \numrange{2}{10}\\
+    metalli liquidi & \numrange{0.005}{0.03}\\
+    \bottomrule
+\end{tabular}\\
+
+\subsection{Temperature di valutazione dei parametri}
+\subsubsection{Corpo immerso}
+\[ T_{film} = \frac{T_p + T_\infty}{2} \qq{oppure} T_{\text{asintotica}} = T_\infty \]
+\subsubsection{Convenzione forzata in condotto}
+\[ \qq*{Temp. di miscelamento adiabatico} T_f = \frac{\int_A \rho w c_p T \dd{A}}{\int_A \rho w c_p \dd{A}} \]
+
+\subsection{Flusso all'interno di tubi}
+In ogni sezione $w$ varia da un valore pari a zero sulla parete fino ad un valore massimo sull'asse del tubo.
+In ogni sezione $T$ varia da un valore sulla parete fino ad un valore maggiore (o inferiore) sull'asse del tubo, a seconda se il processo sia di riscaldamento o raffreddamento.
+
+\subsubsection{Velocità media}
+La velocità media si ricava dal principio di conservazione della massa.
+\[ w_m = \frac{\dot{m}}{\rho A_t} \qq{con} A_t = \pi \frac{D^2}{4} \]
+
+\subsubsection{Temperatura media}
+La temperatura media si ricava dal principio di conservazione dell'energia.
+\[ \dot{E} = \dot{m} c_p T_m = \int_{\dot{m}} c_p T \partial \dot{m} = \int_{A_t} c_p T \qty(\rho w \dd{A_t}) \]
+
+\subsubsection{Condizioni al contorno}
+Siano $T_s$ la temperatura superficiale del tubo, $A_s$ l'area superficiale del tubo, $T_m$ temperatura media del fluido di una certa sezione del tubo.
+\[ T_s = \text{cost} \qq{oppure} \dot{q} = \text{cost} \]
+Le due condizioni non possono essere contemporaneamente presenti.
+
+\subsubsection{Flusso di calore costante}
+\[ \dot{q}_s = \text{cost} \rightarrow \dot{Q}_s = \dot{q}_s \cdot A_s = \dot{m} c_p \qty(T_u - T_i) \]
+Da cui deriva 
+\[ T_u = T_i + \frac{\dot{q}_s A_s}{\dot{m} c_p} \]
+Ma essendo $\dot{q}_s = h \qty(T_s - T_m)$
+\[ T_s = T_m + \frac{\dot{q}_s}{h} \]
+Nota come $T_m$ non è costante ma dipende dalla distanza dall'ingresso del tubo e si può calcolare usando l'equazione precedente che lega $T_u$ a $T_i$, considerando solo parte del tubo.
+La differenza $(T_s - T_m)$ resta invece costante.
+
+\subsubsection{Temperatura superficiale costante}
+\[ \ln(\frac{T_s - T_u}{T_s - T_i}) = - \frac{h A_s}{\dot{m} c_p} \]
+Ma anche
+\[ \dot{Q} = h \cdot A_s \cdot \Delta T_{ml} \qq{con} \Delta T_{ml} = - \frac{T_u - T_i}{\ln(\frac{T_s - T_u}{T_s - T_i})} \]
+
+\subsubsection{Caduta di pressione}
+\[ \Delta P = f \cdot \frac{L}{D} \cdot \frac{\rho w_m^2}{2} \]
+Dove $f$ è il \emph{fattore d'attrito}.
+\[ \qq*{Potenza pompaggio} \dot{L}_p = \frac{\dot{m} \Delta P}{\rho} = w_m A_t \Delta P \]
+
+\subsection{Convezione forzata}
+\[ \Nus = A \cdot \Rey^\alpha \cdot \Pra^\beta \]
+I parametri $\Rey$ e $\Pra$ vanno valutati alla giusta temperatura (che può essere di parete, asintotica, di film, di miscelamento adiabatico).
+
+\subsubsection{Moto all'interno di un condotto circolare}
+\begin{align*}
+    f = \frac{64}{\Rey} & \quad \text{se laminare} \\
+    f = 0.184 \Rey^{-0.2} & \quad \text{se turbolento}\\
+\end{align*}
+\begin{tabular}{ll}
+    \toprule
+    $\Nus_{D} = 3.66$ & laminare con $T_p = \text{cost}$ \\
+    \midrule
+    $\Nus_{D} = 4.36$ & laminare con $\dot{q} = \text{cost}$ \\
+    \midrule
+    \multirow{2}{*}{$\Nus_{D} = 0.023 \Rey^{0.8} \Pra^{0.3}$} & turbolento con $\Rey > 10^4$ \\
+    & $0.7 < \Pra < 160$ (raffr.)\\
+    \midrule
+    \multirow{2}{*}{$\Nus_{D} = 0.023 \Rey^{0.8} \Pra^{0.4}$} & turbolento con $\Rey > 10^4$ \\
+    & $0.7 < \Pra < 160$ (risc.)\\
+    \midrule
+    \multirow{2}{*}{$\Nus_{D} = 0.027 \Rey^{0.8} \Pra^{0.333} \qty(\frac{\mu}{\mu_p})^{0.14}$} & turbolento con $\Rey > 10^4$ \\
+    & $0.7 < \Pra < 16700$\\
+    \midrule
+\end{tabular}\\
+Le proprietà termofisiche sono valutate alla temperatura di miscelamento adiabatico.
+
+\subsubsection{Moto attorno ad un cilindro}
+Relazione di Hilpert
+\[ \Nus_{D} = C \Rey^m \Pra^{\frac{1}{3}} \]
+\begin{center}
+\begin{tabular}{ccc}
+    \toprule
+    $\Rey$ & $C$ & $m$ \\ \midrule
+    \numrange{0.4}{4} & 0.989 & 0.330 \\
+    \numrange{4}{40} & 0.911 & 0.385 \\
+    \numrange{40}{4000} & 0.683 & 0.466 \\
+    \numrange{4000}{40000} & 0.193 & 0.618 \\
+    \numrange{40000}{400000} & 0.027 & 0.805 \\
+    \bottomrule
+\end{tabular}
+\end{center}
+Le proprietà termofisiche sono valutate alla temperatura di film.
+
+\subsubsection{Flusso su lastra piana interamente riscaldata}
+Si suppone temperatura costante su tutta la piastra
+\begin{tabular}{ll}
+$\Nus_{L} = 0.664 \Rey^{0.5} \Pra^{\frac{1}{3}}$ & laminare $\Rey < 5\cdot10^5$\\
+\multirow{2}{*}{$\Nus_{L} = 0.037 \Rey^{0.8} \Pra^{\frac{1}{3}}$} & turbolento $0.6 < \Pra < 60$\\
+& $\quad 5 \cdot 10^5 < \Rey < 10^7$\\
+\end{tabular}
+
+\subsection{Convezione naturale}
+\subsubsection{Numero di Grashof}
+\[  \Gra = \frac{\rho^2 g \beta \Delta T D^3}{\mu^2} \]
+Può essere interpretato come il rapporto fra le forze di galleggiamento ed il quadrato della risultante delle forze viscose.
+\subsubsection{Moto lungo superficie verticale}
+\begin{align*}
+    \Gra_{L} < 10^9 & \quad \text{moto laminare} \\
+    \Gra_{L} > 10^9 & \quad \text{moto turbolento} \\
+\end{align*} 
+
+\subsubsection{Numero di Peclet}
+\[ \Pec = \Rey \cdot \Pra = \frac{w D}{a} \]
+
+\subsubsection{Numero di Rayleigh}
+\[ \Ray = \Gra \cdot \Pra = \frac{g \beta \Delta T D^3}{a \nu} \]
+
+\subsubsection{Alcune correlazioni}
+
+\begin{tabular}{|l|c|c|c|}
+    \hline
+    Geometria & $D$ & $\Ray$ & $\Nus$ \\
+    \hline
+    \multicolumn{4}{|l|}{Piastra} \\
+    \hline
+    Vert. altezza $L$ & $L$ & \numrange{e4}{e9} & $0.59 \Ray^{1/4}$ \\
+     & & \numrange{e9}{e13} & $0.1 \Ray^{1/3}$ \\
+    \hline
+    Oriz. sopra calda & $\frac{A}{p}$ & \numrange{e4}{e7} & $0.54 \Ray^{1/4}$ \\
+     & & \numrange{e7}{e11} & $0.15 \Ray^{1/3}$ \\
+    \hline
+    Oriz. sotto calda & $\frac{A}{p}$ & \numrange{e5}{e11} & $0.27 \Ray^{1/4}$ \\
+    \hline
+    \multicolumn{4}{|l|}{Cilindro} \\
+    \hline
+    Vert. alto L, diam D & $L$ & \multicolumn{2}{c|}{Come piast. vert. }\\
+     & & \multicolumn{2}{c|}{quando $D \ge \frac{35L}{\Gra^{1/4}}$} \\
+    \hline
+    Oriz. diam D & $D$ & \numrange{e5}{e12} & $X$ \\
+    \hline
+\end{tabular}
+
+Dove $p$ è il perimetro della piastra, \textbf{tutte le temperature} si riferiscono a $T_{\text{film}}$ e $X = \qty{0.60 + \frac{0.387 \Ray^{\frac{1}{6}}}{\qty[1 + \qty(\frac{0.559}{\Pra})^{\frac{9}{16}}]^{\frac{8}{27}}}}^2$.

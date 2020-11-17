@@ -1,0 +1,56 @@
+\section{Macchina termodinamica}
+La macchina termodinamica è un sistema termodinamico composto ed isolato che nel caso più semplice è realizzato da
+\begin{itemize}
+\item due serbatoi di calore
+\item un serbatoio di lavoro
+\item una macchina ciclica che è in grado di interagire con continuità con i serbatoi di calore e lavoro
+\end{itemize}
+
+\begin{description}
+\item[Serbatoio di calore]
+sistema termodinamico che scambia solo calore con l'esterno senza alterare il suo stato interno;
+gli scambi avvengono con trasformazioni quasi-statiche internamente reversibili.
+\item[Serbatoio di lavoro]
+sistema termodinamico che scambia solo lavoro con l'esterno senza alterare il suo stato interno;
+gli scambi avvengono con trasformazioni quasi-statiche internamente reversibili.
+\end{description}
+
+\subsubsection{Risoluzione problemi macchine termiche}
+Bisogna impostare e risolvere il sistema contente le equazioni di bilancio
+\[
+    \begin{cases}
+    \Delta U_Z = 0 \\
+    \Delta S_Z = S_{irr} \\
+    \end{cases}
+\]
+
+Per macchina motrice con masse infinite:
+\[
+    \begin{cases}
+        -Q_C + Q_F + L = 0 \\
+        -\frac{Q_C}{T_C} + \frac{Q_F}{T_F} = S_{irr} \\
+    \end{cases}
+\]
+
+Per macchina operatrice con masse infinite:
+\[
+    \begin{cases}
+        Q_C - Q_F - L = 0 \\
+        \frac{Q_C}{T_C} - \frac{Q_F}{T_F} = S_{irr} \\
+    \end{cases}
+\]
+
+\subsection{Rendimenti macchine termiche}
+{\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{p{3.5cm}r}
+\textbf{Macchina motrice} & $\eta = \frac{L}{Q_C} \quad \eta_{II} = \frac{\eta}{\eta_{rev}} = \frac{L}{L_{rev}} $ \\
+→ serbatoi a massa infinita & $\eta = 1 - \frac{T_F}{T_C} - \frac{T_F}{Q_C}S_{irr}$ \\
+\phantom{→}$\put(3,2){\line(0,1){5}}\to$ reversibile ($S_{irr} = 0$) & $\eta_{rev} = 1 - \frac{T_F}{T_C}$ \\
+\\
+\textbf{Macchina operatrice} & (serbatoi a temp. cost.) \\
+→ frigorifera & $\varepsilon_f = \frac{Q_F}{L} \quad \eta_{II} = \frac{\varepsilon}{\varepsilon_{rev}} = \frac{L_{rev}}{L}$ \\
+\phantom{→}$\put(3,2){\line(0,1){5}}\to$ reversibile & $\varepsilon_{f,rev} = \frac{T_F}{T_C - T_F}$ \\
+→ pompa di calore & $\varepsilon_{pdc} = \frac{Q_C}{L}$ \\
+\phantom{→}$\put(3,2){\line(0,1){5}}\to$ reversibile & $\varepsilon_{pdc,rev} = \frac{T_C}{T_C - T_F}$ \\
+\end{tabular}
+}

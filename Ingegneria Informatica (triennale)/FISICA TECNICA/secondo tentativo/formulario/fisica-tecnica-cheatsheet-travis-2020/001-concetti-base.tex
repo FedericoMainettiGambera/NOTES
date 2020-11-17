@@ -1,0 +1,120 @@
+\section{Concetti base}
+\subsection{Conversioni}
+\begin{tabular}{lr}
+    \toprule
+    \SI{1}{atm} & \SI{101325}{Pa} \\
+    \SI{1}{ata} & \SI{98066,5}{Pa} \\
+    \SI{1}{bar} & \SI{100000}{Pa} \\
+    \SI{1}{psi} & \SI{6895}{Pa} \\ \midrule
+    \SI{1}{kcal} & \SI{4186}{J} \\ \midrule
+    $x\;\si{\degree C}$ & $x + \SI{273,15}{K}$ \\
+    $x\;\si{\degree F}$ & $\frac{5}{9}(x + 459.67) \si{K}$ \\
+    \bottomrule
+\end{tabular}
+
+\subsection{Costanti}
+\begin{tabular}{ll}
+    \toprule
+    Costante dei gas ideali & $R=\SI{8314}{J/k mol.K}$ \\
+    Entalpia solidif. \ch{H2O} & $h_{lst,\ch{H2O}} = \SI{-333}{kJ/kg}$ \\
+    Entalpia evaporazione \ch{H2O} & $h_{lvt,\ch{H2O}} = \SI{2501.6}{kJ/kg}$ \\
+    Entalpia sublimazione \ch{H2O} & $h_{svt,\ch{H2O}} = \SI{2834.6}{kJ/kg}$ \\
+    Pressione punto triplo \ch{H2O} & $P_0 = \SI{611.2}{Pa}$ \\
+    Temperatura punto triplo \ch{H2O} & $T_0 = \SI{0.01}{\degree C} = \SI{273.16}{K}$ \\
+    Pressione stato critico \ch{H2O} & $P_{cr} = \SI{22.09}{MPa}$ \\
+    Temperatura stato critico \ch{H2O} & $T_{cr} = \SI{647.3}{K}$ \\
+    Calore specifico ghiaccio & $c_s = \SI{2093}{J/kg.K}$ \\
+    Volume specifico ghiaccio & $v_s = \SI{0.00109}{m^3/kg}$ \\
+    Calore specifico acqua & $c_s = \SI{4186}{J/kg.K}$ \\
+    Volume specifico acqua & $v_s = \SI{0.001}{m^3/kg}$ \\
+    Calore specifico medio vapore & $c_p = \SI{2009}{J/kg.K}$ \\
+    \bottomrule
+\end{tabular}
+
+Masse atomiche (\si{kg/k mol}):
+\[ \ch{H} = \si{1,008} \quad \ch{He} = \si{4,003} \quad \ch{C} = \si{12,011} \quad \ch{N} = \si{14,007} \]
+\[ \ch{O} = \si{15,999} \quad \ch{Ne} = \si{20,18} \quad \ch{Ar} = \si{39,95} \quad \ch{Kr} = \si{83,798} \]
+
+Masse molecolari:
+\[ \ch{H2O} = \si{18,015} \quad \text{aria}(79/21) = 28,85 \quad \ch{CH4} = \si{16,043} \]
+
+\subsection{Sistema termodinamico}
+\begin{tabular}{lccc}
+    \toprule
+    & Calore & Lavoro & Massa\\ \midrule
+    Adiabatico & no & & \\
+    Diatermano & sì & & \\
+    Rigido & & no & \\
+    Deformabile & & sì & \\
+    Chiuso (impermeabile) & & & no \\
+    Aperto (permeabile) & & & sì \\
+    Isolato & no & no & no \\
+    \bottomrule
+\end{tabular}
+
+\subsection{Grandezze}
+\begin{itemize}
+    \item \textbf{Intensive}: non dipendono dall'estensione del sistema (temperatura, pressione, densità);
+    \item \textbf{Estensive}: dipendono dall'estensione del sistema (massa, volume);
+    \item \textbf{Estensive specifiche}: estensiva/estensiva ($v = \frac{V}{M}$).
+\end{itemize}
+
+\subsection{Legge di Duhem}
+In un sistema semplice monocomponente il numero di parametri intensivi o estensivi specifici
+necessari per descriverlo all'equilibrio è 2.
+
+
+\subsection{Regola di Gibbs}
+\[V = C + 2 - F\]
+
+\begin{tabular}{ll}
+    $V$ & numero di variabili intensive indipendenti \\
+    $C$ & numero di componenti \\
+    $F$ & numero di fasi \\
+\end{tabular}
+
+Ne deriva l'esistena di una legge di stato:
+\[f(P, v, T) = 0\]
+
+\subsection{Trasformazioni termodinamiche}
+\begin{tabular}{p{3.1cm}p{4cm}}
+    \toprule
+    Trasformazione & Caratteristiche \\
+    \midrule
+    Quasi-statica o \newline internamente reversibile & Costituita da una successione di stati di equilibrio; può non essere reversibile \\
+    Reversibile & Se percorsa in senso inverso, riporta sistema e ambiente nello stato iniziale \\
+    Irreversibile & Non è rappresentabile su un diagramma di stato \\
+    Chiusa o ciclica & Gli estremi della trasformazione coincidono \\
+    Elementare & Se una delle grandezze di stato si mantiene costante durante la trasformazione \\
+    \bottomrule
+\end{tabular}
+
+\subsection{Gas ideali}
+Un gas può essere considerato ideale per pressioni minori di $\si{10\bar}$.
+
+\[PV = nRT = MR^*T\]
+\[Pv = R^*T \]
+\begin{tabular}{ll}
+    $P$ & pressione $[\si{\pascal}]$ \\
+    $V$ & volume $[\si{m^3}]$ \\
+    $n$ & numero di moli $[\si{\mol}]$ \\
+    $R$ & costante universale dei gas ideali $\SI{8314}{\J/k\mol.\K}$ \\
+    $R^*$ & costante del gas $R/Mm \; [\si{J/Kg.K}]$ \\
+    $T$ & temperatura $[\si{\K}]$ \\
+    $M_m$ & massa molecolare \\
+\end{tabular}
+
+\subsection{Gas reali}
+Equazione di van der Waals:
+\[\left(P + \frac{a}{v_m^2}\right)(v_m-b) = RT\]
+
+\subsection{Liquidi e solidi}
+\begin{align*}
+    \dd{v} &= \left(\pdv{v}{T}\right)_P \dd{T} + \left(\pdv{v}{P}\right)_T \dd{P} \\
+    \dd{v} &= \beta v \dd{T} - K_T v \dd{P}
+\end{align*}
+
+\begin{align*}
+    \beta = \frac{1}{v} \left(\pdv{v}{T}\right)_P & \quad \text{coeff. di dilatazione termica isobaro} \\
+    K_T = -\frac{1}{v} \left(\pdv{v}{P}\right)_T & \quad \text{coeff. di dilatazione termica isotermo} \\
+\end{align*}
