@@ -99,13 +99,13 @@ Un gas può essere considerato ideale per pressioni minori di $\si{10\bar}$.
     $V$ & volume $[\si{m^3}]$ \\
     $n$ & numero di moli $[\si{\mol}]$ \\
     $R$ & costante universale dei gas ideali $\SI{8314}{\J/k\mol.\K}$ \\
-    $R^*$ & costante del gas $R/Mm \; [\si{J/Kg.K}]$ \\
+    $R^*$ &$= \frac{R}{M_m} = \frac{nR}{M}$, costante del gas $[\si{J/Kg.K}]$\\
     $T$ & temperatura $[\si{\K}]$ \\
     $M_m$ & massa molecolare \\
 \end{tabular}
 
 \subsection{Gas reali}
-Equazione di van der Waals:
+Modello per gas in condizioni di temperatura e pressioni elevate. Equazione di van der Waals:
 \[\left(P + \frac{a}{v_m^2}\right)(v_m-b) = RT\]
 
 \subsection{Liquidi e solidi}
@@ -116,5 +116,7 @@ Equazione di van der Waals:
 
 \begin{align*}
     \beta = \frac{1}{v} \left(\pdv{v}{T}\right)_P & \quad \text{coeff. di dilatazione termica isobaro} \\
-    K_T = -\frac{1}{v} \left(\pdv{v}{P}\right)_T & \quad \text{coeff. di dilatazione termica isotermo} \\
+    K_T = -\frac{1}{v} \left(\pdv{v}{P}\right)_T & \quad \text{coeff. di comprimibilità isotermo} \\
 \end{align*}
+
+$\beta$ e $K_T$ possono essere considerati costanti per ampi intervalli di temperatura e di pressione. La precedente relazione differenziale è quindi integrabile e lo stato calcolabile. Un modello semplificato consiste nel considerare liquidi e solidi incomprimibili ($v =$ costante).

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  17 NOV 2020 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  17 NOV 2020 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -684,72 +684,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--35
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 43--9
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/formulario.tex
+Underfull \hbox (badness 10000) in paragraph at lines 43--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--9
+Underfull \hbox (badness 10000) in paragraph at lines 43--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--9
+Underfull \hbox (badness 10000) in paragraph at lines 43--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--9
+Underfull \hbox (badness 10000) in paragraph at lines 43--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--9
+Underfull \hbox (badness 10000) in paragraph at lines 43--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--9
+Underfull \hbox (badness 10000) in paragraph at lines 43--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--9
+Underfull \hbox (badness 10000) in paragraph at lines 43--1
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--9
+Underfull \hbox (badness 10000) in paragraph at lines 43--1
 
  []
 
-[2] [3] (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/formulario.tex) [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 11.
+[2]) [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 10.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 10.
  (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 10.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 10.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: C9773F33EBCE43B6A2CED3C8C708DB8C;138.
+(rerunfilecheck)             Checksum: 1BD1ACB854EF0152D3754223571B6E94;89.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17866 strings out of 492609
- 325930 string characters out of 6132818
+ 17863 strings out of 492609
+ 325904 string characters out of 6132818
  428933 words of memory out of 5000000
- 21420 multiletter control sequences out of 15000+600000
+ 21419 multiletter control sequences out of 15000+600000
  12634 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,6n,73p,933b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/master.pdf" (4 pages, 80869 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/master.pdf" (3 pages, 80411 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

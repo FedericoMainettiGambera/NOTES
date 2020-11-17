@@ -7,46 +7,50 @@
     \item Conserazione della \textbf{entropia} (II principio);
 \end{itemize}
 
-\subsection{Primo principio della termodinamica}
+\subsection{Primo principio della termodinamica per sistemi chiusi}
+Per un sistema semplice all’equilibrio è definita una proprietà intrinseca (funzione di stato) detta energia interna $U$ la cui variazione è il risultato di interazioni del sistema con l’ambiente esterno.
+
+L'energia che è immagazinata in un sistema e che non va a cambiare né l'energia cinetica del centro di massa, né quella potenziale (e neanche l'energia elastica o chimica o elettrica) è chiamata energia interna.
 
 \[\Delta U = Q^\sla - L^\sra \]
 
 \begin{tabular}{ll}
     $U$ & energia interna del sistema \\
-    $Q^\sla$ & calore entrante nel sistema \\
-    $L^\sra$ & lavoro uscente dal sistema \\
+    $Q^\sla$ & calore entrante nel sistema\\
+    $L^\sra$ & lavoro uscente dal sistema\\
 \end{tabular}
 
-L'energia interna è una grandezza estensiva:
+L'energia interna è una grandezza estensiva (additiva):
 \[U_z = U_1 + U_2 + \ldots\]
 
 Per una trasformazione ciclica:
 \[\Delta U_{\text{ciclo}} = 0 \]
 
-Per i sistemi conservativi:
-\[\var{L} = \dd{E_c} + \dd{E_p}\]
+Per un sistema isolato:
+\[\Delta U_{\text{isolato}} = 0\]
 
+Primo principio in forma differenziale:
+\[\dd{u} = \var{q^\sla} - \var{l^\sra}\]
 
-\subsection{Secondo principio della termodinamica}
+\subsection{Secondo principio della termodinamica per sistemi chiusi}
 
 Per un sistema all'equilibrio esiste una funzione di stato detta \textbf{entropia} $S$ la cui variazione per una trasformazione \emph{reversibile} è data da:
-\[\Delta S = \int \frac{\dd{Q_{rev}^\sla}}{T}\]
+\[\Delta S = \int \frac{\var{Q_{rev}^\sla}}{T}\]
 
-In un sistema isolato in cui avvengono trasformazioni $\Delta S \ge 0$ e tende a zero al limite della reversibilità.
-
-L'entropia è una grandezza estensiva:
+L'entropia è una grandezza estensiva (additiva):
 \[
     S_z = S_1 + S_2 + \ldots \qquad \Delta S_z = \Delta S_1 + \Delta S_2 + \ldots
 \]
 
-In un sistema chiuso il bilancio entropico è dato da:
+La variazione di entropia totale di un sistema isolato è sempre maggiore di zero e tende a zero con il tendere dei processi alla reversibilità:
 \[
-    \Delta S = S_Q^\sla + S_{irr} \qquad S_{irr} \ge 0 \qquad \text{segno}~S_Q^\sla = \text{segno}~Q^\sla
+    \Delta S_{\text{isolato}} \geq 0
+\]  
+
+In un sistema chiuso il \textbf{bilancio entropico} è dato da:
+\[
+    \Delta S = S_Q^\sla + S_{irr} \qquad \text{$S_Q^\sla$ dovuta dallo scmabio di calore $Q$}
 \]
-
-\begin{description}
-    \item[Enunciato di Clausius]Non esiste una macchina ciclica che non produca altro effetto che il trasferimento di calore da una sorgente fredda a una sorgente calda.
-
-\item[Enunciato di Kelvin]
-Non esiste una macchina ciclica il cui unico effetto sia l'assorbimento di calore da una sorgente calda e la produzione di un'equivalente quantità di lavoro.
-\end{description}
+\[
+    S_{irr} \ge 0 \qquad \text{segno}~S_Q^\sla = \text{segno}~Q^\sla
+\]

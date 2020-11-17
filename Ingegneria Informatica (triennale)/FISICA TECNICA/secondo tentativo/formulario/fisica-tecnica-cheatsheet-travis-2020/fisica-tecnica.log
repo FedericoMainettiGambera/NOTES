@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  17 NOV 2020 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  17 NOV 2020 19:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.tex"
-(c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.tex
+**"c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.tex"
+(c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.tex
 LaTeX2e <2018-12-01>
-(c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/header.tex (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+(c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/header.tex (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
@@ -504,7 +504,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \xwm@boxb=\box60
 \xwm@cnta=\count152
 \xwm@wrt=\write3
- (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.xwm)
+ (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.xwm)
 \openout3 = `fisica-tecnica.xwm'.
 
 ) (c:/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
@@ -1196,7 +1196,7 @@ Package: chemformula 2019/09/27 v4.15g typeset chemical compounds and reactions 
 \l__chemformula_minus_space_skip=\skip88
 ) (c:/texlive/2019/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
-)) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.aux)
+)) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux)
 \openout1 = `fisica-tecnica.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1263,7 +1263,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
 LaTeX Info: Redefining \nameref on input line 3.
- (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out)
+ (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out)
 \@outlinefile=\write5
 \openout5 = `fisica-tecnica.out'.
 
@@ -1340,29 +1340,29 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/001-concetti-base.tex
+ (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/001-concetti-base.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 2.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/002-principi-termodinamica.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/002-principi-termodinamica.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 3.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/003-lavoro-calore.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/003-lavoro-calore.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 3.
 
 [1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/004-gas-ideali.tex
+]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/004-gas-ideali.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 75.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/005-macchine-termiche.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/005-macchine-termiche.tex
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 18.
@@ -1371,7 +1371,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 18.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/006-sistemi-aperti.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/006-sistemi-aperti.tex
 Overfull \hbox (2.54483pt too wide) in paragraph at lines 45--1
 [][] 
  []
@@ -1405,22 +1405,22 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 48.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/007-bifase.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/007-bifase.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 12.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/009-cicli-simmetrici.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/010-ciclo-carnot.tex [3]
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/009-cicli-simmetrici.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/010-ciclo-carnot.tex [3]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 30.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/011-ciclo-joule-brayton.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/011-ciclo-joule-brayton.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 50.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/012-ciclo-joule-brayton-rigenerato.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/013-ciclo-otto.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/012-ciclo-joule-brayton-rigenerato.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/013-ciclo-otto.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 38.
@@ -1430,27 +1430,27 @@ Overfull \hbox (2.66676pt too wide) detected at line 42
 \OML/cmm/m/it/8 l \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 c[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 T[] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 T[]\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 c[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 T[] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 T[]\OT1/cmr/m/n/8 ) = \OML/cmm/m/it/8 c[]T[] [] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 c[]T[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 r[] \OMS/cmsy/m/n/8 ^^@ \OT1/cmr/m/n/8 1)
  []
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/014-ciclo-diesel.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/014-ciclo-diesel.tex [4]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 38.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/015-ciclo-joule-brayton-inverso.tex [4]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/016-altri-cicli.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/017-ciclo-carnot-a-vapore.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/018-caratteristiche-fluido-lavoro.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/019-ciclo-rankine-vapore-saturo.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/015-ciclo-joule-brayton-inverso.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/016-altri-cicli.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/017-ciclo-carnot-a-vapore.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/018-caratteristiche-fluido-lavoro.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/019-ciclo-rankine-vapore-saturo.tex
 Overfull \hbox (4.06917pt too wide) in paragraph at lines 13--19
 [][]  
  []
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/020-ciclo-rankine-surriscaldamento.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/020-ciclo-rankine-surriscaldamento.tex
 Overfull \hbox (4.06917pt too wide) in paragraph at lines 12--18
 [][]  
  []
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/021-migliorie-ciclo-rankine.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/022-ciclo-carnot-inverso-a-vapore.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/023-ciclo-frigorifero-a-vapore.tex [5]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/024-ripasso-analisi.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/021-migliorie-ciclo-rankine.tex [5]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/022-ciclo-carnot-inverso-a-vapore.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/023-ciclo-frigorifero-a-vapore.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/024-ripasso-analisi.tex
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 (Font)              using `U/stmry/m/n' instead on input line 2.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/025-conduzione.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/025-conduzione.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 4.
@@ -1475,16 +1475,16 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 58.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/026-convezione.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/026-convezione.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 8.
 
+[6]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 53.
 
-[6]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 83.
@@ -1502,11 +1502,12 @@ Overfull \hbox (15.35573pt too wide) in paragraph at lines 132--148
 []  
  []
 
+[7]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 177.
 
-[7]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/027-irraggiamento.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/027-irraggiamento.tex
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 11.
@@ -1528,36 +1529,34 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 118.
 
-)
-Overfull \vbox (2.7309pt too high) has occurred while \output is active []
-
- [8] 
+[8]) 
 AED: lastpage setting LastPage
+[9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 52.
-(c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.xwm) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.aux)
+ (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.xwm) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
 Package rerunfilecheck Info: File `fisica-tecnica.out' has not changed.
-(rerunfilecheck)             Checksum: 20B488E899D4EA7B5C8B5B936ADB11D3;9370.
+(rerunfilecheck)             Checksum: 21A3B362EE77EDB33B1580A108A784BC;9403.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 52702 strings out of 492609
- 1186929 string characters out of 6132818
- 1514326 words of memory out of 5000000
+ 52699 strings out of 492609
+ 1186333 string characters out of 6132818
+ 1472297 words of memory out of 5000000
  55707 multiletter control sequences out of 15000+600000
- 561314 words of font info for 142 fonts, out of 8000000 for 9000
+ 561205 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,127p,981b,2379s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,19n,127p,973b,2379s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/stmaryrd/stmary5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/stmaryrd/stmary6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/stmaryrd/stmary8.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.pdf" (8 pages, 475039 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.pdf" (9 pages, 476653 bytes).
 PDF statistics:
- 616 PDF objects out of 1000 (max. 8388607)
- 572 compressed objects within 6 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 621 PDF objects out of 1000 (max. 8388607)
+ 576 compressed objects within 6 object streams
+ 38 named destinations out of 1000 (max. 500000)
  38453 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -1,11 +1,11 @@
-PWD c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166
+PWD c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020
 INPUT c:/texlive/2019/texmf.cnf
 INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.tex
-OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.log
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/header.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/header.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.tex
+OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.log
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/header.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/header.tex
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
@@ -130,9 +130,9 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/ltxkeys/ltxkeys.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/ltxkeys/ltxkeys.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/framed/framed.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/framed/framed.sty
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.xwm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.xwm
-OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.xwm
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.xwm
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.xwm
+OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.xwm
 INPUT c:/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -328,7 +328,7 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/nul
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/nul
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
@@ -369,21 +369,21 @@ INPUT c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta
 INPUT c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 INPUT c:/texlive/2019/texmf-dist/tex/latex/lastpage/lastpage.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/lastpage/lastpage.sty
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.aux
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.aux
-OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.aux
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux
+OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux
 INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out
-OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.pdf
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out
-OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out
+OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.pdf
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out
+OUTPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out
 INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -428,8 +428,8 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/001-concetti-base.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/001-concetti-base.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/001-concetti-base.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/001-concetti-base.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm
@@ -457,55 +457,55 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecbx0800.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/002-principi-termodinamica.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/002-principi-termodinamica.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/002-principi-termodinamica.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/002-principi-termodinamica.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecti0800.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/003-lavoro-calore.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/003-lavoro-calore.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/003-lavoro-calore.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/003-lavoro-calore.tex
 INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/004-gas-ideali.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/004-gas-ideali.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/004-gas-ideali.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/004-gas-ideali.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/005-macchine-termiche.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/005-macchine-termiche.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/006-sistemi-aperti.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/006-sistemi-aperti.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/005-macchine-termiche.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/005-macchine-termiche.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/006-sistemi-aperti.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/006-sistemi-aperti.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/tcbx0900.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/007-bifase.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/007-bifase.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/009-cicli-simmetrici.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/009-cicli-simmetrici.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/010-ciclo-carnot.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/010-ciclo-carnot.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/011-ciclo-joule-brayton.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/011-ciclo-joule-brayton.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/012-ciclo-joule-brayton-rigenerato.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/012-ciclo-joule-brayton-rigenerato.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/013-ciclo-otto.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/013-ciclo-otto.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/014-ciclo-diesel.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/014-ciclo-diesel.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/015-ciclo-joule-brayton-inverso.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/015-ciclo-joule-brayton-inverso.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/016-altri-cicli.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/016-altri-cicli.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/017-ciclo-carnot-a-vapore.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/017-ciclo-carnot-a-vapore.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/018-caratteristiche-fluido-lavoro.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/018-caratteristiche-fluido-lavoro.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/019-ciclo-rankine-vapore-saturo.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/019-ciclo-rankine-vapore-saturo.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/020-ciclo-rankine-surriscaldamento.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/020-ciclo-rankine-surriscaldamento.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/021-migliorie-ciclo-rankine.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/021-migliorie-ciclo-rankine.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/022-ciclo-carnot-inverso-a-vapore.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/022-ciclo-carnot-inverso-a-vapore.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/023-ciclo-frigorifero-a-vapore.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/023-ciclo-frigorifero-a-vapore.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/024-ripasso-analisi.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/024-ripasso-analisi.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/007-bifase.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/007-bifase.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/009-cicli-simmetrici.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/009-cicli-simmetrici.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/010-ciclo-carnot.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/010-ciclo-carnot.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/011-ciclo-joule-brayton.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/011-ciclo-joule-brayton.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/012-ciclo-joule-brayton-rigenerato.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/012-ciclo-joule-brayton-rigenerato.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/013-ciclo-otto.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/013-ciclo-otto.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/014-ciclo-diesel.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/014-ciclo-diesel.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/015-ciclo-joule-brayton-inverso.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/015-ciclo-joule-brayton-inverso.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/016-altri-cicli.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/016-altri-cicli.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/017-ciclo-carnot-a-vapore.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/017-ciclo-carnot-a-vapore.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/018-caratteristiche-fluido-lavoro.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/018-caratteristiche-fluido-lavoro.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/019-ciclo-rankine-vapore-saturo.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/019-ciclo-rankine-vapore-saturo.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/020-ciclo-rankine-surriscaldamento.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/020-ciclo-rankine-surriscaldamento.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/021-migliorie-ciclo-rankine.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/021-migliorie-ciclo-rankine.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/022-ciclo-carnot-inverso-a-vapore.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/022-ciclo-carnot-inverso-a-vapore.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/023-ciclo-frigorifero-a-vapore.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/023-ciclo-frigorifero-a-vapore.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/024-ripasso-analisi.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/024-ripasso-analisi.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
@@ -515,8 +515,8 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/025-conduzione.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/025-conduzione.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/025-conduzione.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/025-conduzione.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
@@ -527,16 +527,16 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/stmaryrd/stmary9.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/026-convezione.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/026-convezione.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/027-irraggiamento.tex
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/027-irraggiamento.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/026-convezione.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/026-convezione.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/027-irraggiamento.tex
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/027-irraggiamento.tex
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.xwm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.xwm
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.aux
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out
-INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/fisica-tecnica-cheatsheet-travis-20200526-140757-72ba166/fisica-tecnica.out
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.xwm
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.xwm
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out
+INPUT c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out
 INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
