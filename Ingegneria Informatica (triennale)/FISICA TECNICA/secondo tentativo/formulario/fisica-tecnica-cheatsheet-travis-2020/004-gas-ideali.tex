@@ -1,15 +1,16 @@
-\subsection{Gas ideali ed energia interna}
-Nei gas ideali, a seguito di evidenze sperimentali, si ha che $u = u(T)$, ovvero l'\textbf{energia interna dipende solo dalla temperatura}.
-Quindi anche l'entalpia, $c_v$ e $c_P$ sono dipendenti solo dalla temperatura e si ha che
+\subsection{Calori specifici per i gas ideali}
+Nei gas ideali, a seguito di evidenze sperimentali, si ha che $u = u(T)$, ovvero l'\textbf{energia interna dipende solo dalla temperatura}. Inoltre anche siccome $h = u + PV$ e $Pv = R^*T$, otteniamo che $h = h(T)$.
+Quindi $c_V$ e $c_P$ sono dipendenti solo dalla temperatura e si ha che
 \begin{align*}
-    \text{A pressione cost.} &\qquad c_P = \qty(\dv{h}{T})\\
-    \text{A volume cost.} &\qquad c_v = \qty(\dv{u}{T})
+    \text{A pressione cost.} &\qquad c_P = c_P(T) = \qty(\dv{h}{T})\\
+    \text{A volume cost.} &\qquad c_V = c_V(T) = \qty(\dv{u}{T})
 \end{align*}
 
-\subsection{Relazione di Mayer}
+\textbf{Relazione di Mayer}
 \[ c_P = \dv{h}{T} = \frac{\dd{u} + \dd{\qty(Pv)}}{\dd{T}} = \qty(\dv{u}{T}) + \dv{R^*T}{T} = c_v + R^* \]
 
-Per i gas \textbf{perfetti} (gas ideali per variazioni di temperatura non troppo elevate) vale che:
+\subsection{Calori specifici per un gas perfetto}
+Per i gas \textbf{perfetti} (gas ideali per variazioni di temperatura non troppo elevate) i calori specifici non dipendono neanche dalla temperatura:
 
 {\renewcommand\arraystretch{1.4}
 \begin{tabular}{lcc}
@@ -27,13 +28,16 @@ Per i gas \textbf{perfetti} (gas ideali per variazioni di temperatura non troppo
     Non lineare & \ch{CH4}, \ch{H2O}, $\ldots$ \\
 \end{tabular}
 
+\subsection{Calori specifici per i liquidi}
+
 Liquido incomprimibile ideale $C_v = C_P = c(T)$.
 
 Liquido incomprimibile perfetto $C_v = C_P = \text{cost}$.
 
-
 \subsection{Politropiche}
-Data una trasformazione quasi statica per un sistema con un \textbf{gas ideale} dove $c_x = \text{cost}$.
+Trasformazione quasi statica per un sistema con un \textbf{gas ideale} dove $c_x = \text{cost}$.
+
+Si definisce indice della politropica il temrine $n = \frac{c_x-c_P}{c_x-c_V}$
 
 \[
     Pv^n = \text{cost} \quad Tv^{n-1} = \text{cost} \quad \frac{T^n}{P^{n-1}} = \text{cost} \quad PT^{\frac{n}{1-n}} = \text{cost}
@@ -41,7 +45,7 @@ Data una trasformazione quasi statica per un sistema con un \textbf{gas ideale} 
 
 \begin{tabular}{lcc}
     \toprule
-    Trasformazione & $c_x$ & $n = \frac{c_x-c_P}{c_x-c_v}$ \\
+    Trasformazione & $c_x$ & $n = \frac{c_x-c_P}{c_x-c_V}$ \\
     \midrule
     Isoterma & $\pm\infty$ & 1 \\
     Isocora & $c_v$ & $\pm\infty$ \\
@@ -55,22 +59,32 @@ Per $n \ne 1$ (quindi non isoterma) l'integrale del lavoro diventa:
     l^\sra = \int_1^2 P\dd{v} &= \frac{P_1v_1}{n-1} \qty[1-\qty(\frac{v_1}{v_2})^{n-1}] \\
     &= \frac{P_1v_1}{n-1} \qty[1-\qty(\frac{P_2}{P_1})^{\frac{n-1}{n}}]
 \end{align*}
-Per $n = 1$ l'integrale del lavoro diventa:
+Per $n = 1$ (quindi isoterma) l'integrale del lavoro diventa:
 \[ l^\sra = \int_1^2 P\dd{v} = P_1v_1\ln{\frac{v_2}{v_1}} = P_1v_1\ln{\frac{P_1}{P_2}} \]
 
 \subsection{Diagramma T-s}
 
-L'area sottesa dalla curva in una trasformazione \emph{internamente reversibile} è uguale al calore scambiato:
+\begin{center}
+    \includegraphics[height=3cm]{politropiche.JPG}
+\end{center}
+
+\begin{center}
+    \includegraphics[height=3cm]{politropiche2.JPG}
+\end{center}
+
+L'area sottesa dalla curva in una trasformazione \emph{internamente reversibile} è uguale al calore scambiato dal sistema nella trasformazione:
 \[ \dd{S}_{rev} = \frac{\dd{Q}_{rev}}{T} \qquad Q_{rev} = \int_i^f \dd{Q}_{rev} = \int_i^f T(S) \dd{S} \]
 
 Nel piano T-s tutte le trasformazioni politropiche sono esponenziali:
 \[T = T_0 e ^ { \frac{s-s_0}{c_x} }\]
 
-\begin{tabular}{lll}
-    Isoterme & $c_x = \infty$ & rette orizzontali \\
-    Adiabatiche reversibili & $c_x = 0$ & rette verticale \\
-    Isocore & $c_v < c_P$ & più ripide delle isobare \\
+\begin{tabular}{ll}
+    Isoterme  (Isoentalpiche con gas ideali) & rette orizzontali \\
+    Adiabatiche reversibili (isoentropiche) & rette verticale \\
+    Isocore ($c_v < c_P$) & più ripide delle isobare \\
 \end{tabular}
+
+\section{SONO ARRIVATO A PAGINA 41}
 
 \subsubsection{Per i gas perfetti}
 \begin{tabular}{lll}

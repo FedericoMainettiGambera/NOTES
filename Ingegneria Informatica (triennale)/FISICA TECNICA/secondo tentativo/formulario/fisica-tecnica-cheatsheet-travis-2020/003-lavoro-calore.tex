@@ -3,13 +3,13 @@
 \subsection{Lavoro termodinamico}
 
 \begin{align*}
-    &\delta L^\sra = PA\dd{s} = P\dd{V} \; \text{(sistema cilindro-pistone)}\\
-    &\delta l^\sra = P\dd{v} \; (\text{grandezze specifiche})\\
-    &l^\sra = \int_i^f P\dd{v} \; (\text{calcolabile conoscendo $P = P(v)$})
+    \delta L^\sra = PA\dd{s} = P\dd{V} \;& \text{(sistema cilindro-pistone)}\\
+    \delta l^\sra = P\dd{v} \;& (\text{grandezze specifiche})\\
+    l^\sra = \int_i^f P\dd{v} \;& (\text{calcolabile conoscendo $P = P(v)$})
 \end{align*}
-Il lavoro (specifico) è pari all'area sottesa (integrale) dal grafico della trasformazione nel piano P-v.\newline
+Il lavoro (specifico) è pari all'area sottesa (integrale) dal grafico della trasformazione nel piano P-v.
 
-Il lavoro reversibile è maggiore del lavoro irreversibile.\newline
+Il lavoro reversibile è maggiore del lavoro irreversibile.
 
 Il lavoro dipende dal percorso: \textbf{non} è funzione di stato.
 
@@ -19,21 +19,22 @@ Il lavoro dipende dal percorso: \textbf{non} è funzione di stato.
     \text{Capacità termica} &\qquad C_x = \left(\frac{\delta Q^\sla}{\dd{T}}\right)_x \\
     \text{Calore specifico} &\qquad c_x = \frac{1}{M} \left(\frac{\delta Q^\sla}{\dd{T}}\right)_x
 \end{align*}
+Il pedice $x$ precisa la trasformazione lungo la quale viene scmabiato il calore $\var{Q}$.
 
 \begin{align*}
     \text{A pressione cost.} &\qquad c_P = \frac{1}{M} \left(\frac{\delta Q^\sla}{\dd{T}}\right)_P = \left(\frac{\delta q^\sla}{\dd{T}}\right)_P \\
-    \text{A volume cost.} &\qquad c_v = \frac{1}{M} \left(\frac{\delta Q^\sla}{\dd{T}}\right)_v = \left(\frac{\delta q^\sla}{\dd{T}}\right)_v
+    \text{A volume cost.} &\qquad c_V = \frac{1}{M} \left(\frac{\delta Q^\sla}{\dd{T}}\right)_V = \left(\frac{\delta q^\sla}{\dd{T}}\right)_V
 \end{align*}
 
 Inoltre si ha che
 \begin{align*}
-    \text{A pressione cost.} &\qquad c_P = \qty(\pdv{h}{T})_P\\
-    \text{A volume cost.} &\qquad c_v = \qty(\pdv{u}{T})_v
+    \text{A pressione cost.} &\qquad c_P = \qty(\pdv{h}{T})_P = c_P(T,P)\\
+    \text{A volume cost.} &\qquad c_V = \qty(\pdv{u}{T})_V = c_V(T,P)
 \end{align*}
 
 \subsection{Entalpia}
 
-L'entalpia è una funzione di stato.
+L'entalpia è una funzione di stato che esprime la quantità di energia che un sistema può scambiare con l'amabiente.
 \[ h = u + Pv \]
 \[ \dd{h} = \dd{u} + v\dd{P} + P\dd{v} = \delta q^\sla + v\dd{P} \]
 \[ \delta q^\sla = \dd{h} - v\dd{P} \]
