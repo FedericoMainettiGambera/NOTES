@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  21 NOV 2020 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  21 NOV 2020 18:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -685,51 +685,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--43
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--83
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 63--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--83
+Underfull \hbox (badness 10000) in paragraph at lines 63--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--83
+Underfull \hbox (badness 10000) in paragraph at lines 63--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--83
+Underfull \hbox (badness 10000) in paragraph at lines 63--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--83
+Underfull \hbox (badness 10000) in paragraph at lines 63--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--83
+Underfull \hbox (badness 10000) in paragraph at lines 63--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--83
+Underfull \hbox (badness 10000) in paragraph at lines 63--91
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--83
-
- []
-
-[2] [3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
+[3] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: BFD96406A2BB6958FDD45E5C10753317;137.
 
@@ -740,13 +740,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  17860 strings out of 492609
  325413 string characters out of 6132818
- 428933 words of memory out of 5000000
+ 426933 words of memory out of 5000000
  21420 multiletter control sequences out of 15000+600000
  12634 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,6n,73p,933b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,6n,73p,933b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/master.pdf" (4 pages, 83622 bytes).
+Output written on "c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/master.pdf" (4 pages, 84492 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
