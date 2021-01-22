@@ -5,17 +5,32 @@
 
 \subsubsection{Equazione di continuità}
 \[ \dot{m} = \rho w \Omega \]
+$\rho$: massa volumica \newline
+$w$: velocità media \newline
+$\Omega$: area della sezione di passaggio.
 
 \subsection{Bilancio di energia}
-\[ \dv{E}{t} = \sum_i \dot{E}_i^\sla \]
-dove $E$ rappresenta l'energia associata al trasporto di massa e al lavoro e calore scambiato
+\[ \dv{E}{t} = \sum_i \dot{E}_i^\sla = \dot{Q}^{\leftarrow } - \dot{L}^{\rightarrow } + \sum_{k} \dot{E}_{m,k}^{\leftarrow } + sorgenti \]
+dove \newline
+\subsubsection{calore scambiato}
+calore scambiato attraverso le sezioni non attraversate dalla massa (il calore scambiato attraverso le sezioni di ingresso e uscita è trascurabile)
 
-\subsubsection{Lavoro di pulsione}
+\subsubsection{lavoro d'elica}
+$-\dot{L}_e^{\rightarrow }$ lavoro scambiato nelle sezioni non attraversate dalla massa
+
+\subsubsection{lavoro di pulsione} 
+$\dot{L}_P^{\leftarrow }$ (quello scambiato nell'ingresso e nell'uscita, è il lavoro necessario per immettere nel sistema la massa che il sistema scambia con l’estern) 
 \[ L_P^\sla = - \int^{V}_{V+V_m} P\dd{V} = PV_m = m_i P v_i \]
+
 \subsubsection{Energia associata al trasporto di massa}
 \[ E_m = \sum_i m_i^\sla \qty(u + gz + \frac{w^2}{2}) \]
-\subsubsection{Bilancio energetico}
-\[ \dv{E}{t} = \sum_i \dot{m}_i^\sla \qty(h + gz + \frac{w^2}{2}) + \dot{Q}^\sla - \dot{L_e}^\sra\]
+
+\subsubsection{Sorgenti}
+Ogni altra fonte di energia (dissipata o aggiunta) va inserita nel bilancio, varia da esercizio a esercizio.
+
+\subsection{Bilancio energetico}
+\[ \dv{E}{t} = \dot{E}_m + \dot{Q}^\sla - \dot{L_e}^\sra + \sum_{k} \left(\dot{L}_P^{\leftarrow }\right)_ k = \]
+\[= \sum_i \dot{m}_i^\sla \qty(h_i + gz_i + \frac{w_i^2}{2}) + \dot{Q}^\sla - \dot{L_e}^\sra\]
 
 \subsection{Bilancio di entropia}
 \[ \dv{S}{t} = \sum_i \dot{m}_i^\sla s_i + \dot{S}_{Q^\sla} + \dot{S}_{irr} \]
@@ -26,6 +41,19 @@ dove $E$ rappresenta l'energia associata al trasporto di massa e al lavoro e cal
 \[ \dot{m}^\sla\qty[(h_i - h_u) + g(z_i-z_u) + \frac{(w_i^2-w_u^2)}{2}] + \dot{Q}^\sla - \dot{L}_e^\sra = 0 \]
 
 \[ \dot{m}^\sla (s_i - s_u) + \dot{S}_{Q^\sla} + \dot{S}_{irr} = 0 \]
+
+\subsection{Regime non stazionario}
+si scrivono i bilanci, si semplificano, e poi si integrano
+\[
+    \frac{dM}{dt} = M_f - M_i = \dots \text{formula integrata}
+\]
+\[
+    \frac{dE}{dt} = U_f - U_i + Mgz_f - Mgz_i + M \frac{w_f^2}{2} - M \frac{w_i^2}{2}= \dots \text{formula integrata}
+\]
+\[
+    \frac{dS}{dt} = S_f - S_i = \dots \text{formula integrata}
+\]
+dove con $\dots$ si intende che anche la parte dopo l'uguale nei bilanci si deve integrare
 
 \section{Macchina aperta}
 \subsubsection{Turbina, compressore e pompa}
@@ -51,9 +79,19 @@ dove $E$ rappresenta l'energia associata al trasporto di massa e al lavoro e cal
 \subsubsection{Compressore}
 \[ \eta_{is,compressore} = \frac{\dot{L}_{ideale}^\sra}{\dot{L}_{reale}^\sra} = \frac{h_1 - h_{2,ideale}}{h_1 - h_{2,reale}} \]
 
-\subsection{Lavoro specifico per unità di massa fluente}
-Dopo vari passaggi si ottiene che
+\subsection{Irreversibilità interna associata al moto del fluido}
+..dopo vari passaggi si ottiene che
 \[ -\delta l_e^\sra = v\dd{P} + T\dd{s_{irr}} \]
 Integrando fra la sezione di ingresso e quella di uscita:
 \[ l_e^\sra = -\int_i^u v\dd{P} -\int_i^u T\dd{s_{irr}} \]
 dove il secondo termine è l'energia dissipata per irreversibilità interna.
+
+In generale l’irreversibilità interna associata al moto si traduce in una spesa energetica per movimentare il fluido che può essere espressa come
+\[
+    \dot{L} = \dot{V} \Delta P 
+\]
+dove $\dot{L}$ è la potenza meccanica necessaria a movimentare il fluido, $\dot{V} = w \Omega$ è la portata volumetrica e $\Delta P$ sono le perdite di carico originate da attrito, cambi di direzione, ostacoli, etc.\newline
+
+Le perdite di carico \textbf{concentrate} sono $\Delta P = K \rho \frac{w^2}{2}$ (con $K$ costante di proporzionalità, vedi slide).
+
+Le perdite di carico \textbf{distribuite} sono $\Delta P = f \frac{L}{D} \rho \frac{w^2}{2}$ (vedi slide per i singoli termini).

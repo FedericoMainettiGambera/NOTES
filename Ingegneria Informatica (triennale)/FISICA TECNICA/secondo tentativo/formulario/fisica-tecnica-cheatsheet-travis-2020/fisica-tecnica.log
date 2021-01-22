@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  26 NOV 2020 19:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.4)  21 JAN 2021 19:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1196,7 +1196,21 @@ Package: chemformula 2019/09/27 v4.15g typeset chemical compounds and reactions 
 \l__chemformula_minus_space_skip=\skip88
 ) (c:/texlive/2019/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+) (c:/texlive/2019/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 )) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux)
+Runaway argument?
+{\contentsline {subsubsection}{Lavoro specifico 
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.tex:6: File ended while scanning use of \@writefile.
+<inserted text> 
+                \par 
+l.6 \begin{document}
+                    
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \openout1 = `fisica-tecnica.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1217,7 +1231,6 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Info: Redefining \it@ocap on input line 6.
 LaTeX Info: Redefining \it@ccap on input line 6.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1263,14 +1276,39 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
- (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out)
+ (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out)
+Runaway argument?
+{Relazioni semplificate vicino al punto tripl 
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.tex:6: File ended while scanning use of \@@BOOKMARK.
+<inserted text> 
+                \par 
+l.6 \begin{document}
+                    
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+(c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.out)
+Runaway argument?
+{Relazioni semplificate vicino al punto tripl 
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.tex:6: File ended while scanning use of \@@BOOKMARK.
+<inserted text> 
+                \par 
+l.6 \begin{document}
+                    
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 \@outlinefile=\write5
 \openout5 = `fisica-tecnica.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count370
 \scratchdimen=\dimen386
@@ -1340,30 +1378,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/001-concetti-base.tex
+ (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/001-concetti-base.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/002-principi-termodinamica.tex
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 2.
-
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/002-principi-termodinamica.tex
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 3.
-
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/003-lavoro-calore.tex
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 3.
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 38.
 
 [1{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/004-gas-ideali.tex
-<politropiche.JPG, id=464, 444.91219pt x 234.1247pt>
+]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/003-lavoro-calore.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/004-gas-ideali.tex
+<politropiche.JPG, id=262, 444.91219pt x 234.1247pt>
 File: politropiche.JPG Graphic file (type jpg)
 <use politropiche.JPG>
 Package pdftex.def Info: politropiche.JPG  used on input line 66.
 (pdftex.def)             Requested size: 162.21169pt x 85.35826pt.
-<politropiche2.JPG, id=465, 554.82281pt x 304.88907pt>
+<politropiche2.JPG, id=263, 554.82281pt x 304.88907pt>
 File: politropiche2.JPG Graphic file (type jpg)
 <use politropiche2.JPG>
 Package pdftex.def Info: politropiche2.JPG  used on input line 72.
@@ -1374,95 +1401,74 @@ Overfull \hbox (16.8071pt too wide) in paragraph at lines 81--86
  []
 
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 88.
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 102.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/005-macchine-termiche.tex [2 <c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/politropiche.JPG> <c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/politropiche2.JPG>]
+[2 <c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/politropiche.JPG>]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/005-macchine-termiche.tex
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 18.
 
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 18.
-
 ) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/006-sistemi-aperti.tex
 Overfull \hbox (2.54483pt too wide) in paragraph at lines 48--1
-[][] 
+[] 
  []
 
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 3.
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 36.
 
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 13.
+[3 <c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/politropiche2.JPG>]
+Overfull \hbox (16.96855pt too wide) detected at line 52
+[] \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 U[] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 U[] \OT1/cmr/m/n/8 + \OML/cmm/m/it/8 Mgz[] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 Mgz[] \OT1/cmr/m/n/8 + \OML/cmm/m/it/8 M[] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 M[] \OT1/cmr/m/n/8 = [] []
+ []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 31.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 31.
+(hyperref)                than one, level fixed on input line 59.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\textdownarrow' on input line 39.
+(hyperref)                removing `\textdownarrow' on input line 67.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\textuparrow' on input line 39.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 48.
+(hyperref)                removing `\textuparrow' on input line 67.
 
 ) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/007-bifase.tex
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 12.
-
-
 LaTeX Warning: File `Diagramma di stato P-v-T.JPG' not found on input line 24.
 
-<Diagramma di stato P-v-T.JPG, id=474, 564.60938pt x 244.66406pt>
+<Diagramma di stato P-v-T.JPG, id=275, 564.60938pt x 244.66406pt>
 File: Diagramma di stato P-v-T.JPG Graphic file (type jpg)
 <use Diagramma di stato P-v-T.JPG>
 Package pdftex.def Info: Diagramma di stato P-v-T.JPG  used on input line 24.
 (pdftex.def)             Requested size: 196.97871pt x 85.35826pt.
-[3]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/009-cicli-simmetrici.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/010-ciclo-carnot.tex
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 30.
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 60.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/011-ciclo-joule-brayton.tex
+[4 <c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/Diagramma di stato P-v-T.JPG>]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/009-cicli-simmetrici.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/010-ciclo-carnot.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/011-ciclo-joule-brayton.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/012-ciclo-joule-brayton-rigenerato.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/013-ciclo-otto.tex
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 50.
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 4.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/012-ciclo-joule-brayton-rigenerato.tex [4 <c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/Diagramma di stato P-v-T.JPG>]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/013-ciclo-otto.tex
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 38.
-
-
-Overfull \hbox (2.66676pt too wide) detected at line 42
+[5]
+Overfull \hbox (2.66676pt too wide) detected at line 50
 \OML/cmm/m/it/8 l \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 c[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 T[] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 T[]\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 c[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 T[] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 T[]\OT1/cmr/m/n/8 ) = \OML/cmm/m/it/8 c[]T[] [] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 c[]T[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 r[] \OMS/cmsy/m/n/8 ^^@ \OT1/cmr/m/n/8 1)
  []
 
 ) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/014-ciclo-diesel.tex
+Overfull \hbox (24.18327pt too wide) detected at line 34
+[]
+ []
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 38.
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/015-ciclo-joule-brayton-inverso.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/016-altri-cicli.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/017-ciclo-carnot-a-vapore.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/018-caratteristiche-fluido-lavoro.tex
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/015-ciclo-joule-brayton-inverso.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/016-altri-cicli.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/017-ciclo-carnot-a-vapore.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/018-caratteristiche-fluido-lavoro.tex) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/019-ciclo-rankine-vapore-saturo.tex
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 12.
+
+[6]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/019-ciclo-rankine-vapore-saturo.tex
 Overfull \hbox (4.06917pt too wide) in paragraph at lines 13--19
 [][]  
  []
 
-[5]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/020-ciclo-rankine-surriscaldamento.tex
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/020-ciclo-rankine-surriscaldamento.tex
 Overfull \hbox (4.06917pt too wide) in paragraph at lines 12--18
 [][]  
  []
@@ -1474,112 +1480,609 @@ LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 
 ) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/025-conduzione.tex
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 4.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 25.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 25.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 25.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 36.
-
-[6]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 58.
-
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/026-convezione.tex
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 8.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 53.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 83.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 92.
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 21.
 
 [7]
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 128.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 25.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 25.
+
+) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/026-convezione.tex
+
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 63.
+
+[8]
 Overfull \hbox (15.35573pt too wide) in paragraph at lines 132--148
 []  
  []
 
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 177.
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 190.
 
-) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/027-irraggiamento.tex
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 11.
-
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 56.
-
-
+[9]) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/027-irraggiamento.tex
 Overfull \hbox (6.89304pt too wide) in paragraph at lines 71--76
-[][]  
+[]  
  []
 
+)
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 87.
+LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 54.
 
-[8]
+[10]
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 118.
+Package lastpage Warning: Rerun to get the references right on input line 55.
 
-) 
+
 AED: lastpage setting LastPage
-[9]
+
+LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 55.
+
+[11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 55.
  (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.xwm) (c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
-Package rerunfilecheck Info: File `fisica-tecnica.out' has not changed.
-(rerunfilecheck)             Checksum: 4BCF8FA0303389BA9AD925FD06A65E9C;9560.
 
+
+Package rerunfilecheck Warning: File `fisica-tecnica.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `fisica-tecnica.out':
+(rerunfilecheck)             Before: 04351419E64F14AE60E4050D5496E234;4096
+(rerunfilecheck)             After:  E5F9EAC05FEB13C5387E804F562B2BB7;10319.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 52721 strings out of 492609
- 1186738 string characters out of 6132818
- 1470243 words of memory out of 5000000
- 55719 multiletter control sequences out of 15000+600000
- 561373 words of font info for 143 fonts, out of 8000000 for 9000
+ 52927 strings out of 492609
+ 1189591 string characters out of 6132818
+ 1471062 words of memory out of 5000000
+ 55826 multiletter control sequences out of 15000+600000
+ 557563 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,127p,973b,2389s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/stmaryrd/stmary5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/stmaryrd/stmary6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/stmaryrd/stmary8.pfb>
-Output written on "c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.pdf" (9 pages, 596794 bytes).
+ 75i,19n,127p,973b,2240s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/stmaryrd/stmary5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/stmaryrd/stmary6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/stmaryrd/stmary8.pfb>
+Output written on "c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.pdf" (11 pages, 583506 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 579 compressed objects within 6 object streams
- 38 named destinations out of 1000 (max. 500000)
- 38476 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 31212 words of extra memory for PDF output out of 35830 (max. 10000000)
 
+/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53: Text line contains an invalid character.
+l.53 ...^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@
+                                                  ^^@^^@^^@^^@^^@^^@^^@^^@^^...
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 53010 strings out of 492609
+ 1190712 string characters out of 6132818
+ 1471121 words of memory out of 5000000
+ 55909 multiletter control sequences out of 15000+600000
+ 557563 words of font info for 127 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,19n,127p,4348b,2240s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+c:/Users/Federico/Desktop/NOTES/Ingegneria Informatica (triennale)/FISICA TECNICA/secondo tentativo/formulario/fisica-tecnica-cheatsheet-travis-2020/fisica-tecnica.aux:53:  ==> Fatal error occurred, no output PDF file produced!

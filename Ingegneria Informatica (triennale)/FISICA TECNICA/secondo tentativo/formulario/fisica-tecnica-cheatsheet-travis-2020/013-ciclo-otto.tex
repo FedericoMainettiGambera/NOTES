@@ -1,4 +1,4 @@
-\section{Ciclo Otto}
+\subsection{Ciclo Otto}
 Ciclo simmetrico cosituito da due \emph{isoentropiche} e due \emph{isocore}.
 Applicazioni: prevalentemente in campo automobilistico. $r_v$ tra 6 e 10 per evitare autocombustione della miscela in $1-2$.
 
@@ -22,7 +22,15 @@ Applicazioni: prevalentemente in campo automobilistico. $r_v$ tra 6 e 10 per evi
     \end{tikzpicture}
 \end{minipage}
 
-Il rendimento del ciclo Otto nel caso di \emph{gas perfetto}:
+Il ciclo Otto ideale è costituito da quattro trasformazioni internamente reversibili:
+\begin{itemize}
+    \item compressione isoentropica;
+    \item adduzione di calore a volume costante;
+    \item espansione isoentropica;
+    \item sottrazione di calore a volume costante.
+\end{itemize}
+
+Il rendimento del ciclo Otto nel caso di \emph{gas perfetto} e \emph{ciclo ideale simmetrico}:
 \[
     \eta_{\text{Otto}} = 1 - \frac{q_f}{q_c} = 1 - \frac{T_4-T_1}{T_3-T_2} = 1 - \frac{T_1}{T_2}
 \]
@@ -30,12 +38,12 @@ Il rendimento del ciclo Otto nel caso di \emph{gas perfetto}:
 Dal bilancio entropico tra 1 e 2 vale: $\left( \frac{T_2}{T_1} \right)^{c_v} = \left( \frac{V_1}{V_2} \right)^{R^*}$
 
 
-Chiamando rapporto di compressione volumentrico $r_v = \frac{V_1}{V_2}$
+Chiamando rapporto di compressione volumentrico $r_v = \frac{V_1}{V_2} = \frac{V_{max}}{V_{min}}$
 \[
     \eta_{\text{Otto}} = 1 - r_v^{1-k}
 \]
 
-\subsection{Lavoro specifico per il ciclo Otto}
+\subsubsection{Lavoro specifico per il ciclo Otto}
 
 \[
     l = c_v(T_3-T_4) - c_v(T_2-T_1) = c_vT_3\left(1-\frac{1}{r_v^{k-1}}\right) - c_vT_1(r_v^{k-1}-1)
@@ -44,3 +52,5 @@ Chiamando rapporto di compressione volumentrico $r_v = \frac{V_1}{V_2}$
 \[
     r_v^{\text{opt}} = \left(\frac{T_3}{T_1}\right)^{\frac{1}{2(k-1)}}
 \]
+
+[Per delle tip su come risolvere i classici cicli guarda il ciclo diesel]

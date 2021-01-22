@@ -1,134 +1,141 @@
-\BOOKMARK [1][-]{Doc-Start}{Concetti base}{}% 1
-\BOOKMARK [2][-]{section*.1}{Conversioni}{Doc-Start}% 2
-\BOOKMARK [2][-]{section*.1}{Costanti}{Doc-Start}% 3
-\BOOKMARK [2][-]{section*.1}{Sistema termodinamico}{Doc-Start}% 4
-\BOOKMARK [2][-]{section*.1}{Grandezze}{Doc-Start}% 5
-\BOOKMARK [2][-]{section*.1}{Legge di Duhem}{Doc-Start}% 6
-\BOOKMARK [2][-]{section*.1}{Regola di Gibbs}{Doc-Start}% 7
-\BOOKMARK [2][-]{section*.1}{Trasformazioni termodinamiche}{Doc-Start}% 8
-\BOOKMARK [2][-]{section*.1}{Gas ideali}{Doc-Start}% 9
-\BOOKMARK [2][-]{section*.1}{Gas reali}{Doc-Start}% 10
-\BOOKMARK [2][-]{section*.1}{Liquidi e solidi}{Doc-Start}% 11
-\BOOKMARK [1][-]{section*.1}{Principi della termodinamica}{}% 12
-\BOOKMARK [2][-]{section*.2}{Principi di conservazione}{section*.1}% 13
-\BOOKMARK [2][-]{section*.2}{Primo principio della termodinamica per sistemi chiusi}{section*.1}% 14
-\BOOKMARK [2][-]{section*.2}{Secondo principio della termodinamica per sistemi chiusi}{section*.1}% 15
-\BOOKMARK [1][-]{section*.2}{Trasformazioni}{}% 16
-\BOOKMARK [2][-]{section*.3}{Lavoro termodinamico}{section*.2}% 17
-\BOOKMARK [2][-]{section*.3}{Calori specifici}{section*.2}% 18
-\BOOKMARK [2][-]{section*.3}{Entalpia}{section*.2}% 19
-\BOOKMARK [2][-]{section*.3}{Calori specifici per i gas ideali}{section*.2}% 20
-\BOOKMARK [2][-]{section*.3}{Calori specifici per un gas perfetto}{section*.2}% 21
-\BOOKMARK [2][-]{section*.3}{Calori specifici per i liquidi}{section*.2}% 22
-\BOOKMARK [2][-]{section*.3}{Politropiche}{section*.2}% 23
-\BOOKMARK [2][-]{section*.3}{Diagramma T-s}{section*.2}% 24
-\BOOKMARK [2][-]{section*.3}{Calcolo delle grandezze termodinamiche}{section*.2}% 25
-\BOOKMARK [3][-]{section*.4}{Per i gas perfetti}{section*.3}% 26
-\BOOKMARK [3][-]{section*.4}{Per i liquidi incomprimibili}{section*.3}% 27
-\BOOKMARK [1][-]{section*.4}{Macchina termodinamica}{}% 28
-\BOOKMARK [2][-]{section*.5}{Risoluzione problemi macchine termiche}{section*.4}% 29
-\BOOKMARK [2][-]{section*.5}{Rendimenti macchine termiche}{section*.4}% 30
-\BOOKMARK [1][-]{section*.5}{Sistemi aperti}{}% 31
-\BOOKMARK [2][-]{section*.6}{Bilancio di massa}{section*.5}% 32
-\BOOKMARK [3][-]{section*.6}{Equazione di continuit\340}{section*.5}% 33
-\BOOKMARK [2][-]{section*.6}{Bilancio di energia}{section*.5}% 34
-\BOOKMARK [3][-]{section*.7}{Lavoro di pulsione}{section*.6}% 35
-\BOOKMARK [3][-]{section*.7}{Energia associata al trasporto di massa}{section*.6}% 36
-\BOOKMARK [3][-]{section*.7}{Bilancio energetico}{section*.6}% 37
-\BOOKMARK [2][-]{section*.7}{Bilancio di entropia}{section*.5}% 38
-\BOOKMARK [2][-]{section*.7}{Regime stazionario}{section*.5}% 39
-\BOOKMARK [1][-]{section*.7}{Macchina aperta}{}% 40
-\BOOKMARK [2][-]{section*.8}{Turbina, compressore e pompa}{section*.7}% 41
-\BOOKMARK [3][-]{section*.8}{Scambiatore di calore}{section*.7}% 42
-\BOOKMARK [3][-]{section*.8}{Diffusore \(w\) e ugello \(w\)}{section*.7}% 43
-\BOOKMARK [3][-]{section*.8}{Valvola di laminazione}{section*.7}% 44
-\BOOKMARK [2][-]{section*.8}{Rendimento isoentropico}{section*.7}% 45
-\BOOKMARK [3][-]{section*.9}{Turbina}{section*.8}% 46
-\BOOKMARK [3][-]{section*.9}{Compressore}{section*.8}% 47
-\BOOKMARK [2][-]{section*.9}{Lavoro specifico per unit\340 di massa fluente}{section*.7}% 48
-\BOOKMARK [1][-]{section*.9}{Sistemi bifase}{}% 49
-\BOOKMARK [2][-]{section*.10}{Stati di aggregazione}{section*.9}% 50
-\BOOKMARK [2][-]{section*.10}{Diagramma di stato P-v-T}{section*.9}% 51
-\BOOKMARK [2][-]{section*.10}{Entalpia \(calore\) di transizione}{section*.9}% 52
-\BOOKMARK [2][-]{section*.10}{Titolo di vapore, liquido e solido}{section*.9}% 53
-\BOOKMARK [2][-]{section*.10}{Approssimazioni per entropia e entalpie di solidi e liquidi \(v. slide\)}{section*.9}% 54
-\BOOKMARK [1][-]{section*.10}{Cicli simmetrici}{}% 55
-\BOOKMARK [1][-]{section*.10}{Ciclo Carnot}{}% 56
-\BOOKMARK [2][-]{section*.11}{Irreversibilit\340}{section*.10}% 57
-\BOOKMARK [1][-]{section*.11}{Ciclo Joule-Brayton}{}% 58
-\BOOKMARK [2][-]{section*.12}{Lavoro specifico per ciclo Joule-Brayton}{section*.11}% 59
-\BOOKMARK [1][-]{section*.12}{Ciclo Joule-Brayton con rigenerazione}{}% 60
-\BOOKMARK [1][-]{section*.12}{Ciclo Otto}{}% 61
-\BOOKMARK [2][-]{section*.13}{Lavoro specifico per il ciclo Otto}{section*.12}% 62
-\BOOKMARK [1][-]{section*.13}{Ciclo Diesel}{}% 63
-\BOOKMARK [2][-]{section*.14}{Confronto ciclo Otto - ciclo Diesel}{section*.13}% 64
-\BOOKMARK [1][-]{section*.14}{Ciclo Joule-Brayton inverso}{}% 65
-\BOOKMARK [1][-]{section*.14}{Altri cicli}{}% 66
-\BOOKMARK [1][-]{section*.14}{Ciclo Carnot a vapore}{}% 67
-\BOOKMARK [1][-]{section*.14}{Fluidi di lavoro in cicli a vapore}{}% 68
-\BOOKMARK [1][-]{section*.14}{Ciclo Rankine a vapore saturo}{}% 69
-\BOOKMARK [1][-]{section*.14}{Ciclo Rankine con surriscaldamento}{}% 70
-\BOOKMARK [1][-]{section*.14}{Soluzioni per aumento rendimento ciclo Rankine}{}% 71
-\BOOKMARK [1][-]{section*.14}{Ciclo Carnot inverso a vapore}{}% 72
-\BOOKMARK [1][-]{section*.14}{Ciclo frigorifero a vapore}{}% 73
-\BOOKMARK [1][-]{section*.14}{Ripasso analisi}{}% 74
-\BOOKMARK [1][-]{section*.14}{Conduzione}{}% 75
-\BOOKMARK [2][-]{section*.15}{Postulato di Fourier}{section*.14}% 76
-\BOOKMARK [2][-]{section*.15}{Equazione di Fourier}{section*.14}% 77
-\BOOKMARK [2][-]{section*.15}{Casi particolari equazione di Fourier}{section*.14}% 78
-\BOOKMARK [2][-]{section*.15}{Coordinate cartesiane}{section*.14}% 79
-\BOOKMARK [3][-]{section*.16}{Parete piana infinita in y-z in regime stazionario}{section*.15}% 80
-\BOOKMARK [3][-]{section*.16}{Lastra piana senza generazione di potenza}{section*.15}% 81
-\BOOKMARK [2][-]{section*.16}{Coordinate cilindriche}{section*.14}% 82
-\BOOKMARK [3][-]{section*.17}{Cilindro pieno o cavo di altezza infinita}{section*.16}% 83
-\BOOKMARK [3][-]{section*.17}{Barra cilindrica piena con generazione di potenza}{section*.16}% 84
-\BOOKMARK [3][-]{section*.17}{Cilindro cavo senza generazione di potenza}{section*.16}% 85
-\BOOKMARK [2][-]{section*.17}{Coordinate sferiche}{section*.14}% 86
-\BOOKMARK [3][-]{section*.18}{Sfera piena o cava}{section*.17}% 87
-\BOOKMARK [1][-]{section*.18}{Convezione}{}% 88
-\BOOKMARK [2][-]{section*.19}{Equazione generale}{section*.18}% 89
-\BOOKMARK [2][-]{section*.19}{Raggio critico di isolamento}{section*.18}% 90
-\BOOKMARK [2][-]{section*.19}{Coefficiente convettivo}{section*.18}% 91
-\BOOKMARK [3][-]{section*.20}{Numero di Nusselt}{section*.19}% 92
-\BOOKMARK [3][-]{section*.20}{Numero di Reynolds}{section*.19}% 93
-\BOOKMARK [3][-]{section*.20}{Valori tipici di Reynolds}{section*.19}% 94
-\BOOKMARK [3][-]{section*.20}{Numero di Prandtl}{section*.19}% 95
-\BOOKMARK [3][-]{section*.20}{Valori tipici di Prandtl}{section*.19}% 96
-\BOOKMARK [2][-]{section*.20}{Temperature di valutazione dei parametri}{section*.18}% 97
-\BOOKMARK [3][-]{section*.21}{Corpo immerso}{section*.20}% 98
-\BOOKMARK [3][-]{section*.21}{Convenzione forzata in condotto}{section*.20}% 99
-\BOOKMARK [2][-]{section*.21}{Flusso all'interno di tubi}{section*.18}% 100
-\BOOKMARK [3][-]{section*.22}{Velocit\340 media}{section*.21}% 101
-\BOOKMARK [3][-]{section*.22}{Temperatura media}{section*.21}% 102
-\BOOKMARK [3][-]{section*.22}{Condizioni al contorno}{section*.21}% 103
-\BOOKMARK [3][-]{section*.22}{Flusso di calore costante}{section*.21}% 104
-\BOOKMARK [3][-]{section*.22}{Temperatura superficiale costante}{section*.21}% 105
-\BOOKMARK [3][-]{section*.22}{Caduta di pressione}{section*.21}% 106
-\BOOKMARK [2][-]{section*.22}{Convezione forzata}{section*.18}% 107
-\BOOKMARK [3][-]{section*.23}{Moto all'interno di un condotto circolare}{section*.22}% 108
-\BOOKMARK [3][-]{section*.23}{Moto attorno ad un cilindro}{section*.22}% 109
-\BOOKMARK [3][-]{section*.23}{Flusso su lastra piana interamente riscaldata}{section*.22}% 110
-\BOOKMARK [2][-]{section*.23}{Convezione naturale}{section*.18}% 111
-\BOOKMARK [3][-]{section*.24}{Numero di Grashof}{section*.23}% 112
-\BOOKMARK [3][-]{section*.24}{Moto lungo superficie verticale}{section*.23}% 113
-\BOOKMARK [3][-]{section*.24}{Numero di Peclet}{section*.23}% 114
-\BOOKMARK [3][-]{section*.24}{Numero di Rayleigh}{section*.23}% 115
-\BOOKMARK [3][-]{section*.24}{Alcune correlazioni}{section*.23}% 116
-\BOOKMARK [1][-]{section*.24}{Irraggiamento}{}% 117
-\BOOKMARK [2][-]{section*.25}{Legge della distribuzione di Planck}{section*.24}% 118
-\BOOKMARK [2][-]{section*.25}{Legge dello spostamento o di Wien}{section*.24}% 119
-\BOOKMARK [2][-]{section*.25}{Emissivit\340}{section*.24}% 120
-\BOOKMARK [2][-]{section*.25}{Radiazione incidente}{section*.24}% 121
-\BOOKMARK [2][-]{section*.25}{Fattore di vista}{section*.24}% 122
-\BOOKMARK [3][-]{section*.26}{Regola di reciprocit\340}{section*.25}% 123
-\BOOKMARK [3][-]{section*.26}{Regola della somma}{section*.25}% 124
-\BOOKMARK [2][-]{section*.26}{Convenzioni adottate}{section*.24}% 125
-\BOOKMARK [2][-]{section*.26}{Scambio termico tra superfici}{section*.24}% 126
-\BOOKMARK [3][-]{section*.27}{Superfici nere}{section*.26}% 127
-\BOOKMARK [3][-]{section*.27}{Superfici piane parallele, indefinite, nere}{section*.26}% 128
-\BOOKMARK [3][-]{section*.27}{Corpo nero in una cavit\340 con superfici nere}{section*.26}% 129
-\BOOKMARK [2][-]{section*.27}{Bilancio termico superficie grigia opaca}{section*.24}% 130
-\BOOKMARK [3][-]{section*.28}{Superfici grigie}{section*.27}% 131
-\BOOKMARK [3][-]{section*.28}{Superfici piane parallele indefinite nera-grigia}{section*.27}% 132
-\BOOKMARK [3][-]{section*.28}{Superfici piane parallele indefinite grigia-grigia}{section*.27}% 133
-\BOOKMARK [3][-]{section*.28}{Corpo grigio in una cavit\340 con superfici grigie}{section*.27}% 134
+\BOOKMARK [1][-]{section*.1}{Concetti base}{}% 1
+\BOOKMARK [2][-]{section*.2}{Conversioni}{section*.1}% 2
+\BOOKMARK [2][-]{section*.3}{Costanti}{section*.1}% 3
+\BOOKMARK [2][-]{section*.4}{Sistema termodinamico}{section*.1}% 4
+\BOOKMARK [2][-]{section*.5}{Grandezze}{section*.1}% 5
+\BOOKMARK [2][-]{section*.6}{Legge di Duhem}{section*.1}% 6
+\BOOKMARK [2][-]{section*.7}{Regola di Gibbs}{section*.1}% 7
+\BOOKMARK [2][-]{section*.8}{Trasformazioni termodinamiche}{section*.1}% 8
+\BOOKMARK [2][-]{section*.9}{Gas ideali}{section*.1}% 9
+\BOOKMARK [2][-]{section*.10}{Gas reali}{section*.1}% 10
+\BOOKMARK [2][-]{section*.11}{Liquidi e solidi}{section*.1}% 11
+\BOOKMARK [1][-]{section*.12}{Principi della termodinamica}{}% 12
+\BOOKMARK [2][-]{section*.13}{Principi di conservazione}{section*.12}% 13
+\BOOKMARK [2][-]{section*.14}{Primo principio della termodinamica per sistemi chiusi}{section*.12}% 14
+\BOOKMARK [2][-]{section*.15}{Secondo principio della termodinamica per sistemi chiusi}{section*.12}% 15
+\BOOKMARK [1][-]{section*.16}{Trasformazioni}{}% 16
+\BOOKMARK [2][-]{section*.17}{Lavoro termodinamico}{section*.16}% 17
+\BOOKMARK [2][-]{section*.18}{Calori specifici}{section*.16}% 18
+\BOOKMARK [2][-]{section*.19}{Entalpia}{section*.16}% 19
+\BOOKMARK [2][-]{section*.20}{Calori specifici per i gas ideali}{section*.16}% 20
+\BOOKMARK [2][-]{section*.21}{Calori specifici per un gas perfetto}{section*.16}% 21
+\BOOKMARK [2][-]{section*.22}{Calori specifici per i liquidi}{section*.16}% 22
+\BOOKMARK [2][-]{section*.23}{Politropiche}{section*.16}% 23
+\BOOKMARK [2][-]{section*.24}{Diagramma T-s}{section*.16}% 24
+\BOOKMARK [2][-]{section*.25}{Calcolo delle grandezze termodinamiche}{section*.16}% 25
+\BOOKMARK [3][-]{section*.26}{Per i gas perfetti}{section*.25}% 26
+\BOOKMARK [3][-]{section*.27}{Per i liquidi incomprimibili}{section*.25}% 27
+\BOOKMARK [1][-]{section*.28}{Macchina termodinamica}{}% 28
+\BOOKMARK [2][-]{section*.29}{Risoluzione problemi macchine termiche}{section*.28}% 29
+\BOOKMARK [2][-]{section*.30}{Rendimenti macchine termiche}{section*.28}% 30
+\BOOKMARK [1][-]{section*.31}{Sistemi aperti}{}% 31
+\BOOKMARK [2][-]{section*.32}{Bilancio di massa}{section*.31}% 32
+\BOOKMARK [3][-]{section*.33}{Equazione di continuit\340}{section*.32}% 33
+\BOOKMARK [2][-]{section*.34}{Bilancio di energia}{section*.31}% 34
+\BOOKMARK [3][-]{section*.35}{calore scambiato}{section*.34}% 35
+\BOOKMARK [3][-]{section*.36}{lavoro d'elica}{section*.34}% 36
+\BOOKMARK [3][-]{section*.37}{lavoro di pulsione}{section*.34}% 37
+\BOOKMARK [3][-]{section*.38}{Energia associata al trasporto di massa}{section*.34}% 38
+\BOOKMARK [3][-]{section*.39}{Sorgenti}{section*.34}% 39
+\BOOKMARK [2][-]{section*.40}{Bilancio energetico}{section*.31}% 40
+\BOOKMARK [2][-]{section*.41}{Bilancio di entropia}{section*.31}% 41
+\BOOKMARK [2][-]{section*.42}{Regime stazionario}{section*.31}% 42
+\BOOKMARK [2][-]{section*.43}{Regime non stazionario}{section*.31}% 43
+\BOOKMARK [1][-]{section*.44}{Macchina aperta}{}% 44
+\BOOKMARK [2][-]{section*.45}{Turbina, compressore e pompa}{section*.44}% 45
+\BOOKMARK [3][-]{section*.46}{Scambiatore di calore}{section*.45}% 46
+\BOOKMARK [3][-]{section*.47}{Diffusore \(w\) e ugello \(w\)}{section*.45}% 47
+\BOOKMARK [3][-]{section*.48}{Valvola di laminazione}{section*.45}% 48
+\BOOKMARK [2][-]{section*.49}{Rendimento isoentropico}{section*.44}% 49
+\BOOKMARK [3][-]{section*.50}{Turbina}{section*.49}% 50
+\BOOKMARK [3][-]{section*.51}{Compressore}{section*.49}% 51
+\BOOKMARK [2][-]{section*.52}{Irreversibilit\340 interna associata al moto del fluido}{section*.44}% 52
+\BOOKMARK [1][-]{section*.53}{Sistemi bifase}{}% 53
+\BOOKMARK [2][-]{section*.54}{Stati di aggregazione}{section*.53}% 54
+\BOOKMARK [2][-]{section*.55}{Diagramma di stato P-v-T}{section*.53}% 55
+\BOOKMARK [2][-]{section*.56}{Entalpia \(calore\) di transizione}{section*.53}% 56
+\BOOKMARK [2][-]{section*.57}{Titolo di vapore, liquido e solido}{section*.53}% 57
+\BOOKMARK [2][-]{section*.58}{Liquidi sottoraffreddati}{section*.53}% 58
+\BOOKMARK [2][-]{section*.59}{Relazioni semplificate vicino al punto triplo per l'acqua}{section*.53}% 59
+\BOOKMARK [1][-]{section*.60}{Cicli a gas}{}% 60
+\BOOKMARK [2][-]{section*.61}{Cicli simmetrici}{section*.60}% 61
+\BOOKMARK [2][-]{section*.62}{Ciclo Carnot}{section*.60}% 62
+\BOOKMARK [3][-]{section*.63}{Irreversibilit\340}{section*.62}% 63
+\BOOKMARK [2][-]{section*.64}{Ciclo Joule-Brayton}{section*.60}% 64
+\BOOKMARK [3][-]{section*.65}{Lavoro specifico per ciclo Joule-Brayton}{section*.64}% 65
+\BOOKMARK [2][-]{section*.66}{Ciclo Joule-Brayton con rigenerazione}{section*.60}% 66
+\BOOKMARK [2][-]{section*.67}{Ciclo Otto}{section*.60}% 67
+\BOOKMARK [3][-]{section*.68}{Lavoro specifico per il ciclo Otto}{section*.67}% 68
+\BOOKMARK [2][-]{section*.69}{Ciclo Diesel}{section*.60}% 69
+\BOOKMARK [3][-]{section*.70}{Confronto ciclo Otto - ciclo Diesel}{section*.69}% 70
+\BOOKMARK [2][-]{section*.71}{Ciclo Joule-Brayton inverso}{section*.60}% 71
+\BOOKMARK [2][-]{section*.72}{Altri cicli}{section*.60}% 72
+\BOOKMARK [1][-]{section*.73}{Cicli a vapore}{}% 73
+\BOOKMARK [2][-]{section*.74}{Ciclo Carnot a vapore}{section*.73}% 74
+\BOOKMARK [2][-]{section*.75}{Fluidi di lavoro in cicli a vapore}{section*.73}% 75
+\BOOKMARK [2][-]{section*.76}{Ciclo Rankine a vapore saturo}{section*.73}% 76
+\BOOKMARK [2][-]{section*.77}{Ciclo Rankine con surriscaldamento}{section*.73}% 77
+\BOOKMARK [2][-]{section*.78}{Soluzioni per aumento rendimento ciclo Rankine}{section*.73}% 78
+\BOOKMARK [2][-]{section*.79}{Ciclo Carnot inverso a vapore}{section*.73}% 79
+\BOOKMARK [2][-]{section*.80}{Ciclo frigorifero a vapore}{section*.73}% 80
+\BOOKMARK [1][-]{section*.81}{Ripasso analisi}{}% 81
+\BOOKMARK [1][-]{section*.82}{Conduzione}{}% 82
+\BOOKMARK [2][-]{section*.83}{Postulato di Fourier}{section*.82}% 83
+\BOOKMARK [2][-]{section*.84}{Equazione di Fourier}{section*.82}% 84
+\BOOKMARK [2][-]{section*.85}{Casi particolari equazione di Fourier}{section*.82}% 85
+\BOOKMARK [2][-]{section*.86}{Coordinate cartesiane}{section*.82}% 86
+\BOOKMARK [3][-]{section*.87}{Parete piana infinita in y-z in regime stazionario}{section*.86}% 87
+\BOOKMARK [3][-]{section*.88}{Lastra piana senza generazione di potenza}{section*.86}% 88
+\BOOKMARK [2][-]{section*.89}{Coordinate cilindriche}{section*.82}% 89
+\BOOKMARK [3][-]{section*.90}{Cilindro pieno o cavo di altezza infinita}{section*.89}% 90
+\BOOKMARK [3][-]{section*.91}{Barra cilindrica piena con generazione di potenza}{section*.89}% 91
+\BOOKMARK [3][-]{section*.92}{Cilindro cavo senza generazione di potenza}{section*.89}% 92
+\BOOKMARK [2][-]{section*.93}{Coordinate sferiche}{section*.82}% 93
+\BOOKMARK [3][-]{section*.94}{Sfera piena o cava}{section*.93}% 94
+\BOOKMARK [1][-]{section*.95}{Convezione}{}% 95
+\BOOKMARK [2][-]{section*.96}{Equazione generale}{section*.95}% 96
+\BOOKMARK [2][-]{section*.97}{Raggio critico di isolamento}{section*.95}% 97
+\BOOKMARK [2][-]{section*.98}{Coefficiente convettivo}{section*.95}% 98
+\BOOKMARK [3][-]{section*.99}{Numero di Nusselt}{section*.98}% 99
+\BOOKMARK [3][-]{section*.100}{Numero di Reynolds}{section*.98}% 100
+\BOOKMARK [3][-]{section*.101}{Valori tipici di Reynolds}{section*.98}% 101
+\BOOKMARK [3][-]{section*.102}{Numero di Prandtl}{section*.98}% 102
+\BOOKMARK [3][-]{section*.103}{Valori tipici di Prandtl}{section*.98}% 103
+\BOOKMARK [2][-]{section*.104}{Temperature di valutazione dei parametri}{section*.95}% 104
+\BOOKMARK [3][-]{section*.105}{Corpo immerso}{section*.104}% 105
+\BOOKMARK [3][-]{section*.106}{Convenzione forzata in condotto}{section*.104}% 106
+\BOOKMARK [2][-]{section*.107}{Flusso all'interno di tubi}{section*.95}% 107
+\BOOKMARK [3][-]{section*.108}{Velocit\340 media}{section*.107}% 108
+\BOOKMARK [3][-]{section*.109}{Temperatura media}{section*.107}% 109
+\BOOKMARK [3][-]{section*.110}{Condizioni al contorno}{section*.107}% 110
+\BOOKMARK [3][-]{section*.111}{Flusso di calore costante}{section*.107}% 111
+\BOOKMARK [3][-]{section*.112}{Temperatura superficiale costante}{section*.107}% 112
+\BOOKMARK [3][-]{section*.113}{Caduta di pressione}{section*.107}% 113
+\BOOKMARK [2][-]{section*.114}{Convezione forzata}{section*.95}% 114
+\BOOKMARK [3][-]{section*.115}{Moto all'interno di un condotto circolare}{section*.114}% 115
+\BOOKMARK [3][-]{section*.116}{Moto attorno ad un cilindro}{section*.114}% 116
+\BOOKMARK [3][-]{section*.117}{Flusso su lastra piana interamente riscaldata}{section*.114}% 117
+\BOOKMARK [2][-]{section*.118}{Convezione naturale}{section*.95}% 118
+\BOOKMARK [3][-]{section*.119}{Numero di Grashof}{section*.118}% 119
+\BOOKMARK [3][-]{section*.120}{Moto lungo superficie verticale}{section*.118}% 120
+\BOOKMARK [3][-]{section*.121}{Numero di Peclet}{section*.118}% 121
+\BOOKMARK [3][-]{section*.122}{Numero di Rayleigh}{section*.118}% 122
+\BOOKMARK [3][-]{section*.123}{Alcune correlazioni}{section*.118}% 123
+\BOOKMARK [1][-]{section*.124}{Irraggiamento}{}% 124
+\BOOKMARK [2][-]{section*.125}{Legge della distribuzione di Planck}{section*.124}% 125
+\BOOKMARK [2][-]{section*.126}{Legge dello spostamento o di Wien}{section*.124}% 126
+\BOOKMARK [2][-]{section*.127}{Emissivit\340}{section*.124}% 127
+\BOOKMARK [2][-]{section*.128}{Radiazione incidente}{section*.124}% 128
+\BOOKMARK [2][-]{section*.129}{Fattore di vista}{section*.124}% 129
+\BOOKMARK [3][-]{section*.130}{Regola di reciprocit\340}{section*.129}% 130
+\BOOKMARK [3][-]{section*.131}{Regola della somma}{section*.129}% 131
+\BOOKMARK [2][-]{section*.132}{Convenzioni adottate}{section*.124}% 132
+\BOOKMARK [2][-]{section*.133}{Scambio termico tra superfici}{section*.124}% 133
+\BOOKMARK [3][-]{section*.134}{Superfici nere}{section*.133}% 134
+\BOOKMARK [3][-]{section*.135}{Superfici piane parallele, indefinite, nere}{section*.133}% 135
+\BOOKMARK [3][-]{section*.136}{Corpo nero in una cavit\340 con superfici nere}{section*.133}% 136
+\BOOKMARK [2][-]{section*.137}{Bilancio termico superficie grigia opaca}{section*.124}% 137
+\BOOKMARK [3][-]{section*.138}{Superfici grigie}{section*.137}% 138
+\BOOKMARK [3][-]{section*.139}{Superfici piane parallele indefinite nera-grigia}{section*.137}% 139
+\BOOKMARK [3][-]{section*.140}{Superfici piane parallele indefinite grigia-grigia}{section*.137}% 140
+\BOOKMARK [3][-]{section*.141}{Corpo grigio in una cavit\340 con superfici grigie}{section*.137}% 141

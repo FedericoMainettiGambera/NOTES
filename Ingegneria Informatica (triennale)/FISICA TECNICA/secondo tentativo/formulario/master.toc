@@ -1,5 +1,7 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \contentsline {section}{\numberline {1}ARGOMENTI}{2}{section.1}% 
-\contentsline {section}{\numberline {2}ESERCITAZIONI}{4}{section.2}% 
-\contentsline {section}{\numberline {3}FORMULARIO}{4}{section.3}% 
+\contentsline {section}{\numberline {2}ESERCITAZIONI}{5}{section.2}% 
+\contentsline {section}{\numberline {3}Formulario}{6}{section.3}% 
+\contentsline {section}{\numberline {4}Riassunto slides}{6}{section.4}% 
+\contentsline {section}{\numberline {5}Utilities}{6}{section.5}% 

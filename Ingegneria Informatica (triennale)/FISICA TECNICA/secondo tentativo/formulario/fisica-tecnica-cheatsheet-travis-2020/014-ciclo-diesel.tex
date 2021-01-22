@@ -1,4 +1,4 @@
-\section{Ciclo Diesel}
+\subsection{Ciclo Diesel}
 
 Ciclo \textbf{NON simmetrico} costituito da due \emph{isoentropiche}, una \emph{isobara} e una \emph{isocora}.
 Applicazioni: motore endotermico.
@@ -29,13 +29,13 @@ Nell'ipotesi di \emph{gas perfetto} e \emph{ciclo ideale}:
 \[ \eta_{diesel} = \frac{L}{Q_C} = 1 - \frac{c_v (T_4-T_1)}{c_p (T_3-T_2)} = 1 - \frac{c_v T_1 (\frac{T_4}{T_1}-1)}{c_p T_2 (\frac{T_3}{T_2}-1)} \]
 
 \begin{align*}
-\text{Rapporto compressione volumetrico:} &\qquad r = \frac{V_1}{V_2} \\
-\text{Rapporto di combustione:} &\qquad z = \frac{V_3}{V_2} \\
+\text{Rapporto compressione volumetrico:} &\qquad r = \frac{V_1}{V_2} = \frac{V_{max}}{V_{min}} \\
+\text{Rapporto di combustione:} &\qquad z = \frac{V_3}{V_2} = \frac{V_{\text{fine combustione}}}{V_{\text{inizio combustione}}} \\
 \end{align*}
 
 \[ \eta_{diesel} = 1 - \frac{1}{r^{k-1}} \frac{1}{k} \frac{z^k-1}{z-1} \]
 
-\subsection{Confronto ciclo Otto - ciclo Diesel}
+\subsubsection{Confronto ciclo Otto - ciclo Diesel}
 \begin{itemize}
     \item Motore Otto è più leggero a parità di potenza
     \item Motore Otto ha frequenza di rotazione maggiore
@@ -44,3 +44,8 @@ Nell'ipotesi di \emph{gas perfetto} e \emph{ciclo ideale}:
     \item Motore Diesel ha miglior rendimento al diminuire del carico (più facilmente regolabile in potenza)
     \item Motore Diesel utilizza un combustibile meno pregiato del motore Otto
 \end{itemize}
+
+Cilindrata $V$: fa riferimento alla somma di tutti i cilindri ed è il volume utilizzato per il ciclo, ovvero il $\Delta V$ fra il volume minore e il volume maggiore.
+
+[Solitamente si trova prima la cilindrata di un signolo cilindro come $V_c = \frac{V}{\text{numero cilindri}}$, poi col rapporto di compressione volumetrico si possono ricavare i vari volumi. A questo punto con le leggi dei gas perfetti e le politropiche tutti gli stati sono identificabili.
+A questo punto per identificare i lavori e i calori scambiati nel ciclo si fanno dei bilanci ($\Delta U = Q^{\leftarrow } - L^{\rightarrow }$, non usare i bilanci dei sistemi aperti!) su ogni singola trasformazione, ricordando le formule dei gas perfetti (eg. $\Delta U = c_v \Delta T$, ma anche tutte quelle della tabella\dots)]
